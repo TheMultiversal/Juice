@@ -95,15 +95,15 @@ addConn('daia-delegaci-n-de-asociaciones-israelitas-argentinas', [
   { name: "Argentine government", type: "political engagement", description: "Engages with the Argentine government on antisemitism, security, and AMIA bombing accountability." },
   { name: "Iran accountability", type: "advocacy", description: "Has demanded accountability from Iran, accused of orchestrating the AMIA bombing." }
 ]);
-updDesc('daia-delegaci-n-de-asociaciones-israelitas-argentinas', 'DAIA (Delegación de Asociaciones Israelitas Argentinas) is the political representative body of Argentine Jewry, the largest Jewish community in Latin America (~180,000). Its mission was profoundly shaped by the 1994 AMIA bombing that killed 85 people , the deadliest antisemitic attack in the Western Hemisphere. DAIA has persistently demanded accountability from Iran, which is accused of orchestrating the bombing. Also combats antisemitism in Argentine society.');
+updDesc('daia-delegaci-n-de-asociaciones-israelitas-argentinas', 'DAIA (Delegación de Asociaciones Israelitas Argentinas) is the political representative body of Argentine Jewry, the largest Jewish community in Latin America (~180,000). Its mission was profoundly shaped by the 1994 AMIA bombing that killed 85 people - the deadliest antisemitic attack in the Western Hemisphere. DAIA has persistently demanded accountability from Iran, which is accused of orchestrating the bombing. Also combats antisemitism in Argentine society.');
 
 addConn('amia-asociaci-n-mutual-israelita-argentina', [
-  { name: "1994 AMIA bombing", type: "defining event", description: "On July 18, 1994, a car bomb destroyed the AMIA building, killing 85 people , the worst terrorist attack in Argentine history." },
+  { name: "1994 AMIA bombing", type: "defining event", description: "On July 18, 1994, a car bomb destroyed the AMIA building, killing 85 people - the worst terrorist attack in Argentine history." },
   { name: "Iran and Hezbollah", type: "accused perpetrators", description: "Iran and Hezbollah are accused of planning and executing the bombing." },
   { name: "Argentine judicial system", type: "justice pursuit", description: "The investigation has been plagued by cover-ups and obstruction, including the suspicious death of prosecutor Alberto Nisman." },
   { name: "Alberto Nisman", type: "murdered prosecutor", description: "Prosecutor Alberto Nisman was found dead in 2015, hours before presenting evidence of a government cover-up." }
 ]);
-updDesc('amia-asociaci-n-mutual-israelita-argentina', 'AMIA (Asociación Mutual Israelita Argentina) is the main Jewish community centre of Buenos Aires. On July 18, 1994, a car bomb destroyed the AMIA building, killing 85 people , the deadliest attack in Argentine history and the worst antisemitic attack in the Western Hemisphere since WWII. Iran and Hezbollah are accused of orchestrating it. Prosecutor Alberto Nisman, who investigated the bombing, was found dead in 2015 hours before presenting evidence of a government cover-up.');
+updDesc('amia-asociaci-n-mutual-israelita-argentina', 'AMIA (Asociación Mutual Israelita Argentina) is the main Jewish community centre of Buenos Aires. On July 18, 1994, a car bomb destroyed the AMIA building, killing 85 people - the deadliest attack in Argentine history and the worst antisemitic attack in the Western Hemisphere since WWII. Iran and Hezbollah are accused of orchestrating it. Prosecutor Alberto Nisman, who investigated the bombing, was found dead in 2015 hours before presenting evidence of a government cover-up.');
 addInd('amia-asociaci-n-mutual-israelita-argentina', { name: "Alberto Nisman", bio: "Alberto Nisman (Jewish, 1963-2015), Argentine prosecutor, investigated the AMIA bombing for 10 years. Found dead with a gunshot wound in 2015, hours before he was to present evidence that President Cristina Kirchner covered up Iranian involvement." });
 
 addConn('sociedad-hebraica-argentina', [
@@ -123,9 +123,9 @@ updDesc('buenos-aires-herald-jewish-community-media', 'Argentine Jewish communit
 addConn('buenos-aires-jewish-museum', [
   { name: "Argentine Jewish heritage", type: "mission", description: "Preserves and displays the history of Jewish life in Argentina." },
   { name: "Immigration history", type: "key theme", description: "Documents Jewish immigration from Eastern Europe to Argentina in the late 19th and early 20th centuries." },
-  { name: "Jewish gauchos", type: "cultural theme", description: "Tells the unique story of Jewish agricultural colonists in the pampas , the 'Jewish gauchos'." }
+  { name: "Jewish gauchos", type: "cultural theme", description: "Tells the unique story of Jewish agricultural colonists in the pampas - the 'Jewish gauchos'." }
 ]);
-updDesc('buenos-aires-jewish-museum', 'The Buenos Aires Jewish Museum documents the rich history of Jewish life in Argentina from the late 19th century immigration waves to the present. Tells the unique story of the Jewish gauchos , Eastern European Jewish immigrants who settled as agricultural colonists in the Argentine pampas through the Jewish Colonization Association (JCA) founded by Baron Maurice de Hirsch. Argentina has the largest Jewish community in Latin America.');
+updDesc('buenos-aires-jewish-museum', 'The Buenos Aires Jewish Museum documents the rich history of Jewish life in Argentina from the late 19th century immigration waves to the present. Tells the unique story of the Jewish gauchos - Eastern European Jewish immigrants who settled as agricultural colonists in the Argentine pampas through the Jewish Colonization Association (JCA) founded by Baron Maurice de Hirsch. Argentina has the largest Jewish community in Latin America.');
 
 addConn('seminario-rab-nico-latinoamericano', [
   { name: "Conservative/Masorti movement", type: "denomination", description: "The primary Conservative/Masorti rabbinical seminary in Latin America." },
@@ -147,7 +147,7 @@ addConn('museo-del-holocausto-buenos-aires', [
   { name: "Holocaust survivors in Argentina", type: "community", description: "Argentina received significant numbers of Holocaust survivors after WWII." },
   { name: "Nazi fugitives", type: "dark history", description: "Argentina paradoxically sheltered both Holocaust survivors and Nazi fugitives like Eichmann." }
 ]);
-updDesc('museo-del-holocausto-buenos-aires', 'The Museo del Holocausto de Buenos Aires, founded in 1993, was the first Holocaust museum in Latin America. Argentina\'s relationship to the Holocaust is complex , it received thousands of Jewish refugees and survivors, while also becoming a haven for Nazi fugitives including Adolf Eichmann (captured by Mossad in Buenos Aires in 1960). The museum educates about the Holocaust in this unique Latin American context.');
+updDesc('museo-del-holocausto-buenos-aires', 'The Museo del Holocausto de Buenos Aires, founded in 1993, was the first Holocaust museum in Latin America. Argentina\'s relationship to the Holocaust is complex - it received thousands of Jewish refugees and survivors, while also becoming a haven for Nazi fugitives including Adolf Eichmann (captured by Mossad in Buenos Aires in 1960). The museum educates about the Holocaust in this unique Latin American context.');
 
 addConn('ort-argentina', [
   { name: "World ORT", type: "parent organization", description: "Argentine branch of World ORT educational network." },
@@ -217,7 +217,7 @@ addConn('museu-judaico-de-s-o-paulo', [
   { name: "Brazilian Jewish identity", type: "cultural theme", description: "Explores the unique Brazilian Jewish identity and experience." },
   { name: "Immigration history", type: "core narrative", description: "Tells the story of Jewish immigration to Brazil from multiple waves." }
 ]);
-updDesc('museu-judaico-de-s-o-paulo', 'The Museu Judaico de São Paulo (Jewish Museum of São Paulo) documents Jewish life in Brazil, from the Crypto-Jews who arrived during the Portuguese colonial era to modern immigration waves from Eastern Europe, the Middle East, and North Africa. Explores the unique Brazilian Jewish identity , a blend of Sephardi, Ashkenazi, and Mizrahi traditions adapted to tropical, multicultural Brazil.');
+updDesc('museu-judaico-de-s-o-paulo', 'The Museu Judaico de São Paulo (Jewish Museum of São Paulo) documents Jewish life in Brazil, from the Crypto-Jews who arrived during the Portuguese colonial era to modern immigration waves from Eastern Europe, the Middle East, and North Africa. Explores the unique Brazilian Jewish identity - a blend of Sephardi, Ashkenazi, and Mizrahi traditions adapted to tropical, multicultural Brazil.');
 
 addConn('congrega-o-israelita-paulista-cip', [
   { name: "São Paulo Jewish community", type: "congregation", description: "One of the largest and most influential synagogues in Latin America." },
@@ -366,7 +366,7 @@ updDesc('jewish-museum-vienna', 'The Jewish Museum Vienna documents the extraord
 addConn('mauthausen-memorial', [
   { name: "Nazi concentration camp", type: "historic site", description: "Major Nazi concentration camp in upper Austria, operational 1938-1945." },
   { name: "Over 90,000 victims", type: "death toll", description: "Over 90,000 people were killed at Mauthausen and its sub-camps." },
-  { name: "Slave labor", type: "camp purpose", description: "Classified as a 'Grade III' camp , the most brutal, designed to work inmates to death in granite quarries." },
+  { name: "Slave labor", type: "camp purpose", description: "Classified as a 'Grade III' camp - the most brutal, designed to work inmates to death in granite quarries." },
   { name: "Austrian Republic memorial", type: "institutional status", description: "Maintained by the Austrian Republic as a memorial site." }
 ]);
 updDesc('mauthausen-memorial', 'Mauthausen concentration camp in Upper Austria was one of the most brutal Nazi camps, classified as Grade III (the harshest). Operational from 1938 to 1945, over 90,000 people were murdered there including Jews, political prisoners, Soviet POWs, and Roma. The infamous "Stairs of Death" led to the granite quarry where inmates were worked to death. Liberated by US forces in May 1945. Maintained as a memorial site by the Austrian Republic.');
@@ -383,7 +383,7 @@ addConn('stadttempel-vienna-city-temple', [
   { name: "Biedermeier architecture", type: "architectural style", description: "Built in 1826 in elegant neoclassical style by Joseph Kornhäusel." },
   { name: "IKG Wien", type: "institutional connection", description: "The main synagogue of the Vienna Jewish community." }
 ]);
-updDesc('stadttempel-vienna-city-temple', 'The Stadttempel (Vienna City Temple), built in 1826, is the main synagogue of Vienna and the only one to survive Kristallnacht in 1938 , its concealment within a residential building saved it from destruction. Designed by architect Joseph Kornhäusel in elegant neoclassical/Biedermeier style. Vienna\'s approximately 94 other synagogues were destroyed during Kristallnacht. Now under permanent police guard due to security concerns.');
+updDesc('stadttempel-vienna-city-temple', 'The Stadttempel (Vienna City Temple), built in 1826, is the main synagogue of Vienna and the only one to survive Kristallnacht in 1938 - its concealment within a residential building saved it from destruction. Designed by architect Joseph Kornhäusel in elegant neoclassical/Biedermeier style. Vienna\'s approximately 94 other synagogues were destroyed during Kristallnacht. Now under permanent police guard due to security concerns.');
 
 // ============================================================
 // NETHERLANDS
@@ -394,7 +394,7 @@ addConn('nik-nederlands-isra-litisch-kerkgenootschap', [
   { name: "Chief Rabbinate", type: "religious authority", description: "Oversees the Chief Rabbinate of the Netherlands." },
   { name: "Post-Holocaust recovery", type: "context", description: "Pre-war Dutch Jewry numbered 140,000; 75% were murdered in the Holocaust, the highest percentage in Western Europe." }
 ]);
-updDesc('nik-nederlands-isra-litisch-kerkgenootschap', 'The NIK (Nederlands-Israëlitisch Kerkgenootschap) is the Orthodox Jewish community organization of the Netherlands. Dutch Jewry today numbers about 30,000, a fraction of the pre-war 140,000. Approximately 75% of Dutch Jews were murdered in the Holocaust , the highest percentage in Western Europe , largely due to the efficient civil registration system and flat geography that made hiding difficult.');
+updDesc('nik-nederlands-isra-litisch-kerkgenootschap', 'The NIK (Nederlands-Israëlitisch Kerkgenootschap) is the Orthodox Jewish community organization of the Netherlands. Dutch Jewry today numbers about 30,000, a fraction of the pre-war 140,000. Approximately 75% of Dutch Jews were murdered in the Holocaust - the highest percentage in Western Europe - largely due to the efficient civil registration system and flat geography that made hiding difficult.');
 
 addConn('anne-frank-house', [
   { name: "Anne Frank", type: "subject", description: "The hiding place where Anne Frank (Jewish, 1929-1945) wrote her famous diary during the Nazi occupation." },
@@ -422,10 +422,10 @@ updDesc('jewish-historical-museum-amsterdam', 'The Jewish Historical Museum (Joo
 
 addConn('national-holocaust-museum-amsterdam', [
   { name: "Dutch Holocaust history", type: "mission", description: "Documents the persecution of Jews in the Netherlands during WWII." },
-  { name: "75% death rate", type: "significance", description: "Tells the story of how 75% of Dutch Jews , 102,000 people , were murdered." },
+  { name: "75% death rate", type: "significance", description: "Tells the story of how 75% of Dutch Jews - 102,000 people - were murdered." },
   { name: "Westerbork transit camp", type: "connection", description: "Connected to the story of Westerbork transit camp, from which Dutch Jews were deported." }
 ]);
-updDesc('national-holocaust-museum-amsterdam', 'The National Holocaust Museum in Amsterdam documents the persecution and murder of Jews in the Netherlands during WWII. Of 140,000 Dutch Jews, approximately 102,000 (75%) were murdered , the highest death rate in Western Europe. The museum, located in the former Hollandsche Schouwburg (Dutch Theatre) which was used as a Jewish assembly point, tells the stories of victims, survivors, and rescuers.');
+updDesc('national-holocaust-museum-amsterdam', 'The National Holocaust Museum in Amsterdam documents the persecution and murder of Jews in the Netherlands during WWII. Of 140,000 Dutch Jews, approximately 102,000 (75%) were murdered - the highest death rate in Western Europe. The museum, located in the former Hollandsche Schouwburg (Dutch Theatre) which was used as a Jewish assembly point, tells the stories of victims, survivors, and rescuers.');
 
 addConn('westerbork-transit-camp-memorial', [
   { name: "Transit camp to death camps", type: "historic role", description: "Over 100,000 Jews, Roma, and others were deported from Westerbork to Auschwitz, Sobibor, Bergen-Belsen, and Theresienstadt." },
@@ -458,7 +458,7 @@ addConn('jewish-museum-of-belgium-brussels', [
   { name: "2014 terrorist attack", type: "tragic event", description: "On May 24, 2014, a gunman killed four people inside the museum in a terrorist attack." },
   { name: "Belgian Jewish history", type: "collection", description: "Houses collections on Jewish life in Belgium from the Middle Ages to the present." }
 ]);
-updDesc('jewish-museum-of-belgium-brussels', 'The Jewish Museum of Belgium in Brussels documents Jewish life in Belgium. Tragically, on May 24, 2014, a French-Algerian ISIS-affiliated gunman killed four people inside the museum in a terrorist attack , the first deadly attack on a European Jewish institution since the 1980s. The museum houses collections spanning Belgian Jewish history from the medieval period to the present and continues to serve as a centre for education and remembrance.');
+updDesc('jewish-museum-of-belgium-brussels', 'The Jewish Museum of Belgium in Brussels documents Jewish life in Belgium. Tragically, on May 24, 2014, a French-Algerian ISIS-affiliated gunman killed four people inside the museum in a terrorist attack - the first deadly attack on a European Jewish institution since the 1980s. The museum houses collections spanning Belgian Jewish history from the medieval period to the present and continues to serve as a centre for education and remembrance.');
 
 addConn('kazerne-dossin-memorial-mechelen', [
   { name: "Belgian Holocaust deportation", type: "historic role", description: "Dossin Barracks in Mechelen served as the transit camp from which 25,000+ Belgian Jews and Roma were deported to Auschwitz." },
@@ -513,7 +513,7 @@ addConn('bergier-commission-legacy', [
   { name: "Swiss government", type: "appointment", description: "Appointed by the Swiss government under international pressure." },
   { name: "$1.25 billion settlement", type: "outcome", description: "Led to a $1.25 billion settlement between Swiss banks and Holocaust survivors." }
 ]);
-updDesc('bergier-commission-legacy', 'The Bergier Commission (Independent Commission of Experts: Switzerland , Second World War, 1996-2002) investigated Switzerland\'s wartime conduct, including trade with Nazi Germany, acceptance/rejection of Jewish refugees, and dormant bank accounts of Holocaust victims. Found that Switzerland turned away approximately 25,000 refugees. Led to the landmark $1.25 billion settlement between Swiss banks (UBS, Credit Suisse) and Holocaust survivors.');
+updDesc('bergier-commission-legacy', 'The Bergier Commission (Independent Commission of Experts: Switzerland - Second World War, 1996-2002) investigated Switzerland\'s wartime conduct, including trade with Nazi Germany, acceptance/rejection of Jewish refugees, and dormant bank accounts of Holocaust victims. Found that Switzerland turned away approximately 25,000 refugees. Led to the landmark $1.25 billion settlement between Swiss banks (UBS, Credit Suisse) and Holocaust survivors.');
 
 addConn('international-committee-of-the-red-cross-jewish-relationship', [
   { name: "ICRC", type: "institution", description: "The ICRC, headquartered in Geneva, had a complex and often criticized relationship with Jewish victims during WWII." },
@@ -531,22 +531,22 @@ addConn('union-of-italian-jewish-communities-ucei', [
   { name: "Italian government", type: "concordat", description: "Has a concordat (Intesa) with the Italian state governing Jewish community affairs." },
   { name: "2,000+ year history", type: "heritage", description: "Jews have lived in Italy continuously for over 2,000 years, since the Roman Empire." }
 ]);
-updDesc('union-of-italian-jewish-communities-ucei', 'UCEI (Unione delle Comunità Ebraiche Italiane) represents Italian Jewry (~25,000), one of the oldest Jewish communities in the world , Jews have lived in Italy continuously for over 2,000 years, since the Roman Republic era. Has a concordat (Intesa) with the Italian state. Italian Jews suffered under Mussolini\'s 1938 racial laws and subsequent Nazi deportations. The community spans from Rome (the oldest in Europe) to Milan, Turin, Florence, and Venice.');
+updDesc('union-of-italian-jewish-communities-ucei', 'UCEI (Unione delle Comunità Ebraiche Italiane) represents Italian Jewry (~25,000), one of the oldest Jewish communities in the world - Jews have lived in Italy continuously for over 2,000 years, since the Roman Republic era. Has a concordat (Intesa) with the Italian state. Italian Jews suffered under Mussolini\'s 1938 racial laws and subsequent Nazi deportations. The community spans from Rome (the oldest in Europe) to Milan, Turin, Florence, and Venice.');
 
 addConn('jewish-museum-of-rome', [
   { name: "Rome Jewish community", type: "community", description: "Documents the history of Europe's oldest Jewish community, dating to 161 BCE." },
   { name: "Great Synagogue of Rome", type: "location", description: "Located in the Great Synagogue complex in Rome's former Jewish Ghetto." },
   { name: "Roman Jewish heritage", type: "collection", description: "Houses artifacts spanning over 2,000 years of Jewish life in Rome." }
 ]);
-updDesc('jewish-museum-of-rome', 'The Jewish Museum of Rome documents the oldest Jewish community in Europe, dating to 161 BCE when Judean ambassadors first arrived in Rome. Located in the Great Synagogue complex in Rome\'s former Ghetto , the neighbourhood where Jews were confined from 1555 to 1870. Houses artifacts spanning over 2,000 years including ritual objects, textiles, and historical documents.');
+updDesc('jewish-museum-of-rome', 'The Jewish Museum of Rome documents the oldest Jewish community in Europe, dating to 161 BCE when Judean ambassadors first arrived in Rome. Located in the Great Synagogue complex in Rome\'s former Ghetto - the neighbourhood where Jews were confined from 1555 to 1870. Houses artifacts spanning over 2,000 years including ritual objects, textiles, and historical documents.');
 
 addConn('great-synagogue-of-rome', [
   { name: "Rome Jewish community", type: "congregation", description: "The main synagogue of Europe's oldest Jewish community." },
   { name: "Tempio Maggiore", type: "formal name", description: "Known as the Tempio Maggiore, built in 1904 in an eclectic Assyrian-Babylonian style." },
-  { name: "Pope John Paul II visit", type: "historic event", description: "Pope John Paul II made a historic visit in 1986 , the first pope to enter a synagogue since antiquity." },
+  { name: "Pope John Paul II visit", type: "historic event", description: "Pope John Paul II made a historic visit in 1986 - the first pope to enter a synagogue since antiquity." },
   { name: "1982 terrorist attack", type: "tragic event", description: "In 1982, Palestinian terrorists attacked the synagogue, killing a 2-year-old boy." }
 ]);
-updDesc('great-synagogue-of-rome', 'The Great Synagogue of Rome (Tempio Maggiore), built in 1904 in eclectic Assyrian-Babylonian style, serves Europe\'s oldest Jewish community. Pope John Paul II made a historic visit in 1986 , the first pope to enter a synagogue since antiquity. In 1982, Palestinian terrorists attacked the synagogue, killing 2-year-old Stefano Gaj Taché and injuring 37. The synagogue\'s distinctive square dome dominates the Tiber riverbank skyline.');
+updDesc('great-synagogue-of-rome', 'The Great Synagogue of Rome (Tempio Maggiore), built in 1904 in eclectic Assyrian-Babylonian style, serves Europe\'s oldest Jewish community. Pope John Paul II made a historic visit in 1986 - the first pope to enter a synagogue since antiquity. In 1982, Palestinian terrorists attacked the synagogue, killing 2-year-old Stefano Gaj Taché and injuring 37. The synagogue\'s distinctive square dome dominates the Tiber riverbank skyline.');
 
 addConn('venice-ghetto', [
   { name: "Origin of the word 'ghetto'", type: "linguistic origin", description: "The Venice Ghetto, established in 1516, is where the word 'ghetto' originates (from the Venetian word for 'foundry')." },
@@ -554,7 +554,7 @@ addConn('venice-ghetto', [
   { name: "Five synagogues", type: "religious infrastructure", description: "Contains five historic synagogues (scuole) serving different Jewish communities." },
   { name: "UNESCO heritage interest", type: "preservation", description: "Major heritage preservation site of global significance." }
 ]);
-updDesc('venice-ghetto', 'The Venice Ghetto, established in 1516 by the Venetian Republic, is the world\'s first Jewish ghetto , the very word "ghetto" originates here, from the Venetian word for "foundry" (getto) as the area had been an iron foundry. Jews were confined here until Napoleon\'s liberation in 1797. Contains five historic synagogues (Schola Grande Tedesca, Canton, Italiana, Levantina, Spagnola) serving Ashkenazi, Italian, and Sephardi communities. High-rise buildings due to space constraints.');
+updDesc('venice-ghetto', 'The Venice Ghetto, established in 1516 by the Venetian Republic, is the world\'s first Jewish ghetto - the very word "ghetto" originates here, from the Venetian word for "foundry" (getto) as the area had been an iron foundry. Jews were confined here until Napoleon\'s liberation in 1797. Contains five historic synagogues (Schola Grande Tedesca, Canton, Italiana, Levantina, Spagnola) serving Ashkenazi, Italian, and Sephardi communities. High-rise buildings due to space constraints.');
 
 addConn('synagogue-of-florence-tempio-maggiore', [
   { name: "Florence Jewish community", type: "congregation", description: "The main synagogue of Florence, one of the finest in Europe." },
@@ -586,7 +586,7 @@ addConn('federation-of-jewish-communities-of-spain', [
   { name: "Sephardi heritage", type: "historic connection", description: "Spain was the heartland of Sephardi Jewish civilization until the 1492 Expulsion." },
   { name: "Spanish citizenship law", type: "legal milestone", description: "Spain passed a law in 2015 offering citizenship to descendants of expelled Sephardi Jews." }
 ]);
-updDesc('federation-of-jewish-communities-of-spain', 'The Federation of Jewish Communities of Spain represents Spain\'s Jewish community (~40,000-50,000). Spain was the heartland of Sephardi Jewish civilization , the Golden Age of Spanish Jewry produced Maimonides, Judah Halevi, and Ibn Ezra. The 1492 Alhambra Decree expelled all Jews, ending 1,500 years of presence. In 2015, Spain passed a law offering citizenship to descendants of expelled Sephardi Jews, an act of historical recognition.');
+updDesc('federation-of-jewish-communities-of-spain', 'The Federation of Jewish Communities of Spain represents Spain\'s Jewish community (~40,000-50,000). Spain was the heartland of Sephardi Jewish civilization - the Golden Age of Spanish Jewry produced Maimonides, Judah Halevi, and Ibn Ezra. The 1492 Alhambra Decree expelled all Jews, ending 1,500 years of presence. In 2015, Spain passed a law offering citizenship to descendants of expelled Sephardi Jews, an act of historical recognition.');
 
 addConn('museum-of-sephardic-heritage-toledo', [
   { name: "Sephardi Jewish civilization", type: "subject", description: "Documents the extraordinary Golden Age of Jews in medieval Spain." },

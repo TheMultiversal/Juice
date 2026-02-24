@@ -272,7 +272,7 @@ addConn('union-for-reform-judaism-urj', [
   { name: "Camp movement", type: "youth programs", description: "URJ operates 15 residential summer camps serving thousands of Jewish youth." },
   { name: "NFTY", type: "youth movement", description: "North American Federation of Temple Youth is the Reform youth movement." }
 ]);
-updDesc('union-for-reform-judaism-urj', 'The congregational arm of the Reform Jewish movement, serving nearly 850 congregations and 1.5 million Jews across North America , the largest Jewish denomination in the US. Founded in 1873 by Rabbi Isaac Mayer Wise. Operates 15 summer camps, NFTY youth movement, and the Religious Action Center for social justice advocacy in Washington. Led by Rabbi Rick Jacobs as president.');
+updDesc('union-for-reform-judaism-urj', 'The congregational arm of the Reform Jewish movement, serving nearly 850 congregations and 1.5 million Jews across North America - the largest Jewish denomination in the US. Founded in 1873 by Rabbi Isaac Mayer Wise. Operates 15 summer camps, NFTY youth movement, and the Religious Action Center for social justice advocacy in Washington. Led by Rabbi Rick Jacobs as president.');
 addInd('union-for-reform-judaism-urj', { name: "Rick Jacobs", bio: "President of the URJ since 2012. Previously senior rabbi of Westchester Reform Temple. Leads the largest Jewish denominational organization in North America." });
 
 // ============================================================
@@ -284,7 +284,7 @@ addConn('reconstructing-judaism', [
   { name: "Camp Havaya", type: "youth program", description: "The Reconstructionist summer camp embracing diversity and pluralism." },
   { name: "Jewish Reconstructionist Congregation", type: "congregations", description: "About 100 affiliated Reconstructionist congregations across North America." }
 ]);
-updDesc('reconstructing-judaism', 'The smallest of the four major Jewish denominations in the US, with approximately 100 congregations. Founded on the philosophy of Rabbi Mordecai Kaplan (1881-1983), who viewed Judaism as an evolving religious civilization rather than just a religion. The movement pioneered egalitarianism , the first bat mitzvah in America was Kaplan\'s daughter Judith in 1922. Reconstructionist Rabbinical College (founded 1968) trains the movement\'s rabbis.');
+updDesc('reconstructing-judaism', 'The smallest of the four major Jewish denominations in the US, with approximately 100 congregations. Founded on the philosophy of Rabbi Mordecai Kaplan (1881-1983), who viewed Judaism as an evolving religious civilization rather than just a religion. The movement pioneered egalitarianism - the first bat mitzvah in America was Kaplan\'s daughter Judith in 1922. Reconstructionist Rabbinical College (founded 1968) trains the movement\'s rabbis.');
 
 // ============================================================
 // Agudath Israel
@@ -366,7 +366,7 @@ addConn('birthright-israel-foundation', [
   { name: "Israeli government", type: "partner/funder", description: "The Israeli government provides significant funding for Birthright trips." },
   { name: "800,000+ alumni", type: "impact", description: "Over 800,000 young Jews from 68 countries have participated in free Birthright trips." }
 ]);
-updDesc('birthright-israel-foundation', 'Co-founded in 1999 by Charles Bronfman and Michael Steinhardt to provide free 10-day trips to Israel for young Jews aged 18-26. Over 800,000 participants from 68 countries. Sheldon Adelson donated $410 million , the largest single philanthropic gift. The Israeli government, Jewish federations, and private donors jointly fund the program. Studies show Birthright alumni are more likely to marry Jewish and feel connected to Israel.');
+updDesc('birthright-israel-foundation', 'Co-founded in 1999 by Charles Bronfman and Michael Steinhardt to provide free 10-day trips to Israel for young Jews aged 18-26. Over 800,000 participants from 68 countries. Sheldon Adelson donated $410 million - the largest single philanthropic gift. The Israeli government, Jewish federations, and private donors jointly fund the program. Studies show Birthright alumni are more likely to marry Jewish and feel connected to Israel.');
 
 // ============================================================
 // Hadassah
@@ -378,7 +378,7 @@ addConn('hadassah-the-women-s-zionist-organization-of-america', [
   { name: "US Congress", type: "advocacy", description: "Hadassah advocates for medical research funding, Israel, and women's health." },
   { name: "300,000 members", type: "membership", description: "With 300,000 members, Hadassah is the largest women's Zionist organization in the US." }
 ]);
-updDesc('hadassah-the-women-s-zionist-organization-of-america', 'Founded in 1912 by Henrietta Szold, Hadassah is the largest Jewish women\'s organization in the US with 300,000 members. Operates the Hadassah Medical Center in Jerusalem , two hospitals treating over 1 million patients annually, including Jews, Arabs, and patients from across the Middle East. Known for the Chagall Windows in its Ein Kerem campus synagogue. Sponsors Young Judaea youth movement and advocates for medical research.');
+updDesc('hadassah-the-women-s-zionist-organization-of-america', 'Founded in 1912 by Henrietta Szold, Hadassah is the largest Jewish women\'s organization in the US with 300,000 members. Operates the Hadassah Medical Center in Jerusalem - two hospitals treating over 1 million patients annually, including Jews, Arabs, and patients from across the Middle East. Known for the Chagall Windows in its Ein Kerem campus synagogue. Sponsors Young Judaea youth movement and advocates for medical research.');
 addInd('hadassah-the-women-s-zionist-organization-of-america', { name: "Henrietta Szold", bio: "Founded Hadassah in 1912 and directed Youth Aliyah, rescuing thousands of Jewish children from Nazi Europe. Considered one of the most important women in Jewish and Zionist history." });
 
 // ============================================================
@@ -415,7 +415,7 @@ addConn('hias-hebrew-immigrant-aid-society', [
   { name: "Latin American refugee advocacy", type: "current operations", description: "HIAS now assists refugees of all backgrounds, with major programs in Latin America." },
   { name: "16 countries", type: "operations", description: "HIAS provides legal aid, resettlement, and protection in 16 countries." }
 ]);
-updDesc('hias-hebrew-immigrant-aid-society', 'Founded in 1881 to assist Jewish immigrants arriving in America. Helped resettle millions of Jews, including Holocaust survivors and Soviet Jews. Now serves refugees of all backgrounds , its motto changed from "Welcome the Stranger" to reflect universal mission. One of nine official US refugee resettlement agencies. Operates in 16 countries. In 2018, HIAS\'s office near the Tree of Life synagogue in Pittsburgh was cited by the gunman, leading to renewed attention.');
+updDesc('hias-hebrew-immigrant-aid-society', 'Founded in 1881 to assist Jewish immigrants arriving in America. Helped resettle millions of Jews, including Holocaust survivors and Soviet Jews. Now serves refugees of all backgrounds - its motto changed from "Welcome the Stranger" to reflect universal mission. One of nine official US refugee resettlement agencies. Operates in 16 countries. In 2018, HIAS\'s office near the Tree of Life synagogue in Pittsburgh was cited by the gunman, leading to renewed attention.');
 addInd('hias-hebrew-immigrant-aid-society', { name: "Mark Hetfield", bio: "President and CEO of HIAS since 2013. Transformed the organization from primarily serving Jewish refugees to helping refugees of all backgrounds worldwide." });
 
 // ============================================================
@@ -446,7 +446,7 @@ updDesc('ort-america', 'The US affiliate of World ORT, the largest Jewish educat
 addConn('american-friends-of-the-israel-defense-forces-fidf', [
   { name: "Israel Defense Forces", type: "beneficiary", description: "FIDF provides direct support to IDF soldiers and veterans." },
   { name: "IMPACT! scholarship program", type: "program", description: "Provides college scholarships to IDF veterans pursuing higher education." },
-  { name: "Lone Soldiers program", type: "support", description: "Supports lone soldiers , IDF soldiers without family in Israel." },
+  { name: "Lone Soldiers program", type: "support", description: "Supports lone soldiers - IDF soldiers without family in Israel." },
   { name: "Major US Jewish donors", type: "fundraising", description: "FIDF galas raise tens of millions, attracting Wall Street and entertainment industry leaders." },
   { name: "Haim Saban", type: "major supporter", description: "Media mogul Haim Saban has been a major FIDF supporter and fundraiser." }
 ]);
@@ -461,7 +461,7 @@ addConn('the-forward-newspaper', [
   { name: "Isaac Bashevis Singer", type: "notable contributor", description: "Nobel laureate Isaac Bashevis Singer published in the Yiddish Forverts." },
   { name: "Digital transformation", type: "modern era", description: "The Forward transitioned from print to digital-only in 2019." }
 ]);
-updDesc('the-forward-newspaper', 'Founded in 1897 as the Yiddish-language Forverts by Abraham Cahan. At its peak, had a circulation of 275,000 , the largest Yiddish newspaper in the world. Published Nobel laureate Isaac Bashevis Singer. The Forward Building on the Lower East Side was a Jewish landmark. Transitioned to English in the 1990s and went digital-only in 2019. Still publishes the annual Forward 50 list of influential American Jews.');
+updDesc('the-forward-newspaper', 'Founded in 1897 as the Yiddish-language Forverts by Abraham Cahan. At its peak, had a circulation of 275,000 - the largest Yiddish newspaper in the world. Published Nobel laureate Isaac Bashevis Singer. The Forward Building on the Lower East Side was a Jewish landmark. Transitioned to English in the 1990s and went digital-only in 2019. Still publishes the annual Forward 50 list of influential American Jews.');
 addInd('the-forward-newspaper', { name: "Abraham Cahan", bio: "Editor of the Jewish Daily Forward for nearly 50 years (1903-1951). Lithuanian-born immigrant who made the Forward the most important Yiddish newspaper in America, shaping immigrant Jewish culture." });
 
 // ============================================================
@@ -527,7 +527,7 @@ addConn('moment-magazine', [
   { name: "Leonard Fein", type: "co-founder", description: "Jewish public intellectual Leonard Fein co-founded Moment with Wiesel." },
   { name: "Jewish pluralism", type: "editorial mission", description: "Moment covers all streams of Judaism and the full spectrum of Jewish opinion." }
 ]);
-updDesc('moment-magazine', 'Co-founded in 1975 by Nobel laureate Elie Wiesel and Jewish intellectual Leonard Fein. Moment is an independent, non-affiliated Jewish magazine covering the full spectrum of Jewish life , from Orthodox to secular, left to right. Known for its "Big Questions" feature asking thinkers from different Jewish perspectives to weigh in on contemporary issues. Now published by Nadine Epstein.');
+updDesc('moment-magazine', 'Co-founded in 1975 by Nobel laureate Elie Wiesel and Jewish intellectual Leonard Fein. Moment is an independent, non-affiliated Jewish magazine covering the full spectrum of Jewish life - from Orthodox to secular, left to right. Known for its "Big Questions" feature asking thinkers from different Jewish perspectives to weigh in on contemporary issues. Now published by Nadine Epstein.');
 addInd('moment-magazine', { name: "Elie Wiesel", bio: "Holocaust survivor, Nobel Peace Prize laureate (1986), author of 'Night,' and co-founder of Moment Magazine. Called the 'messenger to mankind' by the Nobel Committee." });
 
 // ============================================================

@@ -65,13 +65,13 @@ addInd('swiss-federation-of-jewish-communities-sig-fsci', { name: "Ralph Lewin",
 addInd('world-health-organization-israeli-connections', { name: "Tedros Adhanom Ghebreyesus", bio: "Director-General of WHO. Israel has advanced medical collaborations with WHO through its health tech innovations.", role: "Director-General" });
 addInd('b-nai-b-rith-international-geneva-office', { name: "Daniel Mariaschin", bio: "CEO of B'nai B'rith International (Jewish), the oldest Jewish service organization (1843), with its UN office in Geneva.", role: "CEO" });
 addInd('bergier-commission-legacy', { name: "Jean-François Bergier", bio: "Swiss historian who chaired the Independent Commission of Experts (1996-2002) investigating Switzerland's WWII-era dealings with Nazi Germany and dormant Jewish accounts.", role: "Commission Chair" });
-addInd('international-committee-of-the-red-cross-jewish-relationship', { name: "Peter Maurer", bio: "Former president of the ICRC. The ICRC's controversial WWII role , failing to intervene for Jews , led to formal apologies and study.", role: "Former President" });
+addInd('international-committee-of-the-red-cross-jewish-relationship', { name: "Peter Maurer", bio: "Former president of the ICRC. The ICRC's controversial WWII role - failing to intervene for Jews - led to formal apologies and study.", role: "Former President" });
 
 // === ITALY (7) ===
 addInd('union-of-italian-jewish-communities-ucei', { name: "Noemi Di Segni", bio: "President of the Union of Italian Jewish Communities (UCEI) (Jewish), representing approximately 25,000 Italian Jews.", role: "President" });
 addInd('jewish-museum-of-rome', { name: "Alessandra Di Castro", bio: "Director of the Jewish Museum of Rome, documenting Europe's oldest continuous Jewish community (since 161 BCE).", role: "Director" });
 addInd('great-synagogue-of-rome', { name: "Riccardo Di Segni", bio: "Chief Rabbi of Rome (Jewish), spiritual leader at the Great Synagogue (Tempio Maggiore), built in 1904.", role: "Chief Rabbi" });
-addInd('venice-ghetto', { name: "Shaul Bassi", bio: "Scholar and director of the Venice Center for Humanities and Social Change (Jewish), who has studied the Venice Ghetto , the world's first Jewish ghetto (1516).", role: "Scholar" });
+addInd('venice-ghetto', { name: "Shaul Bassi", bio: "Scholar and director of the Venice Center for Humanities and Social Change (Jewish), who has studied the Venice Ghetto - the world's first Jewish ghetto (1516).", role: "Scholar" });
 addInd('synagogue-of-florence-tempio-maggiore', { name: "Joseph Levi", bio: "Rabbi of the Jewish community of Florence (Jewish), overseeing the Moorish Revival-style Tempio Maggiore (1882).", role: "Rabbi" });
 addInd('jewish-museum-of-bologna', { name: "Vincenza Maugeri", bio: "Director of the Jewish Museum of Bologna, documenting Jewish life in the Emilia-Romagna region since medieval times.", role: "Director" });
 addInd('community-of-sant-egidio-jewish-dialogue', { name: "Marco Impagliazzo", bio: "President of the Community of Sant'Egidio, which has led Catholic-Jewish interfaith dialogue since 1986.", role: "President" });
@@ -131,7 +131,7 @@ addInd('central-council-of-jewish-communities-in-finland', { name: "Yaron Nadbor
 addInd('central-board-of-jewish-communities-in-greece', { name: "David Saltiel", bio: "President of the Central Board of Jewish Communities in Greece (Jewish), representing approximately 5,000 Greek Jews.", role: "President" });
 addInd('jewish-museum-of-greece', { name: "Zanet Battinou", bio: "Director of the Jewish Museum of Greece in Athens, documenting 2,300 years of Greek Jewish (Romaniote) history.", role: "Director" });
 addInd('jewish-museum-of-thessaloniki', { name: "Erika Perahia-Zemour", bio: "Director of the Jewish Museum of Thessaloniki (Jewish), documenting the city once known as 'Mother of Israel' for its vast Jewish population.", role: "Director" });
-addInd('holocaust-memorial-of-thessaloniki', { name: "Yitzchak Kerem", bio: "Scholar of Greek Jewish history. The memorial honors 50,000 Thessaloniki Jews deported to Auschwitz in 1943 , 96% of the community.", role: "Scholar" });
+addInd('holocaust-memorial-of-thessaloniki', { name: "Yitzchak Kerem", bio: "Scholar of Greek Jewish history. The memorial honors 50,000 Thessaloniki Jews deported to Auschwitz in 1943 - 96% of the community.", role: "Scholar" });
 addInd('romaniote-jewish-community', { name: "Marcia Haddad Ikonomopoulos", bio: "Founder of Kehila Kedosha Janina (Jewish), the only Romaniote synagogue in the Western Hemisphere, in New York.", role: "Community Preservationist" });
 
 // === PORTUGAL (3) ===
@@ -220,7 +220,7 @@ addInd('house-of-israel-ghana', { name: "Aaron Ahomtre Toakyirafa", bio: "Spirit
 
 // Egypt, Syria, Iraq, Yemen, Libya, Lebanon, Myanmar
 addInd('egyptian-jewish-community-historic', { name: "Magda Haroun", bio: "President of the Egyptian Jewish Community (Jewish), managing affairs for the fewer than 10 remaining Jews in Egypt.", role: "Community President" });
-addInd('ben-ezra-synagogue-cairo', { name: "Solomon Schechter", bio: "Rabbinical scholar (Jewish, Romanian-born) who discovered and removed the Cairo Geniza , 400,000 manuscript fragments , from Ben Ezra Synagogue in 1896.", role: "Geniza Discoverer" });
+addInd('ben-ezra-synagogue-cairo', { name: "Solomon Schechter", bio: "Rabbinical scholar (Jewish, Romanian-born) who discovered and removed the Cairo Geniza - 400,000 manuscript fragments - from Ben Ezra Synagogue in 1896.", role: "Geniza Discoverer" });
 addInd('syrian-jewish-heritage-aleppo-damascus', { name: "Jack Saul", bio: "Representative of the Syrian Jewish community in Brooklyn (Jewish), which has grown to over 60,000 and preserves Syrian traditions.", role: "Diaspora Leader" });
 addInd('iraqi-jewish-community-historic', { name: "Naim Dangoor", bio: "Sir Naim Dangoor (1914-2015, Jewish), Iraqi-born British businessman and philanthropist who preserved Iraqi Jewish heritage.", role: "Heritage Preservationist" });
 addInd('babylonian-jewry-heritage-center-israel', { name: "Mordechai Ben-Porat", bio: "Israeli politician (Jewish, Iraqi-born) who was involved in organizing the mass immigration of Iraqi Jews to Israel.", role: "Historical Figure" });

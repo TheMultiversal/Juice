@@ -9,9 +9,8 @@
   <title>Network Graph</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; overflow: hidden; }
-    nav { padding: 10px 20px; }
-nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    nav ul { list-style: none; margin: 0; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center; align-items: center; }
+    nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
     nav ul li { margin: 0; white-space: nowrap; }
     nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
@@ -62,7 +61,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
     initPage('jewish');
-    setSEO({ title: 'Network Graph , Juice Project', description: 'Interactive network visualization showing connections between religious organizations.' });
+    setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization showing connections between religious organizations.' });
 
     const categoryColors = {
       'Entertainment & Media': '#e74c3c',
@@ -116,7 +115,18 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     };
     const defaultEdgeColor = '#aab';
 
-    // Populate country/category dropdowns
+    // Populate dropdowns then load graph
+    let categoriesReady = false, countriesReady = false;
+
+    function tryLoadGraph() {
+      if (categoriesReady && countriesReady) {
+        // Default to a category so graph isn't empty
+        const catSel = document.getElementById('category-select');
+        if (catSel.querySelector('option[value="Technology"]')) catSel.value = 'Technology';
+        loadGraph();
+      }
+    }
+
     fetch('/api/jewish/categories').then(r => r.json()).then(data => {
       const catSel = document.getElementById('category-select');
       Object.keys(data.categories).sort().forEach(c => {
@@ -124,6 +134,8 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         o.value = c; o.textContent = c + ' (' + data.categories[c].count + ')';
         catSel.appendChild(o);
       });
+      categoriesReady = true;
+      tryLoadGraph();
     });
     fetch('/api/countries').then(r => r.json()).then(data => {
       const countrySel = document.getElementById('country-select');
@@ -133,6 +145,8 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
         o.value = c; o.textContent = c;
         countrySel.appendChild(o);
       });
+      countriesReady = true;
+      tryLoadGraph();
     });
 
     let simulation, svgG, zoom;
@@ -285,13 +299,6 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     document.getElementById('node-size').addEventListener('input', function() {
       d3.selectAll('circle').attr('r', +this.value);
     });
-
-    // Load with default category to avoid loading everything
-    setTimeout(() => {
-      const catSel = document.getElementById('category-select');
-      if (catSel.querySelector('option[value="Technology"]')) catSel.value = 'Technology';
-      loadGraph();
-    }, 500);
   </script>
 </body>
 </html>

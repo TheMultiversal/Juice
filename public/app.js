@@ -314,7 +314,7 @@ function initPage(religion, callback) {
 // ===== SEO & OPEN GRAPH =====
 function setSEO(opts = {}) {
   const defaults = {
-    title: 'Juice Project , Religious Organizations Database',
+    title: 'Juice Project - Religious Organizations Database',
     description: 'Comprehensive database cataloging 800+ religious organizations across 86 countries, with people, connections, and analytics.',
     type: 'website',
     url: window.location.href

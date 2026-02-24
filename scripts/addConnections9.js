@@ -212,7 +212,7 @@ addConn('tottenham-hotspur-f-c', [
   { name: "Jewish community of North London", type: "fan base", description: "Historically associated with the Jewish community of North London due to the areas surrounding White Hart Lane." },
   { name: "ENIC Group / Joe Lewis", type: "ownership", description: "Owned by ENIC Group controlled by Joe Lewis (British billionaire) and Daniel Levy (Jewish) as chairman." },
   { name: "Daniel Levy", type: "chairman", description: "Daniel Levy (Jewish) has been chairman since 2001, overseeing the new stadium build." },
-  { name: "'Yid' identity", type: "cultural phenomenon", description: "Spurs fans call themselves 'Yid Army' , a reclamation of an antisemitic slur that remains controversial." }
+  { name: "'Yid' identity", type: "cultural phenomenon", description: "Spurs fans call themselves 'Yid Army' - a reclamation of an antisemitic slur that remains controversial." }
 ]);
 updDesc('tottenham-hotspur-f-c', 'Tottenham Hotspur has deep connections to North London\'s Jewish community, with the area around White Hart Lane historically home to many Jewish families. Chairman Daniel Levy (Jewish) has led the club since 2001 and oversaw the £1 billion new stadium. Fans controversially call themselves the "Yid Army." The club has actively campaigned against antisemitism while acknowledging its Jewish cultural connections.');
 
@@ -381,7 +381,7 @@ addConn('ose-uvre-de-secours-aux-enfants', [
   { name: "French Jewish social services", type: "current role", description: "Today provides health, social, and educational services to vulnerable populations in France." },
   { name: "Vichy France resistance", type: "wartime activity", description: "Members of OSE risked their lives operating an underground network to rescue Jewish children." }
 ]);
-updDesc('ose-uvre-de-secours-aux-enfants', 'OSE (Œuvre de Secours aux Enfants , Children\'s Rescue Organization) was founded in Russia in 1912 and established in France in 1933. During the Holocaust, OSE ran a clandestine network that saved thousands of Jewish children by hiding them with non-Jewish families and smuggling them to Switzerland. Today OSE provides health, social, and educational services to vulnerable populations in France, continuing its mission of protecting children.');
+updDesc('ose-uvre-de-secours-aux-enfants', 'OSE (Œuvre de Secours aux Enfants - Children\'s Rescue Organization) was founded in Russia in 1912 and established in France in 1933. During the Holocaust, OSE ran a clandestine network that saved thousands of Jewish children by hiding them with non-Jewish families and smuggling them to Switzerland. Today OSE provides health, social, and educational services to vulnerable populations in France, continuing its mission of protecting children.');
 
 addConn('uejf-union-of-jewish-students-of-france', [
   { name: "French universities", type: "campus presence", description: "Active on university campuses across France." },
@@ -411,7 +411,7 @@ addConn('fonds-social-juif-unifi-fsju', [
   { name: "United Jewish Appeal (Appel Unifié Juif de France)", type: "fundraising", description: "Raises funds through the annual Appel Unifié Juif de France campaign." },
   { name: "Cultural programming", type: "activities", description: "Supports Jewish cultural events, community centers, and social programs." }
 ]);
-updDesc('fonds-social-juif-unifi-fsju', 'The FSJU (Fonds Social Juif Unifié , United Jewish Social Fund) is the central philanthropic and social services organization of French Jewry. Founded in 1950, it funds Jewish education (day schools, summer camps), social welfare, cultural programs, and community centers across France. Raises funds through the annual Appel Unifié Juif de France campaign. Supports over 200 Jewish organizations in France.');
+updDesc('fonds-social-juif-unifi-fsju', 'The FSJU (Fonds Social Juif Unifié - United Jewish Social Fund) is the central philanthropic and social services organization of French Jewry. Founded in 1950, it funds Jewish education (day schools, summer camps), social welfare, cultural programs, and community centers across France. Raises funds through the annual Appel Unifié Juif de France campaign. Supports over 200 Jewish organizations in France.');
 
 addConn('synagogue-de-la-victoire-paris', [
   { name: "Consistoire de Paris", type: "administration", description: "Administered by the Consistoire de Paris, the official Jewish religious body." },
@@ -440,7 +440,7 @@ addConn('keren-hayesod-france', [
   { name: "State of Israel", type: "beneficiary", description: "Raises funds for immigration, absorption, and social programs in Israel." },
   { name: "French Jewish community", type: "donor base", description: "Mobilizes French Jewish donors to support Israel." }
 ]);
-updDesc('keren-hayesod-france', 'Keren Hayesod France is the French branch of Keren Hayesod , United Israel Appeal, the official fundraising organization for the State of Israel established in 1920 at the London Zionist Conference. Raises funds from the French Jewish community for immigration and absorption of new immigrants, social services, and development projects in Israel. One of the major Zionist fundraising organizations active in France.');
+updDesc('keren-hayesod-france', 'Keren Hayesod France is the French branch of Keren Hayesod - United Israel Appeal, the official fundraising organization for the State of Israel established in 1920 at the London Zionist Conference. Raises funds from the French Jewish community for immigration and absorption of new immigrants, social services, and development projects in Israel. One of the major Zionist fundraising organizations active in France.');
 
 addConn('dassault-group', [
   { name: "Marcel Dassault (Marcel Bloch)", type: "founder", description: "Founded by Marcel Bloch (Jewish), who changed his name to Marcel Dassault. Holocaust survivor of Buchenwald." },
@@ -488,7 +488,7 @@ addConn('centre-for-israel-and-jewish-affairs-cija', [
   { name: "Canada-Israel relations", type: "core focus", description: "Promotes strong Canada-Israel bilateral relations." },
   { name: "Antisemitism advocacy", type: "mission", description: "Combats antisemitism through legal advocacy and public education." }
 ]);
-updDesc('centre-for-israel-and-jewish-affairs-cija', 'CIJA (Centre for Israel and Jewish Affairs) is the advocacy agent of the Jewish Federations of Canada , UIA. It represents the Canadian Jewish community (approximately 400,000 people) in dealings with the federal government and advocates for strong Canada-Israel relations, combating antisemitism, and protecting civil rights. Engages with Parliament, the judiciary, and media on issues affecting Canadian Jewry.');
+updDesc('centre-for-israel-and-jewish-affairs-cija', 'CIJA (Centre for Israel and Jewish Affairs) is the advocacy agent of the Jewish Federations of Canada - UIA. It represents the Canadian Jewish community (approximately 400,000 people) in dealings with the federal government and advocates for strong Canada-Israel relations, combating antisemitism, and protecting civil rights. Engages with Parliament, the judiciary, and media on issues affecting Canadian Jewry.');
 addInd('centre-for-israel-and-jewish-affairs-cija', { name: "Shimon Koffler Fogel", bio: "Shimon Koffler Fogel (Jewish), CEO of CIJA, has led the organization's advocacy efforts on behalf of the Canadian Jewish community, engaging with government and media." });
 
 addConn('b-nai-brith-canada', [
@@ -505,7 +505,7 @@ addConn('jewish-federations-of-canada-uia', [
   { name: "United Israel Appeal", type: "Israel connection", description: "Raises funds for Israel through the United Israel Appeal." },
   { name: "Canadian Jewish communities", type: "constituent federations", description: "Umbrella for Jewish federations in Toronto, Montreal, Vancouver, Ottawa, and other cities." }
 ]);
-updDesc('jewish-federations-of-canada-uia', 'Jewish Federations of Canada , UIA is the national umbrella organization for Jewish federations across Canada, representing approximately 400,000 Canadian Jews. Coordinates communal fundraising, allocations to Jewish agencies in Canada and Israel, and national policy. Its constituent federations in Toronto, Montreal, Vancouver, Ottawa, and other cities fund hundreds of Jewish organizations. CIJA serves as its government advocacy arm.');
+updDesc('jewish-federations-of-canada-uia', 'Jewish Federations of Canada - UIA is the national umbrella organization for Jewish federations across Canada, representing approximately 400,000 Canadian Jews. Coordinates communal fundraising, allocations to Jewish agencies in Canada and Israel, and national policy. Its constituent federations in Toronto, Montreal, Vancouver, Ottawa, and other cities fund hundreds of Jewish organizations. CIJA serves as its government advocacy arm.');
 
 addConn('friends-of-simon-wiesenthal-center-canada', [
   { name: "Simon Wiesenthal Center", type: "affiliate", description: "Canadian affiliate of the Simon Wiesenthal Center based in Los Angeles." },
@@ -525,15 +525,15 @@ updDesc('canadian-jewish-news', 'The Canadian Jewish News (CJN) is Canada\'s pri
 
 addConn('uja-federation-of-greater-toronto', [
   { name: "Jewish community of Toronto", type: "constituency", description: "Serves Toronto's Jewish community, the largest in Canada (~200,000)." },
-  { name: "Jewish Federations of Canada", type: "national umbrella", description: "Member of the Jewish Federations of Canada , UIA." },
+  { name: "Jewish Federations of Canada", type: "national umbrella", description: "Member of the Jewish Federations of Canada - UIA." },
   { name: "Annual campaign", type: "fundraising", description: "Raises tens of millions annually for Jewish agencies and Israel programs." },
   { name: "Mount Sinai Hospital", type: "beneficiary", description: "Historically connected to Mount Sinai Hospital and other Jewish institutions in Toronto." }
 ]);
-updDesc('uja-federation-of-greater-toronto', 'UJA Federation of Greater Toronto is the central philanthropic and planning organization of Toronto\'s Jewish community, the largest in Canada (~200,000). Raises tens of millions annually to fund Jewish education, social services, community building, and Israel programs. Supports over 100 beneficiary agencies. Part of the Jewish Federations of Canada , UIA network.');
+updDesc('uja-federation-of-greater-toronto', 'UJA Federation of Greater Toronto is the central philanthropic and planning organization of Toronto\'s Jewish community, the largest in Canada (~200,000). Raises tens of millions annually to fund Jewish education, social services, community building, and Israel programs. Supports over 100 beneficiary agencies. Part of the Jewish Federations of Canada - UIA network.');
 
 addConn('federation-cja-montreal', [
   { name: "Montreal Jewish community", type: "constituency", description: "Serves Montreal's Jewish community (~90,000), the second-largest in Canada." },
-  { name: "Jewish Federations of Canada", type: "national umbrella", description: "Member of the Jewish Federations of Canada , UIA." },
+  { name: "Jewish Federations of Canada", type: "national umbrella", description: "Member of the Jewish Federations of Canada - UIA." },
   { name: "Sephardi community", type: "community segment", description: "Montreal has a large Sephardi Jewish population, especially from North Africa." },
   { name: "Jewish General Hospital", type: "beneficiary", description: "Connected to the Jewish General Hospital, a major Montreal healthcare institution." }
 ]);

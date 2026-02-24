@@ -505,7 +505,7 @@ addConn('dc-comics-legacy', [
   { name: "Jack Liebowitz", type: "executive", description: "Jack Liebowitz (Jewish) built DC Comics into a major publisher." },
   { name: "Warner Bros.", type: "owner", description: "DC Comics is owned by Warner Bros. Discovery." }
 ]);
-updDesc('dc-comics-legacy', 'Superman was created by Jerry Siegel (Jewish) and Joe Shuster (Jewish, Canadian) in 1938 , the first modern superhero. Batman was created by Bob Kane (Jewish, born Robert Kahn) and Bill Finger (Jewish) in 1939. Jack Liebowitz (Jewish) built DC into a publishing empire. Now owned by Warner Bros. Discovery. Jewish creators essentially invented the American superhero genre.');
+updDesc('dc-comics-legacy', 'Superman was created by Jerry Siegel (Jewish) and Joe Shuster (Jewish, Canadian) in 1938 - the first modern superhero. Batman was created by Bob Kane (Jewish, born Robert Kahn) and Bill Finger (Jewish) in 1939. Jack Liebowitz (Jewish) built DC into a publishing empire. Now owned by Warner Bros. Discovery. Jewish creators essentially invented the American superhero genre.');
 
 // ============================================================
 // US - SPORTS
@@ -731,7 +731,7 @@ addConn('h-agen-dazs', [
   { name: "Reuben Mattus", type: "founder", description: "Reuben Mattus (Jewish, Polish immigrant) founded Häagen-Dazs in the Bronx in 1960." },
   { name: "Rose Mattus", type: "co-founder", description: "Rose Mattus (Jewish) co-founded the brand with her husband." },
   { name: "General Mills", type: "owner", description: "Häagen-Dazs is now owned by General Mills." },
-  { name: "Danish-sounding name", type: "marketing", description: "The name 'Häagen-Dazs' was invented and has no meaning in any language , it was designed to sound European and exotic." }
+  { name: "Danish-sounding name", type: "marketing", description: "The name 'Häagen-Dazs' was invented and has no meaning in any language - it was designed to sound European and exotic." }
 ]);
 
 addConn('snapple', [

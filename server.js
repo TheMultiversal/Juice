@@ -236,8 +236,28 @@ app.get('/api/graph', (req, res) => {
     const result = getCached(cacheKey, 30000, () => {
       delete require.cache[require.resolve('./data/jewish.json')];
       const jd = require('./data/jewish.json');
-      const nodes = [], links = [], nodeSet = new Set(), entryIdMap = {};
-      for (const c in jd.countries) { for (const entry of jd.countries[c]) { entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type }; } }
+      const nodes = [], links = [], nodeSet = new Set();
+      // Build fast lookup maps: id->info and lowercased name->id
+      const entryIdMap = {}, nameToId = {};
+      for (const c in jd.countries) {
+        for (const entry of jd.countries[c]) {
+          entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type };
+          nameToId[entry.name.toLowerCase()] = entry.id;
+        }
+      }
+      // Build individual-to-entries map for shared-person links
+      const indToEntries = {};
+      for (const c in jd.countries) {
+        for (const entry of jd.countries[c]) {
+          if (entry.individuals) {
+            for (const ind of entry.individuals) {
+              if (!indToEntries[ind.id]) indToEntries[ind.id] = [];
+              indToEntries[ind.id].push({ entryId: entry.id, country: c, category: entry.category });
+            }
+          }
+        }
+      }
+      const linkSet = new Set();
       for (const c in jd.countries) {
         if (country && c !== country) continue;
         for (const entry of jd.countries[c]) {
@@ -245,34 +265,44 @@ app.get('/api/graph', (req, res) => {
           if (!nodeSet.has(entry.id)) { nodeSet.add(entry.id); nodes.push({ id: entry.id, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other' }); }
           if (entry.connections) {
             for (const conn of entry.connections) {
-              for (const eid in entryIdMap) {
-                const eInfo = entryIdMap[eid];
-                if (conn.name.toLowerCase() === eInfo.name.toLowerCase() || eid === conn.entryId) {
-                  if (country && eInfo.country !== country && c !== country) continue;
-                  if (!nodeSet.has(eid)) { nodeSet.add(eid); nodes.push({ id: eid, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other' }); }
-                  links.push({ source: entry.id, target: eid, type: conn.type || 'related', description: conn.description || '' });
-                }
-              }
+              // Use direct ID or name lookup instead of scanning all entries
+              const targetId = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
+              if (!targetId || !entryIdMap[targetId]) continue;
+              const eInfo = entryIdMap[targetId];
+              if (country && eInfo.country !== country && c !== country) continue;
+              if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other' }); }
+              const lk = entry.id < targetId ? entry.id + '|' + targetId : targetId + '|' + entry.id;
+              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: conn.type || 'related', description: conn.description || '' }); }
             }
           }
+          // Shared individuals - use prebuilt map
           if (entry.individuals) {
             for (const ind of entry.individuals) {
-              for (const c2 in jd.countries) {
-                for (const e2 of jd.countries[c2]) {
-                  if (e2.id === entry.id) continue;
-                  if (e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
-                    if (category && e2.category !== category) continue;
-                    if (!nodeSet.has(e2.id)) { nodeSet.add(e2.id); nodes.push({ id: e2.id, name: e2.name, country: c2, category: e2.category || '', type: e2.type, group: e2.category || 'other' }); }
-                    const linkKey = [entry.id, e2.id].sort().join('|');
-                    if (!links.find(l => [l.source, l.target].sort().join('|') === linkKey)) { links.push({ source: entry.id, target: e2.id, type: 'shared-person', description: 'Shared: ' + ind.name }); }
-                  }
+              const shared = indToEntries[ind.id];
+              if (!shared) continue;
+              for (const s of shared) {
+                if (s.entryId === entry.id) continue;
+                if (category && s.category !== category) continue;
+                const lk = entry.id < s.entryId ? entry.id + '|' + s.entryId : s.entryId + '|' + entry.id;
+                if (linkSet.has(lk)) continue;
+                linkSet.add(lk);
+                if (!nodeSet.has(s.entryId)) {
+                  const ei = entryIdMap[s.entryId];
+                  nodeSet.add(s.entryId);
+                  nodes.push({ id: s.entryId, name: ei.name, country: s.country, category: ei.category || '', type: ei.type, group: ei.category || 'other' });
                 }
+                links.push({ source: entry.id, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name });
               }
             }
           }
+          // Early exit if we already hit limits
+          if (nodes.length >= 500) break;
         }
+        if (nodes.length >= 500) break;
       }
-      return { nodes: nodes.slice(0, 500), links: links.slice(0, 2000) };
+      // Only include links where both endpoints are in the node set
+      const finalLinks = links.filter(l => nodeSet.has(l.source) && nodeSet.has(l.target));
+      return { nodes: nodes.slice(0, 500), links: finalLinks.slice(0, 2000) };
     });
     res.json(result);
   } catch (err) { res.status(500).json({ error: 'Server error' }); }
@@ -577,7 +607,7 @@ app.get('/api/:religion/entry/:id', (req, res) => {
 
 app.listen(port, () => {
   console.log(`\n  ╔══════════════════════════════════════╗`);
-  console.log(`  ║   Juice v4.2 , Est. 2016             ║`);
+  console.log(`  ║   Juice v4.2 - Est. 2016             ║`);
   console.log(`  ║   Server running on port ${port}        ║`);
   console.log(`  ║   http://localhost:${port}              ║`);
   console.log(`  ╚══════════════════════════════════════╝\n`);

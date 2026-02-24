@@ -45,7 +45,7 @@ addConn('the-blackstone-group', [
   { name: "Hilton Hotels", type: "landmark deal", description: "Blackstone's $26 billion acquisition of Hilton Hotels in 2007 became the most profitable private equity deal ever." },
   { name: "Trump administration relationship", type: "political", description: "Schwarzman served as chairman of President Trump's Strategic and Policy Forum." }
 ]);
-updDesc('the-blackstone-group', 'World\'s largest alternative asset manager with over $1 trillion in assets under management. Co-founded in 1985 by Stephen Schwarzman (Jewish) and Pete Peterson. President Jonathan Gray (Jewish) built the world\'s largest real estate investment platform. The $26 billion Hilton Hotels acquisition in 2007 generated $14 billion in profit , the most profitable PE deal in history. Schwarzman is a major philanthropist supporting education, including a $350 million gift to MIT.');
+updDesc('the-blackstone-group', 'World\'s largest alternative asset manager with over $1 trillion in assets under management. Co-founded in 1985 by Stephen Schwarzman (Jewish) and Pete Peterson. President Jonathan Gray (Jewish) built the world\'s largest real estate investment platform. The $26 billion Hilton Hotels acquisition in 2007 generated $14 billion in profit - the most profitable PE deal in history. Schwarzman is a major philanthropist supporting education, including a $350 million gift to MIT.');
 
 // ============================================================
 // JAPAN
@@ -57,7 +57,7 @@ addConn('jewish-community-of-japan', [
   { name: "Israeli embassy", type: "diplomatic", description: "Works closely with the Israeli embassy in Tokyo on community affairs." },
   { name: "Fugu Plan", type: "historical", description: "During WWII, some Japanese officials proposed the 'Fugu Plan' to settle Jewish refugees in Manchuria." }
 ]);
-updDesc('jewish-community-of-japan', 'Small but active Jewish community in Japan numbering approximately 1,000-2,000 people, centered in Tokyo with smaller groups in Osaka and Kobe. The Tokyo Jewish Community Center serves as the hub. During WWII, Japan had a complex relationship with Jews , the "Fugu Plan" proposed settling Jewish refugees in Manchuria, and diplomats like Chiune Sugihara saved thousands. Today the community includes Israeli expats, American residents, and businesspeople.');
+updDesc('jewish-community-of-japan', 'Small but active Jewish community in Japan numbering approximately 1,000-2,000 people, centered in Tokyo with smaller groups in Osaka and Kobe. The Tokyo Jewish Community Center serves as the hub. During WWII, Japan had a complex relationship with Jews - the "Fugu Plan" proposed settling Jewish refugees in Manchuria, and diplomats like Chiune Sugihara saved thousands. Today the community includes Israeli expats, American residents, and businesspeople.');
 
 addConn('sugihara-museum-yaotsu', [
   { name: "Chiune Sugihara", type: "honoree", description: "Commemorates Japanese diplomat Chiune Sugihara who saved 6,000+ Jews by issuing transit visas in Lithuania in 1940." },
@@ -65,14 +65,14 @@ addConn('sugihara-museum-yaotsu', [
   { name: "Lithuanian consul", type: "historical role", description: "As Japanese vice-consul in Kaunas, Lithuania, Sugihara issued visas against government orders." },
   { name: "Mir Yeshiva", type: "saved community", description: "Among those saved was the entire Mir Yeshiva, the only European yeshiva to survive the Holocaust intact." }
 ]);
-updDesc('sugihara-museum-yaotsu', 'Museum in Yaotsu, Gifu Prefecture, honoring Chiune Sugihara , the Japanese diplomat who saved over 6,000 Jews by issuing transit visas in Kaunas, Lithuania in 1940, defying government orders. Among those saved was the entire Mir Yeshiva , the only European yeshiva that survived the Holocaust intact. Recognized as Righteous Among the Nations by Yad Vashem in 1985. Called the "Japanese Schindler," Sugihara was largely forgotten in Japan until decades after WWII.');
+updDesc('sugihara-museum-yaotsu', 'Museum in Yaotsu, Gifu Prefecture, honoring Chiune Sugihara - the Japanese diplomat who saved over 6,000 Jews by issuing transit visas in Kaunas, Lithuania in 1940, defying government orders. Among those saved was the entire Mir Yeshiva - the only European yeshiva that survived the Holocaust intact. Recognized as Righteous Among the Nations by Yad Vashem in 1985. Called the "Japanese Schindler," Sugihara was largely forgotten in Japan until decades after WWII.');
 
 addConn('kobe-jewish-community', [
   { name: "WWII transit point", type: "historical", description: "Kobe was a key transit point for Jewish refugees fleeing Europe via Japan in 1940-1941." },
   { name: "Sugihara refugees", type: "connection", description: "Many Jews saved by Sugihara passed through Kobe before continuing to Shanghai or the Americas." },
   { name: "Ohel Shelomo Synagogue", type: "historic site", description: "The former Ohel Shelomo Synagogue served the community until 1970." }
 ]);
-updDesc('kobe-jewish-community', 'Historic Jewish community in Kobe, Japan, significant as a transit point for Jewish refugees during WWII. In 1940-1941, approximately 4,500 Jewish refugees , many carrying Sugihara visas , passed through Kobe before continuing to Shanghai or the Americas. The local community and the Jewcom (Jewish Committee) of Kobe provided crucial assistance. The Ohel Shelomo Synagogue served the community from 1912 to 1970.');
+updDesc('kobe-jewish-community', 'Historic Jewish community in Kobe, Japan, significant as a transit point for Jewish refugees during WWII. In 1940-1941, approximately 4,500 Jewish refugees - many carrying Sugihara visas - passed through Kobe before continuing to Shanghai or the Americas. The local community and the Jewcom (Jewish Committee) of Kobe provided crucial assistance. The Ohel Shelomo Synagogue served the community from 1912 to 1970.');
 
 // ============================================================
 // CHINA
@@ -84,7 +84,7 @@ addConn('shanghai-jewish-refugees-museum', [
   { name: "Japanese occupation", type: "historical context", description: "Under Japanese occupation, Jews were confined to the Restricted Sector for Stateless Refugees." },
   { name: "Chinese-Israeli relations", type: "diplomatic", description: "The museum has become a symbol of Chinese-Jewish friendship and Chinese-Israeli diplomacy." }
 ]);
-updDesc('shanghai-jewish-refugees-museum', 'Located in the former Ohel Moishe Synagogue in Shanghai\'s Hongkou district. Documents the story of approximately 20,000 Jewish refugees who found haven in Shanghai during WWII , one of the few places in the world accepting Jews without visas. Despite Japanese restrictions confining Jews to the "Restricted Sector" from 1943, the Shanghai Jewish community survived the war. The museum is a powerful symbol of Chinese-Jewish friendship and has been expanded and renovated by the Chinese government.');
+updDesc('shanghai-jewish-refugees-museum', 'Located in the former Ohel Moishe Synagogue in Shanghai\'s Hongkou district. Documents the story of approximately 20,000 Jewish refugees who found haven in Shanghai during WWII - one of the few places in the world accepting Jews without visas. Despite Japanese restrictions confining Jews to the "Restricted Sector" from 1943, the Shanghai Jewish community survived the war. The museum is a powerful symbol of Chinese-Jewish friendship and has been expanded and renovated by the Chinese government.');
 
 addConn('kaifeng-jewish-community', [
   { name: "Ancient Silk Road", type: "origin", description: "Jews arrived in Kaifeng via the Silk Road as early as the 7th century CE." },
@@ -100,7 +100,7 @@ addConn('sassoon-house-shanghai', [
   { name: "The Bund", type: "location", description: "Located on Shanghai's famous Bund waterfront; now the Fairmont Peace Hotel." },
   { name: "Cathay Hotel", type: "historical name", description: "Originally known as the Cathay Hotel, it was the most luxurious hotel in Asia." }
 ]);
-updDesc('sassoon-house-shanghai', 'Art Deco landmark on Shanghai\'s famous Bund waterfront, built in 1929 by Sir Victor Sassoon (Jewish, of Baghdadi origin). Originally the Cathay Hotel , the most luxurious hotel in Asia , it is now the Fairmont Peace Hotel. The Sassoon family, known as "the Rothschilds of the East," built a vast business empire spanning from Baghdad to Bombay to Shanghai. Victor Sassoon also helped refugee Jews during WWII, providing housing in properties he owned.');
+updDesc('sassoon-house-shanghai', 'Art Deco landmark on Shanghai\'s famous Bund waterfront, built in 1929 by Sir Victor Sassoon (Jewish, of Baghdadi origin). Originally the Cathay Hotel - the most luxurious hotel in Asia - it is now the Fairmont Peace Hotel. The Sassoon family, known as "the Rothschilds of the East," built a vast business empire spanning from Baghdad to Bombay to Shanghai. Victor Sassoon also helped refugee Jews during WWII, providing housing in properties he owned.');
 
 addConn('ohel-rachel-synagogue-shanghai', [
   { name: "Jacob Elias Sassoon", type: "builder", description: "Built in 1920 by Jacob Elias Sassoon (Jewish, Baghdadi) and named after his wife Rachel." },
@@ -121,7 +121,7 @@ addConn('tehran-jewish-committee', [
   { name: "Esther and Mordechai tomb", type: "heritage site", description: "The Tomb of Esther and Mordechai in Hamadan is one of Iran's most important Jewish heritage sites." },
   { name: "Post-revolution decline", type: "demographics", description: "From 80,000 Jews before the 1979 revolution, the community has declined to approximately 8,000-10,000." }
 ]);
-updDesc('tehran-jewish-committee', 'Represents Iran\'s Jewish community , one of the oldest in the world, dating back over 2,700 years to the Babylonian exile. Iran\'s constitution guarantees Jews one seat in the Majlis (parliament). The community maintains synagogues, schools, and a hospital in Tehran. From approximately 80,000 before the 1979 Islamic Revolution, the community has declined to 8,000-10,000 , still the largest Jewish population in the Middle East outside Israel. The Tomb of Esther and Mordechai in Hamadan is a major heritage site.');
+updDesc('tehran-jewish-committee', 'Represents Iran\'s Jewish community - one of the oldest in the world, dating back over 2,700 years to the Babylonian exile. Iran\'s constitution guarantees Jews one seat in the Majlis (parliament). The community maintains synagogues, schools, and a hospital in Tehran. From approximately 80,000 before the 1979 Islamic Revolution, the community has declined to 8,000-10,000 - still the largest Jewish population in the Middle East outside Israel. The Tomb of Esther and Mordechai in Hamadan is a major heritage site.');
 
 addConn('egyptian-jewish-community-historic', [
   { name: "Ancient Alexandria", type: "historical", description: "Jewish community in Egypt dates to the 3rd century BCE; Alexandria was a center of Hellenistic Jewish culture." },
@@ -129,15 +129,15 @@ addConn('egyptian-jewish-community-historic', [
   { name: "1956 Suez Crisis expulsion", type: "historical event", description: "Most Egyptian Jews were expelled or fled after the 1956 Suez Crisis and subsequent nationalizations." },
   { name: "Maimonides in Cairo", type: "heritage", description: "Moses Maimonides (1138-1204), the greatest medieval Jewish philosopher, spent most of his life in Cairo." }
 ]);
-updDesc('egyptian-jewish-community-historic', 'One of the oldest Jewish communities in the world, dating to the 3rd century BCE. Alexandria was a center of Hellenistic Jewish culture , home to philosopher Philo of Alexandria and the famous Septuagint translation. Moses Maimonides (1138-1204), the greatest medieval Jewish philosopher, lived and worked in Cairo. At its peak in the 1940s, approximately 80,000 Jews lived in Egypt. Most were expelled or fled after 1948 and especially after the 1956 Suez Crisis. Fewer than 10 Jews remain today.');
+updDesc('egyptian-jewish-community-historic', 'One of the oldest Jewish communities in the world, dating to the 3rd century BCE. Alexandria was a center of Hellenistic Jewish culture - home to philosopher Philo of Alexandria and the famous Septuagint translation. Moses Maimonides (1138-1204), the greatest medieval Jewish philosopher, lived and worked in Cairo. At its peak in the 1940s, approximately 80,000 Jews lived in Egypt. Most were expelled or fled after 1948 and especially after the 1956 Suez Crisis. Fewer than 10 Jews remain today.');
 
 addConn('ben-ezra-synagogue-cairo', [
-  { name: "Cairo Geniza", type: "landmark discovery", description: "The Cairo Geniza , a treasure trove of 400,000 manuscript fragments spanning 1,000 years , was discovered here in 1896." },
+  { name: "Cairo Geniza", type: "landmark discovery", description: "The Cairo Geniza - a treasure trove of 400,000 manuscript fragments spanning 1,000 years - was discovered here in 1896." },
   { name: "Solomon Schechter", type: "discoverer", description: "Rabbinical scholar Solomon Schechter removed and studied the Geniza fragments, now held at Cambridge University." },
   { name: "Egyptian government restoration", type: "restoration", description: "Restored by the Egyptian government and reopened in 2023 after a major $6.4 million renovation." },
   { name: "Maimonides connection", type: "heritage", description: "Tradition holds that Maimonides prayed at the synagogue." }
 ]);
-updDesc('ben-ezra-synagogue-cairo', 'Ancient synagogue in Old Cairo, famous as the site of the Cairo Geniza , a repository of approximately 400,000 manuscript fragments spanning 1,000 years, discovered in 1896 by Solomon Schechter. The fragments, now mostly at Cambridge University, revolutionized understanding of medieval Jewish, Islamic, and Mediterranean history. Tradition holds that Maimonides prayed here. Restored and reopened by the Egyptian government in 2023 after a major $6.4 million renovation.');
+updDesc('ben-ezra-synagogue-cairo', 'Ancient synagogue in Old Cairo, famous as the site of the Cairo Geniza - a repository of approximately 400,000 manuscript fragments spanning 1,000 years, discovered in 1896 by Solomon Schechter. The fragments, now mostly at Cambridge University, revolutionized understanding of medieval Jewish, Islamic, and Mediterranean history. Tradition holds that Maimonides prayed here. Restored and reopened by the Egyptian government in 2023 after a major $6.4 million renovation.');
 
 addConn('syrian-jewish-heritage-aleppo-damascus', [
   { name: "Aleppo Codex", type: "heritage artifact", description: "The Aleppo Codex (c. 930 CE), the oldest near-complete manuscript of the Hebrew Bible, was kept in Aleppo for 600 years." },
@@ -145,10 +145,10 @@ addConn('syrian-jewish-heritage-aleppo-damascus', [
   { name: "1947 Aleppo pogrom", type: "historical event", description: "In 1947, anti-Jewish riots destroyed much of Aleppo's Jewish quarter." },
   { name: "Brooklyn Syrian Jewish community", type: "diaspora", description: "Most Syrian Jews now live in Brooklyn, NY (60,000+), Mexico City, and Buenos Aires." }
 ]);
-updDesc('syrian-jewish-heritage-aleppo-damascus', 'Syria\'s Jewish community was one of the oldest in the world, with roots in biblical times. Aleppo was custodian of the Aleppo Codex (c. 930 CE), the oldest near-complete Hebrew Bible manuscript. The Great Synagogue of Aleppo (Joab\'s Synagogue, 5th century) was damaged in the 1947 pogrom. Damascus had an equally ancient community. From approximately 30,000 Jews in the 1940s, nearly all emigrated , most to Brooklyn, NY (now 60,000+ community), Mexico City, and Buenos Aires. Fewer than 10 Jews remain in Syria.');
+updDesc('syrian-jewish-heritage-aleppo-damascus', 'Syria\'s Jewish community was one of the oldest in the world, with roots in biblical times. Aleppo was custodian of the Aleppo Codex (c. 930 CE), the oldest near-complete Hebrew Bible manuscript. The Great Synagogue of Aleppo (Joab\'s Synagogue, 5th century) was damaged in the 1947 pogrom. Damascus had an equally ancient community. From approximately 30,000 Jews in the 1940s, nearly all emigrated - most to Brooklyn, NY (now 60,000+ community), Mexico City, and Buenos Aires. Fewer than 10 Jews remain in Syria.');
 
 addConn('iraqi-jewish-community-historic', [
-  { name: "Babylonian Talmud", type: "religious heritage", description: "Iraq's Jewish community produced the Babylonian Talmud , the most authoritative text in Rabbinic Judaism." },
+  { name: "Babylonian Talmud", type: "religious heritage", description: "Iraq's Jewish community produced the Babylonian Talmud - the most authoritative text in Rabbinic Judaism." },
   { name: "Farhud (1941)", type: "historical event", description: "The Farhud pogrom of June 1941 killed approximately 180 Jews and injured 1,000 in Baghdad." },
   { name: "Operation Ezra and Nehemiah", type: "migration", description: "In 1950-1951, approximately 120,000 Iraqi Jews emigrated to Israel in mass airlifts." },
   { name: "Sassoon Eskell", type: "historical figure", description: "Sir Sassoon Eskell (Jewish) was Iraq's first minister of finance and helped draft Iraq's constitution." }
@@ -161,7 +161,7 @@ addConn('babylonian-jewry-heritage-center-israel', [
   { name: "Iraqi Jewish archives", type: "controversy", description: "Advocates for the return of Iraqi Jewish archives seized by the Iraqi government and later recovered by the US." },
   { name: "Or Yehuda", type: "location", description: "Located in Or Yehuda, a city near Tel Aviv with a large Iraqi-Jewish population." }
 ]);
-updDesc('babylonian-jewry-heritage-center-israel', 'Heritage center in Or Yehuda, Israel, preserving the 2,600-year legacy of Babylonian/Iraqi Jewry. Houses artifacts, photographs, and documents from Iraq\'s Jewish community. Approximately 600,000 Israelis trace their roots to Iraq. The center has been involved in efforts to secure the return of Iraqi Jewish archives , tens of thousands of documents seized by Saddam Hussein\'s regime, later found by US forces, and controversially returned to Iraq despite Jewish community objections.');
+updDesc('babylonian-jewry-heritage-center-israel', 'Heritage center in Or Yehuda, Israel, preserving the 2,600-year legacy of Babylonian/Iraqi Jewry. Houses artifacts, photographs, and documents from Iraq\'s Jewish community. Approximately 600,000 Israelis trace their roots to Iraq. The center has been involved in efforts to secure the return of Iraqi Jewish archives - tens of thousands of documents seized by Saddam Hussein\'s regime, later found by US forces, and controversially returned to Iraq despite Jewish community objections.');
 
 addConn('yemeni-jewish-community-historic', [
   { name: "Operation Magic Carpet", type: "migration", description: "In 1949-1950, Operation Magic Carpet airlifted approximately 49,000 Yemeni Jews to Israel." },
@@ -169,7 +169,7 @@ addConn('yemeni-jewish-community-historic', [
   { name: "Yemenite Jewish culture", type: "cultural", description: "Preserved unique liturgy, music, silverwork traditions, and the Baladi prayer rite." },
   { name: "Missing Yemenite children affair", type: "controversy", description: "Controversy over hundreds of Yemenite Jewish children who disappeared after arriving in Israel in the 1950s." }
 ]);
-updDesc('yemeni-jewish-community-historic', 'One of the most ancient Jewish communities, claiming roots from the era of King Solomon and the Queen of Sheba. Yemeni Jews preserved unique traditions including the Baladi prayer rite, distinctive silverwork, and ancient Hebrew pronunciation. In 1949-1950, Operation Magic Carpet (On Wings of Eagles) airlifted approximately 49,000 Yemeni Jews to Israel. The "Missing Yemenite Children" affair , hundreds of children who disappeared from Israeli transit camps in the 1950s , remains a painful controversy. Fewer than 50 Jews remain in Yemen today.');
+updDesc('yemeni-jewish-community-historic', 'One of the most ancient Jewish communities, claiming roots from the era of King Solomon and the Queen of Sheba. Yemeni Jews preserved unique traditions including the Baladi prayer rite, distinctive silverwork, and ancient Hebrew pronunciation. In 1949-1950, Operation Magic Carpet (On Wings of Eagles) airlifted approximately 49,000 Yemeni Jews to Israel. The "Missing Yemenite Children" affair - hundreds of children who disappeared from Israeli transit camps in the 1950s - remains a painful controversy. Fewer than 50 Jews remain in Yemen today.');
 
 addConn('libyan-jewish-community-historic', [
   { name: "Ancient presence", type: "historical", description: "Jews lived in Libya since at least the 3rd century BCE under Greek and Roman rule." },
@@ -197,7 +197,7 @@ addConn('beta-israel-community-organizations', [
   { name: "Israeli government", type: "support", description: "The Israeli government recognizes Beta Israel as Jews and supports their integration." },
   { name: "Absorption challenges", type: "social", description: "Ethiopian-Israelis have faced significant challenges in integration, education, and combating discrimination." }
 ]);
-updDesc('beta-israel-community-organizations', 'Beta Israel (House of Israel) , the Ethiopian Jewish community , maintained Jewish practice for centuries in isolation. Their traditions include unique holidays like Sigd. Two dramatic Israeli airlifts rescued them: Operation Moses (1984, ~8,000 Jews through Sudan) and Operation Solomon (1991, 14,325 in 36 hours , a world record). Approximately 170,000 Ethiopian-origin Jews now live in Israel. Remaining communities in Ethiopia include Falash Mura (descendants who converted to Christianity).');
+updDesc('beta-israel-community-organizations', 'Beta Israel (House of Israel) - the Ethiopian Jewish community - maintained Jewish practice for centuries in isolation. Their traditions include unique holidays like Sigd. Two dramatic Israeli airlifts rescued them: Operation Moses (1984, ~8,000 Jews through Sudan) and Operation Solomon (1991, 14,325 in 36 hours - a world record). Approximately 170,000 Ethiopian-origin Jews now live in Israel. Remaining communities in Ethiopia include Falash Mura (descendants who converted to Christianity).');
 
 addConn('north-shewa-synagogue', [
   { name: "Beta Israel community", type: "community", description: "Served the Beta Israel community in the North Shewa zone of Ethiopia." },
@@ -237,10 +237,10 @@ updDesc('association-of-gulf-jewish-communities-agjc', 'Regional organization re
 addConn('abrahamic-family-house-abu-dhabi', [
   { name: "Pope Francis", type: "inspiration", description: "Inspired by the 2019 Document on Human Fraternity signed by Pope Francis and Grand Imam Ahmed el-Tayeb." },
   { name: "David Adjaye", type: "architect", description: "Designed by Ghanaian-British architect Sir David Adjaye." },
-  { name: "Three houses of worship", type: "structure", description: "Contains a mosque, church, and synagogue on one shared campus , a first of its kind." },
+  { name: "Three houses of worship", type: "structure", description: "Contains a mosque, church, and synagogue on one shared campus - a first of its kind." },
   { name: "UAE government", type: "sponsor", description: "Built and sponsored by the UAE government as a symbol of tolerance." }
 ]);
-updDesc('abrahamic-family-house-abu-dhabi', 'Interfaith complex on Saadiyat Island in Abu Dhabi, opened in 2023, containing a mosque, church, and synagogue on one shared campus , a first of its kind. Designed by Sir David Adjaye. The synagogue, named after Moses Ben Maimon (Maimonides), is the first purpose-built synagogue in the Gulf. Inspired by the 2019 Document on Human Fraternity signed by Pope Francis and Grand Imam Ahmed el-Tayeb during a papal visit to Abu Dhabi. Built by the UAE government as a symbol of Abrahamic unity.');
+updDesc('abrahamic-family-house-abu-dhabi', 'Interfaith complex on Saadiyat Island in Abu Dhabi, opened in 2023, containing a mosque, church, and synagogue on one shared campus - a first of its kind. Designed by Sir David Adjaye. The synagogue, named after Moses Ben Maimon (Maimonides), is the first purpose-built synagogue in the Gulf. Inspired by the 2019 Document on Human Fraternity signed by Pope Francis and Grand Imam Ahmed el-Tayeb during a papal visit to Abu Dhabi. Built by the UAE government as a symbol of Abrahamic unity.');
 
 addConn('kosher-restaurants-and-community-in-dubai', [
   { name: "Abraham Accords", type: "catalyst", description: "Kosher dining and Jewish community infrastructure in Dubai expanded rapidly after the 2020 Abraham Accords." },
@@ -255,7 +255,7 @@ addConn('jewish-community-of-bahrain', [
   { name: "Ambassador Houda Nonoo", type: "notable figure", description: "Houda Nonoo (Jewish) served as Bahrain's ambassador to the United States, 2008-2013." },
   { name: "King Hamad bin Isa Al Khalifa", type: "government", description: "King Hamad has promoted religious tolerance and Jewish community rights." }
 ]);
-updDesc('jewish-community-of-bahrain', 'Small Jewish community in Bahrain numbering approximately 36 people , one of the few remaining indigenous Jewish communities in the Gulf. Jews have been in Bahrain since at least the 1880s. Houda Nonoo (Jewish) made history as Bahrain\'s ambassador to the US (2008-2013). Bahrain normalized relations with Israel in 2020 through the Abraham Accords. King Hamad bin Isa Al Khalifa has promoted religious tolerance and preservation of the Jewish community.');
+updDesc('jewish-community-of-bahrain', 'Small Jewish community in Bahrain numbering approximately 36 people - one of the few remaining indigenous Jewish communities in the Gulf. Jews have been in Bahrain since at least the 1880s. Houda Nonoo (Jewish) made history as Bahrain\'s ambassador to the US (2008-2013). Bahrain normalized relations with Israel in 2020 through the Abraham Accords. King Hamad bin Isa Al Khalifa has promoted religious tolerance and preservation of the Jewish community.');
 
 addConn('ambassador-houda-nonoo-legacy', [
   { name: "Houda Nonoo", type: "subject", description: "First Jewish ambassador from any Arab country, serving as Bahrain's ambassador to the US (2008-2013)." },
@@ -274,7 +274,7 @@ addConn('congrega-o-israelita-paulista', [
   { name: "Liberal/Reform Judaism", type: "denomination", description: "A leading Liberal/Reform congregation in Latin America." },
   { name: "World Union for Progressive Judaism", type: "affiliate", description: "Affiliated with the World Union for Progressive Judaism." }
 ]);
-updDesc('congrega-o-israelita-paulista', 'One of the oldest and largest Jewish congregations in São Paulo and Latin America. Founded by German-Jewish immigrants in 1936. A leading Liberal/Reform congregation affiliated with the World Union for Progressive Judaism. The São Paulo Jewish community numbers approximately 60,000 , the largest in Latin America. CIP operates a synagogue, school, cultural center, and social programs.');
+updDesc('congrega-o-israelita-paulista', 'One of the oldest and largest Jewish congregations in São Paulo and Latin America. Founded by German-Jewish immigrants in 1936. A leading Liberal/Reform congregation affiliated with the World Union for Progressive Judaism. The São Paulo Jewish community numbers approximately 60,000 - the largest in Latin America. CIP operates a synagogue, school, cultural center, and social programs.');
 
 addConn('comit-central-israelita-del-uruguay', [
   { name: "Uruguayan government", type: "official recognition", description: "Officially recognized representative body of Uruguayan Jews." },
@@ -298,7 +298,7 @@ addConn('confederaci-n-de-comunidades-jud-as-de-colombia', [
 updDesc('confederaci-n-de-comunidades-jud-as-de-colombia', 'Umbrella organization representing approximately 4,000-5,000 Jews in Colombia, centered in Bogotá with smaller communities in Medellín, Cali, and Barranquilla. Some trace ancestry to Sephardic conversos (crypto-Jews) who arrived during the Spanish colonial period. The modern community grew with 20th-century immigration from Eastern Europe, Syria, and Lebanon. Operates synagogues, schools (Colegio Colombo Hebreo), and social institutions.');
 
 addConn('jewish-community-of-sos-a', [
-  { name: "Sosúa refugee settlement", type: "historical", description: "In 1940, the Dominican Republic accepted 800 Jewish refugees from Nazi Europe , the only country to do so at the Évian Conference." },
+  { name: "Sosúa refugee settlement", type: "historical", description: "In 1940, the Dominican Republic accepted 800 Jewish refugees from Nazi Europe - the only country to do so at the Évian Conference." },
   { name: "General Rafael Trujillo", type: "historical figure", description: "Dominican dictator Trujillo offered resettlement to whiten the population and improve international image." },
   { name: "DORSA", type: "organization", description: "The Dominican Republic Settlement Association (DORSA) managed the Sosúa Jewish settlement." },
   { name: "JDC", type: "supporter", description: "The American Jewish Joint Distribution Committee helped organize and fund the Sosúa settlement." }
@@ -310,7 +310,7 @@ addConn('museo-jud-o-de-sos-a', [
   { name: "Holocaust education", type: "mission", description: "Serves as a center for Holocaust education in the Caribbean." },
   { name: "Évian Conference", type: "historical context", description: "Tells the story of the 1938 Évian Conference where the Dominican Republic alone offered refuge." }
 ]);
-updDesc('museo-jud-o-de-sos-a', 'Museum in Sosúa, Dominican Republic, documenting the remarkable story of Jewish refugees who found haven there during the Holocaust , the only concrete result of the 1938 Évian Conference. Displays photographs, documents, and artifacts from the settlement era. Tells stories of refugees who established a dairy cooperative and new lives. A unique piece of Holocaust and Latin American history. The museum serves as both a memorial and a center for tolerance education in the Caribbean.');
+updDesc('museo-jud-o-de-sos-a', 'Museum in Sosúa, Dominican Republic, documenting the remarkable story of Jewish refugees who found haven there during the Holocaust - the only concrete result of the 1938 Évian Conference. Displays photographs, documents, and artifacts from the settlement era. Tells stories of refugees who established a dairy cooperative and new lives. A unique piece of Holocaust and Latin American history. The museum serves as both a memorial and a center for tolerance education in the Caribbean.');
 
 addConn('kol-shearith-israel', [
   { name: "Panama Canal Zone", type: "historical context", description: "Jewish community grew alongside the construction of the Panama Canal." },
@@ -324,7 +324,7 @@ addConn('asociaci-n-jud-a-del-per', [
   { name: "Inquisition history", type: "historical", description: "Peru's Inquisition targeted crypto-Jews (conversos) during the colonial period." },
   { name: "León Pinelo Synagogue", type: "main synagogue", description: "The community maintains the León Pinelo Synagogue and school in Lima." }
 ]);
-updDesc('asociaci-n-jud-a-del-per', 'Representative body of Peru\'s Jewish community of approximately 2,500, mostly in Lima. Peru has a complex Jewish history , the Lima Inquisition (1570-1820) specifically targeted crypto-Jews (conversos). The modern community grew with 20th-century immigration from Eastern Europe and the Middle East. The community maintains the Colegio León Pinelo school and synagogue. Some Peruvians with converso ancestry have recently reconnected with Judaism.');
+updDesc('asociaci-n-jud-a-del-per', 'Representative body of Peru\'s Jewish community of approximately 2,500, mostly in Lima. Peru has a complex Jewish history - the Lima Inquisition (1570-1820) specifically targeted crypto-Jews (conversos). The modern community grew with 20th-century immigration from Eastern Europe and the Middle East. The community maintains the Colegio León Pinelo school and synagogue. Some Peruvians with converso ancestry have recently reconnected with Judaism.');
 
 addConn('confederaci-n-de-asociaciones-israelitas-de-venezuela-caiv', [
   { name: "Venezuelan Jewish community", type: "community", description: "Represents Venezuela's declining Jewish community, once approximately 22,000." },
@@ -347,7 +347,7 @@ addConn('comunidad-jud-a-de-guatemala', [
   { name: "Guatemala-Israel relations", type: "diplomatic", description: "Guatemala was one of the first countries to recognize Israel and moved its embassy to Jerusalem in 2018." },
   { name: "Guatemala City community", type: "center", description: "Most of Guatemala's approximately 900 Jews live in Guatemala City." }
 ]);
-updDesc('comunidad-jud-a-de-guatemala', 'Small but active Jewish community of approximately 900 people in Guatemala, centered in Guatemala City. Guatemala has a unique relationship with Israel , it was one of the first countries to vote for Israeli statehood in 1947, and in 2018 moved its embassy to Jerusalem. The community maintains several synagogues, including Maguén David, and a Jewish school.');
+updDesc('comunidad-jud-a-de-guatemala', 'Small but active Jewish community of approximately 900 people in Guatemala, centered in Guatemala City. Guatemala has a unique relationship with Israel - it was one of the first countries to vote for Israeli statehood in 1947, and in 2018 moved its embassy to Jerusalem. The community maintains several synagogues, including Maguén David, and a Jewish school.');
 
 addConn('comunidad-jud-a-del-ecuador', [
   { name: "Quito community", type: "center", description: "Most of Ecuador's approximately 800 Jews live in Quito and Guayaquil." },
@@ -366,7 +366,7 @@ addConn('united-congregation-of-israelites', [
   { name: "Caribbean Jewish history", type: "heritage", description: "Jamaica's Jewish community dates to the 1530s, making it one of the oldest in the Western Hemisphere." },
   { name: "Sephardic origins", type: "historical", description: "Founded by Sephardic Jews fleeing the Spanish and Portuguese Inquisitions." }
 ]);
-updDesc('united-congregation-of-israelites', 'Jamaica\'s sole remaining Jewish congregation, operating the historic Shaare Shalom Synagogue (1912) in Kingston , one of only two sand-floor synagogues in the world. Jamaica\'s Jewish history dates to the 1530s when Sephardic crypto-Jews arrived fleeing the Inquisition. The community played significant roles in island commerce, including the sugar industry. Today approximately 200 Jews remain. The sand floor tradition is said to commemorate the Jewish desert wanderings or to muffle the sound of prayer from Inquisition ears.');
+updDesc('united-congregation-of-israelites', 'Jamaica\'s sole remaining Jewish congregation, operating the historic Shaare Shalom Synagogue (1912) in Kingston - one of only two sand-floor synagogues in the world. Jamaica\'s Jewish history dates to the 1530s when Sephardic crypto-Jews arrived fleeing the Inquisition. The community played significant roles in island commerce, including the sugar industry. Today approximately 200 Jews remain. The sand floor tradition is said to commemorate the Jewish desert wanderings or to muffle the sound of prayer from Inquisition ears.');
 
 addConn('new-zealand-jewish-council', [
   { name: "New Zealand government", type: "official", description: "Official representative body of New Zealand's approximately 7,500 Jews." },
@@ -380,7 +380,7 @@ addConn('federation-of-jewish-communities-of-spain-additional', [
   { name: "Sephardic heritage", type: "historical", description: "Spain's rich Sephardic heritage includes the Golden Age when Jews, Muslims, and Christians coexisted." },
   { name: "Red de Juderías", type: "cultural network", description: "The Network of Spanish Jewish Quarters promotes heritage tourism across historic Jewish sites." }
 ]);
-updDesc('federation-of-jewish-communities-of-spain-additional', 'Spain\'s Jewish community numbers approximately 40,000-50,000 and has experienced a revival. In 2015, Spain passed a landmark law offering citizenship to descendants of Sephardic Jews expelled in 1492 , over 130,000 applied. The Red de Juderías (Network of Jewish Quarters) promotes heritage tourism across historic sites in Toledo, Córdoba, Girona, and Segovia. Spain\'s Golden Age (10th-12th centuries) saw Jewish scholars like Maimonides and Judah Halevi flourish alongside Muslim and Christian thinkers.');
+updDesc('federation-of-jewish-communities-of-spain-additional', 'Spain\'s Jewish community numbers approximately 40,000-50,000 and has experienced a revival. In 2015, Spain passed a landmark law offering citizenship to descendants of Sephardic Jews expelled in 1492 - over 130,000 applied. The Red de Juderías (Network of Jewish Quarters) promotes heritage tourism across historic sites in Toledo, Córdoba, Girona, and Segovia. Spain\'s Golden Age (10th-12th centuries) saw Jewish scholars like Maimonides and Judah Halevi flourish alongside Muslim and Christian thinkers.');
 
 addConn('federation-of-jewish-communities-in-romania', [
   { name: "Romanian government", type: "official", description: "Official representative body of Romania's approximately 3,000 Jews." },
@@ -388,7 +388,7 @@ addConn('federation-of-jewish-communities-in-romania', [
   { name: "Coral Temple Bucharest", type: "main synagogue", description: "The Coral Temple (1866) in Bucharest is the main functioning synagogue." },
   { name: "Choral Synagogue tradition", type: "heritage", description: "Romania once had over 850,000 Jews and was a center of Jewish culture and Zionism." }
 ]);
-updDesc('federation-of-jewish-communities-in-romania', 'Represents approximately 3,000 Jews in Romania. Romania once had over 850,000 Jews and was a cradle of Zionism and Yiddish theater. The Holocaust devastated the community , over 280,000 Romanian Jews perished. In 2004, the Elie Wiesel International Commission formally acknowledged Romania\'s role. Many survivors emigrated to Israel. The Coral Temple (1866) in Bucharest remains active. Notable Romanian-origin Jews include Elie Wiesel, Paul Celan, Tristan Tzara, and filmmaker Radu Mihăileanu.');
+updDesc('federation-of-jewish-communities-in-romania', 'Represents approximately 3,000 Jews in Romania. Romania once had over 850,000 Jews and was a cradle of Zionism and Yiddish theater. The Holocaust devastated the community - over 280,000 Romanian Jews perished. In 2004, the Elie Wiesel International Commission formally acknowledged Romania\'s role. Many survivors emigrated to Israel. The Coral Temple (1866) in Bucharest remains active. Notable Romanian-origin Jews include Elie Wiesel, Paul Celan, Tristan Tzara, and filmmaker Radu Mihăileanu.');
 
 // ============================================================
 // ASIA & PACIFIC
@@ -407,7 +407,7 @@ addConn('jewish-association-of-thailand', [
   { name: "Chabad Thailand", type: "religious services", description: "Chabad operates 11 centers across Thailand, among its largest networks in Southeast Asia." },
   { name: "Israeli backpacker culture", type: "demographic", description: "Thailand is a top post-military service destination for Israeli travelers." }
 ]);
-updDesc('jewish-association-of-thailand', 'Oversees Jewish community life in Thailand, centered in Bangkok but extending to Chiang Mai, Phuket, and Ko Samui. Chabad operates 11 centers across Thailand , one of its largest Southeast Asian networks , serving residents, expats, and the massive influx of Israeli backpackers who visit post-military service. The Beth Elisheva Synagogue in Bangkok serves the residential community. Thai-Israeli relations have been warm, with significant bilateral trade.');
+updDesc('jewish-association-of-thailand', 'Oversees Jewish community life in Thailand, centered in Bangkok but extending to Chiang Mai, Phuket, and Ko Samui. Chabad operates 11 centers across Thailand - one of its largest Southeast Asian networks - serving residents, expats, and the massive influx of Israeli backpackers who visit post-military service. The Beth Elisheva Synagogue in Bangkok serves the residential community. Thai-Israeli relations have been warm, with significant bilateral trade.');
 
 addConn('jewish-association-of-the-philippines', [
   { name: "Manila Jewish community", type: "center", description: "Small community centered in Manila with approximately 100-200 members." },
@@ -425,7 +425,7 @@ updDesc('jewish-community-of-south-korea', 'Small community of approximately 1,0
 
 addConn('chabad-vietnam', [
   { name: "Chabad-Lubavitch", type: "parent organization", description: "Part of the global Chabad-Lubavitch network, operating in Ho Chi Minh City and Hanoi." },
-  { name: "Israeli travelers", type: "constituency", description: "Serves Israeli backpackers and business travelers , Vietnam is a popular post-army destination." },
+  { name: "Israeli travelers", type: "constituency", description: "Serves Israeli backpackers and business travelers - Vietnam is a popular post-army destination." },
   { name: "Jewish community of Vietnam", type: "community served", description: "Serves the small Jewish community and visitors in Vietnam." }
 ]);
 updDesc('chabad-vietnam', 'Chabad-Lubavitch community center serving Jews in Vietnam, operating in Ho Chi Minh City (Saigon) and Hanoi. Vietnam is a popular destination for Israeli backpackers completing military service. Chabad Vietnam provides Shabbat dinners, holiday celebrations, and kosher food to travelers and the small resident Jewish community. The Jewish presence in Vietnam dates to French colonial-era Sephardic merchants.');
@@ -442,11 +442,11 @@ addConn('jewish-historical-society-of-hong-kong', [
   { name: "Ohel Leah Synagogue", type: "partner", description: "Works to preserve the heritage of the Ohel Leah Synagogue and other Jewish sites." },
   { name: "China trade", type: "historical context", description: "Jewish merchants were instrumental in Hong Kong's development as a trading port from the 1840s." }
 ]);
-updDesc('jewish-historical-society-of-hong-kong', 'Preserves and documents the rich Jewish heritage of Hong Kong, dating to the founding of the colony in the 1840s. Jewish merchants , particularly the Sassoon and Kadoorie families , played instrumental roles in Hong Kong\'s development as a global trading center. The society documents the community\'s history including the Baghdadi Jewish traders, European refugees during WWII, and the modern community of approximately 5,000-6,000 people.');
+updDesc('jewish-historical-society-of-hong-kong', 'Preserves and documents the rich Jewish heritage of Hong Kong, dating to the founding of the colony in the 1840s. Jewish merchants - particularly the Sassoon and Kadoorie families - played instrumental roles in Hong Kong\'s development as a global trading center. The society documents the community\'s history including the Baghdadi Jewish traders, European refugees during WWII, and the modern community of approximately 5,000-6,000 people.');
 
 addConn('ohel-leah-synagogue', [
   { name: "Sassoon family", type: "builder", description: "Built in 1901 by Sir Jacob Sassoon and named after his mother Leah." },
-  { name: "Hong Kong heritage", type: "status", description: "Declared a Hong Kong monument , one of the oldest surviving synagogues in East Asia." },
+  { name: "Hong Kong heritage", type: "status", description: "Declared a Hong Kong monument - one of the oldest surviving synagogues in East Asia." },
   { name: "Kadoorie family", type: "support", description: "The Kadoorie family (Jewish, Baghdadi) has been central to the synagogue's preservation." },
   { name: "Robinson Road", type: "location", description: "Located on Robinson Road in the Mid-Levels, overlooking Hong Kong harbor." }
 ]);
@@ -524,7 +524,7 @@ addConn('irish-jewish-museum-dublin', [
   { name: "Chaim Herzog", type: "notable connection", description: "Chaim Herzog, the 6th President of Israel (1983-1993), was born in Belfast and raised in Dublin." },
   { name: "Irish Jewish heritage", type: "mission", description: "Documents the history of Jews in Ireland from the medieval period to present." }
 ]);
-updDesc('irish-jewish-museum-dublin', 'Located in the former Walworth Road Synagogue in Dublin\'s Portobello neighborhood. Documents the history of Jews in Ireland from the medieval period to present. Notable exhibits include material on Chaim Herzog, the 6th President of Israel (1983-1993), who was born in Belfast and raised in Dublin , his father was Chief Rabbi of Ireland. The museum preserves the synagogue interior and kitchen, giving visitors an intimate view of Dublin Jewish domestic and religious life.');
+updDesc('irish-jewish-museum-dublin', 'Located in the former Walworth Road Synagogue in Dublin\'s Portobello neighborhood. Documents the history of Jews in Ireland from the medieval period to present. Notable exhibits include material on Chaim Herzog, the 6th President of Israel (1983-1993), who was born in Belfast and raised in Dublin - his father was Chief Rabbi of Ireland. The museum preserves the synagogue interior and kitchen, giving visitors an intimate view of Dublin Jewish domestic and religious life.');
 
 addConn('jewish-community-of-zagreb', [
   { name: "Croatian government", type: "official", description: "Official representative body of Croatia's approximately 1,500 Jews." },
@@ -538,14 +538,14 @@ addConn('federation-of-jewish-communities-in-serbia', [
   { name: "Belgrade Sephardic heritage", type: "heritage", description: "Belgrade had a centuries-old Sephardic community, largely destroyed in the Holocaust." },
   { name: "Subotica synagogue", type: "heritage site", description: "The Art Nouveau Subotica Synagogue (1902) is one of the most beautiful synagogues in Europe." }
 ]);
-updDesc('federation-of-jewish-communities-in-serbia', 'Represents approximately 1,500-2,000 Jews in Serbia, centered in Belgrade. Belgrade had a centuries-old Sephardic community alongside Ashkenazi Jews. The Holocaust devastated Serbian Jewry , approximately 90% perished. The Art Nouveau Subotica Synagogue (1902), restored with significant Hungarian and EU funding, is one of the most architecturally stunning synagogues in Europe. The community maintains cultural programs and Holocaust remembrance.');
+updDesc('federation-of-jewish-communities-in-serbia', 'Represents approximately 1,500-2,000 Jews in Serbia, centered in Belgrade. Belgrade had a centuries-old Sephardic community alongside Ashkenazi Jews. The Holocaust devastated Serbian Jewry - approximately 90% perished. The Art Nouveau Subotica Synagogue (1902), restored with significant Hungarian and EU funding, is one of the most architecturally stunning synagogues in Europe. The community maintains cultural programs and Holocaust remembrance.');
 
 addConn('organization-of-the-jews-in-bulgaria', [
   { name: "Bulgarian rescue of Jews", type: "heritage", description: "Bulgaria famously saved nearly all of its 48,000 Jews from deportation during WWII." },
   { name: "Bulgarian parliament", type: "historical", description: "In 1943, Bulgarian MPs and church leaders prevented the deportation of Bulgarian Jews to death camps." },
   { name: "Sofia Synagogue", type: "main synagogue", description: "The Sofia Synagogue (1909) is the largest Sephardic synagogue in Europe." }
 ]);
-updDesc('organization-of-the-jews-in-bulgaria', 'Known as Shalom, representing approximately 2,000 Jews in Bulgaria. Bulgaria holds a unique place in Holocaust history: in 1943, Bulgarian parliamentarians, church leaders, and civic pressure prevented the deportation of nearly all 48,000 Bulgarian Jews to Nazi death camps , one of the Holocaust\'s most remarkable rescue stories. However, Bulgaria did allow the deportation of 11,343 Jews from occupied Thrace and Macedonia. The Sofia Synagogue (1909) is the largest Sephardic synagogue in Europe.');
+updDesc('organization-of-the-jews-in-bulgaria', 'Known as Shalom, representing approximately 2,000 Jews in Bulgaria. Bulgaria holds a unique place in Holocaust history: in 1943, Bulgarian parliamentarians, church leaders, and civic pressure prevented the deportation of nearly all 48,000 Bulgarian Jews to Nazi death camps - one of the Holocaust\'s most remarkable rescue stories. However, Bulgaria did allow the deportation of 11,343 Jews from occupied Thrace and Macedonia. The Sofia Synagogue (1909) is the largest Sephardic synagogue in Europe.');
 
 addConn('mountain-jewish-community-of-azerbaijan', [
   { name: "Mountain Jews (Juhuro)", type: "ethnic group", description: "The Mountain Jews (Juhuro) have lived in the Caucasus for over 2,500 years." },
@@ -560,7 +560,7 @@ addConn('georgian-jewish-community', [
   { name: "Tbilisi Great Synagogue", type: "center", description: "The Tbilisi Great Synagogue remains the center of Jewish life in Georgia." },
   { name: "Mass aliyah", type: "migration", description: "Most Georgian Jews emigrated to Israel in the 1970s-90s; approximately 100,000 Israeli citizens are of Georgian origin." }
 ]);
-updDesc('georgian-jewish-community', 'One of the world\'s oldest Jewish communities, claiming 2,600 years of history in the Caucasus. Georgian Jews preserved unique traditions and maintained generally positive relations with their neighbors , Georgia is proud of never having had a pogrom. Most Georgian Jews emigrated to Israel in the 1970s-1990s; approximately 100,000 Israelis today are of Georgian origin. Approximately 3,000 Jews remain in Georgia, centered around the Tbilisi Great Synagogue.');
+updDesc('georgian-jewish-community', 'One of the world\'s oldest Jewish communities, claiming 2,600 years of history in the Caucasus. Georgian Jews preserved unique traditions and maintained generally positive relations with their neighbors - Georgia is proud of never having had a pogrom. Most Georgian Jews emigrated to Israel in the 1970s-1990s; approximately 100,000 Israelis today are of Georgian origin. Approximately 3,000 Jews remain in Georgia, centered around the Tbilisi Great Synagogue.');
 
 addConn('bukharan-jewish-community', [
   { name: "Central Asian heritage", type: "historical", description: "Bukharan Jews have lived in Central Asia for over 2,000 years along the ancient Silk Road." },
@@ -576,7 +576,7 @@ addConn('patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba', [
   { name: "Fidel Castro era", type: "political", description: "The Jewish community declined from 15,000 to approximately 1,500 after the revolution; Castro allowed religious practice." },
   { name: "Canadian Jewish Congress", type: "support", description: "Canadian Jewish organizations have supported the Cuban community since the US embargo." }
 ]);
-updDesc('patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba', 'The main Jewish community center in Havana, serving Cuba\'s approximately 1,500 Jews , down from 15,000 before the 1959 revolution. Cuba\'s Jewish history includes the tragic 1939 SS St. Louis affair, when 937 Jewish refugees were turned away and many later perished in the Holocaust. After the revolution, most Jews emigrated. Those remaining maintained practice with support from Canadian Jewish organizations and JDC. The Patronato operates a synagogue, pharmacy, and Sunday school.');
+updDesc('patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba', 'The main Jewish community center in Havana, serving Cuba\'s approximately 1,500 Jews - down from 15,000 before the 1959 revolution. Cuba\'s Jewish history includes the tragic 1939 SS St. Louis affair, when 937 Jewish refugees were turned away and many later perished in the Holocaust. After the revolution, most Jews emigrated. Those remaining maintained practice with support from Canadian Jewish organizations and JDC. The Patronato operates a synagogue, pharmacy, and Sunday school.');
 
 addConn('mikv-israel-emanuel-synagogue', [
   { name: "Oldest continuous synagogue in Americas", type: "distinction", description: "Founded in 1651, it is the oldest continuously functioning synagogue in the Western Hemisphere." },
@@ -584,7 +584,7 @@ addConn('mikv-israel-emanuel-synagogue', [
   { name: "Sand floor tradition", type: "architecture", description: "Features a sand floor, one of only two remaining sand-floor synagogues in the world." },
   { name: "Curaçao Jewish history", type: "heritage", description: "Curaçao Jews were instrumental in the island's trade economy from the 17th century." }
 ]);
-updDesc('mikv-israel-emanuel-synagogue', 'The oldest continuously functioning synagogue in the Western Hemisphere, founded in 1651 by Portuguese Jews who arrived via Amsterdam. Located in Willemstad, Curaçao. Features a distinctive sand floor , one of only two sand-floor synagogues in the world (the other being in Jamaica). The congregation follows Sephardic rites. The adjacent Jewish Cultural Historical Museum documents over 350 years of Curaçao Jewish history. Jews played a crucial role in the island\'s trade economy, particularly as maritime merchants.');
+updDesc('mikv-israel-emanuel-synagogue', 'The oldest continuously functioning synagogue in the Western Hemisphere, founded in 1651 by Portuguese Jews who arrived via Amsterdam. Located in Willemstad, Curaçao. Features a distinctive sand floor - one of only two sand-floor synagogues in the world (the other being in Jamaica). The congregation follows Sephardic rites. The adjacent Jewish Cultural Historical Museum documents over 350 years of Curaçao Jewish history. Jews played a crucial role in the island\'s trade economy, particularly as maritime merchants.');
 
 addConn('jodensavanne-archaeological-site', [
   { name: "First Jewish settlement in the Americas", type: "historical", description: "Jodensavanne (Jewish Savannah) was one of the earliest autonomous Jewish settlements in the New World, founded c. 1665." },
@@ -599,14 +599,14 @@ addConn('neve-shalom-synagogue-paramaribo', [
   { name: "UNESCO World Heritage", type: "heritage", description: "Part of the UNESCO World Heritage-listed historic inner city of Paramaribo." },
   { name: "Dutch colonial heritage", type: "historical", description: "Built during the Dutch colonial period, reflecting the prosperity of Suriname's Jewish community." }
 ]);
-updDesc('neve-shalom-synagogue-paramaribo', 'Synagogue in Paramaribo, Suriname, part of the UNESCO World Heritage-listed historic inner city. Suriname\'s Jewish community, though small today (approximately 200), has a history dating to the 17th century when Sephardic Jews established sugar plantations. The wooden synagogue reflects the unique architectural traditions of colonial Suriname. Uniquely, the synagogue stands next to a mosque , a symbol of the interfaith tolerance for which Suriname is known.');
+updDesc('neve-shalom-synagogue-paramaribo', 'Synagogue in Paramaribo, Suriname, part of the UNESCO World Heritage-listed historic inner city. Suriname\'s Jewish community, though small today (approximately 200), has a history dating to the 17th century when Sephardic Jews established sugar plantations. The wooden synagogue reflects the unique architectural traditions of colonial Suriname. Uniquely, the synagogue stands next to a mosque - a symbol of the interfaith tolerance for which Suriname is known.');
 
 addConn('jewish-community-of-gibraltar', [
   { name: "British overseas territory", type: "political context", description: "As a British territory, Gibraltar's Jews have strong connections to UK Jewish institutions." },
   { name: "Great Synagogue of Gibraltar", type: "main synagogue", description: "The Great Synagogue (Nefutsot Yehudah, 1724) is one of the oldest on the Iberian Peninsula." },
   { name: "Morocco connection", type: "geographical", description: "Given Gibraltar's location, the community has historical ties to Moroccan Jewry across the strait." }
 ]);
-updDesc('jewish-community-of-gibraltar', 'Jewish community of approximately 600 in the British overseas territory of Gibraltar , one of the highest per-capita Jewish populations in the world. The Great Synagogue (Nefutsot Yehudah), established in 1724, is one of the oldest on the Iberian Peninsula. The community traces to refugees from the Spanish Inquisition and North African Jews. Given Gibraltar\'s strategic location, the community has historical ties to both British and Moroccan Jewry.');
+updDesc('jewish-community-of-gibraltar', 'Jewish community of approximately 600 in the British overseas territory of Gibraltar - one of the highest per-capita Jewish populations in the world. The Great Synagogue (Nefutsot Yehudah), established in 1724, is one of the oldest on the Iberian Peninsula. The community traces to refugees from the Spanish Inquisition and North African Jews. Given Gibraltar\'s strategic location, the community has historical ties to both British and Moroccan Jewry.');
 
 addConn('musmeah-yeshua-synagogue-yangon', [
   { name: "Baghdadi Jewish community", type: "historical", description: "Built by Baghdadi Jewish merchants who arrived in Burma during British colonial rule." },
@@ -633,7 +633,7 @@ addConn('world-ort', [
   { name: "Technology education", type: "mission", description: "Focuses on STEM education, technology training, and workforce development." },
   { name: "Israel ORT Braude", type: "flagship", description: "ORT Braude College of Engineering in Israel is one of its flagship institutions." }
 ]);
-updDesc('world-ort', 'Global Jewish education network founded in St. Petersburg, Russia in 1880 to provide vocational training for impoverished Jews. ORT (from Russian: Obshchestvo Remeslenogo i Zemledelcheskogo Truda , Society for Trades and Agricultural Labor) now operates schools and programs in over 35 countries serving 300,000+ students annually. Focus areas include STEM education, technology training, and workforce development. Major operations in Israel, Latin America, Africa, and the former Soviet Union.');
+updDesc('world-ort', 'Global Jewish education network founded in St. Petersburg, Russia in 1880 to provide vocational training for impoverished Jews. ORT (from Russian: Obshchestvo Remeslenogo i Zemledelcheskogo Truda - Society for Trades and Agricultural Labor) now operates schools and programs in over 35 countries serving 300,000+ students annually. Focus areas include STEM education, technology training, and workforce development. Major operations in Israel, Latin America, Africa, and the former Soviet Union.');
 
 addConn('maccabi-world-union', [
   { name: "Maccabiah Games", type: "flagship event", description: "Organizes the Maccabiah Games (the 'Jewish Olympics'), held in Israel every four years since 1932." },
@@ -641,7 +641,7 @@ addConn('maccabi-world-union', [
   { name: "Sports clubs worldwide", type: "network", description: "Umbrella for Maccabi sports clubs in over 60 countries." },
   { name: "Zionist movement", type: "origin", description: "Founded in 1921, connected to the Zionist emphasis on physical fitness and 'muscular Judaism.'" }
 ]);
-updDesc('maccabi-world-union', 'International Jewish sports organization founded in 1921, organizing the Maccabiah Games , the "Jewish Olympics" , held in Israel every four years since 1932. Recognized by the International Olympic Committee. Named after Judah Maccabee, the ancient Jewish military leader. Over 10,000 athletes from 80+ countries compete. Also runs youth programs and Maccabi sports clubs in 60+ countries promoting Jewish identity through athletics. The 2022 Maccabiah was the largest ever.');
+updDesc('maccabi-world-union', 'International Jewish sports organization founded in 1921, organizing the Maccabiah Games - the "Jewish Olympics" - held in Israel every four years since 1932. Recognized by the International Olympic Committee. Named after Judah Maccabee, the ancient Jewish military leader. Over 10,000 athletes from 80+ countries compete. Also runs youth programs and Maccabi sports clubs in 60+ countries promoting Jewish identity through athletics. The 2022 Maccabiah was the largest ever.');
 
 addConn('claims-conference-conference-on-jewish-material-claims-against-germany', [
   { name: "German government", type: "negotiation partner", description: "Has negotiated over $80 billion in compensation from Germany for Holocaust survivors." },
@@ -649,7 +649,7 @@ addConn('claims-conference-conference-on-jewish-material-claims-against-germany'
   { name: "Luxembourg Agreement", type: "landmark", description: "The 1952 Luxembourg Agreement established the framework for German reparations." },
   { name: "Holocaust survivor aid", type: "mission", description: "Distributes funds to approximately 260,000 Holocaust survivors in 83 countries." }
 ]);
-updDesc('claims-conference-conference-on-jewish-material-claims-against-germany', 'Founded in 1951, the Claims Conference has negotiated over $80 billion in compensation from Germany for Holocaust survivors , the largest restitution program in history. The 1952 Luxembourg Agreement, negotiated by Nahum Goldmann, established the framework. Distributes direct payments and funds social services for approximately 260,000 survivors in 83 countries. Also recovers stolen Jewish property, including artwork. Has been both praised for its work and criticized for bureaucratic issues.');
+updDesc('claims-conference-conference-on-jewish-material-claims-against-germany', 'Founded in 1951, the Claims Conference has negotiated over $80 billion in compensation from Germany for Holocaust survivors - the largest restitution program in history. The 1952 Luxembourg Agreement, negotiated by Nahum Goldmann, established the framework. Distributes direct payments and funds social services for approximately 260,000 survivors in 83 countries. Also recovers stolen Jewish property, including artwork. Has been both praised for its work and criticized for bureaucratic issues.');
 
 addConn('international-holocaust-remembrance-alliance-ihra', [
   { name: "35 member countries", type: "membership", description: "Intergovernmental body with 35 member countries committed to Holocaust education and remembrance." },
@@ -657,7 +657,7 @@ addConn('international-holocaust-remembrance-alliance-ihra', [
   { name: "Stockholm Declaration", type: "founding document", description: "Grew out of the 2000 Stockholm International Forum on the Holocaust." },
   { name: "UNESCO", type: "partner", description: "Partners with UNESCO on Holocaust education programs globally." }
 ]);
-updDesc('international-holocaust-remembrance-alliance-ihra', 'Intergovernmental body with 35 member countries committed to Holocaust education, remembrance, and research. Grew from the 2000 Stockholm International Forum on the Holocaust. Most influential for its Working Definition of Antisemitism, adopted by hundreds of governments, universities, and institutions worldwide , though also debated for its examples relating to criticism of Israel. Partners with UNESCO and maintains networks of scholars, educators, and museums.');
+updDesc('international-holocaust-remembrance-alliance-ihra', 'Intergovernmental body with 35 member countries committed to Holocaust education, remembrance, and research. Grew from the 2000 Stockholm International Forum on the Holocaust. Most influential for its Working Definition of Antisemitism, adopted by hundreds of governments, universities, and institutions worldwide - though also debated for its examples relating to criticism of Israel. Partners with UNESCO and maintains networks of scholars, educators, and museums.');
 
 addConn('march-of-the-living', [
   { name: "Auschwitz-Birkenau", type: "route", description: "Annual march from Auschwitz to Birkenau on Yom HaShoah (Holocaust Remembrance Day)." },
@@ -677,10 +677,10 @@ updDesc('international-march-of-the-living', 'The international dimension of the
 addConn('limmud-international', [
   { name: "UK origins", type: "origin", description: "Started in the UK in 1980 as an annual Jewish learning conference." },
   { name: "40+ countries", type: "global reach", description: "Now operates Limmud events in over 40 countries worldwide." },
-  { name: "Volunteer-run", type: "model", description: "Uniquely, all Limmud events are organized entirely by volunteers , no paid presenters." },
+  { name: "Volunteer-run", type: "model", description: "Uniquely, all Limmud events are organized entirely by volunteers - no paid presenters." },
   { name: "Cross-denominational", type: "approach", description: "Brings together Jews of all denominations and backgrounds for shared learning." }
 ]);
-updDesc('limmud-international', 'International Jewish learning movement that started in the UK in 1980. Uniquely volunteer-driven , no one is paid to present or attend. Limmud events now occur in over 40 countries, bringing together Jews of all denominations for intensive weekends of learning, debating, and cultural exchange. Sessions cover everything from Talmud to technology, politics to poetry. The model has been called "the most significant development in Jewish education in recent decades."');
+updDesc('limmud-international', 'International Jewish learning movement that started in the UK in 1980. Uniquely volunteer-driven - no one is paid to present or attend. Limmud events now occur in over 40 countries, bringing together Jews of all denominations for intensive weekends of learning, debating, and cultural exchange. Sessions cover everything from Talmud to technology, politics to poetry. The model has been called "the most significant development in Jewish education in recent decades."');
 
 addConn('keren-hayesod-united-israel-appeal', [
   { name: "World Zionist Organization", type: "origin", description: "Founded in 1920 at the London Zionist Conference as the fundraising arm of the Zionist movement." },
@@ -692,11 +692,11 @@ updDesc('keren-hayesod-united-israel-appeal', 'Founded in 1920 at the London Zio
 
 addConn('world-mizrachi', [
   { name: "Religious Zionism", type: "ideology", description: "The central organization of the Religious Zionist movement worldwide." },
-  { name: "Rabbi Isaac Herzog", type: "historical leader", description: "Named after the ideology of 'Mizrachi' , abbreviation for 'Merkaz Ruchani' (Spiritual Center)." },
+  { name: "Rabbi Isaac Herzog", type: "historical leader", description: "Named after the ideology of 'Mizrachi' - abbreviation for 'Merkaz Ruchani' (Spiritual Center)." },
   { name: "Founded 1902", type: "historical", description: "Founded in 1902 in Vilna by Rabbi Yitzchak Yaakov Reines to combine Torah observance with Zionism." },
   { name: "Bnei Akiva", type: "youth movement", description: "Bnei Akiva, the world's largest Religious Zionist youth movement, is affiliated with Mizrachi." }
 ]);
-updDesc('world-mizrachi', 'The central organization of the Religious Zionist movement, founded in 1902 in Vilna by Rabbi Yitzchak Yaakov Reines. Mizrachi (abbreviation of "Merkaz Ruchani" , Spiritual Center) advocates combining Torah observance with Zionism. Affiliated with Bnei Akiva, the world\'s largest Religious Zionist youth movement (125,000 members in 40+ countries). Runs programs promoting Torah education, Israel engagement, and religious settlement. Represents the ideological bridge between Orthodoxy and Jewish nationhood.');
+updDesc('world-mizrachi', 'The central organization of the Religious Zionist movement, founded in 1902 in Vilna by Rabbi Yitzchak Yaakov Reines. Mizrachi (abbreviation of "Merkaz Ruchani" - Spiritual Center) advocates combining Torah observance with Zionism. Affiliated with Bnei Akiva, the world\'s largest Religious Zionist youth movement (125,000 members in 40+ countries). Runs programs promoting Torah education, Israel engagement, and religious settlement. Represents the ideological bridge between Orthodoxy and Jewish nationhood.');
 
 addConn('aleph-institute', [
   { name: "Chabad-Lubavitch", type: "affiliated", description: "Founded by Chabad-Lubavitch to serve Jewish prisoners and military personnel." },
@@ -704,7 +704,7 @@ addConn('aleph-institute', [
   { name: "Criminal justice advocacy", type: "mission", description: "Advocates for criminal justice reform and provides reentry services for released prisoners." },
   { name: "Rebbe Menachem Mendel Schneerson", type: "inspiration", description: "Founded at the direction of the Lubavitcher Rebbe to care for 'forgotten Jews.'" }
 ]);
-updDesc('aleph-institute', 'Founded in 1981 at the direction of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, to serve "the Jews that everyone forgets" , prisoners, military personnel, and their families. Provides Jewish chaplaincy to US military worldwide, religious services to Jewish prisoners, and advocates for criminal justice reform. Also offers reentry programs for released prisoners. Affiliated with Chabad-Lubavitch. One of the few Jewish organizations focused on incarcerated individuals.');
+updDesc('aleph-institute', 'Founded in 1981 at the direction of the Lubavitcher Rebbe, Rabbi Menachem Mendel Schneerson, to serve "the Jews that everyone forgets" - prisoners, military personnel, and their families. Provides Jewish chaplaincy to US military worldwide, religious services to Jewish prisoners, and advocates for criminal justice reform. Also offers reentry programs for released prisoners. Affiliated with Chabad-Lubavitch. One of the few Jewish organizations focused on incarcerated individuals.');
 
 addConn('shalom-hartman-institute', [
   { name: "David Hartman", type: "founder", description: "Founded in 1976 by Rabbi David Hartman (Jewish, Canadian-born Orthodox rabbi and philosopher)." },
@@ -712,11 +712,11 @@ addConn('shalom-hartman-institute', [
   { name: "Pluralistic approach", type: "method", description: "Known for bringing together Orthodox, Conservative, Reform, and secular Jews for study and dialogue." },
   { name: "Donniel Hartman", type: "current president", description: "Led by Donniel Hartman, David's son, who continues the pluralistic mission." }
 ]);
-updDesc('shalom-hartman-institute', 'Founded in 1976 in Jerusalem by Rabbi David Hartman (Canadian-born Orthodox rabbi and philosopher). Known for its pluralistic approach , bringing Orthodox, Conservative, Reform, and secular Jews together for rigorous intellectual study and dialogue. Led by Donniel Hartman, David\'s son, who is a leading Jewish public intellectual. Runs influential programs for rabbis, educators, and lay leaders from across denominations. The Institute\'s scholarship on Jewish identity, Israel, and modernity shaped a generation of Jewish thought.');
+updDesc('shalom-hartman-institute', 'Founded in 1976 in Jerusalem by Rabbi David Hartman (Canadian-born Orthodox rabbi and philosopher). Known for its pluralistic approach - bringing Orthodox, Conservative, Reform, and secular Jews together for rigorous intellectual study and dialogue. Led by Donniel Hartman, David\'s son, who is a leading Jewish public intellectual. Runs influential programs for rabbis, educators, and lay leaders from across denominations. The Institute\'s scholarship on Jewish identity, Israel, and modernity shaped a generation of Jewish thought.');
 
 addConn('aish-hatorah', [
   { name: "Rabbi Noach Weinberg", type: "founder", description: "Founded in 1974 by Rabbi Noach Weinberg (1930-2009) in Jerusalem." },
-  { name: "Western Wall", type: "location", description: "The Jerusalem branch overlooks the Western Wall , one of Judaism's holiest sites." },
+  { name: "Western Wall", type: "location", description: "The Jerusalem branch overlooks the Western Wall - one of Judaism's holiest sites." },
   { name: "Kiruv (outreach)", type: "mission", description: "One of the most prominent Jewish outreach (kiruv) organizations, targeting secular and unaffiliated Jews." },
   { name: "Hasbara Fellowships", type: "program", description: "Runs Hasbara Fellowships, training college students in pro-Israel advocacy." }
 ]);
@@ -728,7 +728,7 @@ addConn('ohr-somayach', [
   { name: "Jerusalem and Monsey", type: "locations", description: "Main campuses in Jerusalem and Monsey, New York." },
   { name: "Ohr Lagolah", type: "program", description: "The Ohr Lagolah program trains rabbis for small and emerging Jewish communities worldwide." }
 ]);
-updDesc('ohr-somayach', 'Orthodox yeshiva founded in 1970 in Jerusalem by Rabbis Nota Schiller and Mendel Weinbach, pioneering the concept of a yeshiva for "baalei teshuva" , Jews with little or no religious background seeking to learn about their heritage. Main campuses in Jerusalem and Monsey, New York. The Ohr Lagolah Leadership Training program trains rabbis for underserved Jewish communities worldwide. Has educated tens of thousands since its founding. Known for intellectual rigor combined with welcoming atmosphere.');
+updDesc('ohr-somayach', 'Orthodox yeshiva founded in 1970 in Jerusalem by Rabbis Nota Schiller and Mendel Weinbach, pioneering the concept of a yeshiva for "baalei teshuva" - Jews with little or no religious background seeking to learn about their heritage. Main campuses in Jerusalem and Monsey, New York. The Ohr Lagolah Leadership Training program trains rabbis for underserved Jewish communities worldwide. Has educated tens of thousands since its founding. Known for intellectual rigor combined with welcoming atmosphere.');
 
 addConn('jdc-american-jewish-joint-distribution-committee-global', [
   { name: "Founded 1914", type: "historical", description: "Founded in 1914 to aid Jews in Palestine and war-torn Europe during WWI." },

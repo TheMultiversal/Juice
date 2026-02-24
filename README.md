@@ -9,41 +9,41 @@
 ## Features
 
 ### Core Pages
-- **Dashboard** , Hero stats, category cards, founding timeline mini-chart, featured entries
-- **Country Pages** , Browse organizations by country with filtering and sorting
-- **Entry Pages** , Detailed view with description, website, people, connections, and related entries
-- **All Countries** , Full country listing with entry counts and links
+- **Dashboard** - Hero stats, category cards, founding timeline mini-chart, featured entries
+- **Country Pages** - Browse organizations by country with filtering and sorting
+- **Entry Pages** - Detailed view with description, website, people, connections, and related entries
+- **All Countries** - Full country listing with entry counts and links
 
 ### Discovery & Search
-- **Full-text Search** , Multi-word highlighting, tabs for organizations/people/connections, context snippets
-- **Discover** , Random entry explorer with card animations
-- **Pathfinder** , Find the degrees of separation between any two organizations (BFS through shared connections & people)
+- **Full-text Search** - Multi-word highlighting, tabs for organizations/people/connections, context snippets
+- **Discover** - Random entry explorer with card animations
+- **Pathfinder** - Find the degrees of separation between any two organizations (BFS through shared connections & people)
 
 ### People
-- **People Directory** , 820+ individuals with avatar initials, role-categorized tags (Leader/Founder/Board/Academic), sort by name/affiliations/roles, compact/full view toggle
-- **Person Pages** , Individual profiles with bio, affiliations, and roles
+- **People Directory** - 820+ individuals with avatar initials, role-categorized tags (Leader/Founder/Board/Academic), sort by name/affiliations/roles, compact/full view toggle
+- **Person Pages** - Individual profiles with bio, affiliations, and roles
 
 ### Visualizations
-- **Network Graph** , D3.js force-directed graph with 29 category colors, 15 connection type edge colors, zoom/pan, click navigation
-- **Interactive Timeline** , D3 stacked bar chart by decade + vertical timeline with decade grouping, century navigation
-- **World Map** , Leaflet.js map with country markers showing entry counts
-- **Statistics Dashboard** , 10 Chart.js charts including: Top 15 Countries, Categories doughnut, Org Types, Connection Types, Country Distribution, Founded by Decade histogram, Cumulative Growth, Connections Distribution, Top 15 Most Connected
+- **Network Graph** - D3.js force-directed graph with 29 category colors, 15 connection type edge colors, zoom/pan, click navigation
+- **Interactive Timeline** - D3 stacked bar chart by decade + vertical timeline with decade grouping, century navigation
+- **World Map** - Leaflet.js map with country markers showing entry counts
+- **Statistics Dashboard** - 10 Chart.js charts including: Top 15 Countries, Categories doughnut, Org Types, Connection Types, Country Distribution, Founded by Decade histogram, Cumulative Growth, Connections Distribution, Top 15 Most Connected
 
 ### Utilities
-- **Compare** , Side-by-side entry comparison
-- **Export** , Download data in JSON/CSV formats
-- **Bookmarks** , Client-side bookmark management
-- **Audit** , Data quality dashboard (missing websites, founding years, few connections)
-- **Admin** , CRUD interface for entries and data management
-- **API Documentation** , Interactive REST API reference
+- **Compare** - Side-by-side entry comparison
+- **Export** - Download data in JSON/CSV formats
+- **Bookmarks** - Client-side bookmark management
+- **Audit** - Data quality dashboard (missing websites, founding years, few connections)
+- **Admin** - CRUD interface for entries and data management
+- **API Documentation** - Interactive REST API reference
 
 ### UX
-- **Keyboard Shortcuts** , Press `?` for help overlay; `/` search, `H` home, `G` graph, `M` map, `T` timeline, `P` people, `S` stats, `D` discover, `F` pathfinder, `B` bookmarks
-- **Dark Mode** , Toggle with persistent preference
-- **Matrix Rain** , Animated background canvas
-- **SEO & Open Graph** , Dynamic meta tags on all pages
-- **Print-friendly** , Optimized print styles
-- **Responsive** , Mobile-friendly layouts
+- **Keyboard Shortcuts** - Press `?` for help overlay; `/` search, `H` home, `G` graph, `M` map, `T` timeline, `P` people, `S` stats, `D` discover, `F` pathfinder, `B` bookmarks
+- **Dark Mode** - Toggle with persistent preference
+- **Matrix Rain** - Animated background canvas
+- **SEO & Open Graph** - Dynamic meta tags on all pages
+- **Print-friendly** - Optimized print styles
+- **Responsive** - Mobile-friendly layouts
 
 ---
 

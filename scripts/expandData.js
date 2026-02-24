@@ -174,7 +174,7 @@ addEntry(us, { name: "Ronald S. Lauder Foundation", type: "foundation", descript
 addEntry(us, { name: "Tikva Fund", type: "foundation/think tank", description: "Foundation supporting education and intellectual projects in Israel and the US.", website: "https://tikvahfund.org/", individuals: [] });
 
 // --- More Charities ---
-addEntry(us, { name: "Friends of the IDF (FIDF) , additional chapters", type: "charity", description: "Major chapters in New York, Los Angeles, and other cities supporting IDF soldiers.", website: "https://www.fidf.org/", individuals: [] });
+addEntry(us, { name: "Friends of the IDF (FIDF) - additional chapters", type: "charity", description: "Major chapters in New York, Los Angeles, and other cities supporting IDF soldiers.", website: "https://www.fidf.org/", individuals: [] });
 addEntry(us, { name: "Nefesh B'Nefesh", type: "non-profit", description: "Organization facilitating aliyah (immigration to Israel) from North America and the UK.", website: "https://www.nbn.org.il/", individuals: [{ name: "Rabbi Yehoshua Fass", role: "Co-Founder & Executive Director", bio: "Co-founded Nefesh B'Nefesh in 2002." }] });
 addEntry(us, { name: "One Israel Fund", type: "charity", description: "Supports communities in Judea and Samaria (West Bank).", website: "https://oneisraelfund.org/", individuals: [] });
 addEntry(us, { name: "Jewish Funders Network", type: "non-profit", description: "International organization of Jewish philanthropists and foundations.", website: "https://www.jfunders.org/", individuals: [] });
@@ -227,7 +227,7 @@ addEntry(il, { name: "IDE Technologies", type: "water technology", description: 
 addEntry(il, { name: "Mekorot", type: "water utility", description: "Israel's national water company.", website: "https://www.mekorot.co.il/", individuals: [] });
 
 // --- Israeli Settlements/Organizations ---
-addEntry(il, { name: "Jewish National Fund , Keren Kayemeth LeIsrael (KKL-JNF)", type: "land development", description: "Responsible for planting forests, developing parks, and managing land in Israel.", website: "https://www.kkl-jnf.org/", individuals: [] });
+addEntry(il, { name: "Jewish National Fund - Keren Kayemeth LeIsrael (KKL-JNF)", type: "land development", description: "Responsible for planting forests, developing parks, and managing land in Israel.", website: "https://www.kkl-jnf.org/", individuals: [] });
 addEntry(il, { name: "Birthright Israel (Taglit)", type: "educational program", description: "Free 10-day educational trips to Israel for Jewish young adults worldwide.", website: "https://www.birthrightisrael.com/", individuals: [] });
 addEntry(il, { name: "Nefesh B'Nefesh (Israel)", type: "immigration", description: "Facilitates aliyah from North America and UK, works with Jewish Agency and Israeli government.", website: "https://www.nbn.org.il/", individuals: [] });
 addEntry(il, { name: "Israel Innovation Authority", type: "government agency", description: "Government body promoting technological innovation in Israel.", website: "https://innovationisrael.org.il/", individuals: [] });
@@ -274,7 +274,7 @@ addEntry(de, { name: "Axel Springer SE", type: "media conglomerate", description
 addEntry(de, { name: "Zentralwohlfahrtsstelle der Juden in Deutschland", type: "welfare organization", description: "Central welfare office of Jews in Germany.", website: "https://zwst.org/", individuals: [] });
 addEntry(de, { name: "European Maccabi Games", type: "sports", description: "Quadrennial Jewish multi-sport event in Europe, often held in Germany.", website: "https://www.maccabi.org/", individuals: [] });
 addEntry(de, { name: "Moses Mendelssohn Center for European-Jewish Studies", type: "research institute", description: "Academic center at University of Potsdam for European Jewish studies.", website: "", individuals: [] });
-addEntry(de, { name: "Leo Baeck Institute , Germany", type: "research", description: "Research institute documenting history of German-speaking Jewry.", website: "", individuals: [] });
+addEntry(de, { name: "Leo Baeck Institute - Germany", type: "research", description: "Research institute documenting history of German-speaking Jewry.", website: "", individuals: [] });
 
 // ============================================================
 // CANADA - EXPANSION
@@ -497,7 +497,7 @@ addEntry(us, { name: "Notable Jewish Media Executives (US)", type: "individual p
 // International Organizations
 // ============================================================
 
-addEntry("Switzerland", { name: "World Health Organization , Israeli connections", type: "international", description: "Israel's contributions to global health through WHO.", website: "", individuals: [] });
+addEntry("Switzerland", { name: "World Health Organization - Israeli connections", type: "international", description: "Israel's contributions to global health through WHO.", website: "", individuals: [] });
 addEntry("Switzerland", { name: "B'nai B'rith International (Geneva office)", type: "NGO", description: "Geneva office handling UN relations.", website: "", individuals: [] });
 addEntry("International", { name: "European Jewish Congress", type: "advocacy organization", description: "Representative organization of European Jewish communities.", website: "https://eurojewcong.org/", individuals: [{ name: "Ariel Muzicant", role: "Vice President", bio: "Austrian-Israeli businessman, VP of the European Jewish Congress." }] });
 addEntry("International", { name: "World ORT", type: "educational organization", description: "Global Jewish educational network operating in 35+ countries.", website: "https://www.ort.org/", individuals: [] });
