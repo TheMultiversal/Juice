@@ -56,6 +56,26 @@
             "name": "United Action PAC",
             "type": "political action",
             "description": "AIPAC launched a PAC in 2022, spending $100+ million in elections supporting pro-Israel candidates."
+          },
+          {
+            "name": "Washington Institute for Near East Policy (WINEP)",
+            "type": "offspring",
+            "description": "WINEP was founded from AIPAC's research department in 1985."
+          },
+          {
+            "name": "Republican Jewish Coalition",
+            "type": "pro-Israel peer",
+            "description": "Both organizations work to maintain pro-Israel policy in Washington."
+          },
+          {
+            "name": "Democratic Majority for Israel",
+            "type": "pro-Israel peer",
+            "description": "DMFI extends pro-Israel advocacy within the Democratic Party."
+          },
+          {
+            "name": "Friends of the Israel Defense Forces (FIDF)",
+            "type": "pro-Israel ecosystem",
+            "description": "Part of the broader American pro-Israel organizational network."
           }
         ],
         "category": "Advocacy & Public Affairs",
@@ -431,6 +451,12 @@
             "role": "Executive Director",
             "bio": "Long-time head of the RJC.",
             "id": "matt-brooks"
+          },
+          {
+            "id": "miriam-adelson",
+            "name": "Miriam Adelson",
+            "role": "Major Donor",
+            "bio": "Israeli-American physician, billionaire, and one of the most prolific donors to Republican and pro-Israel causes."
           }
         ],
         "id": "republican-jewish-coalition",
@@ -676,6 +702,16 @@
             "name": "Israeli Government Bonds",
             "type": "investment",
             "description": "BlackRock is a significant holder of Israeli government bonds."
+          },
+          {
+            "name": "Goldman Sachs",
+            "type": "alumni connection",
+            "description": "Many BlackRock executives have Goldman Sachs backgrounds."
+          },
+          {
+            "name": "Blackstone Inc.",
+            "type": "name peer/different entity",
+            "description": "Despite similar names, BlackRock and Blackstone are separate firms. BlackRock was originally a Blackstone subsidiary."
           }
         ],
         "category": "Banking & Financial Services",
@@ -7166,6 +7202,26 @@
             "name": "Goldman Sachs Foundation",
             "type": "philanthropy",
             "description": "The firm's foundation supports education and community development."
+          },
+          {
+            "name": "BlackRock",
+            "type": "alumni connection",
+            "description": "Larry Fink founded BlackRock after leaving First Boston; many BlackRock executives are Goldman alumni."
+          },
+          {
+            "name": "Blackstone Inc.",
+            "type": "financial peer",
+            "description": "Both are premier Wall Street institutions."
+          },
+          {
+            "name": "Morgan Stanley",
+            "type": "industry peer",
+            "description": "Fellow bulge-bracket investment bank."
+          },
+          {
+            "name": "Citadel LLC",
+            "type": "financial peer",
+            "description": "Both are major players in global financial markets."
           }
         ],
         "category": "Investment & Private Equity",
@@ -10365,6 +10421,12 @@
             "role": "CEO",
             "bio": "CEO of the Conference of Presidents.",
             "id": "william-daroff"
+          },
+          {
+            "id": "morton-klein",
+            "name": "Morton Klein",
+            "role": "Member Organization Leader",
+            "bio": "National President of ZOA, one of the longest-serving Jewish organizational leaders."
           }
         ],
         "id": "conference-of-presidents-of-major-american-jewish-organizations",
@@ -10701,6 +10763,24 @@
             "role": "Former Executive VP",
             "bio": "Australian-American diplomat and think tank leader.",
             "id": "martin-indyk"
+          },
+          {
+            "id": "michael-bloomberg",
+            "name": "Michael Bloomberg",
+            "role": "Major Donor",
+            "bio": "Former Mayor of New York City, founder of Bloomberg LP. Major philanthropist."
+          },
+          {
+            "id": "dennis-ross",
+            "name": "Dennis Ross",
+            "role": "Former Fellow",
+            "bio": "Former US Special Envoy for Middle East Peace and longtime diplomat."
+          },
+          {
+            "id": "stanley-fischer",
+            "name": "Stanley Fischer",
+            "role": "Fellow",
+            "bio": "Former Governor of the Bank of Israel and Vice Chair of the US Federal Reserve."
           }
         ],
         "id": "brookings-institution",
@@ -10724,6 +10804,11 @@
             "name": "WINEP",
             "type": "related think tank",
             "description": "WINEP was founded as a Brookings-like think tank focused on Middle East policy."
+          },
+          {
+            "name": "Washington Institute for Near East Policy (WINEP)",
+            "type": "think tank peer",
+            "description": "Both focus on Middle East policy, with different orientations."
           }
         ],
         "category": "Research & Think Tanks",
@@ -13785,12 +13870,40 @@
         "founded": 1875,
         "description": "Principal seminary of Reform Judaism, the oldest Jewish seminary in the Americas. Campuses in Cincinnati, New York, Los Angeles, and Jerusalem.",
         "website": "https://huc.edu/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "andrew-rehfeld",
+            "name": "Andrew Rehfeld",
+            "role": "President",
+            "bio": "President of Hebrew Union College-Jewish Institute of Religion since 2018."
+          },
+          {
+            "id": "isaac-mayer-wise",
+            "name": "Isaac Mayer Wise",
+            "role": "Founder",
+            "bio": "Pioneer of Reform Judaism in America who founded HUC in 1875."
+          }
+        ],
         "connections": [
           {
             "name": "Brandeis University",
             "type": "Jewish educational institution",
             "description": "Both are notable Jewish-affiliated educational institutions"
+          },
+          {
+            "name": "Reform Judaism",
+            "type": "movement",
+            "description": "HUC is the seminary of the Reform movement in Judaism."
+          },
+          {
+            "name": "Union for Reform Judaism",
+            "type": "denominational body",
+            "description": "HUC trains rabbis and cantors for URJ congregations."
+          },
+          {
+            "name": "Central Conference of American Rabbis",
+            "type": "alumni",
+            "description": "CCAR members are primarily HUC graduates."
           }
         ],
         "id": "hebrew-union-college-huc"
@@ -13820,8 +13933,37 @@
         "founded": 1897,
         "description": "American Jewish media organization originally founded as a Yiddish-language daily newspaper (Forverts). Now publishes in English and Yiddish, covering Jewish news, culture, and opinion.",
         "website": "https://forward.com/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "jodi-rudoren",
+            "name": "Jodi Rudoren",
+            "role": "Editor-in-Chief",
+            "bio": "Editor-in-Chief of the Forward since 2019, former NYT Jerusalem bureau chief."
+          },
+          {
+            "id": "abraham-cahan",
+            "name": "Abraham Cahan",
+            "role": "Founder",
+            "bio": "Founding editor of the Jewish Daily Forward in 1897."
+          }
+        ],
+        "connections": [
+          {
+            "name": "American Jewish community",
+            "type": "media",
+            "description": "The Forward has been a leading Jewish American media outlet since 1897."
+          },
+          {
+            "name": "New York City",
+            "type": "headquarters",
+            "description": "Based in New York City, historically on the Lower East Side."
+          },
+          {
+            "name": "Jewish Telegraphic Agency",
+            "type": "media peer",
+            "description": "Both serve as major Jewish news sources in the United States."
+          }
+        ],
         "id": "the-forward"
       },
       {
@@ -13830,7 +13972,20 @@
         "category": "Heritage & Memorials",
         "founded": 1978,
         "description": "Originally in Tel Aviv, this museum has a partnership with institutions worldwide to tell the 4,000-year story of the Jewish people through interactive exhibits, databases, and educational programs.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "irina-nevzlin",
+            "name": "Irina Nevzlin",
+            "role": "Chairwoman",
+            "bio": "Chairwoman of the Board of Directors of the Museum of the Jewish People."
+          },
+          {
+            "id": "dan-tadmor",
+            "name": "Dan Tadmor",
+            "role": "CEO",
+            "bio": "CEO of the Museum of the Jewish People at Beit Hatfutsot."
+          }
+        ],
         "connections": [],
         "id": "museum-of-the-jewish-people-at-beit-hatfutsot"
       },
@@ -13857,7 +14012,14 @@
         "category": "Sports",
         "founded": 1948,
         "description": "National Jewish sports organization that fields the US delegation to the Maccabiah Games in Israel, the world's third-largest international sporting event.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "harvey-glasser",
+            "name": "Harvey Glasser",
+            "role": "President",
+            "bio": "Longtime president of Maccabi USA."
+          }
+        ],
         "connections": [],
         "id": "maccabi-usa"
       },
@@ -13868,8 +14030,37 @@
         "founded": 1874,
         "description": "Cultural and community center on the Upper East Side of Manhattan. Despite its name, not just a gym - hosts world-class lectures, concerts, readings, and educational programs. One of New York's premier cultural institutions.",
         "website": "https://www.92ny.org/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "seth-pinsky",
+            "name": "Seth Pinsky",
+            "role": "CEO",
+            "bio": "CEO of the 92nd Street Y/92NY since 2020, former NYC Economic Development Corporation president."
+          },
+          {
+            "id": "sol-adler",
+            "name": "Sol Adler",
+            "role": "Founder",
+            "bio": "Founding member of the Young Men's Hebrew Association which became the 92nd Street Y."
+          }
+        ],
+        "connections": [
+          {
+            "name": "New York City",
+            "type": "cultural institution",
+            "description": "A flagship Jewish cultural center in Manhattan since 1874."
+          },
+          {
+            "name": "American Jewish community",
+            "type": "cultural hub",
+            "description": "Major center for Jewish cultural and intellectual life."
+          },
+          {
+            "name": "UJA-Federation of New York",
+            "type": "funding partner",
+            "description": "Supported by UJA-Federation for programming and operations."
+          }
+        ],
         "id": "92nd-street-y"
       },
       {
@@ -13878,8 +14069,31 @@
         "category": "Advocacy & Public Affairs",
         "founded": 1981,
         "description": "Liberal Jewish advocacy group supporting a two-state solution. American sister organization of Israel's Peace Now (Shalom Achshav) movement.",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "hadar-susskind",
+            "name": "Hadar Susskind",
+            "role": "President & CEO",
+            "bio": "President and CEO of Americans for Peace Now."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Shalom Achshav (Peace Now)",
+            "type": "sister organization",
+            "description": "Americans for Peace Now is the American partner of the Israeli Peace Now movement."
+          },
+          {
+            "name": "J Street",
+            "type": "allied organization",
+            "description": "Both organizations advocate for a two-state solution to the Israeli-Palestinian conflict."
+          },
+          {
+            "name": "American Jewish community",
+            "type": "advocacy",
+            "description": "Part of the progressive wing of American Jewish advocacy."
+          }
+        ],
         "id": "americans-for-peace-now"
       },
       {
@@ -13975,8 +14189,37 @@
         "category": "Entertainment & Media",
         "founded": 1926,
         "description": "American media and entertainment conglomerate owned by Comcast. Includes NBC, Universal Pictures, DreamWorks Animation, and Universal Parks. Revenue exceeds $35 billion.",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "jeff-shell",
+            "name": "Jeff Shell",
+            "role": "Former CEO",
+            "bio": "Former CEO of NBCUniversal (2020-2023)."
+          },
+          {
+            "id": "mark-lazarus",
+            "name": "Mark Lazarus",
+            "role": "Chairman of NBCUniversal Media Group",
+            "bio": "Chairman of NBCUniversal Media Group overseeing entertainment and streaming."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Comcast Corporation",
+            "type": "parent company",
+            "description": "NBCUniversal is wholly owned by Comcast Corporation, led by Brian Roberts."
+          },
+          {
+            "name": "DreamWorks",
+            "type": "acquisition",
+            "description": "NBCUniversal acquired DreamWorks Animation in 2016."
+          },
+          {
+            "name": "ViacomCBS",
+            "type": "industry peer",
+            "description": "Competing media conglomerate in entertainment industry."
+          }
+        ],
         "id": "nbcuniversal"
       },
       {
@@ -14068,12 +14311,35 @@
         "founded": 1935,
         "description": "Leading global financial services firm providing investment banking, securities, wealth management, and investment management. Revenue exceeds $50 billion.",
         "website": "https://www.morganstanley.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "james-gorman",
+            "name": "James Gorman",
+            "role": "Executive Chairman",
+            "bio": "Executive Chairman of Morgan Stanley, served as CEO from 2010-2024."
+          },
+          {
+            "id": "ted-pick",
+            "name": "Ted Pick",
+            "role": "CEO",
+            "bio": "CEO of Morgan Stanley since January 2024."
+          }
+        ],
         "connections": [
           {
             "name": "Goldman Sachs",
             "type": "industry peer",
             "description": "Both are major financial institutions"
+          },
+          {
+            "name": "JPMorgan Chase",
+            "type": "industry peer",
+            "description": "Competing global financial institutions."
+          },
+          {
+            "name": "US Securities and Exchange Commission",
+            "type": "regulatory",
+            "description": "Regulated by the SEC as a major financial institution."
           }
         ],
         "id": "morgan-stanley"
@@ -14119,8 +14385,26 @@
         "category": "Technology",
         "founded": 2013,
         "description": "Unified analytics platform for data engineering, data science, and AI. Valued at over $43 billion. Founded by the creators of Apache Spark.",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "ali-ghodsi",
+            "name": "Ali Ghodsi",
+            "role": "CEO & Co-Founder",
+            "bio": "Co-founder and CEO of Databricks, the data and AI company valued at over $40 billion."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Microsoft",
+            "type": "technology partner",
+            "description": "Databricks integrates deeply with Microsoft Azure cloud services."
+          },
+          {
+            "name": "Amazon Web Services",
+            "type": "technology partner",
+            "description": "Databricks runs on AWS as a primary cloud platform."
+          }
+        ],
         "id": "databricks"
       },
       {
@@ -14147,8 +14431,26 @@
         "founded": 2003,
         "description": "Electric vehicle and clean energy company. Under Elon Musk's leadership became the world's most valuable automaker. Market cap exceeds $800 billion.",
         "website": "https://www.tesla.com/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "elon-musk",
+            "name": "Elon Musk",
+            "role": "CEO",
+            "bio": "CEO of Tesla and SpaceX, owner of X (formerly Twitter). South African-born entrepreneur and world's wealthiest person."
+          }
+        ],
+        "connections": [
+          {
+            "name": "SpaceX",
+            "type": "related company",
+            "description": "Both companies led by Elon Musk."
+          },
+          {
+            "name": "US Department of Energy",
+            "type": "government contracts",
+            "description": "Tesla has received federal subsidies and contracts for clean energy."
+          }
+        ],
         "id": "tesla"
       },
       {
@@ -14157,8 +14459,26 @@
         "category": "Real Estate & Property",
         "founded": 1923,
         "description": "One of the largest real estate services companies in the world. Manages over $260 billion in real estate assets including Brookfield Place in Manhattan.",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "bruce-flatt",
+            "name": "Bruce Flatt",
+            "role": "CEO of Brookfield",
+            "bio": "CEO of Brookfield Asset Management, parent of Brookfield Properties. Canadian billionaire investor."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Brookfield Asset Management",
+            "type": "parent company",
+            "description": "Brookfield Properties is a subsidiary of Brookfield Asset Management."
+          },
+          {
+            "name": "World Trade Center",
+            "type": "property",
+            "description": "Brookfield Properties owns Brookfield Place adjacent to the World Trade Center."
+          }
+        ],
         "id": "brookfield-properties"
       },
       {
@@ -14168,8 +14488,31 @@
         "founded": 1948,
         "description": "American global policy think tank. Originally formed by Douglas Aircraft Company to offer research and analysis to the US Armed Forces. Non-partisan research organization.",
         "website": "https://www.rand.org/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "jason-matheny",
+            "name": "Jason Matheny",
+            "role": "President & CEO",
+            "bio": "President and CEO of RAND Corporation since 2022. Former founding director of CSET at Georgetown."
+          }
+        ],
+        "connections": [
+          {
+            "name": "US Department of Defense",
+            "type": "research partner",
+            "description": "RAND was originally created as a project of the US Air Force and continues defense research."
+          },
+          {
+            "name": "Brookings Institution",
+            "type": "think tank peer",
+            "description": "Both are leading American policy research organizations."
+          },
+          {
+            "name": "Council on Foreign Relations (CFR)",
+            "type": "policy network",
+            "description": "Both organizations influence US foreign and domestic policy."
+          }
+        ],
         "id": "rand-corporation"
       },
       {
@@ -14179,8 +14522,48 @@
         "founded": 1921,
         "description": "Independent, nonpartisan think tank specializing in US foreign policy and international affairs. Publishes Foreign Affairs magazine. Membership of approximately 5,000.",
         "website": "https://www.cfr.org/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "michael-froman",
+            "name": "Michael Froman",
+            "role": "President",
+            "bio": "President of the Council on Foreign Relations since 2023. Former US Trade Representative."
+          },
+          {
+            "id": "richard-haass",
+            "name": "Richard Haass",
+            "role": "President Emeritus",
+            "bio": "President of CFR from 2003-2023. Leading foreign policy voice and author."
+          },
+          {
+            "id": "stephen-schwarzman",
+            "name": "Stephen Schwarzman",
+            "role": "Board Member",
+            "bio": "CEO of Blackstone. One of the most influential figures in global finance."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Brookings Institution",
+            "type": "think tank peer",
+            "description": "Both are preeminent US policy think tanks."
+          },
+          {
+            "name": "US State Department",
+            "type": "policy influence",
+            "description": "CFR members frequently serve in senior State Department positions."
+          },
+          {
+            "name": "Trilateral Commission",
+            "type": "partner organization",
+            "description": "Both organizations focus on international affairs and bring together policy leaders."
+          },
+          {
+            "name": "Carnegie Endowment for International Peace",
+            "type": "think tank peer",
+            "description": "Fellow leading foreign policy research institution."
+          }
+        ],
         "id": "council-on-foreign-relations-cfr"
       },
       {
@@ -14190,7 +14573,14 @@
         "founded": 1879,
         "description": "Elite Wall Street law firm known for corporate M&A, securities, and financial services law. One of the most prestigious law firms in the world.",
         "website": "https://www.sullcrom.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "joseph-shenker",
+            "name": "Joseph Shenker",
+            "role": "Chairman",
+            "bio": "Chairman of Sullivan & Cromwell LLP."
+          }
+        ],
         "connections": [],
         "id": "sullivan-cromwell"
       },
@@ -14201,8 +14591,26 @@
         "founded": 1909,
         "description": "Largest law firm in the world by revenue (exceeding $7 billion). Known for private equity, restructuring, and intellectual property law. Headquartered in Chicago.",
         "website": "https://www.kirkland.com/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "jon-ballis",
+            "name": "Jon Ballis",
+            "role": "Chairman",
+            "bio": "Chairman of Kirkland & Ellis, one of the world's largest law firms by revenue."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Sullivan & Cromwell",
+            "type": "industry peer",
+            "description": "Both are top-tier global law firms."
+          },
+          {
+            "name": "Private equity industry",
+            "type": "legal services",
+            "description": "Kirkland & Ellis is the dominant law firm for private equity transactions."
+          }
+        ],
         "id": "kirkland-ellis"
       },
       {
@@ -14291,8 +14699,32 @@
         "founded": 2015,
         "description": "Fifth-largest food and beverage company in the world. Formed from the merger of Kraft Foods and H.J. Heinz Company, backed by Berkshire Hathaway and 3G Capital. Brands include Kraft, Heinz, Oscar Mayer, and Philadelphia.",
         "website": "https://www.kraftheinzcompany.com/",
-        "individuals": [],
-        "connections": [],
+        "individuals": [
+          {
+            "id": "miguel-patricio",
+            "name": "Miguel Patricio",
+            "role": "CEO",
+            "bio": "CEO of Kraft Heinz Company."
+          },
+          {
+            "id": "alexandre-behring",
+            "name": "Alexandre Behring",
+            "role": "Chairman",
+            "bio": "Chairman of the Board at Kraft Heinz. Managing Partner at 3G Capital."
+          }
+        ],
+        "connections": [
+          {
+            "name": "3G Capital",
+            "type": "major shareholder",
+            "description": "3G Capital co-owns Kraft Heinz alongside Berkshire Hathaway."
+          },
+          {
+            "name": "Berkshire Hathaway",
+            "type": "major shareholder",
+            "description": "Warren Buffett's Berkshire Hathaway is a major shareholder in Kraft Heinz."
+          }
+        ],
         "id": "kraft-heinz-company"
       },
       {
@@ -15054,6 +15486,887 @@
         "individuals": [],
         "connections": [],
         "id": "boston-consulting-group-bcg"
+      },
+      {
+        "id": "us-department-of-state-special-envoy-antisemitism",
+        "name": "US Special Envoy to Monitor and Combat Antisemitism",
+        "type": "Government Office",
+        "category": "Government & Diplomacy",
+        "founded": 2004,
+        "description": "Established by the Global Anti-Semitism Review Act of 2004, the Office of the Special Envoy monitors antisemitism worldwide and develops US policies to combat it. Ambassadors have included Deborah Lipstadt (2022-present), Elan Carr (2019-2021), and Ira Forman (2013-2017). Reports directly to the Secretary of State.",
+        "website": "https://www.state.gov/bureaus-offices/special-envoy-to-monitor-and-combat-antisemitism/",
+        "individuals": [
+          {
+            "id": "deborah-lipstadt",
+            "name": "Deborah Lipstadt",
+            "role": "Special Envoy (2022-present)",
+            "bio": "Holocaust historian and Emory University professor serving as US Special Envoy to Monitor and Combat Antisemitism. Famous for her courtroom battle against Holocaust denier David Irving."
+          },
+          {
+            "id": "elan-carr",
+            "name": "Elan Carr",
+            "role": "Special Envoy (2019-2021)",
+            "bio": "Former Special Envoy to Monitor and Combat Antisemitism under the Trump administration."
+          }
+        ],
+        "connections": [
+          {
+            "name": "US State Department",
+            "type": "parent agency",
+            "description": "Office within the US Department of State."
+          },
+          {
+            "name": "Anti-Defamation League",
+            "type": "coordination",
+            "description": "Works with ADL on monitoring antisemitic incidents worldwide."
+          },
+          {
+            "name": "International Holocaust Remembrance Alliance",
+            "type": "partnership",
+            "description": "Coordinating on IHRA definition of antisemitism."
+          }
+        ]
+      },
+      {
+        "id": "us-holocaust-memorial-museum",
+        "name": "United States Holocaust Memorial Museum",
+        "type": "Museum & Memorial",
+        "category": "Heritage & Memorials",
+        "founded": 1993,
+        "description": "America's official memorial to the Holocaust, located on the National Mall in Washington, DC. Established by unanimous Act of Congress in 1980, opened in 1993. Houses one of the world's most comprehensive Holocaust collections with over 12,750 artifacts, 49 million pages of documents, and 80,000 historical photographs. Attracts nearly 2 million visitors annually.",
+        "website": "https://www.ushmm.org/",
+        "individuals": [
+          {
+            "id": "sara-bloomfield",
+            "name": "Sara Bloomfield",
+            "role": "Director (1999-2023)",
+            "bio": "Director of the United States Holocaust Memorial Museum for over two decades."
+          },
+          {
+            "id": "stuart-eizenstat",
+            "name": "Stuart Eizenstat",
+            "role": "Chair",
+            "bio": "Chairman of the US Holocaust Memorial Council. Former Under Secretary of State and key negotiator for Holocaust restitution."
+          },
+          {
+            "id": "elie-wiesel",
+            "name": "Elie Wiesel",
+            "role": "Founding Chairman",
+            "bio": "Nobel Peace Prize laureate and Holocaust survivor who chaired the Presidential Commission that led to the museum's creation."
+          },
+          {
+            "id": "ronald-lauder",
+            "name": "Ronald Lauder",
+            "role": "Supporter",
+            "bio": "President of the World Jewish Congress and heir to the Estee Lauder fortune."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Yad Vashem",
+            "type": "partner institution",
+            "description": "Close partnership with Israel's Holocaust memorial for research and education."
+          },
+          {
+            "name": "US Congress",
+            "type": "chartered by",
+            "description": "Created by unanimous Act of Congress in 1980."
+          },
+          {
+            "name": "Smithsonian Institution",
+            "type": "neighbor institution",
+            "description": "Located on the National Mall near Smithsonian museums."
+          },
+          {
+            "name": "Claims Conference",
+            "type": "restitution partner",
+            "description": "Works alongside Claims Conference on Holocaust documentation and restitution."
+          }
+        ]
+      },
+      {
+        "id": "jewish-telegraphic-agency",
+        "name": "Jewish Telegraphic Agency (JTA)",
+        "type": "News Agency",
+        "category": "Entertainment & Media",
+        "founded": 1917,
+        "description": "Founded in 1917, JTA is the international wire service for Jewish news, providing reporting and analysis to Jewish and mainstream media outlets worldwide. Now operates as part of 70 Faces Media alongside My Jewish Learning and other properties. Has bureaus in New York, Washington, Jerusalem, and other world capitals.",
+        "website": "https://www.jta.org/",
+        "individuals": [
+          {
+            "id": "andrew-silow-carroll",
+            "name": "Andrew Silow-Carroll",
+            "role": "Editor-in-Chief",
+            "bio": "Editor-in-Chief of JTA and editorial lead of 70 Faces Media."
+          }
+        ],
+        "connections": [
+          {
+            "name": "The Forward",
+            "type": "media peer",
+            "description": "Both are leading Jewish American news outlets."
+          },
+          {
+            "name": "My Jewish Learning",
+            "type": "sister site",
+            "description": "Part of the 70 Faces Media network."
+          },
+          {
+            "name": "Times of Israel",
+            "type": "media partner",
+            "description": "Shares content and reporting with Times of Israel."
+          },
+          {
+            "name": "American Jewish community",
+            "type": "media service",
+            "description": "Primary wire service for Jewish communal news in North America."
+          }
+        ]
+      },
+      {
+        "id": "carnegie-endowment-for-international-peace",
+        "name": "Carnegie Endowment for International Peace",
+        "type": "Think Tank",
+        "category": "Research & Think Tanks",
+        "founded": 1910,
+        "description": "One of the world's oldest and most respected international affairs think tanks, founded by Andrew Carnegie. Conducts research on global issues including Middle East peace, democracy, and conflict resolution. Has centers in Washington, Beijing, Beirut, Brussels, Moscow, and New Delhi.",
+        "website": "https://carnegieendowment.org/",
+        "individuals": [
+          {
+            "id": "mariano-florentino-cuellar",
+            "name": "Mariano-Florentino Cuellar",
+            "role": "President",
+            "bio": "President of the Carnegie Endowment since 2021. Former California Supreme Court Justice."
+          },
+          {
+            "id": "aaron-david-miller",
+            "name": "Aaron David Miller",
+            "role": "Senior Fellow",
+            "bio": "Senior Fellow at Carnegie, former US State Department Middle East adviser and negotiator for six Secretaries of State."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Brookings Institution",
+            "type": "think tank peer",
+            "description": "Both leading DC-based policy research organizations."
+          },
+          {
+            "name": "US State Department",
+            "type": "policy advisory",
+            "description": "Carnegie scholars frequently advise the State Department."
+          },
+          {
+            "name": "Council on Foreign Relations (CFR)",
+            "type": "think tank peer",
+            "description": "Fellow leading foreign policy institution."
+          }
+        ]
+      },
+      {
+        "id": "washington-institute-for-near-east-policy",
+        "name": "Washington Institute for Near East Policy (WINEP)",
+        "type": "Think Tank",
+        "category": "Research & Think Tanks",
+        "founded": 1985,
+        "description": "Founded by Martin Indyk in 1985 as a spin-off of AIPAC's research department, WINEP is a highly influential think tank focused on US policy toward the Middle East. Known for its pro-Israel orientation and policy prescriptions. Alumni have served in senior positions across multiple presidential administrations.",
+        "website": "https://www.washingtoninstitute.org/",
+        "individuals": [
+          {
+            "id": "robert-satloff",
+            "name": "Robert Satloff",
+            "role": "Executive Director",
+            "bio": "Executive Director of the Washington Institute since 1993. Leading analyst on Arab-Israel affairs."
+          },
+          {
+            "id": "dennis-ross",
+            "name": "Dennis Ross",
+            "role": "Counselor & Fellow",
+            "bio": "Former US Special Envoy for Middle East Peace and longtime diplomat. Counselor at the Washington Institute."
+          }
+        ],
+        "connections": [
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "origin",
+            "description": "WINEP was originally created from AIPAC's research department."
+          },
+          {
+            "name": "US State Department",
+            "type": "revolving door",
+            "description": "Many WINEP fellows have served in senior State Department roles."
+          },
+          {
+            "name": "Brookings Institution",
+            "type": "think tank peer",
+            "description": "Both focus on Middle East policy research in Washington."
+          },
+          {
+            "name": "Israeli government",
+            "type": "policy bridge",
+            "description": "WINEP serves as a key intellectual bridge between US and Israeli policy establishments."
+          }
+        ]
+      },
+      {
+        "id": "jewish-council-for-public-affairs",
+        "name": "Jewish Council for Public Affairs (JCPA)",
+        "type": "Umbrella Organization",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1944,
+        "description": "The Jewish Council for Public Affairs is the representative voice of the organized American Jewish community on public affairs. Coordinates a network of 16 national agencies and 125 local Jewish community relations councils. Focuses on social justice, Israel advocacy, and interfaith relations.",
+        "website": "https://www.jcpa.org/",
+        "individuals": [
+          {
+            "id": "amy-spitalnick",
+            "name": "Amy Spitalnick",
+            "role": "CEO",
+            "bio": "CEO of the Jewish Council for Public Affairs. Former executive director of Integrity First for America."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Conference of Presidents of Major American Jewish Organizations",
+            "type": "partner umbrella",
+            "description": "Both serve as coordinating bodies for American Jewish organizations."
+          },
+          {
+            "name": "Jewish Federations of North America",
+            "type": "community partner",
+            "description": "Works with JFNA on communal policy issues."
+          },
+          {
+            "name": "Anti-Defamation League",
+            "type": "member agency",
+            "description": "ADL is a member agency of the JCPA network."
+          },
+          {
+            "name": "American Jewish Committee (AJC)",
+            "type": "member agency",
+            "description": "AJC participates in the JCPA network."
+          }
+        ]
+      },
+      {
+        "id": "claims-conference",
+        "name": "Conference on Jewish Material Claims Against Germany (Claims Conference)",
+        "type": "Restitution Organization",
+        "category": "Advocacy & Public Affairs",
+        "founded": 1951,
+        "description": "The Claims Conference negotiates for compensation and restitution for victims of Nazi persecution and their heirs. Has secured over $90 billion in compensation payments from Germany since 1952. Administers direct payments to Holocaust survivors and funds Holocaust education, documentation, and research worldwide.",
+        "website": "https://www.claimscon.org/",
+        "individuals": [
+          {
+            "id": "gideon-taylor",
+            "name": "Gideon Taylor",
+            "role": "President",
+            "bio": "President of the Claims Conference, leading Holocaust restitution negotiations."
+          },
+          {
+            "id": "nahum-goldmann",
+            "name": "Nahum Goldmann",
+            "role": "Founding President",
+            "bio": "Lithuanian-born Jewish leader who co-founded the World Jewish Congress and led initial reparations negotiations with Germany."
+          },
+          {
+            "id": "elie-wiesel",
+            "name": "Elie Wiesel",
+            "role": "Honorary Figure",
+            "bio": "Nobel Peace Prize laureate and Holocaust survivor, advocate for Holocaust remembrance worldwide."
+          }
+        ],
+        "connections": [
+          {
+            "name": "German Federal Government",
+            "type": "negotiation partner",
+            "description": "Primary negotiation partner for Holocaust compensation programs."
+          },
+          {
+            "name": "World Jewish Congress",
+            "type": "founding partner",
+            "description": "WJC was instrumental in the creation of the Claims Conference."
+          },
+          {
+            "name": "United States Holocaust Memorial Museum",
+            "type": "funding partner",
+            "description": "Provides funding for Holocaust documentation and education."
+          },
+          {
+            "name": "Yad Vashem",
+            "type": "documentation partner",
+            "description": "Collaborates on Holocaust documentation and survivor identification."
+          }
+        ]
+      },
+      {
+        "id": "jewish-national-fund-usa",
+        "name": "Jewish National Fund-USA (JNF-USA)",
+        "type": "Philanthropic Organization",
+        "category": "Philanthropy & Foundations",
+        "founded": 1901,
+        "description": "The American arm of Keren Kayemeth LeIsrael, JNF-USA raises hundreds of millions of dollars annually for land development, water infrastructure, forestry, and community building in Israel. Has planted over 260 million trees and built over 1,000 reservoirs and dams. Annual budget exceeds $300 million.",
+        "website": "https://www.jnf.org/",
+        "individuals": [
+          {
+            "id": "russell-robinson",
+            "name": "Russell Robinson",
+            "role": "CEO",
+            "bio": "CEO of JNF-USA, leading the organization's fundraising and Israel development initiatives."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Keren Kayemeth LeIsrael",
+            "type": "parent organization",
+            "description": "JNF-USA is the American fundraising arm of the Israeli KKL-JNF."
+          },
+          {
+            "name": "Israeli government",
+            "type": "land development partner",
+            "description": "Works closely with Israeli government on land and water development in the Negev and Galilee."
+          },
+          {
+            "name": "Jewish Federations of North America",
+            "type": "community partner",
+            "description": "Coordinates with JFNA for Israel-related philanthropy."
+          }
+        ]
+      },
+      {
+        "id": "zionist-organization-of-america",
+        "name": "Zionist Organization of America (ZOA)",
+        "type": "Advocacy Organization",
+        "category": "Advocacy & Political Organizations",
+        "founded": 1897,
+        "description": "The oldest pro-Israel organization in the United States, founded in 1897. Under Morton Klein's leadership since 1993, ZOA has taken strong hawkish positions on Israeli-Palestinian issues. Hosts an annual gala attracting major political figures. Has been influential in opposing the Iran nuclear deal and promoting Israeli settlement rights.",
+        "website": "https://www.zoa.org/",
+        "individuals": [
+          {
+            "id": "morton-klein",
+            "name": "Morton Klein",
+            "role": "National President",
+            "bio": "National President of ZOA since 1993, one of the longest-serving Jewish organizational leaders in America. Born in a displaced persons camp in Germany."
+          },
+          {
+            "id": "miriam-adelson",
+            "name": "Miriam Adelson",
+            "role": "Major Donor",
+            "bio": "Israeli-American physician, billionaire, and one of the most prolific donors to Republican and pro-Israel causes."
+          }
+        ],
+        "connections": [
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "allied advocacy",
+            "description": "Both organizations advocate for pro-Israel US policy, though ZOA takes more hawkish positions."
+          },
+          {
+            "name": "Republican Party",
+            "type": "political alignment",
+            "description": "ZOA has been closely aligned with Republican positions on Israel, particularly under President Trump."
+          },
+          {
+            "name": "Israeli settler movement",
+            "type": "advocacy support",
+            "description": "ZOA has been a strong American advocate for Israeli settlement rights in the West Bank."
+          },
+          {
+            "name": "Conference of Presidents of Major American Jewish Organizations",
+            "type": "member",
+            "description": "ZOA is a member of the Conference of Presidents."
+          }
+        ]
+      },
+      {
+        "id": "meta-platforms",
+        "name": "Meta Platforms (Facebook)",
+        "type": "Technology Company",
+        "category": "Technology",
+        "founded": 2004,
+        "description": "Social media and technology conglomerate founded by Mark Zuckerberg. Owns Facebook, Instagram, WhatsApp, and Threads - platforms used by over 3.5 billion people. Also investing heavily in virtual/augmented reality through Quest headsets and the metaverse vision. Headquartered in Menlo Park, California.",
+        "website": "https://about.meta.com/",
+        "individuals": [
+          {
+            "id": "mark-zuckerberg",
+            "name": "Mark Zuckerberg",
+            "role": "CEO & Founder",
+            "bio": "Co-founder and CEO of Meta Platforms. One of the world's wealthiest individuals. Has pledged to donate 99% of his wealth through the Chan Zuckerberg Initiative."
+          },
+          {
+            "id": "sheryl-sandberg",
+            "name": "Sheryl Sandberg",
+            "role": "Former COO",
+            "bio": "Former COO of Meta/Facebook (2008-2022). Author of \"Lean In.\" Major philanthropist supporting Jewish and women's causes."
+          },
+          {
+            "id": "peter-thiel",
+            "name": "Peter Thiel",
+            "role": "Early Investor & Board Member (former)",
+            "bio": "Billionaire entrepreneur. Co-founded PayPal and Palantir. First outside investor in Facebook."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Chan Zuckerberg Initiative",
+            "type": "philanthropic arm",
+            "description": "Mark Zuckerberg and Priscilla Chan's philanthropic organization."
+          },
+          {
+            "name": "Peter Thiel",
+            "type": "early investor",
+            "description": "Peter Thiel was Facebook's first outside investor with a $500,000 investment in 2004."
+          },
+          {
+            "name": "Anti-Defamation League",
+            "type": "content policy",
+            "description": "Works with ADL on combating hate speech and antisemitism on its platforms."
+          },
+          {
+            "name": "Israeli tech ecosystem",
+            "type": "R&D presence",
+            "description": "Meta has major R&D operations in Israel."
+          }
+        ]
+      },
+      {
+        "id": "alphabet-google",
+        "name": "Alphabet (Google)",
+        "type": "Technology Company",
+        "category": "Technology",
+        "founded": 1998,
+        "description": "Parent company of Google, the world's dominant search engine and digital advertising platform. Co-founded by Sergey Brin and Larry Page. Also owns YouTube, Waymo, DeepMind, and other subsidiaries. Google has major R&D operations in Israel and has acquired multiple Israeli startups including Waze for $1.1 billion.",
+        "website": "https://abc.xyz/",
+        "individuals": [
+          {
+            "id": "sergey-brin",
+            "name": "Sergey Brin",
+            "role": "Co-Founder & President",
+            "bio": "Co-founder of Google, born in Moscow, Russia. His family emigrated to the US as Jewish refugees from Soviet persecution. One of the world's wealthiest people."
+          },
+          {
+            "id": "larry-page",
+            "name": "Larry Page",
+            "role": "Co-Founder",
+            "bio": "Co-founder of Google alongside Sergey Brin. Former CEO of Alphabet."
+          },
+          {
+            "id": "ruth-porat",
+            "name": "Ruth Porat",
+            "role": "President & CIO",
+            "bio": "President and Chief Investment Officer of Alphabet. Born in the UK, raised in the US. Former CFO of Morgan Stanley."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Waze",
+            "type": "acquisition",
+            "description": "Google acquired Israeli-founded navigation app Waze for $1.1 billion in 2013."
+          },
+          {
+            "name": "Israeli tech ecosystem",
+            "type": "R&D & acquisitions",
+            "description": "Google has acquired numerous Israeli companies and runs a major R&D center in Tel Aviv."
+          },
+          {
+            "name": "YouTube",
+            "type": "subsidiary",
+            "description": "YouTube, owned by Alphabet, is the world's largest video platform."
+          },
+          {
+            "name": "Stanford University",
+            "type": "founding connection",
+            "description": "Google was founded as a Stanford University research project."
+          }
+        ]
+      },
+      {
+        "id": "blackstone-group",
+        "name": "Blackstone Inc.",
+        "type": "Private Equity & Asset Management",
+        "category": "Investment & Private Equity",
+        "founded": 1985,
+        "description": "The world's largest alternative investment firm with over $1 trillion in assets under management. Co-founded by Stephen Schwarzman and Pete Peterson. Invests across private equity, real estate, hedge fund solutions, and credit. One of Wall Street's most powerful firms.",
+        "website": "https://www.blackstone.com/",
+        "individuals": [
+          {
+            "id": "stephen-schwarzman",
+            "name": "Stephen Schwarzman",
+            "role": "CEO & Co-Founder",
+            "bio": "Co-founder, Chairman, and CEO of Blackstone. One of the wealthiest and most influential figures in global finance. Major donor to education and Jewish causes."
+          },
+          {
+            "id": "jonathan-gray",
+            "name": "Jonathan Gray",
+            "role": "President & COO",
+            "bio": "President and COO of Blackstone, widely seen as Schwarzman's successor. Oversees the firm's $300+ billion real estate portfolio."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Goldman Sachs",
+            "type": "financial peer",
+            "description": "Both are leading Wall Street institutions."
+          },
+          {
+            "name": "KKR",
+            "type": "industry peer",
+            "description": "Competing private equity firm."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "philanthropic",
+            "description": "Stephen Schwarzman is a major supporter of Birthright Israel."
+          },
+          {
+            "name": "Trump Administration",
+            "type": "political connection",
+            "description": "Schwarzman served as chair of Trump's Strategic and Policy Forum."
+          }
+        ]
+      },
+      {
+        "id": "chan-zuckerberg-initiative",
+        "name": "Chan Zuckerberg Initiative (CZI)",
+        "type": "Philanthropic Organization",
+        "category": "Philanthropy & Foundations",
+        "founded": 2015,
+        "description": "Founded by Mark Zuckerberg and Priscilla Chan with a commitment to donate 99% of their Meta shares (worth over $45 billion at time of pledge). Focuses on science, education, and community development. CZI's science arm funds cutting-edge biomedical research, including the Human Cell Atlas project.",
+        "website": "https://chanzuckerberg.com/",
+        "individuals": [
+          {
+            "id": "priscilla-chan",
+            "name": "Priscilla Chan",
+            "role": "Co-Founder & Co-CEO",
+            "bio": "Co-founder of CZI. Pediatrician and philanthropist. Wife of Mark Zuckerberg."
+          },
+          {
+            "id": "mark-zuckerberg",
+            "name": "Mark Zuckerberg",
+            "role": "Co-Founder",
+            "bio": "Co-founder and CEO of Meta Platforms. One of the world's wealthiest individuals."
+          },
+          {
+            "id": "sergey-brin",
+            "name": "Sergey Brin",
+            "role": "Philanthropic Peer",
+            "bio": "Co-founder of Google. Major philanthropist supporting science and Jewish causes."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Meta Platforms (Facebook)",
+            "type": "funding source",
+            "description": "Funded primarily by Zuckerberg's Meta shares."
+          },
+          {
+            "name": "Bill & Melinda Gates Foundation",
+            "type": "philanthropic peer",
+            "description": "Both are among the world's largest philanthropic organizations."
+          }
+        ]
+      },
+      {
+        "id": "paul-singer-elliott-management",
+        "name": "Elliott Management Corporation",
+        "type": "Hedge Fund & Investment",
+        "category": "Investment & Private Equity",
+        "founded": 1977,
+        "description": "One of the world's largest and most influential activist hedge funds, founded by Paul Singer. Known for aggressive investment strategies including buying distressed sovereign debt. Manages approximately $60 billion in assets. Paul Singer is one of the largest donors to Republican causes and pro-Israel organizations.",
+        "website": "https://www.elliottmgmt.com/",
+        "individuals": [
+          {
+            "id": "paul-singer",
+            "name": "Paul Singer",
+            "role": "Founder & Co-CEO",
+            "bio": "Founder of Elliott Management. One of the most powerful figures in Republican politics and pro-Israel philanthropy. Major donor to Commentary Magazine, Republican Jewish Coalition, and the Manhattan Institute."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Republican Jewish Coalition",
+            "type": "political donor",
+            "description": "Paul Singer is a major donor to the Republican Jewish Coalition."
+          },
+          {
+            "name": "Commentary Magazine",
+            "type": "media support",
+            "description": "Singer is a major funder of Commentary, a leading neoconservative magazine."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "philanthropic",
+            "description": "Paul Singer is a significant donor to Birthright Israel."
+          },
+          {
+            "name": "Republican Party",
+            "type": "political alignment",
+            "description": "Singer is one of the largest Republican donors in the United States."
+          }
+        ]
+      },
+      {
+        "id": "democratic-majority-for-israel",
+        "name": "Democratic Majority for Israel (DMFI)",
+        "type": "Political Organization",
+        "category": "Advocacy & Political Organizations",
+        "founded": 2019,
+        "description": "Pro-Israel political organization within the Democratic Party, founded by Mark Mellman. Created to counter growing progressive criticism of Israel within the party. Operates a super PAC that spent over $30 million in 2022 elections supporting pro-Israel Democratic candidates.",
+        "website": "https://www.demmajority.com/",
+        "individuals": [
+          {
+            "id": "mark-mellman",
+            "name": "Mark Mellman",
+            "role": "Founder & CEO",
+            "bio": "Founder and CEO of Democratic Majority for Israel. Veteran Democratic pollster and political strategist."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Democratic Party",
+            "type": "political alignment",
+            "description": "Works within the Democratic Party to support pro-Israel candidates and policies."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "aligned goal",
+            "description": "Both work to maintain bipartisan support for Israel in Congress."
+          },
+          {
+            "name": "Republican Jewish Coalition",
+            "type": "counterpart",
+            "description": "DMFI is the Democratic counterpart to the Republican Jewish Coalition."
+          },
+          {
+            "name": "J Street",
+            "type": "intra-party rival",
+            "description": "DMFI was partly created as a counterweight to J Street's progressive positions."
+          }
+        ]
+      },
+      {
+        "id": "new-york-times-company",
+        "name": "The New York Times Company",
+        "type": "Media Company",
+        "category": "Entertainment & Media",
+        "founded": 1851,
+        "description": "The New York Times is America's most influential newspaper and one of the most important media institutions in the world. The Sulzberger-Ochs family has owned and controlled the paper since Adolph Ochs purchased it in 1896. Now the world's largest digital news subscription service with over 10 million subscribers.",
+        "website": "https://www.nytimes.com/",
+        "individuals": [
+          {
+            "id": "a-g-sulzberger",
+            "name": "A.G. Sulzberger",
+            "role": "Publisher & Chairman",
+            "bio": "Publisher of The New York Times and Chairman of The New York Times Company. Represents the fifth generation of the Ochs-Sulzberger family to lead the paper."
+          },
+          {
+            "id": "meredith-kopit-levien",
+            "name": "Meredith Kopit Levien",
+            "role": "CEO",
+            "bio": "President and CEO of The New York Times Company since 2020."
+          }
+        ],
+        "connections": [
+          {
+            "name": "The Forward",
+            "type": "media peer",
+            "description": "Both are prominent American media outlets with Jewish heritage."
+          },
+          {
+            "name": "Washington Post",
+            "type": "media rival",
+            "description": "Primary US newspaper rival."
+          },
+          {
+            "name": "Wirecutter",
+            "type": "subsidiary",
+            "description": "NYT acquired product review site Wirecutter."
+          }
+        ]
+      },
+      {
+        "id": "friends-of-the-israel-defense-forces",
+        "name": "Friends of the Israel Defense Forces (FIDF)",
+        "type": "Support Organization",
+        "category": "Defense & Security",
+        "founded": 1981,
+        "description": "American non-profit that provides for the wellbeing of soldiers in the Israel Defense Forces. Raises over $200 million annually for IDF welfare programs, scholarships, and support facilities. Hosts an annual gala that is one of the largest fundraising events in the American Jewish community, regularly raising $50-60 million in a single evening.",
+        "website": "https://www.fidf.org/",
+        "individuals": [
+          {
+            "id": "steven-weil",
+            "name": "Steven Weil",
+            "role": "National Director & CEO",
+            "bio": "National Director and CEO of FIDF."
+          },
+          {
+            "id": "miriam-adelson",
+            "name": "Miriam Adelson",
+            "role": "Major Donor",
+            "bio": "Israeli-American physician, billionaire, and one of the most prolific donors to Republican and pro-Israel causes."
+          },
+          {
+            "id": "robert-kraft",
+            "name": "Robert Kraft",
+            "role": "Major Donor",
+            "bio": "Owner of the New England Patriots NFL team and major philanthropist."
+          },
+          {
+            "id": "larry-ellison",
+            "name": "Larry Ellison",
+            "role": "Major Donor",
+            "bio": "Co-founder and Chairman of Oracle Corporation."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Israel Defense Forces",
+            "type": "supported organization",
+            "description": "FIDF's sole mission is supporting IDF soldiers and veterans."
+          },
+          {
+            "name": "Miriam Adelson",
+            "type": "major donor",
+            "description": "The Adelson family has been among FIDF's largest donors."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "pro-Israel ecosystem",
+            "description": "Part of the broader American pro-Israel organizational ecosystem."
+          }
+        ]
+      },
+      {
+        "id": "jewish-federations-of-north-america",
+        "name": "Jewish Federations of North America (JFNA)",
+        "type": "Umbrella Organization",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1999,
+        "description": "The umbrella organization for 146 Jewish federations and over 300 networked communities across North America. Collectively one of the largest charitable systems in the world, raising and distributing over $3 billion annually. Coordinates continental Jewish communal policy, Israel engagement, and emergency campaigns.",
+        "website": "https://www.jewishfederations.org/",
+        "individuals": [
+          {
+            "id": "eric-fingerhut",
+            "name": "Eric Fingerhut",
+            "role": "President & CEO",
+            "bio": "President and CEO of the Jewish Federations of North America. Former US Congressman and President of Hillel International."
+          },
+          {
+            "id": "mark-wilf",
+            "name": "Mark Wilf",
+            "role": "Chair of the Board",
+            "bio": "Chair of JFNA's Board of Trustees. Owner of the Minnesota Vikings NFL team."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Conference of Presidents of Major American Jewish Organizations",
+            "type": "partner umbrella",
+            "description": "Both serve as coordinating bodies for American Jewish communal life."
+          },
+          {
+            "name": "Jewish Agency for Israel",
+            "type": "major funder",
+            "description": "JFNA is the largest single funder of the Jewish Agency for Israel."
+          },
+          {
+            "name": "American Jewish Joint Distribution Committee",
+            "type": "funding partner",
+            "description": "JFNA provides significant funding to JDC for overseas operations."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "partner",
+            "description": "JFNA is a major partner in the Birthright Israel program."
+          },
+          {
+            "name": "UJA-Federation of New York",
+            "type": "largest federation",
+            "description": "UJA-Federation of New York is the largest local federation in the network."
+          }
+        ]
+      },
+      {
+        "id": "canary-mission",
+        "name": "Canary Mission",
+        "type": "Watchdog Organization",
+        "category": "Advocacy & Political Organizations",
+        "founded": 2014,
+        "description": "Controversial online database that documents individuals and organizations that it claims promote hatred of the United States, Israel, and Jews. Profiles primarily focus on college students and professors involved in BDS and pro-Palestinian activism. Has been criticized for chilling free speech but praised for monitoring antisemitism on campuses.",
+        "website": "https://canarymission.org/",
+        "individuals": [],
+        "connections": [
+          {
+            "name": "Anti-Defamation League",
+            "type": "anti-hate ecosystem",
+            "description": "Part of the broader ecosystem monitoring antisemitism, though ADL has distanced itself from some of Canary Mission's tactics."
+          },
+          {
+            "name": "Students for Justice in Palestine",
+            "type": "monitored group",
+            "description": "SJP chapters are frequently profiled by Canary Mission."
+          },
+          {
+            "name": "BDS Movement",
+            "type": "opposition",
+            "description": "Canary Mission specifically targets BDS activists and supporters."
+          }
+        ]
+      },
+      {
+        "id": "anti-defamation-league-foundation",
+        "name": "ADL (Anti-Defamation League)",
+        "type": "Anti-Hate Organization",
+        "category": "Advocacy & Public Affairs",
+        "founded": 1913,
+        "description": "Founded in 1913 by B'nai B'rith, the ADL is the leading anti-hate organization in the United States. Originally focused on combating antisemitism, it has expanded to fight all forms of hate and bigotry. Operates the largest database tracking extremism and hate crimes in the US. Annual budget exceeds $100 million.",
+        "website": "https://www.adl.org/",
+        "individuals": [
+          {
+            "id": "jonathan-greenblatt",
+            "name": "Jonathan Greenblatt",
+            "role": "CEO & National Director",
+            "bio": "CEO of ADL since 2015. Former Obama administration official who served as Special Assistant to the President."
+          },
+          {
+            "id": "abraham-foxman",
+            "name": "Abraham Foxman",
+            "role": "Former National Director",
+            "bio": "Led the ADL for 28 years (1987-2015). Holocaust survivor and one of the most prominent American Jewish leaders of his generation."
+          },
+          {
+            "id": "sheryl-sandberg",
+            "name": "Sheryl Sandberg",
+            "role": "Board Member",
+            "bio": "Former COO of Meta/Facebook. Author of \"Lean In.\" Major philanthropist."
+          }
+        ],
+        "connections": [
+          {
+            "name": "B'nai B'rith",
+            "type": "founding organization",
+            "description": "ADL was founded by B'nai B'rith in 1913 to combat antisemitism."
+          },
+          {
+            "name": "FBI",
+            "type": "law enforcement partner",
+            "description": "ADL works with the FBI on hate crime tracking and training."
+          },
+          {
+            "name": "Meta Platforms (Facebook)",
+            "type": "content advisory",
+            "description": "ADL advises social media platforms on hate speech policies."
+          },
+          {
+            "name": "Community Security Trust",
+            "type": "international partner",
+            "description": "Works with CST in the UK on monitoring antisemitism."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "pro-Israel alignment",
+            "description": "ADL has advocated for pro-Israel positions alongside AIPAC."
+          }
+        ]
       }
     ],
     "Israel": [
@@ -15895,6 +17208,26 @@
             "name": "IAI",
             "type": "industry peer",
             "description": "Fellow Israeli defense company."
+          },
+          {
+            "name": "Israel Defense Forces",
+            "type": "defense contractor",
+            "description": "Major supplier of defense systems to the IDF."
+          },
+          {
+            "name": "Israel Aerospace Industries",
+            "type": "defense peer",
+            "description": "Fellow major Israeli defense company."
+          },
+          {
+            "name": "Rafael Advanced Defense Systems",
+            "type": "defense peer",
+            "description": "Both are pillars of Israel's defense industrial base."
+          },
+          {
+            "name": "US Department of Defense",
+            "type": "international client",
+            "description": "Elbit has significant contracts with the US military."
           }
         ],
         "category": "Defense & Security",
@@ -16318,6 +17651,12 @@
             "bio": "Former commander of Unit 8200 (Jewish) and co-founder of Team8, a cybersecurity think tank. Unit 8200 alumni have founded many top tech companies.",
             "role": "Former Commander",
             "id": "nadav-zafrir"
+          },
+          {
+            "id": "benjamin-netanyahu",
+            "name": "Benjamin Netanyahu",
+            "role": "Commander-in-Chief (as PM)",
+            "bio": "Israel's longest-serving Prime Minister."
           }
         ],
         "id": "unit-8200",
@@ -16549,6 +17888,12 @@
             "role": "President",
             "bio": "President of the Hebrew University.",
             "id": "asher-cohen"
+          },
+          {
+            "id": "amnon-shashua",
+            "name": "Amnon Shashua",
+            "role": "Professor",
+            "bio": "Professor of Computer Science at Hebrew University and CEO of Mobileye."
           }
         ],
         "id": "hebrew-university-of-jerusalem",
@@ -20901,6 +22246,26 @@
             "name": "Brandeis University",
             "type": "Jewish educational institution",
             "description": "Both are notable Jewish-affiliated educational institutions"
+          },
+          {
+            "name": "Jewish Federations of North America (JFNA)",
+            "type": "major partner",
+            "description": "JFNA is a founding partner and major funder of Birthright Israel."
+          },
+          {
+            "name": "Miriam Adelson",
+            "type": "major donor",
+            "description": "The Adelson family has donated over $400 million to Birthright Israel."
+          },
+          {
+            "name": "Stephen Schwarzman",
+            "type": "major donor",
+            "description": "Blackstone CEO is a significant Birthright donor."
+          },
+          {
+            "name": "Michael Steinhardt",
+            "type": "co-founder",
+            "description": "Hedge fund pioneer who co-founded Birthright Israel alongside Charles Bronfman."
           }
         ],
         "id": "birthright-israel"
@@ -20977,6 +22342,74 @@
         "individuals": [],
         "connections": [],
         "id": "sheba-medical-center"
+      },
+      {
+        "id": "israel-national-cyber-directorate",
+        "name": "Israel National Cyber Directorate (INCD)",
+        "type": "Government Agency",
+        "category": "Defense & Security",
+        "founded": 2018,
+        "description": "Israel's national cybersecurity authority, responsible for defending the country's civilian cyberspace and advancing Israel's status as a global cyber power. Operates under the Prime Minister's Office. Coordinates national cyber defense and sets cybersecurity policy.",
+        "website": "https://www.gov.il/en/departments/israel_national_cyber_directorate",
+        "individuals": [
+          {
+            "id": "gaby-portnoy",
+            "name": "Gaby Portnoy",
+            "role": "Director General",
+            "bio": "Director General of the Israel National Cyber Directorate."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Prime Minister's Office (Israel)",
+            "type": "parent body",
+            "description": "INCD operates directly under the Prime Minister's Office."
+          },
+          {
+            "name": "Unit 8200 (IDF Intelligence Corps)",
+            "type": "personnel pipeline",
+            "description": "Many INCD personnel are Unit 8200 alumni."
+          },
+          {
+            "name": "US Cybersecurity and Infrastructure Security Agency",
+            "type": "international partner",
+            "description": "Cooperates with CISA on cybersecurity matters."
+          },
+          {
+            "name": "Check Point Software Technologies",
+            "type": "industry partner",
+            "description": "Works with Israeli cybersecurity companies on national defense."
+          }
+        ]
+      },
+      {
+        "id": "ironSource",
+        "name": "ironSource (now Unity)",
+        "type": "Technology Company",
+        "category": "Technology",
+        "founded": 2010,
+        "description": "Israeli ad-tech and app monetization company that merged with Unity Technologies in 2022 for $4.4 billion. Built a leading platform for app developers to monetize and grow their apps. Represented one of Israel's largest tech M&A deals.",
+        "website": "https://www.is.com/",
+        "individuals": [
+          {
+            "id": "tomer-bar-zeev",
+            "name": "Tomer Bar-Zeev",
+            "role": "Co-Founder & CEO",
+            "bio": "Co-founder and CEO of ironSource who led the company's growth and merger with Unity."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Unity Technologies",
+            "type": "merged with",
+            "description": "ironSource merged with Unity Technologies in 2022."
+          },
+          {
+            "name": "Israeli tech ecosystem",
+            "type": "major exit",
+            "description": "One of Israel's largest tech M&A transactions."
+          }
+        ]
       }
     ],
     "United Kingdom": [
@@ -22939,6 +24372,51 @@
           }
         ],
         "id": "bbc-british-broadcasting-corporation"
+      },
+      {
+        "id": "community-security-trust",
+        "name": "Community Security Trust (CST)",
+        "type": "Security Organization",
+        "category": "Defense & Security",
+        "founded": 1994,
+        "description": "The principal organization providing security and protecting the British Jewish community from antisemitism and terrorism. Trains and deploys over 3,000 volunteer security guards to protect synagogues, schools, and events. Publishes annual antisemitic incidents reports. Works closely with UK police and intelligence services.",
+        "website": "https://cst.org.uk/",
+        "individuals": [
+          {
+            "id": "gerald-ronson",
+            "name": "Gerald Ronson",
+            "role": "Chief Executive Emeritus",
+            "bio": "British billionaire property developer and founding supporter of CST. CEO of Heron International."
+          },
+          {
+            "id": "mark-gardner",
+            "name": "Mark Gardner",
+            "role": "CEO",
+            "bio": "CEO of the Community Security Trust, leading Jewish community security in the UK."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Board of Deputies of British Jews",
+            "type": "communal partner",
+            "description": "Works with the Board of Deputies on community protection."
+          },
+          {
+            "name": "UK Metropolitan Police",
+            "type": "law enforcement partner",
+            "description": "Coordinates closely with UK police on Jewish community security."
+          },
+          {
+            "name": "Anti-Defamation League",
+            "type": "international peer",
+            "description": "Shares antisemitism monitoring data with the ADL."
+          },
+          {
+            "name": "Shin Bet",
+            "type": "security consultation",
+            "description": "Has consulted with Israeli security services on community protection methods."
+          }
+        ]
       }
     ],
     "France": [
@@ -24159,6 +25637,45 @@
           }
         ],
         "id": "soci-t-g-n-rale"
+      },
+      {
+        "id": "crif",
+        "name": "CRIF (Representative Council of Jewish Institutions of France)",
+        "type": "Representative Body",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1944,
+        "description": "The principal representative body of the French Jewish community, founded during the Resistance in 1944. Represents over 70 Jewish organizations to the French government and public. Hosts an annual dinner attended by French presidents and senior officials, considered one of the most important events on the French political calendar.",
+        "website": "https://www.crif.org/",
+        "individuals": [
+          {
+            "id": "yonathan-arfi",
+            "name": "Yonathan Arfi",
+            "role": "President",
+            "bio": "President of CRIF since 2022, representing the French Jewish community."
+          }
+        ],
+        "connections": [
+          {
+            "name": "French government",
+            "type": "official representation",
+            "description": "CRIF is the primary representative body of French Jews to the government."
+          },
+          {
+            "name": "Board of Deputies of British Jews",
+            "type": "European peer",
+            "description": "Fellow national Jewish representative body in Europe."
+          },
+          {
+            "name": "World Jewish Congress",
+            "type": "international affiliation",
+            "description": "French affiliate of the World Jewish Congress."
+          },
+          {
+            "name": "Alliance Israelite Universelle",
+            "type": "communal partner",
+            "description": "Both are major French Jewish institutions."
+          }
+        ]
       }
     ],
     "Canada": [
@@ -25846,6 +27363,40 @@
         "individuals": [],
         "connections": [],
         "id": "csl-limited"
+      },
+      {
+        "id": "executive-council-of-australian-jewry",
+        "name": "Executive Council of Australian Jewry (ECAJ)",
+        "type": "Representative Body",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1944,
+        "description": "The peak representative body of the Australian Jewish community, representing approximately 120,000 Jews. Coordinates communal policy on antisemitism, Israel advocacy, and community relations. Publishes an annual report on antisemitism in Australia.",
+        "website": "https://www.ecaj.org.au/",
+        "individuals": [
+          {
+            "id": "jillian-segal",
+            "name": "Jillian Segal",
+            "role": "President",
+            "bio": "President of the Executive Council of Australian Jewry."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Australian government",
+            "type": "community representation",
+            "description": "Primary representative of Australian Jews to the federal government."
+          },
+          {
+            "name": "Board of Deputies of British Jews",
+            "type": "international peer",
+            "description": "Fellow Commonwealth Jewish representative body."
+          },
+          {
+            "name": "World Jewish Congress",
+            "type": "international affiliation",
+            "description": "Australian affiliate of the World Jewish Congress."
+          }
+        ]
       }
     ],
     "Germany": [
@@ -28450,6 +30001,40 @@
           }
         ],
         "id": "federation-of-jewish-communities-of-brazil-conib"
+      },
+      {
+        "id": "confederacao-israelita-do-brasil",
+        "name": "Confederacao Israelita do Brasil (CONIB)",
+        "type": "Representative Body",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1951,
+        "description": "The umbrella organization of the Brazilian Jewish community, representing approximately 120,000 Jews - the second-largest Jewish community in Latin America. Coordinates communal affairs, combats antisemitism, and advocates for Brazil-Israel relations.",
+        "website": "https://www.conib.org.br/",
+        "individuals": [
+          {
+            "id": "claudio-lottenberg",
+            "name": "Claudio Lottenberg",
+            "role": "President",
+            "bio": "President of CONIB and prominent ophthalmologist. Leading voice for the Brazilian Jewish community."
+          }
+        ],
+        "connections": [
+          {
+            "name": "World Jewish Congress",
+            "type": "international affiliation",
+            "description": "Brazilian affiliate of the World Jewish Congress."
+          },
+          {
+            "name": "DAIA (Argentina)",
+            "type": "Latin American peer",
+            "description": "Fellow Latin American Jewish representative body."
+          },
+          {
+            "name": "Brazilian government",
+            "type": "community representation",
+            "description": "Represents Brazilian Jews to the federal government."
+          }
+        ]
       }
     ],
     "South Africa": [
