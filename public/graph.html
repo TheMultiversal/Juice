@@ -431,20 +431,22 @@
       let layoutOpts;
 
       if (layoutName === 'cose') {
+        const iters = totalNodes > 800 ? 100 : totalNodes > 400 ? 200 : 400;
         layoutOpts = {
           name: 'cose',
           animate: false,
           fit: true,
           padding: 60,
-          nodeRepulsion: function() { return totalNodes > 500 ? 12000 : 8000; },
-          idealEdgeLength: function() { return totalNodes > 500 ? 140 : 100; },
-          edgeElasticity: function() { return 80; },
-          gravity: 0.18,
-          numIter: 800,
+          nodeRepulsion: function() { return 8000; },
+          idealEdgeLength: function() { return 120; },
+          edgeElasticity: function() { return 100; },
+          gravity: 0.25,
+          numIter: iters,
           nodeOverlap: 30
         };
       } else if (layoutName === 'fcose') {
-        // Warning: fCoSE is O(n²) — very slow for large graphs
+        // fCoSE is O(n²) per iteration — keep iterations very low
+        const iters = totalNodes > 800 ? 80 : totalNodes > 400 ? 150 : 300;
         layoutOpts = {
           name: 'fcose',
           quality: 'default',
@@ -461,7 +463,7 @@
           nestingFactor: 0.1,
           gravity: 0.25,
           gravityRange: 3.8,
-          numIter: totalNodes > 500 ? 300 : 500,
+          numIter: iters,
           tile: true,
           tilingPaddingVertical: 30,
           tilingPaddingHorizontal: 30
@@ -483,6 +485,7 @@
       }
 
       // ── Create Cytoscape ──
+      try {
       cy = cytoscape({
         container: document.getElementById('cy'),
         elements: elements,
@@ -490,9 +493,9 @@
         minZoom: 0.02,
         maxZoom: 8,
         pixelRatio: 'auto',
-        textureOnViewport: totalNodes > 800,
-        hideEdgesOnViewport: totalNodes > 1200,
-        hideLabelsOnViewport: totalNodes > 1500,
+        textureOnViewport: totalNodes > 400,
+        hideEdgesOnViewport: totalNodes > 600,
+        hideLabelsOnViewport: totalNodes > 800,
 
         style: [
           // Entry nodes
@@ -720,7 +723,15 @@
           ld.classList.add('off');
           if (cy) cy.fit(undefined, 50);
         }
-      }, 8000);
+      }, 5000);
+
+      } catch(err) {
+        console.error('Layout error, falling back to grid:', err);
+        try {
+          if (cy) cy.layout({ name: 'grid', fit: true, padding: 30, animate: false }).run();
+        } catch(e2) { /* ignore */ }
+        document.getElementById('loading').classList.add('off');
+      }
     }
 
     // ─── Controls ────────────────────────────────────────
@@ -739,14 +750,16 @@
         let opts;
         const n = cy.nodes().length;
         if (name === 'cose') {
+          const it = n > 800 ? 100 : n > 400 ? 200 : 400;
           opts = { name:'cose', animate:false, fit:true, padding:60,
-            nodeRepulsion:()=> n>500?12000:8000, idealEdgeLength:()=> n>500?140:100,
-            edgeElasticity:()=>80, gravity:0.18, numIter:800, nodeOverlap:30 };
+            nodeRepulsion:()=>8000, idealEdgeLength:()=>120,
+            edgeElasticity:()=>100, gravity:0.25, numIter:it, nodeOverlap:30 };
         } else if (name === 'fcose') {
+          const it = n > 800 ? 80 : n > 400 ? 150 : 300;
           opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:60,
             uniformNodeDimensions:true, nodeRepulsion:4500,
             idealEdgeLength:120, edgeElasticity:0.45, gravity:0.25,
-            numIter: n>500?300:500, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
+            numIter:it, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
         } else if (name === 'concentric') {
           opts = { name:'concentric', fit:true, padding:30,
             concentric: nd=>nd.degree(), levelWidth:()=>3, animate:false, minNodeSpacing:20 };
@@ -764,7 +777,7 @@
         setTimeout(() => {
           const ld = document.getElementById('loading');
           if (!ld.classList.contains('off')) { ld.classList.add('off'); if (cy) cy.fit(undefined, 50); }
-        }, 8000);
+        }, 5000);
       }, 60);
     };
     document.getElementById('show-labels').onchange = function() {
