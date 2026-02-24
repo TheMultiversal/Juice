@@ -24,7 +24,7 @@
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
 
     /* Glassmorphism panels — matches other pages */
-    .panel, .gp, .sb {
+    .panel, .gp, .sb, .header-panel, .graph-wrap {
       background: rgba(255, 255, 255, 0.15) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
@@ -32,7 +32,7 @@
       border-radius: 12px !important;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
     }
-    .gp:hover { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important; border-color: rgba(255, 255, 255, 0.35) !important; }
+    .gp:hover, .header-panel:hover { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important; border-color: rgba(255, 255, 255, 0.35) !important; }
     nav a {
       background: rgba(255, 255, 255, 0.2) !important;
       backdrop-filter: blur(8px) !important;
@@ -49,11 +49,12 @@
 
     /* ===== PAGE LAYOUT ===== */
     .main { max-width: 1600px; margin: 0 auto; padding: 15px 20px; }
-    h1 { margin: 0 0 5px 0; color: #0056b3; }
-    .subtitle { color: #555; margin: 0 0 15px 0; }
+    .header-panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 16px 20px; margin-bottom: 15px; }
+    .header-panel h1 { margin: 0 0 4px 0; color: #0056b3; }
+    .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
 
     /* ===== GRAPH WRAPPER ===== */
-    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #0a0a1a; }
+    .graph-wrap { position: relative; width: 100%; height: 2400px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: rgba(255,255,255,0.85); }
     #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
 
     /* ===== SHARED PANEL ===== */
@@ -79,7 +80,7 @@
     .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 210px; }
     .cb { padding: 7px 10px 9px; }
     .cb label { font-size: 0.73em; color: #333; display: block; margin: 4px 0 1px; font-weight: 500; }
-    .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(255,255,255,0.7); color: #333; font-size: 0.77em; outline: none; }
+    .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(255,255,255,0.85); color: #333; font-size: 0.77em; outline: none; }
     .cb select:focus { border-color: #0056b3; }
     .cb input[type="range"] { width: 100%; margin: 2px 0; accent-color: #0056b3; }
     .cb .chks { display: flex; gap: 10px; margin: 5px 0 2px; }
@@ -141,11 +142,11 @@
     .ld-overlay {
       position: absolute; inset: 0; display: flex; flex-direction: column;
       align-items: center; justify-content: center; gap: 12px;
-      background: rgba(10,10,26,0.7); z-index: 25; transition: opacity 0.5s;
+      background: rgba(255,255,255,0.8); backdrop-filter: blur(4px); z-index: 25; transition: opacity 0.5s;
     }
     .ld-overlay.off { opacity: 0; pointer-events: none; }
-    .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(255,255,255,0.2); border-top-color: #0056b3; border-radius: 50%; animation: spin 0.75s linear infinite; }
-    .ld-text { color: #fff; font-size: 0.82em; font-weight: 500; }
+    .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(0,0,255,0.1); border-top-color: #0056b3; border-radius: 50%; animation: spin 0.75s linear infinite; }
+    .ld-text { color: #0056b3; font-size: 0.82em; font-weight: 600; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ===== RESPONSIVE ===== */
@@ -166,8 +167,10 @@
   <nav id="navbar"></nav>
 
   <div class="main">
-  <h1>Network Graph</h1>
-  <p class="subtitle">Interactive visualization of organizations, people, and their connections.</p>
+  <div class="header-panel">
+    <h1><i class="fa-solid fa-diagram-project"></i> Network Graph</h1>
+    <p class="subtitle">Interactive visualization of organizations, people, and their connections.</p>
+  </div>
 
   <div class="graph-wrap">
     <!-- Cytoscape canvas container -->
@@ -303,7 +306,7 @@
       'diplomatic partner': '#f06292', 'historical support': '#a1887f',
       'parent organization': '#4fc3f7', 'research partner': '#ba68c8'
     };
-    const DEC = '#2a2a44';
+    const DEC = '#90a4ae';
 
     // ─── Populate dropdowns ──────────────────────────────
     let catOk = 0, cOk = 0;
@@ -430,24 +433,24 @@
       if (layoutName === 'fcose') {
         layoutOpts = {
           name: 'fcose',
-          quality: totalNodes > 1500 ? 'default' : 'default',
+          quality: 'default',
           randomize: true,
           animate: false,
           fit: true,
-          padding: 40,
+          padding: 60,
           nodeDimensionsIncludeLabels: false,
-          uniformNodeDimensions: false,
+          uniformNodeDimensions: true,
           packComponents: true,
-          nodeRepulsion: totalNodes > 1500 ? 12000 : 8000,
-          idealEdgeLength: totalNodes > 1500 ? 120 : 90,
-          edgeElasticity: 0.4,
+          nodeRepulsion: totalNodes > 800 ? 6000 : 4500,
+          idealEdgeLength: totalNodes > 800 ? 150 : 100,
+          edgeElasticity: 0.45,
           nestingFactor: 0.1,
-          gravity: 0.2,
+          gravity: 0.15,
           gravityRange: 3.8,
-          numIter: totalNodes > 1500 ? 3000 : 2500,
+          numIter: totalNodes > 800 ? 800 : 600,
           tile: true,
-          tilingPaddingVertical: 20,
-          tilingPaddingHorizontal: 20
+          tilingPaddingVertical: 30,
+          tilingPaddingHorizontal: 30
         };
       } else if (layoutName === 'cose') {
         layoutOpts = {
@@ -498,20 +501,20 @@
               'shape': 'ellipse',
               'background-color': 'data(color)',
               'border-width': 1,
-              'border-color': 'rgba(180,200,255,0.2)',
+              'border-color': 'rgba(0,0,0,0.1)',
               'width': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
               'height': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
               'label': 'data(name)',
               'font-size': function(n) { return Math.max(6, Math.min(11, 6 + n.degree() * 0.3)); },
-              'color': '#8a9cc0',
+              'color': '#333',
               'text-valign': 'bottom',
               'text-halign': 'center',
               'text-margin-y': 3,
               'text-max-width': 90,
               'text-wrap': 'ellipsis',
               'min-zoomed-font-size': 10,
-              'text-background-color': '#080818',
-              'text-background-opacity': 0.7,
+              'text-background-color': '#fff',
+              'text-background-opacity': 0.75,
               'text-background-padding': '1px',
               'text-background-shape': 'roundrectangle',
               'transition-property': 'border-width, border-color, width, height',
@@ -525,19 +528,19 @@
               'shape': 'diamond',
               'background-color': PC,
               'border-width': 0.8,
-              'border-color': 'rgba(255,200,100,0.25)',
+              'border-color': 'rgba(200,150,50,0.3)',
               'width': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
               'height': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
               'label': 'data(name)',
               'font-size': 6,
-              'color': '#7a8a60',
+              'color': '#555',
               'text-valign': 'bottom',
               'text-halign': 'center',
               'text-margin-y': 2,
               'text-max-width': 70,
               'text-wrap': 'ellipsis',
               'min-zoomed-font-size': 14,
-              'text-background-color': '#080818',
+              'text-background-color': '#fff',
               'text-background-opacity': 0.65,
               'text-background-padding': '1px',
               'text-background-shape': 'roundrectangle',
@@ -550,8 +553,8 @@
             selector: 'edge',
             style: {
               'line-color': 'data(color)',
-              'width': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.4 : 0.8; },
-              'opacity': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.12 : 0.28; },
+              'width': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.5 : 1; },
+              'opacity': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.2 : 0.4; },
               'curve-style': 'haystack',
               'haystack-radius': 0.5
             }
@@ -561,7 +564,7 @@
             selector: 'node:active, node.hover',
             style: {
               'border-width': 3,
-              'border-color': '#fff',
+              'border-color': '#0056b3',
               'z-index': 999,
               'min-zoomed-font-size': 0,
               'text-background-opacity': 0.9
@@ -728,10 +731,10 @@
         let opts;
         const n = cy.nodes().length;
         if (name === 'fcose') {
-          opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:40,
-            nodeRepulsion: n>1500?12000:8000, idealEdgeLength: n>1500?120:90,
-            edgeElasticity:0.4, gravity:0.2, numIter: n>1500?3000:2500,
-            tile:true, tilingPaddingVertical:20, tilingPaddingHorizontal:20 };
+          opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:60,
+            uniformNodeDimensions:true, nodeRepulsion: n>800?6000:4500,
+            idealEdgeLength: n>800?150:100, edgeElasticity:0.45, gravity:0.15,
+            numIter: n>800?800:600, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
         } else if (name === 'cose') {
           opts = { name:'cose', animate:false, fit:true, padding:40,
             nodeRepulsion:()=>9000, idealEdgeLength:()=>100, gravity:0.3, numIter:1500, nodeOverlap:20 };
