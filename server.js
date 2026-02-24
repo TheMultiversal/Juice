@@ -295,14 +295,11 @@ app.get('/api/graph', (req, res) => {
               }
             }
           }
-          // Early exit if we already hit limits
-          if (nodes.length >= 500) break;
         }
-        if (nodes.length >= 500) break;
       }
       // Only include links where both endpoints are in the node set
       const finalLinks = links.filter(l => nodeSet.has(l.source) && nodeSet.has(l.target));
-      return { nodes: nodes.slice(0, 500), links: finalLinks.slice(0, 2000) };
+      return { nodes, links: finalLinks };
     });
     res.json(result);
   } catch (err) { res.status(500).json({ error: 'Server error' }); }

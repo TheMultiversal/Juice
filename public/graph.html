@@ -213,9 +213,7 @@
 
     function tryLoadGraph() {
       if (categoriesReady && countriesReady) {
-        // Default to a category so graph isn't empty
-        const catSel = document.getElementById('category-select');
-        if (catSel.querySelector('option[value="Technology"]')) catSel.value = 'Technology';
+        // Load all entries by default - show the full network
         loadGraph();
       }
     }
