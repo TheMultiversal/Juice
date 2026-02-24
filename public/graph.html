@@ -9,31 +9,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Network Graph</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; overflow: hidden; }
-    nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; overflow: hidden; }
+    nav { padding: 8px 16px; overflow-x: auto; -webkit-overflow-scrolling: touch; position: relative; z-index: 20; }
+    nav ul { list-style: none; margin: 0; padding: 8px 12px; display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; align-items: center; }
     nav ul li { margin: 0; white-space: nowrap; }
-    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
-    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
-    .controls { position: fixed; top: 60px; left: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 12px; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-    .controls h3 { margin: 0 0 8px 0; color: #0056b3; font-size: 1em; }
-    .controls select, .controls input { width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); margin: 3px 0; font-size: 0.9em; box-sizing: border-box; }
-    .controls label { font-size: 0.85em; color: #444; display: block; margin-top: 6px; }
-    .controls button { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.1); color: #0056b3; font-weight: bold; cursor: pointer; margin-top: 6px; }
-    .controls button:hover { background: rgba(0,123,255,0.25); }
-    .legend { position: fixed; bottom: 15px; left: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px; max-width: 280px; max-height: 200px; overflow-y: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.82em; margin: 2px 0; cursor: pointer; }
-    .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-    .tooltip { position: fixed; background: rgba(0,0,0,0.85); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.88em; pointer-events: none; z-index: 20; max-width: 300px; line-height: 1.4; display: none; }
-    #graph { width: 100vw; height: calc(100vh - 50px); }
-    .node-label { font-size: 10px; fill: #333; pointer-events: none; font-weight: bold; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 4px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.78em; display: inline-block; line-height: 1.3; }
+    nav select { padding: 5px 8px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.8em; background: rgba(255,255,255,0.85); }
+
+    /* Graph layout container */
+    .graph-container { position: relative; width: 100vw; height: 100%; overflow: hidden; }
+
+    /* Controls panel - fixed below nav */
+    .controls { position: fixed; top: 0; left: 12px; z-index: 15; background: rgba(255,255,255,0.97); border: 1px solid rgba(0,0,255,0.2); border-radius: 10px; padding: 0; max-width: 240px; box-shadow: 0 4px 20px rgba(0,0,0,0.12); transition: all 0.3s ease; font-size: 0.88em; }
+    .controls.collapsed .controls-body { display: none; }
+    .controls-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; cursor: pointer; user-select: none; border-bottom: 1px solid rgba(0,0,255,0.1); border-radius: 10px 10px 0 0; }
+    .controls-header:hover { background: rgba(0,123,255,0.05); }
+    .controls.collapsed .controls-header { border-bottom: none; border-radius: 10px; }
+    .controls-header h3 { margin: 0; color: #0056b3; font-size: 0.92em; font-weight: 600; }
+    .controls-header .toggle-icon { color: #0056b3; font-size: 0.85em; transition: transform 0.3s ease; }
+    .controls.collapsed .controls-header .toggle-icon { transform: rotate(180deg); }
+    .controls-body { padding: 8px 12px 10px; }
+    .controls select, .controls input[type="range"] { width: 100%; padding: 5px 8px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.2); margin: 2px 0; font-size: 0.88em; box-sizing: border-box; }
+    .controls label { font-size: 0.82em; color: #555; display: block; margin-top: 5px; font-weight: 500; }
+    .controls .checkbox-row { display: flex; gap: 12px; margin-top: 6px; }
+    .controls .checkbox-row label { display: flex; align-items: center; gap: 4px; margin-top: 0; font-weight: normal; cursor: pointer; }
+    .controls .btn-row { display: flex; gap: 6px; margin-top: 8px; }
+    .controls button { flex: 1; padding: 6px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.2); background: rgba(0,123,255,0.08); color: #0056b3; font-weight: 600; cursor: pointer; font-size: 0.82em; transition: background 0.2s; }
+    .controls button:hover { background: rgba(0,123,255,0.2); }
+
+    /* Category legend - bottom left */
+    .legend { position: fixed; bottom: 12px; left: 12px; z-index: 15; background: rgba(255,255,255,0.97); border: 1px solid rgba(0,0,255,0.2); border-radius: 10px; padding: 8px 10px; max-width: 220px; max-height: 180px; overflow-y: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78em; margin: 1px 0; cursor: pointer; }
+    .legend-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+
+    /* Tooltip */
+    .tooltip { position: fixed; background: rgba(10,10,30,0.92); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; pointer-events: none; z-index: 30; max-width: 300px; line-height: 1.4; display: none; backdrop-filter: blur(8px); }
+
+    /* Graph SVG */
+    #graph { width: 100vw; height: 100vh; display: block; }
+    .node-label { font-size: 10px; fill: #333; pointer-events: none; font-weight: 600; text-shadow: 0 0 3px rgba(255,255,255,0.8); }
     .link { stroke-width: 1.5px; }
     .link:hover { stroke-width: 3px; opacity: 1; }
-    .node-count { position: fixed; top: 60px; right: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px 14px; font-size: 0.9em; }
-    .node-count span { color: #0056b3; font-weight: bold; }
-    .edge-legend { position: fixed; bottom: 15px; right: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .edge-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.82em; margin: 3px 0; }
-    .edge-legend-line { width: 24px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* Node count - top right */
+    .node-count { position: fixed; top: 0; right: 12px; z-index: 15; background: rgba(255,255,255,0.97); border: 1px solid rgba(0,0,255,0.2); border-radius: 10px; padding: 8px 14px; font-size: 0.85em; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .node-count span { color: #0056b3; font-weight: 700; }
+
+    /* Edge legend - right side, scrollable */
+    .edge-legend { position: fixed; top: 0; right: 12px; z-index: 15; background: rgba(255,255,255,0.97); border: 1px solid rgba(0,0,255,0.2); border-radius: 10px; padding: 0; max-width: 190px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); transition: all 0.3s ease; font-size: 0.85em; }
+    .edge-legend.collapsed .edge-legend-body { display: none; }
+    .edge-legend-header { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; cursor: pointer; user-select: none; border-bottom: 1px solid rgba(0,0,255,0.1); border-radius: 10px 10px 0 0; }
+    .edge-legend-header:hover { background: rgba(0,123,255,0.05); }
+    .edge-legend.collapsed .edge-legend-header { border-bottom: none; border-radius: 10px; }
+    .edge-legend-body { padding: 4px 10px 8px; max-height: 300px; overflow-y: auto; }
+    .edge-legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.78em; margin: 2px 0; }
+    .edge-legend-line { width: 20px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* Custom scrollbar for legends */
+    .legend::-webkit-scrollbar, .edge-legend-body::-webkit-scrollbar { width: 5px; }
+    .legend::-webkit-scrollbar-track, .edge-legend-body::-webkit-scrollbar-track { background: transparent; }
+    .legend::-webkit-scrollbar-thumb, .edge-legend-body::-webkit-scrollbar-thumb { background: rgba(0,86,179,0.25); border-radius: 3px; }
+    .legend::-webkit-scrollbar-thumb:hover, .edge-legend-body::-webkit-scrollbar-thumb:hover { background: rgba(0,86,179,0.4); }
+
+    /* Quick search inside graph */
+    .graph-search { position: fixed; top: 0; left: 50%; transform: translateX(-50%); z-index: 15; display: flex; gap: 0; }
+    .graph-search input { padding: 7px 14px; border: 1px solid rgba(0,0,255,0.2); border-radius: 8px 0 0 8px; font-size: 0.85em; width: 220px; outline: none; background: rgba(255,255,255,0.97); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .graph-search input:focus { border-color: rgba(0,86,179,0.5); }
+    .graph-search button { padding: 7px 12px; border: 1px solid rgba(0,0,255,0.2); border-left: none; border-radius: 0 8px 8px 0; background: rgba(0,123,255,0.1); color: #0056b3; cursor: pointer; font-size: 0.85em; }
+    .graph-search button:hover { background: rgba(0,123,255,0.2); }
+    .graph-search .search-count { padding: 7px 10px; font-size: 0.8em; color: #666; align-self: center; }
   
     /* Glassmorphism panels */
     .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
@@ -97,7 +141,9 @@
     body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
     body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
     body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
-    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend {
+    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend,
+    body.dark-mode .edge-legend, body.dark-mode .node-count, body.dark-mode .graph-search input,
+    body.dark-mode .graph-search button {
       background: rgba(20, 20, 40, 0.45) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
@@ -125,29 +171,59 @@
       background: rgba(60, 100, 200, 0.15) !important;
       border: 1px solid rgba(100, 100, 255, 0.2) !important;
     }
+    body.dark-mode .node-label { fill: #ccc; text-shadow: 0 0 3px rgba(0,0,0,0.8); }
+    body.dark-mode .controls label { color: #aab; }
+    body.dark-mode .controls-header h3 { color: #8ab4f8; }
+    body.dark-mode .controls button { color: #8ab4f8; background: rgba(100,150,255,0.1); border-color: rgba(100,100,255,0.2); }
+    body.dark-mode .node-count span { color: #8ab4f8; }
+    body.dark-mode .search-count { color: #aab !important; }
 
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
-  <div class="controls">
-    <h3>Network Graph Controls</h3>
-    <label>Filter by Country:</label>
-    <select id="country-select"><option value="">All Countries</option></select>
-    <label>Filter by Category:</label>
-    <select id="category-select"><option value="">All Categories</option></select>
-    <label>Node Size:</label>
-    <input type="range" id="node-size" min="3" max="20" value="8" />
-    <label>Link Distance:</label>
-    <input type="range" id="link-dist" min="30" max="300" value="100" />
-    <label><input type="checkbox" id="show-people" checked /> Show People</label>
-    <label><input type="checkbox" id="show-labels" checked /> Show Labels</label>
-    <button id="reload-btn">Reload Graph</button>
-    <button id="reset-btn">Reset Zoom</button>
+
+  <div class="graph-search">
+    <input type="text" id="graph-search-input" placeholder="Search nodes..." />
+    <button id="graph-search-btn"><i class="fa-solid fa-search"></i></button>
+    <span class="search-count" id="search-count"></span>
   </div>
+
+  <div class="controls" id="controls-panel">
+    <div class="controls-header" id="controls-toggle">
+      <h3><i class="fa-solid fa-sliders"></i> Controls</h3>
+      <span class="toggle-icon"><i class="fa-solid fa-chevron-up"></i></span>
+    </div>
+    <div class="controls-body">
+      <label>Country</label>
+      <select id="country-select"><option value="">All Countries</option></select>
+      <label>Category</label>
+      <select id="category-select"><option value="">All Categories</option></select>
+      <label>Node Size</label>
+      <input type="range" id="node-size" min="3" max="20" value="8" />
+      <label>Link Distance</label>
+      <input type="range" id="link-dist" min="30" max="300" value="100" />
+      <div class="checkbox-row">
+        <label><input type="checkbox" id="show-people" checked /> People</label>
+        <label><input type="checkbox" id="show-labels" checked /> Labels</label>
+      </div>
+      <div class="btn-row">
+        <button id="reload-btn"><i class="fa-solid fa-rotate"></i> Reload</button>
+        <button id="reset-btn"><i class="fa-solid fa-expand"></i> Reset</button>
+      </div>
+    </div>
+  </div>
+
   <div class="node-count" id="node-count"></div>
   <div class="legend" id="legend"></div>
-  <div class="edge-legend" id="edge-legend"></div>
+
+  <div class="edge-legend" id="edge-legend">
+    <div class="edge-legend-header" id="edge-legend-toggle">
+      <strong style="font-size:0.85em"><i class="fa-solid fa-link"></i> Connections</strong>
+      <span class="toggle-icon"><i class="fa-solid fa-chevron-up"></i></span>
+    </div>
+    <div class="edge-legend-body" id="edge-legend-body"></div>
+  </div>
   <div class="tooltip" id="tooltip"></div>
   <svg id="graph"></svg>
 
@@ -156,6 +232,35 @@
   <script>
     initPage('jewish');
     setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization showing connections between religious organizations and individuals.' });
+
+    // Position panels below nav dynamically
+    function positionPanels() {
+      const nav = document.getElementById('navbar');
+      const navH = nav ? nav.offsetHeight : 60;
+      const offset = navH + 8;
+      document.querySelector('.controls').style.top = offset + 'px';
+      document.querySelector('.node-count').style.top = offset + 'px';
+      document.querySelector('.graph-search').style.top = offset + 'px';
+      // Edge legend positioned below node-count
+      const nc = document.getElementById('node-count');
+      const ncBottom = nc ? (offset + nc.offsetHeight + 6) : (offset + 40);
+      document.querySelector('.edge-legend').style.top = ncBottom + 'px';
+      // Edge legend max height
+      const availH = window.innerHeight - ncBottom - 15;
+      document.getElementById('edge-legend-body').style.maxHeight = Math.max(150, availH - 40) + 'px';
+    }
+    // Run after navbar is built and on resize
+    setTimeout(positionPanels, 300);
+    setTimeout(positionPanels, 800);
+    window.addEventListener('resize', positionPanels);
+
+    // Collapsible panels
+    document.getElementById('controls-toggle').addEventListener('click', () => {
+      document.getElementById('controls-panel').classList.toggle('collapsed');
+    });
+    document.getElementById('edge-legend-toggle').addEventListener('click', () => {
+      document.getElementById('edge-legend').classList.toggle('collapsed');
+    });
 
     const categoryColors = {
       'Entertainment & Media': '#e74c3c',
@@ -286,7 +391,8 @@
       if (simulation) { simulation.stop(); simulation = null; }
 
       const width = window.innerWidth;
-      const height = window.innerHeight - 50;
+      const navH = document.getElementById('navbar') ? document.getElementById('navbar').offsetHeight : 60;
+      const height = window.innerHeight - navH;
       svg.attr('width', width).attr('height', height);
 
       const entryCount = data.nodes.filter(n => n.nodeType !== 'person').length;
@@ -336,8 +442,8 @@
 
       // Edge legend
       const edgeTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
-      const edgeLegend = document.getElementById('edge-legend');
-      edgeLegend.innerHTML = '<strong style="font-size:0.85em">Connection Types</strong>';
+      const edgeLegendBody = document.getElementById('edge-legend-body');
+      edgeLegendBody.innerHTML = '';
       edgeTypes.forEach(t => {
         const item = document.createElement('div');
         item.className = 'edge-legend-item';
@@ -346,8 +452,10 @@
         line.style.background = edgeTypeColors[t] || defaultEdgeColor;
         item.appendChild(line);
         item.appendChild(document.createTextNode(t));
-        edgeLegend.appendChild(item);
+        edgeLegendBody.appendChild(item);
       });
+      // Reposition panels after legend content changes
+      setTimeout(positionPanels, 50);
 
       // Links
       const link = svgG.append('g')
@@ -507,6 +615,46 @@
       d3.selectAll('circle').attr('r', s);
       const ps = s * 0.6;
       d3.selectAll('rect').attr('width', ps * 2).attr('height', ps * 2);
+    });
+
+    // Graph search - highlight matching nodes
+    let searchHighlights = [];
+    function searchGraph() {
+      const q = document.getElementById('graph-search-input').value.trim().toLowerCase();
+      // Reset previous highlights
+      d3.selectAll('circle').attr('stroke', '#fff').attr('stroke-width', 1.5);
+      d3.selectAll('rect').attr('stroke', '#fff').attr('stroke-width', 1);
+      searchHighlights = [];
+      if (!q) { document.getElementById('search-count').textContent = ''; return; }
+      // Find and highlight matching nodes
+      let count = 0;
+      d3.selectAll('circle').each(function(d) {
+        if (d.name && d.name.toLowerCase().includes(q)) {
+          d3.select(this).attr('stroke', '#ff0').attr('stroke-width', 3);
+          searchHighlights.push(d);
+          count++;
+        }
+      });
+      d3.selectAll('rect').each(function(d) {
+        if (d.name && d.name.toLowerCase().includes(q)) {
+          d3.select(this).attr('stroke', '#ff0').attr('stroke-width', 3);
+          searchHighlights.push(d);
+          count++;
+        }
+      });
+      document.getElementById('search-count').textContent = count > 0 ? count + ' found' : 'none';
+      // Zoom to first match
+      if (searchHighlights.length > 0 && zoom) {
+        const target = searchHighlights[0];
+        const svg = d3.select('#graph');
+        svg.transition().duration(600).call(zoom.transform,
+          d3.zoomIdentity.translate(window.innerWidth / 2, window.innerHeight / 2).scale(2).translate(-target.x, -target.y)
+        );
+      }
+    }
+    document.getElementById('graph-search-btn').addEventListener('click', searchGraph);
+    document.getElementById('graph-search-input').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') searchGraph();
     });
   </script>
 </body>
