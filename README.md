@@ -159,5 +159,5 @@ Juice/
 
 ## License
 
-© 2016,2026 Juice Project. All rights reserved.
+© 2016-2026 Juice Project. All rights reserved.
 

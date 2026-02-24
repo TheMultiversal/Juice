@@ -427,6 +427,6 @@ function addFooter() {
   const footer = document.createElement('footer');
   footer.className = 'site-footer';
   footer.style.cssText = 'text-align:center;padding:20px;margin-top:40px;border-top:1px solid rgba(0,0,255,0.15);font-size:0.85em;color:#888;background:rgba(250,250,255,0.95);';
-  footer.innerHTML = '© 2016,' + new Date().getFullYear() + ' Juice Project. All rights reserved. | v4.2 | <a href="audit.html" style="color:#0056b3;text-decoration:none;">Audit</a>';
+  footer.innerHTML = '© 2016-' + new Date().getFullYear() + ' Juice Project. All rights reserved. | v4.2 | <a href="audit.html" style="color:#0056b3;text-decoration:none;">Audit</a>';
   document.body.appendChild(footer);
 }
