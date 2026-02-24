@@ -37,7 +37,7 @@ addConn('jim-joseph-foundation', [
   { name: "Birthright Israel", type: "grantee", description: "Significant funder of Birthright Israel and Israel experience programs." },
   { name: "Hillel International", type: "grantee", description: "Major donor to Hillel campus programs across North America." }
 ]);
-updDesc('jim-joseph-foundation', 'Created by the estate of Jim Joseph (Jewish), a San Francisco real estate developer who died in 2009, leaving over $500 million to Jewish education — one of the largest bequests in Jewish philanthropic history. The foundation funds Jewish day schools, Birthright Israel, Hillel, PJ Library, and other programs. Focuses on engaging young Jews ages 13-25 in Jewish life and learning.');
+updDesc('jim-joseph-foundation', 'Created by the estate of Jim Joseph (Jewish), a San Francisco real estate developer who died in 2009, leaving over $500 million to Jewish education , one of the largest bequests in Jewish philanthropic history. The foundation funds Jewish day schools, Birthright Israel, Hillel, PJ Library, and other programs. Focuses on engaging young Jews ages 13-25 in Jewish life and learning.');
 
 addConn('maimonides-fund', [
   { name: "Sheldon Adelson", type: "backer", description: "The Maimonides Fund was associated with the Adelsons' philanthropic strategy." },
@@ -65,7 +65,7 @@ updDesc('charles-bronfman-foundation', 'Charles Bronfman (Jewish, Canadian) is a
 
 addConn('adelson-family-foundation', [
   { name: "Sheldon Adelson", type: "founder", description: "Sheldon Adelson (Jewish, 1933-2021) and his wife Miriam founded the Adelson Family Foundation." },
-  { name: "Birthright Israel", type: "mega-gift", description: "Sheldon Adelson donated $410 million to Birthright — the largest single philanthropic gift." },
+  { name: "Birthright Israel", type: "mega-gift", description: "Sheldon Adelson donated $410 million to Birthright , the largest single philanthropic gift." },
   { name: "Yad Vashem", type: "major gift", description: "Major donor to Yad Vashem Holocaust memorial in Jerusalem." },
   { name: "Republican Party", type: "political donations", description: "The Adelsons donated $500+ million to Republican causes." },
   { name: "Adelson Medical Research Foundation", type: "medical research", description: "Funds research on cancer, neuroscience, and substance abuse." }
@@ -106,7 +106,7 @@ addConn('friends-of-the-idf-fidf-additional-chapters', [
   { name: "IDF soldiers", type: "beneficiaries", description: "Supports IDF soldiers and their families through scholarships, wellbeing programs." },
   { name: "Local Jewish communities", type: "donor base", description: "FIDF chapters operate in major Jewish communities across America." }
 ]);
-updDesc('friends-of-the-idf-fidf-additional-chapters', 'FIDF operates regional chapters across the US — from New York to LA, Miami to Chicago — each hosting galas and events to support IDF soldiers. Individual chapters raise millions annually. Programs include IMPACT! scholarships, Lone Soldier support, PTSD treatment, and recreational facilities for soldiers. FIDF\'s network reflects the depth of American Jewish pro-Israel engagement.');
+updDesc('friends-of-the-idf-fidf-additional-chapters', 'FIDF operates regional chapters across the US , from New York to LA, Miami to Chicago , each hosting galas and events to support IDF soldiers. Individual chapters raise millions annually. Programs include IMPACT! scholarships, Lone Soldier support, PTSD treatment, and recreational facilities for soldiers. FIDF\'s network reflects the depth of American Jewish pro-Israel engagement.');
 
 addConn('nefesh-b-nefesh', [
   { name: "Tony Gelbart", type: "co-founder", description: "Tony Gelbart (Jewish) co-founded NBN to facilitate North American aliyah to Israel." },
@@ -144,7 +144,7 @@ addConn('pj-library', [
   { name: "680,000+ children", type: "reach", description: "PJ Library sends free Jewish children's books to 680,000+ kids monthly in 35 countries." },
   { name: "Jewish federations", type: "local partners", description: "Local Jewish federations partner to distribute PJ Library books in their communities." }
 ]);
-updDesc('pj-library', 'Created by Harold Grinspoon (Jewish) through the Harold Grinspoon Foundation. PJ Library sends free, high-quality Jewish children\'s books and music to families monthly. Now reaching 680,000+ children in 35 countries. "PJ" stands for "pajamas" — the idea of parents and children reading together at bedtime. The program has distributed over 20 million books and is widely considered one of the most successful Jewish engagement initiatives.');
+updDesc('pj-library', 'Created by Harold Grinspoon (Jewish) through the Harold Grinspoon Foundation. PJ Library sends free, high-quality Jewish children\'s books and music to families monthly. Now reaching 680,000+ children in 35 countries. "PJ" stands for "pajamas" , the idea of parents and children reading together at bedtime. The program has distributed over 20 million books and is widely considered one of the most successful Jewish engagement initiatives.');
 
 // ============================================================
 // US - PHARMACEUTICALS & HEALTHCARE
@@ -156,7 +156,7 @@ addConn('pfizer', [
   { name: "Israel vaccine rollout", type: "connection", description: "Israel was the first country to mass-vaccinate with Pfizer, sharing data in exchange for early supply." },
   { name: "Genesis Prize", type: "recognition", description: "Bourla won the Genesis Prize (the 'Jewish Nobel') in 2022." }
 ]);
-updDesc('pfizer', 'CEO Albert Bourla (Jewish, born in Thessaloniki, Greece to Holocaust survivor parents — his parents survived the Nazis when 96% of Thessaloniki\'s Jews were killed) led the development of the Pfizer-BioNTech COVID-19 vaccine in record time. Israel was the first country to mass-vaccinate with Pfizer, sharing real-world data in exchange for early supply. Bourla won the Genesis Prize (\"Jewish Nobel\") in 2022. Pfizer is a $200+ billion pharmaceutical giant.');
+updDesc('pfizer', 'CEO Albert Bourla (Jewish, born in Thessaloniki, Greece to Holocaust survivor parents , his parents survived the Nazis when 96% of Thessaloniki\'s Jews were killed) led the development of the Pfizer-BioNTech COVID-19 vaccine in record time. Israel was the first country to mass-vaccinate with Pfizer, sharing real-world data in exchange for early supply. Bourla won the Genesis Prize (\"Jewish Nobel\") in 2022. Pfizer is a $200+ billion pharmaceutical giant.');
 addInd('pfizer', { name: "Albert Bourla", bio: "CEO of Pfizer since 2019. Born in Thessaloniki, Greece to Sephardic Jewish Holocaust survivor parents. Led development of the first COVID-19 vaccine. Won the Genesis Prize in 2022." });
 
 addConn('valeant-bausch-health', [
@@ -193,7 +193,7 @@ addConn('maimonides-medical-center', [
   { name: "718 beds", type: "size", description: "A 718-bed teaching hospital serving 250,000+ patients annually." },
   { name: "Orthodox Jewish community", type: "patient base", description: "Major provider for Brooklyn's Hasidic and Orthodox communities." }
 ]);
-updDesc('maimonides-medical-center', 'Named after Maimonides (Rabbi Moses ben Maimon, 1138-1204), the medieval Jewish philosopher, scholar, and physician. Located in Borough Park, Brooklyn — the heart of one of the largest Orthodox Jewish communities in America. A 718-bed teaching hospital serving 250,000+ patients annually. Known for cardiac care and serving multicultural Brooklyn communities including Hasidic, Chinese, and Russian populations.');
+updDesc('maimonides-medical-center', 'Named after Maimonides (Rabbi Moses ben Maimon, 1138-1204), the medieval Jewish philosopher, scholar, and physician. Located in Borough Park, Brooklyn , the heart of one of the largest Orthodox Jewish communities in America. A 718-bed teaching hospital serving 250,000+ patients annually. Known for cardiac care and serving multicultural Brooklyn communities including Hasidic, Chinese, and Russian populations.');
 
 addConn('montefiore-medical-center', [
   { name: "Sir Moses Montefiore", type: "namesake", description: "Named after Sir Moses Montefiore (1784-1885), the great Jewish philanthropist." },
@@ -209,7 +209,7 @@ addConn('northwell-health-formerly-north-shore-lij', [
   { name: "23 hospitals", type: "system size", description: "Northwell operates 23 hospitals with 80,000+ employees, making it NY's largest private employer." },
   { name: "Feinstein Institutes", type: "research", description: "Northwell's Feinstein Institutes for Medical Research is named after Michael Feinstein (Jewish)." }
 ]);
-updDesc('northwell-health-formerly-north-shore-lij', 'New York State\'s largest health system, formed from the merger of North Shore Health System and Long Island Jewish Medical Center. LIJ was founded by the Jewish community of Long Island in 1954. Now operates 23 hospitals with 80,000+ employees — the largest private employer in New York. The Feinstein Institutes for Medical Research is one of the largest research programs in the US.');
+updDesc('northwell-health-formerly-north-shore-lij', 'New York State\'s largest health system, formed from the merger of North Shore Health System and Long Island Jewish Medical Center. LIJ was founded by the Jewish community of Long Island in 1954. Now operates 23 hospitals with 80,000+ employees , the largest private employer in New York. The Feinstein Institutes for Medical Research is one of the largest research programs in the US.');
 
 addConn('moderna-israeli-connections', [
   { name: "Tal Zaks", type: "former chief medical officer", description: "Tal Zaks (Jewish, Israeli) served as Moderna's CMO, leading COVID-19 vaccine clinical trials." },
@@ -270,7 +270,7 @@ addConn('temple-emanu-el-new-york', [
   { name: "2,500 seat sanctuary", type: "size", description: "The main sanctuary seats 2,500, larger than St. Patrick's Cathedral." },
   { name: "Our Crowd families", type: "membership", description: "Historic membership includes the Lehman, Goldman, Schiff, Warburg, and other prominent Jewish families." }
 ]);
-updDesc('temple-emanu-el-new-york', 'Founded in 1845, Temple Emanu-El is the largest Reform synagogue in the world. Its Romanesque-Moorish sanctuary at Fifth Avenue and 65th Street seats 2,500 — larger than St. Patrick\'s Cathedral. Historic membership includes the great German-Jewish families of New York: Lehman, Goldman, Schiff, Warburg, Straus. The synagogue is a New York City landmark and repository of American Jewish history.');
+updDesc('temple-emanu-el-new-york', 'Founded in 1845, Temple Emanu-El is the largest Reform synagogue in the world. Its Romanesque-Moorish sanctuary at Fifth Avenue and 65th Street seats 2,500 , larger than St. Patrick\'s Cathedral. Historic membership includes the great German-Jewish families of New York: Lehman, Goldman, Schiff, Warburg, Straus. The synagogue is a New York City landmark and repository of American Jewish history.');
 
 addConn('congregation-shearith-israel-nyc', [
   { name: "Founded 1654", type: "history", description: "The first Jewish congregation in North America, founded by 23 Sephardic Jews from Brazil." },
@@ -294,7 +294,7 @@ addConn('wilshire-boulevard-temple-los-angeles', [
   { name: "Warner Bros. murals", type: "art", description: "The temple features murals commissioned by the Warner brothers depicting Jewish history." },
   { name: "Koreatown/Westlake", type: "location", description: "Located on Wilshire Boulevard; expanded with an Irwin Jacobs campus." }
 ]);
-updDesc('wilshire-boulevard-temple-los-angeles', 'The oldest Jewish congregation in Los Angeles, founded in 1862 during the Civil War. The "Temple to the Stars" — historic membership included the Warner brothers, Louis B. Mayer, and other Hollywood pioneers. Features stunning murals of Jewish history commissioned by the Warner family. The original 1929 Byzantine-style building is a Los Angeles landmark. Expanded with a new campus in 2022 designed by architect Eero Saarinen\'s firm.');
+updDesc('wilshire-boulevard-temple-los-angeles', 'The oldest Jewish congregation in Los Angeles, founded in 1862 during the Civil War. The "Temple to the Stars" , historic membership included the Warner brothers, Louis B. Mayer, and other Hollywood pioneers. Features stunning murals of Jewish history commissioned by the Warner family. The original 1929 Byzantine-style building is a Los Angeles landmark. Expanded with a new campus in 2022 designed by architect Eero Saarinen\'s firm.');
 
 addConn('touro-synagogue-newport-ri', [
   { name: "Founded 1763", type: "history", description: "The oldest surviving synagogue building in the United States." },
@@ -354,10 +354,10 @@ addConn('charles-e-smith-jewish-day-school-dc', [
   { name: "Government/policy families", type: "student body", description: "Student body includes children of government officials, diplomats, and policy professionals." },
   { name: "Community Day School to High School", type: "scope", description: "Serves students from lower school through high school." }
 ]);
-updDesc('charles-e-smith-jewish-day-school-dc', 'The largest Jewish day school in the Washington, D.C. area, named after Charles E. Smith (Jewish), a prominent DC real estate developer. Located in Rockville, MD, it serves students from lower school through 12th grade. The student body reflects DC\'s unique community — children of government officials, diplomats, journalists, and policy professionals. Known for strong academics and Jewish studies.');
+updDesc('charles-e-smith-jewish-day-school-dc', 'The largest Jewish day school in the Washington, D.C. area, named after Charles E. Smith (Jewish), a prominent DC real estate developer. Located in Rockville, MD, it serves students from lower school through 12th grade. The student body reflects DC\'s unique community , children of government officials, diplomats, journalists, and policy professionals. Known for strong academics and Jewish studies.');
 
 addConn('milken-community-school-la', [
-  { name: "Milken family", type: "founding family", description: "Founded by the Milken family — Lowell Milken (Jewish) is a major education philanthropist." },
+  { name: "Milken family", type: "founding family", description: "Founded by the Milken family , Lowell Milken (Jewish) is a major education philanthropist." },
   { name: "Bel Air, Los Angeles", type: "location", description: "A K-12 Jewish day school in Bel Air, one of LA's most affluent neighborhoods." },
   { name: "Michael Milken", type: "connection", description: "Michael Milken (Jewish, former 'junk bond king') is a major philanthropist; his brother Lowell founded the school." },
   { name: "Entertainment industry families", type: "student body", description: "Many students come from Hollywood and entertainment industry families." }
@@ -397,13 +397,13 @@ addConn('camp-young-judaea', [
   { name: "Young Judaea movement", type: "youth movement", description: "The oldest Zionist youth movement in the US, founded in 1909." },
   { name: "Year Course in Israel", type: "program", description: "Young Judaea's Year Course is a gap-year program in Israel." }
 ]);
-updDesc('camp-young-judaea', 'Sponsored by Hadassah, Camp Young Judaea is part of the Young Judaea movement — the oldest Zionist youth movement in the US, founded in 1909. The camp emphasizes Israel education, Hebrew, and Zionist values. Young Judaea\'s Year Course in Israel is a prestigious gap-year program. The movement has spawned generations of Israel-connected American Jewish leaders.');
+updDesc('camp-young-judaea', 'Sponsored by Hadassah, Camp Young Judaea is part of the Young Judaea movement , the oldest Zionist youth movement in the US, founded in 1909. The camp emphasizes Israel education, Hebrew, and Zionist values. Young Judaea\'s Year Course in Israel is a prestigious gap-year program. The movement has spawned generations of Israel-connected American Jewish leaders.');
 
 // ============================================================
 // US - NOTABLE FIGURES ENTRIES
 // ============================================================
 addConn('notable-jewish-political-figures-us', [
-  { name: "US Senate", type: "political body", description: "Multiple Jewish senators serve in the US Senate at any given time — historically 8-10 at peak." },
+  { name: "US Senate", type: "political body", description: "Multiple Jewish senators serve in the US Senate at any given time , historically 8-10 at peak." },
   { name: "US Supreme Court", type: "judicial body", description: "Jewish justices have included Brandeis, Cardozo, Frankfurter, Goldberg, Fortas, Ginsburg, Breyer, Kagan." },
   { name: "Presidential advisors", type: "executive branch", description: "Jewish Americans have served as top presidential advisors across administrations." },
   { name: "State governors", type: "state politics", description: "Multiple Jewish Americans have served as state governors." },
@@ -414,7 +414,7 @@ updDesc('notable-jewish-political-figures-us', 'Jewish Americans have been dispr
 addConn('notable-jewish-entertainers-us', [
   { name: "Hollywood", type: "industry", description: "Jewish Americans founded every major Hollywood studio and continue to lead the entertainment industry." },
   { name: "Broadway", type: "theater", description: "Jewish composers, writers, and producers shaped American musical theater." },
-  { name: "Comedy", type: "art form", description: "Jewish comedians — from the Borscht Belt to modern TV — defined American comedy." },
+  { name: "Comedy", type: "art form", description: "Jewish comedians , from the Borscht Belt to modern TV , defined American comedy." },
   { name: "Music industry", type: "business", description: "Jewish executives and artists have been central to the American music industry." },
   { name: "Television", type: "medium", description: "Jewish creators have produced many of the most successful TV shows in history." }
 ]);
@@ -486,7 +486,7 @@ addConn('scholastic-corporation', [
   { name: "School book fairs", type: "cultural institution", description: "Scholastic Book Fairs are a American childhood institution, reaching millions of students." },
   { name: "The Hunger Games", type: "bestseller", description: "Published The Hunger Games series by Suzanne Collins." }
 ]);
-updDesc('scholastic-corporation', 'Led for decades by M. Richard Robinson Jr. (Jewish). Scholastic is the world\'s largest publisher and distributor of children\'s books. Published the US editions of Harry Potter (180+ million copies sold in the US). Scholastic Book Fairs reach 35 million students annually — an American childhood institution. Also published The Hunger Games, Captain Underpants, and Clifford the Big Red Dog. Robinson personally brought Harry Potter to America.');
+updDesc('scholastic-corporation', 'Led for decades by M. Richard Robinson Jr. (Jewish). Scholastic is the world\'s largest publisher and distributor of children\'s books. Published the US editions of Harry Potter (180+ million copies sold in the US). Scholastic Book Fairs reach 35 million students annually , an American childhood institution. Also published The Hunger Games, Captain Underpants, and Clifford the Big Red Dog. Robinson personally brought Harry Potter to America.');
 
 addConn('bed-bath-beyond-historic', [
   { name: "Warren Eisenberg", type: "co-founder", description: "Warren Eisenberg (Jewish) co-founded Bed Bath & Beyond in 1971." },
@@ -494,7 +494,7 @@ addConn('bed-bath-beyond-historic', [
   { name: "Ryan Cohen", type: "meme stock connection", description: "Ryan Cohen's (Jewish) investment made BB&B a meme stock sensation in 2022." },
   { name: "Bankruptcy 2023", type: "closure", description: "Bed Bath & Beyond filed for bankruptcy in 2023 after the meme stock frenzy." }
 ]);
-updDesc('bed-bath-beyond-historic', 'Co-founded in 1971 by Warren Eisenberg (Jewish) and Leonard Feinstein (Jewish) as Bed \'n Bath. Grew to 1,500+ stores and became a cultural icon — its \"Big Blue\" 20%-off coupons were ubiquitous. Became a meme stock in 2022 when Ryan Cohen (Jewish, GameStop chairman) invested. Filed for bankruptcy in 2023. At its peak, the company was valued at $17 billion.');
+updDesc('bed-bath-beyond-historic', 'Co-founded in 1971 by Warren Eisenberg (Jewish) and Leonard Feinstein (Jewish) as Bed \'n Bath. Grew to 1,500+ stores and became a cultural icon , its \"Big Blue\" 20%-off coupons were ubiquitous. Became a meme stock in 2022 when Ryan Cohen (Jewish, GameStop chairman) invested. Filed for bankruptcy in 2023. At its peak, the company was valued at $17 billion.');
 
 addConn('staples', [
   { name: "Thomas Stemberg", type: "co-founder", description: "Thomas Stemberg (Jewish) co-founded Staples in 1986, inventing the office superstore concept." },
@@ -523,9 +523,9 @@ addConn('bloomingdale-s', [
   { name: "Joseph and Lyman Bloomingdale", type: "founders", description: "The Bloomingdale brothers (Jewish) founded the store in 1861." },
   { name: "Macy's Inc.", type: "parent company", description: "Bloomingdale's is owned by Macy's, Inc." },
   { name: "59th Street flagship", type: "landmark", description: "The 59th Street and Lexington Avenue store is a NYC landmark." },
-  { name: "Fashion destination", type: "identity", description: "Known as a high-end fashion destination — 'like no other store in the world.'" }
+  { name: "Fashion destination", type: "identity", description: "Known as a high-end fashion destination , 'like no other store in the world.'" }
 ]);
-updDesc('bloomingdale-s', 'Founded in 1861 by Joseph and Lyman Bloomingdale (Jewish). The 59th Street and Lexington Avenue flagship store is a NYC landmark. Known as a fashion-forward department store — its slogan \"Like no other store in the world\" defined aspirational retail. Now owned by Macy\'s, Inc. The Bloomingdale family were prominent Jewish philanthropists in New York.');
+updDesc('bloomingdale-s', 'Founded in 1861 by Joseph and Lyman Bloomingdale (Jewish). The 59th Street and Lexington Avenue flagship store is a NYC landmark. Known as a fashion-forward department store , its slogan \"Like no other store in the world\" defined aspirational retail. Now owned by Macy\'s, Inc. The Bloomingdale family were prominent Jewish philanthropists in New York.');
 
 addConn('lionsgate-films', [
   { name: "Jon Feltheimer", type: "CEO", description: "Jon Feltheimer (Jewish) has served as CEO of Lionsgate since 2000." },
@@ -549,7 +549,7 @@ updDesc('microsoft-israel-r-d', 'Microsoft\'s Israel R&D center, established in 
 
 addConn('apple-israel-r-d', [
   { name: "Apple Inc.", type: "parent company", description: "Apple's Israel operations are a critical R&D hub." },
-  { name: "Anobit acquisition", type: "deal", description: "Apple acquired Israeli flash storage company Anobit for $400M in 2012 — its first Israeli acquisition." },
+  { name: "Anobit acquisition", type: "deal", description: "Apple acquired Israeli flash storage company Anobit for $400M in 2012 , its first Israeli acquisition." },
   { name: "PrimeSense acquisition", type: "deal", description: "Acquired Israeli 3D sensing company PrimeSense (used in Kinect) for $360M in 2013." },
   { name: "Herzliya/Haifa operations", type: "locations", description: "Apple has R&D centers in Herzliya and Haifa with 1,000+ employees." }
 ]);
@@ -561,7 +561,7 @@ addConn('amazon-israel-r-d', [
   { name: "Annapurna Labs acquisition", type: "deal", description: "Amazon acquired Israeli chip company Annapurna Labs for $370M in 2015." },
   { name: "3,000+ employees", type: "workforce", description: "Amazon employs over 3,000 people in Israel." }
 ]);
-updDesc('amazon-israel-r-d', 'Amazon employs 3,000+ people in Israel across R&D, cloud (AWS), and AI. Acquired Israeli chip company Annapurna Labs for $370M in 2015 — which now designs custom processors powering AWS. Also acquired Wickr (secure communications, Israeli-founded). Amazon\'s Israeli centers work on Alexa AI, AWS infrastructure, and security. Israel is one of Amazon\'s most important R&D locations globally.');
+updDesc('amazon-israel-r-d', 'Amazon employs 3,000+ people in Israel across R&D, cloud (AWS), and AI. Acquired Israeli chip company Annapurna Labs for $370M in 2015 , which now designs custom processors powering AWS. Also acquired Wickr (secure communications, Israeli-founded). Amazon\'s Israeli centers work on Alexa AI, AWS infrastructure, and security. Israel is one of Amazon\'s most important R&D locations globally.');
 
 addConn('oracle-israel-operations', [
   { name: "Oracle Corporation", type: "parent company", description: "Oracle Israel is a major R&D center employing thousands." },
@@ -601,7 +601,7 @@ addConn('akamai-technologies', [
   { name: "Content delivery network", type: "business", description: "Akamai pioneered the CDN industry, delivering 30% of all web traffic." },
   { name: "9/11 connection", type: "historic", description: "Co-founder Daniel Lewin was aboard American Airlines Flight 11, the first plane to hit the WTC." }
 ]);
-updDesc('akamai-technologies', 'Co-founded by Daniel Lewin (Jewish, Israeli-American) and Tom Leighton at MIT. Lewin, a former IDF Sayeret Matkal member, was aboard American Airlines Flight 11 on September 11, 2001 — likely the first victim of the attacks. Akamai pioneered the content delivery network (CDN) industry and delivers approximately 30% of all global web traffic. A $15+ billion company serving the world\'s largest websites.');
+updDesc('akamai-technologies', 'Co-founded by Daniel Lewin (Jewish, Israeli-American) and Tom Leighton at MIT. Lewin, a former IDF Sayeret Matkal member, was aboard American Airlines Flight 11 on September 11, 2001 , likely the first victim of the attacks. Akamai pioneered the content delivery network (CDN) industry and delivers approximately 30% of all global web traffic. A $15+ billion company serving the world\'s largest websites.');
 
 addConn('dell-technologies-israel-operations', [
   { name: "Dell Technologies", type: "parent company", description: "Dell Israel is one of the company's major R&D centers." },

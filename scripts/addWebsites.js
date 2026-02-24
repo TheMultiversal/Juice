@@ -1,5 +1,5 @@
 /**
- * addWebsites.js — Enrichment script to add website URLs to entries missing them.
+ * addWebsites.js , Enrichment script to add website URLs to entries missing them.
  * Generates standard URLs based on organization name patterns.
  * Run: node scripts/addWebsites.js
  */

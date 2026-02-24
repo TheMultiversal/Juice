@@ -577,7 +577,7 @@ app.get('/api/:religion/entry/:id', (req, res) => {
 
 app.listen(port, () => {
   console.log(`\n  ╔══════════════════════════════════════╗`);
-  console.log(`  ║   Juice v4.2 — Est. 2016             ║`);
+  console.log(`  ║   Juice v4.2 , Est. 2016             ║`);
   console.log(`  ║   Server running on port ${port}        ║`);
   console.log(`  ║   http://localhost:${port}              ║`);
   console.log(`  ╚══════════════════════════════════════╝\n`);

@@ -36,7 +36,7 @@ addConn('union-of-jewish-communities-in-poland', [
   { name: "POLIN Museum", type: "partner", description: "Works closely with POLIN Museum on cultural preservation and community events." },
   { name: "European Jewish Congress", type: "member", description: "Member organization of the European Jewish Congress." }
 ]);
-updDesc('union-of-jewish-communities-in-poland', 'The official representative body of Jewish communities in Poland, recognized by the Polish state. Oversees Jewish religious life, community affairs, and property restitution claims. Works closely with POLIN Museum and international Jewish organizations. Poland had 3.3 million Jews before WWII — the largest Jewish community in Europe. Today approximately 10,000-20,000 Jews live in Poland.');
+updDesc('union-of-jewish-communities-in-poland', 'The official representative body of Jewish communities in Poland, recognized by the Polish state. Oversees Jewish religious life, community affairs, and property restitution claims. Works closely with POLIN Museum and international Jewish organizations. Poland had 3.3 million Jews before WWII , the largest Jewish community in Europe. Today approximately 10,000-20,000 Jews live in Poland.');
 addInd('union-of-jewish-communities-in-poland', { name: "Klara Kołodziejska-Degórska", bio: "Chief Rabbi of Poland (Progressive), one of the first female rabbis in Polish history.", role: "Chief Rabbi" });
 
 addConn('polin-museum-of-the-history-of-polish-jews', [
@@ -56,7 +56,7 @@ addConn('auschwitz-birkenau-memorial-and-museum', [
   { name: "Yad Vashem", type: "partner", description: "Works with Yad Vashem on documentation and memorialization of 1.1 million victims." },
   { name: "March of the Living", type: "annual event", description: "Annual March of the Living brings thousands of young people to walk from Auschwitz to Birkenau." }
 ]);
-updDesc('auschwitz-birkenau-memorial-and-museum', 'The largest Nazi concentration and extermination camp, where approximately 1.1 million people were murdered, including 1 million Jews. Located near Oświęcim, Poland. UNESCO World Heritage Site since 1979. Over 2 million visitors annually. The camp was liberated by the Soviet Red Army on January 27, 1945 — now commemorated as International Holocaust Remembrance Day. Preserves original barracks, gas chambers, and personal effects of victims.');
+updDesc('auschwitz-birkenau-memorial-and-museum', 'The largest Nazi concentration and extermination camp, where approximately 1.1 million people were murdered, including 1 million Jews. Located near Oświęcim, Poland. UNESCO World Heritage Site since 1979. Over 2 million visitors annually. The camp was liberated by the Soviet Red Army on January 27, 1945 , now commemorated as International Holocaust Remembrance Day. Preserves original barracks, gas chambers, and personal effects of victims.');
 addInd('auschwitz-birkenau-memorial-and-museum', { name: "Piotr Cywiński", bio: "Director of the Auschwitz-Birkenau Memorial and Museum since 2006. Oversees preservation and education programs.", role: "Director" });
 
 addConn('jewish-community-centre-of-krakow-jcc-krak-w', [
@@ -97,7 +97,7 @@ addConn('treblinka-memorial', [
   { name: "Yad Vashem", type: "documentation", description: "Yad Vashem maintains extensive documentation of Treblinka victims." },
   { name: "17,000 stones memorial", type: "monument", description: "The memorial features 17,000 stones representing destroyed Jewish communities." }
 ]);
-updDesc('treblinka-memorial', 'Memorial at the site of Treblinka II extermination camp, where approximately 900,000 people — mostly Jews — were murdered between July 1942 and October 1943. The Nazis demolished the camp to hide evidence. The memorial, designed by Adam Haupt and Franciszek Duszenko, features 17,000 rough granite stones representing the destroyed Jewish communities of Poland and Europe. A monument marks the location of the gas chambers.');
+updDesc('treblinka-memorial', 'Memorial at the site of Treblinka II extermination camp, where approximately 900,000 people , mostly Jews , were murdered between July 1942 and October 1943. The Nazis demolished the camp to hide evidence. The memorial, designed by Adam Haupt and Franciszek Duszenko, features 17,000 rough granite stones representing the destroyed Jewish communities of Poland and Europe. A monument marks the location of the gas chambers.');
 
 addConn('warsaw-ghetto-memorial', [
   { name: "Warsaw Ghetto Uprising 1943", type: "historical event", description: "Commemorates the Warsaw Ghetto Uprising of April-May 1943, the largest Jewish armed resistance during the Holocaust." },
@@ -105,7 +105,7 @@ addConn('warsaw-ghetto-memorial', [
   { name: "POLIN Museum", type: "adjacent", description: "POLIN Museum was built facing the Monument to the Ghetto Heroes." },
   { name: "Willy Brandt's Kniefall", type: "historic moment", description: "West German Chancellor Willy Brandt knelt before the memorial in 1970 in a historic gesture of atonement." }
 ]);
-updDesc('warsaw-ghetto-memorial', 'The Monument to the Ghetto Heroes, unveiled in 1948, commemorates the Warsaw Ghetto Uprising of April-May 1943 — the largest single revolt by Jews during WWII. Led by 24-year-old Mordechai Anielewicz and the Jewish Combat Organization (ŻOB), approximately 750 fighters held off German forces for nearly a month. In 1970, West German Chancellor Willy Brandt knelt before the memorial in a historic gesture of reconciliation. The POLIN Museum was built facing this monument.');
+updDesc('warsaw-ghetto-memorial', 'The Monument to the Ghetto Heroes, unveiled in 1948, commemorates the Warsaw Ghetto Uprising of April-May 1943 , the largest single revolt by Jews during WWII. Led by 24-year-old Mordechai Anielewicz and the Jewish Combat Organization (ŻOB), approximately 750 fighters held off German forces for nearly a month. In 1970, West German Chancellor Willy Brandt knelt before the memorial in a historic gesture of reconciliation. The POLIN Museum was built facing this monument.');
 
 addConn('tykocin-synagogue', [
   { name: "17th century heritage", type: "historical", description: "Built in 1642, one of the best-preserved Baroque synagogues in Europe." },
@@ -124,7 +124,7 @@ addConn('federation-of-jewish-communities-in-the-czech-republic', [
   { name: "World Jewish Congress", type: "affiliate", description: "Affiliated with the World Jewish Congress." },
   { name: "Joint Distribution Committee", type: "partner", description: "JDC has supported Czech Jewish revival since 1989." }
 ]);
-updDesc('federation-of-jewish-communities-in-the-czech-republic', 'Umbrella organization representing 10 Jewish communities across the Czech Republic. Re-established after the Velvet Revolution of 1989. The Czech Jewish community was devastated during the Holocaust — of approximately 118,000 Jews in the Bohemian lands before WWII, only about 14,000 survived. Today approximately 3,000-4,000 Jews live in the Czech Republic. The federation oversees religious life, cultural events, and property restitution.');
+updDesc('federation-of-jewish-communities-in-the-czech-republic', 'Umbrella organization representing 10 Jewish communities across the Czech Republic. Re-established after the Velvet Revolution of 1989. The Czech Jewish community was devastated during the Holocaust , of approximately 118,000 Jews in the Bohemian lands before WWII, only about 14,000 survived. Today approximately 3,000-4,000 Jews live in the Czech Republic. The federation oversees religious life, cultural events, and property restitution.');
 addInd('federation-of-jewish-communities-in-the-czech-republic', { name: "Petr Papoušek", bio: "President of the Federation of Jewish Communities in the Czech Republic, leading community development and interfaith dialogue.", role: "President" });
 
 addConn('jewish-museum-in-prague', [
@@ -133,7 +133,7 @@ addConn('jewish-museum-in-prague', [
   { name: "Six historic sites", type: "complex", description: "Manages six historic sites including Old Jewish Cemetery, Spanish Synagogue, Pinkas Synagogue, Maisel Synagogue, Klausen Synagogue, and Ceremonial Hall." },
   { name: "World's largest Judaica collection", type: "holdings", description: "Houses one of the world's largest collections of Judaica with 40,000 objects and 100,000 books." }
 ]);
-updDesc('jewish-museum-in-prague', 'One of the oldest and largest Jewish museums in the world, founded in 1906. Ironically expanded during WWII when the Nazis intended to create a "Museum of an Extinct Race." Manages six historic sites in Prague\'s Josefov quarter including the Old Jewish Cemetery, Pinkas Synagogue, Spanish Synagogue, Maisel Synagogue, Klausen Synagogue, and Ceremonial Hall. Houses 40,000 objects and 100,000 books — one of the world\'s largest Judaica collections. Receives over 600,000 visitors annually.');
+updDesc('jewish-museum-in-prague', 'One of the oldest and largest Jewish museums in the world, founded in 1906. Ironically expanded during WWII when the Nazis intended to create a "Museum of an Extinct Race." Manages six historic sites in Prague\'s Josefov quarter including the Old Jewish Cemetery, Pinkas Synagogue, Spanish Synagogue, Maisel Synagogue, Klausen Synagogue, and Ceremonial Hall. Houses 40,000 objects and 100,000 books , one of the world\'s largest Judaica collections. Receives over 600,000 visitors annually.');
 
 addConn('old-jewish-cemetery-prague', [
   { name: "Jewish Museum in Prague", type: "administered by", description: "Managed by the Jewish Museum in Prague." },
@@ -156,7 +156,7 @@ addConn('terez-n-memorial', [
   { name: "Czech Ministry of Culture", type: "government", description: "Operated by the Czech Ministry of Culture." },
   { name: "Red Cross deception", type: "historical event", description: "Nazis staged a Red Cross visit in 1944, creating a propaganda film showing Terezín as a 'model Jewish settlement.'" },
   { name: "Yad Vashem", type: "partner", description: "Collaborates with Yad Vashem on documentation and research." },
-  { name: "Cultural life under persecution", type: "heritage", description: "Despite horrific conditions, Terezín inmates created art, music, opera, and literature — including the children's opera Brundibár." }
+  { name: "Cultural life under persecution", type: "heritage", description: "Despite horrific conditions, Terezín inmates created art, music, opera, and literature , including the children's opera Brundibár." }
 ]);
 updDesc('terez-n-memorial', 'Memorial at the site of Theresienstadt, a former fortress town the Nazis converted into a hybrid ghetto-concentration camp (1941-1945). Over 150,000 Jews were sent there; 33,000 died in the ghetto and 88,000 were deported to extermination camps. Despite conditions, inmates created remarkable cultural works including the children\'s opera Brundibár. The Nazis staged a Red Cross visit in 1944, filming propaganda portraying it as a "model Jewish settlement." Now a major memorial and museum.');
 
@@ -165,21 +165,21 @@ updDesc('terez-n-memorial', 'Memorial at the site of Theresienstadt, a former fo
 // ============================================================
 
 addConn('jewish-confederation-of-ukraine', [
-  { name: "President Volodymyr Zelenskyy", type: "government connection", description: "Ukraine's President Zelenskyy is Jewish — the first Jewish president of a major Eastern European nation." },
+  { name: "President Volodymyr Zelenskyy", type: "government connection", description: "Ukraine's President Zelenskyy is Jewish , the first Jewish president of a major Eastern European nation." },
   { name: "World Jewish Congress", type: "affiliate", description: "Affiliated with the World Jewish Congress." },
   { name: "JDC Ukraine", type: "partner", description: "Works with the American Jewish Joint Distribution Committee on community support programs." },
   { name: "Chabad Ukraine", type: "religious partner", description: "Chabad-Lubavitch operates extensively across Ukraine with community centers in most major cities." }
 ]);
-updDesc('jewish-confederation-of-ukraine', 'Umbrella organization representing Jewish communities across Ukraine. Ukraine has deep Jewish roots — it was the birthplace of Hasidism (founded by the Baal Shem Tov in the 1740s). Before WWII, Ukraine had approximately 2.7 million Jews; over 1.5 million were murdered in the Holocaust. President Volodymyr Zelenskyy is Jewish. The community has faced additional challenges since Russia\'s 2022 invasion, with Jewish organizations providing humanitarian aid.');
+updDesc('jewish-confederation-of-ukraine', 'Umbrella organization representing Jewish communities across Ukraine. Ukraine has deep Jewish roots , it was the birthplace of Hasidism (founded by the Baal Shem Tov in the 1740s). Before WWII, Ukraine had approximately 2.7 million Jews; over 1.5 million were murdered in the Holocaust. President Volodymyr Zelenskyy is Jewish. The community has faced additional challenges since Russia\'s 2022 invasion, with Jewish organizations providing humanitarian aid.');
 
 addConn('babyn-yar-holocaust-memorial-center', [
-  { name: "Babi Yar massacre", type: "historical event", description: "At Babi Yar in Kyiv, Nazis massacred 33,771 Jews in just two days — September 29-30, 1941." },
+  { name: "Babi Yar massacre", type: "historical event", description: "At Babi Yar in Kyiv, Nazis massacred 33,771 Jews in just two days , September 29-30, 1941." },
   { name: "Ukrainian government", type: "government", description: "Supported by the Ukrainian government as a national memorial site." },
   { name: "Ilya Ehrenburg", type: "historical figure", description: "Soviet-Jewish writer Ilya Ehrenburg and Vasily Grossman documented the massacre in The Black Book." },
   { name: "Yad Vashem", type: "partner", description: "Works with Yad Vashem on victim identification and documentation." },
   { name: "Ronald Lauder", type: "supporter", description: "Ronald Lauder (Jewish, Estée Lauder heir) has been a major supporter of the memorial center." }
 ]);
-updDesc('babyn-yar-holocaust-memorial-center', 'Memorial center at the ravine in Kyiv where Nazi Einsatzgruppen massacred 33,771 Jews on September 29-30, 1941 — one of the largest single mass shootings of the Holocaust. Over the following months, an estimated 100,000-150,000 people were killed there. Soviet authorities suppressed the Jewish identity of victims for decades. The modern memorial center, supported by Ronald Lauder and others, uses cutting-edge technology to document the tragedy. Damaged by Russian missile strike in 2022.');
+updDesc('babyn-yar-holocaust-memorial-center', 'Memorial center at the ravine in Kyiv where Nazi Einsatzgruppen massacred 33,771 Jews on September 29-30, 1941 , one of the largest single mass shootings of the Holocaust. Over the following months, an estimated 100,000-150,000 people were killed there. Soviet authorities suppressed the Jewish identity of victims for decades. The modern memorial center, supported by Ronald Lauder and others, uses cutting-edge technology to document the tragedy. Damaged by Russian missile strike in 2022.');
 
 addConn('united-jewish-community-of-ukraine', [
   { name: "Jewish Confederation of Ukraine", type: "partner", description: "Works alongside the Jewish Confederation of Ukraine in community affairs." },
@@ -199,7 +199,7 @@ updDesc('uman-breslov-pilgrimage', 'Annual mass pilgrimage of Breslov Hasidim to
 
 addConn('menorah-center-dnipro', [
   { name: "Gennadiy Bogolubov", type: "funder", description: "Built by Ukrainian-Jewish oligarch Gennadiy Bogolubov." },
-  { name: "World's largest menorah-shaped building", type: "architecture", description: "The building is shaped like a giant menorah — the world's largest menorah-shaped structure." },
+  { name: "World's largest menorah-shaped building", type: "architecture", description: "The building is shaped like a giant menorah , the world's largest menorah-shaped structure." },
   { name: "Chabad Dnipro", type: "affiliated", description: "Closely affiliated with the Chabad community of Dnipro, led by Chief Rabbi Shmuel Kaminezki." },
   { name: "Jewish community of Dnipro", type: "community hub", description: "Serves as the cultural and community hub for Dnipro's large Jewish population." }
 ]);
@@ -212,7 +212,7 @@ addConn('golden-rose-synagogue-lviv-ruins', [
   { name: "Lviv Jewish community", type: "community", description: "Lviv (Lemberg) was a major center of Jewish culture, home to approximately 110,000 Jews before WWII." },
   { name: "Space of Synagogues memorial", type: "memorial", description: "The ruins are part of the 'Space of Synagogues' memorial project preserving the site." }
 ]);
-updDesc('golden-rose-synagogue-lviv-ruins', 'Ruins of the Golden Rose Synagogue (Turei Zahav), built in 1582 in Lviv\'s Jewish quarter. One of the finest Renaissance synagogues in Eastern Europe, it was destroyed by the Nazis in 1941. Lviv (known historically as Lemberg) was home to approximately 110,000 Jews before WWII — nearly all were murdered in the Holocaust. The ruins are now part of the "Space of Synagogues" memorial project, designed by German architect Franz Reschke, preserving the memory of three destroyed synagogues.');
+updDesc('golden-rose-synagogue-lviv-ruins', 'Ruins of the Golden Rose Synagogue (Turei Zahav), built in 1582 in Lviv\'s Jewish quarter. One of the finest Renaissance synagogues in Eastern Europe, it was destroyed by the Nazis in 1941. Lviv (known historically as Lemberg) was home to approximately 110,000 Jews before WWII , nearly all were murdered in the Holocaust. The ruins are now part of the "Space of Synagogues" memorial project, designed by German architect Franz Reschke, preserving the memory of three destroyed synagogues.');
 
 // ============================================================
 // TURKEY
@@ -261,7 +261,7 @@ addConn('council-of-jewish-communities-of-morocco', [
   { name: "André Azoulay", type: "key figure", description: "André Azoulay (Jewish), senior adviser to King Mohammed VI, promotes interfaith dialogue." },
   { name: "World Jewish Congress", type: "affiliate", description: "Affiliated with the World Jewish Congress as Morocco's representative Jewish body." }
 ]);
-updDesc('council-of-jewish-communities-of-morocco', 'Represents Morocco\'s Jewish community, which numbered over 250,000 in the 1940s and today numbers approximately 2,000-3,000 — one of the largest remaining Jewish communities in the Arab world. Morocco\'s King Mohammed VI has actively supported Jewish heritage preservation, including renovating synagogues and cemeteries. André Azoulay (Jewish), senior adviser to both King Mohammed VI and his father, has been instrumental in promoting coexistence. Morocco normalized relations with Israel in 2020.');
+updDesc('council-of-jewish-communities-of-morocco', 'Represents Morocco\'s Jewish community, which numbered over 250,000 in the 1940s and today numbers approximately 2,000-3,000 , one of the largest remaining Jewish communities in the Arab world. Morocco\'s King Mohammed VI has actively supported Jewish heritage preservation, including renovating synagogues and cemeteries. André Azoulay (Jewish), senior adviser to both King Mohammed VI and his father, has been instrumental in promoting coexistence. Morocco normalized relations with Israel in 2020.');
 addInd('council-of-jewish-communities-of-morocco', { name: "André Azoulay", bio: "Jewish Moroccan businessman and senior adviser to King Mohammed VI and his father Hassan II, promoting interfaith dialogue and Moroccan-Israeli relations.", role: "Senior Royal Adviser" });
 
 addConn('museum-of-moroccan-judaism-casablanca', [
@@ -292,7 +292,7 @@ addConn('rabbi-haim-pinto-synagogue-essaouira', [
   { name: "Hilulah pilgrimage", type: "annual event", description: "Annual Hilulah (commemoration) pilgrimage draws thousands of Jewish pilgrims from Israel and worldwide." },
   { name: "Moroccan Jewish saints", type: "tradition", description: "Part of the Moroccan tradition of venerating Jewish saints (tzaddikim), a unique Sephardic practice." }
 ]);
-updDesc('rabbi-haim-pinto-synagogue-essaouira', 'Synagogue in Essaouira named after Rabbi Haim Pinto (1748-1845), one of Morocco\'s most venerated rabbis and kabbalists. The annual Hilulah pilgrimage to his shrine draws thousands of Jewish visitors from Israel and the diaspora. Part of a unique Moroccan-Jewish tradition of venerating holy rabbis (tzaddikim) at their tombs — a practice shared with and respected by Moroccan Muslims. The synagogue has been restored with support from the Moroccan government.');
+updDesc('rabbi-haim-pinto-synagogue-essaouira', 'Synagogue in Essaouira named after Rabbi Haim Pinto (1748-1845), one of Morocco\'s most venerated rabbis and kabbalists. The annual Hilulah pilgrimage to his shrine draws thousands of Jewish visitors from Israel and the diaspora. Part of a unique Moroccan-Jewish tradition of venerating holy rabbis (tzaddikim) at their tombs , a practice shared with and respected by Moroccan Muslims. The synagogue has been restored with support from the Moroccan government.');
 
 // ============================================================
 // SCANDINAVIA
@@ -334,7 +334,7 @@ addConn('jewish-community-of-denmark', [
   { name: "European Jewish Congress", type: "affiliate", description: "Member of the European Jewish Congress." },
   { name: "Niels Bohr", type: "notable", description: "Physicist Niels Bohr (Jewish mother) was among those who fled Denmark during the Nazi occupation." }
 ]);
-updDesc('jewish-community-of-denmark', 'Represents approximately 6,000-8,000 Jews in Denmark. Denmark holds a unique place in Holocaust history: in October 1943, the Danish resistance and ordinary citizens smuggled nearly all 7,500 Danish Jews to safety in neutral Sweden. This remarkable rescue — the only such case in occupied Europe — saved 95% of Danish Jews. Physicist Niels Bohr (Jewish mother, Nobel laureate) was among those rescued. The community maintains the Great Synagogue of Copenhagen (1833).');
+updDesc('jewish-community-of-denmark', 'Represents approximately 6,000-8,000 Jews in Denmark. Denmark holds a unique place in Holocaust history: in October 1943, the Danish resistance and ordinary citizens smuggled nearly all 7,500 Danish Jews to safety in neutral Sweden. This remarkable rescue , the only such case in occupied Europe , saved 95% of Danish Jews. Physicist Niels Bohr (Jewish mother, Nobel laureate) was among those rescued. The community maintains the Great Synagogue of Copenhagen (1833).');
 
 addConn('great-synagogue-of-copenhagen', [
   { name: "Jewish community of Denmark", type: "congregation", description: "The main synagogue of the Jewish Community of Denmark." },
@@ -350,7 +350,7 @@ addConn('danish-jewish-museum-copenhagen', [
   { name: "1943 rescue exhibition", type: "core exhibit", description: "Core exhibition focuses on the 1943 rescue of Danish Jews." },
   { name: "Danish Cultural Ministry", type: "government support", description: "Supported by the Danish Ministry of Culture." }
 ]);
-updDesc('danish-jewish-museum-copenhagen', 'Designed by world-renowned architect Daniel Libeskind (Jewish, also designed the Jewish Museum Berlin and the 9/11 Memorial master plan), opened in 2004 within the 17th-century Royal Library building. The museum\'s striking interior uses angled walls and floors symbolizing the Hebrew word "mitzvah." Core exhibitions focus on the remarkable 1943 rescue of Danish Jews. Libeskind called the design "an exploration of the Danish-Jewish experience — a culture of learning, adaptation, and contribution."');
+updDesc('danish-jewish-museum-copenhagen', 'Designed by world-renowned architect Daniel Libeskind (Jewish, also designed the Jewish Museum Berlin and the 9/11 Memorial master plan), opened in 2004 within the 17th-century Royal Library building. The museum\'s striking interior uses angled walls and floors symbolizing the Hebrew word "mitzvah." Core exhibitions focus on the remarkable 1943 rescue of Danish Jews. Libeskind called the design "an exploration of the Danish-Jewish experience , a culture of learning, adaptation, and contribution."');
 
 addConn('rescue-of-danish-jews-1943', [
   { name: "Georg Ferdinand Duckwitz", type: "key figure", description: "German diplomat Georg Ferdinand Duckwitz leaked the planned roundup to Danish politicians." },
@@ -358,7 +358,7 @@ addConn('rescue-of-danish-jews-1943', [
   { name: "Sweden", type: "refuge", description: "Neutral Sweden accepted all Danish Jewish refugees." },
   { name: "Yad Vashem", type: "recognition", description: "Many Danish rescuers have been recognized as Righteous Among the Nations by Yad Vashem." }
 ]);
-updDesc('rescue-of-danish-jews-1943', 'In October 1943, when the Nazis planned to deport Denmark\'s 7,500 Jews, German diplomat Georg Ferdinand Duckwitz warned Danish political leaders. In a remarkable three-week effort, Danish resistance fighters and ordinary citizens organized fishing boats to smuggle nearly the entire Jewish population across the Øresund strait to neutral Sweden. Over 7,200 Jews were saved — 95% of Danish Jewry. This stands as the most successful national rescue effort during the Holocaust. Many participants were later honored as Righteous Among the Nations.');
+updDesc('rescue-of-danish-jews-1943', 'In October 1943, when the Nazis planned to deport Denmark\'s 7,500 Jews, German diplomat Georg Ferdinand Duckwitz warned Danish political leaders. In a remarkable three-week effort, Danish resistance fighters and ordinary citizens organized fishing boats to smuggle nearly the entire Jewish population across the Øresund strait to neutral Sweden. Over 7,200 Jews were saved , 95% of Danish Jewry. This stands as the most successful national rescue effort during the Holocaust. Many participants were later honored as Righteous Among the Nations.');
 
 addConn('jewish-community-of-oslo', [
   { name: "Norwegian government", type: "official", description: "Officially recognized Jewish community in Norway." },
@@ -373,21 +373,21 @@ addConn('jewish-museum-trondheim', [
   { name: "Norwegian Jewish heritage", type: "mission", description: "Documents the history of Jews in Norway, including the Constitution's 1814 ban on Jews and its repeal in 1851." },
   { name: "WWII deportation", type: "history", description: "Documents the deportation and murder of Trondheim's Jewish community during WWII." }
 ]);
-updDesc('jewish-museum-trondheim', 'Located in the world\'s northernmost synagogue in Trondheim, Norway. The museum documents the history of Jews in Norway, including the Norwegian Constitution\'s 1814 ban on Jewish settlement (repealed 1851), the development of small communities in Trondheim and Oslo, and the devastating WWII deportations. Trondheim\'s entire Jewish community was arrested and deported in 1942 — most perished at Auschwitz.');
+updDesc('jewish-museum-trondheim', 'Located in the world\'s northernmost synagogue in Trondheim, Norway. The museum documents the history of Jews in Norway, including the Norwegian Constitution\'s 1814 ban on Jewish settlement (repealed 1851), the development of small communities in Trondheim and Oslo, and the devastating WWII deportations. Trondheim\'s entire Jewish community was arrested and deported in 1942 , most perished at Auschwitz.');
 
 addConn('center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret', [
   { name: "Norwegian government", type: "funder", description: "Funded by the Norwegian government as a national center for Holocaust education." },
   { name: "Villa Grande", type: "location", description: "Located in Villa Grande, formerly the residence of Nazi collaborator Vidkun Quisling." },
   { name: "University of Oslo", type: "academic partner", description: "Collaborates with the University of Oslo on research." }
 ]);
-updDesc('center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret', 'Norwegian national center for Holocaust and minority studies, located in Villa Grande — the former wartime residence of Vidkun Quisling, Norway\'s Nazi collaborator. This powerful symbolic choice transforms a site of betrayal into a center of education and remembrance. Funded by the Norwegian government, the center conducts research on the Holocaust in Norway, antisemitism, and the rights of religious minorities. Partners with Universities and the European Holocaust Research Infrastructure (EHRI).');
+updDesc('center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret', 'Norwegian national center for Holocaust and minority studies, located in Villa Grande , the former wartime residence of Vidkun Quisling, Norway\'s Nazi collaborator. This powerful symbolic choice transforms a site of betrayal into a center of education and remembrance. Funded by the Norwegian government, the center conducts research on the Holocaust in Norway, antisemitism, and the rights of religious minorities. Partners with Universities and the European Holocaust Research Infrastructure (EHRI).');
 
 addConn('central-council-of-jewish-communities-in-finland', [
   { name: "Finnish government", type: "official recognition", description: "Officially recognized representative body of Finnish Jews." },
-  { name: "Finnish military", type: "historical", description: "Uniquely, Finnish Jews served alongside Nazi Germany in WWII while retaining their civil rights — the only case in Axis Europe." },
+  { name: "Finnish military", type: "historical", description: "Uniquely, Finnish Jews served alongside Nazi Germany in WWII while retaining their civil rights , the only case in Axis Europe." },
   { name: "Helsinki synagogue", type: "center", description: "The Helsinki Synagogue (1906) is the center of Finnish Jewish life." }
 ]);
-updDesc('central-council-of-jewish-communities-in-finland', 'Represents approximately 1,300 Jews in Finland, one of Europe\'s smallest Jewish communities. Finland\'s Jewish history is unique: during WWII, Finnish Jews served in the Finnish army alongside Nazi Germany (as co-belligerents against the Soviet Union) while keeping full civil rights — the only such case in Axis-allied Europe. Finland refused Nazi demands to deport its Jews. The community maintains synagogues in Helsinki and Turku.');
+updDesc('central-council-of-jewish-communities-in-finland', 'Represents approximately 1,300 Jews in Finland, one of Europe\'s smallest Jewish communities. Finland\'s Jewish history is unique: during WWII, Finnish Jews served in the Finnish army alongside Nazi Germany (as co-belligerents against the Soviet Union) while keeping full civil rights , the only such case in Axis-allied Europe. Finland refused Nazi demands to deport its Jews. The community maintains synagogues in Helsinki and Turku.');
 
 // ============================================================
 // GREECE
@@ -395,40 +395,40 @@ updDesc('central-council-of-jewish-communities-in-finland', 'Represents approxim
 
 addConn('central-board-of-jewish-communities-in-greece', [
   { name: "Greek government", type: "official recognition", description: "Officially recognized representative body of Greek Jews." },
-  { name: "Thessaloniki Jewish heritage", type: "heritage", description: "Thessaloniki was known as 'the Jerusalem of the Balkans' — 50,000 Jews lived there before WWII." },
+  { name: "Thessaloniki Jewish heritage", type: "heritage", description: "Thessaloniki was known as 'the Jerusalem of the Balkans' , 50,000 Jews lived there before WWII." },
   { name: "European Jewish Congress", type: "affiliate", description: "Member of the European Jewish Congress." },
   { name: "World Jewish Congress", type: "affiliate", description: "Affiliated with the World Jewish Congress." }
 ]);
-updDesc('central-board-of-jewish-communities-in-greece', 'Known as KIS (Kentriko Israelitiko Symvoulio), representing approximately 5,000 Jews in Greece. Greece had one of the most devastating Holocaust experiences: approximately 87% of Greek Jews were murdered. Thessaloniki alone lost 50,000 Jews — the city was known as "the Jerusalem of the Balkans." Greece\'s Jewish heritage includes both Romaniote Jews (present since antiquity) and Sephardic Jews (arrived after 1492 Spanish expulsion). The board oversees community affairs and Holocaust remembrance.');
+updDesc('central-board-of-jewish-communities-in-greece', 'Known as KIS (Kentriko Israelitiko Symvoulio), representing approximately 5,000 Jews in Greece. Greece had one of the most devastating Holocaust experiences: approximately 87% of Greek Jews were murdered. Thessaloniki alone lost 50,000 Jews , the city was known as "the Jerusalem of the Balkans." Greece\'s Jewish heritage includes both Romaniote Jews (present since antiquity) and Sephardic Jews (arrived after 1492 Spanish expulsion). The board oversees community affairs and Holocaust remembrance.');
 
 addConn('jewish-museum-of-greece', [
   { name: "Athens Jewish community", type: "community", description: "Located in Athens, documenting the 2,300+ year history of Jews in Greece." },
   { name: "Romaniote heritage", type: "collection", description: "Houses artifacts from the Romaniote Jewish tradition, one of the oldest Jewish communities in Europe." },
   { name: "Greek Ministry of Culture", type: "government", description: "Supported by the Greek Ministry of Culture." }
 ]);
-updDesc('jewish-museum-of-greece', 'Located in Athens, documenting over 2,300 years of Jewish presence in Greece — from Hellenistic times to the present. Houses important collections from both Romaniote Jews (one of Europe\'s oldest Jewish communities, speaking Greek since antiquity) and Sephardic Jews who arrived after 1492. The museum preserves artifacts, textiles, documents, and ritual objects. Greece\'s Jewish community was devastated during the Holocaust, making preservation of these materials critical.');
+updDesc('jewish-museum-of-greece', 'Located in Athens, documenting over 2,300 years of Jewish presence in Greece , from Hellenistic times to the present. Houses important collections from both Romaniote Jews (one of Europe\'s oldest Jewish communities, speaking Greek since antiquity) and Sephardic Jews who arrived after 1492. The museum preserves artifacts, textiles, documents, and ritual objects. Greece\'s Jewish community was devastated during the Holocaust, making preservation of these materials critical.');
 
 addConn('jewish-museum-of-thessaloniki', [
   { name: "Thessaloniki Jewish community", type: "community", description: "Documents the history of Thessaloniki's once-dominant Jewish community." },
   { name: "50,000 victims", type: "Holocaust", description: "Nearly 50,000 Jews from Thessaloniki were deported and murdered at Auschwitz-Birkenau in 1943." },
   { name: "Aristotle University", type: "location context", description: "Aristotle University was built on the site of the former Jewish cemetery, which the Nazis destroyed." }
 ]);
-updDesc('jewish-museum-of-thessaloniki', 'Documents the extraordinary history of Thessaloniki\'s Jewish community, which at its peak made up over 50% of the city\'s population. Known as "La Madre de Israel" (the Mother of Israel) in Ladino, Thessaloniki was the world\'s largest Sephardic city. In 1943, nearly 50,000 Jews were deported to Auschwitz-Birkenau — 96% of the community perished. The Nazis destroyed the vast Jewish cemetery; Aristotle University was later built on the site. The museum preserves what remains of this lost world.');
+updDesc('jewish-museum-of-thessaloniki', 'Documents the extraordinary history of Thessaloniki\'s Jewish community, which at its peak made up over 50% of the city\'s population. Known as "La Madre de Israel" (the Mother of Israel) in Ladino, Thessaloniki was the world\'s largest Sephardic city. In 1943, nearly 50,000 Jews were deported to Auschwitz-Birkenau , 96% of the community perished. The Nazis destroyed the vast Jewish cemetery; Aristotle University was later built on the site. The museum preserves what remains of this lost world.');
 
 addConn('holocaust-memorial-of-thessaloniki', [
   { name: "Thessaloniki municipality", type: "government", description: "Erected by the municipality of Thessaloniki on Freedom Square." },
   { name: "Freedom Square", type: "location", description: "Located on Freedom Square (Plateia Eleftherias), where Jews were humiliated by Nazi soldiers in July 1942." },
   { name: "March 2024 memorial", type: "commemoration", description: "Annual commemorations mark the deportations that began in March 1943." }
 ]);
-updDesc('holocaust-memorial-of-thessaloniki', 'Memorial on Freedom Square (Plateia Eleftherias) in Thessaloniki, the very spot where on July 11, 1942, 9,000 Jewish men were forced to perform exercises and humiliations by Nazi soldiers. The memorial commemorates the nearly 50,000 Thessaloniki Jews who were deported and murdered at Auschwitz in 1943. The city\'s Jewish community — which had shaped Thessaloniki\'s character for 450 years — was almost entirely annihilated in just a few months.');
+updDesc('holocaust-memorial-of-thessaloniki', 'Memorial on Freedom Square (Plateia Eleftherias) in Thessaloniki, the very spot where on July 11, 1942, 9,000 Jewish men were forced to perform exercises and humiliations by Nazi soldiers. The memorial commemorates the nearly 50,000 Thessaloniki Jews who were deported and murdered at Auschwitz in 1943. The city\'s Jewish community , which had shaped Thessaloniki\'s character for 450 years , was almost entirely annihilated in just a few months.');
 
 addConn('romaniote-jewish-community', [
-  { name: "2,300+ year heritage", type: "historical", description: "Romaniote Jews have lived in Greece since at least the 3rd century BCE — possibly the oldest Jewish community in Europe." },
+  { name: "2,300+ year heritage", type: "historical", description: "Romaniote Jews have lived in Greece since at least the 3rd century BCE , possibly the oldest Jewish community in Europe." },
   { name: "Ioannina community", type: "center", description: "Ioannina has been historically the center of Romaniote Jewish life." },
   { name: "Distinct liturgy", type: "religious", description: "Romaniote Jews have their own distinct liturgy, different from both Sephardic and Ashkenazi traditions." },
   { name: "Kehila Kedosha Janina (NYC)", type: "diaspora", description: "The only Romaniote synagogue in the Western Hemisphere is Kehila Kedosha Janina on the Lower East Side, NYC." }
 ]);
-updDesc('romaniote-jewish-community', 'The Romaniote Jews are one of the oldest Jewish communities in Europe, present in Greece since at least the 3rd century BCE — predating both Ashkenazi and Sephardic traditions. They spoke Greek (not Yiddish or Ladino) and developed their own distinct liturgy, customs, and music. Ioannina was historically the center of Romaniote life. The community was devastated in the Holocaust. Today, the only Romaniote synagogue in the Western Hemisphere is Kehila Kedosha Janina on the Lower East Side of New York City, founded in 1927.');
+updDesc('romaniote-jewish-community', 'The Romaniote Jews are one of the oldest Jewish communities in Europe, present in Greece since at least the 3rd century BCE , predating both Ashkenazi and Sephardic traditions. They spoke Greek (not Yiddish or Ladino) and developed their own distinct liturgy, customs, and music. Ioannina was historically the center of Romaniote life. The community was devastated in the Holocaust. Today, the only Romaniote synagogue in the Western Hemisphere is Kehila Kedosha Janina on the Lower East Side of New York City, founded in 1927.');
 
 // ============================================================
 // ISRAEL LEFTOVERS
@@ -439,7 +439,7 @@ addConn('israel-tax-authority', [
   { name: "OECD", type: "international", description: "Israel's tax system aligns with OECD standards since joining in 2010." },
   { name: "Tech tax incentives", type: "policy", description: "Administers tax incentives that have been key to Israel's tech boom, including the Angel's Law." }
 ]);
-updDesc('israel-tax-authority', 'Israeli government body responsible for tax collection and enforcement. Administers corporate, income, VAT, and customs taxes. Has played a key role in Israel\'s economic development through tax incentive programs — particularly the Innovation Authority\'s grants and the Angel\'s Law encouraging tech investment. Israel joined the OECD in 2010, aligning its tax framework with international standards.');
+updDesc('israel-tax-authority', 'Israeli government body responsible for tax collection and enforcement. Administers corporate, income, VAT, and customs taxes. Has played a key role in Israel\'s economic development through tax incentive programs , particularly the Innovation Authority\'s grants and the Angel\'s Law encouraging tech investment. Israel joined the OECD in 2010, aligning its tax framework with international standards.');
 
 addConn('israel-lands-authority', [
   { name: "Israeli government", type: "government", description: "Government authority managing 93% of Israel's land, which is state-owned." },
@@ -453,7 +453,7 @@ addConn('israel-airports-authority', [
   { name: "Israeli security model", type: "security", description: "Ben Gurion Airport is renowned worldwide for its multi-layered security system." },
   { name: "El Al", type: "primary user", description: "El Al Israel Airlines is the primary carrier at Ben Gurion Airport." }
 ]);
-updDesc('israel-airports-authority', 'Government authority operating Israel\'s airports, including Ben Gurion International Airport (TLV) — Israel\'s primary international gateway serving over 25 million passengers annually. Ben Gurion Airport is renowned worldwide for its pioneering multi-layered security system, which has been studied and adapted by airports globally. Also operates Ramon Airport near Eilat and Haifa Airport.');
+updDesc('israel-airports-authority', 'Government authority operating Israel\'s airports, including Ben Gurion International Airport (TLV) , Israel\'s primary international gateway serving over 25 million passengers annually. Ben Gurion Airport is renowned worldwide for its pioneering multi-layered security system, which has been studied and adapted by airports globally. Also operates Ramon Airport near Eilat and Haifa Airport.');
 
 addConn('university-of-haifa', [
   { name: "Israeli academic system", type: "academic", description: "One of Israel's major research universities, known for its diverse student body." },
@@ -461,7 +461,7 @@ addConn('university-of-haifa', [
   { name: "Arab-Jewish coexistence", type: "mission", description: "Known as Israel's most diverse university, with significant Arab student enrollment." },
   { name: "Marine research", type: "specialty", description: "Leading center for marine sciences and Mediterranean research." }
 ]);
-updDesc('university-of-haifa', 'Founded in 1963, Israel\'s most diverse university with significant Arab, Druze, and Jewish enrollment — a model of coexistence. Located on Mount Carmel with views of the Mediterranean. Home to the Leon H. Charney School of Marine Sciences, the Hecht Museum of archaeology and art, and leading programs in Mediterranean studies. The Eshkol Tower, designed by Oscar Niemeyer, is a local landmark.');
+updDesc('university-of-haifa', 'Founded in 1963, Israel\'s most diverse university with significant Arab, Druze, and Jewish enrollment , a model of coexistence. Located on Mount Carmel with views of the Mediterranean. Home to the Leon H. Charney School of Marine Sciences, the Hecht Museum of archaeology and art, and leading programs in Mediterranean studies. The Eshkol Tower, designed by Oscar Niemeyer, is a local landmark.');
 
 addConn('reichman-university-idc-herzliya', [
   { name: "Uriel Reichman", type: "founder", description: "Founded in 1994 by Prof. Uriel Reichman, a law professor and public intellectual." },
@@ -481,7 +481,7 @@ updDesc('bezalel-academy-of-arts-and-design', 'Israel\'s oldest art school, foun
 
 addConn('mobileye-global', [
   { name: "Amnon Shashua", type: "co-founder", description: "Co-founded by Prof. Amnon Shashua, a Hebrew University computer scientist." },
-  { name: "Intel", type: "parent company", description: "Acquired by Intel for $15.3 billion in 2017 — the largest Israeli tech acquisition at the time." },
+  { name: "Intel", type: "parent company", description: "Acquired by Intel for $15.3 billion in 2017 , the largest Israeli tech acquisition at the time." },
   { name: "Autonomous vehicles", type: "technology", description: "World leader in autonomous driving technology and advanced driver-assistance systems (ADAS)." },
   { name: "IPO 2022", type: "financial", description: "Intel took Mobileye public again in 2022 with a valuation of approximately $17 billion." }
 ]);
@@ -515,7 +515,7 @@ addConn('israel-chemicals-ltd-icl', [
   { name: "Global fertilizer market", type: "industry", description: "One of the world's largest producers of potash, phosphates, and specialty fertilizers." },
   { name: "Israeli government", type: "concession", description: "Operates under government concessions for Dead Sea mineral extraction." }
 ]);
-updDesc('israel-chemicals-ltd-icl', 'One of the world\'s leading specialty minerals companies, headquartered in Tel Aviv. Extracts potash, bromine, and other minerals from the Dead Sea — one of Earth\'s most unique natural resources. Controlled by the Ofer Group (Idan Ofer, Jewish). A Fortune 500 company operating in over 30 countries. Major producer of fertilizers, food additives, and industrial products. The Dead Sea concession is one of Israel\'s most valuable natural resource assets.');
+updDesc('israel-chemicals-ltd-icl', 'One of the world\'s leading specialty minerals companies, headquartered in Tel Aviv. Extracts potash, bromine, and other minerals from the Dead Sea , one of Earth\'s most unique natural resources. Controlled by the Ofer Group (Idan Ofer, Jewish). A Fortune 500 company operating in over 30 countries. Major producer of fertilizers, food additives, and industrial products. The Dead Sea concession is one of Israel\'s most valuable natural resource assets.');
 
 addConn('taro-pharmaceutical-israel', [
   { name: "Sun Pharmaceutical", type: "parent company", description: "Majority-owned by Sun Pharmaceutical Industries of India." },
@@ -530,7 +530,7 @@ addConn('biontech-pfizer-israel-partnership', [
   { name: "Real-world data sharing", type: "agreement", description: "Israel shared anonymized health data with Pfizer in exchange for early vaccine supply." },
   { name: "Albert Bourla", type: "CEO", description: "Pfizer CEO Albert Bourla (Jewish, born in Thessaloniki) led the vaccine development effort." }
 ]);
-updDesc('biontech-pfizer-israel-partnership', 'Israel became the world\'s fastest country to vaccinate its population with the Pfizer-BioNTech COVID-19 vaccine in early 2021. A landmark agreement saw Israel share anonymized health data with Pfizer in exchange for priority vaccine supply. Pfizer CEO Albert Bourla (Jewish, born in Thessaloniki, Greece — his parents survived the Holocaust) led the global vaccination effort. The partnership demonstrated Israel\'s advanced healthcare data infrastructure and universal health system.');
+updDesc('biontech-pfizer-israel-partnership', 'Israel became the world\'s fastest country to vaccinate its population with the Pfizer-BioNTech COVID-19 vaccine in early 2021. A landmark agreement saw Israel share anonymized health data with Pfizer in exchange for priority vaccine supply. Pfizer CEO Albert Bourla (Jewish, born in Thessaloniki, Greece , his parents survived the Holocaust) led the global vaccination effort. The partnership demonstrated Israel\'s advanced healthcare data infrastructure and universal health system.');
 addInd('biontech-pfizer-israel-partnership', { name: "Albert Bourla", bio: "CEO of Pfizer (Jewish, born in Thessaloniki, Greece). His parents survived the Holocaust. Led the development and global distribution of the COVID-19 vaccine.", role: "Pfizer CEO" });
 
 addConn('sodastream-israel', [

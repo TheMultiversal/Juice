@@ -803,7 +803,7 @@ updateDesc('estee-lauder-companies', 'Founded by Estée Lauder (Jewish, née Jos
 updateDesc('intel-israel-', 'Intel has invested $50B+ in Israel since 1974, making it one of the largest foreign investors in Israel\'s history. Intel Israel employs 12,000+ people across development centers in Haifa, Jerusalem, and Petah Tikva, and a chip fabrication plant in Kiryat Gat. Intel\'s legendary CEO Andy Grove (Jewish, born András Gróf in Hungary, Holocaust survivor) built Intel into the world\'s dominant chip maker. Intel acquired Israeli companies Mobileye ($15.3B) and Tower Semiconductor.');
 
 // Real Estate
-updateDesc('related-companies', 'Founded by Stephen Ross (Jewish) in 1972. Developed Hudson Yards, the $25 billion mega-development in Manhattan — the largest private real estate project in US history. Ross also owns the Miami Dolphins NFL team. Jeff Blau (Jewish) serves as CEO. The firm has developed over $60 billion in real estate.');
+updateDesc('related-companies', 'Founded by Stephen Ross (Jewish) in 1972. Developed Hudson Yards, the $25 billion mega-development in Manhattan , the largest private real estate project in US history. Ross also owns the Miami Dolphins NFL team. Jeff Blau (Jewish) serves as CEO. The firm has developed over $60 billion in real estate.');
 
 // Defense
 updateDesc('check-point-software', 'Co-founded by Gil Shwed (Jewish) in 1993, a veteran of IDF Unit 8200. Check Point invented the modern commercial firewall and pioneered network cybersecurity. Headquartered in Tel Aviv and Redwood City, CA. Revenue exceeds $2B annually. Many Check Point alumni have gone on to found other cybersecurity companies.');

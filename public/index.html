@@ -1,19 +1,21 @@
-<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!-- Juice Project - Est. 2016 | Last updated 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Juice Project">
-  <meta name="description" content="Comprehensive directory of religious organizations worldwide — tracking structure, people, and connections since 2016.">
+  <meta name="description" content="Comprehensive directory of religious organizations worldwide - tracking structure, people, and connections since 2016.">
   <meta name="created" content="2016-03-14">
   <meta name="revised" content="2025-01-15">
-  <title>Juice — Religious Organizations Directory</title>
+  <title>Juice - Religious Organizations Directory</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
-    nav ul li { margin-right: 1em; white-space: nowrap; }
-    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    nav ul { list-style: none; margin: 0; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center; align-items: center; }
+    nav ul li { margin: 0; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
+    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
     .hero { text-align: center; padding: 40px 20px 25px 20px; }
     .hero h1 { font-size: 2.8em; margin: 0 0 8px 0; letter-spacing: 2px; }
     .hero .subtitle { color: #555; font-size: 1.1em; margin-bottom: 20px; }
@@ -77,13 +79,13 @@
   <!-- HERO DASHBOARD -->
   <div class="hero panel" id="hero">
     <h1>Juice</h1>
-    <p class="subtitle">Comprehensive Religious Organizations Intelligence Database — Est. 2016</p>
+    <p class="subtitle">Comprehensive Religious Organizations Intelligence Database - Est. 2016</p>
     <div class="hero-stats" id="hero-stats">
-      <div class="hero-stat"><span class="num" id="stat-entries">—</span><span class="label">Organizations</span></div>
-      <div class="hero-stat"><span class="num" id="stat-countries">—</span><span class="label">Countries</span></div>
-      <div class="hero-stat"><span class="num" id="stat-people">—</span><span class="label">People</span></div>
-      <div class="hero-stat"><span class="num" id="stat-connections">—</span><span class="label">Connections</span></div>
-      <div class="hero-stat"><span class="num" id="stat-categories">—</span><span class="label">Categories</span></div>
+      <div class="hero-stat"><span class="num" id="stat-entries">...</span><span class="label">Organizations</span></div>
+      <div class="hero-stat"><span class="num" id="stat-countries">...</span><span class="label">Countries</span></div>
+      <div class="hero-stat"><span class="num" id="stat-people">...</span><span class="label">People</span></div>
+      <div class="hero-stat"><span class="num" id="stat-connections">...</span><span class="label">Connections</span></div>
+      <div class="hero-stat"><span class="num" id="stat-categories">...</span><span class="label">Categories</span></div>
     </div>
     <div class="quick-search">
       <input type="text" id="hero-search" placeholder="Search organizations, people, connections..." />
@@ -176,7 +178,7 @@
       populateCategoryFilter(data);
       renderData(data);
     });
-    setSEO({ title: 'Juice — Religious Organizations Dashboard', description: 'Explore 800+ religious organizations across 86 countries with interactive analytics, maps, and network graphs.' });
+    setSEO({ title: 'Juice , Religious Organizations Dashboard', description: 'Explore 800+ religious organizations across 86 countries with interactive analytics, maps, and network graphs.' });
 
     // Dashboard stats
     fetch('/api/stats').then(r => r.json()).then(stats => {
@@ -335,7 +337,7 @@
             const card = document.createElement('div');
             card.className = 'entry-card';
             card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
-              + '<span class="entry-type-inline"> — ' + item.type + '</span>'
+              + '<span class="entry-type-inline"> , ' + item.type + '</span>'
               + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
               + (item.category && Object.keys(groups).length <= 1 ? ' <span class="tag">' + item.category + '</span>' : '');
             section.appendChild(card);
@@ -362,7 +364,7 @@
         const card = document.createElement('div');
         card.className = 'entry-card';
         card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
-          + '<span class="entry-type-inline"> — ' + item.type + ' · ' + item.country + '</span>'
+          + '<span class="entry-type-inline"> , ' + item.type + ' · ' + item.country + '</span>'
           + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
           + (item.category ? ' <span class="tag">' + item.category + '</span>' : '');
         container.appendChild(card);

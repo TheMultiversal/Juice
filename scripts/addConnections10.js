@@ -216,9 +216,9 @@ updDesc('zentralwohlfahrtsstelle-der-juden-in-deutschland', 'The Zentralwohlfahr
 addConn('european-maccabi-games', [
   { name: "Maccabi World Union", type: "parent organization", description: "European regional competition of the Maccabi sports movement." },
   { name: "European Jewish athletes", type: "participants", description: "Brings together Jewish athletes from across Europe." },
-  { name: "Berlin 2015 significance", type: "historic moment", description: "The 2015 European Maccabi Games in Berlin were enormously symbolic — Jewish athletes competing 80 years after the 1936 Berlin Olympics." }
+  { name: "Berlin 2015 significance", type: "historic moment", description: "The 2015 European Maccabi Games in Berlin were enormously symbolic , Jewish athletes competing 80 years after the 1936 Berlin Olympics." }
 ]);
-updDesc('european-maccabi-games', 'The European Maccabi Games (EMG) is the regional edition of the Maccabi Games for European Jewish athletes. The 2015 EMG held in Berlin were profoundly symbolic — Jewish athletes competing in Germany\'s capital 80 years after the 1936 Nazi Olympics from which Jews were excluded. Part of the Maccabi World Union, the world\'s largest Jewish sports organization founding in 1921.');
+updDesc('european-maccabi-games', 'The European Maccabi Games (EMG) is the regional edition of the Maccabi Games for European Jewish athletes. The 2015 EMG held in Berlin were profoundly symbolic , Jewish athletes competing in Germany\'s capital 80 years after the 1936 Nazi Olympics from which Jews were excluded. Part of the Maccabi World Union, the world\'s largest Jewish sports organization founding in 1921.');
 
 addConn('moses-mendelssohn-center-for-european-jewish-studies', [
   { name: "Moses Mendelssohn", type: "namesake", description: "Named after Moses Mendelssohn (Jewish, 1729-1786), the father of the Jewish Enlightenment (Haskalah)." },
@@ -245,7 +245,7 @@ updDesc('zalando', 'Zalando, co-founded by David Schneider (Jewish) and Robert G
 addConn('stolpersteine-stumbling-stones', [
   { name: "Gunter Demnig", type: "creator", description: "Created by German artist Gunter Demnig, beginning in 1992." },
   { name: "Holocaust commemoration", type: "purpose", description: "Small brass plaques embedded in sidewalks marking the last known addresses of Holocaust victims." },
-  { name: "Largest decentralized memorial", type: "distinction", description: "Over 100,000 Stolpersteine in 30+ countries — the world's largest decentralized memorial." },
+  { name: "Largest decentralized memorial", type: "distinction", description: "Over 100,000 Stolpersteine in 30+ countries , the world's largest decentralized memorial." },
   { name: "Community engagement", type: "process", description: "Each stone is individually researched and funded by local communities." }
 ]);
 updDesc('stolpersteine-stumbling-stones', 'Stolpersteine (Stumbling Stones) are small brass cobblestone-sized memorials created by German artist Gunter Demnig, embedded in sidewalks marking the last known freely-chosen addresses of Holocaust victims. Beginning in 1992, over 100,000 Stolpersteine have been laid in 30+ countries, making it the world\'s largest decentralized memorial. Each stone is individually researched and funded by local communities, naming the victim and their fate.');
@@ -463,7 +463,7 @@ addConn('anglo-american-oppenheimer-legacy', [
   { name: "Ernest Oppenheimer", type: "founder", description: "Founded by Sir Ernest Oppenheimer (Jewish) in 1917." },
   { name: "Harry Oppenheimer", type: "successor", description: "Harry Oppenheimer (Jewish) led Anglo American for decades, making it one of the world's largest mining companies." },
   { name: "De Beers", type: "subsidiary", description: "Anglo American held a controlling stake in De Beers diamonds." },
-  { name: "South African mining economy", type: "economic impact", description: "Dominated South Africa's mining industry — gold, diamonds, platinum, coal." }
+  { name: "South African mining economy", type: "economic impact", description: "Dominated South Africa's mining industry , gold, diamonds, platinum, coal." }
 ]);
 updDesc('anglo-american-oppenheimer-legacy', 'Anglo American Corporation was founded by Sir Ernest Oppenheimer (Jewish, 1880-1957) in 1917. Under him and his son Harry Oppenheimer (Jewish, 1908-2000), it became one of the world\'s largest mining companies, dominating South African gold, diamond, platinum, and coal production. Simultaneously controlled De Beers. The Oppenheimer family held enormous economic power in South Africa for nearly a century. Anglo American is now listed on the London Stock Exchange as a FTSE 100 company.');
 

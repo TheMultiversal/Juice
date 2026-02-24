@@ -176,7 +176,7 @@ addConn('waze', [
   { name: "Navigation disruption", type: "innovation", description: "Waze disrupted the navigation industry with crowd-sourced traffic data." },
   { name: "Tel Aviv", type: "origin", description: "Founded in Israel; remains HQ'd in Tel Aviv under Google." }
 ]);
-updDesc('waze', 'Founded by Ehud Shabtai, Uri Levine, and Amir Shinar (all Israeli Jewish) in 2006. Waze pioneered crowd-sourced real-time traffic navigation. Acquired by Google for $1.15 billion in 2013 — one of the largest Israeli tech exits at the time. Waze continues to operate from Tel Aviv under Google\'s umbrella.');
+updDesc('waze', 'Founded by Ehud Shabtai, Uri Levine, and Amir Shinar (all Israeli Jewish) in 2006. Waze pioneered crowd-sourced real-time traffic navigation. Acquired by Google for $1.15 billion in 2013 , one of the largest Israeli tech exits at the time. Waze continues to operate from Tel Aviv under Google\'s umbrella.');
 
 addConn('nso-group', [
   { name: "Shalev Hulio", type: "co-founder", description: "Shalev Hulio (Israeli Jewish) co-founded NSO Group." },
@@ -291,7 +291,7 @@ addConn('bank-leumi', [
   { name: "Second largest bank", type: "market position", description: "Bank Leumi is Israel's second-largest bank." },
   { name: "Leumi Tech", type: "tech banking", description: "Leumi Tech is Israel's leading tech banking division." }
 ]);
-updDesc('bank-leumi', 'Israel\'s second-largest bank. Traces its origins to the Anglo-Palestine Company, founded in 1902 by the World Zionist Organization — making it effectively the bank of the Zionist movement. Renamed Bank Leumi ("National Bank") after Israeli independence. Leumi Tech is Israel\'s leading technology banking and lending division.');
+updDesc('bank-leumi', 'Israel\'s second-largest bank. Traces its origins to the Anglo-Palestine Company, founded in 1902 by the World Zionist Organization , making it effectively the bank of the Zionist movement. Renamed Bank Leumi ("National Bank") after Israeli independence. Leumi Tech is Israel\'s leading technology banking and lending division.');
 
 addConn('israel-discount-bank', [
   { name: "Leon Recanati", type: "founding family", description: "Founded by the Recanati family (Sephardic Jewish, Greek origin) in 1935." },
@@ -320,7 +320,7 @@ addConn('tnuva', [
 
 addConn('osem-nestl-israel', [
   { name: "Nestlé", type: "parent company", description: "Nestlé acquired full ownership of Osem." },
-  { name: "Bamba", type: "iconic product", description: "Osem produces Bamba, Israel's most iconic snack — a peanut-flavored puffed corn snack." },
+  { name: "Bamba", type: "iconic product", description: "Osem produces Bamba, Israel's most iconic snack , a peanut-flavored puffed corn snack." },
   { name: "Israeli food culture", type: "cultural significance", description: "Osem is central to Israeli food culture; most Israeli pantries contain Osem products." }
 ]);
 
@@ -425,7 +425,7 @@ addConn('keren-kayemet-leyisrael-jewish-national-fund', [
 
 addConn('el-al-israel-airlines', [
   { name: "State of Israel", type: "ownership", description: "El Al was Israel's state-owned airline before privatization." },
-  { name: "Operation Solomon", type: "historic flight", description: "In 1991, El Al flew 14,325 Ethiopian Jews to Israel in 36 hours — a world record for most passengers on a plane." },
+  { name: "Operation Solomon", type: "historic flight", description: "In 1991, El Al flew 14,325 Ethiopian Jews to Israel in 36 hours , a world record for most passengers on a plane." },
   { name: "Security", type: "reputation", description: "El Al is considered the most secure airline in the world." },
   { name: "Shabbat observance", type: "cultural", description: "El Al historically did not fly on Shabbat (though this has been debated)." },
   { name: "Entebbe rescue", type: "historic role", description: "El Al planes were involved in the aftermath of the Entebbe hijacking." }
@@ -434,7 +434,7 @@ updDesc('el-al-israel-airlines', 'Israel\'s national airline. In 1991, El Al set
 
 addConn('bezeq-israeli-telecommunications', [
   { name: "Eurocom Group", type: "former owner", description: "Controlled by the Eurocom Group (Shaul Elovitch, Jewish) for years." },
-  { name: "Netanyahu Case 4000", type: "political scandal", description: "Bezeq was central to 'Case 4000' — allegations that Netanyahu promoted regulations favoring Bezeq in exchange for favorable media coverage on its Walla! news site." },
+  { name: "Netanyahu Case 4000", type: "political scandal", description: "Bezeq was central to 'Case 4000' , allegations that Netanyahu promoted regulations favoring Bezeq in exchange for favorable media coverage on its Walla! news site." },
   { name: "Israel telecom market", type: "market position", description: "Bezeq is Israel's largest telecommunications company." },
   { name: "yes TV", type: "subsidiary", description: "Bezeq owns yes, Israel's satellite TV platform." }
 ]);
@@ -527,7 +527,7 @@ addConn('tottenham-hotspur', [
   { name: "Daniel Levy", type: "chairman", description: "Daniel Levy (Jewish) has been chairman of Tottenham Hotspur since 2001." },
   { name: "Joe Lewis", type: "former owner", description: "Joe Lewis (Jewish) was the majority owner through ENIC Group." },
   { name: "Jewish fan base", type: "cultural", description: "Spurs has a historically large Jewish fan base in North London." },
-  { name: "Yid Army", type: "cultural", description: "Spurs fans sometimes call themselves the 'Yid Army' — a controversial but identity-reclaiming tradition." },
+  { name: "Yid Army", type: "cultural", description: "Spurs fans sometimes call themselves the 'Yid Army' , a controversial but identity-reclaiming tradition." },
   { name: "Tottenham Hotspur Stadium", type: "facility", description: "Levy oversaw the construction of the £1 billion new stadium." }
 ]);
 updDesc('tottenham-hotspur', 'Chairman Daniel Levy (Jewish) has led the club since 2001. Former majority owner Joe Lewis (Jewish) held shares through ENIC Group. Spurs has a historically large Jewish fan base in North London, and fans sometimes call themselves the "Yid Army." Levy oversaw the construction of the £1 billion new Tottenham Hotspur Stadium.');
@@ -630,7 +630,7 @@ updDesc('alfa-group-consortium', 'Co-founded by Mikhail Fridman (Jewish, Ukraini
 // ============================================================
 
 addConn('naspers-prosus', [
-  { name: "Tencent investment", type: "key asset", description: "Naspers' $32M investment in Tencent (2001) became worth $200B+ — the greatest venture investment in history." },
+  { name: "Tencent investment", type: "key asset", description: "Naspers' $32M investment in Tencent (2001) became worth $200B+ , the greatest venture investment in history." },
   { name: "Koos Bekker", type: "former CEO", description: "Koos Bekker made the Tencent investment decision." },
   { name: "South African Jewish community", type: "historical connection", description: "Naspers has historical ties to South Africa's Jewish business community." },
   { name: "Prosus", type: "subsidiary", description: "Naspers created Prosus to hold its international internet investments." },
@@ -674,7 +674,7 @@ addConn('axel-springer-se', [
   { name: "Israel policy", type: "editorial stance", description: "Support for Israel is enshrined in Axel Springer's corporate principles." },
   { name: "KKR", type: "owner", description: "KKR (co-founded by Henry Kravis, Jewish) took Axel Springer private." }
 ]);
-updDesc('axel-springer-se', 'Founded in 1946. Support for Israel and the Jewish people is enshrined in the company\'s corporate principles — unique among major media companies. Axel Springer owns Bild (Germany\'s largest newspaper), Politico, and Business Insider. KKR (co-founded by Henry Kravis, Jewish) took the company private. CEO Mathias Döpfner has maintained the strong pro-Israel editorial stance.');
+updDesc('axel-springer-se', 'Founded in 1946. Support for Israel and the Jewish people is enshrined in the company\'s corporate principles , unique among major media companies. Axel Springer owns Bild (Germany\'s largest newspaper), Politico, and Business Insider. KKR (co-founded by Henry Kravis, Jewish) took the company private. CEO Mathias Döpfner has maintained the strong pro-Israel editorial stance.');
 
 // ============================================================
 // SAVE

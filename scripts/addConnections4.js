@@ -118,7 +118,7 @@ addConn('skadden-arps-slate-meagher-flom', [
   { name: "Corporate takeovers", type: "specialty", description: "Flom pioneered hostile takeover defense for corporate clients." },
   { name: "Revenue", type: "scale", description: "Skadden generates $3B+ in annual revenue." }
 ]);
-updDesc('skadden-arps-slate-meagher-flom', 'Joseph Flom (Jewish) joined tiny Skadden Arps and built it into the world\'s most profitable law firm. Flom essentially invented the modern M&A legal practice and pioneered hostile takeover defense. Revenue exceeds $3 billion annually. The firm represents the pinnacle of Jewish achievement in American law — Flom rose from the immigrant Lower East Side to dominating Wall Street law.');
+updDesc('skadden-arps-slate-meagher-flom', 'Joseph Flom (Jewish) joined tiny Skadden Arps and built it into the world\'s most profitable law firm. Flom essentially invented the modern M&A legal practice and pioneered hostile takeover defense. Revenue exceeds $3 billion annually. The firm represents the pinnacle of Jewish achievement in American law , Flom rose from the immigrant Lower East Side to dominating Wall Street law.');
 
 addConn('fried-frank-harris-shriver-jacobson', [
   { name: "Jewish founding partners", type: "founding", description: "Several founding partners were Jewish; the firm was one of the first major law firms to be openly Jewish-led." },
@@ -151,7 +151,7 @@ addConn('macy-s', [
   { name: "Herald Square", type: "flagship", description: "Macy's Herald Square is the world's largest department store." },
   { name: "Thanksgiving Day Parade", type: "cultural event", description: "The Macy's Thanksgiving Day Parade is one of America's most iconic cultural events." }
 ]);
-updDesc('macy-s', 'Historic Jewish ownership: Isidor Straus (Jewish, German-born) and his brother Nathan Straus (Jewish) co-owned Macy\'s. Isidor and his wife Ida tragically died together on the Titanic in 1912, refusing to be separated — their story inspired the elderly couple scene in the movie Titanic. Nathan Straus was a great philanthropist who established pasteurized milk stations saving thousands of children. Macy\'s Herald Square is the world\'s largest store; the Thanksgiving Day Parade is an American icon.');
+updDesc('macy-s', 'Historic Jewish ownership: Isidor Straus (Jewish, German-born) and his brother Nathan Straus (Jewish) co-owned Macy\'s. Isidor and his wife Ida tragically died together on the Titanic in 1912, refusing to be separated , their story inspired the elderly couple scene in the movie Titanic. Nathan Straus was a great philanthropist who established pasteurized milk stations saving thousands of children. Macy\'s Herald Square is the world\'s largest store; the Thanksgiving Day Parade is an American icon.');
 
 addConn('sears-roebuck-historic', [
   { name: "Julius Rosenwald", type: "historic president", description: "Julius Rosenwald (Jewish) transformed Sears into America's largest retailer." },
@@ -159,7 +159,7 @@ addConn('sears-roebuck-historic', [
   { name: "Sears Tower", type: "landmark", description: "The Sears Tower (now Willis Tower) was the world's tallest building for 25 years." },
   { name: "Booker T. Washington", type: "partnership", description: "Rosenwald partnered with Booker T. Washington to build schools for African Americans." }
 ]);
-updDesc('sears-roebuck-historic', 'Julius Rosenwald (Jewish) transformed Sears from a small mail-order business into America\'s largest retailer. Rosenwald was one of America\'s greatest philanthropists — he gave away $70 million (over $1 billion today), including funding 5,000+ "Rosenwald Schools" for Black children in the Jim Crow South, partnering with Booker T. Washington. The Sears Tower was the world\'s tallest building for 25 years.');
+updDesc('sears-roebuck-historic', 'Julius Rosenwald (Jewish) transformed Sears from a small mail-order business into America\'s largest retailer. Rosenwald was one of America\'s greatest philanthropists , he gave away $70 million (over $1 billion today), including funding 5,000+ "Rosenwald Schools" for Black children in the Jim Crow South, partnering with Booker T. Washington. The Sears Tower was the world\'s tallest building for 25 years.');
 
 addConn('neiman-marcus', [
   { name: "Herbert Marcus", type: "co-founder", description: "Herbert Marcus (Jewish) co-founded Neiman Marcus in Dallas in 1907." },
@@ -181,7 +181,7 @@ addConn('bloomingdales', [
 
 addConn('friends-of-the-idf-fidf', [
   { name: "IDF", type: "beneficiary", description: "FIDF provides support to IDF soldiers and lone soldiers." },
-  { name: "Lone soldiers", type: "program", description: "FIDF supports lone soldiers — those serving without family in Israel." },
+  { name: "Lone soldiers", type: "program", description: "FIDF supports lone soldiers , those serving without family in Israel." },
   { name: "US Jewish community", type: "donor base", description: "FIDF raises hundreds of millions from US Jewish donors." },
   { name: "Annual gala", type: "fundraising", description: "FIDF galas are among the largest Jewish fundraising events in America." }
 ]);
@@ -285,7 +285,7 @@ addConn('dutch-jewish-community-organizations', [
   { name: "Anne Frank", type: "historic figure", description: "Anne Frank (Jewish, German-born) hid in Amsterdam and wrote her famous diary." },
   { name: "Portuguese Synagogue", type: "landmark", description: "The Portuguese Synagogue of Amsterdam (1675) is one of the most important Jewish heritage sites." },
   { name: "Sephardic heritage", type: "history", description: "Amsterdam's Jewish community was historically Sephardic, descended from Spanish and Portuguese Jews." },
-  { name: "Dutch Holocaust", type: "history", description: "75% of Dutch Jews were murdered in the Holocaust — the highest percentage in Western Europe." }
+  { name: "Dutch Holocaust", type: "history", description: "75% of Dutch Jews were murdered in the Holocaust , the highest percentage in Western Europe." }
 ]);
 
 // ============================================================
@@ -297,9 +297,9 @@ addConn('moroccan-jewish-community-and-heritage', [
   { name: "Abraham Accords", type: "normalization", description: "Morocco normalized relations with Israel under the Abraham Accords (2020)." },
   { name: "Casablanca Jewish community", type: "active community", description: "Casablanca has Morocco's last active Jewish community." },
   { name: "Jewish mellah", type: "heritage", description: "Historic Jewish quarters (mellahs) exist in Fez, Marrakech, and other cities." },
-  { name: "Israeli Moroccans", type: "diaspora", description: "Over 1 million Israelis are of Moroccan Jewish descent — the largest Mizrachi community." }
+  { name: "Israeli Moroccans", type: "diaspora", description: "Over 1 million Israelis are of Moroccan Jewish descent , the largest Mizrachi community." }
 ]);
-updDesc('moroccan-jewish-community-and-heritage', 'Morocco once had the largest Jewish community in the Arab world (250,000+). King Mohammed VI has protected Moroccan Jewish heritage, restoring synagogues and cemeteries. Morocco normalized relations with Israel under the Abraham Accords (2020). Over 1 million Israelis are of Moroccan descent — the largest Mizrachi community in Israel.');
+updDesc('moroccan-jewish-community-and-heritage', 'Morocco once had the largest Jewish community in the Arab world (250,000+). King Mohammed VI has protected Moroccan Jewish heritage, restoring synagogues and cemeteries. Morocco normalized relations with Israel under the Abraham Accords (2020). Over 1 million Israelis are of Moroccan descent , the largest Mizrachi community in Israel.');
 
 // ============================================================
 // TURKEY
@@ -320,10 +320,10 @@ addConn('iranian-jewish-community', [
   { name: "2,700-year history", type: "history", description: "Iranian Jews have lived in Persia for 2,700+ years since the Babylonian exile." },
   { name: "Tomb of Esther and Mordechai", type: "heritage site", description: "The Tomb of Esther and Mordechai in Hamadan is a major Jewish pilgrimage site." },
   { name: "Constitutional seat", type: "political", description: "Iran's Jewish community has a guaranteed seat in the Iranian parliament (Majles)." },
-  { name: "Cyrus the Great", type: "historic connection", description: "Cyrus the Great freed the Jews from the Babylonian captivity — Jews call him 'Messiah' in Isaiah 45:1." },
+  { name: "Cyrus the Great", type: "historic connection", description: "Cyrus the Great freed the Jews from the Babylonian captivity , Jews call him 'Messiah' in Isaiah 45:1." },
   { name: "Israeli-Iranian tensions", type: "geopolitics", description: "Despite Iran-Israel hostility, Iranian Jews maintain a community within Iran." }
 ]);
-updDesc('iranian-jewish-community', 'One of the world\'s oldest Jewish communities — 2,700+ years since the Babylonian exile. Cyrus the Great freed Jews from Babylonian captivity; Jews call him "Messiah" in Isaiah 45:1. Iran\'s Jewish community has a guaranteed seat in parliament. The Tomb of Esther and Mordechai in Hamadan is a pilgrimage site. About 8,000-10,000 Jews remain in Iran despite the Islamic Republic.');
+updDesc('iranian-jewish-community', 'One of the world\'s oldest Jewish communities , 2,700+ years since the Babylonian exile. Cyrus the Great freed Jews from Babylonian captivity; Jews call him "Messiah" in Isaiah 45:1. Iran\'s Jewish community has a guaranteed seat in parliament. The Tomb of Esther and Mordechai in Hamadan is a pilgrimage site. About 8,000-10,000 Jews remain in Iran despite the Islamic Republic.');
 
 // ============================================================
 // ETHIOPIA
@@ -331,13 +331,13 @@ updDesc('iranian-jewish-community', 'One of the world\'s oldest Jewish communiti
 
 addConn('ethiopian-jewish-beta-israel-heritage', [
   { name: "Beta Israel", type: "community", description: "The Beta Israel are an ancient Jewish community in Ethiopia." },
-  { name: "Operation Solomon", type: "rescue", description: "In 1991, Israel airlifted 14,325 Ethiopian Jews in 36 hours — a world record." },
+  { name: "Operation Solomon", type: "rescue", description: "In 1991, Israel airlifted 14,325 Ethiopian Jews in 36 hours , a world record." },
   { name: "Operation Moses", type: "rescue", description: "In 1984, Israel secretly brought 8,000 Ethiopian Jews through Sudan." },
   { name: "Israeli Ethiopian community", type: "diaspora", description: "About 160,000 Ethiopians of Jewish descent live in Israel today." },
   { name: "El Al", type: "airlift partner", description: "El Al flew the Operation Solomon airlift." },
   { name: "Jewish Agency", type: "partner", description: "The Jewish Agency organized the Ethiopian aliyah operations." }
 ]);
-updDesc('ethiopian-jewish-beta-israel-heritage', 'The Beta Israel claim descent from the Tribe of Dan and have practiced Judaism for millennia. Israel conducted two dramatic rescue operations: Operation Moses (1984, 8,000 Jews through Sudan) and Operation Solomon (1991, 14,325 in 36 hours — world record). About 160,000 Ethiopians of Jewish descent now live in Israel. Their integration has been both a source of pride and ongoing challenges.');
+updDesc('ethiopian-jewish-beta-israel-heritage', 'The Beta Israel claim descent from the Tribe of Dan and have practiced Judaism for millennia. Israel conducted two dramatic rescue operations: Operation Moses (1984, 8,000 Jews through Sudan) and Operation Solomon (1991, 14,325 in 36 hours , world record). About 160,000 Ethiopians of Jewish descent now live in Israel. Their integration has been both a source of pride and ongoing challenges.');
 
 // ============================================================
 // SWITZERLAND
@@ -359,7 +359,7 @@ addConn('italian-jewish-community-organizations', [
   { name: "Rome Ghetto", type: "heritage", description: "The Rome Ghetto (1555-1870) is one of the oldest Jewish ghettos in the world." },
   { name: "Vatican relations", type: "interfaith", description: "Italian Jews have a complex historic relationship with the Vatican." },
   { name: "Primo Levi", type: "notable figure", description: "Primo Levi (Jewish) was a Holocaust survivor and acclaimed author of 'If This Is a Man.'" },
-  { name: "Venetian Ghetto", type: "heritage", description: "Venice's 'Ghetto' (1516) was the first Jewish ghetto — the word 'ghetto' originates here." }
+  { name: "Venetian Ghetto", type: "heritage", description: "Venice's 'Ghetto' (1516) was the first Jewish ghetto , the word 'ghetto' originates here." }
 ]);
 
 // ============================================================
@@ -370,7 +370,7 @@ addConn('spanish-jewish-sephardic-heritage', [
   { name: "Golden Age of Spain", type: "history", description: "Jews flourished during the Golden Age of Spain (10th-12th centuries) in Muslim-ruled Iberia." },
   { name: "1492 Expulsion", type: "history", description: "The Alhambra Decree of 1492 expelled all Jews from Spain." },
   { name: "Spanish citizenship law", type: "modern", description: "Spain passed a law in 2015 offering citizenship to descendants of Sephardic Jews." },
-  { name: "Maimonides", type: "historic figure", description: "Maimonides (Rambam, 1135-1204) was born in Córdoba — one of the greatest Jewish scholars of all time." },
+  { name: "Maimonides", type: "historic figure", description: "Maimonides (Rambam, 1135-1204) was born in Córdoba , one of the greatest Jewish scholars of all time." },
   { name: "Ladino language", type: "cultural heritage", description: "Sephardic Jews preserved Ladino (Judeo-Spanish) for 500+ years after the expulsion." }
 ]);
 updDesc('spanish-jewish-sephardic-heritage', 'Jews flourished during the Golden Age of Spain (10th-12th centuries). Maimonides (1135-1204), born in Córdoba, was one of the greatest Jewish scholars in history. The Alhambra Decree of 1492 expelled all Jews from Spain, creating the Sephardic diaspora. Spain passed a law in 2015 offering citizenship to Sephardic descendants. Ladino (Judeo-Spanish) is still spoken by some Sephardic communities 500+ years later.');
@@ -380,13 +380,13 @@ updDesc('spanish-jewish-sephardic-heritage', 'Jews flourished during the Golden 
 // ============================================================
 
 addConn('museum-of-the-history-of-polish-jews-polin', [
-  { name: "Polin", type: "meaning", description: "'Polin' means 'rest here' in Hebrew — the legendary name Polish Jews gave to the land." },
+  { name: "Polin", type: "meaning", description: "'Polin' means 'rest here' in Hebrew , the legendary name Polish Jews gave to the land." },
   { name: "Warsaw", type: "location", description: "Located on the site of the former Warsaw Ghetto." },
   { name: "Polish Jewish history", type: "mission", description: "Documents 1,000 years of Jewish life in Poland." },
   { name: "Holocaust", type: "history", description: "Poland was home to the largest pre-war Jewish population in Europe (3.3 million); 90% were murdered." },
   { name: "Warsaw Ghetto Uprising", type: "historic event", description: "Located near the site of the 1943 Warsaw Ghetto Uprising memorial." }
 ]);
-updDesc('museum-of-the-history-of-polish-jews-polin', 'Located on the site of the former Warsaw Ghetto in Warsaw. "Polin" means "rest here" in Hebrew. Documents 1,000 years of Jewish civilization in Poland — once home to the largest Jewish community in Europe (3.3 million before WWII). 90% of Polish Jews were murdered in the Holocaust. The museum opened in 2013 and won the European Museum of the Year Award in 2016.');
+updDesc('museum-of-the-history-of-polish-jews-polin', 'Located on the site of the former Warsaw Ghetto in Warsaw. "Polin" means "rest here" in Hebrew. Documents 1,000 years of Jewish civilization in Poland , once home to the largest Jewish community in Europe (3.3 million before WWII). 90% of Polish Jews were murdered in the Holocaust. The museum opened in 2013 and won the European Museum of the Year Award in 2016.');
 
 // ============================================================
 // CZECH REPUBLIC

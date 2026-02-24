@@ -55,7 +55,7 @@ addConn('ministry-of-defense', [
   { name: "Yoav Gallant", type: "minister", description: "The Minister of Defense is one of the most powerful positions in Israel." },
   { name: "Nuclear program", type: "strategic", description: "The ministry oversees Israel's undeclared nuclear program at Dimona." }
 ]);
-updDesc('ministry-of-defense', 'Israel\'s Ministry of Defense (Misrad HaBitachon), located in Tel Aviv\'s HaKirya compound, oversees the IDF, defense industry, and military procurement. Manages the $3.8 billion annual US military aid (MOU signed 2016). Israel\'s defense budget exceeds $23 billion — one of the highest per-capita in the world. Key defense ministers have included Moshe Dayan, Yitzhak Rabin, and Ariel Sharon.');
+updDesc('ministry-of-defense', 'Israel\'s Ministry of Defense (Misrad HaBitachon), located in Tel Aviv\'s HaKirya compound, oversees the IDF, defense industry, and military procurement. Manages the $3.8 billion annual US military aid (MOU signed 2016). Israel\'s defense budget exceeds $23 billion , one of the highest per-capita in the world. Key defense ministers have included Moshe Dayan, Yitzhak Rabin, and Ariel Sharon.');
 
 addConn('ministry-of-foreign-affairs', [
   { name: "Abraham Accords", type: "diplomatic achievement", description: "The MFA helped negotiate the Abraham Accords normalizing ties with UAE, Bahrain, Morocco, Sudan." },
@@ -88,7 +88,7 @@ addConn('shin-bet-israel-security-agency', [
 updDesc('shin-bet-israel-security-agency', 'Israel\'s internal security service (Sherut HaBitachon HaKlali), responsible for counterterrorism, counterintelligence, VIP protection, and intelligence in the Palestinian territories. Six former directors spoke in the Oscar-nominated documentary "The Gatekeepers" (2012). Shin Bet failed to prevent the assassination of PM Yitzhak Rabin in 1995. Employs sophisticated surveillance and human intelligence networks.');
 
 addConn('israel-defense-forces-idf', [
-  { name: "Conscription", type: "structure", description: "Israel has mandatory military service — 32 months for men, 24 for women." },
+  { name: "Conscription", type: "structure", description: "Israel has mandatory military service , 32 months for men, 24 for women." },
   { name: "Unit 8200", type: "elite unit", description: "Unit 8200 is the IDF's signals intelligence unit and a pipeline for Israel's tech industry." },
   { name: "Sayeret Matkal", type: "elite unit", description: "The IDF's top special forces unit, modeled on the British SAS." },
   { name: "Iron Dome", type: "defense system", description: "Israel's Iron Dome missile defense system has intercepted thousands of rockets." },
@@ -99,7 +99,7 @@ updDesc('israel-defense-forces-idf', 'Israel\'s military (Tzva HaHagana LeYisrae
 addInd('israel-defense-forces-idf', { name: "Herzi Halevi", bio: "Chief of the General Staff of the IDF since January 2023. Former commander of Military Intelligence Directorate (Aman) and Southern Command. Served in Sayeret Matkal." });
 
 addConn('israel-aerospace-industries-iai', [
-  { name: "Israeli government", type: "owner", description: "IAI is state-owned — Israel's largest defense company." },
+  { name: "Israeli government", type: "owner", description: "IAI is state-owned , Israel's largest defense company." },
   { name: "Arrow missile defense", type: "product", description: "IAI develops the Arrow anti-ballistic missile system with Boeing." },
   { name: "Drone technology", type: "product", description: "IAI is a world leader in military drone/UAV technology." },
   { name: "Boeing partnership", type: "partner", description: "Long-standing partnership with Boeing on missile defense and aviation." },
@@ -125,7 +125,7 @@ addConn('check-point-software-technologies', [
   { name: "NASDAQ listed", type: "financial", description: "One of the first Israeli companies listed on NASDAQ." },
   { name: "$18B market cap", type: "valuation", description: "Check Point has a market capitalization of $18+ billion." }
 ]);
-updDesc('check-point-software-technologies', 'Founded in 1993 by Gil Shwed (Jewish, Israeli), Shlomo Kramer, and Marius Nacht — all IDF Unit 8200 veterans. Check Point invented the commercial firewall (FireWall-1), effectively creating the cybersecurity industry. One of the first Israeli tech companies on NASDAQ. Market cap $18+ billion. Shwed has been CEO for 30+ years, a rarity in tech. Check Point protects networks of Fortune 100 companies and governments worldwide.');
+updDesc('check-point-software-technologies', 'Founded in 1993 by Gil Shwed (Jewish, Israeli), Shlomo Kramer, and Marius Nacht , all IDF Unit 8200 veterans. Check Point invented the commercial firewall (FireWall-1), effectively creating the cybersecurity industry. One of the first Israeli tech companies on NASDAQ. Market cap $18+ billion. Shwed has been CEO for 30+ years, a rarity in tech. Check Point protects networks of Fortune 100 companies and governments worldwide.');
 addInd('check-point-software-technologies', { name: "Gil Shwed", bio: "Founder and CEO of Check Point Software since 1993. Invented the firewall. Served in IDF Unit 8200. One of Israel's wealthiest people. Billionaire." });
 
 addConn('nice-ltd', [
@@ -138,7 +138,7 @@ updDesc('nice-ltd', 'An Israeli enterprise software company with a $12+ billion 
 
 addConn('mobileye-intel', [
   { name: "Amnon Shashua", type: "co-founder", description: "Prof. Amnon Shashua (Jewish, Israeli) co-founded Mobileye and continues to lead it." },
-  { name: "Intel", type: "acquirer", description: "Intel acquired Mobileye for $15.3 billion in 2017 — the largest Israeli tech acquisition at the time." },
+  { name: "Intel", type: "acquirer", description: "Intel acquired Mobileye for $15.3 billion in 2017 , the largest Israeli tech acquisition at the time." },
   { name: "Autonomous driving", type: "technology", description: "Mobileye is a world leader in autonomous driving and ADAS technology." },
   { name: "Hebrew University", type: "origin", description: "Mobileye was born from Shashua's research at Hebrew University." },
   { name: "80% market share ADAS", type: "dominance", description: "Mobileye's chips are in approximately 80% of cars with advanced driver assistance." }
@@ -178,12 +178,12 @@ addConn('ironsource-unity', [
 updDesc('ironsource-unity', 'Founded in Israel by Tomer Bar-Zeev (Jewish, Israeli) and co-founders. ironSource became a leading mobile app monetization, mediation, and distribution platform. Merged with Unity Technologies in 2022 in a $4.4 billion deal, combining game development tools with monetization. ironSource\'s technology powered billions of ad impressions for mobile games worldwide.');
 
 addConn('icl-group', [
-  { name: "Dead Sea resources", type: "source", description: "ICL extracts minerals from the Dead Sea — one of the world's richest mineral deposits." },
+  { name: "Dead Sea resources", type: "source", description: "ICL extracts minerals from the Dead Sea , one of the world's richest mineral deposits." },
   { name: "Potash production", type: "product", description: "ICL is one of the world's largest producers of potash fertilizers." },
   { name: "Israeli government", type: "historical owner", description: "ICL was privatized in the 1990s-2000s from state ownership under the Israel Chemicals umbrella." },
   { name: "Food additives", type: "product", description: "ICL is a major global supplier of food-grade phosphates and specialty ingredients." }
 ]);
-updDesc('icl-group', 'An Israeli specialty minerals company that extracts potash, bromine, and other minerals from the Dead Sea — one of the richest mineral deposits on Earth. ICL is one of the world\'s largest potash producers and a major supplier of food-grade phosphates. Revenue exceeds $7 billion. Formerly state-owned (Israel Chemicals Ltd), privatized in stages. The Dead Sea operations date back to the 1930s under the British Mandate.');
+updDesc('icl-group', 'An Israeli specialty minerals company that extracts potash, bromine, and other minerals from the Dead Sea , one of the richest mineral deposits on Earth. ICL is one of the world\'s largest potash producers and a major supplier of food-grade phosphates. Revenue exceeds $7 billion. Formerly state-owned (Israel Chemicals Ltd), privatized in stages. The Dead Sea operations date back to the 1930s under the British Mandate.');
 
 addConn('gett', [
   { name: "Dave Waiser", type: "founder/CEO", description: "Dave Waiser (Jewish, Israeli) founded Gett (originally GetTaxi) in 2010." },
@@ -208,7 +208,7 @@ addConn('lemonade-inc', [
   { name: "NYSE listed", type: "financial", description: "Lemonade went public on NYSE in 2020." },
   { name: "B-Corp certified", type: "social impact", description: "Lemonade is a certified B-Corp with a giveback program donating unclaimed premiums." }
 ]);
-updDesc('lemonade-inc', 'An Israeli-American insurtech company co-founded by Daniel Schreiber and Shai Wininger (both Jewish, Israeli). Wininger also co-founded Fiverr. Lemonade uses AI chatbots (Maya, Jim) to sell insurance and process claims in seconds. IPO on NYSE in 2020. Certified B-Corp — unclaimed premiums go to charities chosen by policyholders ("Giveback"). Offers renters, homeowners, car, pet, and life insurance.');
+updDesc('lemonade-inc', 'An Israeli-American insurtech company co-founded by Daniel Schreiber and Shai Wininger (both Jewish, Israeli). Wininger also co-founded Fiverr. Lemonade uses AI chatbots (Maya, Jim) to sell insurance and process claims in seconds. IPO on NYSE in 2020. Certified B-Corp , unclaimed premiums go to charities chosen by policyholders ("Giveback"). Offers renters, homeowners, car, pet, and life insurance.');
 
 addConn('varonis-systems', [
   { name: "Yaki Faitelson", type: "co-founder/CEO", description: "Yaki Faitelson (Jewish, Israeli) co-founded and leads Varonis." },
@@ -224,7 +224,7 @@ addConn('walkme', [
   { name: "Digital adoption platform", type: "product", description: "WalkMe pioneered the digital adoption platform (DAP) category." },
   { name: "SAP acquisition", type: "deal", description: "SAP acquired WalkMe for $1.5 billion in 2024." }
 ]);
-updDesc('walkme', 'Co-founded by Dan Adika and Rafael Sweary (both Jewish, Israeli). WalkMe pioneered the Digital Adoption Platform (DAP) category — overlay technology that guides users through software applications. SAP acquired WalkMe for $1.5 billion in 2024. The platform is used by 2,000+ enterprises to improve employee productivity with enterprise software. Originally listed on NASDAQ before the SAP acquisition.');
+updDesc('walkme', 'Co-founded by Dan Adika and Rafael Sweary (both Jewish, Israeli). WalkMe pioneered the Digital Adoption Platform (DAP) category , overlay technology that guides users through software applications. SAP acquired WalkMe for $1.5 billion in 2024. The platform is used by 2,000+ enterprises to improve employee productivity with enterprise software. Originally listed on NASDAQ before the SAP acquisition.');
 
 addConn('appsflyer', [
   { name: "Oren Kaniel", type: "co-founder/CEO", description: "Oren Kaniel (Jewish, Israeli) co-founded AppsFlyer." },
@@ -384,21 +384,21 @@ addConn('world-jewish-congress-israel-office', [
 updDesc('world-jewish-congress-israel-office', 'The Israel branch of the World Jewish Congress, an international organization representing Jewish communities in 100+ countries. Led by president Ronald Lauder (Jewish, Estée Lauder heir) since 2007. The WJC advocates for Jewish interests worldwide, has been central to Holocaust restitution claims, and engages in interfaith dialogue. The Israel office coordinates with the Israeli government on diaspora relations.');
 
 addConn('western-wall-heritage-foundation', [
-  { name: "Western Wall (Kotel)", type: "site", description: "The Western Wall is the holiest site where Jews are permitted to pray — a remnant of the Second Temple complex." },
+  { name: "Western Wall (Kotel)", type: "site", description: "The Western Wall is the holiest site where Jews are permitted to pray , a remnant of the Second Temple complex." },
   { name: "Rabbi of the Western Wall", type: "leadership", description: "The Rabbi of the Western Wall oversees religious services and customs at the site." },
-  { name: "Pluralistic prayer controversy", type: "issue", description: "Ongoing controversy over egalitarian prayer at the Wall — the Robinson's Arch compromise." },
+  { name: "Pluralistic prayer controversy", type: "issue", description: "Ongoing controversy over egalitarian prayer at the Wall , the Robinson's Arch compromise." },
   { name: "Bar/Bat Mitzvah ceremonies", type: "ritual", description: "Thousands of Bar/Bat Mitzvah ceremonies are held at the Wall annually." }
 ]);
-updDesc('western-wall-heritage-foundation', 'The Western Wall (Kotel) Heritage Foundation manages the holiest site where Jews are permitted to pray — a remnant of the retaining wall of Herod\'s Second Temple complex, destroyed by Rome in 70 CE. Millions visit annually. The site is a flashpoint for tensions between Orthodox authorities (who control the site) and liberal Jewish movements seeking egalitarian prayer. Notes placed in the Wall\'s cracks are a beloved tradition.');
+updDesc('western-wall-heritage-foundation', 'The Western Wall (Kotel) Heritage Foundation manages the holiest site where Jews are permitted to pray , a remnant of the retaining wall of Herod\'s Second Temple complex, destroyed by Rome in 70 CE. Millions visit annually. The site is a flashpoint for tensions between Orthodox authorities (who control the site) and liberal Jewish movements seeking egalitarian prayer. Notes placed in the Wall\'s cracks are a beloved tradition.');
 
 addConn('temple-mount-haram-al-sharif', [
   { name: "Dome of the Rock", type: "structure", description: "The golden Dome of the Rock is one of the oldest and most iconic Islamic structures." },
   { name: "Al-Aqsa Mosque", type: "structure", description: "Al-Aqsa Mosque is the third holiest site in Islam." },
-  { name: "First and Second Temples", type: "Jewish history", description: "The Temple Mount is where both Jewish Temples stood — the holiest site in Judaism." },
+  { name: "First and Second Temples", type: "Jewish history", description: "The Temple Mount is where both Jewish Temples stood , the holiest site in Judaism." },
   { name: "Waqf administration", type: "governance", description: "The site is administered by the Jordanian Waqf under the status quo agreement." },
   { name: "Israeli-Palestinian conflict", type: "flashpoint", description: "The Temple Mount/Haram al-Sharif is the most contested religious site in the world." }
 ]);
-updDesc('temple-mount-haram-al-sharif', 'The most contested religious site in the world. For Jews, it is the Temple Mount (Har HaBayit) — where both the First Temple (Solomon\'s, 957 BCE) and Second Temple (516 BCE-70 CE) stood. For Muslims, it is the Noble Sanctuary (Haram al-Sharif) housing the Dome of the Rock and Al-Aqsa Mosque. Administered by the Jordanian Waqf. Israeli police control access. Jewish prayer is officially prohibited under the status quo, though this is increasingly contested.');
+updDesc('temple-mount-haram-al-sharif', 'The most contested religious site in the world. For Jews, it is the Temple Mount (Har HaBayit) , where both the First Temple (Solomon\'s, 957 BCE) and Second Temple (516 BCE-70 CE) stood. For Muslims, it is the Noble Sanctuary (Haram al-Sharif) housing the Dome of the Rock and Al-Aqsa Mosque. Administered by the Jordanian Waqf. Israeli police control access. Jewish prayer is officially prohibited under the status quo, though this is increasingly contested.');
 
 addConn('masada-national-park', [
   { name: "Herod's fortress", type: "history", description: "Masada was King Herod's mountain fortress overlooking the Dead Sea." },
@@ -407,7 +407,7 @@ addConn('masada-national-park', [
   { name: "IDF oath ceremonies", type: "modern use", description: "IDF units take their oath of allegiance at Masada: 'Masada shall not fall again.'" },
   { name: "Yigael Yadin", type: "archaeologist", description: "Prof. Yigael Yadin (Jewish, Israeli) led the famous 1963-1965 Masada excavation." }
 ]);
-updDesc('masada-national-park', 'An ancient fortress atop a plateau overlooking the Dead Sea, built by King Herod (73-31 BCE). In 73 CE, 960 Jewish zealots held out against the Roman X Legion, ultimately choosing mass suicide over slavery — one of history\'s most dramatic last stands. UNESCO World Heritage Site since 2001. IDF soldiers take their oath here: "Masada shall not fall again." Excavated by Prof. Yigael Yadin (1963-1965). Israel\'s most iconic archaeological site.');
+updDesc('masada-national-park', 'An ancient fortress atop a plateau overlooking the Dead Sea, built by King Herod (73-31 BCE). In 73 CE, 960 Jewish zealots held out against the Roman X Legion, ultimately choosing mass suicide over slavery , one of history\'s most dramatic last stands. UNESCO World Heritage Site since 2001. IDF soldiers take their oath here: "Masada shall not fall again." Excavated by Prof. Yigael Yadin (1963-1965). Israel\'s most iconic archaeological site.');
 
 addConn('church-of-the-holy-sepulchre-jerusalem', [
   { name: "Crucifixion and resurrection site", type: "Christian significance", description: "Believed to be the site of Jesus' crucifixion (Golgotha) and resurrection." },
@@ -420,31 +420,31 @@ updDesc('church-of-the-holy-sepulchre-jerusalem', 'Christianity\'s holiest site,
 addConn('cave-of-the-patriarchs-hebron', [
   { name: "Abraham, Isaac, Jacob", type: "biblical significance", description: "Traditional burial site of the Biblical patriarchs and matriarchs." },
   { name: "Second holiest site in Judaism", type: "religious status", description: "After the Temple Mount, the Cave of the Patriarchs is Judaism's holiest site." },
-  { name: "Ibrahimi Mosque", type: "Islamic site", description: "Muslims know the site as the Ibrahimi Mosque — Abraham (Ibrahim) is revered in Islam." },
+  { name: "Ibrahimi Mosque", type: "Islamic site", description: "Muslims know the site as the Ibrahimi Mosque , Abraham (Ibrahim) is revered in Islam." },
   { name: "1994 massacre", type: "tragedy", description: "In 1994, Baruch Goldstein killed 29 Muslim worshippers in a terrorist attack." },
   { name: "Israeli-Palestinian conflict", type: "flashpoint", description: "The site is divided between Jewish and Muslim sections and is heavily guarded." }
 ]);
-updDesc('cave-of-the-patriarchs-hebron', 'The traditional burial site of the Biblical patriarchs and matriarchs — Abraham and Sarah, Isaac and Rebecca, Jacob and Leah. The second holiest site in Judaism and also sacred to Islam (as the Ibrahimi Mosque). The massive Herodian-era structure in Hebron is divided between Jewish and Muslim sections. The site was the scene of the 1994 massacre when Baruch Goldstein killed 29 Muslim worshippers. One of the most heavily guarded religious sites in the world.');
+updDesc('cave-of-the-patriarchs-hebron', 'The traditional burial site of the Biblical patriarchs and matriarchs , Abraham and Sarah, Isaac and Rebecca, Jacob and Leah. The second holiest site in Judaism and also sacred to Islam (as the Ibrahimi Mosque). The massive Herodian-era structure in Hebron is divided between Jewish and Muslim sections. The site was the scene of the 1994 massacre when Baruch Goldstein killed 29 Muslim worshippers. One of the most heavily guarded religious sites in the world.');
 
 // ============================================================
 // ISRAEL - REMAINING TECH & BUSINESS
 // ============================================================
 addConn('osem-nestl', [
   { name: "Nestlé", type: "owner", description: "Swiss food giant Nestlé acquired Osem in stages, reaching full ownership." },
-  { name: "Bamba", type: "iconic product", description: "Osem makes Bamba, Israel's national snack — peanut-flavored puffs loved by every Israeli." },
+  { name: "Bamba", type: "iconic product", description: "Osem makes Bamba, Israel's national snack , peanut-flavored puffs loved by every Israeli." },
   { name: "Israeli food culture", type: "cultural role", description: "Osem products are staples in every Israeli kitchen." },
   { name: "Founded 1942", type: "history", description: "Osem was founded in 1942 during the British Mandate period." }
 ]);
-updDesc('osem-nestl', 'Israel\'s largest food manufacturer, now wholly owned by Swiss giant Nestlé. Founded in 1942 during the British Mandate. Osem makes Bamba (Israel\'s beloved peanut-flavored puffs — credited with reducing peanut allergies in Israeli children), Bissli, soup powders, pasta, and hundreds of other products. Bamba is so iconic that Israeli parents abroad have it shipped to them. Osem is a pillar of Israeli food culture.');
+updDesc('osem-nestl', 'Israel\'s largest food manufacturer, now wholly owned by Swiss giant Nestlé. Founded in 1942 during the British Mandate. Osem makes Bamba (Israel\'s beloved peanut-flavored puffs , credited with reducing peanut allergies in Israeli children), Bissli, soup powders, pasta, and hundreds of other products. Bamba is so iconic that Israeli parents abroad have it shipped to them. Osem is a pillar of Israeli food culture.');
 
 addConn('birthright-israel-taglit', [
-  { name: "Sheldon Adelson", type: "mega-donor", description: "Sheldon Adelson donated $410M to Birthright — the largest single philanthropic gift." },
+  { name: "Sheldon Adelson", type: "mega-donor", description: "Sheldon Adelson donated $410M to Birthright , the largest single philanthropic gift." },
   { name: "Michael Steinhardt", type: "co-founder", description: "Michael Steinhardt (Jewish hedge fund pioneer) co-founded Birthright with Charles Bronfman." },
   { name: "Charles Bronfman", type: "co-founder", description: "Charles Bronfman (Jewish, Canadian, Seagram heir) co-founded Birthright." },
   { name: "800,000+ participants", type: "impact", description: "Over 800,000 young Jews from 68 countries have taken the free 10-day trip." },
   { name: "Israeli government", type: "funder", description: "The Israeli government is a major co-funder of Birthright." }
 ]);
-updDesc('birthright-israel-taglit', 'Founded in 1999 by Michael Steinhardt and Charles Bronfman to provide free 10-day trips to Israel for young Jews aged 18-26. Over 800,000 participants from 68 countries. Sheldon Adelson donated $410 million — the largest single philanthropic gift in Jewish history. Israel\'s government co-funds the program. Studies show Birthright alumni are significantly more likely to marry Jewish, raise Jewish children, and support Israel.');
+updDesc('birthright-israel-taglit', 'Founded in 1999 by Michael Steinhardt and Charles Bronfman to provide free 10-day trips to Israel for young Jews aged 18-26. Over 800,000 participants from 68 countries. Sheldon Adelson donated $410 million , the largest single philanthropic gift in Jewish history. Israel\'s government co-funds the program. Studies show Birthright alumni are significantly more likely to marry Jewish, raise Jewish children, and support Israel.');
 
 addConn('nefesh-b-nefesh-israel', [
   { name: "North American aliyah", type: "mission", description: "The Israel-based operations of Nefesh B'Nefesh supporting new immigrants." },
@@ -479,12 +479,12 @@ addConn('talpiot-program', [
 updDesc('talpiot-program', 'The IDF\'s most elite training program, selecting ~50 recruits per year from thousands of applicants. Cadets undergo 40 months of intensive study in physics, mathematics, and computer science at Hebrew University while also completing military training. Talpiot alumni (\"Talpions\") have founded dozens of tech companies and serve in senior defense and intelligence positions. The program is considered a key driver of Israel\'s technological superiority.');
 
 addConn('start-up-nation-ecosystem', [
-  { name: "6,000+ startups", type: "scale", description: "Israel has over 6,000 active tech startups — the highest density per capita in the world." },
+  { name: "6,000+ startups", type: "scale", description: "Israel has over 6,000 active tech startups , the highest density per capita in the world." },
   { name: "IDF technology units", type: "talent pipeline", description: "Unit 8200, Talpiot, and other IDF units create a unique tech talent pipeline." },
   { name: "Venture capital", type: "funding", description: "Israel attracts more venture capital per capita than any other country." },
-  { name: "NASDAQ listings", type: "financial", description: "Israel has over 90 companies on NASDAQ — more than any country outside the US and China." }
+  { name: "NASDAQ listings", type: "financial", description: "Israel has over 90 companies on NASDAQ , more than any country outside the US and China." }
 ]);
-updDesc('start-up-nation-ecosystem', 'Israel has 6,000+ active tech startups — the highest per-capita density in the world. The ecosystem is fueled by IDF technology units (Unit 8200, Talpiot), world-class universities, massive venture capital investment ($10+ billion annually), and a culture of risk-taking. Israel has 90+ companies on NASDAQ — more than any country except the US and China. Major exits include Waze ($1.1B to Google), Mobileye ($15.3B to Intel), and hundreds more.');
+updDesc('start-up-nation-ecosystem', 'Israel has 6,000+ active tech startups , the highest per-capita density in the world. The ecosystem is fueled by IDF technology units (Unit 8200, Talpiot), world-class universities, massive venture capital investment ($10+ billion annually), and a culture of risk-taking. Israel has 90+ companies on NASDAQ , more than any country except the US and China. Major exits include Waze ($1.1B to Google), Mobileye ($15.3B to Intel), and hundreds more.');
 
 // ============================================================
 // ISRAEL - REMAINING ACQUISITIONS & COMPANIES
@@ -497,7 +497,7 @@ addConn('orbotech-kla', [
 updDesc('orbotech-kla', 'Israeli semiconductor inspection company acquired by KLA Corporation for $3.4 billion in 2019. Orbotech developed automated optical inspection systems for PCBs, flat panel displays, and semiconductor manufacturing. Founded in 1981 in Yavne, Israel. The acquisition strengthened KLA\'s position as a leading semiconductor process control company and maintained Israel as a key R&D center.');
 
 addConn('mellanox-technologies-nvidia', [
-  { name: "NVIDIA", type: "acquirer", description: "NVIDIA acquired Mellanox for $6.9 billion in 2020 — one of the largest Israeli tech exits." },
+  { name: "NVIDIA", type: "acquirer", description: "NVIDIA acquired Mellanox for $6.9 billion in 2020 , one of the largest Israeli tech exits." },
   { name: "Eyal Waldman", type: "co-founder/CEO", description: "Eyal Waldman (Jewish, Israeli) co-founded Mellanox and led it for 20 years." },
   { name: "InfiniBand technology", type: "product", description: "Mellanox's InfiniBand interconnect technology powers the world's fastest supercomputers." },
   { name: "AI computing", type: "relevance", description: "Mellanox networking is critical infrastructure for NVIDIA's AI training clusters." }
@@ -542,7 +542,7 @@ addConn('orcam-technologies', [
   { name: "Mobileye connection", type: "technology link", description: "OrCam uses computer vision technology related to Mobileye's automotive AI." },
   { name: "Social impact", type: "mission", description: "OrCam's technology has transformed lives of visually impaired and learning-disabled people." }
 ]);
-updDesc('orcam-technologies', 'Co-founded by Prof. Amnon Shashua and Ziv Aviram (Jewish, Israeli — the same team behind Mobileye). OrCam develops wearable AI devices for visually impaired people. The OrCam MyEye clips onto glasses and reads text, recognizes faces, identifies products, and more using computer vision. The technology has transformed the lives of hundreds of thousands of blind and visually impaired people worldwide.');
+updDesc('orcam-technologies', 'Co-founded by Prof. Amnon Shashua and Ziv Aviram (Jewish, Israeli , the same team behind Mobileye). OrCam develops wearable AI devices for visually impaired people. The OrCam MyEye clips onto glasses and reads text, recognizes faces, identifies products, and more using computer vision. The technology has transformed the lives of hundreds of thousands of blind and visually impaired people worldwide.');
 
 addConn('watergen', [
   { name: "Maxim Pasik", type: "founder", description: "Maxim Pasik (Jewish, Israeli) founded Watergen." },
@@ -550,15 +550,15 @@ addConn('watergen', [
   { name: "Military/humanitarian applications", type: "use cases", description: "Used by IDF, disaster relief organizations, and developing countries." },
   { name: "Global water crisis", type: "social impact", description: "Watergen technology addresses the global water scarcity crisis." }
 ]);
-updDesc('watergen', 'Israeli company founded by Maxim Pasik that develops atmospheric water generators — machines that extract clean drinking water from air humidity. The technology has military, humanitarian, and commercial applications. Used by the IDF, deployed in disaster zones, and installed in communities facing water scarcity. Watergen represents Israel\'s leadership in water technology, a field where the desert nation has become a global pioneer.');
+updDesc('watergen', 'Israeli company founded by Maxim Pasik that develops atmospheric water generators , machines that extract clean drinking water from air humidity. The technology has military, humanitarian, and commercial applications. Used by the IDF, deployed in disaster zones, and installed in communities facing water scarcity. Watergen represents Israel\'s leadership in water technology, a field where the desert nation has become a global pioneer.');
 
 addConn('given-imaging-medtronic', [
   { name: "Medtronic", type: "acquirer", description: "Medtronic acquired Given Imaging for $860 million in 2014." },
-  { name: "PillCam", type: "invention", description: "Given Imaging invented the PillCam — a swallowable capsule endoscope." },
+  { name: "PillCam", type: "invention", description: "Given Imaging invented the PillCam , a swallowable capsule endoscope." },
   { name: "Gavriel Iddan", type: "inventor", description: "Dr. Gavriel Iddan (Jewish, Israeli, former Rafael engineer) invented the PillCam." },
   { name: "Medical breakthrough", type: "impact", description: "The PillCam revolutionized gastrointestinal diagnostics by eliminating traditional endoscopy for many patients." }
 ]);
-updDesc('given-imaging-medtronic', 'Israeli medical device company acquired by Medtronic for $860 million in 2014. Given Imaging invented the PillCam — a revolutionary swallowable capsule with a tiny camera that photographs the entire gastrointestinal tract. Invented by Dr. Gavriel Iddan (Jewish, Israeli), a former Rafael Advanced Defense Systems engineer who applied missile camera technology to medicine. Over 40 million PillCam procedures have been performed.');
+updDesc('given-imaging-medtronic', 'Israeli medical device company acquired by Medtronic for $860 million in 2014. Given Imaging invented the PillCam , a revolutionary swallowable capsule with a tiny camera that photographs the entire gastrointestinal tract. Invented by Dr. Gavriel Iddan (Jewish, Israeli), a former Rafael Advanced Defense Systems engineer who applied missile camera technology to medicine. Over 40 million PillCam procedures have been performed.');
 
 addConn('israeli-wine-industry', [
   { name: "Golan Heights Winery", type: "leading winery", description: "Golan Heights Winery put Israeli wine on the global map in the 1980s." },
@@ -587,10 +587,10 @@ updDesc('ide-technologies', 'Israeli water technology company that is a world le
 addConn('mekorot', [
   { name: "Israel's national water company", type: "role", description: "Mekorot is Israel's national water company, managing 70% of Israel's water supply." },
   { name: "National Water Carrier", type: "infrastructure", description: "Mekorot operates the National Water Carrier, bringing water from the Sea of Galilee to the Negev." },
-  { name: "Water recycling innovation", type: "technology", description: "Israel recycles 87% of its wastewater — more than any other country — through Mekorot's systems." },
+  { name: "Water recycling innovation", type: "technology", description: "Israel recycles 87% of its wastewater , more than any other country , through Mekorot's systems." },
   { name: "Water security", type: "strategic", description: "Mekorot ensures Israel's water security despite being located in an arid region." }
 ]);
-updDesc('mekorot', 'Israel\'s national water company, managing approximately 70% of the country\'s water supply. Operates the National Water Carrier (a massive pipeline from the Sea of Galilee to the Negev) and dozens of desalination and treatment plants. Israel recycles 87% of its wastewater for agriculture — the highest rate in the world — largely through Mekorot\'s systems. This has transformed Israel from a water-poor nation to a water superpower.');
+updDesc('mekorot', 'Israel\'s national water company, managing approximately 70% of the country\'s water supply. Operates the National Water Carrier (a massive pipeline from the Sea of Galilee to the Negev) and dozens of desalination and treatment plants. Israel recycles 87% of its wastewater for agriculture , the highest rate in the world , largely through Mekorot\'s systems. This has transformed Israel from a water-poor nation to a water superpower.');
 
 // ============================================================
 // SAVE

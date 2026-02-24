@@ -51,9 +51,9 @@ addConn('yivo-institute-for-jewish-research', [
   { name: "Center for Jewish History", type: "resident institution", description: "YIVO is headquartered at the Center for Jewish History in NYC." },
   { name: "Vilna (Vilnius)", type: "founding city", description: "YIVO was founded in Vilna, Lithuania in 1925. Its archives were rescued from the Nazis." },
   { name: "Max Weinreich", type: "founding scholar", description: "Linguist Max Weinreich was a key founder of YIVO and champion of Yiddish scholarship." },
-  { name: "24 million archival items", type: "collection", description: "YIVO holds 24 million items — the largest collection of Yiddish materials in the world." }
+  { name: "24 million archival items", type: "collection", description: "YIVO holds 24 million items , the largest collection of Yiddish materials in the world." }
 ]);
-updDesc('yivo-institute-for-jewish-research', 'Founded in 1925 in Vilna (now Vilnius, Lithuania), YIVO is the preeminent center for Eastern European Jewish and Yiddish studies. Its archives — 24 million items — were partially rescued from Nazi destruction in a dramatic wartime operation. Relocated to New York in 1940. YIVO\'s collection includes irreplaceable documents of Jewish life in Eastern Europe, the Yiddish theater, and immigrant communities.');
+updDesc('yivo-institute-for-jewish-research', 'Founded in 1925 in Vilna (now Vilnius, Lithuania), YIVO is the preeminent center for Eastern European Jewish and Yiddish studies. Its archives , 24 million items , were partially rescued from Nazi destruction in a dramatic wartime operation. Relocated to New York in 1940. YIVO\'s collection includes irreplaceable documents of Jewish life in Eastern Europe, the Yiddish theater, and immigrant communities.');
 addInd('yivo-institute-for-jewish-research', { name: "Max Weinreich", bio: "Co-founder of YIVO (1925) and pioneering Yiddish linguist. Author of 'History of the Yiddish Language.' Coined the phrase 'a language is a dialect with an army and a navy.'" });
 
 addConn('center-for-jewish-history', [
@@ -72,10 +72,10 @@ addConn('bloomberg-l-p', [
   { name: "Michael Bloomberg", type: "founder", description: "Michael Bloomberg (Jewish) founded Bloomberg L.P. in 1981 and is worth $100+ billion." },
   { name: "Bloomberg Philanthropies", type: "foundation", description: "Bloomberg Philanthropies has given away $17+ billion to public health, arts, education, and climate." },
   { name: "NYC Mayor's office", type: "political career", description: "Bloomberg served as Mayor of New York City from 2002-2013, spending $650 million of his own money on campaigns." },
-  { name: "Johns Hopkins University", type: "major donation", description: "Bloomberg donated $3.35 billion to Johns Hopkins — the largest gift to any educational institution." },
+  { name: "Johns Hopkins University", type: "major donation", description: "Bloomberg donated $3.35 billion to Johns Hopkins , the largest gift to any educational institution." },
   { name: "Wall Street", type: "industry influence", description: "The Bloomberg Terminal is used by 325,000+ financial professionals worldwide and generates $10B+ in annual revenue." }
 ]);
-updDesc('bloomberg-l-p', 'Founded in 1981 by Michael Bloomberg (Jewish), who built a $100+ billion fortune from the Bloomberg Terminal — used by 325,000+ financial professionals worldwide. Bloomberg L.P. also operates Bloomberg News, Bloomberg TV, Bloomberg Radio, and Bloomberg Businessweek. Bloomberg served as NYC Mayor (2002-2013). His philanthropic foundation has given away $17+ billion, including $3.35B to Johns Hopkins University.');
+updDesc('bloomberg-l-p', 'Founded in 1981 by Michael Bloomberg (Jewish), who built a $100+ billion fortune from the Bloomberg Terminal , used by 325,000+ financial professionals worldwide. Bloomberg L.P. also operates Bloomberg News, Bloomberg TV, Bloomberg Radio, and Bloomberg Businessweek. Bloomberg served as NYC Mayor (2002-2013). His philanthropic foundation has given away $17+ billion, including $3.35B to Johns Hopkins University.');
 
 addConn('oracle-corporation', [
   { name: "Larry Ellison", type: "co-founder", description: "Larry Ellison (Jewish) co-founded Oracle in 1977 and is one of the richest people in the world ($150B+)." },
@@ -129,7 +129,7 @@ addConn('dreamworks', [
   { name: "DreamWorks Animation", type: "spinoff", description: "DreamWorks Animation (Shrek, Kung Fu Panda) was sold to NBCUniversal for $3.8 billion." },
   { name: "Amblin Partners", type: "successor", description: "Spielberg's Amblin Partners continues as a major film production company." }
 ]);
-updDesc('dreamworks', 'Co-founded in 1994 by Steven Spielberg (Jewish), Jeffrey Katzenberg (Jewish), and David Geffen (Jewish) — the SKG in DreamWorks SKG. All three founders are billionaires. DreamWorks Animation (Shrek, Kung Fu Panda, How to Train Your Dragon) was sold to NBCUniversal/Comcast for $3.8B. The live-action studio produced American Beauty, Gladiator, Saving Private Ryan, and A Beautiful Mind.');
+updDesc('dreamworks', 'Co-founded in 1994 by Steven Spielberg (Jewish), Jeffrey Katzenberg (Jewish), and David Geffen (Jewish) , the SKG in DreamWorks SKG. All three founders are billionaires. DreamWorks Animation (Shrek, Kung Fu Panda, How to Train Your Dragon) was sold to NBCUniversal/Comcast for $3.8B. The live-action studio produced American Beauty, Gladiator, Saving Private Ryan, and A Beautiful Mind.');
 
 addConn('las-vegas-sands-corp', [
   { name: "Sheldon Adelson", type: "founder", description: "Sheldon Adelson (Jewish, 1933-2021) built Las Vegas Sands into a $50+ billion gaming empire." },
@@ -168,7 +168,7 @@ addConn('sl-green-realty-corp', [
   { name: "Stephen L. Green", type: "founder", description: "Stephen L. Green founded SL Green; it became NYC's largest office REIT." },
   { name: "New York City skyline", type: "real estate portfolio", description: "SL Green is the largest office landlord in Manhattan." }
 ]);
-updDesc('sl-green-realty-corp', 'Manhattan\'s largest office landlord, founded by Stephen L. Green. CEO Marc Holliday (Jewish) developed One Vanderbilt — the tallest office tower in Midtown Manhattan at 1,401 feet. SL Green\'s portfolio includes over 30 million square feet of Manhattan office space. The company\'s developments have reshaped the NYC skyline.');
+updDesc('sl-green-realty-corp', 'Manhattan\'s largest office landlord, founded by Stephen L. Green. CEO Marc Holliday (Jewish) developed One Vanderbilt , the tallest office tower in Midtown Manhattan at 1,401 feet. SL Green\'s portfolio includes over 30 million square feet of Manhattan office space. The company\'s developments have reshaped the NYC skyline.');
 
 addConn('lefrak-organization', [
   { name: "Richard LeFrak", type: "chairman", description: "Richard LeFrak (Jewish) runs the family real estate empire founded by his grandfather." },
@@ -184,7 +184,7 @@ addConn('extell-development-company', [
   { name: "Central Park Tower", type: "development", description: "Central Park Tower (1,550 feet) is the tallest residential building in the world." },
   { name: "Billionaires' Row", type: "NYC real estate", description: "Extell was a pioneer of NYC's Billionaires' Row along 57th Street." }
 ]);
-updDesc('extell-development-company', 'Founded by Gary Barnett (Jewish, born Gershon Swiatycki in Israel) in 1989. Extell pioneered NYC\'s \"Billionaires\' Row\" with One57 and developed Central Park Tower — the world\'s tallest residential building at 1,550 feet. The penthouse at One57 sold for $100 million. Barnett, an Orthodox Jew, has transformed Manhattan\'s skyline with ultra-luxury developments.');
+updDesc('extell-development-company', 'Founded by Gary Barnett (Jewish, born Gershon Swiatycki in Israel) in 1989. Extell pioneered NYC\'s \"Billionaires\' Row\" with One57 and developed Central Park Tower , the world\'s tallest residential building at 1,550 feet. The penthouse at One57 sold for $100 million. Barnett, an Orthodox Jew, has transformed Manhattan\'s skyline with ultra-luxury developments.');
 
 addConn('rxr-realty', [
   { name: "Scott Rechler", type: "CEO", description: "Scott Rechler (Jewish) is CEO of RXR, one of the largest real estate companies in the NY region." },
@@ -224,7 +224,7 @@ addConn('brookfield-properties-ric-clark', [
 updDesc('brookfield-properties-ric-clark', 'Ric Clark (Jewish) served as chairman of Brookfield Property Partners, one of the world\'s largest commercial real estate companies. Brookfield Properties manages 150+ million sq ft of office, retail, and multifamily space globally. Major NYC properties include Brookfield Place in Lower Manhattan and the $5 billion Manhattan West development. Part of the broader Brookfield Asset Management empire ($800B+ AUM).');
 
 addConn('mack-cali-realty-veris-residential', [
-  { name: "Mack family", type: "founders", description: "Founded by the Mack family — major Jewish real estate developers." },
+  { name: "Mack family", type: "founders", description: "Founded by the Mack family , major Jewish real estate developers." },
   { name: "NJ waterfront", type: "portfolio", description: "Major developer of NJ waterfront residential and commercial properties." },
   { name: "Transformation to residential", type: "strategy", description: "Rebranded from Mack-Cali to Veris Residential, pivoting from office to multifamily." }
 ]);
@@ -241,10 +241,10 @@ updDesc('forest-city-realty-brookfield', 'Founded by the Ratner family (Jewish) 
 addConn('zeckendorf-development', [
   { name: "William Zeckendorf Jr.", type: "partner", description: "William Zeckendorf Jr. (Jewish) and his brother Arthur are prominent NYC luxury developers." },
   { name: "520 Park Avenue", type: "development", description: "Developed 520 Park Avenue, one of NYC's most expensive residential buildings." },
-  { name: "15 Central Park West", type: "development", description: "Developed 15 Central Park West — the most successful condominium in NYC history." },
+  { name: "15 Central Park West", type: "development", description: "Developed 15 Central Park West , the most successful condominium in NYC history." },
   { name: "William Zeckendorf Sr.", type: "legendary predecessor", description: "William Zeckendorf Sr. (Jewish) was one of the most famous real estate developers in American history." }
 ]);
-updDesc('zeckendorf-development', 'The Zeckendorf family (Jewish) has been a major force in NYC real estate for three generations. William Zeckendorf Sr. was a legendary developer who helped plan the United Nations headquarters. His grandsons William Jr. and Arthur developed 15 Central Park West — the most successful condo in NYC history — and 520 Park Avenue, where penthouses sold for $100+ million.');
+updDesc('zeckendorf-development', 'The Zeckendorf family (Jewish) has been a major force in NYC real estate for three generations. William Zeckendorf Sr. was a legendary developer who helped plan the United Nations headquarters. His grandsons William Jr. and Arthur developed 15 Central Park West , the most successful condo in NYC history , and 520 Park Avenue, where penthouses sold for $100+ million.');
 
 addConn('starbucks-howard-schultz-era', [
   { name: "Howard Schultz", type: "former CEO/chairman", description: "Howard Schultz (Jewish) built Starbucks from 11 stores to 35,000+ global locations." },
@@ -263,7 +263,7 @@ addConn('new-england-patriots-kraft-group', [
   { name: "Gillette Stadium", type: "venue", description: "Kraft built Gillette Stadium and the Patriot Place shopping/entertainment complex." },
   { name: "New England Revolution", type: "MLS team", description: "Kraft also owns the Revolution MLS soccer team." }
 ]);
-updDesc('new-england-patriots-kraft-group', 'Owned by Robert Kraft (Jewish) since 1994. Under Kraft, the Patriots became the most successful NFL franchise of the 21st century, winning 6 Super Bowls. Kraft bought the team for $172 million — now valued at $7+ billion. Built Gillette Stadium and Patriot Place. Kraft won the Genesis Prize and is a major Jewish philanthropist.');
+updDesc('new-england-patriots-kraft-group', 'Owned by Robert Kraft (Jewish) since 1994. Under Kraft, the Patriots became the most successful NFL franchise of the 21st century, winning 6 Super Bowls. Kraft bought the team for $172 million , now valued at $7+ billion. Built Gillette Stadium and Patriot Place. Kraft won the Genesis Prize and is a major Jewish philanthropist.');
 
 addConn('miami-dolphins-stephen-ross', [
   { name: "Stephen Ross", type: "owner", description: "Stephen Ross (Jewish) owns the Dolphins and is founder of Related Companies." },
@@ -272,7 +272,7 @@ addConn('miami-dolphins-stephen-ross', [
   { name: "Hudson Yards", type: "development", description: "Ross's $25 billion Hudson Yards is the largest private real estate development in US history." },
   { name: "Equinox/SoulCycle", type: "fitness", description: "Ross also owns Equinox fitness clubs and SoulCycle through Related." }
 ]);
-updDesc('miami-dolphins-stephen-ross', 'Owned by Stephen Ross (Jewish), founder of Related Companies. Ross developed Hudson Yards — the largest private real estate development in US history ($25 billion). Bought the Dolphins for $1.1 billion in 2009; team now valued at $6+ billion. Also owns Equinox, SoulCycle. Net worth estimated at $12+ billion. Ross is a major University of Michigan donor ($400M+).');
+updDesc('miami-dolphins-stephen-ross', 'Owned by Stephen Ross (Jewish), founder of Related Companies. Ross developed Hudson Yards , the largest private real estate development in US history ($25 billion). Bought the Dolphins for $1.1 billion in 2009; team now valued at $6+ billion. Also owns Equinox, SoulCycle. Net worth estimated at $12+ billion. Ross is a major University of Michigan donor ($400M+).');
 
 addConn('brooklyn-nets-formerly-ratner', [
   { name: "Joe Tsai", type: "current owner", description: "Joe Tsai (Alibaba co-founder) bought the Nets from Mikhail Prokhorov." },
@@ -296,7 +296,7 @@ addConn('las-vegas-raiders-mark-davis', [
   { name: "Allegiant Stadium", type: "venue", description: "Davis moved the Raiders to Las Vegas and built the $1.9 billion Allegiant Stadium." },
   { name: "Las Vegas WNBA (Aces)", type: "ownership", description: "Davis also owns the Las Vegas Aces WNBA team, which won back-to-back championships." }
 ]);
-updDesc('las-vegas-raiders-mark-davis', 'Owned by Mark Davis (Jewish), son of legendary NFL owner Al Davis (Jewish). Al Davis coined "Just win, baby" and was known for breaking barriers — hiring the first Black head coach, Latino head coach, and female CEO in NFL history. Mark moved the team to Las Vegas, building the $1.9 billion Allegiant Stadium. Also owns the WNBA\'s Las Vegas Aces (back-to-back champions).');
+updDesc('las-vegas-raiders-mark-davis', 'Owned by Mark Davis (Jewish), son of legendary NFL owner Al Davis (Jewish). Al Davis coined "Just win, baby" and was known for breaking barriers , hiring the first Black head coach, Latino head coach, and female CEO in NFL history. Mark moved the team to Las Vegas, building the $1.9 billion Allegiant Stadium. Also owns the WNBA\'s Las Vegas Aces (back-to-back champions).');
 
 addConn('minnesota-timberwolves-glen-taylor-marc-lore-alex-rodriguez', [
   { name: "Marc Lore", type: "co-owner", description: "Marc Lore (Jewish) is co-owner; he previously sold Jet.com to Walmart for $3.3 billion." },
@@ -356,7 +356,7 @@ addConn('marc-jacobs-international', [
   { name: "LVMH", type: "parent company (former)", description: "Jacobs served as creative director of Louis Vuitton (1997-2014) under LVMH." },
   { name: "Parsons School of Design", type: "education", description: "Jacobs graduated from Parsons, winning the Perry Ellis Gold Thimble Award." }
 ]);
-updDesc('marc-jacobs-international', 'Marc Jacobs (Jewish) is one of the most influential American fashion designers. Served as creative director of Louis Vuitton from 1997-2014, revitalizing the brand. His eponymous label is known for avant-garde, provocative designs. At 24, he was fired from Perry Ellis for his famous "grunge collection" — now considered a fashion milestone. A fixture of NYC fashion culture.');
+updDesc('marc-jacobs-international', 'Marc Jacobs (Jewish) is one of the most influential American fashion designers. Served as creative director of Louis Vuitton from 1997-2014, revitalizing the brand. His eponymous label is known for avant-garde, provocative designs. At 24, he was fired from Perry Ellis for his famous "grunge collection" , now considered a fashion milestone. A fixture of NYC fashion culture.');
 
 addConn('michael-kors-capri-holdings', [
   { name: "Michael Kors", type: "founder/designer", description: "Michael Kors (Jewish, born Karl Anderson Jr.) is a billionaire fashion designer." },
@@ -377,7 +377,7 @@ updDesc('home-depot', 'Co-founded in 1978 by Bernie Marcus (Jewish) and Arthur B
 
 addConn('costco-wholesale', [
   { name: "Jeffrey Brotman", type: "co-founder", description: "Jeffrey Brotman (Jewish) co-founded Costco in 1983 with James Sinegal." },
-  { name: "Sol Price", type: "inspiration", description: "Sol Price (Jewish) invented the warehouse club concept with FedMart and Price Club — Costco later merged with Price Club." },
+  { name: "Sol Price", type: "inspiration", description: "Sol Price (Jewish) invented the warehouse club concept with FedMart and Price Club , Costco later merged with Price Club." },
   { name: "Washington state", type: "headquarters", description: "Costco is headquartered in Issaquah, Washington." },
   { name: "Kirkland Signature", type: "private label", description: "Costco's Kirkland brand generates $60+ billion in annual sales." }
 ]);
@@ -401,7 +401,7 @@ addConn('intel-corporation', [
   { name: "Habana Labs acquisition", type: "Israeli deal", description: "Intel acquired Israeli AI chip startup Habana Labs for $2 billion in 2019." },
   { name: "Moore's Law", type: "foundational principle", description: "Founded by Gordon Moore and Robert Noyce; Andy Grove made Intel a tech giant." }
 ]);
-updDesc('intel-corporation', 'While founders Moore and Noyce were not Jewish, Intel\'s greatest CEO — Andrew Grove (Jewish, born András Gróf in Budapest, Holocaust survivor) — transformed Intel into the world\'s dominant chipmaker. Time\'s Person of the Year 1997. Intel Israel is the company\'s largest non-US site with 14,000+ employees and $50B+ invested. Intel acquired Israeli Mobileye ($15.3B) and Habana Labs ($2B). Intel\'s Haifa lab designed the Centrino and many key processor architectures.');
+updDesc('intel-corporation', 'While founders Moore and Noyce were not Jewish, Intel\'s greatest CEO , Andrew Grove (Jewish, born András Gróf in Budapest, Holocaust survivor) , transformed Intel into the world\'s dominant chipmaker. Time\'s Person of the Year 1997. Intel Israel is the company\'s largest non-US site with 14,000+ employees and $50B+ invested. Intel acquired Israeli Mobileye ($15.3B) and Habana Labs ($2B). Intel\'s Haifa lab designed the Centrino and many key processor architectures.');
 
 addConn('broadcom-inc', [
   { name: "Henry Samueli", type: "co-founder", description: "Henry Samueli (Jewish) co-founded Broadcom in 1991 with Henry Nicholas." },
@@ -427,7 +427,7 @@ addConn('paypal', [
   { name: "PayPal Mafia", type: "tech network", description: "PayPal alumni ('PayPal Mafia') went on to found Tesla, YouTube, LinkedIn, Yelp, and Palantir." },
   { name: "eBay", type: "former parent", description: "eBay acquired PayPal for $1.5 billion in 2002; PayPal later spun off in 2015." }
 ]);
-updDesc('paypal', 'Co-founded by Max Levchin (Jewish, born in Kyiv, Ukraine) and Peter Thiel in 1998. David Sacks (Jewish, South African-born) was COO. The \"PayPal Mafia\" is among the most influential networks in tech — alumni went on to found or lead Tesla, YouTube, LinkedIn, Yelp, Palantir, and Yammer. Acquired by eBay for $1.5B (2002), spun off in 2015. Now a $70+ billion fintech company processing $1.5 trillion per year.');
+updDesc('paypal', 'Co-founded by Max Levchin (Jewish, born in Kyiv, Ukraine) and Peter Thiel in 1998. David Sacks (Jewish, South African-born) was COO. The \"PayPal Mafia\" is among the most influential networks in tech , alumni went on to found or lead Tesla, YouTube, LinkedIn, Yelp, Palantir, and Yammer. Acquired by eBay for $1.5B (2002), spun off in 2015. Now a $70+ billion fintech company processing $1.5 trillion per year.');
 
 // ============================================================
 // US - MEDIA
@@ -457,7 +457,7 @@ addConn('the-new-york-times-company', [
   { name: "Wirecutter", type: "acquisition", description: "NYT acquired Wirecutter, The Athletic, and Wordle, growing to 10+ million subscribers." },
   { name: "Pulitzer Prizes", type: "journalism", description: "The NYT has won 132 Pulitzer Prizes, more than any other news organization." }
 ]);
-updDesc('the-new-york-times-company', 'Controlled by the Sulzberger family (Jewish) since Adolph Ochs (Jewish) bought the paper in 1896. A.G. Sulzberger (5th generation) is the current publisher. The Times has won 132 Pulitzer Prizes — more than any news organization. \"All the News That\'s Fit to Print\" has been the masthead motto since 1897. Now a digital-first company with 10+ million subscribers. Acquired The Athletic, Wirecutter, and Wordle.');
+updDesc('the-new-york-times-company', 'Controlled by the Sulzberger family (Jewish) since Adolph Ochs (Jewish) bought the paper in 1896. A.G. Sulzberger (5th generation) is the current publisher. The Times has won 132 Pulitzer Prizes , more than any news organization. \"All the News That\'s Fit to Print\" has been the masthead motto since 1897. Now a digital-first company with 10+ million subscribers. Acquired The Athletic, Wirecutter, and Wordle.');
 
 // ============================================================
 // SAVE

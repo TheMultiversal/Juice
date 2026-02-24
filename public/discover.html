@@ -1,4 +1,4 @@
-<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!-- Juice Project - Est. 2016 | Last updated 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +6,14 @@
   <meta name="created" content="2016-03-14">
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover — Random Entry</title>
+  <title>Discover , Random Entry</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
-    nav ul li { margin-right: 1em; white-space: nowrap; }
-    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    nav ul { list-style: none; margin: 0; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center; align-items: center; }
+    nav ul li { margin: 0; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
+    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
     .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 20px; margin: 10px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
     h1 { text-align: center; }
     .discover-card { max-width: 700px; margin: 20px auto; padding: 30px; background: rgba(255,255,255,0.92); border: 2px solid rgba(0,0,255,0.2); border-radius: 12px; }
@@ -45,7 +47,7 @@
   <script src="app.js"></script>
   <script>
     initPage('jewish');
-    setSEO({ title: 'Discover — Juice Project', description: 'Explore random religious organizations and discover connections you did not know existed.' });
+    setSEO({ title: 'Discover , Juice Project', description: 'Explore random religious organizations and discover connections you did not know existed.' });
 
     function loadRandom() {
       const card = document.getElementById('discover-card');
@@ -76,7 +78,7 @@
               if (full.individuals && full.individuals.length) {
                 html += '<div class="people-list"><strong>Key People:</strong> ';
                 full.individuals.forEach(p => {
-                  html += '<span class="person-tag"><a href="person.html?id=' + encodeURIComponent(p.id) + '">' + p.name + '</a> — ' + p.role + '</span> ';
+                  html += '<span class="person-tag"><a href="person.html?id=' + encodeURIComponent(p.id) + '">' + p.name + '</a> , ' + p.role + '</span> ';
                 });
                 html += '</div>';
               }

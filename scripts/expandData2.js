@@ -91,7 +91,7 @@ addEntry(us, { name: "Bed Bath & Beyond (historic)", type: "retail (defunct)", d
 addEntry(us, { name: "Staples", type: "retail", description: "Office supply retail chain co-founded by Thomas Stemberg (Jewish) in 1986.", website: "https://www.staples.com/", individuals: [{ name: "Thomas Stemberg", role: "Co-founder (1949-2015)", bio: "Jewish co-founder of Staples." }] });
 addEntry(us, { name: "Toys 'R' Us (historic)", type: "retail (defunct)", description: "Iconic toy retailer founded by Charles Lazarus (Jewish) in 1948.", website: "", individuals: [{ name: "Charles Lazarus", role: "Founder (1923-2018)", bio: "Jewish founder of Toys 'R' Us." }] });
 addEntry(us, { name: "Macy's / Federated Department Stores", type: "retail", description: "Major department store chain. The Straus family (Jewish) owned and operated Macy's starting in the late 1800s.", website: "https://www.macys.com/", individuals: [{ name: "Isidor Straus", role: "Former Owner (1845-1912)", bio: "Jewish co-owner of Macy's who perished on the Titanic." }, { name: "Nathan Straus", role: "Former Owner (1848-1931)", bio: "Jewish co-owner. Major philanthropist, supported pasteurized milk for children." }] });
-addEntry(us, { name: "Neiman Marcus", type: "retail", description: "Luxury department store chain founded in 1907 by Herbert Marcus, Carrie Marcus Neiman, and A.L. Neiman — a Jewish family in Dallas.", website: "https://www.neimanmarcus.com/", individuals: [{ name: "Herbert Marcus", role: "Co-founder (1878-1950)", bio: "Jewish co-founder of Neiman Marcus." }, { name: "Stanley Marcus", role: "Former President (1905-2002)", bio: "Jewish retail visionary who made Neiman Marcus a global luxury brand." }] });
+addEntry(us, { name: "Neiman Marcus", type: "retail", description: "Luxury department store chain founded in 1907 by Herbert Marcus, Carrie Marcus Neiman, and A.L. Neiman , a Jewish family in Dallas.", website: "https://www.neimanmarcus.com/", individuals: [{ name: "Herbert Marcus", role: "Co-founder (1878-1950)", bio: "Jewish co-founder of Neiman Marcus." }, { name: "Stanley Marcus", role: "Former President (1905-2002)", bio: "Jewish retail visionary who made Neiman Marcus a global luxury brand." }] });
 addEntry(us, { name: "Bloomingdale's", type: "retail", description: "Upscale department store chain founded by brothers Joseph and Lyman Bloomingdale (Jewish) in 1861.", website: "https://www.bloomingdales.com/", individuals: [{ name: "Joseph Bloomingdale", role: "Co-founder (1842-1904)", bio: "Jewish co-founder of Bloomingdale's." }] });
 addEntry(us, { name: "Sears Roebuck (historic)", type: "retail", description: "Once the largest retailer in the US. Julius Rosenwald (Jewish) was president and transformed the company.", website: "", individuals: [{ name: "Julius Rosenwald", role: "President & Chairman (1862-1932)", bio: "Jewish businessman who built Sears into a retail giant. Major philanthropist who funded schools for African Americans." }] });
 
@@ -176,7 +176,7 @@ addEntry(us, { name: "Manischewitz", type: "food", description: "Producer of kos
 addEntry(us, { name: "Sabra Hummus", type: "food", description: "Leading hummus brand in the US. Joint venture of PepsiCo and Israeli Strauss Group.", website: "https://www.sabra.com/", individuals: [] });
 addEntry(us, { name: "Nathan's Famous", type: "food", description: "Iconic hot dog company founded by Nathan Handwerker (Jewish) in 1916 on Coney Island.", website: "https://www.nathansfamous.com/", individuals: [{ name: "Nathan Handwerker", role: "Founder (1891-1974)", bio: "Polish-Jewish immigrant who founded Nathan's Famous hot dogs on Coney Island." }] });
 addEntry(us, { name: "Häagen-Dazs", type: "food", description: "Premium ice cream brand founded by Reuben and Rose Mattus (Jewish) in 1961 in the Bronx.", website: "https://www.haagendazs.us/", individuals: [{ name: "Reuben Mattus", role: "Founder (1912-1994)", bio: "Jewish founder of Häagen-Dazs." }] });
-addEntry(us, { name: "Snapple", type: "beverage", description: "Beverage company co-founded in 1972 by Leonard Marsh, Hyman Golden, and Arnold Greenberg — all three Jewish friends from Brooklyn.", website: "https://www.snapple.com/", individuals: [{ name: "Leonard Marsh", role: "Co-founder", bio: "Jewish co-founder of Snapple." }, { name: "Hyman Golden", role: "Co-founder", bio: "Jewish co-founder of Snapple." }, { name: "Arnold Greenberg", role: "Co-founder", bio: "Jewish co-founder of Snapple." }] });
+addEntry(us, { name: "Snapple", type: "beverage", description: "Beverage company co-founded in 1972 by Leonard Marsh, Hyman Golden, and Arnold Greenberg , all three Jewish friends from Brooklyn.", website: "https://www.snapple.com/", individuals: [{ name: "Leonard Marsh", role: "Co-founder", bio: "Jewish co-founder of Snapple." }, { name: "Hyman Golden", role: "Co-founder", bio: "Jewish co-founder of Snapple." }, { name: "Arnold Greenberg", role: "Co-founder", bio: "Jewish co-founder of Snapple." }] });
 addEntry(us, { name: "Kind Snacks", type: "food", description: "Healthy snack company founded by Daniel Lubetzky, an American-Jewish entrepreneur of Mexican descent.", website: "https://www.kindsnacks.com/", individuals: [{ name: "Daniel Lubetzky", role: "Founder", bio: "Jewish-American founder of Kind Snacks, son of a Holocaust survivor." }] });
 
 // ============================================================
@@ -356,7 +356,7 @@ addEntry("Netherlands", { name: "Westerbork Transit Camp Memorial", type: "memor
 
 // POLAND - MORE
 addEntry("Poland", { name: "Galicia Jewish Museum (Krakow)", type: "museum", description: "Museum commemorating the Jewish culture of Polish Galicia.", website: "https://galiciajewishmuseum.org/", individuals: [] });
-addEntry("Poland", { name: "Museum of the History of Polish Jews (POLIN) – additional programs", type: "museum", description: "Extensive community and education programs at POLIN.", website: "", individuals: [] });
+addEntry("Poland", { name: "Museum of the History of Polish Jews (POLIN) , additional programs", type: "museum", description: "Extensive community and education programs at POLIN.", website: "", individuals: [] });
 addEntry("Poland", { name: "Majdanek State Museum", type: "memorial", description: "Memorial at the former Nazi concentration camp.", website: "https://www.majdanek.eu/", individuals: [] });
 addEntry("Poland", { name: "Treblinka Memorial", type: "memorial", description: "Memorial at the site of the Treblinka extermination camp where 800,000+ Jews were murdered.", website: "", individuals: [] });
 addEntry("Poland", { name: "Warsaw Ghetto Memorial", type: "memorial", description: "Monument commemorating the Warsaw Ghetto Uprising of 1943.", website: "", individuals: [] });
@@ -368,10 +368,10 @@ addEntry("Ukraine", { name: "Menorah Center (Dnipro)", type: "community center",
 addEntry("Ukraine", { name: "Golden Rose Synagogue (Lviv, ruins)", type: "historic site", description: "Ruins of a 16th-century synagogue in Lviv, now a memorial.", website: "", individuals: [] });
 
 // ITALY - MORE
-addEntry("Italy", { name: "Venice Ghetto", type: "historic site", description: "The original 'ghetto' — the first enforced Jewish quarter in Europe, established 1516.", website: "", individuals: [] });
+addEntry("Italy", { name: "Venice Ghetto", type: "historic site", description: "The original 'ghetto' , the first enforced Jewish quarter in Europe, established 1516.", website: "", individuals: [] });
 addEntry("Italy", { name: "Synagogue of Florence (Tempio Maggiore)", type: "synagogue", description: "One of the largest synagogues in Southern Europe, built in Moorish Revival style in 1882.", website: "", individuals: [] });
 addEntry("Italy", { name: "Jewish Museum of Bologna", type: "museum", description: "Museum of Jewish history in Bologna.", website: "", individuals: [] });
-addEntry("Italy", { name: "Community of Sant'Egidio – Jewish dialogue", type: "interfaith", description: "Catholic community with deep Jewish-Christian dialogue programs.", website: "", individuals: [] });
+addEntry("Italy", { name: "Community of Sant'Egidio , Jewish dialogue", type: "interfaith", description: "Catholic community with deep Jewish-Christian dialogue programs.", website: "", individuals: [] });
 
 // SPAIN - MORE
 addEntry("Spain", { name: "Federation of Jewish Communities of Spain (additional)", type: "community", description: "Umbrella organization. Spain passed a 2015 law offering citizenship to Sephardic Jewish descendants.", website: "", individuals: [] });
@@ -380,7 +380,7 @@ addEntry("Spain", { name: "Casa Sefarad-Israel (Madrid)", type: "cultural center
 
 // JAPAN - MORE
 addEntry("Japan", { name: "Sugihara Museum (Yaotsu)", type: "museum", description: "Museum honoring Chiune Sugihara, the Japanese diplomat who saved 6,000 Lithuanian Jews in WWII.", website: "", individuals: [{ name: "Chiune Sugihara", role: "Righteous Among the Nations (1900-1986)", bio: "Japanese diplomat who issued visas saving thousands of Jews." }] });
-addEntry("Japan", { name: "Kobe Jewish Community", type: "community", description: "Historic community — Kobe was a refuge for Jewish refugees in WWII.", website: "", individuals: [] });
+addEntry("Japan", { name: "Kobe Jewish Community", type: "community", description: "Historic community , Kobe was a refuge for Jewish refugees in WWII.", website: "", individuals: [] });
 
 // CHINA - MORE
 addEntry("China", { name: "Sassoon House (Shanghai)", type: "historic building", description: "Art Deco hotel on the Bund, built by the Sassoon Jewish family.", website: "", individuals: [] });
@@ -400,7 +400,7 @@ addEntry("Ethiopia", { name: "North Shewa Synagogue", type: "synagogue/heritage"
 addEntry("Ethiopia", { name: "Operation Solomon Memorial", type: "memorial", description: "Commemoration of the 1991 airlift that brought 14,325 Ethiopian Jews to Israel in 36 hours.", website: "", individuals: [] });
 
 // BAHRAIN - MORE
-addEntry("Bahrain", { name: "Ambassador Houda Nonoo legacy", type: "diplomatic", description: "In 2008, Bahrain appointed Houda Nonoo — a Jewish woman — as its ambassador to the US.", website: "", individuals: [{ name: "Houda Nonoo", role: "Former Ambassador", bio: "Jewish Bahraini woman who served as Bahrain's ambassador to the US." }] });
+addEntry("Bahrain", { name: "Ambassador Houda Nonoo legacy", type: "diplomatic", description: "In 2008, Bahrain appointed Houda Nonoo , a Jewish woman , as its ambassador to the US.", website: "", individuals: [{ name: "Houda Nonoo", role: "Former Ambassador", bio: "Jewish Bahraini woman who served as Bahrain's ambassador to the US." }] });
 
 // SWEDEN - MORE
 addEntry("Sweden", { name: "Raoul Wallenberg Institute", type: "research/human rights", description: "Human rights institution named after the Swedish diplomat who saved Hungarian Jews.", website: "https://rwi.lu.se/", individuals: [{ name: "Raoul Wallenberg", role: "Namesake (1912-1947?)", bio: "Swedish diplomat who saved tens of thousands of Hungarian Jews." }] });
@@ -414,7 +414,7 @@ addEntry("Denmark", { name: "Rescue of Danish Jews (1943)", type: "historic even
 addEntry("Norway", { name: "Center for Studies of the Holocaust and Religious Minorities (HL-senteret)", type: "research/museum", description: "Norwegian center for Holocaust education in a former Nazi headquarters.", website: "https://www.hlsenteret.no/", individuals: [] });
 
 // GREECE - MORE
-addEntry("Greece", { name: "Holocaust Memorial of Thessaloniki", type: "memorial", description: "Memorial honoring the 50,000 Jews of Thessaloniki murdered in the Holocaust — 96% of the community.", website: "", individuals: [] });
+addEntry("Greece", { name: "Holocaust Memorial of Thessaloniki", type: "memorial", description: "Memorial honoring the 50,000 Jews of Thessaloniki murdered in the Holocaust , 96% of the community.", website: "", individuals: [] });
 addEntry("Greece", { name: "Romaniote Jewish Community", type: "community", description: "One of the world's oldest Jewish communities, distinct from Ashkenazi and Sephardic traditions.", website: "", individuals: [] });
 
 // CZECH REPUBLIC - MORE  
@@ -439,14 +439,14 @@ addEntry("Switzerland", { name: "International Committee of the Red Cross (Jewis
 // INTERNATIONAL - MORE
 addEntry("International", { name: "March of the Living", type: "educational program", description: "Annual educational program bringing people from around the world to Poland and Israel to study the Holocaust.", website: "https://motl.org/", individuals: [] });
 addEntry("International", { name: "Limmud International", type: "education", description: "Jewish educational conferences held in 40+ countries worldwide.", website: "https://limmud.org/", individuals: [] });
-addEntry("International", { name: "Keren Hayesod – United Israel Appeal", type: "fundraising", description: "Major international fundraising organization for Israel, operating in 45+ countries.", website: "https://www.kfrfrpc.org.il/", individuals: [] });
+addEntry("International", { name: "Keren Hayesod , United Israel Appeal", type: "fundraising", description: "Major international fundraising organization for Israel, operating in 45+ countries.", website: "https://www.kfrfrpc.org.il/", individuals: [] });
 addEntry("International", { name: "World Mizrachi", type: "religious zionist", description: "International Religious Zionist organization.", website: "https://mizrachi.org/", individuals: [] });
 addEntry("International", { name: "International March of the Living", type: "commemoration", description: "Annual march from Auschwitz to Birkenau on Yom HaShoah.", website: "", individuals: [] });
 addEntry("International", { name: "Aleph Institute", type: "chaplaincy/social services", description: "Jewish organization providing support to military personnel, prisoners, and their families.", website: "https://www.aleph-institute.org/", individuals: [] });
 addEntry("International", { name: "Shalom Hartman Institute", type: "research/education", description: "Jewish research and education institute in Jerusalem and North America.", website: "https://www.hartman.org.il/", individuals: [{ name: "Donniel Hartman", role: "President", bio: "Jewish philosopher and president of the Hartman Institute." }] });
 addEntry("International", { name: "Aish HaTorah", type: "educational/outreach", description: "International Orthodox Jewish outreach organization headquartered in Jerusalem.", website: "https://www.aish.com/", individuals: [] });
 addEntry("International", { name: "Ohr Somayach", type: "yeshiva/outreach", description: "International network of yeshivas for Jewish outreach.", website: "https://ohr.edu/", individuals: [] });
-addEntry("International", { name: "JDC (American Jewish Joint Distribution Committee) – Global", type: "humanitarian", description: "Active in 70+ countries providing disaster relief, community development, and Jewish community building.", website: "https://www.jdc.org/", individuals: [] });
+addEntry("International", { name: "JDC (American Jewish Joint Distribution Committee) , Global", type: "humanitarian", description: "Active in 70+ countries providing disaster relief, community development, and Jewish community building.", website: "https://www.jdc.org/", individuals: [] });
 
 // ============================================================
 // Write updated files

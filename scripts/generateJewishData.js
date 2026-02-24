@@ -169,7 +169,7 @@ const data = {
       },
       {
         id: "technion-israel-institute-of-technology",
-        name: "Technion – Israel Institute of Technology",
+        name: "Technion , Israel Institute of Technology",
         type: "education",
         description: "Israel’s premier science and engineering university, located in Haifa.",
         website: "https://www.technion.ac.il/",

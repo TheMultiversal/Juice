@@ -81,7 +81,7 @@ function initPrintStyles() {
       .hero-stat .num { color: #000 !important; }
       .tag { border: 1px solid #999; background: #f5f5f5 !important; color: #333 !important; }
       h1, h2, h3 { color: #000 !important; }
-      .hero h1::after { content: " — Printed from Juice Database"; font-size: 0.4em; font-weight: normal; color: #666; }
+      .hero h1::after { content: " - Printed from Juice Database"; font-size: 0.4em; font-weight: normal; color: #666; }
       @page { margin: 1cm; }
     }
   `;
@@ -162,14 +162,15 @@ function buildMenu(data, religion) {
   const main = document.createElement('ul');
   main.style.listStyle = 'none';
   main.style.margin = '0';
-  main.style.padding = '0';
+  main.style.padding = '8px 0';
   main.style.display = 'flex';
   main.style.flexWrap = 'wrap';
-  main.style.gap = '4px';
+  main.style.gap = '8px 10px';
+  main.style.justifyContent = 'center';
+  main.style.alignItems = 'center';
 
   // 'All countries' link
   const allLi = document.createElement('li');
-  allLi.style.marginRight = '1em';
   const allA = document.createElement('a');
   allA.href = 'allcountries.html';
   allA.textContent = 'All countries';
@@ -178,7 +179,6 @@ function buildMenu(data, religion) {
 
   // 'Categories' link
   const catLi = document.createElement('li');
-  catLi.style.marginRight = '1em';
   const catA = document.createElement('a');
   catA.href = 'categories.html';
   catA.textContent = 'Categories';
@@ -187,7 +187,6 @@ function buildMenu(data, religion) {
 
   // 'Search' link
   const searchLi = document.createElement('li');
-  searchLi.style.marginRight = '1em';
   const searchA = document.createElement('a');
   searchA.href = 'search.html';
   searchA.textContent = 'Search';
@@ -196,7 +195,6 @@ function buildMenu(data, religion) {
 
   // 'People' link
   const peopleLi = document.createElement('li');
-  peopleLi.style.marginRight = '1em';
   const peopleA = document.createElement('a');
   peopleA.href = 'people.html';
   peopleA.textContent = 'People';
@@ -205,7 +203,6 @@ function buildMenu(data, religion) {
 
   // 'Stats' link
   const statsLi = document.createElement('li');
-  statsLi.style.marginRight = '1em';
   const statsA = document.createElement('a');
   statsA.href = 'stats.html';
   statsA.textContent = 'Stats';
@@ -214,7 +211,6 @@ function buildMenu(data, religion) {
 
   // 'Graph' link
   const graphLi = document.createElement('li');
-  graphLi.style.marginRight = '1em';
   const graphA = document.createElement('a');
   graphA.href = 'graph.html';
   graphA.textContent = 'Graph';
@@ -234,7 +230,6 @@ function buildMenu(data, religion) {
   ];
   newPages.forEach(p => {
     const li = document.createElement('li');
-    li.style.marginRight = '1em';
     const a = document.createElement('a');
     a.href = p.href;
     a.textContent = p.text;
@@ -246,7 +241,6 @@ function buildMenu(data, religion) {
   const mainCountries = ['United States', 'Israel', 'United Kingdom', 'Canada', 'Australia'];
   mainCountries.forEach(c => {
     const li = document.createElement('li');
-    li.style.marginRight = '1em';
     const a = document.createElement('a');
     a.href = `country.html?religion=${encodeURIComponent(religion)}&country=${encodeURIComponent(c)}`;
     a.textContent = c;
@@ -320,7 +314,7 @@ function initPage(religion, callback) {
 // ===== SEO & OPEN GRAPH =====
 function setSEO(opts = {}) {
   const defaults = {
-    title: 'Juice Project — Religious Organizations Database',
+    title: 'Juice Project , Religious Organizations Database',
     description: 'Comprehensive database cataloging 800+ religious organizations across 86 countries, with people, connections, and analytics.',
     type: 'website',
     url: window.location.href
@@ -433,6 +427,6 @@ function addFooter() {
   const footer = document.createElement('footer');
   footer.className = 'site-footer';
   footer.style.cssText = 'text-align:center;padding:20px;margin-top:40px;border-top:1px solid rgba(0,0,255,0.15);font-size:0.85em;color:#888;background:rgba(250,250,255,0.95);';
-  footer.innerHTML = '© 2016–' + new Date().getFullYear() + ' Juice Project. All rights reserved. | v4.2 | <a href="audit.html" style="color:#0056b3;text-decoration:none;">Audit</a>';
+  footer.innerHTML = '© 2016,' + new Date().getFullYear() + ' Juice Project. All rights reserved. | v4.2 | <a href="audit.html" style="color:#0056b3;text-decoration:none;">Audit</a>';
   document.body.appendChild(footer);
 }

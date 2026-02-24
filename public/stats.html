@@ -1,4 +1,4 @@
-<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!-- Juice Project - Est. 2016 | Last updated 2025 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,9 +10,11 @@
   <style>
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
     nav { padding: 10px 20px; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
-    nav ul li { margin-right: 1em; white-space: nowrap; }
-    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    nav ul { list-style: none; margin: 0; padding: 8px 0; display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center; align-items: center; }
+    nav ul li { margin: 0; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
+    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
     .main { max-width: 1400px; margin: 0 auto; padding: 15px 20px; }
     h1 { margin: 0 0 5px 0; }
     .subtitle { color: #555; margin: 0 0 20px 0; }
@@ -93,7 +95,7 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
   <script>
     initPage('jewish');
-    setSEO({ title: 'Statistics — Juice Project', description: 'Analytics dashboard with charts showing organization distribution by country, category, founding decade, and connections.' });
+    setSEO({ title: 'Statistics , Juice Project', description: 'Analytics dashboard with charts showing organization distribution by country, category, founding decade, and connections.' });
 
     const palette = [
       '#3498db','#e74c3c','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63',
@@ -183,7 +185,7 @@
       });
     });
 
-    // Detailed stats — new charts
+    // Detailed stats , new charts
     fetch('/api/stats/detailed').then(r => r.json()).then(d => {
       // Founded by Decade
       new Chart(document.getElementById('decadeChart'), {

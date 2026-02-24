@@ -1,5 +1,5 @@
 /**
- * addWebsites2.js — More comprehensive website enrichment.
+ * addWebsites2.js , More comprehensive website enrichment.
  * Uses known mappings + pattern-based generation for remaining entries.
  * Run: node scripts/addWebsites2.js
  */
