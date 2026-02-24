@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="created" content="2016-03-14">
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,98 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .affiliation-card a { font-weight: bold; color: #0000EE; font-size: 1.05em; }
     .co-person { display: inline-block; margin: 3px 2px; }
     .co-person a { color: #0000EE; font-size: 0.95em; }
+  
+    /* Glassmorphism panels */
+    .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
+    .export-card, .result-card, .person-card, .connection-item, .similar-card,
+    .bm-card, .comp-card, .entry-card, .country-card, .stat-box, .controls,
+    .search-section, .shared-section, .endpoint {
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+    }
+    .panel:hover, .cat-card:hover, .featured-card:hover, .discover-card:hover,
+    .kpi-card:hover, .chart-card:hover, .result-card:hover, .person-card:hover,
+    .connection-item:hover, .similar-card:hover, .bm-card:hover, .entry-card:hover,
+    .country-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 8px !important;
+    }
+    nav select {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .quick-search input {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .discover-btn, .btn, .btn-find, .btn-primary {
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    .tag {
+      background: rgba(0, 123, 255, 0.1) !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      border: 1px solid rgba(0, 123, 255, 0.15) !important;
+    }
+    .country-item {
+      background: rgba(255, 255, 255, 0.12) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 8px !important;
+    }
+    /* Glassmorphism dark mode overrides */
+    body.dark-mode .panel, body.dark-mode .cat-card, body.dark-mode .featured-card,
+    body.dark-mode .discover-card, body.dark-mode .kpi-card, body.dark-mode .chart-card,
+    body.dark-mode .export-card, body.dark-mode .result-card, body.dark-mode .person-card,
+    body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
+    body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
+    body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
+    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend {
+      background: rgba(20, 20, 40, 0.45) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+    body.dark-mode nav a {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+    body.dark-mode nav select {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    body.dark-mode .country-item {
+      background: rgba(30, 30, 60, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+    }
+    body.dark-mode .tag {
+      background: rgba(60, 100, 200, 0.15) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+
   </style>
 </head>
 <body>
@@ -63,7 +156,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
           bmBtn.style.cssText = 'margin-left:12px;padding:5px 14px;border-radius:16px;border:1px solid rgba(0,0,255,0.3);cursor:pointer;font-size:0.85em;vertical-align:middle;';
           function updateBmBtn() {
             const saved = BookmarkManager.isPersonBookmarked(id);
-            bmBtn.textContent = saved ? '★ Bookmarked' : '☆ Bookmark';
+            bmBtn.innerHTML = saved ? '<i class="fa-solid fa-bookmark"></i> Bookmarked' : '<i class="fa-regular fa-bookmark"></i> Bookmark';
             bmBtn.style.background = saved ? 'rgba(255,193,7,0.2)' : 'rgba(0,123,255,0.1)';
             bmBtn.style.color = saved ? '#b8860b' : '#0056b3';
           }

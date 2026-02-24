@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="created" content="2016-03-14">
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,7 +49,7 @@
     .path-node .node-category { font-size: 0.75em; color: #0056b3; background: rgba(0,86,179,0.08); padding: 2px 8px; border-radius: 10px; margin-top: 4px; display: inline-block; }
     .path-edge { display: flex; flex-direction: column; align-items: center; min-width: 80px; padding: 0 4px; }
     .path-edge .edge-line { width: 60px; height: 2px; background: #0056b3; position: relative; }
-    .path-edge .edge-line::after { content: '▶'; position: absolute; right: -8px; top: -9px; color: #0056b3; font-size: 0.9em; }
+    .path-edge .edge-line::after { font-family: 'Font Awesome 6 Free'; font-weight: 900; content: '\f0da'; position: absolute; right: -8px; top: -9px; color: #0056b3; font-size: 0.9em; }
     .path-edge .edge-type { font-size: 0.72em; color: #666; background: #f8f9fa; padding: 2px 8px; border-radius: 8px; margin-top: 4px; text-align: center; white-space: nowrap; }
     .path-edge .edge-desc { font-size: 0.68em; color: #999; margin-top: 2px; max-width: 100px; text-align: center; }
 
@@ -66,14 +67,106 @@
       .search-arrow, .swap-btn { display: none; }
       .path-visual { flex-direction: column; }
       .path-edge .edge-line { width: 2px; height: 40px; }
-      .path-edge .edge-line::after { content: '▼'; right: -7px; top: auto; bottom: -10px; }
+      .path-edge .edge-line::after { font-family: 'Font Awesome 6 Free'; font-weight: 900; content: '\f0d7'; right: -7px; top: auto; bottom: -10px; }
     }
+  
+    /* Glassmorphism panels */
+    .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
+    .export-card, .result-card, .person-card, .connection-item, .similar-card,
+    .bm-card, .comp-card, .entry-card, .country-card, .stat-box, .controls,
+    .search-section, .shared-section, .endpoint {
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+    }
+    .panel:hover, .cat-card:hover, .featured-card:hover, .discover-card:hover,
+    .kpi-card:hover, .chart-card:hover, .result-card:hover, .person-card:hover,
+    .connection-item:hover, .similar-card:hover, .bm-card:hover, .entry-card:hover,
+    .country-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 8px !important;
+    }
+    nav select {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .quick-search input {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .discover-btn, .btn, .btn-find, .btn-primary {
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    .tag {
+      background: rgba(0, 123, 255, 0.1) !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      border: 1px solid rgba(0, 123, 255, 0.15) !important;
+    }
+    .country-item {
+      background: rgba(255, 255, 255, 0.12) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 8px !important;
+    }
+    /* Glassmorphism dark mode overrides */
+    body.dark-mode .panel, body.dark-mode .cat-card, body.dark-mode .featured-card,
+    body.dark-mode .discover-card, body.dark-mode .kpi-card, body.dark-mode .chart-card,
+    body.dark-mode .export-card, body.dark-mode .result-card, body.dark-mode .person-card,
+    body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
+    body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
+    body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
+    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend {
+      background: rgba(20, 20, 40, 0.45) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+    body.dark-mode nav a {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+    body.dark-mode nav select {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    body.dark-mode .country-item {
+      background: rgba(30, 30, 60, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+    }
+    body.dark-mode .tag {
+      background: rgba(60, 100, 200, 0.15) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
   <div class="container">
-    <h1>🔗 Pathfinder</h1>
+    <h1><i class="fa-solid fa-route"></i> Pathfinder</h1>
     <p class="subtitle">Find the degrees of separation between any two organizations</p>
 
     <div class="search-panel">
@@ -83,7 +176,7 @@
         <div class="autocomplete-list" id="from-list"></div>
       </div>
       <button class="swap-btn" id="swap-btn" title="Swap">⇄</button>
-      <div class="search-arrow">→</div>
+      <div class="search-arrow"><i class="fa-solid fa-arrow-right"></i></div>
       <div class="search-box" id="to-box">
         <label>To</label>
         <input type="text" id="to-input" placeholder="Search for an organization..." autocomplete="off">
@@ -212,7 +305,7 @@
         const data = await res.json();
 
         if (data.distance < 0 || data.path.length === 0) {
-          area.innerHTML = '<div class="no-path">❌ No path found between these organizations.<br><span style="font-size:0.85em;color:#aaa;">They do not appear to be connected through shared connections or people.</span></div>';
+          area.innerHTML = '<div class="no-path"><i class="fa-solid fa-circle-xmark"></i> No path found between these organizations.<br><span style="font-size:0.85em;color:#aaa;">They do not appear to be connected through shared connections or people.</span></div>';
           return;
         }
 
@@ -244,7 +337,7 @@
 
         area.innerHTML = html;
       } catch (err) {
-        area.innerHTML = '<div class="no-path">⚠️ Error finding path. Please try again.</div>';
+        area.innerHTML = '<div class="no-path"><i class="fa-solid fa-triangle-exclamation"></i> Error finding path. Please try again.</div>';
       }
     });
 

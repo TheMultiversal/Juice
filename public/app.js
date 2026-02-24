@@ -14,7 +14,7 @@ function initDarkMode() {
     body.dark-mode table, body.dark-mode .shared-section, body.dark-mode .legend {
       background: rgba(30,30,40,0.92) !important; border-color: rgba(100,100,255,0.2) !important; color: #e0e0e0 !important;
     }
-    body.dark-mode nav a { background: rgba(30,30,50,0.85) !important; color: #7ab3ff !important; border-color: rgba(100,100,255,0.3) !important; }
+    body.dark-mode nav a { background: rgba(20,20,50,0.4) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; color: #7ab3ff !important; border: 1px solid rgba(100,100,255,0.2) !important; }
     body.dark-mode a { color: #7ab3ff !important; }
     body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 { color: #c0d0ff !important; }
     body.dark-mode .tag { background: rgba(60,100,200,0.25) !important; color: #7ab3ff !important; }
@@ -33,7 +33,7 @@ function initDarkMode() {
       background: rgba(30,30,50,0.85) !important; border-color: rgba(100,100,255,0.2) !important; color: #e0e0e0 !important;
     }
     body.dark-mode .cat-card .cat-count, body.dark-mode .hero-stat .num { color: #7ab3ff !important; }
-    body.dark-mode .country-item { background: rgba(40,40,60,0.7) !important; }
+    body.dark-mode .country-item { background: rgba(30,30,60,0.4) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(100,100,255,0.15) !important; }
     body.dark-mode .country-item .ccount, body.dark-mode .country-card .ccount { background: rgba(60,100,200,0.3) !important; color: #7ab3ff !important; }
     body.dark-mode .hero .subtitle { color: #aaa !important; }
     body.dark-mode .quick-search input { background: #1e1e2e !important; color: #e0e0e0 !important; border-color: rgba(100,100,255,0.3) !important; }
@@ -51,13 +51,13 @@ function initDarkMode() {
   // Add toggle button
   const toggle = document.createElement('button');
   toggle.className = 'dark-toggle';
-  toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+  toggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
   toggle.title = 'Toggle dark mode';
   toggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
     const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('juice_dark_mode', isDark);
-    toggle.textContent = isDark ? '☀️' : '🌙';
+    toggle.innerHTML = isDark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
   });
   document.body.appendChild(toggle);
 }
@@ -358,8 +358,8 @@ function initKeyboardShortcuts() {
   modal.style.cssText = 'background:#fff;border-radius:14px;padding:28px 34px;max-width:440px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;';
   modal.innerHTML = `
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
-      <h2 style="margin:0;color:#0056b3;font-size:1.3em;">⌨️ Keyboard Shortcuts</h2>
-      <button id="close-shortcuts" style="border:none;background:none;font-size:1.5em;cursor:pointer;color:#999;padding:0 4px;">✕</button>
+      <h2 style="margin:0;color:#0056b3;font-size:1.3em;"><i class="fa-regular fa-keyboard"></i> Keyboard Shortcuts</h2>
+      <button id="close-shortcuts" style="border:none;background:none;font-size:1.5em;cursor:pointer;color:#999;padding:0 4px;"><i class="fa-solid fa-xmark"></i></button>
     </div>
     <div style="display:grid;grid-template-columns:70px 1fr;gap:6px 14px;font-size:0.95em;">
       <kbd style="background:#f0f0f0;padding:3px 10px;border-radius:5px;border:1px solid #ddd;text-align:center;font-family:monospace;font-weight:bold;">?</kbd><span>Show this help</span>

@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <meta name="created" content="2016-03-14">
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,12 +30,104 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     .person-tag a { color: #0000EE; text-decoration: none; }
     .spin { animation: spin 0.5s ease; }
     @keyframes spin { from { transform: rotateY(0); } to { transform: rotateY(360deg); } }
+  
+    /* Glassmorphism panels */
+    .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
+    .export-card, .result-card, .person-card, .connection-item, .similar-card,
+    .bm-card, .comp-card, .entry-card, .country-card, .stat-box, .controls,
+    .search-section, .shared-section, .endpoint {
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+    }
+    .panel:hover, .cat-card:hover, .featured-card:hover, .discover-card:hover,
+    .kpi-card:hover, .chart-card:hover, .result-card:hover, .person-card:hover,
+    .connection-item:hover, .similar-card:hover, .bm-card:hover, .entry-card:hover,
+    .country-card:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 8px !important;
+    }
+    nav select {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .quick-search input {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .discover-btn, .btn, .btn-find, .btn-primary {
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    .tag {
+      background: rgba(0, 123, 255, 0.1) !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      border: 1px solid rgba(0, 123, 255, 0.15) !important;
+    }
+    .country-item {
+      background: rgba(255, 255, 255, 0.12) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 8px !important;
+    }
+    /* Glassmorphism dark mode overrides */
+    body.dark-mode .panel, body.dark-mode .cat-card, body.dark-mode .featured-card,
+    body.dark-mode .discover-card, body.dark-mode .kpi-card, body.dark-mode .chart-card,
+    body.dark-mode .export-card, body.dark-mode .result-card, body.dark-mode .person-card,
+    body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
+    body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
+    body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
+    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend {
+      background: rgba(20, 20, 40, 0.45) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+    body.dark-mode nav a {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+    body.dark-mode nav select {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    body.dark-mode .country-item {
+      background: rgba(30, 30, 60, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+    }
+    body.dark-mode .tag {
+      background: rgba(60, 100, 200, 0.15) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
   <div class="panel" style="text-align:center;">
-    <h1>🎲 Discover</h1>
+    <h1><i class="fa-solid fa-dice"></i> Discover</h1>
     <p>Explore a random organization from the database</p>
   </div>
   <div id="card-container">
@@ -42,7 +135,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       <p style="text-align:center;color:#888;">Loading random entry...</p>
     </div>
   </div>
-  <button class="btn" id="next-btn" onclick="loadRandom()">🎲 Next Random Entry</button>
+  <button class="btn" id="next-btn" onclick="loadRandom()"><i class="fa-solid fa-dice"></i> Next Random Entry</button>
 
   <script src="app.js"></script>
   <script>
@@ -73,7 +166,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
               html += '</div>';
               html += '<div class="desc">' + (full.description || 'No description available.') + '</div>';
               if (full.website) {
-                html += '<p>🌐 <a href="' + full.website + '" target="_blank" rel="noopener">' + full.website + '</a></p>';
+                html += '<p><i class="fa-solid fa-globe"></i> <a href="' + full.website + '" target="_blank" rel="noopener">' + full.website + '</a></p>';
               }
               if (full.individuals && full.individuals.length) {
                 html += '<div class="people-list"><strong>Key People:</strong> ';
@@ -83,7 +176,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
                 html += '</div>';
               }
               if (full.connections && full.connections.length) {
-                html += '<p style="margin-top:10px;font-size:0.9em;color:#666;">' + full.connections.length + ' connections · <a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">View full details →</a></p>';
+                html += '<p style="margin-top:10px;font-size:0.9em;color:#666;">' + full.connections.length + ' connections · <a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">View full details <i class="fa-solid fa-arrow-right"></i></a></p>';
               }
               card.innerHTML = html;
             });
