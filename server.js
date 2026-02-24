@@ -231,8 +231,9 @@ app.get('/api/stats/detailed', (req, res) => {
 app.get('/api/graph', (req, res) => {
   const country = req.query.country;
   const category = req.query.category;
+  const includePeople = req.query.people !== '0'; // include people by default
   try {
-    const cacheKey = `graph-${country||''}-${category||''}`;
+    const cacheKey = `graph-${country||''}-${category||''}-p${includePeople?1:0}`;
     const result = getCached(cacheKey, 30000, () => {
       delete require.cache[require.resolve('./data/jewish.json')];
       const jd = require('./data/jewish.json');
@@ -262,7 +263,25 @@ app.get('/api/graph', (req, res) => {
         if (country && c !== country) continue;
         for (const entry of jd.countries[c]) {
           if (category && entry.category !== category) continue;
-          if (!nodeSet.has(entry.id)) { nodeSet.add(entry.id); nodes.push({ id: entry.id, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other' }); }
+          if (!nodeSet.has(entry.id)) { nodeSet.add(entry.id); nodes.push({ id: entry.id, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry' }); }
+
+          // Add people as nodes if requested
+          if (includePeople && entry.individuals) {
+            for (const ind of entry.individuals) {
+              const personNodeId = 'person-' + ind.id;
+              if (!nodeSet.has(personNodeId)) {
+                nodeSet.add(personNodeId);
+                nodes.push({ id: personNodeId, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '' });
+              }
+              // Link person to entry
+              const lk = entry.id + '|' + personNodeId;
+              if (!linkSet.has(lk)) {
+                linkSet.add(lk);
+                links.push({ source: entry.id, target: personNodeId, type: 'person-affiliation', description: ind.role || 'Affiliated' });
+              }
+            }
+          }
+
           if (entry.connections) {
             for (const conn of entry.connections) {
               // Use direct ID or name lookup instead of scanning all entries
@@ -270,7 +289,7 @@ app.get('/api/graph', (req, res) => {
               if (!targetId || !entryIdMap[targetId]) continue;
               const eInfo = entryIdMap[targetId];
               if (country && eInfo.country !== country && c !== country) continue;
-              if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other' }); }
+              if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other', nodeType: 'entry' }); }
               const lk = entry.id < targetId ? entry.id + '|' + targetId : targetId + '|' + entry.id;
               if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: conn.type || 'related', description: conn.description || '' }); }
             }
@@ -289,7 +308,7 @@ app.get('/api/graph', (req, res) => {
                 if (!nodeSet.has(s.entryId)) {
                   const ei = entryIdMap[s.entryId];
                   nodeSet.add(s.entryId);
-                  nodes.push({ id: s.entryId, name: ei.name, country: s.country, category: ei.category || '', type: ei.type, group: ei.category || 'other' });
+                  nodes.push({ id: s.entryId, name: ei.name, country: s.country, category: ei.category || '', type: ei.type, group: ei.category || 'other', nodeType: 'entry' });
                 }
                 links.push({ source: entry.id, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name });
               }

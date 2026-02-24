@@ -175,7 +175,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
               const card = document.createElement('div');
               card.className = 'affiliation-card';
               const orgLink = document.createElement('a');
-              orgLink.href = 'entry.html?religion=' + encodeURIComponent(a.religion) + '&id=' + encodeURIComponent(slugify(a.organization));
+              orgLink.href = 'entry.html?religion=' + encodeURIComponent(a.religion) + '&id=' + encodeURIComponent(a.entryId || slugify(a.organization));
               orgLink.textContent = a.organization;
               card.appendChild(orgLink);
               card.appendChild(document.createTextNode(' \u2014 ' + (a.role || '') + ' \u2014 '));

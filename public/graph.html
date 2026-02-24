@@ -140,6 +140,7 @@
     <input type="range" id="node-size" min="3" max="20" value="8" />
     <label>Link Distance:</label>
     <input type="range" id="link-dist" min="30" max="300" value="100" />
+    <label><input type="checkbox" id="show-people" checked /> Show People</label>
     <label><input type="checkbox" id="show-labels" checked /> Show Labels</label>
     <button id="reload-btn">Reload Graph</button>
     <button id="reset-btn">Reset Zoom</button>
@@ -154,7 +155,7 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
     initPage('jewish');
-    setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization showing connections between religious organizations.' });
+    setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization showing connections between religious organizations and individuals.' });
 
     const categoryColors = {
       'Entertainment & Media': '#e74c3c',
@@ -185,9 +186,11 @@
       'Transportation': '#00acc1',
       'Advertising & PR': '#d81b60',
       'Telecommunications': '#7c4dff',
-      'Utilities & Energy': '#66bb6a'
+      'Utilities & Energy': '#66bb6a',
+      'People': '#ffab40'
     };
     const defaultColor = '#90a4ae';
+    const personColor = '#ffab40';
 
     const edgeTypeColors = {
       'financial': '#ff9800',
@@ -204,7 +207,31 @@
       'membership': '#3f51b5',
       'affiliation': '#e91e63',
       'leadership': '#8e44ad',
-      'collaboration': '#1abc9c'
+      'collaboration': '#1abc9c',
+      'person-affiliation': '#ffab40',
+      'industry peer': '#78909c',
+      'affiliate': '#42a5f5',
+      'communal partner': '#4db6ac',
+      'heritage partner': '#ab47bc',
+      'funder': '#ffa726',
+      'community institution': '#66bb6a',
+      'religious partner': '#ce93d8',
+      'umbrella body': '#5c6bc0',
+      'member': '#26a69a',
+      'museum peer': '#7e57c2',
+      'cultural partner': '#ec407a',
+      'regional connection': '#8d6e63',
+      'educational partner': '#29b6f6',
+      'government partner': '#ef5350',
+      'sports affiliate': '#ff7043',
+      'operating body': '#26c6da',
+      'governing body': '#d4e157',
+      'preservation partner': '#9ccc65',
+      'support': '#7986cb',
+      'diplomatic partner': '#f06292',
+      'historical support': '#a1887f',
+      'parent organization': '#4fc3f7',
+      'research partner': '#ba68c8'
     };
     const defaultEdgeColor = '#aab';
 
@@ -212,10 +239,7 @@
     let categoriesReady = false, countriesReady = false;
 
     function tryLoadGraph() {
-      if (categoriesReady && countriesReady) {
-        // Load all entries by default - show the full network
-        loadGraph();
-      }
+      if (categoriesReady && countriesReady) loadGraph();
     }
 
     fetch('/api/jewish/categories').then(r => r.json()).then(data => {
@@ -245,10 +269,12 @@
     function loadGraph() {
       const country = document.getElementById('country-select').value;
       const category = document.getElementById('category-select').value;
-      let url = '/api/graph?';
+      const showPeople = document.getElementById('show-people').checked;
+      let url = '/api/graph?people=' + (showPeople ? '1' : '0') + '&';
       if (country) url += 'country=' + encodeURIComponent(country) + '&';
       if (category) url += 'category=' + encodeURIComponent(category);
 
+      document.getElementById('node-count').innerHTML = '<span>Loading...</span>';
       fetch(url).then(r => r.json()).then(data => {
         renderGraph(data);
       });
@@ -257,15 +283,18 @@
     function renderGraph(data) {
       const svg = d3.select('#graph');
       svg.selectAll('*').remove();
+      if (simulation) { simulation.stop(); simulation = null; }
 
       const width = window.innerWidth;
       const height = window.innerHeight - 50;
       svg.attr('width', width).attr('height', height);
 
-      document.getElementById('node-count').innerHTML = `<span>${data.nodes.length}</span> nodes · <span>${data.links.length}</span> links`;
+      const entryCount = data.nodes.filter(n => n.nodeType !== 'person').length;
+      const personCount = data.nodes.filter(n => n.nodeType === 'person').length;
+      document.getElementById('node-count').innerHTML = `<span>${entryCount}</span> entries · <span>${personCount}</span> people · <span>${data.links.length}</span> links`;
 
       // Legend
-      const cats = [...new Set(data.nodes.map(n => n.category))].sort();
+      const cats = [...new Set(data.nodes.map(n => n.category || n.group))].filter(Boolean).sort();
       const legend = document.getElementById('legend');
       legend.innerHTML = '<strong style="font-size:0.85em">Categories</strong>';
       cats.forEach(c => {
@@ -274,26 +303,36 @@
         const dot = document.createElement('div');
         dot.className = 'legend-dot';
         dot.style.background = categoryColors[c] || defaultColor;
+        if (c === 'People') dot.style.borderRadius = '2px'; // square for people
         item.appendChild(dot);
         item.appendChild(document.createTextNode(c || 'Other'));
         legend.appendChild(item);
       });
 
       // Setup zoom
-      zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', e => svgG.attr('transform', e.transform));
+      zoom = d3.zoom().scaleExtent([0.05, 10]).on('zoom', e => svgG.attr('transform', e.transform));
       svg.call(zoom);
 
       svgG = svg.append('g');
 
       const nodeSize = +document.getElementById('node-size').value;
       const linkDist = +document.getElementById('link-dist').value;
+      const totalNodes = data.nodes.length;
+
+      // Adaptive simulation strength based on node count
+      const chargeStrength = totalNodes > 2000 ? -30 : totalNodes > 500 ? -50 : -80;
+      const alphaDecay = totalNodes > 2000 ? 0.05 : 0.0228;
 
       // Build simulation
       simulation = d3.forceSimulation(data.nodes)
-        .force('link', d3.forceLink(data.links).id(d => d.id).distance(linkDist))
-        .force('charge', d3.forceManyBody().strength(-80))
+        .force('link', d3.forceLink(data.links).id(d => d.id).distance(d => {
+          // Person-entry links shorter, entry-entry links use slider
+          return d.type === 'person-affiliation' ? linkDist * 0.4 : linkDist;
+        }))
+        .force('charge', d3.forceManyBody().strength(chargeStrength))
         .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collision', d3.forceCollide().radius(nodeSize + 2));
+        .force('collision', d3.forceCollide().radius(d => d.nodeType === 'person' ? nodeSize * 0.5 + 1 : nodeSize + 2))
+        .alphaDecay(alphaDecay);
 
       // Edge legend
       const edgeTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
@@ -317,20 +356,25 @@
         .join('line')
         .attr('class', 'link')
         .attr('stroke', d => edgeTypeColors[d.type] || defaultEdgeColor)
-        .attr('stroke-opacity', 0.5)
+        .attr('stroke-opacity', d => d.type === 'person-affiliation' ? 0.25 : 0.5)
+        .attr('stroke-width', d => d.type === 'person-affiliation' ? 0.8 : 1.5)
         .on('mouseover', (e, d) => {
-          d3.select(e.target).attr('stroke-opacity', 1);
+          d3.select(e.target).attr('stroke-opacity', 1).attr('stroke-width', 3);
           showTooltip(e, `<strong>${d.type}</strong><br/>${d.description}`);
         })
-        .on('mouseout', (e) => {
-          d3.select(e.target).attr('stroke-opacity', 0.5);
+        .on('mouseout', (e, d) => {
+          d3.select(e.target).attr('stroke-opacity', d.type === 'person-affiliation' ? 0.25 : 0.5).attr('stroke-width', d.type === 'person-affiliation' ? 0.8 : 1.5);
           hideTooltip();
         });
 
-      // Nodes
-      const node = svgG.append('g')
+      // Entry nodes (circles)
+      const entryNodes = data.nodes.filter(n => n.nodeType !== 'person');
+      const personNodes = data.nodes.filter(n => n.nodeType === 'person');
+
+      // Entry nodes - circles
+      const entryNode = svgG.append('g')
         .selectAll('circle')
-        .data(data.nodes)
+        .data(entryNodes)
         .join('circle')
         .attr('r', nodeSize)
         .attr('fill', d => categoryColors[d.category] || defaultColor)
@@ -338,9 +382,13 @@
         .attr('stroke-width', 1.5)
         .style('cursor', 'pointer')
         .on('mouseover', (e, d) => {
-          showTooltip(e, `<strong>${d.name}</strong><br/>${d.country}<br/><em>${d.category}</em><br/>${d.type}`);
+          d3.select(e.target).attr('r', nodeSize * 1.5).attr('stroke-width', 3);
+          showTooltip(e, `<strong>${d.name}</strong><br/><i class="fa-solid fa-building"></i> ${d.type}<br/><i class="fa-solid fa-globe"></i> ${d.country}<br/><i class="fa-solid fa-tag"></i> ${d.category}`);
         })
-        .on('mouseout', hideTooltip)
+        .on('mouseout', (e) => {
+          d3.select(e.target).attr('r', nodeSize).attr('stroke-width', 1.5);
+          hideTooltip();
+        })
         .on('click', (e, d) => {
           window.open('entry.html?religion=jewish&id=' + encodeURIComponent(d.id), '_blank');
         })
@@ -350,25 +398,84 @@
           .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
         );
 
-      // Labels
+      // Person nodes - diamonds (rotated squares)
+      const personSize = nodeSize * 0.6;
+      const personNode = svgG.append('g')
+        .selectAll('rect')
+        .data(personNodes)
+        .join('rect')
+        .attr('width', personSize * 2)
+        .attr('height', personSize * 2)
+        .attr('fill', personColor)
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 1)
+        .attr('transform', d => `rotate(45)`)
+        .style('cursor', 'pointer')
+        .on('mouseover', (e, d) => {
+          d3.select(e.target).attr('width', personSize * 3).attr('height', personSize * 3).attr('stroke-width', 2);
+          showTooltip(e, `<strong><i class="fa-solid fa-user"></i> ${d.name}</strong><br/><i class="fa-solid fa-briefcase"></i> ${d.role || 'Individual'}<br/><i class="fa-solid fa-globe"></i> ${d.country}`);
+        })
+        .on('mouseout', (e) => {
+          d3.select(e.target).attr('width', personSize * 2).attr('height', personSize * 2).attr('stroke-width', 1);
+          hideTooltip();
+        })
+        .on('click', (e, d) => {
+          window.open('person.html?id=' + encodeURIComponent(d.personId), '_blank');
+        })
+        .call(d3.drag()
+          .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+          .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+        );
+
+      // Labels - only show for entries when many nodes, show all when fewer
       const showLabels = document.getElementById('show-labels').checked;
-      const labels = svgG.append('g')
+      const entryLabels = svgG.append('g')
         .selectAll('text')
-        .data(data.nodes)
+        .data(entryNodes)
         .join('text')
         .attr('class', 'node-label')
         .text(d => d.name.length > 25 ? d.name.substring(0, 25) + '...' : d.name)
         .attr('dx', nodeSize + 3)
         .attr('dy', 4)
-        .style('display', showLabels ? 'block' : 'none');
+        .style('display', showLabels ? 'block' : 'none')
+        .style('font-size', totalNodes > 1000 ? '8px' : '10px');
+
+      // Person labels only visible when zoomed in or few nodes
+      const personLabels = svgG.append('g')
+        .selectAll('text')
+        .data(personNodes)
+        .join('text')
+        .attr('class', 'node-label person-label')
+        .text(d => d.name.length > 20 ? d.name.substring(0, 20) + '...' : d.name)
+        .attr('dx', personSize + 5)
+        .attr('dy', 4)
+        .style('display', showLabels && totalNodes < 300 ? 'block' : 'none')
+        .style('font-size', '8px')
+        .style('fill', '#666');
 
       simulation.on('tick', () => {
         link
           .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
           .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-        node.attr('cx', d => d.x).attr('cy', d => d.y);
-        labels.attr('x', d => d.x).attr('y', d => d.y);
+        entryNode.attr('cx', d => d.x).attr('cy', d => d.y);
+        personNode
+          .attr('x', d => d.x - personSize)
+          .attr('y', d => d.y - personSize);
+        entryLabels.attr('x', d => d.x).attr('y', d => d.y);
+        personLabels.attr('x', d => d.x).attr('y', d => d.y);
       });
+
+      // Zoom-dependent label visibility for person labels
+      svg.on('zoom.labels', null);
+      svg.call(zoom.on('zoom', (e) => {
+        svgG.attr('transform', e.transform);
+        const k = e.transform.k;
+        // Show person labels only when zoomed in sufficiently
+        if (showLabels) {
+          personLabels.style('display', k > 1.5 || totalNodes < 300 ? 'block' : 'none');
+        }
+      }));
     }
 
     const tooltip = document.getElementById('tooltip');
@@ -386,9 +493,20 @@
     });
     document.getElementById('show-labels').addEventListener('change', function() {
       d3.selectAll('.node-label').style('display', this.checked ? 'block' : 'none');
+      if (!this.checked) d3.selectAll('.person-label').style('display', 'none');
+    });
+    document.getElementById('show-people').addEventListener('change', loadGraph);
+    document.getElementById('country-select').addEventListener('change', loadGraph);
+    document.getElementById('category-select').addEventListener('change', loadGraph);
+    document.getElementById('link-dist').addEventListener('input', function() {
+      if (simulation) simulation.force('link').distance(+this.value);
+      if (simulation) simulation.alpha(0.3).restart();
     });
     document.getElementById('node-size').addEventListener('input', function() {
-      d3.selectAll('circle').attr('r', +this.value);
+      const s = +this.value;
+      d3.selectAll('circle').attr('r', s);
+      const ps = s * 0.6;
+      d3.selectAll('rect').attr('width', ps * 2).attr('height', ps * 2);
     });
   </script>
 </body>
