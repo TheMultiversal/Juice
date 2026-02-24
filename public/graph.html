@@ -8,219 +8,240 @@
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Network Graph</title>
+
+  <!-- Cytoscape.js — Canvas-based graph engine (handles 10k+ nodes) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+  <!-- fCoSE layout — overlap-free, compound-aware spring embedder -->
+  <script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
+
   <style>
     /* ===== BASE ===== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { height: 100%; overflow: hidden; }
-    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #c8d6f0; background: #0a0a1a; display: flex; flex-direction: column; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #c8d6f0; background: #080818; display: flex; flex-direction: column; }
 
     /* ===== NAV ===== */
-    nav { flex-shrink: 0; padding: 6px 12px; position: relative; z-index: 50; background: rgba(10,10,30,0.88); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(100,120,255,0.15); }
+    nav { flex-shrink: 0; padding: 6px 12px; position: relative; z-index: 50; background: rgba(8,8,24,0.92); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(80,100,220,0.14); }
     nav ul { list-style: none; display: flex; flex-wrap: wrap; gap: 4px 6px; justify-content: center; align-items: center; padding: 4px 0; }
     nav ul li { white-space: nowrap; }
-    nav a { color: #8ab4f8 !important; text-decoration: none; padding: 3px 9px; border-radius: 5px; border: 1px solid rgba(100,120,255,0.2); font-size: 0.74em; display: inline-block; line-height: 1.3; background: rgba(30,30,60,0.5); transition: all 0.2s; }
-    nav a:hover { background: rgba(60,80,180,0.35); border-color: rgba(100,120,255,0.45); }
-    nav select { padding: 3px 8px; border-radius: 5px; border: 1px solid rgba(100,120,255,0.2); font-size: 0.74em; background: rgba(30,30,60,0.5); color: #8ab4f8; }
+    nav a { color: #7ea8e8 !important; text-decoration: none; padding: 3px 9px; border-radius: 5px; border: 1px solid rgba(80,100,220,0.18); font-size: 0.73em; display: inline-block; line-height: 1.3; background: rgba(25,25,55,0.55); transition: all 0.2s; }
+    nav a:hover { background: rgba(50,65,160,0.35); border-color: rgba(80,100,220,0.4); color: #a5c8ff !important; }
+    nav select { padding: 3px 8px; border-radius: 5px; border: 1px solid rgba(80,100,220,0.18); font-size: 0.73em; background: rgba(25,25,55,0.55); color: #7ea8e8; }
 
-    /* ===== GRAPH WRAPPER (fills all remaining space below nav) ===== */
-    .graph-wrapper { flex: 1; position: relative; overflow: hidden; background: #0a0a1a; }
-    #graph { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+    /* ===== GRAPH WRAPPER ===== */
+    .graph-wrap { flex: 1; position: relative; overflow: hidden; background: #080818; }
+    #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-    /* ===== SHARED PANEL STYLE ===== */
-    .g-panel {
-      background: rgba(12,12,32,0.94);
-      backdrop-filter: blur(18px);
-      border: 1px solid rgba(100,120,255,0.16);
+    /* ===== SHARED PANEL ===== */
+    .gp {
+      background: rgba(10,10,28,0.93);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(80,100,220,0.14);
       border-radius: 10px;
-      box-shadow: 0 6px 28px rgba(0,0,0,0.45);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.5);
       overflow: hidden;
+      transition: box-shadow 0.25s;
     }
-    .g-panel-header {
+    .gp:hover { box-shadow: 0 8px 36px rgba(0,0,0,0.6); }
+    .gp-h {
       display: flex; align-items: center; justify-content: space-between;
       padding: 6px 10px; cursor: pointer; user-select: none;
-      background: rgba(40,50,120,0.22);
-      border-bottom: 1px solid rgba(100,120,255,0.1);
+      background: rgba(35,42,100,0.2);
+      border-bottom: 1px solid rgba(80,100,220,0.08);
+      transition: background 0.2s;
     }
-    .g-panel-header:hover { background: rgba(40,50,120,0.38); }
-    .g-panel-header strong,
-    .g-panel-header h3 { color: #8ab4f8; font-size: 0.8em; font-weight: 600; margin: 0; }
-    .g-panel-header .chv { color: #6b8cff; font-size: 0.65em; transition: transform 0.25s; }
-    .g-panel.collapsed .g-panel-body { display: none; }
-    .g-panel.collapsed .g-panel-header { border-bottom: none; }
-    .g-panel.collapsed .chv { transform: rotate(180deg); }
+    .gp-h:hover { background: rgba(35,42,100,0.35); }
+    .gp-h strong, .gp-h h3 { color: #7ea8e8; font-size: 0.78em; font-weight: 600; margin: 0; }
+    .gp-h .chv { color: #5a7ad4; font-size: 0.6em; transition: transform 0.25s; }
+    .gp.shut .gp-b { display: none; }
+    .gp.shut .gp-h { border-bottom: none; }
+    .gp.shut .chv { transform: rotate(180deg); }
 
     /* ===== CONTROLS (top-left) ===== */
-    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 205px; }
-    .ctrl-body { padding: 7px 10px 9px; }
-    .ctrl-body label { font-size: 0.74em; color: #8895b3; display: block; margin: 4px 0 1px; font-weight: 500; letter-spacing: 0.3px; }
-    .ctrl-body select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(100,120,255,0.18); background: rgba(18,18,45,0.8); color: #b0c4e8; font-size: 0.78em; outline: none; }
-    .ctrl-body select:focus { border-color: #6b8cff; }
-    .ctrl-body input[type="range"] { width: 100%; margin: 2px 0; accent-color: #6b8cff; }
-    .ctrl-checks { display: flex; gap: 10px; margin: 5px 0 2px; }
-    .ctrl-checks label { display: flex; align-items: center; gap: 3px; font-size: 0.74em; color: #8895b3; cursor: pointer; margin: 0; }
-    .ctrl-checks input[type="checkbox"] { accent-color: #6b8cff; }
-    .ctrl-btns { display: flex; gap: 5px; margin-top: 5px; }
-    .ctrl-btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(100,120,255,0.18); background: rgba(40,50,120,0.25); color: #8ab4f8; font-size: 0.74em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
-    .ctrl-btns button:hover { background: rgba(60,80,180,0.38); border-color: rgba(100,120,255,0.35); }
+    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 210px; }
+    .cb { padding: 7px 10px 9px; }
+    .cb label { font-size: 0.73em; color: #7a8aaa; display: block; margin: 4px 0 1px; font-weight: 500; }
+    .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(80,100,220,0.16); background: rgba(14,14,38,0.85); color: #a0b8d8; font-size: 0.77em; outline: none; }
+    .cb select:focus { border-color: #5a7ad4; }
+    .cb input[type="range"] { width: 100%; margin: 2px 0; accent-color: #5a7ad4; }
+    .cb .chks { display: flex; gap: 10px; margin: 5px 0 2px; }
+    .cb .chks label { display: flex; align-items: center; gap: 3px; font-size: 0.73em; color: #7a8aaa; cursor: pointer; margin: 0; }
+    .cb .chks input[type="checkbox"] { accent-color: #5a7ad4; }
+    .cb .btns { display: flex; gap: 5px; margin-top: 5px; }
+    .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(80,100,220,0.16); background: rgba(35,42,100,0.22); color: #7ea8e8; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
+    .cb .btns button:hover { background: rgba(50,65,160,0.35); }
+    .cb .layout-row { margin-top: 5px; }
+    .cb .layout-row label { margin-bottom: 2px; }
+    .cb .layout-row select { font-size: 0.74em; }
 
     /* ===== SEARCH (top-center) ===== */
     .hud-search { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 12; display: flex; align-items: center; }
-    .hud-search input { padding: 5px 11px; border: 1px solid rgba(100,120,255,0.22); border-radius: 6px 0 0 6px; font-size: 0.78em; width: 195px; outline: none; background: rgba(12,12,32,0.94); backdrop-filter: blur(18px); color: #b0c4e8; }
-    .hud-search input::placeholder { color: #4a5a7a; }
-    .hud-search input:focus { border-color: #6b8cff; }
-    .hud-search button { padding: 5px 9px; border: 1px solid rgba(100,120,255,0.22); border-left: none; border-radius: 0 6px 6px 0; background: rgba(40,50,120,0.4); color: #8ab4f8; cursor: pointer; font-size: 0.78em; }
-    .hud-search button:hover { background: rgba(60,80,180,0.45); }
-    .hud-search .s-count { padding: 0 7px; font-size: 0.72em; color: #6b8cff; white-space: nowrap; }
+    .hud-search input { padding: 5px 11px; border: 1px solid rgba(80,100,220,0.2); border-radius: 6px 0 0 6px; font-size: 0.77em; width: 200px; outline: none; background: rgba(10,10,28,0.93); backdrop-filter: blur(20px); color: #a0b8d8; }
+    .hud-search input::placeholder { color: #405070; }
+    .hud-search input:focus { border-color: #5a7ad4; }
+    .hud-search button { padding: 5px 9px; border: 1px solid rgba(80,100,220,0.2); border-left: none; border-radius: 0 6px 6px 0; background: rgba(35,42,100,0.35); color: #7ea8e8; cursor: pointer; font-size: 0.77em; transition: background 0.2s; }
+    .hud-search button:hover { background: rgba(50,65,160,0.45); }
+    .hud-search .sc { padding: 0 7px; font-size: 0.71em; color: #5a7ad4; white-space: nowrap; }
 
     /* ===== STATS (top-right) ===== */
     .hud-stats { position: absolute; top: 10px; right: 10px; z-index: 12; }
-    .stats-badge { background: rgba(12,12,32,0.94); backdrop-filter: blur(18px); border: 1px solid rgba(100,120,255,0.16); border-radius: 8px; padding: 5px 11px; font-size: 0.75em; color: #8895b3; box-shadow: 0 4px 14px rgba(0,0,0,0.35); white-space: nowrap; }
-    .stats-badge b { color: #6b8cff; font-weight: 700; }
+    .sb { background: rgba(10,10,28,0.93); backdrop-filter: blur(20px); border: 1px solid rgba(80,100,220,0.14); border-radius: 8px; padding: 5px 11px; font-size: 0.74em; color: #7a8aaa; box-shadow: 0 4px 14px rgba(0,0,0,0.35); white-space: nowrap; }
+    .sb b { color: #5a7ad4; font-weight: 700; }
 
     /* ===== CATEGORY LEGEND (bottom-left) ===== */
-    .hud-cat { position: absolute; bottom: 10px; left: 10px; z-index: 12; width: 185px; }
-    .cat-body { padding: 4px 10px 7px; max-height: 175px; overflow-y: auto; }
-    .legend-item { display: flex; align-items: center; gap: 5px; font-size: 0.7em; color: #8895b3; margin: 1px 0; }
-    .legend-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+    .hud-cat { position: absolute; bottom: 10px; left: 10px; z-index: 12; width: 190px; }
+    .cat-b { padding: 4px 10px 7px; max-height: 180px; overflow-y: auto; }
+    .li { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #7a8aaa; margin: 1px 0; cursor: pointer; padding: 1px 2px; border-radius: 3px; transition: background 0.15s; }
+    .li:hover { background: rgba(80,100,220,0.1); }
+    .ld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
     /* ===== EDGE LEGEND (bottom-right) ===== */
-    .hud-edge { position: absolute; bottom: 10px; right: 10px; z-index: 12; width: 170px; }
-    .edge-body { padding: 3px 10px 7px; max-height: 200px; overflow-y: auto; }
-    .edge-item { display: flex; align-items: center; gap: 5px; font-size: 0.7em; color: #8895b3; margin: 1.5px 0; }
-    .edge-line { width: 16px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+    .hud-edge { position: absolute; bottom: 10px; right: 10px; z-index: 12; width: 172px; }
+    .edge-b { padding: 3px 10px 7px; max-height: 210px; overflow-y: auto; }
+    .ei { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #7a8aaa; margin: 1.5px 0; }
+    .el { width: 15px; height: 3px; border-radius: 2px; flex-shrink: 0; }
 
     /* ===== SCROLLBAR ===== */
-    .cat-body::-webkit-scrollbar, .edge-body::-webkit-scrollbar { width: 4px; }
-    .cat-body::-webkit-scrollbar-track, .edge-body::-webkit-scrollbar-track { background: transparent; }
-    .cat-body::-webkit-scrollbar-thumb, .edge-body::-webkit-scrollbar-thumb { background: rgba(100,120,255,0.22); border-radius: 2px; }
+    .cat-b::-webkit-scrollbar, .edge-b::-webkit-scrollbar { width: 4px; }
+    .cat-b::-webkit-scrollbar-track, .edge-b::-webkit-scrollbar-track { background: transparent; }
+    .cat-b::-webkit-scrollbar-thumb, .edge-b::-webkit-scrollbar-thumb { background: rgba(80,100,220,0.2); border-radius: 2px; }
 
     /* ===== TOOLTIP ===== */
-    .tooltip { position: fixed; background: rgba(8,8,25,0.96); backdrop-filter: blur(14px); color: #dce4f4; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(100,120,255,0.2); font-size: 0.8em; pointer-events: none; z-index: 100; max-width: 320px; line-height: 1.5; display: none; box-shadow: 0 6px 24px rgba(0,0,0,0.55); }
-
-    /* ===== D3 ELEMENTS ===== */
-    .node-label { font-size: 9px; fill: #8a9ab5; pointer-events: none; font-weight: 600; }
-    .person-label { fill: #6a7a95; }
-    .link { stroke-width: 1.2px; }
-
-    /* ===== MINIMAP ===== */
-    .minimap { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); z-index: 11; background: rgba(12,12,32,0.88); border: 1px solid rgba(100,120,255,0.15); border-radius: 7px; overflow: hidden; box-shadow: 0 4px 14px rgba(0,0,0,0.4); opacity: 0.65; transition: opacity 0.2s; }
-    .minimap:hover { opacity: 1; }
-    .minimap canvas { display: block; }
+    #tip {
+      position: fixed; background: rgba(6,6,22,0.97); backdrop-filter: blur(16px);
+      color: #d8e2f4; padding: 10px 14px; border-radius: 9px;
+      border: 1px solid rgba(80,100,220,0.2); font-size: 0.79em;
+      pointer-events: none; z-index: 200; max-width: 340px;
+      line-height: 1.55; display: none;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.6);
+    }
+    #tip strong { color: #a5c8ff; }
+    #tip .tip-cat { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; margin-top: 3px; }
 
     /* ===== LOADING ===== */
-    .loading-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(10,10,26,0.6); z-index: 20; pointer-events: none; transition: opacity 0.4s; }
-    .loading-overlay.hidden { opacity: 0; }
-    .loading-spinner { width: 36px; height: 36px; border: 3px solid rgba(100,120,255,0.12); border-top-color: #6b8cff; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    .ld-overlay {
+      position: absolute; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 12px;
+      background: rgba(8,8,24,0.75); z-index: 25; transition: opacity 0.5s;
+    }
+    .ld-overlay.off { opacity: 0; pointer-events: none; }
+    .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(80,100,220,0.1); border-top-color: #5a7ad4; border-radius: 50%; animation: spin 0.75s linear infinite; }
+    .ld-text { color: #5a7ad4; font-size: 0.82em; font-weight: 500; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 900px) {
-      .hud-search input { width: 130px; }
-      .hud-ctrl { width: 175px; }
-      .hud-cat { width: 155px; }
-      .hud-edge { width: 145px; }
+      .hud-search input { width: 135px; }
+      .hud-ctrl { width: 180px; }
+      .hud-cat { width: 160px; }
+      .hud-edge { width: 148px; }
     }
     @media (max-width: 600px) {
       .hud-search { display: none; }
-      .hud-ctrl { width: 155px; }
-      .hud-cat, .hud-edge { width: 130px; }
-      .minimap { display: none; }
+      .hud-ctrl { width: 160px; }
+      .hud-cat, .hud-edge { width: 135px; }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav id="navbar"></nav>
 
-  <!-- Graph area (everything below nav) -->
-  <div class="graph-wrapper">
-    <svg id="graph"></svg>
+  <div class="graph-wrap">
+    <!-- Cytoscape canvas container -->
+    <div id="cy"></div>
 
     <!-- Loading -->
-    <div class="loading-overlay" id="loading"><div class="loading-spinner"></div></div>
+    <div class="ld-overlay" id="loading">
+      <div class="ld-spinner"></div>
+      <div class="ld-text" id="ld-text">Loading graph data...</div>
+    </div>
 
-    <!-- HUD: Controls (top-left) -->
+    <!-- HUD: Controls -->
     <div class="hud-ctrl">
-      <div class="g-panel" id="ctrl-panel">
-        <div class="g-panel-header" id="ctrl-toggle">
+      <div class="gp" id="ctrl-p">
+        <div class="gp-h" id="ctrl-t">
           <h3><i class="fa-solid fa-sliders"></i> Controls</h3>
           <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
         </div>
-        <div class="g-panel-body ctrl-body">
+        <div class="gp-b cb">
           <label>Country</label>
-          <select id="country-select"><option value="">All Countries</option></select>
+          <select id="f-country"><option value="">All Countries</option></select>
           <label>Category</label>
-          <select id="category-select"><option value="">All Categories</option></select>
-          <label>Node Size</label>
-          <input type="range" id="node-size" min="2" max="20" value="7" />
-          <label>Link Distance</label>
-          <input type="range" id="link-dist" min="20" max="300" value="90" />
-          <div class="ctrl-checks">
-            <label><input type="checkbox" id="show-people" checked /> People</label>
+          <select id="f-cat"><option value="">All Categories</option></select>
+          <div class="layout-row">
+            <label>Layout Algorithm</label>
+            <select id="f-layout">
+              <option value="fcose" selected>fCoSE (best spread)</option>
+              <option value="cose">CoSE (fast)</option>
+              <option value="circle">Circle</option>
+              <option value="concentric">Concentric</option>
+              <option value="grid">Grid</option>
+            </select>
+          </div>
+          <label>Node Scale</label>
+          <input type="range" id="node-scale" min="5" max="40" value="14" />
+          <div class="chks">
+            <label><input type="checkbox" id="show-people" /> People</label>
             <label><input type="checkbox" id="show-labels" checked /> Labels</label>
           </div>
-          <div class="ctrl-btns">
-            <button id="reload-btn"><i class="fa-solid fa-rotate"></i> Reload</button>
-            <button id="reset-btn"><i class="fa-solid fa-expand"></i> Reset</button>
+          <div class="btns">
+            <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
+            <button id="btn-fit"><i class="fa-solid fa-expand"></i> Fit</button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- HUD: Search (top-center) -->
+    <!-- HUD: Search -->
     <div class="hud-search">
-      <input type="text" id="search-input" placeholder="Search nodes..." />
-      <button id="search-btn"><i class="fa-solid fa-search"></i></button>
-      <span class="s-count" id="search-count"></span>
+      <input type="text" id="s-input" placeholder="Search nodes..." />
+      <button id="s-btn"><i class="fa-solid fa-search"></i></button>
+      <span class="sc" id="s-count"></span>
     </div>
 
-    <!-- HUD: Stats (top-right) -->
+    <!-- HUD: Stats -->
     <div class="hud-stats">
-      <div class="stats-badge" id="node-count"><b>Loading...</b></div>
+      <div class="sb" id="stats"><b>Loading...</b></div>
     </div>
 
-    <!-- HUD: Category legend (bottom-left) -->
+    <!-- HUD: Category legend -->
     <div class="hud-cat">
-      <div class="g-panel" id="cat-panel">
-        <div class="g-panel-header" id="cat-toggle">
+      <div class="gp" id="cat-p">
+        <div class="gp-h" id="cat-t">
           <strong><i class="fa-solid fa-palette"></i> Categories</strong>
           <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
         </div>
-        <div class="g-panel-body cat-body" id="cat-body"></div>
+        <div class="gp-b cat-b" id="cat-b"></div>
       </div>
     </div>
 
-    <!-- HUD: Edge legend (bottom-right) -->
+    <!-- HUD: Edge legend -->
     <div class="hud-edge">
-      <div class="g-panel" id="edge-panel">
-        <div class="g-panel-header" id="edge-toggle">
+      <div class="gp" id="edge-p">
+        <div class="gp-h" id="edge-t">
           <strong><i class="fa-solid fa-link"></i> Connections</strong>
           <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
         </div>
-        <div class="g-panel-body edge-body" id="edge-body"></div>
+        <div class="gp-b edge-b" id="edge-b"></div>
       </div>
     </div>
 
-    <!-- Minimap -->
-    <div class="minimap" id="minimap"><canvas id="minimap-canvas" width="150" height="100"></canvas></div>
-
     <!-- Tooltip -->
-    <div class="tooltip" id="tooltip"></div>
+    <div id="tip"></div>
   </div>
 
   <script src="app.js"></script>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
     initPage('jewish');
     setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization.' });
 
     // ─── Collapsible panels ──────────────────────────────
-    document.getElementById('ctrl-toggle').onclick = () => document.getElementById('ctrl-panel').classList.toggle('collapsed');
-    document.getElementById('cat-toggle').onclick = () => document.getElementById('cat-panel').classList.toggle('collapsed');
-    document.getElementById('edge-toggle').onclick = () => document.getElementById('edge-panel').classList.toggle('collapsed');
+    ['ctrl','cat','edge'].forEach(k => {
+      document.getElementById(k+'-t').onclick = () => document.getElementById(k+'-p').classList.toggle('shut');
+    });
 
     // ─── Color maps ──────────────────────────────────────
-    const categoryColors = {
+    const CC = {
       'Entertainment & Media': '#e74c3c', 'Religion & Synagogues': '#9b59b6',
       'Culture & Arts': '#e67e22', 'Technology': '#2ecc71',
       'Community & Social Organizations': '#3498db', 'Education & Academia': '#1abc9c',
@@ -237,13 +258,12 @@
       'Advertising & PR': '#d81b60', 'Telecommunications': '#7c4dff',
       'Utilities & Energy': '#66bb6a', 'People': '#ffab40'
     };
-    const defaultColor = '#546e7a';
-    const personColor = '#ffab40';
+    const DC = '#546e7a', PC = '#ffab40';
 
-    const edgeTypeColors = {
+    const EC = {
       'financial': '#ff9800', 'shared-person': '#9c27b0', 'political': '#f44336',
       'organizational': '#2196f3', 'ideological': '#4caf50', 'historical': '#795548',
-      'legal': '#607d8b', 'related': '#90a4ae', 'partnership': '#00bcd4',
+      'legal': '#607d8b', 'related': '#78909c', 'partnership': '#00bcd4',
       'subsidiary': '#ff5722', 'funding': '#ffc107', 'membership': '#3f51b5',
       'affiliation': '#e91e63', 'leadership': '#8e44ad', 'collaboration': '#1abc9c',
       'person-affiliation': '#ffab40', 'industry peer': '#78909c',
@@ -259,307 +279,497 @@
       'diplomatic partner': '#f06292', 'historical support': '#a1887f',
       'parent organization': '#4fc3f7', 'research partner': '#ba68c8'
     };
-    const defaultEdgeColor = '#334';
+    const DEC = '#2a2a44';
 
     // ─── Populate dropdowns ──────────────────────────────
-    let catReady = false, countryReady = false;
-    function tryLoad() { if (catReady && countryReady) loadGraph(); }
+    let catOk = 0, cOk = 0;
+    function tryLoad() { if (catOk && cOk) loadGraph(); }
 
-    fetch('/api/jewish/categories').then(r => r.json()).then(d => {
-      const sel = document.getElementById('category-select');
+    fetch('/api/jewish/categories').then(r=>r.json()).then(d => {
+      const s = document.getElementById('f-cat');
       Object.keys(d.categories).sort().forEach(c => {
         const o = document.createElement('option');
         o.value = c; o.textContent = c + ' (' + d.categories[c].count + ')';
-        sel.appendChild(o);
+        s.appendChild(o);
       });
-      catReady = true; tryLoad();
+      catOk = 1; tryLoad();
     });
-    fetch('/api/countries').then(r => r.json()).then(d => {
-      const sel = document.getElementById('country-select');
+    fetch('/api/countries').then(r=>r.json()).then(d => {
+      const s = document.getElementById('f-country');
       (Array.isArray(d) ? d : d.countries || []).sort().forEach(c => {
         const o = document.createElement('option');
         o.value = c; o.textContent = c;
-        sel.appendChild(o);
+        s.appendChild(o);
       });
-      countryReady = true; tryLoad();
+      cOk = 1; tryLoad();
     });
 
-    // ─── Graph state ─────────────────────────────────────
-    let simulation, svgG, zoom, allNodes = [];
+    // ─── Cytoscape instance ─────────────────────────────
+    let cy = null;
 
     function loadGraph() {
-      const country = document.getElementById('country-select').value;
-      const category = document.getElementById('category-select').value;
-      const showPeople = document.getElementById('show-people').checked;
-      let url = '/api/graph?people=' + (showPeople ? '1' : '0');
+      const country = document.getElementById('f-country').value;
+      const cat = document.getElementById('f-cat').value;
+      const ppl = document.getElementById('show-people').checked;
+      let url = '/api/graph?people=' + (ppl ? '1' : '0');
       if (country) url += '&country=' + encodeURIComponent(country);
-      if (category) url += '&category=' + encodeURIComponent(category);
+      if (cat) url += '&category=' + encodeURIComponent(cat);
 
-      document.getElementById('loading').classList.remove('hidden');
-      document.getElementById('node-count').innerHTML = '<b>Loading...</b>';
+      const ld = document.getElementById('loading');
+      const lt = document.getElementById('ld-text');
+      ld.classList.remove('off');
+      lt.textContent = 'Fetching graph data...';
+      document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
       fetch(url).then(r => r.json()).then(data => {
-        renderGraph(data);
-        document.getElementById('loading').classList.add('hidden');
+        lt.textContent = 'Building layout for ' + data.nodes.length + ' nodes...';
+        // Small delay so loading text renders before heavy computation
+        setTimeout(() => buildGraph(data), 60);
       });
     }
 
-    function renderGraph(data) {
-      const svg = d3.select('#graph');
-      svg.selectAll('*').remove();
-      if (simulation) { simulation.stop(); simulation = null; }
+    function buildGraph(data) {
+      // Convert API data to Cytoscape format
+      const elements = [];
+      const edgeIdCounter = {};
 
-      const wrapper = document.querySelector('.graph-wrapper');
-      const width = wrapper.clientWidth;
-      const height = wrapper.clientHeight;
-      svg.attr('viewBox', `0 0 ${width} ${height}`);
+      data.nodes.forEach(n => {
+        elements.push({
+          group: 'nodes',
+          data: {
+            id: n.id, name: n.name, category: n.category || '',
+            country: n.country || '', entryType: n.type || '',
+            nodeType: n.nodeType || 'entry', personId: n.personId || '',
+            role: n.role || '', color: n.nodeType === 'person' ? PC : (CC[n.category] || DC)
+          }
+        });
+      });
 
-      allNodes = data.nodes;
+      data.links.forEach(l => {
+        const key = l.source + '|' + l.target + '|' + (l.type||'');
+        edgeIdCounter[key] = (edgeIdCounter[key] || 0) + 1;
+        elements.push({
+          group: 'edges',
+          data: {
+            id: key + '#' + edgeIdCounter[key],
+            source: l.source, target: l.target,
+            edgeType: l.type || 'related',
+            description: l.description || '',
+            color: EC[l.type] || DEC
+          }
+        });
+      });
+
       const entryNodes = data.nodes.filter(n => n.nodeType !== 'person');
       const personNodes = data.nodes.filter(n => n.nodeType === 'person');
       const totalNodes = data.nodes.length;
 
       // Stats
-      document.getElementById('node-count').innerHTML =
-        '<b>' + entryNodes.length + '</b> entries &middot; <b>' + personNodes.length + '</b> people &middot; <b>' + data.links.length + '</b> links';
+      document.getElementById('stats').innerHTML =
+        '<b>' + entryNodes.length + '</b> entries · <b>' + personNodes.length + '</b> people · <b>' + data.links.length + '</b> links';
 
-      // ── Category legend ──
-      const cats = [...new Set(data.nodes.map(n => n.category || n.group))].filter(Boolean).sort();
-      const catBody = document.getElementById('cat-body');
-      catBody.innerHTML = '';
+      // Category legend
+      const cats = [...new Set(data.nodes.map(n => n.category))].filter(Boolean).sort();
+      const catB = document.getElementById('cat-b');
+      catB.innerHTML = '';
       cats.forEach(c => {
-        const row = document.createElement('div');
-        row.className = 'legend-item';
-        const dot = document.createElement('div');
-        dot.className = 'legend-dot';
-        dot.style.background = categoryColors[c] || defaultColor;
-        if (c === 'People') { dot.style.borderRadius = '2px'; dot.style.transform = 'rotate(45deg)'; dot.style.width = '7px'; dot.style.height = '7px'; }
-        row.appendChild(dot);
-        row.appendChild(document.createTextNode(c));
-        catBody.appendChild(row);
+        const r = document.createElement('div'); r.className = 'li';
+        const d = document.createElement('div'); d.className = 'ld';
+        d.style.background = CC[c] || DC;
+        if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
+        r.appendChild(d);
+        r.appendChild(document.createTextNode(c));
+        catB.appendChild(r);
       });
 
-      // ── Edge legend ──
-      const edgeTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
-      const edgeBody = document.getElementById('edge-body');
-      edgeBody.innerHTML = '';
-      edgeTypes.forEach(t => {
-        const row = document.createElement('div');
-        row.className = 'edge-item';
-        const line = document.createElement('div');
-        line.className = 'edge-line';
-        line.style.background = edgeTypeColors[t] || defaultEdgeColor;
-        row.appendChild(line);
-        row.appendChild(document.createTextNode(t));
-        edgeBody.appendChild(row);
+      // Edge legend
+      const eTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
+      const edgeB = document.getElementById('edge-b');
+      edgeB.innerHTML = '';
+      eTypes.forEach(t => {
+        const r = document.createElement('div'); r.className = 'ei';
+        const l = document.createElement('div'); l.className = 'el';
+        l.style.background = EC[t] || DEC;
+        r.appendChild(l);
+        r.appendChild(document.createTextNode(t));
+        edgeB.appendChild(r);
       });
 
-      // ── D3 ──
-      zoom = d3.zoom().scaleExtent([0.03, 12]).on('zoom', onZoom);
-      svg.call(zoom);
-      svgG = svg.append('g');
+      // Destroy previous instance
+      if (cy) { cy.destroy(); cy = null; }
 
-      const nodeSize = +document.getElementById('node-size').value;
-      const linkDist = +document.getElementById('link-dist').value;
-      const charge = totalNodes > 2000 ? -22 : totalNodes > 500 ? -40 : -65;
-      const decay = totalNodes > 2000 ? 0.04 : 0.023;
+      // ── Layout config ──
+      const layoutName = document.getElementById('f-layout').value;
+      const baseScale = +document.getElementById('node-scale').value;
+      let layoutOpts;
 
-      simulation = d3.forceSimulation(data.nodes)
-        .force('link', d3.forceLink(data.links).id(d => d.id).distance(d =>
-          d.type === 'person-affiliation' ? linkDist * 0.3 : linkDist
-        ))
-        .force('charge', d3.forceManyBody().strength(charge))
-        .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collision', d3.forceCollide().radius(d => d.nodeType === 'person' ? nodeSize * 0.35 + 1 : nodeSize + 1))
-        .alphaDecay(decay);
+      if (layoutName === 'fcose') {
+        layoutOpts = {
+          name: 'fcose',
+          quality: totalNodes > 1500 ? 'default' : 'default',
+          randomize: true,
+          animate: false,
+          fit: true,
+          padding: 40,
+          nodeDimensionsIncludeLabels: false,
+          uniformNodeDimensions: false,
+          packComponents: true,
+          nodeRepulsion: totalNodes > 1500 ? 12000 : 8000,
+          idealEdgeLength: totalNodes > 1500 ? 120 : 90,
+          edgeElasticity: 0.4,
+          nestingFactor: 0.1,
+          gravity: 0.2,
+          gravityRange: 3.8,
+          numIter: totalNodes > 1500 ? 3000 : 2500,
+          tile: true,
+          tilingPaddingVertical: 20,
+          tilingPaddingHorizontal: 20
+        };
+      } else if (layoutName === 'cose') {
+        layoutOpts = {
+          name: 'cose',
+          animate: false,
+          fit: true,
+          padding: 40,
+          nodeRepulsion: function() { return 9000; },
+          idealEdgeLength: function() { return 100; },
+          edgeElasticity: function() { return 100; },
+          gravity: 0.3,
+          numIter: 1500,
+          nodeOverlap: 20
+        };
+      } else if (layoutName === 'concentric') {
+        layoutOpts = {
+          name: 'concentric',
+          fit: true,
+          padding: 30,
+          concentric: function(node) { return node.degree(); },
+          levelWidth: function() { return 3; },
+          animate: false,
+          minNodeSpacing: 20
+        };
+      } else if (layoutName === 'circle') {
+        layoutOpts = { name: 'circle', fit: true, padding: 30, animate: false };
+      } else {
+        layoutOpts = { name: 'grid', fit: true, padding: 30, animate: false, condense: true };
+      }
 
-      // ── Links ──
-      const link = svgG.append('g').attr('class', 'g-links')
-        .selectAll('line').data(data.links).join('line')
-        .attr('class', 'link')
-        .attr('stroke', d => edgeTypeColors[d.type] || defaultEdgeColor)
-        .attr('stroke-opacity', d => d.type === 'person-affiliation' ? 0.12 : 0.3)
-        .attr('stroke-width', d => d.type === 'person-affiliation' ? 0.5 : 1)
-        .on('mouseover', (e, d) => {
-          d3.select(e.target).attr('stroke-opacity', 1).attr('stroke-width', 2.5);
-          showTooltip(e, '<strong>' + d.type + '</strong><br/>' + (d.description || ''));
-        })
-        .on('mouseout', (e, d) => {
-          d3.select(e.target)
-            .attr('stroke-opacity', d.type === 'person-affiliation' ? 0.12 : 0.3)
-            .attr('stroke-width', d.type === 'person-affiliation' ? 0.5 : 1);
-          hideTooltip();
-        });
+      // ── Create Cytoscape ──
+      cy = cytoscape({
+        container: document.getElementById('cy'),
+        elements: elements,
+        wheelSensitivity: 0.3,
+        minZoom: 0.02,
+        maxZoom: 8,
+        pixelRatio: 'auto',
+        textureOnViewport: totalNodes > 800,
+        hideEdgesOnViewport: totalNodes > 1200,
+        hideLabelsOnViewport: totalNodes > 1500,
 
-      // ── Entry nodes (circles) ──
-      const entryNode = svgG.append('g').attr('class', 'g-entries')
-        .selectAll('circle').data(entryNodes).join('circle')
-        .attr('r', nodeSize)
-        .attr('fill', d => categoryColors[d.category] || defaultColor)
-        .attr('stroke', 'rgba(200,210,240,0.35)')
-        .attr('stroke-width', 0.7)
-        .style('cursor', 'pointer')
-        .on('mouseover', (e, d) => {
-          d3.select(e.target).attr('r', nodeSize * 1.5).attr('stroke', '#fff').attr('stroke-width', 2);
-          showTooltip(e, '<strong>' + d.name + '</strong><br/><i class="fa-solid fa-building"></i> ' + d.type + '<br/><i class="fa-solid fa-globe"></i> ' + d.country + '<br/><i class="fa-solid fa-tag"></i> ' + d.category);
-        })
-        .on('mouseout', (e) => {
-          d3.select(e.target).attr('r', nodeSize).attr('stroke', 'rgba(200,210,240,0.35)').attr('stroke-width', 0.7);
-          hideTooltip();
-        })
-        .on('click', (e, d) => window.open('entry.html?religion=jewish&id=' + encodeURIComponent(d.id), '_blank'))
-        .call(makeDrag());
-
-      // ── Person nodes (proper diamonds via polygon) ──
-      const pSize = nodeSize * 0.5;
-      const personNode = svgG.append('g').attr('class', 'g-people')
-        .selectAll('polygon').data(personNodes).join('polygon')
-        .attr('points', diamondPts(pSize))
-        .attr('fill', personColor)
-        .attr('stroke', 'rgba(200,210,240,0.3)')
-        .attr('stroke-width', 0.5)
-        .style('cursor', 'pointer')
-        .on('mouseover', (e, d) => {
-          d3.select(e.target).attr('points', diamondPts(pSize * 1.6)).attr('stroke', '#fff').attr('stroke-width', 1.5);
-          showTooltip(e, '<strong><i class="fa-solid fa-user"></i> ' + d.name + '</strong><br/><i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/><i class="fa-solid fa-globe"></i> ' + d.country);
-        })
-        .on('mouseout', (e) => {
-          d3.select(e.target).attr('points', diamondPts(pSize)).attr('stroke', 'rgba(200,210,240,0.3)').attr('stroke-width', 0.5);
-          hideTooltip();
-        })
-        .on('click', (e, d) => window.open('person.html?id=' + encodeURIComponent(d.personId), '_blank'))
-        .call(makeDrag());
-
-      function diamondPts(s) { return '0,' + (-s) + ' ' + s + ',0 0,' + s + ' ' + (-s) + ',0'; }
-
-      // ── Labels ──
-      const showLabels = document.getElementById('show-labels').checked;
-      const entryLabels = svgG.append('g').attr('class', 'g-elabels')
-        .selectAll('text').data(entryNodes).join('text')
-        .attr('class', 'node-label')
-        .text(d => d.name.length > 22 ? d.name.substring(0, 22) + '\u2026' : d.name)
-        .attr('dx', nodeSize + 3).attr('dy', 3)
-        .style('display', showLabels ? 'block' : 'none')
-        .style('font-size', totalNodes > 1000 ? '7px' : '9px');
-
-      const personLabels = svgG.append('g').attr('class', 'g-plabels')
-        .selectAll('text').data(personNodes).join('text')
-        .attr('class', 'node-label person-label')
-        .text(d => d.name.length > 18 ? d.name.substring(0, 18) + '\u2026' : d.name)
-        .attr('dx', pSize + 4).attr('dy', 3)
-        .style('display', showLabels && totalNodes < 300 ? 'block' : 'none')
-        .style('font-size', '7px');
-
-      // ── Tick ──
-      simulation.on('tick', () => {
-        link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
-            .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-        entryNode.attr('cx', d => d.x).attr('cy', d => d.y);
-        personNode.attr('transform', d => 'translate(' + d.x + ',' + d.y + ')');
-        entryLabels.attr('x', d => d.x).attr('y', d => d.y);
-        personLabels.attr('x', d => d.x).attr('y', d => d.y);
+        style: [
+          // Entry nodes
+          {
+            selector: 'node[nodeType = "entry"]',
+            style: {
+              'shape': 'ellipse',
+              'background-color': 'data(color)',
+              'border-width': 1,
+              'border-color': 'rgba(180,200,255,0.2)',
+              'width': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
+              'height': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
+              'label': 'data(name)',
+              'font-size': function(n) { return Math.max(6, Math.min(11, 6 + n.degree() * 0.3)); },
+              'color': '#8a9cc0',
+              'text-valign': 'bottom',
+              'text-halign': 'center',
+              'text-margin-y': 3,
+              'text-max-width': 90,
+              'text-wrap': 'ellipsis',
+              'min-zoomed-font-size': 10,
+              'text-background-color': '#080818',
+              'text-background-opacity': 0.7,
+              'text-background-padding': '1px',
+              'text-background-shape': 'roundrectangle',
+              'transition-property': 'border-width, border-color, width, height',
+              'transition-duration': '0.15s'
+            }
+          },
+          // Person nodes
+          {
+            selector: 'node[nodeType = "person"]',
+            style: {
+              'shape': 'diamond',
+              'background-color': PC,
+              'border-width': 0.8,
+              'border-color': 'rgba(255,200,100,0.25)',
+              'width': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
+              'height': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
+              'label': 'data(name)',
+              'font-size': 6,
+              'color': '#7a8a60',
+              'text-valign': 'bottom',
+              'text-halign': 'center',
+              'text-margin-y': 2,
+              'text-max-width': 70,
+              'text-wrap': 'ellipsis',
+              'min-zoomed-font-size': 14,
+              'text-background-color': '#080818',
+              'text-background-opacity': 0.65,
+              'text-background-padding': '1px',
+              'text-background-shape': 'roundrectangle',
+              'transition-property': 'border-width, border-color, width, height',
+              'transition-duration': '0.15s'
+            }
+          },
+          // Edges
+          {
+            selector: 'edge',
+            style: {
+              'line-color': 'data(color)',
+              'width': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.4 : 0.8; },
+              'opacity': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.12 : 0.28; },
+              'curve-style': 'haystack',
+              'haystack-radius': 0.5
+            }
+          },
+          // Hover state for nodes
+          {
+            selector: 'node:active, node.hover',
+            style: {
+              'border-width': 3,
+              'border-color': '#fff',
+              'z-index': 999,
+              'min-zoomed-font-size': 0,
+              'text-background-opacity': 0.9
+            }
+          },
+          // Highlighted neighbor edges
+          {
+            selector: 'edge.neighbor',
+            style: {
+              'opacity': 0.85,
+              'width': 2,
+              'z-index': 100
+            }
+          },
+          // Highlighted neighbor nodes
+          {
+            selector: 'node.neighbor',
+            style: {
+              'border-width': 2,
+              'border-color': '#a5c8ff',
+              'min-zoomed-font-size': 0,
+              'z-index': 100
+            }
+          },
+          // Dimmed (non-neighbor) when a node is selected
+          {
+            selector: 'node.dimmed',
+            style: { 'opacity': 0.12 }
+          },
+          {
+            selector: 'edge.dimmed',
+            style: { 'opacity': 0.03 }
+          },
+          // Search highlight
+          {
+            selector: 'node.found',
+            style: {
+              'border-width': 3,
+              'border-color': '#ffeb3b',
+              'z-index': 999,
+              'min-zoomed-font-size': 0
+            }
+          }
+        ],
+        layout: layoutOpts
       });
 
-      simulation.on('end', drawMinimap);
-      setTimeout(drawMinimap, 3500);
+      // ── Label visibility via checkbox ──
+      if (!document.getElementById('show-labels').checked) {
+        cy.nodes().style('label', '');
+      }
 
-      // ── Zoom handler ──
-      function onZoom(e) {
-        svgG.attr('transform', e.transform);
-        if (showLabels) {
-          const k = e.transform.k;
-          personLabels.style('display', k > 1.5 || totalNodes < 300 ? 'block' : 'none');
-          entryLabels.style('display', k < 0.25 ? 'none' : 'block');
+      // ── Events ──
+
+      // Hover: highlight neighborhood
+      let hoverTimeout;
+      cy.on('mouseover', 'node', function(e) {
+        clearTimeout(hoverTimeout);
+        const node = e.target;
+        node.addClass('hover');
+        // Show tooltip
+        const d = node.data();
+        const pos = e.renderedPosition || e.position;
+        const rect = document.getElementById('cy').getBoundingClientRect();
+        let html;
+        if (d.nodeType === 'person') {
+          html = '<strong><i class="fa-solid fa-user"></i> ' + d.name + '</strong><br/>'
+            + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + d.country
+            + '<br/><span style="color:#7a8aaa;font-size:0.85em">' + node.degree() + ' connections</span>';
+        } else {
+          html = '<strong>' + d.name + '</strong><br/>'
+            + '<i class="fa-solid fa-building"></i> ' + d.entryType + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + d.country + '<br/>'
+            + '<span class="tip-cat" style="background:' + (CC[d.category]||DC) + '30;color:' + (CC[d.category]||DC) + '">' + d.category + '</span>'
+            + '<br/><span style="color:#7a8aaa;font-size:0.85em">' + node.degree() + ' connections</span>';
         }
-      }
-
-      function makeDrag() {
-        return d3.drag()
-          .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
-          .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; });
-      }
-    }
-
-    // ─── Minimap ─────────────────────────────────────────
-    function drawMinimap() {
-      const canvas = document.getElementById('minimap-canvas');
-      const ctx = canvas.getContext('2d');
-      const W = 150, H = 100;
-      ctx.clearRect(0, 0, W, H);
-      if (!allNodes.length) return;
-      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-      allNodes.forEach(n => { if (n.x < minX) minX = n.x; if (n.x > maxX) maxX = n.x; if (n.y < minY) minY = n.y; if (n.y > maxY) maxY = n.y; });
-      const rX = (maxX - minX) || 1, rY = (maxY - minY) || 1;
-      const sc = Math.min(130 / rX, 80 / rY);
-      const ox = (W - rX * sc) / 2, oy = (H - rY * sc) / 2;
-      allNodes.forEach(n => {
-        ctx.fillStyle = n.nodeType === 'person' ? 'rgba(255,171,64,0.5)' : (categoryColors[n.category] || defaultColor);
-        ctx.globalAlpha = 0.6;
-        ctx.fillRect((n.x - minX) * sc + ox - 0.7, (n.y - minY) * sc + oy - 0.7, 1.4, 1.4);
+        const tip = document.getElementById('tip');
+        tip.innerHTML = html;
+        tip.style.display = 'block';
+        tip.style.left = Math.min(rect.left + pos.x + 18, window.innerWidth - 360) + 'px';
+        tip.style.top = Math.min(rect.top + pos.y - 10, window.innerHeight - 120) + 'px';
       });
-      ctx.globalAlpha = 1;
-    }
 
-    // ─── Tooltip ─────────────────────────────────────────
-    const tooltip = document.getElementById('tooltip');
-    function showTooltip(e, html) {
-      tooltip.style.display = 'block';
-      tooltip.innerHTML = html;
-      tooltip.style.left = Math.min(e.pageX + 15, window.innerWidth - 340) + 'px';
-      tooltip.style.top = Math.min(e.pageY - 10, window.innerHeight - 100) + 'px';
+      cy.on('mouseout', 'node', function(e) {
+        e.target.removeClass('hover');
+        document.getElementById('tip').style.display = 'none';
+        hoverTimeout = setTimeout(clearHighlight, 100);
+      });
+
+      // Click: focus neighborhood (dim everything else)
+      cy.on('tap', 'node', function(e) {
+        e.stopPropagation();
+        const node = e.target;
+        const d = node.data();
+
+        // Double-tap = navigate
+        if (node._lastTap && Date.now() - node._lastTap < 400) {
+          if (d.nodeType === 'person') {
+            window.open('person.html?id=' + encodeURIComponent(d.personId), '_blank');
+          } else {
+            window.open('entry.html?religion=jewish&id=' + encodeURIComponent(d.id), '_blank');
+          }
+          return;
+        }
+        node._lastTap = Date.now();
+
+        // Focus neighborhood
+        clearHighlight();
+        const neighborhood = node.neighborhood().add(node);
+        cy.elements().not(neighborhood).addClass('dimmed');
+        neighborhood.edges().addClass('neighbor');
+        neighborhood.nodes().not(node).addClass('neighbor');
+        node.addClass('hover');
+      });
+
+      // Tap background = clear focus
+      cy.on('tap', function(e) {
+        if (e.target === cy) clearHighlight();
+      });
+
+      function clearHighlight() {
+        cy.elements().removeClass('dimmed neighbor hover found');
+      }
+
+      // Edge hover tooltip
+      cy.on('mouseover', 'edge', function(e) {
+        const d = e.target.data();
+        const pos = e.renderedPosition || { x: 0, y: 0 };
+        const rect = document.getElementById('cy').getBoundingClientRect();
+        const tip = document.getElementById('tip');
+        tip.innerHTML = '<strong>' + d.edgeType + '</strong>' + (d.description ? '<br/>' + d.description : '');
+        tip.style.display = 'block';
+        tip.style.left = Math.min(rect.left + pos.x + 18, window.innerWidth - 360) + 'px';
+        tip.style.top = Math.min(rect.top + pos.y - 10, window.innerHeight - 120) + 'px';
+      });
+      cy.on('mouseout', 'edge', function() {
+        document.getElementById('tip').style.display = 'none';
+      });
+
+      // Layout done
+      cy.one('layoutstop', function() {
+        document.getElementById('loading').classList.add('off');
+        cy.fit(undefined, 50);
+      });
+
+      // Fallback hide loading after timeout
+      setTimeout(() => document.getElementById('loading').classList.add('off'), 15000);
     }
-    function hideTooltip() { tooltip.style.display = 'none'; }
 
     // ─── Controls ────────────────────────────────────────
-    document.getElementById('reload-btn').onclick = loadGraph;
-    document.getElementById('reset-btn').onclick = () => {
-      d3.select('#graph').transition().duration(500).call(zoom.transform, d3.zoomIdentity);
-    };
-    document.getElementById('show-labels').onchange = function () {
-      d3.selectAll('.node-label').style('display', this.checked ? 'block' : 'none');
-      if (!this.checked) d3.selectAll('.person-label').style('display', 'none');
-    };
+    document.getElementById('btn-reload').onclick = loadGraph;
+    document.getElementById('btn-fit').onclick = () => { if (cy) cy.fit(undefined, 50); };
     document.getElementById('show-people').onchange = loadGraph;
-    document.getElementById('country-select').onchange = loadGraph;
-    document.getElementById('category-select').onchange = loadGraph;
-    document.getElementById('link-dist').oninput = function () {
-      if (simulation) { simulation.force('link').distance(+this.value); simulation.alpha(0.3).restart(); }
+    document.getElementById('f-country').onchange = loadGraph;
+    document.getElementById('f-cat').onchange = loadGraph;
+    document.getElementById('f-layout').onchange = function() {
+      if (!cy) return;
+      // Re-run layout without reloading data
+      document.getElementById('loading').classList.remove('off');
+      document.getElementById('ld-text').textContent = 'Recalculating layout...';
+      setTimeout(() => {
+        const name = this.value;
+        let opts;
+        const n = cy.nodes().length;
+        if (name === 'fcose') {
+          opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:40,
+            nodeRepulsion: n>1500?12000:8000, idealEdgeLength: n>1500?120:90,
+            edgeElasticity:0.4, gravity:0.2, numIter: n>1500?3000:2500,
+            tile:true, tilingPaddingVertical:20, tilingPaddingHorizontal:20 };
+        } else if (name === 'cose') {
+          opts = { name:'cose', animate:false, fit:true, padding:40,
+            nodeRepulsion:()=>9000, idealEdgeLength:()=>100, gravity:0.3, numIter:1500, nodeOverlap:20 };
+        } else if (name === 'concentric') {
+          opts = { name:'concentric', fit:true, padding:30,
+            concentric: nd=>nd.degree(), levelWidth:()=>3, animate:false, minNodeSpacing:20 };
+        } else if (name === 'circle') {
+          opts = { name:'circle', fit:true, padding:30, animate:false };
+        } else {
+          opts = { name:'grid', fit:true, padding:30, animate:false, condense:true };
+        }
+        const layout = cy.layout(opts);
+        layout.one('layoutstop', () => {
+          document.getElementById('loading').classList.add('off');
+          cy.fit(undefined, 50);
+        });
+        layout.run();
+        setTimeout(() => document.getElementById('loading').classList.add('off'), 15000);
+      }, 60);
     };
-    document.getElementById('node-size').oninput = function () {
+    document.getElementById('show-labels').onchange = function() {
+      if (!cy) return;
+      if (this.checked) {
+        cy.nodes('[nodeType = "entry"]').style('label', function(n){ return n.data('name'); });
+        cy.nodes('[nodeType = "person"]').style('label', function(n){ return n.data('name'); });
+      } else {
+        cy.nodes().style('label', '');
+      }
+    };
+    document.getElementById('node-scale').oninput = function() {
+      if (!cy) return;
       const s = +this.value;
-      d3.selectAll('.g-entries circle').attr('r', s);
-      const ps = s * 0.5;
-      d3.selectAll('.g-people polygon').attr('points', '0,' + (-ps) + ' ' + ps + ',0 0,' + ps + ' ' + (-ps) + ',0');
+      cy.nodes('[nodeType = "entry"]').style({
+        'width': function(n) { return Math.max(s*0.6, Math.min(s*2.5, s*0.6 + n.degree()*1.2)); },
+        'height': function(n) { return Math.max(s*0.6, Math.min(s*2.5, s*0.6 + n.degree()*1.2)); }
+      });
+      cy.nodes('[nodeType = "person"]').style({
+        'width': function(n) { return Math.max(s*0.35, Math.min(s*1.5, s*0.35 + n.degree()*0.8)); },
+        'height': function(n) { return Math.max(s*0.35, Math.min(s*1.5, s*0.35 + n.degree()*0.8)); }
+      });
     };
 
     // ─── Search ──────────────────────────────────────────
-    function searchGraph() {
-      const q = document.getElementById('search-input').value.trim().toLowerCase();
-      d3.selectAll('.g-entries circle').attr('stroke', 'rgba(200,210,240,0.35)').attr('stroke-width', 0.7);
-      d3.selectAll('.g-people polygon').attr('stroke', 'rgba(200,210,240,0.3)').attr('stroke-width', 0.5);
-      if (!q) { document.getElementById('search-count').textContent = ''; return; }
-      let count = 0, first = null;
-      d3.selectAll('.g-entries circle').each(function (d) {
-        if (d.name && d.name.toLowerCase().includes(q)) {
-          d3.select(this).attr('stroke', '#ffeb3b').attr('stroke-width', 3);
-          count++; if (!first) first = d;
-        }
-      });
-      d3.selectAll('.g-people polygon').each(function (d) {
-        if (d.name && d.name.toLowerCase().includes(q)) {
-          d3.select(this).attr('stroke', '#ffeb3b').attr('stroke-width', 3);
-          count++; if (!first) first = d;
-        }
-      });
-      document.getElementById('search-count').textContent = count ? count + ' found' : 'none';
-      if (first && zoom) {
-        d3.select('#graph').transition().duration(600).call(zoom.transform,
-          d3.zoomIdentity.translate(window.innerWidth / 2, window.innerHeight / 2).scale(2.5).translate(-first.x, -first.y));
+    function doSearch() {
+      const q = document.getElementById('s-input').value.trim().toLowerCase();
+      if (!cy) return;
+      cy.elements().removeClass('found dimmed');
+      if (!q) { document.getElementById('s-count').textContent = ''; return; }
+      const matches = cy.nodes().filter(n => n.data('name').toLowerCase().includes(q));
+      const count = matches.length;
+      document.getElementById('s-count').textContent = count ? count + ' found' : 'none';
+      if (count) {
+        matches.addClass('found');
+        cy.nodes().not(matches).addClass('dimmed');
+        cy.edges().addClass('dimmed');
+        // Fit camera to matches with padding
+        cy.fit(matches, 80);
       }
     }
-    document.getElementById('search-btn').onclick = searchGraph;
-    document.getElementById('search-input').onkeydown = function (e) { if (e.key === 'Enter') searchGraph(); };
+    document.getElementById('s-btn').onclick = doSearch;
+    document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
+    document.getElementById('s-input').oninput = function() { if (!this.value.trim()) { if (cy) cy.elements().removeClass('found dimmed'); document.getElementById('s-count').textContent=''; } };
   </script>
 </body>
 </html>
