@@ -197,8 +197,8 @@
           <div class="layout-row">
             <label>Layout Algorithm</label>
             <select id="f-layout">
-              <option value="fcose" selected>fCoSE (best spread)</option>
-              <option value="cose">CoSE (fast)</option>
+              <option value="cose" selected>CoSE (recommended)</option>
+              <option value="fcose">fCoSE (slow, best spread)</option>
               <option value="circle">Circle</option>
               <option value="concentric">Concentric</option>
               <option value="grid">Grid</option>
@@ -430,7 +430,21 @@
       const baseScale = +document.getElementById('node-scale').value;
       let layoutOpts;
 
-      if (layoutName === 'fcose') {
+      if (layoutName === 'cose') {
+        layoutOpts = {
+          name: 'cose',
+          animate: false,
+          fit: true,
+          padding: 60,
+          nodeRepulsion: function() { return totalNodes > 500 ? 12000 : 8000; },
+          idealEdgeLength: function() { return totalNodes > 500 ? 140 : 100; },
+          edgeElasticity: function() { return 80; },
+          gravity: 0.18,
+          numIter: 800,
+          nodeOverlap: 30
+        };
+      } else if (layoutName === 'fcose') {
+        // Warning: fCoSE is O(n²) — very slow for large graphs
         layoutOpts = {
           name: 'fcose',
           quality: 'default',
@@ -441,29 +455,16 @@
           nodeDimensionsIncludeLabels: false,
           uniformNodeDimensions: true,
           packComponents: true,
-          nodeRepulsion: totalNodes > 800 ? 6000 : 4500,
-          idealEdgeLength: totalNodes > 800 ? 150 : 100,
+          nodeRepulsion: 4500,
+          idealEdgeLength: 120,
           edgeElasticity: 0.45,
           nestingFactor: 0.1,
-          gravity: 0.15,
+          gravity: 0.25,
           gravityRange: 3.8,
-          numIter: totalNodes > 800 ? 800 : 600,
+          numIter: totalNodes > 500 ? 300 : 500,
           tile: true,
           tilingPaddingVertical: 30,
           tilingPaddingHorizontal: 30
-        };
-      } else if (layoutName === 'cose') {
-        layoutOpts = {
-          name: 'cose',
-          animate: false,
-          fit: true,
-          padding: 40,
-          nodeRepulsion: function() { return 9000; },
-          idealEdgeLength: function() { return 100; },
-          edgeElasticity: function() { return 100; },
-          gravity: 0.3,
-          numIter: 1500,
-          nodeOverlap: 20
         };
       } else if (layoutName === 'concentric') {
         layoutOpts = {
@@ -711,8 +712,15 @@
         cy.fit(undefined, 50);
       });
 
-      // Fallback hide loading after timeout
-      setTimeout(() => document.getElementById('loading').classList.add('off'), 15000);
+      // Fallback: force-hide loading if layout hangs or never fires layoutstop
+      setTimeout(() => {
+        const ld = document.getElementById('loading');
+        if (!ld.classList.contains('off')) {
+          console.warn('Layout timeout — forcing display.');
+          ld.classList.add('off');
+          if (cy) cy.fit(undefined, 50);
+        }
+      }, 8000);
     }
 
     // ─── Controls ────────────────────────────────────────
@@ -730,14 +738,15 @@
         const name = this.value;
         let opts;
         const n = cy.nodes().length;
-        if (name === 'fcose') {
+        if (name === 'cose') {
+          opts = { name:'cose', animate:false, fit:true, padding:60,
+            nodeRepulsion:()=> n>500?12000:8000, idealEdgeLength:()=> n>500?140:100,
+            edgeElasticity:()=>80, gravity:0.18, numIter:800, nodeOverlap:30 };
+        } else if (name === 'fcose') {
           opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:60,
-            uniformNodeDimensions:true, nodeRepulsion: n>800?6000:4500,
-            idealEdgeLength: n>800?150:100, edgeElasticity:0.45, gravity:0.15,
-            numIter: n>800?800:600, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
-        } else if (name === 'cose') {
-          opts = { name:'cose', animate:false, fit:true, padding:40,
-            nodeRepulsion:()=>9000, idealEdgeLength:()=>100, gravity:0.3, numIter:1500, nodeOverlap:20 };
+            uniformNodeDimensions:true, nodeRepulsion:4500,
+            idealEdgeLength:120, edgeElasticity:0.45, gravity:0.25,
+            numIter: n>500?300:500, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
         } else if (name === 'concentric') {
           opts = { name:'concentric', fit:true, padding:30,
             concentric: nd=>nd.degree(), levelWidth:()=>3, animate:false, minNodeSpacing:20 };
@@ -752,7 +761,10 @@
           cy.fit(undefined, 50);
         });
         layout.run();
-        setTimeout(() => document.getElementById('loading').classList.add('off'), 15000);
+        setTimeout(() => {
+          const ld = document.getElementById('loading');
+          if (!ld.classList.contains('off')) { ld.classList.add('off'); if (cy) cy.fit(undefined, 50); }
+        }, 8000);
       }, 60);
     };
     document.getElementById('show-labels').onchange = function() {
