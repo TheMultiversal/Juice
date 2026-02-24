@@ -54,7 +54,7 @@
     .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
 
     /* ===== GRAPH WRAPPER ===== */
-    .graph-wrap { position: relative; width: 100%; height: 2400px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: rgba(255,255,255,0.85); }
+    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: rgba(255,255,255,0.85); }
     #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
 
     /* ===== SHARED PANEL ===== */
@@ -197,11 +197,11 @@
           <div class="layout-row">
             <label>Layout Algorithm</label>
             <select id="f-layout">
-              <option value="cose" selected>CoSE (recommended)</option>
-              <option value="fcose">fCoSE (slow, best spread)</option>
+              <option value="concentric" selected>Concentric (recommended)</option>
               <option value="circle">Circle</option>
-              <option value="concentric">Concentric</option>
               <option value="grid">Grid</option>
+              <option value="cose">CoSE (force — slow &gt;300 nodes)</option>
+              <option value="fcose">fCoSE (force — slow &gt;300 nodes)</option>
             </select>
           </div>
           <label>Node Scale</label>
@@ -431,22 +431,21 @@
       let layoutOpts;
 
       if (layoutName === 'cose') {
-        const iters = totalNodes > 800 ? 100 : totalNodes > 400 ? 200 : 400;
+        const iters = totalNodes > 800 ? 30 : totalNodes > 400 ? 60 : 200;
         layoutOpts = {
           name: 'cose',
           animate: false,
           fit: true,
           padding: 60,
-          nodeRepulsion: function() { return 8000; },
-          idealEdgeLength: function() { return 120; },
-          edgeElasticity: function() { return 100; },
-          gravity: 0.25,
+          nodeRepulsion: function() { return 6000; },
+          idealEdgeLength: function() { return 100; },
+          edgeElasticity: function() { return 80; },
+          gravity: 0.4,
           numIter: iters,
-          nodeOverlap: 30
+          nodeOverlap: 20
         };
       } else if (layoutName === 'fcose') {
-        // fCoSE is O(n²) per iteration — keep iterations very low
-        const iters = totalNodes > 800 ? 80 : totalNodes > 400 ? 150 : 300;
+        const iters = totalNodes > 800 ? 20 : totalNodes > 400 ? 50 : 150;
         layoutOpts = {
           name: 'fcose',
           quality: 'default',
@@ -458,15 +457,15 @@
           uniformNodeDimensions: true,
           packComponents: true,
           nodeRepulsion: 4500,
-          idealEdgeLength: 120,
+          idealEdgeLength: 100,
           edgeElasticity: 0.45,
           nestingFactor: 0.1,
-          gravity: 0.25,
+          gravity: 0.4,
           gravityRange: 3.8,
           numIter: iters,
           tile: true,
-          tilingPaddingVertical: 30,
-          tilingPaddingHorizontal: 30
+          tilingPaddingVertical: 20,
+          tilingPaddingHorizontal: 20
         };
       } else if (layoutName === 'concentric') {
         layoutOpts = {
@@ -493,9 +492,9 @@
         minZoom: 0.02,
         maxZoom: 8,
         pixelRatio: 'auto',
-        textureOnViewport: totalNodes > 400,
-        hideEdgesOnViewport: totalNodes > 600,
-        hideLabelsOnViewport: totalNodes > 800,
+        textureOnViewport: totalNodes > 200,
+        hideEdgesOnViewport: totalNodes > 300,
+        hideLabelsOnViewport: totalNodes > 500,
 
         style: [
           // Entry nodes
@@ -723,7 +722,7 @@
           ld.classList.add('off');
           if (cy) cy.fit(undefined, 50);
         }
-      }, 5000);
+      }, 15000);
 
       } catch(err) {
         console.error('Layout error, falling back to grid:', err);
@@ -750,16 +749,16 @@
         let opts;
         const n = cy.nodes().length;
         if (name === 'cose') {
-          const it = n > 800 ? 100 : n > 400 ? 200 : 400;
+          const it = n > 800 ? 30 : n > 400 ? 60 : 200;
           opts = { name:'cose', animate:false, fit:true, padding:60,
-            nodeRepulsion:()=>8000, idealEdgeLength:()=>120,
-            edgeElasticity:()=>100, gravity:0.25, numIter:it, nodeOverlap:30 };
+            nodeRepulsion:()=>6000, idealEdgeLength:()=>100,
+            edgeElasticity:()=>80, gravity:0.4, numIter:it, nodeOverlap:20 };
         } else if (name === 'fcose') {
-          const it = n > 800 ? 80 : n > 400 ? 150 : 300;
+          const it = n > 800 ? 20 : n > 400 ? 50 : 150;
           opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:60,
             uniformNodeDimensions:true, nodeRepulsion:4500,
-            idealEdgeLength:120, edgeElasticity:0.45, gravity:0.25,
-            numIter:it, tile:true, tilingPaddingVertical:30, tilingPaddingHorizontal:30 };
+            idealEdgeLength:100, edgeElasticity:0.45, gravity:0.4,
+            numIter:it, tile:true, tilingPaddingVertical:20, tilingPaddingHorizontal:20 };
         } else if (name === 'concentric') {
           opts = { name:'concentric', fit:true, padding:30,
             concentric: nd=>nd.degree(), levelWidth:()=>3, animate:false, minNodeSpacing:20 };
@@ -777,7 +776,7 @@
         setTimeout(() => {
           const ld = document.getElementById('loading');
           if (!ld.classList.contains('off')) { ld.classList.add('off'); if (cy) cy.fit(undefined, 50); }
-        }, 5000);
+        }, 15000);
       }, 60);
     };
     document.getElementById('show-labels').onchange = function() {
