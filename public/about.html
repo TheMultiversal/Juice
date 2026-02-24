@@ -1,0 +1,366 @@
+<!-- Juice Project - Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - The Juice Box</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
+    nav ul li { margin: 0; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
+    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
+    .main { max-width: 1000px; margin: 0 auto; padding: 15px 20px; }
+    h1 { margin: 0 0 8px 0; font-size: 2em; }
+    h2 { margin: 30px 0 12px 0; font-size: 1.4em; color: #0038b8; }
+    h3 { margin: 18px 0 8px 0; font-size: 1.15em; }
+    p { line-height: 1.7; margin: 0 0 12px 0; }
+    .subtitle { color: #555; margin: 0 0 20px 0; font-size: 1.05em; }
+    .about-hero { text-align: center; padding: 30px 20px 20px; }
+    .about-hero h1 { color: #0038b8; }
+    .about-hero .hero-icon { font-size: 3em; color: #0038b8; margin-bottom: 10px; }
+
+    /* Stat highlights */
+    .stat-highlights { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px,1fr)); gap: 12px; margin: 20px 0 30px; }
+    .stat-hl { text-align: center; padding: 18px 10px; border-radius: 12px; }
+    .stat-hl .num { font-size: 1.8em; font-weight: bold; color: #0038b8; display: block; }
+    .stat-hl .lbl { font-size: 0.85em; color: #555; }
+
+    /* Section cards */
+    .about-section { padding: 20px; margin-bottom: 18px; }
+    .about-section ul { margin: 8px 0 0 0; padding-left: 20px; line-height: 1.8; }
+    .about-section li { margin-bottom: 4px; }
+
+    /* Feature grid */
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 14px; margin: 15px 0; }
+    .feature-item { padding: 16px; display: flex; gap: 12px; align-items: flex-start; }
+    .feature-item i { font-size: 1.4em; color: #0038b8; margin-top: 3px; flex-shrink: 0; }
+    .feature-item div strong { display: block; margin-bottom: 3px; }
+    .feature-item div span { font-size: 0.9em; color: #555; line-height: 1.5; }
+
+    /* Timeline */
+    .timeline { position: relative; padding-left: 30px; margin: 15px 0; }
+    .timeline::before { content: ''; position: absolute; left: 10px; top: 0; bottom: 0; width: 2px; background: #0038b8; opacity: 0.3; }
+    .timeline-item { position: relative; margin-bottom: 18px; }
+    .timeline-item::before { content: ''; position: absolute; left: -24px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: #0038b8; }
+    .timeline-item .year { font-weight: bold; color: #0038b8; }
+    .timeline-item .desc { color: #444; font-size: 0.95em; }
+
+    /* Contact */
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 14px; margin: 15px 0; }
+    .contact-item { padding: 16px; text-align: center; }
+    .contact-item i { font-size: 1.6em; color: #0038b8; margin-bottom: 8px; display: block; }
+    .contact-item a { color: #0000EE; text-decoration: none; }
+
+    /* Disclaimer */
+    .disclaimer { padding: 16px 20px; border-left: 4px solid #0038b8; margin: 20px 0; font-size: 0.92em; color: #555; line-height: 1.6; }
+
+    /* Glassmorphism panels */
+    .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
+    .export-card, .result-card, .person-card, .connection-item, .similar-card,
+    .bm-card, .comp-card, .entry-card, .country-card, .stat-box, .controls,
+    .search-section, .shared-section, .endpoint,
+    .about-section, .stat-hl, .feature-item, .contact-item, .disclaimer {
+      background: rgba(255, 255, 255, 0.15) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.25) !important;
+      border-radius: 12px !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+    }
+    .panel:hover, .cat-card:hover, .featured-card:hover, .discover-card:hover,
+    .kpi-card:hover, .chart-card:hover, .result-card:hover, .person-card:hover,
+    .connection-item:hover, .similar-card:hover, .bm-card:hover, .entry-card:hover,
+    .country-card:hover, .about-section:hover, .feature-item:hover, .contact-item:hover {
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
+      border-color: rgba(255, 255, 255, 0.35) !important;
+    }
+    nav a {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 8px !important;
+    }
+    nav select {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .quick-search input {
+      background: rgba(255, 255, 255, 0.2) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    }
+    .discover-btn, .btn, .btn-find, .btn-primary {
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    .tag {
+      background: rgba(0, 123, 255, 0.1) !important;
+      backdrop-filter: blur(4px) !important;
+      -webkit-backdrop-filter: blur(4px) !important;
+      border: 1px solid rgba(0, 123, 255, 0.15) !important;
+    }
+    .country-item {
+      background: rgba(255, 255, 255, 0.12) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+      border-radius: 8px !important;
+    }
+    /* Glassmorphism dark mode overrides */
+    body.dark-mode .panel, body.dark-mode .cat-card, body.dark-mode .featured-card,
+    body.dark-mode .discover-card, body.dark-mode .kpi-card, body.dark-mode .chart-card,
+    body.dark-mode .export-card, body.dark-mode .result-card, body.dark-mode .person-card,
+    body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
+    body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
+    body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
+    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend,
+    body.dark-mode .about-section, body.dark-mode .stat-hl, body.dark-mode .feature-item,
+    body.dark-mode .contact-item, body.dark-mode .disclaimer {
+      background: rgba(20, 20, 40, 0.45) !important;
+      backdrop-filter: blur(12px) !important;
+      -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
+    }
+    body.dark-mode nav a {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+    body.dark-mode nav select {
+      background: rgba(20, 20, 50, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+    }
+    body.dark-mode .country-item {
+      background: rgba(30, 30, 60, 0.4) !important;
+      backdrop-filter: blur(8px) !important;
+      -webkit-backdrop-filter: blur(8px) !important;
+      border: 1px solid rgba(100, 100, 255, 0.15) !important;
+    }
+    body.dark-mode .tag {
+      background: rgba(60, 100, 200, 0.15) !important;
+      border: 1px solid rgba(100, 100, 255, 0.2) !important;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+
+  <div class="main">
+    <div class="about-hero">
+      <div class="hero-icon"><i class="fas fa-box-open"></i></div>
+      <h1>About The Juice Box</h1>
+      <p class="subtitle">The most comprehensive open-source intelligence database on religious organizations worldwide</p>
+    </div>
+
+    <!-- Key Stats -->
+    <div class="stat-highlights" id="statHighlights">
+      <div class="stat-hl"><span class="num" id="statEntries">--</span><span class="lbl">Organizations</span></div>
+      <div class="stat-hl"><span class="num" id="statCountries">--</span><span class="lbl">Countries</span></div>
+      <div class="stat-hl"><span class="num" id="statPeople">--</span><span class="lbl">Key People</span></div>
+      <div class="stat-hl"><span class="num" id="statConnections">--</span><span class="lbl">Connections</span></div>
+      <div class="stat-hl"><span class="num" id="statCategories">--</span><span class="lbl">Categories</span></div>
+    </div>
+
+    <!-- Mission -->
+    <div class="about-section">
+      <h2><i class="fas fa-bullseye"></i> Mission</h2>
+      <p>The Juice Box is a research and intelligence platform dedicated to cataloging, mapping, and analyzing the global landscape of religious organizations. Our goal is to provide a transparent, searchable resource that connects the dots between organizations, the people who lead them, and their worldwide operations.</p>
+      <p>By aggregating publicly available information and organizing it into a structured, interconnected database, we aim to make religious institutional networks more accessible to researchers, journalists, academics, and the general public.</p>
+    </div>
+
+    <!-- What We Track -->
+    <div class="about-section">
+      <h2><i class="fas fa-database"></i> What We Track</h2>
+      <ul>
+        <li><strong>Organizations</strong> - Religious institutions, congregations, ministries, nonprofits, educational bodies, media outlets, lobbying groups, and umbrella organizations</li>
+        <li><strong>People</strong> - Founders, leaders, rabbis, pastors, executives, board members, and key figures affiliated with tracked organizations</li>
+        <li><strong>Connections</strong> - Financial ties, leadership overlaps, parent-subsidiary relationships, historical splits, mergers, and partnerships</li>
+        <li><strong>Geography</strong> - Country-level breakdown spanning 118 nations across every continent, with organizational presence mapped globally</li>
+        <li><strong>Categories</strong> - 34 classification types ranging from Orthodox and Reform denominations to lobbying organizations and media outlets</li>
+        <li><strong>Historical Data</strong> - Founding dates, key events, leadership transitions, and organizational evolution over time</li>
+      </ul>
+    </div>
+
+    <!-- Features -->
+    <div class="about-section">
+      <h2><i class="fas fa-tools"></i> Platform Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <i class="fas fa-search"></i>
+          <div><strong>Advanced Search</strong><span>Full-text search across all entries with filters for country, category, date range, and connections</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-project-diagram"></i>
+          <div><strong>Network Graph</strong><span>Interactive D3.js visualization showing organizational relationships and connection clusters</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-globe-americas"></i>
+          <div><strong>World Map</strong><span>Leaflet-powered geographic distribution showing organizations by country with drill-down capability</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-clock"></i>
+          <div><strong>Timeline</strong><span>Historical timeline of founding dates, key events, and organizational evolution across decades</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-chart-bar"></i>
+          <div><strong>Statistics Dashboard</strong><span>Interactive charts and analytics breaking down the database by category, country, size, and age</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-exchange-alt"></i>
+          <div><strong>Compare Tool</strong><span>Side-by-side comparison of any two organizations, highlighting differences and shared connections</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-route"></i>
+          <div><strong>Pathfinder</strong><span>Discover the shortest connection path between any two organizations in the network</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-random"></i>
+          <div><strong>Discover Mode</strong><span>Random exploration tool that surfaces entries and connections you might never find browsing</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-file-export"></i>
+          <div><strong>Export</strong><span>Download filtered datasets as CSV or JSON for your own research and analysis</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-bookmark"></i>
+          <div><strong>Bookmarks</strong><span>Save entries and people of interest for quick reference with notes and tags</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-clipboard-check"></i>
+          <div><strong>Data Audit</strong><span>Transparency tool showing data completeness, missing fields, and quality metrics</span></div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-moon"></i>
+          <div><strong>Dark Mode</strong><span>Full dark theme support with glassmorphism aesthetics across every page</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project History -->
+    <div class="about-section">
+      <h2><i class="fas fa-history"></i> Project History</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="year">2016</span>
+          <span class="desc"> - Project founded. Initial data collection begins with a focus on major organizational networks.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2017 - 2019</span>
+          <span class="desc"> - Steady expansion of entries and geographic coverage. Database grows to include dozens of countries.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2020 - 2023</span>
+          <span class="desc"> - Platform rebuilt as a modern web application with Node.js and Express. Interactive visualizations added.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2024</span>
+          <span class="desc"> - Major data expansion. Entries surpass 800, people database launched, connection mapping added. Deployed to thejuicebox.live.</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">2025</span>
+          <span class="desc"> - Database exceeds 1,100 entries across 118 countries with 950+ tracked individuals. Platform-wide UI refresh with glassmorphism design, Font Awesome iconography, network graph, pathfinder, and comprehensive analytics.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data Sources & Methodology -->
+    <div class="about-section">
+      <h2><i class="fas fa-microscope"></i> Data Sources and Methodology</h2>
+      <p>All information in The Juice Box is compiled from publicly available sources, including:</p>
+      <ul>
+        <li>Official organizational websites and publications</li>
+        <li>Public filings and nonprofit registries (IRS Form 990, Charity Commission, etc.)</li>
+        <li>News reporting from established media outlets</li>
+        <li>Academic research and published studies</li>
+        <li>Government records and public directories</li>
+        <li>Archived web content and historical documents</li>
+      </ul>
+      <p>Each entry is cross-referenced where possible to ensure accuracy. The database is continuously updated as new information becomes available or corrections are identified. We prioritize factual, verifiable information and strive to maintain neutrality in all descriptions.</p>
+    </div>
+
+    <!-- Technology Stack -->
+    <div class="about-section">
+      <h2><i class="fas fa-code"></i> Technology Stack</h2>
+      <ul>
+        <li><strong>Backend</strong> - Node.js with Express.js</li>
+        <li><strong>Frontend</strong> - Vanilla JavaScript, HTML5, CSS3 with glassmorphism design</li>
+        <li><strong>Visualizations</strong> - D3.js (network graphs), Chart.js (statistics), Leaflet.js (maps)</li>
+        <li><strong>Icons</strong> - Font Awesome 6</li>
+        <li><strong>Hosting</strong> - Render.com with custom domain via GoDaddy</li>
+        <li><strong>Data Format</strong> - JSON with relational cross-referencing</li>
+        <li><strong>Version Control</strong> - Git / GitHub</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="about-section">
+      <h2><i class="fas fa-envelope"></i> Contact and Contribute</h2>
+      <p>The Juice Box is an ongoing project and we welcome contributions, corrections, and tips from researchers and the public. If you have information about an organization that should be included or updated, or if you would like to contribute to the project, please reach out.</p>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <i class="fas fa-globe"></i>
+          <strong>Website</strong>
+          <a href="/">thejuicebox.live</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <strong>GitHub</strong>
+          <a href="https://github.com/TheMultiversal/Juice" target="_blank">TheMultiversal/Juice</a>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <strong>Email</strong>
+          <a href="mailto:tips@thejuicebox.live">tips@thejuicebox.live</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="disclaimer">
+      <strong><i class="fas fa-exclamation-triangle"></i> Disclaimer</strong><br>
+      The Juice Box is a research tool providing publicly available information about religious organizations. Inclusion in this database does not imply any wrongdoing, illegality, or negative judgment about any organization or individual. All data is sourced from public records and is presented for informational and research purposes only. If you believe any information is inaccurate, please contact us for correction.
+    </div>
+  </div>
+
+  <footer id="siteFooter"></footer>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+
+    // Load live stats
+    fetch('/api/jewish')
+      .then(r => r.json())
+      .then(data => {
+        document.getElementById('statEntries').textContent = data.length.toLocaleString();
+        const countries = new Set(data.map(d => d.country)).size;
+        document.getElementById('statCountries').textContent = countries;
+        const categories = new Set(data.map(d => d.type)).size;
+        document.getElementById('statCategories').textContent = categories;
+        let conns = 0;
+        data.forEach(d => { if (d.connections) conns += d.connections.length; });
+        document.getElementById('statConnections').textContent = conns.toLocaleString();
+      });
+
+    fetch('/api/jewish/people')
+      .then(r => r.json())
+      .then(people => {
+        document.getElementById('statPeople').textContent = people.length.toLocaleString();
+      });
+  </script>
+</body>
+</html>

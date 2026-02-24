@@ -761,6 +761,16 @@
             "name": "Haverford College",
             "type": "alma mater",
             "description": "Lutnick graduated from Haverford and later served on the board."
+          },
+          {
+            "name": "Morgan Stanley",
+            "type": "industry peer",
+            "description": "Both are major financial services firms in New York."
+          },
+          {
+            "name": "Newmark Group",
+            "type": "affiliate",
+            "description": "Newmark Group was created by Howard Lutnick following Cantor Fitzgerald's commercial real estate expansion."
           }
         ],
         "category": "Banking & Financial Services",
@@ -2926,6 +2936,11 @@
             "name": "Jewish federations",
             "type": "local partners",
             "description": "Local Jewish federations partner to distribute PJ Library books in their communities."
+          },
+          {
+            "name": "Repair the World",
+            "type": "Jewish engagement peer",
+            "description": "Both are newer Jewish engagement initiatives targeting families and young adults."
           }
         ],
         "category": "Education & Academia",
@@ -10514,6 +10529,16 @@
             "name": "16 countries",
             "type": "operations",
             "description": "HIAS provides legal aid, resettlement, and protection in 16 countries."
+          },
+          {
+            "name": "International Rescue Committee",
+            "type": "refugee peer",
+            "description": "Both are major US-based refugee resettlement agencies."
+          },
+          {
+            "name": "The Jewish Federations of North America",
+            "type": "communal funder",
+            "description": "JFNA federations support HIAS resettlement work."
           }
         ],
         "category": "Representative & Umbrella Bodies",
@@ -15291,7 +15316,18 @@
         "description": "Living memorial to the Holocaust located in Battery Park City, Manhattan. Three floors dedicated to Jewish life before, during, and after the Holocaust.",
         "website": "https://mjhnyc.org/",
         "individuals": [],
-        "connections": [],
+        "connections": [
+          {
+            "name": "Anti-Defamation League",
+            "type": "partner",
+            "description": "ADL and the Museum collaborate on Holocaust education programs."
+          },
+          {
+            "name": "Claims Conference",
+            "type": "partner",
+            "description": "Both work on Holocaust remembrance and survivor support."
+          }
+        ],
         "id": "museum-of-jewish-heritage"
       },
       {
@@ -15323,6 +15359,16 @@
             "name": "Brandeis University",
             "type": "Jewish educational institution",
             "description": "Both are notable Jewish-affiliated educational institutions"
+          },
+          {
+            "name": "Brandeis University",
+            "type": "academic peer",
+            "description": "Both are Jewish-affiliated universities in the United States."
+          },
+          {
+            "name": "Bar-Ilan University",
+            "type": "academic partner",
+            "description": "Both maintain connections as Jewish-affiliated academic institutions."
           }
         ],
         "id": "touro-university"
@@ -16367,6 +16413,278 @@
             "description": "ADL has advocated for pro-Israel positions alongside AIPAC."
           }
         ]
+      },
+      {
+        "name": "Repair the World",
+        "id": "repair-the-world",
+        "type": "service organization",
+        "category": "Community & Social Organizations",
+        "description": "Repair the World is a Jewish service organization that mobilizes young adults to volunteer and address community needs. Founded in 2009 with support from major Jewish philanthropies, it operates in multiple cities and engages thousands of volunteers annually in projects addressing food insecurity, education gaps, and housing instability.",
+        "website": "https://werepair.org",
+        "founded": 2009,
+        "individuals": [
+          {
+            "id": "cindy-greenberg",
+            "name": "Cindy Greenberg",
+            "role": "CEO",
+            "bio": "CEO of Repair the World, leading Jewish service initiatives."
+          }
+        ],
+        "connections": [
+          {
+            "name": "BBYO",
+            "type": "youth engagement",
+            "description": "Both engage Jewish youth in community involvement."
+          },
+          {
+            "name": "American Jewish World Service",
+            "type": "service partner",
+            "description": "Both focus on Jewish values-driven social impact."
+          }
+        ]
+      },
+      {
+        "name": "The Jewish Federations of North America",
+        "id": "the-jewish-federations-of-north-america",
+        "type": "umbrella organization",
+        "category": "Representative & Umbrella Bodies",
+        "description": "The Jewish Federations of North America (JFNA) represents 146 Jewish Federations and 300 independent communities across North America. It is the largest Jewish philanthropic system in the world, collectively raising and distributing over $3 billion annually for social welfare, education, and Israel-related causes. JFNA coordinates disaster relief, advocates on public policy, and supports Jewish community planning.",
+        "website": "https://www.jewishfederations.org",
+        "founded": 1999,
+        "individuals": [
+          {
+            "id": "eric-fingerhut",
+            "name": "Eric Fingerhut",
+            "role": "President & CEO",
+            "bio": "President and CEO of the Jewish Federations of North America. Former US Congressman from Ohio and president of Hillel International."
+          },
+          {
+            "id": "julie-platt",
+            "name": "Julie Platt",
+            "role": "Chair of the Board",
+            "bio": "Chair of the Board of Trustees of JFNA. Prominent communal leader and philanthropist."
+          }
+        ],
+        "connections": [
+          {
+            "name": "UJA-Federation of New York",
+            "type": "member federation",
+            "description": "UJA-Federation is the largest member federation of JFNA."
+          },
+          {
+            "name": "Jewish Agency for Israel",
+            "type": "funding partner",
+            "description": "JFNA is a major funder of the Jewish Agency."
+          },
+          {
+            "name": "American Jewish Joint Distribution Committee",
+            "type": "funding partner",
+            "description": "JFNA channels major funding to JDC for overseas operations."
+          },
+          {
+            "name": "Hillel International",
+            "type": "communal partner",
+            "description": "Eric Fingerhut previously led Hillel International before heading JFNA."
+          },
+          {
+            "name": "Hillel International",
+            "type": "grantee",
+            "description": "JFNA federations collectively fund Hillel campus programming."
+          },
+          {
+            "name": "Jewish Community Centers Association",
+            "type": "communal partner",
+            "description": "JCCs are closely aligned with the federation system."
+          },
+          {
+            "name": "Secure Community Network",
+            "type": "security arm",
+            "description": "SCN operates under JFNA auspices for community security."
+          }
+        ]
+      },
+      {
+        "name": "Secure Community Network",
+        "id": "secure-community-network",
+        "type": "security organization",
+        "category": "Defense & Security",
+        "description": "The Secure Community Network (SCN) is the official safety and security organization of the Jewish community in North America. Established in 2004 under the auspices of the Jewish Federations of North America and the Conference of Presidents of Major American Jewish Organizations, SCN works with federal, state, and local law enforcement and coordinates security training, threat assessment, and incident management for Jewish institutions.",
+        "website": "https://securecommunitynetwork.org",
+        "founded": 2004,
+        "individuals": [
+          {
+            "id": "michael-masters",
+            "name": "Michael Masters",
+            "role": "CEO",
+            "bio": "National Director and CEO of the Secure Community Network. Former DHS official."
+          }
+        ],
+        "connections": [
+          {
+            "name": "The Jewish Federations of North America",
+            "type": "parent organization",
+            "description": "SCN operates under JFNA auspices."
+          },
+          {
+            "name": "Conference of Presidents of Major American Jewish Organizations",
+            "type": "parent organization",
+            "description": "SCN was co-founded by the Conference of Presidents."
+          },
+          {
+            "name": "Anti-Defamation League",
+            "type": "security partner",
+            "description": "ADL and SCN coordinate on antisemitism threat monitoring and response."
+          },
+          {
+            "name": "Community Security Trust",
+            "type": "British counterpart",
+            "description": "CST in the UK and SCN in the US serve parallel roles protecting Jewish communities."
+          },
+          {
+            "name": "Federal Bureau of Investigation",
+            "type": "law enforcement partner",
+            "description": "SCN coordinates with the FBI on threats to the Jewish community."
+          }
+        ]
+      },
+      {
+        "name": "Foundation for Jewish Camp",
+        "id": "foundation-for-jewish-camp",
+        "type": "foundation",
+        "category": "Philanthropy & Foundations",
+        "description": "The Foundation for Jewish Camp (FJC) provides leadership and financial resources to Jewish camps across North America. It supports over 300 Jewish overnight and day camps, which collectively serve more than 180,000 campers. FJC runs the One Happy Camper incentive grant program that provides first-time campers with subsidies to attend Jewish camp.",
+        "website": "https://jewishcamp.org",
+        "founded": 1998,
+        "individuals": [
+          {
+            "id": "jeremy-fingerman",
+            "name": "Jeremy Fingerman",
+            "role": "CEO",
+            "bio": "CEO of the Foundation for Jewish Camp. Former executive at major consumer brands."
+          }
+        ],
+        "connections": [
+          {
+            "name": "The Jewish Federations of North America",
+            "type": "communal partner",
+            "description": "Works with federations on camp access and affordability."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "youth engagement peer",
+            "description": "Both focus on immersive Jewish experiences for young people."
+          },
+          {
+            "name": "URJ Camp system",
+            "type": "camp network",
+            "description": "Reform movement camps are part of the broader Jewish camp network FJC supports."
+          },
+          {
+            "name": "Ramah Camps",
+            "type": "camp network",
+            "description": "Conservative movement Ramah camps participate in the broader Jewish camp ecosystem."
+          }
+        ]
+      },
+      {
+        "name": "American Israel Education Foundation",
+        "id": "american-israel-education-foundation",
+        "type": "educational foundation",
+        "category": "Advocacy & Public Affairs",
+        "description": "The American Israel Education Foundation (AIEF) is a charitable organization affiliated with AIPAC that provides educational trips to Israel for US members of Congress and other political leaders. Nearly every member of Congress has participated in an AIEF-sponsored trip to Israel at some point in their career, making it one of the most significant programs shaping US political understanding of Israel.",
+        "website": "https://www.aief.org",
+        "founded": 1990,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "affiliated organization",
+            "description": "AIEF is the charitable arm of AIPAC dedicated to education."
+          },
+          {
+            "name": "US Congress",
+            "type": "engagement",
+            "description": "AIEF organizes congressional delegations to Israel."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "educational peer",
+            "description": "Both provide foundational Israel experiences."
+          }
+        ]
+      },
+      {
+        "name": "Saban Capital Group",
+        "id": "saban-capital-group",
+        "type": "investment firm",
+        "category": "Investment & Private Equity",
+        "description": "Saban Capital Group is a private investment firm founded by Haim Saban, the Israeli-American media mogul. The firm invests across entertainment, media, communications, and real estate. Saban is known for bringing the Power Rangers franchise to the US and for his significant political donations. He is one of the largest individual donors in American politics and a major supporter of Israel-related causes.",
+        "website": "https://www.sabancapitalgroup.com",
+        "founded": 2001,
+        "individuals": [
+          {
+            "id": "haim-saban",
+            "name": "Haim Saban",
+            "role": "Chairman",
+            "bio": "Israeli-American media proprietor and investor. Creator of the Power Rangers franchise and one of the largest political donors in the United States."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Brookings Institution",
+            "type": "funder",
+            "description": "Saban funded the Saban Center for Middle East Policy at Brookings."
+          },
+          {
+            "name": "Univision",
+            "type": "former investment",
+            "description": "Saban Capital Group was part of the consortium that acquired Univision in 2007."
+          },
+          {
+            "name": "Democratic National Committee",
+            "type": "political donor",
+            "description": "Haim Saban is among the largest donors to the Democratic Party."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "political alignment",
+            "description": "Haim Saban is a major supporter of AIPAC and pro-Israel advocacy."
+          },
+          {
+            "name": "Clinton Foundation",
+            "type": "donor",
+            "description": "Saban has been a major donor to the Clinton Foundation and Democratic causes."
+          }
+        ]
+      },
+      {
+        "name": "Keshet",
+        "id": "keshet",
+        "type": "advocacy organization",
+        "category": "Advocacy & Political Organizations",
+        "description": "Keshet is a national Jewish LGBTQ+ advocacy organization working for the full equality and inclusion of LGBTQ+ individuals in Jewish life. Founded in 1996, Keshet provides training and resources to Jewish institutions, runs youth programming, and advocates for inclusive policies within synagogues, schools, camps, and other Jewish organizations.",
+        "website": "https://www.keshetonline.org",
+        "founded": 1996,
+        "individuals": [
+          {
+            "id": "idit-klein",
+            "name": "Idit Klein",
+            "role": "President & CEO",
+            "bio": "Co-founder, president and CEO of Keshet. Leading voice for LGBTQ+ inclusion in Jewish life."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Union for Reform Judaism",
+            "type": "partner",
+            "description": "Partners on LGBTQ+ inclusion initiatives in Reform congregations."
+          },
+          {
+            "name": "Foundation for Jewish Camp",
+            "type": "partner",
+            "description": "Keshet works with FJC to make Jewish camps more inclusive."
+          }
+        ]
       }
     ],
     "Israel": [
@@ -16699,6 +17017,16 @@
             "name": "Foreign corporations",
             "type": "clients",
             "description": "SNC connects global corporations with Israeli innovation."
+          },
+          {
+            "name": "Technion-Israel Institute of Technology",
+            "type": "ecosystem partner",
+            "description": "Technion is a key pillar of the Israeli innovation ecosystem that SNC promotes."
+          },
+          {
+            "name": "Weizmann Institute of Science",
+            "type": "ecosystem partner",
+            "description": "Weizmann is a key institution in the Israeli innovation landscape."
           }
         ],
         "category": "Charity & Philanthropy",
@@ -21800,6 +22128,16 @@
             "name": "Entebbe rescue",
             "type": "historic role",
             "description": "El Al planes were involved in the aftermath of the Entebbe hijacking."
+          },
+          {
+            "name": "Israel Ministry of Tourism",
+            "type": "government partner",
+            "description": "El Al is a key partner in Israeli tourism promotion."
+          },
+          {
+            "name": "Birthright Israel",
+            "type": "travel partner",
+            "description": "El Al carries many Birthright Israel participants."
           }
         ],
         "category": "Transportation",
@@ -22408,6 +22746,143 @@
             "name": "Israeli tech ecosystem",
             "type": "major exit",
             "description": "One of Israel's largest tech M&A transactions."
+          }
+        ]
+      },
+      {
+        "name": "Latet",
+        "id": "latet",
+        "type": "humanitarian organization",
+        "category": "Charity & Philanthropy",
+        "description": "Latet (meaning \"to give\" in Hebrew) is Israel's leading humanitarian aid organization fighting food insecurity and poverty. Founded in 2003, it operates Israel's largest food bank and distributes aid to over 250,000 people annually. Latet also publishes the annual Alternative Poverty Report, which has become a key resource for understanding poverty in Israel.",
+        "website": "https://www.latet.org.il",
+        "founded": 2003,
+        "individuals": [
+          {
+            "id": "gilles-darmon",
+            "name": "Gilles Darmon",
+            "role": "Founder & Chairman",
+            "bio": "French-born Israeli founder of Latet, Israel's largest humanitarian aid organization."
+          },
+          {
+            "id": "eran-weintrob",
+            "name": "Eran Weintrob",
+            "role": "CEO",
+            "bio": "CEO of Latet overseeing humanitarian operations across Israel."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Feeding America",
+            "type": "international partner",
+            "description": "Both operate large-scale food distribution networks."
+          },
+          {
+            "name": "National Insurance Institute of Israel",
+            "type": "data partner",
+            "description": "Latet's Alternative Poverty Report supplements National Insurance poverty data."
+          }
+        ]
+      },
+      {
+        "name": "Magen David Adom",
+        "id": "magen-david-adom",
+        "type": "emergency medical service",
+        "category": "Healthcare & Pharmaceuticals",
+        "description": "Magen David Adom (MDA) is Israel's national emergency medical, disaster, ambulance, and blood bank service. Established in 1930, it serves as Israel's equivalent of the Red Cross and became a member of the International Red Cross and Red Crescent Movement in 2006. MDA operates over 1,500 ambulances, responds to over 700,000 calls annually, and manages Israel's blood supply.",
+        "website": "https://www.mdais.org",
+        "founded": 1930,
+        "individuals": [
+          {
+            "id": "eli-bin",
+            "name": "Eli Bin",
+            "role": "Director General",
+            "bio": "Director General of Magen David Adom, Israel's national emergency medical service."
+          }
+        ],
+        "connections": [
+          {
+            "name": "International Red Cross and Red Crescent Movement",
+            "type": "member",
+            "description": "MDA became a member of the ICRC movement in 2006."
+          },
+          {
+            "name": "American Friends of Magen David Adom",
+            "type": "fundraising arm",
+            "description": "AFMDA raises funds in the US for MDA operations in Israel."
+          },
+          {
+            "name": "Israel Defense Forces",
+            "type": "coordination",
+            "description": "MDA coordinates with IDF medical corps during emergencies and military operations."
+          },
+          {
+            "name": "United Hatzalah",
+            "type": "emergency peer",
+            "description": "Both provide emergency medical services in Israel."
+          }
+        ]
+      },
+      {
+        "name": "Birthright Israel Foundation",
+        "id": "birthright-israel-foundation",
+        "type": "educational foundation",
+        "category": "Education & Academia",
+        "description": "Birthright Israel Foundation is the US fundraising arm of Taglit-Birthright Israel, the program that provides free 10-day heritage trips to Israel for young Jewish adults aged 18-32. Since its founding, Birthright has sent over 800,000 young people from 68 countries to Israel, making it the largest Jewish educational initiative in the world. The program is funded by a partnership of private philanthropists, the Israeli government, and Jewish communities.",
+        "website": "https://www.birthrightisrael.com",
+        "founded": 1999,
+        "individuals": [
+          {
+            "id": "gidi-mark",
+            "name": "Gidi Mark",
+            "role": "CEO",
+            "bio": "CEO of Taglit-Birthright Israel overseeing global operations of the heritage trip program."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Birthright Israel",
+            "type": "parent program",
+            "description": "The Foundation supports the Taglit-Birthright Israel program."
+          },
+          {
+            "name": "The Jewish Federations of North America",
+            "type": "funding partner",
+            "description": "JFNA federations help fund Birthright participation."
+          },
+          {
+            "name": "Sheldon Adelson Foundation",
+            "type": "major donor",
+            "description": "The Adelson family has been the largest private donor to Birthright Israel."
+          }
+        ]
+      },
+      {
+        "name": "Yesh Din",
+        "id": "yesh-din",
+        "type": "human rights organization",
+        "category": "Advocacy & Political Organizations",
+        "description": "Yesh Din (Volunteers for Human Rights) is an Israeli human rights organization that monitors and documents human rights abuses in the occupied West Bank. Founded in 2005, it provides legal assistance to Palestinian victims of violence and property offenses, monitors law enforcement, and advocates for accountability. Yesh Din publishes detailed reports and data on the Israeli military justice system.",
+        "website": "https://www.yesh-din.org",
+        "founded": 2005,
+        "individuals": [
+          {
+            "id": "michael-sfard",
+            "name": "Michael Sfard",
+            "role": "Legal Adviser",
+            "bio": "Leading Israeli human rights attorney and legal adviser to Yesh Din. Author and legal scholar."
+          }
+        ],
+        "connections": [
+          {
+            "name": "B'Tselem",
+            "type": "human rights peer",
+            "description": "Both monitor and document human rights conditions in the occupied territories."
+          },
+          {
+            "name": "Association for Civil Rights in Israel",
+            "type": "civil rights partner",
+            "description": "Both advocate for civil and human rights within Israel and the territories."
           }
         ]
       }
@@ -23588,6 +24063,16 @@
             "name": "University of London",
             "type": "academic partner",
             "description": "Located at the Senate House of the University of London."
+          },
+          {
+            "name": "Holocaust Educational Trust",
+            "type": "education partner",
+            "description": "Both provide Holocaust education resources in the UK."
+          },
+          {
+            "name": "Fondation pour la Memoire de la Shoah",
+            "type": "European partner",
+            "description": "Both work on Holocaust memory and education in Europe."
           }
         ],
         "category": "Heritage & Memorials",
@@ -23860,6 +24345,16 @@
             "name": "Chief Rabbi",
             "type": "religious leadership",
             "description": "Works with the Office of the Chief Rabbi on communal matters."
+          },
+          {
+            "name": "United Jewish Israel Appeal",
+            "type": "member",
+            "description": "UJIA is a key member organization of the JLC."
+          },
+          {
+            "name": "Community Security Trust",
+            "type": "security partner",
+            "description": "CST provides security for British Jewish institutions coordinated through JLC."
           }
         ],
         "category": "Representative & Umbrella Bodies",
@@ -25676,6 +26171,40 @@
             "description": "Both are major French Jewish institutions."
           }
         ]
+      },
+      {
+        "name": "Fondation pour la Memoire de la Shoah",
+        "id": "fondation-pour-la-memoire-de-la-shoah",
+        "type": "foundation",
+        "category": "Heritage & Memorials",
+        "description": "The Fondation pour la Memoire de la Shoah (Foundation for the Memory of the Shoah) is a French foundation established in 2000 with funds from the restitution of assets stolen from Jews during the Holocaust. It supports research, education, and remembrance projects related to the Shoah, as well as Jewish culture and solidarity programs for Holocaust survivors. It is one of the largest Holocaust-related foundations in Europe.",
+        "website": "https://www.fondationshoah.org",
+        "founded": 2000,
+        "individuals": [
+          {
+            "id": "philippe-allouche",
+            "name": "Philippe Allouche",
+            "role": "Director General",
+            "bio": "Director General of the Fondation pour la Memoire de la Shoah."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Memorial de la Shoah",
+            "type": "grantee",
+            "description": "The Foundation provides major funding to the Memorial de la Shoah museum in Paris."
+          },
+          {
+            "name": "Yad Vashem",
+            "type": "partner",
+            "description": "Collaborates on Holocaust research and remembrance projects."
+          },
+          {
+            "name": "Claims Conference",
+            "type": "restitution partner",
+            "description": "Both emerged from Holocaust restitution and survivor support efforts."
+          }
+        ]
       }
     ],
     "Canada": [
@@ -26653,6 +27182,90 @@
           }
         ],
         "id": "toronto-international-film-festival-tiff"
+      },
+      {
+        "name": "Centre for Israel and Jewish Affairs",
+        "id": "centre-for-israel-and-jewish-affairs",
+        "type": "advocacy organization",
+        "category": "Advocacy & Public Affairs",
+        "description": "The Centre for Israel and Jewish Affairs (CIJA) is the advocacy agent of the Jewish Federations of Canada-UIA. It represents the organized Jewish community on public policy issues including Canada-Israel relations, antisemitism, human rights, and refugee resettlement. CIJA engages with all levels of government, media, and civil society across Canada.",
+        "website": "https://www.cija.ca",
+        "founded": 2004,
+        "individuals": [
+          {
+            "id": "shimon-koffler-fogel",
+            "name": "Shimon Koffler Fogel",
+            "role": "President & CEO",
+            "bio": "President and CEO of CIJA. Leading voice on Jewish community advocacy in Canada."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jewish Federations of Canada-UIA",
+            "type": "parent organization",
+            "description": "CIJA is the advocacy arm of the Jewish Federations of Canada."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "American counterpart",
+            "description": "Both advocate for strong relations with Israel in their respective countries."
+          },
+          {
+            "name": "B'nai Brith Canada",
+            "type": "advocacy partner",
+            "description": "Both combat antisemitism and advocate for Jewish community interests in Canada."
+          }
+        ]
+      },
+      {
+        "name": "Azrieli Foundation",
+        "id": "azrieli-foundation",
+        "type": "foundation",
+        "category": "Philanthropy & Foundations",
+        "description": "The Azrieli Foundation is a Canadian philanthropic foundation established by David Azrieli, an Israeli-Canadian real estate developer and Holocaust survivor. The foundation supports education, architecture, scientific and medical research, and Holocaust education. It funds the Azrieli Fellows Program (graduate scholarships), Holocaust Survivor Memoirs Program, and various institutions in Israel and Canada.",
+        "website": "https://www.azrielifoundation.org",
+        "founded": 1989,
+        "individuals": [
+          {
+            "id": "naomi-azrieli",
+            "name": "Naomi Azrieli",
+            "role": "Chair & CEO",
+            "bio": "Chair and CEO of the Azrieli Foundation. Daughter of founder David Azrieli."
+          },
+          {
+            "id": "david-azrieli",
+            "name": "David Azrieli",
+            "role": "Founder",
+            "bio": "Israeli-Canadian billionaire real estate developer and Holocaust survivor who founded the Azrieli Group and the Azrieli Foundation. Died in 2014."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Azrieli Group",
+            "type": "corporate connection",
+            "description": "The Foundation was endowed from David Azrieli's real estate empire."
+          },
+          {
+            "name": "Yad Vashem",
+            "type": "partner",
+            "description": "Supports Holocaust education and has partnerships with Yad Vashem."
+          },
+          {
+            "name": "Weizmann Institute of Science",
+            "type": "grantee",
+            "description": "The Foundation makes significant grants to scientific institutions in Israel."
+          },
+          {
+            "name": "Canadian Jewish News",
+            "type": "community connection",
+            "description": "Both serve the Canadian Jewish community in cultural and educational capacities."
+          },
+          {
+            "name": "Centre for Israel and Jewish Affairs",
+            "type": "Canadian communal partner",
+            "description": "Both are major institutions in Canadian Jewish life."
+          }
+        ]
       }
     ],
     "Australia": [
@@ -28230,7 +28843,18 @@
             "id": "josef-schuster"
           }
         ],
-        "connections": [],
+        "connections": [
+          {
+            "name": "Abraham Geiger College",
+            "type": "educational institution",
+            "description": "The first liberal rabbinical seminary in continental Europe since the Holocaust, supported by the Central Council."
+          },
+          {
+            "name": "Jewish Museum Berlin",
+            "type": "cultural partner",
+            "description": "Both represent key aspects of German Jewish institutional life."
+          }
+        ],
         "id": "central-council-of-jews-in-germany"
       },
       {
@@ -29496,6 +30120,40 @@
           }
         ],
         "id": "grupo-clar-n"
+      },
+      {
+        "name": "Fundacion Memoria del Holocausto",
+        "id": "fundacion-memoria-del-holocausto",
+        "type": "museum and archive",
+        "category": "Heritage & Memorials",
+        "description": "Fundacion Memoria del Holocausto (Holocaust Remembrance Foundation) is Argentina's primary Holocaust museum and educational center, located in Buenos Aires. It houses archives, testimonies, and exhibitions documenting the Holocaust and its impact on Argentina, which received both Jewish refugees and fleeing Nazi war criminals. The Foundation conducts educational programs reaching thousands of Argentine students annually.",
+        "website": "https://www.fmh.org.ar",
+        "founded": 1993,
+        "individuals": [
+          {
+            "id": "marcelo-mindlin",
+            "name": "Marcelo Mindlin",
+            "role": "Board President",
+            "bio": "Argentine businessman and president of the board of Fundacion Memoria del Holocausto. Head of Pampa Energia, Argentina's largest energy company."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Yad Vashem",
+            "type": "partner",
+            "description": "Collaborates on educational content and survivor testimony preservation."
+          },
+          {
+            "name": "United States Holocaust Memorial Museum",
+            "type": "museum peer",
+            "description": "Both document and educate about the Holocaust."
+          },
+          {
+            "name": "AMIA (Asociacion Mutual Israelita Argentina)",
+            "type": "communal partner",
+            "description": "Works with AMIA on Jewish community programming and Holocaust education."
+          }
+        ]
       }
     ],
     "Brazil": [
@@ -30033,6 +30691,69 @@
             "name": "Brazilian government",
             "type": "community representation",
             "description": "Represents Brazilian Jews to the federal government."
+          }
+        ]
+      },
+      {
+        "name": "Congregacao Israelita Paulista",
+        "id": "congregacao-israelita-paulista",
+        "type": "synagogue",
+        "category": "Religion & Synagogues",
+        "description": "Congregacao Israelita Paulista (CIP) is the largest Jewish congregation in Latin America, based in Sao Paulo, Brazil. Founded in 1936 by German Jewish refugees, it has over 3,000 member families and operates extensive educational, cultural, and social welfare programs. CIP is affiliated with the World Union for Progressive Judaism and represents the liberal Jewish tradition in Brazil.",
+        "website": "https://www.cfrj.com.br",
+        "founded": 1936,
+        "individuals": [
+          {
+            "id": "rabbi-ruben-sternschein",
+            "name": "Rabbi Ruben Sternschein",
+            "role": "Senior Rabbi",
+            "bio": "Senior Rabbi of Congregacao Israelita Paulista, one of the leading liberal rabbis in Latin America."
+          }
+        ],
+        "connections": [
+          {
+            "name": "World Union for Progressive Judaism",
+            "type": "affiliate",
+            "description": "CIP is affiliated with WUPJ as a Reform/Progressive congregation."
+          },
+          {
+            "name": "Confederacao Israelita do Brasil",
+            "type": "umbrella body",
+            "description": "CIP is a constituent member of CONIB, the umbrella organization of Brazilian Jews."
+          }
+        ]
+      },
+      {
+        "name": "Albert Einstein Israelite Hospital",
+        "id": "albert-einstein-israelite-hospital",
+        "type": "hospital",
+        "category": "Healthcare & Pharmaceuticals",
+        "description": "Hospital Israelita Albert Einstein is one of the top-ranked hospitals in Latin America, located in Sao Paulo, Brazil. Founded in 1955 by the Jewish community of Sao Paulo, it is a nonprofit institution that combines world-class medical care with social responsibility programs providing free healthcare to underserved communities. It is consistently ranked as the best hospital in Latin America.",
+        "website": "https://www.einstein.br",
+        "founded": 1955,
+        "individuals": [
+          {
+            "id": "sidney-klajner",
+            "name": "Sidney Klajner",
+            "role": "President",
+            "bio": "President of Hospital Israelita Albert Einstein, a leading physician and hospital administrator."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Johns Hopkins Medicine",
+            "type": "academic partner",
+            "description": "Maintains partnerships with leading American medical institutions."
+          },
+          {
+            "name": "Sociedade Beneficente Israelita Brasileira",
+            "type": "founding body",
+            "description": "Founded by the Jewish Beneficent Society of Sao Paulo."
+          },
+          {
+            "name": "Hadassah Medical Center",
+            "type": "medical peer",
+            "description": "Both are Jewish-founded hospitals with world-class medical research programs."
           }
         ]
       }
@@ -31233,6 +31954,28 @@
           }
         ],
         "id": "jewish-heritage-centre-kochi"
+      },
+      {
+        "name": "Federation of Jewish Communities of India",
+        "id": "federation-of-jewish-communities-of-india",
+        "type": "communal organization",
+        "category": "Representative & Umbrella Bodies",
+        "description": "The Federation of Jewish Communities of India represents the diverse Jewish communities across India, including the Bene Israel, Cochin Jews, Baghdadi Jews, and Bnei Menashe. India's Jewish population, estimated at around 5,000, is spread across Mumbai, Pune, Kolkata, Kochi, and smaller towns. The Federation works to preserve Jewish heritage sites, support community institutions, and maintain connections with the global Jewish world.",
+        "website": "",
+        "founded": 1980,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "World Jewish Congress",
+            "type": "affiliate",
+            "description": "Connected to the WJC for international Jewish representation."
+          },
+          {
+            "name": "Jewish Agency for Israel",
+            "type": "aliyah partner",
+            "description": "Facilitates connections for Indian Jews interested in Israel."
+          }
+        ]
       }
     ],
     "Mexico": [
@@ -31833,6 +32576,28 @@
         "individuals": [],
         "connections": [],
         "id": "doh-ny-street-synagogue"
+      },
+      {
+        "name": "Dohany Street Synagogue",
+        "id": "dohany-street-synagogue",
+        "type": "synagogue and museum",
+        "category": "Religion & Synagogues",
+        "description": "The Dohany Street Synagogue (also known as the Great Synagogue of Budapest) is the largest synagogue in Europe and the second-largest in the world. Built between 1854 and 1859 in Moorish Revival style, it seats 3,000 worshippers. The synagogue complex includes the Jewish Museum, the Heroes' Temple commemorating Hungarian Jewish soldiers, the Raoul Wallenberg Holocaust Memorial Park, and the Tree of Life memorial to Holocaust victims.",
+        "website": "https://www.dohanyutcaizsinagoga.hu",
+        "founded": 1859,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "Federation of Hungarian Jewish Communities",
+            "type": "affiliated body",
+            "description": "The synagogue is under the aegis of Mazsihisz (EMIH in some contexts)."
+          },
+          {
+            "name": "World Jewish Congress",
+            "type": "heritage site",
+            "description": "Recognized as one of the most important Jewish heritage sites in Europe."
+          }
+        ]
       }
     ],
     "Austria": [
@@ -35365,6 +36130,35 @@
         "individuals": [],
         "connections": [],
         "id": "bayt-dakira-house-of-memory"
+      },
+      {
+        "name": "Conseil des Communautes Israelites du Maroc",
+        "id": "conseil-des-communautes-israelites-du-maroc",
+        "type": "communal council",
+        "category": "Representative & Umbrella Bodies",
+        "description": "The Conseil des Communautes Israelites du Maroc (Council of Israelite Communities of Morocco) is the representative body of Moroccan Jewry. Morocco has the largest remaining Jewish community in the Arab world, estimated at approximately 2,500 people, concentrated in Casablanca. The council oversees communal affairs, synagogues, cemeteries, and heritage preservation in a country known for its relative tolerance toward its Jewish minority.",
+        "website": "",
+        "founded": 1947,
+        "individuals": [
+          {
+            "id": "serge-berdugo",
+            "name": "Serge Berdugo",
+            "role": "Secretary General",
+            "bio": "Secretary General of the Council of Israelite Communities of Morocco. Former Moroccan Minister of Tourism and prominent diplomat."
+          }
+        ],
+        "connections": [
+          {
+            "name": "World Jewish Congress",
+            "type": "affiliate",
+            "description": "Morocco's Jewish community is represented through the WJC."
+          },
+          {
+            "name": "Museum of Moroccan Judaism",
+            "type": "cultural institution",
+            "description": "The council supports the Museum of Moroccan Judaism in Casablanca, the only Jewish museum in the Arab world."
+          }
+        ]
       }
     ],
     "Iran": [
@@ -35567,6 +36361,28 @@
           }
         ],
         "id": "north-shewa-zone-heritage-center"
+      },
+      {
+        "name": "North American Conference on Ethiopian Jewry",
+        "id": "north-american-conference-on-ethiopian-jewry",
+        "type": "advocacy organization",
+        "category": "Advocacy & Public Affairs",
+        "description": "The North American Conference on Ethiopian Jewry (NACOEJ) advocates for and supports Ethiopian Jews (Beta Israel) both in Ethiopia and in Israel. Founded in 1982, it operates feeding centers, schools, and community programs in Gondar and Addis Ababa for Ethiopians awaiting aliyah, and supports integration programs in Israel. NACOEJ has been instrumental in advocacy for the immigration of Ethiopian Jews to Israel through Operations Moses, Joshua, and Solomon.",
+        "website": "https://www.nacoej.org",
+        "founded": 1982,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "Jewish Agency for Israel",
+            "type": "aliyah partner",
+            "description": "Works with the Jewish Agency on Ethiopian aliyah operations."
+          },
+          {
+            "name": "American Jewish Joint Distribution Committee",
+            "type": "humanitarian partner",
+            "description": "Both provide support to Ethiopian Jewish communities."
+          }
+        ]
       }
     ],
     "Japan": [
@@ -36208,6 +37024,28 @@
         "individuals": [],
         "connections": [],
         "id": "comunidad-israelita-del-uruguay"
+      },
+      {
+        "name": "Comite Central Israelita del Uruguay",
+        "id": "comite-central-israelita-del-uruguay",
+        "type": "representative body",
+        "category": "Representative & Umbrella Bodies",
+        "description": "The Comite Central Israelita del Uruguay is the central representative organization of Uruguayan Jewry. Uruguay has one of the most established Jewish communities in Latin America, numbering approximately 15,000-20,000 people, concentrated in Montevideo. The committee coordinates communal affairs, combats antisemitism, and represents the community to the Uruguayan government and international bodies.",
+        "website": "https://www.cciu.org.uy",
+        "founded": 1940,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "World Jewish Congress",
+            "type": "affiliate",
+            "description": "Represents Uruguayan Jewry in the WJC."
+          },
+          {
+            "name": "AMIA (Asociacion Mutual Israelita Argentina)",
+            "type": "regional partner",
+            "description": "Coordinates with nearby Argentine Jewish community institutions."
+          }
+        ]
       }
     ],
     "Chile": [
@@ -36288,6 +37126,28 @@
           }
         ],
         "id": "instituto-hebreo-dr-chaim-weizmann"
+      },
+      {
+        "name": "Comunidad Judia de Chile",
+        "id": "comunidad-judia-de-chile",
+        "type": "communal organization",
+        "category": "Representative & Umbrella Bodies",
+        "description": "The Comunidad Judia de Chile (Jewish Community of Chile) represents the approximately 18,000 Jews in Chile, the fourth-largest Jewish community in Latin America. Based primarily in Santiago, Chilean Jews maintain a network of schools, synagogues, community centers, and cultural institutions. The community includes both Ashkenazi and Sephardic traditions.",
+        "website": "",
+        "founded": 1940,
+        "individuals": [],
+        "connections": [
+          {
+            "name": "World Jewish Congress",
+            "type": "affiliate",
+            "description": "Chilean Jewry is represented in the World Jewish Congress."
+          },
+          {
+            "name": "Confederacao Israelita do Brasil",
+            "type": "Latin American peer",
+            "description": "Part of the network of Latin American Jewish communal organizations."
+          }
+        ]
       }
     ],
     "Colombia": [
@@ -40575,6 +41435,12 @@
             "role": "Vice President",
             "bio": "Austrian-Israeli businessman, VP of the European Jewish Congress.",
             "id": "ariel-muzicant"
+          },
+          {
+            "id": "moshe-kantor",
+            "name": "Moshe Kantor",
+            "role": "Former President",
+            "bio": "Russian-Israeli industrialist and former president of the European Jewish Congress. Sanctioned by the EU in 2022."
           }
         ],
         "id": "european-jewish-congress",
@@ -40981,6 +41847,12 @@
             "bio": "Former CEO of World ORT (Jewish), overseeing the global Jewish education network serving 300,000+ students.",
             "role": "Former CEO",
             "id": "robert-singer"
+          },
+          {
+            "id": "jonathan-davis",
+            "name": "Jonathan Davis",
+            "role": "Director General",
+            "bio": "Director General and CEO of World ORT, operating education programs in 35 countries."
           }
         ],
         "id": "world-ort",

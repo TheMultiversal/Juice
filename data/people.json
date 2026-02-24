@@ -248,6 +248,12 @@
           "role": "President & CEO",
           "entryId": "jewish-federations-of-north-america",
           "country": "United States"
+        },
+        {
+          "organization": "The Jewish Federations of North America",
+          "role": "President & CEO",
+          "entryId": "the-jewish-federations-of-north-america",
+          "country": "United States"
         }
       ]
     },
@@ -880,6 +886,12 @@
           "role": "Original Investor",
           "entryId": "partner-communications-orange-israel",
           "country": "Israel"
+        },
+        {
+          "organization": "Saban Capital Group",
+          "role": "Chairman",
+          "entryId": "saban-capital-group",
+          "country": "United States"
         }
       ]
     },
@@ -5034,6 +5046,12 @@
           "role": "Founder (1922-2014)",
           "entryId": "azrieli-group",
           "country": "Israel"
+        },
+        {
+          "organization": "Azrieli Foundation",
+          "role": "Founder",
+          "entryId": "azrieli-foundation",
+          "country": "Canada"
         }
       ]
     },
@@ -6404,6 +6422,12 @@
           "organization": "Centre for Israel and Jewish Affairs (CIJA)",
           "role": "Associated",
           "entryId": "centre-for-israel-and-jewish-affairs-cija",
+          "country": "Canada"
+        },
+        {
+          "organization": "Centre for Israel and Jewish Affairs",
+          "role": "President & CEO",
+          "entryId": "centre-for-israel-and-jewish-affairs",
           "country": "Canada"
         }
       ]
@@ -9171,6 +9195,12 @@
           "role": "President",
           "entryId": "albert-einstein-hospital-hospital-israelita-albert-einstein",
           "country": "Brazil"
+        },
+        {
+          "organization": "Albert Einstein Israelite Hospital",
+          "role": "President",
+          "entryId": "albert-einstein-israelite-hospital",
+          "country": "Brazil"
         }
       ]
     },
@@ -10193,6 +10223,12 @@
           "organization": "Casablanca Jewish Heritage Trail",
           "role": "Secretary-General",
           "entryId": "casablanca-jewish-heritage-trail",
+          "country": "Morocco"
+        },
+        {
+          "organization": "Conseil des Communautes Israelites du Maroc",
+          "role": "Secretary General",
+          "entryId": "conseil-des-communautes-israelites-du-maroc",
           "country": "Morocco"
         }
       ]
@@ -13137,6 +13173,297 @@
           "role": "Chair of the Board",
           "entryId": "jewish-federations-of-north-america",
           "country": "United States"
+        }
+      ]
+    },
+    "bernard-lander": {
+      "name": "Bernard Lander",
+      "bio": "Rabbi and educator who founded Touro College in 1970 to serve underserved communities.",
+      "notes": "",
+      "affiliations": []
+    },
+    "alan-kadish": {
+      "name": "Alan Kadish",
+      "bio": "President of Touro University, cardiologist and academic leader.",
+      "notes": "",
+      "affiliations": []
+    },
+    "cindy-greenberg": {
+      "name": "Cindy Greenberg",
+      "bio": "CEO of Repair the World, leading Jewish service initiatives.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Repair the World",
+          "role": "CEO",
+          "entryId": "repair-the-world",
+          "country": "United States"
+        }
+      ]
+    },
+    "julie-platt": {
+      "name": "Julie Platt",
+      "bio": "Chair of the Board of Trustees of JFNA. Prominent communal leader and philanthropist.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "The Jewish Federations of North America",
+          "role": "Chair of the Board",
+          "entryId": "the-jewish-federations-of-north-america",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-charendoff": {
+      "name": "Mark Charendoff",
+      "bio": "President of the Maimonides Fund and former president of the Jewish Funders Network.",
+      "notes": "",
+      "affiliations": []
+    },
+    "winnie-sandler-grinspoon": {
+      "name": "Winnie Sandler Grinspoon",
+      "bio": "President of the Harold Grinspoon Foundation overseeing PJ Library operations.",
+      "notes": "",
+      "affiliations": []
+    },
+    "michael-masters": {
+      "name": "Michael Masters",
+      "bio": "National Director and CEO of the Secure Community Network. Former DHS official.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Secure Community Network",
+          "role": "CEO",
+          "entryId": "secure-community-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "yehuda-kurtzer": {
+      "name": "Yehuda Kurtzer",
+      "bio": "President of the Shalom Hartman Institute of North America. Scholar of American Jewish life.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jeremy-fingerman": {
+      "name": "Jeremy Fingerman",
+      "bio": "CEO of the Foundation for Jewish Camp. Former executive at major consumer brands.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Foundation for Jewish Camp",
+          "role": "CEO",
+          "entryId": "foundation-for-jewish-camp",
+          "country": "United States"
+        }
+      ]
+    },
+    "idit-klein": {
+      "name": "Idit Klein",
+      "bio": "Co-founder, president and CEO of Keshet. Leading voice for LGBTQ+ inclusion in Jewish life.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Keshet",
+          "role": "President & CEO",
+          "entryId": "keshet",
+          "country": "United States"
+        }
+      ]
+    },
+    "gilles-darmon": {
+      "name": "Gilles Darmon",
+      "bio": "French-born Israeli founder of Latet, Israel's largest humanitarian aid organization.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Latet",
+          "role": "Founder & Chairman",
+          "entryId": "latet",
+          "country": "Israel"
+        }
+      ]
+    },
+    "eran-weintrob": {
+      "name": "Eran Weintrob",
+      "bio": "CEO of Latet overseeing humanitarian operations across Israel.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Latet",
+          "role": "CEO",
+          "entryId": "latet",
+          "country": "Israel"
+        }
+      ]
+    },
+    "eli-bin": {
+      "name": "Eli Bin",
+      "bio": "Director General of Magen David Adom, Israel's national emergency medical service.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Magen David Adom",
+          "role": "Director General",
+          "entryId": "magen-david-adom",
+          "country": "Israel"
+        }
+      ]
+    },
+    "michael-sfard": {
+      "name": "Michael Sfard",
+      "bio": "Leading Israeli human rights attorney and legal adviser to Yesh Din. Author and legal scholar.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Yesh Din",
+          "role": "Legal Adviser",
+          "entryId": "yesh-din",
+          "country": "Israel"
+        }
+      ]
+    },
+    "ran-guron": {
+      "name": "Ran Guron",
+      "bio": "CEO of Bezeq, Israel's largest telecommunications company.",
+      "notes": "",
+      "affiliations": []
+    },
+    "claudia-mendoza": {
+      "name": "Claudia Mendoza",
+      "bio": "CEO of the Jewish Leadership Council.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jonathan-goldstein": {
+      "name": "Jonathan Goldstein",
+      "bio": "Chair of the Jewish Leadership Council. Property executive and communal leader.",
+      "notes": "",
+      "affiliations": []
+    },
+    "michael-etherton": {
+      "name": "Michael Etherton",
+      "bio": "Director of the UK Jewish Film Festival.",
+      "notes": "",
+      "affiliations": []
+    },
+    "raymond-sherr": {
+      "name": "Raymond Sherr",
+      "bio": "CEO of JW3, London's Jewish community center.",
+      "notes": "",
+      "affiliations": []
+    },
+    "toby-simpson": {
+      "name": "Toby Simpson",
+      "bio": "Director of the Wiener Holocaust Library, managing one of the world's oldest Holocaust archives.",
+      "notes": "",
+      "affiliations": []
+    },
+    "philippe-allouche": {
+      "name": "Philippe Allouche",
+      "bio": "Director General of the Fondation pour la Memoire de la Shoah.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Fondation pour la Memoire de la Shoah",
+          "role": "Director General",
+          "entryId": "fondation-pour-la-memoire-de-la-shoah",
+          "country": "France"
+        }
+      ]
+    },
+    "patricia-sitruk": {
+      "name": "Patricia Sitruk",
+      "bio": "Director General of OSE-France, overseeing health and social service operations.",
+      "notes": "",
+      "affiliations": []
+    },
+    "hetty-berg": {
+      "name": "Hetty Berg",
+      "bio": "Director of the Jewish Museum Berlin since 2020. Dutch museum professional.",
+      "notes": "",
+      "affiliations": []
+    },
+    "naomi-azrieli": {
+      "name": "Naomi Azrieli",
+      "bio": "Chair and CEO of the Azrieli Foundation. Daughter of founder David Azrieli.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Azrieli Foundation",
+          "role": "Chair & CEO",
+          "entryId": "azrieli-foundation",
+          "country": "Canada"
+        }
+      ]
+    },
+    "kevin-sumption": {
+      "name": "Kevin Sumption",
+      "bio": "CEO of the Sydney Jewish Museum.",
+      "notes": "",
+      "affiliations": []
+    },
+    "wendy-gillian-memory-sobel-kahn": {
+      "name": "Wendy Kahn",
+      "bio": "National Director of the South African Jewish Board of Deputies.",
+      "notes": "",
+      "affiliations": []
+    },
+    "rabbi-ruben-sternschein": {
+      "name": "Rabbi Ruben Sternschein",
+      "bio": "Senior Rabbi of Congregacao Israelita Paulista, one of the leading liberal rabbis in Latin America.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Congregacao Israelita Paulista",
+          "role": "Senior Rabbi",
+          "entryId": "congregacao-israelita-paulista",
+          "country": "Brazil"
+        }
+      ]
+    },
+    "marcelo-mindlin": {
+      "name": "Marcelo Mindlin",
+      "bio": "Argentine businessman and president of the board of Fundacion Memoria del Holocausto. Head of Pampa Energia, Argentina's largest energy company.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Fundacion Memoria del Holocausto",
+          "role": "Board President",
+          "entryId": "fundacion-memoria-del-holocausto",
+          "country": "Argentina"
+        }
+      ]
+    },
+    "robert-bank": {
+      "name": "Robert Bank",
+      "bio": "President and CEO of American Jewish World Service, the premier Jewish global human rights organization.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jonathan-davis": {
+      "name": "Jonathan Davis",
+      "bio": "Director General and CEO of World ORT, operating education programs in 35 countries.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "World ORT",
+          "role": "Director General",
+          "entryId": "world-ort",
+          "country": "International"
+        }
+      ]
+    },
+    "moshe-kantor": {
+      "name": "Moshe Kantor",
+      "bio": "Russian-Israeli industrialist and former president of the European Jewish Congress. Sanctioned by the EU in 2022.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "European Jewish Congress",
+          "role": "Former President",
+          "entryId": "european-jewish-congress",
+          "country": "International"
         }
       ]
     }

@@ -217,44 +217,26 @@
     <div class="featured-grid" id="featured-grid"></div>
   </div>
 
-  <!-- FULL DIRECTORY -->
-  <div class="section">
-    <h2>Full Directory</h2>
-    <div class="filter-row">
-      <input type="text" id="country-filter" placeholder="Filter by country..." />
-      <select id="category-filter"><option value="">All Categories</option></select>
-      <select id="sort-select">
-        <option value="country">Sort by Country</option>
-        <option value="name">Sort by Name</option>
-        <option value="category">Sort by Category</option>
-        <option value="founded">Sort by Founded Year</option>
-      </select>
-      <div class="view-toggle">
-        <button class="active" id="view-grouped" onclick="setView('grouped')">Grouped</button>
-        <button id="view-flat" onclick="setView('flat')">Flat List</button>
-      </div>
+  <!-- QUICK LINKS -->
+  <div class="section" style="text-align:center;padding-bottom:30px;">
+    <h2>Explore the Database</h2>
+    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:15px;">
+      <a href="allcountries.html" class="discover-btn"><i class="fa-solid fa-globe"></i> Full Directory</a>
+      <a href="people.html" class="discover-btn secondary"><i class="fa-solid fa-users"></i> All People</a>
+      <a href="stats.html" class="discover-btn secondary"><i class="fa-solid fa-chart-bar"></i> Statistics</a>
+      <a href="about.html" class="discover-btn secondary"><i class="fa-solid fa-circle-info"></i> About</a>
     </div>
-    <div class="stat-bar" id="stats"></div>
-    <div id="results"></div>
   </div>
 
   <script src="app.js"></script>
   <script>
     let cachedData = null;
-    let currentView = 'grouped';
 
     function goSearch() {
       const q = document.getElementById('hero-search').value.trim();
       if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
     }
     document.getElementById('hero-search').addEventListener('keydown', e => { if (e.key === 'Enter') goSearch(); });
-
-    function setView(v) {
-      currentView = v;
-      document.getElementById('view-grouped').classList.toggle('active', v === 'grouped');
-      document.getElementById('view-flat').classList.toggle('active', v === 'flat');
-      if (cachedData) renderData(cachedData);
-    }
 
     function animateCounter(el, target) {
       let current = 0;
@@ -268,10 +250,8 @@
 
     initPage('jewish', data => {
       cachedData = data;
-      populateCategoryFilter(data);
-      renderData(data);
     });
-    setSEO({ title: 'Juice - Religious Organizations Dashboard', description: 'Explore 800+ religious organizations across 86 countries with interactive analytics, maps, and network graphs.' });
+    setSEO({ title: 'The Juice Box - Religious Organizations Intelligence Database', description: 'Explore 1,100+ religious organizations across 118 countries with interactive analytics, maps, and network graphs.' });
 
     // Dashboard stats
     fetch('/api/stats').then(r => r.json()).then(stats => {
@@ -361,112 +341,6 @@
       });
     }
     loadFeatured();
-
-    function populateCategoryFilter(data) {
-      const sel = document.getElementById('category-filter');
-      const cats = {};
-      for (const country in data.countries) {
-        for (const e of data.countries[country]) {
-          const c = e.category || 'Uncategorized';
-          cats[c] = (cats[c] || 0) + 1;
-        }
-      }
-      while (sel.options.length > 1) sel.remove(1);
-      Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([cat, count]) => {
-        const opt = document.createElement('option');
-        opt.value = cat;
-        opt.textContent = cat + ' (' + count + ')';
-        sel.appendChild(opt);
-      });
-    }
-
-    function renderData(data) {
-      const container = document.getElementById('results');
-      const filter = document.getElementById('country-filter').value.trim().toLowerCase();
-      const catFilter = document.getElementById('category-filter').value;
-      const sortBy = document.getElementById('sort-select').value;
-      container.innerHTML = '';
-
-      if (currentView === 'flat') return renderFlat(data, container, filter, catFilter, sortBy);
-
-      let totalEntries = 0, totalCountries = 0, totalCats = new Set();
-      let countryEntries = [];
-      for (const country in data.countries) {
-        if (filter && !country.toLowerCase().includes(filter)) continue;
-        let entries = data.countries[country];
-        if (catFilter) entries = entries.filter(e => e.category === catFilter);
-        if (entries.length === 0) continue;
-        countryEntries.push({ country, entries });
-      }
-      if (sortBy === 'name') countryEntries.sort((a, b) => a.country.localeCompare(b.country));
-      else if (sortBy === 'founded') countryEntries.sort((a, b) => Math.min(...a.entries.map(e => e.founded || 9999)) - Math.min(...b.entries.map(e => e.founded || 9999)));
-
-      for (const { country, entries } of countryEntries) {
-        totalCountries++;
-        totalEntries += entries.length;
-        entries.forEach(e => totalCats.add(e.category || 'Uncategorized'));
-
-        const section = document.createElement('div');
-        section.className = 'country panel';
-        const heading = document.createElement('h2');
-        const headingLink = document.createElement('a');
-        headingLink.href = 'country.html?religion=jewish&country=' + encodeURIComponent(country);
-        headingLink.textContent = country + ' (' + entries.length + ')';
-        headingLink.style.color = '#0000EE';
-        heading.appendChild(headingLink);
-        section.appendChild(heading);
-
-        const groups = {};
-        entries.forEach(item => { const cat = item.category || 'Uncategorized'; if (!groups[cat]) groups[cat] = []; groups[cat].push(item); });
-
-        Object.entries(groups).sort((a,b) => b[1].length - a[1].length).forEach(([catName, catEntries]) => {
-          if (Object.keys(groups).length > 1) {
-            const catH = document.createElement('div');
-            catH.className = 'cat-header';
-            catH.innerHTML = '<h3><a href="category.html?religion=jewish&category=' + encodeURIComponent(catName) + '">' + catName + '</a></h3><span class="cat-count-badge">' + catEntries.length + '</span>';
-            section.appendChild(catH);
-          }
-          catEntries.forEach(item => {
-            const card = document.createElement('div');
-            card.className = 'entry-card';
-            card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
-              + '<span class="entry-type-inline"> , ' + item.type + '</span>'
-              + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
-              + (item.category && Object.keys(groups).length <= 1 ? ' <span class="tag">' + item.category + '</span>' : '');
-            section.appendChild(card);
-          });
-        });
-        container.appendChild(section);
-      }
-      document.getElementById('stats').innerHTML = '<div class="stat-item"><span>' + totalEntries + '</span> entries</div><div class="stat-item"><span>' + totalCountries + '</span> countries</div><div class="stat-item"><span>' + totalCats.size + '</span> categories</div>';
-    }
-
-    function renderFlat(data, container, filter, catFilter, sortBy) {
-      const all = [];
-      for (const country in data.countries) {
-        if (filter && !country.toLowerCase().includes(filter)) continue;
-        data.countries[country].forEach(e => { if (catFilter && e.category !== catFilter) return; all.push(Object.assign({}, e, { country })); });
-      }
-      if (sortBy === 'name') all.sort((a, b) => a.name.localeCompare(b.name));
-      else if (sortBy === 'category') all.sort((a, b) => (a.category || '').localeCompare(b.category || ''));
-      else if (sortBy === 'founded') all.sort((a, b) => (a.founded || 9999) - (b.founded || 9999));
-      else all.sort((a, b) => a.country.localeCompare(b.country));
-
-      document.getElementById('stats').innerHTML = '<div class="stat-item"><span>' + all.length + '</span> entries</div>';
-      all.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'entry-card';
-        card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
-          + '<span class="entry-type-inline"> , ' + item.type + ' · ' + item.country + '</span>'
-          + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
-          + (item.category ? ' <span class="tag">' + item.category + '</span>' : '');
-        container.appendChild(card);
-      });
-    }
-
-    document.getElementById('country-filter').addEventListener('input', function() { if (cachedData) renderData(cachedData); });
-    document.getElementById('category-filter').addEventListener('change', function() { if (cachedData) renderData(cachedData); });
-    document.getElementById('sort-select').addEventListener('change', function() { if (cachedData) renderData(cachedData); });
   </script>
 </body>
 </html>

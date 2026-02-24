@@ -165,88 +165,83 @@ function buildMenu(data, religion) {
   main.style.padding = '8px 0';
   main.style.display = 'flex';
   main.style.flexWrap = 'wrap';
-  main.style.gap = '8px 10px';
+  main.style.gap = '6px 8px';
   main.style.justifyContent = 'center';
   main.style.alignItems = 'center';
 
-  // 'All countries' link
-  const allLi = document.createElement('li');
-  const allA = document.createElement('a');
-  allA.href = 'allcountries.html';
-  allA.textContent = 'All countries';
-  allLi.appendChild(allA);
-  main.appendChild(allLi);
-
-  // 'Categories' link
-  const catLi = document.createElement('li');
-  const catA = document.createElement('a');
-  catA.href = 'categories.html';
-  catA.textContent = 'Categories';
-  catLi.appendChild(catA);
-  main.appendChild(catLi);
-
-  // 'Search' link
-  const searchLi = document.createElement('li');
-  const searchA = document.createElement('a');
-  searchA.href = 'search.html';
-  searchA.textContent = 'Search';
-  searchLi.appendChild(searchA);
-  main.appendChild(searchLi);
-
-  // 'People' link
-  const peopleLi = document.createElement('li');
-  const peopleA = document.createElement('a');
-  peopleA.href = 'people.html';
-  peopleA.textContent = 'People';
-  peopleLi.appendChild(peopleA);
-  main.appendChild(peopleLi);
-
-  // 'Stats' link
-  const statsLi = document.createElement('li');
-  const statsA = document.createElement('a');
-  statsA.href = 'stats.html';
-  statsA.textContent = 'Stats';
-  statsLi.appendChild(statsA);
-  main.appendChild(statsLi);
-
-  // 'Graph' link
-  const graphLi = document.createElement('li');
-  const graphA = document.createElement('a');
-  graphA.href = 'graph.html';
-  graphA.textContent = 'Graph';
-  graphLi.appendChild(graphA);
-  main.appendChild(graphLi);
-
-  // New page links
-  const newPages = [
-    { href: 'timeline.html', text: 'Timeline' },
-    { href: 'map.html', text: 'Map' },
-    { href: 'compare.html', text: 'Compare' },
-    { href: 'export.html', text: 'Export' },
-    { href: 'discover.html', text: 'Discover' },
-    { href: 'pathfinder.html', text: 'Pathfinder' },
-    { href: 'bookmarks.html', text: 'Bookmarks' },
-    { href: 'audit.html', text: 'Audit' }
-  ];
-  newPages.forEach(p => {
+  function addLink(href, text, icon, extraClass) {
     const li = document.createElement('li');
     const a = document.createElement('a');
-    a.href = p.href;
-    a.textContent = p.text;
+    a.href = href;
+    a.innerHTML = (icon ? '<i class="' + icon + '"></i> ' : '') + text;
+    if (extraClass) a.className = extraClass;
     li.appendChild(a);
     main.appendChild(li);
-  });
+    return li;
+  }
 
-  // some main countries
-  const mainCountries = ['United States', 'Israel', 'United Kingdom', 'Canada', 'Australia'];
+  function addSep() {
+    const li = document.createElement('li');
+    li.innerHTML = '<span style="color:rgba(0,56,184,0.3);font-size:1.2em;user-select:none;">|</span>';
+    main.appendChild(li);
+  }
+
+  // Home
+  addLink('index.html', 'Home', 'fa-solid fa-house');
+
+  addSep();
+
+  // Browse section
+  addLink('search.html', 'Search', 'fa-solid fa-magnifying-glass');
+  addLink('categories.html', 'Categories', 'fa-solid fa-layer-group');
+  addLink('people.html', 'People', 'fa-solid fa-users');
+
+  addSep();
+
+  // Analyze section
+  addLink('stats.html', 'Stats', 'fa-solid fa-chart-bar');
+  addLink('graph.html', 'Graph', 'fa-solid fa-diagram-project');
+  addLink('timeline.html', 'Timeline', 'fa-solid fa-clock-rotate-left');
+  addLink('map.html', 'Map', 'fa-solid fa-earth-americas');
+
+  addSep();
+
+  // Tools section
+  addLink('compare.html', 'Compare', 'fa-solid fa-scale-balanced');
+  addLink('export.html', 'Export', 'fa-solid fa-file-export');
+  addLink('discover.html', 'Discover', 'fa-solid fa-dice');
+  addLink('pathfinder.html', 'Pathfinder', 'fa-solid fa-route');
+  addLink('bookmarks.html', 'Bookmarks', 'fa-solid fa-bookmark');
+  addLink('audit.html', 'Audit', 'fa-solid fa-clipboard-check');
+
+  addSep();
+
+  addLink('about.html', 'About', 'fa-solid fa-circle-info');
+
+  addSep();
+
+  // Countries section - all together with flag icons
+  const mainCountries = [
+    { name: 'United States', flag: 'us' },
+    { name: 'Israel', flag: 'il' },
+    { name: 'United Kingdom', flag: 'gb' },
+    { name: 'France', flag: 'fr' },
+    { name: 'Germany', flag: 'de' },
+    { name: 'Canada', flag: 'ca' },
+    { name: 'Australia', flag: 'au' },
+    { name: 'Russia', flag: 'ru' },
+    { name: 'South Africa', flag: 'za' },
+    { name: 'Argentina', flag: 'ar' }
+  ];
   mainCountries.forEach(c => {
     const li = document.createElement('li');
     const a = document.createElement('a');
-    a.href = `country.html?religion=${encodeURIComponent(religion)}&country=${encodeURIComponent(c)}`;
-    a.textContent = c;
+    a.href = `country.html?religion=${encodeURIComponent(religion)}&country=${encodeURIComponent(c.name)}`;
+    a.innerHTML = '<img src="https://flagcdn.com/w20/' + c.flag + '.png" style="height:12px;vertical-align:middle;margin-right:4px;border-radius:1px;"> ' + c.name;
     li.appendChild(a);
     main.appendChild(li);
   });
+  addLink('allcountries.html', 'All Countries', 'fa-solid fa-globe');
 
   // dropdown of all countries from countries.json
   fetch('/api/countries')
@@ -426,7 +421,73 @@ function initKeyboardShortcuts() {
 function addFooter() {
   const footer = document.createElement('footer');
   footer.className = 'site-footer';
-  footer.style.cssText = 'text-align:center;padding:20px;margin-top:40px;border-top:1px solid rgba(0,0,255,0.15);font-size:0.85em;color:#888;background:rgba(250,250,255,0.95);';
-  footer.innerHTML = '© 2016-' + new Date().getFullYear() + ' Juice Project. All rights reserved. | v4.2 | <a href="audit.html" style="color:#0056b3;text-decoration:none;">Audit</a>';
+  footer.style.cssText = 'padding:0;margin-top:40px;border-top:2px solid rgba(0,56,184,0.15);background:rgba(250,250,255,0.97);font-size:0.88em;color:#666;';
+  footer.innerHTML = `
+    <div style="max-width:1200px;margin:0 auto;padding:35px 30px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;">
+      <div>
+        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1.1em;"><i class="fa-solid fa-database"></i> The Juice Box</h4>
+        <p style="margin:0 0 8px;line-height:1.6;font-size:0.92em;">Comprehensive Religious Organizations Intelligence Database. Tracking structure, people, and connections since 2016.</p>
+        <p style="margin:0;font-size:0.85em;color:#999;">v4.3 | Est. 2016</p>
+      </div>
+      <div>
+        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1em;"><i class="fa-solid fa-compass"></i> Browse</h4>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <a href="search.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-magnifying-glass" style="width:16px;"></i> Search</a>
+          <a href="categories.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-layer-group" style="width:16px;"></i> Categories</a>
+          <a href="people.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-users" style="width:16px;"></i> People</a>
+          <a href="allcountries.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-globe" style="width:16px;"></i> All Countries</a>
+          <a href="discover.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-dice" style="width:16px;"></i> Discover</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1em;"><i class="fa-solid fa-chart-line"></i> Analyze</h4>
+        <div style="display:flex;flex-direction:column;gap:6px;">
+          <a href="stats.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-chart-bar" style="width:16px;"></i> Statistics</a>
+          <a href="graph.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-diagram-project" style="width:16px;"></i> Network Graph</a>
+          <a href="timeline.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-clock-rotate-left" style="width:16px;"></i> Timeline</a>
+          <a href="map.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-earth-americas" style="width:16px;"></i> World Map</a>
+          <a href="pathfinder.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-route" style="width:16px;"></i> Pathfinder</a>
+          <a href="compare.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;"><i class="fa-solid fa-scale-balanced" style="width:16px;"></i> Compare</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1em;"><i class="fa-solid fa-envelope"></i> Stay Updated</h4>
+        <p style="margin:0 0 10px;font-size:0.9em;line-height:1.5;">Subscribe for database updates, new entries, and research insights.</p>
+        <form id="mailing-list-form" onsubmit="return handleMailingList(event)" style="display:flex;gap:0;">
+          <input type="email" id="mailing-email" placeholder="your@email.com" required style="flex:1;padding:8px 12px;border:1px solid rgba(0,56,184,0.25);border-radius:6px 0 0 6px;font-size:0.9em;outline:none;min-width:0;" />
+          <button type="submit" style="padding:8px 14px;background:#0038b8;color:#fff;border:1px solid #0038b8;border-radius:0 6px 6px 0;cursor:pointer;font-size:0.85em;font-weight:bold;white-space:nowrap;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div id="mailing-msg" style="font-size:0.82em;margin-top:6px;min-height:18px;"></div>
+      </div>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:15px 30px;border-top:1px solid rgba(0,56,184,0.1);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;">
+      <span>&copy; 2016-${new Date().getFullYear()} The Juice Box Project. All rights reserved.</span>
+      <div style="display:flex;gap:15px;align-items:center;">
+        <a href="about.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">About</a>
+        <a href="audit.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Audit</a>
+        <a href="export.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Export</a>
+        <a href="bookmarks.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Bookmarks</a>
+      </div>
+    </div>
+  `;
   document.body.appendChild(footer);
+}
+
+// Handle mailing list form
+function handleMailingList(e) {
+  e.preventDefault();
+  const email = document.getElementById('mailing-email').value.trim();
+  const msg = document.getElementById('mailing-msg');
+  if (!email) return false;
+  // Store locally (no backend email service)
+  const subs = JSON.parse(localStorage.getItem('juice_mailing_list') || '[]');
+  if (subs.includes(email)) {
+    msg.innerHTML = '<span style="color:#e67700;"><i class="fa-solid fa-circle-check"></i> You\'re already subscribed!</span>';
+  } else {
+    subs.push(email);
+    localStorage.setItem('juice_mailing_list', JSON.stringify(subs));
+    msg.innerHTML = '<span style="color:#0a8f3c;"><i class="fa-solid fa-circle-check"></i> Subscribed! Thank you.</span>';
+  }
+  document.getElementById('mailing-email').value = '';
+  return false;
 }
