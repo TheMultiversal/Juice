@@ -1,0 +1,170 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookmarks</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .main { max-width: 1000px; margin: 0 auto; padding: 15px 20px; }
+    h1 { margin: 0 0 5px 0; }
+    .subtitle { color: #555; margin: 0 0 15px 0; }
+    .stat-bar { display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap; }
+    .stat-box { background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.15); border-radius: 10px; padding: 10px 15px; text-align: center; }
+    .stat-box .num { font-size: 1.4em; font-weight: bold; color: #0056b3; }
+    .stat-box .lbl { font-size: 0.8em; color: #555; }
+    .empty { text-align: center; padding: 60px 20px; color: #888; }
+    .empty h2 { color: #555; }
+    .bookmark-list { display: grid; gap: 12px; }
+    .bm-card { background: rgba(255,255,255,0.92); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px; padding: 15px; display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+    .bm-info { flex: 1; }
+    .bm-info h3 { margin: 0 0 3px 0; }
+    .bm-info h3 a { color: #0000EE; text-decoration: none; }
+    .bm-meta { color: #555; font-size: 0.85em; }
+    .bm-desc { font-size: 0.9em; color: #333; margin-top: 5px; line-height: 1.4; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; }
+    .btn { padding: 6px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.1); color: #0056b3; font-weight: bold; cursor: pointer; font-size: 0.85em; }
+    .btn:hover { background: rgba(0,123,255,0.25); }
+    .btn-danger { background: rgba(255,0,0,0.1); color: #c00; border-color: rgba(255,0,0,0.3); }
+    .btn-danger:hover { background: rgba(255,0,0,0.2); }
+    .actions { display: flex; flex-direction: column; gap: 5px; align-items: flex-end; }
+    .clear-all { margin-bottom: 10px; }
+    .tabs { display: flex; gap: 5px; margin-bottom: 15px; }
+    .tab { padding: 6px 14px; border-radius: 20px; border: 1px solid rgba(0,0,255,0.2); cursor: pointer; font-size: 0.9em; color: #555; background: rgba(240,240,255,0.5); }
+    .tab.active { background: rgba(0,123,255,0.12); color: #0056b3; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="main">
+    <h1>My Bookmarks</h1>
+    <p class="subtitle">Your saved entries and people (stored locally in your browser)</p>
+    <div class="stat-bar" id="stat-bar"></div>
+    <div class="tabs" id="tabs">
+      <div class="tab active" data-type="entries">Entries</div>
+      <div class="tab" data-type="people">People</div>
+    </div>
+    <button class="btn btn-danger clear-all" id="clear-all" style="display:none">Clear All Bookmarks</button>
+    <div id="content"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+
+    let currentTab = 'entries';
+
+    // Bookmark utility functions (shared across pages)
+    window.BookmarkManager = {
+      getEntries() { return JSON.parse(localStorage.getItem('juice_bookmarks_entries') || '[]'); },
+      getPeople() { return JSON.parse(localStorage.getItem('juice_bookmarks_people') || '[]'); },
+      addEntry(entry) {
+        const list = this.getEntries();
+        if (!list.find(e => e.id === entry.id)) {
+          entry.bookmarkedAt = Date.now();
+          list.push(entry);
+          localStorage.setItem('juice_bookmarks_entries', JSON.stringify(list));
+        }
+      },
+      removeEntry(id) {
+        const list = this.getEntries().filter(e => e.id !== id);
+        localStorage.setItem('juice_bookmarks_entries', JSON.stringify(list));
+      },
+      isEntryBookmarked(id) { return this.getEntries().some(e => e.id === id); },
+      addPerson(person) {
+        const list = this.getPeople();
+        if (!list.find(p => p.id === person.id)) {
+          person.bookmarkedAt = Date.now();
+          list.push(person);
+          localStorage.setItem('juice_bookmarks_people', JSON.stringify(list));
+        }
+      },
+      removePerson(id) {
+        const list = this.getPeople().filter(p => p.id !== id);
+        localStorage.setItem('juice_bookmarks_people', JSON.stringify(list));
+      },
+      isPersonBookmarked(id) { return this.getPeople().some(p => p.id === id); },
+      clearAll() {
+        localStorage.removeItem('juice_bookmarks_entries');
+        localStorage.removeItem('juice_bookmarks_people');
+      }
+    };
+
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        currentTab = tab.dataset.type;
+        render();
+      });
+    });
+
+    document.getElementById('clear-all').addEventListener('click', () => {
+      if (confirm('Remove all bookmarks?')) {
+        BookmarkManager.clearAll();
+        render();
+      }
+    });
+
+    function render() {
+      const entries = BookmarkManager.getEntries();
+      const people = BookmarkManager.getPeople();
+      const total = entries.length + people.length;
+
+      document.getElementById('stat-bar').innerHTML = `
+        <div class="stat-box"><div class="num">${total}</div><div class="lbl">Total Bookmarks</div></div>
+        <div class="stat-box"><div class="num">${entries.length}</div><div class="lbl">Entries</div></div>
+        <div class="stat-box"><div class="num">${people.length}</div><div class="lbl">People</div></div>
+      `;
+
+      document.getElementById('clear-all').style.display = total > 0 ? 'inline-block' : 'none';
+
+      const container = document.getElementById('content');
+
+      if (currentTab === 'entries') {
+        if (entries.length === 0) {
+          container.innerHTML = '<div class="empty"><h2>No entries bookmarked</h2><p>Visit any entry page and click the bookmark button to save it here.</p></div>';
+          return;
+        }
+        container.innerHTML = '<div class="bookmark-list">' + entries.sort((a, b) => (b.bookmarkedAt || 0) - (a.bookmarkedAt || 0)).map(e => `
+          <div class="bm-card">
+            <div class="bm-info">
+              <h3><a href="entry.html?religion=jewish&id=${encodeURIComponent(e.id)}">${e.name}</a></h3>
+              <div class="bm-meta">${e.country || ''} ${e.category ? '· <span class="tag">' + e.category + '</span>' : ''}</div>
+              <div class="bm-desc">${(e.description || '').substring(0, 150)}</div>
+            </div>
+            <div class="actions">
+              <button class="btn btn-danger" onclick="BookmarkManager.removeEntry('${e.id}'); render();">Remove</button>
+            </div>
+          </div>
+        `).join('') + '</div>';
+      } else {
+        if (people.length === 0) {
+          container.innerHTML = '<div class="empty"><h2>No people bookmarked</h2><p>Visit any person page and click the bookmark button to save them here.</p></div>';
+          return;
+        }
+        container.innerHTML = '<div class="bookmark-list">' + people.sort((a, b) => (b.bookmarkedAt || 0) - (a.bookmarkedAt || 0)).map(p => `
+          <div class="bm-card">
+            <div class="bm-info">
+              <h3><a href="person.html?id=${encodeURIComponent(p.id)}">${p.name}</a></h3>
+              <div class="bm-desc">${(p.bio || '').substring(0, 150)}</div>
+            </div>
+            <div class="actions">
+              <button class="btn btn-danger" onclick="BookmarkManager.removePerson('${p.id}'); render();">Remove</button>
+            </div>
+          </div>
+        `).join('') + '</div>';
+      }
+    }
+
+    render();
+  </script>
+</body>
+</html>

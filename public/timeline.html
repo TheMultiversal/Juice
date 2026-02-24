@@ -1,0 +1,315 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timeline</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .main { max-width: 1100px; margin: 0 auto; padding: 15px 20px; }
+    h1 { margin: 0 0 5px 0; }
+    .subtitle { color: #555; margin: 0 0 15px 0; }
+    .controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; align-items: center; }
+    .controls select, .controls input { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.9em; }
+    .stat-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0 15px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 5px 12px; border-radius: 8px; font-weight: bold; font-size: 0.95em; }
+    .stat-item span { color: #0056b3; font-size: 1.15em; }
+    .timeline-container { position: relative; padding-left: 40px; }
+    .timeline-line { position: absolute; left: 18px; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, rgba(0,123,255,0.6), rgba(0,0,255,0.2)); border-radius: 3px; }
+    .decade-header { position: relative; margin: 25px 0 10px 0; }
+    .decade-header h2 { margin: 0; color: #0056b3; font-size: 1.3em; background: #fff; display: inline-block; padding-right: 15px; }
+    .decade-dot { position: absolute; left: -30px; top: 6px; width: 16px; height: 16px; background: #0056b3; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px rgba(0,0,255,0.3); }
+    .timeline-item { position: relative; margin: 8px 0; padding: 10px 14px; background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.12); border-radius: 8px; transition: box-shadow 0.2s; }
+    .timeline-item:hover { box-shadow: 0 2px 8px rgba(0,0,255,0.15); }
+    .timeline-dot { position: absolute; left: -29px; top: 15px; width: 10px; height: 10px; background: rgba(0,123,255,0.6); border-radius: 50%; }
+    .timeline-year { font-weight: bold; color: #0056b3; font-size: 1.1em; margin-right: 8px; }
+    .timeline-name { font-weight: bold; }
+    .timeline-name a { color: #0000EE; text-decoration: none; }
+    .timeline-meta { font-size: 0.88em; color: #555; margin-top: 3px; }
+    .timeline-desc { font-size: 0.9em; color: #333; margin-top: 5px; line-height: 1.4; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; margin: 2px; }
+    .century-nav { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 15px; }
+    .century-btn { padding: 5px 12px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.06); color: #0056b3; cursor: pointer; font-size: 0.88em; font-weight: bold; }
+    .century-btn:hover, .century-btn.active { background: rgba(0,123,255,0.2); }
+
+    /* D3 interactive timeline */
+    .view-tabs { display: flex; gap: 8px; margin-bottom: 15px; }
+    .view-tab { padding: 6px 16px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.05); color: #0056b3; cursor: pointer; font-weight: bold; font-size: 0.9em; }
+    .view-tab.active { background: #007bff; color: #fff; }
+    .d3-timeline-wrap { width: 100%; overflow: hidden; margin-bottom: 20px; position: relative; }
+    .d3-timeline-wrap svg { width: 100%; cursor: grab; }
+    .d3-timeline-wrap svg:active { cursor: grabbing; }
+    .d3-tooltip { position: absolute; background: rgba(0,0,0,0.88); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.85em; pointer-events: none; z-index: 20; max-width: 280px; line-height: 1.4; display: none; }
+    .brush-hint { text-align: center; color: #999; font-size: 0.82em; margin: 4px 0 8px; }
+
+    @media (max-width: 600px) { .timeline-container { padding-left: 25px; } .timeline-line { left: 8px; } .decade-dot { left: -22px; width: 12px; height: 12px; } .timeline-dot { left: -21px; width: 8px; height: 8px; } }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="main">
+    <h1>Timeline</h1>
+    <p class="subtitle">Organizations by founding year</p>
+    <div class="stat-bar" id="stats"></div>
+    <div class="controls">
+      <select id="category-filter"><option value="">All Categories</option></select>
+      <select id="country-filter"><option value="">All Countries</option></select>
+      <input type="text" id="search" placeholder="Search names..." />
+    </div>
+    <div class="view-tabs">
+      <button class="view-tab active" data-view="interactive">Interactive Chart</button>
+      <button class="view-tab" data-view="vertical">Vertical Timeline</button>
+    </div>
+    <div id="d3-view">
+      <div class="d3-timeline-wrap" id="d3-wrap">
+        <div class="d3-tooltip" id="d3-tooltip"></div>
+      </div>
+      <p class="brush-hint">Click and drag on the chart to zoom into a range. Double-click to reset.</p>
+    </div>
+    <div id="vertical-view" style="display:none;">
+      <div class="century-nav" id="century-nav"></div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+        <div id="timeline"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'Timeline — Juice Project', description: 'Interactive timeline showing the founding dates of religious organizations from ancient times to present.' });
+    let allItems = [];
+
+    // View tabs
+    document.querySelectorAll('.view-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.view-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('d3-view').style.display = tab.dataset.view === 'interactive' ? '' : 'none';
+        document.getElementById('vertical-view').style.display = tab.dataset.view === 'vertical' ? '' : 'none';
+      });
+    });
+
+    fetch('/api/timeline').then(r => r.json()).then(data => {
+      allItems = data.items;
+      document.getElementById('stats').innerHTML = `<div class="stat-item"><span>${data.total}</span> entries with dates</div><div class="stat-item"><span>${allItems.length > 0 ? allItems[0].founded : '?'}</span> earliest</div><div class="stat-item"><span>${allItems.length > 0 ? allItems[allItems.length-1].founded : '?'}</span> latest</div>`;
+
+      // Populate filters
+      const cats = [...new Set(allItems.map(i => i.category))].sort();
+      const countries = [...new Set(allItems.map(i => i.country))].sort();
+      const catSel = document.getElementById('category-filter');
+      cats.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; catSel.appendChild(o); });
+      const countrySel = document.getElementById('country-filter');
+      countries.forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; countrySel.appendChild(o); });
+
+      renderTimeline(allItems);
+      renderD3Timeline(allItems);
+    });
+
+    function renderTimeline(items) {
+      const container = document.getElementById('timeline');
+      container.innerHTML = '';
+      const navEl = document.getElementById('century-nav');
+      navEl.innerHTML = '';
+
+      // Group by decade
+      const decades = {};
+      items.forEach(item => {
+        const decade = Math.floor(item.founded / 10) * 10;
+        if (!decades[decade]) decades[decade] = [];
+        decades[decade].push(item);
+      });
+
+      // Century navigation
+      const centuries = [...new Set(items.map(i => Math.floor(i.founded / 100) * 100))].sort();
+      centuries.forEach(c => {
+        const btn = document.createElement('button');
+        btn.className = 'century-btn';
+        btn.textContent = c + 's';
+        btn.addEventListener('click', () => {
+          const el = document.getElementById('decade-' + c);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+        navEl.appendChild(btn);
+      });
+
+      // Render decades
+      Object.keys(decades).sort((a, b) => a - b).forEach(decade => {
+        const header = document.createElement('div');
+        header.className = 'decade-header';
+        header.id = 'decade-' + decade;
+        header.innerHTML = `<div class="decade-dot"></div><h2>${decade}s (${decades[decade].length})</h2>`;
+        container.appendChild(header);
+
+        decades[decade].forEach(item => {
+          const div = document.createElement('div');
+          div.className = 'timeline-item';
+          div.innerHTML = `<div class="timeline-dot"></div><span class="timeline-year">${item.founded}</span><span class="timeline-name"><a href="entry.html?religion=jewish&id=${encodeURIComponent(item.id)}">${item.name}</a></span><div class="timeline-meta">${item.country} · <span class="tag">${item.category}</span> · ${item.type}</div><div class="timeline-desc">${item.description}</div>`;
+          container.appendChild(div);
+        });
+      });
+    }
+
+    function applyFilters() {
+      const cat = document.getElementById('category-filter').value;
+      const country = document.getElementById('country-filter').value;
+      const q = document.getElementById('search').value.toLowerCase().trim();
+      let filtered = allItems;
+      if (cat) filtered = filtered.filter(i => i.category === cat);
+      if (country) filtered = filtered.filter(i => i.country === country);
+      if (q) filtered = filtered.filter(i => i.name.toLowerCase().includes(q));
+      renderTimeline(filtered);
+      renderD3Timeline(filtered);
+    }
+
+    document.getElementById('category-filter').addEventListener('change', applyFilters);
+    document.getElementById('country-filter').addEventListener('change', applyFilters);
+    document.getElementById('search').addEventListener('input', applyFilters);
+
+    // D3 Interactive Timeline
+    const categoryColors = {};
+    const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
+
+    function renderD3Timeline(items) {
+      const wrap = document.getElementById('d3-wrap');
+      wrap.querySelectorAll('svg').forEach(s => s.remove());
+      if (items.length === 0) return;
+
+      const margin = { top: 30, right: 30, bottom: 60, left: 50 };
+      const width = wrap.clientWidth - margin.left - margin.right;
+      const height = 380 - margin.top - margin.bottom;
+
+      const svg = d3.select('#d3-wrap').append('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom);
+
+      const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
+
+      // Bin by decade
+      const decades = {};
+      items.forEach(item => {
+        const decade = Math.floor(item.founded / 10) * 10;
+        if (!decades[decade]) decades[decade] = { decade, items: [], byCategory: {} };
+        decades[decade].items.push(item);
+        const cat = item.category || 'Other';
+        if (!decades[decade].byCategory[cat]) decades[decade].byCategory[cat] = 0;
+        decades[decade].byCategory[cat]++;
+        if (!categoryColors[cat]) categoryColors[cat] = colorScale(Object.keys(categoryColors).length);
+      });
+      const decadeData = Object.values(decades).sort((a, b) => a.decade - b.decade);
+      const allCats = [...new Set(items.map(i => i.category || 'Other'))].sort();
+
+      // Scales
+      const x = d3.scaleBand()
+        .domain(decadeData.map(d => d.decade))
+        .range([0, width])
+        .padding(0.15);
+
+      const maxCount = d3.max(decadeData, d => d.items.length);
+      const y = d3.scaleLinear().domain([0, maxCount]).nice().range([height, 0]);
+
+      // Axes
+      g.append('g')
+        .attr('transform', `translate(0,${height})`)
+        .call(d3.axisBottom(x).tickFormat(d => d + 's'))
+        .selectAll('text')
+        .attr('transform', 'rotate(-45)')
+        .style('text-anchor', 'end')
+        .style('font-size', '0.8em');
+
+      g.append('g').call(d3.axisLeft(y).ticks(6));
+
+      // Stacked bars
+      const tooltip = document.getElementById('d3-tooltip');
+
+      decadeData.forEach(d => {
+        let yOffset = 0;
+        allCats.forEach(cat => {
+          const count = d.byCategory[cat] || 0;
+          if (count === 0) return;
+          const barHeight = y(0) - y(count);
+          g.append('rect')
+            .attr('x', x(d.decade))
+            .attr('y', y(yOffset + count))
+            .attr('width', x.bandwidth())
+            .attr('height', barHeight)
+            .attr('fill', categoryColors[cat] || '#999')
+            .attr('opacity', 0.85)
+            .attr('rx', 2)
+            .style('cursor', 'pointer')
+            .on('mouseover', function(event) {
+              d3.select(this).attr('opacity', 1).attr('stroke', '#000').attr('stroke-width', 1);
+              const catItems = d.items.filter(i => (i.category || 'Other') === cat);
+              tooltip.innerHTML = `<strong>${d.decade}s — ${cat}</strong><br>${count} organization${count > 1 ? 's' : ''}<br><span style="color:#aaa;font-size:0.85em;">${catItems.slice(0, 5).map(i => i.name).join(', ')}${catItems.length > 5 ? '...' : ''}</span>`;
+              tooltip.style.display = 'block';
+            })
+            .on('mousemove', function(event) {
+              const rect = wrap.getBoundingClientRect();
+              tooltip.style.left = (event.clientX - rect.left + 10) + 'px';
+              tooltip.style.top = (event.clientY - rect.top - 30) + 'px';
+            })
+            .on('mouseout', function() {
+              d3.select(this).attr('opacity', 0.85).attr('stroke', 'none');
+              tooltip.style.display = 'none';
+            })
+            .on('click', function() {
+              // Show decade items in vertical view
+              document.querySelectorAll('.view-tab').forEach(t => {
+                t.classList.toggle('active', t.dataset.view === 'vertical');
+              });
+              document.getElementById('d3-view').style.display = 'none';
+              document.getElementById('vertical-view').style.display = '';
+              renderTimeline(d.items);
+              setTimeout(() => {
+                const el = document.getElementById('decade-' + d.decade);
+                if (el) el.scrollIntoView({ behavior: 'smooth' });
+              }, 100);
+            });
+          yOffset += count;
+        });
+
+        // Count label on top
+        g.append('text')
+          .attr('x', x(d.decade) + x.bandwidth() / 2)
+          .attr('y', y(d.items.length) - 5)
+          .attr('text-anchor', 'middle')
+          .attr('font-size', '0.75em')
+          .attr('fill', '#555')
+          .text(d.items.length);
+      });
+
+      // Legend
+      const legend = g.append('g').attr('transform', `translate(${width - 180}, 0)`);
+      const topCats = allCats.sort((a, b) => {
+        const ca = items.filter(i => (i.category || 'Other') === a).length;
+        const cb = items.filter(i => (i.category || 'Other') === b).length;
+        return cb - ca;
+      }).slice(0, 8);
+
+      topCats.forEach((cat, i) => {
+        legend.append('rect').attr('x', 0).attr('y', i * 18).attr('width', 12).attr('height', 12).attr('fill', categoryColors[cat]).attr('rx', 2);
+        legend.append('text').attr('x', 16).attr('y', i * 18 + 10).text(cat).attr('font-size', '0.75em').attr('fill', '#444');
+      });
+
+      // Title
+      svg.append('text')
+        .attr('x', margin.left + width / 2)
+        .attr('y', 18)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '1em')
+        .attr('font-weight', 'bold')
+        .attr('fill', '#0056b3')
+        .text('Organizations Founded by Decade');
+    }
+  </script>
+</body>
+</html>

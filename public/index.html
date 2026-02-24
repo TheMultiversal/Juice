@@ -1,0 +1,377 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Juice Project">
+  <meta name="description" content="Comprehensive directory of religious organizations worldwide — tracking structure, people, and connections since 2016.">
+  <meta name="created" content="2016-03-14">
+  <meta name="revised" content="2025-01-15">
+  <title>Juice — Religious Organizations Directory</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .hero { text-align: center; padding: 40px 20px 25px 20px; }
+    .hero h1 { font-size: 2.8em; margin: 0 0 8px 0; letter-spacing: 2px; }
+    .hero .subtitle { color: #555; font-size: 1.1em; margin-bottom: 20px; }
+    .hero-stats { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin: 20px 0; }
+    .hero-stat { text-align: center; }
+    .hero-stat .num { font-size: 2.4em; font-weight: bold; color: #0056b3; display: block; }
+    .hero-stat .label { font-size: 0.85em; color: #666; text-transform: uppercase; letter-spacing: 1px; }
+    .quick-search { max-width: 500px; margin: 22px auto; display: flex; gap: 0; }
+    .quick-search input { flex: 1; padding: 12px 16px; font-size: 1em; border: 2px solid rgba(0,0,255,0.25); border-radius: 8px 0 0 8px; outline: none; }
+    .quick-search input:focus { border-color: #0056b3; }
+    .quick-search button { padding: 12px 22px; background: #0056b3; color: #fff; border: 2px solid #0056b3; border-radius: 0 8px 8px 0; cursor: pointer; font-size: 1em; font-weight: bold; }
+    .quick-search button:hover { background: #004494; }
+    .section { padding: 20px 30px; max-width: 1200px; margin: 0 auto; }
+    .section h2 { font-size: 1.6em; margin-bottom: 15px; border-bottom: 2px solid rgba(0,0,255,0.15); padding-bottom: 8px; }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+    .cat-card { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 14px; text-align: center; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; text-decoration: none; color: inherit; display: block; }
+    .cat-card:hover { transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,255,0.12); }
+    .cat-card .cat-name { font-weight: bold; font-size: 1em; color: #0056b3; margin-bottom: 4px; }
+    .cat-card .cat-count { font-size: 1.8em; font-weight: bold; color: #333; }
+    .cat-card .cat-sub { font-size: 0.8em; color: #888; }
+    .featured-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+    .featured-card { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 16px; }
+    .featured-card h3 { margin: 0 0 6px 0; }
+    .featured-card h3 a { color: #0000EE; text-decoration: none; }
+    .featured-card .meta { font-size: 0.85em; color: #666; margin-bottom: 6px; }
+    .featured-card .desc { font-size: 0.9em; line-height: 1.5; color: #444; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; margin: 2px; }
+    .country-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+    .country-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 14px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.1); text-decoration: none; color: inherit; }
+    .country-item:hover { background: rgba(220,230,255,0.9); }
+    .country-item .cname { font-weight: bold; color: #0000EE; }
+    .country-item .ccount { background: rgba(0,123,255,0.15); color: #0056b3; padding: 2px 10px; border-radius: 12px; font-size: 0.9em; font-weight: bold; }
+    .discover-btn { display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #0056b3, #007bff); color: #fff !important; border: none; border-radius: 25px; font-size: 1.05em; font-weight: bold; cursor: pointer; text-decoration: none; margin: 10px 8px; transition: transform 0.15s; }
+    .discover-btn:hover { transform: scale(1.05); }
+    .discover-btn.secondary { background: linear-gradient(135deg, #6c757d, #888); }
+    .timeline-mini { display: flex; align-items: flex-end; gap: 2px; height: 80px; padding: 10px 0; }
+    .timeline-bar { background: rgba(0,86,179,0.6); border-radius: 3px 3px 0 0; min-width: 3px; flex: 1; transition: background 0.2s; cursor: pointer; position: relative; }
+    .timeline-bar:hover { background: rgba(0,86,179,1); }
+    .entry-card { margin: 4px 0; padding: 8px 10px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.1); }
+    .entry-card a { font-weight: bold; color: #0000EE; text-decoration: none; }
+    .entry-type-inline { font-style: italic; color: #555; font-size: 0.88em; }
+    .stat-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 5px 12px; border-radius: 8px; font-weight: bold; font-size: 0.95em; }
+    .stat-item span { color: #0056b3; font-size: 1.15em; }
+    .cat-header { margin: 12px 0 6px 0; }
+    .cat-header h3 { display: inline; margin: 0; }
+    .cat-header h3 a { color: #0056b3; text-decoration: none; }
+    .cat-count-badge { display: inline-block; background: rgba(0,123,255,0.15); color: #0056b3; padding: 2px 10px; border-radius: 12px; font-size: 0.85em; font-weight: bold; margin-left: 8px; }
+    select, input, button { margin: 0 5px 5px 0; }
+    .filter-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
+    .filter-row input, .filter-row select { padding: 8px 12px; border: 1px solid rgba(0,0,255,0.25); border-radius: 6px; }
+    .view-toggle { display: flex; gap: 4px; }
+    .view-toggle button { padding: 6px 14px; border: 1px solid rgba(0,0,255,0.25); border-radius: 6px; cursor: pointer; background: rgba(255,255,255,0.9); }
+    .view-toggle button.active { background: #0056b3; color: #fff; }
+  </style>
+</head>
+<body>
+  <nav id="navbar" style="padding:10px 20px;"></nav>
+
+  <!-- HERO DASHBOARD -->
+  <div class="hero panel" id="hero">
+    <h1>Juice</h1>
+    <p class="subtitle">Comprehensive Religious Organizations Intelligence Database — Est. 2016</p>
+    <div class="hero-stats" id="hero-stats">
+      <div class="hero-stat"><span class="num" id="stat-entries">—</span><span class="label">Organizations</span></div>
+      <div class="hero-stat"><span class="num" id="stat-countries">—</span><span class="label">Countries</span></div>
+      <div class="hero-stat"><span class="num" id="stat-people">—</span><span class="label">People</span></div>
+      <div class="hero-stat"><span class="num" id="stat-connections">—</span><span class="label">Connections</span></div>
+      <div class="hero-stat"><span class="num" id="stat-categories">—</span><span class="label">Categories</span></div>
+    </div>
+    <div class="quick-search">
+      <input type="text" id="hero-search" placeholder="Search organizations, people, connections..." />
+      <button onclick="goSearch()">Search</button>
+    </div>
+    <div style="margin-top: 15px;">
+      <a href="discover.html" class="discover-btn">🎲 Discover Random Entry</a>
+      <a href="graph.html" class="discover-btn secondary">🕸 Network Graph</a>
+      <a href="map.html" class="discover-btn secondary">🗺 World Map</a>
+    </div>
+  </div>
+
+  <!-- CATEGORIES OVERVIEW -->
+  <div class="section" id="cat-section">
+    <h2>Categories</h2>
+    <div class="cat-grid" id="cat-grid"></div>
+  </div>
+
+  <!-- TIMELINE MINI -->
+  <div class="section" id="timeline-section">
+    <h2>Founding Timeline</h2>
+    <p style="font-size:0.9em;color:#666;">Distribution of organizations by founding decade</p>
+    <div class="timeline-mini" id="timeline-mini"></div>
+    <div style="display:flex;justify-content:space-between;font-size:0.8em;color:#888;" id="timeline-labels"></div>
+  </div>
+
+  <!-- TOP COUNTRIES -->
+  <div class="section" id="countries-section">
+    <h2>Top Countries <a href="allcountries.html" style="font-size:0.6em;color:#0056b3;font-weight:normal;">View All →</a></h2>
+    <div class="country-list" id="country-grid"></div>
+  </div>
+
+  <!-- FEATURED / RANDOM ENTRIES -->
+  <div class="section" id="featured-section">
+    <h2>Featured Entries <button onclick="loadFeatured()" style="font-size:0.7em;padding:4px 12px;border-radius:12px;border:1px solid rgba(0,0,255,0.3);cursor:pointer;background:rgba(0,123,255,0.1);color:#0056b3;">↻ Refresh</button></h2>
+    <div class="featured-grid" id="featured-grid"></div>
+  </div>
+
+  <!-- FULL DIRECTORY -->
+  <div class="section">
+    <h2>Full Directory</h2>
+    <div class="filter-row">
+      <input type="text" id="country-filter" placeholder="Filter by country..." />
+      <select id="category-filter"><option value="">All Categories</option></select>
+      <select id="sort-select">
+        <option value="country">Sort by Country</option>
+        <option value="name">Sort by Name</option>
+        <option value="category">Sort by Category</option>
+        <option value="founded">Sort by Founded Year</option>
+      </select>
+      <div class="view-toggle">
+        <button class="active" id="view-grouped" onclick="setView('grouped')">Grouped</button>
+        <button id="view-flat" onclick="setView('flat')">Flat List</button>
+      </div>
+    </div>
+    <div class="stat-bar" id="stats"></div>
+    <div id="results"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    let cachedData = null;
+    let currentView = 'grouped';
+
+    function goSearch() {
+      const q = document.getElementById('hero-search').value.trim();
+      if (q) window.location.href = 'search.html?q=' + encodeURIComponent(q);
+    }
+    document.getElementById('hero-search').addEventListener('keydown', e => { if (e.key === 'Enter') goSearch(); });
+
+    function setView(v) {
+      currentView = v;
+      document.getElementById('view-grouped').classList.toggle('active', v === 'grouped');
+      document.getElementById('view-flat').classList.toggle('active', v === 'flat');
+      if (cachedData) renderData(cachedData);
+    }
+
+    function animateCounter(el, target) {
+      let current = 0;
+      const step = Math.max(1, Math.floor(target / 60));
+      const timer = setInterval(() => {
+        current += step;
+        if (current >= target) { current = target; clearInterval(timer); }
+        el.textContent = current.toLocaleString();
+      }, 25);
+    }
+
+    initPage('jewish', data => {
+      cachedData = data;
+      populateCategoryFilter(data);
+      renderData(data);
+    });
+    setSEO({ title: 'Juice — Religious Organizations Dashboard', description: 'Explore 800+ religious organizations across 86 countries with interactive analytics, maps, and network graphs.' });
+
+    // Dashboard stats
+    fetch('/api/stats').then(r => r.json()).then(stats => {
+      animateCounter(document.getElementById('stat-entries'), stats.totalEntries);
+      animateCounter(document.getElementById('stat-countries'), stats.totalCountries);
+      animateCounter(document.getElementById('stat-people'), stats.totalPeople);
+      animateCounter(document.getElementById('stat-connections'), stats.totalConnections);
+      animateCounter(document.getElementById('stat-categories'), stats.topCategories.length);
+
+      const grid = document.getElementById('country-grid');
+      stats.topCountries.slice(0, 12).forEach(c => {
+        const a = document.createElement('a');
+        a.className = 'country-item';
+        a.href = 'country.html?religion=jewish&country=' + encodeURIComponent(c.country);
+        a.innerHTML = '<span class="cname">' + c.country + '</span><span class="ccount">' + c.count + '</span>';
+        grid.appendChild(a);
+      });
+    });
+
+    // Categories
+    fetch('/api/jewish/categories').then(r => r.json()).then(data => {
+      const grid = document.getElementById('cat-grid');
+      Object.entries(data.categories).sort((a, b) => b[1].count - a[1].count).forEach(([name, info]) => {
+        const card = document.createElement('a');
+        card.className = 'cat-card';
+        card.href = 'category.html?religion=jewish&category=' + encodeURIComponent(name);
+        card.innerHTML = '<div class="cat-name">' + name + '</div><div class="cat-count">' + info.count + '</div><div class="cat-sub">organizations</div>';
+        grid.appendChild(card);
+      });
+    });
+
+    // Timeline mini
+    fetch('/api/timeline').then(r => r.json()).then(data => {
+      const decades = {};
+      data.items.forEach(item => {
+        if (item.founded >= 1800) {
+          const decade = Math.floor(item.founded / 10) * 10;
+          decades[decade] = (decades[decade] || 0) + 1;
+        }
+      });
+      const allDecades = Object.keys(decades).map(Number).sort((a, b) => a - b);
+      const maxCount = Math.max(...Object.values(decades));
+      const container = document.getElementById('timeline-mini');
+      const labels = document.getElementById('timeline-labels');
+      allDecades.forEach(d => {
+        const bar = document.createElement('div');
+        bar.className = 'timeline-bar';
+        bar.style.height = Math.max(5, (decades[d] / maxCount) * 70) + 'px';
+        bar.title = d + 's: ' + decades[d] + ' organizations';
+        bar.addEventListener('click', () => { window.location.href = 'timeline.html'; });
+        container.appendChild(bar);
+      });
+      if (allDecades.length > 0) {
+        labels.innerHTML = '<span>' + allDecades[0] + 's</span><span>' + allDecades[allDecades.length - 1] + 's</span>';
+      }
+    });
+
+    // Featured entries
+    function loadFeatured() {
+      fetch('/api/random?count=6').then(r => r.json()).then(data => {
+        const grid = document.getElementById('featured-grid');
+        grid.innerHTML = '';
+        data.entries.forEach(entry => {
+          const card = document.createElement('div');
+          card.className = 'featured-card';
+          card.innerHTML = '<h3><a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">' + entry.name + '</a></h3>'
+            + '<div class="meta">' + entry.country + ' · <span class="tag">' + (entry.category || '') + '</span>' + (entry.founded ? ' · Est. ' + entry.founded : '') + '</div>'
+            + '<div class="desc">' + (entry.description || '').substring(0, 150) + ((entry.description || '').length > 150 ? '...' : '') + '</div>';
+          grid.appendChild(card);
+        });
+      }).catch(() => {
+        if (cachedData) {
+          const allEntries = [];
+          for (const country in cachedData.countries) cachedData.countries[country].forEach(e => allEntries.push(Object.assign({}, e, { country })));
+          const shuffled = allEntries.sort(() => Math.random() - 0.5).slice(0, 6);
+          const grid = document.getElementById('featured-grid');
+          grid.innerHTML = '';
+          shuffled.forEach(entry => {
+            const card = document.createElement('div');
+            card.className = 'featured-card';
+            card.innerHTML = '<h3><a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">' + entry.name + '</a></h3>'
+              + '<div class="meta">' + entry.country + ' · <span class="tag">' + (entry.category || '') + '</span>' + (entry.founded ? ' · Est. ' + entry.founded : '') + '</div>'
+              + '<div class="desc">' + (entry.description || '').substring(0, 150) + ((entry.description || '').length > 150 ? '...' : '') + '</div>';
+            grid.appendChild(card);
+          });
+        }
+      });
+    }
+    loadFeatured();
+
+    function populateCategoryFilter(data) {
+      const sel = document.getElementById('category-filter');
+      const cats = {};
+      for (const country in data.countries) {
+        for (const e of data.countries[country]) {
+          const c = e.category || 'Uncategorized';
+          cats[c] = (cats[c] || 0) + 1;
+        }
+      }
+      while (sel.options.length > 1) sel.remove(1);
+      Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([cat, count]) => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = cat + ' (' + count + ')';
+        sel.appendChild(opt);
+      });
+    }
+
+    function renderData(data) {
+      const container = document.getElementById('results');
+      const filter = document.getElementById('country-filter').value.trim().toLowerCase();
+      const catFilter = document.getElementById('category-filter').value;
+      const sortBy = document.getElementById('sort-select').value;
+      container.innerHTML = '';
+
+      if (currentView === 'flat') return renderFlat(data, container, filter, catFilter, sortBy);
+
+      let totalEntries = 0, totalCountries = 0, totalCats = new Set();
+      let countryEntries = [];
+      for (const country in data.countries) {
+        if (filter && !country.toLowerCase().includes(filter)) continue;
+        let entries = data.countries[country];
+        if (catFilter) entries = entries.filter(e => e.category === catFilter);
+        if (entries.length === 0) continue;
+        countryEntries.push({ country, entries });
+      }
+      if (sortBy === 'name') countryEntries.sort((a, b) => a.country.localeCompare(b.country));
+      else if (sortBy === 'founded') countryEntries.sort((a, b) => Math.min(...a.entries.map(e => e.founded || 9999)) - Math.min(...b.entries.map(e => e.founded || 9999)));
+
+      for (const { country, entries } of countryEntries) {
+        totalCountries++;
+        totalEntries += entries.length;
+        entries.forEach(e => totalCats.add(e.category || 'Uncategorized'));
+
+        const section = document.createElement('div');
+        section.className = 'country panel';
+        const heading = document.createElement('h2');
+        const headingLink = document.createElement('a');
+        headingLink.href = 'country.html?religion=jewish&country=' + encodeURIComponent(country);
+        headingLink.textContent = country + ' (' + entries.length + ')';
+        headingLink.style.color = '#0000EE';
+        heading.appendChild(headingLink);
+        section.appendChild(heading);
+
+        const groups = {};
+        entries.forEach(item => { const cat = item.category || 'Uncategorized'; if (!groups[cat]) groups[cat] = []; groups[cat].push(item); });
+
+        Object.entries(groups).sort((a,b) => b[1].length - a[1].length).forEach(([catName, catEntries]) => {
+          if (Object.keys(groups).length > 1) {
+            const catH = document.createElement('div');
+            catH.className = 'cat-header';
+            catH.innerHTML = '<h3><a href="category.html?religion=jewish&category=' + encodeURIComponent(catName) + '">' + catName + '</a></h3><span class="cat-count-badge">' + catEntries.length + '</span>';
+            section.appendChild(catH);
+          }
+          catEntries.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'entry-card';
+            card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
+              + '<span class="entry-type-inline"> — ' + item.type + '</span>'
+              + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
+              + (item.category && Object.keys(groups).length <= 1 ? ' <span class="tag">' + item.category + '</span>' : '');
+            section.appendChild(card);
+          });
+        });
+        container.appendChild(section);
+      }
+      document.getElementById('stats').innerHTML = '<div class="stat-item"><span>' + totalEntries + '</span> entries</div><div class="stat-item"><span>' + totalCountries + '</span> countries</div><div class="stat-item"><span>' + totalCats.size + '</span> categories</div>';
+    }
+
+    function renderFlat(data, container, filter, catFilter, sortBy) {
+      const all = [];
+      for (const country in data.countries) {
+        if (filter && !country.toLowerCase().includes(filter)) continue;
+        data.countries[country].forEach(e => { if (catFilter && e.category !== catFilter) return; all.push(Object.assign({}, e, { country })); });
+      }
+      if (sortBy === 'name') all.sort((a, b) => a.name.localeCompare(b.name));
+      else if (sortBy === 'category') all.sort((a, b) => (a.category || '').localeCompare(b.category || ''));
+      else if (sortBy === 'founded') all.sort((a, b) => (a.founded || 9999) - (b.founded || 9999));
+      else all.sort((a, b) => a.country.localeCompare(b.country));
+
+      document.getElementById('stats').innerHTML = '<div class="stat-item"><span>' + all.length + '</span> entries</div>';
+      all.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'entry-card';
+        card.innerHTML = '<a href="entry.html?religion=jewish&id=' + encodeURIComponent(item.id) + '">' + item.name + '</a>'
+          + '<span class="entry-type-inline"> — ' + item.type + ' · ' + item.country + '</span>'
+          + (item.founded ? ' <span class="tag">Est. ' + item.founded + '</span>' : '')
+          + (item.category ? ' <span class="tag">' + item.category + '</span>' : '');
+        container.appendChild(card);
+      });
+    }
+
+    document.getElementById('country-filter').addEventListener('input', function() { if (cachedData) renderData(cachedData); });
+    document.getElementById('category-filter').addEventListener('change', function() { if (cachedData) renderData(cachedData); });
+    document.getElementById('sort-select').addEventListener('change', function() { if (cachedData) renderData(cachedData); });
+  </script>
+</body>
+</html>

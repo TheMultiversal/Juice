@@ -1,0 +1,174 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Listings</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1 { color: #000; }
+    .country { margin-bottom: 1em; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    h1 a { color: #0000EE; text-decoration: none; }
+    .country h2 a { color: #0000EE; text-decoration: none; }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .cat-section { margin-bottom: 18px; }
+    .cat-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; cursor: pointer; }
+    .cat-header h3 { margin: 0; color: #0056b3; }
+    .cat-header h3 a { color: #0056b3; text-decoration: none; }
+    .cat-count { display: inline-block; background: rgba(0,123,255,0.15); color: #0056b3; padding: 2px 10px; border-radius: 12px; font-size: 0.85em; font-weight: bold; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; margin: 2px; }
+    .entry-card { margin: 6px 0; padding: 10px; background: rgba(240,240,255,0.7); border-radius: 8px; border: 1px solid rgba(0,0,255,0.1); }
+    .entry-card a { font-weight: bold; color: #0000EE; }
+    .entry-type { font-style: italic; color: #555; font-size: 0.9em; }
+    .entry-desc { margin-top: 4px; color: #333; line-height: 1.5; font-size: 0.93em; }
+    .stat-bar { display: flex; gap: 15px; flex-wrap: wrap; margin: 8px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 6px 14px; border-radius: 8px; font-weight: bold; }
+    .stat-item span { color: #0056b3; font-size: 1.2em; }
+    .cat-toc { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .cat-toc a { background: rgba(0,123,255,0.1); padding: 4px 12px; border-radius: 15px; color: #0056b3; text-decoration: none; font-size: 0.88em; }
+    .cat-toc a:hover { background: rgba(0,123,255,0.25); }
+    .search-box { width: 100%; max-width: 400px; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); font-size: 1em; margin: 5px 0; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <h1 id="country-name">Loading...</h1>
+  <div class="panel" id="stats-panel" style="display:none">
+    <div class="stat-bar" id="stats"></div>
+    <input type="text" class="search-box" id="entry-search" placeholder="Search entries..." />
+  </div>
+  <div class="panel" id="cat-toc-panel" style="display:none">
+    <strong>Categories:</strong>
+    <div class="cat-toc" id="cat-toc"></div>
+  </div>
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+  <script>
+    const religion = new URLSearchParams(window.location.search).get('religion') || 'jewish';
+    const country = new URLSearchParams(window.location.search).get('country');
+    let allEntries = [];
+
+    initPage(religion, data => {
+      if (!country) {
+        document.getElementById('country-name').textContent = 'No country selected';
+        return;
+      }
+      document.getElementById('country-name').textContent = country;
+      document.title = country + ' - Organizations';
+      allEntries = data.countries[country] || [];
+
+      if (allEntries.length === 0) {
+        document.getElementById('results').textContent = 'No entries for this country.';
+        return;
+      }
+
+      // Stats
+      const statsPanel = document.getElementById('stats-panel');
+      statsPanel.style.display = '';
+      const cats = {};
+      allEntries.forEach(e => { const c = e.category || 'Uncategorized'; cats[c] = (cats[c] || 0) + 1; });
+      const stats = document.getElementById('stats');
+      stats.innerHTML = `
+        <div class="stat-item"><span>${allEntries.length}</span> Entries</div>
+        <div class="stat-item"><span>${Object.keys(cats).length}</span> Categories</div>
+      `;
+
+      // Category table of contents
+      if (Object.keys(cats).length > 1) {
+        const tocPanel = document.getElementById('cat-toc-panel');
+        tocPanel.style.display = '';
+        const toc = document.getElementById('cat-toc');
+        Object.entries(cats).sort((a,b) => b[1] - a[1]).forEach(([cat, count]) => {
+          const a = document.createElement('a');
+          a.href = '#cat-' + cat.replace(/[^a-zA-Z0-9]+/g, '-');
+          a.textContent = cat + ' (' + count + ')';
+          toc.appendChild(a);
+        });
+      }
+
+      renderGrouped(allEntries);
+
+      // Search
+      document.getElementById('entry-search').addEventListener('input', function() {
+        const q = this.value.toLowerCase();
+        const filtered = allEntries.filter(e =>
+          e.name.toLowerCase().includes(q) ||
+          (e.type || '').toLowerCase().includes(q) ||
+          (e.category || '').toLowerCase().includes(q) ||
+          (e.description || '').toLowerCase().includes(q)
+        );
+        renderGrouped(filtered);
+      });
+    });
+
+    function renderGrouped(entries) {
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+
+      // Group by category
+      const groups = {};
+      entries.forEach(e => {
+        const cat = e.category || 'Uncategorized';
+        if (!groups[cat]) groups[cat] = [];
+        groups[cat].push(e);
+      });
+
+      // Sort categories by count (descending)
+      const sorted = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
+
+      sorted.forEach(([catName, catEntries]) => {
+        const section = document.createElement('div');
+        section.className = 'cat-section panel';
+        section.id = 'cat-' + catName.replace(/[^a-zA-Z0-9]+/g, '-');
+
+        const header = document.createElement('div');
+        header.className = 'cat-header';
+        const h3 = document.createElement('h3');
+        const catLink = document.createElement('a');
+        catLink.href = `category.html?religion=${encodeURIComponent(religion)}&category=${encodeURIComponent(catName)}`;
+        catLink.textContent = catName;
+        h3.appendChild(catLink);
+        header.appendChild(h3);
+        const countBadge = document.createElement('span');
+        countBadge.className = 'cat-count';
+        countBadge.textContent = catEntries.length + (catEntries.length === 1 ? ' entry' : ' entries');
+        header.appendChild(countBadge);
+        section.appendChild(header);
+
+        catEntries.forEach(item => {
+          const card = document.createElement('div');
+          card.className = 'entry-card';
+
+          const nameLink = document.createElement('a');
+          nameLink.href = `entry.html?religion=${encodeURIComponent(religion)}&id=${encodeURIComponent(item.id || item.name.toLowerCase().replace(/[^a-z0-9]+/g,'-'))}`;
+          nameLink.textContent = item.name;
+          card.appendChild(nameLink);
+
+          const typeSpan = document.createElement('span');
+          typeSpan.className = 'entry-type';
+          typeSpan.textContent = ' — ' + item.type;
+          card.appendChild(typeSpan);
+
+          if (item.description) {
+            const desc = document.createElement('p');
+            desc.className = 'entry-desc';
+            desc.textContent = item.description.length > 180 ? item.description.substring(0, 180) + '...' : item.description;
+            card.appendChild(desc);
+          }
+
+          section.appendChild(card);
+        });
+
+        container.appendChild(section);
+      });
+    }
+  </script>
+</body>
+</html>

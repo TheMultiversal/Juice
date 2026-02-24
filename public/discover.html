@@ -1,0 +1,97 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover — Random Entry</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 20px; margin: 10px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    h1 { text-align: center; }
+    .discover-card { max-width: 700px; margin: 20px auto; padding: 30px; background: rgba(255,255,255,0.92); border: 2px solid rgba(0,0,255,0.2); border-radius: 12px; }
+    .discover-card h2 { margin: 0 0 8px 0; }
+    .discover-card h2 a { color: #0000EE; text-decoration: none; font-size: 1.3em; }
+    .meta { color: #666; font-size: 0.95em; margin-bottom: 12px; }
+    .desc { line-height: 1.7; font-size: 1em; margin-bottom: 15px; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 3px 10px; border-radius: 12px; font-size: 0.88em; margin: 2px; }
+    .btn { padding: 14px 35px; background: linear-gradient(135deg, #0056b3, #007bff); color: #fff; border: none; border-radius: 25px; font-size: 1.1em; font-weight: bold; cursor: pointer; display: block; margin: 25px auto 0; transition: transform 0.15s; }
+    .btn:hover { transform: scale(1.05); }
+    .people-list { margin-top: 10px; }
+    .person-tag { display: inline-block; background: rgba(100,100,255,0.1); color: #333; padding: 3px 10px; border-radius: 12px; font-size: 0.85em; margin: 2px; }
+    .person-tag a { color: #0000EE; text-decoration: none; }
+    .spin { animation: spin 0.5s ease; }
+    @keyframes spin { from { transform: rotateY(0); } to { transform: rotateY(360deg); } }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel" style="text-align:center;">
+    <h1>🎲 Discover</h1>
+    <p>Explore a random organization from the database</p>
+  </div>
+  <div id="card-container">
+    <div class="discover-card" id="discover-card">
+      <p style="text-align:center;color:#888;">Loading random entry...</p>
+    </div>
+  </div>
+  <button class="btn" id="next-btn" onclick="loadRandom()">🎲 Next Random Entry</button>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'Discover — Juice Project', description: 'Explore random religious organizations and discover connections you did not know existed.' });
+
+    function loadRandom() {
+      const card = document.getElementById('discover-card');
+      card.classList.add('spin');
+      setTimeout(() => card.classList.remove('spin'), 500);
+
+      fetch('/api/random?count=1')
+        .then(r => r.json())
+        .then(data => {
+          const entry = data.entries[0];
+          if (!entry) { card.innerHTML = '<p>No entries found.</p>'; return; }
+
+          // Fetch full entry details
+          fetch('/api/jewish/entry/' + encodeURIComponent(entry.id))
+            .then(r => r.json())
+            .then(full => {
+              let html = '<h2><a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">' + full.name + '</a></h2>';
+              html += '<div class="meta">';
+              html += '<span class="tag">' + (full.category || 'Uncategorized') + '</span> ';
+              html += '<span class="tag">' + entry.country + '</span> ';
+              if (full.founded) html += '<span class="tag">Est. ' + full.founded + '</span> ';
+              html += full.type;
+              html += '</div>';
+              html += '<div class="desc">' + (full.description || 'No description available.') + '</div>';
+              if (full.website) {
+                html += '<p>🌐 <a href="' + full.website + '" target="_blank" rel="noopener">' + full.website + '</a></p>';
+              }
+              if (full.individuals && full.individuals.length) {
+                html += '<div class="people-list"><strong>Key People:</strong> ';
+                full.individuals.forEach(p => {
+                  html += '<span class="person-tag"><a href="person.html?id=' + encodeURIComponent(p.id) + '">' + p.name + '</a> — ' + p.role + '</span> ';
+                });
+                html += '</div>';
+              }
+              if (full.connections && full.connections.length) {
+                html += '<p style="margin-top:10px;font-size:0.9em;color:#666;">' + full.connections.length + ' connections · <a href="entry.html?religion=jewish&id=' + encodeURIComponent(entry.id) + '">View full details →</a></p>';
+              }
+              card.innerHTML = html;
+            });
+        })
+        .catch(() => {
+          card.innerHTML = '<p style="color:red;">Failed to load. Try again.</p>';
+        });
+    }
+
+    loadRandom();
+  </script>
+</body>
+</html>

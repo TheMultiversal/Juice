@@ -1,0 +1,14 @@
+{
+  "name": "juice",
+  "version": "4.2.0",
+  "description": "Juice — Comprehensive directory of religious organizations worldwide. Tracking structure, people, and connections since 2016.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "axios": "^1.5.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

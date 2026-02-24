@@ -1,0 +1,4494 @@
+{
+  "people": {
+    "ted-deutch": {
+      "name": "Ted Deutch",
+      "bio": "Former US Congressman, CEO of AJC since 2022.",
+      "notes": ""
+    },
+    "david-harris": {
+      "name": "David Harris",
+      "bio": "Led AJC for 28 years as CEO.",
+      "notes": ""
+    },
+    "jonathan-greenblatt": {
+      "name": "Jonathan Greenblatt",
+      "bio": "CEO of ADL since 2015, former Obama administration official.",
+      "notes": ""
+    },
+    "sigmund-livingston": {
+      "name": "Sigmund Livingston",
+      "bio": "Founded the ADL in 1913 under B'nai B'rith.",
+      "notes": ""
+    },
+    "howard-kohr": {
+      "name": "Howard Kohr",
+      "bio": "Long-serving executive director of AIPAC.",
+      "notes": ""
+    },
+    "betsy-berns-korn": {
+      "name": "Betsy Berns Korn",
+      "bio": "President of AIPAC.",
+      "notes": ""
+    },
+    "morton-klein": {
+      "name": "Morton Klein",
+      "bio": "President of ZOA since 1993.",
+      "notes": ""
+    },
+    "jeremy-ben-ami": {
+      "name": "Jeremy Ben-Ami",
+      "bio": "Founded J Street in 2007.",
+      "notes": ""
+    },
+    "john-hagee": {
+      "name": "John Hagee",
+      "bio": "Pastor and founder of CUFI.",
+      "notes": ""
+    },
+    "william-daroff": {
+      "name": "William Daroff",
+      "bio": "CEO of the Conference of Presidents.",
+      "notes": ""
+    },
+    "jack-rosen": {
+      "name": "Jack Rosen",
+      "bio": "President of the American Jewish Congress.",
+      "notes": ""
+    },
+    "matt-brooks": {
+      "name": "Matt Brooks",
+      "bio": "Long-time head of the RJC.",
+      "notes": ""
+    },
+    "halie-soifer": {
+      "name": "Halie Soifer",
+      "bio": "CEO of JDCA.",
+      "notes": ""
+    },
+    "roz-rothstein": {
+      "name": "Roz Rothstein",
+      "bio": "Co-founded StandWithUs in 2001.",
+      "notes": ""
+    },
+    "rabbi-marvin-hier": {
+      "name": "Rabbi Marvin Hier",
+      "bio": "Founded the Simon Wiesenthal Center in 1977.",
+      "notes": ""
+    },
+    "rabbi-abraham-cooper": {
+      "name": "Rabbi Abraham Cooper",
+      "bio": "Leading figure in combating online hate.",
+      "notes": ""
+    },
+    "eric-fingerhut": {
+      "name": "Eric Fingerhut",
+      "bio": "President & CEO of JFNA.",
+      "notes": ""
+    },
+    "eric-goldstein": {
+      "name": "Eric Goldstein",
+      "bio": "CEO of UJA-Federation of New York.",
+      "notes": ""
+    },
+    "seth-riklin": {
+      "name": "Seth Riklin",
+      "bio": "President of B'nai B'rith International.",
+      "notes": ""
+    },
+    "rabbi-menachem-mendel-schneerson": {
+      "name": "Rabbi Menachem Mendel Schneerson",
+      "bio": "The seventh Lubavitcher Rebbe who transformed Chabad into a global movement.",
+      "notes": ""
+    },
+    "rabbi-yehuda-krinsky": {
+      "name": "Rabbi Yehuda Krinsky",
+      "bio": "Chairman of Chabad-Lubavitch educational and social service arms.",
+      "notes": ""
+    },
+    "rabbi-moshe-hauer": {
+      "name": "Rabbi Moshe Hauer",
+      "bio": "Executive VP of the Orthodox Union.",
+      "notes": ""
+    },
+    "rabbi-rick-jacobs": {
+      "name": "Rabbi Rick Jacobs",
+      "bio": "President of the Union for Reform Judaism.",
+      "notes": ""
+    },
+    "rabbi-deborah-waxman": {
+      "name": "Rabbi Deborah Waxman",
+      "bio": "First woman rabbi and first lesbian to lead a Jewish congregational union.",
+      "notes": ""
+    },
+    "rabbi-chaim-dovid-zwiebel": {
+      "name": "Rabbi Chaim Dovid Zwiebel",
+      "bio": "Executive VP of Agudath Israel.",
+      "notes": ""
+    },
+    "ari-berman": {
+      "name": "Ari Berman",
+      "bio": "President of Yeshiva University since 2017.",
+      "notes": ""
+    },
+    "ronald-liebowitz": {
+      "name": "Ronald Liebowitz",
+      "bio": "President of Brandeis University.",
+      "notes": ""
+    },
+    "shuly-rubin-schwartz": {
+      "name": "Shuly Rubin Schwartz",
+      "bio": "First woman chancellor of JTS.",
+      "notes": ""
+    },
+    "adam-lehman": {
+      "name": "Adam Lehman",
+      "bio": "President & CEO of Hillel International.",
+      "notes": ""
+    },
+    "gidi-mark": {
+      "name": "Gidi Mark",
+      "bio": "CEO of Taglit-Birthright Israel.",
+      "notes": ""
+    },
+    "rhoda-smolow": {
+      "name": "Rhoda Smolow",
+      "bio": "National President of Hadassah.",
+      "notes": ""
+    },
+    "russell-robinson": {
+      "name": "Russell Robinson",
+      "bio": "CEO of JNF-USA.",
+      "notes": ""
+    },
+    "ariel-zwang": {
+      "name": "Ariel Zwang",
+      "bio": "CEO of JDC.",
+      "notes": ""
+    },
+    "mark-hetfield": {
+      "name": "Mark Hetfield",
+      "bio": "President & CEO of HIAS.",
+      "notes": ""
+    },
+    "doron-almog": {
+      "name": "Doron Almog",
+      "bio": "Chairman of the Jewish Agency.",
+      "notes": ""
+    },
+    "steven-weil": {
+      "name": "Steven Weil",
+      "bio": "CEO of FIDF.",
+      "notes": ""
+    },
+    "jodi-rudoren": {
+      "name": "Jodi Rudoren",
+      "bio": "Editor-in-Chief of The Forward.",
+      "notes": ""
+    },
+    "david-horovitz": {
+      "name": "David Horovitz",
+      "bio": "Founding editor of The Times of Israel.",
+      "notes": ""
+    },
+    "alana-newhouse": {
+      "name": "Alana Newhouse",
+      "bio": "Founder and editor-in-chief of Tablet Magazine.",
+      "notes": ""
+    },
+    "john-podhoretz": {
+      "name": "John Podhoretz",
+      "bio": "Editor of Commentary Magazine.",
+      "notes": ""
+    },
+    "jack-kliger": {
+      "name": "Jack Kliger",
+      "bio": "President of the Museum of Jewish Heritage.",
+      "notes": ""
+    },
+    "stuart-eizenstat": {
+      "name": "Stuart Eizenstat",
+      "bio": "Chairman of the US Holocaust Memorial Council.",
+      "notes": ""
+    },
+    "larry-fink": {
+      "name": "Larry Fink",
+      "bio": "Co-founder and CEO of BlackRock, the world's largest asset manager.",
+      "notes": ""
+    },
+    "david-solomon": {
+      "name": "David Solomon",
+      "bio": "CEO of Goldman Sachs since 2018.",
+      "notes": ""
+    },
+    "lloyd-blankfein": {
+      "name": "Lloyd Blankfein",
+      "bio": "CEO of Goldman Sachs 2006-2018.",
+      "notes": ""
+    },
+    "michael-bloomberg": {
+      "name": "Michael Bloomberg",
+      "bio": "Founder of Bloomberg LP, served as Mayor of New York City 2002-2013.",
+      "notes": ""
+    },
+    "larry-ellison": {
+      "name": "Larry Ellison",
+      "bio": "Jewish co-founder and chairman of Oracle, one of the world's wealthiest people.",
+      "notes": ""
+    },
+    "mark-zuckerberg": {
+      "name": "Mark Zuckerberg",
+      "bio": "Co-founder of Facebook, one of the world's most influential tech leaders.",
+      "notes": ""
+    },
+    "sheryl-sandberg": {
+      "name": "Sheryl Sandberg",
+      "bio": "Former COO of Meta, author of Lean In.",
+      "notes": ""
+    },
+    "sergey-brin": {
+      "name": "Sergey Brin",
+      "bio": "Co-founder of Google, born in Moscow to a Jewish family.",
+      "notes": ""
+    },
+    "larry-page": {
+      "name": "Larry Page",
+      "bio": "Co-founder of Google.",
+      "notes": ""
+    },
+    "michael-dell": {
+      "name": "Michael Dell",
+      "bio": "Jewish founder and CEO of Dell Technologies. Born to a Jewish family in Houston, Texas. Started Dell from his UT Austin dorm room in 1984. Net worth ~$70 billion. Major philanthropist through the Michael & Susan Dell Foundation ($2.4B+ donated). Strong supporter of Israel with Dell's major Ra'anana campus employing 3,000+.",
+      "notes": ""
+    },
+    "william-lauder": {
+      "name": "William Lauder",
+      "bio": "Executive Chairman of Estée Lauder Companies.",
+      "notes": ""
+    },
+    "est-e-lauder": {
+      "name": "Estée Lauder",
+      "bio": "Founded the company in 1946.",
+      "notes": ""
+    },
+    "haim-saban": {
+      "name": "Haim Saban",
+      "bio": "Israeli-American media mogul, creator of Mighty Morphin Power Rangers.",
+      "notes": ""
+    },
+    "barry-diller": {
+      "name": "Barry Diller",
+      "bio": "Media mogul and chairman of IAC.",
+      "notes": ""
+    },
+    "steven-spielberg": {
+      "name": "Steven Spielberg",
+      "bio": "One of the most influential filmmakers in cinema history.",
+      "notes": ""
+    },
+    "jeffrey-katzenberg": {
+      "name": "Jeffrey Katzenberg",
+      "bio": "Co-founder of DreamWorks Animation.",
+      "notes": ""
+    },
+    "david-geffen": {
+      "name": "David Geffen",
+      "bio": "Co-founder of DreamWorks, record executive and philanthropist.",
+      "notes": ""
+    },
+    "david-zaslav": {
+      "name": "David Zaslav",
+      "bio": "CEO of Warner Bros. Discovery.",
+      "notes": ""
+    },
+    "shari-redstone": {
+      "name": "Shari Redstone",
+      "bio": "Chair of Paramount Global.",
+      "notes": ""
+    },
+    "bob-iger": {
+      "name": "Bob Iger",
+      "bio": "CEO of The Walt Disney Company.",
+      "notes": ""
+    },
+    "howard-schultz": {
+      "name": "Howard Schultz",
+      "bio": "Jewish business leader who built Starbucks into a global brand. Born to a Jewish family in Brooklyn public housing projects. Grew Starbucks from 11 stores to 35,000+ worldwide. Net worth ~$5 billion. Active philanthropist; considered running for US President in 2020.",
+      "notes": ""
+    },
+    "sheldon-adelson": {
+      "name": "Sheldon Adelson",
+      "bio": "Las Vegas Sands founder, major Republican and pro-Israel donor.",
+      "notes": ""
+    },
+    "miriam-adelson": {
+      "name": "Miriam Adelson",
+      "bio": "Israeli-American physician and one of the wealthiest women in the world.",
+      "notes": ""
+    },
+    "james-simons": {
+      "name": "James Simons",
+      "bio": "Mathematician and hedge fund manager, founded Renaissance Technologies.",
+      "notes": ""
+    },
+    "ken-griffin": {
+      "name": "Ken Griffin",
+      "bio": "Billionaire founder and CEO of Citadel.",
+      "notes": ""
+    },
+    "robert-kraft": {
+      "name": "Robert Kraft",
+      "bio": "Owner of the New England Patriots and CEO of the Kraft Group.",
+      "notes": ""
+    },
+    "amir-ohana": {
+      "name": "Amir Ohana",
+      "bio": "Speaker of the Knesset.",
+      "notes": ""
+    },
+    "benjamin-netanyahu": {
+      "name": "Benjamin Netanyahu",
+      "bio": "Longest-serving Prime Minister of Israel.",
+      "notes": ""
+    },
+    "yoav-gallant": {
+      "name": "Yoav Gallant",
+      "bio": "Israeli politician and former IDF general.",
+      "notes": ""
+    },
+    "david-barnea": {
+      "name": "David Barnea",
+      "bio": "Director of the Mossad.",
+      "notes": ""
+    },
+    "ronen-bar": {
+      "name": "Ronen Bar",
+      "bio": "Director of Shin Bet.",
+      "notes": ""
+    },
+    "herzi-halevi": {
+      "name": "Herzi Halevi",
+      "bio": "20th Chief of General Staff of the IDF.",
+      "notes": ""
+    },
+    "amir-yaron": {
+      "name": "Amir Yaron",
+      "bio": "Governor of the Bank of Israel.",
+      "notes": ""
+    },
+    "asher-cohen": {
+      "name": "Asher Cohen",
+      "bio": "President of the Hebrew University.",
+      "notes": ""
+    },
+    "uri-sivan": {
+      "name": "Uri Sivan",
+      "bio": "President of the Technion.",
+      "notes": ""
+    },
+    "ariel-porat": {
+      "name": "Ariel Porat",
+      "bio": "President of Tel Aviv University.",
+      "notes": ""
+    },
+    "alon-chen": {
+      "name": "Alon Chen",
+      "bio": "President of the Weizmann Institute of Science.",
+      "notes": ""
+    },
+    "arie-zaban": {
+      "name": "Arie Zaban",
+      "bio": "President of Bar-Ilan University.",
+      "notes": ""
+    },
+    "gil-shwed": {
+      "name": "Gil Shwed",
+      "bio": "Co-founder and CEO of Check Point Software.",
+      "notes": ""
+    },
+    "avishai-abrahami": {
+      "name": "Avishai Abrahami",
+      "bio": "Israeli co-founder and CEO of Wix.com.",
+      "notes": ""
+    },
+    "udi-mokady": {
+      "name": "Udi Mokady",
+      "bio": "Founder and executive chairman of CyberArk.",
+      "notes": ""
+    },
+    "amnon-shashua": {
+      "name": "Amnon Shashua",
+      "bio": "Co-founder of Mobileye, professor at Hebrew University.",
+      "notes": ""
+    },
+    "daniel-birnbaum": {
+      "name": "Daniel Birnbaum",
+      "bio": "Israeli CEO who led SodaStream through its acquisition by PepsiCo.",
+      "notes": ""
+    },
+    "micha-kaufman": {
+      "name": "Micha Kaufman",
+      "bio": "Israeli co-founder and CEO of Fiverr.",
+      "notes": ""
+    },
+    "roy-mann": {
+      "name": "Roy Mann",
+      "bio": "Co-founded Monday.com.",
+      "notes": ""
+    },
+    "amos-schocken": {
+      "name": "Amos Schocken",
+      "bio": "Publisher and owner of Haaretz.",
+      "notes": ""
+    },
+    "arnon-mozes": {
+      "name": "Arnon Mozes",
+      "bio": "Publisher of Yedioth Ahronoth.",
+      "notes": ""
+    },
+    "dani-dayan": {
+      "name": "Dani Dayan",
+      "bio": "Chairman of Yad Vashem.",
+      "notes": ""
+    },
+    "yaakov-hagoel": {
+      "name": "Yaakov Hagoel",
+      "bio": "Chairman of the World Zionist Organization.",
+      "notes": ""
+    },
+    "ronald-lauder": {
+      "name": "Ronald Lauder",
+      "bio": "Businessman, philanthropist, president of the World Jewish Congress.",
+      "notes": ""
+    },
+    "marie-van-der-zyl": {
+      "name": "Marie van der Zyl",
+      "bio": "President of the Board of Deputies of British Jews.",
+      "notes": ""
+    },
+    "rabbi-ephraim-mirvis": {
+      "name": "Rabbi Ephraim Mirvis",
+      "bio": "Chief Rabbi of the United Hebrew Congregations of the Commonwealth since 2013.",
+      "notes": ""
+    },
+    "steven-lewis": {
+      "name": "Steven Lewis",
+      "bio": "Chairman of Jewish Care.",
+      "notes": ""
+    },
+    "gideon-falter": {
+      "name": "Gideon Falter",
+      "bio": "CEO of Campaign Against Antisemitism.",
+      "notes": ""
+    },
+    "lord-jacob-rothschild": {
+      "name": "Lord Jacob Rothschild",
+      "bio": "British investment banker and philanthropist.",
+      "notes": ""
+    },
+    "yonathan-arfi": {
+      "name": "Yonathan Arfi",
+      "bio": "President of CRIF.",
+      "notes": ""
+    },
+    "jo-l-mergui": {
+      "name": "Joël Mergui",
+      "bio": "President of the Consistoire.",
+      "notes": ""
+    },
+    "michael-mostyn": {
+      "name": "Michael Mostyn",
+      "bio": "CEO of B'nai Brith Canada.",
+      "notes": ""
+    },
+    "mark-leibler": {
+      "name": "Mark Leibler",
+      "bio": "National Chairman of AIJAC.",
+      "notes": ""
+    },
+    "josef-schuster": {
+      "name": "Josef Schuster",
+      "bio": "President of the Central Council of Jews in Germany.",
+      "notes": ""
+    },
+    "alexander-boroda": {
+      "name": "Alexander Boroda",
+      "bio": "President of FJCR.",
+      "notes": ""
+    },
+    "rabbi-berel-lazar": {
+      "name": "Rabbi Berel Lazar",
+      "bio": "Chabad rabbi serving as Chief Rabbi of Russia since 2000.",
+      "notes": ""
+    },
+    "rabbi-warren-goldstein": {
+      "name": "Rabbi Warren Goldstein",
+      "bio": "Chief Rabbi of South Africa.",
+      "notes": ""
+    },
+    "michael-schudrich": {
+      "name": "Michael Schudrich",
+      "bio": "Chief Rabbi of Poland since 2004.",
+      "notes": ""
+    },
+    "rabbi-yehuda-sarna": {
+      "name": "Rabbi Yehuda Sarna",
+      "bio": "Chief Rabbi of the Association of Gulf Jewish Communities.",
+      "notes": ""
+    },
+    "herbert-wachtell": {
+      "name": "Herbert Wachtell",
+      "bio": "Co-founder of Wachtell Lipton, pioneered the 'poison pill' defense.",
+      "notes": ""
+    },
+    "martin-lipton": {
+      "name": "Martin Lipton",
+      "bio": "Corporate lawyer credited with inventing the shareholder rights plan.",
+      "notes": ""
+    },
+    "joseph-flom": {
+      "name": "Joseph Flom",
+      "bio": "Pioneer of hostile takeover law, transformed Skadden into a powerhouse.",
+      "notes": ""
+    },
+    "marc-kasowitz": {
+      "name": "Marc Kasowitz",
+      "bio": "Founding partner, known as a litigator for high-profile clients.",
+      "notes": ""
+    },
+    "bruce-flatt": {
+      "name": "Bruce Flatt",
+      "bio": "CEO of Brookfield Asset Management.",
+      "notes": ""
+    },
+    "stephen-ross": {
+      "name": "Stephen Ross",
+      "bio": "Billionaire real estate developer, owner of the Miami Dolphins.",
+      "notes": ""
+    },
+    "steven-roth": {
+      "name": "Steven Roth",
+      "bio": "Chairman and CEO of Vornado Realty Trust.",
+      "notes": ""
+    },
+    "rob-speyer": {
+      "name": "Rob Speyer",
+      "bio": "President and CEO of Tishman Speyer.",
+      "notes": ""
+    },
+    "jared-kushner": {
+      "name": "Jared Kushner",
+      "bio": "Former CEO, served as Senior Advisor to President Trump.",
+      "notes": ""
+    },
+    "charles-kushner": {
+      "name": "Charles Kushner",
+      "bio": "Founder of Kushner Companies.",
+      "notes": ""
+    },
+    "marc-holliday": {
+      "name": "Marc Holliday",
+      "bio": "CEO of SL Green Realty.",
+      "notes": ""
+    },
+    "larry-silverstein": {
+      "name": "Larry Silverstein",
+      "bio": "Chairman of Silverstein Properties, leaseholder of the original WTC.",
+      "notes": ""
+    },
+    "richard-lefrak": {
+      "name": "Richard LeFrak",
+      "bio": "Chairman of the LeFrak Organization.",
+      "notes": ""
+    },
+    "gary-barnett": {
+      "name": "Gary Barnett",
+      "bio": "Founder and chairman of Extell Development.",
+      "notes": ""
+    },
+    "scott-rechler": {
+      "name": "Scott Rechler",
+      "bio": "Chairman and CEO of RXR Realty.",
+      "notes": ""
+    },
+    "mortimer-zuckerman": {
+      "name": "Mortimer Zuckerman",
+      "bio": "Co-founder of Boston Properties, media mogul, owner of NY Daily News.",
+      "notes": ""
+    },
+    "richard-mack": {
+      "name": "Richard Mack",
+      "bio": "CEO of Mack Real Estate Group.",
+      "notes": ""
+    },
+    "michael-moritz": {
+      "name": "Michael Moritz",
+      "bio": "Welsh-American billionaire venture capitalist at Sequoia.",
+      "notes": ""
+    },
+    "marc-andreessen": {
+      "name": "Marc Andreessen",
+      "bio": "Co-creator of the Mosaic web browser, co-founder of a16z.",
+      "notes": ""
+    },
+    "ben-horowitz": {
+      "name": "Ben Horowitz",
+      "bio": "Co-founder of a16z, author of 'The Hard Thing About Hard Things.'",
+      "notes": ""
+    },
+    "henry-kravis": {
+      "name": "Henry Kravis",
+      "bio": "Co-founder of KKR, pioneer of the leveraged buyout.",
+      "notes": ""
+    },
+    "marc-rowan": {
+      "name": "Marc Rowan",
+      "bio": "CEO of Apollo Global Management.",
+      "notes": ""
+    },
+    "leon-black": {
+      "name": "Leon Black",
+      "bio": "Co-founder of Apollo Global Management.",
+      "notes": ""
+    },
+    "stephen-feinberg": {
+      "name": "Stephen Feinberg",
+      "bio": "Co-founder and CEO of Cerberus Capital Management.",
+      "notes": ""
+    },
+    "paul-singer": {
+      "name": "Paul Singer",
+      "bio": "Billionaire hedge fund manager and major Republican donor.",
+      "notes": ""
+    },
+    "david-siegel": {
+      "name": "David Siegel",
+      "bio": "Co-founder and co-chairman of Two Sigma.",
+      "notes": ""
+    },
+    "david-shaw": {
+      "name": "David Shaw",
+      "bio": "Founder of D.E. Shaw, former Columbia University professor.",
+      "notes": ""
+    },
+    "chase-coleman": {
+      "name": "Chase Coleman",
+      "bio": "Billionaire hedge fund manager.",
+      "notes": ""
+    },
+    "bill-ackman": {
+      "name": "Bill Ackman",
+      "bio": "Billionaire activist investor and hedge fund manager.",
+      "notes": ""
+    },
+    "steve-tisch": {
+      "name": "Steve Tisch",
+      "bio": "Co-owner of the NY Giants, Academy Award-winning film producer.",
+      "notes": ""
+    },
+    "josh-harris": {
+      "name": "Josh Harris",
+      "bio": "Co-founder of Apollo Global Management, owner of multiple sports teams.",
+      "notes": ""
+    },
+    "bruce-ratner": {
+      "name": "Bruce Ratner",
+      "bio": "Jewish real estate developer who brought the Nets to Brooklyn.",
+      "notes": ""
+    },
+    "joe-lacob": {
+      "name": "Joe Lacob",
+      "bio": "Venture capitalist and owner of the Golden State Warriors.",
+      "notes": ""
+    },
+    "steve-ballmer": {
+      "name": "Steve Ballmer",
+      "bio": "Former Microsoft CEO, has Jewish heritage through his mother.",
+      "notes": ""
+    },
+    "mark-cuban": {
+      "name": "Mark Cuban",
+      "bio": "Billionaire entrepreneur and former Mavericks owner.",
+      "notes": ""
+    },
+    "larry-dolan": {
+      "name": "Larry Dolan",
+      "bio": "Owner of the Cleveland Guardians.",
+      "notes": ""
+    },
+    "steve-cohen": {
+      "name": "Steve Cohen",
+      "bio": "Hedge fund billionaire and owner of the NY Mets.",
+      "notes": ""
+    },
+    "martin-indyk": {
+      "name": "Martin Indyk",
+      "bio": "Australian-American diplomat and think tank leader.",
+      "notes": ""
+    },
+    "robert-satloff": {
+      "name": "Robert Satloff",
+      "bio": "Executive Director of the Washington Institute.",
+      "notes": ""
+    },
+    "yigal-carmon": {
+      "name": "Yigal Carmon",
+      "bio": "Former Israeli military intelligence officer, co-founded MEMRI.",
+      "notes": ""
+    },
+    "mark-dubowitz": {
+      "name": "Mark Dubowitz",
+      "bio": "CEO of FDD, known for Iran sanctions advocacy.",
+      "notes": ""
+    },
+    "daniel-pipes": {
+      "name": "Daniel Pipes",
+      "bio": "Political commentator and president of the Middle East Forum.",
+      "notes": ""
+    },
+    "ralph-lauren": {
+      "name": "Ralph Lauren",
+      "bio": "Fashion designer who built a global luxury brand.",
+      "notes": ""
+    },
+    "calvin-klein": {
+      "name": "Calvin Klein",
+      "bio": "Fashion designer who founded the brand in 1968.",
+      "notes": ""
+    },
+    "levi-strauss": {
+      "name": "Levi Strauss",
+      "bio": "German-American businessman who founded Levi Strauss & Co.",
+      "notes": ""
+    },
+    "marc-jacobs": {
+      "name": "Marc Jacobs",
+      "bio": "Fashion designer, former creative director of Louis Vuitton.",
+      "notes": ""
+    },
+    "michael-kors": {
+      "name": "Michael Kors",
+      "bio": "Fashion designer who built a global luxury brand.",
+      "notes": ""
+    },
+    "donna-karan": {
+      "name": "Donna Karan",
+      "bio": "Fashion designer who created Donna Karan New York.",
+      "notes": ""
+    },
+    "donald-fisher": {
+      "name": "Donald Fisher",
+      "bio": "Co-founded Gap in 1969.",
+      "notes": ""
+    },
+    "doris-fisher": {
+      "name": "Doris Fisher",
+      "bio": "Co-founded Gap with her husband Donald.",
+      "notes": ""
+    },
+    "bernie-marcus": {
+      "name": "Bernie Marcus",
+      "bio": "Co-founder of The Home Depot and major philanthropist.",
+      "notes": ""
+    },
+    "jeffrey-brotman": {
+      "name": "Jeffrey Brotman",
+      "bio": "Jewish co-founder of Costco Wholesale.",
+      "notes": ""
+    },
+    "charles-revson": {
+      "name": "Charles Revson",
+      "bio": "Jewish co-founder of Revlon.",
+      "notes": ""
+    },
+    "irwin-jacobs": {
+      "name": "Irwin Jacobs",
+      "bio": "Co-founded Qualcomm in 1985.",
+      "notes": ""
+    },
+    "andrew-grove": {
+      "name": "Andrew Grove",
+      "bio": "Hungarian-born CEO who transformed Intel into a tech giant.",
+      "notes": ""
+    },
+    "henry-samueli": {
+      "name": "Henry Samueli",
+      "bio": "Jewish co-founder of Broadcom, owner of the Anaheim Ducks.",
+      "notes": ""
+    },
+    "marc-benioff": {
+      "name": "Marc Benioff",
+      "bio": "Co-founder and CEO of Salesforce.",
+      "notes": ""
+    },
+    "peter-thiel": {
+      "name": "Peter Thiel",
+      "bio": "Billionaire tech entrepreneur, co-founded Palantir and PayPal.",
+      "notes": ""
+    },
+    "alex-karp": {
+      "name": "Alex Karp",
+      "bio": "CEO of Palantir Technologies.",
+      "notes": ""
+    },
+    "sam-altman": {
+      "name": "Sam Altman",
+      "bio": "CEO of OpenAI, former president of Y Combinator.",
+      "notes": ""
+    },
+    "travis-kalanick": {
+      "name": "Travis Kalanick",
+      "bio": "Co-founder and former CEO of Uber.",
+      "notes": ""
+    },
+    "nathan-blecharczyk": {
+      "name": "Nathan Blecharczyk",
+      "bio": "Jewish co-founder of Airbnb.",
+      "notes": ""
+    },
+    "adam-neumann": {
+      "name": "Adam Neumann",
+      "bio": "Israeli-American entrepreneur, co-founded WeWork.",
+      "notes": ""
+    },
+    "max-levchin": {
+      "name": "Max Levchin",
+      "bio": "Ukrainian-born co-founder of PayPal.",
+      "notes": ""
+    },
+    "brian-roberts": {
+      "name": "Brian Roberts",
+      "bio": "Chairman and CEO of Comcast, parent of NBCUniversal.",
+      "notes": ""
+    },
+    "daniel-katz": {
+      "name": "Daniel Katz",
+      "bio": "Co-founder of A24.",
+      "notes": ""
+    },
+    "bryan-lourd": {
+      "name": "Bryan Lourd",
+      "bio": "Co-Chairman of CAA.",
+      "notes": ""
+    },
+    "ari-emanuel": {
+      "name": "Ari Emanuel",
+      "bio": "CEO of Endeavor, one of Hollywood's most powerful agents.",
+      "notes": ""
+    },
+    "sumner-redstone": {
+      "name": "Sumner Redstone",
+      "bio": "Media magnate who built Viacom empire.",
+      "notes": ""
+    },
+    "bob-pittman": {
+      "name": "Bob Pittman",
+      "bio": "Co-founder of MTV, CEO of iHeartMedia.",
+      "notes": ""
+    },
+    "a-g-sulzberger": {
+      "name": "A.G. Sulzberger",
+      "bio": "Fifth-generation publisher of The New York Times.",
+      "notes": ""
+    },
+    "andrew-breitbart": {
+      "name": "Andrew Breitbart",
+      "bio": "Conservative media publisher who founded Breitbart News.",
+      "notes": ""
+    },
+    "lynn-schusterman": {
+      "name": "Lynn Schusterman",
+      "bio": "Billionaire philanthropist focusing on Jewish engagement.",
+      "notes": ""
+    },
+    "charles-bronfman": {
+      "name": "Charles Bronfman",
+      "bio": "Canadian-American businessman and philanthropist.",
+      "notes": ""
+    },
+    "seth-klarman": {
+      "name": "Seth Klarman",
+      "bio": "Jewish billionaire investor known as the 'Oracle of Boston.'",
+      "notes": ""
+    },
+    "penny-pritzker": {
+      "name": "Penny Pritzker",
+      "bio": "Former US Secretary of Commerce, billionaire businesswoman.",
+      "notes": ""
+    },
+    "leslie-wexner": {
+      "name": "Leslie Wexner",
+      "bio": "Founder of L Brands (Victoria's Secret), major philanthropist.",
+      "notes": ""
+    },
+    "rabbi-yehoshua-fass": {
+      "name": "Rabbi Yehoshua Fass",
+      "bio": "Co-founded Nefesh B'Nefesh in 2002.",
+      "notes": ""
+    },
+    "harold-grinspoon": {
+      "name": "Harold Grinspoon",
+      "bio": "Real estate developer and philanthropist behind PJ Library.",
+      "notes": ""
+    },
+    "albert-bourla": {
+      "name": "Albert Bourla",
+      "bio": "Greek-Jewish CEO of Pfizer whose parents survived the Holocaust in Thessaloniki.",
+      "notes": ""
+    },
+    "leonard-schleifer": {
+      "name": "Leonard Schleifer",
+      "bio": "Co-founded Regeneron in 1988.",
+      "notes": ""
+    },
+    "howard-lutnick": {
+      "name": "Howard Lutnick",
+      "bio": "Jewish CEO of Cantor Fitzgerald.",
+      "notes": ""
+    },
+    "alexandre-lazard": {
+      "name": "Alexandre Lazard",
+      "bio": "French Jewish co-founder of Lazard.",
+      "notes": ""
+    },
+    "uri-levine": {
+      "name": "Uri Levine",
+      "bio": "Israeli entrepreneur, co-founder of Waze.",
+      "notes": ""
+    },
+    "ehud-shabtai": {
+      "name": "Ehud Shabtai",
+      "bio": "Israeli programmer who originally created FreeMap Israel, which became Waze.",
+      "notes": ""
+    },
+    "dave-waiser": {
+      "name": "Dave Waiser",
+      "bio": "Russian-Israeli founder of Gett.",
+      "notes": ""
+    },
+    "daniel-ramot": {
+      "name": "Daniel Ramot",
+      "bio": "Israeli co-founder and CEO of Via.",
+      "notes": ""
+    },
+    "tomer-weingarten": {
+      "name": "Tomer Weingarten",
+      "bio": "Israeli co-founder of SentinelOne.",
+      "notes": ""
+    },
+    "guy-podjarny": {
+      "name": "Guy Podjarny",
+      "bio": "Israeli co-founder of Snyk.",
+      "notes": ""
+    },
+    "shlomi-ben-haim": {
+      "name": "Shlomi Ben Haim",
+      "bio": "Israeli co-founder of JFrog.",
+      "notes": ""
+    },
+    "daniel-schreiber": {
+      "name": "Daniel Schreiber",
+      "bio": "Israeli-American co-founder of Lemonade.",
+      "notes": ""
+    },
+    "shai-wininger": {
+      "name": "Shai Wininger",
+      "bio": "Israeli co-founder of Fiverr, also co-founded Lemonade Insurance.",
+      "notes": ""
+    },
+    "yuval-tal": {
+      "name": "Yuval Tal",
+      "bio": "Israeli co-founder of Payoneer.",
+      "notes": ""
+    },
+    "adam-singolda": {
+      "name": "Adam Singolda",
+      "bio": "Israeli founder and CEO of Taboola.",
+      "notes": ""
+    },
+    "yaron-galai": {
+      "name": "Yaron Galai",
+      "bio": "Israeli co-founder of Outbrain.",
+      "notes": ""
+    },
+    "dan-adika": {
+      "name": "Dan Adika",
+      "bio": "Israeli co-founder of WalkMe.",
+      "notes": ""
+    },
+    "shalev-hulio": {
+      "name": "Shalev Hulio",
+      "bio": "Israeli co-founder of NSO Group.",
+      "notes": ""
+    },
+    "simcha-blass": {
+      "name": "Simcha Blass",
+      "bio": "Israeli engineer who invented modern drip irrigation.",
+      "notes": ""
+    },
+    "michael-marks": {
+      "name": "Michael Marks",
+      "bio": "Belarusian-Jewish immigrant who co-founded Marks & Spencer.",
+      "notes": ""
+    },
+    "jack-cohen": {
+      "name": "Jack Cohen",
+      "bio": "Son of Jewish immigrants from Poland, founded Tesco from a market stall.",
+      "notes": ""
+    },
+    "nathan-mayer-rothschild": {
+      "name": "Nathan Mayer Rothschild",
+      "bio": "Founded the London branch of the Rothschild banking dynasty.",
+      "notes": ""
+    },
+    "roman-abramovich": {
+      "name": "Roman Abramovich",
+      "bio": "Jewish Russian-Israeli billionaire, former owner of Chelsea FC.",
+      "notes": ""
+    },
+    "daniel-levy": {
+      "name": "Daniel Levy",
+      "bio": "Chairman of Tottenham Hotspur since 2001.",
+      "notes": ""
+    },
+    "sir-naim-dangoor": {
+      "name": "Sir Naim Dangoor",
+      "bio": "Iraqi-British Jewish businessman and philanthropist.",
+      "notes": ""
+    },
+    "david-de-rothschild": {
+      "name": "David de Rothschild",
+      "bio": "Chairman of Rothschild & Co.",
+      "notes": ""
+    },
+    "mathias-d-pfner": {
+      "name": "Mathias Döpfner",
+      "bio": "CEO of Axel Springer, known for pro-Israel stance.",
+      "notes": ""
+    },
+    "gail-asper": {
+      "name": "Gail Asper",
+      "bio": "Daughter of Israel Asper, led campaign for the museum.",
+      "notes": ""
+    },
+    "edgar-bronfman-sr": {
+      "name": "Edgar Bronfman Sr.",
+      "bio": "Canadian-American businessman, president of the World Jewish Congress.",
+      "notes": ""
+    },
+    "paul-reichmann": {
+      "name": "Paul Reichmann",
+      "bio": "Hungarian-born Canadian real estate developer, built Canary Wharf.",
+      "notes": ""
+    },
+    "heather-reisman": {
+      "name": "Heather Reisman",
+      "bio": "Canadian businesswoman, founder of Indigo, married to Gerry Schwartz.",
+      "notes": ""
+    },
+    "gerry-schwartz": {
+      "name": "Gerry Schwartz",
+      "bio": "Canadian billionaire, founder of Onex Corporation.",
+      "notes": ""
+    },
+    "frank-lowy": {
+      "name": "Frank Lowy",
+      "bio": "Israeli-Australian co-founder of Westfield, founder of the Lowy Institute.",
+      "notes": ""
+    },
+    "harry-triguboff": {
+      "name": "Harry Triguboff",
+      "bio": "Chinese-born Australian Jewish billionaire, Australia's richest property developer.",
+      "notes": ""
+    },
+    "mikhail-fridman": {
+      "name": "Mikhail Fridman",
+      "bio": "Ukrainian-born Jewish billionaire, co-founder of Alfa Group and LetterOne.",
+      "notes": ""
+    },
+    "viktor-vekselberg": {
+      "name": "Viktor Vekselberg",
+      "bio": "Ukrainian-born Russian-Israeli billionaire businessman.",
+      "notes": ""
+    },
+    "ernest-oppenheimer": {
+      "name": "Ernest Oppenheimer",
+      "bio": "German-born Jewish South African mining magnate who founded Anglo American.",
+      "notes": ""
+    },
+    "nicky-oppenheimer": {
+      "name": "Nicky Oppenheimer",
+      "bio": "Former chairman of De Beers and Anglo American.",
+      "notes": ""
+    },
+    "adrian-gore": {
+      "name": "Adrian Gore",
+      "bio": "South African Jewish founder of Discovery Limited.",
+      "notes": ""
+    },
+    "joseph-safra": {
+      "name": "Joseph Safra",
+      "bio": "Brazilian-Lebanese banker, once the world's richest banker.",
+      "notes": ""
+    },
+    "george-soros": {
+      "name": "George Soros",
+      "bio": "Hungarian-born American billionaire investor, founder of the Open Society Foundations.",
+      "notes": ""
+    },
+    "len-blavatnik": {
+      "name": "Len Blavatnik",
+      "bio": "Ukrainian-born British-American billionaire, founder of Access Industries, major Jewish philanthropist.",
+      "notes": ""
+    },
+    "bernie-sanders": {
+      "name": "Bernie Sanders",
+      "bio": "US Senator from Vermont, first Jewish candidate to win a presidential primary.",
+      "notes": ""
+    },
+    "chuck-schumer": {
+      "name": "Chuck Schumer",
+      "bio": "Senate Majority Leader and the highest-ranking Jewish elected official in US history.",
+      "notes": ""
+    },
+    "antony-blinken": {
+      "name": "Antony Blinken",
+      "bio": "US Secretary of State under President Biden.",
+      "notes": ""
+    },
+    "janet-yellen": {
+      "name": "Janet Yellen",
+      "bio": "First female US Secretary of the Treasury, former Fed Chair.",
+      "notes": ""
+    },
+    "merrick-garland": {
+      "name": "Merrick Garland",
+      "bio": "US Attorney General.",
+      "notes": ""
+    },
+    "jerry-seinfeld": {
+      "name": "Jerry Seinfeld",
+      "bio": "Creator and star of the sitcom Seinfeld.",
+      "notes": ""
+    },
+    "seth-rogen": {
+      "name": "Seth Rogen",
+      "bio": "Canadian-American actor, comedian, and filmmaker.",
+      "notes": ""
+    },
+    "gal-gadot": {
+      "name": "Gal Gadot",
+      "bio": "Israeli actress and model, known for Wonder Woman.",
+      "notes": ""
+    },
+    "natalie-portman": {
+      "name": "Natalie Portman",
+      "bio": "Israeli-American actress and Academy Award winner.",
+      "notes": ""
+    },
+    "scarlett-johansson": {
+      "name": "Scarlett Johansson",
+      "bio": "American actress, one of the world's highest-grossing box office stars.",
+      "notes": ""
+    },
+    "albert-einstein": {
+      "name": "Albert Einstein",
+      "bio": "Nobel Prize-winning physicist who developed the theory of relativity.",
+      "notes": ""
+    },
+    "j-robert-oppenheimer": {
+      "name": "J. Robert Oppenheimer",
+      "bio": "Theoretical physicist known as the 'father of the atomic bomb.'",
+      "notes": ""
+    },
+    "richard-feynman": {
+      "name": "Richard Feynman",
+      "bio": "Nobel Prize-winning physicist known for quantum electrodynamics.",
+      "notes": ""
+    },
+    "noam-chomsky": {
+      "name": "Noam Chomsky",
+      "bio": "Father of modern linguistics, prominent public intellectual.",
+      "notes": ""
+    },
+    "jeff-zucker": {
+      "name": "Jeff Zucker",
+      "bio": "Former president of CNN, former CEO of NBCUniversal.",
+      "notes": ""
+    },
+    "les-moonves": {
+      "name": "Les Moonves",
+      "bio": "Former chairman and CEO of CBS Corporation.",
+      "notes": ""
+    },
+    "ariel-muzicant": {
+      "name": "Ariel Muzicant",
+      "bio": "Austrian-Israeli businessman, VP of the European Jewish Congress.",
+      "notes": ""
+    },
+    "henry-lehman": {
+      "name": "Henry Lehman",
+      "bio": "German-Jewish immigrant who co-founded Lehman Brothers.",
+      "notes": ""
+    },
+    "alan-greenberg": {
+      "name": "Alan Greenberg",
+      "bio": "Long-time Jewish CEO of Bear Stearns.",
+      "notes": ""
+    },
+    "arthur-salomon": {
+      "name": "Arthur Salomon",
+      "bio": "Jewish co-founder of Salomon Brothers.",
+      "notes": ""
+    },
+    "jacob-schiff": {
+      "name": "Jacob Schiff",
+      "bio": "Jewish financier and philanthropist who led Kuhn Loeb to prominence.",
+      "notes": ""
+    },
+    "james-tisch": {
+      "name": "James Tisch",
+      "bio": "Jewish CEO of Loews Corporation.",
+      "notes": ""
+    },
+    "daniel-och": {
+      "name": "Daniel Och",
+      "bio": "Jewish founder of Och-Ziff Capital Management.",
+      "notes": ""
+    },
+    "steven-a-cohen": {
+      "name": "Steven A. Cohen",
+      "bio": "Jewish billionaire hedge fund manager, owner of the NY Mets.",
+      "notes": ""
+    },
+    "daniel-loeb": {
+      "name": "Daniel Loeb",
+      "bio": "Jewish activist investor and hedge fund manager.",
+      "notes": ""
+    },
+    "carl-icahn": {
+      "name": "Carl Icahn",
+      "bio": "Jewish billionaire activist investor and corporate raider.",
+      "notes": ""
+    },
+    "marcus-goldman": {
+      "name": "Marcus Goldman",
+      "bio": "Bavarian-Jewish immigrant who founded Goldman Sachs.",
+      "notes": ""
+    },
+    "samuel-sachs": {
+      "name": "Samuel Sachs",
+      "bio": "Jewish co-founder and son-in-law of Marcus Goldman.",
+      "notes": ""
+    },
+    "stephen-schwarzman": {
+      "name": "Stephen Schwarzman",
+      "bio": "Jewish billionaire, co-founder of Blackstone, major philanthropist.",
+      "notes": ""
+    },
+    "jonathan-gray": {
+      "name": "Jonathan Gray",
+      "bio": "Jewish president and COO of Blackstone.",
+      "notes": ""
+    },
+    "herb-abramson": {
+      "name": "Herb Abramson",
+      "bio": "Jewish co-founder of Atlantic Records.",
+      "notes": ""
+    },
+    "john-janick": {
+      "name": "John Janick",
+      "bio": "Jewish chairman and CEO of Interscope Geffen A&M Records.",
+      "notes": ""
+    },
+    "jac-holzman": {
+      "name": "Jac Holzman",
+      "bio": "Jewish founder of Elektra Records.",
+      "notes": ""
+    },
+    "herb-alpert": {
+      "name": "Herb Alpert",
+      "bio": "Jewish musician and co-founder of A&M Records.",
+      "notes": ""
+    },
+    "lucian-grainge": {
+      "name": "Lucian Grainge",
+      "bio": "British-Jewish music executive, CEO of Universal Music Group.",
+      "notes": ""
+    },
+    "clive-davis": {
+      "name": "Clive Davis",
+      "bio": "Jewish music executive who discovered Whitney Houston, Alicia Keys, and many others.",
+      "notes": ""
+    },
+    "richard-simon": {
+      "name": "Richard Simon",
+      "bio": "Jewish co-founder of Simon & Schuster.",
+      "notes": ""
+    },
+    "max-schuster": {
+      "name": "Max Schuster",
+      "bio": "Jewish co-founder of Simon & Schuster.",
+      "notes": ""
+    },
+    "bennett-cerf": {
+      "name": "Bennett Cerf",
+      "bio": "Jewish publisher and co-founder of Random House.",
+      "notes": ""
+    },
+    "alfred-a-knopf": {
+      "name": "Alfred A. Knopf",
+      "bio": "Jewish publisher known for literary quality.",
+      "notes": ""
+    },
+    "richard-robinson": {
+      "name": "Richard Robinson",
+      "bio": "Jewish longtime chairman of Scholastic Corporation.",
+      "notes": ""
+    },
+    "warren-eisenberg": {
+      "name": "Warren Eisenberg",
+      "bio": "Jewish co-founder of Bed Bath & Beyond.",
+      "notes": ""
+    },
+    "leonard-feinstein": {
+      "name": "Leonard Feinstein",
+      "bio": "Jewish co-founder of Bed Bath & Beyond.",
+      "notes": ""
+    },
+    "thomas-stemberg": {
+      "name": "Thomas Stemberg",
+      "bio": "Jewish co-founder of Staples.",
+      "notes": ""
+    },
+    "charles-lazarus": {
+      "name": "Charles Lazarus",
+      "bio": "Jewish founder of Toys 'R' Us.",
+      "notes": ""
+    },
+    "isidor-straus": {
+      "name": "Isidor Straus",
+      "bio": "Jewish co-owner of Macy's who perished on the Titanic.",
+      "notes": ""
+    },
+    "nathan-straus": {
+      "name": "Nathan Straus",
+      "bio": "Jewish co-owner. Major philanthropist, supported pasteurized milk for children.",
+      "notes": ""
+    },
+    "herbert-marcus": {
+      "name": "Herbert Marcus",
+      "bio": "Jewish co-founder of Neiman Marcus.",
+      "notes": ""
+    },
+    "stanley-marcus": {
+      "name": "Stanley Marcus",
+      "bio": "Jewish retail visionary who made Neiman Marcus a global luxury brand.",
+      "notes": ""
+    },
+    "joseph-bloomingdale": {
+      "name": "Joseph Bloomingdale",
+      "bio": "Jewish co-founder of Bloomingdale's.",
+      "notes": ""
+    },
+    "julius-rosenwald": {
+      "name": "Julius Rosenwald",
+      "bio": "Jewish businessman who built Sears into a retail giant. Major philanthropist who funded schools for African Americans.",
+      "notes": ""
+    },
+    "stan-lee": {
+      "name": "Stan Lee",
+      "bio": "Born Stanley Lieber. Jewish comic book writer who co-created Spider-Man, X-Men, and many others.",
+      "notes": ""
+    },
+    "jack-kirby": {
+      "name": "Jack Kirby",
+      "bio": "Born Jacob Kurtzberg. Jewish comic book artist who co-created Captain America, Hulk, Fantastic Four.",
+      "notes": ""
+    },
+    "jerry-siegel": {
+      "name": "Jerry Siegel",
+      "bio": "Jewish co-creator of Superman.",
+      "notes": ""
+    },
+    "joe-shuster": {
+      "name": "Joe Shuster",
+      "bio": "Jewish co-creator of Superman.",
+      "notes": ""
+    },
+    "bob-kane": {
+      "name": "Bob Kane",
+      "bio": "Born Robert Kahn. Jewish co-creator of Batman.",
+      "notes": ""
+    },
+    "louis-b-mayer": {
+      "name": "Louis B. Mayer",
+      "bio": "Jewish film mogul who co-founded Metro-Goldwyn-Mayer.",
+      "notes": ""
+    },
+    "samuel-goldwyn": {
+      "name": "Samuel Goldwyn",
+      "bio": "Born Szmuel Gelbfisz. Jewish film producer.",
+      "notes": ""
+    },
+    "jack-warner": {
+      "name": "Jack Warner",
+      "bio": "Jewish co-founder of Warner Bros.",
+      "notes": ""
+    },
+    "harry-warner": {
+      "name": "Harry Warner",
+      "bio": "Jewish co-founder of Warner Bros.",
+      "notes": ""
+    },
+    "adolph-zukor": {
+      "name": "Adolph Zukor",
+      "bio": "Hungarian-born Jewish founder of Paramount Pictures.",
+      "notes": ""
+    },
+    "harry-cohn": {
+      "name": "Harry Cohn",
+      "bio": "Jewish co-founder and longtime president of Columbia Pictures.",
+      "notes": ""
+    },
+    "carl-laemmle": {
+      "name": "Carl Laemmle",
+      "bio": "German-Jewish immigrant who founded Universal Pictures.",
+      "notes": ""
+    },
+    "william-fox": {
+      "name": "William Fox",
+      "bio": "Hungarian-born Jewish founder of Fox Film Corporation.",
+      "notes": ""
+    },
+    "marc-randolph": {
+      "name": "Marc Randolph",
+      "bio": "Jewish co-founder and first CEO of Netflix.",
+      "notes": ""
+    },
+    "jon-feltheimer": {
+      "name": "Jon Feltheimer",
+      "bio": "Jewish CEO of Lionsgate Entertainment.",
+      "notes": ""
+    },
+    "johny-srouji": {
+      "name": "Johny Srouji",
+      "bio": "Israeli-Arab VP at Apple who leads chip design, partly in Israel.",
+      "notes": ""
+    },
+    "navot-volk": {
+      "name": "Navot Volk",
+      "bio": "Israeli GM leading Amazon's Annapurna Labs chip development.",
+      "notes": ""
+    },
+    "nir-zuk": {
+      "name": "Nir Zuk",
+      "bio": "Israeli co-founder of Palo Alto Networks, previously co-developed the first stateful inspection firewall at Check Point.",
+      "notes": ""
+    },
+    "dmitri-alperovitch": {
+      "name": "Dmitri Alperovitch",
+      "bio": "Russian-born Jewish-American cybersecurity expert, co-founder of CrowdStrike.",
+      "notes": ""
+    },
+    "danny-lewin": {
+      "name": "Danny Lewin",
+      "bio": "Israeli-American mathematician and co-founder of Akamai. First victim of the 9/11 attacks.",
+      "notes": ""
+    },
+    "eli-hurvitz": {
+      "name": "Eli Hurvitz",
+      "bio": "Israeli businessman who led Teva's global expansion for decades.",
+      "notes": ""
+    },
+    "tal-zaks": {
+      "name": "Tal Zaks",
+      "bio": "Israeli physician-scientist who served as Moderna's Chief Medical Officer during COVID-19 vaccine development.",
+      "notes": ""
+    },
+    "michael-dowling": {
+      "name": "Michael Dowling",
+      "bio": "CEO of Northwell Health, partner of Israeli medical innovations.",
+      "notes": ""
+    },
+    "michael-milken": {
+      "name": "Michael Milken",
+      "bio": "Jewish financier and philanthropist.",
+      "notes": ""
+    },
+    "mark-davis": {
+      "name": "Mark Davis",
+      "bio": "Owner of the Las Vegas Raiders. His mother Carol was Jewish.",
+      "notes": ""
+    },
+    "marc-lore": {
+      "name": "Marc Lore",
+      "bio": "Jewish entrepreneur, former CEO of Walmart eCommerce.",
+      "notes": ""
+    },
+    "marc-lasry": {
+      "name": "Marc Lasry",
+      "bio": "Moroccan-born Jewish billionaire hedge fund manager.",
+      "notes": ""
+    },
+    "tony-ressler": {
+      "name": "Tony Ressler",
+      "bio": "Jewish billionaire co-founder of Ares Management.",
+      "notes": ""
+    },
+    "mat-ishbia": {
+      "name": "Mat Ishbia",
+      "bio": "Jewish billionaire, CEO of United Wholesale Mortgage, owner of the Phoenix Suns.",
+      "notes": ""
+    },
+    "dan-gilbert": {
+      "name": "Dan Gilbert",
+      "bio": "Jewish billionaire, founder of Quicken Loans and owner of the Cleveland Cavaliers.",
+      "notes": ""
+    },
+    "wyc-grousbeck": {
+      "name": "Wyc Grousbeck",
+      "bio": "Jewish lead owner and governor of the Boston Celtics.",
+      "notes": ""
+    },
+    "tom-dundon": {
+      "name": "Tom Dundon",
+      "bio": "Jewish majority owner of the Carolina Hurricanes.",
+      "notes": ""
+    },
+    "jeff-vinik": {
+      "name": "Jeff Vinik",
+      "bio": "Jewish billionaire owner of the Tampa Bay Lightning.",
+      "notes": ""
+    },
+    "david-simon": {
+      "name": "David Simon",
+      "bio": "Jewish CEO of Simon Property Group.",
+      "notes": ""
+    },
+    "ric-clark": {
+      "name": "Ric Clark",
+      "bio": "Jewish former chairman of Brookfield Property Partners.",
+      "notes": ""
+    },
+    "william-mack": {
+      "name": "William Mack",
+      "bio": "Jewish real estate developer who co-founded Mack-Cali Realty.",
+      "notes": ""
+    },
+    "albert-ratner": {
+      "name": "Albert Ratner",
+      "bio": "Jewish real estate developer.",
+      "notes": ""
+    },
+    "william-rudin": {
+      "name": "William Rudin",
+      "bio": "Jewish CEO of Rudin Management Company.",
+      "notes": ""
+    },
+    "eric-rudin": {
+      "name": "Eric Rudin",
+      "bio": "Jewish co-chairman of Rudin Management.",
+      "notes": ""
+    },
+    "douglas-durst": {
+      "name": "Douglas Durst",
+      "bio": "Jewish chairman of The Durst Organization.",
+      "notes": ""
+    },
+    "william-zeckendorf-jr": {
+      "name": "William Zeckendorf Jr.",
+      "bio": "Jewish real estate developer.",
+      "notes": ""
+    },
+    "arthur-zeckendorf": {
+      "name": "Arthur Zeckendorf",
+      "bio": "Jewish real estate developer.",
+      "notes": ""
+    },
+    "nathan-handwerker": {
+      "name": "Nathan Handwerker",
+      "bio": "Polish-Jewish immigrant who founded Nathan's Famous hot dogs on Coney Island.",
+      "notes": ""
+    },
+    "reuben-mattus": {
+      "name": "Reuben Mattus",
+      "bio": "Jewish founder of Häagen-Dazs.",
+      "notes": ""
+    },
+    "leonard-marsh": {
+      "name": "Leonard Marsh",
+      "bio": "Jewish co-founder of Snapple.",
+      "notes": ""
+    },
+    "hyman-golden": {
+      "name": "Hyman Golden",
+      "bio": "Jewish co-founder of Snapple.",
+      "notes": ""
+    },
+    "arnold-greenberg": {
+      "name": "Arnold Greenberg",
+      "bio": "Jewish co-founder of Snapple.",
+      "notes": ""
+    },
+    "daniel-lubetzky": {
+      "name": "Daniel Lubetzky",
+      "bio": "Jewish-American founder of Kind Snacks, son of a Holocaust survivor.",
+      "notes": ""
+    },
+    "shaul-elovitch": {
+      "name": "Shaul Elovitch",
+      "bio": "Israeli businessman, former controlling shareholder of Bezeq.",
+      "notes": ""
+    },
+    "nochi-dankner": {
+      "name": "Nochi Dankner",
+      "bio": "Israeli businessman who controlled Cellcom through IDB Holdings.",
+      "notes": ""
+    },
+    "pinhas-rutenberg": {
+      "name": "Pinhas Rutenberg",
+      "bio": "Russian-Jewish Zionist who founded the Palestine Electric Corporation.",
+      "notes": ""
+    },
+    "yitzhak-tshuva": {
+      "name": "Yitzhak Tshuva",
+      "bio": "Israeli billionaire, chairman of Delek Group.",
+      "notes": ""
+    },
+    "chaim-katzman": {
+      "name": "Chaim Katzman",
+      "bio": "Israeli real estate billionaire.",
+      "notes": ""
+    },
+    "david-azrieli": {
+      "name": "David Azrieli",
+      "bio": "Canadian-Israeli billionaire who built the Azrieli Towers.",
+      "notes": ""
+    },
+    "lev-leviev": {
+      "name": "Lev Leviev",
+      "bio": "Uzbek-born Israeli diamond and real estate magnate.",
+      "notes": ""
+    },
+    "leon-recanati": {
+      "name": "Leon Recanati",
+      "bio": "Israeli businessman from the prominent Recanati Jewish banking family.",
+      "notes": ""
+    },
+    "guy-sella": {
+      "name": "Guy Sella",
+      "bio": "Israeli co-founder of SolarEdge.",
+      "notes": ""
+    },
+    "shlomo-barak": {
+      "name": "Shlomo Barak",
+      "bio": "Israeli CEO who led Orbotech through its acquisition by KLA.",
+      "notes": ""
+    },
+    "eyal-waldman": {
+      "name": "Eyal Waldman",
+      "bio": "Israeli co-founder of Mellanox Technologies.",
+      "notes": ""
+    },
+    "david-dahan": {
+      "name": "David Dahan",
+      "bio": "Israeli co-founder of Habana Labs.",
+      "notes": ""
+    },
+    "doron-myersdorf": {
+      "name": "Doron Myersdorf",
+      "bio": "Israeli founder and CEO of StoreDot.",
+      "notes": ""
+    },
+    "omer-keilaf": {
+      "name": "Omer Keilaf",
+      "bio": "Israeli co-founder and CEO of Innoviz Technologies.",
+      "notes": ""
+    },
+    "daniel-barel": {
+      "name": "Daniel Barel",
+      "bio": "Israeli co-founder and CEO of REE Automotive.",
+      "notes": ""
+    },
+    "maxim-pasik": {
+      "name": "Maxim Pasik",
+      "bio": "Israeli-Russian president of Watergen.",
+      "notes": ""
+    },
+    "gavriel-iddan": {
+      "name": "Gavriel Iddan",
+      "bio": "Israeli engineer who invented the PillCam capsule endoscopy.",
+      "notes": ""
+    },
+    "idan-ofer": {
+      "name": "Idan Ofer",
+      "bio": "Israeli billionaire, controlling shareholder of ICL through Israel Corp.",
+      "notes": ""
+    },
+    "barrie-levitt": {
+      "name": "Barrie Levitt",
+      "bio": "Jewish co-founder of Taro Pharmaceutical.",
+      "notes": ""
+    },
+    "edmond-de-rothschild": {
+      "name": "Edmond de Rothschild",
+      "bio": "Jewish French banker who funded early Jewish settlements and wineries in Palestine.",
+      "notes": ""
+    },
+    "eliezer-manor": {
+      "name": "Eliezer Manor",
+      "bio": "Israeli businessman who led Ahava's global expansion.",
+      "notes": ""
+    },
+    "avi-nir": {
+      "name": "Avi Nir",
+      "bio": "Israeli CEO of Keshet Media Group.",
+      "notes": ""
+    },
+    "amos-regev": {
+      "name": "Amos Regev",
+      "bio": "Israeli journalist and CEO of Channel 13.",
+      "notes": ""
+    },
+    "matthew-freud": {
+      "name": "Matthew Freud",
+      "bio": "British PR executive, great-grandson of Sigmund Freud.",
+      "notes": ""
+    },
+    "charles-saatchi": {
+      "name": "Charles Saatchi",
+      "bio": "Iraqi-Jewish co-founder of Saatchi & Saatchi.",
+      "notes": ""
+    },
+    "maurice-saatchi": {
+      "name": "Maurice Saatchi",
+      "bio": "Iraqi-Jewish co-founder of Saatchi & Saatchi. Now Baron Saatchi.",
+      "notes": ""
+    },
+    "martin-sorrell": {
+      "name": "Martin Sorrell",
+      "bio": "Jewish British businessman who founded and built WPP into the world's largest ad company.",
+      "notes": ""
+    },
+    "israel-sieff": {
+      "name": "Israel Sieff",
+      "bio": "Jewish businessman and Zionist who led M&S for decades.",
+      "notes": ""
+    },
+    "philip-green": {
+      "name": "Philip Green",
+      "bio": "Jewish British billionaire businessman.",
+      "notes": ""
+    },
+    "shay-segev": {
+      "name": "Shay Segev",
+      "bio": "Israeli former CEO of Entain.",
+      "notes": ""
+    },
+    "aharon-shaked": {
+      "name": "Aharon Shaked",
+      "bio": "Israeli co-founder of 888 Holdings.",
+      "notes": ""
+    },
+    "alon-gonen": {
+      "name": "Alon Gonen",
+      "bio": "Israeli co-founder of Plus500.",
+      "notes": ""
+    },
+    "marcel-bleustein-blanchet": {
+      "name": "Marcel Bleustein-Blanchet",
+      "bio": "Jewish founder of Publicis.",
+      "notes": ""
+    },
+    "maurice-l-vy": {
+      "name": "Maurice Lévy",
+      "bio": "Jewish chairman, led Publicis for decades.",
+      "notes": ""
+    },
+    "marcel-dassault": {
+      "name": "Marcel Dassault",
+      "bio": "Born Marcel Bloch, Jewish French aviation pioneer and industrialist.",
+      "notes": ""
+    },
+    "serge-dassault": {
+      "name": "Serge Dassault",
+      "bio": "Son of Marcel, ran the Dassault empire.",
+      "notes": ""
+    },
+    "hubert-sagni-res": {
+      "name": "Hubert Sagnières",
+      "bio": "Former CEO of Essilor who expanded Israeli partnerships.",
+      "notes": ""
+    },
+    "david-schneider": {
+      "name": "David Schneider",
+      "bio": "Co-founder of Zalando.",
+      "notes": ""
+    },
+    "gunter-demnig": {
+      "name": "Gunter Demnig",
+      "bio": "German artist who created the Stolpersteine project.",
+      "notes": ""
+    },
+    "peter-munk": {
+      "name": "Peter Munk",
+      "bio": "Hungarian-born Canadian Jewish mining magnate, founder of Barrick Gold.",
+      "notes": ""
+    },
+    "dan-daviau": {
+      "name": "Dan Daviau",
+      "bio": "Jewish CEO of Canaccord Genuity.",
+      "notes": ""
+    },
+    "anthony-pratt": {
+      "name": "Anthony Pratt",
+      "bio": "Jewish Australian billionaire, chairman of Visy Industries and Pratt Industries.",
+      "notes": ""
+    },
+    "harry-oppenheimer": {
+      "name": "Harry Oppenheimer",
+      "bio": "Jewish South African, son of Ernest, led Anglo American and De Beers.",
+      "notes": ""
+    },
+    "donald-gordon": {
+      "name": "Donald Gordon",
+      "bio": "Jewish South African insurance billionaire.",
+      "notes": ""
+    },
+    "vicky-safra": {
+      "name": "Vicky Safra",
+      "bio": "Jewish widow of Joseph Safra, one of the world's richest women.",
+      "notes": ""
+    },
+    "arkady-volozh": {
+      "name": "Arkady Volozh",
+      "bio": "Kazakh-born Jewish co-founder of Yandex. Now based in Israel.",
+      "notes": ""
+    },
+    "david-sassoon": {
+      "name": "David Sassoon",
+      "bio": "Baghdadi Jewish businessman who established a vast trade empire in India.",
+      "notes": ""
+    },
+    "rabbi-nachman-of-breslov": {
+      "name": "Rabbi Nachman of Breslov",
+      "bio": "Hasidic master buried in Uman, Ukraine.",
+      "notes": ""
+    },
+    "chiune-sugihara": {
+      "name": "Chiune Sugihara",
+      "bio": "Japanese diplomat who issued visas saving thousands of Jews.",
+      "notes": ""
+    },
+    "houda-nonoo": {
+      "name": "Houda Nonoo",
+      "bio": "Jewish Bahraini woman who served as Bahrain's ambassador to the US.",
+      "notes": ""
+    },
+    "raoul-wallenberg": {
+      "name": "Raoul Wallenberg",
+      "bio": "Swedish diplomat who saved tens of thousands of Hungarian Jews.",
+      "notes": ""
+    },
+    "daniel-libeskind": {
+      "name": "Daniel Libeskind",
+      "bio": "Jewish-Polish-American architect who designed the museum.",
+      "notes": ""
+    },
+    "sigmund-freud": {
+      "name": "Sigmund Freud",
+      "bio": "Austrian Jewish neurologist who founded psychoanalysis.",
+      "notes": ""
+    },
+    "donniel-hartman": {
+      "name": "Donniel Hartman",
+      "bio": "Jewish philosopher and president of the Hartman Institute.",
+      "notes": ""
+    },
+    "david-ellison": {
+      "name": "David Ellison",
+      "bio": "David Ellison (Jewish), son of Oracle founder Larry Ellison, founded Skydance Media. Paramount agreed to merge with Skydance in 2024.",
+      "notes": ""
+    },
+    "steven-mnuchin": {
+      "name": "Steven Mnuchin",
+      "bio": "Steven Mnuchin (Jewish) was a Goldman Sachs partner before serving as US Treasury Secretary 2017-2021.",
+      "notes": ""
+    },
+    "max-lousada": {
+      "name": "Max Lousada",
+      "bio": "Leads Warner Music's global recorded music operations.",
+      "notes": ""
+    },
+    "andrew-viterbi": {
+      "name": "Andrew Viterbi",
+      "bio": "Andrew Viterbi (Jewish, Italian-born), co-founder of Qualcomm. Invented the Viterbi algorithm used in cellular networks, WiFi, and space communications. The Viterbi School of Engineering at USC bears his name.",
+      "notes": ""
+    },
+    "ilya-sutskever": {
+      "name": "Ilya Sutskever",
+      "bio": "Ilya Sutskever (Jewish), born in Russia, raised in Israel. Co-founded OpenAI and was chief scientist. Pioneer of deep learning, student of Geoffrey Hinton. Left OpenAI in 2024 to found Safe Superintelligence Inc.",
+      "notes": ""
+    },
+    "jacob-blaustein": {
+      "name": "Jacob Blaustein",
+      "bio": "Industrialist and philanthropist who served as AJC president (1949-1954). Negotiated the historic Blaustein-Ben-Gurion Agreement defining US Jewish-Israel relations.",
+      "notes": ""
+    },
+    "abraham-foxman": {
+      "name": "Abraham Foxman",
+      "bio": "National Director of the ADL from 1987 to 2015. Holocaust survivor born in Poland, saved by his Catholic nanny during WWII.",
+      "notes": ""
+    },
+    "amy-spitalnick": {
+      "name": "Amy Spitalnick",
+      "bio": "CEO of JCPA. Previously served as executive director of Integrity First for America, which won a landmark case against white supremacist organizers of the Charlottesville rally.",
+      "notes": ""
+    },
+    "marvin-hier": {
+      "name": "Marvin Hier",
+      "bio": "Founder and Dean of the Simon Wiesenthal Center since 1977. Rabbi Hier built the organization into a global force for Holocaust remembrance and tolerance education.",
+      "notes": ""
+    },
+    "rabbi-noah-farkas": {
+      "name": "Rabbi Noah Farkas",
+      "bio": "President and CEO of the Jewish Federation of Greater Los Angeles since 2021. Previously served as senior rabbi of Valley Beth Shalom.",
+      "notes": ""
+    },
+    "lonnie-nasatir": {
+      "name": "Lonnie Nasatir",
+      "bio": "President of the Jewish United Fund and Jewish Federation of Metropolitan Chicago. Previously led Jewish community organizations in Detroit.",
+      "notes": ""
+    },
+    "daniel-s-mariaschin": {
+      "name": "Daniel S. Mariaschin",
+      "bio": "CEO of B'nai B'rith International. Has led the organization's international advocacy, including engagement at the UN and with world leaders.",
+      "notes": ""
+    },
+    "solomon-schechter": {
+      "name": "Solomon Schechter",
+      "bio": "Romanian-born rabbi and scholar who founded the United Synagogue in 1913 and led JTS. Discovered the Cairo Genizah, one of the greatest manuscript finds in history.",
+      "notes": ""
+    },
+    "rick-jacobs": {
+      "name": "Rick Jacobs",
+      "bio": "President of the URJ since 2012. Previously senior rabbi of Westchester Reform Temple. Leads the largest Jewish denominational organization in North America.",
+      "notes": ""
+    },
+    "joseph-soloveitchik": {
+      "name": "Joseph Soloveitchik",
+      "bio": "Known as 'The Rav,' Rabbi Soloveitchik (1903-1993) was the towering intellectual figure of Modern Orthodoxy and trained thousands of RCA rabbis at Yeshiva University.",
+      "notes": ""
+    },
+    "sally-priesand": {
+      "name": "Sally Priesand",
+      "bio": "First woman ordained as a rabbi in America (1972, HUC-JIR). Pioneer who opened the rabbinate to women across all Jewish denominations.",
+      "notes": ""
+    },
+    "henrietta-szold": {
+      "name": "Henrietta Szold",
+      "bio": "Founded Hadassah in 1912 and directed Youth Aliyah, rescuing thousands of Jewish children from Nazi Europe. Considered one of the most important women in Jewish and Zionist history.",
+      "notes": ""
+    },
+    "abraham-cahan": {
+      "name": "Abraham Cahan",
+      "bio": "Editor of the Jewish Daily Forward for nearly 50 years (1903-1951). Lithuanian-born immigrant who made the Forward the most important Yiddish newspaper in America, shaping immigrant Jewish culture.",
+      "notes": ""
+    },
+    "jacob-landau": {
+      "name": "Jacob Landau",
+      "bio": "Founded JTA in 1917, creating the first global Jewish news service. Modeled it on the Associated Press to provide reliable Jewish news worldwide.",
+      "notes": ""
+    },
+    "norman-podhoretz": {
+      "name": "Norman Podhoretz",
+      "bio": "Editor of Commentary from 1960-1995. His ideological journey from liberalism to neoconservatism mirrored and influenced a generation of Jewish intellectuals. Author of 'Making It' and 'Breaking Ranks.'",
+      "notes": ""
+    },
+    "elie-wiesel": {
+      "name": "Elie Wiesel",
+      "bio": "Holocaust survivor, Nobel Peace Prize laureate (1986), author of 'Night,' and co-founder of Moment Magazine. Called the 'messenger to mankind' by the Nobel Committee.",
+      "notes": ""
+    },
+    "max-weinreich": {
+      "name": "Max Weinreich",
+      "bio": "Co-founder of YIVO (1925) and pioneering Yiddish linguist. Author of 'History of the Yiddish Language.' Coined the phrase 'a language is a dialect with an army and a navy.'",
+      "notes": ""
+    },
+    "haskel-lookstein": {
+      "name": "Haskel Lookstein",
+      "bio": "Senior rabbi of Kehilath Jeshurun for decades. Led the Modern Orthodox movement in NYC. Converted Ivanka Trump to Judaism. Principal of the Ramaz School.",
+      "notes": ""
+    },
+    "yuli-edelstein": {
+      "name": "Yuli Edelstein",
+      "bio": "Former Speaker of the Knesset (2013-2020). Born in Ukraine, was a Prisoner of Zion in the Soviet Union before making aliyah. Represented Likud.",
+      "notes": ""
+    },
+    "meir-dagan": {
+      "name": "Meir Dagan",
+      "bio": "Director of the Mossad (2002-2011). Widely credited with reinvigorating Mossad's operational capabilities. Oversaw operations including efforts to sabotage Iran's nuclear program.",
+      "notes": ""
+    },
+    "sir-mick-davis": {
+      "name": "Sir Mick Davis",
+      "bio": "Sir Mick Davis, South African-born British businessman (Jewish), former CEO of Xstrata mining, served as chairman of the Jewish Leadership Council and CEO of the UK Conservative Party.",
+      "notes": ""
+    },
+    "sir-hermann-gollancz": {
+      "name": "Sir Hermann Gollancz",
+      "bio": "Sir Hermann Gollancz (Jewish), rabbi and scholar, was a prominent leader in the United Synagogue movement in the early 20th century.",
+      "notes": ""
+    },
+    "michael-goldstein": {
+      "name": "Michael Goldstein",
+      "bio": "Michael Goldstein served as president of the United Synagogue, overseeing modernization efforts.",
+      "notes": ""
+    },
+    "clive-lawton": {
+      "name": "Clive Lawton",
+      "bio": "Clive Lawton OBE (Jewish), educator and communal leader, was a co-founder of Limmud in 1980 and helped establish it as an international Jewish learning movement.",
+      "notes": ""
+    },
+    "lord-levy": {
+      "name": "Lord Levy",
+      "bio": "Lord Michael Levy (Jewish), Labour Party fundraiser and life peer, has served as president of Jewish Care and is one of its principal supporters.",
+      "notes": ""
+    },
+    "sir-moses-montefiore": {
+      "name": "Sir Moses Montefiore",
+      "bio": "Sir Moses Montefiore (Jewish, 1784-1885), British financier, philanthropist, and Sheriff of London, was a pioneering figure in Jewish humanitarian relief efforts from Britain.",
+      "notes": ""
+    },
+    "leopold-greenberg": {
+      "name": "Leopold Greenberg",
+      "bio": "Leopold Greenberg (Jewish, 1861-1931), editor of the Jewish Chronicle for 26 years, was a key Zionist leader and confidant of Theodor Herzl.",
+      "notes": ""
+    },
+    "justin-cohen": {
+      "name": "Justin Cohen",
+      "bio": "Justin Cohen (Jewish), journalist and editor, has served as a senior editorial figure at the Jewish News, shaping its coverage of Anglo-Jewish affairs.",
+      "notes": ""
+    },
+    "jonathan-boyd": {
+      "name": "Jonathan Boyd",
+      "bio": "Jonathan Boyd (Jewish), executive director of JPR, leads the institute's research programs on European Jewish demographics, identity, and antisemitism.",
+      "notes": ""
+    },
+    "rabbi-leo-baeck": {
+      "name": "Rabbi Leo Baeck",
+      "bio": "Rabbi Leo Baeck (Jewish, 1873-1956), German rabbi, theologian, and leader of Progressive Judaism, led the Reich Association of German Jews under Nazi rule and survived Theresienstadt concentration camp.",
+      "notes": ""
+    },
+    "moses-angel": {
+      "name": "Moses Angel",
+      "bio": "Moses Angel (Jewish, 1819-1898), headmaster of Jews' Free School for 50 years (1842-1897), transformed it into one of the largest schools in England with over 4,000 pupils.",
+      "notes": ""
+    },
+    "alfred-wiener": {
+      "name": "Alfred Wiener",
+      "bio": "Dr. Alfred Wiener (Jewish, 1885-1964), German-born librarian and activist, founded the Wiener Library in Amsterdam in 1933 to document Nazi antisemitism. The collection was moved to London in 1939 and used as evidence at Nuremberg.",
+      "notes": ""
+    },
+    "sir-trevor-pears": {
+      "name": "Sir Trevor Pears",
+      "bio": "Sir Trevor Pears CMG (Jewish), executive chair of the Pears Foundation and director of the William Pears Group property business, is one of the UK's leading Jewish philanthropists.",
+      "notes": ""
+    },
+    "avi-shaked": {
+      "name": "Avi Shaked",
+      "bio": "Avi Shaked (Jewish, Israeli), co-founder of 888 Holdings, helped build one of the world's largest online gambling platforms from its origins in Israel.",
+      "notes": ""
+    },
+    "sir-nicholas-winton": {
+      "name": "Sir Nicholas Winton",
+      "bio": "Sir Nicholas Winton (1909-2015), British humanitarian, organized the rescue of 669 mostly Jewish children from Nazi-occupied Czechoslovakia via the Kindertransport. His efforts were unknown until 1988.",
+      "notes": ""
+    },
+    "francis-kalifat": {
+      "name": "Francis Kalifat",
+      "bio": "Francis Kalifat (Jewish, French), served as president of CRIF, leading its advocacy against antisemitism and efforts to strengthen France-Israel relations.",
+      "notes": ""
+    },
+    "grand-rabbi-ha-m-korsia": {
+      "name": "Grand Rabbi Haïm Korsia",
+      "bio": "Grand Rabbi Haïm Korsia (Jewish, born 1963), Chief Rabbi of France since 2014, represents French Jewry in interfaith and public affairs. Previously served as chaplain general of the French armed forces.",
+      "notes": ""
+    },
+    "adolphe-cr-mieux": {
+      "name": "Adolphe Crémieux",
+      "bio": "Adolphe Crémieux (Jewish, 1796-1880), French lawyer and statesman, co-founded the Alliance Israélite Universelle in 1860 and authored the Crémieux Decree granting French citizenship to Algerian Jews.",
+      "notes": ""
+    },
+    "emmanuel-levinas": {
+      "name": "Emmanuel Levinas",
+      "bio": "Emmanuel Levinas (Jewish, 1906-1995), Lithuanian-born French philosopher, was one of the most influential thinkers of the 20th century. His work on ethics, alterity, and the Talmud transformed Continental philosophy.",
+      "notes": ""
+    },
+    "shimon-koffler-fogel": {
+      "name": "Shimon Koffler Fogel",
+      "bio": "Shimon Koffler Fogel (Jewish), CEO of CIJA, has led the organization's advocacy efforts on behalf of the Canadian Jewish community, engaging with government and media.",
+      "notes": ""
+    },
+    "avi-benlolo": {
+      "name": "Avi Benlolo",
+      "bio": "Avi Benlolo (Jewish), founding president and CEO of Friends of Simon Wiesenthal Center for Holocaust Studies in Canada, led its growth into a major Holocaust education organization.",
+      "notes": ""
+    },
+    "samuel-bronfman": {
+      "name": "Samuel Bronfman",
+      "bio": "Samuel Bronfman (Jewish, 1889-1971), founder of Seagram, served as president of the Canadian Jewish Congress for decades, using his wealth and influence to advance Jewish communal interests in Canada.",
+      "notes": ""
+    },
+    "alex-ryvchin": {
+      "name": "Alex Ryvchin",
+      "bio": "Alex Ryvchin (Jewish), co-CEO of the ECAJ, is a prominent advocate for the Australian Jewish community and author of books on antisemitism and Zionism.",
+      "notes": ""
+    },
+    "colin-rubenstein": {
+      "name": "Colin Rubenstein",
+      "bio": "Dr. Colin Rubenstein AM (Jewish), executive director of AIJAC, has led the organization for decades and is one of Australia's most prominent advocates for Israel and the Jewish community.",
+      "notes": ""
+    },
+    "peter-eisenman": {
+      "name": "Peter Eisenman",
+      "bio": "Peter Eisenman (Jewish, born 1932), American architect and theorist, designed Berlin's Memorial to the Murdered Jews of Europe. Known for his deconstructivist approach and intellectually challenging architectural designs.",
+      "notes": ""
+    },
+    "yuri-kanner": {
+      "name": "Yuri Kanner",
+      "bio": "Yuri Kanner (Jewish, Russian), president of the Russian Jewish Congress, leads efforts to promote Jewish cultural life, fight antisemitism, and strengthen Jewish identity in Russia.",
+      "notes": ""
+    },
+    "wendy-kahn": {
+      "name": "Wendy Kahn",
+      "bio": "Wendy Kahn (Jewish), national director of the SAJBD, leads the organization's advocacy, community relations, and anti-antisemitism efforts in South Africa.",
+      "notes": ""
+    },
+    "bernard-gillian-memory-gilligan": {
+      "name": "Bernard Gillian Memory Gilligan",
+      "bio": "Jewish South African entrepreneurs founded Investec in 1974, which grew into a major international banking group.",
+      "notes": ""
+    },
+    "rabbi-gavriel-holtzberg": {
+      "name": "Rabbi Gavriel Holtzberg",
+      "bio": "Rabbi Gavriel Holtzberg (Jewish, Israeli, 1979-2008) and his wife Rivka ran Chabad Nariman House in Mumbai. Both were murdered during the 2008 Mumbai terrorist attacks.",
+      "notes": ""
+    },
+    "alberto-nisman": {
+      "name": "Alberto Nisman",
+      "bio": "Alberto Nisman (Jewish, 1963-2015), Argentine prosecutor, investigated the AMIA bombing for 10 years. Found dead with a gunshot wound in 2015, hours before he was to present evidence that President Cristina Kirchner covered up Iranian involvement.",
+      "notes": ""
+    },
+    "rabbi-marshall-t-meyer": {
+      "name": "Rabbi Marshall T. Meyer",
+      "bio": "Rabbi Marshall T. Meyer (Jewish, American, 1930-1993), founder of the Seminario Rabínico Latinoamericano, heroically defended human rights during Argentina's military dictatorship (1976-1983), visiting political prisoners and documenting abuses.",
+      "notes": ""
+    },
+    "xavier-l-pez-ancona": {
+      "name": "Xavier López Ancona",
+      "bio": "Xavier López Ancona (Jewish, Mexican), founder and chairman of KidZania, created one of the most innovative children's entertainment concepts, expanding from Mexico City to 25+ locations worldwide.",
+      "notes": ""
+    },
+    "oskar-deutsch": {
+      "name": "Oskar Deutsch",
+      "bio": "Oskar Deutsch (Jewish), president of the IKG Wien, leads the Vienna Jewish community and advocates for Jewish interests in Austrian public life.",
+      "notes": ""
+    },
+    "anne-frank": {
+      "name": "Anne Frank",
+      "bio": "Anne Frank (Jewish, 1929-1945), born in Frankfurt, fled with her family to Amsterdam. Hid for two years and wrote her famous diary before being discovered. Died in Bergen-Belsen. Her diary became one of the most-read books in history.",
+      "notes": ""
+    },
+    "klara-ko-odziejska-deg-rska": {
+      "name": "Klara Kołodziejska-Degórska",
+      "bio": "Chief Rabbi of Poland (Progressive), one of the first female rabbis in Polish history.",
+      "notes": ""
+    },
+    "barbara-kirshenblatt-gimblett": {
+      "name": "Barbara Kirshenblatt-Gimblett",
+      "bio": "Professor at NYU who designed POLIN Museum's core exhibition on 1,000 years of Polish Jewish history.",
+      "notes": ""
+    },
+    "piotr-cywi-ski": {
+      "name": "Piotr Cywiński",
+      "bio": "Director of the Auschwitz-Birkenau Memorial and Museum since 2006. Oversees preservation and education programs.",
+      "notes": ""
+    },
+    "jonathan-ornstein": {
+      "name": "Jonathan Ornstein",
+      "bio": "American-born executive director of the JCC Kraków since 2008, credited with revitalizing Jewish life in the city.",
+      "notes": ""
+    },
+    "petr-papou-ek": {
+      "name": "Petr Papoušek",
+      "bio": "President of the Federation of Jewish Communities in the Czech Republic, leading community development and interfaith dialogue.",
+      "notes": ""
+    },
+    "gennadiy-bogolubov": {
+      "name": "Gennadiy Bogolubov",
+      "bio": "Ukrainian-Jewish billionaire, co-owner of PrivatBank, who funded the construction of the Menorah Center in Dnipro.",
+      "notes": ""
+    },
+    "isak-haleva": {
+      "name": "Isak Haleva",
+      "bio": "Chief Rabbi (Hakham Bashi) of Turkey since 2002, leading the Sephardic Jewish community.",
+      "notes": ""
+    },
+    "andr-azoulay": {
+      "name": "André Azoulay",
+      "bio": "Jewish Moroccan businessman and senior adviser to King Mohammed VI and his father Hassan II, promoting interfaith dialogue and Moroccan-Israeli relations.",
+      "notes": ""
+    },
+    "ross-kriel": {
+      "name": "Ross Kriel",
+      "bio": "South African-born businessman who has led the development of organized Jewish community life in the UAE.",
+      "notes": ""
+    },
+    "david-marshall": {
+      "name": "David Marshall",
+      "bio": "Singapore's first Chief Minister (1955-1956), Jewish politician of Baghdadi-Iraqi origin. Champion of Singapore's independence movement.",
+      "notes": ""
+    },
+    "marc-baker": {
+      "name": "Marc Baker",
+      "bio": "President and CEO of Combined Jewish Philanthropies, one of the largest Jewish federations in North America.",
+      "notes": ""
+    },
+    "jacob-blumenthal": {
+      "name": "Jacob Blumenthal",
+      "bio": "CEO of the Rabbinical Assembly, the international association of Conservative/Masorti rabbis.",
+      "notes": ""
+    },
+    "andrew-rehfeld": {
+      "name": "Andrew Rehfeld",
+      "bio": "President of Hebrew Union College-Jewish Institute of Religion, the seminary for Reform Judaism.",
+      "notes": ""
+    },
+    "isaac-mayer-wise": {
+      "name": "Isaac Mayer Wise",
+      "bio": "Founder of Hebrew Union College (1875), the Union of American Hebrew Congregations, and the Central Conference of American Rabbis. Father of American Reform Judaism.",
+      "notes": ""
+    },
+    "howard-hyman": {
+      "name": "Howard Hyman",
+      "bio": "National director of ORT America, the US affiliate of World ORT's global education network.",
+      "notes": ""
+    },
+    "jack-h-skirball": {
+      "name": "Jack H. Skirball",
+      "bio": "Rabbi, film producer, and philanthropist who funded the Skirball Cultural Center in Los Angeles.",
+      "notes": ""
+    },
+    "ivy-barsky": {
+      "name": "Ivy Barsky",
+      "bio": "Former CEO and Gwen Goodman Director of the National Museum of American Jewish History in Philadelphia.",
+      "notes": ""
+    },
+    "claudia-gould": {
+      "name": "Claudia Gould",
+      "bio": "Helen Goldsmith Menschel Director of The Jewish Museum, overseeing its renowned collection of Jewish art and culture.",
+      "notes": ""
+    },
+    "bernard-michael": {
+      "name": "Bernard Michael",
+      "bio": "President of the Center for Jewish History, which houses five major Jewish historical organizations in NYC.",
+      "notes": ""
+    },
+    "warren-buffett": {
+      "name": "Warren Buffett",
+      "bio": "Chairman and CEO of Berkshire Hathaway. While not Jewish himself, Buffett has deep ties to Jewish business figures and is a major supporter of Israel.",
+      "notes": ""
+    },
+    "ajit-jain": {
+      "name": "Ajit Jain",
+      "bio": "Vice Chairman of Insurance Operations at Berkshire Hathaway. One of Berkshire's key leaders.",
+      "notes": ""
+    },
+    "dennis-charney": {
+      "name": "Dennis Charney",
+      "bio": "Dean of Icahn School of Medicine at Mount Sinai (Jewish), leading neuroscientist and researcher.",
+      "notes": ""
+    },
+    "kenneth-davis": {
+      "name": "Kenneth Davis",
+      "bio": "CEO of Mount Sinai Health System, building it into one of America's largest academic medical systems.",
+      "notes": ""
+    },
+    "thomas-priselac": {
+      "name": "Thomas Priselac",
+      "bio": "President and CEO of Cedars-Sinai Medical Center, one of the largest non-profit hospitals in the Western US.",
+      "notes": ""
+    },
+    "gordon-bhatt": {
+      "name": "Gordon Bhatt",
+      "bio": "Dean of Albert Einstein College of Medicine, named after Albert Einstein.",
+      "notes": ""
+    },
+    "brad-karp": {
+      "name": "Brad Karp",
+      "bio": "Chairman of Paul, Weiss, Rifkind, Wharton & Garrison (Jewish), one of the most prominent corporate lawyers in America.",
+      "notes": ""
+    },
+    "david-greenwald": {
+      "name": "David Greenwald",
+      "bio": "Chairman of Fried Frank (Jewish), a major international law firm founded by Jewish lawyers.",
+      "notes": ""
+    },
+    "richard-rosenbaum": {
+      "name": "Richard Rosenbaum",
+      "bio": "Executive Chairman of Greenberg Traurig (Jewish), one of the world's largest law firms with 2,700+ attorneys.",
+      "notes": ""
+    },
+    "joseph-m-proskauer": {
+      "name": "Joseph M. Proskauer",
+      "bio": "Co-founder of Proskauer Rose (Jewish), served as president of the American Jewish Committee from 1943-1949.",
+      "notes": ""
+    },
+    "alan-waldenberg": {
+      "name": "Alan Waldenberg",
+      "bio": "Managing partner of Schulte Roth & Zabel (Jewish), a leading law firm specializing in investment management.",
+      "notes": ""
+    },
+    "charles-kaye": {
+      "name": "Charles Kaye",
+      "bio": "Co-CEO of Warburg Pincus (Jewish), one of the largest global growth equity firms.",
+      "notes": ""
+    },
+    "eric-warburg": {
+      "name": "Eric Warburg",
+      "bio": "German-American banker (Jewish) whose family's name is on the firm. The Warburgs were one of Europe's most prominent banking dynasties.",
+      "notes": ""
+    },
+    "joshua-bekenstein": {
+      "name": "Joshua Bekenstein",
+      "bio": "Co-Chairman of Bain Capital (Jewish), a leading global private investment firm managing over $175 billion.",
+      "notes": ""
+    },
+    "ray-dalio": {
+      "name": "Ray Dalio",
+      "bio": "Founder of Bridgewater Associates, the world's largest hedge fund. While not Jewish, Bridgewater has significant Jewish connections in finance.",
+      "notes": ""
+    },
+    "david-blitzer": {
+      "name": "David Blitzer",
+      "bio": "Co-owner of the 76ers (Jewish), Blackstone executive, and owner of multiple sports teams globally.",
+      "notes": ""
+    },
+    "richard-haass": {
+      "name": "Richard Haass",
+      "bio": "President of CFR (2003-2023) (Jewish), prominent foreign policy advisor and author.",
+      "notes": ""
+    },
+    "robert-doar": {
+      "name": "Robert Doar",
+      "bio": "President of AEI, a major conservative think tank influential in US policy.",
+      "notes": ""
+    },
+    "john-walters": {
+      "name": "John Walters",
+      "bio": "President of Hudson Institute, a conservative think tank on national security and foreign policy.",
+      "notes": ""
+    },
+    "michael-makovsky": {
+      "name": "Michael Makovsky",
+      "bio": "President and CEO of JINSA (Jewish), advocating for a strong US-Israel strategic alliance.",
+      "notes": ""
+    },
+    "eric-yuan": {
+      "name": "Eric Yuan",
+      "bio": "Founder and CEO of Zoom. While Yuan is not Jewish, the company has significant connections to Israeli tech talent.",
+      "notes": ""
+    },
+    "patrick-collison": {
+      "name": "Patrick Collison",
+      "bio": "Co-founder and CEO of Stripe. While the Collison brothers are Irish, Stripe's payments infrastructure connects to major Jewish-led businesses.",
+      "notes": ""
+    },
+    "samuel-irving-newhouse-jr": {
+      "name": "Samuel Irving Newhouse Jr.",
+      "bio": "Former chairman of Condé Nast (Jewish), overseeing Vogue, The New Yorker, Vanity Fair, and GQ. Newhouse family built one of America's largest media empires.",
+      "notes": ""
+    },
+    "fred-ryan": {
+      "name": "Fred Ryan",
+      "bio": "Former publisher of The Washington Post. The paper was owned by the Meyer-Graham family (Jewish) for 80 years before Amazon's Jeff Bezos purchased it.",
+      "notes": ""
+    },
+    "katharine-graham": {
+      "name": "Katharine Graham",
+      "bio": "Legendary publisher of The Washington Post (Jewish), oversaw publication of the Pentagon Papers and Watergate coverage. First female Fortune 500 CEO.",
+      "notes": ""
+    },
+    "jim-joseph": {
+      "name": "Jim Joseph",
+      "bio": "Jewish-American businessman and philanthropist whose $500+ million estate created one of the largest foundations focused on Jewish education.",
+      "notes": ""
+    },
+    "meir-soloveichik": {
+      "name": "Meir Soloveichik",
+      "bio": "Rabbi and scholar associated with the Maimonides Fund's mission of Jewish education and scholarship.",
+      "notes": ""
+    },
+    "roger-hertog": {
+      "name": "Roger Hertog",
+      "bio": "Co-founder of the Tikva Fund (Jewish), supporting Jewish and Zionist intellectual life and education.",
+      "notes": ""
+    },
+    "steven-a-fox": {
+      "name": "Steven A. Fox",
+      "bio": "National director of Friends of the IDF, raising hundreds of millions for IDF soldier welfare.",
+      "notes": ""
+    },
+    "scott-feltman": {
+      "name": "Scott Feltman",
+      "bio": "Director of One Israel Fund, supporting communities in Judea and Samaria.",
+      "notes": ""
+    },
+    "andr-s-spokoiny": {
+      "name": "Andrés Spokoiny",
+      "bio": "President and CEO of Jewish Funders Network (Argentinian-born), convening Jewish philanthropists globally.",
+      "notes": ""
+    },
+    "catherine-reed": {
+      "name": "Catherine Reed",
+      "bio": "CEO of American Friends of Magen David Adom, supporting Israel's national emergency medical service.",
+      "notes": ""
+    },
+    "st-phane-bancel": {
+      "name": "Stéphane Bancel",
+      "bio": "CEO of Moderna, which developed one of the first COVID-19 mRNA vaccines. While Bancel is French, Moderna's chief medical officer Tal Zaks (Jewish, Israeli) played a key role.",
+      "notes": ""
+    },
+    "michael-pearson": {
+      "name": "Michael Pearson",
+      "bio": "Former CEO who transformed Valeant through aggressive acquisition. The company later rebranded to Bausch Health.",
+      "notes": ""
+    },
+    "uday-baldota": {
+      "name": "Uday Baldota",
+      "bio": "CEO of Taro Pharmaceutical Industries, an Israeli-founded pharmaceutical company now a subsidiary of Sun Pharma.",
+      "notes": ""
+    },
+    "kenneth-gibbs": {
+      "name": "Kenneth Gibbs",
+      "bio": "President and CEO of Maimonides Medical Center in Brooklyn, named after the medieval Jewish philosopher Moses Maimonides.",
+      "notes": ""
+    },
+    "philip-ozuah": {
+      "name": "Philip Ozuah",
+      "bio": "President and CEO of Montefiore Medicine, named after Sir Moses Montefiore, the Jewish philanthropist.",
+      "notes": ""
+    },
+    "joshua-davidson": {
+      "name": "Joshua Davidson",
+      "bio": "Senior rabbi of Temple Emanu-El (Jewish), the largest Reform synagogue in the world, located on Fifth Avenue.",
+      "notes": ""
+    },
+    "rachel-timoner": {
+      "name": "Rachel Timoner",
+      "bio": "Senior rabbi of Congregation Beth Elohim (Jewish), a historic Reform congregation in Brooklyn.",
+      "notes": ""
+    },
+    "steve-leder": {
+      "name": "Steve Leder",
+      "bio": "Senior rabbi of Wilshire Boulevard Temple (Jewish), one of the oldest synagogues in Los Angeles, founded in 1862.",
+      "notes": ""
+    },
+    "peter-stein": {
+      "name": "Peter Stein",
+      "bio": "The Touro Synagogue (1763) is the oldest surviving synagogue in the US. George Washington wrote his famous letter on religious freedom to its congregation.",
+      "notes": ""
+    },
+    "mordecai-kaplan": {
+      "name": "Mordecai Kaplan",
+      "bio": "Co-founded the Young Israel movement (1912) as a Modern Orthodox effort to make Judaism relevant to American youth. Later founded Reconstructionist Judaism.",
+      "notes": ""
+    },
+    "tully-harcsztark": {
+      "name": "Tully Harcsztark",
+      "bio": "Founding principal of SAR High School (Jewish), known for academic excellence and Modern Orthodox education in Riverdale, NY.",
+      "notes": ""
+    },
+    "joseph-lookstein": {
+      "name": "Joseph Lookstein",
+      "bio": "Rabbi Joseph Lookstein (Jewish) founded Ramaz School in 1937 on Manhattan's Upper East Side; his family led it for decades.",
+      "notes": ""
+    },
+    "abraham-joshua-heschel": {
+      "name": "Abraham Joshua Heschel",
+      "bio": "Rabbi Abraham Joshua Heschel (1907-1972), one of the leading Jewish theologians of the 20th century, civil rights activist who marched with MLK in Selma.",
+      "notes": ""
+    },
+    "charles-e-smith": {
+      "name": "Charles E. Smith",
+      "bio": "Jewish-American real estate magnate in Washington, DC, whose philanthropy funded the school and other Jewish institutions.",
+      "notes": ""
+    },
+    "moshe-davis": {
+      "name": "Moshe Davis",
+      "bio": "Jewish scholar and educator who helped establish the Camp Ramah network as a vehicle for Conservative Jewish camping education.",
+      "notes": ""
+    },
+    "robert-bildner": {
+      "name": "Robert Bildner",
+      "bio": "Supporter and leader in Young Judaea, the Zionist youth movement that operates Camp Young Judaea.",
+      "notes": ""
+    },
+    "dov-behr-manischewitz": {
+      "name": "Dov Behr Manischewitz",
+      "bio": "Founded the Manischewitz Company in 1888 in Cincinnati, Ohio. It became the world's largest matzo manufacturer.",
+      "notes": ""
+    },
+    "tuvia-sapir": {
+      "name": "Tuvia Sapir",
+      "bio": "Israeli-American businessman involved in food ventures. Sabra is a joint venture between PepsiCo and Strauss Group (Israel).",
+      "notes": ""
+    },
+    "eli-cohen": {
+      "name": "Eli Cohen",
+      "bio": "Israeli politician who served as Minister of Foreign Affairs. The ministry manages Israel's diplomatic relations with over 150 countries.",
+      "notes": ""
+    },
+    "eran-yaakov": {
+      "name": "Eran Yaakov",
+      "bio": "Commissioner of the Israel Tax Authority, overseeing tax collection for the State of Israel.",
+      "notes": ""
+    },
+    "yaakov-kvint": {
+      "name": "Yaakov Kvint",
+      "bio": "Director General of the Israel Lands Authority, managing 93% of land in Israel.",
+      "notes": ""
+    },
+    "hagai-topolansky": {
+      "name": "Hagai Topolansky",
+      "bio": "Director General of the Israel Airports Authority, overseeing Ben Gurion Airport and other Israeli airports.",
+      "notes": ""
+    },
+    "daniel-chamovitz": {
+      "name": "Daniel Chamovitz",
+      "bio": "President of Ben-Gurion University of the Negev, named after Israel's founding prime minister David Ben-Gurion.",
+      "notes": ""
+    },
+    "ron-robin": {
+      "name": "Ron Robin",
+      "bio": "President of the University of Haifa, Israel's most diverse university with significant Arab student enrollment.",
+      "notes": ""
+    },
+    "uriel-reichman": {
+      "name": "Uriel Reichman",
+      "bio": "Founder and president of Reichman University (formerly IDC Herzliya), Israel's first private university.",
+      "notes": ""
+    },
+    "boris-schatz": {
+      "name": "Boris Schatz",
+      "bio": "Founded Bezalel Academy in 1906 in Jerusalem, making it Israel's oldest art institution. Named after the biblical artisan Bezalel.",
+      "notes": ""
+    },
+    "k-re-schultz": {
+      "name": "Kåre Schultz",
+      "bio": "Former President and CEO of Teva Pharmaceutical Industries, the world's largest generic drug manufacturer, headquartered in Tel Aviv.",
+      "notes": ""
+    },
+    "barak-eilam": {
+      "name": "Barak Eilam",
+      "bio": "CEO of NICE Ltd (Jewish, Israeli), a global leader in cloud and on-premises enterprise software and AI.",
+      "notes": ""
+    },
+    "bezhalel-machlis": {
+      "name": "Bezhalel Machlis",
+      "bio": "President and CEO of Elbit Systems (Jewish), Israel's largest publicly traded defense company.",
+      "notes": ""
+    },
+    "boaz-levy": {
+      "name": "Boaz Levy",
+      "bio": "President and CEO of Israel Aerospace Industries, Israel's largest defense and aerospace manufacturer.",
+      "notes": ""
+    },
+    "yoav-har-even": {
+      "name": "Yoav Har-Even",
+      "bio": "President and CEO of Rafael Advanced Defense Systems, developer of Iron Dome, David's Sling, and Trophy defense systems.",
+      "notes": ""
+    },
+    "avi-felder": {
+      "name": "Avi Felder",
+      "bio": "Former CEO of IMI Systems (now merged with Elbit), Israel's munitions and military technology developer.",
+      "notes": ""
+    },
+    "russell-ellwanger": {
+      "name": "Russell Ellwanger",
+      "bio": "CEO of Tower Semiconductor (Jewish), a leading foundry specializing in analog semiconductor manufacturing.",
+      "notes": ""
+    },
+    "omer-kaplan": {
+      "name": "Omer Kaplan",
+      "bio": "Co-founder of ironSource (Jewish, Israeli), the app monetization platform that merged with Unity Technologies in 2022.",
+      "notes": ""
+    },
+    "robert-antokol": {
+      "name": "Robert Antokol",
+      "bio": "Co-founder and CEO of Playtika (Jewish, Israeli), a leading mobile gaming company acquired by a Chinese consortium for $4.4B.",
+      "notes": ""
+    },
+    "raviv-zoller": {
+      "name": "Raviv Zoller",
+      "bio": "President and CEO of ICL Group (Jewish), a global specialty minerals company based on Dead Sea resources.",
+      "notes": ""
+    },
+    "dov-kotler": {
+      "name": "Dov Kotler",
+      "bio": "CEO of Bank Hapoalim (Jewish), Israel's largest bank by assets.",
+      "notes": ""
+    },
+    "hanan-friedman": {
+      "name": "Hanan Friedman",
+      "bio": "President and CEO of Bank Leumi (Jewish), Israel's oldest bank, founded in 1902 as the Anglo-Palestine Company.",
+      "notes": ""
+    },
+    "uri-levin": {
+      "name": "Uri Levin",
+      "bio": "President and CEO of Israel Discount Bank, the third-largest banking group in Israel.",
+      "notes": ""
+    },
+    "dina-ben-tal-ganancia": {
+      "name": "Dina Ben Tal Ganancia",
+      "bio": "CEO of El Al Israel Airlines, Israel's national carrier, known for strict security and not flying on Shabbat.",
+      "notes": ""
+    },
+    "ofra-strauss": {
+      "name": "Ofra Strauss",
+      "bio": "Chairwoman of Strauss Group (Jewish), one of Israel's largest food and beverage companies. Granddaughter of founders Richard and Hilda Strauss.",
+      "notes": ""
+    },
+    "eyal-malis": {
+      "name": "Eyal Malis",
+      "bio": "CEO of Tnuva, Israel's largest food manufacturer, controlling approximately 70% of the Israeli dairy market. Acquired by Bright Food (China) in 2014.",
+      "notes": ""
+    },
+    "avi-ben-assayag": {
+      "name": "Avi Ben Assayag",
+      "bio": "CEO of Osem-Nestlé Israel, one of Israel's largest food manufacturers and a subsidiary of Nestlé since 2016.",
+      "notes": ""
+    },
+    "yaakov-katz": {
+      "name": "Yaakov Katz",
+      "bio": "Editor-in-chief of The Jerusalem Post (Jewish), Israel's leading English-language daily newspaper.",
+      "notes": ""
+    },
+    "frank-melloul": {
+      "name": "Frank Melloul",
+      "bio": "CEO and chairman of i24NEWS (Jewish), Israel's international 24/7 news channel broadcasting in English, French, and Arabic.",
+      "notes": ""
+    },
+    "ido-bruno": {
+      "name": "Ido Bruno",
+      "bio": "Director of the Israel Museum in Jerusalem, which houses the Dead Sea Scrolls in the Shrine of the Book.",
+      "notes": ""
+    },
+    "tania-coen-uzzielli": {
+      "name": "Tania Coen-Uzzielli",
+      "bio": "Director of the Tel Aviv Museum of Art, one of Israel's leading art museums with extensive Israeli and international collections.",
+      "notes": ""
+    },
+    "zubin-mehta": {
+      "name": "Zubin Mehta",
+      "bio": "Indian-born conductor who served as Music Director of the Israel Philharmonic Orchestra for nearly 50 years (1969-2019), a deeply beloved figure.",
+      "notes": ""
+    },
+    "nahum-zemach": {
+      "name": "Nahum Zemach",
+      "bio": "Founded Habima Theatre in Moscow in 1917 as the first Hebrew-language theater. It moved to British Mandate Palestine in 1928.",
+      "notes": ""
+    },
+    "theodor-herzl": {
+      "name": "Theodor Herzl",
+      "bio": "The JNF was proposed at the Fifth Zionist Congress (1901) by Theodor Herzl to buy and develop land in Palestine for Jewish settlement.",
+      "notes": ""
+    },
+    "tomer-bar-zeev": {
+      "name": "Tomer Bar-Zeev",
+      "bio": "Co-founder and CEO of ironSource (Jewish, Israeli), which merged with Unity Technologies in a $4.4B deal in 2022.",
+      "notes": ""
+    },
+    "yaki-faitelson": {
+      "name": "Yaki Faitelson",
+      "bio": "Co-founder and CEO of Varonis Systems (Jewish, Israeli), a cybersecurity company specializing in data security and analytics.",
+      "notes": ""
+    },
+    "oren-kaniel": {
+      "name": "Oren Kaniel",
+      "bio": "Co-founder and CEO of AppsFlyer (Jewish, Israeli), a mobile attribution and marketing analytics platform.",
+      "notes": ""
+    },
+    "yossi-carmil": {
+      "name": "Yossi Carmil",
+      "bio": "CEO of Cellebrite (Jewish), an Israeli digital forensics company whose tools are used by law enforcement worldwide.",
+      "notes": ""
+    },
+    "eitan-achlow": {
+      "name": "Eitan Achlow",
+      "bio": "Co-founder of Candiru (Saito Tech), an Israeli cyber-intelligence firm selling surveillance tools to governments.",
+      "notes": ""
+    },
+    "dan-bodner": {
+      "name": "Dan Bodner",
+      "bio": "CEO of Verint Systems (Jewish, Israeli-born), a cybersecurity and intelligence company spun off from Comverse Technology.",
+      "notes": ""
+    },
+    "shuky-sheffer": {
+      "name": "Shuky Sheffer",
+      "bio": "President and CEO of Amdocs (Jewish, Israeli-founded), a leading IT services and software company serving communications industry.",
+      "notes": ""
+    },
+    "roni-al-dor": {
+      "name": "Roni Al-Dor",
+      "bio": "President and CEO of Sapiens International (Jewish), a software company serving the insurance industry globally.",
+      "notes": ""
+    },
+    "avraham-ophir": {
+      "name": "Avraham Ophir",
+      "bio": "Executive at IDE Technologies (Jewish), a world leader in desalination and industrial water treatment, co-owned by ICL and Delek.",
+      "notes": ""
+    },
+    "avraham-duvdevani": {
+      "name": "Avraham Duvdevani",
+      "bio": "World Chairman of KKL-JNF, which has planted over 250 million trees in Israel and manages 170,000 acres of land.",
+      "notes": ""
+    },
+    "michael-steinhardt": {
+      "name": "Michael Steinhardt",
+      "bio": "Co-founder of Birthright Israel (Jewish), legendary hedge fund investor and Jewish philanthropist.",
+      "notes": ""
+    },
+    "dror-bin": {
+      "name": "Dror Bin",
+      "bio": "CEO of the Israel Innovation Authority, overseeing Israel's innovation policy and support for R&D.",
+      "notes": ""
+    },
+    "eugene-kandel": {
+      "name": "Eugene Kandel",
+      "bio": "CEO of Start-Up Nation Central (Jewish), an organization mapping and promoting Israel's tech ecosystem.",
+      "notes": ""
+    },
+    "nadav-zafrir": {
+      "name": "Nadav Zafrir",
+      "bio": "Former commander of Unit 8200 (Jewish) and co-founder of Team8, a cybersecurity think tank. Unit 8200 alumni have founded many top tech companies.",
+      "notes": ""
+    },
+    "felix-dothan": {
+      "name": "Felix Dothan",
+      "bio": "One of the original architects of the Talpiot program (Jewish), the IDF's elite academic-military program for top recruits.",
+      "notes": ""
+    },
+    "ilana-dayan": {
+      "name": "Ilana Dayan",
+      "bio": "Israeli journalist (Jewish) who presented on Galei Zahal before becoming one of Israel's most prominent investigative journalists.",
+      "notes": ""
+    },
+    "ilan-yeshua": {
+      "name": "Ilan Yeshua",
+      "bio": "Former CEO of Walla! News, an Israeli news and content portal. Testified in the Netanyahu corruption trial (Case 4000).",
+      "notes": ""
+    },
+    "saul-singer": {
+      "name": "Saul Singer",
+      "bio": "Co-author of 'Start-Up Nation' (Jewish), the bestselling book that popularized Israel's reputation as a global tech powerhouse.",
+      "notes": ""
+    },
+    "shmuel-rabinovitch": {
+      "name": "Shmuel Rabinovitch",
+      "bio": "Rabbi of the Western Wall (Jewish), overseeing the holiest site where Jews can pray, visited by millions annually.",
+      "notes": ""
+    },
+    "sheikh-muhammad-ahmad-hussein": {
+      "name": "Sheikh Muhammad Ahmad Hussein",
+      "bio": "Grand Mufti of Jerusalem, overseeing the Islamic Waqf's administration of the Temple Mount/Haram al-Sharif compound.",
+      "notes": ""
+    },
+    "yigael-yadin": {
+      "name": "Yigael Yadin",
+      "bio": "Israeli archaeologist and politician (Jewish) who led the famous excavations of Masada (1963-1965), uncovering the Zealot fortress.",
+      "notes": ""
+    },
+    "theophilos-iii": {
+      "name": "Theophilos III",
+      "bio": "Greek Orthodox Patriarch of Jerusalem, co-custodian of the Church of the Holy Sepulchre alongside Catholic and Armenian churches.",
+      "notes": ""
+    },
+    "herod-the-great": {
+      "name": "Herod the Great",
+      "bio": "King Herod (Jewish, Idumean) built the monumental structure over the Cave of the Patriarchs in Hebron approximately 2,000 years ago.",
+      "notes": ""
+    },
+    "gerald-ronson": {
+      "name": "Gerald Ronson",
+      "bio": "Jewish-British businessman and property developer, long-time supporter and co-president of the Community Security Trust.",
+      "notes": ""
+    },
+    "judy-ironside": {
+      "name": "Judy Ironside",
+      "bio": "Founder of the UK Jewish Film Festival, showcasing Jewish-themed cinema since 1997.",
+      "notes": ""
+    },
+    "raphael-zarum": {
+      "name": "Raphael Zarum",
+      "bio": "Dean of the London School of Jewish Studies (Jewish), a leading center for Jewish education and scholarship in the UK.",
+      "notes": ""
+    },
+    "nathan-marcus-adler": {
+      "name": "Nathan Marcus Adler",
+      "bio": "Chief Rabbi who founded Jews' College in 1856 as a seminary for training Orthodox rabbis in England.",
+      "notes": ""
+    },
+    "edward-isaacs": {
+      "name": "Edward Isaacs",
+      "bio": "President of the Union of Jewish Students, representing Jewish students across UK and Ireland campuses.",
+      "notes": ""
+    },
+    "mayer-amschel-rothschild": {
+      "name": "Mayer Amschel Rothschild",
+      "bio": "Founded the Rothschild banking dynasty in Frankfurt in the 18th century, whose descendants became the most influential Jewish family in European history.",
+      "notes": ""
+    },
+    "max-dunbar": {
+      "name": "Max Dunbar",
+      "bio": "CEO of Manchester Jewish Museum, housed in a restored 1874 Spanish and Portuguese synagogue.",
+      "notes": ""
+    },
+    "abigail-morris": {
+      "name": "Abigail Morris",
+      "bio": "Director of the Jewish Museum London, exploring Jewish life, history, and identity in Britain since 1932.",
+      "notes": ""
+    },
+    "moses-de-medina": {
+      "name": "Moses de Medina",
+      "bio": "Key figure in establishing Bevis Marks Synagogue (1701), the oldest synagogue in Britain still in use.",
+      "notes": ""
+    },
+    "simone-veil": {
+      "name": "Simone Veil",
+      "bio": "Holocaust survivor (Jewish, French), first president of the Fondation pour la Mémoire de la Shoah, and first president of the European Parliament.",
+      "notes": ""
+    },
+    "sammy-ghozlan": {
+      "name": "Sammy Ghozlan",
+      "bio": "Founder and former president of SPCJ (Jewish), providing security services for French Jewish institutions.",
+      "notes": ""
+    },
+    "jacques-fredj": {
+      "name": "Jacques Fredj",
+      "bio": "Director of the Mémorial de la Shoah in Paris (Jewish), Europe's largest Holocaust documentation center.",
+      "notes": ""
+    },
+    "andr-e-salomon": {
+      "name": "Andrée Salomon",
+      "bio": "OSE leader (Jewish) who organized the rescue of hundreds of Jewish children in France during WWII.",
+      "notes": ""
+    },
+    "samuel-lejoyeux": {
+      "name": "Samuel Lejoyeux",
+      "bio": "Former president of UEJF, France's Jewish student union fighting antisemitism on campuses.",
+      "notes": ""
+    },
+    "emmanuel-rials": {
+      "name": "Emmanuel Rials",
+      "bio": "Director of Radio J, France's leading Jewish radio station serving the largest Jewish community in Europe.",
+      "notes": ""
+    },
+    "ariel-goldmann": {
+      "name": "Ariel Goldmann",
+      "bio": "President of the FSJU (Jewish), funding social programs for France's 450,000+ Jewish community.",
+      "notes": ""
+    },
+    "zadoc-kahn": {
+      "name": "Zadoc Kahn",
+      "bio": "Grand Rabbi of France (1889-1905, Jewish) who was based at the Grand Synagogue of Paris (La Victoire).",
+      "notes": ""
+    },
+    "nicolas-dufourcq": {
+      "name": "Nicolas Dufourcq",
+      "bio": "CEO of Bpifrance, the French public investment bank supporting French-Israeli business partnerships.",
+      "notes": ""
+    },
+    "claude-hampel": {
+      "name": "Claude Hampel",
+      "bio": "President of Keren Hayesod France, raising funds for Israel across the French Jewish community.",
+      "notes": ""
+    },
+    "sophie-bellon": {
+      "name": "Sophie Bellon",
+      "bio": "Chairwoman and CEO of Sodexo, the French multinational food services company with operations in Israel.",
+      "notes": ""
+    },
+    "ha-m-korsia": {
+      "name": "Haïm Korsia",
+      "bio": "Grand Rabbi of France (Jewish), based at the Grand Synagogue of Paris. Elected in 2014.",
+      "notes": ""
+    },
+    "annette-wieviorka": {
+      "name": "Annette Wieviorka",
+      "bio": "French-Jewish historian specializing in the Holocaust, who has written extensively about Drancy where 67,000 Jews were interned.",
+      "notes": ""
+    },
+    "nikki-holland": {
+      "name": "Nikki Holland",
+      "bio": "CEO of Jewish Federations of Canada - UIA, the national umbrella for Canadian Jewish community organizations.",
+      "notes": ""
+    },
+    "yoni-goldstein": {
+      "name": "Yoni Goldstein",
+      "bio": "Editor of the Canadian Jewish News, Canada's leading Jewish newspaper since 1960.",
+      "notes": ""
+    },
+    "adam-minsky": {
+      "name": "Adam Minsky",
+      "bio": "President and CEO of UJA Federation of Greater Toronto, serving Canada's largest Jewish community (~200,000).",
+      "notes": ""
+    },
+    "yair-szlak": {
+      "name": "Yair Szlak",
+      "bio": "President and CEO of Federation CJA, serving Montreal's Jewish community (~90,000).",
+      "notes": ""
+    },
+    "joseph-mapa": {
+      "name": "Joseph Mapa",
+      "bio": "Former CEO of Mount Sinai Hospital Toronto, founded in 1923 to serve the Jewish community.",
+      "notes": ""
+    },
+    "alice-herscovitch": {
+      "name": "Alice Herscovitch",
+      "bio": "Former Executive Director of the Montreal Holocaust Museum, preserving survivor testimonies.",
+      "notes": ""
+    },
+    "nina-krieger": {
+      "name": "Nina Krieger",
+      "bio": "Executive Director of the Vancouver Holocaust Education Centre, founded by Holocaust survivors.",
+      "notes": ""
+    },
+    "benjamin-basman": {
+      "name": "Benjamin Basman",
+      "bio": "Rabbi and community leader associated with Toronto Hebrew Memorial Park, one of Canada's major Jewish cemeteries.",
+      "notes": ""
+    },
+    "jeremy-leibler": {
+      "name": "Jeremy Leibler",
+      "bio": "President of the Zionist Federation of Australia (Jewish), leading advocate for Israel in the Australian Jewish community.",
+      "notes": ""
+    },
+    "jennifer-huppert": {
+      "name": "Jennifer Huppert",
+      "bio": "President of the Jewish Community Council of Victoria (Jewish), representing 60,000 Jews in Melbourne.",
+      "notes": ""
+    },
+    "david-ossip": {
+      "name": "David Ossip",
+      "bio": "President of the NSW Jewish Board of Deputies, representing the Jewish community of New South Wales.",
+      "notes": ""
+    },
+    "zeddy-lawrence": {
+      "name": "Zeddy Lawrence",
+      "bio": "Editor of The Australian Jewish News, the community's primary newspaper since 1895.",
+      "notes": ""
+    },
+    "helen-light": {
+      "name": "Helen Light",
+      "bio": "Former director of the Jewish Museum of Australia in Melbourne's St Kilda neighborhood.",
+      "notes": ""
+    },
+    "norman-seligman": {
+      "name": "Norman Seligman",
+      "bio": "Co-founder of the Sydney Jewish Museum (Jewish), Holocaust survivor who helped establish the museum's survivor testimony program.",
+      "notes": ""
+    },
+    "rabbi-john-levi": {
+      "name": "Rabbi John Levi",
+      "bio": "Prominent Australian rabbi (Jewish) associated with Jewish education including Mount Scopus Memorial College in Melbourne.",
+      "notes": ""
+    },
+    "john-hamey": {
+      "name": "John Hamey",
+      "bio": "Principal of Moriah College, one of Australia's largest Jewish day schools in Sydney.",
+      "notes": ""
+    },
+    "gideon-joffe": {
+      "name": "Gideon Joffe",
+      "bio": "Chairman of the Jewish Community of Berlin (Jewish), the largest Jewish community in Germany.",
+      "notes": ""
+    },
+    "abraham-geiger": {
+      "name": "Abraham Geiger",
+      "bio": "19th-century German rabbi (Jewish) regarded as the founder of Reform Judaism. The college, founded in 1999, is named after him.",
+      "notes": ""
+    },
+    "andreas-nachama": {
+      "name": "Andreas Nachama",
+      "bio": "Chair of the Allgemeine Rabbinerkonferenz (Jewish), the General Rabbinical Conference of Germany.",
+      "notes": ""
+    },
+    "philipp-peyman-engel": {
+      "name": "Philipp Peyman Engel",
+      "bio": "Editor-in-chief of the Jüdische Allgemeine (Jewish), Germany's main Jewish weekly newspaper.",
+      "notes": ""
+    },
+    "aron-schuster": {
+      "name": "Aron Schuster",
+      "bio": "Director of the Zentralwohlfahrtsstelle (Jewish), the central welfare organization of Jews in Germany.",
+      "notes": ""
+    },
+    "alon-meyer": {
+      "name": "Alon Meyer",
+      "bio": "President of Makkabi Deutschland (Jewish), organizing German Jewish athletes for the European Maccabi Games.",
+      "notes": ""
+    },
+    "moses-mendelssohn": {
+      "name": "Moses Mendelssohn",
+      "bio": "German-Jewish philosopher (1729-1786), the father of the Jewish Enlightenment (Haskalah). The center bears his name.",
+      "notes": ""
+    },
+    "leo-baeck": {
+      "name": "Leo Baeck",
+      "bio": "Rabbi Leo Baeck (1873-1956, Jewish), leader of German Jewry during the Nazi period, survived Theresienstadt. The institute preserves German-Jewish heritage.",
+      "notes": ""
+    },
+    "g-nter-morsch": {
+      "name": "Günter Morsch",
+      "bio": "Former director of the Sachsenhausen Memorial, where over 200,000 people were imprisoned including many Jews.",
+      "notes": ""
+    },
+    "eduard-knoblauch": {
+      "name": "Eduard Knoblauch",
+      "bio": "Architect who designed the original Neue Synagoge (1866) in Moorish Revival style. It was damaged in Kristallnacht and WWII, later partially restored.",
+      "notes": ""
+    },
+    "pinchas-goldschmidt": {
+      "name": "Pinchas Goldschmidt",
+      "bio": "Former Chief Rabbi of Moscow (Jewish), served for over 30 years before leaving Russia in 2022 over the Ukraine invasion.",
+      "notes": ""
+    },
+    "vladimir-potanin": {
+      "name": "Vladimir Potanin",
+      "bio": "Russian oligarch and president of Nornickel, the world's largest nickel and palladium producer. While not Jewish, has connections to Jewish business networks.",
+      "notes": ""
+    },
+    "oleg-deripaska": {
+      "name": "Oleg Deripaska",
+      "bio": "Russian oligarch and founder of Rusal, the world's second-largest aluminum producer. His business dealings intersect with Jewish magnates.",
+      "notes": ""
+    },
+    "adolf-shayevich": {
+      "name": "Adolf Shayevich",
+      "bio": "Chief Rabbi of Russia (Jewish), associated with the Moscow synagogues and Russian Jewish institutional life.",
+      "notes": ""
+    },
+    "mark-grubarg": {
+      "name": "Mark Grubarg",
+      "bio": "Chief Rabbi of St. Petersburg (Jewish), serving the Grand Choral Synagogue, built in 1893 in Moorish Revival style.",
+      "notes": ""
+    },
+    "mikhail-chlenov": {
+      "name": "Mikhail Chlenov",
+      "bio": "Russian-Jewish ethnographer and Secretary General of the Euro-Asian Jewish Congress.",
+      "notes": ""
+    },
+    "jorge-knoblovits": {
+      "name": "Jorge Knoblovits",
+      "bio": "President of DAIA (Jewish), Argentina's main Jewish political representation and anti-defamation organization.",
+      "notes": ""
+    },
+    "alejandro-metzger": {
+      "name": "Alejandro Metzger",
+      "bio": "President of Sociedad Hebraica Argentina, Buenos Aires' largest Jewish community and sports club.",
+      "notes": ""
+    },
+    "robert-cox": {
+      "name": "Robert Cox",
+      "bio": "Legendary editor of the Buenos Aires Herald who exposed human rights abuses during Argentina's Dirty War.",
+      "notes": ""
+    },
+    "ruth-kalenberg": {
+      "name": "Ruth Kalenberg",
+      "bio": "Director of the Buenos Aires Jewish Museum, preserving the history of Argentina's 200,000-strong Jewish community.",
+      "notes": ""
+    },
+    "adri-n-werthein": {
+      "name": "Adrián Werthein",
+      "bio": "Head of Grupo Werthein (Jewish), one of Argentina's most prominent business families with interests in telecom, banking, and agriculture.",
+      "notes": ""
+    },
+    "graciela-jinich": {
+      "name": "Graciela Jinich",
+      "bio": "Director of the Buenos Aires Holocaust Museum (Jewish), the first Holocaust museum in Latin America.",
+      "notes": ""
+    },
+    "eduardo-barbero": {
+      "name": "Eduardo Barbero",
+      "bio": "Director of ORT Argentina (Jewish), operating one of the largest Jewish school networks in Latin America.",
+      "notes": ""
+    },
+    "daniel-goldman": {
+      "name": "Daniel Goldman",
+      "bio": "Rabbi of Beit El Congregation (Jewish), one of Buenos Aires' most prominent Conservative synagogues.",
+      "notes": ""
+    },
+    "marcelo-polakoff": {
+      "name": "Marcelo Polakoff",
+      "bio": "Rabbi of Templo Libertad (Jewish), Buenos Aires' oldest Ashkenazi synagogue, built in 1897.",
+      "notes": ""
+    },
+    "claudio-lottenberg": {
+      "name": "Claudio Lottenberg",
+      "bio": "President of CONIB (Jewish), the umbrella organization representing Brazil's 120,000 Jews.",
+      "notes": ""
+    },
+    "fernando-lottenberg": {
+      "name": "Fernando Lottenberg",
+      "bio": "Former president of FISESP (Jewish), who later served as Brazil's Special Envoy for Combating Antisemitism.",
+      "notes": ""
+    },
+    "sidney-klajner": {
+      "name": "Sidney Klajner",
+      "bio": "President of Hospital Albert Einstein (Jewish), the top-ranked hospital in Latin America.",
+      "notes": ""
+    },
+    "carlos-matayoshi": {
+      "name": "Carlos Matayoshi",
+      "bio": "President of Clube Hebraica São Paulo, one of the largest Jewish community clubs in Latin America.",
+      "notes": ""
+    },
+    "felipe-arruda": {
+      "name": "Felipe Arruda",
+      "bio": "Director of the Jewish Museum of São Paulo, opened in 2021 to document Jewish life in Brazil.",
+      "notes": ""
+    },
+    "ruben-sternschein": {
+      "name": "Ruben Sternschein",
+      "bio": "Rabbi of Congregação Israelita Paulista (Jewish), one of the largest Reform congregations in Latin America.",
+      "notes": ""
+    },
+    "daniela-riqueza": {
+      "name": "Daniela Riqueza",
+      "bio": "Director of the Jewish Museum of Rio de Janeiro, showcasing Jewish heritage in Brazil since 1977.",
+      "notes": ""
+    },
+    "rowan-sobelvitch": {
+      "name": "Rowan Sobelvitch",
+      "bio": "National chairman of the South African Zionist Federation (Jewish), the oldest Zionist organization outside Europe.",
+      "notes": ""
+    },
+    "peta-krost-maunder": {
+      "name": "Peta Krost Maunder",
+      "bio": "Editor of the South African Jewish Report (Jewish), the community's main newspaper.",
+      "notes": ""
+    },
+    "richard-memory": {
+      "name": "Richard Memory",
+      "bio": "Director of the Cape Town Holocaust & Genocide Centre, combining Holocaust education with genocide awareness.",
+      "notes": ""
+    },
+    "ariellah-rosenberg": {
+      "name": "Ariellah Rosenberg",
+      "bio": "National Director of ORT South Africa (Jewish), providing education and training programs.",
+      "notes": ""
+    },
+    "koos-bekker": {
+      "name": "Koos Bekker",
+      "bio": "Former CEO and chairman of Naspers, who transformed it from a South African newspaper group into a global tech investor (Tencent, etc.). Not Jewish, but the company was founded by Afrikaner interests.",
+      "notes": ""
+    },
+    "tali-nates": {
+      "name": "Tali Nates",
+      "bio": "Founder and director of the Johannesburg Holocaust & Genocide Centre (Jewish, child of Holocaust survivors).",
+      "notes": ""
+    },
+    "rabbi-harris": {
+      "name": "Rabbi Harris",
+      "bio": "Principal associated with King David Schools (Jewish), the largest Jewish day school network in South Africa.",
+      "notes": ""
+    },
+    "marc-sobel": {
+      "name": "Marc Sobel",
+      "bio": "Former principal of Herzlia School (Jewish), Cape Town's leading Jewish day school.",
+      "notes": ""
+    },
+    "ben-memory": {
+      "name": "Ben Memory",
+      "bio": "Chairman of South African Friends of Israel, advocating for Israel within South Africa.",
+      "notes": ""
+    },
+    "solomon-sopher": {
+      "name": "Solomon Sopher",
+      "bio": "Leader of the Bene Israel community (Jewish) and figure in the Central Jewish Board of India.",
+      "notes": ""
+    },
+    "isaac-elia-jhirad": {
+      "name": "Isaac Elia Jhirad",
+      "bio": "Prominent Bene Israel leader (Jewish) who served as surgeon-general in the Indian Army and advocated for the community.",
+      "notes": ""
+    },
+    "jacob-sassoon": {
+      "name": "Jacob Sassoon",
+      "bio": "Built Knesset Eliyahoo Synagogue (1884) in Mumbai. Part of the Baghdadi Jewish Sassoon family who built an empire in India.",
+      "notes": ""
+    },
+    "sarah-cohen": {
+      "name": "Sarah Cohen",
+      "bio": "One of the last surviving Paradesi Jews (White Jews) of Cochin, whose community dates to ancient times in Kerala.",
+      "notes": ""
+    },
+    "elijah-judah": {
+      "name": "Elijah Judah",
+      "bio": "Community figure associated with preserving the heritage of the Bene Israel, India's largest Jewish group with a 2,000+ year history.",
+      "notes": ""
+    },
+    "marcos-shabot": {
+      "name": "Marcos Shabot",
+      "bio": "President of the Comité Central de la Comunidad Judía de México (Jewish), representing Mexico's 50,000 Jews.",
+      "notes": ""
+    },
+    "laura-goldsmith": {
+      "name": "Laura Goldsmith",
+      "bio": "Director of Tribuna Israelita (Jewish), combating antisemitism and promoting dialogue in Mexico.",
+      "notes": ""
+    },
+    "emilio-azc-rraga-jean": {
+      "name": "Emilio Azcárraga Jean",
+      "bio": "Former chairman of Grupo Televisa, the largest media company in the Spanish-speaking world. Has business connections with Jewish entrepreneurs.",
+      "notes": ""
+    },
+    "mois-s-saad": {
+      "name": "Moisés Saad",
+      "bio": "Director of Colegio Hebreo Maguen David (Jewish), one of Mexico City's largest Jewish schools, serving the Syrian community.",
+      "notes": ""
+    },
+    "sharon-zaga": {
+      "name": "Sharon Zaga",
+      "bio": "President and founder of the Museo Memoria y Tolerancia (Jewish), Mexico City's Holocaust and tolerance museum.",
+      "notes": ""
+    },
+    "andr-s-heisler": {
+      "name": "András Heisler",
+      "bio": "President of Mazsihisz (Jewish), representing Hungary's approximately 100,000 Jews, the largest community in Central Europe.",
+      "notes": ""
+    },
+    "lajos-kossuth": {
+      "name": "Lajos Kossuth",
+      "bio": "Designed by architect Ludwig Förster in 1854-59, with support from the Kossuth-era Hungarian liberal movement. Largest synagogue in Europe.",
+      "notes": ""
+    },
+    "zsuzsanna-toronyi": {
+      "name": "Zsuzsanna Toronyi",
+      "bio": "Director of the Hungarian Jewish Museum and Archives (Jewish), located within the Dohány Street Synagogue complex.",
+      "notes": ""
+    },
+    "can-togay": {
+      "name": "Can Togay",
+      "bio": "Film director who conceived the Shoes on the Danube Bank memorial (2005) with sculptor Gyula Pauer, honoring 3,500 Jews shot into the Danube.",
+      "notes": ""
+    },
+    "andr-s-kov-cs": {
+      "name": "András Kovács",
+      "bio": "Sociologist and scholar (Jewish) leading efforts to preserve Hungary's vast Jewish architectural and cultural heritage.",
+      "notes": ""
+    },
+    "anna-szeszler": {
+      "name": "Anna Szeszler",
+      "bio": "Director of ORT Hungary, providing education and training in the tradition of the global ORT network.",
+      "notes": ""
+    },
+    "barbara-staudinger": {
+      "name": "Barbara Staudinger",
+      "bio": "Director of the Jewish Museum Vienna (2022-), showcasing 1,000 years of Jewish life in Austria.",
+      "notes": ""
+    },
+    "barbara-gl-ck": {
+      "name": "Barbara Glück",
+      "bio": "Director of the Mauthausen Memorial, where approximately 90,000 people were murdered, including many Jews.",
+      "notes": ""
+    },
+    "joseph-kornh-usel": {
+      "name": "Joseph Kornhäusel",
+      "bio": "Architect who designed the Stadttempel (1826), Vienna's only synagogue to survive Kristallnacht because it was hidden within a residential block.",
+      "notes": ""
+    },
+    "binyomin-jacobs": {
+      "name": "Binyomin Jacobs",
+      "bio": "Chief Rabbi of the Netherlands (Jewish), spiritual leader of the Dutch Ashkenazi Jewish community.",
+      "notes": ""
+    },
+    "elias-bouman": {
+      "name": "Elias Bouman",
+      "bio": "Architect who designed the Portuguese Synagogue of Amsterdam (1675), built by Sephardic Jews who fled the Inquisition.",
+      "notes": ""
+    },
+    "emile-schrijver": {
+      "name": "Emile Schrijver",
+      "bio": "General Director of the Jewish Cultural Quarter Amsterdam (Jewish), including the Jewish Historical Museum.",
+      "notes": ""
+    },
+    "etty-hillesum": {
+      "name": "Etty Hillesum",
+      "bio": "Dutch Jewish writer whose letters and diaries from Westerbork, before her murder at Auschwitz, became celebrated Holocaust literature.",
+      "notes": ""
+    },
+    "yohan-benizri": {
+      "name": "Yohan Benizri",
+      "bio": "President of the CCOJB (Jewish), coordinating Belgium's Jewish organizations.",
+      "notes": ""
+    },
+    "pascale-falek": {
+      "name": "Pascale Falek",
+      "bio": "Director of the Jewish Museum of Belgium, which was targeted in a deadly terror attack in 2014.",
+      "notes": ""
+    },
+    "christoph-busch": {
+      "name": "Christoph Busch",
+      "bio": "Director of Kazerne Dossin, the memorial at the former transit camp from which 25,000 Jews were deported to Auschwitz.",
+      "notes": ""
+    },
+    "pinchas-kornfeld": {
+      "name": "Pinchas Kornfeld",
+      "bio": "Chief Rabbi and leader of one of Europe's most Orthodox Jewish communities, centered in Antwerp's diamond district.",
+      "notes": ""
+    },
+    "ralph-lewin": {
+      "name": "Ralph Lewin",
+      "bio": "President of the Swiss Federation of Jewish Communities (Jewish), representing 18,000 Jews in Switzerland.",
+      "notes": ""
+    },
+    "tedros-adhanom-ghebreyesus": {
+      "name": "Tedros Adhanom Ghebreyesus",
+      "bio": "Director-General of WHO. Israel has advanced medical collaborations with WHO through its health tech innovations.",
+      "notes": ""
+    },
+    "daniel-mariaschin": {
+      "name": "Daniel Mariaschin",
+      "bio": "CEO of B'nai B'rith International (Jewish), the oldest Jewish service organization (1843), with its UN office in Geneva.",
+      "notes": ""
+    },
+    "jean-fran-ois-bergier": {
+      "name": "Jean-François Bergier",
+      "bio": "Swiss historian who chaired the Independent Commission of Experts (1996-2002) investigating Switzerland's WWII-era dealings with Nazi Germany and dormant Jewish accounts.",
+      "notes": ""
+    },
+    "peter-maurer": {
+      "name": "Peter Maurer",
+      "bio": "Former president of the ICRC. The ICRC's controversial WWII role — failing to intervene for Jews — led to formal apologies and study.",
+      "notes": ""
+    },
+    "noemi-di-segni": {
+      "name": "Noemi Di Segni",
+      "bio": "President of the Union of Italian Jewish Communities (UCEI) (Jewish), representing approximately 25,000 Italian Jews.",
+      "notes": ""
+    },
+    "alessandra-di-castro": {
+      "name": "Alessandra Di Castro",
+      "bio": "Director of the Jewish Museum of Rome, documenting Europe's oldest continuous Jewish community (since 161 BCE).",
+      "notes": ""
+    },
+    "riccardo-di-segni": {
+      "name": "Riccardo Di Segni",
+      "bio": "Chief Rabbi of Rome (Jewish), spiritual leader at the Great Synagogue (Tempio Maggiore), built in 1904.",
+      "notes": ""
+    },
+    "shaul-bassi": {
+      "name": "Shaul Bassi",
+      "bio": "Scholar and director of the Venice Center for Humanities and Social Change (Jewish), who has studied the Venice Ghetto — the world's first Jewish ghetto (1516).",
+      "notes": ""
+    },
+    "joseph-levi": {
+      "name": "Joseph Levi",
+      "bio": "Rabbi of the Jewish community of Florence (Jewish), overseeing the Moorish Revival-style Tempio Maggiore (1882).",
+      "notes": ""
+    },
+    "vincenza-maugeri": {
+      "name": "Vincenza Maugeri",
+      "bio": "Director of the Jewish Museum of Bologna, documenting Jewish life in the Emilia-Romagna region since medieval times.",
+      "notes": ""
+    },
+    "marco-impagliazzo": {
+      "name": "Marco Impagliazzo",
+      "bio": "President of the Community of Sant'Egidio, which has led Catholic-Jewish interfaith dialogue since 1986.",
+      "notes": ""
+    },
+    "isaac-querub": {
+      "name": "Isaac Querub",
+      "bio": "President of the Federation of Jewish Communities of Spain (Jewish), representing approximately 40,000-50,000 Jews.",
+      "notes": ""
+    },
+    "samuel-ha-levi-abulafia": {
+      "name": "Samuel ha-Levi Abulafia",
+      "bio": "14th-century treasurer to King Peter I of Castile (Jewish) who built the Synagogue of El Tránsito (1357), now the Sephardic Museum.",
+      "notes": ""
+    },
+    "moses-maimonides": {
+      "name": "Moses Maimonides",
+      "bio": "Born in Córdoba in 1138, Maimonides was the greatest medieval Jewish philosopher. A statue stands near the synagogue in the old Jewish quarter.",
+      "notes": ""
+    },
+    "esther-bendahan": {
+      "name": "Esther Bendahan",
+      "bio": "Director general of Casa Sefarad-Israel (Jewish), promoting Sephardic culture and Spain-Israel relations.",
+      "notes": ""
+    },
+    "jakub-nowakowski": {
+      "name": "Jakub Nowakowski",
+      "bio": "Director of the Galicia Jewish Museum in Kraków (Jewish), showcasing the rich Jewish heritage of Galicia.",
+      "notes": ""
+    },
+    "zygmunt-st-pi-ski": {
+      "name": "Zygmunt Stępiński",
+      "bio": "Director of POLIN Museum, the award-winning museum documenting 1,000 years of Polish Jewish history.",
+      "notes": ""
+    },
+    "tomasz-kranz": {
+      "name": "Tomasz Kranz",
+      "bio": "Director of the Majdanek State Museum, where approximately 78,000 people were murdered including 59,000 Jews.",
+      "notes": ""
+    },
+    "edward-kop-wka": {
+      "name": "Edward Kopówka",
+      "bio": "Director of the Museum of Struggle and Martyrdom in Treblinka, where approximately 800,000 Jews were murdered.",
+      "notes": ""
+    },
+    "mordechai-anielewicz": {
+      "name": "Mordechai Anielewicz",
+      "bio": "Commander of the Warsaw Ghetto Uprising (April 1943, Jewish), the largest Jewish revolt against the Nazis. Killed at age 24.",
+      "notes": ""
+    },
+    "izaak-malmed": {
+      "name": "Izaak Malmed",
+      "bio": "Rabbi associated with the historic Tykocin Synagogue (1642), one of the best-preserved Baroque synagogues in Poland.",
+      "notes": ""
+    },
+    "leo-pavl-t": {
+      "name": "Leo Pavlát",
+      "bio": "Former director of the Jewish Museum in Prague (Jewish), one of the oldest and most visited Jewish museums in the world.",
+      "notes": ""
+    },
+    "rabbi-judah-loew-ben-bezalel": {
+      "name": "Rabbi Judah Loew ben Bezalel",
+      "bio": "The Maharal of Prague (c. 1520-1609, Jewish), legendary rabbi buried in the Old Jewish Cemetery, associated with the Golem legend.",
+      "notes": ""
+    },
+    "ji-fiedler": {
+      "name": "Jiří Fiedler",
+      "bio": "Czech researcher and documenter of Jewish heritage sites, whose work helped catalog the 77,297 names inscribed on the synagogue walls.",
+      "notes": ""
+    },
+    "jan-munk": {
+      "name": "Jan Munk",
+      "bio": "Director of the Terezín Memorial, commemorating the ghetto/transit camp where 33,000 Jews died and 88,000 were deported to death camps.",
+      "notes": ""
+    },
+    "boris-lozhkin": {
+      "name": "Boris Lozhkin",
+      "bio": "President of the Jewish Confederation of Ukraine (Jewish), businessman and former head of the Presidential Administration of Ukraine.",
+      "notes": ""
+    },
+    "natan-sharansky": {
+      "name": "Natan Sharansky",
+      "bio": "Former Soviet dissident, Israeli politician (Jewish), and chairman of the Babyn Yar Holocaust Memorial Center supervisory board.",
+      "notes": ""
+    },
+    "meylakh-sheykhet": {
+      "name": "Meylakh Sheykhet",
+      "bio": "Representative of the Union of Jewish Religious Organizations of Ukraine, active in heritage preservation.",
+      "notes": ""
+    },
+    "isaac-ben-nachman": {
+      "name": "Isaac ben Nachman",
+      "bio": "Builder of the original Golden Rose Synagogue (1582) in Lviv, one of the earliest stone synagogues in Eastern Europe. Destroyed by Nazis in 1943.",
+      "notes": ""
+    },
+    "naim-g-lery-z": {
+      "name": "Naim Güleryüz",
+      "bio": "Historian and author (Jewish, Turkish) who documented the 500-year history of Turkish Jewry since the 1492 Spanish expulsion.",
+      "notes": ""
+    },
+    "i-shak-haleva": {
+      "name": "İshak Haleva",
+      "bio": "Hakham Bashi (Chief Rabbi) of Turkey (Jewish), spiritual leader of the Turkish Jewish community.",
+      "notes": ""
+    },
+    "bayezid-ii": {
+      "name": "Bayezid II",
+      "bio": "Ottoman Sultan who welcomed Sephardic Jews expelled from Spain in 1492, famously saying Ferdinand of Spain made his own country poor.",
+      "notes": ""
+    },
+    "zhor-rehihil": {
+      "name": "Zhor Rehihil",
+      "bio": "Curator of the Museum of Moroccan Judaism (Muslim), the only Jewish museum in the Arab world, demonstrating Moroccan interfaith respect.",
+      "notes": ""
+    },
+    "serge-berdugo": {
+      "name": "Serge Berdugo",
+      "bio": "Secretary-General of the Council of Jewish Communities of Morocco (Jewish), ambassador-at-large.",
+      "notes": ""
+    },
+    "rabbi-haim-pinto": {
+      "name": "Rabbi Haim Pinto",
+      "bio": "18th-century Moroccan rabbi (Jewish) revered as a miracle worker; his yahrzeit draws thousands of pilgrims to Essaouira.",
+      "notes": ""
+    },
+    "aron-verst-ndig": {
+      "name": "Aron Verständig",
+      "bio": "Chairman of the Official Council of Swedish Jewish Communities (Jewish), representing approximately 15,000 Swedish Jews.",
+      "notes": ""
+    },
+    "petra-kahn-nord": {
+      "name": "Petra Kahn Nord",
+      "bio": "Director of the Jewish Museum in Stockholm, documenting Jewish life in Sweden since the 18th century.",
+      "notes": ""
+    },
+    "ute-steyer": {
+      "name": "Ute Steyer",
+      "bio": "Rabbi of the Great Synagogue of Stockholm (Jewish), serving Sweden's largest Jewish community.",
+      "notes": ""
+    },
+    "dan-rosenberg-asmussen": {
+      "name": "Dan Rosenberg Asmussen",
+      "bio": "Chairman of the Jewish Community of Denmark (Jewish), representing approximately 6,000 Danish Jews.",
+      "notes": ""
+    },
+    "yair-melchior": {
+      "name": "Yair Melchior",
+      "bio": "Chief Rabbi of Denmark (Jewish), spiritual leader of the Danish Jewish community.",
+      "notes": ""
+    },
+    "georg-ferdinand-duckwitz": {
+      "name": "Georg Ferdinand Duckwitz",
+      "bio": "German diplomat who warned Danish Jews of the planned Nazi roundup in October 1943, enabling the rescue of 7,200 Jews by boat to Sweden.",
+      "notes": ""
+    },
+    "ervin-kohn": {
+      "name": "Ervin Kohn",
+      "bio": "President of the Jewish Community of Oslo (Jewish), representing Norway's approximately 1,500 Jews.",
+      "notes": ""
+    },
+    "guri-hjeltnes": {
+      "name": "Guri Hjeltnes",
+      "bio": "Director associated with documenting Norway's Jewish history, including the deportation of Norwegian Jews during WWII.",
+      "notes": ""
+    },
+    "yaron-nadbornik": {
+      "name": "Yaron Nadbornik",
+      "bio": "Chairman of the Central Council of Jewish Communities in Finland (Jewish), representing approximately 1,300 Finnish Jews.",
+      "notes": ""
+    },
+    "david-saltiel": {
+      "name": "David Saltiel",
+      "bio": "President of the Central Board of Jewish Communities in Greece (Jewish), representing approximately 5,000 Greek Jews.",
+      "notes": ""
+    },
+    "zanet-battinou": {
+      "name": "Zanet Battinou",
+      "bio": "Director of the Jewish Museum of Greece in Athens, documenting 2,300 years of Greek Jewish (Romaniote) history.",
+      "notes": ""
+    },
+    "erika-perahia-zemour": {
+      "name": "Erika Perahia-Zemour",
+      "bio": "Director of the Jewish Museum of Thessaloniki (Jewish), documenting the city once known as 'Mother of Israel' for its vast Jewish population.",
+      "notes": ""
+    },
+    "yitzchak-kerem": {
+      "name": "Yitzchak Kerem",
+      "bio": "Scholar of Greek Jewish history. The memorial honors 50,000 Thessaloniki Jews deported to Auschwitz in 1943 — 96% of the community.",
+      "notes": ""
+    },
+    "marcia-haddad-ikonomopoulos": {
+      "name": "Marcia Haddad Ikonomopoulos",
+      "bio": "Founder of Kehila Kedosha Janina (Jewish), the only Romaniote synagogue in the Western Hemisphere, in New York.",
+      "notes": ""
+    },
+    "jos-oulman-carp": {
+      "name": "José Oulman Carp",
+      "bio": "President of the Jewish Community of Lisbon (Jewish), representing Portugal's approximately 3,000 Jews.",
+      "notes": ""
+    },
+    "captain-barros-basto": {
+      "name": "Captain Barros Basto",
+      "bio": "Portuguese army officer (Jewish) who led the 'Rescue' movement to reconnect crypto-Jews (Bnei Anusim) with Judaism in the 1920s-30s.",
+      "notes": ""
+    },
+    "samuel-schwarz": {
+      "name": "Samuel Schwarz",
+      "bio": "Jewish-Polish mining engineer who in 1917 discovered the crypto-Jewish community of Belmonte, which had secretly practiced Judaism for 500 years.",
+      "notes": ""
+    },
+    "homayoun-sameyah-najafabadi": {
+      "name": "Homayoun Sameyah Najafabadi",
+      "bio": "Jewish member of the Iranian Majlis (parliament), holding the constitutionally guaranteed seat for the Jewish community.",
+      "notes": ""
+    },
+    "avraham-neguise": {
+      "name": "Avraham Neguise",
+      "bio": "Ethiopian-born Israeli politician (Jewish), first Ethiopian-born member of the Knesset, advocate for Ethiopian Jewish rights.",
+      "notes": ""
+    },
+    "qes-hadane": {
+      "name": "Qes Hadane",
+      "bio": "One of the last kessim (Bete Israel religious leaders) who served the North Shewa community before emigration.",
+      "notes": ""
+    },
+    "uri-lubrani": {
+      "name": "Uri Lubrani",
+      "bio": "Israeli diplomat (Jewish) who coordinated Operation Solomon, the dramatic 36-hour airlift of 14,325 Ethiopian Jews in 1991.",
+      "notes": ""
+    },
+    "binyamin-edery": {
+      "name": "Binyamin Edery",
+      "bio": "Chabad rabbi serving the Jewish community of Japan, based in Tokyo.",
+      "notes": ""
+    },
+    "anatole-ponevejsky": {
+      "name": "Anatole Ponevejsky",
+      "bio": "Leader of the Kobe Jewish community (Jewcom) during WWII who helped coordinate aid for Jewish refugees transiting through Japan.",
+      "notes": ""
+    },
+    "chen-jian": {
+      "name": "Chen Jian",
+      "bio": "Former curator of the Shanghai Jewish Refugees Museum, documenting the stories of 20,000 Jewish refugees.",
+      "notes": ""
+    },
+    "shi-lei": {
+      "name": "Shi Lei",
+      "bio": "One of the Kaifeng Jewish descendants who reconnected with Judaism and made aliyah to Israel.",
+      "notes": ""
+    },
+    "sir-victor-sassoon": {
+      "name": "Sir Victor Sassoon",
+      "bio": "Jewish businessman of Baghdadi origin, built the Cathay Hotel (now Fairmont Peace Hotel) and was one of the wealthiest men in Asia.",
+      "notes": ""
+    },
+    "sir-jacob-elias-sassoon": {
+      "name": "Sir Jacob Elias Sassoon",
+      "bio": "Jewish businessman of Baghdadi origin who built the Ohel Rachel Synagogue (1920), the largest synagogue in East Asia.",
+      "notes": ""
+    },
+    "gustavo-kraselnik": {
+      "name": "Gustavo Kraselnik",
+      "bio": "Former president of the Panama Jewish community, editor of Shalom Panama magazine.",
+      "notes": ""
+    },
+    "ricardo-lackner": {
+      "name": "Ricardo Lackner",
+      "bio": "Former president of the Comité Central Israelita del Uruguay (Jewish).",
+      "notes": ""
+    },
+    "gerardo-gorodischer": {
+      "name": "Gerardo Gorodischer",
+      "bio": "President of the Comunidad Judía de Chile (Jewish), representing 18,000 Chilean Jews.",
+      "notes": ""
+    },
+    "marco-peckel": {
+      "name": "Marco Peckel",
+      "bio": "Former president of the Confederación de Comunidades Judías de Colombia (Jewish).",
+      "notes": ""
+    },
+    "juliet-moses": {
+      "name": "Juliet Moses",
+      "bio": "Spokesperson for the New Zealand Jewish Council (Jewish), prominent advocate against antisemitism.",
+      "notes": ""
+    },
+    "silviu-vexler": {
+      "name": "Silviu Vexler",
+      "bio": "Jewish member of the Romanian Parliament, holding the dedicated minority seat, active in Holocaust remembrance.",
+      "notes": ""
+    },
+    "dennis-leventhal": {
+      "name": "Dennis Leventhal",
+      "bio": "Founder and president of the Jewish Historical Society of Hong Kong, documenting 175 years of Jewish life.",
+      "notes": ""
+    },
+    "michael-kadoorie": {
+      "name": "Michael Kadoorie",
+      "bio": "Sir Michael Kadoorie (Jewish, Baghdadi origin), billionaire businessman and patron of the Ohel Leah Synagogue in Hong Kong.",
+      "notes": ""
+    },
+    "adela-dworin": {
+      "name": "Adela Dworin",
+      "bio": "Longtime president of Havana's Jewish community (Jewish), keeping the community alive through decades of the Castro era.",
+      "notes": ""
+    },
+    "alexander-wandersman": {
+      "name": "Alexander Wandersman",
+      "bio": "Community leader of the Nairobi Hebrew Congregation, serving East Africa's small Jewish community.",
+      "notes": ""
+    },
+    "ahmed-el-tayeb": {
+      "name": "Ahmed el-Tayeb",
+      "bio": "Grand Imam of Al-Azhar who co-signed the Document on Human Fraternity, inspiring the Abrahamic Family House.",
+      "notes": ""
+    },
+    "elli-kriel": {
+      "name": "Elli Kriel",
+      "bio": "South African-born chef (Jewish) who pioneered Dubai's kosher dining scene, creating 'Elli's Kosher Kitchen.'",
+      "notes": ""
+    },
+    "maurice-cohen": {
+      "name": "Maurice Cohen",
+      "bio": "Former president of the Jewish Representative Council of Ireland, representing approximately 2,500 Irish Jews.",
+      "notes": ""
+    },
+    "chaim-herzog": {
+      "name": "Chaim Herzog",
+      "bio": "6th President of Israel (1983-1993, Jewish), born in Belfast and raised in Dublin; his father was Chief Rabbi of Ireland.",
+      "notes": ""
+    },
+    "ognjen-kraus": {
+      "name": "Ognjen Kraus",
+      "bio": "President of the Jewish community of Zagreb and the Coordination of Jewish Communities in Croatia (Jewish).",
+      "notes": ""
+    },
+    "robert-sabado": {
+      "name": "Robert Sabadoš",
+      "bio": "President of the Federation of Jewish Communities in Serbia (Jewish).",
+      "notes": ""
+    },
+    "oscar-asenov": {
+      "name": "Oscar Asenov",
+      "bio": "President of the Organization of the Jews in Bulgaria 'Shalom' (Jewish).",
+      "notes": ""
+    },
+    "perez-trabelsi": {
+      "name": "Perez Trabelsi",
+      "bio": "Leader of the Jewish community of Djerba (Jewish), overseeing the annual El Ghriba pilgrimage.",
+      "notes": ""
+    },
+    "milikh-yevdayev": {
+      "name": "Milikh Yevdayev",
+      "bio": "Leader of the Mountain Jewish community in Azerbaijan, based at the Red Settlement (Qırmızı Qəsəbə).",
+      "notes": ""
+    },
+    "ariel-levin": {
+      "name": "Ariel Levin",
+      "bio": "Chief Rabbi of Georgia (Jewish), serving the remaining Georgian Jewish community.",
+      "notes": ""
+    },
+    "roshel-rubinov": {
+      "name": "Roshel Rubinov",
+      "bio": "Last chief rabbi of the Bukharan Jewish community in Uzbekistan before mass emigration.",
+      "notes": ""
+    },
+    "jaime-braun": {
+      "name": "Jaime Braun",
+      "bio": "Former president of Asociación Judía del Perú (Jewish), leading Lima's approximately 2,500 Jews.",
+      "notes": ""
+    },
+    "david-bittan": {
+      "name": "David Bittan",
+      "bio": "Former president of CAIV (Jewish), leading the Venezuelan Jewish community during challenging political times.",
+      "notes": ""
+    },
+    "jaime-gutman": {
+      "name": "Jaime Gutman",
+      "bio": "Leader of the Centro Israelita Sionista de Costa Rica (Jewish), representing 2,500 Costa Rican Jews.",
+      "notes": ""
+    },
+    "yaffa-grazioso": {
+      "name": "Yaffa Grazioso",
+      "bio": "Community leader of the Comunidad Judía de Guatemala (Jewish).",
+      "notes": ""
+    },
+    "samuel-benchoam": {
+      "name": "Samuel Benchoam",
+      "bio": "Community leader of the Comunidad Judía del Ecuador (Jewish), based in Quito.",
+      "notes": ""
+    },
+    "ricardo-udler": {
+      "name": "Ricardo Udler",
+      "bio": "President of the Círculo Israelita de Bolivia (Jewish), leading La Paz's small Jewish community.",
+      "notes": ""
+    },
+    "luis-hess": {
+      "name": "Luis Hess",
+      "bio": "One of the original Jewish refugees who settled in Sosúa in the 1940s and built the dairy cooperative.",
+      "notes": ""
+    },
+    "ainsley-henriques": {
+      "name": "Ainsley Henriques",
+      "bio": "Historian and leader of Jamaica's Jewish community (Jewish), expert on Caribbean Sephardic history.",
+      "notes": ""
+    },
+    "yosef-kantor": {
+      "name": "Yosef Kantor",
+      "bio": "Chabad rabbi serving Thailand (Jewish), operating one of the world's largest Chabad networks outside Israel.",
+      "notes": ""
+    },
+    "ilan-fluss": {
+      "name": "Ilan Fluss",
+      "bio": "Community leader of the Jewish Association of the Philippines, serving Manila's small Jewish community.",
+      "notes": ""
+    },
+    "osher-litzman": {
+      "name": "Osher Litzman",
+      "bio": "Chabad rabbi serving South Korea (Jewish), based in Seoul.",
+      "notes": ""
+    },
+    "menachem-hartman": {
+      "name": "Menachem Hartman",
+      "bio": "Chabad rabbi serving Vietnam (Jewish), providing Jewish services in Ho Chi Minh City.",
+      "notes": ""
+    },
+    "shlomi-tabib": {
+      "name": "Shlomi Tabib",
+      "bio": "Chabad rabbi serving Taiwan (Jewish), leading the small community in Taipei.",
+      "notes": ""
+    },
+    "howard-gorin": {
+      "name": "Howard Gorin",
+      "bio": "Rabbi who has visited and supported the Igbo Jewish community in Nigeria, helping with education and formal conversion.",
+      "notes": ""
+    },
+    "moira-chipkin": {
+      "name": "Moira Chipkin",
+      "bio": "Community leader in the Zimbabwe Jewish community, managing affairs as the community has dwindled.",
+      "notes": ""
+    },
+    "simone-awerbach": {
+      "name": "Simone Awerbach",
+      "bio": "One of the last remaining members of the Lubumbashi Jewish community in the DRC.",
+      "notes": ""
+    },
+    "zvi-gorelick": {
+      "name": "Zvi Gorelick",
+      "bio": "Community leader of the small Jewish community of Windhoek, Namibia.",
+      "notes": ""
+    },
+    "aaron-ahomtre-toakyirafa": {
+      "name": "Aaron Ahomtre Toakyirafa",
+      "bio": "Spiritual leader of the House of Israel (Jewish), the practicing Jewish community in Ghana's Sefwi Wiawso area.",
+      "notes": ""
+    },
+    "magda-haroun": {
+      "name": "Magda Haroun",
+      "bio": "President of the Egyptian Jewish Community (Jewish), managing affairs for the fewer than 10 remaining Jews in Egypt.",
+      "notes": ""
+    },
+    "jack-saul": {
+      "name": "Jack Saul",
+      "bio": "Representative of the Syrian Jewish community in Brooklyn (Jewish), which has grown to over 60,000 and preserves Syrian traditions.",
+      "notes": ""
+    },
+    "naim-dangoor": {
+      "name": "Naim Dangoor",
+      "bio": "Sir Naim Dangoor (1914-2015, Jewish), Iraqi-born British businessman and philanthropist who preserved Iraqi Jewish heritage.",
+      "notes": ""
+    },
+    "mordechai-ben-porat": {
+      "name": "Mordechai Ben-Porat",
+      "bio": "Israeli politician (Jewish, Iraqi-born) who was involved in organizing the mass immigration of Iraqi Jews to Israel.",
+      "notes": ""
+    },
+    "rabbi-yihya-yitzhak-halevi": {
+      "name": "Rabbi Yihya Yitzhak Halevi",
+      "bio": "Former chief rabbi of Yemen (Jewish), one of the last religious leaders of the ancient Yemeni Jewish community.",
+      "notes": ""
+    },
+    "raffaello-fellah": {
+      "name": "Raffaello Fellah",
+      "bio": "Chairman of the World Organization of Libyan Jews (Jewish), preserving the memory and heritage of Libyan Jewry.",
+      "notes": ""
+    },
+    "isaac-arazi": {
+      "name": "Isaac Arazi",
+      "bio": "One of the last known remaining Jews in Lebanon, whose family once thrived in Beirut's vibrant Jewish quarter.",
+      "notes": ""
+    },
+    "moses-samuels": {
+      "name": "Moses Samuels",
+      "bio": "Self-appointed caretaker of the Musmeah Yeshua Synagogue (Jewish), one of the last Jews in Myanmar, dedicated decades to preserving the synagogue.",
+      "notes": ""
+    },
+    "rabbi-haim-mendes-chumaceiro": {
+      "name": "Rabbi Haim Mendes Chumaceiro",
+      "bio": "19th-century rabbi of Mikvé Israel-Emanuel (Jewish), leading the oldest continuous congregation in the Western Hemisphere.",
+      "notes": ""
+    },
+    "samuel-nassy": {
+      "name": "Samuel Nassy",
+      "bio": "Sephardic Jewish plantation owner who was among the founders of the Jodensavanne settlement in 17th-century Suriname.",
+      "notes": ""
+    },
+    "ren-fernandes": {
+      "name": "René Fernandes",
+      "bio": "Community leader of the small Jewish community of Paramaribo, Suriname.",
+      "notes": ""
+    },
+    "rabbi-ronnie-hassid": {
+      "name": "Rabbi Ronnie Hassid",
+      "bio": "Chief Rabbi of Gibraltar (Jewish), leading one of the world's highest per-capita Jewish communities.",
+      "notes": ""
+    },
+    "robert-singer": {
+      "name": "Robert Singer",
+      "bio": "Former CEO of World ORT (Jewish), overseeing the global Jewish education network serving 300,000+ students.",
+      "notes": ""
+    },
+    "amir-peled": {
+      "name": "Amir Peled",
+      "bio": "Chairman of Maccabi World Union (Jewish), overseeing the Maccabiah Games and global Maccabi sports network.",
+      "notes": ""
+    },
+    "gideon-taylor": {
+      "name": "Gideon Taylor",
+      "bio": "President of the Claims Conference (Jewish), overseeing distribution of over $80 billion in German reparations.",
+      "notes": ""
+    },
+    "kerry-whigham": {
+      "name": "Kerry Whigham",
+      "bio": "Scholar involved with IHRA, the 35-member intergovernmental body promoting Holocaust education. IHRA's antisemitism definition has been widely adopted.",
+      "notes": ""
+    },
+    "phyllis-heideman": {
+      "name": "Phyllis Heideman",
+      "bio": "President of the International March of the Living (Jewish), leading the annual march from Auschwitz to Birkenau.",
+      "notes": ""
+    },
+    "sam-grundwerg": {
+      "name": "Sam Grundwerg",
+      "bio": "World Chairman of Keren Hayesod (Jewish), the principal fundraising organization for Israel.",
+      "notes": ""
+    },
+    "rabbi-doron-perez": {
+      "name": "Rabbi Doron Perez",
+      "bio": "Executive Chairman of World Mizrachi (Jewish), leading the Religious Zionist movement globally.",
+      "notes": ""
+    },
+    "shmuel-rosenman": {
+      "name": "Shmuel Rosenman",
+      "bio": "Founder and Chairman of the International March of the Living (Jewish), organizing the annual event since 1988.",
+      "notes": ""
+    },
+    "rabbi-sholom-lipskar": {
+      "name": "Rabbi Sholom Lipskar",
+      "bio": "Founder and president of the Aleph Institute (Jewish), established at the Lubavitcher Rebbe's direction to serve Jewish prisoners.",
+      "notes": ""
+    },
+    "rabbi-noach-weinberg": {
+      "name": "Rabbi Noach Weinberg",
+      "bio": "Founder of Aish HaTorah (1930-2009, Jewish), one of the most influential Jewish outreach (kiruv) leaders in modern history.",
+      "notes": ""
+    },
+    "rabbi-nota-schiller": {
+      "name": "Rabbi Nota Schiller",
+      "bio": "Co-founder and Dean of Ohr Somayach (Jewish), pioneering the baal teshuva yeshiva concept.",
+      "notes": ""
+    },
+    "remy-ilona": {
+      "name": "Remy Ilona",
+      "bio": "Nigerian-Jewish author and community leader who has written extensively on the Igbo-Jewish connection."
+    },
+    "gershom-sizomu": {
+      "name": "Gershom Sizomu",
+      "bio": "First black African rabbi ordained at a rabbinical seminary. Serves as both spiritual leader and elected member of Uganda's parliament."
+    },
+    "david-elias-tanzania": {
+      "name": "David Elias",
+      "bio": "Coordinates Jewish community events and maintains connections with international Jewish organizations in East Africa."
+    },
+    "ashrel-madagascar": {
+      "name": "Ashrel",
+      "bio": "Spiritual leader of the Malagasy Jewish community working to establish formal Jewish institutions on the island."
+    },
+    "david-marshall-singapore": {
+      "name": "David Marshall",
+      "bio": "Singapore's first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore's path to independence."
+    },
+    "rabbi-yosef-kantor": {
+      "name": "Rabbi Yosef Kantor",
+      "bio": "Chabad emissary who has served as the chief rabbi of Thailand since 1994, establishing Jewish infrastructure across the country."
+    },
+    "rabbi-osher-litzman": {
+      "name": "Rabbi Osher Litzman",
+      "bio": "Chabad rabbi serving the Jewish community in Seoul since 2008, providing kosher food, Shabbat services, and Jewish education."
+    },
+    "frank-ephraim": {
+      "name": "Frank Ephraim",
+      "bio": "Author and historian who documented the rescue of Jewish refugees in the Philippines during World War II."
+    },
+    "rabbi-menachem-hartman": {
+      "name": "Rabbi Menachem Hartman",
+      "bio": "Chabad emissary to Vietnam providing Jewish services and community building in Ho Chi Minh City."
+    },
+    "moses-samuels-myanmar": {
+      "name": "Moses Samuels",
+      "bio": "Longtime caretaker and trustee of the Musmeah Yeshua Synagogue, preserving Jewish heritage in Myanmar."
+    },
+    "isaac-lee": {
+      "name": "Isaac Lee",
+      "bio": "Colombian-Jewish media executive who served as chief content officer at Univision, notable member of the Colombian Jewish community."
+    },
+    "eduardo-bigio": {
+      "name": "Eduardo Bigio",
+      "bio": "Longstanding leader in the Peruvian Jewish community involved in education and interfaith initiatives."
+    },
+    "heinz-moeller": {
+      "name": "Heinz Moeller",
+      "bio": "One of the founders of organized Jewish life in Ecuador, establishing key community institutions."
+    },
+    "jaime-daremblum": {
+      "name": "Jaime Daremblum",
+      "bio": "Costa Rican-Jewish diplomat who served as ambassador to the United States, prominent figure in Costa Rican Jewish community."
+    },
+    "jorge-garcia-granados": {
+      "name": "Jorge García Granados",
+      "bio": "Guatemalan diplomat who served as ambassador to the UN and was instrumental in the 1947 partition vote supporting Israel's creation."
+    },
+    "aurel-vainer": {
+      "name": "Aurel Vainer",
+      "bio": "Former president of FCER who also served as Romania's parliamentary representative for the Jewish minority."
+    },
+    "maxim-behar": {
+      "name": "Maxim Behar",
+      "bio": "Bulgarian-Jewish PR mogul and community supporter who promotes Bulgaria's Holocaust rescue history internationally."
+    },
+    "robert-singer-serbia": {
+      "name": "Robert Singer",
+      "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora."
+    },
+    "misha-galperin": {
+      "name": "Misha Galperin",
+      "bio": "CEO of the National Museum of American Jewish History, leading the institution's mission to present the American Jewish story."
+    },
+    "mitchel-aeder": {
+      "name": "Mitchel Aeder",
+      "bio": "President of the Orthodox Union, overseeing the organization's religious, educational, and public policy programs."
+    },
+    "deborah-waxman": {
+      "name": "Deborah Waxman",
+      "bio": "First woman and first lesbian to lead a Jewish seminary and denominational movement, serving as president of Reconstructing Judaism."
+    },
+    "avi-hasson": {
+      "name": "Avi Hasson",
+      "bio": "Former Chief Scientist of Israel's Ministry of Economy who leads Start-Up Nation Central, promoting Israeli innovation internationally."
+    },
+    "esther-hayut": {
+      "name": "Esther Hayut",
+      "bio": "Served as Chief Justice of Israel until 2023, notably leading the court during the 2023 judicial reform crisis."
+    },
+    "abigail-morris-museum": {
+      "name": "Abigail Morris",
+      "bio": "Director of the Jewish Museum London, overseeing exhibitions and educational outreach programs."
+    },
+    "maurice-cohen-ireland": {
+      "name": "Maurice Cohen",
+      "bio": "Active leader in the Irish Jewish community working to preserve heritage and strengthen community bonds."
+    },
+    "francis-nappez": {
+      "name": "Francis Nappez",
+      "bio": "Co-founder and CTO of BlaBlaCar.",
+      "notes": ""
+    },
+    "dominique-mandonnaud": {
+      "name": "Dominique Mandonnaud",
+      "bio": "Created the open-sell concept in beauty retail.",
+      "notes": ""
+    },
+    "niklas-stberg": {
+      "name": "Niklas Östberg",
+      "bio": "Swedish entrepreneur who co-founded Delivery Hero.",
+      "notes": ""
+    },
+    "luciano-benetton": {
+      "name": "Luciano Benetton",
+      "bio": "Italian billionaire businessman who co-founded the Benetton Group.",
+      "notes": ""
+    },
+    "leonardo-del-vecchio": {
+      "name": "Leonardo Del Vecchio",
+      "bio": "Italian billionaire who built Luxottica from a small workshop into a global eyewear giant.",
+      "notes": ""
+    },
+    "amancio-ortega": {
+      "name": "Amancio Ortega",
+      "bio": "Spanish billionaire who founded Inditex and Zara, one of the wealthiest people in the world.",
+      "notes": ""
+    },
+    "marc-rich": {
+      "name": "Marc Rich",
+      "bio": "Belgian-born American-Israeli commodities trader who founded Glencore (originally Marc Rich + Co AG).",
+      "notes": ""
+    },
+    "barbara-spectre": {
+      "name": "Barbara Spectre",
+      "bio": "American-born Israeli academic who founded and directs Paideia.",
+      "notes": ""
+    },
+    "daniel-ek": {
+      "name": "Daniel Ek",
+      "bio": "Swedish entrepreneur who co-founded Spotify.",
+      "notes": ""
+    },
+    "roberto-marinho": {
+      "name": "Roberto Marinho",
+      "bio": "Brazilian media mogul who built Rede Globo into a global media empire.",
+      "notes": ""
+    },
+    "marcos-galperin": {
+      "name": "Marcos Galperin",
+      "bio": "Argentine billionaire entrepreneur who founded Mercado Libre.",
+      "notes": ""
+    },
+    "carlos-slim": {
+      "name": "Carlos Slim",
+      "bio": "Mexican business magnate, one of the richest people in the world, of Lebanese Christian descent but with close Jewish community ties.",
+      "notes": ""
+    },
+    "gavriel-holtzberg": {
+      "name": "Gavriel Holtzberg",
+      "bio": "Chabad rabbi who directed the Mumbai Chabad House until his murder in the 2008 terrorist attacks.",
+      "notes": ""
+    },
+    "mukesh-ambani": {
+      "name": "Mukesh Ambani",
+      "bio": "Indian billionaire businessman, chairman of Reliance Industries, one of the richest people in the world.",
+      "notes": ""
+    },
+    "ratan-tata": {
+      "name": "Ratan Tata",
+      "bio": "Indian industrialist who led the Tata Group through major global expansion.",
+      "notes": ""
+    },
+    "n-r-narayana-murthy": {
+      "name": "N. R. Narayana Murthy",
+      "bio": "Indian billionaire IT industrialist often called the 'Father of the Indian IT industry'.",
+      "notes": ""
+    },
+    "masayoshi-son": {
+      "name": "Masayoshi Son",
+      "bio": "Japanese-Korean billionaire who founded SoftBank. One of the world's most prolific tech investors.",
+      "notes": ""
+    },
+    "akio-morita": {
+      "name": "Akio Morita",
+      "bio": "Japanese businessman who co-founded Sony and was instrumental in making it a global brand.",
+      "notes": ""
+    },
+    "akio-toyoda": {
+      "name": "Akio Toyoda",
+      "bio": "Great-grandson of founder Sakichi Toyoda, led Toyota as president and now serves as chairman.",
+      "notes": ""
+    },
+    "jacob-elias-sassoon": {
+      "name": "Jacob Elias Sassoon",
+      "bio": "Baghdadi Jewish businessman who built the Ohel Rachel Synagogue in memory of his wife.",
+      "notes": ""
+    },
+    "ma-huateng-pony-ma": {
+      "name": "Ma Huateng (Pony Ma)",
+      "bio": "Chinese billionaire entrepreneur who co-founded Tencent.",
+      "notes": ""
+    },
+    "jack-ma": {
+      "name": "Jack Ma",
+      "bio": "Chinese billionaire entrepreneur who founded Alibaba Group.",
+      "notes": ""
+    },
+    "lee-jae-yong": {
+      "name": "Lee Jae-yong",
+      "bio": "Chairman of Samsung Electronics, grandson of Samsung founder Lee Byung-chul.",
+      "notes": ""
+    },
+    "chung-eui-sun": {
+      "name": "Chung Eui-sun",
+      "bio": "Chairman of Hyundai Motor Group, overseeing the company's push into electric and autonomous vehicles.",
+      "notes": ""
+    },
+    "mike-cannon-brookes": {
+      "name": "Mike Cannon-Brookes",
+      "bio": "Australian tech billionaire who co-founded Atlassian.",
+      "notes": ""
+    },
+    "menachem-mendel-schneerson": {
+      "name": "Menachem Mendel Schneerson",
+      "bio": "Seventh Rebbe of Chabad-Lubavitch, one of the most influential Jewish leaders of the 20th century who built Chabad into a global movement.",
+      "notes": ""
+    },
+    "robert-h-steers": {
+      "name": "Robert H. Steers",
+      "bio": "Co-founded Cohen & Steers, a pioneer in listed real estate investing.",
+      "notes": ""
+    },
+    "kevin-plank": {
+      "name": "Kevin Plank",
+      "bio": "American billionaire entrepreneur who founded Under Armour.",
+      "notes": ""
+    },
+    "tobias-l-tke": {
+      "name": "Tobias Lütke",
+      "bio": "German-Canadian billionaire entrepreneur who co-founded Shopify.",
+      "notes": ""
+    },
+    "nikolay-storonsky": {
+      "name": "Nikolay Storonsky",
+      "bio": "Russian-British billionaire entrepreneur who co-founded Revolut.",
+      "notes": ""
+    },
+    "demis-hassabis": {
+      "name": "Demis Hassabis",
+      "bio": "British AI researcher and Nobel laureate who co-founded DeepMind.",
+      "notes": ""
+    },
+    "jamie-dimon": {
+      "name": "Jamie Dimon",
+      "bio": "American billionaire businessman of Greek descent. Chairman and CEO of JPMorgan Chase.",
+      "notes": ""
+    },
+    "jensen-huang": {
+      "name": "Jensen Huang",
+      "bio": "Taiwanese-American billionaire and co-founder of Nvidia.",
+      "notes": ""
+    },
+    "stewart-butterfield": {
+      "name": "Stewart Butterfield",
+      "bio": "Canadian-American tech entrepreneur who co-founded both Flickr and Slack.",
+      "notes": ""
+    },
+    "elon-musk": {
+      "name": "Elon Musk",
+      "bio": "South African-born American billionaire, founder of SpaceX, CEO of Tesla, and one of the wealthiest people in history.",
+      "notes": ""
+    },
+    "joe-tsai": {
+      "name": "Joe Tsai",
+      "bio": "Taiwanese-Canadian billionaire, co-founder of Alibaba, owner of the Brooklyn Nets.",
+      "notes": ""
+    },
+    "gary-hirshberg": {
+      "name": "Gary Hirshberg",
+      "bio": "American businessman dubbed the 'CE-Yo' who grew Stonyfield into a major organic brand.",
+      "notes": ""
+    },
+    "vilna-gaon": {
+      "name": "Vilna Gaon",
+      "bio": "Rabbi Elijah ben Solomon Zalman, one of the most influential Jewish scholars of modern times.",
+      "notes": ""
+    },
+    "hannah-greenbaum-solomon": {
+      "name": "Hannah Greenbaum Solomon",
+      "bio": "Social activist who founded the National Council of Jewish Women at the 1893 World's Fair.",
+      "notes": ""
+    },
+    "hock-tan": {
+      "name": "Hock Tan",
+      "bio": "Malaysian-American businessman and CEO of Broadcom.",
+      "notes": ""
+    },
+    "daniel-edelman": {
+      "name": "Daniel Edelman",
+      "bio": "American public relations pioneer who founded what became the world's largest PR firm.",
+      "notes": ""
+    },
+    "vincent-bollor": {
+      "name": "Vincent Bolloré",
+      "bio": "French billionaire businessman controlling the Bolloré Group.",
+      "notes": ""
+    },
+    "bernard-arnault": {
+      "name": "Bernard Arnault",
+      "bio": "French billionaire, chairman and CEO of LVMH, at various times the world's wealthiest person.",
+      "notes": ""
+    },
+    "fran-ois-henri-pinault": {
+      "name": "François-Henri Pinault",
+      "bio": "French billionaire businessman controlling Kering and Artémis.",
+      "notes": ""
+    },
+    "zalman-bernstein": {
+      "name": "Zalman Bernstein",
+      "bio": "American financier and philanthropist who founded Sanford C. Bernstein & Co.",
+      "notes": ""
+    },
+    "samuel-irving-newhouse-sr": {
+      "name": "Samuel Irving Newhouse Sr.",
+      "bio": "American media entrepreneur who built a publishing empire. Son of Jewish immigrants from Russia and Austria.",
+      "notes": ""
+    },
+    "abraham-ikuro-teshima": {
+      "name": "Abraham Ikuro Teshima",
+      "bio": "Japanese Christian leader who founded the Makuya movement and fostered deep ties with Israel.",
+      "notes": ""
+    },
+    "emanuel-ringelblum": {
+      "name": "Emanuel Ringelblum",
+      "bio": "Polish-Jewish historian who organized the secret Oyneg Shabes archive in the Warsaw Ghetto.",
+      "notes": ""
+    },
+    "moses-sofer": {
+      "name": "Moses Sofer",
+      "bio": "Leading Orthodox rabbi known as the Chatam Sofer, head of the Pressburg Yeshiva, one of the most influential rabbis of the modern era.",
+      "notes": ""
+    },
+    "steve-wynn": {
+      "name": "Steve Wynn",
+      "bio": "American real estate businessman and art collector who revitalized the Las Vegas Strip.",
+      "notes": ""
+    },
+    "albert-einstein-physicist": {
+      "name": "Albert Einstein",
+      "bio": "German-born theoretical physicist (1879-1955). Nobel Prize in Physics 1921. Developed the theory of relativity. Offered presidency of Israel in 1952 (declined).",
+      "notes": ""
+    },
+    "franz-kafka": {
+      "name": "Franz Kafka",
+      "bio": "German-speaking Bohemian novelist (1883-1924). One of the major figures of 20th-century literature. Born into a middle-class Ashkenazi Jewish family in Prague.",
+      "notes": ""
+    },
+    "hannah-arendt": {
+      "name": "Hannah Arendt",
+      "bio": "German-American political theorist (1906-1975). Wrote 'The Origins of Totalitarianism' and coined 'the banality of evil' while covering the Eichmann trial.",
+      "notes": ""
+    },
+    "emma-lazarus": {
+      "name": "Emma Lazarus",
+      "bio": "American poet (1849-1887). Wrote 'The New Colossus' sonnet ('Give me your tired, your poor') on the Statue of Liberty. Of Sephardic Jewish descent.",
+      "notes": ""
+    },
+    "golda-meir": {
+      "name": "Golda Meir",
+      "bio": "Israeli stateswoman and politician (1898-1978). Fourth Prime Minister of Israel. One of the first female heads of state in the world.",
+      "notes": ""
+    },
+    "david-ben-gurion": {
+      "name": "David Ben-Gurion",
+      "bio": "Primary national founder of the State of Israel (1886-1973). First Prime Minister. Proclaimed the establishment of Israel on May 14, 1948.",
+      "notes": ""
+    },
+    "menachem-begin": {
+      "name": "Menachem Begin",
+      "bio": "Israeli politician and statesman (1913-1992). Sixth Prime Minister of Israel. Signed the Camp David Accords. Nobel Peace Prize 1978.",
+      "notes": ""
+    },
+    "yitzhak-rabin": {
+      "name": "Yitzhak Rabin",
+      "bio": "Israeli politician, statesman, and general (1922-1995). Fifth Prime Minister. Signed the Oslo Accords. Nobel Peace Prize 1994. Assassinated by a Jewish extremist.",
+      "notes": ""
+    },
+    "shimon-peres": {
+      "name": "Shimon Peres",
+      "bio": "Israeli politician and statesman (1923-2016). Ninth President of Israel. Nobel Peace Prize 1994. Served in nearly every major governmental role.",
+      "notes": ""
+    },
+    "ruth-bader-ginsburg": {
+      "name": "Ruth Bader Ginsburg",
+      "bio": "American jurist (1933-2020). Second female Justice of the US Supreme Court (1993-2020). Pioneered gender equality litigation. Cultural icon known as 'Notorious RBG.'",
+      "notes": ""
+    },
+    "henry-kissinger": {
+      "name": "Henry Kissinger",
+      "bio": "German-born American politician, diplomat, and geopolitical consultant (1923-2023). Secretary of State under Nixon and Ford. Nobel Peace Prize 1973.",
+      "notes": ""
+    },
+    "sandy-koufax": {
+      "name": "Sandy Koufax",
+      "bio": "American baseball pitcher (1935-). Hall of Famer. One of the greatest pitchers in history. Famous for refusing to pitch Game 1 of the 1965 World Series on Yom Kippur.",
+      "notes": ""
+    },
+    "bob-dylan": {
+      "name": "Bob Dylan",
+      "bio": "American singer-songwriter (1941-). Born Robert Allen Zimmerman. Nobel Prize in Literature 2016. One of the most influential musicians of the 20th century.",
+      "notes": ""
+    },
+    "leonard-cohen": {
+      "name": "Leonard Cohen",
+      "bio": "Canadian singer-songwriter, poet, and novelist (1934-2016). Born into an influential Montreal Jewish family. Known for 'Hallelujah' and deeply spiritual works.",
+      "notes": ""
+    },
+    "barbra-streisand": {
+      "name": "Barbra Streisand",
+      "bio": "American singer, actress, and filmmaker (1942-). One of the best-selling recording artists of all time with over 150 million records sold. EGOT winner.",
+      "notes": ""
+    },
+    "itzhak-perlman": {
+      "name": "Itzhak Perlman",
+      "bio": "Israeli-American violinist (1945-). Regarded as one of the greatest violinists of the modern era. Overcame polio. 16-time Grammy Award winner.",
+      "notes": ""
+    },
+    "daniel-barenboim": {
+      "name": "Daniel Barenboim",
+      "bio": "Argentine-Israeli pianist and conductor (1942-). Founded the West-Eastern Divan Orchestra with Edward Said to promote Israeli-Palestinian dialogue.",
+      "notes": ""
+    },
+    "saul-bellow": {
+      "name": "Saul Bellow",
+      "bio": "Canadian-American writer (1915-2005). Nobel Prize in Literature 1976. Known for 'The Adventures of Augie March,' 'Herzog,' and 'Humboldt's Gift.'",
+      "notes": ""
+    },
+    "philip-roth": {
+      "name": "Philip Roth",
+      "bio": "American novelist (1933-2018). Author of 'Portnoy's Complaint,' 'American Survey,' and many others. Won the Pulitzer Prize and nearly every major literary award.",
+      "notes": ""
+    },
+    "woody-allen": {
+      "name": "Woody Allen",
+      "bio": "American filmmaker, writer, and comedian (1935-). Known for 'Annie Hall,' 'Manhattan,' and prolific filmography of over 50 films. Four-time Academy Award winner.",
+      "notes": ""
+    },
+    "mel-brooks": {
+      "name": "Mel Brooks",
+      "bio": "American filmmaker, comedian, and songwriter (1926-). EGOT winner. Known for 'The Producers,' 'Blazing Saddles,' 'Young Frankenstein.' Served in WWII.",
+      "notes": ""
+    },
+    "irving-berlin": {
+      "name": "Irving Berlin",
+      "bio": "Belarusian-born American composer (1888-1989). Wrote 'God Bless America,' 'White Christmas,' and nearly 1,500 songs. Born Israel Isidore Baline to a Jewish family.",
+      "notes": ""
+    },
+    "george-gershwin": {
+      "name": "George Gershwin",
+      "bio": "American composer and pianist (1898-1937). Composed 'Rhapsody in Blue,' 'An American in Paris,' and 'Porgy and Bess.' Born to a Russian Jewish immigrant family in Brooklyn.",
+      "notes": ""
+    },
+    "leonard-bernstein": {
+      "name": "Leonard Bernstein",
+      "bio": "American conductor, composer, and pianist (1918-1990). Composed 'West Side Story.' First American conductor to lead a major symphony orchestra.",
+      "notes": ""
+    },
+    "jonas-salk": {
+      "name": "Jonas Salk",
+      "bio": "American virologist (1914-1995). Developed the first successful polio vaccine. Born to Russian-Jewish immigrant parents. Refused to patent the vaccine.",
+      "notes": ""
+    },
+    "hedy-lamarr": {
+      "name": "Hedy Lamarr",
+      "bio": "Austrian-American actress and inventor (1914-2000). Born Hedwig Eva Maria Kiesler to a Jewish family in Vienna. Co-invented frequency-hopping technology used in WiFi and Bluetooth.",
+      "notes": ""
+    },
+    "marc-chagall": {
+      "name": "Marc Chagall",
+      "bio": "Russian-French artist (1887-1985). Born Moishe Shagal to a Hasidic Jewish family in Vitebsk. One of the most successful artists of the 20th century.",
+      "notes": ""
+    },
+    "amedeo-modigliani": {
+      "name": "Amedeo Modigliani",
+      "bio": "Italian painter and sculptor (1884-1920). Born to a Sephardic Jewish family in Livorno. Known for portraiture and nudes with elongated forms.",
+      "notes": ""
+    },
+    "primo-levi": {
+      "name": "Primo Levi",
+      "bio": "Italian Jewish chemist, partisan, and author (1919-1987). Holocaust survivor whose memoir 'If This Is a Man' is considered one of the most important works of the 20th century.",
+      "notes": ""
+    },
+    "dario-amodei": {
+      "name": "Dario Amodei",
+      "bio": "American AI researcher and co-founder of Anthropic.",
+      "notes": ""
+    },
+    "brian-armstrong": {
+      "name": "Brian Armstrong",
+      "bio": "American billionaire entrepreneur and CEO of Coinbase.",
+      "notes": ""
+    },
+    "vlad-tenev": {
+      "name": "Vlad Tenev",
+      "bio": "Bulgarian-American billionaire entrepreneur who co-founded Robinhood.",
+      "notes": ""
+    },
+    "morris-chang": {
+      "name": "Morris Chang",
+      "bio": "Chinese-American Taiwanese businessman who founded TSMC and is called the 'Father of semiconductor manufacturing.'",
+      "notes": ""
+    }
+  }
+}

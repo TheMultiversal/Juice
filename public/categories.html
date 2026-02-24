@@ -1,0 +1,127 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse by Category</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1, h2 { color: #000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; text-decoration: none; }
+    .cat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 12px; margin-top: 15px; }
+    .cat-card { background: rgba(255,255,255,0.92); border: 1px solid rgba(0,0,255,0.25); border-radius: 10px; padding: 18px; transition: transform 0.15s, box-shadow 0.15s; cursor: pointer; }
+    .cat-card:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,255,0.12); }
+    .cat-card h3 { margin: 0 0 6px 0; font-size: 1.15em; }
+    .cat-card h3 a { color: #0000EE; text-decoration: none; }
+    .cat-count { display: inline-block; background: rgba(0,123,255,0.15); color: #0056b3; padding: 2px 10px; border-radius: 12px; font-size: 0.9em; font-weight: bold; margin-bottom: 8px; }
+    .cat-preview { font-size: 0.88em; color: #444; line-height: 1.4; }
+    .cat-preview a { color: #0056b3; }
+    .summary-bar { display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 10px; }
+    .summary-stat { background: rgba(0,123,255,0.08); padding: 8px 16px; border-radius: 8px; font-weight: bold; }
+    .summary-stat span { font-size: 1.4em; color: #0056b3; }
+    .search-box { width: 100%; max-width: 400px; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); font-size: 1em; margin-bottom: 10px; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel">
+    <h1>Browse by Industry &amp; Category</h1>
+    <div class="summary-bar" id="summary"></div>
+    <input type="text" class="search-box" id="cat-search" placeholder="Search categories..." />
+  </div>
+  <div class="cat-grid" id="cat-grid"></div>
+
+  <script src="app.js"></script>
+  <script>
+    const religion = 'jewish';
+    initPage(religion);
+
+    let allCats = {};
+
+    fetch(`/api/${religion}/categories`)
+      .then(r => r.json())
+      .then(data => {
+        allCats = data.categories;
+
+        // Summary bar
+        const totalCats = Object.keys(allCats).length;
+        const totalEntries = Object.values(allCats).reduce((s, c) => s + c.count, 0);
+        const summary = document.getElementById('summary');
+        summary.innerHTML = `
+          <div class="summary-stat"><span>${totalEntries}</span> Total Entries</div>
+          <div class="summary-stat"><span>${totalCats}</span> Categories</div>
+        `;
+
+        renderCategories(allCats);
+
+        // Search filter
+        document.getElementById('cat-search').addEventListener('input', function() {
+          const q = this.value.toLowerCase();
+          const filtered = {};
+          for (const cat in allCats) {
+            if (cat.toLowerCase().includes(q)) {
+              filtered[cat] = allCats[cat];
+            }
+          }
+          renderCategories(filtered);
+        });
+      });
+
+    function renderCategories(cats) {
+      const grid = document.getElementById('cat-grid');
+      grid.innerHTML = '';
+      const sorted = Object.entries(cats).sort((a, b) => b[1].count - a[1].count);
+
+      sorted.forEach(([catName, catData]) => {
+        const card = document.createElement('div');
+        card.className = 'cat-card';
+
+        const h3 = document.createElement('h3');
+        const link = document.createElement('a');
+        link.href = `category.html?religion=${encodeURIComponent(religion)}&category=${encodeURIComponent(catName)}`;
+        link.textContent = catName;
+        h3.appendChild(link);
+        card.appendChild(h3);
+
+        const count = document.createElement('div');
+        count.className = 'cat-count';
+        count.textContent = catData.count + (catData.count === 1 ? ' entry' : ' entries');
+        card.appendChild(count);
+
+        // Show preview of first few entries
+        const preview = document.createElement('div');
+        preview.className = 'cat-preview';
+        const previewEntries = catData.entries.slice(0, 5);
+        previewEntries.forEach((e, i) => {
+          const a = document.createElement('a');
+          a.href = `entry.html?religion=${encodeURIComponent(religion)}&id=${encodeURIComponent(e.id)}`;
+          a.textContent = e.name;
+          preview.appendChild(a);
+          if (i < previewEntries.length - 1) {
+            preview.appendChild(document.createTextNode(' · '));
+          }
+        });
+        if (catData.count > 5) {
+          preview.appendChild(document.createTextNode(` + ${catData.count - 5} more`));
+        }
+        card.appendChild(preview);
+
+        card.addEventListener('click', function(e) {
+          if (e.target.tagName !== 'A') {
+            window.location.href = `category.html?religion=${encodeURIComponent(religion)}&category=${encodeURIComponent(catName)}`;
+          }
+        });
+
+        grid.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>

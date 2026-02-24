@@ -1,0 +1,415 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entry Details</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1 { color: #000; }
+    h2 { margin-top: 15px; margin-bottom: 8px; }
+    ul { list-style: none; padding: 0; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; }
+    .back-link { font-weight: bold; text-decoration: none; color: #0000EE; }
+    .entry-header { font-size: 1.8em; margin: 0; }
+    .entry-type { font-style: italic; color: #333; margin: 5px 0; font-size: 1.1em; }
+    .entry-desc { line-height: 1.6; }
+    .person-card { margin: 8px 0; padding: 10px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.15); }
+    .person-card a { font-weight: bold; color: #0000EE; font-size: 1.05em; }
+    .person-role { font-style: italic; color: #555; }
+    .person-bio { margin-top: 5px; line-height: 1.5; }
+    .connection-item { margin: 5px 0; padding: 8px; background: rgba(240,248,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.1); }
+    .connection-item a { font-weight: bold; color: #0000EE; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.85em; margin: 2px; }
+    .breadcrumb { font-size: 0.9em; margin-bottom: 10px; }
+    .breadcrumb a { color: #0056b3; text-decoration: none; }
+    .breadcrumb span { color: #888; margin: 0 5px; }
+    .entry-meta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 8px 0; }
+    .entry-meta .meta-item { display: flex; align-items: center; gap: 4px; font-size: 0.95em; }
+    .similar-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px; }
+    .similar-card { padding: 10px 14px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.1); }
+    .similar-card a { font-weight: bold; color: #0000EE; text-decoration: none; }
+    .similar-card .sim-meta { font-size: 0.85em; color: #666; margin-top: 3px; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel">
+    <div class="breadcrumb" id="breadcrumb"><a href="index.html">Home</a> <span>›</span> <span id="bc-country"></span> <span>›</span> <span id="bc-entry">Loading...</span></div>
+    <a href="index.html" class="back-link">&#8592; Back to full list</a>
+  </div>
+  <div class="panel">
+    <h1 class="entry-header" id="entry-name">Loading...</h1>
+    <p class="entry-type" id="entry-type"></p>
+    <div class="entry-meta" id="entry-meta"></div>
+    <p id="entry-category-line" style="display:none"><strong>Category:</strong> <a id="entry-category" class="tag" style="font-size:0.95em;"></a></p>
+  </div>
+  <div class="panel">
+    <h2>Description</h2>
+    <p class="entry-desc" id="entry-desc"></p>
+  </div>
+  <div class="panel" id="entry-website-panel" style="display:none">
+    <h2>Website</h2>
+    <span id="entry-website"></span>
+  </div>
+  <div class="panel" id="entry-country-panel" style="display:none">
+    <h2>Country</h2>
+    <span id="entry-country"></span>
+  </div>
+  <div class="panel">
+    <h2>Key Individuals</h2>
+    <div id="individuals-list"></div>
+  </div>
+  <div class="panel" id="connections-panel" style="display:none">
+    <h2>Connections &amp; Relations</h2>
+    <div id="connections-list"></div>
+  </div>
+  <div class="panel" id="related-entries-panel" style="display:none">
+    <h2>Related Entries in Database</h2>
+    <div id="related-entries-list"></div>
+  </div>
+  <div class="panel" id="similar-panel" style="display:none">
+    <h2>Similar Organizations</h2>
+    <div class="similar-grid" id="similar-grid"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    function getQueryParam(name) {
+      return new URLSearchParams(window.location.search).get(name);
+    }
+    function slugify(str) {
+      return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+
+    const religion = getQueryParam('religion') || 'jewish';
+    const id = getQueryParam('id');
+
+    initPage(religion, allData => {
+      if (!id) {
+        document.body.textContent = 'Missing entry id in query.';
+        return;
+      }
+
+      fetch(`/api/${religion}/entry/${id}`)
+        .then(res => {
+          if (!res.ok) throw new Error('Entry not found');
+          return res.json();
+        })
+        .then(item => {
+          document.title = item.name + ' - Entry Details';
+          document.getElementById('entry-name').textContent = item.name;
+          document.getElementById('entry-type').textContent = item.type;
+
+          // Breadcrumb
+          if (item.country) {
+            const bcCountry = document.getElementById('bc-country');
+            const ca = document.createElement('a');
+            ca.href = 'country.html?religion=' + encodeURIComponent(religion) + '&country=' + encodeURIComponent(item.country);
+            ca.textContent = item.country;
+            bcCountry.appendChild(ca);
+          }
+          document.getElementById('bc-entry').textContent = item.name;
+
+          // Entry meta bar (founded, country, category inline)
+          const metaDiv = document.getElementById('entry-meta');
+          if (item.founded) {
+            const m = document.createElement('div');
+            m.className = 'meta-item';
+            m.innerHTML = '📅 <strong>Founded:</strong> ' + item.founded;
+            metaDiv.appendChild(m);
+          }
+          if (item.country) {
+            const m = document.createElement('div');
+            m.className = 'meta-item';
+            m.innerHTML = '📍 <a href="country.html?religion=' + encodeURIComponent(religion) + '&country=' + encodeURIComponent(item.country) + '">' + item.country + '</a>';
+            metaDiv.appendChild(m);
+          }
+          if (item.individuals && item.individuals.length) {
+            const m = document.createElement('div');
+            m.className = 'meta-item';
+            m.innerHTML = '👥 ' + item.individuals.length + ' people';
+            metaDiv.appendChild(m);
+          }
+          if (item.connections && item.connections.length) {
+            const m = document.createElement('div');
+            m.className = 'meta-item';
+            m.innerHTML = '🔗 ' + item.connections.length + ' connections';
+            metaDiv.appendChild(m);
+          }
+
+          // Bookmark button
+          const bmBtn = document.createElement('button');
+          bmBtn.style.cssText = 'margin-left:12px;padding:5px 14px;border-radius:16px;border:1px solid rgba(0,0,255,0.3);cursor:pointer;font-size:0.85em;vertical-align:middle;';
+          function updateBmBtn() {
+            const saved = BookmarkManager.isEntryBookmarked(item.id || id);
+            bmBtn.textContent = saved ? '★ Bookmarked' : '☆ Bookmark';
+            bmBtn.style.background = saved ? 'rgba(255,193,7,0.2)' : 'rgba(0,123,255,0.1)';
+            bmBtn.style.color = saved ? '#b8860b' : '#0056b3';
+          }
+          updateBmBtn();
+          bmBtn.addEventListener('click', () => {
+            const eid = item.id || id;
+            if (BookmarkManager.isEntryBookmarked(eid)) { BookmarkManager.removeEntry(eid); }
+            else { BookmarkManager.addEntry({ id: eid, name: item.name, country: item.country, category: item.category, description: (item.description || '').substring(0, 200) }); }
+            updateBmBtn();
+          });
+          document.getElementById('entry-name').appendChild(bmBtn);
+
+          if (item.category) {
+            const catLine = document.getElementById('entry-category-line');
+            catLine.style.display = '';
+            const catLink = document.getElementById('entry-category');
+            catLink.textContent = item.category;
+            catLink.href = 'category.html?religion=' + encodeURIComponent(religion) + '&category=' + encodeURIComponent(item.category);
+          }
+          document.getElementById('entry-desc').textContent = item.description;
+
+          if (item.website) {
+            const wp = document.getElementById('entry-website-panel');
+            wp.style.display = '';
+            const w = document.getElementById('entry-website');
+            const a = document.createElement('a');
+            a.href = item.website;
+            a.textContent = item.website;
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+            w.appendChild(a);
+          }
+
+          // Show country if available
+          if (item.country) {
+            const cp = document.getElementById('entry-country-panel');
+            cp.style.display = '';
+            const cs = document.getElementById('entry-country');
+            const ca = document.createElement('a');
+            ca.href = 'country.html?religion=' + encodeURIComponent(religion) + '&country=' + encodeURIComponent(item.country);
+            ca.textContent = item.country;
+            cs.appendChild(ca);
+          }
+
+          // Individuals
+          const indDiv = document.getElementById('individuals-list');
+          if (item.individuals && item.individuals.length) {
+            item.individuals.forEach(p => {
+              const card = document.createElement('div');
+              card.className = 'person-card';
+              const nameLink = document.createElement('a');
+              nameLink.href = 'person.html?id=' + encodeURIComponent(p.id || slugify(p.name));
+              nameLink.textContent = p.name;
+              card.appendChild(nameLink);
+              const roleSpan = document.createElement('span');
+              roleSpan.className = 'person-role';
+              roleSpan.textContent = ' \u2014 ' + p.role;
+              card.appendChild(roleSpan);
+              if (p.bio) {
+                const bioP = document.createElement('p');
+                bioP.className = 'person-bio';
+                bioP.textContent = p.bio;
+                card.appendChild(bioP);
+              }
+              indDiv.appendChild(card);
+            });
+          } else {
+            indDiv.textContent = 'None listed.';
+          }
+
+          // Build a lookup map of all entry names -> entryId for cross-referencing
+          const entryLookup = {};
+          if (allData && allData.countries) {
+            for (const country in allData.countries) {
+              allData.countries[country].forEach(entry => {
+                const eid = entry.id || slugify(entry.name);
+                entryLookup[entry.name.toLowerCase()] = eid;
+              });
+            }
+          }
+
+          // Connections & Relations - with clickable cross-references
+          if (item.connections && item.connections.length) {
+            const cp = document.getElementById('connections-panel');
+            cp.style.display = '';
+            const cl = document.getElementById('connections-list');
+            item.connections.forEach(conn => {
+              const div = document.createElement('div');
+              div.className = 'connection-item';
+
+              // Check if connection name matches an entry in the database
+              const matchedEntryId = conn.entryId || entryLookup[conn.name.toLowerCase()];
+              if (matchedEntryId) {
+                const nameLink = document.createElement('a');
+                nameLink.href = 'entry.html?religion=' + encodeURIComponent(religion) + '&id=' + encodeURIComponent(matchedEntryId);
+                nameLink.textContent = conn.name;
+                nameLink.style.fontWeight = 'bold';
+                div.appendChild(nameLink);
+              } else {
+                // Try search link as fallback
+                const nameLink = document.createElement('a');
+                nameLink.href = 'search.html?q=' + encodeURIComponent(conn.name);
+                nameLink.textContent = conn.name;
+                nameLink.style.fontWeight = 'bold';
+                nameLink.title = 'Search for this connection';
+                div.appendChild(nameLink);
+              }
+              if (conn.type) {
+                const tag = document.createElement('span');
+                tag.className = 'tag';
+                tag.textContent = conn.type;
+                div.appendChild(document.createTextNode(' '));
+                div.appendChild(tag);
+              }
+              if (conn.description) {
+                const desc = document.createElement('p');
+                desc.style.margin = '4px 0 0 0';
+                // Make any entry names in the description clickable too
+                let descText = conn.description;
+                const descEl = document.createElement('span');
+                let didReplace = false;
+                for (const [entryName, entryId] of Object.entries(entryLookup)) {
+                  // only match names >= 5 chars to avoid false positives
+                  if (entryName.length < 5) continue;
+                  const regex = new RegExp('\\b' + entryName.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\b', 'gi');
+                  if (regex.test(descText)) {
+                    didReplace = true;
+                    descText = descText.replace(regex, match =>
+                      `<a href="entry.html?religion=${encodeURIComponent(religion)}&id=${encodeURIComponent(entryId)}" style="color:#0000EE">${match}</a>`
+                    );
+                  }
+                }
+                if (didReplace) {
+                  descEl.innerHTML = descText;
+                } else {
+                  descEl.textContent = descText;
+                }
+                desc.appendChild(descEl);
+                div.appendChild(desc);
+              }
+              cl.appendChild(div);
+            });
+          }
+
+          // Related entries from our database
+          if (allData && allData.countries) {
+            findRelatedEntries(item, allData);
+            findSimilarEntries(item, allData);
+          }
+        })
+        .catch(err => {
+          document.getElementById('entry-name').textContent = err.message;
+        });
+    });
+
+    function findRelatedEntries(currentItem, allData) {
+      const related = [];
+      const currentId = id;
+      const currentPeople = (currentItem.individuals || []).map(p => p.name.toLowerCase());
+
+      for (const country in allData.countries) {
+        allData.countries[country].forEach(entry => {
+          const entryId = entry.id || slugify(entry.name);
+          if (entryId === currentId) return;
+          if (entry.individuals) {
+            entry.individuals.forEach(p => {
+              if (currentPeople.includes(p.name.toLowerCase())) {
+                if (!related.find(r => r.id === entryId)) {
+                  related.push({
+                    name: entry.name,
+                    id: entryId,
+                    reason: 'Shared individual: ' + p.name,
+                    country: country
+                  });
+                }
+              }
+            });
+          }
+        });
+      }
+
+      if (currentItem.connections) {
+        currentItem.connections.forEach(conn => {
+          if (conn.entryId) {
+            for (const country in allData.countries) {
+              allData.countries[country].forEach(entry => {
+                const entryId = entry.id || slugify(entry.name);
+                if (entryId === conn.entryId && !related.find(r => r.id === entryId)) {
+                  related.push({
+                    name: entry.name,
+                    id: entryId,
+                    reason: conn.description || 'Connected entry',
+                    country: country
+                  });
+                }
+              });
+            }
+          }
+        });
+      }
+
+      if (related.length > 0) {
+        const rp = document.getElementById('related-entries-panel');
+        rp.style.display = '';
+        const rl = document.getElementById('related-entries-list');
+        related.forEach(r => {
+          const div = document.createElement('div');
+          div.className = 'connection-item';
+          const a = document.createElement('a');
+          a.href = 'entry.html?religion=' + encodeURIComponent(religion) + '&id=' + encodeURIComponent(r.id);
+          a.textContent = r.name;
+          div.appendChild(a);
+          div.appendChild(document.createTextNode(' (' + r.country + ') \u2014 '));
+          const reason = document.createElement('em');
+          reason.textContent = r.reason;
+          div.appendChild(reason);
+          rl.appendChild(div);
+        });
+      }
+    }
+
+    function findSimilarEntries(currentItem, allData) {
+      const similar = [];
+      const currentId = id;
+      const currentCat = currentItem.category;
+      const currentCountry = currentItem.country;
+      
+      for (const country in allData.countries) {
+        allData.countries[country].forEach(entry => {
+          const entryId = entry.id || slugify(entry.name);
+          if (entryId === currentId) return;
+          // Same category + same country = high similarity
+          if (entry.category === currentCat && country === currentCountry) {
+            if (!similar.find(s => s.id === entryId)) {
+              similar.push({ id: entryId, name: entry.name, country, category: entry.category, type: entry.type, founded: entry.founded, reason: 'Same category & country' });
+            }
+          }
+          // Same category, different country
+          else if (entry.category === currentCat && similar.length < 12) {
+            if (!similar.find(s => s.id === entryId)) {
+              similar.push({ id: entryId, name: entry.name, country, category: entry.category, type: entry.type, founded: entry.founded, reason: 'Same category' });
+            }
+          }
+        });
+      }
+
+      if (similar.length > 0) {
+        const panel = document.getElementById('similar-panel');
+        panel.style.display = '';
+        const grid = document.getElementById('similar-grid');
+        similar.slice(0, 8).forEach(s => {
+          const card = document.createElement('div');
+          card.className = 'similar-card';
+          card.innerHTML = '<a href="entry.html?religion=' + encodeURIComponent(religion) + '&id=' + encodeURIComponent(s.id) + '">' + s.name + '</a>'
+            + '<div class="sim-meta">' + s.country + (s.founded ? ' · Est. ' + s.founded : '') + ' · ' + s.reason + '</div>';
+          grid.appendChild(card);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

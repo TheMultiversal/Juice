@@ -1,0 +1,126 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Countries — Juice</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1 { color: #000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; }
+    nav ul li { margin-right: 1em; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .breadcrumb { font-size: 0.9em; margin-bottom: 10px; }
+    .breadcrumb a { color: #0056b3; text-decoration: none; }
+    .breadcrumb span { color: #888; margin: 0 5px; }
+    .filter-row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 10px 0; }
+    .filter-row input, .filter-row select { padding: 8px 12px; border: 1px solid rgba(0,0,255,0.25); border-radius: 6px; }
+    .stat-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 5px 12px; border-radius: 8px; font-weight: bold; font-size: 0.95em; }
+    .stat-item span { color: #0056b3; font-size: 1.15em; }
+    .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin-top: 12px; }
+    .country-card { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.15); border-radius: 8px; text-decoration: none; color: inherit; transition: transform 0.12s, box-shadow 0.12s; }
+    .country-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,255,0.1); }
+    .country-card .cname { font-weight: bold; color: #0000EE; font-size: 1.05em; }
+    .country-card .ccount { background: rgba(0,123,255,0.15); color: #0056b3; padding: 4px 14px; border-radius: 14px; font-size: 0.95em; font-weight: bold; }
+    .alpha-bar { display: flex; flex-wrap: wrap; gap: 3px; margin: 10px 0; }
+    .alpha-bar button { padding: 4px 9px; border: 1px solid rgba(0,0,255,0.2); border-radius: 4px; background: rgba(255,255,255,0.9); cursor: pointer; font-size: 0.85em; }
+    .alpha-bar button:hover, .alpha-bar button.active { background: #0056b3; color: #fff; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel">
+    <div class="breadcrumb"><a href="index.html">Home</a> <span>›</span> All Countries</div>
+    <h1>All Countries</h1>
+    <div class="filter-row">
+      <input type="text" id="search" placeholder="Search countries..." />
+      <select id="sort">
+        <option value="alpha">Sort A-Z</option>
+        <option value="alpha-desc">Sort Z-A</option>
+        <option value="count-desc">Most Entries</option>
+        <option value="count-asc">Fewest Entries</option>
+      </select>
+    </div>
+    <div class="alpha-bar" id="alpha-bar"></div>
+    <div class="stat-bar" id="stats"></div>
+  </div>
+  <div class="country-grid" id="country-list"></div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+
+    let countriesData = [];
+    let activeAlpha = '';
+
+    // Build A-Z bar
+    const alphaBar = document.getElementById('alpha-bar');
+    const allBtn = document.createElement('button');
+    allBtn.textContent = 'All';
+    allBtn.className = 'active';
+    allBtn.addEventListener('click', () => { activeAlpha = ''; render(); });
+    alphaBar.appendChild(allBtn);
+    for (let i = 65; i <= 90; i++) {
+      const btn = document.createElement('button');
+      btn.textContent = String.fromCharCode(i);
+      btn.addEventListener('click', () => { activeAlpha = String.fromCharCode(i); render(); });
+      alphaBar.appendChild(btn);
+    }
+
+    // Fetch data with counts
+    Promise.all([
+      fetch('/api/countries').then(r => r.json()),
+      fetch('/api/jewish').then(r => r.json())
+    ]).then(([countryList, data]) => {
+      const counts = {};
+      for (const country in data.countries) {
+        counts[country] = data.countries[country].length;
+      }
+      countriesData = countryList.countries.map(c => ({ name: c, count: counts[c] || 0 }));
+      render();
+    });
+
+    function render() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const sort = document.getElementById('sort').value;
+      const container = document.getElementById('country-list');
+      container.innerHTML = '';
+
+      let filtered = countriesData.filter(c => {
+        if (search && !c.name.toLowerCase().includes(search)) return false;
+        if (activeAlpha && !c.name.toUpperCase().startsWith(activeAlpha)) return false;
+        return true;
+      });
+
+      if (sort === 'alpha') filtered.sort((a, b) => a.name.localeCompare(b.name));
+      else if (sort === 'alpha-desc') filtered.sort((a, b) => b.name.localeCompare(a.name));
+      else if (sort === 'count-desc') filtered.sort((a, b) => b.count - a.count);
+      else if (sort === 'count-asc') filtered.sort((a, b) => a.count - b.count);
+
+      // Update alpha highlights
+      document.querySelectorAll('.alpha-bar button').forEach(b => {
+        b.classList.toggle('active', (b.textContent === 'All' && !activeAlpha) || b.textContent === activeAlpha);
+      });
+
+      document.getElementById('stats').innerHTML = '<div class="stat-item"><span>' + filtered.length + '</span> countries</div>'
+        + '<div class="stat-item"><span>' + filtered.reduce((s, c) => s + c.count, 0) + '</span> total entries</div>';
+
+      filtered.forEach(c => {
+        const a = document.createElement('a');
+        a.className = 'country-card';
+        a.href = 'country.html?religion=jewish&country=' + encodeURIComponent(c.name);
+        a.innerHTML = '<span class="cname">' + c.name + '</span><span class="ccount">' + c.count + ' entries</span>';
+        container.appendChild(a);
+      });
+    }
+
+    document.getElementById('search').addEventListener('input', render);
+    document.getElementById('sort').addEventListener('change', render);
+  </script>
+</body>
+</html>

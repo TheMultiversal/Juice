@@ -1,0 +1,327 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>People Directory</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1, h2 { color: #000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; text-decoration: none; }
+    .search-box { width: 100%; max-width: 500px; padding: 10px 16px; border-radius: 10px; border: 2px solid rgba(0,0,255,0.3); font-size: 1.05em; outline: none; }
+    .search-box:focus { border-color: #007bff; }
+    .stat-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 5px 12px; border-radius: 8px; font-weight: bold; font-size: 0.92em; }
+    .stat-item span { color: #0056b3; font-size: 1.15em; }
+    .alpha-bar { display: flex; flex-wrap: wrap; gap: 4px; margin: 10px 0; }
+    .alpha-bar a { display: inline-block; width: 30px; text-align: center; padding: 4px 0; border-radius: 6px; background: rgba(0,123,255,0.1); color: #0056b3; text-decoration: none; font-weight: bold; font-size: 0.9em; }
+    .alpha-bar a:hover, .alpha-bar a.active { background: #007bff; color: #fff; }
+    .person-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 10px; margin-top: 12px; }
+    .person-card { background: rgba(240,240,255,0.8); border: 1px solid rgba(0,0,255,0.12); border-radius: 10px; padding: 14px; transition: transform 0.15s, box-shadow 0.15s; display: flex; gap: 12px; align-items: flex-start; }
+    .person-card:hover { transform: translateY(-2px); box-shadow: 0 4px 15px rgba(0,0,255,0.1); }
+    .person-card a.name { font-weight: bold; color: #0000EE; font-size: 1.08em; }
+    .person-bio { font-size: 0.9em; color: #444; line-height: 1.4; margin-top: 5px; max-height: 60px; overflow: hidden; }
+    .person-affiliations { margin-top: 6px; font-size: 0.85em; }
+    .person-affiliations a { color: #0056b3; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 1px 7px; border-radius: 10px; font-size: 0.8em; margin: 1px; }
+    .tag.role-leader { background: rgba(220,53,69,0.12); color: #dc3545; }
+    .tag.role-founder { background: rgba(40,167,69,0.12); color: #28a745; }
+    .tag.role-board { background: rgba(255,193,7,0.15); color: #856404; }
+    .tag.role-academic { background: rgba(111,66,193,0.12); color: #6f42c1; }
+    .letter-header { font-size: 1.4em; font-weight: bold; color: #0056b3; margin: 18px 0 8px 0; padding-bottom: 4px; border-bottom: 2px solid rgba(0,0,255,0.15); }
+    .showing-count { color: #666; font-size: 0.92em; margin: 8px 0; }
+    .filter-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 8px 0; }
+    .filter-select { padding: 6px 12px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.95em; }
+    .avatar { width: 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #667eea, #764ba2); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.15em; flex-shrink: 0; text-transform: uppercase; box-shadow: 0 2px 6px rgba(0,0,0,0.15); }
+    .person-info { flex: 1; min-width: 0; }
+    .person-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 4px; align-items: center; }
+    .person-meta .aff-count { font-size: 0.8em; color: #888; }
+    .sort-bar { display: flex; gap: 8px; align-items: center; margin: 8px 0; }
+    .sort-btn { padding: 4px 12px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.2); background: rgba(0,123,255,0.05); color: #0056b3; cursor: pointer; font-size: 0.88em; }
+    .sort-btn.active { background: #007bff; color: #fff; }
+    .sort-btn:hover { background: rgba(0,123,255,0.15); }
+    .sort-btn.active:hover { background: #0056b3; }
+    .view-toggle { display: flex; gap: 4px; margin-left: auto; }
+    .view-btn { padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.2); background: rgba(0,123,255,0.05); color: #0056b3; cursor: pointer; font-size: 0.88em; }
+    .view-btn.active { background: #007bff; color: #fff; }
+    .person-grid.compact .person-card { padding: 8px 12px; gap: 8px; }
+    .person-grid.compact .avatar { width: 32px; height: 32px; font-size: 0.9em; }
+    .person-grid.compact .person-bio { display: none; }
+    .person-grid.compact .person-affiliations { margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel">
+    <h1>People Directory</h1>
+    <div class="stat-bar" id="stats"></div>
+    <div class="filter-row">
+      <input type="text" class="search-box" id="search" placeholder="Search people by name, bio, or affiliation..." />
+      <select class="filter-select" id="country-filter"><option value="">All Countries</option></select>
+      <select class="filter-select" id="category-filter"><option value="">All Categories</option></select>
+    </div>
+  </div>
+  <div class="panel" id="alpha-panel">
+    <div class="alpha-bar" id="alpha-bar"></div>
+  </div>
+  <div class="showing-count" id="showing"></div>
+  <div class="sort-bar">
+    <span style="font-size:0.9em;color:#666;">Sort:</span>
+    <button class="sort-btn active" data-sort="alpha">A–Z</button>
+    <button class="sort-btn" data-sort="affiliations">Most Affiliations</button>
+    <button class="sort-btn" data-sort="roles">Most Roles</button>
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="full" title="Full cards">▦</button>
+      <button class="view-btn" data-view="compact" title="Compact">≡</button>
+    </div>
+  </div>
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'People Directory — Juice Project', description: 'Browse 820+ individuals connected to religious organizations worldwide.' });
+
+    let allPeople = [];
+    let activeFilter = { text: '', country: '', category: '', letter: '' };
+
+    fetch('/api/people/all')
+      .then(r => r.json())
+      .then(data => {
+        allPeople = data.people;
+
+        // Stats
+        document.getElementById('stats').innerHTML = `
+          <div class="stat-item"><span>${data.total}</span> People</div>
+          <div class="stat-item"><span>${new Set(allPeople.flatMap(p => p.affiliations.map(a => a.country))).size}</span> Countries</div>
+          <div class="stat-item"><span>${new Set(allPeople.flatMap(p => p.affiliations.map(a => a.category)).filter(Boolean)).size}</span> Categories</div>
+        `;
+
+        // Populate filters
+        const countries = new Set();
+        const categories = new Set();
+        allPeople.forEach(p => {
+          p.affiliations.forEach(a => {
+            countries.add(a.country);
+            if (a.category) categories.add(a.category);
+          });
+        });
+        const cf = document.getElementById('country-filter');
+        [...countries].sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; cf.appendChild(o); });
+        const catf = document.getElementById('category-filter');
+        [...categories].sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; catf.appendChild(o); });
+
+        // Alpha bar
+        const alphaBar = document.getElementById('alpha-bar');
+        const allLink = document.createElement('a');
+        allLink.href = '#';
+        allLink.textContent = 'All';
+        allLink.className = 'active';
+        allLink.addEventListener('click', e => { e.preventDefault(); activeFilter.letter = ''; renderPeople(); setActiveLetter(allLink); });
+        alphaBar.appendChild(allLink);
+        for (let i = 65; i <= 90; i++) {
+          const letter = String.fromCharCode(i);
+          const a = document.createElement('a');
+          a.href = '#';
+          a.textContent = letter;
+          a.addEventListener('click', e => { e.preventDefault(); activeFilter.letter = letter; renderPeople(); setActiveLetter(a); });
+          alphaBar.appendChild(a);
+        }
+
+        renderPeople();
+      });
+
+    function setActiveLetter(el) {
+      document.querySelectorAll('.alpha-bar a').forEach(a => a.classList.remove('active'));
+      el.classList.add('active');
+    }
+
+    document.getElementById('search').addEventListener('input', function() {
+      activeFilter.text = this.value.toLowerCase().trim();
+      renderPeople();
+    });
+    document.getElementById('country-filter').addEventListener('change', function() {
+      activeFilter.country = this.value;
+      renderPeople();
+    });
+    document.getElementById('category-filter').addEventListener('change', function() {
+      activeFilter.category = this.value;
+      renderPeople();
+    });
+
+    let currentSort = 'alpha';
+    let currentView = 'full';
+
+    // Avatar color from name
+    function avatarColor(name) {
+      const colors = ['#667eea','#764ba2','#f093fb','#4facfe','#43e97b','#fa709a','#fee140','#30cfd0','#a18cd1','#fbc2eb','#ff9a9e','#fad0c4','#ffecd2','#fcb69f','#ff6e7f','#bfe9ff'];
+      let hash = 0;
+      for (let i = 0; i < name.length; i++) hash = name.charCodeAt(i) + ((hash << 5) - hash);
+      return colors[Math.abs(hash) % colors.length];
+    }
+
+    function roleClass(role) {
+      const r = (role || '').toLowerCase();
+      if (r.includes('founder') || r.includes('founded')) return 'role-founder';
+      if (r.includes('chair') || r.includes('president') || r.includes('director') || r.includes('ceo') || r.includes('head') || r.includes('leader') || r.includes('chief')) return 'role-leader';
+      if (r.includes('board') || r.includes('trustee') || r.includes('governor')) return 'role-board';
+      if (r.includes('professor') || r.includes('rabbi') || r.includes('dean') || r.includes('academic') || r.includes('scholar') || r.includes('teacher')) return 'role-academic';
+      return '';
+    }
+
+    // Sort buttons
+    document.querySelectorAll('.sort-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentSort = btn.dataset.sort;
+        renderPeople();
+      });
+    });
+
+    // View toggle
+    document.querySelectorAll('.view-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentView = btn.dataset.view;
+        renderPeople();
+      });
+    });
+
+    function renderPeople() {
+      let filtered = allPeople;
+
+      if (activeFilter.letter) {
+        filtered = filtered.filter(p => p.name.charAt(0).toUpperCase() === activeFilter.letter);
+      }
+      if (activeFilter.text) {
+        const q = activeFilter.text;
+        filtered = filtered.filter(p =>
+          p.name.toLowerCase().includes(q) ||
+          (p.bio || '').toLowerCase().includes(q) ||
+          p.affiliations.some(a => a.name.toLowerCase().includes(q) || a.country.toLowerCase().includes(q))
+        );
+      }
+      if (activeFilter.country) {
+        filtered = filtered.filter(p => p.affiliations.some(a => a.country === activeFilter.country));
+      }
+      if (activeFilter.category) {
+        filtered = filtered.filter(p => p.affiliations.some(a => a.category === activeFilter.category));
+      }
+
+      // Sort
+      if (currentSort === 'affiliations') {
+        filtered = [...filtered].sort((a, b) => b.affiliations.length - a.affiliations.length);
+      } else if (currentSort === 'roles') {
+        filtered = [...filtered].sort((a, b) => {
+          const ar = a.affiliations.filter(x => x.role).length;
+          const br = b.affiliations.filter(x => x.role).length;
+          return br - ar;
+        });
+      }
+
+      document.getElementById('showing').textContent = `Showing ${filtered.length} of ${allPeople.length} people`;
+
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+
+      // Group by first letter (only for alpha sort)
+      if (currentSort === 'alpha') {
+        const groups = {};
+        filtered.forEach(p => {
+          const letter = p.name.charAt(0).toUpperCase();
+          if (!groups[letter]) groups[letter] = [];
+          groups[letter].push(p);
+        });
+
+        Object.keys(groups).sort().forEach(letter => {
+          const header = document.createElement('div');
+          header.className = 'letter-header';
+          header.textContent = letter;
+          header.id = 'letter-' + letter;
+          container.appendChild(header);
+
+          const grid = document.createElement('div');
+          grid.className = 'person-grid' + (currentView === 'compact' ? ' compact' : '');
+          groups[letter].forEach(p => grid.appendChild(buildCard(p)));
+          container.appendChild(grid);
+        });
+      } else {
+        const grid = document.createElement('div');
+        grid.className = 'person-grid' + (currentView === 'compact' ? ' compact' : '');
+        filtered.forEach(p => grid.appendChild(buildCard(p)));
+        container.appendChild(grid);
+      }
+    }
+
+    function buildCard(p) {
+      const card = document.createElement('div');
+      card.className = 'person-card';
+
+      // Avatar
+      const avatar = document.createElement('div');
+      avatar.className = 'avatar';
+      const initials = p.name.split(' ').map(w => w.charAt(0)).slice(0, 2).join('');
+      avatar.textContent = initials;
+      const bgColor = avatarColor(p.name);
+      avatar.style.background = `linear-gradient(135deg, ${bgColor}, ${bgColor}dd)`;
+      card.appendChild(avatar);
+
+      const info = document.createElement('div');
+      info.className = 'person-info';
+
+      const nameLink = document.createElement('a');
+      nameLink.className = 'name';
+      nameLink.href = 'person.html?id=' + encodeURIComponent(p.id);
+      nameLink.textContent = p.name;
+      info.appendChild(nameLink);
+
+      // Meta row
+      const meta = document.createElement('div');
+      meta.className = 'person-meta';
+      meta.innerHTML = `<span class="aff-count">${p.affiliations.length} affiliation${p.affiliations.length !== 1 ? 's' : ''}</span>`;
+      info.appendChild(meta);
+
+      if (p.bio) {
+        const bio = document.createElement('div');
+        bio.className = 'person-bio';
+        bio.textContent = p.bio.length > 150 ? p.bio.substring(0, 150) + '...' : p.bio;
+        info.appendChild(bio);
+      }
+
+      if (p.affiliations.length > 0) {
+        const affDiv = document.createElement('div');
+        affDiv.className = 'person-affiliations';
+        p.affiliations.slice(0, 3).forEach((a, i) => {
+          const link = document.createElement('a');
+          link.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(a.entryId);
+          link.textContent = a.name;
+          affDiv.appendChild(link);
+          if (a.role) {
+            const role = document.createElement('span');
+            role.className = 'tag ' + roleClass(a.role);
+            role.textContent = a.role;
+            affDiv.appendChild(role);
+          }
+          if (i < Math.min(p.affiliations.length, 3) - 1) affDiv.appendChild(document.createTextNode(' · '));
+        });
+        if (p.affiliations.length > 3) {
+          affDiv.appendChild(document.createTextNode(` +${p.affiliations.length - 3} more`));
+        }
+        info.appendChild(affDiv);
+      }
+
+      card.appendChild(info);
+      return card;
+    }
+  </script>
+</body>
+</html>

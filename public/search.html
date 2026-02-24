@@ -1,0 +1,180 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1, h2, h3 { color: #000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; text-decoration: none; }
+    .search-container { display: flex; gap: 10px; align-items: center; }
+    .search-input { flex: 1; max-width: 600px; padding: 12px 18px; border-radius: 10px; border: 2px solid rgba(0,0,255,0.3); font-size: 1.1em; outline: none; transition: border-color 0.2s; }
+    .search-input:focus { border-color: #007bff; }
+    .result-tabs { display: flex; gap: 5px; margin: 12px 0; }
+    .tab { padding: 8px 18px; border-radius: 8px 8px 0 0; cursor: pointer; background: rgba(0,123,255,0.08); border: 1px solid rgba(0,0,255,0.15); border-bottom: none; font-weight: bold; color: #555; }
+    .tab.active { background: rgba(255,255,255,0.95); color: #0056b3; border-color: rgba(0,0,255,0.3); }
+    .tab .count { font-size: 0.85em; background: rgba(0,123,255,0.15); padding: 1px 8px; border-radius: 10px; margin-left: 5px; }
+    .result-section { display: none; }
+    .result-section.active { display: block; }
+    .result-card { margin: 6px 0; padding: 10px 14px; background: rgba(240,240,255,0.7); border-radius: 8px; border: 1px solid rgba(0,0,255,0.1); }
+    .result-card a.name { font-weight: bold; color: #0000EE; font-size: 1.05em; }
+    .result-meta { font-size: 0.88em; color: #555; margin-top: 3px; }
+    .result-desc { font-size: 0.93em; color: #333; margin-top: 4px; line-height: 1.4; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; margin: 2px; }
+    .highlight { background: rgba(255,255,0,0.4); padding: 0 2px; border-radius: 3px; font-weight: bold; }
+    .no-results { color: #666; font-style: italic; padding: 20px; text-align: center; }
+    .result-card .result-founded { font-size: 0.84em; color: #777; }
+    .result-card .result-website { font-size: 0.84em; }
+    .result-card .result-website a { color: #0056b3; }
+    .stat-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 8px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 5px 12px; border-radius: 8px; font-weight: bold; font-size: 0.9em; }
+    .stat-item span { color: #0056b3; font-size: 1.1em; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel">
+    <h1>Global Search</h1>
+    <div class="search-container">
+      <input type="text" class="search-input" id="search-input" placeholder="Search entries, people, connections..." autofocus />
+    </div>
+    <div class="stat-bar" id="search-stats" style="display:none"></div>
+  </div>
+  <div class="result-tabs" id="tabs" style="display:none">
+    <div class="tab active" data-tab="entries">Organizations <span class="count" id="tab-entries-count">0</span></div>
+    <div class="tab" data-tab="people">People <span class="count" id="tab-people-count">0</span></div>
+    <div class="tab" data-tab="connections">Connections <span class="count" id="tab-connections-count">0</span></div>
+  </div>
+  <div class="result-section active" id="section-entries"></div>
+  <div class="result-section" id="section-people"></div>
+  <div class="result-section" id="section-connections"></div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'Search — Juice Project', description: 'Search across organizations, people, and connections in the Juice religious organizations database.' });
+
+    let searchTimeout = null;
+    const input = document.getElementById('search-input');
+
+    // Check URL for initial query
+    const urlQ = new URLSearchParams(window.location.search).get('q');
+    if (urlQ) { input.value = urlQ; doSearch(urlQ); }
+
+    input.addEventListener('input', function() {
+      clearTimeout(searchTimeout);
+      const q = this.value.trim();
+      if (q.length < 2) { clearResults(); return; }
+      searchTimeout = setTimeout(() => doSearch(q), 300);
+    });
+
+    // Tab switching
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.result-section').forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById('section-' + this.dataset.tab).classList.add('active');
+      });
+    });
+
+    function clearResults() {
+      document.getElementById('tabs').style.display = 'none';
+      document.getElementById('search-stats').style.display = 'none';
+      ['entries','people','connections'].forEach(s => document.getElementById('section-' + s).innerHTML = '');
+    }
+
+    function highlightText(text, query) {
+      if (!text || !query) return text || '';
+      // Support multi-word highlighting: split query and highlight each word
+      const words = query.trim().split(/\s+/).filter(w => w.length > 1);
+      let result = text;
+      words.forEach(word => {
+        const regex = new RegExp('(' + word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        result = result.replace(regex, '<span class="highlight">$1</span>');
+      });
+      // Also highlight full phrase
+      if (words.length > 1) {
+        const fullRegex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+        result = result.replace(fullRegex, '<span class="highlight">$1</span>');
+      }
+      return result;
+    }
+
+    function doSearch(q) {
+      fetch('/api/search?q=' + encodeURIComponent(q))
+        .then(r => r.json())
+        .then(data => {
+          document.getElementById('tabs').style.display = 'flex';
+          document.getElementById('tab-entries-count').textContent = data.entries.length;
+          document.getElementById('tab-people-count').textContent = data.people.length;
+          document.getElementById('tab-connections-count').textContent = data.connections.length;
+
+          const total = data.entries.length + data.people.length + data.connections.length;
+          const stats = document.getElementById('search-stats');
+          stats.style.display = 'flex';
+          stats.innerHTML = `<div class="stat-item"><span>${total}</span> results for "<strong>${q}</strong>"</div>`;
+
+          // Entries
+          const eDiv = document.getElementById('section-entries');
+          eDiv.innerHTML = '';
+          if (data.entries.length === 0) { eDiv.innerHTML = '<div class="no-results panel">No matching organizations found</div>'; }
+          data.entries.forEach(e => {
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.innerHTML = `
+              <a class="name" href="entry.html?religion=jewish&id=${encodeURIComponent(e.id)}">${highlightText(e.name, q)}</a>
+              <div class="result-meta">
+                <a href="country.html?religion=jewish&country=${encodeURIComponent(e.country)}">${e.country}</a>
+                <span class="tag">${highlightText(e.category || '', q)}</span>
+                <span style="color:#777">${highlightText(e.type || '', q)}</span>
+                ${e.founded ? '<span class="result-founded">Est. ' + e.founded + '</span>' : ''}
+              </div>
+              <div class="result-desc">${highlightText(e.description, q)}</div>
+              ${e.website ? '<div class="result-website"><a href="' + e.website + '" target="_blank">' + e.website.replace('https://','').replace('http://','') + '</a></div>' : ''}
+            `;
+            eDiv.appendChild(card);
+          });
+
+          // People
+          const pDiv = document.getElementById('section-people');
+          pDiv.innerHTML = '';
+          if (data.people.length === 0) { pDiv.innerHTML = '<div class="no-results panel">No matching people found</div>'; }
+          data.people.forEach(p => {
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.innerHTML = `
+              <a class="name" href="person.html?id=${encodeURIComponent(p.id)}">${highlightText(p.name, q)}</a>
+              <div class="result-desc">${highlightText(p.bio, q)}</div>
+            `;
+            pDiv.appendChild(card);
+          });
+
+          // Connections
+          const cDiv = document.getElementById('section-connections');
+          cDiv.innerHTML = '';
+          if (data.connections.length === 0) { cDiv.innerHTML = '<div class="no-results panel">No matching connections found</div>'; }
+          data.connections.forEach(c => {
+            const card = document.createElement('div');
+            card.className = 'result-card';
+            card.innerHTML = `
+              <strong>${highlightText(c.connection.name, q)}</strong>
+              ${c.connection.type ? '<span class="tag">' + c.connection.type + '</span>' : ''}
+              <div class="result-meta">Found in: <a href="entry.html?religion=jewish&id=${encodeURIComponent(c.entryId)}">${c.entryName}</a> (${c.country})</div>
+              <div class="result-desc">${highlightText(c.connection.description || '', q)}</div>
+            `;
+            cDiv.appendChild(card);
+          });
+        });
+    }
+  </script>
+</body>
+</html>

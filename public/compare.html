@@ -1,0 +1,187 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Entries</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .main { max-width: 1400px; margin: 0 auto; padding: 15px 20px; }
+    h1 { margin: 0 0 5px 0; }
+    .subtitle { color: #555; margin: 0 0 15px 0; }
+    .search-section { background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px; padding: 15px; margin-bottom: 20px; }
+    .search-section h3 { margin: 0 0 10px 0; color: #0056b3; }
+    .search-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+    .search-row input { flex: 1; min-width: 200px; padding: 8px 12px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.95em; }
+    .btn { padding: 8px 18px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.1); color: #0056b3; font-weight: bold; cursor: pointer; }
+    .btn:hover { background: rgba(0,123,255,0.25); }
+    .btn-sm { padding: 4px 10px; font-size: 0.85em; }
+    .btn-danger { background: rgba(255,0,0,0.1); color: #c00; border-color: rgba(255,0,0,0.3); }
+    .selected-entries { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0; }
+    .selected-tag { display: inline-flex; align-items: center; gap: 5px; background: rgba(0,123,255,0.12); color: #0056b3; padding: 4px 10px; border-radius: 16px; font-size: 0.9em; }
+    .selected-tag button { background: none; border: none; color: #c00; cursor: pointer; font-size: 1.1em; padding: 0; }
+    .suggestions { max-height: 200px; overflow-y: auto; border: 1px solid rgba(0,0,255,0.1); border-radius: 6px; margin-top: 5px; }
+    .suggestion { padding: 8px 12px; cursor: pointer; border-bottom: 1px solid rgba(0,0,255,0.05); }
+    .suggestion:hover { background: rgba(0,123,255,0.05); }
+    .comparison-grid { display: grid; gap: 15px; margin-top: 20px; }
+    .comp-card { background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px; padding: 15px; }
+    .comp-card h3 { margin: 0 0 5px 0; }
+    .comp-card h3 a { color: #0000EE; text-decoration: none; }
+    .comp-row { display: flex; gap: 5px; margin: 4px 0; }
+    .comp-label { font-weight: bold; min-width: 100px; color: #555; font-size: 0.9em; }
+    .comp-value { font-size: 0.9em; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.82em; margin: 2px; }
+    .shared-section { background: rgba(0,200,0,0.05); border: 1px solid rgba(0,200,0,0.2); border-radius: 12px; padding: 15px; margin-top: 15px; }
+    .shared-section h3 { color: #2e7d32; margin: 0 0 10px 0; }
+    .person-card { padding: 6px 10px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.1); margin: 4px 0; }
+    .person-card a { color: #0000EE; font-weight: bold; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="main">
+    <h1>Compare Entries</h1>
+    <p class="subtitle">Select 2-4 entries to compare side-by-side</p>
+
+    <div class="search-section">
+      <h3>Add Entries to Compare</h3>
+      <div class="search-row">
+        <input type="text" id="search-input" placeholder="Search for an entry..." />
+        <button class="btn" id="compare-btn" disabled>Compare</button>
+        <button class="btn btn-danger btn-sm" id="clear-btn">Clear All</button>
+      </div>
+      <div class="suggestions" id="suggestions" style="display:none"></div>
+      <div class="selected-entries" id="selected"></div>
+    </div>
+
+    <div id="comparison-results"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    const selectedEntries = [];
+    const maxEntries = 4;
+
+    // URL param support
+    const urlIds = new URLSearchParams(window.location.search).get('ids');
+
+    let searchTimeout;
+    const searchInput = document.getElementById('search-input');
+    const suggestionsEl = document.getElementById('suggestions');
+
+    searchInput.addEventListener('input', function() {
+      clearTimeout(searchTimeout);
+      const q = this.value.trim();
+      if (q.length < 2) { suggestionsEl.style.display = 'none'; return; }
+      searchTimeout = setTimeout(() => {
+        fetch('/api/search?q=' + encodeURIComponent(q)).then(r => r.json()).then(data => {
+          suggestionsEl.innerHTML = '';
+          suggestionsEl.style.display = data.entries.length ? 'block' : 'none';
+          data.entries.slice(0, 8).forEach(e => {
+            if (selectedEntries.includes(e.id)) return;
+            const div = document.createElement('div');
+            div.className = 'suggestion';
+            div.innerHTML = `<strong>${e.name}</strong> <span style="color:#555;font-size:0.85em">${e.country} · ${e.category}</span>`;
+            div.addEventListener('click', () => addEntry(e.id, e.name));
+            suggestionsEl.appendChild(div);
+          });
+        });
+      }, 250);
+    });
+
+    function addEntry(id, name) {
+      if (selectedEntries.includes(id) || selectedEntries.length >= maxEntries) return;
+      selectedEntries.push(id);
+      renderSelected();
+      searchInput.value = '';
+      suggestionsEl.style.display = 'none';
+    }
+
+    function removeEntry(id) {
+      const idx = selectedEntries.indexOf(id);
+      if (idx >= 0) selectedEntries.splice(idx, 1);
+      renderSelected();
+    }
+
+    function renderSelected() {
+      const container = document.getElementById('selected');
+      container.innerHTML = '';
+      selectedEntries.forEach(id => {
+        const tag = document.createElement('span');
+        tag.className = 'selected-tag';
+        tag.innerHTML = `${id} <button onclick="removeEntry('${id}')">&times;</button>`;
+        container.appendChild(tag);
+      });
+      document.getElementById('compare-btn').disabled = selectedEntries.length < 2;
+    }
+
+    document.getElementById('compare-btn').addEventListener('click', doCompare);
+    document.getElementById('clear-btn').addEventListener('click', () => { selectedEntries.length = 0; renderSelected(); document.getElementById('comparison-results').innerHTML = ''; });
+
+    function doCompare() {
+      const ids = selectedEntries.join(',');
+      fetch('/api/compare?ids=' + encodeURIComponent(ids)).then(r => r.json()).then(data => {
+        const container = document.getElementById('comparison-results');
+        container.innerHTML = '';
+
+        // Update URL
+        history.replaceState(null, '', 'compare.html?ids=' + encodeURIComponent(ids));
+
+        const grid = document.createElement('div');
+        grid.className = 'comparison-grid';
+        grid.style.gridTemplateColumns = `repeat(${data.entries.length}, 1fr)`;
+
+        data.entries.forEach(entry => {
+          const card = document.createElement('div');
+          card.className = 'comp-card';
+          card.innerHTML = `
+            <h3><a href="entry.html?religion=jewish&id=${encodeURIComponent(entry.id)}">${entry.name}</a></h3>
+            <div class="comp-row"><span class="comp-label">Type:</span><span class="comp-value">${entry.type}</span></div>
+            <div class="comp-row"><span class="comp-label">Category:</span><span class="comp-value"><span class="tag">${entry.category || 'N/A'}</span></span></div>
+            <div class="comp-row"><span class="comp-label">Country:</span><span class="comp-value">${entry.country}</span></div>
+            <div class="comp-row"><span class="comp-label">Founded:</span><span class="comp-value">${entry.founded || 'N/A'}</span></div>
+            <div class="comp-row"><span class="comp-label">Website:</span><span class="comp-value">${entry.website ? '<a href="' + entry.website + '" target="_blank" style="color:#0000EE">' + entry.website + '</a>' : 'N/A'}</span></div>
+            <div class="comp-row"><span class="comp-label">People:</span><span class="comp-value">${(entry.individuals || []).length}</span></div>
+            <div class="comp-row"><span class="comp-label">Connections:</span><span class="comp-value">${(entry.connections || []).length}</span></div>
+            <div style="margin-top:8px"><span class="comp-label">Description:</span><p class="comp-value" style="line-height:1.4">${(entry.description || '').substring(0, 300)}...</p></div>
+            <div style="margin-top:6px"><span class="comp-label">Key People:</span>
+              ${(entry.individuals || []).map(p => '<div class="person-card"><a href="person.html?id=' + encodeURIComponent(p.id) + '">' + p.name + '</a> — ' + p.role + '</div>').join('')}
+            </div>
+          `;
+          grid.appendChild(card);
+        });
+
+        container.appendChild(grid);
+
+        // Shared people
+        if (data.sharedPeople && data.sharedPeople.length > 0) {
+          const shared = document.createElement('div');
+          shared.className = 'shared-section';
+          shared.innerHTML = '<h3>Shared People Between Entries</h3>';
+          data.sharedPeople.forEach(sp => {
+            const div = document.createElement('div');
+            div.innerHTML = `<strong>${sp.entries.join(' &harr; ')}</strong>: ${sp.people.length} shared individual(s) - ${sp.people.join(', ')}`;
+            shared.appendChild(div);
+          });
+          container.appendChild(shared);
+        }
+      });
+    }
+
+    // Auto-load from URL
+    if (urlIds) {
+      urlIds.split(',').forEach(id => selectedEntries.push(id.trim()));
+      renderSelected();
+      if (selectedEntries.length >= 2) doCompare();
+    }
+  </script>
+</body>
+</html>

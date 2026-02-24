@@ -1,0 +1,152 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1, h2, h3 { color: #000; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; text-decoration: none; }
+    .back-link { font-weight: bold; text-decoration: none; color: #0000EE; }
+    .tag { display: inline-block; background: rgba(0,123,255,0.12); color: #0056b3; padding: 2px 8px; border-radius: 12px; font-size: 0.85em; margin: 2px; }
+    .country-group { margin-bottom: 15px; }
+    .country-group h3 a { color: #0000EE; text-decoration: none; }
+    .entry-card { margin: 8px 0; padding: 12px; background: rgba(240,240,255,0.7); border-radius: 8px; border: 1px solid rgba(0,0,255,0.12); }
+    .entry-card a.entry-name { font-weight: bold; color: #0000EE; font-size: 1.05em; }
+    .entry-type { display: inline-block; font-style: italic; color: #555; font-size: 0.9em; margin-left: 8px; }
+    .entry-desc { margin-top: 5px; color: #333; line-height: 1.5; font-size: 0.95em; }
+    .stat-bar { display: flex; gap: 15px; flex-wrap: wrap; margin: 10px 0; }
+    .stat-item { background: rgba(0,123,255,0.08); padding: 6px 14px; border-radius: 8px; font-weight: bold; }
+    .stat-item span { font-size: 1.3em; color: #0056b3; }
+    .search-box { width: 100%; max-width: 400px; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.3); font-size: 1em; margin: 5px 0; }
+    .country-toc { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+    .country-toc a { background: rgba(0,123,255,0.1); padding: 4px 12px; border-radius: 15px; color: #0056b3; text-decoration: none; font-size: 0.9em; }
+    .country-toc a:hover { background: rgba(0,123,255,0.25); }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel"><a href="categories.html" class="back-link">&#8592; All Categories</a></div>
+  <div class="panel">
+    <h1 id="cat-name">Loading...</h1>
+    <div class="stat-bar" id="stats"></div>
+    <input type="text" class="search-box" id="entry-search" placeholder="Search entries in this category..." />
+  </div>
+  <div class="panel" id="toc-panel" style="display:none">
+    <h3>Countries</h3>
+    <div class="country-toc" id="country-toc"></div>
+  </div>
+  <div id="results"></div>
+
+  <script src="app.js"></script>
+  <script>
+    const religion = new URLSearchParams(window.location.search).get('religion') || 'jewish';
+    const category = new URLSearchParams(window.location.search).get('category');
+
+    initPage(religion);
+
+    if (!category) {
+      document.getElementById('cat-name').textContent = 'No category specified';
+    } else {
+      document.title = category + ' - Category';
+      document.getElementById('cat-name').textContent = category;
+
+      fetch(`/api/${religion}/category/${encodeURIComponent(category)}`)
+        .then(r => r.json())
+        .then(data => {
+          // Stats
+          const stats = document.getElementById('stats');
+          const countries = Object.keys(data.countries);
+          stats.innerHTML = `
+            <div class="stat-item"><span>${data.totalEntries}</span> Entries</div>
+            <div class="stat-item"><span>${countries.length}</span> Countries</div>
+          `;
+
+          // Country table of contents
+          if (countries.length > 1) {
+            const tocPanel = document.getElementById('toc-panel');
+            tocPanel.style.display = '';
+            const toc = document.getElementById('country-toc');
+            countries.sort().forEach(c => {
+              const a = document.createElement('a');
+              a.href = '#country-' + c.replace(/\s+/g, '-');
+              a.textContent = c + ' (' + data.countries[c].length + ')';
+              toc.appendChild(a);
+            });
+          }
+
+          renderEntries(data.countries);
+
+          // Search
+          document.getElementById('entry-search').addEventListener('input', function() {
+            const q = this.value.toLowerCase();
+            const filtered = {};
+            for (const c in data.countries) {
+              const matches = data.countries[c].filter(e =>
+                e.name.toLowerCase().includes(q) ||
+                (e.type || '').toLowerCase().includes(q) ||
+                (e.description || '').toLowerCase().includes(q)
+              );
+              if (matches.length > 0) filtered[c] = matches;
+            }
+            renderEntries(filtered);
+          });
+        });
+    }
+
+    function renderEntries(countriesData) {
+      const container = document.getElementById('results');
+      container.innerHTML = '';
+      const sorted = Object.entries(countriesData).sort((a, b) => b[1].length - a[1].length);
+
+      sorted.forEach(([countryName, entries]) => {
+        const group = document.createElement('div');
+        group.className = 'country-group panel';
+        group.id = 'country-' + countryName.replace(/\s+/g, '-');
+
+        const h3 = document.createElement('h3');
+        const countryLink = document.createElement('a');
+        countryLink.href = `country.html?religion=${encodeURIComponent(religion)}&country=${encodeURIComponent(countryName)}`;
+        countryLink.textContent = countryName + ' (' + entries.length + ')';
+        h3.appendChild(countryLink);
+        group.appendChild(h3);
+
+        entries.forEach(entry => {
+          const card = document.createElement('div');
+          card.className = 'entry-card';
+
+          const nameLink = document.createElement('a');
+          nameLink.className = 'entry-name';
+          nameLink.href = `entry.html?religion=${encodeURIComponent(religion)}&id=${encodeURIComponent(entry.id)}`;
+          nameLink.textContent = entry.name;
+          card.appendChild(nameLink);
+
+          const typeSpan = document.createElement('span');
+          typeSpan.className = 'entry-type';
+          typeSpan.textContent = entry.type;
+          card.appendChild(typeSpan);
+
+          if (entry.description) {
+            const desc = document.createElement('p');
+            desc.className = 'entry-desc';
+            desc.textContent = entry.description.length > 200 ? entry.description.substring(0, 200) + '...' : entry.description;
+            card.appendChild(desc);
+          }
+
+          group.appendChild(card);
+        });
+
+        container.appendChild(group);
+      });
+    }
+  </script>
+</body>
+</html>

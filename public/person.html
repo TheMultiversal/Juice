@@ -1,0 +1,121 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Person Details</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
+    h1 { color: #000; }
+    h2 { margin-top: 15px; margin-bottom: 8px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel a { color: #0000EE; }
+    .back-link { font-weight: bold; text-decoration: none; color: #0000EE; }
+    .person-header { font-size: 1.8em; margin: 0; }
+    .affiliation-card { margin: 8px 0; padding: 10px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.15); }
+    .affiliation-card a { font-weight: bold; color: #0000EE; font-size: 1.05em; }
+    .co-person { display: inline-block; margin: 3px 2px; }
+    .co-person a { color: #0000EE; font-size: 0.95em; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="panel"><a href="index.html" class="back-link">&#8592; Back to full list</a></div>
+  <div class="panel">
+    <h1 class="person-header" id="person-name">Loading...</h1>
+  </div>
+  <div class="panel" id="person-bio-panel">
+    <h2>Biography</h2>
+    <p id="person-bio" style="line-height:1.6"></p>
+  </div>
+  <div class="panel">
+    <h2>Affiliations</h2>
+    <div id="affiliations-list"></div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    function slugify(str) {
+      return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+    }
+    const id = new URLSearchParams(window.location.search).get('id');
+    const religion = new URLSearchParams(window.location.search).get('religion') || 'jewish';
+    initPage(religion);
+    if (!id) {
+      document.body.textContent = 'Person id missing';
+    } else {
+      fetch('/api/person/' + encodeURIComponent(id))
+        .then(r => r.ok ? r.json() : Promise.reject('Not found'))
+        .then(person => {
+          document.title = person.name + ' - Person Details';
+          document.getElementById('person-name').textContent = person.name;
+
+          // Bookmark button
+          const bmBtn = document.createElement('button');
+          bmBtn.style.cssText = 'margin-left:12px;padding:5px 14px;border-radius:16px;border:1px solid rgba(0,0,255,0.3);cursor:pointer;font-size:0.85em;vertical-align:middle;';
+          function updateBmBtn() {
+            const saved = BookmarkManager.isPersonBookmarked(id);
+            bmBtn.textContent = saved ? '★ Bookmarked' : '☆ Bookmark';
+            bmBtn.style.background = saved ? 'rgba(255,193,7,0.2)' : 'rgba(0,123,255,0.1)';
+            bmBtn.style.color = saved ? '#b8860b' : '#0056b3';
+          }
+          updateBmBtn();
+          bmBtn.addEventListener('click', () => {
+            if (BookmarkManager.isPersonBookmarked(id)) { BookmarkManager.removePerson(id); }
+            else { BookmarkManager.addPerson({ id, name: person.name, bio: (person.bio || '').substring(0, 200) }); }
+            updateBmBtn();
+          });
+          document.getElementById('person-name').appendChild(bmBtn);
+
+          document.getElementById('person-bio').textContent = person.bio || 'No biography available.';
+          const list = document.getElementById('affiliations-list');
+          if (person.affiliations && person.affiliations.length) {
+            person.affiliations.forEach(a => {
+              const card = document.createElement('div');
+              card.className = 'affiliation-card';
+              const orgLink = document.createElement('a');
+              orgLink.href = 'entry.html?religion=' + encodeURIComponent(a.religion) + '&id=' + encodeURIComponent(slugify(a.organization));
+              orgLink.textContent = a.organization;
+              card.appendChild(orgLink);
+              card.appendChild(document.createTextNode(' \u2014 ' + (a.role || '') + ' \u2014 '));
+              const countryLink = document.createElement('a');
+              countryLink.href = 'country.html?religion=' + encodeURIComponent(a.religion) + '&country=' + encodeURIComponent(a.country);
+              countryLink.textContent = a.country;
+              countryLink.style.fontWeight = 'normal';
+              card.appendChild(countryLink);
+              // Co-individuals
+              if (a.coIndividuals && a.coIndividuals.length) {
+                const coDiv = document.createElement('div');
+                coDiv.style.marginTop = '6px';
+                coDiv.appendChild(document.createTextNode('Also at this org: '));
+                a.coIndividuals.forEach((co, i) => {
+                  const span = document.createElement('span');
+                  span.className = 'co-person';
+                  const coLink = document.createElement('a');
+                  coLink.href = 'person.html?id=' + encodeURIComponent(co.id);
+                  coLink.textContent = co.name;
+                  span.appendChild(coLink);
+                  if (i < a.coIndividuals.length - 1) span.appendChild(document.createTextNode(', '));
+                  coDiv.appendChild(span);
+                });
+                card.appendChild(coDiv);
+              }
+              list.appendChild(card);
+            });
+          } else {
+            list.textContent = 'No affiliations found.';
+          }
+        })
+        .catch(err => {
+          document.getElementById('person-name').textContent = String(err);
+        });
+    }
+  </script>
+</body>
+</html>

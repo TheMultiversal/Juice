@@ -1,0 +1,295 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network Graph</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; overflow: hidden; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .controls { position: fixed; top: 60px; left: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 12px; max-width: 280px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    .controls h3 { margin: 0 0 8px 0; color: #0056b3; font-size: 1em; }
+    .controls select, .controls input { width: 100%; padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); margin: 3px 0; font-size: 0.9em; box-sizing: border-box; }
+    .controls label { font-size: 0.85em; color: #444; display: block; margin-top: 6px; }
+    .controls button { width: 100%; padding: 8px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); background: rgba(0,123,255,0.1); color: #0056b3; font-weight: bold; cursor: pointer; margin-top: 6px; }
+    .controls button:hover { background: rgba(0,123,255,0.25); }
+    .legend { position: fixed; bottom: 15px; left: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px; max-width: 280px; max-height: 200px; overflow-y: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.82em; margin: 2px 0; cursor: pointer; }
+    .legend-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .tooltip { position: fixed; background: rgba(0,0,0,0.85); color: #fff; padding: 8px 14px; border-radius: 8px; font-size: 0.88em; pointer-events: none; z-index: 20; max-width: 300px; line-height: 1.4; display: none; }
+    #graph { width: 100vw; height: calc(100vh - 50px); }
+    .node-label { font-size: 10px; fill: #333; pointer-events: none; font-weight: bold; }
+    .link { stroke-width: 1.5px; }
+    .link:hover { stroke-width: 3px; opacity: 1; }
+    .node-count { position: fixed; top: 60px; right: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px 14px; font-size: 0.9em; }
+    .node-count span { color: #0056b3; font-weight: bold; }
+    .edge-legend { position: fixed; bottom: 15px; right: 15px; z-index: 10; background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.3); border-radius: 10px; padding: 10px; max-width: 200px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .edge-legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.82em; margin: 3px 0; }
+    .edge-legend-line { width: 24px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="controls">
+    <h3>Network Graph Controls</h3>
+    <label>Filter by Country:</label>
+    <select id="country-select"><option value="">All Countries</option></select>
+    <label>Filter by Category:</label>
+    <select id="category-select"><option value="">All Categories</option></select>
+    <label>Node Size:</label>
+    <input type="range" id="node-size" min="3" max="20" value="8" />
+    <label>Link Distance:</label>
+    <input type="range" id="link-dist" min="30" max="300" value="100" />
+    <label><input type="checkbox" id="show-labels" checked /> Show Labels</label>
+    <button id="reload-btn">Reload Graph</button>
+    <button id="reset-btn">Reset Zoom</button>
+  </div>
+  <div class="node-count" id="node-count"></div>
+  <div class="legend" id="legend"></div>
+  <div class="edge-legend" id="edge-legend"></div>
+  <div class="tooltip" id="tooltip"></div>
+  <svg id="graph"></svg>
+
+  <script src="app.js"></script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'Network Graph — Juice Project', description: 'Interactive network visualization showing connections between religious organizations.' });
+
+    const categoryColors = {
+      'Entertainment & Media': '#e74c3c',
+      'Religion & Synagogues': '#9b59b6',
+      'Culture & Arts': '#e67e22',
+      'Technology': '#2ecc71',
+      'Community & Social Organizations': '#3498db',
+      'Education & Academia': '#1abc9c',
+      'Representative & Umbrella Bodies': '#f39c12',
+      'Heritage & Memorials': '#8e44ad',
+      'Charity & Philanthropy': '#e91e63',
+      'Investment & Private Equity': '#00bcd4',
+      'Real Estate & Property': '#795548',
+      'Sports': '#ff5722',
+      'Advocacy & Public Affairs': '#607d8b',
+      'Healthcare & Pharmaceuticals': '#4caf50',
+      'Banking & Financial Services': '#ff9800',
+      'Research & Think Tanks': '#673ab7',
+      'Retail & E-Commerce': '#009688',
+      'Defense & Security': '#f44336',
+      'Food & Beverage': '#8bc34a',
+      'Conglomerates & Holding Companies': '#9e9e9e',
+      'Government & Diplomacy': '#3f51b5',
+      'Fashion & Consumer Goods': '#ff4081',
+      'Manufacturing & Industry': '#757575',
+      'Law Firms': '#455a64',
+      'Notable Individuals': '#ffc107',
+      'Transportation': '#00acc1',
+      'Advertising & PR': '#d81b60',
+      'Telecommunications': '#7c4dff',
+      'Utilities & Energy': '#66bb6a'
+    };
+    const defaultColor = '#90a4ae';
+
+    const edgeTypeColors = {
+      'financial': '#ff9800',
+      'shared-person': '#9c27b0',
+      'political': '#f44336',
+      'organizational': '#2196f3',
+      'ideological': '#4caf50',
+      'historical': '#795548',
+      'legal': '#607d8b',
+      'related': '#90a4ae',
+      'partnership': '#00bcd4',
+      'subsidiary': '#ff5722',
+      'funding': '#ffc107',
+      'membership': '#3f51b5',
+      'affiliation': '#e91e63',
+      'leadership': '#8e44ad',
+      'collaboration': '#1abc9c'
+    };
+    const defaultEdgeColor = '#aab';
+
+    // Populate country/category dropdowns
+    fetch('/api/jewish/categories').then(r => r.json()).then(data => {
+      const catSel = document.getElementById('category-select');
+      Object.keys(data.categories).sort().forEach(c => {
+        const o = document.createElement('option');
+        o.value = c; o.textContent = c + ' (' + data.categories[c].count + ')';
+        catSel.appendChild(o);
+      });
+    });
+    fetch('/api/countries').then(r => r.json()).then(data => {
+      const countrySel = document.getElementById('country-select');
+      const countries = Array.isArray(data) ? data : (data.countries || []);
+      countries.sort().forEach(c => {
+        const o = document.createElement('option');
+        o.value = c; o.textContent = c;
+        countrySel.appendChild(o);
+      });
+    });
+
+    let simulation, svgG, zoom;
+
+    function loadGraph() {
+      const country = document.getElementById('country-select').value;
+      const category = document.getElementById('category-select').value;
+      let url = '/api/graph?';
+      if (country) url += 'country=' + encodeURIComponent(country) + '&';
+      if (category) url += 'category=' + encodeURIComponent(category);
+
+      fetch(url).then(r => r.json()).then(data => {
+        renderGraph(data);
+      });
+    }
+
+    function renderGraph(data) {
+      const svg = d3.select('#graph');
+      svg.selectAll('*').remove();
+
+      const width = window.innerWidth;
+      const height = window.innerHeight - 50;
+      svg.attr('width', width).attr('height', height);
+
+      document.getElementById('node-count').innerHTML = `<span>${data.nodes.length}</span> nodes · <span>${data.links.length}</span> links`;
+
+      // Legend
+      const cats = [...new Set(data.nodes.map(n => n.category))].sort();
+      const legend = document.getElementById('legend');
+      legend.innerHTML = '<strong style="font-size:0.85em">Categories</strong>';
+      cats.forEach(c => {
+        const item = document.createElement('div');
+        item.className = 'legend-item';
+        const dot = document.createElement('div');
+        dot.className = 'legend-dot';
+        dot.style.background = categoryColors[c] || defaultColor;
+        item.appendChild(dot);
+        item.appendChild(document.createTextNode(c || 'Other'));
+        legend.appendChild(item);
+      });
+
+      // Setup zoom
+      zoom = d3.zoom().scaleExtent([0.1, 8]).on('zoom', e => svgG.attr('transform', e.transform));
+      svg.call(zoom);
+
+      svgG = svg.append('g');
+
+      const nodeSize = +document.getElementById('node-size').value;
+      const linkDist = +document.getElementById('link-dist').value;
+
+      // Build simulation
+      simulation = d3.forceSimulation(data.nodes)
+        .force('link', d3.forceLink(data.links).id(d => d.id).distance(linkDist))
+        .force('charge', d3.forceManyBody().strength(-80))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(nodeSize + 2));
+
+      // Edge legend
+      const edgeTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
+      const edgeLegend = document.getElementById('edge-legend');
+      edgeLegend.innerHTML = '<strong style="font-size:0.85em">Connection Types</strong>';
+      edgeTypes.forEach(t => {
+        const item = document.createElement('div');
+        item.className = 'edge-legend-item';
+        const line = document.createElement('div');
+        line.className = 'edge-legend-line';
+        line.style.background = edgeTypeColors[t] || defaultEdgeColor;
+        item.appendChild(line);
+        item.appendChild(document.createTextNode(t));
+        edgeLegend.appendChild(item);
+      });
+
+      // Links
+      const link = svgG.append('g')
+        .selectAll('line')
+        .data(data.links)
+        .join('line')
+        .attr('class', 'link')
+        .attr('stroke', d => edgeTypeColors[d.type] || defaultEdgeColor)
+        .attr('stroke-opacity', 0.5)
+        .on('mouseover', (e, d) => {
+          d3.select(e.target).attr('stroke-opacity', 1);
+          showTooltip(e, `<strong>${d.type}</strong><br/>${d.description}`);
+        })
+        .on('mouseout', (e) => {
+          d3.select(e.target).attr('stroke-opacity', 0.5);
+          hideTooltip();
+        });
+
+      // Nodes
+      const node = svgG.append('g')
+        .selectAll('circle')
+        .data(data.nodes)
+        .join('circle')
+        .attr('r', nodeSize)
+        .attr('fill', d => categoryColors[d.category] || defaultColor)
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 1.5)
+        .style('cursor', 'pointer')
+        .on('mouseover', (e, d) => {
+          showTooltip(e, `<strong>${d.name}</strong><br/>${d.country}<br/><em>${d.category}</em><br/>${d.type}`);
+        })
+        .on('mouseout', hideTooltip)
+        .on('click', (e, d) => {
+          window.open('entry.html?religion=jewish&id=' + encodeURIComponent(d.id), '_blank');
+        })
+        .call(d3.drag()
+          .on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
+          .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
+          .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
+        );
+
+      // Labels
+      const showLabels = document.getElementById('show-labels').checked;
+      const labels = svgG.append('g')
+        .selectAll('text')
+        .data(data.nodes)
+        .join('text')
+        .attr('class', 'node-label')
+        .text(d => d.name.length > 25 ? d.name.substring(0, 25) + '...' : d.name)
+        .attr('dx', nodeSize + 3)
+        .attr('dy', 4)
+        .style('display', showLabels ? 'block' : 'none');
+
+      simulation.on('tick', () => {
+        link
+          .attr('x1', d => d.source.x).attr('y1', d => d.source.y)
+          .attr('x2', d => d.target.x).attr('y2', d => d.target.y);
+        node.attr('cx', d => d.x).attr('cy', d => d.y);
+        labels.attr('x', d => d.x).attr('y', d => d.y);
+      });
+    }
+
+    const tooltip = document.getElementById('tooltip');
+    function showTooltip(e, html) {
+      tooltip.style.display = 'block';
+      tooltip.innerHTML = html;
+      tooltip.style.left = (e.pageX + 15) + 'px';
+      tooltip.style.top = (e.pageY - 10) + 'px';
+    }
+    function hideTooltip() { tooltip.style.display = 'none'; }
+
+    document.getElementById('reload-btn').addEventListener('click', loadGraph);
+    document.getElementById('reset-btn').addEventListener('click', () => {
+      d3.select('#graph').transition().duration(500).call(zoom.transform, d3.zoomIdentity);
+    });
+    document.getElementById('show-labels').addEventListener('change', function() {
+      d3.selectAll('.node-label').style('display', this.checked ? 'block' : 'none');
+    });
+    document.getElementById('node-size').addEventListener('input', function() {
+      d3.selectAll('circle').attr('r', +this.value);
+    });
+
+    // Load with default category to avoid loading everything
+    setTimeout(() => {
+      const catSel = document.getElementById('category-select');
+      if (catSel.querySelector('option[value="Technology"]')) catSel.value = 'Technology';
+      loadGraph();
+    }, 500);
+  </script>
+</body>
+</html>

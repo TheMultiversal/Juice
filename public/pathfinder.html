@@ -1,0 +1,256 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pathfinder — Degrees of Separation</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { text-decoration: none; color: #0000EE; }
+    .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+    h1 { color: #0056b3; text-align: center; margin-bottom: 4px; }
+    .subtitle { text-align: center; color: #666; margin-bottom: 30px; font-size: 0.95em; }
+    .search-panel { display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; justify-content: center; margin-bottom: 30px; }
+    .search-box { position: relative; flex: 1; min-width: 250px; }
+    .search-box label { display: block; font-weight: bold; color: #0056b3; margin-bottom: 6px; font-size: 0.95em; }
+    .search-box input { width: 100%; padding: 10px 14px; border: 2px solid #ccc; border-radius: 8px; font-size: 1em; box-sizing: border-box; transition: border-color 0.2s; }
+    .search-box input:focus { border-color: #0056b3; outline: none; }
+    .search-box input.selected { border-color: #28a745; background: #f0fff0; }
+    .autocomplete-list { position: absolute; top: 100%; left: 0; right: 0; background: #fff; border: 1px solid #ddd; border-radius: 0 0 8px 8px; max-height: 220px; overflow-y: auto; z-index: 100; display: none; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+    .autocomplete-item { padding: 8px 14px; cursor: pointer; font-size: 0.92em; border-bottom: 1px solid #f0f0f0; }
+    .autocomplete-item:hover, .autocomplete-item.active { background: #e8f0fe; }
+    .autocomplete-item .ac-country { color: #888; font-size: 0.85em; margin-left: 6px; }
+    .search-arrow { display: flex; align-items: center; font-size: 2em; color: #0056b3; padding-top: 28px; }
+    .btn-find { display: block; margin: 0 auto 30px; padding: 12px 40px; background: #0056b3; color: #fff; border: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; cursor: pointer; transition: background 0.2s; }
+    .btn-find:hover { background: #003d80; }
+    .btn-find:disabled { background: #aaa; cursor: not-allowed; }
+    .result-area { min-height: 200px; }
+    .no-path { text-align: center; color: #999; font-size: 1.1em; padding: 40px 0; }
+    .path-info { text-align: center; margin-bottom: 20px; }
+    .path-info .distance { font-size: 2.5em; font-weight: bold; color: #0056b3; }
+    .path-info .distance-label { color: #666; font-size: 0.95em; }
+
+    /* Visual path */
+    .path-visual { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0; padding: 20px 0; overflow-x: auto; }
+    .path-node { background: linear-gradient(135deg, #e8f0fe, #fff); border: 2px solid #0056b3; border-radius: 12px; padding: 12px 18px; text-align: center; min-width: 120px; max-width: 180px; position: relative; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+    .path-node:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+    .path-node.start { border-color: #28a745; background: linear-gradient(135deg, #e8ffe8, #fff); }
+    .path-node.end { border-color: #dc3545; background: linear-gradient(135deg, #ffe8e8, #fff); }
+    .path-node .node-name { font-weight: bold; font-size: 0.92em; color: #0056b3; }
+    .path-node .node-country { font-size: 0.8em; color: #888; margin-top: 3px; }
+    .path-node .node-category { font-size: 0.75em; color: #0056b3; background: rgba(0,86,179,0.08); padding: 2px 8px; border-radius: 10px; margin-top: 4px; display: inline-block; }
+    .path-edge { display: flex; flex-direction: column; align-items: center; min-width: 80px; padding: 0 4px; }
+    .path-edge .edge-line { width: 60px; height: 2px; background: #0056b3; position: relative; }
+    .path-edge .edge-line::after { content: '▶'; position: absolute; right: -8px; top: -9px; color: #0056b3; font-size: 0.9em; }
+    .path-edge .edge-type { font-size: 0.72em; color: #666; background: #f8f9fa; padding: 2px 8px; border-radius: 8px; margin-top: 4px; text-align: center; white-space: nowrap; }
+    .path-edge .edge-desc { font-size: 0.68em; color: #999; margin-top: 2px; max-width: 100px; text-align: center; }
+
+    /* Loading */
+    .loading { text-align: center; padding: 40px; }
+    .loading .spinner { display: inline-block; width: 40px; height: 40px; border: 4px solid #e0e0e0; border-top: 4px solid #0056b3; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .loading-text { color: #666; margin-top: 10px; font-size: 0.95em; }
+
+    .swap-btn { background: none; border: 1px solid #ddd; border-radius: 50%; width: 32px; height: 32px; cursor: pointer; font-size: 1.2em; margin-top: 28px; transition: background 0.2s; }
+    .swap-btn:hover { background: #e8f0fe; }
+
+    @media (max-width: 600px) {
+      .search-panel { flex-direction: column; gap: 10px; }
+      .search-arrow, .swap-btn { display: none; }
+      .path-visual { flex-direction: column; }
+      .path-edge .edge-line { width: 2px; height: 40px; }
+      .path-edge .edge-line::after { content: '▼'; right: -7px; top: auto; bottom: -10px; }
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="container">
+    <h1>🔗 Pathfinder</h1>
+    <p class="subtitle">Find the degrees of separation between any two organizations</p>
+
+    <div class="search-panel">
+      <div class="search-box" id="from-box">
+        <label>From</label>
+        <input type="text" id="from-input" placeholder="Search for an organization..." autocomplete="off">
+        <div class="autocomplete-list" id="from-list"></div>
+      </div>
+      <button class="swap-btn" id="swap-btn" title="Swap">⇄</button>
+      <div class="search-arrow">→</div>
+      <div class="search-box" id="to-box">
+        <label>To</label>
+        <input type="text" id="to-input" placeholder="Search for an organization..." autocomplete="off">
+        <div class="autocomplete-list" id="to-list"></div>
+      </div>
+    </div>
+
+    <button class="btn-find" id="find-btn" disabled>Find Path</button>
+
+    <div class="result-area" id="result-area">
+      <div class="no-path" id="placeholder">Select two organizations above to find how they are connected</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    let allEntries = [];
+    let fromEntry = null;
+    let toEntry = null;
+
+    // Load all entries for autocomplete
+    async function loadEntries() {
+      try {
+        const res = await fetch('/api/jewish');
+        const data = await res.json();
+        for (const country in data.countries) {
+          for (const entry of data.countries[country]) {
+            allEntries.push({ id: entry.id, name: entry.name, country: country, category: entry.category || '' });
+          }
+        }
+        allEntries.sort((a, b) => a.name.localeCompare(b.name));
+      } catch (e) {
+        console.error('Failed to load entries:', e);
+      }
+    }
+
+    function setupAutocomplete(inputId, listId, onSelect) {
+      const input = document.getElementById(inputId);
+      const list = document.getElementById(listId);
+      let activeIdx = -1;
+
+      input.addEventListener('input', () => {
+        const q = input.value.trim().toLowerCase();
+        if (q.length < 2) { list.style.display = 'none'; return; }
+        const matches = allEntries.filter(e => e.name.toLowerCase().includes(q)).slice(0, 20);
+        if (matches.length === 0) { list.style.display = 'none'; return; }
+        list.innerHTML = matches.map((m, i) =>
+          `<div class="autocomplete-item" data-idx="${i}">
+            ${highlightMatch(m.name, q)}<span class="ac-country">${m.country}</span>
+          </div>`
+        ).join('');
+        list.style.display = 'block';
+        activeIdx = -1;
+
+        list.querySelectorAll('.autocomplete-item').forEach((item, i) => {
+          item.addEventListener('click', () => {
+            input.value = matches[i].name;
+            input.classList.add('selected');
+            list.style.display = 'none';
+            onSelect(matches[i]);
+          });
+        });
+      });
+
+      input.addEventListener('keydown', (e) => {
+        const items = list.querySelectorAll('.autocomplete-item');
+        if (!items.length) return;
+        if (e.key === 'ArrowDown') { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, items.length - 1); updateActive(items); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); updateActive(items); }
+        else if (e.key === 'Enter' && activeIdx >= 0) { e.preventDefault(); items[activeIdx].click(); }
+        else if (e.key === 'Escape') { list.style.display = 'none'; }
+      });
+
+      function updateActive(items) {
+        items.forEach((it, i) => it.classList.toggle('active', i === activeIdx));
+        if (items[activeIdx]) items[activeIdx].scrollIntoView({ block: 'nearest' });
+      }
+
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('#' + inputId) && !e.target.closest('#' + listId)) list.style.display = 'none';
+      });
+
+      // Clear selection if user edits
+      input.addEventListener('input', () => {
+        input.classList.remove('selected');
+        onSelect(null);
+      });
+    }
+
+    function highlightMatch(text, query) {
+      const idx = text.toLowerCase().indexOf(query);
+      if (idx === -1) return text;
+      return text.substring(0, idx) + '<strong>' + text.substring(idx, idx + query.length) + '</strong>' + text.substring(idx + query.length);
+    }
+
+    function updateFindBtn() {
+      document.getElementById('find-btn').disabled = !(fromEntry && toEntry);
+    }
+
+    setupAutocomplete('from-input', 'from-list', (entry) => { fromEntry = entry; updateFindBtn(); });
+    setupAutocomplete('to-input', 'to-list', (entry) => { toEntry = entry; updateFindBtn(); });
+
+    // Swap
+    document.getElementById('swap-btn').addEventListener('click', () => {
+      const tmpEntry = fromEntry;
+      fromEntry = toEntry;
+      toEntry = tmpEntry;
+      const fi = document.getElementById('from-input');
+      const ti = document.getElementById('to-input');
+      const tmpVal = fi.value;
+      fi.value = ti.value;
+      ti.value = tmpVal;
+      fi.classList.toggle('selected', !!fromEntry);
+      ti.classList.toggle('selected', !!toEntry);
+      updateFindBtn();
+    });
+
+    // Find path
+    document.getElementById('find-btn').addEventListener('click', async () => {
+      if (!fromEntry || !toEntry) return;
+      const area = document.getElementById('result-area');
+      area.innerHTML = '<div class="loading"><div class="spinner"></div><div class="loading-text">Searching for connections...</div></div>';
+
+      try {
+        const res = await fetch(`/api/path?from=${encodeURIComponent(fromEntry.id)}&to=${encodeURIComponent(toEntry.id)}`);
+        const data = await res.json();
+
+        if (data.distance < 0 || data.path.length === 0) {
+          area.innerHTML = '<div class="no-path">❌ No path found between these organizations.<br><span style="font-size:0.85em;color:#aaa;">They do not appear to be connected through shared connections or people.</span></div>';
+          return;
+        }
+
+        let html = '<div class="path-info">';
+        html += `<div class="distance">${data.distance}</div>`;
+        html += `<div class="distance-label">degree${data.distance !== 1 ? 's' : ''} of separation</div>`;
+        html += '</div>';
+
+        html += '<div class="path-visual">';
+        for (let i = 0; i < data.path.length; i++) {
+          const node = data.path[i];
+          const cls = i === 0 ? 'start' : i === data.path.length - 1 ? 'end' : '';
+          html += `<div class="path-node ${cls}" onclick="window.location.href='entry.html?id=${node.id}'">`;
+          html += `<div class="node-name">${node.name}</div>`;
+          html += `<div class="node-country">${node.country || ''}</div>`;
+          if (node.category) html += `<div class="node-category">${node.category}</div>`;
+          html += '</div>';
+
+          if (i < data.edges.length) {
+            const edge = data.edges[i];
+            html += '<div class="path-edge">';
+            html += '<div class="edge-line"></div>';
+            html += `<div class="edge-type">${edge.type.replace(/-/g, ' ')}</div>`;
+            if (edge.description) html += `<div class="edge-desc">${edge.description}</div>`;
+            html += '</div>';
+          }
+        }
+        html += '</div>';
+
+        area.innerHTML = html;
+      } catch (err) {
+        area.innerHTML = '<div class="no-path">⚠️ Error finding path. Please try again.</div>';
+      }
+    });
+
+    // Init
+    if (typeof initPage === 'function') initPage('jewish');
+    setSEO({ title: 'Pathfinder — Juice Project', description: 'Find the degrees of separation between any two religious organizations.' });
+    loadEntries();
+  </script>
+</body>
+</html>

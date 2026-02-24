@@ -1,0 +1,231 @@
+<!-- Juice Project — Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistics Dashboard</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    nav { padding: 10px 20px; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: nowrap; }
+    nav ul li { margin-right: 1em; white-space: nowrap; }
+    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 6px 10px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .main { max-width: 1400px; margin: 0 auto; padding: 15px 20px; }
+    h1 { margin: 0 0 5px 0; }
+    .subtitle { color: #555; margin: 0 0 20px 0; }
+    .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 25px; }
+    .kpi-card { background: linear-gradient(135deg, rgba(0,86,179,0.08) 0%, rgba(0,123,255,0.04) 100%); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px; padding: 20px; text-align: center; }
+    .kpi-value { font-size: 2.5em; font-weight: bold; color: #0056b3; }
+    .kpi-label { font-size: 0.9em; color: #555; margin-top: 4px; }
+    .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px; }
+    .chart-card { background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px; padding: 20px; }
+    .chart-card h3 { margin: 0 0 12px 0; color: #0056b3; }
+    .chart-card canvas { width: 100% !important; }
+    .full-width { grid-column: 1 / -1; }
+    .table-section { margin-top: 20px; }
+    .table-section h3 { color: #0056b3; margin-bottom: 10px; }
+    .data-table { width: 100%; border-collapse: collapse; }
+    .data-table th, .data-table td { padding: 8px 12px; text-align: left; border-bottom: 1px solid rgba(0,0,255,0.1); }
+    .data-table th { background: rgba(0,86,179,0.08); color: #0056b3; font-weight: bold; }
+    .data-table tr:hover { background: rgba(0,123,255,0.05); }
+    .bar-cell { position: relative; }
+    .bar-fill { position: absolute; top: 2px; left: 0; bottom: 2px; background: rgba(0,123,255,0.12); border-radius: 4px; }
+    @media (max-width: 768px) { .charts-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav id="navbar"></nav>
+  <div class="main">
+    <h1>Statistics Dashboard</h1>
+    <p class="subtitle">Comprehensive analytics across all entries, people, and connections</p>
+    <div class="kpi-row" id="kpis"></div>
+    <div class="charts-grid">
+      <div class="chart-card">
+        <h3>Top 15 Countries by Entries</h3>
+        <canvas id="countriesChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Entries by Category</h3>
+        <canvas id="categoriesChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Organization Types</h3>
+        <canvas id="typesChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Connection Types</h3>
+        <canvas id="connectionsChart"></canvas>
+      </div>
+      <div class="chart-card full-width">
+        <h3>Country Distribution</h3>
+        <canvas id="countryBarChart" height="80"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Founded by Decade</h3>
+        <canvas id="decadeChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Cumulative Growth Over Time</h3>
+        <canvas id="growthChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Connections per Organization</h3>
+        <canvas id="connDistChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h3>Top 15 Most Connected</h3>
+        <canvas id="topConnChart"></canvas>
+      </div>
+    </div>
+    <div class="table-section">
+      <h3>All Countries Ranked</h3>
+      <table class="data-table" id="country-table">
+        <thead><tr><th>#</th><th>Country</th><th>Entries</th><th>Distribution</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script>
+    initPage('jewish');
+    setSEO({ title: 'Statistics — Juice Project', description: 'Analytics dashboard with charts showing organization distribution by country, category, founding decade, and connections.' });
+
+    const palette = [
+      '#3498db','#e74c3c','#2ecc71','#f39c12','#9b59b6','#1abc9c','#e67e22','#e91e63',
+      '#00bcd4','#8bc34a','#ff5722','#607d8b','#795548','#673ab7','#ff9800','#4caf50',
+      '#009688','#d81b60','#7c4dff','#ffc107','#66bb6a','#00acc1','#455a64','#f44336',
+      '#8e44ad','#3f51b5','#ff4081','#757575','#9e9e9e','#90a4ae'
+    ];
+
+    fetch('/api/stats').then(r => r.json()).then(stats => {
+      // KPI Cards
+      const kpis = document.getElementById('kpis');
+      const kpiData = [
+        { label: 'Total Entries', value: stats.totalEntries },
+        { label: 'Countries', value: stats.totalCountries },
+        { label: 'People', value: stats.totalPeople },
+        { label: 'Connections', value: stats.totalConnections },
+        { label: 'Categories', value: stats.topCategories.length },
+        { label: 'Avg Connections/Entry', value: (stats.totalConnections / stats.totalEntries).toFixed(1) }
+      ];
+      kpiData.forEach(k => {
+        const card = document.createElement('div');
+        card.className = 'kpi-card';
+        card.innerHTML = `<div class="kpi-value">${k.value.toLocaleString()}</div><div class="kpi-label">${k.label}</div>`;
+        kpis.appendChild(card);
+      });
+
+      // Top 15 Countries (horizontal bar)
+      const top15 = stats.topCountries.slice(0, 15);
+      new Chart(document.getElementById('countriesChart'), {
+        type: 'bar',
+        data: {
+          labels: top15.map(c => c.country),
+          datasets: [{ label: 'Entries', data: top15.map(c => c.count), backgroundColor: palette.slice(0, 15) }]
+        },
+        options: { indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true } } }
+      });
+
+      // Categories (doughnut)
+      const catData = stats.topCategories.slice(0, 20);
+      new Chart(document.getElementById('categoriesChart'), {
+        type: 'doughnut',
+        data: {
+          labels: catData.map(c => c.category),
+          datasets: [{ data: catData.map(c => c.count), backgroundColor: palette }]
+        },
+        options: { plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } } }
+      });
+
+      // Org Types (pie)
+      new Chart(document.getElementById('typesChart'), {
+        type: 'pie',
+        data: {
+          labels: stats.topTypes.map(t => t.type),
+          datasets: [{ data: stats.topTypes.map(t => t.count), backgroundColor: palette }]
+        },
+        options: { plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } } }
+      });
+
+      // Connection Types (polar)
+      new Chart(document.getElementById('connectionsChart'), {
+        type: 'polarArea',
+        data: {
+          labels: stats.topConnectionTypes.map(c => c.type),
+          datasets: [{ data: stats.topConnectionTypes.map(c => c.count), backgroundColor: palette }]
+        },
+        options: { plugins: { legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } } } }
+      });
+
+      // Full country distribution (bar)
+      new Chart(document.getElementById('countryBarChart'), {
+        type: 'bar',
+        data: {
+          labels: stats.topCountries.map(c => c.country),
+          datasets: [{ label: 'Entries', data: stats.topCountries.map(c => c.count), backgroundColor: 'rgba(0,123,255,0.6)', borderColor: 'rgba(0,123,255,1)', borderWidth: 1 }]
+        },
+        options: { plugins: { legend: { display: false } }, scales: { x: { ticks: { autoSkip: true, maxRotation: 60 } }, y: { beginAtZero: true } } }
+      });
+
+      // Country table
+      const tbody = document.querySelector('#country-table tbody');
+      const maxCount = stats.topCountries[0]?.count || 1;
+      stats.topCountries.forEach((c, i) => {
+        const pct = ((c.count / maxCount) * 100).toFixed(0);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${i + 1}</td><td><a href="country.html?religion=jewish&country=${encodeURIComponent(c.country)}" style="color:#0000EE">${c.country}</a></td><td>${c.count}</td><td class="bar-cell"><div class="bar-fill" style="width:${pct}%"></div>${((c.count / stats.totalEntries) * 100).toFixed(1)}%</td>`;
+        tbody.appendChild(tr);
+      });
+    });
+
+    // Detailed stats — new charts
+    fetch('/api/stats/detailed').then(r => r.json()).then(d => {
+      // Founded by Decade
+      new Chart(document.getElementById('decadeChart'), {
+        type: 'bar',
+        data: {
+          labels: d.decades.map(x => x.decade + 's'),
+          datasets: [{ label: 'Founded', data: d.decades.map(x => x.count), backgroundColor: 'rgba(46,204,113,0.7)', borderColor: '#2ecc71', borderWidth: 1 }]
+        },
+        options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true }, x: { ticks: { maxRotation: 60 } } } }
+      });
+
+      // Cumulative Growth
+      new Chart(document.getElementById('growthChart'), {
+        type: 'line',
+        data: {
+          labels: d.growth.map(x => x.decade + 's'),
+          datasets: [{ label: 'Total Organizations', data: d.growth.map(x => x.cumulative), fill: true, backgroundColor: 'rgba(52,152,219,0.15)', borderColor: '#3498db', borderWidth: 2, tension: 0.3, pointRadius: 3 }]
+        },
+        options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true }, x: { ticks: { maxRotation: 60 } } } }
+      });
+
+      // Connections per Org distribution
+      const connLabels = Object.keys(d.connDist);
+      new Chart(document.getElementById('connDistChart'), {
+        type: 'bar',
+        data: {
+          labels: connLabels,
+          datasets: [{ label: 'Organizations', data: connLabels.map(k => d.connDist[k]), backgroundColor: ['#e74c3c','#f39c12','#2ecc71','#3498db','#9b59b6','#1abc9c'] }]
+        },
+        options: { plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true } } }
+      });
+
+      // Top 15 Most Connected
+      new Chart(document.getElementById('topConnChart'), {
+        type: 'bar',
+        data: {
+          labels: d.topConnected.map(x => x.name.length > 25 ? x.name.substring(0, 25) + '...' : x.name),
+          datasets: [{ label: 'Connections', data: d.topConnected.map(x => x.connections), backgroundColor: 'rgba(155,89,182,0.7)', borderColor: '#9b59b6', borderWidth: 1 }]
+        },
+        options: { indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true } } }
+      });
+    });
+  </script>
+</body>
+</html>
