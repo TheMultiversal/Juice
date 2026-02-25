@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <meta name="created" content="2016-03-14">
   <meta name="author" content="Juice Project">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -177,7 +178,8 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     // Populate dropdowns
     fetch('/api/countries').then(r => r.json()).then(data => {
       const sel = document.getElementById('country-filter');
-      data.countries.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+      const arr = Array.isArray(data) ? data : (data.countries || []);
+      arr.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
     });
     fetch('/api/jewish/categories').then(r => r.json()).then(data => {
       const sel = document.getElementById('category-filter');

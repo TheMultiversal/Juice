@@ -246,6 +246,8 @@ function buildMenu(data, religion) {
   fetch('/api/countries')
     .then(res => res.json())
     .then(list => {
+      const arr = Array.isArray(list) ? list : (list.countries || []);
+      if (!Array.isArray(arr)) arr = [];
       const selectLi = document.createElement('li');
       const select = document.createElement('select');
       select.addEventListener('change', () => {
@@ -258,10 +260,7 @@ function buildMenu(data, religion) {
       opt.textContent = 'Jump to...';
       opt.value = '';
       select.appendChild(opt);
-      list.countries.sort().forEach(cn => {
-        const o = document.createElement('option');
-        o.textContent = cn;
-        o.value = cn;
+      arr.sort().forEach(cn => {
         select.appendChild(o);
       });
       selectLi.appendChild(select);
@@ -334,12 +333,19 @@ function setSEO(opts = {}) {
   setMeta('og:description', o.description, true);
   setMeta('og:type', o.type, true);
   setMeta('og:url', o.url, true);
-  setMeta('og:site_name', 'Juice Project', true);
+  setMeta('og:site_name', 'The Juice Box', true);
+
+  // OG Image
+  const origin = window.location.origin;
+  setMeta('og:image', origin + '/og-image.svg', true);
+  setMeta('og:image:width', '1200', true);
+  setMeta('og:image:height', '630', true);
 
   // Twitter Card
-  setMeta('twitter:card', 'summary', false);
+  setMeta('twitter:card', 'summary_large_image', false);
   setMeta('twitter:title', o.title, false);
   setMeta('twitter:description', o.description, false);
+  setMeta('twitter:image', origin + '/og-image.svg', false);
 }
 
 // ===== KEYBOARD SHORTCUTS =====
