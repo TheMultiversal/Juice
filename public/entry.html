@@ -318,7 +318,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
               card.appendChild(nameLink);
               const roleSpan = document.createElement('span');
               roleSpan.className = 'person-role';
-              roleSpan.textContent = ' \u2014 ' + p.role;
+              roleSpan.textContent = ' - ' + p.role;
               card.appendChild(roleSpan);
               if (p.bio) {
                 const bioP = document.createElement('p');
@@ -474,7 +474,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
           a.href = 'entry.html?religion=' + encodeURIComponent(religion) + '&id=' + encodeURIComponent(r.id);
           a.textContent = r.name;
           div.appendChild(a);
-          div.appendChild(document.createTextNode(' (' + r.country + ') \u2014 '));
+          div.appendChild(document.createTextNode(' (' + r.country + ') - '));
           const reason = document.createElement('em');
           reason.textContent = r.reason;
           div.appendChild(reason);

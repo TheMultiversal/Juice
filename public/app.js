@@ -335,7 +335,7 @@ function setSEO(opts = {}) {
   setMeta('og:url', o.url, true);
   setMeta('og:site_name', 'The Juice Box', true);
 
-  // OG Image (must be PNG — social platforms don't support SVG)
+  // OG Image (must be PNG - social platforms don't support SVG)
   const origin = window.location.origin;
   setMeta('og:image', origin + '/og-image.png', true);
   setMeta('og:image:type', 'image/png', true);

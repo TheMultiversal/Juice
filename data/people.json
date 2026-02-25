@@ -233,7 +233,7 @@
     },
     "rabbi-abraham-cooper": {
       "name": "Rabbi Abraham Cooper",
-      "bio": "Leading figure in combating online hate.",
+      "bio": "Associate Dean of the Simon Wiesenthal Center. Leads the center's digital hate monitoring and international advocacy efforts. Has testified before Congress and the UN on antisemitism.",
       "notes": "",
       "affiliations": [
         {
@@ -271,7 +271,7 @@
     },
     "eric-goldstein": {
       "name": "Eric Goldstein",
-      "bio": "CEO of UJA-Federation of New York.",
+      "bio": "CEO of UJA-Federation of New York, the largest local philanthropy in the world.",
       "notes": "",
       "affiliations": [
         {
@@ -907,7 +907,7 @@
     },
     "est-e-lauder": {
       "name": "Estée Lauder",
-      "bio": "Founded the company in 1946.",
+      "bio": "Jewish-American businesswoman (born Josephine Esther Mentzer, 1906-2004) who founded one of the world's largest cosmetics empires. Daughter of Hungarian-Jewish immigrants. Started by selling skin creams formulated by her uncle. Named one of Time Magazine's 20 most influential business geniuses of the 20th century.",
       "notes": "",
       "affiliations": [
         {
@@ -983,7 +983,7 @@
     },
     "jeffrey-katzenberg": {
       "name": "Jeffrey Katzenberg",
-      "bio": "Co-founder of DreamWorks Animation.",
+      "bio": "Jewish-American media executive who co-founded DreamWorks after being passed over for the Disney CEO position. Built DreamWorks Animation into a major studio. Also founded the short-lived Quibi streaming service.",
       "notes": "",
       "affiliations": [
         {
@@ -1355,7 +1355,7 @@
     },
     "asher-cohen": {
       "name": "Asher Cohen",
-      "bio": "President of the Hebrew University.",
+      "bio": "President of the Hebrew University of Jerusalem.",
       "notes": "",
       "affiliations": [
         {
@@ -1961,7 +1961,7 @@
     },
     "bruce-flatt": {
       "name": "Bruce Flatt",
-      "bio": "CEO of Brookfield Asset Management.",
+      "bio": "CEO of Brookfield Asset Management. Often compared to Warren Buffett for his long-term investment approach.",
       "notes": "",
       "affiliations": [
         {
@@ -2257,7 +2257,7 @@
     },
     "paul-singer": {
       "name": "Paul Singer",
-      "bio": "Billionaire hedge fund manager and major Republican donor.",
+      "bio": "Founder of Elliott Management. Major Republican donor and influential political figure.",
       "notes": "",
       "affiliations": [
         {
@@ -2271,18 +2271,30 @@
           "role": "Founder & Co-CEO",
           "entryId": "paul-singer-elliott-management",
           "country": "United States"
+        },
+        {
+          "organization": "Elliott Management",
+          "role": "Founder & Co-CEO",
+          "entryId": "elliott-management",
+          "country": "United States"
         }
       ]
     },
     "david-siegel": {
       "name": "David Siegel",
-      "bio": "Co-founder and co-chairman of Two Sigma.",
+      "bio": "Co-founder and Co-Chairman of Two Sigma. Computer scientist and entrepreneur.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Two Sigma Investments",
           "role": "Co-founder",
           "entryId": "two-sigma-investments",
+          "country": "United States"
+        },
+        {
+          "organization": "Two Sigma",
+          "role": "Co-Founder & Co-Chairman",
+          "entryId": "two-sigma",
           "country": "United States"
         }
       ]
@@ -2347,7 +2359,7 @@
     },
     "josh-harris": {
       "name": "Josh Harris",
-      "bio": "Co-founder of Apollo Global Management, owner of multiple sports teams.",
+      "bio": "Co-founder of Apollo Global Management. Owner of the Washington Commanders NFL team.",
       "notes": "",
       "affiliations": [
         {
@@ -2564,7 +2576,7 @@
     },
     "calvin-klein": {
       "name": "Calvin Klein",
-      "bio": "Fashion designer who founded the brand in 1968.",
+      "bio": "Founder of Calvin Klein Inc. Born in the Bronx to Hungarian Jewish immigrant parents. Revolutionary fashion designer who transformed American fashion.",
       "notes": "",
       "affiliations": [
         {
@@ -2583,7 +2595,7 @@
     },
     "levi-strauss": {
       "name": "Levi Strauss",
-      "bio": "German-American businessman who founded Levi Strauss & Co.",
+      "bio": "Founder of Levi Strauss & Co. Bavarian Jewish immigrant who created blue jeans during the California Gold Rush.",
       "notes": "",
       "affiliations": [
         {
@@ -2992,13 +3004,19 @@
     },
     "bob-pittman": {
       "name": "Bob Pittman",
-      "bio": "Co-founder of MTV, CEO of iHeartMedia.",
+      "bio": "Media executive who co-founded MTV and now leads iHeartMedia. Navigated the company through bankruptcy and rebuilt it as a multimedia platform.",
       "notes": "",
       "affiliations": [
         {
           "organization": "iHeartMedia",
           "role": "Chairman & CEO",
           "entryId": "iheartmedia",
+          "country": "United States"
+        },
+        {
+          "organization": "iHeart Media",
+          "role": "Chairman & CEO",
+          "entryId": "iheart-media",
           "country": "United States"
         }
       ]
@@ -3056,7 +3074,7 @@
     },
     "charles-bronfman": {
       "name": "Charles Bronfman",
-      "bio": "Canadian-American businessman and philanthropist.",
+      "bio": "Jewish-Canadian billionaire philanthropist who co-founded Birthright Israel. Member of the Bronfman family (Seagram's). Has donated hundreds of millions to Jewish causes.",
       "notes": "",
       "affiliations": [
         {
@@ -3435,7 +3453,7 @@
     },
     "michael-marks": {
       "name": "Michael Marks",
-      "bio": "Belarusian-Jewish immigrant who co-founded Marks & Spencer.",
+      "bio": "Co-founder of Marks & Spencer. A Belarusian Jewish immigrant who started with a market stall in Leeds with the motto \"Don't ask the price, it's a penny.\"",
       "notes": "",
       "affiliations": [
         {
@@ -3454,7 +3472,7 @@
     },
     "jack-cohen": {
       "name": "Jack Cohen",
-      "bio": "Son of Jewish immigrants from Poland, founded Tesco from a market stall.",
+      "bio": "Founder of Tesco. Son of Polish Jewish immigrants who built the UK's largest grocery chain from a market stall.",
       "notes": "",
       "affiliations": [
         {
@@ -3543,7 +3561,7 @@
     },
     "david-de-rothschild": {
       "name": "David de Rothschild",
-      "bio": "Chairman of Rothschild & Co.",
+      "bio": "Chairman of the Supervisory Board of Rothschild & Co. Head of the French branch of the Rothschild banking family.",
       "notes": "",
       "affiliations": [
         {
@@ -4008,7 +4026,7 @@
     },
     "albert-einstein": {
       "name": "Albert Einstein",
-      "bio": "Nobel Prize-winning physicist who developed the theory of relativity.",
+      "bio": "German-born theoretical physicist (1879-1955). Nobel Prize in Physics 1921. Developed the theory of relativity. Offered presidency of Israel in 1952 (declined).",
       "notes": "",
       "affiliations": [
         {
@@ -5102,7 +5120,7 @@
     },
     "david-simon": {
       "name": "David Simon",
-      "bio": "Jewish CEO of Simon Property Group.",
+      "bio": "Chairman, CEO, and President of Simon Property Group. Son of co-founder Melvin Simon.",
       "notes": "",
       "affiliations": [
         {
@@ -6448,7 +6466,7 @@
     },
     "abraham-cahan": {
       "name": "Abraham Cahan",
-      "bio": "Editor of the Jewish Daily Forward for nearly 50 years (1903-1951). Lithuanian-born immigrant who made the Forward the most important Yiddish newspaper in America, shaping immigrant Jewish culture.",
+      "bio": "Lithuanian-Jewish immigrant (1860-1951) who served as editor of the Forward for 50 years (1903-1951). Under his leadership, the Forward became the largest non-English newspaper in America. A giant of Yiddish journalism and literature.",
       "notes": "",
       "affiliations": [
         {
@@ -7183,13 +7201,25 @@
     },
     "david-marshall": {
       "name": "David Marshall",
-      "bio": "Singapore's first Chief Minister (1955-1956), Jewish politician of Baghdadi-Iraqi origin. Champion of Singapore's independence movement.",
+      "bio": "Singapore's first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore's path to independence.",
       "notes": "",
       "affiliations": [
         {
           "organization": "United Hebrew Congregation of Singapore",
           "role": "Historical Figure",
           "entryId": "united-hebrew-congregation-of-singapore",
+          "country": "Singapore"
+        },
+        {
+          "organization": "Singapore Jewish Welfare Board",
+          "role": "Historical Figure",
+          "entryId": "singapore-jewish-welfare-board",
+          "country": "Singapore"
+        },
+        {
+          "organization": "Singapore Jewish Community",
+          "role": "Historic Leader",
+          "entryId": "singapore-jewish-community",
           "country": "Singapore"
         }
       ]
@@ -7279,7 +7309,7 @@
     },
     "jack-h-skirball": {
       "name": "Jack H. Skirball",
-      "bio": "Rabbi, film producer, and philanthropist who funded the Skirball Cultural Center in Los Angeles.",
+      "bio": "Jewish-American rabbi and film producer (1896-1985) who established the Skirball Cultural Center. Produced the film \"Saboteur\" with Alfred Hitchcock. His foundation funded the cultural center that opened after his death.",
       "notes": "",
       "affiliations": [
         {
@@ -9667,7 +9697,7 @@
     },
     "sidney-klajner": {
       "name": "Sidney Klajner",
-      "bio": "President of Hospital Albert Einstein (Jewish), the top-ranked hospital in Latin America.",
+      "bio": "President of Hospital Israelita Albert Einstein. Leading physician and hospital administrator.",
       "notes": "",
       "affiliations": [
         {
@@ -9680,6 +9710,12 @@
           "organization": "Albert Einstein Israelite Hospital",
           "role": "President",
           "entryId": "albert-einstein-israelite-hospital",
+          "country": "Brazil"
+        },
+        {
+          "organization": "Albert Einstein Hospital",
+          "role": "President",
+          "entryId": "albert-einstein-hospital",
           "country": "Brazil"
         }
       ]
@@ -11820,7 +11856,7 @@
     },
     "robert-singer": {
       "name": "Robert Singer",
-      "bio": "Former CEO of World ORT (Jewish), overseeing the global Jewish education network serving 300,000+ students.",
+      "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora.",
       "notes": "",
       "affiliations": [
         {
@@ -11828,6 +11864,12 @@
           "role": "Former CEO",
           "entryId": "world-ort",
           "country": "International"
+        },
+        {
+          "organization": "Federation of Jewish Communities of Serbia",
+          "role": "Prominent Figure",
+          "entryId": "jewish-community-belgrade",
+          "country": "Serbia"
         }
       ]
     },
@@ -12015,18 +12057,6 @@
         }
       ]
     },
-    "david-marshall-singapore": {
-      "name": "David Marshall",
-      "bio": "Singapore's first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore's path to independence.",
-      "affiliations": [
-        {
-          "organization": "Singapore Jewish Welfare Board",
-          "role": "Historical Figure",
-          "entryId": "singapore-jewish-welfare-board",
-          "country": "Singapore"
-        }
-      ]
-    },
     "rabbi-yosef-kantor": {
       "name": "Rabbi Yosef Kantor",
       "bio": "Chabad emissary who has served as the chief rabbi of Thailand since 1994, establishing Jewish infrastructure across the country.",
@@ -12072,18 +12102,6 @@
           "role": "Community Rabbi",
           "entryId": "jewish-community-vietnam",
           "country": "Vietnam"
-        }
-      ]
-    },
-    "moses-samuels-myanmar": {
-      "name": "Moses Samuels",
-      "bio": "Longtime caretaker and trustee of the Musmeah Yeshua Synagogue, preserving Jewish heritage in Myanmar.",
-      "affiliations": [
-        {
-          "organization": "Musmeah Yeshua Synagogue",
-          "role": "Synagogue Trustee",
-          "entryId": "jewish-heritage-myanmar",
-          "country": "Myanmar"
         }
       ]
     },
@@ -12177,18 +12195,6 @@
         }
       ]
     },
-    "robert-singer-serbia": {
-      "name": "Robert Singer",
-      "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora.",
-      "affiliations": [
-        {
-          "organization": "Federation of Jewish Communities of Serbia",
-          "role": "Prominent Figure",
-          "entryId": "jewish-community-belgrade",
-          "country": "Serbia"
-        }
-      ]
-    },
     "misha-galperin": {
       "name": "Misha Galperin",
       "bio": "CEO of the National Museum of American Jewish History, leading the institution's mission to present the American Jewish story.",
@@ -12249,23 +12255,6 @@
         }
       ]
     },
-    "abigail-morris-museum": {
-      "name": "Abigail Morris",
-      "bio": "Director of the Jewish Museum London, overseeing exhibitions and educational outreach programs.",
-      "affiliations": []
-    },
-    "maurice-cohen-ireland": {
-      "name": "Maurice Cohen",
-      "bio": "Active leader in the Irish Jewish community working to preserve heritage and strengthen community bonds.",
-      "affiliations": [
-        {
-          "organization": "Jewish Representative Council of Ireland",
-          "role": "Community Leader",
-          "entryId": "jewish-community-ireland",
-          "country": "Ireland"
-        }
-      ]
-    },
     "francis-nappez": {
       "name": "Francis Nappez",
       "bio": "Co-founder and CTO of BlaBlaCar.",
@@ -12294,7 +12283,7 @@
     },
     "niklas-stberg": {
       "name": "Niklas Östberg",
-      "bio": "Swedish entrepreneur who co-founded Delivery Hero.",
+      "bio": "Swedish-German entrepreneur who co-founded Delivery Hero in 2011. Built the company into one of the world's largest food delivery platforms despite persistent financial losses.",
       "notes": "",
       "affiliations": [
         {
@@ -12650,7 +12639,7 @@
     },
     "tobias-l-tke": {
       "name": "Tobias Lütke",
-      "bio": "German-Canadian billionaire entrepreneur who co-founded Shopify.",
+      "bio": "German-Canadian entrepreneur who co-founded Shopify in 2006 after trying to build an online snowboard store. Built it into the world's leading e-commerce platform.",
       "notes": "",
       "affiliations": [
         {
@@ -12837,7 +12826,7 @@
     },
     "vincent-bollor": {
       "name": "Vincent Bolloré",
-      "bio": "French billionaire businessman controlling the Bolloré Group.",
+      "bio": "French billionaire industrialist who controls Groupe Bolloré and Vivendi. Convicted of corruption for bribing African officials for port contracts. Accused of using his media empire (CNews, Canal+) to promote far-right politics in France.",
       "notes": "",
       "affiliations": [
         {
@@ -12952,12 +12941,6 @@
         }
       ]
     },
-    "albert-einstein-physicist": {
-      "name": "Albert Einstein",
-      "bio": "German-born theoretical physicist (1879-1955). Nobel Prize in Physics 1921. Developed the theory of relativity. Offered presidency of Israel in 1952 (declined).",
-      "notes": "",
-      "affiliations": []
-    },
     "franz-kafka": {
       "name": "Franz Kafka",
       "bio": "German-speaking Bohemian novelist (1883-1924). One of the major figures of 20th-century literature. Born into a middle-class Ashkenazi Jewish family in Prague.",
@@ -13009,12 +12992,6 @@
     "ruth-bader-ginsburg": {
       "name": "Ruth Bader Ginsburg",
       "bio": "American jurist (1933-2020). Second female Justice of the US Supreme Court (1993-2020). Pioneered gender equality litigation. Cultural icon known as 'Notorious RBG.'",
-      "notes": "",
-      "affiliations": []
-    },
-    "henry-kissinger": {
-      "name": "Henry Kissinger",
-      "bio": "German-born American politician, diplomat, and geopolitical consultant (1923-2023). Secretary of State under Nixon and Ford. Nobel Peace Prize 1973.",
       "notes": "",
       "affiliations": []
     },
@@ -13180,7 +13157,7 @@
     },
     "irina-nevzlin": {
       "name": "Irina Nevzlin",
-      "bio": "Chairwoman of the Board of Directors of the Museum of the Jewish People.",
+      "bio": "Chairwoman of the Board of Directors of the Museum of the Jewish People. Russian-Israeli philanthropist.",
       "notes": "",
       "affiliations": [
         {
@@ -13573,7 +13550,7 @@
     },
     "peter-brown": {
       "name": "Peter Brown",
-      "bio": "CEO of Renaissance Technologies since 2010.",
+      "bio": "CEO of Renaissance Technologies, continuing the quantitative trading legacy.",
       "notes": "",
       "affiliations": []
     },
@@ -13970,12 +13947,6 @@
       "notes": "",
       "affiliations": []
     },
-    "wendy-gillian-memory-sobel-kahn": {
-      "name": "Wendy Kahn",
-      "bio": "National Director of the South African Jewish Board of Deputies.",
-      "notes": "",
-      "affiliations": []
-    },
     "rabbi-ruben-sternschein": {
       "name": "Rabbi Ruben Sternschein",
       "bio": "Senior Rabbi of Congregacao Israelita Paulista, one of the leading liberal rabbis in Latin America.",
@@ -14111,12 +14082,6 @@
       "notes": "",
       "affiliations": []
     },
-    "josh-harris-apollo": {
-      "name": "Josh Harris",
-      "bio": "Co-founder of Apollo Global Management. Owner of the Washington Commanders NFL team.",
-      "notes": "",
-      "affiliations": []
-    },
     "michael-arougheti": {
       "name": "Michael Arougheti",
       "bio": "Co-founder, CEO and President of Ares Management. Leading figure in alternative credit markets.",
@@ -14129,12 +14094,6 @@
           "country": "United States"
         }
       ]
-    },
-    "peter-brown-rentech": {
-      "name": "Peter Brown",
-      "bio": "CEO of Renaissance Technologies, continuing the quantitative trading legacy.",
-      "notes": "",
-      "affiliations": []
     },
     "david-e-shaw": {
       "name": "David E. Shaw",
@@ -14164,32 +14123,6 @@
           "organization": "Citadel",
           "role": "Founder & CEO",
           "entryId": "citadel",
-          "country": "United States"
-        }
-      ]
-    },
-    "paul-singer-elliott": {
-      "name": "Paul Singer",
-      "bio": "Founder of Elliott Management. Major Republican donor and influential political figure.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Elliott Management",
-          "role": "Founder & Co-CEO",
-          "entryId": "elliott-management",
-          "country": "United States"
-        }
-      ]
-    },
-    "david-siegel-twosigma": {
-      "name": "David Siegel",
-      "bio": "Co-founder and Co-Chairman of Two Sigma. Computer scientist and entrepreneur.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Two Sigma",
-          "role": "Co-Founder & Co-Chairman",
-          "entryId": "two-sigma",
           "country": "United States"
         }
       ]
@@ -14290,12 +14223,6 @@
         }
       ]
     },
-    "eric-goldstein-uja": {
-      "name": "Eric Goldstein",
-      "bio": "CEO of UJA-Federation of New York, the largest local philanthropy in the world.",
-      "notes": "",
-      "affiliations": []
-    },
     "stacy-schusterman": {
       "name": "Stacy Schusterman",
       "bio": "Chair of Charles and Lynn Schusterman Family Philanthropies. Daughter of founder Charles Schusterman.",
@@ -14314,12 +14241,6 @@
           "country": "United States"
         }
       ]
-    },
-    "calvin-klein-person": {
-      "name": "Calvin Klein",
-      "bio": "Founder of Calvin Klein fashion brand. Revolutionary American fashion designer known for his minimalist aesthetic.",
-      "notes": "",
-      "affiliations": []
     },
     "micky-arison": {
       "name": "Micky Arison",
@@ -14343,12 +14264,6 @@
     "lahav-shani": {
       "name": "Lahav Shani",
       "bio": "Music Director of the Israel Philharmonic Orchestra and the Berlin Philharmonic. One of the youngest conductors to lead both ensembles.",
-      "notes": "",
-      "affiliations": []
-    },
-    "asher-cohen-huj": {
-      "name": "Asher Cohen",
-      "bio": "President of the Hebrew University of Jerusalem.",
       "notes": "",
       "affiliations": []
     },
@@ -14390,21 +14305,9 @@
         }
       ]
     },
-    "michael-marks-m-s": {
-      "name": "Michael Marks",
-      "bio": "Co-founder of Marks & Spencer. A Belarusian Jewish immigrant who started with a market stall in Leeds with the motto \"Don't ask the price, it's a penny.\"",
-      "notes": "",
-      "affiliations": []
-    },
     "stuart-machin": {
       "name": "Stuart Machin",
       "bio": "CEO of Marks & Spencer, leading the retailer's transformation.",
-      "notes": "",
-      "affiliations": []
-    },
-    "jack-cohen-tesco": {
-      "name": "Jack Cohen",
-      "bio": "Founder of Tesco. Son of Polish Jewish immigrants who built the UK's largest grocery chain from a market stall.",
       "notes": "",
       "affiliations": []
     },
@@ -14502,25 +14405,6 @@
         }
       ]
     },
-    "calvin-klein-designer": {
-      "name": "Calvin Klein",
-      "bio": "Founder of Calvin Klein Inc. Born in the Bronx to Hungarian Jewish immigrant parents. Revolutionary fashion designer who transformed American fashion.",
-      "notes": "",
-      "affiliations": []
-    },
-    "levi-strauss-founder": {
-      "name": "Levi Strauss",
-      "bio": "Founder of Levi Strauss & Co. Bavarian Jewish immigrant who created blue jeans during the California Gold Rush.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Levi Strauss & Co.",
-          "role": "Founder",
-          "entryId": "levi-strauss-and-co",
-          "country": "United States"
-        }
-      ]
-    },
     "stephane-bancel": {
       "name": "Stephane Bancel",
       "bio": "CEO of Moderna since 2011. French businessman who led the company through the COVID-19 pandemic.",
@@ -14539,30 +14423,11 @@
       "notes": "",
       "affiliations": []
     },
-    "richard-francis": {
-      "name": "Richard Francis",
-      "bio": "CEO of Teva Pharmaceutical Industries since 2023.",
-      "notes": "",
-      "affiliations": []
-    },
     "eran-zinman": {
       "name": "Eran Zinman",
       "bio": "Co-founder and CTO of Monday.com.",
       "notes": "",
       "affiliations": []
-    },
-    "michael-marks-founder": {
-      "name": "Michael Marks",
-      "bio": "Co-founder of Marks & Spencer. Jewish immigrant from Slonim, Belarus, who started the business as a market stall in Leeds.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Marks & Spencer",
-          "role": "Co-Founder",
-          "entryId": "marks-and-spencer",
-          "country": "United Kingdom"
-        }
-      ]
     },
     "simon-marks": {
       "name": "Simon Marks",
@@ -14632,19 +14497,6 @@
           "role": "Co-Founder & CMO",
           "entryId": "biontech",
           "country": "Germany"
-        }
-      ]
-    },
-    "bruce-flatt-brookfield": {
-      "name": "Bruce Flatt",
-      "bio": "CEO of Brookfield Asset Management. Often compared to Warren Buffett for his long-term investment approach.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Brookfield Asset Management",
-          "role": "CEO",
-          "entryId": "brookfield-asset-management",
-          "country": "Canada"
         }
       ]
     },
@@ -14815,43 +14667,11 @@
       "notes": "",
       "affiliations": []
     },
-    "david-simon-spg": {
-      "name": "David Simon",
-      "bio": "Chairman, CEO, and President of Simon Property Group. Son of co-founder Melvin Simon.",
-      "notes": "",
-      "affiliations": []
-    },
     "herbert-simon": {
       "name": "Herbert Simon",
       "bio": "Co-founder of Simon Property Group. Jewish American businessman and philanthropist based in Indianapolis.",
       "notes": "",
       "affiliations": []
-    },
-    "david-de-rothschild-fr": {
-      "name": "David de Rothschild",
-      "bio": "Chairman of the Supervisory Board of Rothschild & Co. Head of the French branch of the Rothschild banking family.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Rothschild & Co (France)",
-          "role": "Chairman of Supervisory Board",
-          "entryId": "rothschild-and-co-france",
-          "country": "France"
-        }
-      ]
-    },
-    "david-marshall-sg": {
-      "name": "David Marshall",
-      "bio": "Singapore's first Chief Minister (1955-56). Born to a Baghdadi Jewish family. Major figure in Singapore's road to independence.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Singapore Jewish Community",
-          "role": "Historic Leader",
-          "entryId": "singapore-jewish-community",
-          "country": "Singapore"
-        }
-      ]
     },
     "ralph-roberts": {
       "name": "Ralph Roberts",
@@ -15467,19 +15287,6 @@
         }
       ]
     },
-    "tobias-lutke": {
-      "name": "Tobias Lütke",
-      "bio": "German-Canadian entrepreneur who co-founded Shopify in 2006 after trying to build an online snowboard store. Built it into the world's leading e-commerce platform.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Shopify",
-          "role": "Co-Founder & CEO",
-          "entryId": "shopify",
-          "country": "Canada"
-        }
-      ]
-    },
     "fred-ehrsam": {
       "name": "Fred Ehrsam",
       "bio": "Co-founder of Coinbase and Paradigm, a crypto investment firm. Of Jewish heritage. Former Goldman Sachs trader who left to co-found Coinbase.",
@@ -15824,19 +15631,6 @@
         }
       ]
     },
-    "emilio-azcarraga-jean": {
-      "name": "Emilio Azcárraga Jean",
-      "bio": "Mexican media mogul who led Grupo Televisa. Under his leadership, the company became the largest Spanish-language media company in the world.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Grupo Televisa",
-          "role": "Former Chairman",
-          "entryId": "grupo-televisa",
-          "country": "Mexico"
-        }
-      ]
-    },
     "richard-gonzalez-abbvie": {
       "name": "Richard Gonzalez",
       "bio": "CEO of AbbVie from its spinoff in 2013 until 2024. Built the company around the Humira franchise into a pharmaceutical giant.",
@@ -15863,32 +15657,6 @@
         }
       ]
     },
-    "jack-skirball": {
-      "name": "Jack H. Skirball",
-      "bio": "Jewish-American rabbi and film producer (1896-1985) who established the Skirball Cultural Center. Produced the film \"Saboteur\" with Alfred Hitchcock. His foundation funded the cultural center that opened after his death.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Skirball Cultural Center",
-          "role": "Founder",
-          "entryId": "skirball-cultural-center",
-          "country": "United States"
-        }
-      ]
-    },
-    "niklas-ostberg": {
-      "name": "Niklas Östberg",
-      "bio": "Swedish-German entrepreneur who co-founded Delivery Hero in 2011. Built the company into one of the world's largest food delivery platforms despite persistent financial losses.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Delivery Hero",
-          "role": "Co-Founder & CEO",
-          "entryId": "delivery-hero",
-          "country": "Germany"
-        }
-      ]
-    },
     "jacob-davis-jeans": {
       "name": "Jacob Davis",
       "bio": "Jewish-Latvian immigrant (born Jacob Youphes, 1831-1908) who co-invented riveted denim pants with Levi Strauss. A tailor in Reno, Nevada who lacked funds to file the patent alone and partnered with Strauss.",
@@ -15898,12 +15666,6 @@
     "michelle-gass-levi": {
       "name": "Michelle Gass",
       "bio": "CEO of Levi Strauss & Co. since 2024. Previously CEO of Kohl's and held senior positions at Starbucks.",
-      "notes": "",
-      "affiliations": []
-    },
-    "estee-lauder-person": {
-      "name": "Estée Lauder",
-      "bio": "Jewish-American businesswoman (born Josephine Esther Mentzer, 1906-2004) who founded one of the world's largest cosmetics empires. Daughter of Hungarian-Jewish immigrants. Started by selling skin creams formulated by her uncle. Named one of Time Magazine's 20 most influential business geniuses of the 20th century.",
       "notes": "",
       "affiliations": []
     },
@@ -15925,18 +15687,6 @@
           "country": "United States"
         }
       ]
-    },
-    "jeffrey-katzenberg-dw": {
-      "name": "Jeffrey Katzenberg",
-      "bio": "Jewish-American media executive who co-founded DreamWorks after being passed over for the Disney CEO position. Built DreamWorks Animation into a major studio. Also founded the short-lived Quibi streaming service.",
-      "notes": "",
-      "affiliations": []
-    },
-    "abraham-cooper": {
-      "name": "Rabbi Abraham Cooper",
-      "bio": "Associate Dean of the Simon Wiesenthal Center. Leads the center's digital hate monitoring and international advocacy efforts. Has testified before Congress and the UN on antisemitism.",
-      "notes": "",
-      "affiliations": []
     },
     "alexander-soros": {
       "name": "Alexander Soros",
@@ -16086,19 +15836,6 @@
         }
       ]
     },
-    "bob-pittman-iheart": {
-      "name": "Bob Pittman",
-      "bio": "Media executive who co-founded MTV and now leads iHeartMedia. Navigated the company through bankruptcy and rebuilt it as a multimedia platform.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "iHeart Media",
-          "role": "Chairman & CEO",
-          "entryId": "iheart-media",
-          "country": "United States"
-        }
-      ]
-    },
     "martin-cohen-cs": {
       "name": "Martin Cohen",
       "bio": "Jewish-American financier who co-founded Cohen & Steers and pioneered REIT investing as a mainstream asset class.",
@@ -16151,19 +15888,6 @@
         }
       ]
     },
-    "vincent-bollore": {
-      "name": "Vincent Bolloré",
-      "bio": "French billionaire industrialist who controls Groupe Bolloré and Vivendi. Convicted of corruption for bribing African officials for port contracts. Accused of using his media empire (CNews, Canal+) to promote far-right politics in France.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Groupe Bolloré",
-          "role": "Chairman",
-          "entryId": "groupe-bollor",
-          "country": "France"
-        }
-      ]
-    },
     "avi-gabbay-partner": {
       "name": "Avi Gabbay",
       "bio": "Israeli businessman and politician who served as CEO of Bezeq. Later became chairman of the Israeli Labor Party. His career exemplifies the intersection of Israeli business and politics.",
@@ -16186,19 +15910,6 @@
           "organization": "Sheba Medical Center",
           "role": "Founder",
           "entryId": "sheba-medical-center",
-          "country": "Israel"
-        }
-      ]
-    },
-    "charles-bronfman-birthright": {
-      "name": "Charles Bronfman",
-      "bio": "Jewish-Canadian billionaire philanthropist who co-founded Birthright Israel. Member of the Bronfman family (Seagram's). Has donated hundreds of millions to Jewish causes.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Birthright Israel",
-          "role": "Co-Founder",
-          "entryId": "birthright-israel",
           "country": "Israel"
         }
       ]
@@ -16251,19 +15962,6 @@
           "organization": "National Council of Jewish Women (NCJW)",
           "role": "Founder",
           "entryId": "national-council-of-jewish-women-ncjw",
-          "country": "United States"
-        }
-      ]
-    },
-    "abraham-cahan-forward": {
-      "name": "Abraham Cahan",
-      "bio": "Lithuanian-Jewish immigrant (1860-1951) who served as editor of the Forward for 50 years (1903-1951). Under his leadership, the Forward became the largest non-English newspaper in America. A giant of Yiddish journalism and literature.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "The Forward",
-          "role": "Founding Editor",
-          "entryId": "the-forward",
           "country": "United States"
         }
       ]
@@ -16486,45 +16184,6 @@
           "role": "President",
           "entryId": "t-rkiye-musevi-cemaati",
           "country": "Turkey"
-        }
-      ]
-    },
-    "sidney-klajner-einstein": {
-      "name": "Sidney Klajner",
-      "bio": "President of Hospital Israelita Albert Einstein. Leading physician and hospital administrator.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Albert Einstein Hospital",
-          "role": "President",
-          "entryId": "albert-einstein-hospital",
-          "country": "Brazil"
-        }
-      ]
-    },
-    "irina-nevzlin-beit-hatfutsot": {
-      "name": "Irina Nevzlin",
-      "bio": "Chairwoman of the Board of Directors of the Museum of the Jewish People. Russian-Israeli philanthropist.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Museum of the Jewish People at Beit Hatfutsot",
-          "role": "Chairwoman",
-          "entryId": "museum-of-the-jewish-people-at-beit-hatfutsot",
-          "country": "United States"
-        }
-      ]
-    },
-    "dan-tadmor-beit-hatfutsot": {
-      "name": "Dan Tadmor",
-      "bio": "CEO of the Museum of the Jewish People at Beit Hatfutsot.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Museum of the Jewish People at Beit Hatfutsot",
-          "role": "CEO",
-          "entryId": "museum-of-the-jewish-people-at-beit-hatfutsot",
-          "country": "United States"
         }
       ]
     },

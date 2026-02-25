@@ -1,6 +1,6 @@
 /**
  * Generate favicon (Israeli juice box) and OG image as PNG files.
- * Uses sharp with simple SVG overlays — no external fonts or complex patterns.
+ * Uses sharp with simple SVG overlays - no external fonts or complex patterns.
  */
 const sharp = require('sharp');
 const path  = require('path');
@@ -38,7 +38,7 @@ const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect x="38" y="1" width="9" height="3.5" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
 </svg>`;
 
-/* ───────── OG Image (1200×630) — built with shapes only ───────── */
+/* --------- OG Image (1200x630) - built with shapes only --------- */
 const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">

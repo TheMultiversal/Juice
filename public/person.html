@@ -194,7 +194,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
               orgLink.href = 'entry.html?religion=' + encodeURIComponent(a.religion) + '&id=' + encodeURIComponent(a.entryId || slugify(a.organization));
               orgLink.textContent = a.organization;
               card.appendChild(orgLink);
-              card.appendChild(document.createTextNode(' \u2014 ' + (a.role || '') + ' \u2014 '));
+              card.appendChild(document.createTextNode(' - ' + (a.role || '') + ' - '));
               const countryLink = document.createElement('a');
               countryLink.href = 'country.html?religion=' + encodeURIComponent(a.religion) + '&country=' + encodeURIComponent(a.country);
               countryLink.textContent = a.country;

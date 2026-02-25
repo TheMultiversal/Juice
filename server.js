@@ -449,7 +449,7 @@ app.get('/api/path', (req, res) => {
   } catch (err) { res.status(500).json({ error: 'Server error' }); }
 });
 
-// audit endpoint removed from public access — use scripts/audit.js locally instead
+// audit endpoint removed from public access - use scripts/audit.js locally instead
 
 // export endpoint - returns data in CSV or JSON format
 app.get('/api/export', (req, res) => {
