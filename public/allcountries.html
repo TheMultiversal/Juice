@@ -172,11 +172,19 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       fetch('/api/countries').then(r => r.json()),
       fetch('/api/jewish').then(r => r.json())
     ]).then(([countryList, data]) => {
+      // support both array and { countries: array } formats
+      const list = Array.isArray(countryList) ? countryList : (countryList.countries || []);
+      if (!Array.isArray(list)) {
+        console.error('Unexpected /api/countries response:', countryList);
+      }
       const counts = {};
       for (const country in data.countries) {
         counts[country] = data.countries[country].length;
       }
-      countriesData = countryList.countries.map(c => ({ name: c, count: counts[c] || 0 }));
+      countriesData = list.map(c => ({ name: c, count: counts[c] || 0 }));
+      render();
+    }).catch(err => {
+      console.error('Failed to load country data', err);
       render();
     });
 
