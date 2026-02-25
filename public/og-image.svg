@@ -56,7 +56,6 @@
     </g>
     <rect x="38" y="2" width="3" height="20" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
     <rect x="38" y="2" width="8" height="3" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
-    <rect x="14" y="42" width="36" height="12" rx="1" fill="#ff9800" opacity="0.45"/>
   </g>
 
   <!-- Title -->

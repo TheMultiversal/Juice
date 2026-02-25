@@ -36,9 +36,6 @@ const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <rect x="38" y="1" width="3.5" height="22" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
   <!-- Straw top bend -->
   <rect x="38" y="1" width="9" height="3.5" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
-
-  <!-- Orange juice level (visible below star area) -->
-  <rect x="14" y="42" width="36" height="12" rx="1" fill="#ff9800" opacity="0.5"/>
 </svg>`;
 
 /* ───────── OG Image (1200×630) — built with shapes only ───────── */
@@ -105,8 +102,6 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
     <!-- Straw -->
     <rect x="38" y="2" width="3" height="20" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
     <rect x="38" y="2" width="8" height="3" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
-    <!-- Juice -->
-    <rect x="14" y="42" width="36" height="12" rx="1" fill="#ff9800" opacity="0.45"/>
   </g>
 
   <!-- Title: "THE JUICE BOX" as individual letter rectangles for guaranteed rendering -->
