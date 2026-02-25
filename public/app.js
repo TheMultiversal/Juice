@@ -335,9 +335,10 @@ function setSEO(opts = {}) {
   setMeta('og:url', o.url, true);
   setMeta('og:site_name', 'The Juice Box', true);
 
-  // OG Image
+  // OG Image (must be PNG — social platforms don't support SVG)
   const origin = window.location.origin;
-  setMeta('og:image', origin + '/og-image.svg', true);
+  setMeta('og:image', origin + '/og-image.png', true);
+  setMeta('og:image:type', 'image/png', true);
   setMeta('og:image:width', '1200', true);
   setMeta('og:image:height', '630', true);
 
@@ -345,7 +346,7 @@ function setSEO(opts = {}) {
   setMeta('twitter:card', 'summary_large_image', false);
   setMeta('twitter:title', o.title, false);
   setMeta('twitter:description', o.description, false);
-  setMeta('twitter:image', origin + '/og-image.svg', false);
+  setMeta('twitter:image', origin + '/og-image.png', false);
 }
 
 // ===== KEYBOARD SHORTCUTS =====
