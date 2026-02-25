@@ -236,10 +236,11 @@
       </div>
     </div>
 
-    <!-- Tooltip -->
-    <div id="tip"></div>
   </div>
   </div><!-- /.main -->
+
+  <!-- Tooltip (must be outside .graph-wrap to avoid backdrop-filter containing block + overflow:hidden clipping) -->
+  <div id="tip"></div>
 
   <script src="app.js"></script>
   <script>
@@ -304,13 +305,22 @@
     const tipEl = document.getElementById('tip');
     const container = document.getElementById('graph-container');
 
-    container.addEventListener('mousemove', e => {
+    // Track mouse on document (not just container) so coordinates are always fresh
+    // even if force-graph's canvas captures events before they bubble
+    document.addEventListener('mousemove', e => {
       mouseX = e.clientX;
       mouseY = e.clientY;
       if (tipEl.style.display === 'block') {
         tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
         tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
       }
+    });
+
+    // Hide tooltip when mouse leaves the graph area entirely
+    document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
+      tipEl.style.display = 'none';
+      hoveredNode = null;
+      neighborSet.clear();
     });
 
     // ─── Populate dropdowns ──────────────────────────────
@@ -426,7 +436,8 @@
 
     // ─── Node pointer area ───────────────────────────────
     function paintNodeArea(node, color, ctx) {
-      const size = (node._renderedSize || nodeScale * 0.6) + 3;
+      // Extra padding (+6) for easier hover detection on small nodes
+      const size = (node._renderedSize || nodeScale * 0.6) + 6;
       ctx.fillStyle = color;
       ctx.beginPath();
       ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
@@ -484,6 +495,7 @@
         .d3AlphaDecay(0.025)
         .d3VelocityDecay(0.35)
         .autoPauseRedraw(false)
+        .nodeLabel(node => '') // suppress default title tooltip (we use custom #tip)
         .onNodeHover(handleNodeHover)
         .onNodeClick(handleNodeClick)
         .onLinkHover(handleLinkHover)
