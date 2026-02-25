@@ -449,32 +449,7 @@ app.get('/api/path', (req, res) => {
   } catch (err) { res.status(500).json({ error: 'Server error' }); }
 });
 
-// audit endpoint - flag low quality entries
-app.get('/api/audit', (req, res) => {
-  try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    const jd = require('./data/jewish.json');
-    const issues = [];
-    for (const country in jd.countries) {
-      for (const entry of jd.countries[country]) {
-        const flags = [];
-        if (!entry.description || entry.description.length < 100) flags.push('short-description');
-        if (!entry.website) flags.push('no-website');
-        if (!entry.connections || entry.connections.length < 2) flags.push('few-connections');
-        if (!entry.individuals || entry.individuals.length < 1) flags.push('no-individuals');
-        if (!entry.category) flags.push('no-category');
-        if (!entry.founded) flags.push('no-founded-year');
-        if (flags.length > 0) {
-          issues.push({ id: entry.id, name: entry.name, country, category: entry.category || '', flags, score: Math.max(0, 100 - flags.length * 15) });
-        }
-      }
-    }
-    issues.sort((a, b) => a.score - b.score);
-    const summary = { total: issues.length, avgScore: Math.round(issues.reduce((s, i) => s + i.score, 0) / issues.length || 0), byFlag: {} };
-    issues.forEach(i => i.flags.forEach(f => { summary.byFlag[f] = (summary.byFlag[f] || 0) + 1; }));
-    res.json({ summary, issues });
-  } catch (err) { res.status(500).json({ error: 'Server error' }); }
-});
+// audit endpoint removed from public access — use scripts/audit.js locally instead
 
 // export endpoint - returns data in CSV or JSON format
 app.get('/api/export', (req, res) => {

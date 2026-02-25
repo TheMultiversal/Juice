@@ -212,7 +212,6 @@ function buildMenu(data, religion) {
   addLink('discover.html', 'Discover', 'fa-solid fa-dice');
   addLink('pathfinder.html', 'Pathfinder', 'fa-solid fa-route');
   addLink('bookmarks.html', 'Bookmarks', 'fa-solid fa-bookmark');
-  addLink('audit.html', 'Audit', 'fa-solid fa-clipboard-check');
 
   addSep();
 
@@ -464,7 +463,6 @@ function addFooter() {
       <span>&copy; 2016-${new Date().getFullYear()} The Juice Box Project. All rights reserved.</span>
       <div style="display:flex;gap:15px;align-items:center;">
         <a href="about.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">About</a>
-        <a href="audit.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Audit</a>
         <a href="export.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Export</a>
         <a href="bookmarks.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Bookmarks</a>
       </div>
