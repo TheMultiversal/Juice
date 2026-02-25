@@ -321,7 +321,7 @@ for (const e of tr) add('Turkey', e);
 // ============================================================
 
 const kr = [
-  { name: 'Chabad of South Korea', id: slug('Chabad of South Korea'), type: 'religious organization', category: 'Religion & Synagogues', description: 'Chabad of South Korea operates the primary Jewish community center in Seoul, serving the approximately 1,000 Jews living in South Korea. Established to serve Jewish business people, diplomats, military personnel, and English teachers, it operates a synagogue, kosher kitchen, and community programs. It also conducts outreach to the broader Korean population interested in Jewish studies.', website: '', founded: 2008, individuals: [], connections: [{ name: 'Chabad', type: 'parent organization', description: 'Part of the global Chabad-Lubavitch movement.' }] },
+  { name: 'Chabad of South Korea', id: slug('Chabad of South Korea'), type: 'Jewish organization', category: 'Religion & Synagogues', description: 'Chabad of South Korea operates the primary Jewish community center in Seoul, serving the approximately 1,000 Jews living in South Korea. Established to serve Jewish business people, diplomats, military personnel, and English teachers, it operates a synagogue, kosher kitchen, and community programs. It also conducts outreach to the broader Korean population interested in Jewish studies.', website: '', founded: 2008, individuals: [], connections: [{ name: 'Chabad', type: 'parent organization', description: 'Part of the global Chabad-Lubavitch movement.' }] },
 ];
 
 for (const e of kr) add('South Korea', e);

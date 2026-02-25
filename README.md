@@ -1,6 +1,6 @@
 # Juice Project
 
-> Comprehensive database of 800+ religious organizations across 86 countries, with people, connections, analytics, and interactive visualizations.
+> Comprehensive database of 800+ Jewish organizations across 86 countries, with people, connections, analytics, and interactive visualizations.
 
 **Version 4.2** · Est. 2016 · Node.js / Express
 

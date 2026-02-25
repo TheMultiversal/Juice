@@ -123,7 +123,7 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
   <rect x="370" y="272" width="220" height="5" rx="2" fill="url(#gold)"/>
 
   <!-- Subtitle -->
-  <text x="370" y="320" font-size="26" fill="#8ab4f8" font-family="Arial, Helvetica, sans-serif">Religious Organizations Intelligence Database</text>
+  <text x="370" y="320" font-size="26" fill="#8ab4f8" font-family="Arial, Helvetica, sans-serif">Jewish Organizations Intelligence Database</text>
 
   <!-- Stats boxes -->
   <!-- Box 1 -->

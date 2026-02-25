@@ -307,8 +307,8 @@ function initPage(religion, callback) {
 // ===== SEO & OPEN GRAPH =====
 function setSEO(opts = {}) {
   const defaults = {
-    title: 'Juice Project - Religious Organizations Database',
-    description: 'Comprehensive database cataloging 800+ religious organizations across 86 countries, with people, connections, and analytics.',
+    title: 'Juice Project - Jewish Organizations Database',
+    description: 'Comprehensive database cataloging 800+ Jewish organizations across 86 countries, with people, connections, and analytics.',
     type: 'website',
     url: window.location.href
   };
@@ -432,7 +432,7 @@ function addFooter() {
     <div style="max-width:1200px;margin:0 auto;padding:35px 30px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;">
       <div>
         <h4 style="margin:0 0 12px;color:#0038b8;font-size:1.1em;"><i class="fa-solid fa-database"></i> The Juice Box</h4>
-        <p style="margin:0 0 8px;line-height:1.6;font-size:0.92em;">Comprehensive Religious Organizations Intelligence Database. Tracking structure, people, and connections since 2016.</p>
+        <p style="margin:0 0 8px;line-height:1.6;font-size:0.92em;">Comprehensive Jewish Organizations Intelligence Database. Tracking structure, people, and connections since 2016.</p>
         <p style="margin:0;font-size:0.85em;color:#999;">v4.3 | Est. 2016</p>
       </div>
       <div>
