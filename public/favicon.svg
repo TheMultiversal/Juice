@@ -1,27 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
     <linearGradient id="box" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0056b3"/>
-      <stop offset="100%" stop-color="#003d80"/>
-    </linearGradient>
-    <linearGradient id="juice" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff9800"/>
-      <stop offset="100%" stop-color="#f57c00"/>
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e8e8e8"/>
     </linearGradient>
   </defs>
-  <!-- Box body -->
-  <rect x="10" y="16" width="44" height="42" rx="4" fill="url(#box)"/>
+  <!-- White box body (Israeli style) -->
+  <rect x="10" y="16" width="44" height="42" rx="3" fill="url(#box)" stroke="#ccc" stroke-width="0.5"/>
   <!-- Box top fold -->
-  <polygon points="10,16 18,6 46,6 54,16" fill="#0068d6"/>
-  <!-- Juice level inside -->
-  <rect x="14" y="32" width="36" height="22" rx="2" fill="url(#juice)" opacity="0.85"/>
+  <polygon points="10,16 18,6 46,6 54,16" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
+  <!-- Blue stripe top (Israeli flag blue) -->
+  <rect x="10" y="16" width="44" height="7" fill="#0038b8"/>
+  <!-- Blue stripe bottom -->
+  <rect x="10" y="49" width="44" height="7" fill="#0038b8"/>
+  <!-- Star of David (center) -->
+  <g transform="translate(32,36)" fill="none" stroke="#0038b8" stroke-width="2.2">
+    <polygon points="0,-11 9.5,5.5 -9.5,5.5"/>
+    <polygon points="0,11 9.5,-5.5 -9.5,-5.5"/>
+  </g>
   <!-- Straw -->
-  <rect x="36" y="2" width="4" height="28" rx="2" fill="#fff" opacity="0.9"/>
-  <rect x="36" y="2" width="4" height="28" rx="2" fill="none" stroke="#0056b3" stroke-width="0.5"/>
-  <!-- Straw bend -->
-  <rect x="36" y="2" width="10" height="4" rx="2" fill="#fff" opacity="0.9"/>
-  <!-- Shine -->
-  <rect x="16" y="20" width="6" height="16" rx="3" fill="#fff" opacity="0.2"/>
-  <!-- "J" letter -->
-  <text x="32" y="50" text-anchor="middle" font-family="Arial,sans-serif" font-weight="bold" font-size="22" fill="#fff" opacity="0.95">J</text>
+  <rect x="38" y="1" width="3.5" height="22" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
+  <rect x="38" y="1" width="9" height="3.5" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
+  <!-- Orange juice level -->
+  <rect x="14" y="42" width="36" height="12" rx="1" fill="#ff9800" opacity="0.5"/>
 </svg>
