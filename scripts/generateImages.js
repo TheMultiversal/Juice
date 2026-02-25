@@ -9,33 +9,43 @@ const pub   = path.join(__dirname, '..', 'public');
 /* ───────── Israeli Juice Box Favicon (64×64 base) ───────── */
 const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <defs>
-    <linearGradient id="box" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="boxFace" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e8e8e8"/>
+      <stop offset="100%" stop-color="#e6e9f0"/>
     </linearGradient>
+    <linearGradient id="boxTop" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#d8dce6"/>
+      <stop offset="100%" stop-color="#f0f2f8"/>
+    </linearGradient>
+    <linearGradient id="stripeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#002d8f"/>
+      <stop offset="50%" stop-color="#0044cc"/>
+      <stop offset="100%" stop-color="#002d8f"/>
+    </linearGradient>
+    <linearGradient id="strawGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0e4ee"/>
+      <stop offset="50%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#c8cdd8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#001a4d" flood-opacity="0.25"/>
+    </filter>
   </defs>
-  <!-- White box body (Israeli style) -->
-  <rect x="10" y="16" width="44" height="42" rx="3" fill="url(#box)" stroke="#ccc" stroke-width="0.5"/>
-  <!-- Box top fold -->
-  <polygon points="10,16 18,6 46,6 54,16" fill="#f0f0f0" stroke="#ccc" stroke-width="0.5"/>
-
-  <!-- Blue stripe top (Israeli flag blue) -->
-  <rect x="10" y="16" width="44" height="7" fill="#0038b8" rx="0"/>
-  <!-- Blue stripe bottom -->
-  <rect x="10" y="49" width="44" height="7" fill="#0038b8" rx="0"/>
-
-  <!-- Star of David (center) -->
-  <g transform="translate(32,36)" fill="none" stroke="#0038b8" stroke-width="2.2">
-    <!-- Up triangle -->
-    <polygon points="0,-11 9.5,5.5 -9.5,5.5"/>
-    <!-- Down triangle -->
-    <polygon points="0,11 9.5,-5.5 -9.5,-5.5"/>
+  <rect x="12" y="18" width="40" height="38" rx="2.5" fill="url(#boxFace)" stroke="#b0b8c8" stroke-width="0.6" filter="url(#shadow)"/>
+  <path d="M12,18 L12,56 L10,54 L10,20 Z" fill="#c8cdd8" opacity="0.5"/>
+  <polygon points="12,18 20,8 44,8 52,18" fill="url(#boxTop)" stroke="#b0b8c8" stroke-width="0.5"/>
+  <line x1="32" y1="8" x2="32" y2="18" stroke="#c0c8d4" stroke-width="0.4" opacity="0.6"/>
+  <rect x="12" y="18" width="40" height="6" rx="0.5" fill="url(#stripeGrad)"/>
+  <rect x="12" y="49" width="40" height="6" rx="0.5" fill="url(#stripeGrad)"/>
+  <g transform="translate(32,37)">
+    <polygon points="0,-10 8.66,5 -8.66,5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
+    <polygon points="0,10 8.66,-5 -8.66,-5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
   </g>
-
-  <!-- Straw -->
-  <rect x="38" y="1" width="3.5" height="22" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
-  <!-- Straw top bend -->
-  <rect x="38" y="1" width="9" height="3.5" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.8"/>
+  <rect x="39" y="2" width="3" height="20" rx="1.5" fill="url(#strawGrad)" stroke="#8090a8" stroke-width="0.5"/>
+  <path d="M42,5 L48,5 L48,2 L42,2" fill="url(#strawGrad)" stroke="#8090a8" stroke-width="0.5"/>
+  <ellipse cx="48" cy="3.5" rx="1" ry="1.5" fill="#d0d4de" stroke="#8090a8" stroke-width="0.3"/>
+  <rect x="15" y="25" width="3" height="14" rx="1.5" fill="#fff" opacity="0.35"/>
+  <rect x="20" y="27" width="1.5" height="8" rx="0.75" fill="#fff" opacity="0.2"/>
 </svg>`;
 
 /* --------- OG Image (1200x630) - built with shapes only --------- */
@@ -88,20 +98,21 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
 
   <!-- Israeli juice box icon (left side) -->
   <g transform="translate(80, 170) scale(3)">
-    <!-- White box -->
-    <rect x="10" y="16" width="44" height="42" rx="3" fill="#fff" stroke="#ddd" stroke-width="0.5"/>
-    <polygon points="10,16 18,6 46,6 54,16" fill="#f5f5f5" stroke="#ddd" stroke-width="0.5"/>
-    <!-- Blue stripes -->
-    <rect x="10" y="16" width="44" height="7" fill="#0038b8"/>
-    <rect x="10" y="49" width="44" height="7" fill="#0038b8"/>
-    <!-- Star of David -->
-    <g transform="translate(32,36)" fill="none" stroke="#0038b8" stroke-width="2">
-      <polygon points="0,-10 8.66,5 -8.66,5"/>
-      <polygon points="0,10 8.66,-5 -8.66,-5"/>
+    <rect x="12" y="18" width="40" height="38" rx="2.5" fill="#fff" stroke="#b0b8c8" stroke-width="0.6"/>
+    <path d="M12,18 L12,56 L10,54 L10,20 Z" fill="#c8cdd8" opacity="0.5"/>
+    <polygon points="12,18 20,8 44,8 52,18" fill="#eef0f6" stroke="#b0b8c8" stroke-width="0.5"/>
+    <line x1="32" y1="8" x2="32" y2="18" stroke="#c0c8d4" stroke-width="0.4" opacity="0.6"/>
+    <rect x="12" y="18" width="40" height="6" rx="0.5" fill="#0038b8"/>
+    <rect x="12" y="49" width="40" height="6" rx="0.5" fill="#0038b8"/>
+    <g transform="translate(32,37)">
+      <polygon points="0,-10 8.66,5 -8.66,5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,10 8.66,-5 -8.66,-5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
     </g>
-    <!-- Straw -->
-    <rect x="38" y="2" width="3" height="20" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
-    <rect x="38" y="2" width="8" height="3" rx="1.5" fill="#fff" stroke="#0038b8" stroke-width="0.7"/>
+    <rect x="39" y="2" width="3" height="20" rx="1.5" fill="#e8ecf4" stroke="#8090a8" stroke-width="0.5"/>
+    <path d="M42,5 L48,5 L48,2 L42,2" fill="#e8ecf4" stroke="#8090a8" stroke-width="0.5"/>
+    <ellipse cx="48" cy="3.5" rx="1" ry="1.5" fill="#d0d4de" stroke="#8090a8" stroke-width="0.3"/>
+    <rect x="15" y="25" width="3" height="14" rx="1.5" fill="#fff" opacity="0.35"/>
+    <rect x="20" y="27" width="1.5" height="8" rx="0.75" fill="#fff" opacity="0.2"/>
   </g>
 
   <!-- Title: "THE JUICE BOX" as individual letter rectangles for guaranteed rendering -->
