@@ -9,13 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Network Graph</title>
 
-  <!-- Cytoscape.js — Canvas-based graph engine (handles 10k+ nodes) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
-  <!-- fCoSE layout — overlap-free, compound-aware spring embedder -->
-  <script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
+  <!-- force-graph: d3-force Canvas2D renderer — async layout, handles 10k+ nodes -->
+  <script src="https://unpkg.com/force-graph"></script>
 
   <style>
-    /* ===== BASE — matches site-wide white theme ===== */
+    /* ===== BASE ===== */
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
     nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
@@ -23,7 +21,7 @@
     nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
 
-    /* Glassmorphism panels — matches other pages */
+    /* Glassmorphism */
     .panel, .gp, .sb, .header-panel, .graph-wrap {
       background: rgba(255, 255, 255, 0.15) !important;
       backdrop-filter: blur(12px) !important;
@@ -54,14 +52,12 @@
     .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
 
     /* ===== GRAPH WRAPPER ===== */
-    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: rgba(255,255,255,0.85); }
-    #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #fff; }
+    #graph-container { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #graph-container canvas { border-radius: 12px; }
 
     /* ===== SHARED PANEL ===== */
-    .gp {
-      overflow: hidden;
-      transition: box-shadow 0.25s;
-    }
+    .gp { overflow: hidden; transition: box-shadow 0.25s; }
     .gp-h {
       display: flex; align-items: center; justify-content: space-between;
       padding: 6px 10px; cursor: pointer; user-select: none;
@@ -89,9 +85,6 @@
     .cb .btns { display: flex; gap: 5px; margin-top: 5px; }
     .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(0,86,179,0.08); color: #0056b3; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; }
     .cb .btns button:hover { background: rgba(0,86,179,0.18); }
-    .cb .layout-row { margin-top: 5px; }
-    .cb .layout-row label { margin-bottom: 2px; }
-    .cb .layout-row select { font-size: 0.74em; }
 
     /* ===== SEARCH (top-center) ===== */
     .hud-search { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 12; display: flex; align-items: center; }
@@ -169,12 +162,12 @@
   <div class="main">
   <div class="header-panel">
     <h1><i class="fa-solid fa-diagram-project"></i> Network Graph</h1>
-    <p class="subtitle">Interactive visualization of organizations, people, and their connections.</p>
+    <p class="subtitle">Interactive force-directed visualization — drag nodes, scroll to zoom, hover for details, click to open.</p>
   </div>
 
   <div class="graph-wrap">
-    <!-- Cytoscape canvas container -->
-    <div id="cy"></div>
+    <!-- force-graph canvas container -->
+    <div id="graph-container"></div>
 
     <!-- Loading -->
     <div class="ld-overlay" id="loading">
@@ -194,25 +187,16 @@
           <select id="f-country"><option value="">All Countries</option></select>
           <label>Category</label>
           <select id="f-cat"><option value="">All Categories</option></select>
-          <div class="layout-row">
-            <label>Layout Algorithm</label>
-            <select id="f-layout">
-              <option value="concentric" selected>Concentric (recommended)</option>
-              <option value="circle">Circle</option>
-              <option value="grid">Grid</option>
-              <option value="cose">CoSE (force — slow &gt;300 nodes)</option>
-              <option value="fcose">fCoSE (force — slow &gt;300 nodes)</option>
-            </select>
-          </div>
-          <label>Node Scale</label>
-          <input type="range" id="node-scale" min="5" max="40" value="14" />
+          <label>Node Size</label>
+          <input type="range" id="node-scale" min="2" max="20" value="6" />
+          <label>Link Distance</label>
+          <input type="range" id="link-dist" min="15" max="250" value="60" />
           <div class="chks">
             <label><input type="checkbox" id="show-people" /> People</label>
-            <label><input type="checkbox" id="show-labels" checked /> Labels</label>
           </div>
           <div class="btns">
             <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
-            <button id="btn-fit"><i class="fa-solid fa-expand"></i> Fit</button>
+            <button id="btn-fit"><i class="fa-solid fa-compress"></i> Reset</button>
           </div>
         </div>
       </div>
@@ -308,6 +292,27 @@
     };
     const DEC = '#90a4ae';
 
+    // ─── State ───────────────────────────────────────────
+    let graph = null;
+    let hoveredNode = null;
+    let neighborMap = {};      // nodeId -> Set of neighbor nodeIds
+    let neighborSet = new Set(); // current hover neighborhood
+    let searchMatches = new Set();
+    let nodeScale = 6;
+    let linkDist = 60;
+    let mouseX = 0, mouseY = 0;
+    const tipEl = document.getElementById('tip');
+    const container = document.getElementById('graph-container');
+
+    container.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (tipEl.style.display === 'block') {
+        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+      }
+    });
+
     // ─── Populate dropdowns ──────────────────────────────
     let catOk = 0, cOk = 0;
     function tryLoad() { if (catOk && cOk) loadGraph(); }
@@ -331,9 +336,237 @@
       cOk = 1; tryLoad();
     });
 
-    // ─── Cytoscape instance ─────────────────────────────
-    let cy = null;
+    // ─── Custom node rendering ───────────────────────────
+    function renderNode(node, ctx, globalScale) {
+      if (node.x == null || node.y == null) return;
 
+      const s = nodeScale;
+      let size;
+      if (node.nodeType === 'person') {
+        size = Math.max(s * 0.4, s * 0.4 + (node._degree || 0) * (s * 0.05));
+      } else {
+        size = Math.max(s * 0.6, s * 0.6 + (node._degree || 0) * (s * 0.07));
+      }
+      node._renderedSize = size;
+
+      const isHovered = node === hoveredNode;
+      const isNeighbor = hoveredNode && neighborSet.has(node.id);
+      const dimByHover = hoveredNode && !isHovered && !isNeighbor;
+      const dimBySearch = searchMatches.size > 0 && !node._found;
+      const shouldDim = dimByHover || dimBySearch;
+
+      ctx.save();
+      ctx.globalAlpha = shouldDim ? 0.06 : 1;
+
+      // Shape
+      ctx.beginPath();
+      if (node.nodeType === 'person') {
+        // Diamond
+        ctx.moveTo(node.x, node.y - size);
+        ctx.lineTo(node.x + size * 0.75, node.y);
+        ctx.lineTo(node.x, node.y + size);
+        ctx.lineTo(node.x - size * 0.75, node.y);
+        ctx.closePath();
+      } else {
+        // Circle
+        ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+      }
+      ctx.fillStyle = node._color || DC;
+      ctx.fill();
+
+      // Border
+      if (isHovered) {
+        ctx.strokeStyle = '#0056b3';
+        ctx.lineWidth = 2.5 / globalScale;
+        ctx.stroke();
+      } else if (node._found) {
+        ctx.strokeStyle = '#ffeb3b';
+        ctx.lineWidth = 2 / globalScale;
+        ctx.stroke();
+      } else if (!shouldDim) {
+        ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+        ctx.lineWidth = 0.4 / globalScale;
+        ctx.stroke();
+      }
+
+      // Label
+      const showLabel = !shouldDim && (
+        isHovered ||
+        isNeighbor ||
+        node._found ||
+        ((node._degree || 0) > 12 && globalScale > 0.6) ||
+        ((node._degree || 0) > 6 && globalScale > 1.2) ||
+        ((node._degree || 0) > 2 && globalScale > 2.5) ||
+        globalScale > 4
+      );
+
+      if (showLabel) {
+        const fontSize = Math.max(3, (isHovered ? 12 : 10) / globalScale);
+        ctx.font = (isHovered ? 'bold ' : '') + fontSize + 'px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+
+        const label = node.name || '';
+        const textW = ctx.measureText(label).width;
+        const textH = fontSize;
+        const pad = 1.5 / globalScale;
+        const textY = node.y + size + 2 / globalScale;
+
+        // Label background
+        ctx.fillStyle = 'rgba(255,255,255,0.88)';
+        ctx.fillRect(node.x - textW / 2 - pad, textY - pad, textW + pad * 2, textH + pad * 2);
+
+        // Label text
+        ctx.fillStyle = isHovered ? '#0056b3' : '#333';
+        ctx.fillText(label, node.x, textY);
+      }
+
+      ctx.restore();
+    }
+
+    // ─── Node pointer area ───────────────────────────────
+    function paintNodeArea(node, color, ctx) {
+      const size = (node._renderedSize || nodeScale * 0.6) + 3;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // ─── Link accessors ──────────────────────────────────
+    function lSrc(link) { return typeof link.source === 'object' ? link.source.id : link.source; }
+    function lTgt(link) { return typeof link.target === 'object' ? link.target.id : link.target; }
+
+    function linkWidthFn(link) {
+      if (hoveredNode) {
+        const s = lSrc(link), t = lTgt(link);
+        if (s === hoveredNode.id || t === hoveredNode.id) return 1.8;
+        return 0.08;
+      }
+      if (searchMatches.size > 0) {
+        const s = lSrc(link), t = lTgt(link);
+        if (searchMatches.has(s) || searchMatches.has(t)) return 1;
+        return 0.05;
+      }
+      return link._width || 0.5;
+    }
+
+    function linkColorFn(link) {
+      if (hoveredNode) {
+        const s = lSrc(link), t = lTgt(link);
+        if (s === hoveredNode.id || t === hoveredNode.id) return link._color || DEC;
+        return 'rgba(180,180,180,0.04)';
+      }
+      if (searchMatches.size > 0) {
+        const s = lSrc(link), t = lTgt(link);
+        if (searchMatches.has(s) || searchMatches.has(t)) return link._color || DEC;
+        return 'rgba(180,180,180,0.06)';
+      }
+      return link._color || DEC;
+    }
+
+    // ─── Initialize graph ────────────────────────────────
+    function initGraph() {
+      const rect = container.getBoundingClientRect();
+
+      graph = ForceGraph()(container)
+        .width(rect.width)
+        .height(rect.height)
+        .backgroundColor('#fff')
+        .nodeCanvasObject(renderNode)
+        .nodeCanvasObjectMode(() => 'replace')
+        .nodePointerAreaPaint(paintNodeArea)
+        .linkWidth(linkWidthFn)
+        .linkColor(linkColorFn)
+        .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
+        .cooldownTime(12000)
+        .warmupTicks(40)
+        .d3AlphaDecay(0.025)
+        .d3VelocityDecay(0.35)
+        .autoPauseRedraw(false)
+        .onNodeHover(handleNodeHover)
+        .onNodeClick(handleNodeClick)
+        .onLinkHover(handleLinkHover)
+        .onBackgroundClick(handleBgClick)
+        .enableNodeDrag(true);
+
+      // Configure forces
+      graph.d3Force('charge').strength(-80);
+      graph.d3Force('link').distance(linkDist);
+
+      // Resize handler
+      window.addEventListener('resize', () => {
+        const r = container.getBoundingClientRect();
+        graph.width(r.width).height(r.height);
+      });
+    }
+
+    // ─── Event handlers ──────────────────────────────────
+    function handleNodeHover(node) {
+      hoveredNode = node;
+      neighborSet.clear();
+      container.style.cursor = node ? 'pointer' : 'default';
+
+      if (node) {
+        neighborSet.add(node.id);
+        const nb = neighborMap[node.id];
+        if (nb) nb.forEach(id => neighborSet.add(id));
+
+        // Tooltip
+        let html;
+        if (node.nodeType === 'person') {
+          html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
+            + '<i class="fa-solid fa-briefcase"></i> ' + (node.role || 'Individual') + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '')
+            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+        } else {
+          html = '<strong>' + node.name + '</strong><br/>'
+            + '<i class="fa-solid fa-building"></i> ' + (node.type || node.entryType || '') + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '') + '<br/>'
+            + '<span class="tip-cat" style="background:' + (CC[node.category] || DC) + '30;color:' + (CC[node.category] || DC) + '">' + (node.category || '') + '</span>'
+            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+        }
+        tipEl.innerHTML = html;
+        tipEl.style.display = 'block';
+        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+      } else {
+        tipEl.style.display = 'none';
+      }
+    }
+
+    function handleNodeClick(node) {
+      if (!node) return;
+      if (node.nodeType === 'person') {
+        window.open('person.html?id=' + encodeURIComponent(node.personId || node.id), '_blank');
+      } else {
+        window.open('entry.html?religion=jewish&id=' + encodeURIComponent(node.id), '_blank');
+      }
+    }
+
+    function handleLinkHover(link) {
+      if (link) {
+        tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
+          + (link.description ? '<br/>' + link.description : '');
+        tipEl.style.display = 'block';
+        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+      } else if (!hoveredNode) {
+        tipEl.style.display = 'none';
+      }
+    }
+
+    function handleBgClick() {
+      // Clear search highlights on background click
+      searchMatches.clear();
+      if (graph) {
+        graph.graphData().nodes.forEach(n => { n._found = false; });
+      }
+      document.getElementById('s-count').textContent = '';
+      document.getElementById('s-input').value = '';
+    }
+
+    // ─── Load graph data ─────────────────────────────────
     function loadGraph() {
       const country = document.getElementById('f-country').value;
       const cat = document.getElementById('f-cat').value;
@@ -349,51 +582,49 @@
       document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
       fetch(url).then(r => r.json()).then(data => {
-        lt.textContent = 'Building layout for ' + data.nodes.length + ' nodes...';
-        // Small delay so loading text renders before heavy computation
-        setTimeout(() => buildGraph(data), 60);
+        lt.textContent = 'Rendering ' + data.nodes.length + ' nodes...';
+        setTimeout(() => buildGraph(data), 30);
+      }).catch(err => {
+        console.error('Failed to load graph data:', err);
+        lt.textContent = 'Error loading data.';
       });
     }
 
     function buildGraph(data) {
-      // Convert API data to Cytoscape format
-      const elements = [];
-      const edgeIdCounter = {};
-
-      data.nodes.forEach(n => {
-        elements.push({
-          group: 'nodes',
-          data: {
-            id: n.id, name: n.name, category: n.category || '',
-            country: n.country || '', entryType: n.type || '',
-            nodeType: n.nodeType || 'entry', personId: n.personId || '',
-            role: n.role || '', color: n.nodeType === 'person' ? PC : (CC[n.category] || DC)
-          }
-        });
-      });
-
+      // Compute degree
+      const degreeMap = {};
+      data.nodes.forEach(n => { degreeMap[n.id] = 0; });
       data.links.forEach(l => {
-        const key = l.source + '|' + l.target + '|' + (l.type||'');
-        edgeIdCounter[key] = (edgeIdCounter[key] || 0) + 1;
-        elements.push({
-          group: 'edges',
-          data: {
-            id: key + '#' + edgeIdCounter[key],
-            source: l.source, target: l.target,
-            edgeType: l.type || 'related',
-            description: l.description || '',
-            color: EC[l.type] || DEC
-          }
-        });
+        degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
+        degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
       });
 
-      const entryNodes = data.nodes.filter(n => n.nodeType !== 'person');
-      const personNodes = data.nodes.filter(n => n.nodeType === 'person');
-      const totalNodes = data.nodes.length;
+      // Build neighbor map (before d3-force mutates source/target)
+      neighborMap = {};
+      data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
+      data.links.forEach(l => {
+        if (neighborMap[l.source]) neighborMap[l.source].add(l.target);
+        if (neighborMap[l.target]) neighborMap[l.target].add(l.source);
+      });
+
+      // Assign computed properties to nodes
+      data.nodes.forEach(n => {
+        n._degree = degreeMap[n.id] || 0;
+        n._color = n.nodeType === 'person' ? PC : (CC[n.category] || DC);
+        n._found = false;
+      });
+
+      // Assign computed properties to links
+      data.links.forEach(l => {
+        l._color = EC[l.type] || DEC;
+        l._width = l.type === 'person-affiliation' ? 0.3 : 0.5;
+      });
 
       // Stats
+      const entries = data.nodes.filter(n => n.nodeType !== 'person');
+      const people = data.nodes.filter(n => n.nodeType === 'person');
       document.getElementById('stats').innerHTML =
-        '<b>' + entryNodes.length + '</b> entries · <b>' + personNodes.length + '</b> people · <b>' + data.links.length + '</b> links';
+        '<b>' + entries.length + '</b> entries · <b>' + people.length + '</b> people · <b>' + data.links.length + '</b> links';
 
       // Category legend
       const cats = [...new Set(data.nodes.map(n => n.category))].filter(Boolean).sort();
@@ -405,7 +636,19 @@
         d.style.background = CC[c] || DC;
         if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
         r.appendChild(d);
-        r.appendChild(document.createTextNode(c));
+        const txt = document.createTextNode(c);
+        r.appendChild(txt);
+        // Click category to highlight
+        r.onclick = function() {
+          searchMatches.clear();
+          graph.graphData().nodes.forEach(n => { n._found = false; });
+          graph.graphData().nodes.forEach(n => {
+            if (n.category === c) { n._found = true; searchMatches.add(n.id); }
+          });
+          document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
+          document.getElementById('s-input').value = '';
+          graph.zoomToFit(400, 50, n => n._found);
+        };
         catB.appendChild(r);
       });
 
@@ -422,405 +665,90 @@
         edgeB.appendChild(r);
       });
 
-      // Destroy previous instance
-      if (cy) { cy.destroy(); cy = null; }
+      // Clear search state
+      searchMatches.clear();
+      hoveredNode = null;
+      neighborSet.clear();
 
-      // ── Layout config ──
-      const layoutName = document.getElementById('f-layout').value;
-      const baseScale = +document.getElementById('node-scale').value;
-      let layoutOpts;
+      // Init graph instance if needed
+      if (!graph) initGraph();
 
-      if (layoutName === 'cose') {
-        const iters = totalNodes > 800 ? 30 : totalNodes > 400 ? 60 : 200;
-        layoutOpts = {
-          name: 'cose',
-          animate: false,
-          fit: true,
-          padding: 60,
-          nodeRepulsion: function() { return 6000; },
-          idealEdgeLength: function() { return 100; },
-          edgeElasticity: function() { return 80; },
-          gravity: 0.4,
-          numIter: iters,
-          nodeOverlap: 20
-        };
-      } else if (layoutName === 'fcose') {
-        const iters = totalNodes > 800 ? 20 : totalNodes > 400 ? 50 : 150;
-        layoutOpts = {
-          name: 'fcose',
-          quality: 'default',
-          randomize: true,
-          animate: false,
-          fit: true,
-          padding: 60,
-          nodeDimensionsIncludeLabels: false,
-          uniformNodeDimensions: true,
-          packComponents: true,
-          nodeRepulsion: 4500,
-          idealEdgeLength: 100,
-          edgeElasticity: 0.45,
-          nestingFactor: 0.1,
-          gravity: 0.4,
-          gravityRange: 3.8,
-          numIter: iters,
-          tile: true,
-          tilingPaddingVertical: 20,
-          tilingPaddingHorizontal: 20
-        };
-      } else if (layoutName === 'concentric') {
-        layoutOpts = {
-          name: 'concentric',
-          fit: true,
-          padding: 30,
-          concentric: function(node) { return node.degree(); },
-          levelWidth: function() { return 3; },
-          animate: false,
-          minNodeSpacing: 20
-        };
-      } else if (layoutName === 'circle') {
-        layoutOpts = { name: 'circle', fit: true, padding: 30, animate: false };
-      } else {
-        layoutOpts = { name: 'grid', fit: true, padding: 30, animate: false, condense: true };
-      }
+      // Feed data — d3-force simulation starts automatically & asynchronously
+      graph.graphData(data);
 
-      // ── Create Cytoscape ──
-      try {
-      cy = cytoscape({
-        container: document.getElementById('cy'),
-        elements: elements,
-        wheelSensitivity: 0.3,
-        minZoom: 0.02,
-        maxZoom: 8,
-        pixelRatio: 'auto',
-        textureOnViewport: totalNodes > 200,
-        hideEdgesOnViewport: totalNodes > 300,
-        hideLabelsOnViewport: totalNodes > 500,
+      // Update force parameters
+      graph.d3Force('charge').strength(data.nodes.length > 800 ? -60 : -80);
+      graph.d3Force('link').distance(linkDist);
+      graph.d3ReheatSimulation();
 
-        style: [
-          // Entry nodes
-          {
-            selector: 'node[nodeType = "entry"]',
-            style: {
-              'shape': 'ellipse',
-              'background-color': 'data(color)',
-              'border-width': 1,
-              'border-color': 'rgba(0,0,0,0.1)',
-              'width': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
-              'height': function(n) { return Math.max(baseScale * 0.6, Math.min(baseScale * 2.5, baseScale * 0.6 + n.degree() * 1.2)); },
-              'label': 'data(name)',
-              'font-size': function(n) { return Math.max(6, Math.min(11, 6 + n.degree() * 0.3)); },
-              'color': '#333',
-              'text-valign': 'bottom',
-              'text-halign': 'center',
-              'text-margin-y': 3,
-              'text-max-width': 90,
-              'text-wrap': 'ellipsis',
-              'min-zoomed-font-size': 10,
-              'text-background-color': '#fff',
-              'text-background-opacity': 0.75,
-              'text-background-padding': '1px',
-              'text-background-shape': 'roundrectangle',
-              'transition-property': 'border-width, border-color, width, height',
-              'transition-duration': '0.15s'
-            }
-          },
-          // Person nodes
-          {
-            selector: 'node[nodeType = "person"]',
-            style: {
-              'shape': 'diamond',
-              'background-color': PC,
-              'border-width': 0.8,
-              'border-color': 'rgba(200,150,50,0.3)',
-              'width': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
-              'height': function(n) { return Math.max(baseScale * 0.35, Math.min(baseScale * 1.5, baseScale * 0.35 + n.degree() * 0.8)); },
-              'label': 'data(name)',
-              'font-size': 6,
-              'color': '#555',
-              'text-valign': 'bottom',
-              'text-halign': 'center',
-              'text-margin-y': 2,
-              'text-max-width': 70,
-              'text-wrap': 'ellipsis',
-              'min-zoomed-font-size': 14,
-              'text-background-color': '#fff',
-              'text-background-opacity': 0.65,
-              'text-background-padding': '1px',
-              'text-background-shape': 'roundrectangle',
-              'transition-property': 'border-width, border-color, width, height',
-              'transition-duration': '0.15s'
-            }
-          },
-          // Edges
-          {
-            selector: 'edge',
-            style: {
-              'line-color': 'data(color)',
-              'width': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.5 : 1; },
-              'opacity': function(e) { return e.data('edgeType') === 'person-affiliation' ? 0.2 : 0.4; },
-              'curve-style': 'haystack',
-              'haystack-radius': 0.5
-            }
-          },
-          // Hover state for nodes
-          {
-            selector: 'node:active, node.hover',
-            style: {
-              'border-width': 3,
-              'border-color': '#0056b3',
-              'z-index': 999,
-              'min-zoomed-font-size': 0,
-              'text-background-opacity': 0.9
-            }
-          },
-          // Highlighted neighbor edges
-          {
-            selector: 'edge.neighbor',
-            style: {
-              'opacity': 0.85,
-              'width': 2,
-              'z-index': 100
-            }
-          },
-          // Highlighted neighbor nodes
-          {
-            selector: 'node.neighbor',
-            style: {
-              'border-width': 2,
-              'border-color': '#a5c8ff',
-              'min-zoomed-font-size': 0,
-              'z-index': 100
-            }
-          },
-          // Dimmed (non-neighbor) when a node is selected
-          {
-            selector: 'node.dimmed',
-            style: { 'opacity': 0.12 }
-          },
-          {
-            selector: 'edge.dimmed',
-            style: { 'opacity': 0.03 }
-          },
-          // Search highlight
-          {
-            selector: 'node.found',
-            style: {
-              'border-width': 3,
-              'border-color': '#ffeb3b',
-              'z-index': 999,
-              'min-zoomed-font-size': 0
-            }
-          }
-        ],
-        layout: layoutOpts
-      });
-
-      // ── Label visibility via checkbox ──
-      if (!document.getElementById('show-labels').checked) {
-        cy.nodes().style('label', '');
-      }
-
-      // ── Events ──
-
-      // Hover: highlight neighborhood
-      let hoverTimeout;
-      cy.on('mouseover', 'node', function(e) {
-        clearTimeout(hoverTimeout);
-        const node = e.target;
-        node.addClass('hover');
-        // Show tooltip
-        const d = node.data();
-        const pos = e.renderedPosition || e.position;
-        const rect = document.getElementById('cy').getBoundingClientRect();
-        let html;
-        if (d.nodeType === 'person') {
-          html = '<strong><i class="fa-solid fa-user"></i> ' + d.name + '</strong><br/>'
-            + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + d.country
-            + '<br/><span style="color:#666;font-size:0.85em">' + node.degree() + ' connections</span>';
-        } else {
-          html = '<strong>' + d.name + '</strong><br/>'
-            + '<i class="fa-solid fa-building"></i> ' + d.entryType + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + d.country + '<br/>'
-            + '<span class="tip-cat" style="background:' + (CC[d.category]||DC) + '30;color:' + (CC[d.category]||DC) + '">' + d.category + '</span>'
-            + '<br/><span style="color:#666;font-size:0.85em">' + node.degree() + ' connections</span>';
-        }
-        const tip = document.getElementById('tip');
-        tip.innerHTML = html;
-        tip.style.display = 'block';
-        tip.style.left = Math.min(rect.left + pos.x + 18, window.innerWidth - 360) + 'px';
-        tip.style.top = Math.min(rect.top + pos.y - 10, window.innerHeight - 120) + 'px';
-      });
-
-      cy.on('mouseout', 'node', function(e) {
-        e.target.removeClass('hover');
-        document.getElementById('tip').style.display = 'none';
-        hoverTimeout = setTimeout(clearHighlight, 100);
-      });
-
-      // Click: focus neighborhood (dim everything else)
-      cy.on('tap', 'node', function(e) {
-        e.stopPropagation();
-        const node = e.target;
-        const d = node.data();
-
-        // Double-tap = navigate
-        if (node._lastTap && Date.now() - node._lastTap < 400) {
-          if (d.nodeType === 'person') {
-            window.open('person.html?id=' + encodeURIComponent(d.personId), '_blank');
-          } else {
-            window.open('entry.html?religion=jewish&id=' + encodeURIComponent(d.id), '_blank');
-          }
-          return;
-        }
-        node._lastTap = Date.now();
-
-        // Focus neighborhood
-        clearHighlight();
-        const neighborhood = node.neighborhood().add(node);
-        cy.elements().not(neighborhood).addClass('dimmed');
-        neighborhood.edges().addClass('neighbor');
-        neighborhood.nodes().not(node).addClass('neighbor');
-        node.addClass('hover');
-      });
-
-      // Tap background = clear focus
-      cy.on('tap', function(e) {
-        if (e.target === cy) clearHighlight();
-      });
-
-      function clearHighlight() {
-        cy.elements().removeClass('dimmed neighbor hover found');
-      }
-
-      // Edge hover tooltip
-      cy.on('mouseover', 'edge', function(e) {
-        const d = e.target.data();
-        const pos = e.renderedPosition || { x: 0, y: 0 };
-        const rect = document.getElementById('cy').getBoundingClientRect();
-        const tip = document.getElementById('tip');
-        tip.innerHTML = '<strong>' + d.edgeType + '</strong>' + (d.description ? '<br/>' + d.description : '');
-        tip.style.display = 'block';
-        tip.style.left = Math.min(rect.left + pos.x + 18, window.innerWidth - 360) + 'px';
-        tip.style.top = Math.min(rect.top + pos.y - 10, window.innerHeight - 120) + 'px';
-      });
-      cy.on('mouseout', 'edge', function() {
-        document.getElementById('tip').style.display = 'none';
-      });
-
-      // Layout done
-      cy.one('layoutstop', function() {
-        document.getElementById('loading').classList.add('off');
-        cy.fit(undefined, 50);
-      });
-
-      // Fallback: force-hide loading if layout hangs or never fires layoutstop
+      // Hide loading overlay after a short delay (simulation starts immediately)
       setTimeout(() => {
-        const ld = document.getElementById('loading');
-        if (!ld.classList.contains('off')) {
-          console.warn('Layout timeout — forcing display.');
-          ld.classList.add('off');
-          if (cy) cy.fit(undefined, 50);
-        }
-      }, 15000);
-
-      } catch(err) {
-        console.error('Layout error, falling back to grid:', err);
-        try {
-          if (cy) cy.layout({ name: 'grid', fit: true, padding: 30, animate: false }).run();
-        } catch(e2) { /* ignore */ }
         document.getElementById('loading').classList.add('off');
-      }
+      }, 300);
     }
 
     // ─── Controls ────────────────────────────────────────
     document.getElementById('btn-reload').onclick = loadGraph;
-    document.getElementById('btn-fit').onclick = () => { if (cy) cy.fit(undefined, 50); };
+
+    document.getElementById('btn-fit').onclick = () => {
+      if (graph) {
+        graph.zoomToFit(400, 40);
+        graph.d3ReheatSimulation();
+      }
+    };
+
     document.getElementById('show-people').onchange = loadGraph;
     document.getElementById('f-country').onchange = loadGraph;
     document.getElementById('f-cat').onchange = loadGraph;
-    document.getElementById('f-layout').onchange = function() {
-      if (!cy) return;
-      // Re-run layout without reloading data
-      document.getElementById('loading').classList.remove('off');
-      document.getElementById('ld-text').textContent = 'Recalculating layout...';
-      setTimeout(() => {
-        const name = this.value;
-        let opts;
-        const n = cy.nodes().length;
-        if (name === 'cose') {
-          const it = n > 800 ? 30 : n > 400 ? 60 : 200;
-          opts = { name:'cose', animate:false, fit:true, padding:60,
-            nodeRepulsion:()=>6000, idealEdgeLength:()=>100,
-            edgeElasticity:()=>80, gravity:0.4, numIter:it, nodeOverlap:20 };
-        } else if (name === 'fcose') {
-          const it = n > 800 ? 20 : n > 400 ? 50 : 150;
-          opts = { name:'fcose', randomize:true, animate:false, fit:true, padding:60,
-            uniformNodeDimensions:true, nodeRepulsion:4500,
-            idealEdgeLength:100, edgeElasticity:0.45, gravity:0.4,
-            numIter:it, tile:true, tilingPaddingVertical:20, tilingPaddingHorizontal:20 };
-        } else if (name === 'concentric') {
-          opts = { name:'concentric', fit:true, padding:30,
-            concentric: nd=>nd.degree(), levelWidth:()=>3, animate:false, minNodeSpacing:20 };
-        } else if (name === 'circle') {
-          opts = { name:'circle', fit:true, padding:30, animate:false };
-        } else {
-          opts = { name:'grid', fit:true, padding:30, animate:false, condense:true };
-        }
-        const layout = cy.layout(opts);
-        layout.one('layoutstop', () => {
-          document.getElementById('loading').classList.add('off');
-          cy.fit(undefined, 50);
-        });
-        layout.run();
-        setTimeout(() => {
-          const ld = document.getElementById('loading');
-          if (!ld.classList.contains('off')) { ld.classList.add('off'); if (cy) cy.fit(undefined, 50); }
-        }, 15000);
-      }, 60);
-    };
-    document.getElementById('show-labels').onchange = function() {
-      if (!cy) return;
-      if (this.checked) {
-        cy.nodes('[nodeType = "entry"]').style('label', function(n){ return n.data('name'); });
-        cy.nodes('[nodeType = "person"]').style('label', function(n){ return n.data('name'); });
-      } else {
-        cy.nodes().style('label', '');
-      }
-    };
+
     document.getElementById('node-scale').oninput = function() {
-      if (!cy) return;
-      const s = +this.value;
-      cy.nodes('[nodeType = "entry"]').style({
-        'width': function(n) { return Math.max(s*0.6, Math.min(s*2.5, s*0.6 + n.degree()*1.2)); },
-        'height': function(n) { return Math.max(s*0.6, Math.min(s*2.5, s*0.6 + n.degree()*1.2)); }
-      });
-      cy.nodes('[nodeType = "person"]').style({
-        'width': function(n) { return Math.max(s*0.35, Math.min(s*1.5, s*0.35 + n.degree()*0.8)); },
-        'height': function(n) { return Math.max(s*0.35, Math.min(s*1.5, s*0.35 + n.degree()*0.8)); }
-      });
+      nodeScale = +this.value;
+      // autoPauseRedraw is false, so next frame picks up new scale
+    };
+
+    document.getElementById('link-dist').oninput = function() {
+      linkDist = +this.value;
+      if (graph) {
+        graph.d3Force('link').distance(linkDist);
+        graph.d3ReheatSimulation();
+      }
     };
 
     // ─── Search ──────────────────────────────────────────
     function doSearch() {
       const q = document.getElementById('s-input').value.trim().toLowerCase();
-      if (!cy) return;
-      cy.elements().removeClass('found dimmed');
-      if (!q) { document.getElementById('s-count').textContent = ''; return; }
-      const matches = cy.nodes().filter(n => n.data('name').toLowerCase().includes(q));
+      if (!graph) return;
+
+      searchMatches.clear();
+      graph.graphData().nodes.forEach(n => { n._found = false; });
+
+      if (!q) {
+        document.getElementById('s-count').textContent = '';
+        return;
+      }
+
+      const matches = graph.graphData().nodes.filter(n =>
+        (n.name || '').toLowerCase().includes(q)
+      );
+      matches.forEach(n => { n._found = true; searchMatches.add(n.id); });
+
       const count = matches.length;
       document.getElementById('s-count').textContent = count ? count + ' found' : 'none';
+
       if (count) {
-        matches.addClass('found');
-        cy.nodes().not(matches).addClass('dimmed');
-        cy.edges().addClass('dimmed');
-        // Fit camera to matches with padding
-        cy.fit(matches, 80);
+        graph.zoomToFit(400, 50, n => n._found);
       }
     }
+
     document.getElementById('s-btn').onclick = doSearch;
     document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
-    document.getElementById('s-input').oninput = function() { if (!this.value.trim()) { if (cy) cy.elements().removeClass('found dimmed'); document.getElementById('s-count').textContent=''; } };
+    document.getElementById('s-input').oninput = function() {
+      if (!this.value.trim()) {
+        searchMatches.clear();
+        if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
+        document.getElementById('s-count').textContent = '';
+      }
+    };
   </script>
 </body>
 </html>
