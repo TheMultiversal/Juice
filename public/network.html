@@ -480,10 +480,10 @@
         const focusName = data.focusName || focusEntryId;
         document.getElementById('page-title').innerHTML = '<span class="focus-name">' + focusName + '</span> Network';
         document.getElementById('page-subtitle').textContent = data.nodes.length + ' nodes · ' + data.links.length + ' connections · Depth ' + data.depth;
-        document.title = focusName + ' Network – The Juice Box';
+        document.title = focusName + ' Network - The Juice Box';
 
         // Update SEO
-        setSEO(focusName + ' Network', 'Explore the full connection network of ' + focusName + ' – organizations, people, and hidden ties.', 'network.html?id=' + focusEntryId);
+        setSEO(focusName + ' Network', 'Explore the full connection network of ' + focusName + ' - organizations, people, and hidden ties.', 'network.html?id=' + focusEntryId);
 
         lt.textContent = 'Rendering ' + data.nodes.length + ' nodes...';
         setTimeout(() => buildGraph(data), 30);

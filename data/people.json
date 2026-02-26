@@ -16621,6 +16621,191 @@
           "entryId": "israel-aerospace-industries"
         }
       ]
+    },
+    "nadia-marcinkova": {
+      "name": "Nadia Marcinkova",
+      "bio": "Slovakian-born woman who was allegedly brought to the US by Jeffrey Epstein from the former Yugoslavia when she was a teenager. She was named as an alleged participant and later co-conspirator in Epstein abuse. She later changed her name to Nadia Marcinko and became a licensed pilot. She received a non-prosecution agreement as part of the 2008 plea deal.",
+      "affiliations": [
+        {
+          "organization": "Jeffrey Epstein Network",
+          "role": "Associate / Alleged Participant",
+          "country": "United States",
+          "entryId": "jeffrey-epstein-network"
+        }
+      ]
+    },
+    "lesley-groff": {
+      "name": "Lesley Groff",
+      "bio": "American woman who served as Jeffrey Epstein executive assistant for over two decades. She was named as a co-conspirator in the original federal investigation but received a non-prosecution agreement in the 2008 plea deal. Victims alleged she helped schedule appointments with underage girls and managed logistics of the trafficking operation.",
+      "affiliations": [
+        {
+          "organization": "Jeffrey Epstein Network",
+          "role": "Executive Assistant",
+          "country": "United States",
+          "entryId": "jeffrey-epstein-network"
+        }
+      ]
+    },
+    "adolph-ochs": {
+      "name": "Adolph Ochs",
+      "bio": "American newspaper publisher (1858-1935) who purchased The New York Times in 1896 and transformed it into a respected newspaper of record. Born to a Jewish immigrant family from Bavaria, he established the Ochs-Sulzberger family dynasty that controlled the Times for over a century.",
+      "affiliations": [
+        {
+          "organization": "New York Times",
+          "role": "Publisher (1896-1935)",
+          "country": "United States",
+          "entryId": "new-york-times"
+        }
+      ]
+    },
+    "lawrence-summers-harvard": {
+      "name": "Lawrence Summers",
+      "bio": "American economist who served as President of Harvard University (2001-2006) and US Secretary of the Treasury (1999-2001). During his tenure at Harvard, the university accepted donations from Jeffrey Epstein, and Summers met with Epstein on multiple occasions. He later stated the meetings were a mistake.",
+      "affiliations": [
+        {
+          "organization": "Harvard University",
+          "role": "Former President",
+          "country": "United States",
+          "entryId": "harvard-university"
+        },
+        {
+          "organization": "US Department of the Treasury",
+          "role": "Former Secretary",
+          "country": "United States"
+        }
+      ]
+    },
+    "bob-weinstein": {
+      "name": "Bob Weinstein",
+      "bio": "American film producer who co-founded Miramax Films with his brother Harvey Weinstein in 1979. He later co-founded The Weinstein Company. After Harvey conviction for sexual assault, Bob distanced himself but faced his own allegations of workplace harassment.",
+      "affiliations": [
+        {
+          "organization": "Miramax Films",
+          "role": "Co-founder",
+          "country": "United States",
+          "entryId": "miramax-films"
+        }
+      ]
+    },
+    "joi-ito": {
+      "name": "Joi Ito",
+      "bio": "Japanese-American activist and entrepreneur who served as director of the MIT Media Lab from 2011 to 2019. He resigned after revelations that he had solicited and accepted donations from Jeffrey Epstein, and concealed the nature and extent of the relationship from MIT officials. Internal emails showed Epstein was a \"disqualified donor.\"",
+      "affiliations": [
+        {
+          "organization": "MIT Media Lab",
+          "role": "Former Director (resigned 2019)",
+          "country": "United States",
+          "entryId": "mit-media-lab"
+        }
+      ]
+    },
+    "nicholas-negroponte": {
+      "name": "Nicholas Negroponte",
+      "bio": "Greek-American architect, computer scientist, and co-founder of the MIT Media Lab. Also founded the One Laptop per Child initiative. He publicly defended accepting donations from Jeffrey Epstein after the scandal broke.",
+      "affiliations": [
+        {
+          "organization": "MIT Media Lab",
+          "role": "Co-founder",
+          "country": "United States",
+          "entryId": "mit-media-lab"
+        }
+      ]
+    },
+    "donald-barr": {
+      "name": "Donald Barr",
+      "bio": "American educator (1921-2004) who served as headmaster of the elite Dalton School in Manhattan. He hired Jeffrey Epstein to teach there in 1974 despite Epstein lacking a college degree. He was the father of William Barr, who later served as US Attorney General during Epstein death in federal custody.",
+      "affiliations": [
+        {
+          "organization": "Dalton School",
+          "role": "Former Headmaster",
+          "country": "United States",
+          "entryId": "dalton-school"
+        }
+      ]
+    },
+    "robert-maxwell": {
+      "name": "Robert Maxwell",
+      "bio": "Czech-born British media baron (1923-1991) who built Maxwell Communications Corporation into one of the largest media conglomerates in the world. He died after falling from his yacht under mysterious circumstances. Post-mortem, it was revealed he had looted hundreds of millions from company pension funds. He has been widely alleged to have been an agent or asset of Israeli intelligence (Mossad). Father of Ghislaine Maxwell.",
+      "affiliations": [
+        {
+          "organization": "Maxwell Communications Corporation",
+          "role": "Founder and Chairman",
+          "country": "United Kingdom",
+          "entryId": "maxwell-communications"
+        }
+      ]
+    },
+    "geoffrey-berman": {
+      "name": "Geoffrey Berman",
+      "bio": "American attorney who served as US Attorney for the SDNY from 2018 to 2020. He oversaw the Epstein prosecution and arrest. He was controversially fired by Attorney General William Barr in June 2020 and later wrote a memoir alleging political interference in cases.",
+      "affiliations": [
+        {
+          "organization": "Southern District of New York (SDNY)",
+          "role": "Former US Attorney",
+          "country": "United States",
+          "entryId": "sdny"
+        }
+      ]
+    },
+    "michael-reiter": {
+      "name": "Michael Reiter",
+      "bio": "Former Palm Beach Police Chief who initiated and led the first comprehensive investigation into Jeffrey Epstein beginning in 2005. He pushed for federal involvement when the local state attorney refused to file felony charges.",
+      "affiliations": [
+        {
+          "organization": "Palm Beach Police Department",
+          "role": "Former Chief",
+          "country": "United States",
+          "entryId": "palm-beach-police"
+        }
+      ]
+    },
+    "denise-george": {
+      "name": "Denise George",
+      "bio": "Former Attorney General of the US Virgin Islands who filed a landmark civil enforcement action against JPMorgan Chase for facilitating Epstein sex trafficking operation. She was fired shortly after filing the suit.",
+      "affiliations": [
+        {
+          "organization": "US Virgin Islands (Government)",
+          "role": "Former Attorney General",
+          "country": "United States",
+          "entryId": "us-virgin-islands-gov"
+        }
+      ]
+    },
+    "ari-ben-menashe": {
+      "name": "Ari Ben-Menashe",
+      "bio": "Iranian-born Israeli intelligence operative who later became a political consultant. He publicly claimed that both Robert Maxwell and Jeffrey Epstein were connected to Israeli intelligence operations and that Epstein ran a sexual blackmail operation for intelligence purposes.",
+      "affiliations": [
+        {
+          "organization": "Mossad (Israeli Intelligence)",
+          "role": "Former Operative",
+          "country": "Israel",
+          "entryId": "mossad-israeli-intelligence"
+        }
+      ]
+    },
+    "robert-mueller": {
+      "name": "Robert Mueller",
+      "bio": "American attorney who served as FBI Director from 2001 to 2013, overlapping with periods when Epstein complaints were known to the bureau. Later served as Special Counsel investigating Russian interference in the 2016 election.",
+      "affiliations": [
+        {
+          "organization": "Federal Bureau of Investigation (FBI)",
+          "role": "Former Director (2001-2013)",
+          "country": "United States",
+          "entryId": "fbi"
+        }
+      ]
+    },
+    "seth-lloyd": {
+      "name": "Seth Lloyd",
+      "bio": "American mechanical engineer and professor at MIT who accepted research funding from Jeffrey Epstein for quantum computing work. He was placed on paid leave by MIT in 2020 after the Epstein funding revelations.",
+      "affiliations": [
+        {
+          "organization": "MIT Media Lab",
+          "role": "Professor",
+          "country": "United States",
+          "entryId": "mit-media-lab"
+        }
+      ]
     }
   }
 }

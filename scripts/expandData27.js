@@ -1,232 +1,744 @@
-// expandData27.js - Wave 3: More unique entries, more countries, more categories
+#!/usr/bin/env node
+// expandData27.js - Fix connection references, create missing Epstein entries,
+// add missing people, remove en/em dashes, expand Epstein network exhaustively
 const fs = require('fs');
 const path = require('path');
 
-const dataPath = path.join(__dirname, '..', 'data', 'jewish.json');
-const peoplePath = path.join(__dirname, '..', 'data', 'people.json');
-const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
-const peopleData = JSON.parse(fs.readFileSync(peoplePath, 'utf8'));
+const JD_PATH = path.join(__dirname, '..', 'data', 'jewish.json');
+const PD_PATH = path.join(__dirname, '..', 'data', 'people.json');
+
+const jd = JSON.parse(fs.readFileSync(JD_PATH, 'utf8'));
+const pd = JSON.parse(fs.readFileSync(PD_PATH, 'utf8'));
 
 function slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
-function addPerson(id, name, bio) {
-  if (!peopleData.people[id]) peopleData.people[id] = { name, bio, notes: '', affiliations: [] };
+
+// ═══════════════════════════════════════════════════════
+// 1. REMOVE EN DASHES AND EM DASHES FROM ALL TEXT FIELDS
+// ═══════════════════════════════════════════════════════
+let dashFixes = 0;
+function fixDashes(obj) {
+  if (typeof obj === 'string') {
+    const fixed = obj.replace(/\u2013/g, '-').replace(/\u2014/g, '-');
+    if (fixed !== obj) dashFixes++;
+    return fixed;
+  }
+  if (Array.isArray(obj)) return obj.map(fixDashes);
+  if (obj && typeof obj === 'object') {
+    for (const k in obj) obj[k] = fixDashes(obj[k]);
+    return obj;
+  }
+  return obj;
 }
-function addEntry(country, entry) {
-  if (!data.countries[country]) data.countries[country] = [];
-  if (data.countries[country].some(e => e.id === entry.id)) return false;
-  data.countries[country].push(entry);
-  return true;
-}
-let added = 0;
-function add(country, e) {
-  for (const ind of (e.individuals || [])) addPerson(ind.id, ind.name, ind.bio);
-  if (addEntry(country, e)) added++;
-}
+fixDashes(jd);
+fixDashes(pd);
 
-// ============================================================
-// US Wave 3 - More unique entries
-// ============================================================
-const us3 = [
-  { name: 'Paramount Pictures', id: slug('Paramount Pictures'), type: 'film studio', category: 'Entertainment & Media', description: 'Paramount Pictures is one of the "Big Five" major Hollywood film studios, originally founded in 1912 by Adolph Zukor, a Hungarian Jewish immigrant. Paramount has produced some of the highest-grossing films in history including The Godfather, Titanic, Transformers, and Mission: Impossible. Now a subsidiary of Paramount Global.', website: 'https://www.paramount.com/studios', founded: 1912, individuals: [{ id: slug('Adolph Zukor'), name: 'Adolph Zukor', role: 'Founder', bio: 'Founder of Paramount Pictures. Hungarian-born Jewish immigrant who was a pioneer of the American film industry.' }], connections: [{ name: 'Paramount Global', type: 'parent company', description: 'Paramount Pictures is the film studio division of Paramount Global.' }] },
-  { name: 'Warner Bros. Pictures', id: slug('Warner Bros Pictures'), type: 'film studio', category: 'Entertainment & Media', description: 'Warner Bros. Pictures is one of the "Big Five" major Hollywood studios. Founded in 1923 by four brothers - Harry, Albert, Sam, and Jack Warner - sons of Polish Jewish immigrants. Warner Bros. pioneered "talkies" with The Jazz Singer (1927) and has produced iconic franchises including Harry Potter, DC Comics films, The Matrix, and Looney Tunes.', website: 'https://www.warnerbros.com', founded: 1923, individuals: [{ id: slug('Harry Warner'), name: 'Harry Warner', role: 'Co-Founder', bio: 'Co-founder and first president of Warner Bros. Eldest of the Warner brothers, sons of Polish Jewish immigrants.' }, { id: slug('Jack Warner'), name: 'Jack Warner', role: 'Co-Founder', bio: 'Co-founder of Warner Bros. Led the studio as production chief for decades. Known for his larger-than-life personality.' }], connections: [{ name: 'Warner Bros. Discovery', type: 'corporate evolution', description: 'Warner Bros. Pictures is now part of Warner Bros. Discovery.' }, { name: 'Paramount Pictures', type: 'studio peer', description: 'Both are classic Hollywood studios founded by Jewish immigrants.' }] },
-  { name: 'Universal Pictures', id: slug('Universal Pictures'), type: 'film studio', category: 'Entertainment & Media', description: 'Universal Pictures is one of the oldest and most successful Hollywood studios, founded by Carl Laemmle, a German-Jewish immigrant, in 1912. Universal has produced iconic films including Jaws, E.T., Jurassic Park, Fast & Furious, and the Universal Monsters franchise. It is now part of NBCUniversal, owned by Comcast.', website: 'https://www.universalpictures.com', founded: 1912, individuals: [{ id: slug('Carl Laemmle'), name: 'Carl Laemmle', role: 'Founder', bio: 'Founder of Universal Pictures. German-Jewish immigrant who pioneered the Hollywood studio system. Used his position to rescue over 300 Jewish families from Nazi Germany.' }], connections: [{ name: 'Warner Bros. Pictures', type: 'studio peer', description: 'Both are classic Hollywood studios founded by Jewish immigrants.' }] },
-  { name: 'Metro-Goldwyn-Mayer (MGM)', id: slug('Metro-Goldwyn-Mayer MGM'), type: 'film studio', category: 'Entertainment & Media', description: 'Metro-Goldwyn-Mayer (MGM) was once the most powerful studio in Hollywood, known for its Leo the Lion logo and motto "Ars Gratia Artis." Founded through mergers by Marcus Loew, with Louis B. Mayer (born Lazar Meir, a Belarusian Jewish immigrant) serving as studio head for decades. MGM produced classics including The Wizard of Oz, Gone with the Wind, and James Bond films. Amazon acquired MGM in 2022 for $8.45 billion.', website: 'https://www.mgm.com', founded: 1924, individuals: [{ id: slug('Louis B. Mayer'), name: 'Louis B. Mayer', role: 'Co-Founder & Studio Head', bio: 'Co-founder and legendary studio head of MGM. Born Lazar Meir to a Jewish family in the Russian Empire. Was the highest-paid person in America in the 1930s.' }], connections: [{ name: 'Universal Pictures', type: 'studio peer', description: 'Both are classic Hollywood studios with Jewish founders.' }] },
-  { name: 'Columbia Pictures', id: slug('Columbia Pictures'), type: 'film studio', category: 'Entertainment & Media', description: 'Columbia Pictures is a major film studio originally founded as CBC Film Sales Corporation by Harry Cohn, Jack Cohn, and Joe Brandt in 1918 (renamed Columbia in 1924). Harry Cohn, the son of a Jewish tailor from Germany, ran the studio with an iron fist for decades. Columbia produced Spider-Man, Men in Black, Ghostbusters, and many other iconic films. Now owned by Sony.', website: 'https://www.sonypictures.com/columbia', founded: 1918, individuals: [{ id: slug('Harry Cohn'), name: 'Harry Cohn', role: 'Co-Founder & President', bio: 'Co-founder and longtime president of Columbia Pictures. Notorious studio boss known for his demanding leadership style. Son of German Jewish immigrants.' }], connections: [{ name: 'Metro-Goldwyn-Mayer (MGM)', type: 'studio peer', description: 'Both are classic Hollywood studios founded by Jewish entrepreneurs.' }] },
-  { name: 'Fox Corporation', id: slug('Fox Corporation'), type: 'media company', category: 'Entertainment & Media', description: 'Fox Corporation operates Fox News, Fox Sports, Fox Business, and the Fox television network. While founded by Rupert Murdoch, Fox Corporation has significant Jewish leadership including former Fox News president and co-president. Lachlan Murdoch serves as Chairman and CEO. Fox News is the most-watched cable news network in the United States.', website: 'https://www.foxcorporation.com', founded: 2019, individuals: [], connections: [{ name: 'Paramount Global', type: 'media peer', description: 'Both are major American media companies.' }] },
-  { name: 'Comcast Corporation', id: slug('Comcast Corporation'), type: 'media & telecom conglomerate', category: 'Entertainment & Media', description: 'Comcast Corporation is the largest cable television company and home internet provider in the United States, and the third-largest home telephone provider. Under CEO Brian Roberts, the son of founder Ralph Roberts, Comcast acquired NBCUniversal for $30 billion and DreamWorks Animation for $3.8 billion. The Roberts family has deep ties to the Jewish community in Philadelphia.', website: 'https://www.comcastcorporation.com', founded: 1963, individuals: [{ id: slug('Brian Roberts'), name: 'Brian Roberts', role: 'Chairman & CEO', bio: 'Chairman and CEO of Comcast Corporation. Son of co-founder Ralph Roberts. Built Comcast from a small cable operator into one of the world\'s largest media companies.' }, { id: slug('Ralph Roberts'), name: 'Ralph Roberts', role: 'Co-Founder', bio: 'Co-founder of Comcast Corporation. Jewish American businessman from New York who moved to Philadelphia. Died in 2015.' }], connections: [{ name: 'Universal Pictures', type: 'owned studio', description: 'Comcast owns Universal Pictures through its NBCUniversal subsidiary.' }, { name: 'DreamWorks Animation', type: 'acquired studio', description: 'Comcast acquired DreamWorks Animation in 2016.' }] },
-  { name: 'ViacomCBS Foundation', id: slug('ViacomCBS Foundation'), type: 'philanthropic foundation', category: 'Philanthropy & Foundations', description: 'The Redstone family\'s National Amusements controls Paramount Global (formerly ViacomCBS). The Redstone fortune, built by Sumner Redstone (born Sumner Murray Rothstein, son of a Boston Jewish family), spans media including Paramount Pictures, CBS, Showtime, MTV, Nickelodeon, and BET. Sumner Redstone was one of the most powerful media moguls in American history.', website: '', founded: 2000, individuals: [{ id: slug('Sumner Redstone'), name: 'Sumner Redstone', role: 'Patriarch', bio: 'Media mogul who built the Viacom empire. Born Sumner Murray Rothstein to a Jewish family in Boston. Controlled Paramount, CBS, MTV, Nickelodeon. Died in 2020.' }], connections: [{ name: 'Paramount Global', type: 'corporate connection', description: 'The Redstone family controls Paramount Global through National Amusements.' }] },
-  { name: 'Las Vegas Sands Corp.', id: slug('Las Vegas Sands Corp'), type: 'casino & resort company', category: 'Real Estate & Property', description: 'Las Vegas Sands Corp. is the world\'s leading developer of integrated resorts. Founded by Sheldon Adelson, who built The Venetian in Las Vegas and Marina Bay Sands in Singapore. Adelson was one of the wealthiest people in the world and the largest Republican donor in US history before his death in 2021. His wife Miriam Adelson continues the family\'s major philanthropic and political engagement.', website: 'https://www.sands.com', founded: 1988, individuals: [{ id: slug('Sheldon Adelson'), name: 'Sheldon Adelson', role: 'Founder', bio: 'Founder of Las Vegas Sands. Was one of the world\'s wealthiest people and the largest political donor in US history. Major supporter of Israel and Jewish causes. Died in 2021.' }, { id: slug('Miriam Adelson'), name: 'Miriam Adelson', role: 'Majority Owner', bio: 'Majority owner of Las Vegas Sands. Israeli-American physician and one of the world\'s wealthiest women. Major political donor and supporter of Israel.' }], connections: [{ name: 'The Marcus Foundation', type: 'Republican donor peer', description: 'Both the Adelson and Marcus families are among the largest Republican donors in the US.' }] },
-  { name: 'Wynn Resorts', id: slug('Wynn Resorts'), type: 'casino & resort company', category: 'Real Estate & Property', description: 'Wynn Resorts is a luxury casino and resort company founded by Steve Wynn. Known for transforming the Las Vegas Strip with the Wynn and Encore resorts, and building Wynn Palace and Wynn Macau in China. Wynn is credited with sparking the modern era of mega-resorts on the Las Vegas Strip.', website: 'https://www.wynnresorts.com', founded: 2002, individuals: [{ id: slug('Steve Wynn'), name: 'Steve Wynn', role: 'Founder', bio: 'Founder of Wynn Resorts. Transformed the Las Vegas Strip with The Mirage, Bellagio, and Wynn resorts. Resigned as chairman in 2018.' }], connections: [{ name: 'Las Vegas Sands Corp.', type: 'casino industry peer', description: 'Both are major Las Vegas & Macau casino resort operators.' }] },
-  { name: 'Berkshire Hathaway', id: slug('Berkshire Hathaway'), type: 'conglomerate', category: 'Conglomerates', description: 'While Berkshire Hathaway is led by Warren Buffett, the company\'s vice chairman for decades was Charlie Munger, and key executives have included Ajit Jain and Greg Abel. The company has significant investments in companies founded or led by Jewish executives, and Buffett\'s close partnership with the late Munger and extensive dealings with Jewish business leaders have been a hallmark of his career.', website: 'https://www.berkshirehathaway.com', founded: 1839, individuals: [], connections: [{ name: '3G Capital', type: 'investment partner', description: 'Berkshire Hathaway partnered with 3G Capital to acquire Kraft Heinz.' }] },
-  { name: 'Kraft Heinz Company', id: slug('Kraft Heinz Company'), type: 'food & beverage company', category: 'Food & Beverage', description: 'The Kraft Heinz Company is one of the largest food and beverage companies in the world, formed from the 2015 merger of Kraft Foods and H.J. Heinz, orchestrated by 3G Capital and Berkshire Hathaway. The Kraft family, of German Jewish heritage, built Kraft Foods into an American household name. Brands include Oscar Mayer, Philadelphia, Maxwell House, and Planters.', website: 'https://www.kraftheinzcompany.com', founded: 2015, individuals: [], connections: [{ name: '3G Capital', type: 'controlling shareholder', description: '3G Capital co-owns Kraft Heinz with Berkshire Hathaway.' }, { name: 'Starbucks Corporation', type: 'food industry peer', description: 'Both are major American food and beverage companies.' }] },
-  { name: 'Hasbro', id: slug('Hasbro'), type: 'toy company', category: 'Entertainment & Media', description: 'Hasbro, Inc. is one of the world\'s largest toy and entertainment companies. Founded by Henry and Helal Hassenfeld, Jewish immigrants from Poland, in 1923 as a textile remnant company in Providence, Rhode Island. Hasbro owns iconic brands including Monopoly, Transformers, My Little Pony, Nerf, Play-Doh, and Dungeons & Dragons. The Hassenfeld family led the company for three generations.', website: 'https://www.hasbro.com', founded: 1923, individuals: [{ id: slug('Henry Hassenfeld'), name: 'Henry Hassenfeld', role: 'Co-Founder', bio: 'Co-founder of Hasbro. Polish Jewish immigrant who started the company as a textile business in Providence, Rhode Island.' }], connections: [{ name: 'The Walt Disney Company', type: 'licensing partner', description: 'Hasbro has produced toys for many Disney properties.' }] },
-  { name: 'Mattel', id: slug('Mattel'), type: 'toy company', category: 'Entertainment & Media', description: 'Mattel, Inc. is the world\'s second-largest toy company by revenue. Co-founded by Ruth Handler and her husband Elliot Handler (both Jewish) along with Harold Matson in 1945. Ruth Handler invented the Barbie doll in 1959, named after her daughter Barbara. Mattel also makes Hot Wheels, Fisher-Price, American Girl, and UNO.', website: 'https://www.mattel.com', founded: 1945, individuals: [{ id: slug('Ruth Handler'), name: 'Ruth Handler', role: 'Co-Founder', bio: 'Co-founder of Mattel and inventor of the Barbie doll. Born to a Jewish family of Polish immigrants in Denver, Colorado. Died in 2002.' }], connections: [{ name: 'Hasbro', type: 'toy industry rival', description: 'The world\'s two largest toy companies.' }] },
-  // HEALTHCARE
-  { name: 'Mount Sinai Health System', id: slug('Mount Sinai Health System'), type: 'hospital system', category: 'Healthcare & Pharmaceuticals', description: 'The Mount Sinai Health System is one of the largest academic medical systems in the United States, encompassing eight hospitals, the Icahn School of Medicine at Mount Sinai, and a network of ambulatory practices. Founded in 1852 by a group of Jewish philanthropists to serve New York\'s poor regardless of religion, Mount Sinai is consistently ranked among the top hospitals in the nation.', website: 'https://www.mountsinai.org', founded: 1852, individuals: [], connections: [{ name: 'Hadassah Medical Center', type: 'medical peer', description: 'Both are major medical centers with Jewish founding heritage.' }] },
-  { name: 'Cedars-Sinai Medical Center', id: slug('Cedars-Sinai Medical Center'), type: 'hospital', category: 'Healthcare & Pharmaceuticals', description: 'Cedars-Sinai Medical Center is a nonprofit, tertiary medical center in Los Angeles and one of the largest hospitals on the West Coast. Founded through the merger of Cedars of Lebanon Hospital and Mount Sinai Hospital, both established by the Jewish community. Known as the "hospital to the stars," it is consistently ranked among the top hospitals in the US and is a major research institution.', website: 'https://www.cedars-sinai.org', founded: 1902, individuals: [], connections: [{ name: 'Mount Sinai Health System', type: 'medical peer', description: 'Both are major medical centers founded by the Jewish community.' }] },
-  // THINK TANKS
-  { name: 'Brookings Institution', id: slug('Brookings Institution'), type: 'think tank', category: 'Advocacy & Public Affairs', description: 'The Brookings Institution is one of the most prestigious and influential think tanks in the world. While not a Jewish organization, Brookings has had significant Jewish leadership and fellows, particularly in its Middle East programs. Its Saban Center for Middle East Policy (funded by Haim Saban) has been highly influential in shaping US policy in the Middle East.', website: 'https://www.brookings.edu', founded: 1916, individuals: [], connections: [{ name: 'Saban Capital Group', type: 'donor connection', description: 'Haim Saban funded the Saban Center at Brookings.' }] },
-  { name: 'Council on Foreign Relations', id: slug('Council on Foreign Relations'), type: 'think tank', category: 'Advocacy & Public Affairs', description: 'The Council on Foreign Relations (CFR) is among the most influential US foreign policy think tanks. While not a Jewish organization, CFR has had many prominent Jewish members and leaders throughout its history, and it publishes Foreign Affairs, one of the most important publications on international relations. Membership includes top figures from government, business, and academia.', website: 'https://www.cfr.org', founded: 1921, individuals: [], connections: [{ name: 'Brookings Institution', type: 'think tank peer', description: 'Both are premier American foreign policy think tanks.' }] },
-];
+// ═══════════════════════════════════════════════════════
+// 2. BUILD LOOKUP MAPS
+// ═══════════════════════════════════════════════════════
+const entryIdMap = {};
+const nameToId = {};
+const existingIds = new Set();
+const existingNames = new Set();
 
-for (const e of us3) add('United States', e);
-
-// ============================================================
-// ISRAEL - Wave 3
-// ============================================================
-const il3 = [
-  { name: 'Check Point Software Technologies', id: slug('Check Point Software Technologies'), type: 'cybersecurity company', category: 'Technology', description: 'Check Point Software Technologies is a multinational cybersecurity company founded by Gil Shwed in 1993. It pioneered the modern firewall and is one of the world\'s largest cybersecurity companies. The company\'s products protect government institutions and Fortune 100 companies worldwide. Check Point is considered a foundational company of Israel\'s "Startup Nation" tech ecosystem.', website: 'https://www.checkpoint.com', founded: 1993, individuals: [{ id: slug('Gil Shwed'), name: 'Gil Shwed', role: 'Founder & CEO', bio: 'Founder and CEO of Check Point Software Technologies. Israeli tech pioneer who invented the commercial firewall. One of Israel\'s wealthiest people.' }], connections: [{ name: 'CyberArk', type: 'Israeli cybersecurity peer', description: 'Both are leading Israeli cybersecurity companies.' }] },
-  { name: 'Nice Ltd.', id: slug('Nice Ltd'), type: 'enterprise software', category: 'Technology', description: 'NICE Ltd. is an Israeli software company that develops cloud and on-premises enterprise software solutions. NICE systems are used by contact centers, financial institutions, and public safety organizations worldwide. The company\'s workforce management and analytics products are used by over 85% of Fortune 100 companies.', website: 'https://www.nice.com', founded: 1986, individuals: [{ id: slug('Barak Eilam'), name: 'Barak Eilam', role: 'CEO', bio: 'CEO of NICE Ltd. Israeli technology executive leading one of Israel\'s largest software companies.' }], connections: [{ name: 'Check Point Software Technologies', type: 'Israeli enterprise software peer', description: 'Both are major Israeli enterprise software companies.' }] },
-  { name: 'Amdocs', id: slug('Amdocs'), type: 'IT services company', category: 'Technology', description: 'Amdocs Limited is a multinational corporation headquartered in Chesterfield, Missouri, but founded in Israel and deeply rooted in Israeli tech. Amdocs provides software and services to communications companies worldwide, with its systems managing billing and service for over 350 service providers globally, touching billions of subscribers.', website: 'https://www.amdocs.com', founded: 1982, individuals: [], connections: [{ name: 'Nice Ltd.', type: 'Israeli tech peer', description: 'Both are major Israeli technology companies serving enterprise clients.' }] },
-  { name: 'Yad Vashem', id: slug('Yad Vashem'), type: 'memorial & museum', category: 'Heritage & Memorials', description: 'Yad Vashem is Israel\'s official memorial to the victims of the Holocaust and the world\'s leading center for Holocaust documentation, research, and education. Located on Mount Herzl in Jerusalem, it features a museum, memorial hall, children\'s memorial, archive of over 200 million pages, and the name database of over 4.8 million Holocaust victims. The title "Righteous Among the Nations" is conferred by Yad Vashem.', website: 'https://www.yadvashem.org', founded: 1953, individuals: [], connections: [{ name: 'Auschwitz-Birkenau State Museum', type: 'memorial peer', description: 'Both are primary institutions preserving Holocaust memory.' }, { name: 'United States Holocaust Memorial Museum', type: 'museum peer', description: 'Both are leading Holocaust memorial institutions.' }, { name: 'POLIN Museum', type: 'educational partner', description: 'Both document the history and destruction of European Jewry.' }] },
-  { name: 'Israel Museum', id: slug('Israel Museum'), type: 'museum', category: 'Heritage & Memorials', description: 'The Israel Museum in Jerusalem is the largest cultural institution in Israel and one of the world\'s leading art and archaeology museums. Founded in 1965, it houses the Dead Sea Scrolls in the Shrine of the Book, extensive archaeological collections from the Holy Land, and fine art from around the world. The museum attracts nearly one million visitors annually.', website: 'https://www.imj.org.il', founded: 1965, individuals: [], connections: [{ name: 'Yad Vashem', type: 'Jerusalem cultural institution', description: 'Both are major cultural institutions in Jerusalem.' }] },
-  { name: 'World Zionist Organization', id: slug('World Zionist Organization'), type: 'political organization', category: 'Advocacy & Public Affairs', description: 'The World Zionist Organization (WZO) was founded by Theodor Herzl at the First Zionist Congress in Basel, Switzerland, in 1897. It was the driving force behind the establishment of the State of Israel and continues to promote Zionism, Jewish education, and settlement activity. WZO elections are held every five years as a form of "Parliament of the Jewish people."', website: 'https://www.wzo.org.il', founded: 1897, individuals: [{ id: slug('Theodor Herzl'), name: 'Theodor Herzl', role: 'Founder', bio: 'Founder of the World Zionist Organization and father of modern political Zionism. Austro-Hungarian journalist whose book Der Judenstaat launched the Zionist movement. Died in 1904.' }], connections: [{ name: 'Jewish Agency for Israel', type: 'historical partner', description: 'The WZO helped establish the Jewish Agency.' }] },
-  { name: 'Hadassah Medical Organization', id: slug('Hadassah Medical Organization'), type: 'medical organization', category: 'Healthcare & Pharmaceuticals', description: 'The Hadassah Medical Organization operates Israel\'s leading medical center, comprising two hospitals on Mount Scopus and in Ein Kerem, Jerusalem. Founded in 1934, Hadassah performs cutting-edge medical research, trains generations of Israeli physicians, and treats over one million patients annually regardless of religion, ethnicity, or nationality.', website: 'https://www.hadassah-med.com', founded: 1934, individuals: [], connections: [{ name: 'Hadassah (Women\'s Zionist Organization)', type: 'parent organization', description: 'Operated by Hadassah, the Women\'s Zionist Organization of America.' }, { name: 'Hebrew University of Jerusalem', type: 'academic affiliation', description: 'Hadassah Medical Center is affiliated with the Hebrew University Faculty of Medicine.' }] },
-];
-
-for (const e of il3) add('Israel', e);
-
-// ============================================================
-// HUNGARY
-// ============================================================
-const hu = [
-  { name: 'Dohany Street Synagogue', id: slug('Dohany Street Synagogue'), type: 'synagogue', category: 'Religion & Synagogues', description: 'The Dohany Street Synagogue in Budapest is the largest synagogue in Europe and the second-largest in the world. Built in 1859 in the Moorish Revival style, it seats 3,000 worshippers. The complex includes the Heroes\' Temple, the Raoul Wallenberg Memorial Park (a Holocaust memorial), and the Jewish Museum. Budapest\'s Jewish community of approximately 75,000-100,000 is the largest in Central Europe.', website: '', founded: 1859, individuals: [], connections: [{ name: 'Jewish Museum in Prague', type: 'Central European Jewish heritage', description: 'Both are major Jewish heritage sites in Central Europe.' }] },
-  { name: 'Hungarian Jewish Museum and Archives', id: slug('Hungarian Jewish Museum'), type: 'museum', category: 'Heritage & Memorials', description: 'The Hungarian Jewish Museum and Archives, located in the Dohany Street Synagogue complex in Budapest, houses one of the most important Judaica collections in Central Europe. Hungary was home to approximately 825,000 Jews before the Holocaust. The museum documents the rich history of Hungarian Jewry, which produced an extraordinary number of Nobel laureates, scientists, musicians, and intellectuals.', website: '', founded: 1916, individuals: [], connections: [{ name: 'Dohany Street Synagogue', type: 'co-located', description: 'Located in the Dohany Street Synagogue complex.' }] },
-];
-
-for (const e of hu) add('Hungary', e);
-
-// ============================================================
-// SWEDEN
-// ============================================================
-const se = [
-  { name: 'Jewish Community of Stockholm', id: slug('Jewish Community Stockholm'), type: 'communal organization', category: 'Community & Social Organizations', description: 'The Jewish Community of Stockholm is the largest Jewish community in Scandinavia, numbering approximately 6,000-8,000 members. Sweden is notable for its role in WWII as a neutral country that accepted Jewish refugees, including nearly all of Denmark\'s Jews rescued in 1943. The Swedish diplomat Raoul Wallenberg saved tens of thousands of Hungarian Jews in 1944.', website: '', founded: 1775, individuals: [], connections: [{ name: 'Jewish Community of Helsinki', type: 'Scandinavian peer', description: 'Both represent Jewish communities in Scandinavian countries.' }] },
-  { name: 'Bonnier Group', id: slug('Bonnier Group'), type: 'media company', category: 'Entertainment & Media', description: 'The Bonnier Group is one of the largest media companies in Scandinavia, owned by the Bonnier family, which traces Jewish ancestry to Gerhard Bonnier who founded a bookshop in Copenhagen in 1804. The group operates TV channels, newspapers (including Dagens Nyheter), publishing houses, and digital media across Scandinavia and internationally.', website: 'https://www.bonnier.com', founded: 1804, individuals: [], connections: [{ name: 'Axel Springer SE', type: 'European media peer', description: 'Both are major European media companies with significant history.' }] },
-];
-
-for (const e of se) add('Sweden', e);
-
-// ============================================================
-// LITHUANIA
-// ============================================================
-const lt = [
-  { name: 'Vilna Gaon Jewish State Museum', id: slug('Vilna Gaon Jewish State Museum'), type: 'museum', category: 'Heritage & Memorials', description: 'The Vilna Gaon Jewish State Museum in Vilnius documents the history of Lithuanian Jewry. Lithuania, known as the "Jerusalem of the North," was one of the greatest centers of Jewish learning and culture in Europe for centuries. Before the Holocaust, Lithuania had approximately 220,000 Jews; about 95% were murdered, making it one of the highest death rates in Europe.', website: 'https://www.jmuseum.lt', founded: 1989, individuals: [], connections: [{ name: 'POLIN Museum', type: 'Baltic/Eastern European peer', description: 'Both document the rich Jewish history and the Holocaust in Eastern Europe.' }] },
-];
-
-for (const e of lt) add('Lithuania', e);
-
-// ============================================================
-// LATVIA
-// ============================================================
-const lv = [
-  { name: 'Riga Ghetto and Latvian Holocaust Museum', id: slug('Riga Ghetto Holocaust Museum'), type: 'museum', category: 'Heritage & Memorials', description: 'The Riga Ghetto and Latvian Holocaust Museum preserves the memory of the approximately 70,000 Latvian Jews murdered during the Holocaust, as well as thousands of Jews deported from other European countries to Latvia. Before WWII, Jews constituted about 5% of Latvia\'s population and were prominent in commerce, the professions, and cultural life.', website: '', founded: 2010, individuals: [], connections: [{ name: 'Vilna Gaon Jewish State Museum', type: 'Baltic peer', description: 'Both document the Jewish history and Holocaust in the Baltic states.' }] },
-];
-
-for (const e of lv) add('Latvia', e);
-
-// ============================================================
-// ESTONIA
-// ============================================================
-const ee = [
-  { name: 'Jewish Community of Estonia', id: slug('Jewish Community Estonia'), type: 'communal organization', category: 'Community & Social Organizations', description: 'The Jewish Community of Estonia is a small but resilient community of approximately 2,000-3,000 members. Estonia was the first country to be declared "Judenfrei" (free of Jews) by the Nazis in 1942 after nearly all Estonian Jews were killed. After independence from the Soviet Union in 1991, the community was reorganized and today maintains a synagogue and community center in Tallinn.', website: '', founded: 1988, individuals: [], connections: [{ name: 'Riga Ghetto and Latvian Holocaust Museum', type: 'Baltic peer', description: 'Both represent post-Holocaust Jewish communities in the Baltic states.' }] },
-];
-
-for (const e of ee) add('Estonia', e);
-
-// ============================================================
-// TUNISIA
-// ============================================================
-const tn = [
-  { name: 'El Ghriba Synagogue', id: slug('El Ghriba Synagogue'), type: 'historic synagogue', category: 'Religion & Synagogues', description: 'The El Ghriba Synagogue on the island of Djerba, Tunisia, is one of the oldest synagogues in the world, with traditions claiming it was founded after the destruction of the First Temple in 586 BCE. It houses one of the oldest Torah scrolls in the world. The synagogue is a pilgrimage site for Jews from across North Africa and is a UNESCO-recognized cultural treasure.', website: '', founded: -500, individuals: [], connections: [{ name: 'Paradesi Synagogue', type: 'ancient synagogue peer', description: 'Both are among the world\'s oldest still-functioning synagogues.' }] },
-];
-
-for (const e of tn) add('Tunisia', e);
-
-// ============================================================
-// IRAN
-// ============================================================
-const ir = [
-  { name: 'Tehran Jewish Committee', id: slug('Tehran Jewish Committee'), type: 'communal organization', category: 'Community & Social Organizations', description: 'The Tehran Jewish Committee represents Iran\'s Jewish community, the largest in the Middle East outside Israel, numbering approximately 8,000-15,000 members. Iran (Persia) has one of the oldest Jewish communities in the world, dating back 2,700 years to the Babylonian exile. Despite political tensions between Iran and Israel, Iranian Jews have a constitutionally guaranteed seat in parliament and maintain synagogues, schools, and communal institutions.', website: '', founded: 1945, individuals: [], connections: [{ name: 'El Ghriba Synagogue', type: 'ancient community peer', description: 'Both represent Jewish communities with ancient roots in the Middle East/North Africa.' }] },
-];
-
-for (const e of ir) add('Iran', e);
-
-// ============================================================
-// UZBEKISTAN
-// ============================================================
-const uz = [
-  { name: 'Bukharan Jewish Community', id: slug('Bukharan Jewish Community'), type: 'historical community', category: 'Community & Social Organizations', description: 'The Bukharan Jewish community has existed in Central Asia for over 2,000 years. Centered in Bukhara and Samarkand, these Jews maintained a distinct identity with their own language (Bukhori), cuisine, and traditions. Before the fall of the Soviet Union, approximately 45,000 Bukharan Jews lived in Uzbekistan. Most have since emigrated to Israel, the US, and other countries, with only a few thousand remaining.', website: '', founded: -400, individuals: [], connections: [{ name: 'Tehran Jewish Committee', type: 'Silk Road Jewish community', description: 'Both represent ancient Jewish communities along the Silk Road.' }] },
-];
-
-for (const e of uz) add('Uzbekistan', e);
-
-// ============================================================
-// AZERBAIJAN
-// ============================================================
-const az = [
-  { name: 'Mountain Jews of Azerbaijan', id: slug('Mountain Jews Azerbaijan'), type: 'historical community', category: 'Community & Social Organizations', description: 'The Mountain Jews (Juhuro) of Azerbaijan are one of the oldest Jewish communities in the world, speaking their own language (Juhuri, a Judeo-Tat dialect). Concentrated in the red-brick "Jewish town" of Qirmizi Gasaba (Krasnaya Sloboda) near Quba, they represent the only all-Jewish town outside Israel. Azerbaijan is notable for maintaining good relations with both Israel and Iran, and its approximately 20,000-30,000 Jews enjoy freedom of worship.', website: '', founded: -500, individuals: [], connections: [{ name: 'Bukharan Jewish Community', type: 'Caucasian/Central Asian peer', description: 'Both are ancient Jewish communities in the former Soviet Union region.' }] },
-];
-
-for (const e of az) add('Azerbaijan', e);
-
-// ============================================================
-// GEORGIA (Country)
-// ============================================================
-const ge = [
-  { name: 'Georgian Jewish Community', id: slug('Georgian Jewish Community'), type: 'historical community', category: 'Community & Social Organizations', description: 'The Georgian Jews are one of the oldest Jewish communities in the world, with a presence in Georgia dating back approximately 2,600 years. Georgian Jews have a unique identity, maintaining Georgian culture while preserving Jewish religious traditions. Before mass emigration to Israel in the 1970s-1990s, approximately 80,000 Jews lived in Georgia. Today approximately 3,000-6,000 remain, with the main synagogue in Tbilisi.', website: '', founded: -600, individuals: [], connections: [{ name: 'Mountain Jews of Azerbaijan', type: 'Caucasian peer', description: 'Both are ancient Jewish communities in the Caucasus region.' }] },
-];
-
-for (const e of ge) add('Georgia', e);
-
-// ============================================================
-// BAHRAIN
-// ============================================================
-const bh = [
-  { name: 'Jewish Community of Bahrain', id: slug('Jewish Community Bahrain'), type: 'communal organization', category: 'Community & Social Organizations', description: 'Bahrain hosts a small but historic Jewish community, with the last Jewish ambassador to the Kingdom, Houda Nonoo, serving from 2008-2013 as Bahrain\'s ambassador to the US. Bahrain was one of the signatories of the Abraham Accords in 2020. The community maintains a synagogue in Manama and has seen renewed interest following normalization with Israel.', website: '', founded: 1880, individuals: [{ id: slug('Houda Nonoo'), name: 'Houda Nonoo', role: 'Community Leader', bio: 'Jewish Bahraini who served as Bahrain\'s Ambassador to the United States from 2008-2013. First Jewish ambassador from any Arab country.' }], connections: [{ name: 'Jewish Council of the Emirates', type: 'Gulf peer', description: 'Both represent Jewish communities in Gulf states that signed the Abraham Accords.' }] },
-];
-
-for (const e of bh) add('Bahrain', e);
-
-// ============================================================
-// REBUILD AFFILIATIONS & SORT
-// ============================================================
-console.log(`Added ${added} new entries`);
-console.log('Rebuilding affiliations...');
-const affMap = {};
-for (const country in data.countries) {
-  for (const entry of data.countries[country]) {
-    for (const ind of (entry.individuals || [])) {
-      if (!affMap[ind.id]) affMap[ind.id] = [];
-      affMap[ind.id].push({ organization: entry.name, role: ind.role || 'Associated', entryId: entry.id, country });
+function rebuildMaps() {
+  for (const c in jd.countries) {
+    for (const e of jd.countries[c]) {
+      entryIdMap[e.id] = { name: e.name, country: c, category: e.category, type: e.type };
+      nameToId[e.name.toLowerCase()] = e.id;
+      existingIds.add(e.id);
+      existingNames.add(e.name.toLowerCase());
     }
   }
 }
-let affCount = 0;
-for (const pid in peopleData.people) {
-  if (!peopleData.people[pid].affiliations) peopleData.people[pid].affiliations = [];
-  if (affMap[pid]) {
-    for (const aff of affMap[pid]) {
-      if (!peopleData.people[pid].affiliations.some(a => a.entryId === aff.entryId)) {
-        peopleData.people[pid].affiliations.push(aff);
-        affCount++;
+rebuildMaps();
+
+// ═══════════════════════════════════════════════════════
+// 3. ALIAS MAP - short names to existing entry IDs
+// ═══════════════════════════════════════════════════════
+const aliasMap = {
+  'aipac': 'aipac',
+  'anti-defamation league': 'anti-defamation-league-adl',
+  'adl': 'anti-defamation-league-adl',
+  'world jewish congress': 'world-jewish-congress',
+  'birthright israel': 'birthright-israel',
+  'chabad': 'chabad-lubavitch',
+  'google': 'google-alphabet-inc',
+  'goldman sachs': 'goldman-sachs-historic',
+  'jdc': 'american-jewish-joint-distribution-committee-jdc',
+  'crif': 'crif',
+  'ajc': 'american-jewish-committee-ajc',
+  'american jewish committee': 'american-jewish-committee-ajc',
+  'jewish federations of north america': 'jewish-federations-of-north-america-jfna',
+  'jfna': 'jewish-federations-of-north-america-jfna',
+  'hadassah': 'hadassah',
+  'b\'nai b\'rith': 'b-nai-b-rith',
+  'jewish national fund': 'jewish-national-fund-jnf',
+  'jnf': 'jewish-national-fund-jnf',
+  'technion': 'technion-israel-institute-of-technology',
+  'hebrew university': 'hebrew-university-of-jerusalem',
+  'weizmann institute': 'weizmann-institute-of-science',
+  'harvard university': 'harvard-university',
+  'check point software': 'check-point-software-technologies',
+  'teva pharmaceutical': 'teva-pharmaceutical-industries',
+  'mobileye': 'mobileye',
+  'el al': 'el-al-israel-airlines',
+  'israel aerospace industries': 'israel-aerospace-industries',
+  'bloomberg': 'bloomberg-lp',
+  'cnn': 'cnn',
+  'new york times': 'new-york-times',
+  'nyt': 'new-york-times',
+  'paramount': 'paramount-global',
+  'fox news': 'fox-news-news-corp',
+  'washington post': 'washington-post',
+  'miramax': 'miramax-films',
+  'apollo global': 'apollo-global-management',
+  'kkr': 'kkr-co',
+  'rothschild': 'rothschild-co',
+  'd.e. shaw': 'de-shaw-co',
+  'lehman brothers': 'lehman-brothers-historic',
+  'council on foreign relations': 'council-on-foreign-relations-cfr',
+  'cfr': 'council-on-foreign-relations-cfr',
+  'sheldon adelson': 'sheldon-adelson-empire',
+};
+
+// ═══════════════════════════════════════════════════════
+// 4. FIX EXISTING CONNECTION REFERENCES (add entryId where match found)
+// ═══════════════════════════════════════════════════════
+let connFixed = 0;
+for (const c in jd.countries) {
+  for (const e of jd.countries[c]) {
+    if (!e.connections) continue;
+    for (const conn of e.connections) {
+      // Already has valid entryId
+      if (conn.entryId && entryIdMap[conn.entryId]) continue;
+      // Try direct name match
+      const lname = (conn.name || '').toLowerCase();
+      let tid = nameToId[lname];
+      if (!tid) {
+        // Try alias match
+        for (const alias in aliasMap) {
+          if (lname === alias || lname.includes(alias)) {
+            const candidate = aliasMap[alias];
+            if (entryIdMap[candidate]) {
+              tid = candidate;
+              break;
+            }
+          }
+        }
+      }
+      if (tid && entryIdMap[tid] && tid !== e.id) {
+        conn.entryId = tid;
+        connFixed++;
       }
     }
   }
 }
-console.log(`Updated ${affCount} affiliations`);
+console.log('Connection references fixed:', connFixed);
 
-// Sort entries by prominence
-for (const country in data.countries) {
-  data.countries[country].sort((a, b) => {
-    const scoreA = (a.connections ? a.connections.length : 0) * 3 + (a.individuals ? a.individuals.length : 0) * 2 + (a.description ? a.description.length : 0) / 100;
-    const scoreB = (b.connections ? b.connections.length : 0) * 3 + (b.individuals ? b.individuals.length : 0) * 2 + (b.description ? b.description.length : 0) / 100;
-    return scoreB - scoreA;
-  });
+// ═══════════════════════════════════════════════════════
+// 5. ADD NEW ENTRIES - Epstein missing connections + top referenced
+// ═══════════════════════════════════════════════════════
+let newEntries = 0;
+function addEntry(country, entry) {
+  if (existingIds.has(entry.id) || existingNames.has(entry.name.toLowerCase())) return false;
+  if (!jd.countries[country]) jd.countries[country] = [];
+  jd.countries[country].push(entry);
+  existingIds.add(entry.id);
+  existingNames.add(entry.name.toLowerCase());
+  entryIdMap[entry.id] = { name: entry.name, country, category: entry.category, type: entry.type };
+  nameToId[entry.name.toLowerCase()] = entry.id;
+  newEntries++;
+  return true;
 }
 
-// Sort countries by entry count
-const sorted = {};
-const countryKeys = Object.keys(data.countries).sort((a, b) => data.countries[b].length - data.countries[a].length);
-for (const k of countryKeys) sorted[k] = data.countries[k];
-data.countries = sorted;
+// --- EPSTEIN-RELATED ENTRIES ---
 
-fs.writeFileSync(dataPath, JSON.stringify(data, null, 2));
-fs.writeFileSync(peoplePath, JSON.stringify(peopleData, null, 2));
+addEntry('United States', {
+  id: 'mit-media-lab',
+  name: 'MIT Media Lab',
+  type: 'academic research lab',
+  category: 'Education',
+  founded: 1985,
+  description: 'The MIT Media Lab is an interdisciplinary research laboratory at the Massachusetts Institute of Technology devoted to projects at the convergence of technology, multimedia, sciences, art, and design. Director Joi Ito resigned in September 2019 after revelations that he had accepted donations from Jeffrey Epstein and concealed the extent of the relationship. Internal emails showed MIT had classified Epstein as a "disqualified" donor yet continued accepting his money through intermediaries. The scandal exposed how prestigious academic institutions enabled Epstein to maintain legitimacy and access to influential circles even after his 2008 conviction. Nicholas Negroponte, co-founder of the lab, publicly defended accepting Epstein funds. The fallout led to major reforms in MIT donation acceptance policies.',
+  website: 'https://www.media.mit.edu/',
+  individuals: [
+    { id: slug('Joi Ito'), name: 'Joi Ito', role: 'Former Director (resigned 2019)', bio: 'Japanese-American activist and entrepreneur who resigned as MIT Media Lab director after revelations he had accepted and concealed donations from Jeffrey Epstein.' },
+    { id: slug('Nicholas Negroponte'), name: 'Nicholas Negroponte', role: 'Co-founder', bio: 'Greek-American architect and computer scientist. Co-founded the MIT Media Lab and the One Laptop per Child initiative. Publicly defended accepting Epstein donations.' },
+    { id: slug('Seth Lloyd'), name: 'Seth Lloyd', role: 'Professor', bio: 'American mechanical engineer and professor at MIT who accepted funding from Jeffrey Epstein for his quantum computing research.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'funding', description: 'Epstein donated millions to MIT Media Lab, classified as "disqualified donor" but money accepted through intermediaries', entryId: 'jeffrey-epstein-network' },
+    { name: 'Harvard University', type: 'educational', description: 'Academic collaboration and shared Epstein donor network', entryId: 'harvard-university' },
+    { name: 'Apollo Global Management', type: 'funding', description: 'Leon Black donated to MIT; connected through Epstein network', entryId: 'apollo-global-management' }
+  ]
+});
 
-let totalEntries = 0, totalConns = 0;
-const catSet = new Set();
-for (const country in data.countries) {
-  for (const entry of data.countries[country]) {
-    totalEntries++;
-    if (entry.category) catSet.add(entry.category);
-    if (entry.connections) totalConns += entry.connections.length;
+addEntry('United States', {
+  id: 'l-brands-victorias-secret',
+  name: "Victoria's Secret (L Brands)",
+  type: 'retail corporation',
+  category: 'Corporate',
+  founded: 1977,
+  description: "Victoria's Secret is an American lingerie, clothing, and beauty retailer founded in San Francisco. Les Wexner, through his company L Brands (now Bath & Body Works Inc.), acquired Victoria's Secret in 1982 for $1 million and built it into a multibillion-dollar brand. The connection to Jeffrey Epstein is central to understanding both the brand and the Epstein network: Wexner gave Epstein sweeping power of attorney over his finances, and Epstein reportedly used his association with the lingerie brand to recruit young women by posing as a talent scout. Wexner was Epstein's primary financial patron, transferring his Manhattan townhouse (valued at $77 million) to Epstein. In 2019, Wexner claimed Epstein had misappropriated vast sums of his money. The company went through major restructuring following the Epstein scandal and #MeToo movement, eventually dropping the Angels fashion show format.",
+  website: 'https://www.victoriassecret.com/',
+  individuals: [
+    { id: 'leslie-wexner', name: 'Les Wexner', role: 'Founder of L Brands', bio: 'American billionaire businessman who founded L Brands and was Jeffrey Epstein primary financial patron. Gave Epstein power of attorney over his finances.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'financial', description: 'Epstein used Wexner connection and VS brand as tool for recruitment; Wexner was primary financial backer', entryId: 'jeffrey-epstein-network' },
+    { name: 'Wexner Foundation', type: 'subsidiary', description: 'Both controlled by Les Wexner', entryId: 'wexner-foundation' },
+    { name: 'JPMorgan Chase', type: 'financial', description: 'Banking relationship connected through Wexner/Epstein finances', entryId: 'jpmorgan-chase' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'fbi',
+  name: 'Federal Bureau of Investigation (FBI)',
+  type: 'federal law enforcement agency',
+  category: 'Government',
+  founded: 1908,
+  description: 'The Federal Bureau of Investigation is the domestic intelligence and security service of the United States and its principal federal law enforcement agency. The FBI has intersected with numerous cases cataloged in this database, including the investigation of Jeffrey Epstein. The FBI received complaints about Epstein as early as 1996 but did not open a formal investigation until years later. The bureau ultimately participated in the 2019 arrest of Epstein on federal sex trafficking charges. Critics have questioned why the FBI failed to act on earlier intelligence and whether Epstein was protected by intelligence connections. Former FBI Director Robert Mueller and former Director James Comey both served during periods when Epstein complaints were known. The FBI also investigated the death of Epstein in his cell at the Metropolitan Correctional Center, which was officially ruled suicide.',
+  website: 'https://www.fbi.gov/',
+  individuals: [
+    { id: slug('Robert Mueller'), name: 'Robert Mueller', role: 'Former Director (2001-2013)', bio: 'American attorney who served as FBI Director during parts of the Epstein investigation period. Later served as Special Counsel investigating Russian interference in the 2016 election.' },
+    { id: slug('James Comey'), name: 'James Comey', role: 'Former Director (2013-2017)', bio: 'American lawyer who served as FBI Director. His tenure overlapped with the period when renewed interest in Epstein emerged.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'intelligence', description: 'FBI investigated Epstein; received early complaints but delayed action; investigated his death', entryId: 'jeffrey-epstein-network' },
+    { name: 'Southern District of New York', type: 'legal', description: 'SDNY and FBI collaborated on Epstein prosecution', entryId: 'sdny' },
+    { name: 'US Department of Justice', type: 'parent', description: 'FBI is primary investigative arm of DOJ' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'sdny',
+  name: 'Southern District of New York (SDNY)',
+  type: 'federal judicial district',
+  category: 'Legal',
+  founded: 1789,
+  description: 'The United States District Court for the Southern District of New York, often called the "Sovereign District" or "Mother Court," is a federal district court covering Manhattan, the Bronx, and surrounding counties. SDNY prosecutors brought the 2019 federal indictment against Jeffrey Epstein on sex trafficking charges, following the controversial 2008 plea deal negotiated by Alexander Acosta in Florida. The SDNY prosecution represented a second attempt at federal accountability for Epstein. After Epstein died in custody, SDNY continued prosecuting Ghislaine Maxwell, who was convicted in December 2021 on five of six counts of sex trafficking and conspiracy. The Maxwell trial revealed extensive details about the Epstein network, including testimony from victims and documentary evidence of the trafficking operation.',
+  website: 'https://www.nysd.uscourts.gov/',
+  individuals: [
+    { id: slug('Geoffrey Berman'), name: 'Geoffrey Berman', role: 'Former US Attorney (2018-2020)', bio: 'American attorney who oversaw the Epstein prosecution as US Attorney for SDNY. Was controversially fired by AG Barr in 2020.' },
+    { id: slug('Audrey Strauss'), name: 'Audrey Strauss', role: 'Acting US Attorney', bio: 'Succeeded Berman and oversaw the Maxwell prosecution through indictment and trial.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'legal', description: 'Brought 2019 federal charges; continued Maxwell prosecution after Epstein death', entryId: 'jeffrey-epstein-network' },
+    { name: 'Federal Bureau of Investigation (FBI)', type: 'legal', description: 'Collaborated on Epstein/Maxwell investigation', entryId: 'fbi' },
+    { name: 'Metropolitan Correctional Center', type: 'legal', description: 'Epstein held and died at MCC during SDNY prosecution', entryId: 'metropolitan-correctional-center' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'metropolitan-correctional-center',
+  name: 'Metropolitan Correctional Center (MCC New York)',
+  type: 'federal detention facility (closed)',
+  category: 'Government',
+  founded: 1975,
+  description: 'The Metropolitan Correctional Center, New York was a United States federal administrative detention facility in the Civic Center neighborhood of Manhattan. It is where Jeffrey Epstein was found dead in his cell on August 10, 2019, while awaiting trial on sex trafficking charges. His death was officially ruled a suicide by hanging, but the circumstances have generated widespread skepticism: both guards assigned to his unit had fallen asleep and falsified records, surveillance cameras near his cell malfunctioned, and he had been removed from suicide watch just days prior despite a previous attempt. The facility was closed in 2021 due to deplorable conditions documented by inspectors. The MCC also housed other high-profile inmates including El Chapo and Bernie Madoff.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Site of Epstein death in custody while awaiting trial, August 10, 2019', entryId: 'jeffrey-epstein-network' },
+    { name: 'Southern District of New York (SDNY)', type: 'legal', description: 'MCC held SDNY pre-trial detainees', entryId: 'sdny' },
+    { name: 'Federal Bureau of Investigation (FBI)', type: 'intelligence', description: 'FBI investigated circumstances of Epstein death at MCC', entryId: 'fbi' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'dalton-school',
+  name: 'Dalton School',
+  type: 'private preparatory school',
+  category: 'Education',
+  founded: 1919,
+  description: 'The Dalton School is an elite private K-12 preparatory school on the Upper East Side of Manhattan. Jeffrey Epstein taught mathematics and physics at Dalton from 1974 to 1976, despite not having a college degree. He was hired by headmaster Donald Barr, the father of future Attorney General William Barr. This connection has drawn scrutiny given William Barr was Attorney General when Epstein died in federal custody. At Dalton, Epstein made connections with wealthy parents of students, which reportedly helped launch his career in finance - he was subsequently hired at Bear Stearns by Alan Greenberg. The school serves many prominent New York families and has a tuition exceeding $50,000 per year.',
+  individuals: [
+    { id: slug('Donald Barr'), name: 'Donald Barr', role: 'Former Headmaster', bio: 'American educator who served as headmaster of Dalton School and hired Jeffrey Epstein to teach there without a degree. Father of future Attorney General William Barr.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'educational', description: 'Epstein taught at Dalton 1974-1976; hired by Donald Barr; connected to Bear Stearns through parent contacts', entryId: 'jeffrey-epstein-network' },
+    { name: 'Bear Stearns (historic)', type: 'related', description: 'Epstein transitioned from Dalton to Bear Stearns through connections made with wealthy parents', entryId: 'bear-stearns-historic' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'palm-beach-police',
+  name: 'Palm Beach Police Department',
+  type: 'municipal law enforcement',
+  category: 'Government',
+  description: 'The Palm Beach Police Department initiated the first significant investigation into Jeffrey Epstein in 2005 after a parent reported that her 14-year-old daughter had been taken to Epstein Palm Beach mansion and paid for sexual acts. Chief Michael Reiter led the investigation, which uncovered dozens of victims and amassed substantial evidence. However, the Palm Beach County State Attorney Barry Krischer refused to file felony charges, leading Reiter to refer the case to the FBI. The investigation was subsequently taken over by federal prosecutors, resulting in the controversial 2008 plea deal negotiated by Alexander Acosta. Police detective Joseph Recarey compiled extensive evidence including victim testimony and physical evidence from Epstein home. The PBPD case file became the foundation for all subsequent prosecutions.',
+  individuals: [
+    { id: slug('Michael Reiter'), name: 'Michael Reiter', role: 'Former Chief', bio: 'Former Palm Beach Police Chief who led the initial Epstein investigation and pushed for federal involvement when local prosecution stalled.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'legal', description: 'Initiated first investigation of Epstein in 2005; compiled evidence of dozens of victims', entryId: 'jeffrey-epstein-network' },
+    { name: 'Federal Bureau of Investigation (FBI)', type: 'legal', description: 'Referred Epstein case to FBI after local DA refused felony charges', entryId: 'fbi' }
+  ]
+});
+
+addEntry('United Kingdom', {
+  id: 'maxwell-communications',
+  name: 'Maxwell Communications Corporation',
+  type: 'media conglomerate (defunct)',
+  category: 'Media',
+  founded: 1964,
+  description: 'Maxwell Communications Corporation was a British media conglomerate built by Robert Maxwell, the Czech-born British media proprietor and father of Ghislaine Maxwell. At its height, the company owned Macmillan Publishers, the Daily Mirror, and the New York Daily News, among other properties. Robert Maxwell died in November 1991 after falling from his yacht near the Canary Islands under mysterious circumstances. After his death, it was revealed he had fraudulently looted hundreds of millions of pounds from his companies pension funds, leaving thousands of pensioners destitute. Maxwell was alleged to have connections to Israeli intelligence (Mossad), and his funeral on the Mount of Olives in Jerusalem was attended by Israeli President Chaim Herzog, Prime Minister Yitzhak Shamir, and six serving and former heads of Israeli intelligence. His daughter Ghislaine moved to New York after his death and became Jeffrey Epstein primary associate and was later convicted of sex trafficking.',
+  individuals: [
+    { id: slug('Robert Maxwell'), name: 'Robert Maxwell', role: 'Founder and Chairman (1923-1991)', bio: 'Czech-born British media baron, politician, and alleged intelligence asset. Built a media empire then died under mysterious circumstances after looting pension funds. Father of Ghislaine Maxwell.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Robert Maxwell was father of Ghislaine Maxwell, Epstein closest associate. Alleged intelligence connections overlay with Epstein network', entryId: 'jeffrey-epstein-network' },
+    { name: 'Mossad (Israeli Intelligence)', type: 'intelligence', description: 'Robert Maxwell alleged to have been Mossad asset; funeral attended by six intelligence chiefs', entryId: 'mossad-israeli-intelligence' }
+  ]
+});
+
+addEntry('Israel', {
+  id: 'mossad-israeli-intelligence',
+  name: 'Mossad (Israeli Intelligence)',
+  type: 'intelligence agency',
+  category: 'Intelligence',
+  founded: 1949,
+  description: 'The Mossad (HaMossad leModiyin uleTafkidim Meyuhadim - Institute for Intelligence and Special Operations) is the national intelligence agency of Israel, responsible for intelligence collection, covert operations, and counterterrorism. Persistent allegations link both Robert Maxwell and Jeffrey Epstein to Israeli intelligence. Former Israeli intelligence operative Ari Ben-Menashe claimed Robert Maxwell was recruited as a Mossad asset and that Epstein was also part of an intelligence operation involving sexual blackmail of powerful figures. These claims remain unverified but are supported by circumstantial evidence: the CIA involvement in the PROMIS software scandal with Maxwell, Epstein unexplained wealth and connections, his relationship with former Israeli Prime Minister Ehud Barak, and the extensive intelligence community attendance at Robert Maxwell funeral. Former Mossad officer Victor Ostrovsky wrote about Maxwell alleged intelligence connections in his books.',
+  individuals: [
+    { id: slug('Ari Ben Menashe'), name: 'Ari Ben-Menashe', role: 'Former Intelligence Operative', bio: 'Iranian-born Israeli intelligence operative who claimed Robert Maxwell and Jeffrey Epstein were connected to Israeli intelligence operations.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'intelligence', description: 'Alleged intelligence operation connection; sexual blackmail operation claims by former operatives', entryId: 'jeffrey-epstein-network' },
+    { name: 'Maxwell Communications Corporation', type: 'intelligence', description: 'Robert Maxwell alleged long-term Mossad asset', entryId: 'maxwell-communications' },
+    { name: 'Israel Aerospace Industries', type: 'intelligence', description: 'Defense-intelligence complex interconnections', entryId: 'israel-aerospace-industries' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'us-virgin-islands-gov',
+  name: 'US Virgin Islands (Government)',
+  type: 'territorial government',
+  category: 'Government',
+  description: 'The Government of the US Virgin Islands played a significant role in the Epstein case. Epstein owned Little Saint James and Great Saint James, two private islands in the USVI, where much of his trafficking operation was believed to have occurred. Little Saint James was nicknamed "Pedophile Island" or "Epstein Island." In 2023, the USVI Attorney General filed a civil enforcement action against JPMorgan Chase for facilitating Epstein sex trafficking, alleging the bank knowingly benefited from its relationship with Epstein. The case resulted in a $75 million settlement. AG Denise George was fired after filing the JPMorgan suit without gubernatorial approval. The USVI also reached a $105 million settlement with the Epstein estate over unpaid taxes and trafficking activity.',
+  individuals: [
+    { id: slug('Denise George'), name: 'Denise George', role: 'Former Attorney General', bio: 'USVI Attorney General who filed landmark suit against JPMorgan Chase over Epstein relationship. Fired after filing the suit.' }
+  ],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'legal', description: 'Epstein owned two private islands in USVI; trafficking operation hub; $105M estate settlement', entryId: 'jeffrey-epstein-network' },
+    { name: 'JPMorgan Chase', type: 'legal', description: 'USVI AG sued JPMorgan for facilitating Epstein trafficking; $75M settlement', entryId: 'jpmorgan-chase' },
+    { name: 'Deutsche Bank', type: 'financial', description: 'Deutsche Bank also settled with USVI over Epstein accounts', entryId: 'deutsche-bank' }
+  ]
+});
+
+// --- KEY POLITICAL/PUBLIC FIGURES AS ENTRIES ---
+
+addEntry('United States', {
+  id: 'bill-clinton-connections',
+  name: 'Bill Clinton (42nd President)',
+  type: 'political figure',
+  category: 'Political',
+  founded: 1993,
+  description: 'William Jefferson Clinton served as the 42nd President of the United States from 1993 to 2001. Flight logs from Epstein private jet (the "Lolita Express") show Clinton flew on the aircraft at least 26 times. Clinton has acknowledged knowing Epstein but denied knowledge of criminal activity. Virginia Giuffre, a key Epstein accuser, stated she saw Clinton on Little Saint James island, though Clinton denied visiting. The Clinton Foundation received a $25,000 donation from Epstein in 1995. After Epstein arrest in 2019, Clinton issued a statement saying he knew "nothing about the terrible crimes" Epstein was charged with. The association has been a persistent subject of public scrutiny and media investigation.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'political', description: 'Flew on Epstein jet 26+ times per flight logs; Epstein donated to Clinton Foundation', entryId: 'jeffrey-epstein-network' },
+    { name: 'Clinton Foundation', type: 'related', description: 'Received $25K Epstein donation' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'donald-trump-connections',
+  name: 'Donald Trump (45th/47th President)',
+  type: 'political figure',
+  category: 'Political',
+  founded: 1987,
+  description: 'Donald John Trump served as the 45th President (2017-2021) and 47th President (2025-present). Trump had a social relationship with Epstein throughout the 1990s and early 2000s. In a 2002 New York Magazine interview, Trump described Epstein as "a terrific guy" who "likes beautiful women as much as I do, and many of them are on the younger side." Trump later claimed he had a falling out with Epstein and banned him from Mar-a-Lago, reportedly over a real estate dispute. Trump appointed Alexander Acosta as Labor Secretary; Acosta was the US Attorney who negotiated the controversial 2008 Epstein plea deal that critics called a "sweetheart deal." Acosta resigned in 2019 when the plea deal drew renewed scrutiny after Epstein re-arrest. Virginia Giuffre was recruited from Mar-a-Lago.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'political', description: 'Social relationship 1990s-2000s; praised Epstein in 2002; Virginia Giuffre recruited from Mar-a-Lago', entryId: 'jeffrey-epstein-network' },
+    { name: 'Alexander Acosta', type: 'political', description: 'Appointed Acosta (who gave Epstein plea deal) as Labor Secretary' }
+  ]
+});
+
+addEntry('United Kingdom', {
+  id: 'prince-andrew',
+  name: 'Prince Andrew (Duke of York)',
+  type: 'royal/political figure',
+  category: 'Political',
+  description: 'Prince Andrew, Duke of York, is the third child of Queen Elizabeth II. He was one of the most prominent figures connected to the Epstein scandal. Virginia Giuffre alleged she was trafficked by Epstein and Maxwell to have sex with Prince Andrew on three occasions when she was 17, including at Maxwell London home and on Little Saint James. A photograph of Andrew with his arm around Giuffre waist (with Maxwell in the background) became one of the most iconic images of the scandal. Andrew denied the allegations, including in a disastrous 2019 BBC Newsnight interview that led to his resignation from royal duties. In 2022, he settled a civil lawsuit brought by Giuffre for an undisclosed sum reported to be around 12 million pounds, without admitting liability.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Key figure in Epstein scandal; Virginia Giuffre alleged trafficking; settled civil suit ~12M pounds', entryId: 'jeffrey-epstein-network' },
+    { name: 'Maxwell Communications Corporation', type: 'related', description: 'Connected through Ghislaine Maxwell; photographed with Giuffre at Maxwell London home', entryId: 'maxwell-communications' }
+  ]
+});
+
+addEntry('Israel', {
+  id: 'ehud-barak-connections',
+  name: 'Ehud Barak (Former Israeli PM)',
+  type: 'political figure',
+  category: 'Political',
+  founded: 1999,
+  description: 'Ehud Barak served as Prime Minister of Israel from 1999 to 2001 and held other senior posts including Defense Minister and Chief of the General Staff of the IDF. His relationship with Epstein drew significant scrutiny. Barak visited Epstein Manhattan residence and was photographed entering the townhouse in January 2016. Through Epstein, Barak invested in a startup called Carbyne (now Reporty Homeland Security), which develops emergency call technology. Barak acknowledged visiting Epstein homes, including the island, but denied knowledge of any criminal activity. He stated his relationship with Epstein was connected to investments and business. Barak reportedly received $2.5 million from Epstein for consulting work.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'political', description: 'Visited Epstein residences including island; received ~$2.5M for consulting; invested through Epstein in Carbyne/Reporty', entryId: 'jeffrey-epstein-network' },
+    { name: 'Mossad (Israeli Intelligence)', type: 'intelligence', description: 'Former IDF Chief of Staff; intelligence community connections', entryId: 'mossad-israeli-intelligence' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'alan-dershowitz-connections',
+  name: 'Alan Dershowitz',
+  type: 'legal/public figure',
+  category: 'Legal',
+  founded: 1967,
+  description: 'Alan Morton Dershowitz is an American attorney and legal scholar, emeritus professor at Harvard Law School, known for defending high-profile clients. Dershowitz represented Epstein during the negotiation of the 2008 plea deal and has been accused by Virginia Giuffre of being a participant in Epstein trafficking scheme. Dershowitz vehemently denied these allegations and filed defamation suits. Giuffre later settled with Dershowitz and issued a statement saying she "may have made a mistake" in identifying him. Dershowitz has been one of the most vocal public defenders of his innocence in the Epstein matter. His role in the 2008 plea deal, which gave Epstein a lenient sentence and immunity to unnamed co-conspirators, remains highly controversial. He later defended Trump in his first impeachment trial.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'legal', description: 'Represented Epstein in 2008 plea deal; accused by Virginia Giuffre; later settled', entryId: 'jeffrey-epstein-network' },
+    { name: 'Harvard University', type: 'educational', description: 'Emeritus professor at Harvard Law School; Epstein donated to Harvard', entryId: 'harvard-university' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'alexander-acosta-connections',
+  name: 'Alexander Acosta',
+  type: 'political/legal figure',
+  category: 'Legal',
+  founded: 2005,
+  description: 'R. Alexander Acosta is an American attorney who served as US Attorney for the Southern District of Florida from 2005 to 2009, during which time he negotiated the controversial 2008 plea deal with Jeffrey Epstein. The deal allowed Epstein to plead guilty to state prostitution charges, serve just 13 months (with work release 6 days a week), and receive immunity from federal sex trafficking charges for himself and unnamed co-conspirators. A federal judge later ruled the plea deal violated the Crime Victims Rights Act by failing to notify victims. Despite this controversy, Acosta was appointed US Secretary of Labor by President Trump in 2017. He resigned in July 2019 when the plea deal received renewed scrutiny following Epstein re-arrest by SDNY prosecutors.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'legal', description: 'Negotiated 2008 plea deal as US Attorney; deal gave Epstein lenient sentence and co-conspirator immunity', entryId: 'jeffrey-epstein-network' },
+    { name: 'Donald Trump (45th/47th President)', type: 'political', description: 'Appointed by Trump as Labor Secretary; resigned over Epstein plea deal controversy', entryId: 'donald-trump-connections' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'bill-gates-connections',
+  name: 'Bill Gates',
+  type: 'business/philanthropic figure',
+  category: 'Philanthropy',
+  founded: 1975,
+  description: 'William Henry Gates III is co-founder of Microsoft and one of the wealthiest people in history. His relationship with Epstein became public knowledge in 2019 and contributed to his 2021 divorce from Melinda French Gates. Gates met with Epstein multiple times starting in 2011, three years after Epstein first conviction. The New York Times reported Gates flew on Epstein private jet in 2013 and visited Epstein Manhattan townhouse on numerous occasions between 2011 and 2014. Gates initially claimed a minimal relationship but later acknowledged the meetings were a mistake. The Bill and Melinda Gates Foundation also facilitated Epstein meeting with JPMorgan executives. Melinda French Gates reportedly warned her then-husband about Epstein and cited the relationship as a factor in their divorce.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'financial', description: 'Multiple meetings 2011-2014; flew on Epstein jet; visits to townhouse; contributed to Gates divorce', entryId: 'jeffrey-epstein-network' },
+    { name: 'JPMorgan Chase', type: 'financial', description: 'Gates Foundation facilitated Epstein-JPMorgan executive meetings', entryId: 'jpmorgan-chase' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'elon-musk-connections',
+  name: 'Elon Musk',
+  type: 'business/technology figure',
+  category: 'Technology',
+  founded: 1999,
+  description: 'Elon Reeve Musk is a businessman and technology entrepreneur who leads Tesla, SpaceX, and other companies. Musk name appeared in documents related to the Epstein case. Ghislaine Maxwell was photographed at a 2014 Vanity Fair Oscar party reportedly organized with Musk help, and she was seen at other events associated with Musk. Musk has stated he visited Epstein Manhattan residence once and did not have a personal relationship with him. In the Maxwell trial documents released in 2024, Musk name appeared in connection with a planned meeting, though the nature of any interaction remains disputed. Musk has pushed back against implications of deeper involvement.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Name in Epstein documents; Maxwell photographed at Musk-associated events; visited townhouse', entryId: 'jeffrey-epstein-network' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'reid-hoffman-connections',
+  name: 'Reid Hoffman',
+  type: 'business/technology figure',
+  category: 'Technology',
+  founded: 2002,
+  description: 'Reid Garrett Hoffman is an American internet entrepreneur, venture capitalist, and co-founder of LinkedIn. Hoffman met with Epstein on multiple occasions for fundraising and networking purposes. He stated he was told the meetings were "a way to meet billionaires interested in funding science." In 2019, Hoffman publicly apologized for any association with Epstein, saying he helped MIT Media Lab director Joi Ito connect with Epstein to raise funds for certain projects. Hoffman stated he deeply regretted any connection and that he was not aware of Epstein criminal conduct. He committed $15 million to MIT to support research on ethical AI as a form of restitution.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Multiple meetings with Epstein; facilitated Epstein-MIT connections; publicly apologized', entryId: 'jeffrey-epstein-network' },
+    { name: 'MIT Media Lab', type: 'funding', description: 'Connected Joi Ito with Epstein for fundraising; later donated $15M to MIT for ethical AI', entryId: 'mit-media-lab' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'steve-bannon-connections',
+  name: 'Steve Bannon',
+  type: 'political/media figure',
+  category: 'Political',
+  description: 'Stephen Kevin Bannon is an American media executive, political strategist, and former White House Chief Strategist. In 2018, Bannon met with Epstein at his Manhattan townhouse to discuss political strategy. The meetings were reported by investigative journalists and confirmed through various records. The nature of their relationship was primarily political networking. Bannon was also connected to Guo Wengui (Miles Guo), a fugitive Chinese billionaire, and was arrested on Guo yacht on fraud charges in 2020 (later pardoned by Trump). The intersection of Bannon network with Epstein circle illustrates the overlapping nature of political, media, and financial power networks.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'political', description: 'Met with Epstein at Manhattan townhouse in 2018 for political strategy discussions', entryId: 'jeffrey-epstein-network' },
+    { name: 'Donald Trump (45th/47th President)', type: 'political', description: 'Former White House Chief Strategist; pardoned by Trump', entryId: 'donald-trump-connections' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'woody-allen-connections',
+  name: 'Woody Allen',
+  type: 'entertainment figure',
+  category: 'Entertainment',
+  description: 'Heywood Allen is an American filmmaker, writer, and actor. Allen was photographed with Epstein and Maxwell at social events and was included in Epstein contacts list. Allen stated he met Epstein through friends and that they had dinner "once or twice." He denied any close relationship or knowledge of criminal activity. The association gained attention given Allen own controversies involving his adopted stepdaughter. Allen name appeared in documents released during the Maxwell trial. The connection illustrates how Epstein cultivated relationships with prominent cultural figures to maintain social legitimacy and access.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'In Epstein contacts; photographed at social events; acknowledged dining together', entryId: 'jeffrey-epstein-network' },
+    { name: 'Miramax Films', type: 'related', description: 'Overlapping entertainment industry circles', entryId: 'miramax-films' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'george-stephanopoulos-connections',
+  name: 'George Stephanopoulos',
+  type: 'media/political figure',
+  category: 'Media',
+  description: 'George Robert Stephanopoulos is an American television journalist and former political advisor. He served as a senior advisor to President Clinton and later became anchor of ABC Good Morning America and This Week. Stephanopoulos attended a dinner party at Epstein Manhattan townhouse in 2010, after Epstein first conviction, alongside other guests including Katie Couric, Chelsea Handler, and Woody Allen. The dinner was hosted by Epstein in what appeared to be a campaign to rehabilitate his public image after his 2008 conviction. Stephanopoulos acknowledged attending but said he should not have gone.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'related', description: 'Attended 2010 dinner at Epstein townhouse post-conviction; part of image rehabilitation effort', entryId: 'jeffrey-epstein-network' },
+    { name: 'Bill Clinton (42nd President)', type: 'political', description: 'Former senior advisor to Clinton; both connected to Epstein', entryId: 'bill-clinton-connections' }
+  ]
+});
+
+addEntry('United States', {
+  id: 'les-wexner-connections',
+  name: 'Les Wexner',
+  type: 'business figure',
+  category: 'Corporate',
+  founded: 1963,
+  description: 'Leslie Herbert Wexner is an American billionaire businessman, the founder and former CEO of L Brands (now Bath and Body Works). He is the most significant financial figure in the Epstein network. Wexner was Epstein primary patron, granting him sweeping power of attorney over his personal finances, real estate holdings, and business affairs. Wexner transferred his 71st Street Manhattan townhouse (later valued at $77 million) to Epstein under unclear circumstances. Epstein managed the Wexner Foundation and had close ties to Wexner family. In 2019, Wexner claimed Epstein had misappropriated vast sums of his wealth, though the full extent remains unclear. The relationship between Wexner and Epstein began in the mid-1980s and was the foundation upon which Epstein built his financial credibility and social network.',
+  individuals: [],
+  connections: [
+    { name: 'Jeffrey Epstein Network', type: 'financial', description: 'Primary financial patron; power of attorney; transferred $77M townhouse; Epstein managed Wexner Foundation', entryId: 'jeffrey-epstein-network' },
+    { name: "Victoria's Secret (L Brands)", type: 'subsidiary', description: 'Wexner founded L Brands/Victoria Secret', entryId: 'l-brands-victorias-secret' },
+    { name: 'Wexner Foundation', type: 'subsidiary', description: 'Wexner founded; Epstein had management role', entryId: 'wexner-foundation' },
+    { name: 'JPMorgan Chase', type: 'financial', description: 'Banking relationship; JPMorgan facilitated Wexner/Epstein financial arrangements', entryId: 'jpmorgan-chase' }
+  ]
+});
+
+// --- NOW UPDATE EPSTEIN ENTRY CONNECTIONS TO USE ENTRY IDS ---
+for (const c in jd.countries) {
+  for (const e of jd.countries[c]) {
+    if (e.id !== 'jeffrey-epstein-network') continue;
+    // Update existing connections with entryIds where we now have entries
+    const idMap = {
+      'MIT Media Lab': 'mit-media-lab',
+      "Victoria's Secret (L Brands)": 'l-brands-victorias-secret',
+      'Bill Clinton': 'bill-clinton-connections',
+      'Donald Trump': 'donald-trump-connections',
+      'Prince Andrew': 'prince-andrew',
+      'Ehud Barak': 'ehud-barak-connections',
+      'Les Wexner': 'les-wexner-connections',
+      'Alan Dershowitz': 'alan-dershowitz-connections',
+      'Alexander Acosta': 'alexander-acosta-connections',
+      'Ghislaine Maxwell': null, // person, not entry
+      'Robert Maxwell / Maxwell Communications': 'maxwell-communications',
+      'Mossad (alleged)': 'mossad-israeli-intelligence',
+      'Palm Beach Police Department': 'palm-beach-police',
+      'FBI': 'fbi',
+      'Dalton School': 'dalton-school',
+      'Southern District of New York': 'sdny',
+      'Elon Musk': 'elon-musk-connections',
+      'Bill Gates': 'bill-gates-connections',
+      'Woody Allen': 'woody-allen-connections',
+      'George Stephanopoulos': 'george-stephanopoulos-connections',
+      'Joi Ito / MIT Media Lab': 'mit-media-lab',
+      'Reid Hoffman': 'reid-hoffman-connections',
+      'US Virgin Islands': 'us-virgin-islands-gov',
+      'Metropolitan Correctional Center': 'metropolitan-correctional-center',
+      'Steve Bannon': 'steve-bannon-connections',
+    };
+    for (const conn of e.connections) {
+      if (idMap[conn.name] && !conn.entryId) {
+        conn.entryId = idMap[conn.name];
+      }
+    }
+
+    // Add more Epstein connections that were not in original data
+    const existingConnNames = new Set(e.connections.map(c => c.name));
+    const moreConns = [
+      { name: 'Southern District of New York (SDNY)', type: 'legal', description: 'SDNY brought 2019 federal indictment; continued Maxwell prosecution', entryId: 'sdny' },
+      { name: 'US Virgin Islands (Government)', type: 'legal', description: 'Epstein owned Little Saint James and Great Saint James islands; USVI AG sued JPMorgan', entryId: 'us-virgin-islands-gov' },
+      { name: 'Les Wexner', type: 'financial', description: 'Primary financial patron; power of attorney; $77M townhouse transfer', entryId: 'les-wexner-connections' },
+      { name: 'Dalton School', type: 'educational', description: 'Epstein taught math 1974-76 without degree; hired by Donald Barr; entry to elite circles', entryId: 'dalton-school' },
+      { name: 'Maxwell Communications', type: 'related', description: 'Robert Maxwell media empire; Ghislaine father; alleged intelligence connections', entryId: 'maxwell-communications' },
+      { name: 'Mossad (Israeli Intelligence)', type: 'intelligence', description: 'Alleged intelligence operation connection per former operatives', entryId: 'mossad-israeli-intelligence' },
+      { name: 'Palm Beach Police Department', type: 'legal', description: 'First investigation 2005; uncovered dozens of victims', entryId: 'palm-beach-police' },
+      { name: 'Metropolitan Correctional Center', type: 'related', description: 'Found dead in cell August 10, 2019; cameras malfunctioned; guards asleep', entryId: 'metropolitan-correctional-center' },
+      { name: 'Federal Bureau of Investigation (FBI)', type: 'intelligence', description: 'Received early complaints; investigated death; participated in 2019 arrest', entryId: 'fbi' },
+      { name: "Victoria's Secret (L Brands)", type: 'financial', description: 'Used VS brand association to recruit; Wexner/L Brands was primary patron vehicle', entryId: 'l-brands-victorias-secret' },
+      { name: 'Alan Dershowitz', type: 'legal', description: 'Defense attorney; negotiated 2008 plea deal; accused by Virginia Giuffre', entryId: 'alan-dershowitz-connections' },
+      { name: 'Bill Clinton (42nd President)', type: 'political', description: 'Flew on Lolita Express 26+ times; Clinton Foundation received Epstein donation', entryId: 'bill-clinton-connections' },
+      { name: 'Donald Trump (45th/47th President)', type: 'political', description: 'Social relationship 1990s-2000s; Virginia Giuffre recruited from Mar-a-Lago', entryId: 'donald-trump-connections' },
+      { name: 'Prince Andrew (Duke of York)', type: 'related', description: 'Virginia Giuffre alleged trafficking; settled civil suit ~12M pounds', entryId: 'prince-andrew' },
+      { name: 'Ehud Barak (Former Israeli PM)', type: 'political', description: 'Visited Epstein properties; received $2.5M; invested through Epstein in Carbyne', entryId: 'ehud-barak-connections' },
+      { name: 'Alexander Acosta', type: 'legal', description: 'Negotiated 2008 "sweetheart" plea deal as US Attorney; resigned as Labor Secretary', entryId: 'alexander-acosta-connections' },
+      { name: 'Bill Gates', type: 'financial', description: 'Multiple meetings 2011-2014; flew on Epstein jet; contributed to Gates divorce', entryId: 'bill-gates-connections' },
+      { name: 'Elon Musk', type: 'related', description: 'Name in documents; Maxwell at Musk-associated events; visited townhouse', entryId: 'elon-musk-connections' },
+      { name: 'Reid Hoffman', type: 'related', description: 'Multiple meetings; facilitated Epstein-MIT connection; donated $15M to MIT after', entryId: 'reid-hoffman-connections' },
+      { name: 'Steve Bannon', type: 'political', description: 'Met 2018 at Manhattan townhouse for political strategy', entryId: 'steve-bannon-connections' },
+      { name: 'Woody Allen', type: 'related', description: 'In contacts; photographed at events; acknowledged dining together', entryId: 'woody-allen-connections' },
+      { name: 'George Stephanopoulos', type: 'related', description: 'Attended 2010 post-conviction dinner at Epstein townhouse', entryId: 'george-stephanopoulos-connections' },
+      { name: 'MIT Media Lab', type: 'funding', description: 'Donated millions; "disqualified donor" but money accepted through intermediaries', entryId: 'mit-media-lab' },
+    ];
+
+    for (const mc of moreConns) {
+      if (!existingConnNames.has(mc.name)) {
+        e.connections.push(mc);
+        existingConnNames.add(mc.name);
+      }
+    }
+    console.log('Epstein connections after expansion:', e.connections.length);
   }
 }
 
-console.log('\n=== FINAL STATS ===');
-console.log(`Entries: ${totalEntries}`);
-console.log(`Countries: ${Object.keys(data.countries).length}`);
-console.log(`People: ${Object.keys(peopleData.people).length}`);
-console.log(`Connections: ${totalConns}`);
-console.log(`Categories: ${catSet.size}`);
-console.log('Done!');
+// ═══════════════════════════════════════════════════════
+// 6. ADD MISSING PEOPLE TO PEOPLE.JSON
+// ═══════════════════════════════════════════════════════
+let newPeople = 0;
+function addPerson(id, data) {
+  if (pd.people[id]) return false;
+  pd.people[id] = data;
+  newPeople++;
+  return true;
+}
+
+addPerson('nadia-marcinkova', {
+  name: 'Nadia Marcinkova',
+  bio: 'Slovakian-born woman who was allegedly brought to the US by Jeffrey Epstein from the former Yugoslavia when she was a teenager. She was named as an alleged participant and later co-conspirator in Epstein abuse. She later changed her name to Nadia Marcinko and became a licensed pilot. She received a non-prosecution agreement as part of the 2008 plea deal.',
+  affiliations: [
+    { organization: 'Jeffrey Epstein Network', role: 'Associate / Alleged Participant', country: 'United States', entryId: 'jeffrey-epstein-network' }
+  ]
+});
+
+addPerson('lesley-groff', {
+  name: 'Lesley Groff',
+  bio: 'American woman who served as Jeffrey Epstein executive assistant for over two decades. She was named as a co-conspirator in the original federal investigation but received a non-prosecution agreement in the 2008 plea deal. Victims alleged she helped schedule appointments with underage girls and managed logistics of the trafficking operation.',
+  affiliations: [
+    { organization: 'Jeffrey Epstein Network', role: 'Executive Assistant', country: 'United States', entryId: 'jeffrey-epstein-network' }
+  ]
+});
+
+addPerson('adolph-ochs', {
+  name: 'Adolph Ochs',
+  bio: 'American newspaper publisher (1858-1935) who purchased The New York Times in 1896 and transformed it into a respected newspaper of record. Born to a Jewish immigrant family from Bavaria, he established the Ochs-Sulzberger family dynasty that controlled the Times for over a century.',
+  affiliations: [
+    { organization: 'New York Times', role: 'Publisher (1896-1935)', country: 'United States', entryId: 'new-york-times' }
+  ]
+});
+
+addPerson('lawrence-summers-harvard', {
+  name: 'Lawrence Summers',
+  bio: 'American economist who served as President of Harvard University (2001-2006) and US Secretary of the Treasury (1999-2001). During his tenure at Harvard, the university accepted donations from Jeffrey Epstein, and Summers met with Epstein on multiple occasions. He later stated the meetings were a mistake.',
+  affiliations: [
+    { organization: 'Harvard University', role: 'Former President', country: 'United States', entryId: 'harvard-university' },
+    { organization: 'US Department of the Treasury', role: 'Former Secretary', country: 'United States' }
+  ]
+});
+
+addPerson('bob-weinstein', {
+  name: 'Bob Weinstein',
+  bio: 'American film producer who co-founded Miramax Films with his brother Harvey Weinstein in 1979. He later co-founded The Weinstein Company. After Harvey conviction for sexual assault, Bob distanced himself but faced his own allegations of workplace harassment.',
+  affiliations: [
+    { organization: 'Miramax Films', role: 'Co-founder', country: 'United States', entryId: 'miramax-films' }
+  ]
+});
+
+// Add more Epstein-connected people
+addPerson('joi-ito', {
+  name: 'Joi Ito',
+  bio: 'Japanese-American activist and entrepreneur who served as director of the MIT Media Lab from 2011 to 2019. He resigned after revelations that he had solicited and accepted donations from Jeffrey Epstein, and concealed the nature and extent of the relationship from MIT officials. Internal emails showed Epstein was a "disqualified donor."',
+  affiliations: [
+    { organization: 'MIT Media Lab', role: 'Former Director (resigned 2019)', country: 'United States', entryId: 'mit-media-lab' }
+  ]
+});
+
+addPerson('nicholas-negroponte', {
+  name: 'Nicholas Negroponte',
+  bio: 'Greek-American architect, computer scientist, and co-founder of the MIT Media Lab. Also founded the One Laptop per Child initiative. He publicly defended accepting donations from Jeffrey Epstein after the scandal broke.',
+  affiliations: [
+    { organization: 'MIT Media Lab', role: 'Co-founder', country: 'United States', entryId: 'mit-media-lab' }
+  ]
+});
+
+addPerson('donald-barr', {
+  name: 'Donald Barr',
+  bio: 'American educator (1921-2004) who served as headmaster of the elite Dalton School in Manhattan. He hired Jeffrey Epstein to teach there in 1974 despite Epstein lacking a college degree. He was the father of William Barr, who later served as US Attorney General during Epstein death in federal custody.',
+  affiliations: [
+    { organization: 'Dalton School', role: 'Former Headmaster', country: 'United States', entryId: 'dalton-school' }
+  ]
+});
+
+addPerson('robert-maxwell', {
+  name: 'Robert Maxwell',
+  bio: 'Czech-born British media baron (1923-1991) who built Maxwell Communications Corporation into one of the largest media conglomerates in the world. He died after falling from his yacht under mysterious circumstances. Post-mortem, it was revealed he had looted hundreds of millions from company pension funds. He has been widely alleged to have been an agent or asset of Israeli intelligence (Mossad). Father of Ghislaine Maxwell.',
+  affiliations: [
+    { organization: 'Maxwell Communications Corporation', role: 'Founder and Chairman', country: 'United Kingdom', entryId: 'maxwell-communications' }
+  ]
+});
+
+addPerson('geoffrey-berman', {
+  name: 'Geoffrey Berman',
+  bio: 'American attorney who served as US Attorney for the SDNY from 2018 to 2020. He oversaw the Epstein prosecution and arrest. He was controversially fired by Attorney General William Barr in June 2020 and later wrote a memoir alleging political interference in cases.',
+  affiliations: [
+    { organization: 'Southern District of New York (SDNY)', role: 'Former US Attorney', country: 'United States', entryId: 'sdny' }
+  ]
+});
+
+addPerson('michael-reiter', {
+  name: 'Michael Reiter',
+  bio: 'Former Palm Beach Police Chief who initiated and led the first comprehensive investigation into Jeffrey Epstein beginning in 2005. He pushed for federal involvement when the local state attorney refused to file felony charges.',
+  affiliations: [
+    { organization: 'Palm Beach Police Department', role: 'Former Chief', country: 'United States', entryId: 'palm-beach-police' }
+  ]
+});
+
+addPerson('denise-george', {
+  name: 'Denise George',
+  bio: 'Former Attorney General of the US Virgin Islands who filed a landmark civil enforcement action against JPMorgan Chase for facilitating Epstein sex trafficking operation. She was fired shortly after filing the suit.',
+  affiliations: [
+    { organization: 'US Virgin Islands (Government)', role: 'Former Attorney General', country: 'United States', entryId: 'us-virgin-islands-gov' }
+  ]
+});
+
+addPerson('ari-ben-menashe', {
+  name: 'Ari Ben-Menashe',
+  bio: 'Iranian-born Israeli intelligence operative who later became a political consultant. He publicly claimed that both Robert Maxwell and Jeffrey Epstein were connected to Israeli intelligence operations and that Epstein ran a sexual blackmail operation for intelligence purposes.',
+  affiliations: [
+    { organization: 'Mossad (Israeli Intelligence)', role: 'Former Operative', country: 'Israel', entryId: 'mossad-israeli-intelligence' }
+  ]
+});
+
+addPerson('robert-mueller', {
+  name: 'Robert Mueller',
+  bio: 'American attorney who served as FBI Director from 2001 to 2013, overlapping with periods when Epstein complaints were known to the bureau. Later served as Special Counsel investigating Russian interference in the 2016 election.',
+  affiliations: [
+    { organization: 'Federal Bureau of Investigation (FBI)', role: 'Former Director (2001-2013)', country: 'United States', entryId: 'fbi' }
+  ]
+});
+
+addPerson('seth-lloyd', {
+  name: 'Seth Lloyd',
+  bio: 'American mechanical engineer and professor at MIT who accepted research funding from Jeffrey Epstein for quantum computing work. He was placed on paid leave by MIT in 2020 after the Epstein funding revelations.',
+  affiliations: [
+    { organization: 'MIT Media Lab', role: 'Professor', country: 'United States', entryId: 'mit-media-lab' }
+  ]
+});
+
+// ═══════════════════════════════════════════════════════
+// 7. SAVE
+// ═══════════════════════════════════════════════════════
+fs.writeFileSync(JD_PATH, JSON.stringify(jd, null, 2));
+fs.writeFileSync(PD_PATH, JSON.stringify(pd, null, 2));
+
+// Rebuild maps and count totals
+rebuildMaps();
+let totalEntries = 0, totalConns = 0, totalPeople = Object.keys(pd.people).length;
+const cats = new Set();
+for (const c in jd.countries) {
+  for (const e of jd.countries[c]) {
+    totalEntries++;
+    if (e.category) cats.add(e.category);
+    if (e.connections) totalConns += e.connections.length;
+  }
+}
+
+console.log('\n=== RESULTS ===');
+console.log('Dashes fixed:', dashFixes);
+console.log('Connection references fixed:', connFixed);
+console.log('New entries added:', newEntries);
+console.log('New people added:', newPeople);
+console.log('Total entries:', totalEntries);
+console.log('Total countries:', Object.keys(jd.countries).length);
+console.log('Total people:', totalPeople);
+console.log('Total connections:', totalConns);
+console.log('Total categories:', cats.size);
