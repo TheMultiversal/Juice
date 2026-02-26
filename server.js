@@ -562,37 +562,7 @@ app.get('/api/path', (req, res) => {
 
 // audit endpoint removed from public access - use scripts/audit.js locally instead
 
-// export endpoint - returns data in CSV or JSON format
-app.get('/api/export', (req, res) => {
-  const format = req.query.format || 'json';
-  const country = req.query.country;
-  const category = req.query.category;
-  try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    const jd = require('./data/jewish.json');
-    const entries = [];
-    for (const c in jd.countries) {
-      if (country && c !== country) continue;
-      for (const entry of jd.countries[c]) {
-        if (category && entry.category !== category) continue;
-        entries.push({ id: entry.id, name: entry.name, type: entry.type, category: entry.category || '', country: c, description: entry.description || '', website: entry.website || '', founded: entry.founded || '', individuals: (entry.individuals || []).length, connections: (entry.connections || []).length });
-      }
-    }
-    if (format === 'csv') {
-      const headers = ['id','name','type','category','country','description','website','founded','individuals','connections'];
-      const csvRows = [headers.join(',')];
-      entries.forEach(e => {
-        csvRows.push(headers.map(h => { const v = String(e[h] || ''); return '"' + v.replace(/"/g, '""') + '"'; }).join(','));
-      });
-      res.setHeader('Content-Type', 'text/csv');
-      res.setHeader('Content-Disposition', 'attachment; filename="export.csv"');
-      res.send(csvRows.join('\n'));
-    } else {
-      res.setHeader('Content-Disposition', 'attachment; filename="export.json"');
-      res.json(entries);
-    }
-  } catch (err) { res.status(500).json({ error: 'Server error' }); }
-});
+
 
 // compare endpoint - return multiple entries for comparison
 app.get('/api/compare', (req, res) => {

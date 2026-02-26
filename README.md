@@ -31,7 +31,6 @@
 
 ### Utilities
 - **Compare** - Side-by-side entry comparison
-- **Export** - Download data in JSON/CSV formats
 - **Bookmarks** - Client-side bookmark management
 - **Audit** - Data quality dashboard (missing websites, founding years, few connections)
 - **Admin** - CRUD interface for entries and data management
@@ -89,7 +88,6 @@ Each entry includes: `id`, `name`, `type`, `category`, `description`, `founded`,
 | `GET /api/random` | Random entry |
 | `GET /api/audit` | Data quality report |
 | `GET /api/path?from=&to=` | Find shortest path between two entries |
-| `GET /api/export?format=json\|csv` | Export all data |
 | `GET /api/compare?ids=` | Compare multiple entries |
 | `GET /:country?format=json` | Entries for a specific country |
 
@@ -136,7 +134,6 @@ Juice/
 │   ├── pathfinder.html # Degrees of separation
 │   ├── discover.html   # Random explorer
 │   ├── compare.html    # Side-by-side compare
-│   ├── export.html     # Data export
 │   ├── bookmarks.html  # Saved entries
 │   ├── audit.html      # Data quality
 │   ├── allcountries.html
