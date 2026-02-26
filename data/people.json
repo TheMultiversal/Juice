@@ -16806,6 +16806,218 @@
           "entryId": "mit-media-lab"
         }
       ]
+    },
+    "bill-gates": {
+      "name": "Bill Gates",
+      "bio": "American business magnate and co-founder of Microsoft Corporation. Born 1955 in Seattle. World's wealthiest person for many years. Co-chair of the Bill & Melinda Gates Foundation (~$75B endowment). Met Jeffrey Epstein multiple times from 2011-2014 (post-conviction). Flew on Epstein's jet in 2013. Melinda cited Epstein meetings as factor in 2021 divorce.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bill Gates",
+          "role": "Subject",
+          "entryId": "bill-gates-connections",
+          "country": "United States"
+        },
+        {
+          "organization": "Microsoft Corporation",
+          "role": "Co-Founder",
+          "entryId": "microsoft-corporation",
+          "country": "United States"
+        },
+        {
+          "organization": "Bill & Melinda Gates Foundation",
+          "role": "Co-Chair",
+          "entryId": "bill-melinda-gates-foundation",
+          "country": "United States"
+        },
+        {
+          "organization": "Cascade Investment LLC",
+          "role": "Owner",
+          "entryId": "cascade-investment",
+          "country": "United States"
+        },
+        {
+          "organization": "Breakthrough Energy",
+          "role": "Founder",
+          "entryId": "breakthrough-energy",
+          "country": "United States"
+        }
+      ]
+    },
+    "melinda-french-gates": {
+      "name": "Melinda French Gates",
+      "bio": "American philanthropist and former wife of Bill Gates. Born 1964 in Dallas. Former Microsoft general manager. Co-founded Gates Foundation. Cited Bill's Epstein meetings as factor in their 2021 divorce. Left the Gates Foundation in 2024.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bill & Melinda Gates Foundation",
+          "role": "Former Co-Chair",
+          "entryId": "bill-melinda-gates-foundation",
+          "country": "United States"
+        }
+      ]
+    },
+    "boris-nikolic": {
+      "name": "Boris Nikolic",
+      "bio": "Croatian-American physician and venture capitalist. Former science advisor to Bill Gates. Named as backup executor of Jeffrey Epstein's will - reportedly without his knowledge. His spokesperson said Nikolic was \"shocked\" by the designation and would decline to serve.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bill & Melinda Gates Foundation",
+          "role": "Former Science Advisor",
+          "entryId": "bill-melinda-gates-foundation",
+          "country": "United States"
+        }
+      ]
+    },
+    "glenn-dubin": {
+      "name": "Glenn Dubin",
+      "bio": "American billionaire hedge fund manager. Co-founder of Highbridge Capital Management. Close friend of Jeffrey Epstein spanning decades. Named in Virginia Giuffre's sworn depositions alleging trafficking. Wife Eva Andersson-Dubin is Epstein's ex-girlfriend.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Glenn Dubin",
+          "role": "Subject",
+          "entryId": "glenn-dubin-connections",
+          "country": "United States"
+        },
+        {
+          "organization": "Jeffrey Epstein Network",
+          "role": "Associate",
+          "entryId": "jeffrey-epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "eva-andersson-dubin": {
+      "name": "Eva Andersson-Dubin",
+      "bio": "Swedish-American physician and former Miss Sweden (1980). Dated Jeffrey Epstein in the 1980s before marrying Glenn Dubin. Named in Virginia Giuffre's depositions.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Glenn Dubin",
+          "role": "Wife - Named in Giuffre depositions",
+          "entryId": "glenn-dubin-connections",
+          "country": "United States"
+        }
+      ]
+    },
+    "henry-kissinger": {
+      "name": "Henry Kissinger",
+      "bio": "German-born American diplomat (1923-2023). Born Heinz Alfred Kissinger in Bavaria to a Jewish family. Fled Nazi Germany in 1938. U.S. Secretary of State 1973-1977. Nobel Peace Prize 1973. Connected to Epstein through NYC elite circles and CFR.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Henry Kissinger",
+          "role": "Subject",
+          "entryId": "henry-kissinger-connections",
+          "country": "United States"
+        }
+      ]
+    },
+    "lawrence-krauss": {
+      "name": "Lawrence Krauss",
+      "bio": "Canadian-American theoretical physicist and cosmologist. Born 1954 in New York City to a Jewish family. Visited Epstein's island and publicly defended him post-conviction: \"I feel raised by it.\" Retired from ASU after sexual misconduct allegations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Lawrence Krauss",
+          "role": "Subject",
+          "entryId": "lawrence-krauss-connections",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-brockman": {
+      "name": "John Brockman",
+      "bio": "American literary agent and founder of the Edge Foundation. Born 1941, Jewish. Key intermediary who connected Epstein to dozens of top scientists through exclusive billionaire dinners. Referred to Epstein as \"my friend\" in leaked emails.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "John Brockman / Edge Foundation",
+          "role": "Founder",
+          "entryId": "john-brockman-edge",
+          "country": "United States"
+        }
+      ]
+    },
+    "naomi-campbell": {
+      "name": "Naomi Campbell",
+      "bio": "British supermodel, born 1970 in London. One of the original \"Big Six\" supermodels. Appeared in Jeffrey Epstein's flight logs and contact book. Photographed with Ghislaine Maxwell.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Naomi Campbell",
+          "role": "Subject",
+          "entryId": "naomi-campbell-connections",
+          "country": "United Kingdom"
+        }
+      ]
+    },
+    "kevin-spacey": {
+      "name": "Kevin Spacey",
+      "bio": "American actor. Born 1959. Two-time Academy Award winner. Flew on Epstein's \"Lolita Express\" to Africa with Bill Clinton in 2002. Photographed on Epstein's plane with Maxwell. Later accused of sexual assault by multiple men.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Kevin Spacey",
+          "role": "Subject",
+          "entryId": "kevin-spacey-connections",
+          "country": "United States"
+        }
+      ]
+    },
+    "cy-vance-jr": {
+      "name": "Cyrus Vance Jr.",
+      "bio": "American prosecutor. Manhattan District Attorney 2010-2021. Son of Secretary of State Cyrus Vance. His office argued to downgrade Epstein's sex offender status. Also declined to prosecute Harvey Weinstein in 2015.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Cyrus Vance Jr.",
+          "role": "Subject",
+          "entryId": "cy-vance-connections",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-larson": {
+      "name": "Michael Larson",
+      "bio": "American investment manager. Chief investment officer of Cascade Investment (Bill Gates' family office) since 1995. Manages approximately $80 billion. Accused of workplace harassment in a 2022 New York Times expose.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Cascade Investment LLC",
+          "role": "Chief Investment Officer",
+          "entryId": "cascade-investment",
+          "country": "United States"
+        }
+      ]
+    },
+    "paul-allen": {
+      "name": "Paul Allen",
+      "bio": "American business magnate and philanthropist (1953-2018). Co-founded Microsoft with Bill Gates in 1975. Jewish mother. Owner of Seattle Seahawks and Portland Trail Blazers. Founded Vulcan Inc. Died of lymphoma in 2018.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Microsoft Corporation",
+          "role": "Co-Founder",
+          "entryId": "microsoft-corporation",
+          "country": "United States"
+        }
+      ]
+    },
+    "satya-nadella": {
+      "name": "Satya Nadella",
+      "bio": "Indian-American business executive. CEO of Microsoft since 2014. Born 1967 in Hyderabad, India. Transformed Microsoft into a cloud-first company, growing market cap from $300B to over $3 trillion.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Microsoft Corporation",
+          "role": "CEO (2014-present)",
+          "entryId": "microsoft-corporation",
+          "country": "United States"
+        }
+      ]
     }
   }
 }
