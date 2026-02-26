@@ -151,6 +151,18 @@
             "type": "financial peer",
             "description": "Both are major players in global financial markets.",
             "entryId": "citadel-llc"
+          },
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "financial",
+            "description": "Epstein had early career connections to Goldman Sachs. Goldman banker and executives appeared in Epstein orbit.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Bill Gates",
+            "type": "financial",
+            "description": "Goldman Sachs provides banking services to Gates entities.",
+            "entryId": "bill-gates-connections"
           }
         ],
         "category": "Investment & Private Equity",
@@ -889,6 +901,12 @@
             "type": "industry peer",
             "description": "Both were major Wall Street investment banks with Jewish founding histories.",
             "entryId": "goldman-sachs-historic"
+          },
+          {
+            "name": "J. Epstein & Co.",
+            "type": "predecessor",
+            "description": "Epstein left Bear Stearns in 1981 after being fired, then founded his own firm.",
+            "entryId": "j-epstein-company"
           }
         ],
         "category": "Investment & Private Equity",
@@ -2315,6 +2333,24 @@
             "type": "related",
             "description": "JPMorgan maintained Epstein accounts while Maxwell was his active associate and co-conspirator.",
             "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "Victims sued JPMorgan for facilitating Epstein's trafficking through banking services. Settled for $290M.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "financial",
+            "description": "JPMorgan maintained Epstein accounts while he operated in Palm Beach social circles including Mar-a-Lago.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "J. Epstein & Co.",
+            "type": "banking",
+            "description": "Maintained J. Epstein & Co. accounts for over 15 years despite internal compliance concerns.",
+            "entryId": "j-epstein-company"
           }
         ],
         "id": "jpmorgan-chase"
@@ -19650,6 +19686,42 @@
             "type": "related",
             "description": "Gates (Microsoft co-founder) met Epstein multiple times. Reid Hoffman (LinkedIn/Microsoft) also connected.",
             "entryId": "microsoft-corporation"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal/victim",
+            "description": "Lead accuser. Recruited at 16 from Mar-a-Lago. Her lawsuits exposed the network.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "related",
+            "description": "Epstein was a member. Giuffre was recruited there by Maxwell. Trump later banned Epstein.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "David Boies / Boies Schiller Flexner",
+            "type": "legal",
+            "description": "Firm represented Epstein victims. Forced release of sealed documents exposing the network.",
+            "entryId": "david-boies-connections"
+          },
+          {
+            "name": "Lesley Groff",
+            "type": "co-conspirator",
+            "description": "Executive assistant for 20 years. Scheduled \"massages.\" Named co-conspirator, received immunity.",
+            "entryId": "leslie-groff-connections"
+          },
+          {
+            "name": "Sarah Kellen",
+            "type": "co-conspirator",
+            "description": "Primary recruiter and scheduler. Named co-conspirator, received immunity. Hundreds of flights on Epstein jet.",
+            "entryId": "sarah-kellen-connections"
+          },
+          {
+            "name": "Nadia Marcinkova",
+            "type": "co-conspirator",
+            "description": "Brought from Slovakia as teenager. Named co-conspirator, received immunity. Victim turned alleged participant.",
+            "entryId": "nadia-marcinkova-connections"
           }
         ]
       },
@@ -20148,6 +20220,30 @@
             "name": "US Department of Justice",
             "type": "parent",
             "description": "FBI is primary investigative arm of DOJ"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "investigation",
+            "description": "Giuffre cooperated with FBI investigations into Epstein network.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "investigation",
+            "description": "FBI also conducted the 2022 raid on Mar-a-Lago for classified documents (separate from Epstein).",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "Lesley Groff",
+            "type": "investigation",
+            "description": "Groff was named as co-conspirator in FBI investigation of Epstein.",
+            "entryId": "leslie-groff-connections"
+          },
+          {
+            "name": "Sarah Kellen",
+            "type": "investigation",
+            "description": "Kellen was named as co-conspirator in FBI investigation of Epstein.",
+            "entryId": "sarah-kellen-connections"
           }
         ]
       },
@@ -20191,6 +20287,18 @@
             "type": "legal",
             "description": "Epstein held and died at MCC during SDNY prosecution",
             "entryId": "metropolitan-correctional-center"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "SDNY's prosecution of Epstein was partly driven by evidence from Giuffre's civil lawsuits.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "David Boies",
+            "type": "legal",
+            "description": "Boies' firm's civil case work generated evidence used by SDNY prosecutors.",
+            "entryId": "david-boies-connections"
           }
         ]
       },
@@ -20279,6 +20387,18 @@
             "type": "legal",
             "description": "Referred Epstein case to FBI after local DA refused felony charges",
             "entryId": "fbi"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "investigation",
+            "description": "Palm Beach PD investigated Epstein starting 2005 based on victim complaints including Giuffre's case.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "geographic",
+            "description": "Epstein's Palm Beach mansion and Mar-a-Lago were both in Palm Beach PD jurisdiction.",
+            "entryId": "mar-a-lago"
           }
         ]
       },
@@ -20324,7 +20444,14 @@
         "category": "Political",
         "founded": 1993,
         "description": "William Jefferson Clinton served as the 42nd President of the United States from 1993 to 2001. Flight logs from Epstein private jet (the \"Lolita Express\") show Clinton flew on the aircraft at least 26 times. Clinton has acknowledged knowing Epstein but denied knowledge of criminal activity. Virginia Giuffre, a key Epstein accuser, stated she saw Clinton on Little Saint James island, though Clinton denied visiting. The Clinton Foundation received a $25,000 donation from Epstein in 1995. After Epstein arrest in 2019, Clinton issued a statement saying he knew \"nothing about the terrible crimes\" Epstein was charged with. The association has been a persistent subject of public scrutiny and media investigation.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "bill-clinton-ind",
+            "name": "Bill Clinton",
+            "role": "42nd President of the United States (1993-2001)",
+            "bio": "William Jefferson Clinton served as the 42nd President. Flew on Epstein's jet 26+ times. Epstein donated to Clinton Foundation. Visited Epstein's island per crew testimony."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20376,7 +20503,14 @@
         "category": "Political",
         "founded": 1987,
         "description": "Donald John Trump served as the 45th President (2017-2021) and 47th President (2025-present). Trump had a social relationship with Epstein throughout the 1990s and early 2000s. In a 2002 New York Magazine interview, Trump described Epstein as \"a terrific guy\" who \"likes beautiful women as much as I do, and many of them are on the younger side.\" Trump later claimed he had a falling out with Epstein and banned him from Mar-a-Lago, reportedly over a real estate dispute. Trump appointed Alexander Acosta as Labor Secretary; Acosta was the US Attorney who negotiated the controversial 2008 Epstein plea deal that critics called a \"sweetheart deal.\" Acosta resigned in 2019 when the plea deal drew renewed scrutiny after Epstein re-arrest. Virginia Giuffre was recruited from Mar-a-Lago.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "donald-trump-ind",
+            "name": "Donald Trump",
+            "role": "45th & 47th President of the United States",
+            "bio": "Donald John Trump. Social relationship with Epstein in 1990s-2000s. In 2002 told New York Magazine: \"He likes beautiful women as much as I do, and many of them are on the younger side.\""
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20412,6 +20546,18 @@
             "type": "legal",
             "description": "Dershowitz represented both Epstein and later served on Trump's impeachment defense team.",
             "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "property",
+            "description": "Trump's private club where Virginia Giuffre was recruited by Maxwell.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre was recruited from Trump's Mar-a-Lago resort by Maxwell.",
+            "entryId": "victoria-giuffre"
           }
         ]
       },
@@ -20422,7 +20568,14 @@
         "category": "Legal",
         "founded": 1967,
         "description": "Alan Morton Dershowitz is an American attorney and legal scholar, emeritus professor at Harvard Law School, known for defending high-profile clients. Dershowitz represented Epstein during the negotiation of the 2008 plea deal and has been accused by Virginia Giuffre of being a participant in Epstein trafficking scheme. Dershowitz vehemently denied these allegations and filed defamation suits. Giuffre later settled with Dershowitz and issued a statement saying she \"may have made a mistake\" in identifying him. Dershowitz has been one of the most vocal public defenders of his innocence in the Epstein matter. His role in the 2008 plea deal, which gave Epstein a lenient sentence and immunity to unnamed co-conspirators, remains highly controversial. He later defended Trump in his first impeachment trial.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "alan-dershowitz-ind",
+            "name": "Alan Dershowitz",
+            "role": "Attorney / Harvard Law Professor Emeritus",
+            "bio": "Prominent criminal defense attorney. Represented Epstein in 2008 plea deal negotiations. Named in Virginia Giuffre allegations. Denied all accusations."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20459,6 +20612,18 @@
             "type": "related",
             "description": "Admitted visiting Epstein's island but denied any wrongdoing.",
             "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "Giuffre named Dershowitz in allegations. Mutual lawsuits were eventually dropped.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "David Boies",
+            "type": "legal",
+            "description": "Boies represented Giuffre in her allegations against Dershowitz.",
+            "entryId": "david-boies-connections"
           }
         ]
       },
@@ -20469,7 +20634,14 @@
         "category": "Legal",
         "founded": 2005,
         "description": "R. Alexander Acosta is an American attorney who served as US Attorney for the Southern District of Florida from 2005 to 2009, during which time he negotiated the controversial 2008 plea deal with Jeffrey Epstein. The deal allowed Epstein to plead guilty to state prostitution charges, serve just 13 months (with work release 6 days a week), and receive immunity from federal sex trafficking charges for himself and unnamed co-conspirators. A federal judge later ruled the plea deal violated the Crime Victims Rights Act by failing to notify victims. Despite this controversy, Acosta was appointed US Secretary of Labor by President Trump in 2017. He resigned in July 2019 when the plea deal received renewed scrutiny following Epstein re-arrest by SDNY prosecutors.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "alexander-acosta-ind",
+            "name": "Alexander Acosta",
+            "role": "Former U.S. Secretary of Labor / Former U.S. Attorney",
+            "bio": "As U.S. Attorney for Southern District of Florida, negotiated the controversial 2008 plea deal that allowed Epstein to plead to state charges and serve just 13 months. Appointed Labor Secretary by Trump in 2017, resigned in 2019 amid Epstein scrutiny."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20482,6 +20654,30 @@
             "type": "political",
             "description": "Appointed by Trump as Labor Secretary; resigned over Epstein plea deal controversy",
             "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Palm Beach Police Department",
+            "type": "legal",
+            "description": "Palm Beach PD originally investigated Epstein in 2005. Acosta's federal plea deal overrode local prosecution.",
+            "entryId": "palm-beach-police"
+          },
+          {
+            "name": "FBI",
+            "type": "legal",
+            "description": "FBI was involved in Epstein investigation before Acosta negotiated the lenient federal plea deal.",
+            "entryId": "fbi"
+          },
+          {
+            "name": "Alan Dershowitz",
+            "type": "legal",
+            "description": "Dershowitz was part of Epstein's defense team that negotiated the plea deal with Acosta.",
+            "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "SDNY",
+            "type": "legal",
+            "description": "SDNY eventually brought new federal charges against Epstein in 2019, superseding Acosta's original deal.",
+            "entryId": "sdny"
           }
         ]
       },
@@ -20618,7 +20814,14 @@
         "category": "Technology",
         "founded": 1999,
         "description": "Elon Reeve Musk is a businessman and technology entrepreneur who leads Tesla, SpaceX, and other companies. Musk name appeared in documents related to the Epstein case. Ghislaine Maxwell was photographed at a 2014 Vanity Fair Oscar party reportedly organized with Musk help, and she was seen at other events associated with Musk. Musk has stated he visited Epstein Manhattan residence once and did not have a personal relationship with him. In the Maxwell trial documents released in 2024, Musk name appeared in connection with a planned meeting, though the nature of any interaction remains disputed. Musk has pushed back against implications of deeper involvement.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "elon-musk-ind",
+            "name": "Elon Musk",
+            "role": "CEO of Tesla & SpaceX / Owner of X (Twitter)",
+            "bio": "South African-born American billionaire. Photographed with Ghislaine Maxwell at a 2014 Vanity Fair event. Musk stated Maxwell \"photobombed\" him. Owner of Tesla, SpaceX, X, Neuralink, and The Boring Company."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20637,6 +20840,24 @@
             "type": "rivalry",
             "description": "Public feud with Gates over climate approach, short positions in Tesla, and other issues.",
             "entryId": "bill-gates-connections"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "political",
+            "description": "Major political ally. Musk became prominent Trump supporter and advisor. Runs DOGE government efficiency initiative.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Microsoft Corporation",
+            "type": "business",
+            "description": "Competitor through Tesla vs automotive AI, SpaceX vs Azure space, and OpenAI rivalry.",
+            "entryId": "microsoft-corporation"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Musk denied visiting Epstein island. Challenged anyone to produce evidence of a visit.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -20647,7 +20868,14 @@
         "category": "Technology",
         "founded": 2002,
         "description": "Reid Garrett Hoffman is an American internet entrepreneur, venture capitalist, and co-founder of LinkedIn. Hoffman met with Epstein on multiple occasions for fundraising and networking purposes. He stated he was told the meetings were \"a way to meet billionaires interested in funding science.\" In 2019, Hoffman publicly apologized for any association with Epstein, saying he helped MIT Media Lab director Joi Ito connect with Epstein to raise funds for certain projects. Hoffman stated he deeply regretted any connection and that he was not aware of Epstein criminal conduct. He committed $15 million to MIT to support research on ethical AI as a form of restitution.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "reid-hoffman-ind",
+            "name": "Reid Hoffman",
+            "role": "Co-Founder, LinkedIn / Venture Capitalist",
+            "bio": "Co-founded LinkedIn (sold to Microsoft for $26.2B). Apologized in 2019 for facilitating meetings between Epstein and MIT Media Lab's Joi Ito at Epstein's request."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20687,7 +20915,14 @@
         "type": "political/media figure",
         "category": "Political",
         "description": "Stephen Kevin Bannon is an American media executive, political strategist, and former White House Chief Strategist. In 2018, Bannon met with Epstein at his Manhattan townhouse to discuss political strategy. The meetings were reported by investigative journalists and confirmed through various records. The nature of their relationship was primarily political networking. Bannon was also connected to Guo Wengui (Miles Guo), a fugitive Chinese billionaire, and was arrested on Guo yacht on fraud charges in 2020 (later pardoned by Trump). The intersection of Bannon network with Epstein circle illustrates the overlapping nature of political, media, and financial power networks.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "steve-bannon-ind",
+            "name": "Steve Bannon",
+            "role": "Former White House Chief Strategist",
+            "bio": "Political strategist and media executive. Co-founded Breitbart News. Served as Trump campaign CEO and White House Chief Strategist. Reportedly met with Epstein before his 2019 arrest to discuss potential defense strategies."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20706,6 +20941,12 @@
             "type": "legal",
             "description": "Arrested on same charges as Maxwell's lawyer's yacht. Peripherally connected through social circles.",
             "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Bannon reportedly met with Epstein to discuss media strategy before 2019 arrest.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -20715,7 +20956,14 @@
         "type": "entertainment figure",
         "category": "Entertainment",
         "description": "Heywood Allen is an American filmmaker, writer, and actor. Allen was photographed with Epstein and Maxwell at social events and was included in Epstein contacts list. Allen stated he met Epstein through friends and that they had dinner \"once or twice.\" He denied any close relationship or knowledge of criminal activity. The association gained attention given Allen own controversies involving his adopted stepdaughter. Allen name appeared in documents released during the Maxwell trial. The connection illustrates how Epstein cultivated relationships with prominent cultural figures to maintain social legitimacy and access.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "woody-allen-ind",
+            "name": "Woody Allen",
+            "role": "Film Director / Actor",
+            "bio": "American filmmaker born Allan Stewart Konigsberg in 1935 to a Jewish family in Brooklyn. Listed in Epstein's contact book. Attended dinner at Epstein's Manhattan townhouse. His own sexual abuse allegations (by adopted daughter Dylan Farrow) paralleled Epstein network patterns."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20734,6 +20982,18 @@
             "type": "social",
             "description": "Allen was in Epstein's social circle and Maxwell facilitated many of these social connections.",
             "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "industry",
+            "description": "Weinstein distributed Allen films. Both accused of sexual abuse. Allen defended Weinstein when #MeToo began.",
+            "entryId": "harvey-weinstein-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Allen attended Epstein social events. Full extent of relationship unknown.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -20743,7 +21003,14 @@
         "type": "media/political figure",
         "category": "Media",
         "description": "George Robert Stephanopoulos is an American television journalist and former political advisor. He served as a senior advisor to President Clinton and later became anchor of ABC Good Morning America and This Week. Stephanopoulos attended a dinner party at Epstein Manhattan townhouse in 2010, after Epstein first conviction, alongside other guests including Katie Couric, Chelsea Handler, and Woody Allen. The dinner was hosted by Epstein in what appeared to be a campaign to rehabilitate his public image after his 2008 conviction. Stephanopoulos acknowledged attending but said he should not have gone.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "george-stephanopoulos-ind",
+            "name": "George Stephanopoulos",
+            "role": "ABC News Anchor / Former Clinton Aide",
+            "bio": "Television journalist and former White House Communications Director under Bill Clinton. Attended a dinner party at Epstein's Manhattan townhouse in 2010, after Epstein's first conviction."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20756,6 +21023,18 @@
             "type": "political",
             "description": "Former senior advisor to Clinton; both connected to Epstein",
             "entryId": "bill-clinton-connections"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "social",
+            "description": "Maxwell was present in social circles where Stephanopoulos interacted with Epstein associates.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Stephanopoulos attended events in Epstein's orbit post-conviction, though extent of relationship is unclear.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -20766,7 +21045,14 @@
         "category": "Corporate",
         "founded": 1963,
         "description": "Leslie Herbert Wexner is an American billionaire businessman, the founder and former CEO of L Brands (now Bath and Body Works). He is the most significant financial figure in the Epstein network. Wexner was Epstein primary patron, granting him sweeping power of attorney over his personal finances, real estate holdings, and business affairs. Wexner transferred his 71st Street Manhattan townhouse (later valued at $77 million) to Epstein under unclear circumstances. Epstein managed the Wexner Foundation and had close ties to Wexner family. In 2019, Wexner claimed Epstein had misappropriated vast sums of his wealth, though the full extent remains unclear. The relationship between Wexner and Epstein began in the mid-1980s and was the foundation upon which Epstein built his financial credibility and social network.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "leslie-wexner-ind",
+            "name": "Leslie Wexner",
+            "role": "Founder & Former CEO, L Brands",
+            "bio": "American billionaire. Founded L Brands (Victoria's Secret, Bath & Body Works). Only known major client of Epstein. Gave Epstein power of attorney, transferred $77M townhouse, and allowed Epstein to manage Wexner Foundation funds."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -21659,6 +21945,357 @@
             "type": "social",
             "description": "Flew together on Epstein's jet to Africa in 2002 with Chris Tucker.",
             "entryId": "bill-clinton-connections"
+          }
+        ]
+      },
+      {
+        "id": "starbucks-howard-schultz-era",
+        "name": "Starbucks (Howard Schultz Era)",
+        "type": "coffeehouse chain / corporation",
+        "category": "Retail & Consumer Goods",
+        "founded": 1971,
+        "website": "https://www.starbucks.com/",
+        "description": "Starbucks Corporation, led by CEO Howard Schultz (Jewish, born 1953, Brooklyn) during its transformation from a small Seattle coffee chain into a global empire of 35,000+ stores. Schultz served as CEO 1986-2000, 2008-2017, and interim CEO 2022-2023. Under his leadership, Starbucks became known for progressive employee benefits including healthcare for part-time workers and college tuition. Schultz briefly explored a 2020 presidential run as an independent. Starbucks has been a frequent target of BDS (Boycott, Divestment, Sanctions) campaigns due to Schultz's public support for Israel, though Starbucks as a corporation has no operations in Israel. Schultz was previously chairman of the board and is one of the most prominent Jewish business leaders in America.",
+        "individuals": [
+          {
+            "id": "howard-schultz",
+            "name": "Howard Schultz",
+            "role": "Former CEO & Chairman",
+            "bio": "Grew up in Brooklyn public housing. Transformed Starbucks into a global brand. Briefly explored 2020 presidential run."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Goldman Sachs",
+            "type": "financial",
+            "description": "Goldman Sachs served as investment banker for Starbucks.",
+            "entryId": "goldman-sachs-historic"
+          }
+        ]
+      },
+      {
+        "id": "dell-technologies-israel-operations",
+        "name": "Dell Technologies (Israel Operations)",
+        "type": "technology corporation",
+        "category": "Technology",
+        "founded": 1984,
+        "website": "https://www.dell.com/",
+        "description": "Dell Technologies, founded by Michael Dell (Jewish, born 1965, Houston) in his University of Texas dorm room, is one of the world's largest technology companies with annual revenues exceeding $100 billion. Dell's Israel operations are among the company's most important R&D centers globally, employing over 4,000 people across facilities in Ra'anana, Herzliya, Beer Sheva, and Jerusalem. Israel is Dell's second-largest R&D hub outside the United States. Dell Israel focuses on cloud computing, data storage, cybersecurity, and AI/ML. Dell has acquired multiple Israeli companies including EMC (which had acquired Israeli firms), Compellent, and various storage technology startups. Michael Dell is one of the wealthiest Americans with a net worth exceeding $70 billion and has been a significant donor to pro-Israel causes through the Michael & Susan Dell Foundation.",
+        "individuals": [
+          {
+            "id": "michael-dell",
+            "name": "Michael Dell",
+            "role": "Founder, Chairman & CEO",
+            "bio": "Jewish American billionaire. Founded Dell Technologies in 1984 at age 19. Major donor to pro-Israel causes."
+          }
+        ],
+        "connections": []
+      },
+      {
+        "id": "victoria-giuffre",
+        "name": "Virginia Giuffre",
+        "type": "survivor / plaintiff",
+        "category": "Legal",
+        "founded": 2015,
+        "description": "Virginia Louise Giuffre (nee Roberts, born 1983) is the most prominent survivor and accuser in the Jeffrey Epstein sex trafficking case. Recruited by Ghislaine Maxwell at age 16 while working as a locker room attendant at Donald Trump's Mar-a-Lago resort in Palm Beach, Florida, Giuffre alleges she was trafficked to have sex with Epstein and numerous powerful men including Prince Andrew, Alan Dershowitz, and others. Her 2015 civil lawsuit against Ghislaine Maxwell was the case that began unraveling the Epstein empire; court-ordered release of documents from this case in 2019 and 2024 revealed an extensive list of Epstein associates. Giuffre settled her civil case against Prince Andrew in 2022 for approximately 12 million pounds. She also sued Dershowitz, who countersued, and both later dropped their claims. Giuffre's legal team, led by attorneys David Boies and Sigrid McCawley, successfully argued for the release of previously sealed court documents that exposed the breadth of Epstein's network. Giuffre has described being trafficked to Epstein's properties in New York, Palm Beach, New Mexico, the U.S. Virgin Islands, London, and Paris.",
+        "individuals": [
+          {
+            "id": "virginia-giuffre",
+            "name": "Virginia Giuffre",
+            "role": "Lead Accuser / Survivor",
+            "bio": "Recruited at 16 from Mar-a-Lago by Maxwell. Filed lawsuits exposing Epstein network. Key witness in Maxwell trial."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "victim",
+            "description": "Trafficked by Epstein from ages 16-19. Recruited at Mar-a-Lago. Transported to properties worldwide.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "legal",
+            "description": "Maxwell personally recruited Giuffre and groomed her. Giuffre's 2015 lawsuit against Maxwell was pivotal.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "legal",
+            "description": "Alleged trafficking victim. Filed civil suit. Settled for approximately 12 million pounds in 2022.",
+            "entryId": "prince-andrew"
+          },
+          {
+            "name": "Alan Dershowitz",
+            "type": "legal",
+            "description": "Named Dershowitz in allegations. Sued and was countersued. Both parties dropped claims.",
+            "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "related",
+            "description": "Recruited from Trump's Mar-a-Lago resort by Maxwell while working there at age 16.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "victim",
+            "description": "Trafficked to Little St. James island. Testified about abuse there.",
+            "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "Les Wexner",
+            "type": "related",
+            "description": "Giuffre described being brought to Wexner's Ohio estate by Epstein and Maxwell.",
+            "entryId": "les-wexner-connections"
+          },
+          {
+            "name": "Jean-Luc Brunel / MC2",
+            "type": "victim",
+            "description": "Alleged Brunel trafficked her and that three 12-year-old girls were sent as an Epstein \"birthday gift.\"",
+            "entryId": "jean-luc-brunel-mc2"
+          },
+          {
+            "name": "FBI",
+            "type": "legal",
+            "description": "Cooperated with FBI investigations into Epstein network.",
+            "entryId": "fbi"
+          }
+        ]
+      },
+      {
+        "id": "david-boies-connections",
+        "name": "David Boies / Boies Schiller Flexner",
+        "type": "law firm / attorney",
+        "category": "Legal",
+        "founded": 1997,
+        "description": "David Boies (born 1941) is one of America's most prominent trial lawyers, known for representing Al Gore in Bush v. Gore (2000) and the U.S. government in the Microsoft antitrust case. He founded Boies Schiller Flexner LLP in 1997. In the Epstein context, Boies played a contradictory dual role: his firm represented Virginia Giuffre and other Epstein victims in their civil lawsuits against Ghislaine Maxwell and other defendants, while simultaneously representing Harvey Weinstein against sexual assault allegations, including deploying the private intelligence firm Black Cube to investigate and intimidate Weinstein accusers. This apparent conflict - championing sex assault victims in one case while using aggressive tactics against them in another - was extensively reported by Ronan Farrow in his book \"Catch and Kill.\" Boies also represented the Kingdom of Saudi Arabia and had previously been counsel for CBS. His firm's work on the Epstein case was instrumental in forcing the release of sealed documents that exposed the breadth of Epstein's network.",
+        "individuals": [
+          {
+            "id": "david-boies",
+            "name": "David Boies",
+            "role": "Founder & Chairman",
+            "bio": "Trial lawyer who represented Giuffre against Maxwell while also representing Weinstein. Deployed Black Cube against accusers."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "legal",
+            "description": "Firm represented Epstein victims including Virginia Giuffre in pivotal civil lawsuits.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "Represented Giuffre in her landmark lawsuits against Maxwell, Prince Andrew, and others.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "legal",
+            "description": "Firm sued Maxwell on behalf of Giuffre. Case led to release of explosive sealed documents.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "legal",
+            "description": "Simultaneously represented Weinstein while representing Epstein victims. Deployed Black Cube against Weinstein accusers.",
+            "entryId": "harvey-weinstein-connections"
+          },
+          {
+            "name": "Microsoft Corporation",
+            "type": "legal",
+            "description": "Represented the U.S. DOJ in the landmark Microsoft antitrust case (2001).",
+            "entryId": "microsoft-corporation"
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "legal",
+            "description": "Firm's work helped build the case that led to Giuffre's settlement with Prince Andrew.",
+            "entryId": "prince-andrew"
+          }
+        ]
+      },
+      {
+        "id": "mar-a-lago",
+        "name": "Mar-a-Lago",
+        "type": "private club / presidential estate",
+        "category": "Political",
+        "founded": 1927,
+        "description": "Mar-a-Lago is a private members-only club and estate in Palm Beach, Florida, owned by Donald Trump since 1985. Built in 1927 by cereal heiress Marjorie Merriweather Post, the 128-room mansion sits on 17 acres. Trump converted it to a private club in 1995. Mar-a-Lago is a critical location in the Epstein scandal: Virginia Giuffre was working as a locker room attendant at the club's spa in 1999 when she was recruited by Ghislaine Maxwell to \"work\" for Jeffrey Epstein. Giuffre has described being approached by Maxwell at the club at age 16. Trump and Epstein were both members of Palm Beach social circles, and Epstein was a member of Mar-a-Lago before Trump reportedly had him banned (the timeline and reasons for this ban are disputed). After the Epstein scandal broke, Trump said he had a \"falling out\" with Epstein and barred him from the club. Mar-a-Lago later became Trump's primary residence and post-presidential office, and was the site of the FBI's 2022 search for classified documents.",
+        "individuals": [],
+        "connections": [
+          {
+            "name": "Donald Trump",
+            "type": "owner",
+            "description": "Trump has owned Mar-a-Lago since 1985 and operates it as a private club.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "related",
+            "description": "Epstein was a member before being banned. Virginia Giuffre was recruited there by Maxwell.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre was working at Mar-a-Lago when recruited by Maxwell at age 16.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "related",
+            "description": "Maxwell recruited Giuffre at Mar-a-Lago spa in 1999.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Palm Beach Police Department",
+            "type": "legal",
+            "description": "Palm Beach PD investigated Epstein starting in 2005. His Palm Beach operations overlapped with Mar-a-Lago social circles.",
+            "entryId": "palm-beach-police"
+          }
+        ]
+      },
+      {
+        "id": "leslie-groff-connections",
+        "name": "Lesley Groff",
+        "type": "executive assistant / alleged facilitator",
+        "category": "Notable Individuals",
+        "description": "Lesley Groff served as Jeffrey Epstein's executive assistant for approximately 20 years, managing his complex schedule, travel arrangements, and communications. She was one of four women identified as \"potential co-conspirators\" in Epstein's 2008 non-prosecution agreement but was never charged. Groff's role in the Epstein operation was primarily organizational - she arranged visits, travel, and logistics that facilitated Epstein's access to young women and his meetings with powerful figures. Court documents and victim testimony describe Groff as the gatekeeper who scheduled \"massages\" (Epstein's euphemism for sexual encounters with young women) at his various properties. Despite being named as a potential co-conspirator, Groff received immunity under the controversial plea deal negotiated by Alexander Acosta. She continued to work for Epstein after his 2008 conviction and until his 2019 arrest. She settled civil lawsuits brought by Epstein victims.",
+        "individuals": [
+          {
+            "id": "lesley-groff",
+            "name": "Lesley Groff",
+            "role": "Executive Assistant to Epstein",
+            "bio": "Managed Epstein's schedule for 20 years. Named as potential co-conspirator. Received immunity in 2008 plea deal."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "facilitation",
+            "description": "Managed Epstein's schedule and arranged \"massage\" appointments with young women for 20 years.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "co-conspirator",
+            "description": "Worked alongside Maxwell in managing Epstein's household and scheduling.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Alexander Acosta",
+            "type": "legal",
+            "description": "Received immunity under Acosta's controversial 2008 non-prosecution agreement.",
+            "entryId": "alexander-acosta-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "logistics",
+            "description": "Arranged travel to Epstein's island properties and other locations.",
+            "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Named in civil lawsuits by Epstein victims including Giuffre.",
+            "entryId": "victoria-giuffre"
+          }
+        ]
+      },
+      {
+        "id": "sarah-kellen-connections",
+        "name": "Sarah Kellen (Vickers)",
+        "type": "alleged recruiter / facilitator",
+        "category": "Notable Individuals",
+        "description": "Sarah Kellen (now Sarah Kellen Vickers) served as Jeffrey Epstein's personal assistant and scheduler and was named by multiple victims as one of Epstein's primary recruiters of underage girls. Like Lesley Groff, she was identified as a \"potential co-conspirator\" in Epstein's 2008 non-prosecution agreement but was never charged, receiving immunity under the plea deal. Victims described Kellen as organizing encounters, scheduling \"massages,\" and directly recruiting young women. She also worked at Jean-Luc Brunel's MC2 Model Management agency, which was funded by Epstein. After the Epstein scandal, Kellen rebranded herself as an interior designer and married NASCAR driver Brian Vickers. She settled civil lawsuits brought by Epstein victims. Flight logs show she was one of the most frequent flyers on Epstein's aircraft, appearing on hundreds of flights.",
+        "individuals": [
+          {
+            "id": "sarah-kellen",
+            "name": "Sarah Kellen",
+            "role": "Personal Assistant / Alleged Recruiter",
+            "bio": "Epstein's scheduler and alleged primary recruiter. Named as co-conspirator but received immunity. Now married to NASCAR driver Brian Vickers."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "facilitation",
+            "description": "Scheduled encounters, recruited underage victims, appeared on hundreds of Epstein flights.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "co-conspirator",
+            "description": "Worked alongside Maxwell in recruiting and managing victims.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Jean-Luc Brunel / MC2",
+            "type": "business",
+            "description": "Also worked at Brunel's MC2 Model Management, funded by Epstein.",
+            "entryId": "jean-luc-brunel-mc2"
+          },
+          {
+            "name": "Alexander Acosta",
+            "type": "legal",
+            "description": "Received immunity under Acosta's controversial 2008 non-prosecution agreement.",
+            "entryId": "alexander-acosta-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Named by Giuffre and other victims in civil lawsuits.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "logistics",
+            "description": "Traveled frequently to Epstein's island. Appeared on hundreds of flights.",
+            "entryId": "epstein-vi-properties"
+          }
+        ]
+      },
+      {
+        "id": "nadia-marcinkova-connections",
+        "name": "Nadia Marcinkova (Marcinko)",
+        "type": "alleged victim turned participant",
+        "category": "Notable Individuals",
+        "description": "Nadia Marcinkova (now using the name Nadia Marcinko) was reportedly brought to the United States from Yugoslavia (now Slovakia) by Jeffrey Epstein when she was approximately 15 years old. Epstein is alleged to have \"purchased\" her from her family. Initially described as a victim by other Epstein survivors, Marcinkova later became an alleged participant in Epstein's sexual abuse of other girls, according to victim testimony and court documents. Virginia Giuffre and other victims described Marcinkova as participating in sexual encounters arranged by Epstein. Like Sarah Kellen and Lesley Groff, Marcinkova was named as a \"potential co-conspirator\" in the 2008 non-prosecution agreement and received immunity. She went on to become a licensed commercial pilot and helicopter pilot, reinventing herself as \"Global Girl Aviation\" and appearing on news segments about female pilots. She has settled civil lawsuits brought by Epstein victims. Her case illustrates the complex dynamics of the Epstein operation, where some victims allegedly became participants.",
+        "individuals": [
+          {
+            "id": "nadia-marcinkova",
+            "name": "Nadia Marcinkova",
+            "role": "Alleged Victim Turned Participant",
+            "bio": "Reportedly brought from Slovakia by Epstein as a teenager. Named as co-conspirator. Now a commercial pilot using name Nadia Marcinko."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "criminal",
+            "description": "Brought to U.S. by Epstein as teenager. Became alleged participant in abuse. Named co-conspirator in 2008 deal.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "related",
+            "description": "Part of Epstein's inner circle alongside Maxwell.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Alexander Acosta",
+            "type": "legal",
+            "description": "Received immunity under Acosta's 2008 non-prosecution agreement.",
+            "entryId": "alexander-acosta-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre described Marcinkova participating in Epstein-arranged encounters.",
+            "entryId": "victoria-giuffre"
           }
         ]
       }
@@ -28084,7 +28721,14 @@
         "category": "Political",
         "founded": 1999,
         "description": "Ehud Barak served as Prime Minister of Israel from 1999 to 2001 and held other senior posts including Defense Minister and Chief of the General Staff of the IDF. His relationship with Epstein drew significant scrutiny. Barak visited Epstein Manhattan residence and was photographed entering the townhouse in January 2016. Through Epstein, Barak invested in a startup called Carbyne (now Reporty Homeland Security), which develops emergency call technology. Barak acknowledged visiting Epstein homes, including the island, but denied knowledge of any criminal activity. He stated his relationship with Epstein was connected to investments and business. Barak reportedly received $2.5 million from Epstein for consulting work.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "ehud-barak-ind",
+            "name": "Ehud Barak",
+            "role": "Former Prime Minister of Israel (1999-2001)",
+            "bio": "Israeli politician and military leader. Most decorated soldier in Israeli history. Visited Epstein's Manhattan townhouse and island. Received $2.5M from Epstein via a foundation. Photographed entering an Epstein building."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -28115,8 +28759,57 @@
             "type": "related",
             "description": "Barak reportedly visited Epstein's island and Manhattan townhouse.",
             "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "Bill Gates",
+            "type": "social",
+            "description": "Both independently connected to Epstein. Barak and Gates were among Epstein's high-profile contacts.",
+            "entryId": "bill-gates-connections"
           }
         ]
+      },
+      {
+        "id": "israel-aerospace-industries",
+        "name": "Israel Aerospace Industries (IAI)",
+        "type": "defense / aerospace corporation",
+        "category": "Technology",
+        "founded": 1953,
+        "website": "https://www.iai.co.il/",
+        "description": "Israel Aerospace Industries (IAI) is Israel's largest state-owned defense and aerospace company, with annual revenues exceeding $5 billion. Founded in 1953 by Al Schwimmer (American Jewish pilot and smuggler who helped supply aircraft to Israel during the 1948 War of Independence), IAI develops and manufactures military and civilian aircraft, missiles, space systems, drones (UAVs), and cybersecurity solutions. IAI is the world's largest maker of military drones and has sold systems to over 50 countries. Key products include the Heron UAV family, Arrow missile defense system (developed with Boeing), LORA ballistic missile, and Kfir fighter aircraft. IAI has been a cornerstone of Israel's \"Startup Nation\" technology ecosystem, spinning off technologies that have driven Israel's civilian tech sector. The company employs approximately 15,000 people and is wholly owned by the State of Israel.",
+        "individuals": [
+          {
+            "id": "boaz-levy",
+            "name": "Boaz Levy",
+            "role": "President & CEO",
+            "bio": "CEO of IAI since 2021. Previously served as EVP and GM of IAI's Systems, Missiles & Space Group."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Mossad (Israeli Intelligence)",
+            "type": "defense",
+            "description": "IAI develops systems used by Israeli intelligence services including surveillance drones and satellites.",
+            "entryId": "mossad-israeli-intelligence"
+          }
+        ]
+      },
+      {
+        "id": "sodastream",
+        "name": "SodaStream",
+        "type": "beverage appliance company",
+        "category": "Retail & Consumer Goods",
+        "founded": 1903,
+        "website": "https://www.sodastream.com/",
+        "description": "SodaStream is an Israeli-owned home carbonation product company, originally founded in England in 1903 and acquired by Israeli firm Soda-Club in 1998. The company became a major flashpoint in the Israeli-Palestinian conflict when its main factory was located in Mishor Adumim, an Israeli settlement industrial zone in the occupied West Bank. BDS activists including Oxfam ambassador Scarlett Johansson targeted SodaStream, leading to a high-profile controversy when Johansson resigned from Oxfam to maintain her SodaStream endorsement deal. CEO Daniel Birnbaum (Jewish) employed approximately 500 Palestinian workers at the West Bank facility and argued the factory promoted coexistence. In 2015, SodaStream moved its factory to the Negev desert, and most Palestinian workers lost their jobs. PepsiCo acquired SodaStream for $3.2 billion in 2018.",
+        "individuals": [
+          {
+            "id": "daniel-birnbaum",
+            "name": "Daniel Birnbaum",
+            "role": "Former CEO (2007-2019)",
+            "bio": "Led SodaStream through BDS controversy and PepsiCo acquisition. Argued factory promoted Israeli-Palestinian coexistence."
+          }
+        ],
+        "connections": []
       }
     ],
     "United Kingdom": [
@@ -30597,7 +31290,14 @@
         "type": "royal/political figure",
         "category": "Political",
         "description": "Prince Andrew, Duke of York, is the third child of Queen Elizabeth II. He was one of the most prominent figures connected to the Epstein scandal. Virginia Giuffre alleged she was trafficked by Epstein and Maxwell to have sex with Prince Andrew on three occasions when she was 17, including at Maxwell London home and on Little Saint James. A photograph of Andrew with his arm around Giuffre waist (with Maxwell in the background) became one of the most iconic images of the scandal. Andrew denied the allegations, including in a disastrous 2019 BBC Newsnight interview that led to his resignation from royal duties. In 2022, he settled a civil lawsuit brought by Giuffre for an undisclosed sum reported to be around 12 million pounds, without admitting liability.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "prince-andrew-ind",
+            "name": "Prince Andrew",
+            "role": "Duke of York / British Royal Family",
+            "bio": "Third child of Queen Elizabeth II. Key figure in Epstein scandal. Virginia Giuffre alleged trafficking at age 17. Infamous photo with Giuffre at Maxwell's London home. Settled civil suit for approximately 12 million pounds in 2022. Stripped of military titles and royal patronages."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -30628,6 +31328,12 @@
             "type": "legal",
             "description": "Both named in Virginia Giuffre allegations. Dershowitz represented Epstein.",
             "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "Giuffre alleged trafficking. Filed civil suit. Settled for approximately 12 million pounds.",
+            "entryId": "victoria-giuffre"
           }
         ]
       },
@@ -30725,6 +31431,42 @@
             "type": "legal",
             "description": "Held at MDC Brooklyn during trial. Complained of harsh conditions including sleep deprivation and surveillance.",
             "entryId": "metropolitan-correctional-center"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal",
+            "description": "Giuffre's 2015 lawsuit against Maxwell was the case that cracked open the Epstein network.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "related",
+            "description": "Recruited Virginia Giuffre at Mar-a-Lago spa in 1999.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "Sarah Kellen",
+            "type": "co-conspirator",
+            "description": "Kellen worked alongside Maxwell in recruiting and scheduling victims.",
+            "entryId": "sarah-kellen-connections"
+          },
+          {
+            "name": "Nadia Marcinkova",
+            "type": "related",
+            "description": "Part of Epstein's inner circle alongside Maxwell.",
+            "entryId": "nadia-marcinkova-connections"
+          },
+          {
+            "name": "Naomi Campbell",
+            "type": "social",
+            "description": "Photographed together at social events. Both in fashion/society circles.",
+            "entryId": "naomi-campbell-connections"
+          },
+          {
+            "name": "Kevin Spacey",
+            "type": "social",
+            "description": "Photographed together on Epstein's jet.",
+            "entryId": "kevin-spacey-connections"
           }
         ]
       },
@@ -30763,6 +31505,24 @@
             "entryId": "jean-luc-brunel-mc2"
           }
         ]
+      },
+      {
+        "id": "marks-spencer-m-s",
+        "name": "Marks & Spencer (M&S)",
+        "type": "retail corporation",
+        "category": "Retail & Consumer Goods",
+        "founded": 1884,
+        "website": "https://www.marksandspencer.com/",
+        "description": "Marks and Spencer Group plc (commonly M&S) is a major British multinational retailer founded in 1884 by Michael Marks (Jewish, born Mikhail Marks in Slonim, Belarus/Russian Empire) and Thomas Spencer. Starting as a penny bazaar stall in Leeds, M&S grew into one of Britain's most iconic retailers with over 1,000 stores worldwide. The Marks family's Jewish heritage profoundly influenced the company's culture of social responsibility, fair treatment of employees, and product quality. Simon Marks (Michael's son) and Israel Sieff (his brother-in-law, also Jewish) transformed M&S into a national institution. The Sieff family were prominent Zionists - Israel Sieff was president of the Zionist Federation of Great Britain and Ireland. M&S has been a persistent BDS target due to its founders' Zionist connections and the company's sourcing of some products from Israel. Lord Marcus Sieff, who led M&S from 1972 to 1984, was a strong supporter of Israel and friend of Chaim Weizmann. The Marks and Sieff families represent one of the most significant Jewish business dynasties in British history.",
+        "individuals": [
+          {
+            "id": "stuart-machin",
+            "name": "Stuart Machin",
+            "role": "CEO (since 2022)",
+            "bio": "Current CEO of M&S. Overseeing company's digital transformation and food business expansion."
+          }
+        ],
+        "connections": []
       }
     ],
     "France": [
@@ -33610,6 +34370,12 @@
             "type": "financial",
             "description": "Processed payments related to Epstein's island operations. Fined by NY regulators.",
             "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "J. Epstein & Co.",
+            "type": "banking",
+            "description": "Took on Epstein accounts after JPMorgan dropped him in 2013. Fined $150M by NY regulators.",
+            "entryId": "j-epstein-company"
           }
         ],
         "id": "deutsche-bank"
