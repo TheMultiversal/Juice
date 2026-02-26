@@ -16199,6 +16199,54 @@
           "country": "Nepal"
         }
       ]
+    },
+    "bob-pittman-iheart": {
+      "name": "Bob Pittman",
+      "bio": "Media executive who co-founded MTV and now leads iHeartMedia. Navigated the company through bankruptcy and rebuilt it as a multimedia platform."
+    },
+    "levi-strauss-founder": {
+      "name": "Levi Strauss",
+      "bio": "Founder of Levi Strauss & Co. Bavarian Jewish immigrant who created blue jeans during the California Gold Rush."
+    },
+    "david-siegel-twosigma": {
+      "name": "David Siegel",
+      "bio": "Co-founder and Co-Chairman of Two Sigma. Computer scientist and entrepreneur."
+    },
+    "paul-singer-elliott": {
+      "name": "Paul Singer",
+      "bio": "Founder of Elliott Management. Major Republican donor and influential political figure known for activist investing."
+    },
+    "michael-marks-founder": {
+      "name": "Michael Marks",
+      "bio": "Co-founder of Marks & Spencer. Jewish immigrant from Slonim, Belarus, who started the business as a market stall in Leeds."
+    },
+    "david-de-rothschild-fr": {
+      "name": "David de Rothschild",
+      "bio": "Chairman of the Supervisory Board of Rothschild & Co. Head of the French branch of the Rothschild banking family."
+    },
+    "bruce-flatt-brookfield": {
+      "name": "Bruce Flatt",
+      "bio": "CEO of Brookfield Asset Management. Often compared to Warren Buffett for his long-term investment approach."
+    },
+    "sidney-klajner-einstein": {
+      "name": "Sidney Klajner",
+      "bio": "President of Hospital Israelita Albert Einstein. Leading physician and hospital administrator in Brazil."
+    },
+    "david-marshall-singapore": {
+      "name": "David Marshall",
+      "bio": "Singapore first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore path to independence."
+    },
+    "maurice-cohen-ireland": {
+      "name": "Maurice Cohen",
+      "bio": "Active leader in the Irish Jewish community working to preserve heritage and strengthen community bonds."
+    },
+    "robert-singer-serbia": {
+      "name": "Robert Singer",
+      "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora."
+    },
+    "moses-samuels-myanmar": {
+      "name": "Moses Samuels",
+      "bio": "Longtime caretaker and trustee of the Musmeah Yeshua Synagogue, preserving Jewish heritage in Myanmar."
     }
   }
 }

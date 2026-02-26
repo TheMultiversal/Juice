@@ -566,9 +566,9 @@
     function handleNodeClick(node) {
       if (!node) return;
       if (node.nodeType === 'person') {
-        window.open('person.html?id=' + encodeURIComponent(node.personId || node.id), '_blank');
+        window.location.href = 'person.html?id=' + encodeURIComponent(node.personId || node.id);
       } else {
-        window.open('entry.html?religion=jewish&id=' + encodeURIComponent(node.id), '_blank');
+        window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(node.id);
       }
     }
 
