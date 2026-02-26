@@ -201,6 +201,7 @@ function buildMenu(data, religion) {
   // Analyze section
   addLink('stats.html', 'Stats', 'fa-solid fa-chart-bar');
   addLink('graph.html', 'Graph', 'fa-solid fa-diagram-project');
+  addLink('network.html?id=jeffrey-epstein-network', 'Epstein', 'fa-solid fa-spider-web');
   addLink('timeline.html', 'Timeline', 'fa-solid fa-clock-rotate-left');
   addLink('map.html', 'Map', 'fa-solid fa-earth-americas');
 
@@ -397,7 +398,8 @@ function initKeyboardShortcuts() {
     's': 'stats.html',
     'd': 'discover.html',
     'f': 'pathfinder.html',
-    'b': 'bookmarks.html'
+    'b': 'bookmarks.html',
+    'e': 'network.html?id=jeffrey-epstein-network'
   };
 
   document.addEventListener('keydown', (e) => {

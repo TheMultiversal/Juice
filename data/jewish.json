@@ -252,7 +252,7 @@
         "type": "lobbying org",
         "category": "Advocacy & Political Organizations",
         "founded": 1963,
-        "description": "The American Israel Public Affairs Committee (AIPAC) is the most prominent pro-Israel lobbying organization in the United States. Founded in 1951 by Isaiah L. Kenen as the American Zionist Committee for Public Affairs, it was reorganized under its current name in 1959. AIPAC does not make direct political contributions but mobilizes grassroots activism and lobbies Congress on legislation affecting US-Israel relations. It holds an annual policy conference attended by thousands of activists and most members of Congress. In 2022, AIPAC launched the United Democracy Project, a super PAC that spent over $100 million in the 2022 and 2024 election cycles supporting pro-Israel candidates. AIPAC has faced controversies including the 2005 espionage scandal involving former employees Steve Rosen and Keith Weissman, who were charged (later dropped) with passing classified information to Israeli diplomats. Critics accuse AIPAC of excessive influence over US foreign policy, while supporters argue it represents legitimate democratic advocacy. AIPAC has been credited with helping secure billions in annual US military aid to Israel and the Abraham Accords.",
+        "description": "The American Israel Public Affairs Committee (AIPAC) is the most powerful pro-Israel lobbying organization in the United States and arguably the world. Founded in 1951 by Isaiah L. \"Si\" Kenen (who had previously been registered as a foreign agent for Israel), AIPAC mobilizes over 100,000 members to lobby Congress on US-Israel relations. Its annual policy conference draws 15,000-20,000 attendees including a majority of Congress. In 2022, AIPAC launched the United Democracy Project super PAC, spending over $100 million in the 2022 and 2024 cycles. The AIPAC PAC directly endorses candidates. AIPAC helped secure the $38B 10-year military aid MOU (2016), annual Iron Dome funding, and anti-BDS legislation in 35+ states. In 2005, employees Steve Rosen and Keith Weissman were charged under the Espionage Act (charges dropped 2009). In 1992, president David Steiner resigned after a recorded phone call. Critics Mearsheimer and Walt's \"The Israel Lobby\" (2007) focused heavily on AIPAC. The organization has become polarizing, with progressive Democrats openly critical while it maintains strong bipartisan establishment support.",
         "website": "https://www.aipac.org/",
         "individuals": [
           {
@@ -284,6 +284,54 @@
             "role": "President",
             "bio": "President of AIPAC.",
             "id": "betsy-berns-korn"
+          },
+          {
+            "id": "mort-fridman",
+            "name": "Mort Fridman",
+            "role": "Former President",
+            "bio": "Former AIPAC president who expanded the organization's grassroots network."
+          },
+          {
+            "id": "robert-asher",
+            "name": "Robert Asher",
+            "role": "Former President",
+            "bio": "Prominent AIPAC leader and major pro-Israel donor from Chicago."
+          },
+          {
+            "id": "david-steiner",
+            "name": "David Steiner",
+            "role": "Former President (resigned 1992)",
+            "bio": "Resigned after a recorded phone call revealed boasts about influence over US foreign policy appointments."
+          },
+          {
+            "id": "tom-dine",
+            "name": "Tom Dine",
+            "role": "Former Executive Director (1980-1993)",
+            "bio": "Transformed AIPAC from a small lobbying shop into a political powerhouse."
+          },
+          {
+            "id": "keith-weissman",
+            "name": "Keith Weissman",
+            "role": "Former Iran Analyst (Espionage Case)",
+            "bio": "Charged under the Espionage Act in 2005 alongside Steve Rosen. Charges dropped in 2009."
+          },
+          {
+            "id": "morris-amitay",
+            "name": "Morris J. Amitay",
+            "role": "Executive Director (1974-1980)",
+            "bio": "Headed AIPAC during Camp David Accords era. Later founded Washington PAC."
+          },
+          {
+            "id": "lillian-pinkus",
+            "name": "Lillian Pinkus",
+            "role": "Former President (2016-2018)",
+            "bio": "First female president of AIPAC."
+          },
+          {
+            "id": "rob-bassin",
+            "name": "Rob Bassin",
+            "role": "National Political Director",
+            "bio": "Oversees AIPAC's political engagement and candidate evaluation."
           }
         ],
         "connections": [
@@ -366,6 +414,191 @@
             "name": "Friends of the Israel Defense Forces (FIDF)",
             "type": "pro-Israel ecosystem",
             "description": "Part of the broader American pro-Israel organizational network."
+          },
+          {
+            "name": "US Senate",
+            "type": "lobbying target",
+            "description": "AIPAC lobbies virtually every US Senator on Israel-related legislation, military aid, and sanctions."
+          },
+          {
+            "name": "US House of Representatives",
+            "type": "lobbying target",
+            "description": "AIPAC maintains relationships with nearly every House member regardless of party."
+          },
+          {
+            "name": "US Department of State",
+            "type": "policy influence",
+            "description": "AIPAC advocates for pro-Israel positions in US foreign policy."
+          },
+          {
+            "name": "US Department of Defense",
+            "type": "defense aid",
+            "description": "AIPAC lobbied for the $38 billion 10-year military aid package signed in 2016."
+          },
+          {
+            "name": "Israeli Embassy (Washington)",
+            "type": "diplomatic coordination",
+            "description": "AIPAC coordinates closely with the Israeli Embassy on legislative priorities."
+          },
+          {
+            "name": "Christians United for Israel (CUFI)",
+            "type": "pro-Israel ally",
+            "description": "Largest pro-Israel organization in the US with 10M+ members."
+          },
+          {
+            "name": "Birthright Israel Foundation",
+            "type": "pro-Israel ecosystem",
+            "description": "Overlapping donors and shared mission to strengthen US-Israel ties."
+          },
+          {
+            "name": "StandWithUs",
+            "type": "pro-Israel peer",
+            "description": "Israel education and advocacy organization aligned with AIPAC."
+          },
+          {
+            "name": "American Jewish Committee (AJC)",
+            "type": "Jewish communal partner",
+            "description": "AJC and AIPAC coordinate on US-Israel policy."
+          },
+          {
+            "name": "Jewish Federations of North America",
+            "type": "communal partner",
+            "description": "JFNA works alongside AIPAC on community issues and Israel advocacy."
+          },
+          {
+            "name": "Brookings Institution",
+            "type": "think tank engagement",
+            "description": "Saban Center at Brookings conducts Middle East policy research."
+          },
+          {
+            "name": "Heritage Foundation",
+            "type": "conservative ally",
+            "description": "Heritage and AIPAC often align on defense of Israel and opposition to Iran."
+          },
+          {
+            "name": "Foundation for Defense of Democracies (FDD)",
+            "type": "hawkish ally",
+            "description": "FDD and AIPAC share hardline positions on Iran sanctions."
+          },
+          {
+            "name": "Iran (Islamic Republic)",
+            "type": "opposition target",
+            "description": "AIPAC's top priority has been opposition to Iran's nuclear program and maximum sanctions."
+          },
+          {
+            "name": "Barack Obama",
+            "type": "political tension",
+            "description": "Significant tension during the JCPOA when AIPAC spent millions opposing the deal."
+          },
+          {
+            "name": "Bernie Sanders",
+            "type": "political opposition",
+            "description": "Sanders has criticized AIPAC and declined to attend its conferences."
+          },
+          {
+            "name": "Ilhan Omar",
+            "type": "political controversy",
+            "description": "Rep. Omar's 2019 comments about AIPAC sparked a national debate about antisemitism and lobbying."
+          },
+          {
+            "name": "Rashida Tlaib",
+            "type": "political opposition",
+            "description": "First Palestinian-American congresswoman, vocal AIPAC critic."
+          },
+          {
+            "name": "NORPAC",
+            "type": "pro-Israel PAC ally",
+            "description": "Major pro-Israel PAC aligned with AIPAC priorities."
+          },
+          {
+            "name": "B'nai B'rith International",
+            "type": "Jewish communal peer",
+            "description": "Oldest Jewish service organization, coordinates with AIPAC."
+          },
+          {
+            "name": "Sheldon Adelson",
+            "type": "major donor",
+            "description": "One of the most influential figures in pro-Israel politics."
+          },
+          {
+            "name": "Haim Saban",
+            "type": "major donor",
+            "description": "Israeli-American media mogul. Said his three priorities are \"Israel, Israel, and Israel.\""
+          },
+          {
+            "name": "Paul Singer",
+            "type": "donor",
+            "description": "Billionaire hedge fund manager and major Republican donor supporting AIPAC-aligned policy."
+          },
+          {
+            "name": "Netanyahu Government",
+            "type": "diplomatic relationship",
+            "description": "Close ties with Netanyahu, complicated by partisan dynamics."
+          },
+          {
+            "name": "Abraham Accords",
+            "type": "advocacy success",
+            "description": "AIPAC supported normalization agreements with UAE, Bahrain, Sudan, Morocco."
+          },
+          {
+            "name": "Iron Dome",
+            "type": "appropriations advocacy",
+            "description": "AIPAC lobbied for billions in US funding for Iron Dome."
+          },
+          {
+            "name": "BDS Movement",
+            "type": "primary opposition",
+            "description": "AIPAC leads lobbying for anti-BDS legislation at state and federal levels."
+          },
+          {
+            "name": "Jewish Voice for Peace",
+            "type": "intra-communal opposition",
+            "description": "JVP opposes AIPAC from the Jewish left, supporting BDS."
+          },
+          {
+            "name": "IfNotNow",
+            "type": "intra-communal opposition",
+            "description": "Progressive Jewish group that has staged protests at AIPAC conferences."
+          },
+          {
+            "name": "JINSA",
+            "type": "defense policy ally",
+            "description": "Jewish Institute for National Security of America, aligned on military aid."
+          },
+          {
+            "name": "Charles Schumer",
+            "type": "key congressional ally",
+            "description": "Senate Majority Leader, calls himself Israel's \"shomer\" (guardian)."
+          },
+          {
+            "name": "Nancy Pelosi",
+            "type": "congressional ally",
+            "description": "Former Speaker has attended AIPAC conferences and championed US-Israel relations."
+          },
+          {
+            "name": "Mitch McConnell",
+            "type": "bipartisan congressional ally",
+            "description": "Worked with AIPAC on military aid and anti-BDS legislation."
+          },
+          {
+            "name": "Ted Cruz",
+            "type": "congressional ally",
+            "description": "Strong AIPAC conference presence and hawkish Israel advocate."
+          },
+          {
+            "name": "Marco Rubio",
+            "type": "congressional ally",
+            "description": "One of AIPAC's closest Senate allies on Israel, Iran, and anti-BDS."
+          },
+          {
+            "name": "Human Rights Watch",
+            "type": "adversary",
+            "description": "AIPAC has criticized HRW reports on Israel."
+          },
+          {
+            "name": "Amnesty International",
+            "type": "adversary",
+            "description": "AIPAC has pushed back against Amnesty's characterizations of Israeli policies."
           }
         ],
         "id": "aipac"
@@ -18650,6 +18883,577 @@
           }
         ],
         "id": "gratz-college"
+      },
+      {
+        "id": "jeffrey-epstein-network",
+        "name": "Jeffrey Epstein Network",
+        "type": "criminal enterprise / financial network",
+        "category": "Notable Individuals",
+        "founded": 1982,
+        "description": "Jeffrey Edward Epstein (1953-2019) was an American financier and convicted sex offender who built one of the most extensive and shadowy networks in modern history, connecting finance, politics, academia, royalty, and intelligence. Born in Brooklyn to a Jewish family, Epstein taught at the Dalton School before joining Bear Stearns in 1976, where he became a limited partner. He founded his own firm, J. Epstein & Co., in 1982, claiming to manage money exclusively for billionaires. His primary known client was Leslie Wexner, founder of L Brands (Victoria's Secret, Bath & Body Works), who granted Epstein sweeping power of attorney and gifted him a $77 million Manhattan townhouse - one of the largest private residences in New York. Epstein cultivated relationships with presidents (Bill Clinton, Donald Trump), princes (Prince Andrew), prime ministers, Nobel laureates, tech moguls, and Hollywood figures. He was first arrested in 2006 in Palm Beach, Florida, for soliciting prostitution from minors. A controversial 2008 plea deal negotiated by Alexander Acosta (later Trump's Labor Secretary) allowed Epstein to plead to state charges and serve just 13 months with work release. In July 2019, Epstein was arrested on federal sex trafficking charges. He was found dead in his cell at the Metropolitan Correctional Center on August 10, 2019, with his death ruled a suicide by hanging - a conclusion widely disputed. His associate Ghislaine Maxwell was convicted in 2021 on five of six charges of sex trafficking. Epstein's estate was valued at over $634 million. The full scope of his financial operations, intelligence connections, and the source of his wealth remain subjects of intense speculation and investigation.",
+        "website": "",
+        "individuals": [
+          {
+            "id": "jeffrey-epstein",
+            "name": "Jeffrey Epstein",
+            "role": "Financier & Convicted Sex Offender (1953-2019)",
+            "bio": "American financier and convicted sex offender. Born in Brooklyn to a Jewish family. Taught at Dalton School, worked at Bear Stearns, then founded J. Epstein & Co. Arrested in 2006 and 2019 for sex trafficking of minors. Found dead in his cell at MCC New York on August 10, 2019. Death ruled suicide, widely disputed."
+          },
+          {
+            "id": "ghislaine-maxwell",
+            "name": "Ghislaine Maxwell",
+            "role": "Associate & Convicted Sex Trafficker",
+            "bio": "British socialite and daughter of media baron Robert Maxwell. Convicted in December 2021 on five of six counts of sex trafficking and conspiracy. Sentenced to 20 years in federal prison. Alleged to have been Epstein's primary recruiter and groomer of victims."
+          },
+          {
+            "id": "jean-luc-brunel",
+            "name": "Jean-Luc Brunel",
+            "role": "Associate & Modeling Agent (1946-2022)",
+            "bio": "French modeling agent and founder of MC2 Model Management, funded by Epstein. Accused of trafficking and abusing young models. Found dead in his Paris jail cell in February 2022 while awaiting trial, officially ruled suicide."
+          },
+          {
+            "id": "sarah-kellen",
+            "name": "Sarah Kellen",
+            "role": "Personal Assistant / Alleged Recruiter",
+            "bio": "One of Epstein's closest personal assistants. Named as a co-conspirator in court documents. Alleged to have scheduled appointments with underage victims."
+          },
+          {
+            "id": "nadia-marcinkova",
+            "name": "Nadia Marcinkova",
+            "role": "Associate / Alleged Participant",
+            "bio": "Named in court documents as having been brought to the US by Epstein as a teenager from the former Yugoslavia. Later became a pilot. Named as alleged co-conspirator."
+          },
+          {
+            "id": "lesley-groff",
+            "name": "Lesley Groff",
+            "role": "Executive Assistant",
+            "bio": "Long-time Epstein executive assistant named as co-conspirator in multiple court filings."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Bear Stearns (historic)",
+            "type": "former employer",
+            "description": "Epstein joined Bear Stearns in 1976 and became a limited partner before leaving in 1981."
+          },
+          {
+            "name": "Wexner Foundation",
+            "type": "primary client",
+            "description": "Leslie Wexner was Epstein's primary known client. Wexner granted Epstein power of attorney and transferred his NYC townhouse and other assets.",
+            "entryId": "wexner-foundation"
+          },
+          {
+            "name": "JPMorgan Chase",
+            "type": "banking relationship",
+            "description": "JPMorgan maintained Epstein as a client from 1998 to 2013 despite red flags. Paid $290 million settlement in 2023 to Epstein victims.",
+            "entryId": "jpmorgan-chase"
+          },
+          {
+            "name": "Deutsche Bank",
+            "type": "banking relationship",
+            "description": "Deutsche Bank maintained Epstein accounts from 2013-2019 after JPMorgan dropped him. Paid $150 million in penalties for compliance failures.",
+            "entryId": "deutsche-bank"
+          },
+          {
+            "name": "Barclays",
+            "type": "banking relationship",
+            "description": "Barclays maintained financial relationships with Epstein through its wealth management division.",
+            "entryId": "barclays"
+          },
+          {
+            "name": "Harvard University",
+            "type": "donor / science funding",
+            "description": "Epstein donated at least $9.1 million to Harvard. Visited campus over 40 times after his 2008 conviction. Martin Nowak's Program for Evolutionary Dynamics received major funding.",
+            "entryId": "harvard-university"
+          },
+          {
+            "name": "MIT Media Lab",
+            "type": "donor",
+            "description": "Epstein donated at least $850,000 to MIT, some disguised through intermediaries. Director Joi Ito resigned in 2019 after revelations."
+          },
+          {
+            "name": "Leon Black / Apollo Global Management",
+            "type": "financial client",
+            "description": "Leon Black paid Epstein $158 million for tax and estate planning advice between 2012-2017. Black stepped down as Apollo CEO in 2021.",
+            "entryId": "apollo-global-management"
+          },
+          {
+            "name": "Victoria's Secret (L Brands)",
+            "type": "business connection",
+            "description": "Epstein allegedly posed as a talent scout for Victoria's Secret to recruit young women. Les Wexner was the brand's owner."
+          },
+          {
+            "name": "Bill Clinton",
+            "type": "political connection",
+            "description": "Former President Clinton flew on Epstein's plane at least 26 times according to flight logs. Clinton acknowledged limited interactions."
+          },
+          {
+            "name": "Donald Trump",
+            "type": "political connection",
+            "description": "Trump and Epstein socialized in the 1990s-2000s in Palm Beach and New York. Trump later said he banned Epstein from Mar-a-Lago."
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "royal connection",
+            "description": "The Duke of York maintained a close friendship with Epstein spanning decades. Virginia Giuffre accused Andrew of sexual abuse, leading to a civil settlement in 2022."
+          },
+          {
+            "name": "Ehud Barak",
+            "type": "political connection",
+            "description": "Former Israeli PM Ehud Barak visited Epstein's residences and received investments from Epstein in his tech venture Carbyne."
+          },
+          {
+            "name": "Les Wexner",
+            "type": "primary patron",
+            "description": "Billionaire retail magnate and Epstein's primary patron. Only known major client. Claimed Epstein misappropriated over $46 million."
+          },
+          {
+            "name": "Alan Dershowitz",
+            "type": "legal defense",
+            "description": "Harvard law professor who helped negotiate Epstein's 2008 plea deal. Accused by Virginia Giuffre."
+          },
+          {
+            "name": "Alexander Acosta",
+            "type": "plea deal",
+            "description": "US Attorney who approved Epstein's controversial 2008 plea deal. Later became Trump's Labor Secretary, resigned in 2019."
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "key associate",
+            "description": "Epstein's primary accomplice. Daughter of Robert Maxwell. Convicted of sex trafficking in 2021."
+          },
+          {
+            "name": "Robert Maxwell / Maxwell Communications",
+            "type": "family connection",
+            "description": "Ghislaine's father Robert Maxwell was a Czech-born British media mogul suspected of ties to Mossad, MI6, and KGB. Died under mysterious circumstances in 1991."
+          },
+          {
+            "name": "Mossad (alleged)",
+            "type": "alleged intelligence ties",
+            "description": "Multiple sources allege Epstein had connections to Israeli intelligence through Robert Maxwell and Ghislaine. Former Israeli intelligence operative Ari Ben-Menashe claimed Epstein was recruited."
+          },
+          {
+            "name": "Palm Beach Police Department",
+            "type": "initial investigation",
+            "description": "Palm Beach PD conducted the initial investigation in 2005-2006 that identified dozens of underage victims."
+          },
+          {
+            "name": "FBI",
+            "type": "federal investigation",
+            "description": "FBI conducted extensive investigation. 2019 indictment on federal sex trafficking charges."
+          },
+          {
+            "name": "Dalton School",
+            "type": "former employer",
+            "description": "Epstein taught at the elite Manhattan prep school from 1974-1976, hired by headmaster Donald Barr (father of AG Bill Barr)."
+          },
+          {
+            "name": "Southern District of New York",
+            "type": "prosecution",
+            "description": "SDNY brought the 2019 federal case against Epstein."
+          },
+          {
+            "name": "Council on Foreign Relations (CFR)",
+            "type": "member",
+            "description": "Epstein was a member of the CFR and the Trilateral Commission."
+          },
+          {
+            "name": "Elon Musk",
+            "type": "acquaintance",
+            "description": "Ghislaine Maxwell photographed with Musk in 2014. Musk acknowledged meeting Epstein once."
+          },
+          {
+            "name": "Bill Gates",
+            "type": "meetings",
+            "description": "Gates met with Epstein multiple times 2011-2014. Gates Foundation donated $2M to MIT at Epstein's direction. Melinda cited these meetings as factor in 2021 divorce."
+          },
+          {
+            "name": "Woody Allen",
+            "type": "socialite circle",
+            "description": "Allen socialized with Epstein. Photographed walking with Epstein in 2013."
+          },
+          {
+            "name": "George Stephanopoulos",
+            "type": "socialite circle",
+            "description": "ABC anchor attended a 2010 dinner party at Epstein's Manhattan mansion."
+          },
+          {
+            "name": "Joi Ito / MIT Media Lab",
+            "type": "funding relationship",
+            "description": "MIT Media Lab director who secretly accepted Epstein donations. Resigned September 2019."
+          },
+          {
+            "name": "Leon Black",
+            "type": "client",
+            "description": "Apollo Global co-founder paid Epstein $158 million for financial advice.",
+            "entryId": "apollo-global-management"
+          },
+          {
+            "name": "Reid Hoffman",
+            "type": "meetings",
+            "description": "LinkedIn co-founder attended an Epstein dinner in 2015, later apologized."
+          },
+          {
+            "name": "US Virgin Islands",
+            "type": "private island",
+            "description": "Epstein owned Little St. James and Great St. James islands where much of the abuse allegedly occurred."
+          },
+          {
+            "name": "Metropolitan Correctional Center",
+            "type": "death location",
+            "description": "Federal facility where Epstein was found dead August 10, 2019. Two guards charged with falsifying records."
+          },
+          {
+            "name": "Steve Bannon",
+            "type": "post-arrest contact",
+            "description": "Bannon reportedly met with Epstein in 2018 at his NYC townhouse."
+          },
+          {
+            "name": "Goldman Sachs (historic)",
+            "type": "financial system",
+            "description": "Part of the Wall Street network that facilitated Epstein's financial operations.",
+            "entryId": "goldman-sachs-historic"
+          }
+        ]
+      },
+      {
+        "id": "hadassah-womens-zionist-org",
+        "name": "Hadassah (Women's Zionist Organization of America)",
+        "type": "women's / healthcare / Zionist organization",
+        "category": "Advocacy & Political Organizations",
+        "founded": 1912,
+        "description": "Largest Jewish women's organization in the US with ~300,000 members. Founded by Henrietta Szold in 1912. Operates Hadassah Medical Organization - two hospitals in Jerusalem treating 1M+ patients annually regardless of background. Israel's largest hospital and the largest American healthcare provider in Israel.",
+        "website": "https://www.hadassah.org/",
+        "individuals": [
+          {
+            "id": "henrietta-szold",
+            "name": "Henrietta Szold",
+            "role": "Founder (1860-1945)",
+            "bio": "Founded Hadassah, led Youth Aliyah rescuing thousands of children from Nazi Europe."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Hadassah Medical Center (Jerusalem)",
+            "type": "founded / operates",
+            "description": "Operates Israel's largest hospital complex."
+          },
+          {
+            "name": "World Zionist Organization",
+            "type": "member",
+            "description": "Hadassah is a constituent of the WZO."
+          },
+          {
+            "name": "Hebrew University of Jerusalem",
+            "type": "campus partner",
+            "description": "Hadassah hospitals affiliated with Hebrew U.",
+            "entryId": "hebrew-university-of-jerusalem"
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "pro-Israel ally",
+            "description": "Both advocate for US-Israel relations.",
+            "entryId": "aipac"
+          }
+        ]
+      },
+      {
+        "id": "new-york-times",
+        "name": "The New York Times",
+        "type": "newspaper / media company",
+        "category": "Entertainment & Media",
+        "founded": 1851,
+        "description": "One of the most influential newspapers in the world. Controlled by the Ochs-Sulzberger family since 1896 when Adolph Ochs purchased it. Won 130+ Pulitzer Prizes. Current publisher A.G. Sulzberger is 5th generation. 10+ million digital subscribers.",
+        "website": "https://www.nytimes.com/",
+        "individuals": [
+          {
+            "id": "ag-sulzberger",
+            "name": "A.G. Sulzberger",
+            "role": "Publisher & Chairman",
+            "bio": "Fifth generation Ochs-Sulzberger to run the Times."
+          },
+          {
+            "id": "adolph-ochs",
+            "name": "Adolph Ochs",
+            "role": "Publisher (1896-1935)",
+            "bio": "German-Jewish publisher who purchased the Times in 1896."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Washington Post",
+            "type": "industry rival",
+            "description": "America's two most prestigious newspapers."
+          },
+          {
+            "name": "CNN (Cable News Network)",
+            "type": "media peer",
+            "description": "Both are major American news organizations.",
+            "entryId": "cnn"
+          }
+        ]
+      },
+      {
+        "id": "cnn",
+        "name": "CNN (Cable News Network)",
+        "type": "television network / media company",
+        "category": "Entertainment & Media",
+        "founded": 1980,
+        "description": "First 24-hour cable news network. Led by numerous Jewish executives including Jeff Zucker (president 2013-2022). Wolf Blitzer, son of Holocaust survivors, began career at Jerusalem Post.",
+        "website": "https://www.cnn.com/",
+        "individuals": [
+          {
+            "id": "jeff-zucker",
+            "name": "Jeff Zucker",
+            "role": "Former President (2013-2022)",
+            "bio": "Resigned 2022. Previously CEO of NBCUniversal."
+          },
+          {
+            "id": "wolf-blitzer",
+            "name": "Wolf Blitzer",
+            "role": "Lead Anchor",
+            "bio": "Son of Holocaust survivors. Career started at Jerusalem Post."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Warner Bros. Discovery",
+            "type": "parent company",
+            "description": "CNN is owned by WBD (led by David Zaslav)."
+          },
+          {
+            "name": "Fox News Channel",
+            "type": "industry rival",
+            "description": "Primary cable news rivals.",
+            "entryId": "fox-news-channel"
+          },
+          {
+            "name": "The New York Times",
+            "type": "media peer",
+            "description": "Both are major news organizations.",
+            "entryId": "new-york-times"
+          }
+        ]
+      },
+      {
+        "id": "harvard-university",
+        "name": "Harvard University",
+        "type": "university",
+        "category": "Education & Academia",
+        "founded": 1636,
+        "description": "Most prestigious US university. Jewish enrollment was restricted by quotas in the 1920s. Led by Jewish presidents including Lawrence Summers (2001-2006). Jeffrey Epstein donated $9.1M+ and visited 40+ times post-conviction. World's largest endowment ($50B+).",
+        "website": "https://www.harvard.edu/",
+        "individuals": [
+          {
+            "id": "lawrence-summers-harvard",
+            "name": "Lawrence Summers",
+            "role": "President (2001-2006)",
+            "bio": "Jewish economist. Previously US Treasury Secretary under Clinton."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Jeffrey Epstein Network",
+            "type": "donor scandal ($9.1M+)",
+            "description": "Epstein donated $9.1M+ and visited 40+ times post-conviction.",
+            "entryId": "jeffrey-epstein-network"
+          },
+          {
+            "name": "Hillel International",
+            "type": "campus chapter",
+            "description": "One of the largest Hillel chapters."
+          },
+          {
+            "name": "Goldman Sachs (historic)",
+            "type": "recruitment pipeline",
+            "description": "Primary recruiting target.",
+            "entryId": "goldman-sachs-historic"
+          },
+          {
+            "name": "Chabad-Lubavitch",
+            "type": "campus presence",
+            "description": "Chabad center at Harvard.",
+            "entryId": "chabad-lubavitch"
+          }
+        ]
+      },
+      {
+        "id": "jewish-national-fund-jnf",
+        "name": "Jewish National Fund (JNF-KKL)",
+        "type": "Zionist land organization / nonprofit",
+        "category": "Charity & Philanthropy",
+        "founded": 1901,
+        "description": "Founded in 1901 at the Fifth Zionist Congress to buy and develop land in Palestine. Has planted 250M+ trees, built 250+ reservoirs. Holds ~13% of Israel's land.",
+        "website": "https://www.jnf.org/",
+        "individuals": [],
+        "connections": [
+          {
+            "name": "World Zionist Organization",
+            "type": "founding member",
+            "description": "Established by the Zionist Congress."
+          },
+          {
+            "name": "Jewish Agency for Israel",
+            "type": "Zionist partner",
+            "description": "Key Zionist movement institutions."
+          },
+          {
+            "name": "Israeli Government",
+            "type": "land partnership",
+            "description": "JNF holds ~13% of Israel's land."
+          }
+        ]
+      },
+      {
+        "id": "sheldon-adelson-empire",
+        "name": "Sheldon Adelson / Las Vegas Sands (historic)",
+        "type": "casino / hospitality empire",
+        "category": "Conglomerates & Holding Companies",
+        "founded": 1988,
+        "description": "Sheldon Adelson (1933-2021) built Las Vegas Sands into the world's largest casino company. Gave $500M+ to Republicans - largest individual political donor in US history. Gave $410M+ to Birthright Israel. Purchased Israel Hayom. Widow Miriam continues spending, $100M+ to Trump 2024.",
+        "website": "",
+        "individuals": [
+          {
+            "id": "sheldon-adelson",
+            "name": "Sheldon Adelson",
+            "role": "Founder (1933-2021)",
+            "bio": "Casino magnate, largest individual US political donor ($500M+ GOP). Donated $410M+ to Birthright."
+          },
+          {
+            "id": "miriam-adelson",
+            "name": "Miriam Adelson",
+            "role": "Widow & Principal Owner",
+            "bio": "Israeli-born physician. Presidential Medal of Freedom (2018). Continues massive Republican donations."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Birthright Israel (Taglit)",
+            "type": "largest individual donor",
+            "description": "Donated $410M+ to Birthright.",
+            "entryId": "birthright-israel-taglit"
+          },
+          {
+            "name": "Republican Party",
+            "type": "megadonor ($500M+)",
+            "description": "Largest individual donor in US history."
+          },
+          {
+            "name": "Donald Trump",
+            "type": "major supporter",
+            "description": "Adelson & Miriam gave $200M+ combined to Trump campaigns."
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "type": "political ally",
+            "description": "Israel Hayom seen as supporting Netanyahu."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "pro-Israel ally",
+            "description": "One of the most influential pro-Israel figures.",
+            "entryId": "aipac"
+          }
+        ]
+      },
+      {
+        "id": "miramax-films",
+        "name": "Miramax Films",
+        "type": "film studio",
+        "category": "Entertainment & Media",
+        "founded": 1979,
+        "description": "Independent film studio founded by Bob and Harvey Weinstein (Jewish), named after parents Miriam and Max. Produced \"Pulp Fiction,\" \"Shakespeare in Love,\" etc. Harvey Weinstein exposed as serial predator in 2017, convicted 2020, launching #MeToo movement.",
+        "website": "",
+        "individuals": [
+          {
+            "id": "harvey-weinstein",
+            "name": "Harvey Weinstein",
+            "role": "Co-founder (convicted predator)",
+            "bio": "Convicted of rape and sexual assault. 80+ women accused him. His exposure launched #MeToo."
+          },
+          {
+            "id": "bob-weinstein",
+            "name": "Bob Weinstein",
+            "role": "Co-founder",
+            "bio": "Co-founded Miramax and Dimension Films."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Walt Disney Company",
+            "type": "former parent",
+            "description": "Disney owned Miramax 1993-2010."
+          },
+          {
+            "name": "#MeToo Movement",
+            "type": "catalyst",
+            "description": "Harvey Weinstein's exposure launched #MeToo."
+          }
+        ]
+      },
+      {
+        "id": "fox-news-channel",
+        "name": "Fox News Channel",
+        "type": "cable news network",
+        "category": "Entertainment & Media",
+        "founded": 1996,
+        "description": "Dominant American cable news network. Founded by Rupert Murdoch (News Corp). Highest-rated cable news for 20+ years.",
+        "website": "https://www.foxnews.com/",
+        "individuals": [],
+        "connections": [
+          {
+            "name": "Fox Corporation",
+            "type": "parent company",
+            "description": "Owned by Fox Corp."
+          },
+          {
+            "name": "CNN (Cable News Network)",
+            "type": "industry rival",
+            "description": "Primary cable news rival.",
+            "entryId": "cnn"
+          },
+          {
+            "name": "New York Post",
+            "type": "sibling",
+            "description": "Both Murdoch media properties."
+          }
+        ]
+      },
+      {
+        "id": "hebrew-union-college-jir",
+        "name": "Hebrew Union College - Jewish Institute of Religion (HUC-JIR)",
+        "type": "rabbinical seminary / university",
+        "category": "Education & Academia",
+        "founded": 1875,
+        "description": "Oldest rabbinical seminary in the Americas. Academic center of Reform Judaism. Founded 1875 by Rabbi Isaac Mayer Wise. Ordained first female rabbi Sally Priesand (1972). Campuses in Cincinnati, New York, LA, Jerusalem.",
+        "website": "https://huc.edu/",
+        "individuals": [
+          {
+            "id": "isaac-mayer-wise",
+            "name": "Rabbi Isaac Mayer Wise",
+            "role": "Founder (1819-1900)",
+            "bio": "Founded HUC, UAHC, and CCAR - the three pillars of Reform Judaism in America."
+          },
+          {
+            "id": "sally-priesand",
+            "name": "Sally Priesand",
+            "role": "First Female Rabbi (ordained 1972)",
+            "bio": "First woman ordained as a rabbi in America."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Union for Reform Judaism",
+            "type": "movement partner",
+            "description": "HUC and URJ are pillars of Reform Judaism."
+          },
+          {
+            "name": "Jewish Theological Seminary (JTS)",
+            "type": "denominational peer",
+            "description": "JTS is the Conservative seminary.",
+            "entryId": "jewish-theological-seminary"
+          }
+        ]
       }
     ],
     "Israel": [
@@ -28872,6 +29676,34 @@
             "description": "FSJU and CRIF are both central institutions of French Jewish communal life."
           }
         ]
+      },
+      {
+        "id": "crif",
+        "name": "CRIF (Representative Council of French Jewish Institutions)",
+        "type": "representative body",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1944,
+        "description": "Umbrella organization of French Jewry, the largest in Europe (~500,000). Founded 1944 during French Resistance. Annual dinner attended by the French president.",
+        "website": "https://www.crif.org/",
+        "individuals": [],
+        "connections": [
+          {
+            "name": "French Government",
+            "type": "diplomatic relationship",
+            "description": "Annual dinner attended by the French president."
+          },
+          {
+            "name": "World Jewish Congress",
+            "type": "affiliate",
+            "description": "Affiliated with WJC.",
+            "entryId": "world-jewish-congress"
+          },
+          {
+            "name": "European Jewish Congress",
+            "type": "member",
+            "description": "Key EJC member."
+          }
+        ]
       }
     ],
     "Canada": [
@@ -38062,6 +38894,63 @@
         ],
         "category": "Heritage & Memorials",
         "founded": 1988
+      },
+      {
+        "id": "world-jewish-congress",
+        "name": "World Jewish Congress (WJC)",
+        "type": "international Jewish representative body",
+        "category": "Representative & Umbrella Bodies",
+        "founded": 1936,
+        "description": "International federation representing Jewish communities in 100+ countries. Founded in 1936 in Geneva against the Nazi threat. Under Edgar Bronfman Sr. (1981-2007), led campaign forcing Swiss banks to settle $1.25 billion for dormant Holocaust accounts. Current president Ronald Lauder (Estée Lauder heir) since 2007.",
+        "website": "https://www.worldjewishcongress.org/",
+        "individuals": [
+          {
+            "id": "ronald-lauder",
+            "name": "Ronald Lauder",
+            "role": "President (2007-present)",
+            "bio": "American billionaire, son of Estée Lauder. Former US Ambassador to Austria."
+          },
+          {
+            "id": "edgar-bronfman-sr",
+            "name": "Edgar Bronfman Sr.",
+            "role": "President (1981-2007)",
+            "bio": "Canadian-American billionaire (Seagram) who led the Swiss banks campaign."
+          },
+          {
+            "id": "nahum-goldmann",
+            "name": "Nahum Goldmann",
+            "role": "Co-founder & President (1936-1977)",
+            "bio": "Negotiated German reparations for Holocaust survivors."
+          }
+        ],
+        "connections": [
+          {
+            "name": "United Nations",
+            "type": "consultative status",
+            "description": "WJC holds UN consultative status."
+          },
+          {
+            "name": "Anti-Defamation League (ADL)",
+            "type": "advocacy peer",
+            "description": "Both combat antisemitism globally.",
+            "entryId": "anti-defamation-league-adl"
+          },
+          {
+            "name": "European Jewish Congress",
+            "type": "affiliate",
+            "description": "Regional affiliate of WJC."
+          },
+          {
+            "name": "Claims Conference",
+            "type": "Holocaust restitution partner",
+            "description": "Both work on Holocaust restitution."
+          },
+          {
+            "name": "Israeli Government",
+            "type": "diplomatic partner",
+            "description": "Coordinates on diaspora security and antisemitism."
+          }
+        ]
       }
     ],
     "Netherlands": [

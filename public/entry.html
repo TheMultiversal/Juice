@@ -274,6 +274,13 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
           });
           document.getElementById('entry-name').appendChild(bmBtn);
 
+          // Network view button
+          const netBtn = document.createElement('a');
+          netBtn.href = 'network.html?id=' + encodeURIComponent(item.id || id);
+          netBtn.innerHTML = '<i class="fa-solid fa-spider-web"></i> View Network';
+          netBtn.style.cssText = 'margin-left:8px;padding:5px 14px;border-radius:16px;border:1px solid rgba(198,40,40,0.3);cursor:pointer;font-size:0.85em;vertical-align:middle;background:rgba(198,40,40,0.08);color:#c62828;text-decoration:none;display:inline-block;';
+          document.getElementById('entry-name').appendChild(netBtn);
+
           if (item.category) {
             const catLine = document.getElementById('entry-category-line');
             catLine.style.display = '';

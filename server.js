@@ -324,6 +324,117 @@ app.get('/api/graph', (req, res) => {
   } catch (err) { res.status(500).json({ error: 'Server error' }); }
 });
 
+// focused network graph - N-degree neighborhood around a single entry
+app.get('/api/graph/focus/:entryId', (req, res) => {
+  const focusId = req.params.entryId;
+  const depth = Math.min(parseInt(req.query.depth) || 2, 3);
+  const includePeople = req.query.people !== '0';
+  try {
+    const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}`;
+    const result = getCached(cacheKey, 30000, () => {
+      delete require.cache[require.resolve('./data/jewish.json')];
+      const jd = require('./data/jewish.json');
+
+      // Build full lookup maps
+      const entryIdMap = {}, nameToId = {}, entryById = {};
+      for (const c in jd.countries) {
+        for (const entry of jd.countries[c]) {
+          entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type };
+          nameToId[entry.name.toLowerCase()] = entry.id;
+          entryById[entry.id] = { ...entry, _country: c };
+        }
+      }
+
+      if (!entryById[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
+
+      // BFS to collect entries within N degrees
+      const visited = new Set([focusId]);
+      let frontier = [focusId];
+      for (let d = 0; d < depth; d++) {
+        const nextFrontier = [];
+        for (const eid of frontier) {
+          const entry = entryById[eid];
+          if (!entry) continue;
+          if (entry.connections) {
+            for (const conn of entry.connections) {
+              const tid = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
+              if (tid && entryById[tid] && !visited.has(tid)) {
+                visited.add(tid);
+                nextFrontier.push(tid);
+              }
+            }
+          }
+          // Shared individuals - entries sharing the same person
+          if (entry.individuals) {
+            for (const ind of entry.individuals) {
+              for (const c2 in jd.countries) {
+                for (const e2 of jd.countries[c2]) {
+                  if (e2.id === eid || visited.has(e2.id)) continue;
+                  if (e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
+                    visited.add(e2.id);
+                    nextFrontier.push(e2.id);
+                  }
+                }
+              }
+            }
+          }
+        }
+        frontier = nextFrontier;
+      }
+
+      // Build nodes and links from the visited set
+      const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
+      for (const eid of visited) {
+        const entry = entryById[eid];
+        if (!entry) continue;
+        const c = entry._country;
+        if (!nodeSet.has(eid)) {
+          nodeSet.add(eid);
+          nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === focusId });
+        }
+        // People
+        if (includePeople && entry.individuals) {
+          for (const ind of entry.individuals) {
+            const pid = 'person-' + ind.id;
+            if (!nodeSet.has(pid)) {
+              nodeSet.add(pid);
+              nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '' });
+            }
+            const lk = eid + '|' + pid;
+            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
+          }
+        }
+        // Connections between visited entries
+        if (entry.connections) {
+          for (const conn of entry.connections) {
+            const tid = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
+            if (!tid || !visited.has(tid)) continue;
+            const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
+            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: conn.type || 'related', description: conn.description || '' }); }
+          }
+        }
+        // Shared person links within visited set
+        if (entry.individuals) {
+          for (const ind of entry.individuals) {
+            for (const eid2 of visited) {
+              if (eid2 === eid) continue;
+              const e2 = entryById[eid2];
+              if (e2 && e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
+                const lk = eid < eid2 ? eid + '|' + eid2 : eid2 + '|' + eid;
+                if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: eid2, type: 'shared-person', description: 'Shared: ' + ind.name }); }
+              }
+            }
+          }
+        }
+      }
+
+      const focusEntry = entryById[focusId];
+      return { focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth, nodes, links };
+    });
+    res.json(result);
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Server error' }); }
+});
+
 // timeline data endpoint - entries with founding years
 app.get('/api/timeline', (req, res) => {
   try {

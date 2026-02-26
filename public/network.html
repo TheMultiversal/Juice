@@ -1,0 +1,638 @@
+<!-- Juice Project - Est. 2016 | Last updated 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <meta name="created" content="2016-03-14">
+  <meta name="author" content="Juice Project">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Juice Box">
+  <meta property="og:image" content="https://thejuicebox.live/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://thejuicebox.live/og-image.png">
+  <meta property="og:title" content="Focused Network">
+  <meta property="og:description" content="Focused network visualization - explore connections for any entity in The Juice Box database.">
+  <meta property="og:url" content="https://thejuicebox.live/network.html">
+  <meta name="twitter:title" content="Focused Network">
+  <meta name="twitter:description" content="Focused network visualization - explore connections for any entity in The Juice Box database.">
+  <title>Focused Network</title>
+
+  <script src="https://unpkg.com/force-graph"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { height: 100%; font-family: 'Segoe UI', Arial, sans-serif; background: #f9fafb; overflow: hidden; }
+
+    /* ───── Page layout ───── */
+    .page-wrap { display: flex; flex-direction: column; height: 100vh; }
+    nav#navbar { flex-shrink: 0; }
+
+    .header-panel {
+      flex-shrink: 0;
+      text-align: center;
+      padding: 10px 16px 6px;
+      background: linear-gradient(135deg, #e8f0fe 0%, #fff 100%);
+      border-bottom: 1px solid #d0d7e3;
+      position: relative;
+      z-index: 10;
+    }
+    .header-panel h1 { font-size: 1.35rem; color: #0d47a1; letter-spacing: -0.5px; }
+    .header-panel h1 .focus-name { color: #c62828; font-weight: 800; }
+    .header-panel p { font-size: 0.82rem; color: #555; margin-top: 2px; }
+    .header-panel .back-link { font-size: 0.8rem; color: #1565c0; text-decoration: none; margin-right: 10px; }
+    .header-panel .back-link:hover { text-decoration: underline; }
+
+    .graph-wrap { flex: 1; position: relative; overflow: hidden; }
+    #graph-container { width: 100%; height: 100%; }
+    #graph-container canvas { display: block; }
+
+    /* ───── Glassmorphism panels ───── */
+    .gp { position: absolute; z-index: 20; background: rgba(255,255,255,0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(200,210,230,0.45); border-radius: 10px; padding: 10px 14px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); font-size: 0.82rem; transition: opacity .3s; }
+    .gp h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; color: #0d47a1; margin-bottom: 6px; cursor: pointer; user-select: none; }
+    .gp h3::after { content: ' ▾'; font-size: 0.65rem; }
+    .gp.collapsed h3::after { content: ' ▸'; }
+    .gp.collapsed .gp-body { display: none; }
+
+    /* HUD positions */
+    .hud-controls { top: 10px; left: 10px; }
+    .hud-search  { top: 10px; left: 50%; transform: translateX(-50%); min-width: 260px; }
+    .hud-stats   { top: 10px; right: 10px; }
+    .hud-cats    { bottom: 10px; left: 10px; max-height: 260px; overflow-y: auto; }
+    .hud-edges   { bottom: 10px; right: 10px; max-height: 220px; overflow-y: auto; }
+    .hud-depth   { top: 70px; left: 10px; }
+
+    /* Controls */
+    .gp label { display: block; margin: 4px 0 2px; color: #333; font-size: 0.78rem; }
+    .gp input[type=range] { width: 100%; }
+    .gp select { width: 100%; padding: 3px 5px; border-radius: 4px; border: 1px solid #bbb; font-size: 0.78rem; }
+    .gp .btn { display: inline-block; padding: 4px 10px; border-radius: 5px; border: 1px solid #90caf9; background: #e3f2fd; color: #0d47a1; cursor: pointer; font-size: 0.76rem; margin: 2px; transition: background .2s; }
+    .gp .btn:hover { background: #bbdefb; }
+    .gp .cb { display: flex; align-items: center; gap: 5px; margin: 4px 0; }
+    .gp .cb input { margin: 0; }
+
+    /* Search */
+    .s-wrap { display: flex; gap: 4px; }
+    .s-wrap input { flex: 1; padding: 4px 8px; border: 1px solid #bbb; border-radius: 5px; font-size: 0.8rem; }
+    .s-wrap button { padding: 4px 10px; border: none; border-radius: 5px; background: #1565c0; color: #fff; font-size: 0.78rem; cursor: pointer; }
+    #s-count { font-size: 0.75rem; color: #666; margin-top: 3px; }
+
+    /* Category / edge legend */
+    .li { display: flex; align-items: center; gap: 5px; padding: 2px 0; cursor: pointer; }
+    .li:hover { background: rgba(0,0,200,0.04); border-radius: 4px; }
+    .ld { width: 11px; height: 11px; border-radius: 50%; flex-shrink: 0; }
+    .ei { display: flex; align-items: center; gap: 5px; padding: 1px 0; font-size: 0.76rem; }
+    .el { width: 18px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* Tooltip */
+    #tip { position: fixed; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border: 1px solid #c5cae9; border-radius: 8px; padding: 8px 12px; font-size: 0.8rem; max-width: 340px; pointer-events: none; box-shadow: 0 4px 16px rgba(0,0,0,0.1); display: none; line-height: 1.45; }
+    .tip-cat { display: inline-block; padding: 1px 7px; border-radius: 4px; font-size: 0.72rem; }
+
+    /* Loading */
+    .load-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; background: rgba(255,255,255,0.88); backdrop-filter: blur(6px); z-index: 40; transition: opacity .4s; }
+    .load-overlay.off { opacity: 0; pointer-events: none; }
+    .spinner { width: 38px; height: 38px; border: 3px solid #bbdefb; border-top-color: #1565c0; border-radius: 50%; animation: sp .8s linear infinite; }
+    @keyframes sp { to { transform: rotate(360deg); } }
+    .ld-text { margin-top: 10px; font-size: 0.85rem; color: #555; }
+
+    /* Focus node glow */
+    .focus-badge { display: inline-block; padding: 2px 8px; background: #c62828; color: #fff; border-radius: 10px; font-size: 0.7rem; font-weight: 700; margin-left: 6px; }
+
+    @media (max-width: 768px) {
+      .gp { font-size: 0.75rem; padding: 7px 10px; }
+      .hud-cats, .hud-edges { max-height: 160px; }
+      .header-panel h1 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+    <nav id="navbar"></nav>
+    <div class="header-panel">
+      <div>
+        <a href="graph.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Full Graph</a>
+        <a href="index.html" class="back-link"><i class="fa-solid fa-house"></i> Home</a>
+      </div>
+      <h1><i class="fa-solid fa-spider-web"></i> <span id="page-title">Focused Network</span></h1>
+      <p id="page-subtitle">Loading network data...</p>
+    </div>
+    <div class="graph-wrap">
+      <div id="graph-container"></div>
+
+      <!-- Loading overlay -->
+      <div class="load-overlay" id="loading">
+        <div class="spinner"></div>
+        <div class="ld-text" id="ld-text">Loading network...</div>
+      </div>
+
+      <!-- HUD panels -->
+      <div class="gp hud-controls">
+        <h3>Controls</h3>
+        <div class="gp-body">
+          <label>Depth: <span id="depth-val">2</span></label>
+          <input type="range" id="depth-range" min="1" max="3" value="2" step="1">
+          <label>Node Scale</label>
+          <input type="range" id="node-scale" min="0.3" max="4" value="1.2" step="0.1">
+          <label>Link Distance</label>
+          <input type="range" id="link-dist" min="20" max="200" value="60" step="5">
+          <div class="cb"><input type="checkbox" id="show-people" checked> <label for="show-people">Show People</label></div>
+          <div style="margin-top:6px;">
+            <button class="btn" id="btn-fit"><i class="fa-solid fa-expand"></i> Fit</button>
+            <button class="btn" id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
+            <button class="btn" id="btn-entry"><i class="fa-solid fa-building"></i> View Entry</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="gp hud-search">
+        <h3>Search</h3>
+        <div class="gp-body">
+          <div class="s-wrap">
+            <input id="s-input" type="text" placeholder="Search nodes...">
+            <button id="s-btn"><i class="fa-solid fa-search"></i></button>
+          </div>
+          <div id="s-count"></div>
+        </div>
+      </div>
+
+      <div class="gp hud-stats">
+        <h3>Stats</h3>
+        <div class="gp-body">
+          <div id="stats"><b>Loading...</b></div>
+        </div>
+      </div>
+
+      <div class="gp hud-cats">
+        <h3>Categories</h3>
+        <div class="gp-body" id="cat-b"></div>
+      </div>
+
+      <div class="gp hud-edges">
+        <h3>Edge Types</h3>
+        <div class="gp-body" id="edge-b"></div>
+      </div>
+
+      <!-- Tooltip -->
+      <div id="tip"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+  <script>
+    initPage('jewish');
+    // setSEO is set dynamically after data load
+
+    // Collapsible panels
+    document.querySelectorAll('.gp h3').forEach(h => {
+      h.onclick = () => h.parentElement.classList.toggle('collapsed');
+    });
+
+    // ─── Color maps ──────────────────────────────────────
+    const CC = {
+      'Lobby/Advocacy':'#1565c0','Media':'#e65100','Finance':'#2e7d32','Technology':'#6a1b9a',
+      'Government':'#c62828','Education':'#00838f','Legal':'#4e342e','Healthcare':'#ad1457',
+      'Nonprofit':'#283593','Intelligence':'#37474f','Think Tank':'#558b2f','Military':'#bf360c',
+      'Philanthropy':'#00695c','Real Estate':'#7b1fa2','Entertainment':'#ff6f00','Religious':'#1a237e',
+      'Political':'#b71c1c','Cultural':'#0097a7','International':'#33691e','Corporate':'#4527a0',
+      'Consulting':'#6d4c41','Sports':'#d84315','Social Services':'#00796b','People':'#ffab40',
+      'Energy':'#827717','Transportation':'#01579b','Food & Beverage':'#e91e63','Telecommunications':'#3949ab',
+      'Agriculture':'#689f38','Manufacturing':'#5d4037','Conglomerate':'#263238'
+    };
+    const EC = {
+      'lobbying':'#1565c0','funding':'#2e7d32','subsidiary':'#6a1b9a','member':'#00838f',
+      'partnership':'#e65100','parent':'#c62828','legal':'#4e342e','regulatory':'#ad1457',
+      'investment':'#2e7d32','shareholder':'#558b2f','advisory':'#283593','media':'#ff6f00',
+      'political':'#b71c1c','intelligence':'#37474f','military':'#bf360c','technology':'#6a1b9a',
+      'financial':'#2e7d32','educational':'#00838f','cultural':'#0097a7','diplomatic':'#33691e',
+      'corporate':'#4527a0','consulting':'#6d4c41','philanthropic':'#00695c','religious':'#1a237e',
+      'research':'#0d47a1','trade':'#827717','social':'#e91e63','healthcare':'#ad1457',
+      'real-estate':'#7b1fa2','sports':'#d84315','transportation':'#01579b','energy':'#827717',
+      'person-affiliation':'#ffab40','shared-person':'#ff7043','related':'#78909c',
+      'opposition':'#d32f2f','ally':'#388e3c'
+    };
+    const DC = '#546e7a', DEC = '#90a4ae', PC = '#ffab40';
+
+    // ─── State ──────────────────────────────────────────
+    let graph, hoveredNode, neighborMap = {}, neighborSet = new Set(), searchMatches = new Set();
+    let nodeScale = 1.2, linkDist = 60, mouseX = 0, mouseY = 0;
+    const tipEl = document.getElementById('tip');
+    const container = document.getElementById('graph-container');
+    let focusEntryId = null, focusNodeId = null;
+
+    document.addEventListener('mousemove', e => { mouseX = e.clientX; mouseY = e.clientY; });
+    document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
+      hoveredNode = null; neighborSet.clear(); tipEl.style.display = 'none';
+    });
+
+    // ─── Parse URL ────────────────────────────────────────
+    const params = new URLSearchParams(window.location.search);
+    focusEntryId = params.get('id') || 'jeffrey-epstein-network';
+
+    // ─── Render node ──────────────────────────────────────
+    function renderNode(node, ctx, globalScale) {
+      const isPerson = node.nodeType === 'person';
+      const isFocus = node.isFocus;
+      const deg = node._degree || 0;
+      let size = (isPerson ? 2.5 + Math.sqrt(deg) * 0.8 : 3.5 + Math.sqrt(deg) * 1.2) * nodeScale;
+      if (isFocus) size *= 1.8; // Focus node is larger
+      node._renderedSize = size;
+
+      const isHovered = hoveredNode && node.id === hoveredNode.id;
+      const isNeighbor = hoveredNode && neighborSet.has(node.id);
+      const shouldDim = (hoveredNode && !isHovered && !isNeighbor) ||
+                        (searchMatches.size > 0 && !node._found && !isHovered);
+
+      ctx.save();
+      if (shouldDim) ctx.globalAlpha = 0.06;
+
+      ctx.beginPath();
+      if (isPerson) {
+        // Diamond
+        ctx.moveTo(node.x, node.y - size);
+        ctx.lineTo(node.x + size, node.y);
+        ctx.lineTo(node.x, node.y + size);
+        ctx.lineTo(node.x - size, node.y);
+        ctx.closePath();
+      } else {
+        ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+      }
+      ctx.fillStyle = node._color || DC;
+      ctx.fill();
+
+      // Focus glow ring
+      if (isFocus && !shouldDim) {
+        ctx.strokeStyle = '#c62828';
+        ctx.lineWidth = 3 / globalScale;
+        ctx.stroke();
+        // Outer glow
+        ctx.beginPath();
+        ctx.arc(node.x, node.y, size + 4 / globalScale, 0, Math.PI * 2);
+        ctx.strokeStyle = 'rgba(198,40,40,0.25)';
+        ctx.lineWidth = 2 / globalScale;
+        ctx.stroke();
+      } else if (isHovered) {
+        ctx.strokeStyle = '#0056b3';
+        ctx.lineWidth = 2.5 / globalScale;
+        ctx.stroke();
+      } else if (node._found) {
+        ctx.strokeStyle = '#ffeb3b';
+        ctx.lineWidth = 2 / globalScale;
+        ctx.stroke();
+      } else if (!shouldDim) {
+        ctx.strokeStyle = 'rgba(0,0,0,0.12)';
+        ctx.lineWidth = 0.4 / globalScale;
+        ctx.stroke();
+      }
+
+      // Label - show more labels in focused view since fewer nodes
+      const showLabel = !shouldDim && (
+        isFocus ||
+        isHovered ||
+        isNeighbor ||
+        node._found ||
+        ((deg) > 6 && globalScale > 0.5) ||
+        ((deg) > 2 && globalScale > 0.9) ||
+        globalScale > 1.8
+      );
+
+      if (showLabel) {
+        const fontSize = Math.max(3, ((isFocus ? 14 : isHovered ? 12 : 10) / globalScale));
+        ctx.font = ((isFocus || isHovered) ? 'bold ' : '') + fontSize + 'px Arial';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        const label = node.name || '';
+        const textW = ctx.measureText(label).width;
+        const textH = fontSize;
+        const pad = 1.5 / globalScale;
+        const textY = node.y + size + 2 / globalScale;
+        ctx.fillStyle = isFocus ? 'rgba(255,235,235,0.95)' : 'rgba(255,255,255,0.88)';
+        ctx.fillRect(node.x - textW / 2 - pad, textY - pad, textW + pad * 2, textH + pad * 2);
+        ctx.fillStyle = isFocus ? '#c62828' : (isHovered ? '#0056b3' : '#333');
+        ctx.fillText(label, node.x, textY);
+      }
+
+      ctx.restore();
+    }
+
+    function paintNodeArea(node, color, ctx) {
+      const size = (node._renderedSize || nodeScale * 0.6) + 6;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    // ─── Link accessors ──────────────────────────────────
+    function lSrc(link) { return typeof link.source === 'object' ? link.source.id : link.source; }
+    function lTgt(link) { return typeof link.target === 'object' ? link.target.id : link.target; }
+
+    function linkWidthFn(link) {
+      if (hoveredNode) {
+        const s = lSrc(link), t = lTgt(link);
+        if (s === hoveredNode.id || t === hoveredNode.id) return 2;
+        return 0.1;
+      }
+      if (searchMatches.size > 0) {
+        const s = lSrc(link), t = lTgt(link);
+        if (searchMatches.has(s) || searchMatches.has(t)) return 1.2;
+        return 0.06;
+      }
+      return link._width || 0.6;
+    }
+
+    function linkColorFn(link) {
+      if (hoveredNode) {
+        const s = lSrc(link), t = lTgt(link);
+        if (s === hoveredNode.id || t === hoveredNode.id) return link._color || DEC;
+        return 'rgba(180,180,180,0.04)';
+      }
+      if (searchMatches.size > 0) {
+        const s = lSrc(link), t = lTgt(link);
+        if (searchMatches.has(s) || searchMatches.has(t)) return link._color || DEC;
+        return 'rgba(180,180,180,0.06)';
+      }
+      return link._color || DEC;
+    }
+
+    // ─── Init graph instance ─────────────────────────────
+    function initGraph() {
+      const rect = container.getBoundingClientRect();
+      graph = ForceGraph()(container)
+        .width(rect.width)
+        .height(rect.height)
+        .backgroundColor('#fff')
+        .nodeCanvasObject(renderNode)
+        .nodeCanvasObjectMode(() => 'replace')
+        .nodePointerAreaPaint(paintNodeArea)
+        .linkWidth(linkWidthFn)
+        .linkColor(linkColorFn)
+        .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
+        .cooldownTime(10000)
+        .warmupTicks(60)
+        .d3AlphaDecay(0.028)
+        .d3VelocityDecay(0.35)
+        .autoPauseRedraw(false)
+        .nodeLabel(() => '')
+        .onNodeHover(handleNodeHover)
+        .onNodeClick(handleNodeClick)
+        .onLinkHover(handleLinkHover)
+        .onBackgroundClick(handleBgClick)
+        .enableNodeDrag(true);
+
+      graph.d3Force('charge').strength(-100);
+      graph.d3Force('link').distance(linkDist);
+
+      window.addEventListener('resize', () => {
+        const r = container.getBoundingClientRect();
+        graph.width(r.width).height(r.height);
+      });
+    }
+
+    // ─── Event handlers ──────────────────────────────────
+    function handleNodeHover(node) {
+      hoveredNode = node;
+      neighborSet.clear();
+      container.style.cursor = node ? 'pointer' : 'default';
+      if (node) {
+        neighborSet.add(node.id);
+        const nb = neighborMap[node.id];
+        if (nb) nb.forEach(id => neighborSet.add(id));
+        let html;
+        if (node.nodeType === 'person') {
+          html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
+            + '<i class="fa-solid fa-briefcase"></i> ' + (node.role || 'Individual') + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '')
+            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+        } else {
+          html = '<strong>' + node.name + '</strong>'
+            + (node.isFocus ? '<span class="focus-badge">FOCUS</span>' : '') + '<br/>'
+            + '<i class="fa-solid fa-building"></i> ' + (node.type || '') + '<br/>'
+            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '') + '<br/>'
+            + '<span class="tip-cat" style="background:' + (CC[node.category] || DC) + '30;color:' + (CC[node.category] || DC) + '">' + (node.category || '') + '</span>'
+            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+        }
+        tipEl.innerHTML = html;
+        tipEl.style.display = 'block';
+        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+      } else {
+        tipEl.style.display = 'none';
+      }
+    }
+
+    function handleNodeClick(node) {
+      if (!node) return;
+      if (node.nodeType === 'person') {
+        window.location.href = 'person.html?id=' + encodeURIComponent(node.personId || node.id);
+      } else if (node.isFocus) {
+        // Clicking focus node goes to its entry page
+        window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(node.id);
+      } else {
+        // Clicking other entries opens their focused network
+        window.location.href = 'network.html?id=' + encodeURIComponent(node.id);
+      }
+    }
+
+    function handleLinkHover(link) {
+      if (link) {
+        tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
+          + (link.description ? '<br/>' + link.description : '');
+        tipEl.style.display = 'block';
+        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+      } else if (!hoveredNode) {
+        tipEl.style.display = 'none';
+      }
+    }
+
+    function handleBgClick() {
+      searchMatches.clear();
+      if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
+      document.getElementById('s-count').textContent = '';
+      document.getElementById('s-input').value = '';
+    }
+
+    // ─── Load focused graph ──────────────────────────────
+    function loadGraph() {
+      const depth = document.getElementById('depth-range').value;
+      const ppl = document.getElementById('show-people').checked;
+      const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId) + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
+
+      const ld = document.getElementById('loading');
+      const lt = document.getElementById('ld-text');
+      ld.classList.remove('off');
+      lt.textContent = 'Fetching network data...';
+      document.getElementById('stats').innerHTML = '<b>Loading...</b>';
+
+      fetch(url).then(r => r.json()).then(data => {
+        if (data.error) {
+          lt.textContent = 'Entry not found: ' + focusEntryId;
+          return;
+        }
+        // Update page title
+        const focusName = data.focusName || focusEntryId;
+        document.getElementById('page-title').innerHTML = '<span class="focus-name">' + focusName + '</span> Network';
+        document.getElementById('page-subtitle').textContent = data.nodes.length + ' nodes · ' + data.links.length + ' connections · Depth ' + data.depth;
+        document.title = focusName + ' Network – The Juice Box';
+
+        // Update SEO
+        setSEO(focusName + ' Network', 'Explore the full connection network of ' + focusName + ' – organizations, people, and hidden ties.', 'network.html?id=' + focusEntryId);
+
+        lt.textContent = 'Rendering ' + data.nodes.length + ' nodes...';
+        setTimeout(() => buildGraph(data), 30);
+      }).catch(err => {
+        console.error('Failed to load:', err);
+        lt.textContent = 'Error loading data.';
+      });
+    }
+
+    function buildGraph(data) {
+      const degreeMap = {};
+      data.nodes.forEach(n => { degreeMap[n.id] = 0; });
+      data.links.forEach(l => {
+        degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
+        degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
+      });
+
+      neighborMap = {};
+      data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
+      data.links.forEach(l => {
+        if (neighborMap[l.source]) neighborMap[l.source].add(l.target);
+        if (neighborMap[l.target]) neighborMap[l.target].add(l.source);
+      });
+
+      data.nodes.forEach(n => {
+        n._degree = degreeMap[n.id] || 0;
+        n._color = n.nodeType === 'person' ? PC : (CC[n.category] || DC);
+        n._found = false;
+      });
+
+      data.links.forEach(l => {
+        l._color = EC[l.type] || DEC;
+        l._width = l.type === 'person-affiliation' ? 0.35 : 0.6;
+      });
+
+      // Pre-pin the focus node at center
+      const focusNode = data.nodes.find(n => n.isFocus);
+      if (focusNode) {
+        focusNode.fx = 0;
+        focusNode.fy = 0;
+        focusNodeId = focusNode.id;
+        // Release pin after simulation settles
+        setTimeout(() => { focusNode.fx = undefined; focusNode.fy = undefined; }, 5000);
+      }
+
+      // Stats
+      const entries = data.nodes.filter(n => n.nodeType !== 'person');
+      const people = data.nodes.filter(n => n.nodeType === 'person');
+      document.getElementById('stats').innerHTML =
+        '<b>' + entries.length + '</b> entries · <b>' + people.length + '</b> people · <b>' + data.links.length + '</b> links';
+
+      // Category legend
+      const cats = [...new Set(data.nodes.map(n => n.category))].filter(Boolean).sort();
+      const catB = document.getElementById('cat-b');
+      catB.innerHTML = '';
+      cats.forEach(c => {
+        const r = document.createElement('div'); r.className = 'li';
+        const d = document.createElement('div'); d.className = 'ld';
+        d.style.background = CC[c] || DC;
+        if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
+        r.appendChild(d);
+        r.appendChild(document.createTextNode(c));
+        r.onclick = function() {
+          searchMatches.clear();
+          graph.graphData().nodes.forEach(n => { n._found = false; });
+          graph.graphData().nodes.forEach(n => {
+            if (n.category === c) { n._found = true; searchMatches.add(n.id); }
+          });
+          document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
+          document.getElementById('s-input').value = '';
+          graph.zoomToFit(400, 50, n => n._found);
+        };
+        catB.appendChild(r);
+      });
+
+      // Edge legend
+      const eTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
+      const edgeB = document.getElementById('edge-b');
+      edgeB.innerHTML = '';
+      eTypes.forEach(t => {
+        const r = document.createElement('div'); r.className = 'ei';
+        const l = document.createElement('div'); l.className = 'el';
+        l.style.background = EC[t] || DEC;
+        r.appendChild(l);
+        r.appendChild(document.createTextNode(t));
+        edgeB.appendChild(r);
+      });
+
+      searchMatches.clear();
+      hoveredNode = null;
+      neighborSet.clear();
+
+      if (!graph) initGraph();
+      graph.graphData(data);
+      graph.d3Force('charge').strength(data.nodes.length > 200 ? -80 : -120);
+      graph.d3Force('link').distance(linkDist);
+      graph.d3ReheatSimulation();
+
+      // Zoom to fit after settling
+      setTimeout(() => {
+        document.getElementById('loading').classList.add('off');
+        graph.zoomToFit(600, 40);
+      }, 800);
+    }
+
+    // ─── Controls ────────────────────────────────────────
+    document.getElementById('btn-reload').onclick = loadGraph;
+    document.getElementById('btn-fit').onclick = () => {
+      if (graph) { graph.zoomToFit(400, 40); graph.d3ReheatSimulation(); }
+    };
+    document.getElementById('btn-entry').onclick = () => {
+      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
+    };
+    document.getElementById('show-people').onchange = loadGraph;
+    document.getElementById('depth-range').oninput = function() {
+      document.getElementById('depth-val').textContent = this.value;
+    };
+    document.getElementById('depth-range').onchange = loadGraph;
+    document.getElementById('node-scale').oninput = function() { nodeScale = +this.value; };
+    document.getElementById('link-dist').oninput = function() {
+      linkDist = +this.value;
+      if (graph) { graph.d3Force('link').distance(linkDist); graph.d3ReheatSimulation(); }
+    };
+
+    // ─── Search ──────────────────────────────────────────
+    function doSearch() {
+      const q = document.getElementById('s-input').value.trim().toLowerCase();
+      if (!graph) return;
+      searchMatches.clear();
+      graph.graphData().nodes.forEach(n => { n._found = false; });
+      if (!q) { document.getElementById('s-count').textContent = ''; return; }
+      const matches = graph.graphData().nodes.filter(n => (n.name || '').toLowerCase().includes(q));
+      matches.forEach(n => { n._found = true; searchMatches.add(n.id); });
+      document.getElementById('s-count').textContent = matches.length ? matches.length + ' found' : 'none';
+      if (matches.length) graph.zoomToFit(400, 50, n => n._found);
+    }
+
+    document.getElementById('s-btn').onclick = doSearch;
+    document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
+    document.getElementById('s-input').oninput = function() {
+      if (!this.value.trim()) {
+        searchMatches.clear();
+        if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
+        document.getElementById('s-count').textContent = '';
+      }
+    };
+
+    // ─── Auto-load on page ready ─────────────────────────
+    loadGraph();
+  </script>
+</body>
+</html>
