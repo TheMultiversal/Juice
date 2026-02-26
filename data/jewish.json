@@ -4251,7 +4251,14 @@
         "category": "Advocacy & Political Organizations",
         "founded": 1990,
         "description": "The National Jewish Democratic Council (NJDC) is an American political organization that advocates for Jewish participation in the Democratic Party and promotes Jewish values in progressive policy. Founded in 1990, NJDC serves as the primary voice for Jewish Democrats, working to elect Democratic candidates and promote policies aligned with Jewish values including social justice, support for Israel, separation of church and state, and civil rights. The organization provides information to Jewish voters, organizes political events, and responds to antisemitism from across the political spectrum. NJDC operates in a landscape where approximately 70% of American Jews consistently vote Democratic, making Jewish voters an important Democratic constituency. The organization has been controversial for its partisan nature within a community where some argue Jewish advocacy should be bipartisan, and has clashed with the Republican Jewish Coalition over which party better serves Jewish interests.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "ron-klein",
+            "name": "Ron Klein",
+            "role": "Chair",
+            "bio": "Former U.S. Representative from Florida (2007-2011). Chairs the National Jewish Democratic Council, promoting Jewish participation in the Democratic Party."
+          }
+        ],
         "connections": [
           {
             "name": "Anti-Defamation League (ADL)",
@@ -5007,7 +5014,14 @@
         "founded": 1926,
         "description": "McKinsey & Company is the world's most prestigious management consulting firm, founded in 1926 by James O. McKinsey. While not Jewish-founded, McKinsey has extensive Jewish connections through its leadership, partnership roster, and client relationships. Numerous Jewish partners and directors have shaped the firm. McKinsey has significant Israeli operations and advises Israeli government entities and corporations. The firm has been involved in major controversies: advising Purdue Pharma on strategies to \"turbocharge\" OxyContin sales during the opioid epidemic (settling for $600 million), advising authoritarian governments including Saudi Arabia (allegedly identifying dissidents), advising ICE on immigration enforcement, and its role in consulting for companies involved in unethical practices. Former McKinsey managing directors include Pete Buttigieg and many other prominent political figures. The firm values extreme secrecy about its client relationships.",
         "website": "https://www.mckinsey.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "bob-sternfels",
+            "name": "Bob Sternfels",
+            "role": "Global Managing Partner",
+            "bio": "American business consultant. Global Managing Partner of McKinsey & Company since 2021. Leads one of the most influential management consulting firms in the world."
+          }
+        ],
         "connections": [
           {
             "name": "Israeli operations",
@@ -5158,7 +5172,14 @@
         "founded": 1892,
         "description": "The American Jewish Historical Society (AJHS) is the oldest ethnic and cultural archive in the United States, founded in 1892. AJHS collects, preserves, and provides access to the history of Jews in America, documenting over 350 years of Jewish life on the American continent. As the nation's oldest cultural archive of any ethnic group, AJHS predates most other immigrant heritage organizations by decades, reflecting the deep roots of Jewish community organization in America. The society's collections include millions of documents, photographs, and artifacts spanning from the earliest Jewish arrivals in New Amsterdam (1654) to the present. Holdings include papers from Emma Lazarus (who wrote the poem on the Statue of Liberty), records of Jewish labor movements, and documentation of anti-Semitism in America. AJHS relocated from Brandeis University to the Center for Jewish History in Manhattan in 2000.",
         "website": "https://ajhs.org/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "rachel-lithgow",
+            "name": "Rachel Lithgow",
+            "role": "Executive Director",
+            "bio": "Executive Director of the American Jewish Historical Society, the oldest ethnic historical organization in the United States, founded in 1892."
+          }
+        ],
         "connections": [
           {
             "name": "Yad Vashem",
@@ -6888,7 +6909,14 @@
         "founded": 1849,
         "description": "Davis Polk & Wardwell is one of the most elite and oldest law firms in the United States, founded in 1849 in New York City. The firm has historically served as counsel to JPMorgan and Morgan Stanley and handles the most complex corporate transactions and regulatory matters. While Davis Polk was historically one of the \"white-shoe\" firms that excluded Jews from partnership for much of the 20th century, it transformed dramatically and has since had numerous Jewish partners and leaders. The firm now represents major Israeli companies in US capital markets transactions and M&A deals. Davis Polk's transformation from an exclusionary institution to one with significant Jewish leadership mirrors the broader evolution of elite American institutions. The firm acts as counsel to major banks and is involved in virtually every major Wall Street transaction.",
         "website": "https://www.davispolk.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "neil-barr",
+            "name": "Neil Barr",
+            "role": "Managing Partner",
+            "bio": "American attorney. Managing partner of Davis Polk & Wardwell LLP, one of America's oldest and most prestigious law firms. Major white-collar defense and securities practice."
+          }
+        ],
         "connections": [
           {
             "name": "JPMorgan Chase",
@@ -7066,7 +7094,14 @@
         "founded": 1963,
         "description": "Boston Consulting Group (BCG) is one of the \"Big Three\" management consulting firms, founded in 1963 by Bruce Henderson. BCG has significant Jewish connections through its leadership and partnership roster. The firm's Israeli operations are extensive: BCG operates a major office in Tel Aviv and has been a key advisor to Israeli government innovation programs and major Israeli technology companies. Rich Lesser, who served as CEO from 2013 to 2021, and current CEO Christoph Schweizer have expanded the firm's technology and digital transformation practice. BCG is known for creating the \"growth-share matrix\" (BCG Matrix). Like other major consulting firms, BCG has faced criticism for advising governments and corporations on controversial strategies, and for the demanding work culture that has led to debates about work-life balance in consulting.",
         "website": "https://www.bcg.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "christoph-schweizer",
+            "name": "Christoph Schweizer",
+            "role": "CEO",
+            "bio": "German business consultant. CEO of Boston Consulting Group since 2021. Leads one of the three \"Big Three\" management consulting firms (MBB)."
+          }
+        ],
         "connections": [
           {
             "name": "BCG Tel Aviv",
@@ -18348,7 +18383,14 @@
         "description": "The American Israel Education Foundation (AIEF) is a charitable organization affiliated with AIPAC that provides educational trips to Israel for US members of Congress and other political leaders. Nearly every member of Congress has participated in an AIEF-sponsored trip to Israel at some point in their career, making it one of the most significant programs shaping US political understanding of Israel.",
         "website": "https://www.aief.org",
         "founded": 1990,
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "jonathan-kessler",
+            "name": "Jonathan Kessler",
+            "role": "Executive Director",
+            "bio": "Executive Director of AIEF, affiliated with AIPAC. Organizes educational trips to Israel for members of Congress and congressional staff."
+          }
+        ],
         "connections": [
           {
             "name": "AIPAC (American Israel Public Affairs Committee)",
@@ -18667,7 +18709,14 @@
         "founded": 2014,
         "description": "Controversial online database that documents individuals and organizations that it claims promote hatred of the United States, Israel, and Jews. Profiles primarily focus on college students and professors involved in BDS and pro-Palestinian activism. Has been criticized for chilling free speech but praised for monitoring antisemitism on campuses.",
         "website": "https://canarymission.org/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "canary-mission-anonymous",
+            "name": "Anonymous Founders",
+            "role": "Founders",
+            "bio": "Canary Mission's founders and funders remain anonymous. The organization documents individuals and organizations promoting hatred against the United States, Israel, and Jews, particularly on college campuses."
+          }
+        ],
         "connections": [
           {
             "name": "Anti-Defamation League",
@@ -19921,7 +19970,14 @@
         "founded": 1901,
         "description": "Founded in 1901 at the Fifth Zionist Congress to buy and develop land in Palestine. Has planted 250M+ trees, built 250+ reservoirs. Holds ~13% of Israel's land.",
         "website": "https://www.jnf.org/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "russell-robinson-ind",
+            "name": "Russell Robinson",
+            "role": "CEO, JNF-USA",
+            "bio": "CEO of Jewish National Fund-USA. Leads the U.S. arm of one of the oldest Zionist organizations, focused on land and water development in Israel since 1901."
+          }
+        ],
         "connections": [
           {
             "name": "World Zionist Organization",
@@ -20038,7 +20094,20 @@
         "founded": 1996,
         "description": "Dominant American cable news network. Founded by Rupert Murdoch (News Corp). Highest-rated cable news for 20+ years.",
         "website": "https://www.foxnews.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "rupert-murdoch",
+            "name": "Rupert Murdoch",
+            "role": "Co-Chairman, Fox Corporation / Founder of Fox News",
+            "bio": "Australian-born American media mogul. Founded Fox News in 1996. Built News Corp/21st Century Fox media empire. Significant influence over global media and politics."
+          },
+          {
+            "id": "lachlan-murdoch",
+            "name": "Lachlan Murdoch",
+            "role": "CEO, Fox Corporation",
+            "bio": "Australian-American media executive. Son of Rupert Murdoch. CEO of Fox Corporation since 2019. Oversees Fox News, Fox Sports, and Fox Broadcasting."
+          }
+        ],
         "connections": [
           {
             "name": "Fox Corporation",
@@ -20309,7 +20378,14 @@
         "category": "Government",
         "founded": 1975,
         "description": "The Metropolitan Correctional Center, New York was a United States federal administrative detention facility in the Civic Center neighborhood of Manhattan. It is where Jeffrey Epstein was found dead in his cell on August 10, 2019, while awaiting trial on sex trafficking charges. His death was officially ruled a suicide by hanging, but the circumstances have generated widespread skepticism: both guards assigned to his unit had fallen asleep and falsified records, surveillance cameras near his cell malfunctioned, and he had been removed from suicide watch just days prior despite a previous attempt. The facility was closed in 2021 due to deplorable conditions documented by inspectors. The MCC also housed other high-profile inmates including El Chapo and Bernie Madoff.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "warden-lamine-ndiaye",
+            "name": "Lamine N'Diaye",
+            "role": "Warden (2019)",
+            "bio": "Warden of the Metropolitan Correctional Center when Epstein died. Facility under scrutiny for broken cameras and sleeping guards."
+          }
+        ],
         "connections": [
           {
             "name": "Jeffrey Epstein Network",
@@ -20493,6 +20569,24 @@
             "type": "philanthropy",
             "description": "Clinton and Gates foundations partnered on global health. Both connected to Epstein.",
             "entryId": "bill-gates-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre described seeing Clinton on Epstein's island. Clinton denied all allegations.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "social",
+            "description": "Clinton and Trump had social relationship before political rivalry. Both Mar-a-Lago attendees and Epstein associates.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "political",
+            "description": "Weinstein was major Clinton fundraiser and Democratic donor. Both independently connected to Epstein.",
+            "entryId": "harvey-weinstein-connections"
           }
         ]
       },
@@ -20558,6 +20652,18 @@
             "type": "related",
             "description": "Giuffre was recruited from Trump's Mar-a-Lago resort by Maxwell.",
             "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "related",
+            "description": "Both faced sexual misconduct allegations. Both in overlapping New York social circles.",
+            "entryId": "harvey-weinstein-connections"
+          },
+          {
+            "name": "Lesley Groff",
+            "type": "related",
+            "description": "Groff managed Epstein's operations including in Palm Beach where Trump's Mar-a-Lago is located.",
+            "entryId": "leslie-groff-connections"
           }
         ]
       },
@@ -21095,6 +21201,12 @@
             "type": "industry",
             "description": "Epstein used Victoria's Secret brand as a recruiting tool; Brunel operated in the same modeling space.",
             "entryId": "jean-luc-brunel-mc2"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre described being brought to Wexner's Ohio estate by Epstein and Maxwell.",
+            "entryId": "victoria-giuffre"
           }
         ]
       },
@@ -21276,6 +21388,18 @@
             "type": "social",
             "description": "Overlapping social circles in Epstein's network of wealthy associates.",
             "entryId": "les-wexner-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Giuffre alleged she was directed to have sex with Dubin. He denied allegations.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Dubin visited Epstein's island on multiple occasions according to flight logs and testimony.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -21318,6 +21442,18 @@
             "type": "social",
             "description": "Staley was connected to both Epstein and Maxwell through social and business circles.",
             "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Staley was among high-profile Epstein associates. His extensive emails with Epstein post-conviction raised victim concerns.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Staley visited Epstein's island. One of the most frequent high-profile visitors.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -21402,6 +21538,30 @@
             "type": "legal",
             "description": "Dershowitz represented both Epstein and consulted with Weinstein's legal team.",
             "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "political",
+            "description": "Weinstein was a major Democratic donor. Trump mentioned him during 2016 campaign. Both faced sexual misconduct allegations.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Bill Clinton",
+            "type": "political",
+            "description": "Weinstein was a major Clinton/Democratic fundraiser. Donated to Clinton campaigns and Clinton Foundation.",
+            "entryId": "bill-clinton-connections"
+          },
+          {
+            "name": "David Boies / Boies Schiller Flexner",
+            "type": "legal",
+            "description": "Boies represented Weinstein. Deployed private intelligence firm Black Cube to investigate and intimidate Weinstein accusers.",
+            "entryId": "david-boies-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Same legal ecosystem - Boies represented Giuffre against Maxwell while simultaneously representing Weinstein.",
+            "entryId": "victoria-giuffre"
           }
         ]
       },
@@ -21438,6 +21598,24 @@
             "type": "political",
             "description": "Both connected to Israeli political and defense establishments.",
             "entryId": "ehud-barak-connections"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "social",
+            "description": "Both in overlapping New York high-society circles. Kissinger attended events where Maxwell was present.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Bill Clinton",
+            "type": "political",
+            "description": "Kissinger advised multiple presidents including consulting with Clinton on foreign policy matters.",
+            "entryId": "bill-clinton-connections"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "political",
+            "description": "Kissinger met with and advised Trump on foreign policy. Visited Trump in the White House.",
+            "entryId": "donald-trump-connections"
           }
         ]
       },
@@ -21474,6 +21652,18 @@
             "type": "member",
             "description": "Member of CFR, overlapping with Epstein's CFR connections.",
             "entryId": "council-on-foreign-relations-cfr"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "social",
+            "description": "Both prominent New York real estate/media figures in overlapping social circles.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Bill Clinton",
+            "type": "political",
+            "description": "Zuckerman was a prominent Democratic supporter. Both Clinton and Zuckerman independently connected to Epstein.",
+            "entryId": "bill-clinton-connections"
           }
         ]
       },
@@ -21510,6 +21700,24 @@
             "type": "institutional",
             "description": "Both connected to MIT. Chomsky as long-time professor, Epstein as controversial donor.",
             "entryId": "mit-media-lab"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "related",
+            "description": "Admitted meeting with Epstein but said Maxwell was sometimes present at gatherings he attended.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Harvard University",
+            "type": "academic",
+            "description": "Chomsky has lectured at Harvard and is part of the same academic elite circles connected to Epstein network.",
+            "entryId": "harvard-university"
+          },
+          {
+            "name": "Lawrence Krauss",
+            "type": "academic",
+            "description": "Both academics who continued associating with Epstein after his conviction. Both defended the visits as intellectual.",
+            "entryId": "lawrence-krauss-connections"
           }
         ]
       },
@@ -21546,6 +21754,24 @@
             "type": "academic",
             "description": "Krauss worked with Harvard-connected scientists who also received Epstein funding.",
             "entryId": "harvard-university"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "related",
+            "description": "Maxwell was present at events Krauss attended at Epstein's properties.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Noam Chomsky",
+            "type": "academic",
+            "description": "Both academics who visited Epstein after conviction and were criticized for it.",
+            "entryId": "noam-chomsky-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "related",
+            "description": "Krauss visited Epstein on his island and appeared in photos with Epstein and others.",
+            "entryId": "epstein-vi-properties"
           }
         ]
       },
@@ -21696,6 +21922,12 @@
             "type": "legal",
             "description": "Both Vance's office and SDNY handled aspects of the Epstein prosecution at different times.",
             "entryId": "sdny"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Vance's office oversaw Epstein's lenient sex offender status in NYC. Victims criticized the downgrade from Level 3 to Level 1.",
+            "entryId": "victoria-giuffre"
           }
         ]
       },
@@ -21945,6 +22177,18 @@
             "type": "social",
             "description": "Flew together on Epstein's jet to Africa in 2002 with Chris Tucker.",
             "entryId": "bill-clinton-connections"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Spacey appeared in photos on Epstein's jet. Giuffre described seeing celebrities in Epstein's orbit.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "social",
+            "description": "Spacey and Prince Andrew were photographed together at Buckingham Palace. Both connected to Epstein.",
+            "entryId": "prince-andrew"
           }
         ]
       },
@@ -22124,7 +22368,14 @@
         "category": "Political",
         "founded": 1927,
         "description": "Mar-a-Lago is a private members-only club and estate in Palm Beach, Florida, owned by Donald Trump since 1985. Built in 1927 by cereal heiress Marjorie Merriweather Post, the 128-room mansion sits on 17 acres. Trump converted it to a private club in 1995. Mar-a-Lago is a critical location in the Epstein scandal: Virginia Giuffre was working as a locker room attendant at the club's spa in 1999 when she was recruited by Ghislaine Maxwell to \"work\" for Jeffrey Epstein. Giuffre has described being approached by Maxwell at the club at age 16. Trump and Epstein were both members of Palm Beach social circles, and Epstein was a member of Mar-a-Lago before Trump reportedly had him banned (the timeline and reasons for this ban are disputed). After the Epstein scandal broke, Trump said he had a \"falling out\" with Epstein and barred him from the club. Mar-a-Lago later became Trump's primary residence and post-presidential office, and was the site of the FBI's 2022 search for classified documents.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "bernd-lembcke",
+            "name": "Bernd Lembcke",
+            "role": "Club Manager",
+            "bio": "Long-serving manager of Mar-a-Lago who oversaw the private club's daily operations during the period when Virginia Giuffre was recruited at the spa."
+          }
+        ],
         "connections": [
           {
             "name": "Donald Trump",
@@ -22991,7 +23242,14 @@
         "founded": 1945,
         "description": "ZIM Integrated Shipping Services is Israel's largest cargo shipping company and one of the top 10 container shipping lines in the world. Founded in 1945, before Israeli independence, by the Jewish Agency and the Histadrut labor federation to provide maritime transport for Jewish immigration to Palestine (Aliyah). The company's name is an acronym for \"Zim Yisrael Navigation.\" ZIM played a crucial role in bringing Holocaust survivors and Jewish refugees to Israel during and after the 1948 War of Independence. The company went public on the NYSE in 2021 during the shipping boom, with its stock price surging dramatically during the COVID-era supply chain crisis. ZIM has been controversial as a target of BDS campaigns - its ships and port operations have been protested by pro-Palestinian activists worldwide, particularly at the Port of Oakland. The company has also faced environmental criticism over shipping emissions.",
         "website": "https://www.zim.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "eli-glickman",
+            "name": "Eli Glickman",
+            "role": "President & CEO",
+            "bio": "Israeli business executive. President and CEO of ZIM Integrated Shipping Services, Israel's largest shipping company. Led ZIM's successful IPO on the New York Stock Exchange in 2021."
+          }
+        ],
         "connections": [
           {
             "name": "Jewish Agency",
@@ -29272,7 +29530,14 @@
         "founded": 1929,
         "description": "Unilever is a British-Dutch multinational consumer goods company and one of the world's largest, with brands including Dove, Ben & Jerry's, Hellmann's, Lipton, and Vaseline. Unilever's Jewish connections include the significant involvement of Jewish financiers in the original Margarine Unie merger that created the company, and its extensive Israeli operations under Ben & Jerry's and other brands. The company faced a major Israel-related controversy in 2021 when Ben & Jerry's (founded by Jewish Americans Ben Cohen and Jerry Greenfield) announced it would stop selling ice cream in Israeli settlements in the occupied West Bank, leading to boycott threats, lawsuits from US states with anti-BDS laws, and ultimately Unilever selling Ben & Jerry's Israeli operations to a local licensee against the founders' wishes. This incident became a landmark case in the intersection of corporate social responsibility, the BDS movement, and anti-BDS legislation.",
         "website": "https://www.unilever.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "hein-schumacher",
+            "name": "Hein Schumacher",
+            "role": "CEO (since 2023)",
+            "bio": "Dutch business executive. CEO of Unilever since July 2023. Previously CEO of FrieslandCampina. Oversees one of the world's largest consumer goods companies with brands like Dove, Ben & Jerry's, and Knorr."
+          }
+        ],
         "connections": [
           {
             "name": "Ben & Jerry's",
@@ -29441,7 +29706,14 @@
         "category": "Heritage & Memorials",
         "founded": 2000,
         "description": "The Holocaust Exhibition at the Imperial War Museum in London is one of the most comprehensive and visited Holocaust exhibitions in the world outside Israel and the United States. Opened in 2000, it uses two floors of the museum to tell the story of European Jewish persecution and mass murder through artifacts, documents, film footage, survivor testimonies, and immersive displays. The exhibition traces the rise of antisemitism, Nazi persecution, the implementation of the \"Final Solution,\" and liberation. Over 15 million people have visited since its opening. The IWM also holds significant archives related to the Holocaust and British liberation of concentration camps, including Bergen-Belsen. The exhibition was developed in consultation with Holocaust survivors living in Britain.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "john-brown-iwm",
+            "name": "Sir John Brown",
+            "role": "Chair, Imperial War Museum (2017-2024)",
+            "bio": "British business executive and museum leader. Chairman of the Imperial War Museum, which houses major Holocaust exhibitions and archives in London."
+          }
+        ],
         "connections": [
           {
             "name": "Yad Vashem",
@@ -31503,6 +31775,24 @@
             "type": "industry",
             "description": "Both in the modeling world during the same era when Brunel operated with Epstein funding.",
             "entryId": "jean-luc-brunel-mc2"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "related",
+            "description": "Campbell was in Epstein's social orbit. Giuffre described encounters with celebrities at Epstein properties.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "social",
+            "description": "Campbell and Prince Andrew moved in the same social circles and both connected to Epstein network.",
+            "entryId": "prince-andrew"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "industry",
+            "description": "Both in fashion/entertainment circles. Both connected to Epstein network.",
+            "entryId": "harvey-weinstein-connections"
           }
         ]
       },
@@ -31904,7 +32194,14 @@
         "category": "Entertainment & Media",
         "founded": 1981,
         "description": "Radio Shalom is a Jewish community radio station broadcasting in Paris, France, serving the largest Jewish community in Europe (approximately 450,000-500,000 people). Founded in 1981 following France's legalization of free radio, Radio Shalom was among the first Jewish radio stations in Europe. Broadcasting in French and Hebrew, it covers Jewish culture, Israeli news, French Jewish community affairs, and combats antisemitism through media. France's Jewish community - the third-largest in the world - has faced a dramatic rise in antisemitism since the early 2000s, with violent attacks including the 2012 Toulouse school shooting, the 2015 Hyper Cacher supermarket siege (linked to the Charlie Hebdo attack), and the 2017 murder of Sarah Halimi. Radio Shalom reports on these events and the growing Jewish emigration from France (aliyah) to Israel, with tens of thousands of French Jews relocating since 2000.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "edmond-elmaleh",
+            "name": "Edmond El Maleh",
+            "role": "Director",
+            "bio": "Director of Radio Shalom, a French Jewish community radio station broadcasting in Paris, providing news, culture, and religious content to the French Jewish community."
+          }
+        ],
         "connections": [
           {
             "name": "NBCUniversal",
@@ -33084,7 +33381,14 @@
         "founded": 1944,
         "description": "Umbrella organization of French Jewry, the largest in Europe (~500,000). Founded 1944 during French Resistance. Annual dinner attended by the French president.",
         "website": "https://www.crif.org/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "yonathan-arfi-ind",
+            "name": "Yonathan Arfi",
+            "role": "President",
+            "bio": "Lawyer and political scientist. President of CRIF since 2022, the main umbrella body representing Jewish institutions in France."
+          }
+        ],
         "connections": [
           {
             "name": "French Government",
@@ -36216,7 +36520,14 @@
         "founded": 1998,
         "description": "The SA Jewish Report is the leading Jewish community newspaper in South Africa, covering news, politics, culture, and Israel-related issues relevant to the South African Jewish community (~50,000 members). Published since the 1990s, it serves one of the most organized and tight-knit Jewish diasporas in the world. South African Jewry has a unique history: the community was overwhelmingly Litvak (Lithuanian Jewish) in origin and produced a disproportionate number of anti-apartheid activists, including Joe Slovo, Ruth First, and Helen Suzman. The SA Jewish Report covers the complex relationship between Jews and post-apartheid South Africa, including the ANC government's increasingly critical stance toward Israel, the BDS movement's strong presence in South Africa, and debates about whether Jewish anti-apartheid activists' legacy aligns with support for or criticism of Israel. The community has seen significant emigration to Israel, Australia, and other countries.",
         "website": "https://www.sajr.co.za/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "howard-feldman",
+            "name": "Howard Feldman",
+            "role": "Editor",
+            "bio": "South African journalist. Editor of the SA Jewish Report, South Africa's leading Jewish community newspaper serving the estimated 50,000-strong Jewish community."
+          }
+        ],
         "connections": [
           {
             "name": "NBCUniversal",
@@ -36465,7 +36776,14 @@
         "category": "Heritage & Memorials",
         "founded": 1999,
         "description": "The Cape Town Holocaust and Genocide Centre (CTHGC) is Africa's first Holocaust museum, opened in 1999 in Cape Town, South Africa. The museum uniquely connects the Holocaust to the South African experience of apartheid and other genocides including Rwanda, Armenia, and Cambodia. It uses personal testimonies and artifacts from the approximately 500 Holocaust survivors who settled in Cape Town after World War II. The museum serves as a major educational institution, reaching over 30,000 students annually and training teachers across Southern Africa. It is particularly significant in the South African context, where parallels between Nazi racial ideology and apartheid resonate deeply. The museum also addresses contemporary issues of xenophobia, racism, and human rights in South Africa.",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "richard-sobel",
+            "name": "Richard Sobel",
+            "role": "Director",
+            "bio": "Director of the Cape Town Holocaust and Genocide Centre, South Africa's leading Holocaust education institution, featuring permanent exhibitions and educational programs."
+          }
+        ],
         "connections": [
           {
             "name": "Yad Vashem",
@@ -40995,7 +41313,14 @@
         "founded": 1866,
         "description": "Nestlé S.A. is the world's largest food and beverage company by revenue, headquartered in Vevey, Switzerland. Founded in 1866 by Henri Nestlé, a German pharmacist of Swiss nationality. Though Nestlé himself was not Jewish, the company's Jewish connections are extensive: its controversial WWII history (production continued in Nazi Germany, and the company used slave labor during the war), its acquisition of the Israeli food company Osem in 2016 for $950 million, its ongoing operations in Israel, and investment from Jewish-led financial institutions. The company has been one of the most protested corporations in history - the Nestlé boycott over infant formula marketing in developing countries (accused of causing infant deaths by discouraging breastfeeding) has run since the 1970s. Additional controversies include child labor in cocoa supply chains, water privatization (particularly in drought-affected regions), and environmental impact of its packaging. Nestlé has been targeted by BDS for its Israeli operations, though the company maintains its business activities in the country.",
         "website": "https://www.nestle.com/",
-        "individuals": [],
+        "individuals": [
+          {
+            "id": "mark-schneider-nestle",
+            "name": "Mark Schneider",
+            "role": "CEO",
+            "bio": "German-American business executive. CEO of Nestle since 2017. Leads the world's largest food and beverage company with annual revenues exceeding $95 billion and operations in 188 countries."
+          }
+        ],
         "connections": [
           {
             "name": "Osem",
