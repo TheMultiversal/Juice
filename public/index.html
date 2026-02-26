@@ -195,7 +195,7 @@
       <div class="hero-stat"><span class="num" id="stat-people">...</span><span class="label">People</span></div>
       <div class="hero-stat"><span class="num" id="stat-connections">...</span><span class="label">Connections</span></div>
       <div class="hero-stat"><span class="num" id="stat-categories">...</span><span class="label">Categories</span></div>
-      <div class="hero-stat"><span class="num" id="stat-users">...</span><span class="label">Site Visitors</span></div>
+      <div class="hero-stat"><span class="num" id="stat-users">...</span><span class="label">Current Site Visitors</span></div>
     </div>
     <div class="quick-search">
       <input type="text" id="hero-search" placeholder="Search organizations, people, connections..." />
@@ -270,76 +270,86 @@
     });
     setSEO({ title: 'The Juice Box - Jewish Organizations Intelligence Database', description: 'Explore 1,255+ Jewish organizations across 118 countries with 1,240 tracked people, 5,356 connections, and interactive analytics, maps, and network graphs.' });
 
-    // Deterministic visitor counter -- same number worldwide at any given moment.
-    // Based purely on UTC clock: no localStorage, no randomness.
-    // Growth: ~5000/day base + 12/day acceleration. Time-of-day traffic curve.
+    // Live "Current Site Visitors" counter - realistic fluctuating concurrent users.
+    // Deterministic base from UTC clock so all visitors see the same number,
+    // with small random walk layered on top for natural-feeling live movement.
     (function startUserCounter() {
-      const el = document.getElementById('stat-users');
+      var el = document.getElementById('stat-users');
       if (!el) return;
 
-      // Site "launch" epoch: Dec 1 2025 00:00 UTC
-      const EPOCH = Date.UTC(2025, 11, 1);
-
-      // Deterministic hash: same input always produces same output
+      // Deterministic hash (same input -> same output everywhere)
       function hash(n) {
         var x = Math.sin(n * 127.1 + 311.7) * 43758.5453;
         return x - Math.floor(x);
       }
 
-      // Traffic shape: fraction of daily visitors that have arrived by hour h (0-24 UTC)
-      // Peak ~15:00 UTC (US morning + EU afternoon), valley ~04:00 UTC
-      function trafficFrac(h) {
-        var uniform = h / 24;
-        var sine = 0.35 / (2 * Math.PI) * (
-          -Math.cos(2 * Math.PI * (h - 9) / 24) + Math.cos(2 * Math.PI * (-9) / 24)
-        );
-        return Math.max(0, Math.min(1, uniform + sine));
+      // Base concurrent users by hour of day (UTC).
+      // Peak ~15:00 UTC (US morning + EU afternoon), trough ~05:00 UTC.
+      // Range roughly 800-3400 to feel like a busy, well-known site.
+      function baseByHour(h) {
+        // Sinusoidal traffic curve: min ~800, max ~3400
+        var mid = 2100, amp = 1300;
+        return mid + amp * Math.sin(Math.PI * (h - 5) / 12 - Math.PI / 2);
       }
 
-      function getCount(now) {
-        var ms = now - EPOCH;
-        if (ms <= 0) return 1017;
+      // Get the deterministic "base" for the current moment
+      function getBase(now) {
+        var d = new Date(now);
+        var h = d.getUTCHours() + d.getUTCMinutes() / 60 + d.getUTCSeconds() / 3600;
+        var base = baseByHour(h);
 
-        var fullDays = Math.floor(ms / 86400000);
-        var hourInDay = (ms % 86400000) / 3600000;
+        // Weekend gets ~75% traffic
+        var dow = d.getUTCDay();
+        if (dow === 0 || dow === 6) base *= 0.75;
 
-        // Cumulative visitors from all completed days
-        // Day d visitors = 5000 + 12*d
-        // Sum d=0..n-1 of (5000+12d) = 5000n + 6n(n-1)
-        var completed = 5000 * fullDays + 6 * fullDays * Math.max(0, fullDays - 1);
+        // Per-10-second deterministic wobble (+/- 8%) so the number shifts in steps
+        var slot = Math.floor(now / 10000);
+        var wobble = (hash(slot) - 0.5) * 0.16 * base;
 
-        // Today's rate and shaped progress
-        var todayRate = 5000 + 12 * fullDays;
-        // Weekend modifier: Sat/Sun get 82% traffic
-        var dow = new Date(now).getUTCDay();
-        var weekendMod = (dow === 0 || dow === 6) ? 0.82 : 1.0;
-        var todayVisitors = todayRate * weekendMod * trafficFrac(hourInDay);
+        // Per-minute secondary wobble (larger, slower)
+        var mSlot = Math.floor(now / 60000);
+        var wobble2 = (hash(mSlot * 7 + 3) - 0.5) * 0.10 * base;
 
-        // Micro-jitter: per-20-second deterministic wobble (0 to +18), keeps counter lively
-        var slot = Math.floor(ms / 20000);
-        var jitter = hash(slot) * 18;
-
-        return Math.floor(1017 + completed + todayVisitors + jitter);
+        return Math.round(base + wobble + wobble2);
       }
 
-      function fmt(n) {
-        if (n >= 1000000) return (n / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
-        return n.toLocaleString();
-      }
+      // Local random walk adds small per-client jitter so the number
+      // doesn't feel frozen between deterministic ticks
+      var localDrift = 0;
+      var displayed = getBase(Date.now());
+      el.textContent = displayed.toLocaleString();
 
-      var displayed = getCount(Date.now());
-      el.textContent = fmt(displayed);
+      // Fast tick (every 1.5-3.5s) - makes it feel alive
+      function tick() {
+        var now = Date.now();
+        var target = getBase(now);
 
-      // Smooth tick: approach target, never decrease
-      setInterval(function() {
-        var target = getCount(Date.now());
-        if (target > displayed) {
-          var diff = target - displayed;
-          displayed += Math.max(1, Math.ceil(diff * 0.35));
-          if (displayed > target) displayed = target;
+        // Random walk: drift up or down by 1-6
+        var step = Math.ceil(Math.random() * 6);
+        if (Math.random() < 0.5) step = -step;
+        localDrift += step;
+        // Clamp drift so it doesn't wander too far from deterministic base
+        if (localDrift > 40) localDrift = 40;
+        if (localDrift < -40) localDrift = -40;
+        // Gently pull drift back toward 0
+        localDrift *= 0.92;
+
+        var next = Math.max(200, Math.round(target + localDrift));
+
+        // Smooth step toward next value (don't jump instantly)
+        var diff = next - displayed;
+        if (Math.abs(diff) <= 2) {
+          displayed = next;
+        } else {
+          displayed += Math.round(diff * 0.4);
         }
-        el.textContent = fmt(displayed);
-      }, 3000);
+
+        el.textContent = displayed.toLocaleString();
+
+        // Next tick at a random interval for natural feel
+        setTimeout(tick, 1500 + Math.random() * 2000);
+      }
+      setTimeout(tick, 1500 + Math.random() * 2000);
     })();
 
     // Dashboard stats
