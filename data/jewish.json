@@ -361,6 +361,11 @@
             "name": "Rob Bassin",
             "role": "National Political Director",
             "bio": "Oversees AIPAC's political engagement and candidate evaluation."
+          },
+          {
+            "name": "Chuck Schumer",
+            "id": "chuck-schumer",
+            "role": "Key Congressional Ally"
           }
         ],
         "connections": [
@@ -683,7 +688,7 @@
             "bio": "CEO of Blackstone. One of the most influential figures in global finance."
           },
           {
-            "id": "henry-kissinger-cfr",
+            "id": "henry-kissinger",
             "name": "Henry Kissinger",
             "role": "Former Member/Director",
             "bio": "Jewish-German refugee who became US Secretary of State and National Security Advisor. One of the most prominent CFR members. Nobel Peace Prize winner (1973). Died in 2023 at age 100."
@@ -929,7 +934,7 @@
         "website": "https://www.tesla.com/",
         "individuals": [
           {
-            "id": "elon-musk",
+            "id": "elon-musk-ind",
             "name": "Elon Musk",
             "role": "CEO",
             "bio": "CEO of Tesla and SpaceX, owner of X (formerly Twitter). South African-born entrepreneur and world's wealthiest person."
@@ -5082,7 +5087,7 @@
         "description": "iHeartMedia is the largest radio broadcast company in the United States, owning over 860 radio stations and the iHeartRadio digital platform. The company's Jewish connections include its ownership and executive history: it was created from Clear Channel Communications, which was taken private in 2008 by Bain Capital and Thomas H. Lee Partners (co-founded by Thomas H. Lee, a Jewish-American financier). The leveraged buyout loaded the company with $20 billion in debt, leading to its 2018 bankruptcy - one of the largest media bankruptcies in US history. Jewish executives have held key roles in its management. Bob Pittman, the current CEO, rebuilt the company post-bankruptcy. iHeartMedia hosts the iHeartRadio Music Festival and Awards. Controversies include the massive debt from the leveraged buyout, accusations of homogenizing local radio, and the Rush Limbaugh controversy that led to advertiser boycotts.",
         "individuals": [
           {
-            "id": "bob-pittman-iheart",
+            "id": "bob-pittman",
             "name": "Bob Pittman",
             "role": "Chairman & CEO",
             "bio": "Media executive who co-founded MTV and now leads iHeartMedia. Navigated the company through bankruptcy and rebuilt it as a multimedia platform."
@@ -7808,6 +7813,11 @@
             "role": "President & COO",
             "bio": "Jewish president and COO of Blackstone.",
             "id": "jonathan-gray"
+          },
+          {
+            "name": "Steve Schwarzman",
+            "id": "steve-schwarzman",
+            "role": "Co-Founder, Chairman & CEO"
           }
         ],
         "id": "the-blackstone-group",
@@ -10048,7 +10058,7 @@
             "name": "Katharine Graham",
             "bio": "Legendary publisher of The Washington Post (Jewish), oversaw publication of the Pentagon Papers and Watergate coverage. First female Fortune 500 CEO.",
             "role": "Former Publisher",
-            "id": "katharine-graham"
+            "id": "katharine-graham-wp"
           }
         ],
         "id": "the-washington-post",
@@ -12312,6 +12322,11 @@
             "role": "GM of Annapurna Labs Israel",
             "bio": "Israeli GM leading Amazon's Annapurna Labs chip development.",
             "id": "navot-volk"
+          },
+          {
+            "name": "Jeff Bezos",
+            "id": "jeff-bezos",
+            "role": "Founder"
           }
         ],
         "id": "amazon-israel-r-d",
@@ -13291,6 +13306,11 @@
             "name": "Jonathan Gray",
             "role": "President & COO",
             "bio": "President and COO of Blackstone, widely seen as Schwarzman's successor. Oversees the firm's $300+ billion real estate portfolio."
+          },
+          {
+            "name": "Steve Schwarzman",
+            "id": "steve-schwarzman",
+            "role": "Co-Founder, Chairman & CEO"
           }
         ],
         "connections": [
@@ -14054,12 +14074,6 @@
             "role": "Founder (1829-1902)",
             "bio": "German-American businessman who founded Levi Strauss & Co.",
             "id": "levi-strauss"
-          },
-          {
-            "id": "levi-strauss-founder",
-            "name": "Levi Strauss",
-            "role": "Founder",
-            "bio": "Founder of Levi Strauss & Co. Bavarian Jewish immigrant who created blue jeans during the California Gold Rush."
           }
         ],
         "id": "levi-strauss-co",
@@ -18443,7 +18457,7 @@
         "founded": 2001,
         "individuals": [
           {
-            "id": "david-siegel-twosigma",
+            "id": "david-siegel",
             "name": "David Siegel",
             "role": "Co-Founder & Co-Chairman",
             "bio": "Co-founder and Co-Chairman of Two Sigma. Computer scientist and entrepreneur."
@@ -19052,7 +19066,7 @@
         "founded": 1977,
         "individuals": [
           {
-            "id": "paul-singer-elliott",
+            "id": "paul-singer",
             "name": "Paul Singer",
             "role": "Founder & Co-CEO",
             "bio": "Founder of Elliott Management. Major Republican donor and influential political figure."
@@ -19339,6 +19353,11 @@
           {
             "name": "Rupert Murdoch",
             "role": "Chairman Emeritus"
+          },
+          {
+            "name": "Rupert Murdoch",
+            "id": "rupert-murdoch",
+            "role": "Founder & Chairman Emeritus"
           }
         ],
         "connections": [
@@ -19712,7 +19731,7 @@
             "name": "Elon Musk",
             "role": "Founder & CEO",
             "bio": "South African-born American billionaire, founder of SpaceX, CEO of Tesla, and one of the wealthiest people in history.",
-            "id": "elon-musk"
+            "id": "elon-musk-ind"
           }
         ],
         "connections": [
@@ -20269,7 +20288,7 @@
         "website": "https://www.nytimes.com/",
         "individuals": [
           {
-            "id": "ag-sulzberger",
+            "id": "a-g-sulzberger",
             "name": "A.G. Sulzberger",
             "role": "Publisher & Chairman",
             "bio": "Fifth generation Ochs-Sulzberger to run the Times."
@@ -20969,7 +20988,7 @@
         "description": "William Jefferson Clinton served as the 42nd President of the United States from 1993 to 2001. Flight logs from Epstein private jet (the \"Lolita Express\") show Clinton flew on the aircraft at least 26 times. Clinton has acknowledged knowing Epstein but denied knowledge of criminal activity. Virginia Giuffre, a key Epstein accuser, stated she saw Clinton on Little Saint James island, though Clinton denied visiting. The Clinton Foundation received a $25,000 donation from Epstein in 1995. After Epstein arrest in 2019, Clinton issued a statement saying he knew \"nothing about the terrible crimes\" Epstein was charged with. The association has been a persistent subject of public scrutiny and media investigation.",
         "individuals": [
           {
-            "id": "bill-clinton-ind",
+            "id": "bill-clinton-individual",
             "name": "Bill Clinton",
             "role": "42nd President of the United States (1993-2001)",
             "bio": "William Jefferson Clinton served as the 42nd President. Flew on Epstein's jet 26+ times. Epstein donated to Clinton Foundation. Visited Epstein's island per crew testimony."
@@ -21680,7 +21699,7 @@
         "description": "Leslie Herbert Wexner is an American billionaire businessman, the founder and former CEO of L Brands (now Bath and Body Works). He is the most significant financial figure in the Epstein network. Wexner was Epstein primary patron, granting him sweeping power of attorney over his personal finances, real estate holdings, and business affairs. Wexner transferred his 71st Street Manhattan townhouse (later valued at $77 million) to Epstein under unclear circumstances. Epstein managed the Wexner Foundation and had close ties to Wexner family. In 2019, Wexner claimed Epstein had misappropriated vast sums of his wealth, though the full extent remains unclear. The relationship between Wexner and Epstein began in the mid-1980s and was the foundation upon which Epstein built his financial credibility and social network.",
         "individuals": [
           {
-            "id": "leslie-wexner-ind",
+            "id": "leslie-wexner",
             "name": "Leslie Wexner",
             "role": "Founder & Former CEO, L Brands",
             "bio": "American billionaire. Founded L Brands (Victoria's Secret, Bath & Body Works). Only known major client of Epstein. Gave Epstein power of attorney, transferred $77M townhouse, and allowed Epstein to manage Wexner Foundation funds."
@@ -23408,6 +23427,11 @@
           {
             "name": "Jeff Bezos",
             "role": "Founder and Executive Chairman"
+          },
+          {
+            "name": "Jeff Bezos",
+            "id": "jeff-bezos",
+            "role": "Founder & Executive Chairman"
           }
         ],
         "connections": [
@@ -23496,6 +23520,237 @@
           {
             "target": "bloomberg-lp",
             "relationship": "Fellow major American news organization"
+          }
+        ]
+      },
+      {
+        "id": "epstein-network",
+        "name": "The Epstein Network",
+        "category": "Controversy",
+        "summary": "The network of associates, enablers, and connected individuals surrounding Jeffrey Epstein and Ghislaine Maxwell. This entry maps the documented connections between Epstein and prominent figures across finance, politics, technology, media, academia, and royalty. Connections are based on flight logs, court documents, Epstein's black book, financial records, deposition testimony, and investigative journalism.",
+        "website": "",
+        "connections": [
+          {
+            "source": "epstein-network",
+            "target": "wexner-foundation",
+            "type": "Financial – Wexner was Epstein's only known major client"
+          },
+          {
+            "source": "epstein-network",
+            "target": "apollo-global",
+            "type": "Financial – Leon Black paid Epstein $158M in advisory fees"
+          },
+          {
+            "source": "epstein-network",
+            "target": "barclays",
+            "type": "Financial – Jes Staley brought Epstein as JP Morgan client"
+          },
+          {
+            "source": "epstein-network",
+            "target": "microsoft",
+            "type": "Technology – Bill Gates met Epstein multiple times post-conviction"
+          }
+        ],
+        "individuals": [
+          {
+            "name": "Jeffrey Epstein",
+            "id": "jeffrey-epstein",
+            "role": "Principal"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "id": "ghislaine-maxwell",
+            "role": "Chief Associate & Convicted Trafficker"
+          },
+          {
+            "name": "Leslie Wexner",
+            "id": "leslie-wexner",
+            "role": "Primary Financial Client"
+          },
+          {
+            "name": "Leon Black",
+            "id": "leon-black",
+            "role": "Financial Associate ($158M in fees)"
+          },
+          {
+            "name": "Bill Gates",
+            "id": "bill-gates",
+            "role": "Post-Conviction Associate"
+          },
+          {
+            "name": "Prince Andrew",
+            "id": "prince-andrew",
+            "role": "Close Associate (settled civil suit)"
+          },
+          {
+            "name": "Ehud Barak",
+            "id": "ehud-barak",
+            "role": "Business Partner (Carbyne)"
+          },
+          {
+            "name": "Alan Dershowitz",
+            "id": "alan-dershowitz-ind",
+            "role": "Legal Advisor & Associate"
+          },
+          {
+            "name": "Bill Clinton",
+            "id": "bill-clinton-individual",
+            "role": "Flight Log Passenger (26+ flights)"
+          },
+          {
+            "name": "Donald Trump",
+            "id": "donald-trump",
+            "role": "Former Social Associate"
+          },
+          {
+            "name": "Jes Staley",
+            "id": "jes-staley",
+            "role": "Banking Associate (1,200+ emails)"
+          },
+          {
+            "name": "Reid Hoffman",
+            "id": "reid-hoffman",
+            "role": "Post-Conviction Meeting Attendee"
+          },
+          {
+            "name": "Steven Pinker",
+            "id": "steven-pinker",
+            "role": "Legal Consultation Provider"
+          },
+          {
+            "name": "Mort Zuckerman",
+            "id": "mort-zuckerman",
+            "role": "Black Book Contact & Social Associate"
+          },
+          {
+            "name": "Glenn Dubin",
+            "id": "glenn-dubin",
+            "role": "Close Friend (20+ years)"
+          },
+          {
+            "name": "Eva Andersson-Dubin",
+            "id": "eva-andersson-dubin",
+            "role": "Former Girlfriend"
+          },
+          {
+            "name": "Peter Mandelson",
+            "id": "peter-mandelson",
+            "role": "Black Book Contact & Associate"
+          },
+          {
+            "name": "Jean-Luc Brunel",
+            "id": "jean-luc-brunel",
+            "role": "Modeling Agent & Associate (died in custody)"
+          },
+          {
+            "name": "Sarah Kellen",
+            "id": "sarah-kellen",
+            "role": "Personal Scheduler & Alleged Recruiter"
+          },
+          {
+            "name": "Nadia Marcinkova",
+            "id": "nadia-marcinkova",
+            "role": "Victim Turned Associate"
+          },
+          {
+            "name": "Alexander Acosta",
+            "id": "alexander-acosta",
+            "role": "Prosecutor (negotiated plea deal)"
+          },
+          {
+            "name": "Steve Bannon",
+            "id": "steve-bannon",
+            "role": "Post-Arrest Visitor"
+          },
+          {
+            "name": "Joichi Ito",
+            "id": "joichi-ito",
+            "role": "MIT Media Lab (concealed donations)"
+          },
+          {
+            "name": "Lawrence Krauss",
+            "id": "lawrence-krauss",
+            "role": "Academic Associate & Public Defender"
+          },
+          {
+            "name": "George Mitchell",
+            "id": "george-mitchell",
+            "role": "Named in Court Documents"
+          },
+          {
+            "name": "Bill Richardson",
+            "id": "bill-richardson",
+            "role": "Named in Court Documents"
+          },
+          {
+            "name": "Robert Maxwell",
+            "id": "robert-maxwell",
+            "role": "Ghislaine's Father (intelligence ties)"
+          },
+          {
+            "name": "Dennis Hastert",
+            "id": "denny-hastert",
+            "role": "Contact (later convicted of abuse)"
+          },
+          {
+            "name": "Stuart Pivar",
+            "id": "stuart-pivar",
+            "role": "Self-Described Oldest Friend"
+          },
+          {
+            "name": "Lesley Groff",
+            "id": "leslie-groff",
+            "role": "Personal Assistant"
+          },
+          {
+            "name": "Adriana Ross",
+            "id": "adriana-ross",
+            "role": "Inner Circle Associate"
+          },
+          {
+            "name": "Henry Kissinger",
+            "id": "henry-kissinger",
+            "role": "Black Book Contact"
+          },
+          {
+            "name": "Lawrence Summers",
+            "id": "lawrence-summers-harvard",
+            "role": "Academic Contact (Harvard)"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "id": "harvey-weinstein",
+            "role": "Black Book Contact"
+          },
+          {
+            "name": "Naomi Campbell",
+            "id": "naomi-campbell",
+            "role": "Flight Log & Social Circle"
+          },
+          {
+            "name": "Les Moonves",
+            "id": "les-moonves",
+            "role": "Black Book Contact"
+          },
+          {
+            "name": "Elon Musk",
+            "id": "elon-musk-ind",
+            "role": "Photographed at Event 2011"
+          },
+          {
+            "name": "Woody Allen",
+            "id": "woody-allen-ind",
+            "role": "Social Associate"
+          },
+          {
+            "name": "Katie Couric",
+            "id": "katie-couric",
+            "role": "Dinner Attendee (2010)"
+          },
+          {
+            "name": "George Stephanopoulos",
+            "id": "george-stephanopoulos",
+            "role": "Dinner Attendee (2010)"
           }
         ]
       }
@@ -25588,6 +25843,11 @@
             "name": "Yuli Edelstein",
             "bio": "Former Speaker of the Knesset (2013-2020). Born in Ukraine, was a Prisoner of Zion in the Soviet Union before making aliyah. Represented Likud.",
             "id": "yuli-edelstein"
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "id": "benjamin-netanyahu",
+            "role": "Prime Minister"
           }
         ],
         "id": "knesset-israeli-parliament",
@@ -29096,6 +29356,16 @@
             "name": "Gidi Mark",
             "role": "CEO",
             "bio": "CEO of Taglit-Birthright Israel overseeing global operations of the heritage trip program."
+          },
+          {
+            "name": "Charles Bronfman",
+            "id": "charles-bronfman",
+            "role": "Co-Founder"
+          },
+          {
+            "name": "Michael Steinhardt",
+            "id": "michael-steinhardt",
+            "role": "Co-Founder"
           }
         ],
         "connections": [
@@ -29849,6 +30119,11 @@
             "name": "Amir Ohana",
             "role": "Speaker",
             "bio": "Speaker of the Knesset who became the first openly gay person to serve in an Israeli cabinet."
+          },
+          {
+            "name": "Benjamin Netanyahu",
+            "id": "benjamin-netanyahu",
+            "role": "Prime Minister"
           }
         ],
         "connections": [
@@ -30318,7 +30593,7 @@
             "name": "Jack Cohen",
             "role": "Founder (1898-1979)",
             "bio": "British businessman of Jewish-Polish descent who founded Tesco from a market stall in London's East End.",
-            "id": "jack-cohen"
+            "id": "jack-cohen-tesco"
           },
           {
             "id": "ken-murphy",
@@ -30576,12 +30851,6 @@
             "role": "Co-founder (1859-1907)",
             "bio": "Belarusian-Jewish immigrant who co-founded Marks & Spencer.",
             "id": "michael-marks"
-          },
-          {
-            "id": "michael-marks-founder",
-            "name": "Michael Marks",
-            "role": "Co-Founder",
-            "bio": "Co-founder of Marks & Spencer. Jewish immigrant from Slonim, Belarus, who started the business as a market stall in Leeds."
           },
           {
             "id": "simon-marks",
@@ -34065,12 +34334,6 @@
             "role": "Chairman",
             "bio": "Chairman of Rothschild & Co.",
             "id": "david-de-rothschild"
-          },
-          {
-            "id": "david-de-rothschild-fr",
-            "name": "David de Rothschild",
-            "role": "Chairman of Supervisory Board",
-            "bio": "Chairman of the Supervisory Board of Rothschild & Co. Head of the French branch of the Rothschild banking family."
           }
         ],
         "id": "rothschild-co-france",
@@ -36006,7 +36269,7 @@
         "founded": 1899,
         "individuals": [
           {
-            "id": "bruce-flatt-brookfield",
+            "id": "bruce-flatt",
             "name": "Bruce Flatt",
             "role": "CEO",
             "bio": "CEO of Brookfield Asset Management. Often compared to Warren Buffett for his long-term investment approach."
@@ -39676,7 +39939,7 @@
         "founded": 1993,
         "individuals": [
           {
-            "id": "marcelo-mindlin",
+            "id": "marcelo-mindlin-museum",
             "name": "Marcelo Mindlin",
             "role": "Board President",
             "bio": "Argentine businessman and president of the board of Fundacion Memoria del Holocausto. Head of Pampa Energia, Argentina's largest energy company."
@@ -41183,7 +41446,7 @@
         "founded": 1955,
         "individuals": [
           {
-            "id": "sidney-klajner",
+            "id": "sidney-klajner-einstein",
             "name": "Sidney Klajner",
             "role": "President",
             "bio": "President of Hospital Israelita Albert Einstein, a leading physician and hospital administrator."
@@ -41673,7 +41936,7 @@
             "name": "Sarah Cohen",
             "bio": "One of the last surviving Paradesi Jews (White Jews) of Cochin, whose community dates to ancient times in Kerala.",
             "role": "Community Elder",
-            "id": "sarah-cohen"
+            "id": "sarah-cohen-kochi"
           }
         ],
         "id": "paradesi-synagogue-kochi",
@@ -43728,12 +43991,6 @@
         "website": "https://www.weforum.org",
         "founded": 1971,
         "individuals": [
-          {
-            "id": "klaus-schwab-wef",
-            "name": "Klaus Schwab",
-            "role": "Founder & Executive Chairman",
-            "bio": "Founder and Executive Chairman of the World Economic Forum. German economist and engineer."
-          },
           {
             "id": "klaus-schwab",
             "name": "Klaus Schwab",
@@ -50855,7 +51112,7 @@
         "founded": 1878,
         "individuals": [
           {
-            "id": "david-marshall-singapore",
+            "id": "david-marshall",
             "name": "David Marshall",
             "role": "Historic Leader",
             "bio": "Singapore's first Chief Minister (1955-56). Born to a Baghdadi Jewish family. Major figure in Singapore's road to independence."
@@ -50883,7 +51140,7 @@
         "description": "Central body serving Singapore's Jewish community of approximately 2,500 members. Manages communal affairs, welfare services, and cultural programs. Oversees the historic Maghain Aboth Synagogue (1878) and Chesed-El Synagogue (1905), both national monuments.",
         "individuals": [
           {
-            "id": "david-marshall-singapore",
+            "id": "david-marshall",
             "name": "David Marshall",
             "role": "Historical Figure",
             "bio": "Singapore's first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore's path to independence."
@@ -51755,12 +52012,6 @@
             "bio": "Former president of the Jewish Representative Council of Ireland, representing approximately 2,500 Irish Jews.",
             "role": "Former President",
             "id": "maurice-cohen"
-          },
-          {
-            "id": "maurice-cohen-ireland",
-            "name": "Maurice Cohen",
-            "role": "Community Leader",
-            "bio": "Active leader in the Irish Jewish community working to preserve heritage and strengthen community bonds."
           }
         ],
         "id": "jewish-representative-council-of-ireland",
@@ -52516,7 +52767,7 @@
         "description": "Central body for Serbia's approximately 3,000 Jews. Belgrade once had a thriving Jewish population before the Holocaust. The federation operates the Subotica Synagogue (one of Europe's largest), cultural centers, and preserves the memory of Serbian Jewry including the site of the Sajmište concentration camp.",
         "individuals": [
           {
-            "id": "robert-singer-serbia",
+            "id": "robert-singer",
             "name": "Robert Singer",
             "role": "Prominent Figure",
             "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora."
@@ -52844,12 +53095,6 @@
             "name": "Moses Samuels",
             "role": "Caretaker",
             "bio": "Self-appointed caretaker of the Musmeah Yeshua Synagogue (Jewish), one of the last Jews in Myanmar, dedicated decades to preserving the synagogue."
-          },
-          {
-            "id": "moses-samuels-myanmar",
-            "name": "Moses Samuels",
-            "role": "Synagogue Trustee",
-            "bio": "Longtime caretaker and trustee of the Musmeah Yeshua Synagogue, preserving Jewish heritage in Myanmar."
           }
         ],
         "connections": [
@@ -54173,7 +54418,7 @@
             "name": "Aaron Ahomtre Toakyirafa",
             "bio": "Spiritual leader of the House of Israel (Jewish), the practicing Jewish community in Ghana's Sefwi Wiawso area.",
             "role": "Spiritual Leader",
-            "id": "aaron-ahomtre-toakyirafa"
+            "id": "aaron-toakyirafa"
           }
         ],
         "id": "house-of-israel-ghana",
@@ -54356,7 +54601,7 @@
             "name": "Isaac Arazi",
             "bio": "One of the last known remaining Jews in Lebanon, whose family once thrived in Beirut's vibrant Jewish quarter.",
             "role": "Community Remnant",
-            "id": "isaac-arazi"
+            "id": "isaac-arazi-leb"
           }
         ],
         "id": "lebanese-jewish-community-historic",

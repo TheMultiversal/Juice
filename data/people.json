@@ -2287,7 +2287,7 @@
     },
     "leon-black": {
       "name": "Leon Black",
-      "bio": "American billionaire investor. Born 1951 in New York, Jewish family. Co-founded Apollo Global Management. Stepped down as CEO in 2021 after revelation that he had paid Jeffrey Epstein $158 million in advisory fees and charitable donations over several years, even after Epstein's 2008 conviction.",
+      "bio": "American billionaire investor. Co-founder and former CEO of Apollo Global Management. Paid Jeffrey Epstein at least $158 million between 2012 and 2017 for tax and estate planning advice - far exceeding typical advisory fees. Stepped down as Apollo CEO in March 2021 after an internal review of his Epstein ties, though was initially cleared. Later stepped down as chairman in 2022 amid further scrutiny. Born in New York to a Jewish family.",
       "notes": "",
       "affiliations": [
         {
@@ -3137,7 +3137,7 @@
     },
     "charles-bronfman": {
       "name": "Charles Bronfman",
-      "bio": "Jewish-Canadian billionaire philanthropist who co-founded Birthright Israel. Member of the Bronfman family (Seagram's). Has donated hundreds of millions to Jewish causes.",
+      "bio": "Canadian-American businessman and philanthropist. Son of Samuel Bronfman (Seagram's). Co-founder of Birthright Israel with Michael Steinhardt. Founded the Andrea & Charles Bronfman Philanthropies. Former owner of the Montreal Expos.",
       "notes": "",
       "affiliations": [
         {
@@ -3529,25 +3529,6 @@
           "organization": "Marks & Spencer (M&S)",
           "role": "Co-founder (1859-1907)",
           "entryId": "marks-spencer-m-s",
-          "country": "United Kingdom"
-        }
-      ]
-    },
-    "jack-cohen": {
-      "name": "Jack Cohen",
-      "bio": "Founder of Tesco. Son of Polish Jewish immigrants who built the UK's largest grocery chain from a market stall.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Tesco (Jack Cohen legacy)",
-          "role": "Founder (1898-1979)",
-          "entryId": "tesco-jack-cohen-legacy",
-          "country": "United Kingdom"
-        },
-        {
-          "organization": "Tesco",
-          "role": "Founder (1898-1979)",
-          "entryId": "tesco",
           "country": "United Kingdom"
         }
       ]
@@ -3947,7 +3928,7 @@
     },
     "len-blavatnik": {
       "name": "Len Blavatnik",
-      "bio": "Ukrainian-born British-American billionaire, founder of Access Industries, major Jewish philanthropist.",
+      "bio": "Soviet-born British-American billionaire businessman. Founder and chairman of Access Industries. Owner of Warner Music Group. One of the largest donors to Oxford University and other institutions. Born to a Jewish family in Odessa, Ukraine.",
       "notes": "",
       "affiliations": [
         {
@@ -4135,7 +4116,7 @@
     },
     "noam-chomsky": {
       "name": "Noam Chomsky",
-      "bio": "American Jewish linguist, philosopher, and political commentator, often called the \"father of modern linguistics.\" Institute Professor Emeritus at MIT and laureate professor at the University of Arizona. One of the most cited scholars alive and a leading left-wing intellectual.",
+      "bio": "American linguist, philosopher, and political activist. Professor emeritus at MIT. Met with Jeffrey Epstein multiple times, including after his 2008 conviction. Epstein reportedly helped arrange a meeting between Chomsky and former Israeli Prime Minister Ehud Barak. Chomsky acknowledged the meetings but stated they discussed political topics.",
       "notes": "",
       "affiliations": [
         {
@@ -4310,7 +4291,7 @@
     },
     "carl-icahn": {
       "name": "Carl Icahn",
-      "bio": "American billionaire financier. Born 1936 in Far Rockaway, Queens, to a Jewish family. Founder of Icahn Enterprises. One of Wall Street's most famous corporate raiders and activist investors. Net worth approximately $8 billion.",
+      "bio": "American billionaire financier. Founder of Icahn Enterprises. Known as a corporate raider and activist investor. Has taken major positions in companies including TWA, Texaco, and Apple. Born to a Jewish family in Queens, New York.",
       "notes": "",
       "affiliations": [
         {
@@ -7654,7 +7635,7 @@
     },
     "ray-dalio": {
       "name": "Ray Dalio",
-      "bio": "Founder of Bridgewater Associates, the world's largest hedge fund. While not Jewish, Bridgewater has significant Jewish connections in finance.",
+      "bio": "American billionaire investor. Founder of Bridgewater Associates, the world's largest hedge fund. Pioneer of risk parity investing. Author of \"Principles.\" Born to an Italian-American family in Queens, has invested significantly in Israel.",
       "notes": "",
       "affiliations": [
         {
@@ -7791,26 +7772,6 @@
           "role": "Former Publisher",
           "entryId": "the-washington-post",
           "country": "United States"
-        }
-      ]
-    },
-    "katharine-graham": {
-      "name": "Katharine Graham",
-      "bio": "Legendary publisher of The Washington Post (Jewish), oversaw publication of the Pentagon Papers and Watergate coverage. First female Fortune 500 CEO.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "The Washington Post",
-          "role": "Former Publisher",
-          "entryId": "the-washington-post",
-          "country": "United States"
-        },
-        {
-          "organization": "The Washington Post",
-          "role": "Publisher",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "washington-post"
         }
       ]
     },
@@ -8747,7 +8708,7 @@
     },
     "michael-steinhardt": {
       "name": "Michael Steinhardt",
-      "bio": "Co-founder of Birthright Israel (Jewish), legendary hedge fund investor and Jewish philanthropist.",
+      "bio": "American financier and philanthropist. Pioneer hedge fund manager. Co-founder of Birthright Israel with Charles Bronfman. Resigned from multiple Jewish organizational boards in 2019 after allegations of sexual harassment.",
       "notes": "",
       "affiliations": [
         {
@@ -9814,31 +9775,6 @@
         }
       ]
     },
-    "sidney-klajner": {
-      "name": "Sidney Klajner",
-      "bio": "President of Hospital Israelita Albert Einstein. Leading physician and hospital administrator.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Albert Einstein Hospital (Hospital Israelita Albert Einstein)",
-          "role": "President",
-          "entryId": "albert-einstein-hospital-hospital-israelita-albert-einstein",
-          "country": "Brazil"
-        },
-        {
-          "organization": "Albert Einstein Israelite Hospital",
-          "role": "President",
-          "entryId": "albert-einstein-israelite-hospital",
-          "country": "Brazil"
-        },
-        {
-          "organization": "Albert Einstein Hospital",
-          "role": "President",
-          "entryId": "albert-einstein-hospital",
-          "country": "Brazil"
-        }
-      ]
-    },
     "carlos-matayoshi": {
       "name": "Carlos Matayoshi",
       "bio": "President of Clube Hebraica São Paulo, one of the largest Jewish community clubs in Latin America.",
@@ -10055,19 +9991,6 @@
           "organization": "Keneseth Eliyahoo Synagogue",
           "role": "Founder (1844-1916)",
           "entryId": "keneseth-eliyahoo-synagogue",
-          "country": "India"
-        }
-      ]
-    },
-    "sarah-cohen": {
-      "name": "Sarah Cohen",
-      "bio": "One of the last surviving Paradesi Jews (White Jews) of Cochin, whose community dates to ancient times in Kerala.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Paradesi Synagogue (Kochi)",
-          "role": "Community Elder",
-          "entryId": "paradesi-synagogue-kochi",
           "country": "India"
         }
       ]
@@ -11798,19 +11721,6 @@
         }
       ]
     },
-    "aaron-ahomtre-toakyirafa": {
-      "name": "Aaron Ahomtre Toakyirafa",
-      "bio": "Spiritual leader of the House of Israel (Jewish), the practicing Jewish community in Ghana's Sefwi Wiawso area.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "House of Israel Ghana",
-          "role": "Spiritual Leader",
-          "entryId": "house-of-israel-ghana",
-          "country": "Ghana"
-        }
-      ]
-    },
     "magda-haroun": {
       "name": "Magda Haroun",
       "bio": "President of the Egyptian Jewish Community (Jewish), managing affairs for the fewer than 10 remaining Jews in Egypt.",
@@ -11886,19 +11796,6 @@
           "role": "Chairman",
           "entryId": "libyan-jewish-community-historic",
           "country": "Libya"
-        }
-      ]
-    },
-    "isaac-arazi": {
-      "name": "Isaac Arazi",
-      "bio": "One of the last known remaining Jews in Lebanon, whose family once thrived in Beirut's vibrant Jewish quarter.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Lebanese Jewish Community (historic)",
-          "role": "Community Remnant",
-          "entryId": "lebanese-jewish-community-historic",
-          "country": "Lebanon"
         }
       ]
     },
@@ -12841,25 +12738,6 @@
         }
       ]
     },
-    "elon-musk": {
-      "name": "Elon Musk",
-      "bio": "South African-born American billionaire, founder of SpaceX, CEO of Tesla, and one of the wealthiest people in history.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "SpaceX",
-          "role": "Founder & CEO",
-          "entryId": "spacex",
-          "country": "United States"
-        },
-        {
-          "organization": "Tesla",
-          "role": "CEO",
-          "entryId": "tesla",
-          "country": "United States"
-        }
-      ]
-    },
     "joe-tsai": {
       "name": "Joe Tsai",
       "bio": "Taiwanese-Canadian billionaire, co-founder of Alibaba, owner of the Brooklyn Nets.",
@@ -12965,7 +12843,7 @@
     },
     "bernard-arnault": {
       "name": "Bernard Arnault",
-      "bio": "French billionaire, chairman and CEO of LVMH, at various times the world's wealthiest person.",
+      "bio": "French billionaire businessman. Chairman and CEO of LVMH, the world's largest luxury goods company. Has been the richest person in the world. Controls brands including Louis Vuitton, Dior, Tiffany, Hennessy, and more.",
       "notes": "",
       "affiliations": [
         {
@@ -13166,12 +13044,6 @@
     "philip-roth": {
       "name": "Philip Roth",
       "bio": "American novelist (1933-2018). Author of 'Portnoy's Complaint,' 'American Survey,' and many others. Won the Pulitzer Prize and nearly every major literary award.",
-      "notes": "",
-      "affiliations": []
-    },
-    "woody-allen": {
-      "name": "Woody Allen",
-      "bio": "American filmmaker, writer, and comedian (1935-). Known for 'Annie Hall,' 'Manhattan,' and prolific filmography of over 50 films. Four-time Academy Award winner.",
       "notes": "",
       "affiliations": []
     },
@@ -14093,19 +13965,6 @@
         }
       ]
     },
-    "marcelo-mindlin": {
-      "name": "Marcelo Mindlin",
-      "bio": "Argentine businessman and president of the board of Fundacion Memoria del Holocausto. Head of Pampa Energia, Argentina's largest energy company.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Fundacion Memoria del Holocausto",
-          "role": "Board President",
-          "entryId": "fundacion-memoria-del-holocausto",
-          "country": "Argentina"
-        }
-      ]
-    },
     "robert-bank": {
       "name": "Robert Bank",
       "bio": "President and CEO of American Jewish World Service, the premier Jewish global human rights organization.",
@@ -14703,19 +14562,6 @@
       "notes": "",
       "affiliations": []
     },
-    "klaus-schwab-wef": {
-      "name": "Klaus Schwab",
-      "bio": "Founder and Executive Chairman of the World Economic Forum. German economist and engineer.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "World Economic Forum",
-          "role": "Founder & Executive Chairman",
-          "entryId": "world-economic-forum",
-          "country": "Switzerland"
-        }
-      ]
-    },
     "ivan-glasenberg": {
       "name": "Ivan Glasenberg",
       "bio": "Former CEO of Glencore (2002-2021). South African-born Jewish businessman who led Glencore's transformation and IPO.",
@@ -14793,12 +14639,6 @@
           "country": "United States"
         }
       ]
-    },
-    "eugene-meyer-wapo": {
-      "name": "Eugene Meyer",
-      "bio": "Former owner of The Washington Post (1933-1946). Jewish financier and former Chairman of the Federal Reserve.",
-      "notes": "",
-      "affiliations": []
     },
     "herbert-simon": {
       "name": "Herbert Simon",
@@ -15487,7 +15327,7 @@
     },
     "jes-staley": {
       "name": "Jes Staley",
-      "bio": "American banker. Born 1956 in Boston. Former CEO of Barclays (2015-2021). Resigned after FCA investigated his misleading characterization of his Epstein relationship. Exchanged 1,200+ emails with Epstein post-conviction. Banned from UK financial services in 2024.",
+      "bio": "British-American banker. Former CEO of Barclays (2015-2021). Resigned after a regulatory investigation into his characterization of his relationship with Jeffrey Epstein. Staley had exchanged 1,200 emails with Epstein between 2008 and 2012, including on weekends, with content described as very personal. While at JP Morgan, he had brought Epstein on as a client.",
       "notes": "",
       "affiliations": [
         {
@@ -15651,19 +15491,6 @@
           "role": "Chairman",
           "entryId": "tata-group",
           "country": "India"
-        }
-      ]
-    },
-    "henry-kissinger-cfr": {
-      "name": "Henry Kissinger",
-      "bio": "Jewish-German refugee who became US Secretary of State and National Security Advisor. One of the most prominent CFR members. Nobel Peace Prize winner (1973). Died in 2023 at age 100.",
-      "notes": "",
-      "affiliations": [
-        {
-          "organization": "Council on Foreign Relations (CFR)",
-          "role": "Former Member/Director",
-          "entryId": "council-on-foreign-relations-cfr",
-          "country": "United States"
         }
       ]
     },
@@ -16333,57 +16160,13 @@
         }
       ]
     },
-    "bob-pittman-iheart": {
-      "name": "Bob Pittman",
-      "bio": "Media executive who co-founded MTV and now leads iHeartMedia. Navigated the company through bankruptcy and rebuilt it as a multimedia platform."
-    },
-    "levi-strauss-founder": {
-      "name": "Levi Strauss",
-      "bio": "Founder of Levi Strauss & Co. Bavarian Jewish immigrant who created blue jeans during the California Gold Rush."
-    },
-    "david-siegel-twosigma": {
-      "name": "David Siegel",
-      "bio": "American billionaire computer scientist and co-founder of Two Sigma Investments, a quantitative trading firm managing over $60 billion. Holds a PhD in computer science from MIT. Pioneer in applying data science and machine learning to investing."
-    },
-    "paul-singer-elliott": {
-      "name": "Paul Singer",
-      "bio": "Founder of Elliott Management. Major Republican donor and influential political figure known for activist investing."
-    },
-    "michael-marks-founder": {
-      "name": "Michael Marks",
-      "bio": "Co-founder of Marks & Spencer. Jewish immigrant from Slonim, Belarus, who started the business as a market stall in Leeds."
-    },
-    "david-de-rothschild-fr": {
-      "name": "David de Rothschild",
-      "bio": "Chairman of the Supervisory Board of Rothschild & Co. Head of the French branch of the Rothschild banking family."
-    },
-    "bruce-flatt-brookfield": {
-      "name": "Bruce Flatt",
-      "bio": "CEO of Brookfield Asset Management. Often compared to Warren Buffett for his long-term investment approach."
-    },
     "sidney-klajner-einstein": {
       "name": "Sidney Klajner",
       "bio": "President of Hospital Israelita Albert Einstein. Leading physician and hospital administrator in Brazil."
     },
-    "david-marshall-singapore": {
-      "name": "David Marshall",
-      "bio": "Singapore first Chief Minister (1955-1956), a Sephardic Jew from a Baghdadi Jewish family who played a crucial role in Singapore path to independence."
-    },
-    "maurice-cohen-ireland": {
-      "name": "Maurice Cohen",
-      "bio": "Active leader in the Irish Jewish community working to preserve heritage and strengthen community bonds."
-    },
-    "robert-singer-serbia": {
-      "name": "Robert Singer",
-      "bio": "Serbian-born Jewish leader who served as CEO of the World Jewish Congress, embodying the Serbian Jewish diaspora."
-    },
-    "moses-samuels-myanmar": {
-      "name": "Moses Samuels",
-      "bio": "Longtime caretaker and trustee of the Musmeah Yeshua Synagogue, preserving Jewish heritage in Myanmar."
-    },
     "jeffrey-epstein": {
       "name": "Jeffrey Epstein",
-      "bio": "American financier and convicted sex offender (1953-2019). Born in Brooklyn, New York, to a Jewish family. Worked at Bear Stearns before founding J. Epstein & Co. Only known major client was Les Wexner. Arrested 2006 in Palm Beach, pleaded to state charges in 2008 under lenient deal. Re-arrested July 2019 by SDNY on federal sex trafficking charges. Found dead in Metropolitan Correctional Center on August 10, 2019 - ruled suicide by hanging but widely disputed given broken cameras, sleeping guards, and prior attempt. Ghislaine Maxwell convicted of trafficking in 2021. Estate valued at $634M+. Contact book and flight logs revealed connections to presidents, royals, billionaires, and academics worldwide.",
+      "bio": "American financier and convicted sex offender (1953-2019). Born in Brooklyn, New York, to a Jewish family. Worked as a math teacher at Dalton School (hired by Donald Barr, father of later AG Bill Barr). Joined Bear Stearns in 1976, became a limited partner. Founded J. Epstein & Co in 1982, claiming to only serve billionaires - his only known major client was Leslie Wexner. Arrested in 2006 in Palm Beach for soliciting a minor. Negotiated a lenient plea deal in 2008 under U.S. Attorney Alexander Acosta, serving 13 months in county jail with work release. Re-arrested July 6, 2019 by SDNY on federal sex trafficking charges. His Manhattan townhouse was reportedly the largest private residence in NYC - originally owned by Wexner. Found dead in Metropolitan Correctional Center on August 10, 2019, officially ruled suicide by hanging, though circumstances remain highly disputed (broken cameras, sleeping guards, broken hyoid bone). His black book contained contact information for hundreds of prominent people. Flight logs of his private jet (dubbed the \"Lolita Express\") showed trips to his private island in the US Virgin Islands (Little St. James), his ranch in New Mexico, and residences worldwide.",
       "affiliations": [
         {
           "organization": "Jeffrey Epstein Network",
@@ -16396,7 +16179,7 @@
     },
     "ghislaine-maxwell": {
       "name": "Ghislaine Maxwell",
-      "bio": "British socialite and convicted sex trafficker. Born 1961 in Maisons-Laffitte, France. Youngest child of media baron Robert Maxwell (born Jan Ludvik Hyman Binyamin Hoch, Jewish, Czechoslovakia). Moved to NYC after father's 1991 death. Central to Epstein's operation: recruiting, grooming, and trafficking underage girls. Convicted December 2021 on five of six counts. Sentenced to 20 years in 2022.",
+      "bio": "British socialite and convicted sex trafficker. Born in France to Robert Maxwell, a British media magnate with alleged intelligence connections (Mossad, MI6). After her father's mysterious death in 1991, she moved to New York and became Jeffrey Epstein's girlfriend, then his closest associate and alleged chief procurer. Convicted in December 2021 on five of six federal charges including sex trafficking of a minor. Sentenced to 20 years in federal prison in June 2022. Prosecutors established she recruited, groomed, and trafficked underage girls for Epstein from 1994 to 2004. Her connections bridged Epstein into British aristocracy, the Clinton circle, and the global elite. She introduced Epstein to Prince Andrew and many high-society figures.",
       "affiliations": [
         {
           "organization": "Jeffrey Epstein Network",
@@ -16417,26 +16200,6 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "jeffrey-epstein-network"
-        }
-      ]
-    },
-    "alan-dershowitz": {
-      "name": "Alan Dershowitz",
-      "bio": "American lawyer and Harvard Law School professor emeritus. Helped negotiate Epstein's 2008 plea deal. Has represented O.J. Simpson, Harvey Weinstein, Trump (first impeachment).",
-      "affiliations": [
-        {
-          "organization": "Jeffrey Epstein Network",
-          "role": "Legal Defense Attorney",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "jeffrey-epstein-network"
-        },
-        {
-          "organization": "Harvard University",
-          "role": "Professor Emeritus of Law",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "harvard-university"
         }
       ]
     },
@@ -16559,7 +16322,7 @@
     },
     "harvey-weinstein": {
       "name": "Harvey Weinstein",
-      "bio": "Former film producer. Co-founded Miramax. Convicted of rape. 80+ accusers. Launched #MeToo.",
+      "bio": "American former film producer and convicted sex offender. Co-founder of Miramax and The Weinstein Company. Named in Epstein's black book. Both were part of overlapping New York social and power circles. Convicted of rape and sexual assault in February 2020.",
       "affiliations": [
         {
           "organization": "Miramax Films",
@@ -16583,22 +16346,9 @@
         }
       ]
     },
-    "ag-sulzberger": {
-      "name": "A.G. Sulzberger",
-      "bio": "American journalist and fifth-generation publisher of The New York Times since 2018. Full name Arthur Gregg Sulzberger. Has led the Times through its digital transformation, growing digital revenue past $1 billion while defending press freedom.",
-      "affiliations": [
-        {
-          "organization": "The New York Times",
-          "role": "Publisher",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "new-york-times"
-        }
-      ]
-    },
     "sarah-kellen": {
       "name": "Sarah Kellen",
-      "bio": "Epstein's personal assistant and alleged primary recruiter. Named as co-conspirator in 2008 non-prosecution agreement but received immunity. Scheduled \"massages\" and appeared on hundreds of Epstein flights. Now married to NASCAR driver Brian Vickers.",
+      "bio": "Associate of Jeffrey Epstein. Identified as one of Epstein's key recruiters and schedulers. Named in multiple lawsuits and court documents as helping to recruit and schedule underage girls for Epstein. Granted non-prosecution agreement as part of Epstein's 2008 plea deal. Later married NASCAR driver Brian Vickers.",
       "affiliations": [
         {
           "organization": "Jeffrey Epstein Network",
@@ -16725,7 +16475,7 @@
     },
     "robert-maxwell": {
       "name": "Robert Maxwell",
-      "bio": "Czech-born British media baron (1923-1991) who built Maxwell Communications Corporation into one of the largest media conglomerates in the world. He died after falling from his yacht under mysterious circumstances. Post-mortem, it was revealed he had looted hundreds of millions from company pension funds. He has been widely alleged to have been an agent or asset of Israeli intelligence (Mossad). Father of Ghislaine Maxwell.",
+      "bio": "British media proprietor and politician (1923-1991). Father of Ghislaine Maxwell. Born Jan Ludvik Hyman Binyamin Hoch in Czechoslovakia to a Jewish family. Built a publishing empire including Mirror Group Newspapers. Alleged connections to Mossad, MI6, and KGB. Died under mysterious circumstances falling from his yacht. After death, found to have defrauded Mirror Group pension funds of 460 million pounds. His intelligence connections are widely believed to have been inherited by Ghislaine, who introduced Epstein into elite circles.",
       "affiliations": [
         {
           "organization": "Maxwell Communications Corporation",
@@ -16809,7 +16559,7 @@
     },
     "bill-gates": {
       "name": "Bill Gates",
-      "bio": "American business magnate and co-founder of Microsoft Corporation. Born 1955 in Seattle. World's wealthiest person for many years. Co-chair of the Bill & Melinda Gates Foundation (~$75B endowment). Met Jeffrey Epstein multiple times from 2011-2014 (post-conviction). Flew on Epstein's jet in 2013. Melinda cited Epstein meetings as factor in 2021 divorce.",
+      "bio": "American billionaire technologist. Co-founder of Microsoft. Met with Jeffrey Epstein multiple times between 2011 and 2014, after Epstein's conviction. Flew on Epstein's private plane at least once. Emails showed Gates described Epstein's lifestyle as \"intriguing\" and considered partnering with him on a charitable fund. His ex-wife Melinda French Gates cited the Epstein relationship as a factor in their divorce.",
       "notes": "",
       "affiliations": [
         {
@@ -16872,7 +16622,7 @@
     },
     "glenn-dubin": {
       "name": "Glenn Dubin",
-      "bio": "American billionaire hedge fund manager. Co-founder of Highbridge Capital Management. Close friend of Jeffrey Epstein spanning decades. Named in Virginia Giuffre's sworn depositions alleging trafficking. Wife Eva Andersson-Dubin is Epstein's ex-girlfriend.",
+      "bio": "American billionaire hedge fund manager. Co-founder of Highbridge Capital Management. Close friend of Jeffrey Epstein for over 20 years. His wife Eva previously dated Epstein. Named in Epstein's black book. The Dubin family maintained a close relationship with Epstein even after his 2008 conviction. Virginia Giuffre alleged she was directed to have sexual encounters with Dubin, which he denied.",
       "notes": "",
       "affiliations": [
         {
@@ -16891,7 +16641,7 @@
     },
     "eva-andersson-dubin": {
       "name": "Eva Andersson-Dubin",
-      "bio": "Swedish-American physician and former Miss Sweden (1980). Dated Jeffrey Epstein in the 1980s before marrying Glenn Dubin. Named in Virginia Giuffre's depositions.",
+      "bio": "Swedish-American physician and former Miss Sweden. Dated Jeffrey Epstein in the 1980s. Married billionaire hedge fund manager Glenn Dubin. Her family remained close to Epstein for decades after their relationship ended. Epstein named her as a backup executor of his will.",
       "notes": "",
       "affiliations": [
         {
@@ -16917,7 +16667,7 @@
     },
     "lawrence-krauss": {
       "name": "Lawrence Krauss",
-      "bio": "Canadian-American theoretical physicist and cosmologist. Born 1954 in New York City to a Jewish family. Visited Epstein's island and publicly defended him post-conviction: \"I feel raised by it.\" Retired from ASU after sexual misconduct allegations.",
+      "bio": "American-Canadian theoretical physicist. Foundation Professor at Arizona State University. Close associate of Epstein who attended his dinners and events. Defended Epstein publicly after his 2008 conviction. Resigned from ASU in 2019 after sexual misconduct allegations and renewed scrutiny of his Epstein ties.",
       "notes": "",
       "affiliations": [
         {
@@ -16943,7 +16693,7 @@
     },
     "naomi-campbell": {
       "name": "Naomi Campbell",
-      "bio": "British supermodel, born 1970 in London. One of the original \"Big Six\" supermodels. Appeared in Jeffrey Epstein's flight logs and contact book. Photographed with Ghislaine Maxwell.",
+      "bio": "British supermodel. Appeared in Epstein's flight logs and was photographed on his yacht and at social events with Epstein and Ghislaine Maxwell. Part of the international social circle surrounding Epstein.",
       "notes": "",
       "affiliations": [
         {
@@ -17045,7 +16795,7 @@
     },
     "bill-clinton-individual": {
       "name": "Bill Clinton",
-      "bio": "42nd President of the United States (1993-2001). Born 1946 in Hope, Arkansas. Flew on Epstein's jet 26+ times per flight logs. Epstein donated to Clinton Foundation. Island visits disputed but corroborated by crew testimony.",
+      "bio": "Former President of the United States (1993-2001). Flight logs show he flew on Epstein's private jet (the \"Lolita Express\") at least 26 times. Secret Service detail was reportedly declined on some trips. Visited Epstein's private island Little St. James according to some accounts. A Clinton spokesperson acknowledged the flights but denied knowledge of Epstein's crimes.",
       "affiliations": [
         {
           "organization": "Bill Clinton",
@@ -17085,18 +16835,6 @@
         }
       ]
     },
-    "bill-clinton-ind": {
-      "name": "Bill Clinton",
-      "bio": "42nd President of the United States (1993-2001). Born 1946 in Hope, Arkansas. Flew on Epstein's jet 26+ times per flight logs. Epstein donated to Clinton Foundation.",
-      "affiliations": [
-        {
-          "organization": "Bill Clinton",
-          "role": "42nd President",
-          "entryId": "bill-clinton-connections",
-          "country": "United States"
-        }
-      ]
-    },
     "donald-trump-ind": {
       "name": "Donald Trump",
       "bio": "45th and 47th President of the United States. Born 1946 in Queens, New York. Social relationship with Epstein in 1990s-2000s. Said in 2002: Epstein \"likes beautiful women as much as I do, and many of them are on the younger side.\" Giuffre recruited from his Mar-a-Lago.",
@@ -17111,7 +16849,7 @@
     },
     "alan-dershowitz-ind": {
       "name": "Alan Dershowitz",
-      "bio": "American attorney and Harvard Law School Professor Emeritus. Born 1938 in Brooklyn to an Orthodox Jewish family. Represented Epstein in 2008 plea deal. Named by Virginia Giuffre in allegations. Also served on Trump impeachment defense team.",
+      "bio": "American lawyer and Harvard Law professor emeritus. Member of Jeffrey Epstein's defense team in the 2008 case. Helped negotiate the controversial plea deal. Flew on Epstein's private jet and visited his properties. Virginia Giuffre alleged sexual encounters directed by Epstein, which Dershowitz vehemently denied and counter-sued. Represented Trump during first impeachment trial. One of the most prominent public figures connected to the Epstein case.",
       "affiliations": [
         {
           "organization": "Alan Dershowitz",
@@ -17141,7 +16879,7 @@
     },
     "elon-musk-ind": {
       "name": "Elon Musk",
-      "bio": "South African-born American billionaire. Born 1971 in Pretoria. CEO of Tesla, SpaceX, owner of X. Photographed with Ghislaine Maxwell in 2014. World's wealthiest person. Runs DOGE under Trump administration.",
+      "bio": "South African-born American billionaire. CEO of Tesla, SpaceX, owner of X (formerly Twitter). Photographed at an event with Ghislaine Maxwell in 2011. His name appeared in Epstein's contacts. Has stated he did not have a personal relationship with Epstein.",
       "affiliations": [
         {
           "organization": "Elon Musk",
@@ -17183,7 +16921,7 @@
     },
     "woody-allen-ind": {
       "name": "Woody Allen",
-      "bio": "American filmmaker. Born Allan Stewart Konigsberg, 1935, Brooklyn, Jewish family. In Epstein's contact book. Attended Epstein townhouse dinner. Own sexual abuse allegations by adopted daughter Dylan Farrow.",
+      "bio": "American filmmaker and comedian. Had dinner with Jeffrey Epstein and others. A photograph exists of Allen with Epstein and others at social events. His relationship with Epstein was described as casual and social.",
       "affiliations": [
         {
           "organization": "Woody Allen",
@@ -17201,30 +16939,6 @@
           "organization": "George Stephanopoulos",
           "role": "Subject",
           "entryId": "george-stephanopoulos-connections",
-          "country": "United States"
-        }
-      ]
-    },
-    "leslie-wexner-ind": {
-      "name": "Leslie Wexner",
-      "bio": "American billionaire businessman. Born 1937 in Dayton, Ohio, to a Jewish family of Russian immigrants. Founded L Brands (Victoria's Secret, Bath & Body Works). Epstein's only known major client. Gave Epstein power of attorney and $77M Manhattan townhouse.",
-      "affiliations": [
-        {
-          "organization": "Les Wexner",
-          "role": "Subject",
-          "entryId": "les-wexner-connections",
-          "country": "United States"
-        },
-        {
-          "organization": "Victoria's Secret (L Brands)",
-          "role": "Founder & Former CEO",
-          "entryId": "l-brands-victorias-secret",
-          "country": "United States"
-        },
-        {
-          "organization": "Wexner Foundation",
-          "role": "Founder",
-          "entryId": "wexner-foundation",
           "country": "United States"
         }
       ]
@@ -17498,13 +17212,6 @@
         "ticketmaster"
       ]
     },
-    "shari-redstone-nat": {
-      "name": "Shari Redstone",
-      "bio": "American media executive and billionaire, chairwoman of National Amusements and Paramount Global, daughter of Sumner Redstone who built the family media empire",
-      "affiliations": [
-        "national-amusements"
-      ]
-    },
     "joseph-steinberg": {
       "name": "Joseph Steinberg",
       "bio": "American businessman and investor, former President of Leucadia National Corporation, current board member of Jefferies Financial Group following the 2018 merger",
@@ -17535,26 +17242,11 @@
         "george-soros-open-society-foundations"
       ]
     },
-    "lawrence-summers": {
-      "name": "Lawrence Summers",
-      "bio": "American economist, former President of Harvard University (2001-2006), former US Secretary of the Treasury (1999-2001), and former Director of the National Economic Council under Obama",
-      "affiliations": [
-        "harvard-university"
-      ]
-    },
     "lawrence-bacow": {
       "name": "Lawrence Bacow",
       "bio": "American academic and 29th President of Harvard University (2018-2023), the son of Jewish immigrants - his mother survived Auschwitz and his father fled anti-Jewish pogroms in Belarus",
       "affiliations": [
         "harvard-university"
-      ]
-    },
-    "paul-singer-em": {
-      "name": "Paul Singer",
-      "bio": "American billionaire hedge fund manager, founder of Elliott Management Corporation, one of the most powerful activist investors in the world; major Republican donor and prominent supporter of pro-Israel causes",
-      "affiliations": [
-        "paul-singer",
-        "elliott-management"
       ]
     },
     "andy-jassy": {
@@ -18005,13 +17697,6 @@
         "vienna-wiesenthal-institute"
       ]
     },
-    "david-sassoon-ohel": {
-      "name": "David Sassoon",
-      "bio": "Scion of the Sassoon family, the historically prominent Baghdadi Jewish dynasty who built the Ohel Leah Synagogue in Hong Kong in 1901, named after matriarch Leah Sassoon",
-      "affiliations": [
-        "ohel-leah-synagogue"
-      ]
-    },
     "robert-sabados": {
       "name": "Robert Sabados",
       "bio": "Serbian Jewish community leader and President of the Federation of Jewish Communities of Serbia, overseeing one of the oldest Jewish communities in the Balkans",
@@ -18270,6 +17955,336 @@
       "affiliations": [
         "jewish-community-of-ljubljana"
       ]
+    },
+    "prince-andrew": {
+      "name": "Prince Andrew",
+      "bio": "Prince Andrew, Duke of York. Second son of Queen Elizabeth II. Close associate of Jeffrey Epstein. Photographed with Virginia Giuffre at Ghislaine Maxwell's London home in 2001. Flew on Epstein's private jet multiple times. Stayed at Epstein's Manhattan mansion, Palm Beach estate, and private island. Settled civil sexual abuse lawsuit with Virginia Giuffre in February 2022 for an estimated $12 million. Stripped of military titles and royal patronages by Queen Elizabeth in January 2022.",
+      "notes": "",
+      "affiliations": []
+    },
+    "donald-trump": {
+      "name": "Donald Trump",
+      "bio": "45th and 47th President of the United States. Had a social relationship with Jeffrey Epstein in the 1990s and early 2000s in Palm Beach and New York. Famously told New York Magazine in 2002: \"I've known Jeff for fifteen years. Terrific guy. He's a lot of fun to be with. It is even said that he likes beautiful women as much as I do, and many of them are on the younger side.\" Later banned Epstein from Mar-a-Lago reportedly after an incident involving a member's daughter. Alexander Acosta, Trump's Labor Secretary, had negotiated Epstein's lenient 2008 plea deal as U.S. Attorney.",
+      "notes": "",
+      "affiliations": []
+    },
+    "reid-hoffman": {
+      "name": "Reid Hoffman",
+      "bio": "American billionaire internet entrepreneur. Co-founder of LinkedIn. Met with Epstein multiple times after his 2008 conviction for advice on philanthropy and AI. Publicly apologized in 2019 for the association, stating he was told Epstein had served his time. Donated $500K to MIT to compensate for Epstein's tainted donations. Major Democratic Party donor and tech industry networker.",
+      "notes": "",
+      "affiliations": []
+    },
+    "ehud-barak": {
+      "name": "Ehud Barak",
+      "bio": "Former Prime Minister of Israel (1999-2001) and Defense Minister. Visited Epstein's Manhattan townhouse multiple times, including after his 2008 conviction. Photographed entering Epstein's residence in January 2016. Had business dealings with Epstein through Carbyne, an Israeli surveillance tech startup that Epstein invested in and Barak chaired. Received funding from Epstein-linked entities.",
+      "notes": "",
+      "affiliations": []
+    },
+    "steven-pinker": {
+      "name": "Steven Pinker",
+      "bio": "Canadian-American cognitive psychologist, linguist, and author. Harvard professor. Provided legal advice to Epstein's defense team in 2007, helping to argue that Epstein's solicitation did not constitute sex trafficking under federal law. Flew on Epstein's plane at least once in 2002 to a TED conference. Has stated his contact with Epstein was limited and professional.",
+      "notes": "",
+      "affiliations": []
+    },
+    "mort-zuckerman": {
+      "name": "Mort Zuckerman",
+      "bio": "Canadian-American billionaire media proprietor and real estate developer. Owner of the New York Daily News and former owner of U.S. News & World Report. Named in Epstein's black book. Attended dinner parties at Epstein's Manhattan mansion. Part of the New York social circle that overlapped with Epstein's network.",
+      "notes": "",
+      "affiliations": []
+    },
+    "peter-mandelson": {
+      "name": "Peter Mandelson",
+      "bio": "British Labour politician, Baron Mandelson. Former Secretary of State for Business. Close associate of Jeffrey Epstein. Met with Epstein multiple times including at his properties. Named in Epstein's black book and flight logs. Photographed at social events with Epstein and Ghislaine Maxwell.",
+      "notes": "",
+      "affiliations": []
+    },
+    "alexander-acosta": {
+      "name": "Alexander Acosta",
+      "bio": "American lawyer and politician. As U.S. Attorney for the Southern District of Florida, negotiated the controversial 2008 plea deal that allowed Jeffrey Epstein to avoid federal charges and receive a lenient 13-month county jail sentence with work release. Later served as U.S. Secretary of Labor under Trump (2017-2019), resigned in July 2019 after renewed scrutiny of the Epstein plea deal.",
+      "notes": "",
+      "affiliations": []
+    },
+    "steve-bannon": {
+      "name": "Steve Bannon",
+      "bio": "American media executive and political strategist. Former White House Chief Strategist under Trump. Reportedly visited Epstein in prison and met with him multiple times. Was at Epstein's Manhattan townhouse in late 2018, months before Epstein's arrest.",
+      "notes": "",
+      "affiliations": []
+    },
+    "joichi-ito": {
+      "name": "Joichi Ito",
+      "bio": "Japanese-American activist, businessman, and former director of MIT Media Lab. Resigned in September 2019 after it was revealed he had concealed the extent of Epstein's donations to MIT. Emails showed he deliberately listed Epstein as \"anonymous\" in donation records. Had received $1.7 million from Epstein for his personal investments and helped direct $7.5 million to the MIT Media Lab.",
+      "notes": "",
+      "affiliations": []
+    },
+    "marvin-minsky": {
+      "name": "Marvin Minsky",
+      "bio": "American cognitive and computer scientist (1927-2016). Pioneer of artificial intelligence and co-founder of MIT AI Lab. Visited Epstein's private island. Virginia Giuffre alleged she was directed to have sexual relations with Minsky, though he denied any sexual contact. Received research funding through Epstein-connected channels.",
+      "notes": "",
+      "affiliations": []
+    },
+    "george-mitchell": {
+      "name": "George Mitchell",
+      "bio": "American politician and diplomat. Former U.S. Senate Majority Leader (1989-1995) and Special Envoy to the Middle East. Named in court documents related to the Epstein case. Virginia Giuffre alleged encounters with Mitchell, which he denied. His name appeared in Epstein's flight logs.",
+      "notes": "",
+      "affiliations": []
+    },
+    "bill-richardson": {
+      "name": "Bill Richardson",
+      "bio": "American politician (1947-2023). Former Governor of New Mexico and U.S. Secretary of Energy. Named in court documents related to the Epstein case. Virginia Giuffre alleged encounters with Richardson, which he denied. Epstein had a ranch in New Mexico near Richardson's sphere of influence.",
+      "notes": "",
+      "affiliations": []
+    },
+    "tom-barrack": {
+      "name": "Tom Barrack",
+      "bio": "American private equity real estate investor. Founder of Colony Capital. Named in Epstein's contacts. Part of the New York real estate and finance social circle that overlapped with Epstein's network.",
+      "notes": "",
+      "affiliations": []
+    },
+    "leslie-groff": {
+      "name": "Lesley Groff",
+      "bio": "Long-time personal assistant to Jeffrey Epstein. Named in court documents as one of the key members of Epstein's inner circle. Helped organize Epstein's schedule and logistics. Granted non-prosecution agreement as part of the 2008 plea deal.",
+      "notes": "",
+      "affiliations": []
+    },
+    "adriana-ross": {
+      "name": "Adriana Ross",
+      "bio": "Former model from Poland. Named as one of Epstein's associates and alleged co-conspirators. Part of Epstein's inner circle of young women. Granted immunity under the 2008 non-prosecution agreement. Invoked the Fifth Amendment when deposed.",
+      "notes": "",
+      "affiliations": []
+    },
+    "denny-hastert": {
+      "name": "Dennis Hastert",
+      "bio": "American politician. Former Speaker of the United States House of Representatives (1999-2007). Named in Epstein's contact records. Later convicted in 2015 of structuring bank withdrawals to conceal hush money paid to cover up sexual abuse of boys he had coached in wrestling decades earlier.",
+      "notes": "",
+      "affiliations": []
+    },
+    "stuart-pivar": {
+      "name": "Stuart Pivar",
+      "bio": "American art collector and businessman. Co-founder of the New York Academy of Art with Andy Warhol. Close friend of Jeffrey Epstein for over 20 years. Described himself as Epstein's oldest friend and claimed to have been the one who introduced Epstein to many in the art world.",
+      "notes": "",
+      "affiliations": []
+    },
+    "victoria-zdrok": {
+      "name": "Victoria Zdrok",
+      "bio": "Ukrainian-American model, lawyer, and author. Named in Epstein's black book and flight logs. Part of the social circle surrounding Epstein.",
+      "notes": "",
+      "affiliations": []
+    },
+    "ron-klein": {
+      "name": "Ron Klein",
+      "bio": "American politician. Former U.S. Representative from Florida (2007-2011). Chair of the National Jewish Democratic Council. Previously served in the Florida State Legislature.",
+      "notes": "",
+      "affiliations": []
+    },
+    "bob-sternfels": {
+      "name": "Bob Sternfels",
+      "bio": "American business executive. Global Managing Partner of McKinsey & Company since 2021. Leads one of the world's most influential management consulting firms.",
+      "notes": "",
+      "affiliations": []
+    },
+    "rachel-lithgow": {
+      "name": "Rachel Lithgow",
+      "bio": "American museum and cultural heritage administrator. Executive Director of the American Jewish Historical Society, overseeing the oldest ethnic historical organization in the United States.",
+      "notes": "",
+      "affiliations": []
+    },
+    "neil-barr": {
+      "name": "Neil Barr",
+      "bio": "American lawyer. Managing Partner of Davis Polk & Wardwell, one of the oldest and most prestigious law firms on Wall Street. The firm has long-standing ties to major financial institutions.",
+      "notes": "",
+      "affiliations": []
+    },
+    "christoph-schweizer": {
+      "name": "Christoph Schweizer",
+      "bio": "German business executive. CEO of Boston Consulting Group (BCG) since 2021. Leads one of the Big Three management consulting firms with over 25,000 employees worldwide.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jonathan-kessler": {
+      "name": "Jonathan Kessler",
+      "bio": "American advocacy professional. Executive Director of the American Israel Education Foundation (AIEF), the philanthropic arm of AIPAC that sponsors educational trips to Israel for U.S. lawmakers and political leaders.",
+      "notes": "",
+      "affiliations": []
+    },
+    "canary-mission-anonymous": {
+      "name": "Anonymous Founders",
+      "bio": "The anonymous founders of Canary Mission, a controversial database that documents individuals and organizations allegedly promoting anti-Semitism, support for BDS, and hatred of the USA/Israel on college campuses.",
+      "notes": "",
+      "affiliations": []
+    },
+    "russell-robinson-ind": {
+      "name": "Russell Robinson",
+      "bio": "American nonprofit executive. CEO of the Jewish National Fund-USA (JNF-USA). Has led the organization's land development and environmental projects in Israel.",
+      "notes": "",
+      "affiliations": []
+    },
+    "rupert-murdoch": {
+      "name": "Rupert Murdoch",
+      "bio": "Australian-born American media mogul. Founder and Chairman Emeritus of News Corp and 21st Century Fox. Built a global media empire including Fox News, The Wall Street Journal, The Times (UK), and HarperCollins. One of the most influential media figures in modern history.",
+      "notes": "",
+      "affiliations": []
+    },
+    "warden-lamine-ndiaye": {
+      "name": "Lamine N'Diaye",
+      "bio": "American corrections official. Served as Warden of the Metropolitan Correctional Center (MCC) in New York. Was warden during the period when Jeffrey Epstein died in custody in August 2019.",
+      "notes": "",
+      "affiliations": []
+    },
+    "bernd-lembcke": {
+      "name": "Bernd Lembcke",
+      "bio": "German-American hospitality executive. Former Club Manager of Mar-a-Lago, Donald Trump's private club in Palm Beach, Florida.",
+      "notes": "",
+      "affiliations": []
+    },
+    "eli-glickman": {
+      "name": "Eli Glickman",
+      "bio": "Israeli business executive. President and CEO of ZIM Integrated Shipping Services, one of the world's largest container shipping companies. Under his leadership ZIM went public on the NYSE in 2021.",
+      "notes": "",
+      "affiliations": []
+    },
+    "hein-schumacher": {
+      "name": "Hein Schumacher",
+      "bio": "Dutch business executive. CEO of Unilever since July 2023. Previously served as CEO of FrieslandCampina. Leads one of the world's largest consumer goods companies.",
+      "notes": "",
+      "affiliations": []
+    },
+    "john-brown-iwm": {
+      "name": "Sir John Brown",
+      "bio": "British businessman and engineer. Former CEO of BP (1995-2007). Chairman of the Imperial War Museum (2017-2024). Oversaw the expansion of the IWM Holocaust Exhibition.",
+      "notes": "",
+      "affiliations": []
+    },
+    "edmond-elmaleh": {
+      "name": "Edmond El Maleh",
+      "bio": "French-Moroccan media professional. Director of Radio Shalom, the Jewish community radio station in Paris broadcasting since 1981.",
+      "notes": "",
+      "affiliations": []
+    },
+    "yonathan-arfi-ind": {
+      "name": "Yonathan Arfi",
+      "bio": "French Jewish communal leader. President of CRIF (Representative Council of French Jewish Institutions) since 2022, the main umbrella organization representing French Jewish communities.",
+      "notes": "",
+      "affiliations": []
+    },
+    "howard-feldman": {
+      "name": "Howard Feldman",
+      "bio": "South African journalist and editor. Editor of the SA Jewish Report, the main English-language Jewish newspaper in South Africa covering community news and Israeli affairs.",
+      "notes": "",
+      "affiliations": []
+    },
+    "richard-sobel": {
+      "name": "Richard Sobel",
+      "bio": "South African museum director. Director of the Cape Town Holocaust and Genocide Centre, South Africa's only museum dedicated to the Holocaust and other genocides.",
+      "notes": "",
+      "affiliations": []
+    },
+    "mark-schneider-nestle": {
+      "name": "Mark Schneider",
+      "bio": "German business executive. CEO of Nestle since 2017. Previously led Fresenius health care group. Oversees the world's largest food and beverage company by revenue.",
+      "notes": "",
+      "affiliations": []
+    },
+    "brian-moynihan": {
+      "name": "Brian Moynihan",
+      "bio": "American businessman. Chairman and CEO of Bank of America since 2010. Leads one of the Big Four banking institutions in the United States.",
+      "notes": "",
+      "affiliations": []
+    },
+    "steve-schwarzman": {
+      "name": "Steve Schwarzman",
+      "bio": "American billionaire businessman. Chairman, CEO, and co-founder of Blackstone, the world's largest alternative investment firm managing $1 trillion in assets. Born to a Jewish family in Philadelphia. Major Republican donor.",
+      "notes": "",
+      "affiliations": []
+    },
+    "paul-singer-ind": {
+      "name": "Paul Singer",
+      "bio": "American billionaire hedge fund manager. Founder of Elliott Management Corporation, one of the most powerful activist hedge funds. Known for aggressive tactics including seizing Argentine naval vessel. Major Republican donor and pro-Israel advocate.",
+      "notes": "",
+      "affiliations": []
+    },
+    "dan-loeb": {
+      "name": "Dan Loeb",
+      "bio": "American billionaire hedge fund manager. Founder and CEO of Third Point LLC. Known as an activist investor targeting companies like Yahoo, Sony, and Nestle. Born to a Jewish family.",
+      "notes": "",
+      "affiliations": []
+    },
+    "nelson-peltz": {
+      "name": "Nelson Peltz",
+      "bio": "American billionaire businessman. Co-founder of Trian Fund Management. Activist investor who has influenced Disney, P&G, Wendy's, and DuPont. Born to a Jewish family in Brooklyn.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jeff-bezos": {
+      "name": "Jeff Bezos",
+      "bio": "American billionaire technology entrepreneur. Founder and executive chairman of Amazon, the world's largest e-commerce and cloud computing company. Owner of The Washington Post and Blue Origin.",
+      "notes": "",
+      "affiliations": []
+    },
+    "anthony-blinken": {
+      "name": "Antony Blinken",
+      "bio": "American diplomat and politician. U.S. Secretary of State since 2021. Stepson of Samuel Pisar, a Holocaust survivor. Has deep Jewish heritage through his family connections.",
+      "notes": "",
+      "affiliations": []
+    },
+    "sheldon-adelson-estate": {
+      "name": "Miriam Adelson",
+      "bio": "Israeli-American physician and billionaire philanthropist. Widow of Sheldon Adelson (founder of Las Vegas Sands). One of the largest donors to Republican Party and pro-Israel causes. Owner of The Dallas Mavericks NBA team and Israel Hayom newspaper.",
+      "notes": "",
+      "affiliations": []
+    },
+    "norman-braman": {
+      "name": "Norman Braman",
+      "bio": "American billionaire businessman and philanthropist. Automobile dealer. Former owner of the Philadelphia Eagles. Major donor to Marco Rubio and Republican causes. Active in Jewish communal organizations.",
+      "notes": "",
+      "affiliations": []
+    },
+    "anderson-cooper": {
+      "name": "Anderson Cooper",
+      "bio": "American journalist. Primary anchor of CNN's Anderson Cooper 360. Correspondent for 60 Minutes. Son of Gloria Vanderbilt. One of the most recognized news anchors in American television.",
+      "notes": "",
+      "affiliations": []
+    },
+    "jake-tapper": {
+      "name": "Jake Tapper",
+      "bio": "American journalist, author, and cartoonist. Anchor and Chief Washington correspondent for CNN. Known for pressing political interviewees. Has covered extensively on political figures' connections to various networks.",
+      "notes": "",
+      "affiliations": []
+    },
+    "alan-greenspan": {
+      "name": "Alan Greenspan",
+      "bio": "American economist. Chairman of the Federal Reserve (1987-2006). Served under four presidents. His policies of low interest rates in the 2000s were criticized as contributing to the housing bubble and 2008 financial crisis. Born to a Jewish family in New York.",
+      "notes": "",
+      "affiliations": []
+    },
+    "ben-bernanke": {
+      "name": "Ben Bernanke",
+      "bio": "American economist. Chairman of the Federal Reserve (2006-2014). Led the Fed's response to the 2008 financial crisis. Nobel Prize in Economics (2022). Born to a Jewish family in Augusta, Georgia.",
+      "notes": "",
+      "affiliations": []
+    },
+    "elena-kagan": {
+      "name": "Elena Kagan",
+      "bio": "American jurist. Associate Justice of the U.S. Supreme Court since 2010. Former Solicitor General and Harvard Law School Dean. Fourth Jewish Justice to serve on the Supreme Court.",
+      "notes": "",
+      "affiliations": []
+    },
+    "katie-couric": {
+      "name": "Katie Couric",
+      "bio": "American journalist and TV personality. Former anchor of CBS Evening News and Today show. Attended dinner at Jeffrey Epstein's Manhattan apartment in 2010, later expressed regret and claimed she did not know the nature of his crimes.",
+      "notes": "",
+      "affiliations": []
+    },
+    "george-stephanopoulos": {
+      "name": "George Stephanopoulos",
+      "bio": "American journalist and former political advisor. Anchor of ABC News' Good Morning America. Former aide to Bill Clinton. Attended a dinner at Epstein's Manhattan home in 2010 with other media figures.",
+      "notes": "",
+      "affiliations": []
+    },
+    "chelsea-handler": {
+      "name": "Chelsea Handler",
+      "bio": "American comedian, actress, writer, and television host. Attended one of Epstein's dinners in New York. Subsequently discussed the experience publicly on her shows.",
+      "notes": "",
+      "affiliations": []
     }
   }
 }

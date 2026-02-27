@@ -50,6 +50,8 @@ app.get('/api/person/:id', (req, res) => {
     const affiliations = [];
     const fs = require('fs');
     const files = fs.readdirSync(path.join(__dirname, 'data'));
+    // Build person-to-org map for connection analysis
+    const personOrgs = {}; // personId -> [{org, role, country, entryId}]
     files.forEach(fn => {
       if (fn.endsWith('.json') && fn !== 'people.json' && fn !== 'countries.json') {
         const rel = fn.replace('.json','');
@@ -61,7 +63,16 @@ app.get('/api/person/:id', (req, res) => {
               entry.individuals.forEach(ind => {
                 if (ind.id === id) {
                   const co = entry.individuals.filter(o => o.id && o.id !== id).map(o => ({ id: o.id, name: o.name, role: o.role }));
-                  affiliations.push({ religion: rel, country, organization: entry.name, entryId: entry.id, role: ind.role, category: entry.category, coIndividuals: co });
+                  affiliations.push({
+                    religion: rel, country, organization: entry.name, entryId: entry.id,
+                    role: ind.role, category: entry.category, coIndividuals: co,
+                    summary: entry.summary || '', website: entry.website || ''
+                  });
+                }
+                // Track all people's org memberships
+                if (ind.id) {
+                  if (!personOrgs[ind.id]) personOrgs[ind.id] = [];
+                  personOrgs[ind.id].push({ org: entry.name, entryId: entry.id, role: ind.role, country, religion: rel, category: entry.category });
                 }
               });
             }
@@ -69,8 +80,42 @@ app.get('/api/person/:id', (req, res) => {
         }
       }
     });
-    res.json(Object.assign({}, person, { affiliations }));
-  } catch (err) { res.status(500).json({ error: 'Server error' }); }
+
+    // Build network: all people connected through shared orgs
+    const networkMap = {}; // personId -> { name, sharedOrgs: [{org, theirRole, yourRole}] }
+    affiliations.forEach(a => {
+      (a.coIndividuals || []).forEach(co => {
+        if (!networkMap[co.id]) {
+          const pData = peopleData.people[co.id];
+          networkMap[co.id] = { name: co.name, bio: (pData && pData.bio) ? pData.bio.substring(0, 200) : '', sharedOrgs: [] };
+        }
+        networkMap[co.id].sharedOrgs.push({
+          org: a.organization, entryId: a.entryId, theirRole: co.role, yourRole: a.role, country: a.country, category: a.category
+        });
+      });
+    });
+    // Sort network by number of shared orgs (most connected first)
+    const network = Object.entries(networkMap)
+      .map(([pid, data]) => ({ id: pid, ...data }))
+      .sort((a, b) => b.sharedOrgs.length - a.sharedOrgs.length);
+
+    // Category & country summary
+    const categories = {};
+    const countries = {};
+    affiliations.forEach(a => {
+      categories[a.category] = (categories[a.category] || 0) + 1;
+      countries[a.country] = (countries[a.country] || 0) + 1;
+    });
+
+    res.json(Object.assign({}, person, {
+      affiliations,
+      network,
+      categorySummary: Object.entries(categories).sort((a,b) => b[1]-a[1]).map(([c,n]) => ({ category: c, count: n })),
+      countrySummary: Object.entries(countries).sort((a,b) => b[1]-a[1]).map(([c,n]) => ({ country: c, count: n })),
+      totalConnections: network.length,
+      totalAffiliations: affiliations.length
+    }));
+  } catch (err) { console.error(err); res.status(500).json({ error: 'Server error' }); }
 });
 
 // list all people (with pagination)

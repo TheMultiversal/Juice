@@ -19,34 +19,109 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://thejuicebox.live/og-image.png">
   <meta property="og:title" content="Person Details">
-  <meta property="og:description" content="Comprehensive directory of Jewish organizations worldwide - tracking structure, people, and connections since 2016.">
+  <meta property="og:description" content="Exhaustive individual profile - all affiliations, connections, network map, and organizational involvement.">
   <meta property="og:url" content="https://thejuicebox.live/person.html">
   <meta name="twitter:title" content="Person Details">
-  <meta name="twitter:description" content="Comprehensive directory of Jewish organizations worldwide - tracking structure, people, and connections since 2016.">
+  <meta name="twitter:description" content="Exhaustive individual profile - all affiliations, connections, network map, and organizational involvement.">
   <title>Person Details</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; color: #000; background: #fff; }
-    h1 { color: #000; }
-    h2 { margin-top: 15px; margin-bottom: 8px; }
-nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 20px; color: #000; background: #fff; }
+    h1 { color: #000; margin: 0; }
+    h2 { margin: 12px 0 8px; font-size: 1.2em; }
+    h3 { margin: 8px 0 5px; font-size: 1em; }
+    nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
     nav ul li { margin: 0; white-space: nowrap; }
     nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
-    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 6px; padding: 10px; margin: 5px 0; color: #000; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
+    .panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.3); border-radius: 8px; padding: 14px 18px; margin: 8px 0; color: #000; }
     .panel a { color: #0000EE; }
     .back-link { font-weight: bold; text-decoration: none; color: #0000EE; }
-    .person-header { font-size: 1.8em; margin: 0; }
-    .affiliation-card { margin: 8px 0; padding: 10px; background: rgba(240,240,255,0.7); border-radius: 6px; border: 1px solid rgba(0,0,255,0.15); }
-    .affiliation-card a { font-weight: bold; color: #0000EE; font-size: 1.05em; }
-    .co-person { display: inline-block; margin: 3px 2px; }
-    .co-person a { color: #0000EE; font-size: 0.95em; }
-  
-    /* Glassmorphism panels */
-    .panel, .cat-card, .featured-card, .discover-card, .kpi-card, .chart-card,
-    .export-card, .result-card, .person-card, .connection-item, .similar-card,
-    .bm-card, .comp-card, .entry-card, .country-card, .stat-box, .controls,
-    .search-section, .shared-section, .endpoint {
+
+    /* Person header */
+    .person-header-wrap { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .person-avatar { width: 70px; height: 70px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5em; font-weight: bold; flex-shrink: 0; }
+    .person-name { font-size: 1.8em; margin: 0; }
+    .person-subtitle { font-size: 0.9em; color: #555; margin-top: 2px; }
+
+    /* Stats bar */
+    .stats-bar { display: flex; gap: 12px; flex-wrap: wrap; margin: 10px 0; }
+    .stat-pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 0.85em; font-weight: 600; }
+    .stat-pill i { font-size: 0.9em; }
+    .stat-pill.orgs { background: rgba(0,123,255,0.1); color: #0056b3; }
+    .stat-pill.people { background: rgba(40,167,69,0.1); color: #1a7431; }
+    .stat-pill.cats { background: rgba(255,193,7,0.12); color: #856404; }
+    .stat-pill.countries { background: rgba(220,53,69,0.08); color: #721c24; }
+
+    /* Bio section */
+    .bio-text { line-height: 1.7; font-size: 0.95em; }
+
+    /* Tab system */
+    .tab-bar { display: flex; gap: 0; border-bottom: 2px solid rgba(0,0,255,0.12); margin-bottom: 12px; overflow-x: auto; }
+    .tab-btn { padding: 10px 20px; border: none; background: none; cursor: pointer; font-size: 0.9em; font-weight: 600; color: #666; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all 0.2s; white-space: nowrap; }
+    .tab-btn:hover { color: #0000EE; background: rgba(0,0,238,0.03); }
+    .tab-btn.active { color: #0000EE; border-bottom-color: #0000EE; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Affiliation cards */
+    .affiliation-card { margin: 8px 0; padding: 14px; background: rgba(240,240,255,0.6); border-radius: 8px; border: 1px solid rgba(0,0,255,0.12); transition: border-color 0.2s; }
+    .affiliation-card:hover { border-color: rgba(0,0,255,0.3); }
+    .aff-header { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+    .aff-header a { font-weight: bold; color: #0000EE; font-size: 1.05em; text-decoration: none; }
+    .aff-header a:hover { text-decoration: underline; }
+    .aff-meta { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin: 5px 0; }
+    .badge { padding: 2px 10px; border-radius: 12px; font-size: 0.78em; font-weight: 600; display: inline-block; }
+    .role-badge { background: rgba(0,123,255,0.1); color: #0056b3; }
+    .cat-badge { background: rgba(255,193,7,0.12); color: #856404; }
+    .country-badge { background: rgba(220,53,69,0.08); color: #721c24; }
+    .aff-summary { font-size: 0.85em; color: #555; margin: 6px 0; line-height: 1.4; font-style: italic; }
+    .co-section { margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(0,0,255,0.1); }
+    .co-label { font-size: 0.8em; color: #777; font-weight: 600; margin-bottom: 4px; }
+    .co-person { display: inline-block; margin: 2px 3px; }
+    .co-person a { color: #0000EE; font-size: 0.85em; padding: 2px 9px; background: rgba(0,123,255,0.05); border-radius: 12px; text-decoration: none; border: 1px solid rgba(0,0,255,0.08); }
+    .co-person a:hover { background: rgba(0,123,255,0.12); }
+
+    /* Network cards */
+    .net-search { width: 100%; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.2); font-size: 0.9em; margin-bottom: 10px; }
+    .network-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 10px; }
+    .network-card { padding: 12px; background: rgba(240,245,255,0.6); border-radius: 8px; border: 1px solid rgba(0,0,255,0.1); transition: border-color 0.2s; }
+    .network-card:hover { border-color: rgba(0,0,255,0.25); }
+    .net-card-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+    .net-avatar { width: 38px; height: 38px; border-radius: 50%; background: linear-gradient(135deg, #5B86E5, #36D1DC); display: flex; align-items: center; justify-content: center; color: white; font-size: 0.7em; font-weight: bold; flex-shrink: 0; }
+    .net-name { font-weight: bold; font-size: 0.95em; }
+    .net-name a { color: #0000EE; text-decoration: none; }
+    .net-name a:hover { text-decoration: underline; }
+    .net-bio { font-size: 0.8em; color: #555; line-height: 1.3; margin: 3px 0; }
+    .shared-orgs { margin-top: 6px; }
+    .shared-org-item { font-size: 0.82em; margin: 3px 0; padding: 3px 0; display: flex; gap: 6px; align-items: baseline; }
+    .shared-org-bullet { color: #0056b3; font-weight: bold; }
+    .shared-org-name { font-weight: 600; color: #333; }
+    .shared-org-roles { color: #666; }
+    .shared-count-badge { font-size: 0.75em; background: rgba(0,123,255,0.08); color: #0056b3; padding: 1px 8px; border-radius: 10px; font-weight: 600; margin-left: auto; }
+
+    /* Tags */
+    .tag-grid { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+    .tag { padding: 5px 14px; border-radius: 16px; font-size: 0.82em; font-weight: 500; }
+    .cat-tag { background: rgba(255,193,7,0.1); color: #856404; border: 1px solid rgba(255,193,7,0.2); }
+    .country-tag { background: rgba(220,53,69,0.06); color: #721c24; border: 1px solid rgba(220,53,69,0.15); }
+
+    /* Connection explanation */
+    .connection-reason { background: rgba(255,248,220,0.6); border: 1px solid rgba(255,193,7,0.2); border-radius: 6px; padding: 8px 12px; margin: 4px 0; font-size: 0.85em; line-height: 1.4; }
+    .connection-reason strong { color: #856404; }
+
+    /* Responsive */
+    @media(max-width:600px) {
+      body { padding: 10px; }
+      .person-name { font-size: 1.4em; }
+      .person-avatar { width: 50px; height: 50px; font-size: 1.1em; }
+      .network-grid { grid-template-columns: 1fr; }
+      .tab-btn { padding: 8px 12px; font-size: 0.82em; }
+    }
+
+    /* Glassmorphism */
+    .panel, .affiliation-card, .network-card {
       background: rgba(255, 255, 255, 0.15) !important;
       backdrop-filter: blur(12px) !important;
       -webkit-backdrop-filter: blur(12px) !important;
@@ -54,10 +129,7 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       border-radius: 12px !important;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
     }
-    .panel:hover, .cat-card:hover, .featured-card:hover, .discover-card:hover,
-    .kpi-card:hover, .chart-card:hover, .result-card:hover, .person-card:hover,
-    .connection-item:hover, .similar-card:hover, .bm-card:hover, .entry-card:hover,
-    .country-card:hover {
+    .panel:hover, .affiliation-card:hover, .network-card:hover {
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important;
       border-color: rgba(255, 255, 255, 0.35) !important;
     }
@@ -74,80 +146,86 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
       -webkit-backdrop-filter: blur(8px) !important;
       border: 1px solid rgba(255, 255, 255, 0.3) !important;
     }
-    .quick-search input {
-      background: rgba(255, 255, 255, 0.2) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    }
-    .discover-btn, .btn, .btn-find, .btn-primary {
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-    }
     .tag {
       background: rgba(0, 123, 255, 0.1) !important;
       backdrop-filter: blur(4px) !important;
       -webkit-backdrop-filter: blur(4px) !important;
       border: 1px solid rgba(0, 123, 255, 0.15) !important;
     }
-    .country-item {
-      background: rgba(255, 255, 255, 0.12) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
-      border-radius: 8px !important;
-    }
-    /* Glassmorphism dark mode overrides */
-    body.dark-mode .panel, body.dark-mode .cat-card, body.dark-mode .featured-card,
-    body.dark-mode .discover-card, body.dark-mode .kpi-card, body.dark-mode .chart-card,
-    body.dark-mode .export-card, body.dark-mode .result-card, body.dark-mode .person-card,
-    body.dark-mode .connection-item, body.dark-mode .similar-card, body.dark-mode .bm-card,
-    body.dark-mode .comp-card, body.dark-mode .entry-card, body.dark-mode .country-card,
-    body.dark-mode .stat-box, body.dark-mode .controls, body.dark-mode .search-section,
-    body.dark-mode .shared-section, body.dark-mode .endpoint, body.dark-mode .legend {
+
+    /* Dark mode */
+    body.dark-mode .panel, body.dark-mode .affiliation-card, body.dark-mode .network-card {
       background: rgba(20, 20, 40, 0.45) !important;
-      backdrop-filter: blur(12px) !important;
-      -webkit-backdrop-filter: blur(12px) !important;
       border: 1px solid rgba(100, 100, 255, 0.15) !important;
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25) !important;
     }
     body.dark-mode nav a {
       background: rgba(20, 20, 50, 0.4) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
       border: 1px solid rgba(100, 100, 255, 0.2) !important;
     }
     body.dark-mode nav select {
       background: rgba(20, 20, 50, 0.4) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-    }
-    body.dark-mode .country-item {
-      background: rgba(30, 30, 60, 0.4) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-      border: 1px solid rgba(100, 100, 255, 0.15) !important;
     }
     body.dark-mode .tag {
       background: rgba(60, 100, 200, 0.15) !important;
       border: 1px solid rgba(100, 100, 255, 0.2) !important;
     }
-
+    body.dark-mode .connection-reason {
+      background: rgba(40, 35, 15, 0.5);
+      border-color: rgba(200, 160, 50, 0.2);
+    }
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
-  <div class="panel"><a href="index.html" class="back-link">&#8592; Back to full list</a></div>
+  <div class="panel"><a href="people.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> People Directory</a></div>
+
+  <!-- Header -->
   <div class="panel">
-    <h1 class="person-header" id="person-name">Loading...</h1>
+    <div class="person-header-wrap">
+      <div class="person-avatar" id="person-avatar"></div>
+      <div>
+        <h1 class="person-name" id="person-name">Loading...</h1>
+        <div class="person-subtitle" id="person-subtitle"></div>
+      </div>
+    </div>
+    <div class="stats-bar" id="stats-bar"></div>
   </div>
-  <div class="panel" id="person-bio-panel">
-    <h2>Biography</h2>
-    <p id="person-bio" style="line-height:1.6"></p>
+
+  <!-- Bio -->
+  <div class="panel" id="bio-panel" style="display:none">
+    <h2><i class="fa-solid fa-user"></i> Biography</h2>
+    <p class="bio-text" id="person-bio"></p>
   </div>
-  <div class="panel">
-    <h2>Affiliations</h2>
-    <div id="affiliations-list"></div>
+
+  <!-- Tabbed sections -->
+  <div class="panel" id="main-content" style="display:none">
+    <div class="tab-bar" id="tab-bar">
+      <button class="tab-btn active" data-tab="affiliations"><i class="fa-solid fa-building"></i> Affiliations</button>
+      <button class="tab-btn" data-tab="network"><i class="fa-solid fa-diagram-project"></i> Network</button>
+      <button class="tab-btn" data-tab="categories"><i class="fa-solid fa-tags"></i> Categories</button>
+      <button class="tab-btn" data-tab="countries"><i class="fa-solid fa-globe"></i> Countries</button>
+    </div>
+
+    <!-- Affiliations tab -->
+    <div class="tab-content active" id="tab-affiliations"></div>
+
+    <!-- Network tab -->
+    <div class="tab-content" id="tab-network">
+      <input class="net-search" id="network-search" placeholder="Search connected people..." />
+      <div id="network-count" style="font-size:0.85em;color:#666;margin-bottom:8px;"></div>
+      <div class="network-grid" id="network-grid"></div>
+    </div>
+
+    <!-- Categories tab -->
+    <div class="tab-content" id="tab-categories">
+      <div class="tag-grid" id="cat-tags"></div>
+    </div>
+
+    <!-- Countries tab -->
+    <div class="tab-content" id="tab-countries">
+      <div class="tag-grid" id="country-tags"></div>
+    </div>
   </div>
 
   <script src="app.js"></script>
@@ -155,73 +233,269 @@ nav { overflow-x: auto; -webkit-overflow-scrolling: touch; }
     function slugify(str) {
       return str.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
     }
+    function getInitials(name) {
+      return name.split(' ').filter(Boolean).map(w => w[0]).join('').toUpperCase().substring(0, 2);
+    }
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
     const id = new URLSearchParams(window.location.search).get('id');
     const religion = new URLSearchParams(window.location.search).get('religion') || 'jewish';
     initPage(religion);
+
     if (!id) {
-      document.body.textContent = 'Person id missing';
+      document.getElementById('person-name').textContent = 'Person ID missing';
     } else {
       fetch('/api/person/' + encodeURIComponent(id))
         .then(r => r.ok ? r.json() : Promise.reject('Not found'))
         .then(person => {
-          document.title = person.name + ' - Person Details';
-          document.getElementById('person-name').textContent = person.name;
+          document.title = person.name + ' - The Juice Box';
 
-          // Bookmark button
+          // Avatar
+          document.getElementById('person-avatar').textContent = getInitials(person.name);
+
+          // Name + bookmark
+          const nameEl = document.getElementById('person-name');
+          nameEl.textContent = person.name;
           const bmBtn = document.createElement('button');
-          bmBtn.style.cssText = 'margin-left:12px;padding:5px 14px;border-radius:16px;border:1px solid rgba(0,0,255,0.3);cursor:pointer;font-size:0.85em;vertical-align:middle;';
+          bmBtn.style.cssText = 'margin-left:12px;padding:5px 14px;border-radius:16px;border:1px solid rgba(0,0,255,0.2);cursor:pointer;font-size:0.5em;vertical-align:middle;background:rgba(0,123,255,0.08);color:#0056b3;';
           function updateBmBtn() {
             const saved = BookmarkManager.isPersonBookmarked(id);
             bmBtn.innerHTML = saved ? '<i class="fa-solid fa-bookmark"></i> Bookmarked' : '<i class="fa-regular fa-bookmark"></i> Bookmark';
-            bmBtn.style.background = saved ? 'rgba(255,193,7,0.2)' : 'rgba(0,123,255,0.1)';
+            bmBtn.style.background = saved ? 'rgba(255,193,7,0.2)' : 'rgba(0,123,255,0.08)';
             bmBtn.style.color = saved ? '#b8860b' : '#0056b3';
           }
           updateBmBtn();
           bmBtn.addEventListener('click', () => {
-            if (BookmarkManager.isPersonBookmarked(id)) { BookmarkManager.removePerson(id); }
-            else { BookmarkManager.addPerson({ id, name: person.name, bio: (person.bio || '').substring(0, 200) }); }
+            if (BookmarkManager.isPersonBookmarked(id)) BookmarkManager.removePerson(id);
+            else BookmarkManager.addPerson({ id, name: person.name, bio: (person.bio||'').substring(0,200) });
             updateBmBtn();
           });
-          document.getElementById('person-name').appendChild(bmBtn);
+          nameEl.appendChild(bmBtn);
 
-          document.getElementById('person-bio').textContent = person.bio || 'No biography available.';
-          const list = document.getElementById('affiliations-list');
+          // Subtitle - primary role
+          if (person.affiliations && person.affiliations.length) {
+            const primary = person.affiliations[0];
+            document.getElementById('person-subtitle').textContent = (primary.role || 'Associated') + ' at ' + primary.organization + ' (' + primary.country + ')';
+          }
+
+          // Stats bar
+          const statsBar = document.getElementById('stats-bar');
+          const stats = [
+            { cls: 'orgs', icon: 'fa-building', val: person.totalAffiliations || 0, label: 'Organizations' },
+            { cls: 'people', icon: 'fa-users', val: person.totalConnections || 0, label: 'Connected People' },
+            { cls: 'cats', icon: 'fa-tags', val: (person.categorySummary||[]).length, label: 'Categories' },
+            { cls: 'countries', icon: 'fa-globe', val: (person.countrySummary||[]).length, label: 'Countries' }
+          ];
+          stats.forEach(s => {
+            const pill = document.createElement('span');
+            pill.className = 'stat-pill ' + s.cls;
+            pill.innerHTML = '<i class="fa-solid ' + s.icon + '"></i> ' + s.val + ' ' + s.label;
+            statsBar.appendChild(pill);
+          });
+
+          // Bio
+          if (person.bio) {
+            document.getElementById('bio-panel').style.display = '';
+            document.getElementById('person-bio').textContent = person.bio;
+          }
+
+          // Show main content
+          document.getElementById('main-content').style.display = '';
+
+          // === AFFILIATIONS TAB ===
+          const affTab = document.getElementById('tab-affiliations');
           if (person.affiliations && person.affiliations.length) {
             person.affiliations.forEach(a => {
               const card = document.createElement('div');
               card.className = 'affiliation-card';
+
+              // Header: org link
+              const hdr = document.createElement('div');
+              hdr.className = 'aff-header';
               const orgLink = document.createElement('a');
               orgLink.href = 'entry.html?religion=' + encodeURIComponent(a.religion) + '&id=' + encodeURIComponent(a.entryId || slugify(a.organization));
               orgLink.textContent = a.organization;
-              card.appendChild(orgLink);
-              card.appendChild(document.createTextNode(' - ' + (a.role || '') + ' - '));
-              const countryLink = document.createElement('a');
-              countryLink.href = 'country.html?religion=' + encodeURIComponent(a.religion) + '&country=' + encodeURIComponent(a.country);
-              countryLink.textContent = a.country;
-              countryLink.style.fontWeight = 'normal';
-              card.appendChild(countryLink);
+              hdr.appendChild(orgLink);
+              card.appendChild(hdr);
+
+              // Meta badges
+              const meta = document.createElement('div');
+              meta.className = 'aff-meta';
+              if (a.role) {
+                const rb = document.createElement('span');
+                rb.className = 'badge role-badge';
+                rb.innerHTML = '<i class="fa-solid fa-briefcase"></i> ' + a.role;
+                meta.appendChild(rb);
+              }
+              if (a.category) {
+                const cb = document.createElement('span');
+                cb.className = 'badge cat-badge';
+                cb.innerHTML = '<i class="fa-solid fa-tag"></i> ' + a.category;
+                meta.appendChild(cb);
+              }
+              const ctb = document.createElement('span');
+              ctb.className = 'badge country-badge';
+              const ctLink = document.createElement('a');
+              ctLink.href = 'country.html?religion=' + encodeURIComponent(a.religion) + '&country=' + encodeURIComponent(a.country);
+              ctLink.style.cssText = 'color:inherit;text-decoration:none;';
+              ctLink.innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + a.country;
+              ctb.appendChild(ctLink);
+              meta.appendChild(ctb);
+              card.appendChild(meta);
+
+              // Connection reason / summary
+              if (a.summary) {
+                const summ = document.createElement('div');
+                summ.className = 'aff-summary';
+                summ.textContent = a.summary;
+                card.appendChild(summ);
+              }
+
+              // Why connected
+              const reason = document.createElement('div');
+              reason.className = 'connection-reason';
+              reason.innerHTML = '<strong>Connection:</strong> ' + person.name + ' serves as <strong>' + (a.role || 'an associate') + '</strong> at ' + a.organization +
+                (a.category ? ', a <strong>' + a.category + '</strong> organization' : '') +
+                ' based in <strong>' + a.country + '</strong>.' +
+                (a.coIndividuals && a.coIndividuals.length ? ' Connected here with <strong>' + a.coIndividuals.length + ' other individual' + (a.coIndividuals.length > 1 ? 's' : '') + '</strong>.' : '');
+              card.appendChild(reason);
+
               // Co-individuals
               if (a.coIndividuals && a.coIndividuals.length) {
                 const coDiv = document.createElement('div');
-                coDiv.style.marginTop = '6px';
-                coDiv.appendChild(document.createTextNode('Also at this org: '));
-                a.coIndividuals.forEach((co, i) => {
+                coDiv.className = 'co-section';
+                const lbl = document.createElement('div');
+                lbl.className = 'co-label';
+                lbl.innerHTML = '<i class="fa-solid fa-users"></i> Also at ' + a.organization + ' (' + a.coIndividuals.length + '):';
+                coDiv.appendChild(lbl);
+                a.coIndividuals.forEach(co => {
                   const span = document.createElement('span');
                   span.className = 'co-person';
                   const coLink = document.createElement('a');
                   coLink.href = 'person.html?id=' + encodeURIComponent(co.id);
-                  coLink.textContent = co.name;
+                  coLink.textContent = co.name + (co.role ? ' (' + co.role + ')' : '');
                   span.appendChild(coLink);
-                  if (i < a.coIndividuals.length - 1) span.appendChild(document.createTextNode(', '));
                   coDiv.appendChild(span);
                 });
                 card.appendChild(coDiv);
               }
-              list.appendChild(card);
+
+              affTab.appendChild(card);
             });
           } else {
-            list.textContent = 'No affiliations found.';
+            affTab.textContent = 'No affiliations found.';
           }
+
+          // === NETWORK TAB ===
+          const netGrid = document.getElementById('network-grid');
+          const netCount = document.getElementById('network-count');
+          const allNetwork = person.network || [];
+
+          function renderNetwork(filter) {
+            netGrid.innerHTML = '';
+            const filtered = filter ? allNetwork.filter(n =>
+              n.name.toLowerCase().includes(filter) ||
+              (n.bio||'').toLowerCase().includes(filter) ||
+              n.sharedOrgs.some(o => o.org.toLowerCase().includes(filter))
+            ) : allNetwork;
+            netCount.textContent = 'Showing ' + filtered.length + ' of ' + allNetwork.length + ' connected people';
+
+            filtered.forEach(n => {
+              const card = document.createElement('div');
+              card.className = 'network-card';
+
+              // Header
+              const hdr = document.createElement('div');
+              hdr.className = 'net-card-header';
+              const av = document.createElement('div');
+              av.className = 'net-avatar';
+              av.textContent = getInitials(n.name);
+              hdr.appendChild(av);
+              const nameDiv = document.createElement('div');
+              nameDiv.className = 'net-name';
+              const nLink = document.createElement('a');
+              nLink.href = 'person.html?id=' + encodeURIComponent(n.id);
+              nLink.textContent = n.name;
+              nameDiv.appendChild(nLink);
+              hdr.appendChild(nameDiv);
+              const countBadge = document.createElement('span');
+              countBadge.className = 'shared-count-badge';
+              countBadge.textContent = n.sharedOrgs.length + ' shared org' + (n.sharedOrgs.length > 1 ? 's' : '');
+              hdr.appendChild(countBadge);
+              card.appendChild(hdr);
+
+              // Bio preview
+              if (n.bio) {
+                const bio = document.createElement('div');
+                bio.className = 'net-bio';
+                bio.textContent = n.bio;
+                card.appendChild(bio);
+              }
+
+              // Shared orgs with roles
+              const soDiv = document.createElement('div');
+              soDiv.className = 'shared-orgs';
+              n.sharedOrgs.forEach(so => {
+                const item = document.createElement('div');
+                item.className = 'shared-org-item';
+                item.innerHTML = '<span class="shared-org-bullet">&#8226;</span>' +
+                  '<span class="shared-org-name">' + so.org + '</span>' +
+                  '<span class="shared-org-roles">&mdash; You: ' + (so.yourRole || 'N/A') + ' | They: ' + (so.theirRole || 'N/A') + '</span>';
+                soDiv.appendChild(item);
+              });
+              card.appendChild(soDiv);
+
+              // Connection explanation
+              const reason = document.createElement('div');
+              reason.className = 'connection-reason';
+              reason.style.marginTop = '8px';
+              if (n.sharedOrgs.length === 1) {
+                const so = n.sharedOrgs[0];
+                reason.innerHTML = '<strong>Why connected:</strong> Both are at <strong>' + so.org + '</strong> in ' + so.country +
+                  '. ' + person.name + ' as ' + (so.yourRole || 'associate') + ', ' + n.name + ' as ' + (so.theirRole || 'associate') + '.';
+              } else {
+                reason.innerHTML = '<strong>Why connected:</strong> Share <strong>' + n.sharedOrgs.length + ' organizations</strong> in common: ' +
+                  n.sharedOrgs.map(so => so.org).join(', ') + '.';
+              }
+              card.appendChild(reason);
+
+              netGrid.appendChild(card);
+            });
+          }
+          renderNetwork('');
+          document.getElementById('network-search').addEventListener('input', e => {
+            renderNetwork(e.target.value.toLowerCase().trim());
+          });
+
+          // === CATEGORIES TAB ===
+          const catTags = document.getElementById('cat-tags');
+          (person.categorySummary || []).forEach(c => {
+            const tag = document.createElement('span');
+            tag.className = 'tag cat-tag';
+            tag.innerHTML = '<i class="fa-solid fa-tag"></i> ' + c.category + ' <strong>(' + c.count + ')</strong>';
+            catTags.appendChild(tag);
+          });
+          if (!(person.categorySummary||[]).length) catTags.textContent = 'No category data available.';
+
+          // === COUNTRIES TAB ===
+          const ctryTags = document.getElementById('country-tags');
+          (person.countrySummary || []).forEach(c => {
+            const tag = document.createElement('span');
+            tag.className = 'tag country-tag';
+            tag.innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + c.country + ' <strong>(' + c.count + ')</strong>';
+            ctryTags.appendChild(tag);
+          });
+          if (!(person.countrySummary||[]).length) ctryTags.textContent = 'No country data available.';
+
         })
         .catch(err => {
           document.getElementById('person-name').textContent = String(err);
