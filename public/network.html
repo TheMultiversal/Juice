@@ -227,7 +227,7 @@
           <label>Node Size</label>
           <input type="range" id="node-scale" min="2" max="20" value="6" />
           <label>Link Distance</label>
-          <input type="range" id="link-dist" min="15" max="250" value="80" />
+          <input type="range" id="link-dist" min="30" max="350" value="120" />
           <div class="chks">
             <label><input type="checkbox" id="show-people" /> People</label>
           </div>
@@ -340,7 +340,7 @@
     let neighborSet = new Set();
     let searchMatches = new Set();
     let nodeScale = 6;
-    let linkDist = 80;
+    let linkDist = 120;
     let mouseX = 0, mouseY = 0;
     let focusEntryId = null;
     let focusNodeId = null;
@@ -523,8 +523,8 @@
         .linkWidth(linkWidthFn)
         .linkColor(linkColorFn)
         .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(15000)
-        .warmupTicks(nc > 300 ? 200 : nc > 100 ? 150 : 100)
+        .cooldownTime(20000)
+        .warmupTicks(nc > 300 ? 350 : nc > 100 ? 250 : 180)
         .d3AlphaDecay(0.02)
         .d3VelocityDecay(0.3)
         .d3AlphaMin(0.005)
@@ -538,40 +538,40 @@
 
       // Charge: strong repulsion to push nodes apart
       graph.d3Force('charge')
-        .strength(nc > 300 ? -180 : nc > 100 ? -220 : -280)
-        .distanceMax(nc > 300 ? 500 : 800);
+        .strength(nc > 300 ? -300 : nc > 100 ? -400 : -500)
+        .distanceMax(nc > 300 ? 600 : 1200);
 
       // Link distance varies by type
       graph.d3Force('link')
         .distance(link => {
-          if (link.type === 'person-affiliation') return linkDist * 1.6;
+          if (link.type === 'person-affiliation') return linkDist * 2.0;
           if (link.type === 'shared-person') return linkDist * 0.7;
           return linkDist;
         })
         .strength(link => {
-          if (link.type === 'person-affiliation') return 0.3;
-          return 0.7;
+          if (link.type === 'person-affiliation') return 0.2;
+          return 0.6;
         });
 
-      // Collision force: prevent node overlap
+      // Collision force: prevent node overlap — radii large enough to include labels
       graph.d3Force('collide', d3.forceCollide()
         .radius(node => {
-          if (node.isFocus) return nodeScale * 1.8 + 6;
-          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
-          return nodeScale * 0.8 + 5;
+          if (node.isFocus) return nodeScale * 3 + 15;
+          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+          return nodeScale * 2 + 12;
         })
-        .strength(0.8)
-        .iterations(3)
+        .strength(1.0)
+        .iterations(5)
       );
 
       // Radial force: push people outward, entries inward
       graph.d3Force('radial', d3.forceRadial()
         .radius(node => {
           if (node.isFocus) return 0;
-          if (node.nodeType === 'person') return Math.min(nc * 1.5, 400);
-          return Math.min(nc * 0.6, 180);
+          if (node.nodeType === 'person') return Math.min(nc * 2.5, 600);
+          return Math.min(nc * 1.0, 280);
         })
-        .strength(0.05)
+        .strength(0.08)
       );
 
       // Resize handler
@@ -791,13 +791,13 @@
 
       // Update forces for current graph size
       graph.d3Force('charge')
-        .strength(nodeCount > 300 ? -180 : nodeCount > 100 ? -220 : -280)
-        .distanceMax(nodeCount > 300 ? 500 : 800);
+        .strength(nodeCount > 300 ? -300 : nodeCount > 100 ? -400 : -500)
+        .distanceMax(nodeCount > 300 ? 600 : 1200);
 
       graph.d3Force('link')
         .distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.6;
+          if (lt === 'person-affiliation') return linkDist * 2.0;
           if (lt === 'shared-person') return linkDist * 0.7;
           return linkDist;
         });
@@ -805,17 +805,17 @@
       // Update collision radii
       graph.d3Force('collide')
         .radius(node => {
-          if (node.isFocus) return nodeScale * 1.8 + 6;
-          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
-          return nodeScale * 0.8 + 5;
+          if (node.isFocus) return nodeScale * 3 + 15;
+          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+          return nodeScale * 2 + 12;
         });
 
       // Update radial force
       graph.d3Force('radial')
         .radius(node => {
           if (node.isFocus) return 0;
-          if (node.nodeType === 'person') return Math.min(nodeCount * 1.5, 400);
-          return Math.min(nodeCount * 0.6, 180);
+          if (node.nodeType === 'person') return Math.min(nodeCount * 2.5, 600);
+          return Math.min(nodeCount * 1.0, 280);
         });
 
       graph.d3ReheatSimulation();
@@ -852,9 +852,9 @@
       nodeScale = +this.value;
       if (graph && graph.d3Force('collide')) {
         graph.d3Force('collide').radius(node => {
-          if (node.isFocus) return nodeScale * 1.8 + 6;
-          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
-          return nodeScale * 0.8 + 5;
+          if (node.isFocus) return nodeScale * 3 + 15;
+          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+          return nodeScale * 2 + 12;
         });
         graph.d3ReheatSimulation();
       }
@@ -865,7 +865,7 @@
       if (graph) {
         graph.d3Force('link').distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.6;
+          if (lt === 'person-affiliation') return linkDist * 2.0;
           if (lt === 'shared-person') return linkDist * 0.7;
           return linkDist;
         });

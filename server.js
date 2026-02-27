@@ -3,6 +3,19 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
+// Helper: normalize connection type (extract short type from "Type - Description" format)
+function normalizeConnType(rawType) {
+  if (!rawType) return 'related';
+  const dash = rawType.indexOf(' - ');
+  return dash > 0 ? rawType.substring(0, dash) : rawType;
+}
+function normalizeConnDesc(rawType, rawDesc) {
+  if (rawDesc) return rawDesc;
+  if (!rawType) return '';
+  const dash = rawType.indexOf(' - ');
+  return dash > 0 ? rawType.substring(dash + 3) : '';
+}
+
 // --- In-memory cache with TTL ---
 const _cache = {};
 function getCached(key, ttlMs, fn) {
@@ -338,7 +351,7 @@ app.get('/api/graph', (req, res) => {
               if (country && eInfo.country !== country && c !== country) continue;
               if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other', nodeType: 'entry' }); }
               const lk = entry.id < targetId ? entry.id + '|' + targetId : targetId + '|' + entry.id;
-              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: conn.type || 'related', description: conn.description || '' }); }
+              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
             }
           }
           // Shared individuals - use prebuilt map
@@ -521,7 +534,7 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
             if (tid === eid && conn.source) tid = conn.source;
             if (!tid || tid === eid || !visited.has(tid)) continue;
             const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
-            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: conn.type || 'related', description: conn.description || '' }); }
+            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
           }
         }
         // Shared person links within visited set (skip for big entries since BFS already skipped)
@@ -621,7 +634,7 @@ app.get('/api/path', (req, res) => {
             for (const c2 in jd.countries) {
               for (const e2 of jd.countries[c2]) {
                 if (conn.name.toLowerCase() === e2.name.toLowerCase() || conn.entryId === e2.id) {
-                  adj[entry.id].push({ target: e2.id, type: conn.type || 'related', desc: conn.description || '', via: 'connection' });
+                  adj[entry.id].push({ target: e2.id, type: normalizeConnType(conn.type), desc: normalizeConnDesc(conn.type, conn.description), via: 'connection' });
                 }
               }
             }
@@ -781,10 +794,46 @@ app.get('/api/:religion/entry/:id', (req, res) => {
   try {
     delete require.cache[require.resolve(`./data/${religion}.json`)];
     const data = require(`./data/${religion}.json`);
+
+    // Build id->name lookup so we can normalize source/target connections
+    const idToName = {};
+    for (const country in data.countries) {
+      for (const e of data.countries[country]) {
+        if (e.id) idToName[e.id] = e.name;
+      }
+    }
+
     for (const country in data.countries) {
       const found = data.countries[country].find(e => e.id === id);
       if (found) {
-        return res.json(Object.assign({}, found, { country }));
+        const result = Object.assign({}, found, { country });
+
+        // Normalize connections: convert source/target format to name/entryId/type/description
+        if (result.connections) {
+          result.connections = result.connections.map(conn => {
+            // Already in name format — pass through
+            if (conn.name) return conn;
+            // source/target format — normalize
+            if (conn.source || conn.target) {
+              const targetId = conn.target || conn.source;
+              const targetName = idToName[targetId] || targetId;
+              // The type field in source/target format often contains the description
+              const rawType = conn.type || '';
+              const dashIdx = rawType.indexOf(' - ');
+              const shortType = dashIdx > 0 ? rawType.substring(0, dashIdx) : rawType;
+              const desc = dashIdx > 0 ? rawType.substring(dashIdx + 3) : '';
+              return {
+                name: targetName,
+                entryId: targetId,
+                type: shortType,
+                description: desc || rawType
+              };
+            }
+            return conn;
+          });
+        }
+
+        return res.json(result);
       }
     }
     res.status(404).json({ error: 'Entry not found' });

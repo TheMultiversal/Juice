@@ -211,7 +211,7 @@
           <label>Node Size</label>
           <input type="range" id="node-scale" min="2" max="20" value="6" />
           <label>Link Distance</label>
-          <input type="range" id="link-dist" min="15" max="250" value="60" />
+          <input type="range" id="link-dist" min="30" max="350" value="100" />
           <div class="chks">
             <label><input type="checkbox" id="show-people" /> People</label>
           </div>
@@ -321,7 +321,7 @@
     let neighborSet = new Set(); // current hover neighborhood
     let searchMatches = new Set();
     let nodeScale = 6;
-    let linkDist = 60;
+    let linkDist = 100;
     let mouseX = 0, mouseY = 0;
     const tipEl = document.getElementById('tip');
     const container = document.getElementById('graph-container');
@@ -512,8 +512,8 @@
         .linkWidth(linkWidthFn)
         .linkColor(linkColorFn)
         .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(18000)
-        .warmupTicks(nc > 600 ? 200 : nc > 300 ? 150 : 100)
+        .cooldownTime(22000)
+        .warmupTicks(nc > 600 ? 350 : nc > 300 ? 250 : 180)
         .d3AlphaDecay(0.018)
         .d3VelocityDecay(0.3)
         .d3AlphaMin(0.005)
@@ -527,29 +527,29 @@
 
       // Charge: strong many-body repulsion to push nodes apart
       graph.d3Force('charge')
-        .strength(nc > 600 ? -120 : nc > 300 ? -160 : -200)
-        .distanceMax(nc > 600 ? 400 : 600);
+        .strength(nc > 600 ? -200 : nc > 300 ? -280 : -350)
+        .distanceMax(nc > 600 ? 500 : 800);
 
       // Link distance varies by type
       graph.d3Force('link')
         .distance(link => {
-          if (link.type === 'person-affiliation') return linkDist * 1.5;
+          if (link.type === 'person-affiliation') return linkDist * 1.8;
           if (link.type === 'shared-person') return linkDist * 0.8;
           return linkDist;
         })
         .strength(link => {
-          if (link.type === 'person-affiliation') return 0.25;
-          return 0.6;
+          if (link.type === 'person-affiliation') return 0.15;
+          return 0.5;
         });
 
-      // Collision force: prevent node overlap
+      // Collision force: prevent node overlap — radii include label space
       graph.d3Force('collide', d3.forceCollide()
         .radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
-          return nodeScale * 0.7 + 4;
+          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
+          return nodeScale * 1.5 + 10;
         })
-        .strength(0.7)
-        .iterations(2)
+        .strength(0.9)
+        .iterations(4)
       );
 
       // Resize handler
@@ -737,13 +737,13 @@
 
       // Update forces for current data
       graph.d3Force('charge')
-        .strength(nodeCount > 600 ? -120 : nodeCount > 300 ? -160 : -200)
-        .distanceMax(nodeCount > 600 ? 400 : 600);
+        .strength(nodeCount > 600 ? -200 : nodeCount > 300 ? -280 : -350)
+        .distanceMax(nodeCount > 600 ? 500 : 800);
 
       graph.d3Force('link')
         .distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.5;
+          if (lt === 'person-affiliation') return linkDist * 1.8;
           if (lt === 'shared-person') return linkDist * 0.8;
           return linkDist;
         });
@@ -751,8 +751,8 @@
       // Update collision radii
       graph.d3Force('collide')
         .radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
-          return nodeScale * 0.7 + 4;
+          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
+          return nodeScale * 1.5 + 10;
         });
 
       graph.d3ReheatSimulation();
@@ -782,8 +782,8 @@
       nodeScale = +this.value;
       if (graph && graph.d3Force('collide')) {
         graph.d3Force('collide').radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
-          return nodeScale * 0.7 + 4;
+          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
+          return nodeScale * 1.5 + 10;
         });
         graph.d3ReheatSimulation();
       }
@@ -794,7 +794,7 @@
       if (graph) {
         graph.d3Force('link').distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.5;
+          if (lt === 'person-affiliation') return linkDist * 1.8;
           if (lt === 'shared-person') return linkDist * 0.8;
           return linkDist;
         });
