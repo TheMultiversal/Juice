@@ -385,14 +385,19 @@ app.get('/api/graph', (req, res) => {
 });
 
 // focused network graph - N-degree neighborhood around a single entry
+// ID aliases for merged/renamed entries
+const ID_ALIASES = {
+  'jeffrey-epstein-network': 'epstein-network',
+};
+
 app.get('/api/graph/focus/:entryId', (req, res) => {
-  const focusId = req.params.entryId;
+  let focusId = req.params.entryId;
+  if (ID_ALIASES[focusId]) focusId = ID_ALIASES[focusId];
   const depth = Math.min(parseInt(req.query.depth) || 2, 3);
   const includePeople = req.query.people !== '0';
-  const maxPeople = parseInt(req.query.maxPeople) || 0; // 0 = auto (50 for big entries)
   const roleFilter = req.query.role || ''; // filter people by role keyword
   try {
-    const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}-mp${maxPeople}-r${roleFilter}`;
+    const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}-r${roleFilter}`;
     const result = getCached(cacheKey, 30000, () => {
       delete require.cache[require.resolve('./data/jewish.json')];
       const jd = require('./data/jewish.json');
@@ -487,10 +492,8 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
           nodeSet.add(eid);
           nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === focusId });
         }
-        // People
+        // People - show ALL individuals (no cap)
         if (includePeople && entry.individuals) {
-          // Determine cap for this entry
-          let cap = maxPeople || (entry.individuals.length > 80 ? 50 : 0);
           let inds = entry.individuals;
 
           // Filter by role if requested
@@ -506,12 +509,6 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
               const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw)));
               return overlap.length === 0; // keep only if NO significant word overlap
             });
-          }
-
-          // Sort by importance (appear in most entries first) if we'll cap
-          if (cap > 0 && inds.length > cap) {
-            inds = [...inds].sort((a, b) => (indImportance[b.id] || 0) - (indImportance[a.id] || 0));
-            inds = inds.slice(0, cap);
           }
 
           for (const ind of inds) {
@@ -790,7 +787,8 @@ app.get('/api/:religion/category/:cat', (req, res) => {
 // lookup a specific entry by id across all countries
 app.get('/api/:religion/entry/:id', (req, res) => {
   const religion = req.params.religion;
-  const id = req.params.id;
+  let id = req.params.id;
+  if (ID_ALIASES[id]) id = ID_ALIASES[id];
   try {
     delete require.cache[require.resolve(`./data/${religion}.json`)];
     const data = require(`./data/${religion}.json`);

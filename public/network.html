@@ -366,8 +366,16 @@
     });
 
     // ─── Parse URL ───────────────────────────────────────
+    const ID_ALIASES = { 'jeffrey-epstein-network': 'epstein-network' };
     const params = new URLSearchParams(window.location.search);
     focusEntryId = params.get('id') || 'epstein-network';
+    if (ID_ALIASES[focusEntryId]) {
+      focusEntryId = ID_ALIASES[focusEntryId];
+      // Update URL without reload
+      const newUrl = new URL(window.location);
+      newUrl.searchParams.set('id', focusEntryId);
+      window.history.replaceState({}, '', newUrl);
+    }
 
     // Set entry link
     document.getElementById('btn-entry-top').href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
@@ -512,6 +520,9 @@
     function initGraph(nodeCount) {
       const rect = container.getBoundingClientRect();
       const nc = nodeCount || 100;
+      // Scale forces to node count -- large graphs need fundamentally different params
+      const isHuge = nc > 400;   // 500+ node graphs like Epstein
+      const isLarge = nc > 150;
 
       graph = ForceGraph()(container)
         .width(rect.width)
@@ -523,55 +534,76 @@
         .linkWidth(linkWidthFn)
         .linkColor(linkColorFn)
         .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(20000)
-        .warmupTicks(nc > 300 ? 350 : nc > 100 ? 250 : 180)
-        .d3AlphaDecay(0.02)
-        .d3VelocityDecay(0.3)
-        .d3AlphaMin(0.005)
+        .linkCurvature(0)
+        .cooldownTime(isHuge ? 30000 : 20000)
+        .warmupTicks(isHuge ? 500 : isLarge ? 300 : 180)
+        .d3AlphaDecay(isHuge ? 0.008 : 0.015)
+        .d3VelocityDecay(isHuge ? 0.35 : 0.3)
+        .d3AlphaMin(0.003)
         .autoPauseRedraw(false)
+        .minZoom(0.05)
         .nodeLabel(() => '')
         .onNodeHover(handleNodeHover)
         .onNodeClick(handleNodeClick)
         .onLinkHover(handleLinkHover)
+        .onLinkClick(handleLinkClick)
         .onBackgroundClick(handleBgClick)
         .enableNodeDrag(true);
 
-      // Charge: strong repulsion to push nodes apart
-      graph.d3Force('charge')
-        .strength(nc > 300 ? -300 : nc > 100 ? -400 : -500)
-        .distanceMax(nc > 300 ? 600 : 1200);
+      // For huge graphs, make links easier to click by increasing pointer area
+      if (isHuge) graph.linkHoverPrecision(8);
 
-      // Link distance varies by type
+      // Charge: repulsion scales with node count
+      const chargeStr = isHuge ? -150 : isLarge ? -300 : -500;
+      const chargeDist = isHuge ? 400 : isLarge ? 600 : 1200;
+      graph.d3Force('charge')
+        .strength(chargeStr)
+        .distanceMax(chargeDist);
+
+      // Link distance: huge graphs need shorter links to stay compact
+      const personMult = isHuge ? 1.2 : 2.0;
+      const sharedMult = 0.7;
       graph.d3Force('link')
         .distance(link => {
-          if (link.type === 'person-affiliation') return linkDist * 2.0;
-          if (link.type === 'shared-person') return linkDist * 0.7;
+          if (link.type === 'person-affiliation') return linkDist * personMult;
+          if (link.type === 'shared-person') return linkDist * sharedMult;
           return linkDist;
         })
         .strength(link => {
-          if (link.type === 'person-affiliation') return 0.2;
+          if (link.type === 'person-affiliation') return isHuge ? 0.4 : 0.2;
           return 0.6;
         });
 
-      // Collision force: prevent node overlap — radii large enough to include labels
+      // Collision: scale radius down for huge graphs so nodes fit
+      const collideR = isHuge
+        ? (node => {
+            if (node.isFocus) return nodeScale * 2.5 + 10;
+            if (node.nodeType === 'person') return nodeScale * 0.7 + 4;
+            return nodeScale * 1.2 + 6;
+          })
+        : (node => {
+            if (node.isFocus) return nodeScale * 3 + 15;
+            if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+            return nodeScale * 2 + 12;
+          });
       graph.d3Force('collide', d3.forceCollide()
-        .radius(node => {
-          if (node.isFocus) return nodeScale * 3 + 15;
-          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
-          return nodeScale * 2 + 12;
-        })
-        .strength(1.0)
-        .iterations(5)
+        .radius(collideR)
+        .strength(isHuge ? 0.7 : 1.0)
+        .iterations(isHuge ? 2 : 5)
       );
 
-      // Radial force: push people outward, entries inward
+      // Radial: push people into a ring that's large enough to fit them all
+      // For 562 people with ~12px collision spacing, ring circumference = 562*12 = 6744
+      // radius = circumference / (2*pi) = ~1073. Use ~1.8*nc as a practical formula.
+      const peopleRadius = isHuge ? Math.max(nc * 1.8, 600) : Math.min(nc * 2.5, 600);
+      const entryRadius = isHuge ? Math.max(nc * 0.5, 200) : Math.min(nc * 1.0, 280);
       graph.d3Force('radial', d3.forceRadial()
         .radius(node => {
           if (node.isFocus) return 0;
-          if (node.nodeType === 'person') return Math.min(nc * 2.5, 600);
-          return Math.min(nc * 1.0, 280);
+          if (node.nodeType === 'person') return peopleRadius;
+          return entryRadius;
         })
-        .strength(0.08)
+        .strength(isHuge ? 0.15 : 0.08)
       );
 
       // Resize handler
@@ -628,13 +660,36 @@
 
     function handleLinkHover(link) {
       if (link) {
+        container.style.cursor = 'pointer';
         tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
-          + (link.description ? '<br/>' + link.description : '');
+          + (link.description ? '<br/>' + link.description : '')
+          + '<br/><span style="color:#888;font-size:0.85em">Click to explore</span>';
         tipEl.style.display = 'block';
         tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
         tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
       } else if (!hoveredNode) {
+        container.style.cursor = 'default';
         tipEl.style.display = 'none';
+      }
+    }
+
+    function handleLinkClick(link) {
+      if (!link) return;
+      const src = (typeof link.source === 'object') ? link.source : null;
+      const tgt = (typeof link.target === 'object') ? link.target : null;
+      // Person-affiliation: navigate to the person
+      if (link.type === 'person-affiliation') {
+        const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
+        if (person) {
+          window.location.href = 'person.html?id=' + encodeURIComponent(person.personId || person.id);
+          return;
+        }
+      }
+      // Entry-to-entry link: go to entry page showing both
+      const entryNode = (tgt && tgt.nodeType === 'entry' && !tgt.isFocus) ? tgt : (src && src.nodeType === 'entry' && !src.isFocus) ? src : null;
+      if (entryNode) {
+        window.location.href = 'network.html?id=' + encodeURIComponent(entryNode.id);
+        return;
       }
     }
 
@@ -784,6 +839,8 @@
 
       // Init graph if needed
       const nodeCount = data.nodes.length;
+      const isHuge = nodeCount > 400;
+      const isLarge = nodeCount > 150;
       if (!graph) initGraph(nodeCount);
 
       // Feed data
@@ -791,40 +848,53 @@
 
       // Update forces for current graph size
       graph.d3Force('charge')
-        .strength(nodeCount > 300 ? -300 : nodeCount > 100 ? -400 : -500)
-        .distanceMax(nodeCount > 300 ? 600 : 1200);
+        .strength(isHuge ? -150 : isLarge ? -300 : -500)
+        .distanceMax(isHuge ? 400 : isLarge ? 600 : 1200);
 
+      const personMult = isHuge ? 1.2 : 2.0;
       graph.d3Force('link')
         .distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 2.0;
+          if (lt === 'person-affiliation') return linkDist * personMult;
           if (lt === 'shared-person') return linkDist * 0.7;
           return linkDist;
         });
 
       // Update collision radii
-      graph.d3Force('collide')
-        .radius(node => {
-          if (node.isFocus) return nodeScale * 3 + 15;
-          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
-          return nodeScale * 2 + 12;
-        });
+      if (isHuge) {
+        graph.d3Force('collide')
+          .radius(node => {
+            if (node.isFocus) return nodeScale * 2.5 + 10;
+            if (node.nodeType === 'person') return nodeScale * 0.7 + 4;
+            return nodeScale * 1.2 + 6;
+          });
+      } else {
+        graph.d3Force('collide')
+          .radius(node => {
+            if (node.isFocus) return nodeScale * 3 + 15;
+            if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+            return nodeScale * 2 + 12;
+          });
+      }
 
       // Update radial force
+      const peopleRadius = isHuge ? Math.max(nodeCount * 1.8, 600) : Math.min(nodeCount * 2.5, 600);
+      const entryRadius = isHuge ? Math.max(nodeCount * 0.5, 200) : Math.min(nodeCount * 1.0, 280);
       graph.d3Force('radial')
         .radius(node => {
           if (node.isFocus) return 0;
-          if (node.nodeType === 'person') return Math.min(nodeCount * 2.5, 600);
-          return Math.min(nodeCount * 1.0, 280);
-        });
+          if (node.nodeType === 'person') return peopleRadius;
+          return entryRadius;
+        })
+        .strength(isHuge ? 0.15 : 0.08);
 
       graph.d3ReheatSimulation();
 
-      // Zoom to fit after simulation settles a bit
+      // Zoom to fit after simulation settles
       setTimeout(() => {
         document.getElementById('loading').classList.add('off');
         graph.zoomToFit(600, 40);
-      }, 1200);
+      }, isHuge ? 2500 : 1200);
     }
 
     // ─── Controls ────────────────────────────────────────
@@ -851,11 +921,20 @@
     document.getElementById('node-scale').oninput = function() {
       nodeScale = +this.value;
       if (graph && graph.d3Force('collide')) {
-        graph.d3Force('collide').radius(node => {
-          if (node.isFocus) return nodeScale * 3 + 15;
-          if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
-          return nodeScale * 2 + 12;
-        });
+        const nc = (graph.graphData().nodes || []).length;
+        const isHuge = nc > 400;
+        graph.d3Force('collide').radius(isHuge
+          ? (node => {
+              if (node.isFocus) return nodeScale * 2.5 + 10;
+              if (node.nodeType === 'person') return nodeScale * 0.7 + 4;
+              return nodeScale * 1.2 + 6;
+            })
+          : (node => {
+              if (node.isFocus) return nodeScale * 3 + 15;
+              if (node.nodeType === 'person') return nodeScale * 1.5 + 10;
+              return nodeScale * 2 + 12;
+            })
+        );
         graph.d3ReheatSimulation();
       }
     };
@@ -863,9 +942,11 @@
     document.getElementById('link-dist').oninput = function() {
       linkDist = +this.value;
       if (graph) {
+        const nc = (graph.graphData().nodes || []).length;
+        const personMult = nc > 400 ? 1.2 : 2.0;
         graph.d3Force('link').distance(link => {
           const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 2.0;
+          if (lt === 'person-affiliation') return linkDist * personMult;
           if (lt === 'shared-person') return linkDist * 0.7;
           return linkDist;
         });

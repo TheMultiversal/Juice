@@ -522,6 +522,7 @@
         .onNodeHover(handleNodeHover)
         .onNodeClick(handleNodeClick)
         .onLinkHover(handleLinkHover)
+        .onLinkClick(handleLinkClick)
         .onBackgroundClick(handleBgClick)
         .enableNodeDrag(true);
 
@@ -604,13 +605,36 @@
 
     function handleLinkHover(link) {
       if (link) {
+        container.style.cursor = 'pointer';
         tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
-          + (link.description ? '<br/>' + link.description : '');
+          + (link.description ? '<br/>' + link.description : '')
+          + '<br/><span style="color:#888;font-size:0.85em">Click to explore</span>';
         tipEl.style.display = 'block';
         tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
         tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
       } else if (!hoveredNode) {
+        container.style.cursor = 'default';
         tipEl.style.display = 'none';
+      }
+    }
+
+    function handleLinkClick(link) {
+      if (!link) return;
+      const src = (typeof link.source === 'object') ? link.source : null;
+      const tgt = (typeof link.target === 'object') ? link.target : null;
+      // Person-affiliation: navigate to the person
+      if (link.type === 'person-affiliation') {
+        const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
+        if (person) {
+          window.location.href = 'person.html?id=' + encodeURIComponent(person.personId || person.id);
+          return;
+        }
+      }
+      // Entry-to-entry link: go to entry page
+      const entryNode = (tgt && tgt.nodeType === 'entry') ? tgt : (src && src.nodeType === 'entry') ? src : null;
+      if (entryNode) {
+        window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(entryNode.id);
+        return;
       }
     }
 

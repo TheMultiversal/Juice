@@ -19823,420 +19823,6 @@
         "id": "gratz-college"
       },
       {
-        "id": "jeffrey-epstein-network",
-        "name": "Jeffrey Epstein Network",
-        "type": "criminal enterprise / financial network",
-        "category": "Notable Individuals",
-        "founded": 1982,
-        "description": "Jeffrey Edward Epstein (1953-2019) was an American financier and convicted sex offender who built one of the most extensive and shadowy networks in modern history, connecting finance, politics, academia, royalty, and intelligence. Born in Brooklyn to a Jewish family, Epstein taught at the Dalton School before joining Bear Stearns in 1976, where he became a limited partner. He founded his own firm, J. Epstein & Co., in 1982, claiming to manage money exclusively for billionaires. His primary known client was Leslie Wexner, founder of L Brands (Victoria's Secret, Bath & Body Works), who granted Epstein sweeping power of attorney and gifted him a $77 million Manhattan townhouse - one of the largest private residences in New York. Epstein cultivated relationships with presidents (Bill Clinton, Donald Trump), princes (Prince Andrew), prime ministers, Nobel laureates, tech moguls, and Hollywood figures. He was first arrested in 2006 in Palm Beach, Florida, for soliciting prostitution from minors. A controversial 2008 plea deal negotiated by Alexander Acosta (later Trump's Labor Secretary) allowed Epstein to plead to state charges and serve just 13 months with work release. In July 2019, Epstein was arrested on federal sex trafficking charges. He was found dead in his cell at the Metropolitan Correctional Center on August 10, 2019, with his death ruled a suicide by hanging - a conclusion widely disputed. His associate Ghislaine Maxwell was convicted in 2021 on five of six charges of sex trafficking. Epstein's estate was valued at over $634 million. The full scope of his financial operations, intelligence connections, and the source of his wealth remain subjects of intense speculation and investigation.",
-        "website": "",
-        "individuals": [
-          {
-            "id": "jeffrey-epstein",
-            "name": "Jeffrey Epstein",
-            "role": "Financier & Convicted Sex Offender (1953-2019)",
-            "bio": "American financier and convicted sex offender. Born in Brooklyn to a Jewish family. Taught at Dalton School, worked at Bear Stearns, then founded J. Epstein & Co. Arrested in 2006 and 2019 for sex trafficking of minors. Found dead in his cell at MCC New York on August 10, 2019. Death ruled suicide, widely disputed."
-          },
-          {
-            "id": "ghislaine-maxwell",
-            "name": "Ghislaine Maxwell",
-            "role": "Associate & Convicted Sex Trafficker",
-            "bio": "British socialite and daughter of media baron Robert Maxwell. Convicted in December 2021 on five of six counts of sex trafficking and conspiracy. Sentenced to 20 years in federal prison. Alleged to have been Epstein's primary recruiter and groomer of victims."
-          },
-          {
-            "id": "jean-luc-brunel",
-            "name": "Jean-Luc Brunel",
-            "role": "Associate & Modeling Agent (1946-2022)",
-            "bio": "French modeling agent and founder of MC2 Model Management, funded by Epstein. Accused of trafficking and abusing young models. Found dead in his Paris jail cell in February 2022 while awaiting trial, officially ruled suicide."
-          },
-          {
-            "id": "sarah-kellen",
-            "name": "Sarah Kellen",
-            "role": "Personal Assistant / Alleged Recruiter",
-            "bio": "One of Epstein's closest personal assistants. Named as a co-conspirator in court documents. Alleged to have scheduled appointments with underage victims."
-          },
-          {
-            "id": "nadia-marcinkova",
-            "name": "Nadia Marcinkova",
-            "role": "Associate / Alleged Participant",
-            "bio": "Named in court documents as having been brought to the US by Epstein as a teenager from the former Yugoslavia. Later became a pilot. Named as alleged co-conspirator."
-          },
-          {
-            "id": "lesley-groff",
-            "name": "Lesley Groff",
-            "role": "Executive Assistant",
-            "bio": "Long-time Epstein executive assistant named as co-conspirator in multiple court filings."
-          },
-          {
-            "id": "glenn-dubin",
-            "name": "Glenn Dubin",
-            "role": "Associate - Hedge Fund Manager",
-            "bio": "Co-founder of Highbridge Capital. Close friend named in victim depositions."
-          },
-          {
-            "id": "jes-staley",
-            "name": "Jes Staley",
-            "role": "Associate - JPMorgan/Barclays Executive",
-            "bio": "Former Barclays CEO banned from UK finance over Epstein ties."
-          },
-          {
-            "id": "eva-andersson-dubin",
-            "name": "Eva Andersson-Dubin",
-            "role": "Associate - Epstein Ex-Girlfriend",
-            "bio": "Former Miss Sweden and physician. Dated Epstein in 1980s. Named in Giuffre depositions."
-          }
-        ],
-        "connections": [
-          {
-            "name": "Bear Stearns (historic)",
-            "type": "former employer",
-            "description": "Epstein joined Bear Stearns in 1976 and became a limited partner before leaving in 1981.",
-            "entryId": "bear-stearns-historic"
-          },
-          {
-            "name": "Wexner Foundation",
-            "type": "primary client",
-            "description": "Leslie Wexner was Epstein's primary known client. Wexner granted Epstein power of attorney and transferred his NYC townhouse and other assets.",
-            "entryId": "wexner-foundation"
-          },
-          {
-            "name": "JPMorgan Chase",
-            "type": "banking relationship",
-            "description": "JPMorgan maintained Epstein as a client from 1998 to 2013 despite red flags. Paid $290 million settlement in 2023 to Epstein victims.",
-            "entryId": "jpmorgan-chase"
-          },
-          {
-            "name": "Deutsche Bank",
-            "type": "banking relationship",
-            "description": "Deutsche Bank maintained Epstein accounts from 2013-2019 after JPMorgan dropped him. Paid $150 million in penalties for compliance failures.",
-            "entryId": "deutsche-bank"
-          },
-          {
-            "name": "Barclays",
-            "type": "banking relationship",
-            "description": "Barclays maintained financial relationships with Epstein through its wealth management division.",
-            "entryId": "barclays"
-          },
-          {
-            "name": "Harvard University",
-            "type": "donor / science funding",
-            "description": "Epstein donated at least $9.1 million to Harvard. Visited campus over 40 times after his 2008 conviction. Martin Nowak's Program for Evolutionary Dynamics received major funding.",
-            "entryId": "harvard-university"
-          },
-          {
-            "name": "MIT Media Lab",
-            "type": "donor",
-            "description": "Epstein donated at least $850,000 to MIT, some disguised through intermediaries. Director Joi Ito resigned in 2019 after revelations.",
-            "entryId": "mit-media-lab"
-          },
-          {
-            "name": "Leon Black / Apollo Global Management",
-            "type": "financial client",
-            "description": "Leon Black paid Epstein $158 million for tax and estate planning advice between 2012-2017. Black stepped down as Apollo CEO in 2021.",
-            "entryId": "apollo-global-management"
-          },
-          {
-            "name": "Victoria's Secret (L Brands)",
-            "type": "business connection",
-            "description": "Epstein allegedly posed as a talent scout for Victoria's Secret to recruit young women. Les Wexner was the brand's owner.",
-            "entryId": "l-brands-victorias-secret"
-          },
-          {
-            "name": "Bill Clinton",
-            "type": "political connection",
-            "description": "Former President Clinton flew on Epstein's plane at least 26 times according to flight logs. Clinton acknowledged limited interactions.",
-            "entryId": "bill-clinton-connections"
-          },
-          {
-            "name": "Donald Trump",
-            "type": "political connection",
-            "description": "Trump and Epstein socialized in the 1990s-2000s in Palm Beach and New York. Trump later said he banned Epstein from Mar-a-Lago.",
-            "entryId": "donald-trump-connections"
-          },
-          {
-            "name": "Prince Andrew",
-            "type": "royal connection",
-            "description": "The Duke of York maintained a close friendship with Epstein spanning decades. Virginia Giuffre accused Andrew of sexual abuse, leading to a civil settlement in 2022.",
-            "entryId": "prince-andrew"
-          },
-          {
-            "name": "Ehud Barak",
-            "type": "political connection",
-            "description": "Former Israeli PM Ehud Barak visited Epstein's residences and received investments from Epstein in his tech venture Carbyne.",
-            "entryId": "ehud-barak-connections"
-          },
-          {
-            "name": "Les Wexner",
-            "type": "primary patron",
-            "description": "Billionaire retail magnate and Epstein's primary patron. Only known major client. Claimed Epstein misappropriated over $46 million.",
-            "entryId": "les-wexner-connections"
-          },
-          {
-            "name": "Alan Dershowitz",
-            "type": "legal defense",
-            "description": "Harvard law professor who helped negotiate Epstein's 2008 plea deal. Accused by Virginia Giuffre.",
-            "entryId": "alan-dershowitz-connections"
-          },
-          {
-            "name": "Alexander Acosta",
-            "type": "plea deal",
-            "description": "US Attorney who approved Epstein's controversial 2008 plea deal. Later became Trump's Labor Secretary, resigned in 2019.",
-            "entryId": "alexander-acosta-connections"
-          },
-          {
-            "name": "Ghislaine Maxwell",
-            "type": "key associate",
-            "description": "Epstein's primary accomplice. Daughter of Robert Maxwell. Convicted of sex trafficking in 2021."
-          },
-          {
-            "name": "Robert Maxwell / Maxwell Communications",
-            "type": "family connection",
-            "description": "Ghislaine's father Robert Maxwell was a Czech-born British media mogul suspected of ties to Mossad, MI6, and KGB. Died under mysterious circumstances in 1991.",
-            "entryId": "maxwell-communications"
-          },
-          {
-            "name": "Mossad (alleged)",
-            "type": "alleged intelligence ties",
-            "description": "Multiple sources allege Epstein had connections to Israeli intelligence through Robert Maxwell and Ghislaine. Former Israeli intelligence operative Ari Ben-Menashe claimed Epstein was recruited.",
-            "entryId": "mossad-israeli-intelligence"
-          },
-          {
-            "name": "Palm Beach Police Department",
-            "type": "initial investigation",
-            "description": "Palm Beach PD conducted the initial investigation in 2005-2006 that identified dozens of underage victims.",
-            "entryId": "palm-beach-police"
-          },
-          {
-            "name": "FBI",
-            "type": "federal investigation",
-            "description": "FBI conducted extensive investigation. 2019 indictment on federal sex trafficking charges.",
-            "entryId": "fbi"
-          },
-          {
-            "name": "Dalton School",
-            "type": "former employer",
-            "description": "Epstein taught at the elite Manhattan prep school from 1974-1976, hired by headmaster Donald Barr (father of AG Bill Barr).",
-            "entryId": "dalton-school"
-          },
-          {
-            "name": "Southern District of New York",
-            "type": "prosecution",
-            "description": "SDNY brought the 2019 federal case against Epstein.",
-            "entryId": "sdny"
-          },
-          {
-            "name": "Council on Foreign Relations (CFR)",
-            "type": "member",
-            "description": "Epstein was a member of the CFR and the Trilateral Commission.",
-            "entryId": "council-on-foreign-relations-cfr"
-          },
-          {
-            "name": "Elon Musk",
-            "type": "acquaintance",
-            "description": "Ghislaine Maxwell photographed with Musk in 2014. Musk acknowledged meeting Epstein once.",
-            "entryId": "elon-musk-connections"
-          },
-          {
-            "name": "Bill Gates",
-            "type": "meetings",
-            "description": "Gates met with Epstein multiple times 2011-2014. Gates Foundation donated $2M to MIT at Epstein's direction. Melinda cited these meetings as factor in 2021 divorce.",
-            "entryId": "bill-gates-connections"
-          },
-          {
-            "name": "Woody Allen",
-            "type": "socialite circle",
-            "description": "Allen socialized with Epstein. Photographed walking with Epstein in 2013.",
-            "entryId": "woody-allen-connections"
-          },
-          {
-            "name": "George Stephanopoulos",
-            "type": "socialite circle",
-            "description": "ABC anchor attended a 2010 dinner party at Epstein's Manhattan mansion.",
-            "entryId": "george-stephanopoulos-connections"
-          },
-          {
-            "name": "Reid Hoffman",
-            "type": "meetings",
-            "description": "LinkedIn co-founder attended an Epstein dinner in 2015, later apologized.",
-            "entryId": "reid-hoffman-connections"
-          },
-          {
-            "name": "US Virgin Islands",
-            "type": "private island",
-            "description": "Epstein owned Little St. James and Great St. James islands where much of the abuse allegedly occurred.",
-            "entryId": "us-virgin-islands-gov"
-          },
-          {
-            "name": "Metropolitan Correctional Center",
-            "type": "death location",
-            "description": "Federal facility where Epstein was found dead August 10, 2019. Two guards charged with falsifying records.",
-            "entryId": "metropolitan-correctional-center"
-          },
-          {
-            "name": "Steve Bannon",
-            "type": "post-arrest contact",
-            "description": "Bannon reportedly met with Epstein in 2018 at his NYC townhouse.",
-            "entryId": "steve-bannon-connections"
-          },
-          {
-            "name": "Goldman Sachs (historic)",
-            "type": "financial system",
-            "description": "Part of the Wall Street network that facilitated Epstein's financial operations.",
-            "entryId": "goldman-sachs-historic"
-          },
-          {
-            "name": "Ghislaine Maxwell",
-            "type": "co-conspirator",
-            "description": "Primary co-conspirator. Recruited, groomed, and trafficked victims. Convicted on 5 counts of sex trafficking in 2021.",
-            "entryId": "ghislaine-maxwell-connections"
-          },
-          {
-            "name": "Jean-Luc Brunel / MC2 Model Management",
-            "type": "criminal",
-            "description": "MC2 modeling agency funded by Epstein. Brunel supplied young models as victims. Found dead in prison 2022.",
-            "entryId": "jean-luc-brunel-mc2"
-          },
-          {
-            "name": "J. Epstein & Co.",
-            "type": "business",
-            "description": "Epstein's private financial management firm. Only known client was Les Wexner. Source of mysterious wealth.",
-            "entryId": "j-epstein-company"
-          },
-          {
-            "name": "Glenn Dubin",
-            "type": "social/alleged",
-            "description": "Decades-long friendship. Named in victim depositions. Wife Eva is Epstein's ex-girlfriend.",
-            "entryId": "glenn-dubin-connections"
-          },
-          {
-            "name": "Jes Staley",
-            "type": "financial/social",
-            "description": "JPMorgan banker. 1,200+ emails with Epstein post-conviction. Visited island. Banned from UK finance.",
-            "entryId": "jes-staley-connections"
-          },
-          {
-            "name": "Harvey Weinstein",
-            "type": "social",
-            "description": "Overlapping NYC elite circles. Both exposed as serial predators protected by wealth and power.",
-            "entryId": "harvey-weinstein-connections"
-          },
-          {
-            "name": "Henry Kissinger",
-            "type": "social",
-            "description": "Connected through NYC elite social circles and Council on Foreign Relations.",
-            "entryId": "henry-kissinger-connections"
-          },
-          {
-            "name": "Mortimer Zuckerman",
-            "type": "social",
-            "description": "Media mogul in Epstein's Manhattan social circle. Listed in Epstein's contact book.",
-            "entryId": "mortimer-zuckerman-connections"
-          },
-          {
-            "name": "Noam Chomsky",
-            "type": "intellectual",
-            "description": "Multiple meetings 2015-2016 (post-conviction). Epstein arranged meeting with PM Barak for Chomsky.",
-            "entryId": "noam-chomsky-connections"
-          },
-          {
-            "name": "Lawrence Krauss",
-            "type": "intellectual",
-            "description": "Physicist defender of Epstein: \"I feel raised by it.\" Visited island. Attended townhouse dinners.",
-            "entryId": "lawrence-krauss-connections"
-          },
-          {
-            "name": "John Brockman / Edge Foundation",
-            "type": "intellectual",
-            "description": "Key node connecting Epstein to scientific establishment through exclusive Edge dinners.",
-            "entryId": "john-brockman-edge"
-          },
-          {
-            "name": "Clinton Foundation",
-            "type": "financial",
-            "description": "Epstein donated $25,000. Maxwell attended Clinton Global Initiative events.",
-            "entryId": "clinton-foundation"
-          },
-          {
-            "name": "Naomi Campbell",
-            "type": "social",
-            "description": "Appeared in Epstein flight logs. Photographed with Maxwell at social events.",
-            "entryId": "naomi-campbell-connections"
-          },
-          {
-            "name": "Kevin Spacey",
-            "type": "social",
-            "description": "Flew on Lolita Express to Africa with Clinton in 2002. Photographed on Epstein's plane.",
-            "entryId": "kevin-spacey-connections"
-          },
-          {
-            "name": "Epstein Virgin Islands Properties",
-            "type": "property",
-            "description": "Little St. James and Great St. James islands. Primary operational base for trafficking.",
-            "entryId": "epstein-vi-properties"
-          },
-          {
-            "name": "Terra Mar Project",
-            "type": "related",
-            "description": "Maxwell's NGO dissolved days after Epstein's 2019 arrest.",
-            "entryId": "terra-mar-project"
-          },
-          {
-            "name": "Cyrus Vance Jr.",
-            "type": "legal",
-            "description": "Manhattan DA whose office argued to downgrade Epstein's sex offender status.",
-            "entryId": "cy-vance-connections"
-          },
-          {
-            "name": "Bill & Melinda Gates Foundation",
-            "type": "related",
-            "description": "Epstein proposed joint charitable fund involving Gates Foundation. Met with foundation staff.",
-            "entryId": "bill-melinda-gates-foundation"
-          },
-          {
-            "name": "Microsoft Corporation",
-            "type": "related",
-            "description": "Gates (Microsoft co-founder) met Epstein multiple times. Reid Hoffman (LinkedIn/Microsoft) also connected.",
-            "entryId": "microsoft-corporation"
-          },
-          {
-            "name": "Virginia Giuffre",
-            "type": "legal/victim",
-            "description": "Lead accuser. Recruited at 16 from Mar-a-Lago. Her lawsuits exposed the network.",
-            "entryId": "victoria-giuffre"
-          },
-          {
-            "name": "Mar-a-Lago",
-            "type": "related",
-            "description": "Epstein was a member. Giuffre was recruited there by Maxwell. Trump later banned Epstein.",
-            "entryId": "mar-a-lago"
-          },
-          {
-            "name": "David Boies / Boies Schiller Flexner",
-            "type": "legal",
-            "description": "Firm represented Epstein victims. Forced release of sealed documents exposing the network.",
-            "entryId": "david-boies-connections"
-          },
-          {
-            "name": "Lesley Groff",
-            "type": "co-conspirator",
-            "description": "Executive assistant for 20 years. Scheduled \"massages.\" Named co-conspirator, received immunity.",
-            "entryId": "leslie-groff-connections"
-          },
-          {
-            "name": "Sarah Kellen",
-            "type": "co-conspirator",
-            "description": "Primary recruiter and scheduler. Named co-conspirator, received immunity. Hundreds of flights on Epstein jet.",
-            "entryId": "sarah-kellen-connections"
-          },
-          {
-            "name": "Nadia Marcinkova",
-            "type": "co-conspirator",
-            "description": "Brought from Slovakia as teenager. Named co-conspirator, received immunity. Victim turned alleged participant.",
-            "entryId": "nadia-marcinkova-connections"
-          }
-        ]
-      },
-      {
         "id": "hadassah-womens-zionist-org",
         "name": "Hadassah (Women's Zionist Organization of America)",
         "type": "women's / healthcare / Zionist organization",
@@ -23619,6 +23205,282 @@
             "source": "epstein-network",
             "target": "lazard",
             "type": "Finance - Bruce Wasserstein (CEO) in black book"
+          },
+          {
+            "name": "Bear Stearns (historic)",
+            "type": "former employer",
+            "description": "Epstein joined Bear Stearns in 1976 and became a limited partner before leaving in 1981.",
+            "entryId": "bear-stearns-historic"
+          },
+          {
+            "name": "Victoria's Secret (L Brands)",
+            "type": "business connection",
+            "description": "Epstein allegedly posed as a talent scout for Victoria's Secret to recruit young women. Les Wexner was the brand's owner.",
+            "entryId": "l-brands-victorias-secret"
+          },
+          {
+            "name": "Bill Clinton",
+            "type": "political connection",
+            "description": "Former President Clinton flew on Epstein's plane at least 26 times according to flight logs. Clinton acknowledged limited interactions.",
+            "entryId": "bill-clinton-connections"
+          },
+          {
+            "name": "Donald Trump",
+            "type": "political connection",
+            "description": "Trump and Epstein socialized in the 1990s-2000s in Palm Beach and New York. Trump later said he banned Epstein from Mar-a-Lago.",
+            "entryId": "donald-trump-connections"
+          },
+          {
+            "name": "Prince Andrew",
+            "type": "royal connection",
+            "description": "The Duke of York maintained a close friendship with Epstein spanning decades. Virginia Giuffre accused Andrew of sexual abuse, leading to a civil settlement in 2022.",
+            "entryId": "prince-andrew"
+          },
+          {
+            "name": "Ehud Barak",
+            "type": "political connection",
+            "description": "Former Israeli PM Ehud Barak visited Epstein's residences and received investments from Epstein in his tech venture Carbyne.",
+            "entryId": "ehud-barak-connections"
+          },
+          {
+            "name": "Les Wexner",
+            "type": "primary patron",
+            "description": "Billionaire retail magnate and Epstein's primary patron. Only known major client. Claimed Epstein misappropriated over $46 million.",
+            "entryId": "les-wexner-connections"
+          },
+          {
+            "name": "Alan Dershowitz",
+            "type": "legal defense",
+            "description": "Harvard law professor who helped negotiate Epstein's 2008 plea deal. Accused by Virginia Giuffre.",
+            "entryId": "alan-dershowitz-connections"
+          },
+          {
+            "name": "Alexander Acosta",
+            "type": "plea deal",
+            "description": "US Attorney who approved Epstein's controversial 2008 plea deal. Later became Trump's Labor Secretary, resigned in 2019.",
+            "entryId": "alexander-acosta-connections"
+          },
+          {
+            "name": "Robert Maxwell / Maxwell Communications",
+            "type": "family connection",
+            "description": "Ghislaine's father Robert Maxwell was a Czech-born British media mogul suspected of ties to Mossad, MI6, and KGB. Died under mysterious circumstances in 1991.",
+            "entryId": "maxwell-communications"
+          },
+          {
+            "name": "Mossad (alleged)",
+            "type": "alleged intelligence ties",
+            "description": "Multiple sources allege Epstein had connections to Israeli intelligence through Robert Maxwell and Ghislaine. Former Israeli intelligence operative Ari Ben-Menashe claimed Epstein was recruited.",
+            "entryId": "mossad-israeli-intelligence"
+          },
+          {
+            "name": "Palm Beach Police Department",
+            "type": "initial investigation",
+            "description": "Palm Beach PD conducted the initial investigation in 2005-2006 that identified dozens of underage victims.",
+            "entryId": "palm-beach-police"
+          },
+          {
+            "name": "FBI",
+            "type": "federal investigation",
+            "description": "FBI conducted extensive investigation. 2019 indictment on federal sex trafficking charges.",
+            "entryId": "fbi"
+          },
+          {
+            "name": "Southern District of New York",
+            "type": "prosecution",
+            "description": "SDNY brought the 2019 federal case against Epstein.",
+            "entryId": "sdny"
+          },
+          {
+            "name": "Council on Foreign Relations (CFR)",
+            "type": "member",
+            "description": "Epstein was a member of the CFR and the Trilateral Commission.",
+            "entryId": "council-on-foreign-relations-cfr"
+          },
+          {
+            "name": "Elon Musk",
+            "type": "acquaintance",
+            "description": "Ghislaine Maxwell photographed with Musk in 2014. Musk acknowledged meeting Epstein once.",
+            "entryId": "elon-musk-connections"
+          },
+          {
+            "name": "Bill Gates",
+            "type": "meetings",
+            "description": "Gates met with Epstein multiple times 2011-2014. Gates Foundation donated $2M to MIT at Epstein's direction. Melinda cited these meetings as factor in 2021 divorce.",
+            "entryId": "bill-gates-connections"
+          },
+          {
+            "name": "Woody Allen",
+            "type": "socialite circle",
+            "description": "Allen socialized with Epstein. Photographed walking with Epstein in 2013.",
+            "entryId": "woody-allen-connections"
+          },
+          {
+            "name": "George Stephanopoulos",
+            "type": "socialite circle",
+            "description": "ABC anchor attended a 2010 dinner party at Epstein's Manhattan mansion.",
+            "entryId": "george-stephanopoulos-connections"
+          },
+          {
+            "name": "Reid Hoffman",
+            "type": "meetings",
+            "description": "LinkedIn co-founder attended an Epstein dinner in 2015, later apologized.",
+            "entryId": "reid-hoffman-connections"
+          },
+          {
+            "name": "US Virgin Islands",
+            "type": "private island",
+            "description": "Epstein owned Little St. James and Great St. James islands where much of the abuse allegedly occurred.",
+            "entryId": "us-virgin-islands-gov"
+          },
+          {
+            "name": "Metropolitan Correctional Center",
+            "type": "death location",
+            "description": "Federal facility where Epstein was found dead August 10, 2019. Two guards charged with falsifying records.",
+            "entryId": "metropolitan-correctional-center"
+          },
+          {
+            "name": "Steve Bannon",
+            "type": "post-arrest contact",
+            "description": "Bannon reportedly met with Epstein in 2018 at his NYC townhouse.",
+            "entryId": "steve-bannon-connections"
+          },
+          {
+            "name": "Ghislaine Maxwell",
+            "type": "co-conspirator",
+            "description": "Primary co-conspirator. Recruited, groomed, and trafficked victims. Convicted on 5 counts of sex trafficking in 2021.",
+            "entryId": "ghislaine-maxwell-connections"
+          },
+          {
+            "name": "Jean-Luc Brunel / MC2 Model Management",
+            "type": "criminal",
+            "description": "MC2 modeling agency funded by Epstein. Brunel supplied young models as victims. Found dead in prison 2022.",
+            "entryId": "jean-luc-brunel-mc2"
+          },
+          {
+            "name": "J. Epstein & Co.",
+            "type": "business",
+            "description": "Epstein's private financial management firm. Only known client was Les Wexner. Source of mysterious wealth.",
+            "entryId": "j-epstein-company"
+          },
+          {
+            "name": "Glenn Dubin",
+            "type": "social/alleged",
+            "description": "Decades-long friendship. Named in victim depositions. Wife Eva is Epstein's ex-girlfriend.",
+            "entryId": "glenn-dubin-connections"
+          },
+          {
+            "name": "Jes Staley",
+            "type": "financial/social",
+            "description": "JPMorgan banker. 1,200+ emails with Epstein post-conviction. Visited island. Banned from UK finance.",
+            "entryId": "jes-staley-connections"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "type": "social",
+            "description": "Overlapping NYC elite circles. Both exposed as serial predators protected by wealth and power.",
+            "entryId": "harvey-weinstein-connections"
+          },
+          {
+            "name": "Henry Kissinger",
+            "type": "social",
+            "description": "Connected through NYC elite social circles and Council on Foreign Relations.",
+            "entryId": "henry-kissinger-connections"
+          },
+          {
+            "name": "Mortimer Zuckerman",
+            "type": "social",
+            "description": "Media mogul in Epstein's Manhattan social circle. Listed in Epstein's contact book.",
+            "entryId": "mortimer-zuckerman-connections"
+          },
+          {
+            "name": "Noam Chomsky",
+            "type": "intellectual",
+            "description": "Multiple meetings 2015-2016 (post-conviction). Epstein arranged meeting with PM Barak for Chomsky.",
+            "entryId": "noam-chomsky-connections"
+          },
+          {
+            "name": "Lawrence Krauss",
+            "type": "intellectual",
+            "description": "Physicist defender of Epstein: \"I feel raised by it.\" Visited island. Attended townhouse dinners.",
+            "entryId": "lawrence-krauss-connections"
+          },
+          {
+            "name": "John Brockman / Edge Foundation",
+            "type": "intellectual",
+            "description": "Key node connecting Epstein to scientific establishment through exclusive Edge dinners.",
+            "entryId": "john-brockman-edge"
+          },
+          {
+            "name": "Naomi Campbell",
+            "type": "social",
+            "description": "Appeared in Epstein flight logs. Photographed with Maxwell at social events.",
+            "entryId": "naomi-campbell-connections"
+          },
+          {
+            "name": "Kevin Spacey",
+            "type": "social",
+            "description": "Flew on Lolita Express to Africa with Clinton in 2002. Photographed on Epstein's plane.",
+            "entryId": "kevin-spacey-connections"
+          },
+          {
+            "name": "Epstein Virgin Islands Properties",
+            "type": "property",
+            "description": "Little St. James and Great St. James islands. Primary operational base for trafficking.",
+            "entryId": "epstein-vi-properties"
+          },
+          {
+            "name": "Terra Mar Project",
+            "type": "related",
+            "description": "Maxwell's NGO dissolved days after Epstein's 2019 arrest.",
+            "entryId": "terra-mar-project"
+          },
+          {
+            "name": "Cyrus Vance Jr.",
+            "type": "legal",
+            "description": "Manhattan DA whose office argued to downgrade Epstein's sex offender status.",
+            "entryId": "cy-vance-connections"
+          },
+          {
+            "name": "Bill & Melinda Gates Foundation",
+            "type": "related",
+            "description": "Epstein proposed joint charitable fund involving Gates Foundation. Met with foundation staff.",
+            "entryId": "bill-melinda-gates-foundation"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "type": "legal/victim",
+            "description": "Lead accuser. Recruited at 16 from Mar-a-Lago. Her lawsuits exposed the network.",
+            "entryId": "victoria-giuffre"
+          },
+          {
+            "name": "Mar-a-Lago",
+            "type": "related",
+            "description": "Epstein was a member. Giuffre was recruited there by Maxwell. Trump later banned Epstein.",
+            "entryId": "mar-a-lago"
+          },
+          {
+            "name": "David Boies / Boies Schiller Flexner",
+            "type": "legal",
+            "description": "Firm represented Epstein victims. Forced release of sealed documents exposing the network.",
+            "entryId": "david-boies-connections"
+          },
+          {
+            "name": "Lesley Groff",
+            "type": "co-conspirator",
+            "description": "Executive assistant for 20 years. Scheduled \"massages.\" Named co-conspirator, received immunity.",
+            "entryId": "leslie-groff-connections"
+          },
+          {
+            "name": "Sarah Kellen",
+            "type": "co-conspirator",
+            "description": "Primary recruiter and scheduler. Named co-conspirator, received immunity. Hundreds of flights on Epstein jet.",
+            "entryId": "sarah-kellen-connections"
+          },
+          {
+            "name": "Nadia Marcinkova",
+            "type": "co-conspirator",
+            "description": "Brought from Slovakia as teenager. Named co-conspirator, received immunity. Victim turned alleged participant.",
+            "entryId": "nadia-marcinkova-connections"
           }
         ],
         "individuals": [
@@ -26426,6 +26288,12 @@
             "name": "Peter Dubens",
             "id": "peter-dubens",
             "role": "Oakley Capital - London Finance Contacts"
+          },
+          {
+            "id": "lesley-groff",
+            "name": "Lesley Groff",
+            "role": "Executive Assistant",
+            "bio": "Long-time Epstein executive assistant named as co-conspirator in multiple court filings."
           }
         ],
         "type": "Criminal Network / Intelligence-Linked Operation",
