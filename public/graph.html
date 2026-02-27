@@ -25,6 +25,11 @@
   <meta name="twitter:description" content="Comprehensive directory of Jewish organizations worldwide - tracking structure, people, and connections since 2016.">
   <title>Network Graph</title>
 
+  <!-- d3-force: collision force for better layout -->
+  <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
   <!-- force-graph: d3-force Canvas2D renderer - async layout, handles 10k+ nodes -->
   <script src="https://unpkg.com/force-graph"></script>
 
@@ -493,8 +498,9 @@
     }
 
     // ─── Initialize graph ────────────────────────────────
-    function initGraph() {
+    function initGraph(nodeCount) {
       const rect = container.getBoundingClientRect();
+      const nc = nodeCount || 200;
 
       graph = ForceGraph()(container)
         .width(rect.width)
@@ -506,10 +512,11 @@
         .linkWidth(linkWidthFn)
         .linkColor(linkColorFn)
         .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(12000)
-        .warmupTicks(40)
-        .d3AlphaDecay(0.025)
-        .d3VelocityDecay(0.35)
+        .cooldownTime(18000)
+        .warmupTicks(nc > 600 ? 200 : nc > 300 ? 150 : 100)
+        .d3AlphaDecay(0.018)
+        .d3VelocityDecay(0.3)
+        .d3AlphaMin(0.005)
         .autoPauseRedraw(false)
         .nodeLabel(node => '') // suppress default title tooltip (we use custom #tip)
         .onNodeHover(handleNodeHover)
@@ -518,9 +525,32 @@
         .onBackgroundClick(handleBgClick)
         .enableNodeDrag(true);
 
-      // Configure forces
-      graph.d3Force('charge').strength(-80);
-      graph.d3Force('link').distance(linkDist);
+      // Charge: strong many-body repulsion to push nodes apart
+      graph.d3Force('charge')
+        .strength(nc > 600 ? -120 : nc > 300 ? -160 : -200)
+        .distanceMax(nc > 600 ? 400 : 600);
+
+      // Link distance varies by type
+      graph.d3Force('link')
+        .distance(link => {
+          if (link.type === 'person-affiliation') return linkDist * 1.5;
+          if (link.type === 'shared-person') return linkDist * 0.8;
+          return linkDist;
+        })
+        .strength(link => {
+          if (link.type === 'person-affiliation') return 0.25;
+          return 0.6;
+        });
+
+      // Collision force: prevent node overlap
+      graph.d3Force('collide', d3.forceCollide()
+        .radius(node => {
+          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
+          return nodeScale * 0.7 + 4;
+        })
+        .strength(0.7)
+        .iterations(2)
+      );
 
       // Resize handler
       window.addEventListener('resize', () => {
@@ -699,22 +729,39 @@
       neighborSet.clear();
 
       // Init graph instance if needed
-      if (!graph) initGraph();
+      const nodeCount = data.nodes.length;
+      if (!graph) initGraph(nodeCount);
 
       // Feed data - d3-force simulation starts automatically & asynchronously
       graph.graphData(data);
 
-      // Update force parameters based on node count
-      const nodeCount = data.nodes.length;
-      graph.d3Force('charge').strength(nodeCount > 800 ? -50 : nodeCount > 400 ? -65 : -80);
-      graph.d3Force('link').distance(linkDist);
+      // Update forces for current data
+      graph.d3Force('charge')
+        .strength(nodeCount > 600 ? -120 : nodeCount > 300 ? -160 : -200)
+        .distanceMax(nodeCount > 600 ? 400 : 600);
+
+      graph.d3Force('link')
+        .distance(link => {
+          const lt = (typeof link.type === 'string') ? link.type : '';
+          if (lt === 'person-affiliation') return linkDist * 1.5;
+          if (lt === 'shared-person') return linkDist * 0.8;
+          return linkDist;
+        });
+
+      // Update collision radii
+      graph.d3Force('collide')
+        .radius(node => {
+          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
+          return nodeScale * 0.7 + 4;
+        });
+
       graph.d3ReheatSimulation();
 
       // Hide loading overlay and zoom to fit
       setTimeout(() => {
         document.getElementById('loading').classList.add('off');
         graph.zoomToFit(600, 40);
-      }, 600);
+      }, 800);
     }
 
     // ─── Controls ────────────────────────────────────────
@@ -733,13 +780,24 @@
 
     document.getElementById('node-scale').oninput = function() {
       nodeScale = +this.value;
-      // autoPauseRedraw is false, so next frame picks up new scale
+      if (graph && graph.d3Force('collide')) {
+        graph.d3Force('collide').radius(node => {
+          if (node.nodeType === 'person') return nodeScale * 0.5 + 3;
+          return nodeScale * 0.7 + 4;
+        });
+        graph.d3ReheatSimulation();
+      }
     };
 
     document.getElementById('link-dist').oninput = function() {
       linkDist = +this.value;
       if (graph) {
-        graph.d3Force('link').distance(linkDist);
+        graph.d3Force('link').distance(link => {
+          const lt = (typeof link.type === 'string') ? link.type : '';
+          if (lt === 'person-affiliation') return linkDist * 1.5;
+          if (lt === 'shared-person') return linkDist * 0.8;
+          return linkDist;
+        });
         graph.d3ReheatSimulation();
       }
     };

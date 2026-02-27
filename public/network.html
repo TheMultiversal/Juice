@@ -25,6 +25,11 @@
   <meta name="twitter:description" content="Focused network visualization - explore connections for any entity in The Juice Box database.">
   <title>Focused Network</title>
 
+  <!-- d3-force: collision & radial forces for better layout -->
+  <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
   <!-- force-graph: d3-force Canvas2D renderer - async layout, handles 10k+ nodes -->
   <script src="https://unpkg.com/force-graph"></script>
 
@@ -504,8 +509,9 @@
     }
 
     // ─── Initialize graph instance ───────────────────────
-    function initGraph() {
+    function initGraph(nodeCount) {
       const rect = container.getBoundingClientRect();
+      const nc = nodeCount || 100;
 
       graph = ForceGraph()(container)
         .width(rect.width)
@@ -517,10 +523,11 @@
         .linkWidth(linkWidthFn)
         .linkColor(linkColorFn)
         .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(12000)
-        .warmupTicks(60)
-        .d3AlphaDecay(0.028)
-        .d3VelocityDecay(0.35)
+        .cooldownTime(15000)
+        .warmupTicks(nc > 300 ? 200 : nc > 100 ? 150 : 100)
+        .d3AlphaDecay(0.02)
+        .d3VelocityDecay(0.3)
+        .d3AlphaMin(0.005)
         .autoPauseRedraw(false)
         .nodeLabel(() => '')
         .onNodeHover(handleNodeHover)
@@ -529,9 +536,45 @@
         .onBackgroundClick(handleBgClick)
         .enableNodeDrag(true);
 
-      graph.d3Force('charge').strength(-120);
-      graph.d3Force('link').distance(linkDist);
+      // Charge: strong repulsion to push nodes apart
+      graph.d3Force('charge')
+        .strength(nc > 300 ? -180 : nc > 100 ? -220 : -280)
+        .distanceMax(nc > 300 ? 500 : 800);
 
+      // Link distance varies by type
+      graph.d3Force('link')
+        .distance(link => {
+          if (link.type === 'person-affiliation') return linkDist * 1.6;
+          if (link.type === 'shared-person') return linkDist * 0.7;
+          return linkDist;
+        })
+        .strength(link => {
+          if (link.type === 'person-affiliation') return 0.3;
+          return 0.7;
+        });
+
+      // Collision force: prevent node overlap
+      graph.d3Force('collide', d3.forceCollide()
+        .radius(node => {
+          if (node.isFocus) return nodeScale * 1.8 + 6;
+          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
+          return nodeScale * 0.8 + 5;
+        })
+        .strength(0.8)
+        .iterations(3)
+      );
+
+      // Radial force: push people outward, entries inward
+      graph.d3Force('radial', d3.forceRadial()
+        .radius(node => {
+          if (node.isFocus) return 0;
+          if (node.nodeType === 'person') return Math.min(nc * 1.5, 400);
+          return Math.min(nc * 0.6, 180);
+        })
+        .strength(0.05)
+      );
+
+      // Resize handler
       window.addEventListener('resize', () => {
         const r = container.getBoundingClientRect();
         graph.width(r.width).height(r.height);
@@ -740,28 +783,48 @@
       neighborSet.clear();
 
       // Init graph if needed
-      if (!graph) initGraph();
+      const nodeCount = data.nodes.length;
+      if (!graph) initGraph(nodeCount);
 
       // Feed data
       graph.graphData(data);
 
-      // Adjust forces based on graph size
-      const nodeCount = data.nodes.length;
-      if (nodeCount > 500) {
-        graph.d3Force('charge').strength(-50);
-      } else if (nodeCount > 200) {
-        graph.d3Force('charge').strength(-80);
-      } else {
-        graph.d3Force('charge').strength(-120);
-      }
-      graph.d3Force('link').distance(linkDist);
+      // Update forces for current graph size
+      graph.d3Force('charge')
+        .strength(nodeCount > 300 ? -180 : nodeCount > 100 ? -220 : -280)
+        .distanceMax(nodeCount > 300 ? 500 : 800);
+
+      graph.d3Force('link')
+        .distance(link => {
+          const lt = (typeof link.type === 'string') ? link.type : '';
+          if (lt === 'person-affiliation') return linkDist * 1.6;
+          if (lt === 'shared-person') return linkDist * 0.7;
+          return linkDist;
+        });
+
+      // Update collision radii
+      graph.d3Force('collide')
+        .radius(node => {
+          if (node.isFocus) return nodeScale * 1.8 + 6;
+          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
+          return nodeScale * 0.8 + 5;
+        });
+
+      // Update radial force
+      graph.d3Force('radial')
+        .radius(node => {
+          if (node.isFocus) return 0;
+          if (node.nodeType === 'person') return Math.min(nodeCount * 1.5, 400);
+          return Math.min(nodeCount * 0.6, 180);
+        });
+
       graph.d3ReheatSimulation();
 
-      // Zoom to fit after settling
+      // Zoom to fit after simulation settles a bit
       setTimeout(() => {
         document.getElementById('loading').classList.add('off');
         graph.zoomToFit(600, 40);
-      }, 800);
+      }, 1200);
     }
 
     // ─── Controls ────────────────────────────────────────
@@ -787,12 +850,25 @@
 
     document.getElementById('node-scale').oninput = function() {
       nodeScale = +this.value;
+      if (graph && graph.d3Force('collide')) {
+        graph.d3Force('collide').radius(node => {
+          if (node.isFocus) return nodeScale * 1.8 + 6;
+          if (node.nodeType === 'person') return nodeScale * 0.6 + 4;
+          return nodeScale * 0.8 + 5;
+        });
+        graph.d3ReheatSimulation();
+      }
     };
 
     document.getElementById('link-dist').oninput = function() {
       linkDist = +this.value;
       if (graph) {
-        graph.d3Force('link').distance(linkDist);
+        graph.d3Force('link').distance(link => {
+          const lt = (typeof link.type === 'string') ? link.type : '';
+          if (lt === 'person-affiliation') return linkDist * 1.6;
+          if (lt === 'shared-person') return linkDist * 0.7;
+          return linkDist;
+        });
         graph.d3ReheatSimulation();
       }
     };
