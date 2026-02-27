@@ -208,7 +208,7 @@
           <label>Link Distance</label>
           <input type="range" id="link-dist" min="15" max="250" value="60" />
           <div class="chks">
-            <label><input type="checkbox" id="show-people" checked /> People</label>
+            <label><input type="checkbox" id="show-people" /> People</label>
           </div>
           <div class="btns">
             <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
@@ -704,15 +704,17 @@
       // Feed data - d3-force simulation starts automatically & asynchronously
       graph.graphData(data);
 
-      // Update force parameters
-      graph.d3Force('charge').strength(data.nodes.length > 800 ? -60 : -80);
+      // Update force parameters based on node count
+      const nodeCount = data.nodes.length;
+      graph.d3Force('charge').strength(nodeCount > 800 ? -50 : nodeCount > 400 ? -65 : -80);
       graph.d3Force('link').distance(linkDist);
       graph.d3ReheatSimulation();
 
-      // Hide loading overlay after a short delay (simulation starts immediately)
+      // Hide loading overlay and zoom to fit
       setTimeout(() => {
         document.getElementById('loading').classList.add('off');
-      }, 300);
+        graph.zoomToFit(600, 40);
+      }, 600);
     }
 
     // ─── Controls ────────────────────────────────────────

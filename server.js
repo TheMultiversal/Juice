@@ -329,9 +329,11 @@ app.get('/api/graph', (req, res) => {
 
           if (entry.connections) {
             for (const conn of entry.connections) {
-              // Use direct ID or name lookup instead of scanning all entries
-              const targetId = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
-              if (!targetId || !entryIdMap[targetId]) continue;
+              // Support both {entryId/name} and {source/target} connection formats
+              let targetId = conn.entryId || conn.target;
+              if (!targetId && conn.name) targetId = nameToId[conn.name.toLowerCase()];
+              if (targetId === entry.id && conn.source) targetId = conn.source;
+              if (!targetId || targetId === entry.id || !entryIdMap[targetId]) continue;
               const eInfo = entryIdMap[targetId];
               if (country && eInfo.country !== country && c !== country) continue;
               if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other', nodeType: 'entry' }); }
@@ -374,8 +376,10 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
   const focusId = req.params.entryId;
   const depth = Math.min(parseInt(req.query.depth) || 2, 3);
   const includePeople = req.query.people !== '0';
+  const maxPeople = parseInt(req.query.maxPeople) || 0; // 0 = auto (50 for big entries)
+  const roleFilter = req.query.role || ''; // filter people by role keyword
   try {
-    const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}`;
+    const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}-mp${maxPeople}-r${roleFilter}`;
     const result = getCached(cacheKey, 30000, () => {
       delete require.cache[require.resolve('./data/jewish.json')];
       const jd = require('./data/jewish.json');
@@ -392,7 +396,12 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
 
       if (!entryById[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
 
+      const focusEntry = entryById[focusId];
+      const focusIndCount = (focusEntry.individuals || []).length;
+      const isBigEntry = focusIndCount > 80;
+
       // BFS to collect entries within N degrees
+      // For big entries (>80 people), skip shared-individual BFS to avoid explosion
       const visited = new Set([focusId]);
       let frontier = [focusId];
       for (let d = 0; d < depth; d++) {
@@ -400,17 +409,22 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
         for (const eid of frontier) {
           const entry = entryById[eid];
           if (!entry) continue;
+          // Always follow explicit connections
           if (entry.connections) {
             for (const conn of entry.connections) {
-              const tid = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
-              if (tid && entryById[tid] && !visited.has(tid)) {
+              // Support both {entryId/name} and {source/target} formats
+              let tid = conn.entryId || conn.target;
+              if (!tid && conn.name) tid = nameToId[conn.name.toLowerCase()];
+              // If target points to self, try source instead
+              if (tid === eid && conn.source) tid = conn.source;
+              if (tid && tid !== eid && entryById[tid] && !visited.has(tid)) {
                 visited.add(tid);
                 nextFrontier.push(tid);
               }
             }
           }
-          // Shared individuals - entries sharing the same person
-          if (entry.individuals) {
+          // Shared individuals BFS - skip for big entries to prevent graph explosion
+          if (!isBigEntry && entry.individuals) {
             for (const ind of entry.individuals) {
               for (const c2 in jd.countries) {
                 for (const e2 of jd.countries[c2]) {
@@ -429,6 +443,29 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
 
       // Build nodes and links from the visited set
       const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
+
+      // Pre-compute: how many entries each individual appears in (importance score)
+      const indImportance = {};
+      for (const eid of visited) {
+        const entry = entryById[eid];
+        if (!entry || !entry.individuals) continue;
+        for (const ind of entry.individuals) {
+          indImportance[ind.id] = (indImportance[ind.id] || 0) + 1;
+        }
+      }
+
+      // Extract role categories from the focus entry for metadata
+      const roleCategories = {};
+      if (focusEntry.individuals) {
+        for (const ind of focusEntry.individuals) {
+          const role = (ind.role || 'Other').split(' - ')[0].trim();
+          roleCategories[role] = (roleCategories[role] || 0) + 1;
+        }
+      }
+
+      // Words from the focus entry name (to detect duplicate person nodes)
+      const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+
       for (const eid of visited) {
         const entry = entryById[eid];
         if (!entry) continue;
@@ -439,11 +476,38 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
         }
         // People
         if (includePeople && entry.individuals) {
-          for (const ind of entry.individuals) {
+          // Determine cap for this entry
+          let cap = maxPeople || (entry.individuals.length > 80 ? 50 : 0);
+          let inds = entry.individuals;
+
+          // Filter by role if requested
+          if (roleFilter) {
+            const rf = roleFilter.toLowerCase();
+            inds = inds.filter(ind => (ind.role || '').toLowerCase().includes(rf));
+          }
+
+          // Skip person nodes whose name closely matches the focus entry name (prevents "2 Epsteins")
+          if (eid === focusId) {
+            inds = inds.filter(ind => {
+              const pWords = ind.name.toLowerCase().split(/\s+/);
+              const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw)));
+              return overlap.length === 0; // keep only if NO significant word overlap
+            });
+          }
+
+          // Sort by importance (appear in most entries first) if we'll cap
+          if (cap > 0 && inds.length > cap) {
+            inds = [...inds].sort((a, b) => (indImportance[b.id] || 0) - (indImportance[a.id] || 0));
+            inds = inds.slice(0, cap);
+          }
+
+          for (const ind of inds) {
             const pid = 'person-' + ind.id;
             if (!nodeSet.has(pid)) {
               nodeSet.add(pid);
-              nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '' });
+              // Extract role category for grouping
+              const roleTag = (ind.role || 'Other').split(' - ')[0].trim();
+              nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '', roleTag });
             }
             const lk = eid + '|' + pid;
             if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
@@ -452,14 +516,16 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
         // Connections between visited entries
         if (entry.connections) {
           for (const conn of entry.connections) {
-            const tid = conn.entryId || nameToId[(conn.name || '').toLowerCase()];
-            if (!tid || !visited.has(tid)) continue;
+            let tid = conn.entryId || conn.target;
+            if (!tid && conn.name) tid = nameToId[conn.name.toLowerCase()];
+            if (tid === eid && conn.source) tid = conn.source;
+            if (!tid || tid === eid || !visited.has(tid)) continue;
             const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
             if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: conn.type || 'related', description: conn.description || '' }); }
           }
         }
-        // Shared person links within visited set
-        if (entry.individuals) {
+        // Shared person links within visited set (skip for big entries since BFS already skipped)
+        if (!isBigEntry && entry.individuals) {
           for (const ind of entry.individuals) {
             for (const eid2 of visited) {
               if (eid2 === eid) continue;
@@ -473,8 +539,13 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
         }
       }
 
-      const focusEntry = entryById[focusId];
-      return { focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth, nodes, links };
+      return {
+        focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth,
+        nodes, links,
+        totalPeople: focusIndCount,
+        roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })),
+        isBigEntry
+      };
     });
     res.json(result);
   } catch (err) { console.error(err); res.status(500).json({ error: 'Server error' }); }
