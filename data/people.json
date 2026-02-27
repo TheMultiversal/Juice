@@ -157,6 +157,12 @@
           "role": "Founder & Chairman",
           "entryId": "christians-united-for-israel-cufi",
           "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Christian Zionist Ally (CUFI Founder)",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
@@ -658,6 +664,12 @@
           "role": "Chair",
           "entryId": "us-holocaust-memorial-museum",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Diplomat / Holocaust Restitution Negotiator",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -715,6 +727,12 @@
           "role": "Former CEO",
           "entryId": "goldman-sachs-historic",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Political Donor / Former Goldman Sachs CEO",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -759,6 +777,12 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "bloomberg-lp"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
@@ -783,6 +807,12 @@
           "organization": "Friends of the Israel Defense Forces (FIDF)",
           "role": "Major Donor",
           "entryId": "friends-of-the-israel-defense-forces",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -833,6 +863,12 @@
           "organization": "ADL (Anti-Defamation League)",
           "role": "Board Member",
           "entryId": "anti-defamation-league-foundation",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former COO of Meta",
+          "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
       ]
@@ -954,6 +990,12 @@
           "role": "Chairman",
           "entryId": "saban-capital-group",
           "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
@@ -973,6 +1015,12 @@
           "role": "Chairman & Senior Executive",
           "entryId": "iac",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Chairman of IAC / Expedia",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
         }
       ]
     },
@@ -990,6 +1038,12 @@
         {
           "organization": "Notable Jewish Entertainers (US)",
           "role": "Film Director",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Director / Producer",
           "entryId": "notable-jewish-entertainers-us",
           "country": "United States"
         }
@@ -1016,6 +1070,12 @@
           "organization": "Walt Disney Company",
           "role": "Former Studio Chairman",
           "entryId": "walt-disney-company",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former Disney Studios / DreamWorks Co-founder",
+          "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
       ]
@@ -1061,6 +1121,12 @@
           "role": "CEO of Warner Bros Discovery",
           "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of Warner Bros. Discovery",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
         }
       ]
     },
@@ -1079,6 +1145,12 @@
           "organization": "ViacomCBS (now Paramount)",
           "role": "Chair",
           "entryId": "viacomcbs-now-paramount",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Chair of Paramount Global",
+          "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
       ]
@@ -1104,6 +1176,12 @@
           "organization": "Walt Disney Company",
           "role": "CEO",
           "entryId": "walt-disney-company",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of The Walt Disney Company",
+          "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
       ]
@@ -1168,12 +1246,18 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "sheldon-adelson-empire"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor (deceased)",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
     "miriam-adelson": {
       "name": "Miriam Adelson",
-      "bio": "Israeli-born physician and billionaire. Widow of Sheldon. Presidential Medal of Freedom (2018).",
+      "bio": "Israeli-American physician and philanthropist. Born 1945 in Tel Aviv. Widow of Sheldon Adelson. Major Republican donor. Owner of Las Vegas Sands. One of the wealthiest women in the world.",
       "notes": "",
       "affiliations": [
         {
@@ -1218,6 +1302,12 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "sheldon-adelson-empire"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
@@ -1274,6 +1364,12 @@
           "organization": "Friends of the Israel Defense Forces (FIDF)",
           "role": "Major Donor",
           "entryId": "friends-of-the-israel-defense-forces",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -1716,6 +1812,12 @@
           "country": "International",
           "religion": "jewish",
           "entryId": "world-jewish-congress"
+        },
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "WJC President / Philanthropist",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
         }
       ]
     },
@@ -2308,6 +2410,12 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "apollo-global-management"
+        },
+        {
+          "organization": "Epstein Network",
+          "role": "Financial Connection ($158M in fees)",
+          "entryId": "epstein-network",
+          "country": "United States"
         }
       ]
     },
@@ -2345,6 +2453,12 @@
           "organization": "Elliott Management",
           "role": "Founder & Co-CEO",
           "entryId": "elliott-management",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -2511,6 +2625,12 @@
           "role": "Owner",
           "entryId": "los-angeles-clippers",
           "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Donor",
+          "entryId": "aipac",
+          "country": "United States"
         }
       ]
     },
@@ -2568,6 +2688,12 @@
           "organization": "Brookings Institution",
           "role": "Former Executive VP",
           "entryId": "brookings-institution",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Ambassador to Israel",
+          "entryId": "notable-jewish-political-figures-us",
           "country": "United States"
         }
       ]
@@ -3068,6 +3194,12 @@
           "role": "Patriarch",
           "entryId": "viacomcbs-foundation",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former Chairman of ViacomCBS (deceased)",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
         }
       ]
     },
@@ -3138,6 +3270,12 @@
           "role": "Co-Founder & Chair",
           "entryId": "schusterman-family-philanthropies",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Chair of Schusterman Family Philanthropies",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
         }
       ]
     },
@@ -3175,6 +3313,12 @@
           "role": "Co-Chair",
           "entryId": "bronfman-family-seagram-company",
           "country": "Canada"
+        },
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Co-founder of Birthright Israel",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
         }
       ]
     },
@@ -3193,6 +3337,12 @@
           "organization": "Baupost Group",
           "role": "CEO",
           "entryId": "baupost-group",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -3929,6 +4079,12 @@
           "role": "Founder",
           "entryId": "george-soros-open-society-foundations",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Major Political Donor / Financier",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -4026,6 +4182,12 @@
           "role": "Comedian/Actor",
           "entryId": "notable-jewish-entertainers-us",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Comedian / Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
         }
       ]
     },
@@ -4037,6 +4199,12 @@
         {
           "organization": "Notable Jewish Entertainers (US)",
           "role": "Actor/Producer",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Comedian / Producer",
           "entryId": "notable-jewish-entertainers-us",
           "country": "United States"
         }
@@ -4083,12 +4251,18 @@
     },
     "albert-einstein": {
       "name": "Albert Einstein",
-      "bio": "German-born theoretical physicist (1879-1955). Nobel Prize in Physics 1921. Developed the theory of relativity. Offered presidency of Israel in 1952 (declined).",
+      "bio": "German-born American theoretical physicist. Nobel Prize in Physics (1921). Born 1879 in Ulm, Germany, to a Jewish family. Developed theory of relativity. Emigrated to US in 1933. Died 1955. Offered presidency of Israel in 1952.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Notable Jewish Scientists & Intellectuals (US)",
           "role": "Physicist (1879-1955)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist (deceased)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
         }
@@ -4104,6 +4278,12 @@
           "role": "Physicist (1904-1967)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist - Father of Atomic Bomb (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
         }
       ]
     },
@@ -4115,6 +4295,12 @@
         {
           "organization": "Notable Jewish Scientists & Intellectuals (US)",
           "role": "Physicist (1918-1988)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist (deceased)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
         }
@@ -4150,6 +4336,12 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "cnn"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former President of CNN",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
         }
       ]
     },
@@ -4161,6 +4353,12 @@
         {
           "organization": "Notable Jewish Media Executives (US)",
           "role": "Former CBS CEO",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former CEO of CBS (resigned)",
           "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
@@ -13020,9 +13218,16 @@
     },
     "bob-dylan": {
       "name": "Bob Dylan",
-      "bio": "American singer-songwriter (1941-). Born Robert Allen Zimmerman. Nobel Prize in Literature 2016. One of the most influential musicians of the 20th century.",
+      "bio": "American singer-songwriter. Born Robert Allen Zimmerman in 1941 in Duluth, MN, to a Jewish family. Nobel Prize in Literature (2016). Rock and Roll Hall of Fame.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Singer-songwriter",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
     },
     "leonard-cohen": {
       "name": "Leonard Cohen",
@@ -13032,9 +13237,16 @@
     },
     "barbra-streisand": {
       "name": "Barbra Streisand",
-      "bio": "American singer, actress, and filmmaker (1942-). One of the best-selling recording artists of all time with over 150 million records sold. EGOT winner.",
+      "bio": "American entertainer. Born 1942 in Brooklyn to a Jewish family. EGOT winner. One of the best-selling recording artists of all time. Prominent Democratic donor.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Singer / Actress / Director",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
     },
     "itzhak-perlman": {
       "name": "Itzhak Perlman",
@@ -13062,9 +13274,16 @@
     },
     "mel-brooks": {
       "name": "Mel Brooks",
-      "bio": "American filmmaker, comedian, and songwriter (1926-). EGOT winner. Known for 'The Producers,' 'Blazing Saddles,' 'Young Frankenstein.' Served in WWII.",
+      "bio": "American filmmaker and comedian. Born Melvin Kaminsky in 1926 in Brooklyn to a Jewish family. EGOT winner. Known for The Producers, Blazing Saddles, Young Frankenstein.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Comedian / Director / Producer",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
     },
     "irving-berlin": {
       "name": "Irving Berlin",
@@ -13086,9 +13305,16 @@
     },
     "jonas-salk": {
       "name": "Jonas Salk",
-      "bio": "American virologist (1914-1995). Developed the first successful polio vaccine. Born to Russian-Jewish immigrant parents. Refused to patent the vaccine.",
+      "bio": "American virologist and medical researcher. Developed the first successful polio vaccine in 1955. Born 1914 in New York to Russian Jewish immigrant parents. Died 1995.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Developer of Polio Vaccine (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
     },
     "hedy-lamarr": {
       "name": "Hedy Lamarr",
@@ -13493,6 +13719,12 @@
           "role": "Counselor & Fellow",
           "entryId": "washington-institute-for-near-east-policy",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Diplomat / Middle East Envoy",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -13669,13 +13901,19 @@
     },
     "mark-mellman": {
       "name": "Mark Mellman",
-      "bio": "Founder and CEO of Democratic Majority for Israel. Veteran Democratic pollster and political strategist.",
+      "bio": "American political strategist and pollster. President and CEO of Democratic Majority for Israel (DMFI), an AIPAC-aligned super PAC. Founded The Mellman Group.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Democratic Majority for Israel (DMFI)",
           "role": "Founder & CEO",
           "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Connected Strategist (DMFI CEO)",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -14399,13 +14637,19 @@
     },
     "leonard-lauder": {
       "name": "Leonard Lauder",
-      "bio": "American billionaire businessman. Chairman Emeritus of Estee Lauder Companies. Named in Epstein's black book. Brother of Ronald Lauder.",
+      "bio": "American billionaire businessman. Chairman Emeritus of The Estée Lauder Companies. Born 1933 to a Jewish family. Major art philanthropist (donated $1B+ to Metropolitan Museum).",
       "notes": "",
       "affiliations": [
         {
           "organization": "The Estee Lauder Companies",
           "role": "Chairman Emeritus",
           "entryId": "the-estee-lauder-companies",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Estée Lauder Chairman Emeritus / Philanthropist",
+          "entryId": "notable-jewish-philanthropists-us",
           "country": "United States"
         }
       ]
@@ -14817,13 +15061,19 @@
     },
     "malcolm-hoenlein": {
       "name": "Malcolm Hoenlein",
-      "bio": "Served as executive vice chairman of the Conference of Presidents from 1986 to 2022, making him the longest-serving and most influential leader in the organization's history. Key diplomatic figure in American Jewish life.",
+      "bio": "American Jewish leader. Executive Vice Chairman of the Conference of Presidents of Major American Jewish Organizations (1986-2022). Born 1943 in Philadelphia to a Jewish family. One of the most powerful figures in American Jewish political life.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Conference of Presidents of Major American Jewish Organizations",
           "role": "Executive Vice Chairman Emeritus",
           "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Conference of Presidents Vice Chair",
+          "entryId": "notable-jewish-political-figures-us",
           "country": "United States"
         }
       ]
@@ -15160,6 +15410,12 @@
           "organization": "Walt Disney Company",
           "role": "Former CEO",
           "entryId": "walt-disney-company",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former CEO of Disney",
+          "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
       ]
@@ -16356,6 +16612,12 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "cnn"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Political Journalist / CNN Anchor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -17307,7 +17569,13 @@
       "name": "Lachlan Murdoch",
       "bio": "Australian-American media executive serving as Executive Chairman and CEO of Fox Corporation and co-chairman of News Corp, continuing the Murdoch family media dynasty",
       "affiliations": [
-        "fox-corporation"
+        "fox-corporation",
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of Fox Corporation (related)",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
       ]
     },
     "doron-krakow": {
@@ -18003,7 +18271,14 @@
       "name": "Steven Pinker",
       "bio": "Canadian-American cognitive psychologist, linguist, and author. Harvard professor. Provided legal advice to Epstein's defense team in 2007, helping to argue that Epstein's solicitation did not constitute sex trafficking under federal law. Flew on Epstein's plane at least once in 2002 to a TED conference. Has stated his contact with Epstein was limited and professional.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Cognitive Psychologist / Author",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
     },
     "mort-zuckerman": {
       "name": "Mort Zuckerman",
@@ -18262,7 +18537,14 @@
       "name": "Norman Braman",
       "bio": "American billionaire businessman and philanthropist. Automobile dealer. Former owner of the Philadelphia Eagles. Major donor to Marco Rubio and Republican causes. Active in Jewish communal organizations.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
     },
     "anderson-cooper": {
       "name": "Anderson Cooper",
@@ -18515,7 +18797,14 @@
       "name": "Murray Gell-Mann",
       "bio": "American physicist (1929-2019). Nobel Prize winner (1969) for work on elementary particles. Visited Epstein's properties. Epstein cultivated relationships with leading scientists by funding research and hosting scientific gatherings at his properties.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist / Nobel Laureate (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
     },
     "stephen-hawking": {
       "name": "Stephen Hawking",
@@ -18621,9 +18910,16 @@
     },
     "dustin-hoffman": {
       "name": "Dustin Hoffman",
-      "bio": "American actor. Named in Epstein's black book. Two-time Academy Award winner.",
+      "bio": "American actor. Born 1937 in Los Angeles to a Jewish family. Two-time Academy Award winner. Known for The Graduate, Rain Man, etc.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
     },
     "chris-rock": {
       "name": "Chris Rock",
@@ -19523,7 +19819,14 @@
       "name": "Sandy Berger",
       "bio": "American political consultant (1945-2015). Former National Security Advisor under President Clinton. Appeared on Epstein flight logs. Part of the Clinton political circle connected to Epstein.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former National Security Advisor (deceased)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
     },
     "howard-rubin": {
       "name": "Howard Rubin",
@@ -20255,7 +20558,14 @@
       "name": "Mort Mandel",
       "bio": "American billionaire businessman and philanthropist (1921-2019). Co-founder of Premier Industrial Corporation. Named in Epstein's contacts through philanthropic circles.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Jack, Joseph and Morton Mandel Foundation (deceased)",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
     },
     "leon-charney": {
       "name": "Leon Charney",
@@ -20890,9 +21200,16 @@
     },
     "brian-roberts-comcast": {
       "name": "Brian Roberts",
-      "bio": "American billionaire businessman. Chairman and CEO of Comcast Corporation (owner of NBCUniversal). Named in Epstein's black book.",
+      "bio": "American businessman. Chairman and CEO of Comcast Corporation (owner of NBCUniversal). Born 1959 to a Jewish family. Son of Comcast founder Ralph Roberts.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of Comcast",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
     },
     "herb-allen": {
       "name": "Herbert Allen Jr.",
@@ -21985,6 +22302,1358 @@
           "organization": "Jewish State Governors (US)",
           "role": "Governor/Senator of Alaska (1939-1969)",
           "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "bernard-marcus": {
+      "name": "Bernard Marcus",
+      "bio": "American billionaire businessman. Co-founder of The Home Depot. Born 1929 in Newark, NJ, to Russian Jewish immigrant parents. Major Republican donor and Israel supporter.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "irving-moskowitz": {
+      "name": "Irving Moskowitz",
+      "bio": "American billionaire physician and philanthropist. Born 1928. Major funder of Jewish settlements in East Jerusalem. Significant AIPAC donor. Died 2016.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor (deceased)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "adam-milstein": {
+      "name": "Adam Milstein",
+      "bio": "Israeli-American real estate investor and philanthropist. Born 1952 in Haifa, Israel. National Board Member of AIPAC. Co-founder of Israeli-American Council. Active in combating BDS movement.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Board Member / Major Donor",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "stacy-burdett": {
+      "name": "Stacy Burdett",
+      "bio": "American lobbyist. Former Vice President of Government Affairs at AIPAC. Key figure in AIPAC congressional outreach strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former AIPAC Vice President",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "jonathan-zucker": {
+      "name": "Jonathan Zucker",
+      "bio": "American businessman and Israel advocate. Active AIPAC supporter and donor. Involved in pro-Israel political activism.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Major Donor / Board Supporter",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "tom-delay": {
+      "name": "Tom DeLay",
+      "bio": "American politician. Former Republican House Majority Leader (2003-2006). One of the strongest Congressional allies of Israel and AIPAC during his tenure.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Key Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "eliot-engel": {
+      "name": "Eliot Engel",
+      "bio": "American politician. Former US Representative from New York (1989-2021). Former Chairman of House Foreign Affairs Committee. Strong AIPAC ally and Israel supporter.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "brad-schneider": {
+      "name": "Brad Schneider",
+      "bio": "American politician. US Representative from Illinois since 2017. Jewish. Co-chair of the House Bipartisan Task Force for Combating Antisemitism. Strong AIPAC ally.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "lee-zeldin-aipac": {
+      "name": "Lee Zeldin",
+      "bio": "American politician. EPA Administrator under Trump (2025). Former US Representative from New York (2015-2023). Jewish. Strong pro-Israel voice and AIPAC ally.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally / EPA Administrator",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "hakeem-jeffries": {
+      "name": "Hakeem Jeffries",
+      "bio": "American politician. House Minority Leader (2023-present). US Representative from New York. Has spoken at AIPAC Policy Conference.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-fetterman": {
+      "name": "John Fetterman",
+      "bio": "American politician. US Senator from Pennsylvania since 2023. One of the most vocal pro-Israel voices in the Democratic caucus. Frequent AIPAC Policy Conference attendee.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "mike-johnson": {
+      "name": "Mike Johnson",
+      "bio": "American politician. Speaker of the House (2023-present). Strong supporter of Israel. Has worked closely with AIPAC on Israel-related legislation.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "ben-cardin": {
+      "name": "Ben Cardin",
+      "bio": "American politician. Former US Senator from Maryland (2007-2025). Jewish. Former Chairman of Senate Foreign Relations Committee. One of AIPAC's closest Senate allies.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-boehner": {
+      "name": "John Boehner",
+      "bio": "American politician. Former Speaker of the House (2011-2015). In 2015, invited Netanyahu to address Congress in coordination with AIPAC, bypassing the Obama White House.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "jacob-lew": {
+      "name": "Jack Lew",
+      "bio": "American diplomat and lawyer. US Ambassador to Israel (2023-2025). Secretary of the Treasury under Obama (2013-2017). White House Chief of Staff (2012-2013). Born 1955 to an Orthodox Jewish family in New York.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Ambassador to Israel / Former Secretary of Treasury",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-axelrod": {
+      "name": "David Axelrod",
+      "bio": "American political consultant. Senior Advisor to President Obama (2009-2011). Chief strategist for Obama's 2008 and 2012 campaigns. Born 1955 in New York to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Senior White House Advisor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ari-fleischer": {
+      "name": "Ari Fleischer",
+      "bio": "American political consultant. White House Press Secretary under George W. Bush (2001-2003). Born 1960 to a Jewish family in New York. Fox News contributor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former White House Press Secretary",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "josh-bolten": {
+      "name": "Josh Bolten",
+      "bio": "American political advisor. White House Chief of Staff under George W. Bush (2006-2009). Born 1954. Jewish. Former CEO of Business Roundtable.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former White House Chief of Staff",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "dan-shapiro": {
+      "name": "Dan Shapiro",
+      "bio": "American diplomat. US Ambassador to Israel under Obama (2011-2017). Born 1969, Jewish. Senior Advisor for Middle East at National Security Council.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Ambassador to Israel",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "tom-friedman-nyt": {
+      "name": "Thomas Friedman",
+      "bio": "American journalist and author. Foreign affairs columnist for The New York Times. Born 1953 in Minneapolis to a Jewish family. Three-time Pulitzer Prize winner. Influential voice on Middle East policy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Influential Political Columnist",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "eric-cantor": {
+      "name": "Eric Cantor",
+      "bio": "American politician. Former US Representative from Virginia (2001-2014). House Majority Leader (2011-2014). Only Jewish Republican in Congress during his tenure. Vice Chairman of Moelis & Company.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former House Majority Leader",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "abe-foxman": {
+      "name": "Abraham Foxman",
+      "bio": "American attorney and activist. National Director of the Anti-Defamation League (1987-2015). Born 1940 in Baranovichi, Poland. Holocaust survivor. Major figure in American Jewish political life.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former ADL National Director",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "mort-klein": {
+      "name": "Morton Klein",
+      "bio": "American Jewish leader. President of the Zionist Organization of America since 1993. Born 1948 in a displaced persons camp in Germany to Holocaust survivors. Influential voice in right-wing pro-Israel politics.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "ZOA President",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "douglas-emhoff": {
+      "name": "Douglas Emhoff",
+      "bio": "American lawyer. Second Gentleman of the United States (2021-2025). Husband of Vice President Kamala Harris. Born 1964 to a Jewish family in Brooklyn, New York. First Jewish spouse of a US Vice President.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Second Gentleman",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "madeleine-albright": {
+      "name": "Madeleine Albright",
+      "bio": "American diplomat. First female US Secretary of State (1997-2001). Born 1937 in Prague as Marie Jana Korbelová. Discovered her Jewish heritage in 1997. Died 2022.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Secretary of State (Jewish heritage, deceased)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-kerry-advisor-wendy-sherman": {
+      "name": "Wendy Sherman",
+      "bio": "American diplomat. Deputy Secretary of State (2021-2023). Lead negotiator of the Iran Nuclear Deal (JCPOA). Born 1949. Jewish heritage.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Deputy Secretary of State",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "victoria-nuland": {
+      "name": "Victoria Nuland",
+      "bio": "American diplomat. Under Secretary of State for Political Affairs (2021-2024). Known for role in Ukraine policy. Born 1961. Jewish heritage. Married to Robert Kagan (neoconservative columnist).",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Under Secretary of State",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sam-bankman-fried": {
+      "name": "Sam Bankman-Fried",
+      "bio": "American former businessman. Founder of FTX cryptocurrency exchange. Born 1992 to a Jewish family. One of the largest political donors in 2022 midterm cycle before FTX collapse and fraud conviction.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Crypto Executive / Political Donor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "alex-soros": {
+      "name": "Alex Soros",
+      "bio": "American philanthropist. Son of George Soros. Chairman of Open Society Foundations since 2023. Born 1985. Active Democratic political donor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Philanthropist / Political Donor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "elliot-abrams": {
+      "name": "Elliott Abrams",
+      "bio": "American diplomat. Special Representative for Venezuela and Iran under Trump. Assistant Secretary of State under Reagan. Born 1948 to a Jewish family. Key neoconservative foreign policy figure.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Foreign Policy Official",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "paul-wolfowitz": {
+      "name": "Paul Wolfowitz",
+      "bio": "American political scientist and diplomat. Deputy Secretary of Defense under George W. Bush (2001-2005). Key architect of the Iraq War. Born 1943 to a Jewish family. Former World Bank President.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Deputy Secretary of Defense",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "douglas-feith": {
+      "name": "Douglas Feith",
+      "bio": "American attorney and government official. Under Secretary of Defense for Policy under Bush (2001-2005). Born 1953 to a Jewish family. Key figure in Iraq War planning.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Under Secretary of Defense for Policy",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "richard-perle": {
+      "name": "Richard Perle",
+      "bio": "American political advisor. Chairman of the Defense Policy Board (2001-2003). Known as the \"Prince of Darkness\" for his hawkish foreign policy views. Born 1941 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Defense Policy Board Chair",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "bill-kristol": {
+      "name": "William Kristol",
+      "bio": "American political analyst. Founder of The Weekly Standard. Co-founder of Project for the New American Century (PNAC). Born 1952 to a Jewish family. Son of Irving Kristol.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Political Commentator / Neoconservative Leader",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "robert-kagan": {
+      "name": "Robert Kagan",
+      "bio": "American historian and foreign policy commentator. Co-founder of Project for the New American Century. Born 1958 to a Jewish family. Married to Victoria Nuland.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Foreign Policy Commentator / Neoconservative",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-chertoff": {
+      "name": "Michael Chertoff",
+      "bio": "American attorney and government official. Secretary of Homeland Security under Bush (2005-2009). Born 1953 to a Jewish family (father was a rabbi). Former federal judge.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Secretary of Homeland Security",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-mukasey": {
+      "name": "Michael Mukasey",
+      "bio": "American jurist. US Attorney General under Bush (2007-2009). Born 1941 to a Jewish family in the Bronx. Former Chief Judge of the Southern District of New York.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Attorney General",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jack-reed-ally": {
+      "name": "Jacky Rosen",
+      "bio": "American politician. US Senator from Nevada since 2019. Born 1957 to a Jewish family in Chicago. Former synagogue president. Serves on Senate Armed Services Committee.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Nevada)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jacky-rosen": {
+      "name": "Jacky Rosen",
+      "bio": "American politician. US Senator from Nevada since 2019. Born 1957 to a Jewish family. Former synagogue president.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Nevada)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-ossoff": {
+      "name": "Jon Ossoff",
+      "bio": "American politician. US Senator from Georgia since 2021. Born 1987 to a Jewish family in Atlanta. Youngest sitting US Senator at time of election.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Georgia)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "elissa-slotkin": {
+      "name": "Elissa Slotkin",
+      "bio": "American politician. US Senator from Michigan since 2025. Former US Representative (2019-2025). Born 1976 to a Jewish family. Former CIA analyst.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Michigan)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "dan-goldman": {
+      "name": "Dan Goldman",
+      "bio": "American politician and attorney. US Representative from New York since 2023. Born 1976 to a Jewish family. Former lead counsel in first Trump impeachment. Heir to Levi Strauss fortune.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (New York)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jared-moskowitz": {
+      "name": "Jared Moskowitz",
+      "bio": "American politician. US Representative from Florida since 2023. Born 1980 to a Jewish family. Former Florida Division of Emergency Management director.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (Florida)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "kathy-manning": {
+      "name": "Kathy Manning",
+      "bio": "American politician. US Representative from North Carolina (2021-2023). Born 1956 to a Jewish family. Former chair of Jewish Federations of North America.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Representative (North Carolina)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "lois-frankel": {
+      "name": "Lois Frankel",
+      "bio": "American politician. US Representative from Florida since 2013. Born 1948 to a Jewish family in New York.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (Florida)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sam-levinson-gov": {
+      "name": "Samuel H. Elrod",
+      "bio": "American politician in post-Civil War South Carolina.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Historical - Lt. Governor of South Carolina (1870s, one of earliest)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "edward-salomon": {
+      "name": "Edward Salomon",
+      "bio": "German-American politician. Acting Governor of Wisconsin (1862). Born 1828 to a Jewish family in Prussia. Served during the Civil War.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Wisconsin Territory (1862)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-hahn-la": {
+      "name": "Michael Hahn",
+      "bio": "German-American politician. Governor of Louisiana during Reconstruction (1864-1865). Born 1830 in Bavaria to a Jewish family. First Jewish governor of a US state.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Louisiana (1864-1865)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-emanuel": {
+      "name": "David Emanuel",
+      "bio": "American politician. Governor of Georgia in 1801. Born 1744 to a Jewish family. Emanuel County, Georgia is named after him. One of earliest Jewish governors in US history.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Georgia (1801)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "washington-bartlett": {
+      "name": "Washington Bartlett",
+      "bio": "American politician. Governor of California (1887). Born 1824 to a Jewish family. Died in office after only 9 months.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of California (1887)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "simon-bamberger": {
+      "name": "Simon Bamberger",
+      "bio": "German-American businessman and politician. Governor of Utah (1917-1921). Born 1846 in Eberstadt, Germany, to a Jewish family. First non-Mormon governor of Utah.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Utah (1917-1921)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "samuel-levy": {
+      "name": "Samuel Levy",
+      "bio": "American politician. Borough President of Manhattan (1930-1937). Jewish community leader in New York.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Borough President of Manhattan (historical)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "eliot-spitzer": {
+      "name": "Eliot Spitzer",
+      "bio": "American politician and attorney. Governor of New York (2007-2008). Born 1959 to a Jewish family. Former NY Attorney General. Resigned due to scandal.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of New York (2007-2008)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "eric-greitens": {
+      "name": "Eric Greitens",
+      "bio": "American politician. Governor of Missouri (2017-2018). Born 1974. Jewish (converted). Navy SEAL veteran. Resigned due to scandal.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Missouri (2017-2018)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "larry-summers": {
+      "name": "Larry Summers",
+      "bio": "American economist. Former Treasury Secretary, former Harvard President. Visited Epstein after conviction. Born 1954 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Academic/Political Connection",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "leslie-wexner-ep": {
+      "name": "Leslie Wexner",
+      "bio": "American billionaire. Founder of L Brands (Victoria's Secret). Only known major client of Epstein. Gave Epstein power of attorney and $46M Manhattan mansion. Born 1937 to Jewish immigrants from Russia.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Primary Financial Patron",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "george-mitchell-ep": {
+      "name": "George Mitchell",
+      "bio": "American politician. Former Senate Majority Leader (1989-1995). Named in Epstein-related testimonies. Denied wrongdoing.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Social Connection",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "ehud-barak-ep": {
+      "name": "Ehud Barak",
+      "bio": "Israeli politician and military leader. Former Prime Minister of Israel (1999-2001). Business relationship with Epstein. Photographed at Epstein's residence. Invested in Epstein-linked company Carbyne.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Political Connection",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "adam-sandler": {
+      "name": "Adam Sandler",
+      "bio": "American actor, comedian and filmmaker. Born 1966 in Brooklyn to a Jewish family. Known for \"The Chanukah Song\" and numerous comedy films.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Comedian / Producer",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ben-stiller": {
+      "name": "Ben Stiller",
+      "bio": "American actor and filmmaker. Born 1965 in New York to a Jewish family (parents Jerry Stiller and Anne Meara). Known for Zoolander, Meet the Parents, etc.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Director",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "woody-allen-ent": {
+      "name": "Woody Allen",
+      "bio": "American filmmaker. Born Allan Stewart Konigsberg in 1935 in Brooklyn to a Jewish family. Academy Award-winning director of Annie Hall, Manhattan, etc.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Director / Writer / Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "larry-david": {
+      "name": "Larry David",
+      "bio": "American comedian. Born 1947 in Brooklyn to a Jewish family. Co-creator of Seinfeld. Creator and star of Curb Your Enthusiasm.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Writer / Producer / Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sarah-silverman": {
+      "name": "Sarah Silverman",
+      "bio": "American comedian and actress. Born 1970 in Bedford, NH, to a Jewish family. Known for provocative comedy addressing social issues.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Comedian / Actress",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sacha-baron-cohen": {
+      "name": "Sacha Baron Cohen",
+      "bio": "British-American actor and comedian. Born 1971 in London to a Jewish family. Known for Borat, Ali G. Active in combating antisemitism and online hate.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Comedian",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "harrison-ford": {
+      "name": "Harrison Ford",
+      "bio": "American actor. Born 1942 in Chicago. Mother was Russian Jewish. Known for Star Wars, Indiana Jones franchises. One of the highest-grossing actors of all time.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jake-gyllenhaal": {
+      "name": "Jake Gyllenhaal",
+      "bio": "American actor. Born 1980. Mother is of Ashkenazi Jewish descent. Known for Brokeback Mountain, Nightcrawler, etc.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "joaquin-phoenix": {
+      "name": "Joaquin Phoenix",
+      "bio": "American actor. Born 1974. Of Ashkenazi Jewish descent from father's side. Academy Award winner for Joker.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jeff-goldblum": {
+      "name": "Jeff Goldblum",
+      "bio": "American actor. Born 1952 in Pittsburgh to a Jewish family. Known for Jurassic Park, The Fly, Independence Day.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "andy-samberg": {
+      "name": "Andy Samberg",
+      "bio": "American actor and comedian. Born 1978 in Berkeley, CA, to a Jewish family. Known for Brooklyn Nine-Nine, SNL, The Lonely Island.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Comedian",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jonah-hill": {
+      "name": "Jonah Hill",
+      "bio": "American actor and filmmaker. Born Jonah Hill Feldstein in 1983 in LA to a Jewish family. Two-time Oscar nominee.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "Actor / Director",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "seth-meyers": {
+      "name": "Seth Meyers",
+      "bio": "American comedian. Born 1973. Of Jewish and German-Swedish descent. Host of Late Night with Seth Meyers. Former SNL anchor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Entertainers (US)",
+          "role": "TV Host / Comedian",
+          "entryId": "notable-jewish-entertainers-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-zuckerberg-media": {
+      "name": "Mark Zuckerberg",
+      "bio": "American businessman. Co-founder and CEO of Meta Platforms (Facebook, Instagram, WhatsApp). Born 1984 to a Jewish family in White Plains, NY.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of Meta (Social Media)",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sergey-brin-media": {
+      "name": "Sergey Brin",
+      "bio": "American businessman. Co-founder of Google/Alphabet. Born 1973 in Moscow to a Jewish family. Emigrated to US in 1979.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Co-founder of Google/Alphabet",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "larry-page-assoc": {
+      "name": "Larry Page",
+      "bio": "American businessman. Co-founder of Google/Alphabet. Born 1973. Business partner of Sergey Brin.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Co-founder of Google/Alphabet (associated)",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "susan-wojcicki": {
+      "name": "Susan Wojcicki",
+      "bio": "American businesswoman. Former CEO of YouTube (2014-2023). Born 1968 to a Jewish mother. Died 2024. Key figure in Google's early days (Google's first office was in her garage).",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former CEO of YouTube (deceased)",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ari-emanuel-media": {
+      "name": "Ari Emanuel",
+      "bio": "American talent agent. CEO of Endeavor (parent of WME, UFC). Born 1961 to a Jewish family. Brother of Rahm Emanuel. One of the most powerful figures in entertainment.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "CEO of Endeavor / WME",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "haim-saban-media": {
+      "name": "Haim Saban",
+      "bio": "Israeli-American media mogul. Creator of Mighty Morphin Power Rangers. Former chairman of Univision. Born 1944 in Alexandria, Egypt, to a Jewish family. Major Democratic donor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Media Mogul / Former Univision Chairman",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "mort-zuckerman-media": {
+      "name": "Mortimer Zuckerman",
+      "bio": "Canadian-American businessman. Former owner of New York Daily News and U.S. News & World Report. Born 1937 to a Jewish family in Montreal.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former Owner of NY Daily News / US News",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "arthur-sulzberger": {
+      "name": "A.G. Sulzberger",
+      "bio": "American journalist. Publisher of The New York Times since 2018. Born 1980. Part of the Sulzberger family which has controlled the NYT since 1896. Family has Jewish heritage (patriarch Adolph Ochs).",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Publisher of The New York Times",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "donald-graham": {
+      "name": "Donald Graham",
+      "bio": "American businessman. Former publisher of The Washington Post (1979-2000) and chairman of The Washington Post Company. Half-Jewish heritage through mother Katharine Graham.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Media Executives (US)",
+          "role": "Former Publisher of Washington Post",
+          "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "george-soros-phil": {
+      "name": "George Soros",
+      "bio": "Hungarian-American billionaire. Founder of Open Society Foundations. Born 1930 in Budapest to a Jewish family. One of the world's largest philanthropists. Holocaust survivor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Founder of Open Society Foundations",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-bloomberg-phil": {
+      "name": "Michael Bloomberg",
+      "bio": "American billionaire. Founder of Bloomberg LP and Bloomberg Philanthropies. Former NYC Mayor. Born 1942 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Founder of Bloomberg Philanthropies",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sheldon-adelson-phil": {
+      "name": "Sheldon Adelson",
+      "bio": "American billionaire. Founded Adelson Family Foundation. Massive donor to Birthright Israel, Yad Vashem, and Republican causes. Died 2021.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Adelson Family Foundation (deceased)",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-steinhardt-phil": {
+      "name": "Michael Steinhardt",
+      "bio": "American financier and philanthropist. Co-founder of Birthright Israel. Major donor to Jewish causes. Born 1940 to a Jewish family in Brooklyn.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Co-founder of Birthright Israel",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "edgar-bronfman-sr-phil": {
+      "name": "Edgar Bronfman Sr.",
+      "bio": "Canadian-American businessman. Former president of the World Jewish Congress (1981-2007). CEO of Seagram. Born 1929 to a Jewish family. Died 2013.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Former WJC President / Philanthropist (deceased)",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "les-wexner-phil": {
+      "name": "Leslie Wexner",
+      "bio": "American billionaire. Founder of L Brands. Founded the Wexner Foundation. Major donor to Ohio State University. Born 1937 to Jewish immigrants.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Wexner Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "seth-klarman-phil": {
+      "name": "Seth Klarman",
+      "bio": "American billionaire. CEO of Baupost Group. Klarman Family Foundation supports democracy, science, and Jewish causes. Born 1957 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Klarman Family Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-zuckerberg-phil": {
+      "name": "Mark Zuckerberg",
+      "bio": "American billionaire. Co-founder of Facebook/Meta. Chan Zuckerberg Initiative has pledged billions. Born 1984 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Chan Zuckerberg Initiative",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "sergey-brin-phil": {
+      "name": "Sergey Brin",
+      "bio": "American billionaire. Co-founder of Google. Active philanthropist. Born 1973 in Moscow to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Brin Wojcicki Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "larry-ellison-phil": {
+      "name": "Larry Ellison",
+      "bio": "American billionaire. Co-founder of Oracle. Ellison Medical Foundation focused on aging research. Born 1944, adopted by Jewish immigrants.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Ellison Medical Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "priscilla-chan-zuck": {
+      "name": "Priscilla Chan",
+      "bio": "American philanthropist and physician. Co-founder of Chan Zuckerberg Initiative with husband Mark Zuckerberg.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Co-founder of Chan Zuckerberg Initiative",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "bernard-marcus-phil": {
+      "name": "Bernard Marcus",
+      "bio": "American billionaire. Co-founder of Home Depot. The Marcus Foundation. Major supporter of Israel, veterans, and Georgia Aquarium. Born 1929 to a Jewish family.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Marcus Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "paul-singer-phil": {
+      "name": "Paul Singer",
+      "bio": "American billionaire. Founder of Elliott Management. Significant philanthropist supporting Jewish causes, LGBTQ rights, and Republican politics.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Philanthropists (US)",
+          "role": "Paul Singer Foundation",
+          "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-von-neumann": {
+      "name": "John von Neumann",
+      "bio": "Hungarian-American mathematician. Born 1903 in Budapest to a Jewish family. Pioneer of computing, game theory, quantum mechanics. Key contributor to Manhattan Project. Died 1957.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Mathematician / Computer Scientist (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "noam-chomsky-sci": {
+      "name": "Noam Chomsky",
+      "bio": "American linguist and political activist. Born 1928 in Philadelphia to a Jewish family. \"Father of modern linguistics.\" Prominent critic of US foreign policy and Israeli policy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Linguist / Political Activist",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "albert-sabin": {
+      "name": "Albert Sabin",
+      "bio": "Polish-American medical researcher. Developed the oral polio vaccine. Born 1906 in Białystok, Poland, to a Jewish family. Emigrated to US in 1921. Died 1993.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Developer of Oral Polio Vaccine (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "carl-sagan": {
+      "name": "Carl Sagan",
+      "bio": "American astronomer and science communicator. Born 1934 in Brooklyn to a Jewish family. Created \"Cosmos\" TV series. Pioneer in exobiology. Died 1996.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Astronomer / Science Communicator (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "steven-weinberg": {
+      "name": "Steven Weinberg",
+      "bio": "American theoretical physicist. Nobel Prize in Physics (1979). Born 1933 to a Jewish family in New York. Key contributor to electroweak unification. Died 2021.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist / Nobel Laureate (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "daniel-kahneman": {
+      "name": "Daniel Kahneman",
+      "bio": "Israeli-American psychologist. Nobel Prize in Economics (2002). Born 1934 in Tel Aviv to a Jewish family from Lithuania. Pioneer of behavioral economics. Author of \"Thinking, Fast and Slow.\" Died 2024.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Psychologist / Nobel Laureate (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "edward-teller": {
+      "name": "Edward Teller",
+      "bio": "Hungarian-American theoretical physicist. Known as the \"Father of the Hydrogen Bomb.\" Born 1908 in Budapest to a Jewish family. Co-founded Lawrence Livermore National Laboratory. Died 2003.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Physicist - Father of H-Bomb (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "hyman-rickover": {
+      "name": "Hyman G. Rickover",
+      "bio": "American admiral. \"Father of the Nuclear Navy.\" Born 1900 in Maków Mazowiecki, Poland, to a Jewish family. Died 1986. Longest-serving naval officer in US history.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Admiral - Father of Nuclear Navy (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ruth-bader-ginsburg-sci": {
+      "name": "Ruth Bader Ginsburg",
+      "bio": "American jurist. US Supreme Court Justice (1993-2020). Born 1933 in Brooklyn to a Jewish family. Pioneer of gender equality litigation. Died 2020. Cultural icon \"Notorious RBG.\"",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Supreme Court Justice / Legal Scholar (deceased)",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "alan-dershowitz-sci": {
+      "name": "Alan Dershowitz",
+      "bio": "American lawyer and legal scholar. Felix Frankfurter Professor of Law Emeritus at Harvard. Born 1938 in Brooklyn to an Orthodox Jewish family. Controversial figure in Epstein case defense.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Legal Scholar / Attorney",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "lawrence-tribe": {
+      "name": "Laurence Tribe",
+      "bio": "American legal scholar. Carl M. Loeb University Professor Emeritus at Harvard Law School. Born 1941 in Shanghai to Jewish refugees. Leading liberal constitutional law scholar.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Scientists & Intellectuals (US)",
+          "role": "Constitutional Law Scholar",
+          "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
         }
       ]

@@ -426,6 +426,162 @@
             "name": "Brad Gordon",
             "role": "Former Policy Director",
             "bio": "Former AIPAC director of policy and government affairs. Key lobbyist on Iran sanctions legislation."
+          },
+          {
+            "id": "sheldon-adelson",
+            "role": "Major Donor (deceased)",
+            "name": "Sheldon Adelson",
+            "bio": "American billionaire businessman and political donor (1933-2021). Born in Boston to a Jewish Ukrainian immigrant family. Founded Las Vegas Sands Corporation. Major Republican and pro-Israel donor, giving over $500 million to political causes. Built The Venetian casino empire."
+          },
+          {
+            "id": "haim-saban",
+            "role": "Major Donor",
+            "name": "Haim Saban",
+            "bio": "Israeli-American media mogul and political donor. Born 1944 in Alexandria, Egypt, to a Jewish family. Created the Mighty Morphin Power Rangers franchise. Later became a major media investor ($3B deal for ProSiebenSat.1). Largest individual Democratic Party donor for years."
+          },
+          {
+            "id": "paul-singer",
+            "role": "Major Donor",
+            "name": "Paul Singer",
+            "bio": "American billionaire hedge fund manager. Born 1944, Jewish family in Tenafly, New Jersey. Founder and president of Elliott Management Corporation, one of the world's most successful activist hedge funds. Major Republican and pro-Israel donor."
+          },
+          {
+            "id": "miriam-adelson",
+            "role": "Major Donor",
+            "name": "Miriam Adelson",
+            "bio": "Israeli-American physician and philanthropist. Born 1945 in Tel Aviv. Widow of Sheldon Adelson. Major Republican donor. Owner of Las Vegas Sands. One of the wealthiest women in the world."
+          },
+          {
+            "id": "bernard-marcus",
+            "role": "Major Donor",
+            "name": "Bernard Marcus",
+            "bio": "American billionaire businessman. Co-founder of The Home Depot. Born 1929 in Newark, NJ, to Russian Jewish immigrant parents. Major Republican donor and Israel supporter."
+          },
+          {
+            "id": "larry-ellison",
+            "role": "Major Donor",
+            "name": "Larry Ellison",
+            "bio": "American billionaire businessman, co-founder, chairman, and CTO of Oracle Corporation. Born to a Jewish mother in New York City. One of the world's wealthiest people with a net worth exceeding $100 billion. Major investor in Tesla and close ally of Elon Musk."
+          },
+          {
+            "id": "robert-kraft",
+            "role": "Major Donor",
+            "name": "Robert Kraft",
+            "bio": "American billionaire businessman. Born 1941 in Brookline, Massachusetts, to a Jewish family. Owner of the New England Patriots NFL team (5 Super Bowl wins). Chairman and CEO of the Kraft Group. Major donor to Columbia University, Harvard, and pro-Israel causes."
+          },
+          {
+            "id": "irving-moskowitz",
+            "role": "Major Donor (deceased)",
+            "name": "Irving Moskowitz",
+            "bio": "American billionaire physician and philanthropist. Born 1928. Major funder of Jewish settlements in East Jerusalem. Significant AIPAC donor. Died 2016."
+          },
+          {
+            "id": "adam-milstein",
+            "role": "Board Member / Major Donor",
+            "name": "Adam Milstein",
+            "bio": "Israeli-American real estate investor and philanthropist. Born 1952 in Haifa, Israel. National Board Member of AIPAC. Co-founder of Israeli-American Council. Active in combating BDS movement."
+          },
+          {
+            "id": "stacy-burdett",
+            "role": "Former AIPAC Vice President",
+            "name": "Stacy Burdett",
+            "bio": "American lobbyist. Former Vice President of Government Affairs at AIPAC. Key figure in AIPAC congressional outreach strategy."
+          },
+          {
+            "id": "jonathan-zucker",
+            "role": "Major Donor / Board Supporter",
+            "name": "Jonathan Zucker",
+            "bio": "American businessman and Israel advocate. Active AIPAC supporter and donor. Involved in pro-Israel political activism."
+          },
+          {
+            "id": "mark-mellman",
+            "role": "Connected Strategist (DMFI CEO)",
+            "name": "Mark Mellman",
+            "bio": "American political strategist and pollster. President and CEO of Democratic Majority for Israel (DMFI), an AIPAC-aligned super PAC. Founded The Mellman Group."
+          },
+          {
+            "id": "tom-delay",
+            "role": "Key Congressional Ally",
+            "name": "Tom DeLay",
+            "bio": "American politician. Former Republican House Majority Leader (2003-2006). One of the strongest Congressional allies of Israel and AIPAC during his tenure."
+          },
+          {
+            "id": "eliot-engel",
+            "role": "Congressional Ally",
+            "name": "Eliot Engel",
+            "bio": "American politician. Former US Representative from New York (1989-2021). Former Chairman of House Foreign Affairs Committee. Strong AIPAC ally and Israel supporter."
+          },
+          {
+            "id": "brad-schneider",
+            "role": "Congressional Ally",
+            "name": "Brad Schneider",
+            "bio": "American politician. US Representative from Illinois since 2017. Jewish. Co-chair of the House Bipartisan Task Force for Combating Antisemitism. Strong AIPAC ally."
+          },
+          {
+            "id": "lee-zeldin-aipac",
+            "role": "Congressional Ally / EPA Administrator",
+            "name": "Lee Zeldin",
+            "bio": "American politician. EPA Administrator under Trump (2025). Former US Representative from New York (2015-2023). Jewish. Strong pro-Israel voice and AIPAC ally."
+          },
+          {
+            "id": "hakeem-jeffries",
+            "role": "Congressional Ally",
+            "name": "Hakeem Jeffries",
+            "bio": "American politician. House Minority Leader (2023-present). US Representative from New York. Has spoken at AIPAC Policy Conference."
+          },
+          {
+            "id": "john-fetterman",
+            "role": "Congressional Ally",
+            "name": "John Fetterman",
+            "bio": "American politician. US Senator from Pennsylvania since 2023. One of the most vocal pro-Israel voices in the Democratic caucus. Frequent AIPAC Policy Conference attendee."
+          },
+          {
+            "id": "mike-johnson",
+            "role": "Congressional Ally",
+            "name": "Mike Johnson",
+            "bio": "American politician. Speaker of the House (2023-present). Strong supporter of Israel. Has worked closely with AIPAC on Israel-related legislation."
+          },
+          {
+            "id": "john-hagee",
+            "role": "Christian Zionist Ally (CUFI Founder)",
+            "name": "John Hagee",
+            "bio": "American pastor and televangelist. Born 1940 in Goose Creek, Texas. Founder and National Chairman of Christians United for Israel (CUFI), the largest pro-Israel organization in the United States with over 10 million members. Senior pastor of Cornerstone Church in San Antonio."
+          },
+          {
+            "id": "michael-bloomberg",
+            "role": "Major Donor",
+            "name": "Michael Bloomberg",
+            "bio": "American billionaire businessman and politician. Born 1942 in Boston to a Jewish family. Founded Bloomberg L.P., the financial data and media company. Served as Mayor of New York City (2002-2013). 2020 presidential candidate. Net worth approximately $100 billion."
+          },
+          {
+            "id": "seth-klarman",
+            "role": "Major Donor",
+            "name": "Seth Klarman",
+            "bio": "American billionaire value investor and CEO of Baupost Group, one of the largest hedge funds with $30+ billion in AUM. Jewish American known for his contrarian investment style. Author of the cult classic \"Margin of Safety,\" copies of which sell for thousands of dollars."
+          },
+          {
+            "id": "norman-braman",
+            "role": "Major Donor",
+            "name": "Norman Braman",
+            "bio": "American billionaire businessman and philanthropist. Automobile dealer. Former owner of the Philadelphia Eagles. Major donor to Marco Rubio and Republican causes. Active in Jewish communal organizations."
+          },
+          {
+            "id": "steve-ballmer",
+            "role": "Donor",
+            "name": "Steve Ballmer",
+            "bio": "American billionaire businessman, former CEO of Microsoft (2000-2014), and owner of the Los Angeles Clippers NBA team. Purchased the Clippers for $2 billion in 2014 and built the $1.8 billion Intuit Dome arena. One of the wealthiest people in the world."
+          },
+          {
+            "id": "ben-cardin",
+            "role": "Congressional Ally",
+            "name": "Ben Cardin",
+            "bio": "American politician. Former US Senator from Maryland (2007-2025). Jewish. Former Chairman of Senate Foreign Relations Committee. One of AIPAC's closest Senate allies."
+          },
+          {
+            "id": "john-boehner",
+            "role": "Former Congressional Ally",
+            "name": "John Boehner",
+            "bio": "American politician. Former Speaker of the House (2011-2015). In 2015, invited Netanyahu to address Congress in coordination with AIPAC, bypassing the Obama White House."
           }
         ],
         "connections": [
@@ -799,6 +955,272 @@
             "name": "UN General Assembly",
             "type": "diplomatic target",
             "description": "AIPAC lobbies against anti-Israel UN resolutions and for US veto protection at the Security Council."
+          },
+          {
+            "type": "major donor",
+            "name": "Miriam Adelson"
+          },
+          {
+            "type": "major donor",
+            "name": "Bernard Marcus"
+          },
+          {
+            "type": "major donor",
+            "name": "Larry Ellison"
+          },
+          {
+            "type": "major donor",
+            "name": "Robert Kraft"
+          },
+          {
+            "type": "major donor",
+            "name": "Irving Moskowitz (deceased)"
+          },
+          {
+            "type": "major donor",
+            "name": "Adam Milstein"
+          },
+          {
+            "type": "major donor",
+            "name": "Seth Klarman"
+          },
+          {
+            "type": "major donor",
+            "name": "Norman Braman"
+          },
+          {
+            "type": "major donor",
+            "name": "Michael Bloomberg"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Eliot Engel"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Brad Schneider"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Lee Zeldin"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Hakeem Jeffries"
+          },
+          {
+            "type": "congressional ally",
+            "name": "John Fetterman"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Mike Johnson"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Tom DeLay"
+          },
+          {
+            "type": "congressional ally",
+            "name": "John Boehner"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Ben Cardin"
+          },
+          {
+            "type": "christian zionist ally",
+            "name": "John Hagee / CUFI"
+          },
+          {
+            "type": "affiliated super PAC",
+            "name": "Protect Our Future PAC"
+          },
+          {
+            "type": "affiliated super PAC",
+            "name": "American Israel PAC"
+          },
+          {
+            "type": "affiliated PAC",
+            "name": "Pro-Israel America"
+          },
+          {
+            "type": "media engagement",
+            "name": "Fox News"
+          },
+          {
+            "type": "media engagement",
+            "name": "CNN"
+          },
+          {
+            "type": "media engagement",
+            "name": "MSNBC"
+          },
+          {
+            "type": "academic engagement",
+            "name": "George Washington University"
+          },
+          {
+            "type": "academic engagement",
+            "name": "Georgetown University"
+          },
+          {
+            "type": "campus ally",
+            "name": "Hillel International",
+            "entryId": "hillel-international"
+          },
+          {
+            "type": "campus activism",
+            "name": "Students Supporting Israel (SSI)"
+          },
+          {
+            "type": "intelligence relationship",
+            "name": "AIPAC Espionage Case (2005)"
+          },
+          {
+            "type": "policy ally",
+            "name": "WINEP (Washington Institute)",
+            "entryId": "washington-institute-for-near-east-policy-winep"
+          },
+          {
+            "type": "legislative achievement",
+            "name": "Anti-BDS Legislation (state level)"
+          },
+          {
+            "type": "legislative target",
+            "name": "Iran Nuclear Deal (JCPOA) Opposition"
+          },
+          {
+            "type": "Israel defense aid",
+            "name": "$3.8 Billion Annual Military Aid Package"
+          },
+          {
+            "type": "foreign policy target",
+            "name": "Saudi Arabia (normalization)"
+          },
+          {
+            "type": "foreign policy success",
+            "name": "UAE (Abraham Accords)"
+          },
+          {
+            "type": "foreign policy success",
+            "name": "Bahrain (Abraham Accords)"
+          },
+          {
+            "type": "foreign policy success",
+            "name": "Morocco (Abraham Accords)"
+          },
+          {
+            "type": "allied PAC",
+            "name": "Democratic Majority for Israel (DMFI)"
+          },
+          {
+            "type": "political opposition",
+            "name": "Alexandria Ocasio-Cortez"
+          },
+          {
+            "type": "political opposition",
+            "name": "Cori Bush"
+          },
+          {
+            "type": "political opposition",
+            "name": "Jamaal Bowman"
+          },
+          {
+            "type": "defeated opponent",
+            "name": "Jamaal Bowman (defeated 2024 primary)"
+          },
+          {
+            "type": "defeated opponent",
+            "name": "Cori Bush (defeated 2024 primary)"
+          },
+          {
+            "type": "lobbying target",
+            "name": "White House"
+          },
+          {
+            "type": "annual event",
+            "name": "AIPAC Policy Conference"
+          },
+          {
+            "type": "legal framework",
+            "name": "Israel Anti-Boycott Act"
+          },
+          {
+            "type": "state legislatures",
+            "name": "35+ State Anti-BDS Laws"
+          },
+          {
+            "type": "technology ally",
+            "name": "Israeli tech sector / Start-Up Nation"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Elise Stefanik"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Tom Cotton"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Robert Menendez"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Kirsten Gillibrand"
+          },
+          {
+            "type": "congressional ally",
+            "name": "Cory Booker"
+          },
+          {
+            "type": "pro-Israel peer",
+            "name": "Israel Policy Forum"
+          },
+          {
+            "type": "pro-Israel peer",
+            "name": "Jewish Institute for National Security of America (JINSA)"
+          },
+          {
+            "type": "defense industry connection",
+            "name": "Lockheed Martin"
+          },
+          {
+            "type": "defense industry connection",
+            "name": "Raytheon"
+          },
+          {
+            "type": "defense industry connection",
+            "name": "Boeing"
+          },
+          {
+            "type": "defense industry connection",
+            "name": "Elbit Systems"
+          },
+          {
+            "type": "defense industry connection",
+            "name": "Rafael Advanced Defense Systems"
+          },
+          {
+            "type": "diplomatic target",
+            "name": "UN Security Council"
+          },
+          {
+            "type": "diplomatic target",
+            "name": "International Criminal Court (ICC)"
+          },
+          {
+            "type": "media criticism",
+            "name": "The Intercept"
+          },
+          {
+            "type": "media criticism",
+            "name": "Al Jazeera"
+          },
+          {
+            "type": "investigative exposure",
+            "name": "Al Jazeera \"The Lobby\" documentary"
           }
         ],
         "id": "aipac"
@@ -2642,6 +3064,108 @@
             "role": "Actress",
             "bio": "American actress, one of the world's highest-grossing box office stars.",
             "id": "scarlett-johansson"
+          },
+          {
+            "id": "adam-sandler",
+            "role": "Actor / Comedian / Producer",
+            "name": "Adam Sandler",
+            "bio": "American actor, comedian and filmmaker. Born 1966 in Brooklyn to a Jewish family. Known for \"The Chanukah Song\" and numerous comedy films."
+          },
+          {
+            "id": "ben-stiller",
+            "role": "Actor / Director",
+            "name": "Ben Stiller",
+            "bio": "American actor and filmmaker. Born 1965 in New York to a Jewish family (parents Jerry Stiller and Anne Meara). Known for Zoolander, Meet the Parents, etc."
+          },
+          {
+            "id": "mel-brooks",
+            "role": "Comedian / Director / Producer",
+            "name": "Mel Brooks",
+            "bio": "American filmmaker and comedian. Born Melvin Kaminsky in 1926 in Brooklyn to a Jewish family. EGOT winner. Known for The Producers, Blazing Saddles, Young Frankenstein."
+          },
+          {
+            "id": "woody-allen-ent",
+            "role": "Director / Writer / Actor",
+            "name": "Woody Allen",
+            "bio": "American filmmaker. Born Allan Stewart Konigsberg in 1935 in Brooklyn to a Jewish family. Academy Award-winning director of Annie Hall, Manhattan, etc."
+          },
+          {
+            "id": "larry-david",
+            "role": "Writer / Producer / Actor",
+            "name": "Larry David",
+            "bio": "American comedian. Born 1947 in Brooklyn to a Jewish family. Co-creator of Seinfeld. Creator and star of Curb Your Enthusiasm."
+          },
+          {
+            "id": "sarah-silverman",
+            "role": "Comedian / Actress",
+            "name": "Sarah Silverman",
+            "bio": "American comedian and actress. Born 1970 in Bedford, NH, to a Jewish family. Known for provocative comedy addressing social issues."
+          },
+          {
+            "id": "sacha-baron-cohen",
+            "role": "Actor / Comedian",
+            "name": "Sacha Baron Cohen",
+            "bio": "British-American actor and comedian. Born 1971 in London to a Jewish family. Known for Borat, Ali G. Active in combating antisemitism and online hate."
+          },
+          {
+            "id": "barbra-streisand",
+            "role": "Singer / Actress / Director",
+            "name": "Barbra Streisand",
+            "bio": "American entertainer. Born 1942 in Brooklyn to a Jewish family. EGOT winner. One of the best-selling recording artists of all time. Prominent Democratic donor."
+          },
+          {
+            "id": "bob-dylan",
+            "role": "Singer-songwriter",
+            "name": "Bob Dylan",
+            "bio": "American singer-songwriter. Born Robert Allen Zimmerman in 1941 in Duluth, MN, to a Jewish family. Nobel Prize in Literature (2016). Rock and Roll Hall of Fame."
+          },
+          {
+            "id": "dustin-hoffman",
+            "role": "Actor",
+            "name": "Dustin Hoffman",
+            "bio": "American actor. Born 1937 in Los Angeles to a Jewish family. Two-time Academy Award winner. Known for The Graduate, Rain Man, etc."
+          },
+          {
+            "id": "harrison-ford",
+            "role": "Actor",
+            "name": "Harrison Ford",
+            "bio": "American actor. Born 1942 in Chicago. Mother was Russian Jewish. Known for Star Wars, Indiana Jones franchises. One of the highest-grossing actors of all time."
+          },
+          {
+            "id": "jake-gyllenhaal",
+            "role": "Actor",
+            "name": "Jake Gyllenhaal",
+            "bio": "American actor. Born 1980. Mother is of Ashkenazi Jewish descent. Known for Brokeback Mountain, Nightcrawler, etc."
+          },
+          {
+            "id": "joaquin-phoenix",
+            "role": "Actor",
+            "name": "Joaquin Phoenix",
+            "bio": "American actor. Born 1974. Of Ashkenazi Jewish descent from father's side. Academy Award winner for Joker."
+          },
+          {
+            "id": "jeff-goldblum",
+            "role": "Actor",
+            "name": "Jeff Goldblum",
+            "bio": "American actor. Born 1952 in Pittsburgh to a Jewish family. Known for Jurassic Park, The Fly, Independence Day."
+          },
+          {
+            "id": "andy-samberg",
+            "role": "Actor / Comedian",
+            "name": "Andy Samberg",
+            "bio": "American actor and comedian. Born 1978 in Berkeley, CA, to a Jewish family. Known for Brooklyn Nine-Nine, SNL, The Lonely Island."
+          },
+          {
+            "id": "jonah-hill",
+            "role": "Actor / Director",
+            "name": "Jonah Hill",
+            "bio": "American actor and filmmaker. Born Jonah Hill Feldstein in 1983 in LA to a Jewish family. Two-time Oscar nominee."
+          },
+          {
+            "id": "seth-meyers",
+            "role": "TV Host / Comedian",
+            "name": "Seth Meyers",
+            "bio": "American comedian. Born 1973. Of Jewish and German-Swedish descent. Host of Late Night with Seth Meyers. Former SNL anchor."
           }
         ],
         "id": "notable-jewish-entertainers-us",
@@ -2676,6 +3200,95 @@
             "name": "Television",
             "type": "medium",
             "description": "Jewish creators have produced many of the most successful TV shows in history."
+          },
+          {
+            "type": "studio",
+            "name": "Warner Bros. Discovery"
+          },
+          {
+            "type": "studio",
+            "name": "Universal Pictures (Comcast/NBCUniversal)"
+          },
+          {
+            "type": "studio",
+            "name": "Paramount Pictures"
+          },
+          {
+            "type": "studio",
+            "name": "Walt Disney Studios"
+          },
+          {
+            "type": "studio",
+            "name": "Sony Pictures Entertainment"
+          },
+          {
+            "type": "streaming",
+            "name": "Netflix"
+          },
+          {
+            "type": "streaming",
+            "name": "Amazon Studios"
+          },
+          {
+            "type": "agency",
+            "name": "Creative Artists Agency (CAA)"
+          },
+          {
+            "type": "agency",
+            "name": "William Morris Endeavor (WME)"
+          },
+          {
+            "type": "agency",
+            "name": "United Talent Agency (UTA)"
+          },
+          {
+            "type": "community",
+            "name": "American Jewish community"
+          },
+          {
+            "type": "music industry",
+            "name": "Recording Industry"
+          },
+          {
+            "type": "comedy",
+            "name": "Stand-up Comedy Circuit"
+          },
+          {
+            "type": "award",
+            "name": "Academy Awards / Oscars"
+          },
+          {
+            "type": "philanthropy",
+            "name": "USC Shoah Foundation (Spielberg)",
+            "entryId": "usc-shoah-foundation"
+          },
+          {
+            "type": "philanthropic connection",
+            "name": "UJA-Federation of New York"
+          },
+          {
+            "type": "cultural influence",
+            "name": "Saturday Night Live (SNL)"
+          },
+          {
+            "type": "media criticism",
+            "name": "Antisemitic Hollywood conspiracy theories"
+          },
+          {
+            "type": "activism",
+            "name": "Democratic Party (donor base)"
+          },
+          {
+            "type": "activism",
+            "name": "Israel advocacy"
+          },
+          {
+            "type": "Israeli connection",
+            "name": "Israeli Film Industry"
+          },
+          {
+            "type": "Israeli connection",
+            "name": "Israel Defense Forces (entertainment liaisons)"
           }
         ],
         "category": "Notable Individuals"
@@ -2760,6 +3373,108 @@
             "role": "Former CBS CEO",
             "bio": "Former chairman and CEO of CBS Corporation.",
             "id": "les-moonves"
+          },
+          {
+            "id": "brian-roberts-comcast",
+            "role": "CEO of Comcast",
+            "name": "Brian Roberts",
+            "bio": "American businessman. Chairman and CEO of Comcast Corporation (owner of NBCUniversal). Born 1959 to a Jewish family. Son of Comcast founder Ralph Roberts."
+          },
+          {
+            "id": "sumner-redstone",
+            "role": "Former Chairman of ViacomCBS (deceased)",
+            "name": "Sumner Redstone",
+            "bio": "American media magnate (1923-2020). Born Sumner Murray Rothstein in Boston to a Jewish family. Chairman of National Amusements, controlling Viacom and CBS. Built a media empire worth tens of billions. Father of Shari Redstone."
+          },
+          {
+            "id": "shari-redstone",
+            "role": "Chair of Paramount Global",
+            "name": "Shari Redstone",
+            "bio": "American media executive and businesswoman. Born 1954, Jewish family. Chair of Paramount Global (formerly ViacomCBS) and president of National Amusements. Daughter of media mogul Sumner Redstone. Controls a media empire spanning CBS, MTV, Nickelodeon, and Paramount Pictures."
+          },
+          {
+            "id": "barry-diller",
+            "role": "Chairman of IAC / Expedia",
+            "name": "Barry Diller",
+            "bio": "American billionaire businessman and media executive. Chairman of IAC and Expedia Group. Named in Epstein's black book with multiple contact numbers. Part of the New York media elite that overlapped with Epstein's social circle. Former chairman of Fox Broadcasting and Paramount Pictures."
+          },
+          {
+            "id": "michael-eisner",
+            "role": "Former CEO of Disney",
+            "name": "Michael Eisner",
+            "bio": "American media executive. Born 1942 in Mount Kisco, New York, to a Jewish family. CEO of The Walt Disney Company (1984-2005). Transformed Disney from a struggling studio into a global entertainment powerhouse. Previously president of Paramount Pictures."
+          },
+          {
+            "id": "jeffrey-katzenberg",
+            "role": "Former Disney Studios / DreamWorks Co-founder",
+            "name": "Jeffrey Katzenberg",
+            "bio": "American film producer and media executive. Born 1950 in New York City to a Jewish family. Former chairman of Walt Disney Studios. Co-founded DreamWorks SKG with Spielberg and Geffen. Founded Quibi (failed short-form streaming service). Major Democratic donor."
+          },
+          {
+            "id": "lachlan-murdoch",
+            "role": "CEO of Fox Corporation (related)",
+            "name": "Lachlan Murdoch",
+            "bio": "Australian-American media executive serving as Executive Chairman and CEO of Fox Corporation and co-chairman of News Corp, continuing the Murdoch family media dynasty"
+          },
+          {
+            "id": "mark-zuckerberg-media",
+            "role": "CEO of Meta (Social Media)",
+            "name": "Mark Zuckerberg",
+            "bio": "American businessman. Co-founder and CEO of Meta Platforms (Facebook, Instagram, WhatsApp). Born 1984 to a Jewish family in White Plains, NY."
+          },
+          {
+            "id": "sergey-brin-media",
+            "role": "Co-founder of Google/Alphabet",
+            "name": "Sergey Brin",
+            "bio": "American businessman. Co-founder of Google/Alphabet. Born 1973 in Moscow to a Jewish family. Emigrated to US in 1979."
+          },
+          {
+            "id": "larry-page-assoc",
+            "role": "Co-founder of Google/Alphabet (associated)",
+            "name": "Larry Page",
+            "bio": "American businessman. Co-founder of Google/Alphabet. Born 1973. Business partner of Sergey Brin."
+          },
+          {
+            "id": "susan-wojcicki",
+            "role": "Former CEO of YouTube (deceased)",
+            "name": "Susan Wojcicki",
+            "bio": "American businesswoman. Former CEO of YouTube (2014-2023). Born 1968 to a Jewish mother. Died 2024. Key figure in Google's early days (Google's first office was in her garage)."
+          },
+          {
+            "id": "ari-emanuel-media",
+            "role": "CEO of Endeavor / WME",
+            "name": "Ari Emanuel",
+            "bio": "American talent agent. CEO of Endeavor (parent of WME, UFC). Born 1961 to a Jewish family. Brother of Rahm Emanuel. One of the most powerful figures in entertainment."
+          },
+          {
+            "id": "haim-saban-media",
+            "role": "Media Mogul / Former Univision Chairman",
+            "name": "Haim Saban",
+            "bio": "Israeli-American media mogul. Creator of Mighty Morphin Power Rangers. Former chairman of Univision. Born 1944 in Alexandria, Egypt, to a Jewish family. Major Democratic donor."
+          },
+          {
+            "id": "mort-zuckerman-media",
+            "role": "Former Owner of NY Daily News / US News",
+            "name": "Mortimer Zuckerman",
+            "bio": "Canadian-American businessman. Former owner of New York Daily News and U.S. News & World Report. Born 1937 to a Jewish family in Montreal."
+          },
+          {
+            "id": "arthur-sulzberger",
+            "role": "Publisher of The New York Times",
+            "name": "A.G. Sulzberger",
+            "bio": "American journalist. Publisher of The New York Times since 2018. Born 1980. Part of the Sulzberger family which has controlled the NYT since 1896. Family has Jewish heritage (patriarch Adolph Ochs)."
+          },
+          {
+            "id": "donald-graham",
+            "role": "Former Publisher of Washington Post",
+            "name": "Donald Graham",
+            "bio": "American businessman. Former publisher of The Washington Post (1979-2000) and chairman of The Washington Post Company. Half-Jewish heritage through mother Katharine Graham."
+          },
+          {
+            "id": "sheryl-sandberg",
+            "role": "Former COO of Meta",
+            "name": "Sheryl Sandberg",
+            "bio": "American technology executive and author. Born 1969 in Washington, D.C., to a Jewish family. Former COO of Meta Platforms/Facebook (2008-2022). Previously VP at Google. Author of \"Lean In\". Former chief of staff to U.S. Treasury Secretary Larry Summers."
           }
         ],
         "id": "notable-jewish-media-executives-us",
@@ -2781,6 +3496,135 @@
             "type": "shared individual",
             "description": "Brian Roberts is also associated with NBCUniversal (Comcast) (United States).",
             "entryId": "nbcuniversal"
+          },
+          {
+            "type": "conglomerate",
+            "name": "The Walt Disney Company"
+          },
+          {
+            "type": "conglomerate",
+            "name": "Warner Bros. Discovery"
+          },
+          {
+            "type": "conglomerate",
+            "name": "Comcast / NBCUniversal"
+          },
+          {
+            "type": "conglomerate",
+            "name": "Paramount Global"
+          },
+          {
+            "type": "conglomerate",
+            "name": "Fox Corporation / News Corp"
+          },
+          {
+            "type": "tech/media",
+            "name": "Meta Platforms (Facebook, Instagram)"
+          },
+          {
+            "type": "tech/media",
+            "name": "Alphabet / Google / YouTube"
+          },
+          {
+            "type": "print media",
+            "name": "The New York Times"
+          },
+          {
+            "type": "print media",
+            "name": "The Washington Post"
+          },
+          {
+            "type": "print media",
+            "name": "Wall Street Journal"
+          },
+          {
+            "type": "broadcast",
+            "name": "CNN"
+          },
+          {
+            "type": "broadcast",
+            "name": "NBC"
+          },
+          {
+            "type": "broadcast",
+            "name": "CBS"
+          },
+          {
+            "type": "broadcast",
+            "name": "ABC"
+          },
+          {
+            "type": "broadcast",
+            "name": "Fox News"
+          },
+          {
+            "type": "streaming",
+            "name": "Netflix"
+          },
+          {
+            "type": "streaming",
+            "name": "Amazon Prime Video"
+          },
+          {
+            "type": "streaming",
+            "name": "Disney+"
+          },
+          {
+            "type": "streaming",
+            "name": "HBO Max / Max"
+          },
+          {
+            "type": "streaming",
+            "name": "Peacock"
+          },
+          {
+            "type": "talent/agency",
+            "name": "Endeavor / WME"
+          },
+          {
+            "type": "talent/agency",
+            "name": "Creative Artists Agency (CAA)"
+          },
+          {
+            "type": "community",
+            "name": "American Jewish community"
+          },
+          {
+            "type": "trade",
+            "name": "Motion Picture Association (MPA)"
+          },
+          {
+            "type": "political donor network",
+            "name": "Democratic Party"
+          },
+          {
+            "type": "political donor network",
+            "name": "Republican Party"
+          },
+          {
+            "type": "lobbying",
+            "name": "AIPAC",
+            "entryId": "aipac"
+          },
+          {
+            "type": "social media",
+            "name": "Twitter/X"
+          },
+          {
+            "type": "advertising",
+            "name": "Global Advertising Industry"
+          },
+          {
+            "type": "philanthropy",
+            "name": "UJA-Federation of New York"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Various Jewish charitable foundations"
+          },
+          {
+            "type": "tech",
+            "name": "Silicon Valley"
           }
         ],
         "category": "Notable Individuals"
@@ -3478,6 +4322,114 @@
             "role": "Investor & Philanthropist",
             "bio": "Ukrainian-born British-American billionaire, founder of Access Industries, major Jewish philanthropist.",
             "id": "len-blavatnik"
+          },
+          {
+            "id": "george-soros-phil",
+            "role": "Founder of Open Society Foundations",
+            "name": "George Soros",
+            "bio": "Hungarian-American billionaire. Founder of Open Society Foundations. Born 1930 in Budapest to a Jewish family. One of the world's largest philanthropists. Holocaust survivor."
+          },
+          {
+            "id": "michael-bloomberg-phil",
+            "role": "Founder of Bloomberg Philanthropies",
+            "name": "Michael Bloomberg",
+            "bio": "American billionaire. Founder of Bloomberg LP and Bloomberg Philanthropies. Former NYC Mayor. Born 1942 to a Jewish family."
+          },
+          {
+            "id": "sheldon-adelson-phil",
+            "role": "Adelson Family Foundation (deceased)",
+            "name": "Sheldon Adelson",
+            "bio": "American billionaire. Founded Adelson Family Foundation. Massive donor to Birthright Israel, Yad Vashem, and Republican causes. Died 2021."
+          },
+          {
+            "id": "charles-bronfman",
+            "role": "Co-founder of Birthright Israel",
+            "name": "Charles Bronfman",
+            "bio": "Canadian-American businessman and philanthropist. Son of Samuel Bronfman (Seagram's). Co-founder of Birthright Israel with Michael Steinhardt. Founded the Andrea & Charles Bronfman Philanthropies. Former owner of the Montreal Expos."
+          },
+          {
+            "id": "michael-steinhardt-phil",
+            "role": "Co-founder of Birthright Israel",
+            "name": "Michael Steinhardt",
+            "bio": "American financier and philanthropist. Co-founder of Birthright Israel. Major donor to Jewish causes. Born 1940 to a Jewish family in Brooklyn."
+          },
+          {
+            "id": "lynn-schusterman",
+            "role": "Chair of Schusterman Family Philanthropies",
+            "name": "Lynn Schusterman",
+            "bio": "American billionaire philanthropist and founder of the Charles and Lynn Schusterman Family Foundation. Has donated over $3 billion to Jewish causes, education, and social justice. A major supporter of Birthright Israel and Jewish youth engagement programs."
+          },
+          {
+            "id": "edgar-bronfman-sr-phil",
+            "role": "Former WJC President / Philanthropist (deceased)",
+            "name": "Edgar Bronfman Sr.",
+            "bio": "Canadian-American businessman. Former president of the World Jewish Congress (1981-2007). CEO of Seagram. Born 1929 to a Jewish family. Died 2013."
+          },
+          {
+            "id": "ronald-lauder",
+            "role": "WJC President / Philanthropist",
+            "name": "Ronald Lauder",
+            "bio": "American businessman and Jewish communal leader. Born 1944 in New York City. Son of Estee Lauder. President of the World Jewish Congress since 2007. U.S. Ambassador to Austria (1986-1987). Major art collector (Neue Galerie founder). Net worth approximately $4 billion."
+          },
+          {
+            "id": "leonard-lauder",
+            "role": "Estée Lauder Chairman Emeritus / Philanthropist",
+            "name": "Leonard Lauder",
+            "bio": "American billionaire businessman. Chairman Emeritus of The Estée Lauder Companies. Born 1933 to a Jewish family. Major art philanthropist (donated $1B+ to Metropolitan Museum)."
+          },
+          {
+            "id": "les-wexner-phil",
+            "role": "Wexner Foundation",
+            "name": "Leslie Wexner",
+            "bio": "American billionaire. Founder of L Brands. Founded the Wexner Foundation. Major donor to Ohio State University. Born 1937 to Jewish immigrants."
+          },
+          {
+            "id": "seth-klarman-phil",
+            "role": "Klarman Family Foundation",
+            "name": "Seth Klarman",
+            "bio": "American billionaire. CEO of Baupost Group. Klarman Family Foundation supports democracy, science, and Jewish causes. Born 1957 to a Jewish family."
+          },
+          {
+            "id": "mark-zuckerberg-phil",
+            "role": "Chan Zuckerberg Initiative",
+            "name": "Mark Zuckerberg",
+            "bio": "American billionaire. Co-founder of Facebook/Meta. Chan Zuckerberg Initiative has pledged billions. Born 1984 to a Jewish family."
+          },
+          {
+            "id": "sergey-brin-phil",
+            "role": "Brin Wojcicki Foundation",
+            "name": "Sergey Brin",
+            "bio": "American billionaire. Co-founder of Google. Active philanthropist. Born 1973 in Moscow to a Jewish family."
+          },
+          {
+            "id": "larry-ellison-phil",
+            "role": "Ellison Medical Foundation",
+            "name": "Larry Ellison",
+            "bio": "American billionaire. Co-founder of Oracle. Ellison Medical Foundation focused on aging research. Born 1944, adopted by Jewish immigrants."
+          },
+          {
+            "id": "priscilla-chan-zuck",
+            "role": "Co-founder of Chan Zuckerberg Initiative",
+            "name": "Priscilla Chan",
+            "bio": "American philanthropist and physician. Co-founder of Chan Zuckerberg Initiative with husband Mark Zuckerberg."
+          },
+          {
+            "id": "bernard-marcus-phil",
+            "role": "Marcus Foundation",
+            "name": "Bernard Marcus",
+            "bio": "American billionaire. Co-founder of Home Depot. The Marcus Foundation. Major supporter of Israel, veterans, and Georgia Aquarium. Born 1929 to a Jewish family."
+          },
+          {
+            "id": "paul-singer-phil",
+            "role": "Paul Singer Foundation",
+            "name": "Paul Singer",
+            "bio": "American billionaire. Founder of Elliott Management. Significant philanthropist supporting Jewish causes, LGBTQ rights, and Republican politics."
+          },
+          {
+            "id": "mort-mandel",
+            "role": "Jack, Joseph and Morton Mandel Foundation (deceased)",
+            "name": "Mort Mandel",
+            "bio": "American billionaire businessman and philanthropist (1921-2019). Co-founder of Premier Industrial Corporation. Named in Epstein's contacts through philanthropic circles."
           }
         ],
         "id": "notable-jewish-philanthropists-us",
@@ -3505,6 +4457,148 @@
             "type": "shared individual",
             "description": "Len Blavatnik is also associated with Warner Music Group (United States).",
             "entryId": "warner-music-group"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Open Society Foundations"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Bloomberg Philanthropies"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Adelson Family Foundation"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Chan Zuckerberg Initiative"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Schusterman Family Philanthropies"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Wexner Foundation"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Marcus Foundation"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Mandel Foundation"
+          },
+          {
+            "type": "program",
+            "name": "Birthright Israel (Taglit)",
+            "entryId": "birthright-israel-foundation"
+          },
+          {
+            "type": "organization",
+            "name": "World Jewish Congress",
+            "entryId": "world-jewish-congress-wjc"
+          },
+          {
+            "type": "organization",
+            "name": "Jewish Federations of North America",
+            "entryId": "jewish-federations-of-north-america-jfna"
+          },
+          {
+            "type": "organization",
+            "name": "Anti-Defamation League (ADL)",
+            "entryId": "anti-defamation-league-adl"
+          },
+          {
+            "type": "organization",
+            "name": "American Jewish Committee (AJC)",
+            "entryId": "american-jewish-committee-ajc"
+          },
+          {
+            "type": "university",
+            "name": "Harvard University"
+          },
+          {
+            "type": "university",
+            "name": "Yale University"
+          },
+          {
+            "type": "university",
+            "name": "Columbia University"
+          },
+          {
+            "type": "university",
+            "name": "Ohio State University"
+          },
+          {
+            "type": "university",
+            "name": "Yeshiva University"
+          },
+          {
+            "type": "university",
+            "name": "Brandeis University"
+          },
+          {
+            "type": "museum",
+            "name": "United States Holocaust Memorial Museum"
+          },
+          {
+            "type": "museum",
+            "name": "Museum of Jewish Heritage"
+          },
+          {
+            "type": "museum",
+            "name": "Metropolitan Museum of Art"
+          },
+          {
+            "type": "political",
+            "name": "Democratic Party"
+          },
+          {
+            "type": "political",
+            "name": "Republican Party"
+          },
+          {
+            "type": "lobbying ally",
+            "name": "AIPAC",
+            "entryId": "aipac"
+          },
+          {
+            "type": "Israel",
+            "name": "State of Israel"
+          },
+          {
+            "type": "Israel philanthropy",
+            "name": "Yad Vashem"
+          },
+          {
+            "type": "Israel philanthropy",
+            "name": "Technion - Israel Institute of Technology"
+          },
+          {
+            "type": "Israel philanthropy",
+            "name": "Hebrew University of Jerusalem"
+          },
+          {
+            "type": "Israel philanthropy",
+            "name": "Tel Aviv University"
+          },
+          {
+            "type": "health",
+            "name": "Memorial Sloan Kettering Cancer Center"
+          },
+          {
+            "type": "health",
+            "name": "Johns Hopkins University"
+          },
+          {
+            "type": "finance",
+            "name": "Wall Street"
+          },
+          {
+            "type": "technology",
+            "name": "Silicon Valley"
           }
         ],
         "category": "Notable Individuals"
@@ -3986,6 +5080,240 @@
             "name": "Lee Zeldin",
             "role": "EPA Administrator",
             "bio": "EPA Administrator in Trump's second term. Previously US Representative from New York (2015-2023). First Jewish Republican elected to Congress from New York in over a century."
+          },
+          {
+            "id": "jacob-lew",
+            "role": "US Ambassador to Israel / Former Secretary of Treasury",
+            "name": "Jack Lew",
+            "bio": "American diplomat and lawyer. US Ambassador to Israel (2023-2025). Secretary of the Treasury under Obama (2013-2017). White House Chief of Staff (2012-2013). Born 1955 to an Orthodox Jewish family in New York."
+          },
+          {
+            "id": "david-axelrod",
+            "role": "Former Senior White House Advisor",
+            "name": "David Axelrod",
+            "bio": "American political consultant. Senior Advisor to President Obama (2009-2011). Chief strategist for Obama's 2008 and 2012 campaigns. Born 1955 in New York to a Jewish family."
+          },
+          {
+            "id": "ari-fleischer",
+            "role": "Former White House Press Secretary",
+            "name": "Ari Fleischer",
+            "bio": "American political consultant. White House Press Secretary under George W. Bush (2001-2003). Born 1960 to a Jewish family in New York. Fox News contributor."
+          },
+          {
+            "id": "josh-bolten",
+            "role": "Former White House Chief of Staff",
+            "name": "Josh Bolten",
+            "bio": "American political advisor. White House Chief of Staff under George W. Bush (2006-2009). Born 1954. Jewish. Former CEO of Business Roundtable."
+          },
+          {
+            "id": "dennis-ross",
+            "role": "Diplomat / Middle East Envoy",
+            "name": "Dennis Ross",
+            "bio": "American diplomat and author. Born 1948 in San Francisco. Former special envoy for Middle East peace under Bush and Clinton. Director of policy planning at the State Department. Senior fellow at the Washington Institute for Near East Policy."
+          },
+          {
+            "id": "martin-indyk",
+            "role": "Former US Ambassador to Israel",
+            "name": "Martin Indyk",
+            "bio": "Australian-American diplomat (1951-2024). Born in London, raised in Australia. U.S. Ambassador to Israel twice. Special Envoy for Israeli-Palestinian Negotiations. Founded the Washington Institute for Near East Policy."
+          },
+          {
+            "id": "dan-shapiro",
+            "role": "Former US Ambassador to Israel",
+            "name": "Dan Shapiro",
+            "bio": "American diplomat. US Ambassador to Israel under Obama (2011-2017). Born 1969, Jewish. Senior Advisor for Middle East at National Security Council."
+          },
+          {
+            "id": "tom-friedman-nyt",
+            "role": "Influential Political Columnist",
+            "name": "Thomas Friedman",
+            "bio": "American journalist and author. Foreign affairs columnist for The New York Times. Born 1953 in Minneapolis to a Jewish family. Three-time Pulitzer Prize winner. Influential voice on Middle East policy."
+          },
+          {
+            "id": "wolf-blitzer",
+            "role": "Political Journalist / CNN Anchor",
+            "name": "Wolf Blitzer",
+            "bio": "American Jewish journalist and former lead political anchor for CNN, hosting The Situation Room for nearly two decades. Born in Augsburg, Germany, to Holocaust survivor parents. Previously served as Jerusalem correspondent for the Jerusalem Post."
+          },
+          {
+            "id": "eric-cantor",
+            "role": "Former House Majority Leader",
+            "name": "Eric Cantor",
+            "bio": "American politician. Former US Representative from Virginia (2001-2014). House Majority Leader (2011-2014). Only Jewish Republican in Congress during his tenure. Vice Chairman of Moelis & Company."
+          },
+          {
+            "id": "abe-foxman",
+            "role": "Former ADL National Director",
+            "name": "Abraham Foxman",
+            "bio": "American attorney and activist. National Director of the Anti-Defamation League (1987-2015). Born 1940 in Baranovichi, Poland. Holocaust survivor. Major figure in American Jewish political life."
+          },
+          {
+            "id": "malcolm-hoenlein",
+            "role": "Former Conference of Presidents Vice Chair",
+            "name": "Malcolm Hoenlein",
+            "bio": "American Jewish leader. Executive Vice Chairman of the Conference of Presidents of Major American Jewish Organizations (1986-2022). Born 1943 in Philadelphia to a Jewish family. One of the most powerful figures in American Jewish political life."
+          },
+          {
+            "id": "mort-klein",
+            "role": "ZOA President",
+            "name": "Morton Klein",
+            "bio": "American Jewish leader. President of the Zionist Organization of America since 1993. Born 1948 in a displaced persons camp in Germany to Holocaust survivors. Influential voice in right-wing pro-Israel politics."
+          },
+          {
+            "id": "douglas-emhoff",
+            "role": "Former Second Gentleman",
+            "name": "Douglas Emhoff",
+            "bio": "American lawyer. Second Gentleman of the United States (2021-2025). Husband of Vice President Kamala Harris. Born 1964 to a Jewish family in Brooklyn, New York. First Jewish spouse of a US Vice President."
+          },
+          {
+            "id": "sandy-berger",
+            "role": "Former National Security Advisor (deceased)",
+            "name": "Sandy Berger",
+            "bio": "American political consultant (1945-2015). Former National Security Advisor under President Clinton. Appeared on Epstein flight logs. Part of the Clinton political circle connected to Epstein."
+          },
+          {
+            "id": "madeleine-albright",
+            "role": "Former Secretary of State (Jewish heritage, deceased)",
+            "name": "Madeleine Albright",
+            "bio": "American diplomat. First female US Secretary of State (1997-2001). Born 1937 in Prague as Marie Jana Korbelová. Discovered her Jewish heritage in 1997. Died 2022."
+          },
+          {
+            "id": "john-kerry-advisor-wendy-sherman",
+            "role": "Former Deputy Secretary of State",
+            "name": "Wendy Sherman",
+            "bio": "American diplomat. Deputy Secretary of State (2021-2023). Lead negotiator of the Iran Nuclear Deal (JCPOA). Born 1949. Jewish heritage."
+          },
+          {
+            "id": "victoria-nuland",
+            "role": "Former Under Secretary of State",
+            "name": "Victoria Nuland",
+            "bio": "American diplomat. Under Secretary of State for Political Affairs (2021-2024). Known for role in Ukraine policy. Born 1961. Jewish heritage. Married to Robert Kagan (neoconservative columnist)."
+          },
+          {
+            "id": "stuart-eizenstat",
+            "role": "Former Diplomat / Holocaust Restitution Negotiator",
+            "name": "Stuart Eizenstat",
+            "bio": "American diplomat, attorney, and policy advisor who served in multiple government roles. Key negotiator for Holocaust restitution agreements with Swiss banks, German industry, and European insurance companies. Ambassador to the EU under Clinton."
+          },
+          {
+            "id": "sam-bankman-fried",
+            "role": "Former Crypto Executive / Political Donor",
+            "name": "Sam Bankman-Fried",
+            "bio": "American former businessman. Founder of FTX cryptocurrency exchange. Born 1992 to a Jewish family. One of the largest political donors in 2022 midterm cycle before FTX collapse and fraud conviction."
+          },
+          {
+            "id": "george-soros",
+            "role": "Major Political Donor / Financier",
+            "name": "George Soros",
+            "bio": "Hungarian-American billionaire investor and philanthropist. Born 1930 in Budapest to a Jewish family that survived the Holocaust by posing as Christians. Founded Open Society Foundations. Known for \"breaking the Bank of England.\" Major progressive political donor. Frequent target of antisemitic conspiracy theories."
+          },
+          {
+            "id": "alex-soros",
+            "role": "Philanthropist / Political Donor",
+            "name": "Alex Soros",
+            "bio": "American philanthropist. Son of George Soros. Chairman of Open Society Foundations since 2023. Born 1985. Active Democratic political donor."
+          },
+          {
+            "id": "elliot-abrams",
+            "role": "Former Foreign Policy Official",
+            "name": "Elliott Abrams",
+            "bio": "American diplomat. Special Representative for Venezuela and Iran under Trump. Assistant Secretary of State under Reagan. Born 1948 to a Jewish family. Key neoconservative foreign policy figure."
+          },
+          {
+            "id": "paul-wolfowitz",
+            "role": "Former Deputy Secretary of Defense",
+            "name": "Paul Wolfowitz",
+            "bio": "American political scientist and diplomat. Deputy Secretary of Defense under George W. Bush (2001-2005). Key architect of the Iraq War. Born 1943 to a Jewish family. Former World Bank President."
+          },
+          {
+            "id": "douglas-feith",
+            "role": "Former Under Secretary of Defense for Policy",
+            "name": "Douglas Feith",
+            "bio": "American attorney and government official. Under Secretary of Defense for Policy under Bush (2001-2005). Born 1953 to a Jewish family. Key figure in Iraq War planning."
+          },
+          {
+            "id": "richard-perle",
+            "role": "Former Defense Policy Board Chair",
+            "name": "Richard Perle",
+            "bio": "American political advisor. Chairman of the Defense Policy Board (2001-2003). Known as the \"Prince of Darkness\" for his hawkish foreign policy views. Born 1941 to a Jewish family."
+          },
+          {
+            "id": "bill-kristol",
+            "role": "Political Commentator / Neoconservative Leader",
+            "name": "William Kristol",
+            "bio": "American political analyst. Founder of The Weekly Standard. Co-founder of Project for the New American Century (PNAC). Born 1952 to a Jewish family. Son of Irving Kristol."
+          },
+          {
+            "id": "robert-kagan",
+            "role": "Foreign Policy Commentator / Neoconservative",
+            "name": "Robert Kagan",
+            "bio": "American historian and foreign policy commentator. Co-founder of Project for the New American Century. Born 1958 to a Jewish family. Married to Victoria Nuland."
+          },
+          {
+            "id": "michael-chertoff",
+            "role": "Former Secretary of Homeland Security",
+            "name": "Michael Chertoff",
+            "bio": "American attorney and government official. Secretary of Homeland Security under Bush (2005-2009). Born 1953 to a Jewish family (father was a rabbi). Former federal judge."
+          },
+          {
+            "id": "michael-mukasey",
+            "role": "Former Attorney General",
+            "name": "Michael Mukasey",
+            "bio": "American jurist. US Attorney General under Bush (2007-2009). Born 1941 to a Jewish family in the Bronx. Former Chief Judge of the Southern District of New York."
+          },
+          {
+            "id": "jack-reed-ally",
+            "role": "US Senator (Nevada)",
+            "name": "Jacky Rosen",
+            "bio": "American politician. US Senator from Nevada since 2019. Born 1957 to a Jewish family in Chicago. Former synagogue president. Serves on Senate Armed Services Committee."
+          },
+          {
+            "id": "jacky-rosen",
+            "role": "US Senator (Nevada)",
+            "name": "Jacky Rosen",
+            "bio": "American politician. US Senator from Nevada since 2019. Born 1957 to a Jewish family. Former synagogue president."
+          },
+          {
+            "id": "john-ossoff",
+            "role": "US Senator (Georgia)",
+            "name": "Jon Ossoff",
+            "bio": "American politician. US Senator from Georgia since 2021. Born 1987 to a Jewish family in Atlanta. Youngest sitting US Senator at time of election."
+          },
+          {
+            "id": "elissa-slotkin",
+            "role": "US Senator (Michigan)",
+            "name": "Elissa Slotkin",
+            "bio": "American politician. US Senator from Michigan since 2025. Former US Representative (2019-2025). Born 1976 to a Jewish family. Former CIA analyst."
+          },
+          {
+            "id": "dan-goldman",
+            "role": "US Representative (New York)",
+            "name": "Dan Goldman",
+            "bio": "American politician and attorney. US Representative from New York since 2023. Born 1976 to a Jewish family. Former lead counsel in first Trump impeachment. Heir to Levi Strauss fortune."
+          },
+          {
+            "id": "jared-moskowitz",
+            "role": "US Representative (Florida)",
+            "name": "Jared Moskowitz",
+            "bio": "American politician. US Representative from Florida since 2023. Born 1980 to a Jewish family. Former Florida Division of Emergency Management director."
+          },
+          {
+            "id": "kathy-manning",
+            "role": "Former US Representative (North Carolina)",
+            "name": "Kathy Manning",
+            "bio": "American politician. US Representative from North Carolina (2021-2023). Born 1956 to a Jewish family. Former chair of Jewish Federations of North America."
+          },
+          {
+            "id": "lois-frankel",
+            "role": "US Representative (Florida)",
+            "name": "Lois Frankel",
+            "bio": "American politician. US Representative from Florida since 2013. Born 1948 to a Jewish family in New York."
+          },
+          {
+            "id": "lloyd-blankfein",
+            "role": "Political Donor / Former Goldman Sachs CEO",
+            "name": "Lloyd Blankfein",
+            "bio": "American investment banker. Born 1954 in the Bronx to a Jewish family. CEO and Chairman of Goldman Sachs (2006-2018). Led Goldman through the 2008 financial crisis. Led Goldman's controversial $5B settlement with USVI over Epstein-related banking."
           }
         ],
         "id": "notable-jewish-political-figures-us",
@@ -4112,6 +5440,137 @@
             "name": "National Security Council",
             "type": "executive branch",
             "description": "Henry Kissinger served as National Security Advisor. Jewish Americans continue to serve in senior NSC roles."
+          },
+          {
+            "type": "neoconservative network",
+            "name": "Project for the New American Century (PNAC)"
+          },
+          {
+            "type": "neoconservative think tank",
+            "name": "American Enterprise Institute (AEI)"
+          },
+          {
+            "type": "foreign policy community",
+            "name": "Council on Foreign Relations (CFR)",
+            "entryId": "council-on-foreign-relations-cfr"
+          },
+          {
+            "type": "diplomatic pipeline",
+            "name": "US Ambassador to Israel (multiple)"
+          },
+          {
+            "type": "intelligence community",
+            "name": "Central Intelligence Agency (CIA)"
+          },
+          {
+            "type": "major donor network",
+            "name": "George Soros / Open Society Foundations"
+          },
+          {
+            "type": "major donor network",
+            "name": "Sheldon Adelson / Las Vegas Sands"
+          },
+          {
+            "type": "major donor network",
+            "name": "Haim Saban"
+          },
+          {
+            "type": "campaign finance",
+            "name": "AIPAC PAC Donations",
+            "entryId": "aipac"
+          },
+          {
+            "type": "executive branch",
+            "name": "US Department of Homeland Security"
+          },
+          {
+            "type": "executive branch",
+            "name": "US Department of Defense"
+          },
+          {
+            "type": "executive branch",
+            "name": "Environmental Protection Agency (EPA)"
+          },
+          {
+            "type": "media influence",
+            "name": "The New York Times"
+          },
+          {
+            "type": "media influence",
+            "name": "CNN"
+          },
+          {
+            "type": "media influence",
+            "name": "Fox News"
+          },
+          {
+            "type": "legal institution",
+            "name": "US Department of Justice"
+          },
+          {
+            "type": "financial sector",
+            "name": "Wall Street / Banking"
+          },
+          {
+            "type": "financial institution",
+            "name": "Goldman Sachs"
+          },
+          {
+            "type": "financial institution",
+            "name": "Morgan Stanley"
+          },
+          {
+            "type": "financial regulation",
+            "name": "Securities and Exchange Commission (SEC)"
+          },
+          {
+            "type": "political scandal",
+            "name": "FTX / Sam Bankman-Fried Collapse"
+          },
+          {
+            "type": "state-level politics",
+            "name": "Illinois (Pritzker)",
+            "entryId": "jewish-state-governors-us"
+          },
+          {
+            "type": "civil liberties",
+            "name": "American Civil Liberties Union (ACLU)"
+          },
+          {
+            "type": "communal bond",
+            "name": "Jewish Federations of North America",
+            "entryId": "jewish-federations-of-north-america-jfna"
+          },
+          {
+            "type": "think tank",
+            "name": "Brookings Institution",
+            "entryId": "brookings-institution"
+          },
+          {
+            "type": "think tank",
+            "name": "Washington Institute for Near East Policy (WINEP)",
+            "entryId": "washington-institute-for-near-east-policy-winep"
+          },
+          {
+            "type": "neoconservative network",
+            "name": "Foundation for Defense of Democracies (FDD)",
+            "entryId": "foundation-for-defense-of-democracies-fdd"
+          },
+          {
+            "type": "second gentleman",
+            "name": "Vice Presidency (Douglas Emhoff)"
+          },
+          {
+            "type": "diplomacy",
+            "name": "Israeli-Palestinian Peace Process"
+          },
+          {
+            "type": "Iraq War architects",
+            "name": "Wolfowitz, Feith, Perle, Abrams"
+          },
+          {
+            "type": "Holocaust restitution",
+            "name": "Claims Conference"
           }
         ],
         "category": "Notable Individuals"
@@ -5387,6 +6846,90 @@
             "role": "Linguist & Intellectual",
             "bio": "Father of modern linguistics, prominent public intellectual.",
             "id": "noam-chomsky"
+          },
+          {
+            "id": "john-von-neumann",
+            "role": "Mathematician / Computer Scientist (deceased)",
+            "name": "John von Neumann",
+            "bio": "Hungarian-American mathematician. Born 1903 in Budapest to a Jewish family. Pioneer of computing, game theory, quantum mechanics. Key contributor to Manhattan Project. Died 1957."
+          },
+          {
+            "id": "noam-chomsky-sci",
+            "role": "Linguist / Political Activist",
+            "name": "Noam Chomsky",
+            "bio": "American linguist and political activist. Born 1928 in Philadelphia to a Jewish family. \"Father of modern linguistics.\" Prominent critic of US foreign policy and Israeli policy."
+          },
+          {
+            "id": "jonas-salk",
+            "role": "Developer of Polio Vaccine (deceased)",
+            "name": "Jonas Salk",
+            "bio": "American virologist and medical researcher. Developed the first successful polio vaccine in 1955. Born 1914 in New York to Russian Jewish immigrant parents. Died 1995."
+          },
+          {
+            "id": "albert-sabin",
+            "role": "Developer of Oral Polio Vaccine (deceased)",
+            "name": "Albert Sabin",
+            "bio": "Polish-American medical researcher. Developed the oral polio vaccine. Born 1906 in Białystok, Poland, to a Jewish family. Emigrated to US in 1921. Died 1993."
+          },
+          {
+            "id": "carl-sagan",
+            "role": "Astronomer / Science Communicator (deceased)",
+            "name": "Carl Sagan",
+            "bio": "American astronomer and science communicator. Born 1934 in Brooklyn to a Jewish family. Created \"Cosmos\" TV series. Pioneer in exobiology. Died 1996."
+          },
+          {
+            "id": "steven-weinberg",
+            "role": "Physicist / Nobel Laureate (deceased)",
+            "name": "Steven Weinberg",
+            "bio": "American theoretical physicist. Nobel Prize in Physics (1979). Born 1933 to a Jewish family in New York. Key contributor to electroweak unification. Died 2021."
+          },
+          {
+            "id": "murray-gell-mann",
+            "role": "Physicist / Nobel Laureate (deceased)",
+            "name": "Murray Gell-Mann",
+            "bio": "American physicist (1929-2019). Nobel Prize winner (1969) for work on elementary particles. Visited Epstein's properties. Epstein cultivated relationships with leading scientists by funding research and hosting scientific gatherings at his properties."
+          },
+          {
+            "id": "daniel-kahneman",
+            "role": "Psychologist / Nobel Laureate (deceased)",
+            "name": "Daniel Kahneman",
+            "bio": "Israeli-American psychologist. Nobel Prize in Economics (2002). Born 1934 in Tel Aviv to a Jewish family from Lithuania. Pioneer of behavioral economics. Author of \"Thinking, Fast and Slow.\" Died 2024."
+          },
+          {
+            "id": "steven-pinker",
+            "role": "Cognitive Psychologist / Author",
+            "name": "Steven Pinker",
+            "bio": "Canadian-American cognitive psychologist, linguist, and author. Harvard professor. Provided legal advice to Epstein's defense team in 2007, helping to argue that Epstein's solicitation did not constitute sex trafficking under federal law. Flew on Epstein's plane at least once in 2002 to a TED conference. Has stated his contact with Epstein was limited and professional."
+          },
+          {
+            "id": "edward-teller",
+            "role": "Physicist - Father of H-Bomb (deceased)",
+            "name": "Edward Teller",
+            "bio": "Hungarian-American theoretical physicist. Known as the \"Father of the Hydrogen Bomb.\" Born 1908 in Budapest to a Jewish family. Co-founded Lawrence Livermore National Laboratory. Died 2003."
+          },
+          {
+            "id": "hyman-rickover",
+            "role": "Admiral - Father of Nuclear Navy (deceased)",
+            "name": "Hyman G. Rickover",
+            "bio": "American admiral. \"Father of the Nuclear Navy.\" Born 1900 in Maków Mazowiecki, Poland, to a Jewish family. Died 1986. Longest-serving naval officer in US history."
+          },
+          {
+            "id": "ruth-bader-ginsburg-sci",
+            "role": "Supreme Court Justice / Legal Scholar (deceased)",
+            "name": "Ruth Bader Ginsburg",
+            "bio": "American jurist. US Supreme Court Justice (1993-2020). Born 1933 in Brooklyn to a Jewish family. Pioneer of gender equality litigation. Died 2020. Cultural icon \"Notorious RBG.\""
+          },
+          {
+            "id": "alan-dershowitz-sci",
+            "role": "Legal Scholar / Attorney",
+            "name": "Alan Dershowitz",
+            "bio": "American lawyer and legal scholar. Felix Frankfurter Professor of Law Emeritus at Harvard. Born 1938 in Brooklyn to an Orthodox Jewish family. Controversial figure in Epstein case defense."
+          },
+          {
+            "id": "lawrence-tribe",
+            "role": "Constitutional Law Scholar",
+            "name": "Laurence Tribe",
+            "bio": "American legal scholar. Carl M. Loeb University Professor Emeritus at Harvard Law School. Born 1941 in Shanghai to Jewish refugees. Leading liberal constitutional law scholar."
           }
         ],
         "id": "notable-jewish-scientists-intellectuals-us",
@@ -5420,6 +6963,126 @@
             "name": "Medical research",
             "type": "field",
             "description": "Jewish Americans have made outsized contributions to medical breakthroughs."
+          },
+          {
+            "type": "institution",
+            "name": "Harvard University"
+          },
+          {
+            "type": "institution",
+            "name": "MIT"
+          },
+          {
+            "type": "institution",
+            "name": "Princeton University"
+          },
+          {
+            "type": "institution",
+            "name": "Caltech"
+          },
+          {
+            "type": "institution",
+            "name": "Stanford University"
+          },
+          {
+            "type": "institution",
+            "name": "Columbia University"
+          },
+          {
+            "type": "institution",
+            "name": "Yale University"
+          },
+          {
+            "type": "institution",
+            "name": "University of Chicago"
+          },
+          {
+            "type": "institution",
+            "name": "Cornell University"
+          },
+          {
+            "type": "research",
+            "name": "Manhattan Project"
+          },
+          {
+            "type": "research",
+            "name": "Los Alamos National Laboratory"
+          },
+          {
+            "type": "research",
+            "name": "Lawrence Livermore National Laboratory"
+          },
+          {
+            "type": "research",
+            "name": "Brookhaven National Laboratory"
+          },
+          {
+            "type": "award",
+            "name": "Nobel Prize (multiple laureates)"
+          },
+          {
+            "type": "award",
+            "name": "Fields Medal"
+          },
+          {
+            "type": "award",
+            "name": "Turing Award"
+          },
+          {
+            "type": "government",
+            "name": "US Department of Energy"
+          },
+          {
+            "type": "government",
+            "name": "National Institutes of Health (NIH)"
+          },
+          {
+            "type": "government",
+            "name": "National Science Foundation (NSF)"
+          },
+          {
+            "type": "government",
+            "name": "DARPA"
+          },
+          {
+            "type": "defense",
+            "name": "US Nuclear Program"
+          },
+          {
+            "type": "defense",
+            "name": "US Navy Nuclear Program"
+          },
+          {
+            "type": "Israel connection",
+            "name": "Weizmann Institute of Science"
+          },
+          {
+            "type": "Israel connection",
+            "name": "Technion - Israel Institute of Technology"
+          },
+          {
+            "type": "Israel",
+            "name": "Israeli nuclear program (alleged)"
+          },
+          {
+            "type": "medical",
+            "name": "Polio Vaccine Development"
+          },
+          {
+            "type": "medical",
+            "name": "National Institutes of Health (NIH)"
+          },
+          {
+            "type": "legal",
+            "name": "US Supreme Court"
+          },
+          {
+            "type": "legal",
+            "name": "Harvard Law School"
+          },
+          {
+            "type": "tech",
+            "name": "Computer Science / AI"
           }
         ],
         "category": "Notable Individuals"
@@ -23861,6 +25524,258 @@
             "type": "co-conspirator",
             "description": "Brought from Slovakia as teenager. Named co-conspirator, received immunity. Victim turned alleged participant.",
             "entryId": "nadia-marcinkova-connections"
+          },
+          {
+            "type": "academic donation",
+            "name": "Massachusetts Institute of Technology (MIT)"
+          },
+          {
+            "type": "academic donation",
+            "name": "Harvard University"
+          },
+          {
+            "type": "academic connection",
+            "name": "Stanford University"
+          },
+          {
+            "type": "academic connection",
+            "name": "New York University"
+          },
+          {
+            "type": "academic donation",
+            "name": "Santa Fe Institute"
+          },
+          {
+            "type": "academic connection",
+            "name": "Rockefeller University"
+          },
+          {
+            "type": "financial connection",
+            "name": "Citibank"
+          },
+          {
+            "type": "financial connection",
+            "name": "Credit Suisse"
+          },
+          {
+            "type": "financial connection",
+            "name": "Morgan Stanley"
+          },
+          {
+            "type": "financial connection",
+            "name": "Apollo Global Management"
+          },
+          {
+            "type": "financial - Leon Black",
+            "name": "Leon Black / Apollo",
+            "description": "Leon Black paid $158M in advisory fees (2012-2017)"
+          },
+          {
+            "type": "alleged intelligence connection",
+            "name": "CIA (alleged)",
+            "description": "Multiple sources allege intelligence community connections"
+          },
+          {
+            "type": "alleged intelligence connection",
+            "name": "MI6 (alleged)"
+          },
+          {
+            "type": "diplomatic connection",
+            "name": "Israeli Government (multiple contacts)"
+          },
+          {
+            "type": "diplomatic connection",
+            "name": "Saudi Royal Family"
+          },
+          {
+            "type": "diplomatic connection",
+            "name": "British Royal Family"
+          },
+          {
+            "type": "legal representation",
+            "name": "Kirkland & Ellis (Alex Acosta's former firm)"
+          },
+          {
+            "type": "legal representation",
+            "name": "Dershowitz Law Office"
+          },
+          {
+            "type": "legal settlement",
+            "name": "US Virgin Islands Attorney General Settlement"
+          },
+          {
+            "type": "legal",
+            "name": "Non-Prosecution Agreement (2007-2008)"
+          },
+          {
+            "type": "legal",
+            "name": "Maxwell Trial (SDNY 2021-2022)"
+          },
+          {
+            "type": "social connection",
+            "name": "Les Moonves (CBS)"
+          },
+          {
+            "type": "social connection",
+            "name": "Charlie Rose (PBS)"
+          },
+          {
+            "type": "social connection",
+            "name": "George Mitchell (former Senate Majority Leader)"
+          },
+          {
+            "type": "social connection",
+            "name": "Larry Summers (former Treasury Secretary)"
+          },
+          {
+            "type": "social/philanthropic",
+            "name": "Peggy Siegal (publicist)"
+          },
+          {
+            "type": "social",
+            "name": "Katie Couric"
+          },
+          {
+            "type": "social",
+            "name": "Sergey Brin (Google co-founder)"
+          },
+          {
+            "type": "social",
+            "name": "Jeff Bezos"
+          },
+          {
+            "type": "social",
+            "name": "Mark Zuckerberg (met at dinner)"
+          },
+          {
+            "type": "social",
+            "name": "Eva & Glenn Dubin"
+          },
+          {
+            "type": "social",
+            "name": "Wendi Deng Murdoch"
+          },
+          {
+            "type": "social",
+            "name": "Itzhak Perlman (musician)"
+          },
+          {
+            "type": "property",
+            "name": "Manhattan Townhouse (9 E 71st St)"
+          },
+          {
+            "type": "property",
+            "name": "Palm Beach Mansion"
+          },
+          {
+            "type": "property",
+            "name": "Zorro Ranch, New Mexico"
+          },
+          {
+            "type": "property",
+            "name": "Paris Apartment"
+          },
+          {
+            "type": "property",
+            "name": "Little St. James Island",
+            "entryId": "epstein-vi-properties"
+          },
+          {
+            "type": "property",
+            "name": "Great St. James Island",
+            "entryId": "epstein-vi-properties"
+          },
+          {
+            "type": "foundation",
+            "name": "Jeffrey Epstein VI Foundation"
+          },
+          {
+            "type": "think tank",
+            "name": "Edge Foundation / John Brockman"
+          },
+          {
+            "type": "modeling agency",
+            "name": "MC2 Model Management (Jean-Luc Brunel)"
+          },
+          {
+            "type": "philanthropy",
+            "name": "Gratitude America (Ghislaine Maxwell)"
+          },
+          {
+            "type": "investigation",
+            "name": "Palm Beach Police Investigation (2005)"
+          },
+          {
+            "type": "investigation",
+            "name": "FBI Investigation"
+          },
+          {
+            "type": "investigation",
+            "name": "SDNY Indictment (July 2019)"
+          },
+          {
+            "type": "death",
+            "name": "Metropolitan Correctional Center Death (August 10, 2019)"
+          },
+          {
+            "type": "controversy",
+            "name": "Medical Examiner Ruled Suicide (disputed)"
+          },
+          {
+            "type": "investigation",
+            "name": "DOJ Inspector General Investigation"
+          },
+          {
+            "type": "legal",
+            "name": "Victim Compensation Fund"
+          },
+          {
+            "type": "investigation journalism",
+            "name": "Miami Herald (Julie K. Brown)"
+          },
+          {
+            "type": "investigation journalism",
+            "name": "Netflix \"Jeffrey Epstein: Filthy Rich\""
+          },
+          {
+            "type": "investigation journalism",
+            "name": "Hulu \"Victoria's Secret: Angels and Demons\""
+          },
+          {
+            "type": "key evidence",
+            "name": "Flight Logs (\"Lolita Express\")"
+          },
+          {
+            "type": "key evidence",
+            "name": "Black Book (1,500+ contacts)"
+          },
+          {
+            "type": "key evidence",
+            "name": "Surveillance Tapes (alleged)"
+          },
+          {
+            "type": "science program",
+            "name": "Epstein Program for Mathematical Biology & Evolutionary Dynamics (Harvard)"
+          },
+          {
+            "type": "science connection",
+            "name": "Martin Nowak (Harvard mathematician)"
+          },
+          {
+            "type": "science connection",
+            "name": "Stephen Hawking (visited island)"
+          },
+          {
+            "type": "science connection",
+            "name": "Murray Gell-Mann (Nobel physicist)"
+          },
+          {
+            "type": "science connection",
+            "name": "Steven Pinker (Harvard, appeared in black book)"
+          },
+          {
+            "type": "science connection",
+            "name": "Leon Botstein (Bard College president)"
           }
         ],
         "individuals": [
@@ -26674,6 +28589,30 @@
             "name": "Lesley Groff",
             "role": "Executive Assistant",
             "bio": "Long-time Epstein executive assistant named as co-conspirator in multiple court filings."
+          },
+          {
+            "id": "larry-summers",
+            "role": "Academic/Political Connection",
+            "name": "Larry Summers",
+            "bio": "American economist. Former Treasury Secretary, former Harvard President. Visited Epstein after conviction. Born 1954 to a Jewish family."
+          },
+          {
+            "id": "leslie-wexner-ep",
+            "role": "Primary Financial Patron",
+            "name": "Leslie Wexner",
+            "bio": "American billionaire. Founder of L Brands (Victoria's Secret). Only known major client of Epstein. Gave Epstein power of attorney and $46M Manhattan mansion. Born 1937 to Jewish immigrants from Russia."
+          },
+          {
+            "id": "george-mitchell-ep",
+            "role": "Social Connection",
+            "name": "George Mitchell",
+            "bio": "American politician. Former Senate Majority Leader (1989-1995). Named in Epstein-related testimonies. Denied wrongdoing."
+          },
+          {
+            "id": "ehud-barak-ep",
+            "role": "Political Connection",
+            "name": "Ehud Barak",
+            "bio": "Israeli politician and military leader. Former Prime Minister of Israel (1999-2001). Business relationship with Epstein. Photographed at Epstein's residence. Invested in Epstein-linked company Carbyne."
           }
         ],
         "type": "Criminal Network / Intelligence-Linked Operation",
@@ -26783,6 +28722,60 @@
             "name": "Ernest Gruening",
             "role": "Governor/Senator of Alaska (1939-1969)",
             "bio": "Governor of the Territory of Alaska (1939-1953) and one of Alaska's first US Senators (1959-1969). One of only two senators to vote against the Gulf of Tonkin Resolution."
+          },
+          {
+            "id": "sam-levinson-gov",
+            "role": "Historical - Lt. Governor of South Carolina (1870s, one of earliest)",
+            "name": "Samuel H. Elrod",
+            "bio": "American politician in post-Civil War South Carolina."
+          },
+          {
+            "id": "edward-salomon",
+            "role": "Governor of Wisconsin Territory (1862)",
+            "name": "Edward Salomon",
+            "bio": "German-American politician. Acting Governor of Wisconsin (1862). Born 1828 to a Jewish family in Prussia. Served during the Civil War."
+          },
+          {
+            "id": "michael-hahn-la",
+            "role": "Governor of Louisiana (1864-1865)",
+            "name": "Michael Hahn",
+            "bio": "German-American politician. Governor of Louisiana during Reconstruction (1864-1865). Born 1830 in Bavaria to a Jewish family. First Jewish governor of a US state."
+          },
+          {
+            "id": "david-emanuel",
+            "role": "Governor of Georgia (1801)",
+            "name": "David Emanuel",
+            "bio": "American politician. Governor of Georgia in 1801. Born 1744 to a Jewish family. Emanuel County, Georgia is named after him. One of earliest Jewish governors in US history."
+          },
+          {
+            "id": "washington-bartlett",
+            "role": "Governor of California (1887)",
+            "name": "Washington Bartlett",
+            "bio": "American politician. Governor of California (1887). Born 1824 to a Jewish family. Died in office after only 9 months."
+          },
+          {
+            "id": "simon-bamberger",
+            "role": "Governor of Utah (1917-1921)",
+            "name": "Simon Bamberger",
+            "bio": "German-American businessman and politician. Governor of Utah (1917-1921). Born 1846 in Eberstadt, Germany, to a Jewish family. First non-Mormon governor of Utah."
+          },
+          {
+            "id": "samuel-levy",
+            "role": "Borough President of Manhattan (historical)",
+            "name": "Samuel Levy",
+            "bio": "American politician. Borough President of Manhattan (1930-1937). Jewish community leader in New York."
+          },
+          {
+            "id": "eliot-spitzer",
+            "role": "Governor of New York (2007-2008)",
+            "name": "Eliot Spitzer",
+            "bio": "American politician and attorney. Governor of New York (2007-2008). Born 1959 to a Jewish family. Former NY Attorney General. Resigned due to scandal."
+          },
+          {
+            "id": "eric-greitens",
+            "role": "Governor of Missouri (2017-2018)",
+            "name": "Eric Greitens",
+            "bio": "American politician. Governor of Missouri (2017-2018). Born 1974. Jewish (converted). Navy SEAL veteran. Resigned due to scandal."
           }
         ],
         "connections": [
@@ -26847,6 +28840,117 @@
             "name": "Democratic National Committee",
             "type": "political organization",
             "description": "Ed Rendell chaired the DNC. Josh Shapiro and Pritzker are influential within national Democratic politics."
+          },
+          {
+            "type": "state",
+            "name": "Colorado"
+          },
+          {
+            "type": "state",
+            "name": "Illinois"
+          },
+          {
+            "type": "state",
+            "name": "Idaho"
+          },
+          {
+            "type": "state",
+            "name": "Connecticut"
+          },
+          {
+            "type": "state",
+            "name": "New York"
+          },
+          {
+            "type": "state",
+            "name": "Maryland"
+          },
+          {
+            "type": "state",
+            "name": "Vermont"
+          },
+          {
+            "type": "state",
+            "name": "Rhode Island"
+          },
+          {
+            "type": "state",
+            "name": "Hawaii"
+          },
+          {
+            "type": "state",
+            "name": "Oregon"
+          },
+          {
+            "type": "state",
+            "name": "New Mexico"
+          },
+          {
+            "type": "state",
+            "name": "Alaska"
+          },
+          {
+            "type": "state",
+            "name": "California"
+          },
+          {
+            "type": "state",
+            "name": "Georgia"
+          },
+          {
+            "type": "state",
+            "name": "Louisiana"
+          },
+          {
+            "type": "state",
+            "name": "Wisconsin"
+          },
+          {
+            "type": "state",
+            "name": "Utah"
+          },
+          {
+            "type": "state",
+            "name": "Missouri"
+          },
+          {
+            "type": "political pathway",
+            "name": "Presidential Campaigns"
+          },
+          {
+            "type": "political body",
+            "name": "National Governors Association"
+          },
+          {
+            "type": "community org",
+            "name": "Jewish Federations of North America",
+            "entryId": "jewish-federations-of-north-america-jfna"
+          },
+          {
+            "type": "lobbying relationship",
+            "name": "AIPAC",
+            "entryId": "aipac"
+          },
+          {
+            "type": "education",
+            "name": "State University Systems"
+          },
+          {
+            "type": "family dynasty",
+            "name": "Pritzker Family"
+          },
+          {
+            "type": "notable political figures",
+            "name": "Notable Jewish Political Figures (US)",
+            "entryId": "notable-jewish-political-figures-us"
+          },
+          {
+            "type": "diplomatic engagement",
+            "name": "Israel Trade Relations"
+          },
+          {
+            "type": "policy",
+            "name": "Anti-BDS Executive Orders (state level)"
           }
         ]
       }
