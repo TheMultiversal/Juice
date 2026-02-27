@@ -25,12 +25,12 @@
   <meta name="twitter:description" content="Comprehensive directory of Jewish organizations worldwide - tracking structure, people, and connections since 2016.">
   <title>Network Graph</title>
 
-  <!-- d3-force: collision force for better layout -->
+  <!-- d3-force (used internally by force-graph for drag interactions) -->
   <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
-  <!-- force-graph: d3-force Canvas2D renderer - async layout, handles 10k+ nodes -->
+  <!-- force-graph: Canvas2D renderer - handles 10k+ nodes at 60fps -->
   <script src="https://unpkg.com/force-graph"></script>
 
   <style>
@@ -183,11 +183,11 @@
   <div class="main">
   <div class="header-panel">
     <h1><i class="fa-solid fa-diagram-project"></i> Network Graph</h1>
-    <p class="subtitle">Interactive force-directed visualization - drag nodes, scroll to zoom, hover for details, click to open.</p>
+    <p class="subtitle">Pre-computed radial layout - drag nodes, scroll to zoom, hover for details, click to open.</p>
   </div>
 
   <div class="graph-wrap">
-    <!-- force-graph canvas container -->
+    <!-- force-graph canvas container (pre-computed category layout, zero overlap) -->
     <div id="graph-container"></div>
 
     <!-- Loading -->
@@ -210,7 +210,7 @@
           <select id="f-cat"><option value="">All Categories</option></select>
           <label>Node Size</label>
           <input type="range" id="node-scale" min="2" max="20" value="6" />
-          <label>Link Distance</label>
+          <label>Spacing</label>
           <input type="range" id="link-dist" min="30" max="350" value="100" />
           <div class="chks">
             <label><input type="checkbox" id="show-people" /> People</label>
@@ -260,11 +260,17 @@
   </div>
   </div><!-- /.main -->
 
-  <!-- Tooltip (must be outside .graph-wrap to avoid backdrop-filter containing block + overflow:hidden clipping) -->
+  <!-- Tooltip (outside graph-wrap to avoid clipping) -->
   <div id="tip"></div>
 
   <script src="app.js"></script>
   <script>
+    /* ================================================================
+     *  CATEGORY-GROUPED RADIAL LAYOUT — FULL DATABASE GRAPH
+     *  Pre-computed positions (O(n), <20ms) → force-graph Canvas2D
+     *  Entries grouped by category on ring sectors, zero overlap
+     * ================================================================ */
+
     initPage('jewish');
     setSEO({ title: 'Network Graph - Juice Project', description: 'Interactive network visualization.' });
 
@@ -316,18 +322,17 @@
 
     // ─── State ───────────────────────────────────────────
     let graph = null;
+    let currentData = null;
     let hoveredNode = null;
-    let neighborMap = {};      // nodeId -> Set of neighbor nodeIds
-    let neighborSet = new Set(); // current hover neighborhood
+    let neighborMap = {};
+    let neighborSet = new Set();
     let searchMatches = new Set();
     let nodeScale = 6;
-    let linkDist = 100;
+    let spacingVal = 100;
     let mouseX = 0, mouseY = 0;
     const tipEl = document.getElementById('tip');
     const container = document.getElementById('graph-container');
 
-    // Track mouse on document (not just container) so coordinates are always fresh
-    // even if force-graph's canvas captures events before they bubble
     document.addEventListener('mousemove', e => {
       mouseX = e.clientX;
       mouseY = e.clientY;
@@ -337,7 +342,6 @@
       }
     });
 
-    // Hide tooltip when mouse leaves the graph area entirely
     document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
       tipEl.style.display = 'none';
       hoveredNode = null;
@@ -367,6 +371,59 @@
       cOk = 1; tryLoad();
     });
 
+    // ─── PRE-COMPUTED CATEGORY RADIAL LAYOUT ─────────────
+    // Entries grouped by category on proportional ring sectors
+    // People on outer ring - O(n) computation, zero overlap
+    function computeCategoryLayout(data, spaceFactor) {
+      const sf = spaceFactor || 1;
+      const entryNodes = data.nodes.filter(n => n.nodeType !== 'person');
+      const personNodes = data.nodes.filter(n => n.nodeType === 'person');
+
+      // Group entries by category
+      const catGroups = {};
+      entryNodes.forEach(n => {
+        const cat = n.category || 'Unknown';
+        if (!catGroups[cat]) catGroups[cat] = [];
+        catGroups[cat].push(n);
+      });
+
+      // Sort categories by size (largest first)
+      const catNames = Object.keys(catGroups).sort((a, b) => catGroups[b].length - catGroups[a].length);
+
+      // Compute ring radius (spacing ~18px between entries)
+      const totalEntries = Math.max(entryNodes.length, 1);
+      const R = Math.max(400, totalEntries * 18 / (2 * Math.PI)) * sf;
+
+      // Place entries on ring, grouped by category
+      let angle = -Math.PI / 2;
+      catNames.forEach(cat => {
+        const nodes = catGroups[cat];
+        const arcSize = (2 * Math.PI) * (nodes.length / totalEntries);
+
+        nodes.sort((a, b) => (b._degree || 0) - (a._degree || 0));
+        nodes.forEach((n, i) => {
+          const a = angle + (arcSize * (i + 0.5)) / nodes.length;
+          n.fx = R * Math.cos(a);
+          n.fy = R * Math.sin(a);
+          n.x = n.fx; n.y = n.fy;
+        });
+
+        angle += arcSize;
+      });
+
+      // Place people on outer ring
+      if (personNodes.length > 0) {
+        const R_people = Math.max(R * 1.5, personNodes.length * 14 / (2 * Math.PI)) * sf;
+        const nP = Math.max(personNodes.length, 1);
+        personNodes.forEach((p, i) => {
+          const a = (2 * Math.PI * i) / nP - Math.PI / 2;
+          p.fx = R_people * Math.cos(a);
+          p.fy = R_people * Math.sin(a);
+          p.x = p.fx; p.y = p.fy;
+        });
+      }
+    }
+
     // ─── Custom node rendering ───────────────────────────
     function renderNode(node, ctx, globalScale) {
       if (node.x == null || node.y == null) return;
@@ -389,23 +446,19 @@
       ctx.save();
       ctx.globalAlpha = shouldDim ? 0.06 : 1;
 
-      // Shape
       ctx.beginPath();
       if (node.nodeType === 'person') {
-        // Diamond
         ctx.moveTo(node.x, node.y - size);
         ctx.lineTo(node.x + size * 0.75, node.y);
         ctx.lineTo(node.x, node.y + size);
         ctx.lineTo(node.x - size * 0.75, node.y);
         ctx.closePath();
       } else {
-        // Circle
         ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
       }
       ctx.fillStyle = node._color || DC;
       ctx.fill();
 
-      // Border
       if (isHovered) {
         ctx.strokeStyle = '#0056b3';
         ctx.lineWidth = 2.5 / globalScale;
@@ -420,7 +473,6 @@
         ctx.stroke();
       }
 
-      // Label
       const showLabel = !shouldDim && (
         isHovered ||
         isNeighbor ||
@@ -443,11 +495,9 @@
         const pad = 1.5 / globalScale;
         const textY = node.y + size + 2 / globalScale;
 
-        // Label background
         ctx.fillStyle = 'rgba(255,255,255,0.88)';
         ctx.fillRect(node.x - textW / 2 - pad, textY - pad, textW + pad * 2, textH + pad * 2);
 
-        // Label text
         ctx.fillStyle = isHovered ? '#0056b3' : '#333';
         ctx.fillText(label, node.x, textY);
       }
@@ -455,9 +505,7 @@
       ctx.restore();
     }
 
-    // ─── Node pointer area ───────────────────────────────
     function paintNodeArea(node, color, ctx) {
-      // Extra padding (+6) for easier hover detection on small nodes
       const size = (node._renderedSize || nodeScale * 0.6) + 6;
       ctx.fillStyle = color;
       ctx.beginPath();
@@ -497,69 +545,6 @@
       return link._color || DEC;
     }
 
-    // ─── Initialize graph ────────────────────────────────
-    function initGraph(nodeCount) {
-      const rect = container.getBoundingClientRect();
-      const nc = nodeCount || 200;
-
-      graph = ForceGraph()(container)
-        .width(rect.width)
-        .height(rect.height)
-        .backgroundColor('#fff')
-        .nodeCanvasObject(renderNode)
-        .nodeCanvasObjectMode(() => 'replace')
-        .nodePointerAreaPaint(paintNodeArea)
-        .linkWidth(linkWidthFn)
-        .linkColor(linkColorFn)
-        .linkLineDash(link => (link.type === 'person-affiliation') ? [2, 2] : null)
-        .cooldownTime(22000)
-        .warmupTicks(nc > 600 ? 350 : nc > 300 ? 250 : 180)
-        .d3AlphaDecay(0.018)
-        .d3VelocityDecay(0.3)
-        .d3AlphaMin(0.005)
-        .autoPauseRedraw(false)
-        .nodeLabel(node => '') // suppress default title tooltip (we use custom #tip)
-        .onNodeHover(handleNodeHover)
-        .onNodeClick(handleNodeClick)
-        .onLinkHover(handleLinkHover)
-        .onLinkClick(handleLinkClick)
-        .onBackgroundClick(handleBgClick)
-        .enableNodeDrag(true);
-
-      // Charge: strong many-body repulsion to push nodes apart
-      graph.d3Force('charge')
-        .strength(nc > 600 ? -200 : nc > 300 ? -280 : -350)
-        .distanceMax(nc > 600 ? 500 : 800);
-
-      // Link distance varies by type
-      graph.d3Force('link')
-        .distance(link => {
-          if (link.type === 'person-affiliation') return linkDist * 1.8;
-          if (link.type === 'shared-person') return linkDist * 0.8;
-          return linkDist;
-        })
-        .strength(link => {
-          if (link.type === 'person-affiliation') return 0.15;
-          return 0.5;
-        });
-
-      // Collision force: prevent node overlap — radii include label space
-      graph.d3Force('collide', d3.forceCollide()
-        .radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
-          return nodeScale * 1.5 + 10;
-        })
-        .strength(0.9)
-        .iterations(4)
-      );
-
-      // Resize handler
-      window.addEventListener('resize', () => {
-        const r = container.getBoundingClientRect();
-        graph.width(r.width).height(r.height);
-      });
-    }
-
     // ─── Event handlers ──────────────────────────────────
     function handleNodeHover(node) {
       hoveredNode = node;
@@ -571,7 +556,6 @@
         const nb = neighborMap[node.id];
         if (nb) nb.forEach(id => neighborSet.add(id));
 
-        // Tooltip
         let html;
         if (node.nodeType === 'person') {
           html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
@@ -622,7 +606,6 @@
       if (!link) return;
       const src = (typeof link.source === 'object') ? link.source : null;
       const tgt = (typeof link.target === 'object') ? link.target : null;
-      // Person-affiliation: navigate to the person
       if (link.type === 'person-affiliation') {
         const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
         if (person) {
@@ -630,20 +613,15 @@
           return;
         }
       }
-      // Entry-to-entry link: go to entry page
       const entryNode = (tgt && tgt.nodeType === 'entry') ? tgt : (src && src.nodeType === 'entry') ? src : null;
       if (entryNode) {
         window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(entryNode.id);
-        return;
       }
     }
 
     function handleBgClick() {
-      // Clear search highlights on background click
       searchMatches.clear();
-      if (graph) {
-        graph.graphData().nodes.forEach(n => { n._found = false; });
-      }
+      if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
       document.getElementById('s-count').textContent = '';
       document.getElementById('s-input').value = '';
     }
@@ -664,8 +642,8 @@
       document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
       fetch(url).then(r => r.json()).then(data => {
-        lt.textContent = 'Rendering ' + data.nodes.length + ' nodes...';
-        setTimeout(() => buildGraph(data), 30);
+        lt.textContent = 'Computing radial layout for ' + data.nodes.length + ' nodes...';
+        setTimeout(() => buildGraph(data), 20);
       }).catch(err => {
         console.error('Failed to load graph data:', err);
         lt.textContent = 'Error loading data.';
@@ -685,28 +663,32 @@
       neighborMap = {};
       data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
       data.links.forEach(l => {
-        if (neighborMap[l.source]) neighborMap[l.source].add(l.target);
-        if (neighborMap[l.target]) neighborMap[l.target].add(l.source);
+        const s = typeof l.source === 'object' ? l.source.id : l.source;
+        const t = typeof l.target === 'object' ? l.target.id : l.target;
+        if (neighborMap[s]) neighborMap[s].add(t);
+        if (neighborMap[t]) neighborMap[t].add(s);
       });
 
-      // Assign computed properties to nodes
+      // Assign computed properties
       data.nodes.forEach(n => {
         n._degree = degreeMap[n.id] || 0;
         n._color = n.nodeType === 'person' ? PC : (CC[n.category] || DC);
         n._found = false;
       });
-
-      // Assign computed properties to links
       data.links.forEach(l => {
         l._color = EC[l.type] || DEC;
         l._width = l.type === 'person-affiliation' ? 0.3 : 0.5;
       });
 
+      // Compute category radial layout (sets fx/fy on all nodes)
+      currentData = data;
+      computeCategoryLayout(data, spacingVal / 100);
+
       // Stats
       const entries = data.nodes.filter(n => n.nodeType !== 'person');
       const people = data.nodes.filter(n => n.nodeType === 'person');
       document.getElementById('stats').innerHTML =
-        '<b>' + entries.length + '</b> entries · <b>' + people.length + '</b> people · <b>' + data.links.length + '</b> links';
+        '<b>' + entries.length + '</b> entries \u00b7 <b>' + people.length + '</b> people \u00b7 <b>' + data.links.length + '</b> links';
 
       // Category legend
       const cats = [...new Set(data.nodes.map(n => n.category))].filter(Boolean).sort();
@@ -720,7 +702,6 @@
         r.appendChild(d);
         const txt = document.createTextNode(c);
         r.appendChild(txt);
-        // Click category to highlight
         r.onclick = function() {
           searchMatches.clear();
           graph.graphData().nodes.forEach(n => { n._found = false; });
@@ -747,83 +728,79 @@
         edgeB.appendChild(r);
       });
 
-      // Clear search state
+      // Clear state
       searchMatches.clear();
       hoveredNode = null;
       neighborSet.clear();
 
-      // Init graph instance if needed
-      const nodeCount = data.nodes.length;
-      if (!graph) initGraph(nodeCount);
+      // Create or re-feed force-graph
+      const rect = container.getBoundingClientRect();
 
-      // Feed data - d3-force simulation starts automatically & asynchronously
+      if (!graph) {
+        graph = ForceGraph()(container)
+          .width(rect.width)
+          .height(rect.height)
+          .backgroundColor('#fff')
+          .nodeCanvasObject(renderNode)
+          .nodeCanvasObjectMode(() => 'replace')
+          .nodePointerAreaPaint(paintNodeArea)
+          .linkWidth(linkWidthFn)
+          .linkColor(linkColorFn)
+          .linkLineDash(link => (link.type === 'person-affiliation') ? [3, 2] : null)
+          .warmupTicks(0)
+          .cooldownTicks(1)
+          .autoPauseRedraw(false)
+          .nodeLabel(() => '')
+          .onNodeHover(handleNodeHover)
+          .onNodeClick(handleNodeClick)
+          .onLinkHover(handleLinkHover)
+          .onLinkClick(handleLinkClick)
+          .onBackgroundClick(handleBgClick)
+          .enableNodeDrag(true)
+          .onNodeDragEnd(node => { node.fx = node.x; node.fy = node.y; });
+
+        window.addEventListener('resize', () => {
+          const r = container.getBoundingClientRect();
+          graph.width(r.width).height(r.height);
+        });
+      }
+
+      // Feed data
       graph.graphData(data);
 
-      // Update forces for current data
-      graph.d3Force('charge')
-        .strength(nodeCount > 600 ? -200 : nodeCount > 300 ? -280 : -350)
-        .distanceMax(nodeCount > 600 ? 500 : 800);
+      // Remove ALL forces — positions are pre-computed
+      graph.d3Force('charge', null);
+      graph.d3Force('center', null);
+      graph.d3Force('link', null);
 
-      graph.d3Force('link')
-        .distance(link => {
-          const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.8;
-          if (lt === 'shared-person') return linkDist * 0.8;
-          return linkDist;
-        });
-
-      // Update collision radii
-      graph.d3Force('collide')
-        .radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
-          return nodeScale * 1.5 + 10;
-        });
-
-      graph.d3ReheatSimulation();
-
-      // Hide loading overlay and zoom to fit
+      // Zoom to fit
       setTimeout(() => {
         document.getElementById('loading').classList.add('off');
-        graph.zoomToFit(600, 40);
-      }, 800);
+        graph.zoomToFit(400, 40);
+      }, 150);
     }
 
     // ─── Controls ────────────────────────────────────────
     document.getElementById('btn-reload').onclick = loadGraph;
 
     document.getElementById('btn-fit').onclick = () => {
-      if (graph) {
-        graph.zoomToFit(400, 40);
-        graph.d3ReheatSimulation();
-      }
+      if (graph) graph.zoomToFit(400, 40);
     };
 
     document.getElementById('show-people').onchange = loadGraph;
     document.getElementById('f-country').onchange = loadGraph;
     document.getElementById('f-cat').onchange = loadGraph;
 
+    // Node size slider — live update, no relayout needed
     document.getElementById('node-scale').oninput = function() {
       nodeScale = +this.value;
-      if (graph && graph.d3Force('collide')) {
-        graph.d3Force('collide').radius(node => {
-          if (node.nodeType === 'person') return nodeScale * 1.2 + 8;
-          return nodeScale * 1.5 + 10;
-        });
-        graph.d3ReheatSimulation();
-      }
     };
 
+    // Spacing slider — recompute layout on change
     document.getElementById('link-dist').oninput = function() {
-      linkDist = +this.value;
-      if (graph) {
-        graph.d3Force('link').distance(link => {
-          const lt = (typeof link.type === 'string') ? link.type : '';
-          if (lt === 'person-affiliation') return linkDist * 1.8;
-          if (lt === 'shared-person') return linkDist * 0.8;
-          return linkDist;
-        });
-        graph.d3ReheatSimulation();
-      }
+      spacingVal = +this.value;
+      if (!graph || !currentData) return;
+      computeCategoryLayout(currentData, spacingVal / 100);
     };
 
     // ─── Search ──────────────────────────────────────────

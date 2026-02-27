@@ -2088,6 +2088,12 @@
           "role": "Former CEO",
           "entryId": "kushner-companies",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Senior White House Advisor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -12997,7 +13003,14 @@
       "name": "Ruth Bader Ginsburg",
       "bio": "American jurist (1933-2020). Born Joan Ruth Bader in Brooklyn to a Jewish family. Associate Justice of the U.S. Supreme Court (1993-2020). Second woman to serve on the Court. Known as the \"Notorious RBG.\" Pioneer of gender equality jurisprudence. Cultural icon.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Supreme Court Justice",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
     },
     "sandy-koufax": {
       "name": "Sandy Koufax",
@@ -16662,6 +16675,12 @@
           "role": "Subject",
           "entryId": "henry-kissinger-connections",
           "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Secretary of State & National Security Advisor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
         }
       ]
     },
@@ -18104,7 +18123,14 @@
       "name": "Jonathan Kessler",
       "bio": "American advocacy professional. Executive Director of the American Israel Education Foundation (AIEF), the philanthropic arm of AIPAC that sponsors educational trips to Israel for U.S. lawmakers and political leaders.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former Leadership Development Director",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
     },
     "canary-mission-anonymous": {
       "name": "Anonymous Founders",
@@ -18266,7 +18292,14 @@
       "name": "Elena Kagan",
       "bio": "American jurist. Associate Justice of the U.S. Supreme Court since 2010. Former Solicitor General and Harvard Law School Dean. Fourth Jewish Justice to serve on the Supreme Court.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Supreme Court Justice",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
     },
     "katie-couric": {
       "name": "Katie Couric",
@@ -20618,7 +20651,14 @@
       "name": "Barney Frank",
       "bio": "American politician. Former U.S. Representative from Massachusetts. Named in Epstein's contacts.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Representative (Massachusetts)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
     },
     "prince-michael-kent": {
       "name": "Prince Michael of Kent",
@@ -21345,6 +21385,609 @@
       "bio": "American attorney. Former Manhattan District Attorney. His office argued to reduce Epstein's sex offender status from Level 3 (highest risk) to Level 1 (lowest) in 2011, drawing intense criticism. His office received a $25,000 donation from Epstein lawyer David Boies's law firm.",
       "notes": "",
       "affiliations": []
+    },
+    "amy-friedkin": {
+      "name": "Amy Friedkin",
+      "bio": "Former president of AIPAC. San Francisco-based Democratic activist and philanthropist.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2006-2008)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "bernice-manocherian": {
+      "name": "Bernice Manocherian",
+      "bio": "Former AIPAC president. New York real estate executive and major Democratic donor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (1994-1996)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "lonny-kaplan": {
+      "name": "Lonny Kaplan",
+      "bio": "Former AIPAC president. Detroit-area business executive and major pro-Israel fundraiser.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2008-2010)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "lee-rosenberg": {
+      "name": "Lee Rosenberg",
+      "bio": "Former AIPAC president. Chicago-based media executive and close associate of President Obama.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2010-2012)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "howard-friedman": {
+      "name": "Howard Friedman",
+      "bio": "Former AIPAC president. Tulsa-based businessman and prominent pro-Israel activist.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2004-2006)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-victor": {
+      "name": "David Victor",
+      "bio": "Former AIPAC president. Midwest-based executive and longtime AIPAC board member.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2012-2014)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "bob-cohen-aipac": {
+      "name": "Bob Cohen",
+      "bio": "Former AIPAC president. Active in AIPAC leadership for decades before serving as president.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former President (2014-2016)",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "douglas-bloomfield": {
+      "name": "Douglas Bloomfield",
+      "bio": "Former AIPAC legislative director and longtime Washington lobbyist. Columnist for the Jerusalem Post.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former Legislative Director",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "brad-gordon": {
+      "name": "Brad Gordon",
+      "bio": "Former AIPAC director of policy and government affairs. Key lobbyist on Iran sanctions legislation.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former Policy Director",
+          "entryId": "aipac",
+          "country": "United States"
+        }
+      ]
+    },
+    "rahm-emanuel": {
+      "name": "Rahm Emanuel",
+      "bio": "US Ambassador to Japan since 2022. Previously White House Chief of Staff under Obama (2009-2010), Mayor of Chicago (2011-2019), and US Representative from Illinois. Known for aggressive political style.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Ambassador to Japan / Former Chicago Mayor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "dianne-feinstein": {
+      "name": "Dianne Feinstein",
+      "bio": "Longest-serving female senator in US history. Served California 1992-2023. Chaired Senate Intelligence Committee. First female mayor of San Francisco. Died September 2023.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Senator (California)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "adam-schiff": {
+      "name": "Adam Schiff",
+      "bio": "US Senator from California since 2024. Previously US Representative (2001-2024). Chaired House Intelligence Committee. Led first impeachment of President Trump.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (California)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jerry-nadler": {
+      "name": "Jerry Nadler",
+      "bio": "US Representative from New York since 1992. Chaired House Judiciary Committee. One of the longest-serving members of Congress.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (New York)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "stephen-miller": {
+      "name": "Stephen Miller",
+      "bio": "Senior policy advisor to President Trump. Architect of immigration policy. Currently Deputy Chief of Staff for Policy in Trump's second term.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "White House Deputy Chief of Staff for Policy",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "gary-gensler": {
+      "name": "Gary Gensler",
+      "bio": "Chairman of SEC (2021-2025). Previously Chair of CFTC under Obama. Former Goldman Sachs partner. MIT professor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former SEC Chairman",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "alejandro-mayorkas": {
+      "name": "Alejandro Mayorkas",
+      "bio": "First Latino and first immigrant to serve as DHS Secretary (2021-2025). Born in Havana to Cuban Jewish family that fled the Holocaust. Previously Deputy Secretary of DHS.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former Secretary of Homeland Security",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ron-klain": {
+      "name": "Ron Klain",
+      "bio": "White House Chief of Staff under Biden (2021-2023). Previously Chief of Staff to Vice Presidents Gore and Biden. Led Obama's Ebola response.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former White House Chief of Staff",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jeff-zients": {
+      "name": "Jeff Zients",
+      "bio": "White House Chief of Staff under Biden (2023-2025). Previously COVID-19 Response Coordinator. Former director of the National Economic Council.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former White House Chief of Staff",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "stephen-breyer": {
+      "name": "Stephen Breyer",
+      "bio": "Associate Justice of the Supreme Court (1994-2022), appointed by Clinton. Known for pragmatic approach to constitutional interpretation.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Supreme Court Justice",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "joseph-lieberman": {
+      "name": "Joseph Lieberman",
+      "bio": "US Senator from Connecticut (1989-2013). First Jewish candidate on a major party presidential ticket (2000, as Al Gore's VP pick). Independent Democrat. Died March 2024.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Senator (Connecticut)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "al-franken": {
+      "name": "Al Franken",
+      "bio": "US Senator from Minnesota (2009-2018). Previously a comedian and writer on Saturday Night Live. Resigned amid misconduct allegations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Senator (Minnesota)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "carl-levin": {
+      "name": "Carl Levin",
+      "bio": "Longest-serving US Senator in Michigan history (1979-2015). Chaired Senate Armed Services Committee. Known for oversight of Pentagon and Wall Street.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Senator (Michigan)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "arlen-specter": {
+      "name": "Arlen Specter",
+      "bio": "US Senator from Pennsylvania (1981-2011). Switched from Republican to Democrat in 2009. Former Philadelphia DA and Warren Commission staffer.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Senator (Pennsylvania)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "richard-blumenthal": {
+      "name": "Richard Blumenthal",
+      "bio": "US Senator from Connecticut since 2011. Previously Connecticut Attorney General for 20 years. Known for consumer protection advocacy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Connecticut)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "brian-schatz": {
+      "name": "Brian Schatz",
+      "bio": "US Senator from Hawaii since 2012. Progressive Democrat focused on climate change and education policy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Senator (Hawaii)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "nita-lowey": {
+      "name": "Nita Lowey",
+      "bio": "US Representative from New York (1989-2021). First woman to chair House Appropriations Committee. Major advocate for US foreign aid to Israel.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "Former US Representative (New York)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jamie-raskin": {
+      "name": "Jamie Raskin",
+      "bio": "US Representative from Maryland since 2017. Led second impeachment of President Trump. Constitutional law professor at American University.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (Maryland)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "debbie-wasserman-schultz": {
+      "name": "Debbie Wasserman Schultz",
+      "bio": "US Representative from Florida since 2005. Former chair of the Democratic National Committee (2011-2016).",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "US Representative (Florida)",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "lee-zeldin": {
+      "name": "Lee Zeldin",
+      "bio": "EPA Administrator in Trump's second term. Previously US Representative from New York (2015-2023). First Jewish Republican elected to Congress from New York in over a century.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "EPA Administrator",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "josh-shapiro": {
+      "name": "Josh Shapiro",
+      "bio": "Governor of Pennsylvania since January 2023. Previously served as Pennsylvania Attorney General (2017-2023). Won the 2022 gubernatorial race by 15 points. Considered a rising star in the Democratic Party.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Pennsylvania (2023-present)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "State Governor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jared-polis": {
+      "name": "Jared Polis",
+      "bio": "Governor of Colorado since 2019, re-elected in 2022. First openly gay man elected governor of any US state. Previously US Representative. Tech entrepreneur and founder of several companies.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Colorado (2019-present)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "State Governor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "jb-pritzker": {
+      "name": "J.B. Pritzker",
+      "bio": "Governor of Illinois since 2019, re-elected in 2022. Billionaire businessman and member of the Pritzker family (Hyatt Hotels). Major Democratic donor before entering politics.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Illinois (2019-present)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Notable Jewish Political Figures (US)",
+          "role": "State Governor",
+          "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "moses-alexander": {
+      "name": "Moses Alexander",
+      "bio": "First Jewish governor in US history. Born in Bavaria, Germany. Served as mayor of Boise before becoming governor. Democrat who enacted progressive reforms.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Idaho (1915-1919)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "abraham-ribicoff": {
+      "name": "Abraham Ribicoff",
+      "bio": "Governor of Connecticut 1955-1961. Later served as US Senator (1963-1981) and HEW Secretary under JFK. Famously criticized Chicago police at the 1968 Democratic Convention.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Connecticut (1955-1961)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "herbert-lehman": {
+      "name": "Herbert Lehman",
+      "bio": "Governor of New York during the Great Depression and early WWII. Later US Senator (1949-1957). Member of the Lehman Brothers banking family. Major supporter of civil liberties.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of New York (1933-1942)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ed-rendell": {
+      "name": "Ed Rendell",
+      "bio": "Governor of Pennsylvania 2003-2011. Previously mayor of Philadelphia (1992-2000) and DA of Philadelphia. Chaired the Democratic National Committee (2000-2001).",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Pennsylvania (2003-2011)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "marvin-mandel": {
+      "name": "Marvin Mandel",
+      "bio": "Governor of Maryland 1969-1979. Served as Speaker of the Maryland House of Delegates before becoming governor. Later convicted of mail fraud.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Maryland (1969-1979)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "milton-shapp": {
+      "name": "Milton Shapp",
+      "bio": "Governor of Pennsylvania 1971-1979. First Jewish governor of Pennsylvania. Cable television pioneer. Ran for president in 1976.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Pennsylvania (1971-1979)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "madeleine-kunin": {
+      "name": "Madeleine Kunin",
+      "bio": "First female governor of Vermont and first Jewish woman to serve as a state governor. Later served as US Ambassador to Switzerland under Clinton. Born in Zurich to a Jewish family that fled Nazi persecution.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Vermont (1985-1991)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "frank-licht": {
+      "name": "Frank Licht",
+      "bio": "Governor of Rhode Island 1969-1973. First Jewish governor of Rhode Island. Previously a state senator. Appointed the first African American to the Rhode Island judiciary.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Rhode Island (1969-1973)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "linda-lingle": {
+      "name": "Linda Lingle",
+      "bio": "First female and first Jewish governor of Hawaii. First Republican governor of the state in 40 years. Previously mayor of Maui. Converted to Judaism.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Hawaii (2002-2010)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "neil-goldschmidt": {
+      "name": "Neil Goldschmidt",
+      "bio": "Governor of Oregon 1987-1991. Previously US Secretary of Transportation under Carter and mayor of Portland.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Oregon (1987-1991)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "julius-meier": {
+      "name": "Julius Meier",
+      "bio": "Governor of Oregon as an Independent. President of Meier & Frank department store chain. Supported public power development and highway construction.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of Oregon (1931-1935)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "arthur-seligman": {
+      "name": "Arthur Seligman",
+      "bio": "Governor of New Mexico 1931-1933. Member of the prominent Seligman banking and mercantile family of the Southwest. Died in office.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor of New Mexico (1931-1933)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
+    },
+    "ernest-gruening": {
+      "name": "Ernest Gruening",
+      "bio": "Governor of the Territory of Alaska (1939-1953) and one of Alaska's first US Senators (1959-1969). One of only two senators to vote against the Gulf of Tonkin Resolution.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish State Governors (US)",
+          "role": "Governor/Senator of Alaska (1939-1969)",
+          "entryId": "jewish-state-governors-us",
+          "country": "United States"
+        }
+      ]
     }
   }
 }

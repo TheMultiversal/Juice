@@ -366,6 +366,66 @@
             "name": "Chuck Schumer",
             "id": "chuck-schumer",
             "role": "Key Congressional Ally"
+          },
+          {
+            "id": "amy-friedkin",
+            "name": "Amy Friedkin",
+            "role": "Former President (2006-2008)",
+            "bio": "Former president of AIPAC. San Francisco-based Democratic activist and philanthropist."
+          },
+          {
+            "id": "bernice-manocherian",
+            "name": "Bernice Manocherian",
+            "role": "Former President (1994-1996)",
+            "bio": "Former AIPAC president. New York real estate executive and major Democratic donor."
+          },
+          {
+            "id": "lonny-kaplan",
+            "name": "Lonny Kaplan",
+            "role": "Former President (2008-2010)",
+            "bio": "Former AIPAC president. Detroit-area business executive and major pro-Israel fundraiser."
+          },
+          {
+            "id": "lee-rosenberg",
+            "name": "Lee Rosenberg",
+            "role": "Former President (2010-2012)",
+            "bio": "Former AIPAC president. Chicago-based media executive and close associate of President Obama."
+          },
+          {
+            "id": "howard-friedman",
+            "name": "Howard Friedman",
+            "role": "Former President (2004-2006)",
+            "bio": "Former AIPAC president. Tulsa-based businessman and prominent pro-Israel activist."
+          },
+          {
+            "id": "david-victor",
+            "name": "David Victor",
+            "role": "Former President (2012-2014)",
+            "bio": "Former AIPAC president. Midwest-based executive and longtime AIPAC board member."
+          },
+          {
+            "id": "bob-cohen-aipac",
+            "name": "Bob Cohen",
+            "role": "Former President (2014-2016)",
+            "bio": "Former AIPAC president. Active in AIPAC leadership for decades before serving as president."
+          },
+          {
+            "id": "douglas-bloomfield",
+            "name": "Douglas Bloomfield",
+            "role": "Former Legislative Director",
+            "bio": "Former AIPAC legislative director and longtime Washington lobbyist. Columnist for the Jerusalem Post."
+          },
+          {
+            "id": "jonathan-kessler",
+            "name": "Jonathan Kessler",
+            "role": "Former Leadership Development Director",
+            "bio": "Ran AIPAC's campus and leadership development programs for two decades. Built the Schusterman Advocacy Institute."
+          },
+          {
+            "id": "brad-gordon",
+            "name": "Brad Gordon",
+            "role": "Former Policy Director",
+            "bio": "Former AIPAC director of policy and government affairs. Key lobbyist on Iran sanctions legislation."
           }
         ],
         "connections": [
@@ -651,12 +711,94 @@
             "description": "AIPAC has pushed back against Amnesty's characterizations of Israeli policies."
           },
           {
-            "target": "j-street",
-            "relationship": "J Street positions itself as an alternative to AIPAC"
+            "name": "Jewish National Fund (JNF)",
+            "type": "pro-Israel ecosystem",
+            "description": "Both organizations are pillars of the American pro-Israel institutional landscape."
           },
           {
-            "target": "paul-singer",
-            "relationship": "Singer is a prominent AIPAC supporter"
+            "name": "Hadassah",
+            "type": "pro-Israel communal partner",
+            "description": "Major American Zionist organization that partners with AIPAC on Israel advocacy."
+          },
+          {
+            "name": "The Israel Project (TIP)",
+            "type": "pro-Israel media ally",
+            "description": "Media advocacy group that collaborated with AIPAC on messaging and hasbara."
+          },
+          {
+            "name": "Middle East Media Research Institute (MEMRI)",
+            "type": "research ally",
+            "description": "Think tank whose research on extremism is used by AIPAC in congressional briefings."
+          },
+          {
+            "name": "World Zionist Organization",
+            "type": "Zionist institutional connection",
+            "description": "Global Zionist umbrella body with which AIPAC coordinates on Israel advocacy strategy."
+          },
+          {
+            "name": "Steny Hoyer",
+            "type": "congressional ally",
+            "description": "Former House Majority Leader. Led largest-ever congressional delegation to Israel organized by AIEF."
+          },
+          {
+            "name": "Kevin McCarthy",
+            "type": "bipartisan congressional ally",
+            "description": "Former House Speaker. Regular speaker at AIPAC policy conferences."
+          },
+          {
+            "name": "Lindsey Graham",
+            "type": "congressional ally",
+            "description": "Senior Republican senator. Co-sponsors key AIPAC-backed legislation on Israel aid."
+          },
+          {
+            "name": "Ritchie Torres",
+            "type": "congressional ally",
+            "description": "Democratic congressman from New York. Prominent AIPAC-endorsed pro-Israel progressive."
+          },
+          {
+            "name": "Josh Gottheimer",
+            "type": "congressional ally",
+            "description": "Democratic congressman from New Jersey. Co-chair of the bipartisan Problem Solvers Caucus, strong AIPAC ally."
+          },
+          {
+            "name": "US Treasury Department",
+            "type": "sanctions policy",
+            "description": "AIPAC lobbies Treasury on Iran sanctions enforcement and anti-terrorism financing."
+          },
+          {
+            "name": "National Security Council",
+            "type": "policy influence",
+            "description": "AIPAC maintains relationships with NSC staff on Middle East policy across administrations."
+          },
+          {
+            "name": "Hezbollah",
+            "type": "opposition target",
+            "description": "AIPAC has been a key advocate for sanctions and designations against Hezbollah."
+          },
+          {
+            "name": "Palestinian Authority",
+            "type": "policy target",
+            "description": "AIPAC lobbies against direct US funding absent PA reforms, including Taylor Force Act."
+          },
+          {
+            "name": "American Enterprise Institute (AEI)",
+            "type": "think tank ally",
+            "description": "Conservative think tank whose scholars often align with AIPAC on Middle East policy."
+          },
+          {
+            "name": "Simon Wiesenthal Center",
+            "type": "Jewish institutional ally",
+            "description": "Jewish human rights organization that coordinates with AIPAC on antisemitism advocacy."
+          },
+          {
+            "name": "Israel Defense Forces (IDF)",
+            "type": "defense relationship",
+            "description": "AIPAC advocates for continued US military aid and defense cooperation with the IDF."
+          },
+          {
+            "name": "UN General Assembly",
+            "type": "diplomatic target",
+            "description": "AIPAC lobbies against anti-Israel UN resolutions and for US veto protection at the Security Council."
           }
         ],
         "id": "aipac"
@@ -3662,7 +3804,7 @@
       {
         "name": "Notable Jewish Political Figures (US)",
         "type": "individual profiles",
-        "description": "Jewish Americans have been disproportionately represented in US politics. Chuck Schumer (Jewish) became the first Jewish Senate Majority Leader. 8 Jewish justices have served on the Supreme Court (Brandeis, Cardozo, Frankfurter, Goldberg, Fortas, Ginsburg, Breyer, Kagan). Henry Kissinger and countless others have served in cabinet positions. Jews constitute ~2% of the US population but have held ~10% of Senate seats.",
+        "description": "Jewish Americans have been represented in US politics at every level far beyond their ~2% share of the population. Chuck Schumer became the first Jewish Senate Majority Leader in 2021. 8 Jewish justices have served on the Supreme Court (Brandeis, Cardozo, Frankfurter, Goldberg, Fortas, Ginsburg, Breyer, Kagan). Henry Kissinger served as Secretary of State and National Security Advisor. In the Biden administration alone, key Jewish officials included Secretary of State Antony Blinken, AG Merrick Garland, Treasury Secretary Janet Yellen, DHS Secretary Alejandro Mayorkas, and multiple Chiefs of Staff. Jews have constituted ~10% of Senate seats historically despite being ~2% of the population. Joseph Lieberman became the first Jewish candidate on a major party presidential ticket in 2000.",
         "website": "",
         "individuals": [
           {
@@ -3694,6 +3836,156 @@
             "role": "US Attorney General",
             "bio": "US Attorney General.",
             "id": "merrick-garland"
+          },
+          {
+            "id": "henry-kissinger",
+            "name": "Henry Kissinger",
+            "role": "Former Secretary of State & National Security Advisor",
+            "bio": "German-born American diplomat. Secretary of State (1973-1977) and National Security Advisor (1969-1975) under Nixon and Ford. Nobel Peace Prize 1973. One of the most influential foreign policy figures of the 20th century. Died December 2023."
+          },
+          {
+            "id": "rahm-emanuel",
+            "name": "Rahm Emanuel",
+            "role": "US Ambassador to Japan / Former Chicago Mayor",
+            "bio": "US Ambassador to Japan since 2022. Previously White House Chief of Staff under Obama (2009-2010), Mayor of Chicago (2011-2019), and US Representative from Illinois. Known for aggressive political style."
+          },
+          {
+            "id": "dianne-feinstein",
+            "name": "Dianne Feinstein",
+            "role": "Former US Senator (California)",
+            "bio": "Longest-serving female senator in US history. Served California 1992-2023. Chaired Senate Intelligence Committee. First female mayor of San Francisco. Died September 2023."
+          },
+          {
+            "id": "adam-schiff",
+            "name": "Adam Schiff",
+            "role": "US Senator (California)",
+            "bio": "US Senator from California since 2024. Previously US Representative (2001-2024). Chaired House Intelligence Committee. Led first impeachment of President Trump."
+          },
+          {
+            "id": "jerry-nadler",
+            "name": "Jerry Nadler",
+            "role": "US Representative (New York)",
+            "bio": "US Representative from New York since 1992. Chaired House Judiciary Committee. One of the longest-serving members of Congress."
+          },
+          {
+            "id": "jared-kushner",
+            "name": "Jared Kushner",
+            "role": "Former Senior White House Advisor",
+            "bio": "Senior Advisor to President Trump (2017-2021). Key architect of Abraham Accords. Real estate developer and publisher. Married to Ivanka Trump."
+          },
+          {
+            "id": "stephen-miller",
+            "name": "Stephen Miller",
+            "role": "White House Deputy Chief of Staff for Policy",
+            "bio": "Senior policy advisor to President Trump. Architect of immigration policy. Currently Deputy Chief of Staff for Policy in Trump's second term."
+          },
+          {
+            "id": "gary-gensler",
+            "name": "Gary Gensler",
+            "role": "Former SEC Chairman",
+            "bio": "Chairman of SEC (2021-2025). Previously Chair of CFTC under Obama. Former Goldman Sachs partner. MIT professor."
+          },
+          {
+            "id": "alejandro-mayorkas",
+            "name": "Alejandro Mayorkas",
+            "role": "Former Secretary of Homeland Security",
+            "bio": "First Latino and first immigrant to serve as DHS Secretary (2021-2025). Born in Havana to Cuban Jewish family that fled the Holocaust. Previously Deputy Secretary of DHS."
+          },
+          {
+            "id": "ron-klain",
+            "name": "Ron Klain",
+            "role": "Former White House Chief of Staff",
+            "bio": "White House Chief of Staff under Biden (2021-2023). Previously Chief of Staff to Vice Presidents Gore and Biden. Led Obama's Ebola response."
+          },
+          {
+            "id": "jeff-zients",
+            "name": "Jeff Zients",
+            "role": "Former White House Chief of Staff",
+            "bio": "White House Chief of Staff under Biden (2023-2025). Previously COVID-19 Response Coordinator. Former director of the National Economic Council."
+          },
+          {
+            "id": "elena-kagan",
+            "name": "Elena Kagan",
+            "role": "US Supreme Court Justice",
+            "bio": "Associate Justice of the Supreme Court since 2010, appointed by Obama. First female Solicitor General. Former Harvard Law School Dean."
+          },
+          {
+            "id": "stephen-breyer",
+            "name": "Stephen Breyer",
+            "role": "Former US Supreme Court Justice",
+            "bio": "Associate Justice of the Supreme Court (1994-2022), appointed by Clinton. Known for pragmatic approach to constitutional interpretation."
+          },
+          {
+            "id": "ruth-bader-ginsburg",
+            "name": "Ruth Bader Ginsburg",
+            "role": "Former US Supreme Court Justice",
+            "bio": "Associate Justice (1993-2020), appointed by Clinton. Pioneer of gender equality law. Cultural icon known as \"Notorious RBG.\" Died September 2020."
+          },
+          {
+            "id": "joseph-lieberman",
+            "name": "Joseph Lieberman",
+            "role": "Former US Senator (Connecticut)",
+            "bio": "US Senator from Connecticut (1989-2013). First Jewish candidate on a major party presidential ticket (2000, as Al Gore's VP pick). Independent Democrat. Died March 2024."
+          },
+          {
+            "id": "al-franken",
+            "name": "Al Franken",
+            "role": "Former US Senator (Minnesota)",
+            "bio": "US Senator from Minnesota (2009-2018). Previously a comedian and writer on Saturday Night Live. Resigned amid misconduct allegations."
+          },
+          {
+            "id": "barney-frank",
+            "name": "Barney Frank",
+            "role": "Former US Representative (Massachusetts)",
+            "bio": "US Representative (1981-2013). Co-author of Dodd-Frank Wall Street Reform Act. First openly gay member of Congress."
+          },
+          {
+            "id": "carl-levin",
+            "name": "Carl Levin",
+            "role": "Former US Senator (Michigan)",
+            "bio": "Longest-serving US Senator in Michigan history (1979-2015). Chaired Senate Armed Services Committee. Known for oversight of Pentagon and Wall Street."
+          },
+          {
+            "id": "arlen-specter",
+            "name": "Arlen Specter",
+            "role": "Former US Senator (Pennsylvania)",
+            "bio": "US Senator from Pennsylvania (1981-2011). Switched from Republican to Democrat in 2009. Former Philadelphia DA and Warren Commission staffer."
+          },
+          {
+            "id": "richard-blumenthal",
+            "name": "Richard Blumenthal",
+            "role": "US Senator (Connecticut)",
+            "bio": "US Senator from Connecticut since 2011. Previously Connecticut Attorney General for 20 years. Known for consumer protection advocacy."
+          },
+          {
+            "id": "brian-schatz",
+            "name": "Brian Schatz",
+            "role": "US Senator (Hawaii)",
+            "bio": "US Senator from Hawaii since 2012. Progressive Democrat focused on climate change and education policy."
+          },
+          {
+            "id": "nita-lowey",
+            "name": "Nita Lowey",
+            "role": "Former US Representative (New York)",
+            "bio": "US Representative from New York (1989-2021). First woman to chair House Appropriations Committee. Major advocate for US foreign aid to Israel."
+          },
+          {
+            "id": "jamie-raskin",
+            "name": "Jamie Raskin",
+            "role": "US Representative (Maryland)",
+            "bio": "US Representative from Maryland since 2017. Led second impeachment of President Trump. Constitutional law professor at American University."
+          },
+          {
+            "id": "debbie-wasserman-schultz",
+            "name": "Debbie Wasserman Schultz",
+            "role": "US Representative (Florida)",
+            "bio": "US Representative from Florida since 2005. Former chair of the Democratic National Committee (2011-2016)."
+          },
+          {
+            "id": "lee-zeldin",
+            "name": "Lee Zeldin",
+            "role": "EPA Administrator",
+            "bio": "EPA Administrator in Trump's second term. Previously US Representative from New York (2015-2023). First Jewish Republican elected to Congress from New York in over a century."
           }
         ],
         "id": "notable-jewish-political-figures-us",
@@ -3732,6 +4024,94 @@
             "name": "Chuck Schumer",
             "type": "Senate leader",
             "description": "Chuck Schumer (Jewish) is the first Jewish Senate Majority Leader in US history."
+          },
+          {
+            "name": "US House of Representatives",
+            "type": "political body",
+            "description": "Numerous Jewish members have served in the House, often in leadership positions."
+          },
+          {
+            "name": "White House",
+            "type": "executive branch",
+            "description": "Jewish Americans have served as Chiefs of Staff, senior advisors, and cabinet secretaries across administrations."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "lobbying relationship",
+            "description": "Many Jewish politicians maintain close relationships with AIPAC, the most powerful pro-Israel lobbying group.",
+            "entryId": "aipac"
+          },
+          {
+            "name": "Democratic Party",
+            "type": "political affiliation",
+            "description": "Historically ~70% of Jewish Americans vote Democratic, and most Jewish politicians have been Democrats."
+          },
+          {
+            "name": "Republican Party",
+            "type": "political affiliation",
+            "description": "A significant minority of Jewish politicians serve as Republicans, including Lee Zeldin and former Senator Arlen Specter."
+          },
+          {
+            "name": "Anti-Defamation League (ADL)",
+            "type": "civil rights ally",
+            "description": "Jewish politicians frequently work with the ADL on antisemitism and civil rights legislation.",
+            "entryId": "anti-defamation-league-adl"
+          },
+          {
+            "name": "American Jewish Committee (AJC)",
+            "type": "communal organization",
+            "description": "AJC regularly engages with Jewish elected officials on domestic and foreign policy."
+          },
+          {
+            "name": "Israel",
+            "type": "foreign policy",
+            "description": "US-Israel relations are a key issue for many Jewish politicians, with most supporting strong bilateral ties."
+          },
+          {
+            "name": "Abraham Accords",
+            "type": "diplomatic achievement",
+            "description": "Jared Kushner was the primary architect of the Abraham Accords normalizing Israel-Arab relations."
+          },
+          {
+            "name": "US Department of Justice",
+            "type": "executive branch",
+            "description": "Multiple Jewish AGs have served, including Merrick Garland, Edward Levi, and others."
+          },
+          {
+            "name": "US Department of Treasury",
+            "type": "executive branch",
+            "description": "Jewish Treasury Secretaries include Janet Yellen, Jack Lew, Robert Rubin, Larry Summers, and Steven Mnuchin."
+          },
+          {
+            "name": "Harvard Law School",
+            "type": "educational pipeline",
+            "description": "Disproportionate number of Jewish political figures graduated from Harvard Law, including multiple Supreme Court justices."
+          },
+          {
+            "name": "Yale Law School",
+            "type": "educational pipeline",
+            "description": "Multiple Jewish Supreme Court justices and politicians attended Yale Law School."
+          },
+          {
+            "name": "Jewish state governors",
+            "type": "state politics",
+            "description": "Multiple Jewish Americans serve or have served as state governors, including Josh Shapiro, Jared Polis, and J.B. Pritzker.",
+            "entryId": "jewish-state-governors-us"
+          },
+          {
+            "name": "Goldman Sachs",
+            "type": "finance connection",
+            "description": "Several Jewish political figures transitioned between Goldman Sachs and government, including Gary Gensler and Robert Rubin."
+          },
+          {
+            "name": "Federalist Society",
+            "type": "legal network",
+            "description": "Some conservative Jewish legal figures have been associated with the Federalist Society."
+          },
+          {
+            "name": "National Security Council",
+            "type": "executive branch",
+            "description": "Henry Kissinger served as National Security Advisor. Jewish Americans continue to serve in senior NSC roles."
           }
         ],
         "category": "Notable Individuals"
@@ -26299,6 +26679,176 @@
         "type": "Criminal Network / Intelligence-Linked Operation",
         "description": "The most comprehensive mapping of the Jeffrey Epstein and Ghislaine Maxwell network, documenting 561 connected individuals. Sources include: the seized black book (1,571 contacts taken by butler Alfredo Rodriguez), Lolita Express flight logs (1995-2013), the 2008 non-prosecution agreement (NPA), the 2019 SDNY indictment, the 2021 Maxwell trial, the 2024 mass document unsealing (170+ identified names), JPMorgan communications ($365M settlement), Deutsche Bank failures ($150M fine), Leon Black payments ($158M), FBI raid evidence, victim depositions, Victims' Compensation Fund records ($121M to 135+ claimants), Palm Beach PD files, Paris apartment investigation, USVI AG filings, and investigative journalism. Network spans Wall Street, Hollywood, Silicon Valley, Washington DC, Buckingham Palace, European royalty, Middle Eastern monarchies, Israeli intelligence, academia, fashion, media empires, the modeling industry, the art world, philanthropy, and alleged intelligence services.",
         "founded": 1988
+      },
+      {
+        "id": "jewish-state-governors-us",
+        "name": "Jewish State Governors (US)",
+        "type": "political profiles",
+        "category": "Government & Diplomacy",
+        "description": "Jewish Americans have served as state governors across the United States since Moses Alexander became Idaho's governor in 1915 — the first Jewish governor in US history. As of 2025, three sitting governors are Jewish: Josh Shapiro (Pennsylvania), Jared Polis (Colorado), and J.B. Pritzker (Illinois), all Democrats governing major states. Historically, Jewish governors have served in states including New York, Connecticut, Oregon, Rhode Island, Maryland, Pennsylvania, Vermont, Hawaii, and others. Several Jewish governors have gone on to prominent federal roles, including Abraham Ribicoff who became a US Senator and HEW Secretary, and Ed Rendell who chaired the Democratic National Committee.",
+        "website": "",
+        "individuals": [
+          {
+            "id": "josh-shapiro",
+            "name": "Josh Shapiro",
+            "role": "Governor of Pennsylvania (2023-present)",
+            "bio": "Governor of Pennsylvania since January 2023. Previously served as Pennsylvania Attorney General (2017-2023). Won the 2022 gubernatorial race by 15 points. Considered a rising star in the Democratic Party."
+          },
+          {
+            "id": "jared-polis",
+            "name": "Jared Polis",
+            "role": "Governor of Colorado (2019-present)",
+            "bio": "Governor of Colorado since 2019, re-elected in 2022. First openly gay man elected governor of any US state. Previously US Representative. Tech entrepreneur and founder of several companies."
+          },
+          {
+            "id": "jb-pritzker",
+            "name": "J.B. Pritzker",
+            "role": "Governor of Illinois (2019-present)",
+            "bio": "Governor of Illinois since 2019, re-elected in 2022. Billionaire businessman and member of the Pritzker family (Hyatt Hotels). Major Democratic donor before entering politics."
+          },
+          {
+            "id": "moses-alexander",
+            "name": "Moses Alexander",
+            "role": "Governor of Idaho (1915-1919)",
+            "bio": "First Jewish governor in US history. Born in Bavaria, Germany. Served as mayor of Boise before becoming governor. Democrat who enacted progressive reforms."
+          },
+          {
+            "id": "abraham-ribicoff",
+            "name": "Abraham Ribicoff",
+            "role": "Governor of Connecticut (1955-1961)",
+            "bio": "Governor of Connecticut 1955-1961. Later served as US Senator (1963-1981) and HEW Secretary under JFK. Famously criticized Chicago police at the 1968 Democratic Convention."
+          },
+          {
+            "id": "herbert-lehman",
+            "name": "Herbert Lehman",
+            "role": "Governor of New York (1933-1942)",
+            "bio": "Governor of New York during the Great Depression and early WWII. Later US Senator (1949-1957). Member of the Lehman Brothers banking family. Major supporter of civil liberties."
+          },
+          {
+            "id": "ed-rendell",
+            "name": "Ed Rendell",
+            "role": "Governor of Pennsylvania (2003-2011)",
+            "bio": "Governor of Pennsylvania 2003-2011. Previously mayor of Philadelphia (1992-2000) and DA of Philadelphia. Chaired the Democratic National Committee (2000-2001)."
+          },
+          {
+            "id": "marvin-mandel",
+            "name": "Marvin Mandel",
+            "role": "Governor of Maryland (1969-1979)",
+            "bio": "Governor of Maryland 1969-1979. Served as Speaker of the Maryland House of Delegates before becoming governor. Later convicted of mail fraud."
+          },
+          {
+            "id": "milton-shapp",
+            "name": "Milton Shapp",
+            "role": "Governor of Pennsylvania (1971-1979)",
+            "bio": "Governor of Pennsylvania 1971-1979. First Jewish governor of Pennsylvania. Cable television pioneer. Ran for president in 1976."
+          },
+          {
+            "id": "madeleine-kunin",
+            "name": "Madeleine Kunin",
+            "role": "Governor of Vermont (1985-1991)",
+            "bio": "First female governor of Vermont and first Jewish woman to serve as a state governor. Later served as US Ambassador to Switzerland under Clinton. Born in Zurich to a Jewish family that fled Nazi persecution."
+          },
+          {
+            "id": "frank-licht",
+            "name": "Frank Licht",
+            "role": "Governor of Rhode Island (1969-1973)",
+            "bio": "Governor of Rhode Island 1969-1973. First Jewish governor of Rhode Island. Previously a state senator. Appointed the first African American to the Rhode Island judiciary."
+          },
+          {
+            "id": "linda-lingle",
+            "name": "Linda Lingle",
+            "role": "Governor of Hawaii (2002-2010)",
+            "bio": "First female and first Jewish governor of Hawaii. First Republican governor of the state in 40 years. Previously mayor of Maui. Converted to Judaism."
+          },
+          {
+            "id": "neil-goldschmidt",
+            "name": "Neil Goldschmidt",
+            "role": "Governor of Oregon (1987-1991)",
+            "bio": "Governor of Oregon 1987-1991. Previously US Secretary of Transportation under Carter and mayor of Portland."
+          },
+          {
+            "id": "julius-meier",
+            "name": "Julius Meier",
+            "role": "Governor of Oregon (1931-1935)",
+            "bio": "Governor of Oregon as an Independent. President of Meier & Frank department store chain. Supported public power development and highway construction."
+          },
+          {
+            "id": "arthur-seligman",
+            "name": "Arthur Seligman",
+            "role": "Governor of New Mexico (1931-1933)",
+            "bio": "Governor of New Mexico 1931-1933. Member of the prominent Seligman banking and mercantile family of the Southwest. Died in office."
+          },
+          {
+            "id": "ernest-gruening",
+            "name": "Ernest Gruening",
+            "role": "Governor/Senator of Alaska (1939-1969)",
+            "bio": "Governor of the Territory of Alaska (1939-1953) and one of Alaska's first US Senators (1959-1969). One of only two senators to vote against the Gulf of Tonkin Resolution."
+          }
+        ],
+        "connections": [
+          {
+            "name": "Notable Jewish Political Figures (US)",
+            "type": "parent category",
+            "description": "Jewish governors are a subset of the broader landscape of Jewish American political leadership.",
+            "entryId": "notable-jewish-political-figures-us"
+          },
+          {
+            "name": "Democratic Party",
+            "type": "political affiliation",
+            "description": "The majority of Jewish governors have been Democrats, including all three current Jewish governors."
+          },
+          {
+            "name": "Republican Party",
+            "type": "political affiliation",
+            "description": "Some Jewish governors have served as Republicans, notably Linda Lingle of Hawaii and historically a few others."
+          },
+          {
+            "name": "Pennsylvania",
+            "type": "state",
+            "description": "Pennsylvania has had three Jewish governors: Milton Shapp, Ed Rendell, and Josh Shapiro."
+          },
+          {
+            "name": "AIPAC (American Israel Public Affairs Committee)",
+            "type": "lobbying relationship",
+            "description": "AIPAC engages with governors on state-level anti-BDS legislation and Israel trade relationships.",
+            "entryId": "aipac"
+          },
+          {
+            "name": "Jewish Federations of North America",
+            "type": "communal connection",
+            "description": "Jewish governors often engage with local federations on community issues."
+          },
+          {
+            "name": "National Governors Association",
+            "type": "governing body",
+            "description": "Jewish governors participate in the NGA alongside their peers from all states."
+          },
+          {
+            "name": "US Senate",
+            "type": "political pathway",
+            "description": "Several Jewish governors went on to serve in the US Senate, including Abraham Ribicoff, Herbert Lehman, and Ernest Gruening."
+          },
+          {
+            "name": "Anti-BDS legislation",
+            "type": "policy issue",
+            "description": "Several Jewish governors have signed state-level anti-BDS legislation."
+          },
+          {
+            "name": "Israel",
+            "type": "diplomatic relationship",
+            "description": "Jewish governors frequently lead trade and diplomatic missions to Israel."
+          },
+          {
+            "name": "Pritzker family",
+            "type": "business dynasty",
+            "description": "J.B. Pritzker is a member of the billionaire Pritzker family that founded Hyatt Hotels."
+          },
+          {
+            "name": "Democratic National Committee",
+            "type": "political organization",
+            "description": "Ed Rendell chaired the DNC. Josh Shapiro and Pritzker are influential within national Democratic politics."
+          }
+        ]
       }
     ],
     "Israel": [
