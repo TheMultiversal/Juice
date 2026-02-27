@@ -23527,230 +23527,795 @@
         "id": "epstein-network",
         "name": "The Epstein Network",
         "category": "Controversy",
-        "summary": "The network of associates, enablers, and connected individuals surrounding Jeffrey Epstein and Ghislaine Maxwell. This entry maps the documented connections between Epstein and prominent figures across finance, politics, technology, media, academia, and royalty. Connections are based on flight logs, court documents, Epstein's black book, financial records, deposition testimony, and investigative journalism.",
+        "summary": "The network of associates, enablers, victims, prosecutors, and connected individuals surrounding Jeffrey Epstein and Ghislaine Maxwell. This entry maps 144 documented connections based on court filings, flight logs (Lolita Express manifests), Epstein's black book (containing 1,571 names), financial records, deposition testimony, Maxwell trial exhibits, the 2008 non-prosecution agreement, and investigative journalism including the Miami Herald's \"Perversion of Justice\" series. The network spans finance, politics, technology, media, academia, royalty, entertainment, and intelligence communities across multiple countries.",
         "website": "",
         "connections": [
           {
             "source": "epstein-network",
             "target": "wexner-foundation",
-            "type": "Financial – Wexner was Epstein's only known major client"
+            "type": "Financial - Wexner was Epstein's only known major client, gave him power of attorney"
           },
           {
             "source": "epstein-network",
-            "target": "apollo-global",
-            "type": "Financial – Leon Black paid Epstein $158M in advisory fees"
+            "target": "apollo-global-management",
+            "type": "Financial - Leon Black paid $158M in advisory fees (2012-2017)"
+          },
+          {
+            "source": "epstein-network",
+            "target": "jpmorgan-chase",
+            "type": "Financial - JP Morgan kept Epstein as client 15+ years, $365M settlement"
+          },
+          {
+            "source": "epstein-network",
+            "target": "deutsche-bank",
+            "type": "Financial - Deutsche Bank managed Epstein accounts (2013-2018), $150M fine"
           },
           {
             "source": "epstein-network",
             "target": "barclays",
-            "type": "Financial – Jes Staley brought Epstein as JP Morgan client"
+            "type": "Financial - Jes Staley (CEO) had 1,200+ emails with Epstein"
           },
           {
             "source": "epstein-network",
-            "target": "microsoft",
-            "type": "Technology – Bill Gates met Epstein multiple times post-conviction"
+            "target": "goldman-sachs-historic",
+            "type": "Financial - Multiple Goldman executives in black book"
+          },
+          {
+            "source": "epstein-network",
+            "target": "microsoft-corporation",
+            "type": "Technology - Bill Gates met Epstein multiple times post-conviction"
+          },
+          {
+            "source": "epstein-network",
+            "target": "openai",
+            "type": "Technology - Reid Hoffman (board) met Epstein post-conviction"
+          },
+          {
+            "source": "epstein-network",
+            "target": "mit-media-lab",
+            "type": "Academic - $7.5M in concealed Epstein donations"
+          },
+          {
+            "source": "epstein-network",
+            "target": "harvard-university",
+            "type": "Academic - Multiple Harvard faculty connected, Epstein donated to Harvard"
+          },
+          {
+            "source": "epstein-network",
+            "target": "fox-news-channel",
+            "type": "Media - Rupert Murdoch in black book"
+          },
+          {
+            "source": "epstein-network",
+            "target": "walt-disney-company",
+            "type": "Media - Michael Ovitz (former Disney president) in black book"
+          },
+          {
+            "source": "epstein-network",
+            "target": "world-jewish-congress",
+            "type": "Organization - Edgar Bronfman Sr. (WJC president) in black book"
           }
         ],
         "individuals": [
           {
             "name": "Jeffrey Epstein",
             "id": "jeffrey-epstein",
-            "role": "Principal"
+            "role": "Principal - Financier & Convicted Sex Trafficker"
           },
           {
             "name": "Ghislaine Maxwell",
             "id": "ghislaine-maxwell",
-            "role": "Chief Associate & Convicted Trafficker"
-          },
-          {
-            "name": "Leslie Wexner",
-            "id": "leslie-wexner",
-            "role": "Primary Financial Client"
-          },
-          {
-            "name": "Leon Black",
-            "id": "leon-black",
-            "role": "Financial Associate ($158M in fees)"
-          },
-          {
-            "name": "Bill Gates",
-            "id": "bill-gates",
-            "role": "Post-Conviction Associate"
-          },
-          {
-            "name": "Prince Andrew",
-            "id": "prince-andrew",
-            "role": "Close Associate (settled civil suit)"
-          },
-          {
-            "name": "Ehud Barak",
-            "id": "ehud-barak",
-            "role": "Business Partner (Carbyne)"
-          },
-          {
-            "name": "Alan Dershowitz",
-            "id": "alan-dershowitz-ind",
-            "role": "Legal Advisor & Associate"
-          },
-          {
-            "name": "Bill Clinton",
-            "id": "bill-clinton-individual",
-            "role": "Flight Log Passenger (26+ flights)"
-          },
-          {
-            "name": "Donald Trump",
-            "id": "donald-trump",
-            "role": "Former Social Associate"
-          },
-          {
-            "name": "Jes Staley",
-            "id": "jes-staley",
-            "role": "Banking Associate (1,200+ emails)"
-          },
-          {
-            "name": "Reid Hoffman",
-            "id": "reid-hoffman",
-            "role": "Post-Conviction Meeting Attendee"
-          },
-          {
-            "name": "Steven Pinker",
-            "id": "steven-pinker",
-            "role": "Legal Consultation Provider"
-          },
-          {
-            "name": "Mort Zuckerman",
-            "id": "mort-zuckerman",
-            "role": "Black Book Contact & Social Associate"
-          },
-          {
-            "name": "Glenn Dubin",
-            "id": "glenn-dubin",
-            "role": "Close Friend (20+ years)"
-          },
-          {
-            "name": "Eva Andersson-Dubin",
-            "id": "eva-andersson-dubin",
-            "role": "Former Girlfriend"
-          },
-          {
-            "name": "Peter Mandelson",
-            "id": "peter-mandelson",
-            "role": "Black Book Contact & Associate"
-          },
-          {
-            "name": "Jean-Luc Brunel",
-            "id": "jean-luc-brunel",
-            "role": "Modeling Agent & Associate (died in custody)"
+            "role": "Chief Procurer & Convicted Sex Trafficker (20-yr sentence)"
           },
           {
             "name": "Sarah Kellen",
             "id": "sarah-kellen",
-            "role": "Personal Scheduler & Alleged Recruiter"
+            "role": "Personal Scheduler & Alleged Recruiter (NPA recipient)"
           },
           {
             "name": "Nadia Marcinkova",
             "id": "nadia-marcinkova",
-            "role": "Victim Turned Associate"
-          },
-          {
-            "name": "Alexander Acosta",
-            "id": "alexander-acosta",
-            "role": "Prosecutor (negotiated plea deal)"
-          },
-          {
-            "name": "Steve Bannon",
-            "id": "steve-bannon",
-            "role": "Post-Arrest Visitor"
-          },
-          {
-            "name": "Joichi Ito",
-            "id": "joichi-ito",
-            "role": "MIT Media Lab (concealed donations)"
-          },
-          {
-            "name": "Lawrence Krauss",
-            "id": "lawrence-krauss",
-            "role": "Academic Associate & Public Defender"
-          },
-          {
-            "name": "George Mitchell",
-            "id": "george-mitchell",
-            "role": "Named in Court Documents"
-          },
-          {
-            "name": "Bill Richardson",
-            "id": "bill-richardson",
-            "role": "Named in Court Documents"
-          },
-          {
-            "name": "Robert Maxwell",
-            "id": "robert-maxwell",
-            "role": "Ghislaine's Father (intelligence ties)"
-          },
-          {
-            "name": "Dennis Hastert",
-            "id": "denny-hastert",
-            "role": "Contact (later convicted of abuse)"
-          },
-          {
-            "name": "Stuart Pivar",
-            "id": "stuart-pivar",
-            "role": "Self-Described Oldest Friend"
+            "role": "Victim Turned Associate (NPA recipient)"
           },
           {
             "name": "Lesley Groff",
             "id": "leslie-groff",
-            "role": "Personal Assistant"
+            "role": "Personal Assistant (NPA recipient)"
           },
           {
             "name": "Adriana Ross",
             "id": "adriana-ross",
-            "role": "Inner Circle Associate"
+            "role": "Inner Circle Associate (NPA recipient)"
           },
           {
-            "name": "Henry Kissinger",
-            "id": "henry-kissinger",
-            "role": "Black Book Contact"
+            "name": "Jean-Luc Brunel",
+            "id": "jean-luc-brunel",
+            "role": "MC2 Modeling Agent - Found Dead in Custody Feb 2022"
+          },
+          {
+            "name": "Darren Indyke",
+            "id": "darren-indyke",
+            "role": "Longtime Lawyer & Estate Co-Executor"
+          },
+          {
+            "name": "Richard Kahn",
+            "id": "richard-kahn",
+            "role": "Financial Manager & Estate Co-Executor"
+          },
+          {
+            "name": "Virginia Giuffre",
+            "id": "virginia-giuffre",
+            "role": "Key Victim & Accuser - Recruited at 16 at Mar-a-Lago"
+          },
+          {
+            "name": "Courtney Wild",
+            "id": "courtney-wild",
+            "role": "Victim & Advocate - Crime Victims' Rights Act plaintiff"
+          },
+          {
+            "name": "Annie Farmer",
+            "id": "annie-farmer",
+            "role": "Victim - Testified at Maxwell Trial"
+          },
+          {
+            "name": "Carolyn Andriano",
+            "id": "carolyn-andriano",
+            "role": "Victim - Recruited at 14, testified at Maxwell Trial"
+          },
+          {
+            "name": "Maria Farmer",
+            "id": "maria-farmer",
+            "role": "First Known Victim to Report to FBI (1996)"
+          },
+          {
+            "name": "Leslie Wexner",
+            "id": "leslie-wexner",
+            "role": "Primary Financial Client - Gave Power of Attorney & $77M Townhouse"
+          },
+          {
+            "name": "Leon Black",
+            "id": "leon-black",
+            "role": "Apollo Global - Paid $158M in Advisory Fees (2012-2017)"
+          },
+          {
+            "name": "Jes Staley",
+            "id": "jes-staley",
+            "role": "Barclays/JP Morgan - 1,200+ Personal Emails with Epstein"
+          },
+          {
+            "name": "Jamie Dimon",
+            "id": "jamie-dimon",
+            "role": "JPMorgan Chase CEO - Bank Kept Epstein as Client 15+ Years ($365M Settlement)"
+          },
+          {
+            "name": "Mary Erdoes",
+            "id": "mary-erdoes",
+            "role": "JP Morgan Wealth Mgmt CEO - Bank Facilitated Epstein's Accounts"
+          },
+          {
+            "name": "Rosemary Vrablic",
+            "id": "deutsche-bank-rel",
+            "role": "Deutsche Bank - Personally Managed Epstein Accounts ($150M Fine)"
+          },
+          {
+            "name": "Steven Hoffenberg",
+            "id": "steven-hoffenberg",
+            "role": "Business Partner - Co-attempted Pan Am Takeover (d. 2022)"
+          },
+          {
+            "name": "Alan \"Ace\" Greenberg",
+            "id": "alan-greenberg",
+            "role": "Bear Stearns CEO - Hired Epstein Without College Degree"
+          },
+          {
+            "name": "James Cayne",
+            "id": "james-cayne",
+            "role": "Bear Stearns CEO - Early Epstein Colleague"
+          },
+          {
+            "name": "Glenn Dubin",
+            "id": "glenn-dubin",
+            "role": "Highbridge Capital - Close Friend 20+ Years, Giuffre Accuser"
+          },
+          {
+            "name": "Eva Andersson-Dubin",
+            "id": "eva-andersson-dubin",
+            "role": "Former Girlfriend of Epstein, Named Backup Executor"
+          },
+          {
+            "name": "Boris Nikolic",
+            "id": "boris-nikolic",
+            "role": "Biotech Investor - Named Backup Executor in Will"
+          },
+          {
+            "name": "Bill Clinton",
+            "id": "bill-clinton-individual",
+            "role": "Former President - 26+ Flights on Lolita Express"
+          },
+          {
+            "name": "Donald Trump",
+            "id": "donald-trump",
+            "role": "Former President - Pre-2004 Social Associate, Banned From Mar-a-Lago"
+          },
+          {
+            "name": "Prince Andrew",
+            "id": "prince-andrew",
+            "role": "Duke of York - Settled Civil Suit ($12M), Stripped of Titles"
+          },
+          {
+            "name": "Ehud Barak",
+            "id": "ehud-barak",
+            "role": "Former Israeli PM - Carbyne Business Partner, Visited Post-Conviction"
+          },
+          {
+            "name": "Tony Blair",
+            "id": "tony-blair",
+            "role": "Former UK PM - Black Book, Post-Office Visits"
+          },
+          {
+            "name": "Bill Richardson",
+            "id": "bill-richardson",
+            "role": "Former NM Governor - Named in Court Documents (d. 2023)"
+          },
+          {
+            "name": "George Mitchell",
+            "id": "george-mitchell",
+            "role": "Former Senate Majority Leader - Named in Court Documents"
+          },
+          {
+            "name": "Dennis Hastert",
+            "id": "denny-hastert",
+            "role": "Former House Speaker - Epstein Contact (Later Convicted of Abuse)"
+          },
+          {
+            "name": "Andrew Cuomo",
+            "id": "andrew-cuomo",
+            "role": "Former NY Governor - Black Book Contact"
+          },
+          {
+            "name": "Al Gore",
+            "id": "al-gore",
+            "role": "Former Vice President - Black Book Contact"
+          },
+          {
+            "name": "John Kerry",
+            "id": "john-kerry",
+            "role": "Former Secretary of State - Black Book Contact"
+          },
+          {
+            "name": "George Pataki",
+            "id": "george-pataki",
+            "role": "Former NY Governor - Black Book Contact"
+          },
+          {
+            "name": "Alexander Acosta",
+            "id": "alexander-acosta",
+            "role": "Former US Attorney - Negotiated Lenient 2008 Plea Deal"
+          },
+          {
+            "name": "William Barr",
+            "id": "bill-barr",
+            "role": "AG During Epstein Death - Father Hired Epstein at Dalton"
+          },
+          {
+            "name": "Donald Barr",
+            "id": "donald-barr",
+            "role": "Dalton School Headmaster - Hired Epstein Without Degree"
+          },
+          {
+            "name": "Chris Tucker",
+            "id": "chris-tucker",
+            "role": "Actor - 2002 Africa Flight with Clinton on Lolita Express"
+          },
+          {
+            "name": "Kevin Spacey",
+            "id": "kevin-spacey",
+            "role": "Actor - 2002 Africa Flight with Clinton on Lolita Express"
+          },
+          {
+            "name": "Alan Dershowitz",
+            "id": "alan-dershowitz-ind",
+            "role": "Defense Lawyer - Negotiated 2008 Deal, Accused by Giuffre"
+          },
+          {
+            "name": "Ken Starr",
+            "id": "ken-starr",
+            "role": "Defense Lawyer - Negotiated 2008 Deal (d. 2022)"
+          },
+          {
+            "name": "Jay Lefkowitz",
+            "id": "jay-lefkowitz",
+            "role": "Defense Lawyer (Kirkland & Ellis) - 2008 Plea Negotiations"
+          },
+          {
+            "name": "Gerald Lefcourt",
+            "id": "gerald-lefcourt",
+            "role": "Defense Lawyer - Wrote Leniency Letter for Epstein"
+          },
+          {
+            "name": "Martin Weinberg",
+            "id": "martin-weinberg",
+            "role": "Defense Lawyer - 2019 Federal Case"
+          },
+          {
+            "name": "David Boies",
+            "id": "david-boies",
+            "role": "Attorney - Represented Giuffre Against Maxwell"
+          },
+          {
+            "name": "Sigrid McCawley",
+            "id": "sigrid-mccawley",
+            "role": "Attorney - Lead Counsel for Giuffre, Unsealed Documents"
+          },
+          {
+            "name": "Brad Edwards",
+            "id": "brad-edwards",
+            "role": "Attorney - Represented 50+ Victims, Wrote \"Relentless Pursuit\""
+          },
+          {
+            "name": "Barry Krischer",
+            "id": "barry-krischer",
+            "role": "Palm Beach State Attorney - Criticized for Weak Prosecution"
+          },
+          {
+            "name": "Geoffrey Berman",
+            "id": "geoffrey-berman",
+            "role": "SDNY US Attorney - Oversaw 2019 Arrest & Indictment"
+          },
+          {
+            "name": "Maurene Comey",
+            "id": "maurene-comey",
+            "role": "SDNY AUSA - Maxwell Prosecution Team"
+          },
+          {
+            "name": "Judge Alison Nathan",
+            "id": "alison-nathan",
+            "role": "Federal Judge - Presided Over Maxwell Trial"
+          },
+          {
+            "name": "Greg Holbert",
+            "id": "greg-holbert",
+            "role": "Palm Beach Detective - Led Initial 2005 Investigation"
+          },
+          {
+            "name": "Michael Reiter",
+            "id": "michael-reiter",
+            "role": "Palm Beach Police Chief - Pressured Prosecutors for Charges"
+          },
+          {
+            "name": "Julie K. Brown",
+            "id": "julie-k-brown",
+            "role": "Miami Herald - \"Perversion of Justice\" Reignited Case in 2018"
           },
           {
             "name": "Lawrence Summers",
             "id": "lawrence-summers-harvard",
-            "role": "Academic Contact (Harvard)"
+            "role": "Former Harvard President & Treasury Secretary - Post-Conviction Meetings"
           },
           {
-            "name": "Harvey Weinstein",
-            "id": "harvey-weinstein",
-            "role": "Black Book Contact"
+            "name": "Steven Pinker",
+            "id": "steven-pinker",
+            "role": "Harvard - Provided Legal Advice to Epstein Defense (2007)"
           },
           {
-            "name": "Naomi Campbell",
-            "id": "naomi-campbell",
-            "role": "Flight Log & Social Circle"
+            "name": "Noam Chomsky",
+            "id": "noam-chomsky",
+            "role": "MIT - Met Epstein Multiple Times Post-Conviction"
           },
           {
-            "name": "Les Moonves",
-            "id": "les-moonves",
-            "role": "Black Book Contact"
+            "name": "Joichi Ito",
+            "id": "joichi-ito",
+            "role": "MIT Media Lab Director - Concealed $7.5M in Epstein Donations (Resigned)"
+          },
+          {
+            "name": "Nicholas Negroponte",
+            "id": "nicholas-negroponte",
+            "role": "MIT Media Lab Founder - Directed Epstein Donations"
+          },
+          {
+            "name": "Rafael Reif",
+            "id": "gabriel-bhatt",
+            "role": "MIT President - Knew of Concealed Epstein Donations (Resigned)"
+          },
+          {
+            "name": "Seth Lloyd",
+            "id": "seth-lloyd",
+            "role": "MIT Professor - Received $225K From Epstein Post-Conviction"
+          },
+          {
+            "name": "Lawrence Krauss",
+            "id": "lawrence-krauss",
+            "role": "ASU Physicist - Close Associate, Publicly Defended Epstein"
+          },
+          {
+            "name": "George Church",
+            "id": "george-church",
+            "role": "Harvard/MIT Geneticist - Accepted Epstein Research Funding"
+          },
+          {
+            "name": "Stephen Hawking",
+            "id": "stephen-hawking",
+            "role": "Physicist - Attended 2006 Conference on Epstein's Island"
+          },
+          {
+            "name": "Murray Gell-Mann",
+            "id": "murray-gell-mann",
+            "role": "Nobel Physicist - Visited Epstein Properties"
+          },
+          {
+            "name": "Danny Hillis",
+            "id": "danny-hillis",
+            "role": "Computer Scientist - Close Associate, Introduced Scientists to Epstein"
+          },
+          {
+            "name": "Robert Trivers",
+            "id": "robert-trivers",
+            "role": "Evolutionary Biologist - Received Epstein Foundation Funding"
+          },
+          {
+            "name": "Nathan Wolfe",
+            "id": "nathan-wolfe",
+            "role": "Virologist - Epstein Sat on His Advisory Board"
+          },
+          {
+            "name": "Frank Wilczek",
+            "id": "frank-wilczek",
+            "role": "Nobel Physicist - Black Book Contact"
+          },
+          {
+            "name": "Lisa Randall",
+            "id": "lisa-randall",
+            "role": "Harvard Physicist - Black Book Contact"
+          },
+          {
+            "name": "Oliver Sacks",
+            "id": "oliver-sacks",
+            "role": "Neurologist & Author - Black Book Contact"
+          },
+          {
+            "name": "Marvin Minsky",
+            "id": "marvin-minsky",
+            "role": "MIT AI Pioneer - Visited Island, Giuffre Accusation (d. 2016)"
+          },
+          {
+            "name": "John Brockman",
+            "id": "john-brockman",
+            "role": "Edge Foundation - Key Connector Between Epstein & Scientists"
+          },
+          {
+            "name": "Katinka Matson",
+            "id": "katinka-matson",
+            "role": "Edge Foundation Co-Founder - Facilitated Epstein-Science Network"
+          },
+          {
+            "name": "Bill Gates",
+            "id": "bill-gates",
+            "role": "Microsoft - Multiple Post-Conviction Meetings, Flew on Jet, Cited in Divorce"
+          },
+          {
+            "name": "Reid Hoffman",
+            "id": "reid-hoffman",
+            "role": "LinkedIn - Post-Conviction Meetings, Apologized, Donated $500K to MIT"
           },
           {
             "name": "Elon Musk",
             "id": "elon-musk-ind",
-            "role": "Photographed at Event 2011"
+            "role": "Tesla/SpaceX - Photographed with Maxwell 2011"
+          },
+          {
+            "name": "Sergey Brin",
+            "id": "sergey-brin",
+            "role": "Google Co-Founder - Reported in Epstein Dinners"
           },
           {
             "name": "Woody Allen",
             "id": "woody-allen-ind",
-            "role": "Social Associate"
+            "role": "Filmmaker - Social Dinners with Epstein"
+          },
+          {
+            "name": "Harvey Weinstein",
+            "id": "harvey-weinstein",
+            "role": "Film Producer - Black Book Contact (Convicted of Rape)"
+          },
+          {
+            "name": "Les Moonves",
+            "id": "les-moonves",
+            "role": "CBS CEO - Black Book Contact"
+          },
+          {
+            "name": "Naomi Campbell",
+            "id": "naomi-campbell",
+            "role": "Supermodel - Flight Logs & Social Events"
+          },
+          {
+            "name": "Heidi Klum",
+            "id": "heidi-klum",
+            "role": "Supermodel - Black Book Contact"
+          },
+          {
+            "name": "Elle Macpherson",
+            "id": "elle-macpherson",
+            "role": "Supermodel - Flight Logs & Social Contact"
+          },
+          {
+            "name": "David Blaine",
+            "id": "david-blaine",
+            "role": "Magician - Close Associate, Attended Events, Flight Logs"
+          },
+          {
+            "name": "David Copperfield",
+            "id": "david-copperfield",
+            "role": "Magician - Black Book, Named by Giuffre"
+          },
+          {
+            "name": "Mick Jagger",
+            "id": "mick-jagger",
+            "role": "Rolling Stones - Black Book Contact"
+          },
+          {
+            "name": "Alec Baldwin",
+            "id": "alec-baldwin",
+            "role": "Actor - Black Book Contact"
+          },
+          {
+            "name": "Ralph Fiennes",
+            "id": "ralph-fiennes",
+            "role": "Actor - Black Book Contact"
+          },
+          {
+            "name": "Dustin Hoffman",
+            "id": "dustin-hoffman",
+            "role": "Actor - Black Book Contact"
+          },
+          {
+            "name": "Courtney Love",
+            "id": "courtney-love",
+            "role": "Musician - Black Book Contact"
+          },
+          {
+            "name": "Chris Rock",
+            "id": "chris-rock",
+            "role": "Comedian - Black Book Contact"
+          },
+          {
+            "name": "Cate Blanchett",
+            "id": "cate-blanchett",
+            "role": "Actress - Black Book Contact"
+          },
+          {
+            "name": "Charlie Rose",
+            "id": "charlie-rose",
+            "role": "TV Journalist - Black Book (Later Fired for Harassment)"
+          },
+          {
+            "name": "Barbara Walters",
+            "id": "barbara-walters",
+            "role": "Journalist - Black Book Contact"
+          },
+          {
+            "name": "Diane Sawyer",
+            "id": "diane-sawyer",
+            "role": "ABC Journalist - Black Book Contact"
+          },
+          {
+            "name": "Mike Wallace",
+            "id": "mike-wallace",
+            "role": "60 Minutes - Black Book Contact"
           },
           {
             "name": "Katie Couric",
             "id": "katie-couric",
-            "role": "Dinner Attendee (2010)"
+            "role": "Journalist - 2010 Post-Conviction Dinner Attendee"
           },
           {
             "name": "George Stephanopoulos",
             "id": "george-stephanopoulos",
-            "role": "Dinner Attendee (2010)"
+            "role": "ABC News - 2010 Post-Conviction Dinner Attendee"
+          },
+          {
+            "name": "Steve Bannon",
+            "id": "steve-bannon",
+            "role": "Breitbart/WH - Visited Epstein Pre-Arrest"
+          },
+          {
+            "name": "James Patterson",
+            "id": "james-patterson",
+            "role": "Author - Wrote \"Filthy Rich\" Book on Epstein Case (2016)"
+          },
+          {
+            "name": "Mort Zuckerman",
+            "id": "mort-zuckerman",
+            "role": "Media Owner (NY Daily News) - Black Book & Social Circle"
+          },
+          {
+            "name": "Lynn Forester de Rothschild",
+            "id": "lynn-forester-de-rothschild",
+            "role": "E.L. Rothschild CEO - Introduced Epstein to Clinton Circle"
+          },
+          {
+            "name": "Edgar Bronfman Sr.",
+            "id": "edgar-bronfman-sr",
+            "role": "Seagram/WJC - Black Book Contact"
+          },
+          {
+            "name": "Thomas Pritzker",
+            "id": "thomas-pritzker",
+            "role": "Hyatt Hotels - Black Book Contact"
+          },
+          {
+            "name": "David Koch",
+            "id": "david-koch",
+            "role": "Koch Industries - Black Book Contact"
+          },
+          {
+            "name": "Ron Burkle",
+            "id": "ron-burkle",
+            "role": "Yucaipa Companies - Black Book, Clinton Circle"
+          },
+          {
+            "name": "Michael Ovitz",
+            "id": "michael-ovitz",
+            "role": "CAA/Disney - Black Book Contact"
+          },
+          {
+            "name": "Pepe Fanjul",
+            "id": "pepe-fanjul",
+            "role": "Sugar Baron - Black Book, Palm Beach Circle"
+          },
+          {
+            "name": "Alan Patricof",
+            "id": "alan-patricof",
+            "role": "Venture Capitalist - Black Book Contact"
+          },
+          {
+            "name": "Arpad Busson",
+            "id": "arpad-busson",
+            "role": "EIM Group Financier - Black Book Contact"
+          },
+          {
+            "name": "Peter Soros",
+            "id": "peter-soros",
+            "role": "George Soros Nephew - Black Book Contact"
+          },
+          {
+            "name": "Itzhak Perlman",
+            "id": "itzhak-perlman",
+            "role": "World-Famous Violinist - Black Book Contact"
+          },
+          {
+            "name": "Peter Mandelson",
+            "id": "peter-mandelson",
+            "role": "UK Politician - Black Book, Multiple Visits"
+          },
+          {
+            "name": "Sarah Ferguson",
+            "id": "sarah-ferguson",
+            "role": "Duchess of York - Andrew Used Epstein Money for Her Debt"
+          },
+          {
+            "name": "Flavio Briatore",
+            "id": "flavio-briatore",
+            "role": "F1 Team Principal - Black Book, Maxwell Circle"
+          },
+          {
+            "name": "Conrad Black",
+            "id": "conrad-black",
+            "role": "Media Baron - Black Book, Maxwell Social Circle"
+          },
+          {
+            "name": "Andrea Casiraghi",
+            "id": "andrea-casiraghi",
+            "role": "Monaco Royal Family - Black Book Contact"
+          },
+          {
+            "name": "Prince Albert II of Monaco",
+            "id": "prince-albert-monaco",
+            "role": "Sovereign Prince of Monaco - Black Book Contact"
+          },
+          {
+            "name": "Nicky Hilton",
+            "id": "nicky-hilton",
+            "role": "Socialite - Black Book Contact"
+          },
+          {
+            "name": "Vera Wang",
+            "id": "vera-wang",
+            "role": "Fashion Designer - Black Book Contact"
+          },
+          {
+            "name": "Wendi Deng",
+            "id": "wendi-deng",
+            "role": "Murdoch Ex-Wife - Black Book, Maxwell Social Circle"
+          },
+          {
+            "name": "Nacho Figueras",
+            "id": "nacho-figueras",
+            "role": "Polo Player - Social Circle"
+          },
+          {
+            "name": "Zac Goldsmith",
+            "id": "gerald-goldsmith",
+            "role": "UK Politician - Black Book Contact"
+          },
+          {
+            "name": "Isabelle de Rouvre",
+            "id": "isabelle-de-rouvre",
+            "role": "Sold Epstein Paris Apartment ($8.4M), Sued for Fraud"
+          },
+          {
+            "name": "Ivana Trump",
+            "id": "ivana-trump",
+            "role": "Trump Ex-Wife - Black Book Contact"
+          },
+          {
+            "name": "Robert Maxwell",
+            "id": "robert-maxwell",
+            "role": "Ghislaine's Father - Media Baron, Alleged Mossad/MI6/KGB (d. 1991)"
+          },
+          {
+            "name": "Isabel Maxwell",
+            "id": "elaine-maxwell",
+            "role": "Ghislaine's Twin Sister - Israeli Tech Entrepreneur"
+          },
+          {
+            "name": "Christine Maxwell",
+            "id": "christine-maxwell",
+            "role": "Ghislaine's Sister - Internet Pioneer (Magellan Search)"
+          },
+          {
+            "name": "Kevin Maxwell",
+            "id": "kevin-maxwell",
+            "role": "Ghislaine's Brother - Acquitted of Pension Fraud"
+          },
+          {
+            "name": "Ian Maxwell",
+            "id": "ian-maxwell",
+            "role": "Ghislaine's Brother - Family Spokesperson at Trial"
+          },
+          {
+            "name": "Ari Ben-Menashe",
+            "id": "ari-ben-menashe",
+            "role": "Former Israeli Intel - Claimed Epstein Was Intelligence Asset"
+          },
+          {
+            "name": "Juan Alessi",
+            "id": "juan-alessi",
+            "role": "Palm Beach House Manager (11 years) - Testified at Maxwell Trial"
+          },
+          {
+            "name": "Cimberly Espinosa",
+            "id": "cimberly-espinosa",
+            "role": "Executive Assistant - Testified at Maxwell Trial"
+          },
+          {
+            "name": "Abigail Wexner",
+            "id": "les-wexner-foundation",
+            "role": "Leslie Wexner's Wife - Managed Philanthropic Reputation"
+          },
+          {
+            "name": "Jeffrey Fuller",
+            "id": "jeffrey-fuller",
+            "role": "MC2 Model Management Partner - Epstein-Funded Agency"
+          },
+          {
+            "name": "Henry Kissinger",
+            "id": "henry-kissinger",
+            "role": "Former Secretary of State - Black Book Contact, Dinner Attendee"
+          },
+          {
+            "name": "Paris Hilton",
+            "id": "conrad-hilton-family",
+            "role": "Socialite - Black Book Contact"
+          },
+          {
+            "name": "Stuart Pivar",
+            "id": "stuart-pivar",
+            "role": "Art Collector - Self-Described \"Oldest Friend\""
+          },
+          {
+            "name": "Michael Sitrick",
+            "id": "michael-sitrick",
+            "role": "Crisis PR - Represented Wexner During Epstein Fallout"
           }
         ]
       }
