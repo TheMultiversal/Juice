@@ -23527,7 +23527,7 @@
         "id": "epstein-network",
         "name": "The Epstein Network",
         "category": "Controversy",
-        "summary": "The most comprehensive mapping of the Jeffrey Epstein and Ghislaine Maxwell network. This entry documents 348 connected individuals based on: the sealed black book (1,571 contact entries, seized by FBI from butler Alfredo Rodriguez), Lolita Express flight logs (1995-2013 manifests listing hundreds of passengers), 2008 non-prosecution agreement and NPA recipients, 2019 SDNY indictment, 2021 Maxwell trial testimony and exhibits, 2024 court document unsealing (170+ names), financial records (JPMorgan $365M settlement, Deutsche Bank $150M fine, Leon Black $158M advisory fees), victim depositions and testimony, FBI raid evidence (thousands of photographs and CDs from NYC townhouse), intelligence community claims, and extensive investigative journalism. Metropolitan Correctional Center death investigation records are also referenced. The network spans Wall Street, Hollywood, Silicon Valley, Capitol Hill, Buckingham Palace, the Elysee, academia (Harvard, MIT, Princeton), fashion (Victoria's Secret pipeline, MC2 Modeling), the modeling industry, media empires, and intelligence agencies across the United States, United Kingdom, France, Israel, Saudi Arabia, U.S. Virgin Islands, and beyond.",
+        "summary": "The most comprehensive mapping of the Jeffrey Epstein and Ghislaine Maxwell network, documenting 456 connected individuals. Sources include: the seized black book (1,571 contacts taken by butler Alfredo Rodriguez), Lolita Express flight logs (1995-2013), the 2008 non-prosecution agreement (NPA), the 2019 SDNY indictment, the 2021 Maxwell trial (testimony from victims, staff, and experts), the 2024 mass document unsealing (170+ identified names), JPMorgan internal communications ($365M settlement), Deutsche Bank compliance failures ($150M fine), Leon Black payments ($158M), FBI raid evidence from the NYC townhouse (thousands of photos and CDs), victim depositions, Victims' Compensation Fund records ($121M to 135+ claimants), and investigative journalism (Miami Herald, NY Times, Vanity Fair, Netflix). The network extends through Wall Street, Hollywood, Silicon Valley, Washington DC, Buckingham Palace, the Elysee Palace, Downing Street, academia (Harvard, MIT, Princeton, Columbia), fashion capitals (Victoria's Secret, MC2, Elite Model Management), the art world, media empires, the modeling industry, Middle Eastern royalty, and alleged intelligence services across the United States, United Kingdom, France, Israel, Saudi Arabia, the U.S. Virgin Islands, and beyond.",
         "website": "",
         "connections": [
           {
@@ -25361,6 +25361,546 @@
             "name": "Christopher Tarbell",
             "id": "christopher-tarbell",
             "role": "Former FBI Agent - Investigated Epstein, Frustrated by Plea Deal"
+          },
+          {
+            "name": "Mark Messier",
+            "id": "mark-messier",
+            "role": "Hockey Legend - Black Book Contact"
+          },
+          {
+            "name": "Andre Agassi",
+            "id": "andre-agassi",
+            "role": "Tennis Legend - Black Book Contact"
+          },
+          {
+            "name": "John McEnroe",
+            "id": "john-mcenroe",
+            "role": "Tennis Legend - Black Book Contact"
+          },
+          {
+            "name": "Pat Riley",
+            "id": "pat-riley",
+            "role": "NBA Coach/Miami Heat - Black Book Contact"
+          },
+          {
+            "name": "Jean-Claude Killy",
+            "id": "jean-claude-killy",
+            "role": "Triple Olympic Ski Champion - Black Book Contact"
+          },
+          {
+            "name": "Rupert Murdoch",
+            "id": "rupert-murdoch-ep",
+            "role": "News Corp/Fox Founder - Black Book (Wife & Son Also Listed)"
+          },
+          {
+            "name": "Donald Newhouse",
+            "id": "donald-newhouse",
+            "role": "Advance Publications (Conde Nast, Reddit) - Black Book"
+          },
+          {
+            "name": "Si Newhouse",
+            "id": "si-newhouse",
+            "role": "Advance/Conde Nast Chairman - Black Book (d. 2017)"
+          },
+          {
+            "name": "Steve Wynn",
+            "id": "steve-wynn",
+            "role": "Casino Mogul - Black Book (Own Misconduct Allegations)"
+          },
+          {
+            "name": "Howard Schultz",
+            "id": "howard-schultz",
+            "role": "Starbucks CEO - Black Book Contact"
+          },
+          {
+            "name": "Tommy Hilfiger",
+            "id": "tommy-hilfiger-ep",
+            "role": "Fashion Designer - Black Book Contact"
+          },
+          {
+            "name": "Leonard Lauder",
+            "id": "leonard-lauder",
+            "role": "Estee Lauder Chairman - Black Book Contact"
+          },
+          {
+            "name": "Ronald Lauder",
+            "id": "ronald-lauder-ep",
+            "role": "WJC President/Estee Lauder - Contacts, Lives Near Townhouse"
+          },
+          {
+            "name": "Jeff Greene",
+            "id": "jeff-greene",
+            "role": "Billionaire - Admitted Flying with Young Women on Epstein's Plane"
+          },
+          {
+            "name": "Samuel Waksal",
+            "id": "samuel-waksal",
+            "role": "ImClone (Convicted Insider Trading) - Contacts"
+          },
+          {
+            "name": "Steven Roth",
+            "id": "steven-roth",
+            "role": "Vornado Realty Trust - Black Book Contact"
+          },
+          {
+            "name": "Charles Kushner",
+            "id": "charles-kushner",
+            "role": "Kushner Real Estate (Convicted, Pardoned) - Contacts"
+          },
+          {
+            "name": "Howard Lutnick",
+            "id": "howard-lutnick-ep",
+            "role": "Cantor Fitzgerald CEO - Black Book Contact"
+          },
+          {
+            "name": "Peter Morton",
+            "id": "peter-morton",
+            "role": "Hard Rock Cafe Co-Founder - Black Book Contact"
+          },
+          {
+            "name": "David Martinez",
+            "id": "david-martinez",
+            "role": "Fintech Advisory (Mexico) - Black Book Contact"
+          },
+          {
+            "name": "Rupert Johnson Jr.",
+            "id": "rupert-johnson",
+            "role": "Franklin Templeton - Black Book Contact"
+          },
+          {
+            "name": "Adam Dell",
+            "id": "adam-dell",
+            "role": "Venture Capitalist (Michael Dell's Brother) - Contacts"
+          },
+          {
+            "name": "Paul Singer",
+            "id": "paul-singer",
+            "role": "Elliott Management Founder - Contacts"
+          },
+          {
+            "name": "Alan Howard",
+            "id": "alan-howard",
+            "role": "Brevan Howard Co-Founder - Contacts"
+          },
+          {
+            "name": "Daniel Och",
+            "id": "daniel-och",
+            "role": "Och-Ziff Capital Founder - Contacts"
+          },
+          {
+            "name": "David Bonderman",
+            "id": "david-bonderman",
+            "role": "TPG Capital Co-Founder - Contacts (d. 2023)"
+          },
+          {
+            "name": "Andrew Tisch",
+            "id": "andrew-tisch",
+            "role": "Loews Corporation - Contacts"
+          },
+          {
+            "name": "Jonathan Tisch",
+            "id": "jonathan-tisch",
+            "role": "Loews Hotels / NY Giants - Contacts"
+          },
+          {
+            "name": "Joe Lewis",
+            "id": "joe-lewis-ep",
+            "role": "Billionaire / Spurs Owner (Convicted Insider Trading) - Contacts"
+          },
+          {
+            "name": "James Wolfensohn",
+            "id": "james-wolfensohn-ep",
+            "role": "World Bank President - Contacts (d. 2020)"
+          },
+          {
+            "name": "John Mack",
+            "id": "john-mack",
+            "role": "Morgan Stanley CEO - Contacts"
+          },
+          {
+            "name": "Richard Fuld",
+            "id": "richard-fuld",
+            "role": "Lehman Brothers CEO - Contacts"
+          },
+          {
+            "name": "Vikram Pandit",
+            "id": "vikram-pandit",
+            "role": "Citigroup CEO - Contacts"
+          },
+          {
+            "name": "Peter Cohen",
+            "id": "peter-cohen",
+            "role": "Shearson Lehman CEO - Contacts"
+          },
+          {
+            "name": "Anshu Jain",
+            "id": "anshu-jain",
+            "role": "Deutsche Bank Co-CEO - Took On Epstein After JPM Dropped Him (d. 2022)"
+          },
+          {
+            "name": "John Cryan",
+            "id": "john-cryan",
+            "role": "Deutsche Bank CEO - Continued Servicing Epstein"
+          },
+          {
+            "name": "Denise Rich",
+            "id": "denise-rich",
+            "role": "Songwriter/Socialite (Marc Rich Ex-Wife) - Black Book"
+          },
+          {
+            "name": "Blaine Trump",
+            "id": "blaine-trump",
+            "role": "Socialite (Robert Trump Ex-Wife) - Black Book Contact"
+          },
+          {
+            "name": "Marla Maples",
+            "id": "marla-maples",
+            "role": "Actress (Trump's 2nd Wife) - Contacts"
+          },
+          {
+            "name": "Brooke Shields",
+            "id": "brooke-shields-ep",
+            "role": "Actress/Model - Black Book Contact"
+          },
+          {
+            "name": "Daisy Fuentes",
+            "id": "daisy-fuentes-ep",
+            "role": "MTV Host/Model - Black Book Contact"
+          },
+          {
+            "name": "Countess Debbie von Bismarck",
+            "id": "debbie-von-bismarck",
+            "role": "Bismarck Family Socialite - Black Book Contact"
+          },
+          {
+            "name": "Terry McAuliffe",
+            "id": "terry-mcauliffe",
+            "role": "VA Governor / DNC Chair - Clinton Circle, Contacts"
+          },
+          {
+            "name": "John Podesta",
+            "id": "john-podesta",
+            "role": "Clinton WH Chief of Staff - Contacts"
+          },
+          {
+            "name": "David Rockefeller",
+            "id": "david-rockefeller",
+            "role": "Chase Manhattan / Rockefeller Dynasty - Contacts (d. 2017)"
+          },
+          {
+            "name": "Bob Menendez",
+            "id": "bob-menendez",
+            "role": "U.S. Senator NJ - Contacts (Convicted Corruption 2024)"
+          },
+          {
+            "name": "Barney Frank",
+            "id": "barney-frank",
+            "role": "U.S. Representative MA - Contacts"
+          },
+          {
+            "name": "Kenneth Mapp",
+            "id": "ken-mapp",
+            "role": "USVI Governor - Gave Epstein Tax Benefits Despite Sex Offender Status"
+          },
+          {
+            "name": "Albert Bryan Jr.",
+            "id": "albert-bryan-jr",
+            "role": "USVI Governor - Filed Landmark Lawsuits Against Estate & JPM"
+          },
+          {
+            "name": "Nicolas Sarkozy",
+            "id": "nicolas-sarkozy-ep",
+            "role": "Former French President - Contacts"
+          },
+          {
+            "name": "Bill Cosby",
+            "id": "doe-36",
+            "role": "Actor/Comedian - Named in 2024 Document Unsealing (Own Conviction)"
+          },
+          {
+            "name": "Charlie Sheen",
+            "id": "charlie-sheen",
+            "role": "Actor - Contacts"
+          },
+          {
+            "name": "Clint Eastwood",
+            "id": "clint-eastwood-ep",
+            "role": "Actor/Director - Contacts"
+          },
+          {
+            "name": "John Travolta",
+            "id": "john-travolta-ep",
+            "role": "Actor - Black Book Contact"
+          },
+          {
+            "name": "Oprah Winfrey",
+            "id": "oprah-winfrey-ep",
+            "role": "Media Mogul - Contacts"
+          },
+          {
+            "name": "Steven Spielberg",
+            "id": "steven-spielberg-ep",
+            "role": "Director - Contacts"
+          },
+          {
+            "name": "George Lucas",
+            "id": "george-lucas-ep",
+            "role": "Star Wars Creator - Contacts"
+          },
+          {
+            "name": "Ron Howard",
+            "id": "ron-howard-ep",
+            "role": "Director/Producer - Contacts"
+          },
+          {
+            "name": "Mike Nichols",
+            "id": "mike-nichols",
+            "role": "Director (Diane Sawyer's Husband) - Black Book (d. 2014)"
+          },
+          {
+            "name": "Barbra Streisand",
+            "id": "barbara-streisand-ep",
+            "role": "Singer/Actress - Contacts"
+          },
+          {
+            "name": "Joan Collins",
+            "id": "joan-collins-ep",
+            "role": "Dynasty Star - Black Book Contact"
+          },
+          {
+            "name": "Michael Douglas",
+            "id": "michael-douglas-ep",
+            "role": "Actor - Contacts"
+          },
+          {
+            "name": "Paul McCartney",
+            "id": "paul-mccartney-ep",
+            "role": "Beatles - Black Book Contact"
+          },
+          {
+            "name": "Eric Clapton",
+            "id": "eric-clapton-ep",
+            "role": "Guitarist - Black Book Contact"
+          },
+          {
+            "name": "Rod Stewart",
+            "id": "rod-stewart-ep",
+            "role": "Singer - Black Book Contact"
+          },
+          {
+            "name": "Sting",
+            "id": "sting-ep",
+            "role": "The Police / Solo - Contacts"
+          },
+          {
+            "name": "Bono",
+            "id": "bono-ep",
+            "role": "U2 - Contacts"
+          },
+          {
+            "name": "Geraldo Rivera",
+            "id": "geraldo-rivera-ep",
+            "role": "TV Journalist - Contacts"
+          },
+          {
+            "name": "Maria Bartiromo",
+            "id": "maria-bartiromo",
+            "role": "Fox Business Anchor - Contacts"
+          },
+          {
+            "name": "Chris Cuomo",
+            "id": "chris-cuomo-ep",
+            "role": "CNN Anchor (Andrew's Brother) - Contacts"
+          },
+          {
+            "name": "Larry King",
+            "id": "larry-king-ep",
+            "role": "TV/Radio Host - Black Book (d. 2021)"
+          },
+          {
+            "name": "Connie Chung",
+            "id": "connie-chung-ep",
+            "role": "CBS/CNN Anchor - Contacts"
+          },
+          {
+            "name": "Karl Lagerfeld",
+            "id": "karl-lagerfeld-ep",
+            "role": "Chanel Creative Director - Contacts (d. 2019)"
+          },
+          {
+            "name": "Jean-Paul Gaultier",
+            "id": "jean-paul-gaultier",
+            "role": "Fashion Designer - Paris Circle"
+          },
+          {
+            "name": "Alain Delon",
+            "id": "alain-delon",
+            "role": "French Film Legend - Black Book (d. 2024)"
+          },
+          {
+            "name": "Carla Bruni",
+            "id": "carla-bruni",
+            "role": "Supermodel / French First Lady - Black Book Contact"
+          },
+          {
+            "name": "Thierry Mugler",
+            "id": "thierry-mugler",
+            "role": "Fashion Designer - Contacts (d. 2022)"
+          },
+          {
+            "name": "Gerald Marie",
+            "id": "gerald-marie",
+            "role": "Elite Model Management Europe - Brunel Associate, Rapist (d. 2024)"
+          },
+          {
+            "name": "Prince Michael of Kent",
+            "id": "prince-michael-kent",
+            "role": "British Royal / Queen's Cousin - Contacts"
+          },
+          {
+            "name": "Sir Philip Green",
+            "id": "philip-green",
+            "role": "Topshop Billionaire - Contacts (Own Misconduct Allegations)"
+          },
+          {
+            "name": "Mohamed Al-Fayed",
+            "id": "mohammed-al-fayed",
+            "role": "Harrods Owner - Contacts (100+ Assault Claims After Death)"
+          },
+          {
+            "name": "Evgeny Lebedev",
+            "id": "evgeny-lebedev",
+            "role": "Media Owner (Standard/Independent) - London Contacts"
+          },
+          {
+            "name": "Prince Rupert Loewenstein",
+            "id": "rupert-loewenstein",
+            "role": "Stones' Financier/Aristocrat - Black Book (d. 2014)"
+          },
+          {
+            "name": "Jennifer Araoz",
+            "id": "jennifer-araoz",
+            "role": "Victim - Recruited at 14 Outside School, Testified to Congress"
+          },
+          {
+            "name": "Juliette Bryant",
+            "id": "juliette-bryant",
+            "role": "Victim - Trafficked Internationally"
+          },
+          {
+            "name": "Teala Davies",
+            "id": "teala-davies",
+            "role": "Victim - Founded Survivor Non-Profit"
+          },
+          {
+            "name": "Cindy Lopez",
+            "id": "cindy-lopez",
+            "role": "Maxwell Associate - Multiple Flight Logs"
+          },
+          {
+            "name": "Cathy Alexander",
+            "id": "cathy-alexander",
+            "role": "Southern Trust Company (USVI) - Testified About Operations"
+          },
+          {
+            "name": "Kelly Bovino",
+            "id": "kelly-bovino",
+            "role": "Frequent Flight Log Passenger"
+          },
+          {
+            "name": "Paolo Zampolli",
+            "id": "paolo-zampolli",
+            "role": "Modeling Agent - Introduced Melania to Trump, Epstein Network"
+          },
+          {
+            "name": "Peter Listerman",
+            "id": "peter-listerman",
+            "role": "Russian Model Agent - Trafficking Overlap with Epstein/Brunel"
+          },
+          {
+            "name": "Lee Bollinger",
+            "id": "lee-bollinger",
+            "role": "Columbia University President - Contacts"
+          },
+          {
+            "name": "Rafi Eitan",
+            "id": "rafi-eitan",
+            "role": "Israeli Intel (LAKAM) - Robert Maxwell Handler (d. 2019)"
+          },
+          {
+            "name": "Naftali Bennett",
+            "id": "naftali-bennett",
+            "role": "Former Israeli PM - Overlapping Tech/Political Circles"
+          },
+          {
+            "name": "Charles Saatchi",
+            "id": "charles-saatchi",
+            "role": "Saatchi Gallery/Advertising - Contacts"
+          },
+          {
+            "name": "David Zwirner",
+            "id": "david-zwirner",
+            "role": "Art Dealer - Contacts"
+          },
+          {
+            "name": "Dakis Joannou",
+            "id": "dakis-joannou",
+            "role": "Art Collector/Industrialist - Contacts"
+          },
+          {
+            "name": "Eli Broad",
+            "id": "eli-broad",
+            "role": "Billionaire Philanthropist / Broad Museum - Contacts (d. 2021)"
+          },
+          {
+            "name": "Peter Marino",
+            "id": "peter-marino",
+            "role": "Luxury Architect (LV, Chanel) - Contacts"
+          },
+          {
+            "name": "Andre Leon Talley",
+            "id": "andre-leon-talley",
+            "role": "Vogue Creative Director - Contacts (d. 2022)"
+          },
+          {
+            "name": "Manolo Blahnik",
+            "id": "manolo-blahnik",
+            "role": "Shoe Designer - Contacts"
+          },
+          {
+            "name": "Roberto Cavalli",
+            "id": "roberto-cavalli",
+            "role": "Fashion Designer - Contacts (d. 2024)"
+          },
+          {
+            "name": "Kenneth Feinberg",
+            "id": "ken-feinberg",
+            "role": "Victims' Fund Admin - Paid $121M to 135+ Claimants"
+          },
+          {
+            "name": "Elie Wiesel",
+            "id": "elie-wiesel",
+            "role": "Nobel Laureate - Foundation Lost $15.2M to Epstein (d. 2016)"
+          },
+          {
+            "name": "Charles Bronfman",
+            "id": "charles-bronfman-ep",
+            "role": "Seagram / Birthright Israel Co-Founder - Contacts"
+          },
+          {
+            "name": "Keith Raniere",
+            "id": "keith-raniere",
+            "role": "NXIVM Cult Leader - 120-Year Sentence, Bronfman-Funded"
+          },
+          {
+            "name": "Clare Bronfman",
+            "id": "clare-bronfman",
+            "role": "Bronfman Heiress / NXIVM (Convicted) - Father in Black Book"
+          },
+          {
+            "name": "Salman Rushdie",
+            "id": "salman-rushdie-ep",
+            "role": "Author - Contacts"
           }
         ]
       }
