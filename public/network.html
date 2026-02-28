@@ -1,4 +1,4 @@
-<!-- Juice Project - Est. 2016 | Last updated 2025 -->
+<!-- Juice Project - Est. 2016 | Last updated 2026 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,14 +24,6 @@
   <meta name="twitter:title" content="Focused Network">
   <meta name="twitter:description" content="Focused network visualization - explore connections for any entity in The Juice Box database.">
   <title>Focused Network</title>
-
-  <!-- d3-force (used internally by force-graph for drag interactions) -->
-  <script src="https://cdn.jsdelivr.net/npm/d3-dispatch@3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-quadtree@3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-timer@3"></script>
-  <script src="https://cdn.jsdelivr.net/npm/d3-force@3"></script>
-  <!-- force-graph: Canvas2D renderer - handles 10k+ nodes at 60fps -->
-  <script src="https://unpkg.com/force-graph"></script>
 
   <style>
     /* ===== BASE ===== */
@@ -81,7 +73,7 @@
     /* ===== GRAPH WRAPPER ===== */
     .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #fff; }
     #graph-container { position: absolute; inset: 0; width: 100%; height: 100%; }
-    #graph-container canvas { border-radius: 12px; }
+    #graph-container canvas { border-radius: 12px; display: block; }
 
     /* ===== SHARED PANEL ===== */
     .gp { overflow: hidden; transition: box-shadow 0.25s; }
@@ -202,8 +194,7 @@
   </div>
 
   <div class="graph-wrap">
-    <!-- force-graph canvas container (pre-computed radial layout, zero overlap) -->
-    <div id="graph-container"></div>
+    <div id="graph-container"><canvas id="canvas"></canvas></div>
 
     <!-- Loading -->
     <div class="ld-overlay" id="loading">
@@ -227,13 +218,14 @@
           <label>Node Size</label>
           <input type="range" id="node-scale" min="2" max="20" value="6" />
           <label>Spacing</label>
-          <input type="range" id="link-dist" min="30" max="350" value="120" />
+          <input type="range" id="spacing-range" min="30" max="300" value="120" />
           <div class="chks">
             <label><input type="checkbox" id="show-people" checked /> People</label>
+            <label><input type="checkbox" id="show-labels" checked /> Labels</label>
           </div>
           <div class="btns">
             <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
-            <button id="btn-fit"><i class="fa-solid fa-compress"></i> Reset</button>
+            <button id="btn-fit"><i class="fa-solid fa-compress"></i> Fit</button>
           </div>
           <div class="btns">
             <button id="btn-entry"><i class="fa-solid fa-building"></i> View Entry</button>
@@ -275,682 +267,899 @@
         <div class="gp-b edge-b" id="edge-b"></div>
       </div>
     </div>
-
   </div>
-  </div><!-- /.main -->
+  </div>
 
-  <!-- Tooltip (outside graph-wrap to avoid clipping) -->
+  <!-- Tooltip -->
   <div id="tip"></div>
 
   <script src="app.js"></script>
   <script>
-    /* ================================================================
-     *  RADIAL LAYOUT NETWORK GRAPH
-     *  Pre-computed positions (O(n), <10ms) → force-graph Canvas2D
-     *  No physics simulation = instant render, zero overlap
-     * ================================================================ */
+  /* =================================================================
+   *  PURE CANVAS2D NETWORK GRAPH — Zero-overlap deterministic layout
+   *  No physics engine. No d3-force. No force-graph library.
+   *  Pure math layout + raw Canvas2D rendering = instant + smooth.
+   * ================================================================= */
+  initPage('jewish');
 
-    initPage('jewish');
+  // ─── Collapsible panels ──────────────────────────────
+  ['ctrl','cat','edge'].forEach(k => {
+    document.getElementById(k+'-t').onclick = () => document.getElementById(k+'-p').classList.toggle('shut');
+  });
 
-    // ─── Collapsible panels ──────────────────────────────
-    ['ctrl','cat','edge'].forEach(k => {
-      document.getElementById(k+'-t').onclick = () => document.getElementById(k+'-p').classList.toggle('shut');
-    });
+  // ─── Color maps ──────────────────────────────────────
+  const CC = {
+    'Entertainment & Media':'#e74c3c','Religion & Synagogues':'#9b59b6',
+    'Culture & Arts':'#e67e22','Technology':'#2ecc71',
+    'Community & Social Organizations':'#3498db','Education & Academia':'#1abc9c',
+    'Education':'#1abc9c',
+    'Representative & Umbrella Bodies':'#f39c12','Heritage & Memorials':'#8e44ad',
+    'Charity & Philanthropy':'#e91e63','Investment & Private Equity':'#00bcd4',
+    'Real Estate & Property':'#795548','Sports':'#ff5722',
+    'Advocacy & Public Affairs':'#607d8b','Healthcare & Pharmaceuticals':'#4caf50',
+    'Banking & Financial Services':'#ff9800','Research & Think Tanks':'#673ab7',
+    'Retail & E-Commerce':'#009688','Defense & Security':'#f44336',
+    'Food & Beverage':'#8bc34a','Conglomerates & Holding Companies':'#9e9e9e',
+    'Government & Diplomacy':'#3f51b5','Fashion & Consumer Goods':'#ff4081',
+    'Manufacturing & Industry':'#757575','Law Firms':'#455a64',
+    'Notable Individuals':'#ffc107','Transportation':'#00acc1',
+    'Advertising & PR':'#d81b60','Telecommunications':'#7c4dff',
+    'Utilities & Energy':'#66bb6a','People':'#ffab40','Controversy':'#d32f2f'
+  };
+  const DC='#546e7a', PC='#ffab40';
+  const EC = {
+    'financial':'#ff9800','shared-person':'#9c27b0','political':'#f44336',
+    'organizational':'#2196f3','ideological':'#4caf50','historical':'#795548',
+    'legal':'#607d8b','related':'#78909c','partnership':'#00bcd4',
+    'subsidiary':'#ff5722','funding':'#ffc107','membership':'#3f51b5',
+    'affiliation':'#e91e63','leadership':'#8e44ad','collaboration':'#1abc9c',
+    'person-affiliation':'#ffab40','industry peer':'#78909c',
+    'affiliate':'#42a5f5','communal partner':'#4db6ac',
+    'heritage partner':'#ab47bc','funder':'#ffa726',
+    'community institution':'#66bb6a','religious partner':'#ce93d8',
+    'umbrella body':'#5c6bc0','member':'#26a69a',
+    'museum peer':'#7e57c2','cultural partner':'#ec407a',
+    'regional connection':'#8d6e63','educational partner':'#29b6f6',
+    'government partner':'#ef5350','sports affiliate':'#ff7043',
+    'operating body':'#26c6da','governing body':'#d4e157',
+    'preservation partner':'#9ccc65','support':'#7986cb',
+    'diplomatic partner':'#f06292','historical support':'#a1887f',
+    'parent organization':'#4fc3f7','research partner':'#ba68c8',
+    'educational':'#1abc9c','lobbying':'#607d8b',
+    'advocacy peer':'#607d8b','pro-Israel peer':'#5c6bc0',
+    'super PAC':'#f44336','affiliated charity':'#e91e63',
+    'lobbying target':'#3f51b5','congressional ally':'#3f51b5',
+    'major donor':'#ff9800','diplomatic bridge':'#f06292',
+    'pro-Israel ecosystem':'#4caf50','think tank engagement':'#673ab7',
+    'social connection':'#9c27b0','academic donation':'#1abc9c',
+    'alleged intelligence connection':'#f44336',
+    'science connection':'#2ecc71','property':'#795548',
+    'investigation':'#607d8b','social':'#9c27b0'
+  };
+  const DEC='#90a4ae';
 
-    // ─── Color maps ──────────────────────────────────────
-    const CC = {
-      'Entertainment & Media': '#e74c3c', 'Religion & Synagogues': '#9b59b6',
-      'Culture & Arts': '#e67e22', 'Technology': '#2ecc71',
-      'Community & Social Organizations': '#3498db', 'Education & Academia': '#1abc9c',
-      'Representative & Umbrella Bodies': '#f39c12', 'Heritage & Memorials': '#8e44ad',
-      'Charity & Philanthropy': '#e91e63', 'Investment & Private Equity': '#00bcd4',
-      'Real Estate & Property': '#795548', 'Sports': '#ff5722',
-      'Advocacy & Public Affairs': '#607d8b', 'Healthcare & Pharmaceuticals': '#4caf50',
-      'Banking & Financial Services': '#ff9800', 'Research & Think Tanks': '#673ab7',
-      'Retail & E-Commerce': '#009688', 'Defense & Security': '#f44336',
-      'Food & Beverage': '#8bc34a', 'Conglomerates & Holding Companies': '#9e9e9e',
-      'Government & Diplomacy': '#3f51b5', 'Fashion & Consumer Goods': '#ff4081',
-      'Manufacturing & Industry': '#757575', 'Law Firms': '#455a64',
-      'Notable Individuals': '#ffc107', 'Transportation': '#00acc1',
-      'Advertising & PR': '#d81b60', 'Telecommunications': '#7c4dff',
-      'Utilities & Energy': '#66bb6a', 'People': '#ffab40',
-      'Controversy': '#d32f2f'
-    };
-    const DC = '#546e7a', PC = '#ffab40';
+  // ─── State ───────────────────────────────────────────
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const container = document.getElementById('graph-container');
+  const tipEl = document.getElementById('tip');
 
-    const EC = {
-      'financial': '#ff9800', 'shared-person': '#9c27b0', 'political': '#f44336',
-      'organizational': '#2196f3', 'ideological': '#4caf50', 'historical': '#795548',
-      'legal': '#607d8b', 'related': '#78909c', 'partnership': '#00bcd4',
-      'subsidiary': '#ff5722', 'funding': '#ffc107', 'membership': '#3f51b5',
-      'affiliation': '#e91e63', 'leadership': '#8e44ad', 'collaboration': '#1abc9c',
-      'person-affiliation': '#ffab40', 'industry peer': '#78909c',
-      'affiliate': '#42a5f5', 'communal partner': '#4db6ac',
-      'heritage partner': '#ab47bc', 'funder': '#ffa726',
-      'community institution': '#66bb6a', 'religious partner': '#ce93d8',
-      'umbrella body': '#5c6bc0', 'member': '#26a69a',
-      'museum peer': '#7e57c2', 'cultural partner': '#ec407a',
-      'regional connection': '#8d6e63', 'educational partner': '#29b6f6',
-      'government partner': '#ef5350', 'sports affiliate': '#ff7043',
-      'operating body': '#26c6da', 'governing body': '#d4e157',
-      'preservation partner': '#9ccc65', 'support': '#7986cb',
-      'diplomatic partner': '#f06292', 'historical support': '#a1887f',
-      'parent organization': '#4fc3f7', 'research partner': '#ba68c8'
-    };
-    const DEC = '#90a4ae';
+  let nodes = [], links = [], nodeMap = {};
+  let focusEntryId = null;
+  let hoveredNode = null, hoveredLink = null;
+  let searchMatches = new Set();
+  let neighborMap = {}, neighborSet = new Set();
+  let mouseX = 0, mouseY = 0;
+  let nodeScale = 6;
 
-    // ─── State ───────────────────────────────────────────
-    let graph = null;
-    let currentData = null;
-    let hoveredNode = null;
-    let neighborMap = {};
-    let neighborSet = new Set();
-    let searchMatches = new Set();
-    let focusEntryId = null;
-    let isBigEntry = false;
-    let nodeScale = 6;
-    let spacingVal = 120;
-    let mouseX = 0, mouseY = 0;
-    const tipEl = document.getElementById('tip');
-    const container = document.getElementById('graph-container');
+  // Camera: pan/zoom state
+  let camX = 0, camY = 0, camZ = 1;
+  let isDragging = false, wasDragged = false;
+  let dragNode = null;
+  let dragStartX = 0, dragStartY = 0, dragCamX = 0, dragCamY = 0;
+  let needsRedraw = true;
 
-    // Track mouse for tooltip positioning
-    document.addEventListener('mousemove', e => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      if (tipEl.style.display === 'block') {
-        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
-      }
-    });
+  // ─── Spatial index for fast O(1) hit testing ────────
+  let gridCellSize = 80;
+  let spatialGrid = {};
 
-    document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
-      tipEl.style.display = 'none';
-      hoveredNode = null;
-      neighborSet.clear();
-    });
-
-    // ─── Parse URL ───────────────────────────────────────
-    const ID_ALIASES = { 'jeffrey-epstein-network': 'epstein-network' };
-    const params = new URLSearchParams(window.location.search);
-    focusEntryId = params.get('id') || 'epstein-network';
-    if (ID_ALIASES[focusEntryId]) {
-      focusEntryId = ID_ALIASES[focusEntryId];
-      const newUrl = new URL(window.location);
-      newUrl.searchParams.set('id', focusEntryId);
-      window.history.replaceState({}, '', newUrl);
+  function buildSpatialGrid() {
+    spatialGrid = {};
+    gridCellSize = Math.max(30, 60 / Math.max(camZ, 0.05));
+    for (const n of nodes) {
+      const gx = Math.floor(n.x / gridCellSize);
+      const gy = Math.floor(n.y / gridCellSize);
+      const key = gx + ',' + gy;
+      if (!spatialGrid[key]) spatialGrid[key] = [];
+      spatialGrid[key].push(n);
     }
+  }
 
-    document.getElementById('btn-entry-top').href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
-
-    // ─── PRE-COMPUTED RADIAL LAYOUT ─────────────────────
-    // O(n) complexity, <10ms for 1000 nodes, guaranteed zero overlap
-    // Focus at center, entries on middle ring, people on outer ring
-    function computeRadialLayout(data, spaceFactor) {
-      const sf = spaceFactor || 1;
-      const focusNode = data.nodes.find(n => n.isFocus);
-      const entryNodes = data.nodes.filter(n => n.nodeType === 'entry' && !n.isFocus);
-      const personNodes = data.nodes.filter(n => n.nodeType === 'person');
-
-      // Build person → entry mapping from links
-      const p2e = {};
-      data.links.forEach(l => {
-        const s = typeof l.source === 'object' ? l.source.id : l.source;
-        const t = typeof l.target === 'object' ? l.target.id : l.target;
-        if (l.type === 'person-affiliation') {
-          const pid = s.startsWith('person-') ? s : t;
-          const eid = s.startsWith('person-') ? t : s;
-          if (!p2e[pid]) p2e[pid] = [];
-          p2e[pid].push(eid);
+  function findNodeAt(wx, wy) {
+    const gx = Math.floor(wx / gridCellSize);
+    const gy = Math.floor(wy / gridCellSize);
+    let best = null, bestDist = Infinity;
+    for (let dx = -1; dx <= 1; dx++) {
+      for (let dy = -1; dy <= 1; dy++) {
+        const cell = spatialGrid[(gx+dx)+','+(gy+dy)];
+        if (!cell) continue;
+        for (const n of cell) {
+          const d = (n.x - wx) * (n.x - wx) + (n.y - wy) * (n.y - wy);
+          const r = (n._size || 6) + 5 / camZ;
+          if (d < r * r && d < bestDist) { bestDist = d; best = n; }
         }
-      });
-
-      // Separate people into focus-connected and entry-specific
-      const focusPeople = [];
-      const entryPeopleMap = {};  // entryId → [person nodes]
-      const placed = new Set();
-
-      // First pass: people connected to focus
-      personNodes.forEach(p => {
-        const entries = p2e[p.id] || [];
-        if (focusNode && entries.includes(focusNode.id)) {
-          focusPeople.push(p);
-          placed.add(p.id);
-        }
-      });
-
-      // Second pass: people connected to other entries (not focus)
-      personNodes.forEach(p => {
-        if (placed.has(p.id)) return;
-        const entries = p2e[p.id] || [];
-        for (const eid of entries) {
-          if (eid !== (focusNode ? focusNode.id : '')) {
-            if (!entryPeopleMap[eid]) entryPeopleMap[eid] = [];
-            entryPeopleMap[eid].push(p);
-            placed.add(p.id);
-            break;
-          }
-        }
-      });
-
-      // Remaining unconnected people go to outer ring
-      const unplaced = personNodes.filter(p => !placed.has(p.id));
-
-      // Compute ring radii (spacing ~55px between entries, ~14px between people)
-      const nE = Math.max(entryNodes.length, 1);
-      const allOuter = focusPeople.concat(unplaced);
-      const nFP = allOuter.length;
-
-      const R_entry = Math.max(350, nE * 55 / (2 * Math.PI)) * sf;
-      const R_people = Math.max(R_entry * 1.6, nFP * 14 / (2 * Math.PI)) * sf;
-
-      // ── Place focus at center ──
-      if (focusNode) {
-        focusNode.fx = 0; focusNode.fy = 0;
-        focusNode.x = 0; focusNode.y = 0;
       }
+    }
+    return best;
+  }
 
-      // ── Place entries on middle ring (sorted by degree) ──
-      const entryAngles = {};
-      entryNodes.sort((a, b) => (b._degree || 0) - (a._degree || 0));
-      entryNodes.forEach((n, i) => {
-        const a = (2 * Math.PI * i) / nE - Math.PI / 2;
-        n.fx = R_entry * Math.cos(a);
-        n.fy = R_entry * Math.sin(a);
-        n.x = n.fx; n.y = n.fy;
+  function findLinkAt(wx, wy) {
+    const threshold = 5 / camZ;
+    const th2 = threshold * threshold;
+    for (const l of links) {
+      const s = nodeMap[l.source], t = nodeMap[l.target];
+      if (!s || !t) continue;
+      const dx = t.x - s.x, dy = t.y - s.y;
+      const len2 = dx * dx + dy * dy;
+      if (len2 === 0) continue;
+      let p = ((wx - s.x) * dx + (wy - s.y) * dy) / len2;
+      p = Math.max(0, Math.min(1, p));
+      const px = s.x + p * dx, py = s.y + p * dy;
+      const dist2 = (wx - px) * (wx - px) + (wy - py) * (wy - py);
+      if (dist2 < th2) return l;
+    }
+    return null;
+  }
+
+  // ─── Screen <-> World transforms ────────────────────
+  function screenToWorld(sx, sy) {
+    const rect = canvas.getBoundingClientRect();
+    return {
+      x: (sx - rect.left - rect.width / 2) / camZ + camX,
+      y: (sy - rect.top - rect.height / 2) / camZ + camY
+    };
+  }
+
+  // ─── Parse URL ───────────────────────────────────────
+  const ID_ALIASES = { 'jeffrey-epstein-network': 'epstein-network' };
+  const params = new URLSearchParams(window.location.search);
+  focusEntryId = params.get('id') || 'epstein-network';
+  if (ID_ALIASES[focusEntryId]) {
+    focusEntryId = ID_ALIASES[focusEntryId];
+    const newUrl = new URL(window.location);
+    newUrl.searchParams.set('id', focusEntryId);
+    window.history.replaceState({}, '', newUrl);
+  }
+  document.getElementById('btn-entry-top').href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
+
+  // ═══════════════════════════════════════════════════════
+  //  DETERMINISTIC RADIAL SECTOR LAYOUT
+  //  Focus at center. Entries in concentric ring grouped by
+  //  category. People clustered near their parent entry.
+  //  Every position computed mathematically — ZERO overlap.
+  // ═══════════════════════════════════════════════════════
+  function computeLayout(data, spacing) {
+    const sf = (spacing || 120) / 120;
+    const focus = data.nodes.find(n => n.isFocus);
+    const entries = data.nodes.filter(n => n.nodeType === 'entry' && !n.isFocus);
+    const people = data.nodes.filter(n => n.nodeType === 'person');
+
+    // Group entries by category
+    const catGroups = {};
+    entries.forEach(n => {
+      const cat = n.category || 'Other';
+      if (!catGroups[cat]) catGroups[cat] = [];
+      catGroups[cat].push(n);
+    });
+    const categories = Object.keys(catGroups).sort((a, b) => catGroups[b].length - catGroups[a].length);
+
+    // Build person→entry mapping from links
+    const p2e = {};
+    data.links.forEach(l => {
+      if (l.type === 'person-affiliation') {
+        const s = (typeof l.source === 'string') ? l.source : (l.source.id || l.source);
+        const t = (typeof l.target === 'string') ? l.target : (l.target.id || l.target);
+        const pid = String(s).startsWith('person-') ? s : t;
+        const eid = String(s).startsWith('person-') ? t : s;
+        if (!p2e[pid]) p2e[pid] = [];
+        p2e[pid].push(eid);
+      }
+    });
+
+    // Compute entry ring
+    const nE = Math.max(entries.length, 1);
+    const entrySpacing = 55 * sf;
+    const R_entry = Math.max(350 * sf, nE * entrySpacing / (2 * Math.PI));
+
+    // Place focus at center
+    if (focus) { focus.x = 0; focus.y = 0; }
+
+    // Place entries on ring, grouped by category sectors
+    let angleOffset = -Math.PI / 2;
+    const entryAngles = {};
+    const totalEntries = entries.length || 1;
+
+    categories.forEach(cat => {
+      const group = catGroups[cat];
+      const proportion = group.length / totalEntries;
+      const sectorSize = proportion * 2 * Math.PI;
+
+      group.sort((a, b) => (b._degree || 0) - (a._degree || 0));
+      group.forEach((n, i) => {
+        const a = angleOffset + (sectorSize * (i + 0.5)) / group.length;
+        n.x = R_entry * Math.cos(a);
+        n.y = R_entry * Math.sin(a);
         entryAngles[n.id] = a;
       });
+      angleOffset += sectorSize;
+    });
 
-      // ── Place focus-connected people on full outer ring ──
-      const nOuter = Math.max(nFP, 1);
-      allOuter.forEach((p, i) => {
-        const a = (2 * Math.PI * i) / nOuter - Math.PI / 2;
-        p.fx = R_people * Math.cos(a);
-        p.fy = R_people * Math.sin(a);
-        p.x = p.fx; p.y = p.fy;
+    // Separate people into focus-connected vs entry-specific
+    const focusPeople = [];
+    const entryPeopleMap = {};
+    const placed = new Set();
+
+    people.forEach(p => {
+      const parentEntries = p2e[p.id] || [];
+      if (focus && parentEntries.includes(focus.id)) {
+        focusPeople.push(p);
+        placed.add(p.id);
+      }
+    });
+
+    people.forEach(p => {
+      if (placed.has(p.id)) return;
+      const parentEntries = p2e[p.id] || [];
+      for (const eid of parentEntries) {
+        if (eid !== (focus ? focus.id : '')) {
+          if (!entryPeopleMap[eid]) entryPeopleMap[eid] = [];
+          entryPeopleMap[eid].push(p);
+          placed.add(p.id);
+          break;
+        }
+      }
+    });
+
+    const unplaced = people.filter(p => !placed.has(p.id));
+    const allOuter = focusPeople.concat(unplaced);
+
+    // Focus-connected people: full outer ring
+    const nFP = Math.max(allOuter.length, 1);
+    const R_people = Math.max(R_entry * 1.6, nFP * 14 / (2 * Math.PI)) * sf;
+    allOuter.forEach((p, i) => {
+      const a = (2 * Math.PI * i) / nFP - Math.PI / 2;
+      p.x = R_people * Math.cos(a);
+      p.y = R_people * Math.sin(a);
+    });
+
+    // Entry-specific people: arc near their parent entry
+    const wedge = (2 * Math.PI) / nE;
+    Object.entries(entryPeopleMap).forEach(([eid, ppl]) => {
+      const baseAngle = entryAngles[eid] || 0;
+      const count = ppl.length;
+      const maxArc = wedge * 0.7;
+      const arc = Math.min(maxArc, count * 0.05);
+      const r = (R_entry + R_people) * 0.5 * sf;
+
+      ppl.forEach((p, i) => {
+        const offset = count > 1 ? (arc * i / (count - 1)) - arc / 2 : 0;
+        const a = baseAngle + offset;
+        p.x = r * Math.cos(a);
+        p.y = r * Math.sin(a);
       });
+    });
+  }
 
-      // ── Place entry-specific people in arcs near their entry ──
-      const wedge = (2 * Math.PI) / nE;
-      Object.entries(entryPeopleMap).forEach(([eid, people]) => {
-        const baseAngle = entryAngles[eid] || 0;
-        const count = people.length;
-        const maxArc = wedge * 0.7;
-        const arc = Math.min(maxArc, count * 0.05);
-        const r = (R_entry + R_people) * 0.5 * sf;
+  // ═══════════════════════════════════════════════════════
+  //  CANVAS2D RENDERING — 60fps even with 5000+ nodes
+  // ═══════════════════════════════════════════════════════
+  function resizeCanvas() {
+    const rect = container.getBoundingClientRect();
+    const dpr = window.devicePixelRatio || 1;
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    canvas.style.width = rect.width + 'px';
+    canvas.style.height = rect.height + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    needsRedraw = true;
+  }
 
-        people.forEach((p, i) => {
-          const offset = count > 1 ? (arc * i / (count - 1)) - arc / 2 : 0;
-          const a = baseAngle + offset;
-          p.fx = r * Math.cos(a);
-          p.fy = r * Math.sin(a);
-          p.x = p.fx; p.y = p.fy;
-        });
-      });
+  function draw() {
+    if (!needsRedraw) { requestAnimationFrame(draw); return; }
+    needsRedraw = false;
+
+    const W = canvas.clientWidth, H = canvas.clientHeight;
+    ctx.clearRect(0, 0, W, H);
+    ctx.save();
+    ctx.translate(W / 2, H / 2);
+    ctx.scale(camZ, camZ);
+    ctx.translate(-camX, -camY);
+
+    const showLabels = document.getElementById('show-labels').checked;
+    const dimAlpha = 0.04;
+    const hasHover = !!hoveredNode;
+    const hasSearch = searchMatches.size > 0;
+
+    // ── Draw links ──
+    for (const l of links) {
+      const s = nodeMap[l.source], t = nodeMap[l.target];
+      if (!s || !t) continue;
+
+      let alpha = 0.25, width = 0.5;
+      if (hasHover) {
+        if (l.source === hoveredNode.id || l.target === hoveredNode.id) {
+          alpha = 0.9; width = 2 / camZ;
+        } else { alpha = dimAlpha; width = 0.3 / camZ; }
+      } else if (hasSearch) {
+        if (searchMatches.has(l.source) || searchMatches.has(l.target)) {
+          alpha = 0.7; width = 1.2 / camZ;
+        } else { alpha = dimAlpha; width = 0.3 / camZ; }
+      }
+
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = l._color || DEC;
+      ctx.lineWidth = width;
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(t.x, t.y);
+      if (l.type === 'person-affiliation') {
+        ctx.setLineDash([4 / camZ, 3 / camZ]);
+      } else {
+        ctx.setLineDash([]);
+      }
+      ctx.stroke();
+      ctx.setLineDash([]);
     }
 
-    // ─── Custom node rendering ───────────────────────────
-    function renderNode(node, ctx, globalScale) {
-      if (node.x == null || node.y == null) return;
-
-      const s = nodeScale;
-      let size;
-      if (node.isFocus) {
-        size = Math.max(s * 2, s * 2 + Math.min(node._degree || 0, 30) * s * 0.02);
-      } else if (node.nodeType === 'person') {
-        size = Math.max(s * 0.4, s * 0.4 + (node._degree || 0) * (s * 0.05));
-      } else {
-        size = Math.max(s * 0.6, s * 0.6 + (node._degree || 0) * (s * 0.07));
-      }
-      node._renderedSize = size;
-
-      const isHovered = node === hoveredNode;
-      const isNeighbor = hoveredNode && neighborSet.has(node.id);
-      const dimByHover = hoveredNode && !isHovered && !isNeighbor;
-      const dimBySearch = searchMatches.size > 0 && !node._found;
+    // ── Draw nodes ──
+    for (const n of nodes) {
+      const isHovered = n === hoveredNode;
+      const isNeighbor = hasHover && neighborSet.has(n.id);
+      const dimByHover = hasHover && !isHovered && !isNeighbor;
+      const dimBySearch = hasSearch && !n._found;
       const shouldDim = dimByHover || dimBySearch;
 
-      ctx.save();
-      ctx.globalAlpha = shouldDim ? 0.06 : 1;
+      ctx.globalAlpha = shouldDim ? dimAlpha : 1;
 
-      // Shape
+      const size = n._size;
+
+      // Shape: diamond for people, circle for entries
       ctx.beginPath();
-      if (node.nodeType === 'person') {
-        ctx.moveTo(node.x, node.y - size);
-        ctx.lineTo(node.x + size * 0.75, node.y);
-        ctx.lineTo(node.x, node.y + size);
-        ctx.lineTo(node.x - size * 0.75, node.y);
+      if (n.nodeType === 'person') {
+        ctx.moveTo(n.x, n.y - size);
+        ctx.lineTo(n.x + size * 0.75, n.y);
+        ctx.lineTo(n.x, n.y + size);
+        ctx.lineTo(n.x - size * 0.75, n.y);
         ctx.closePath();
       } else {
-        ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
+        ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
       }
-      ctx.fillStyle = node._color || DC;
+      ctx.fillStyle = n._color;
       ctx.fill();
 
       // Border
       if (isHovered) {
         ctx.strokeStyle = '#0056b3';
-        ctx.lineWidth = 2.5 / globalScale;
+        ctx.lineWidth = 2.5 / camZ;
         ctx.stroke();
-      } else if (node._found) {
+      } else if (n._found) {
         ctx.strokeStyle = '#ffeb3b';
-        ctx.lineWidth = 2 / globalScale;
+        ctx.lineWidth = 2 / camZ;
         ctx.stroke();
-      } else if (node.isFocus) {
+      } else if (n.isFocus) {
         ctx.strokeStyle = '#b71c1c';
-        ctx.lineWidth = 2 / globalScale;
+        ctx.lineWidth = 2 / camZ;
         ctx.stroke();
       } else if (!shouldDim) {
-        ctx.strokeStyle = 'rgba(0,0,0,0.12)';
-        ctx.lineWidth = 0.4 / globalScale;
+        ctx.strokeStyle = 'rgba(0,0,0,0.1)';
+        ctx.lineWidth = 0.4 / camZ;
         ctx.stroke();
       }
 
-      // Label
-      const showLabel = !shouldDim && (
-        isHovered ||
-        isNeighbor ||
-        node.isFocus ||
-        node._found ||
-        ((node._degree || 0) > 12 && globalScale > 0.5) ||
-        ((node._degree || 0) > 6 && globalScale > 1.0) ||
-        ((node._degree || 0) > 2 && globalScale > 2.0) ||
-        globalScale > 3.5
-      );
+      // Labels
+      if (!shouldDim && showLabels) {
+        const shouldShowLabel = isHovered || isNeighbor || n.isFocus || n._found ||
+          ((n._degree || 0) > 12 && camZ > 0.5) ||
+          ((n._degree || 0) > 6 && camZ > 1.0) ||
+          ((n._degree || 0) > 2 && camZ > 2.0) ||
+          camZ > 3.5;
 
-      if (showLabel) {
-        const fontSize = Math.max(3, (isHovered || node.isFocus ? 12 : 10) / globalScale);
-        ctx.font = (isHovered || node.isFocus ? 'bold ' : '') + fontSize + 'px Arial';
-        ctx.textAlign = 'center';
-        ctx.textBaseline = 'top';
+        if (shouldShowLabel) {
+          const fontSize = Math.max(3, (isHovered || n.isFocus ? 12 : 10) / camZ);
+          ctx.font = (isHovered || n.isFocus ? 'bold ' : '') + fontSize + 'px Arial';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'top';
+          const label = n.name || '';
+          const tw = ctx.measureText(label).width;
+          const ty = n.y + size + 2 / camZ;
+          const pad = 1.5 / camZ;
 
-        const label = node.name || '';
-        const textW = ctx.measureText(label).width;
-        const textH = fontSize;
-        const pad = 1.5 / globalScale;
-        const textY = node.y + size + 2 / globalScale;
-
-        ctx.fillStyle = 'rgba(255,255,255,0.88)';
-        ctx.fillRect(node.x - textW / 2 - pad, textY - pad, textW + pad * 2, textH + pad * 2);
-
-        ctx.fillStyle = isHovered ? '#0056b3' : node.isFocus ? '#c62828' : '#333';
-        ctx.fillText(label, node.x, textY);
+          ctx.globalAlpha = 0.88;
+          ctx.fillStyle = '#fff';
+          ctx.fillRect(n.x - tw / 2 - pad, ty - pad, tw + pad * 2, fontSize + pad * 2);
+          ctx.globalAlpha = shouldDim ? dimAlpha : 1;
+          ctx.fillStyle = isHovered ? '#0056b3' : n.isFocus ? '#c62828' : '#333';
+          ctx.fillText(label, n.x, ty);
+        }
       }
-
-      ctx.restore();
     }
 
-    // ─── Node pointer area ───────────────────────────────
-    function paintNodeArea(node, color, ctx) {
-      const size = (node._renderedSize || nodeScale * 0.6) + 6;
-      ctx.fillStyle = color;
-      ctx.beginPath();
-      ctx.arc(node.x, node.y, size, 0, Math.PI * 2);
-      ctx.fill();
+    ctx.restore();
+    ctx.globalAlpha = 1;
+    requestAnimationFrame(draw);
+  }
+
+  // ═══════════════════════════════════════════════════════
+  //  EVENT HANDLERS — Pan, zoom, hover, click, drag nodes
+  // ═══════════════════════════════════════════════════════
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    if (tipEl.style.display === 'block') {
+      tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+      tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+    }
+  });
+
+  canvas.addEventListener('mousemove', e => {
+    const w = screenToWorld(e.clientX, e.clientY);
+
+    // Dragging a node
+    if (isDragging && dragNode) {
+      dragNode.x = w.x; dragNode.y = w.y;
+      wasDragged = true;
+      buildSpatialGrid();
+      needsRedraw = true;
+      return;
     }
 
-    // ─── Link accessors ──────────────────────────────────
-    function lSrc(link) { return typeof link.source === 'object' ? link.source.id : link.source; }
-    function lTgt(link) { return typeof link.target === 'object' ? link.target.id : link.target; }
-
-    function linkWidthFn(link) {
-      if (hoveredNode) {
-        const s = lSrc(link), t = lTgt(link);
-        if (s === hoveredNode.id || t === hoveredNode.id) return 1.8;
-        return 0.08;
-      }
-      if (searchMatches.size > 0) {
-        const s = lSrc(link), t = lTgt(link);
-        if (searchMatches.has(s) || searchMatches.has(t)) return 1;
-        return 0.05;
-      }
-      return link._width || 0.5;
+    // Panning
+    if (isDragging) {
+      const dx = e.clientX - dragStartX, dy = e.clientY - dragStartY;
+      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) wasDragged = true;
+      camX = dragCamX - dx / camZ;
+      camY = dragCamY - dy / camZ;
+      needsRedraw = true;
+      return;
     }
 
-    function linkColorFn(link) {
-      if (hoveredNode) {
-        const s = lSrc(link), t = lTgt(link);
-        if (s === hoveredNode.id || t === hoveredNode.id) return link._color || DEC;
-        return 'rgba(180,180,180,0.04)';
-      }
-      if (searchMatches.size > 0) {
-        const s = lSrc(link), t = lTgt(link);
-        if (searchMatches.has(s) || searchMatches.has(t)) return link._color || DEC;
-        return 'rgba(180,180,180,0.06)';
-      }
-      return link._color || DEC;
-    }
-
-    // ─── Event handlers ──────────────────────────────────
-    function handleNodeHover(node) {
+    // Hover detection
+    const node = findNodeAt(w.x, w.y);
+    if (node !== hoveredNode) {
       hoveredNode = node;
+      hoveredLink = null;
       neighborSet.clear();
-      container.style.cursor = node ? 'pointer' : 'default';
-
       if (node) {
+        canvas.style.cursor = 'pointer';
         neighborSet.add(node.id);
         const nb = neighborMap[node.id];
         if (nb) nb.forEach(id => neighborSet.add(id));
-
-        let html;
-        if (node.nodeType === 'person') {
-          html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
-            + '<i class="fa-solid fa-briefcase"></i> ' + (node.role || 'Individual') + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '')
-            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+        showNodeTooltip(node);
+      } else {
+        const link = findLinkAt(w.x, w.y);
+        if (link) {
+          hoveredLink = link;
+          canvas.style.cursor = 'pointer';
+          showLinkTooltip(link);
         } else {
-          html = '<strong>' + node.name + '</strong>'
-            + (node.isFocus ? '<span style="display:inline-block;padding:1px 6px;background:#c62828;color:#fff;border-radius:10px;font-size:0.7em;font-weight:700;margin-left:6px;">FOCUS</span>' : '') + '<br/>'
-            + '<i class="fa-solid fa-building"></i> ' + (node.type || '') + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + (node.country || '') + '<br/>'
-            + '<span class="tip-cat" style="background:' + (CC[node.category] || DC) + '30;color:' + (CC[node.category] || DC) + '">' + (node.category || '') + '</span>'
-            + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+          canvas.style.cursor = 'grab';
+          tipEl.style.display = 'none';
         }
-        tipEl.innerHTML = html;
-        tipEl.style.display = 'block';
-        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
-      } else {
-        tipEl.style.display = 'none';
       }
+      needsRedraw = true;
     }
+  });
 
-    function handleNodeClick(node) {
-      if (!node) return;
-      if (node.nodeType === 'person') {
-        window.location.href = 'person.html?id=' + encodeURIComponent(node.personId || node.id);
-      } else if (node.isFocus) {
-        window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(node.id);
-      } else {
-        window.location.href = 'network.html?id=' + encodeURIComponent(node.id);
+  canvas.addEventListener('mousedown', e => {
+    if (e.button !== 0) return;
+    const w = screenToWorld(e.clientX, e.clientY);
+    const node = findNodeAt(w.x, w.y);
+    isDragging = true;
+    wasDragged = false;
+    if (node) {
+      dragNode = node;
+    } else {
+      dragNode = null;
+      dragStartX = e.clientX;
+      dragStartY = e.clientY;
+      dragCamX = camX;
+      dragCamY = camY;
+      canvas.style.cursor = 'grabbing';
+    }
+    e.preventDefault();
+  });
+
+  canvas.addEventListener('mouseup', e => {
+    if (!isDragging) return;
+    const clickedOnNode = dragNode;
+    const dragged = wasDragged;
+
+    if (dragNode) { buildSpatialGrid(); }
+    isDragging = false;
+    dragNode = null;
+    canvas.style.cursor = 'grab';
+    needsRedraw = true;
+
+    // If no drag happened, treat as click
+    if (!dragged) {
+      if (clickedOnNode) {
+        handleNodeClick(clickedOnNode);
+        return;
       }
-    }
-
-    function handleLinkHover(link) {
+      const w = screenToWorld(e.clientX, e.clientY);
+      const link = findLinkAt(w.x, w.y);
       if (link) {
-        container.style.cursor = 'pointer';
-        tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
-          + (link.description ? '<br/>' + link.description : '')
-          + '<br/><span style="color:#888;font-size:0.85em">Click to explore</span>';
-        tipEl.style.display = 'block';
-        tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-        tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
-      } else if (!hoveredNode) {
-        container.style.cursor = 'default';
-        tipEl.style.display = 'none';
+        handleLinkClick(link);
+        return;
       }
-    }
-
-    function handleLinkClick(link) {
-      if (!link) return;
-      const src = (typeof link.source === 'object') ? link.source : null;
-      const tgt = (typeof link.target === 'object') ? link.target : null;
-      if (link.type === 'person-affiliation') {
-        const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
-        if (person) {
-          window.location.href = 'person.html?id=' + encodeURIComponent(person.personId || person.id);
-          return;
-        }
-      }
-      const entryNode = (tgt && tgt.nodeType === 'entry' && !tgt.isFocus) ? tgt : (src && src.nodeType === 'entry' && !src.isFocus) ? src : null;
-      if (entryNode) {
-        window.location.href = 'network.html?id=' + encodeURIComponent(entryNode.id);
-      }
-    }
-
-    function handleBgClick() {
+      // Background click — clear search
       searchMatches.clear();
-      if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
+      nodes.forEach(n => { n._found = false; });
       document.getElementById('s-count').textContent = '';
       document.getElementById('s-input').value = '';
+      needsRedraw = true;
     }
+  });
 
-    // ─── Build graph ─────────────────────────────────────
-    function buildGraph(data) {
-      // Compute degree
-      const degreeMap = {};
-      data.nodes.forEach(n => { degreeMap[n.id] = 0; });
-      data.links.forEach(l => {
-        degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
-        degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
-      });
+  canvas.addEventListener('wheel', e => {
+    e.preventDefault();
+    const zoomFactor = e.deltaY < 0 ? 1.12 : 0.89;
+    const newZ = Math.max(0.02, Math.min(15, camZ * zoomFactor));
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left - rect.width / 2;
+    const my = e.clientY - rect.top - rect.height / 2;
+    camX += mx / camZ - mx / newZ;
+    camY += my / camZ - my / newZ;
+    camZ = newZ;
+    buildSpatialGrid();
+    needsRedraw = true;
+  }, { passive: false });
 
-      // Build neighbor map (BEFORE d3-force resolves link refs)
-      neighborMap = {};
-      data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
-      data.links.forEach(l => {
-        const s = typeof l.source === 'object' ? l.source.id : l.source;
-        const t = typeof l.target === 'object' ? l.target.id : l.target;
-        if (neighborMap[s]) neighborMap[s].add(t);
-        if (neighborMap[t]) neighborMap[t].add(s);
-      });
+  // Touch support
+  let lastTouchDist = 0;
+  canvas.addEventListener('touchstart', e => {
+    if (e.touches.length === 1) {
+      const t = e.touches[0];
+      isDragging = true; wasDragged = false;
+      dragStartX = t.clientX; dragStartY = t.clientY;
+      dragCamX = camX; dragCamY = camY;
+      const w = screenToWorld(t.clientX, t.clientY);
+      const node = findNodeAt(w.x, w.y);
+      dragNode = node || null;
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      lastTouchDist = Math.sqrt(dx * dx + dy * dy);
+    }
+    e.preventDefault();
+  }, { passive: false });
 
-      // Assign computed properties
-      data.nodes.forEach(n => {
-        n._degree = degreeMap[n.id] || 0;
-        n._color = n.isFocus ? '#c62828' : n.nodeType === 'person' ? PC : (CC[n.category] || DC);
-        n._found = false;
-      });
-      data.links.forEach(l => {
-        l._color = EC[l.type] || DEC;
-        l._width = l.type === 'person-affiliation' ? 0.3 : 0.5;
-      });
-
-      // Compute radial layout (sets fx/fy on all nodes)
-      currentData = data;
-      computeRadialLayout(data, spacingVal / 120);
-
-      // Stats
-      const entries = data.nodes.filter(n => n.nodeType !== 'person');
-      const people = data.nodes.filter(n => n.nodeType === 'person');
-      document.getElementById('stats').innerHTML =
-        '<b>' + entries.length + '</b> entries \u00b7 <b>' + people.length + '</b> people \u00b7 <b>' + data.links.length + '</b> links';
-
-      // Category legend
-      const cats = [...new Set(data.nodes.map(n => n.category))].filter(Boolean).sort();
-      const catB = document.getElementById('cat-b');
-      catB.innerHTML = '';
-      cats.forEach(c => {
-        const r = document.createElement('div'); r.className = 'li';
-        const d = document.createElement('div'); d.className = 'ld';
-        d.style.background = CC[c] || DC;
-        if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
-        r.appendChild(d);
-        r.appendChild(document.createTextNode(c));
-        r.onclick = function() {
-          searchMatches.clear();
-          graph.graphData().nodes.forEach(n => { n._found = false; });
-          graph.graphData().nodes.forEach(n => {
-            if (n.category === c) { n._found = true; searchMatches.add(n.id); }
-          });
-          document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
-          document.getElementById('s-input').value = '';
-          graph.zoomToFit(400, 50, n => n._found);
-        };
-        catB.appendChild(r);
-      });
-
-      // Edge legend
-      const eTypes = [...new Set(data.links.map(l => l.type).filter(Boolean))].sort();
-      const edgeB = document.getElementById('edge-b');
-      edgeB.innerHTML = '';
-      eTypes.forEach(t => {
-        const r = document.createElement('div'); r.className = 'ei';
-        const l = document.createElement('div'); l.className = 'el';
-        l.style.background = EC[t] || DEC;
-        r.appendChild(l);
-        r.appendChild(document.createTextNode(t));
-        edgeB.appendChild(r);
-      });
-
-      // Clear state
-      searchMatches.clear();
-      hoveredNode = null;
-      neighborSet.clear();
-
-      // Create or re-feed force-graph
-      const rect = container.getBoundingClientRect();
-
-      if (!graph) {
-        graph = ForceGraph()(container)
-          .width(rect.width)
-          .height(rect.height)
-          .backgroundColor('#fff')
-          .nodeCanvasObject(renderNode)
-          .nodeCanvasObjectMode(() => 'replace')
-          .nodePointerAreaPaint(paintNodeArea)
-          .linkWidth(linkWidthFn)
-          .linkColor(linkColorFn)
-          .linkLineDash(link => (link.type === 'person-affiliation') ? [3, 2] : null)
-          .warmupTicks(0)
-          .cooldownTicks(1)
-          .autoPauseRedraw(false)
-          .nodeLabel(() => '')
-          .onNodeHover(handleNodeHover)
-          .onNodeClick(handleNodeClick)
-          .onLinkHover(handleLinkHover)
-          .onLinkClick(handleLinkClick)
-          .onBackgroundClick(handleBgClick)
-          .enableNodeDrag(true)
-          .onNodeDragEnd(node => { node.fx = node.x; node.fy = node.y; });
-
-        window.addEventListener('resize', () => {
-          const r = container.getBoundingClientRect();
-          graph.width(r.width).height(r.height);
-        });
+  canvas.addEventListener('touchmove', e => {
+    if (e.touches.length === 1 && isDragging) {
+      const t = e.touches[0];
+      if (dragNode) {
+        const w = screenToWorld(t.clientX, t.clientY);
+        dragNode.x = w.x; dragNode.y = w.y;
+        wasDragged = true;
+        buildSpatialGrid();
+      } else {
+        const dx = t.clientX - dragStartX, dy = t.clientY - dragStartY;
+        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) wasDragged = true;
+        camX = dragCamX - dx / camZ;
+        camY = dragCamY - dy / camZ;
       }
-
-      // Feed data (d3-force resolves link refs on this call)
-      graph.graphData(data);
-
-      // Remove ALL forces — positions are pre-computed, no simulation needed
-      graph.d3Force('charge', null);
-      graph.d3Force('center', null);
-      graph.d3Force('link', null);
-
-      // Zoom to fit after brief render
-      setTimeout(() => {
-        document.getElementById('loading').classList.add('off');
-        graph.zoomToFit(400, 40);
-      }, 150);
+      needsRedraw = true;
+    } else if (e.touches.length === 2) {
+      const dx = e.touches[0].clientX - e.touches[1].clientX;
+      const dy = e.touches[0].clientY - e.touches[1].clientY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+      if (lastTouchDist > 0) {
+        camZ = Math.max(0.02, Math.min(15, camZ * (dist / lastTouchDist)));
+        buildSpatialGrid();
+        needsRedraw = true;
+      }
+      lastTouchDist = dist;
+      wasDragged = true;
     }
+    e.preventDefault();
+  }, { passive: false });
 
-    // ─── Load focused graph ──────────────────────────────
-    function loadGraph() {
-      const depth = document.getElementById('depth-range').value;
-      const ppl = document.getElementById('show-people').checked;
-      let url = '/api/graph/focus/' + encodeURIComponent(focusEntryId)
-        + '?depth=' + depth
-        + '&people=' + (ppl ? '1' : '0');
+  canvas.addEventListener('touchend', e => {
+    if (e.touches.length === 0) {
+      if (!wasDragged && dragNode) {
+        handleNodeClick(dragNode);
+      }
+      isDragging = false; dragNode = null; lastTouchDist = 0;
+      needsRedraw = true;
+    }
+  });
 
-      const ld = document.getElementById('loading');
-      const lt = document.getElementById('ld-text');
-      ld.classList.remove('off');
-      lt.textContent = 'Fetching network data...';
-      document.getElementById('stats').innerHTML = '<b>Loading...</b>';
+  document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
+    tipEl.style.display = 'none';
+    hoveredNode = null; hoveredLink = null;
+    neighborSet.clear();
+    needsRedraw = true;
+  });
 
-      fetch(url).then(r => r.json()).then(data => {
-        if (data.error) { lt.textContent = 'Entry not found: ' + focusEntryId; return; }
-        isBigEntry = data.isBigEntry || false;
+  // ─── Tooltip helpers ─────────────────────────────────
+  function showNodeTooltip(node) {
+    let html;
+    if (node.nodeType === 'person') {
+      html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
+        + '<i class="fa-solid fa-briefcase"></i> ' + (node.role || 'Individual') + '<br/>'
+        + '<i class="fa-solid fa-globe"></i> ' + (node.country || '')
+        + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+    } else {
+      html = '<strong>' + node.name + '</strong>'
+        + (node.isFocus ? '<span style="display:inline-block;padding:1px 6px;background:#c62828;color:#fff;border-radius:10px;font-size:0.7em;font-weight:700;margin-left:6px;">FOCUS</span>' : '') + '<br/>'
+        + '<i class="fa-solid fa-building"></i> ' + (node.type || '') + '<br/>'
+        + '<i class="fa-solid fa-globe"></i> ' + (node.country || '') + '<br/>'
+        + '<span class="tip-cat" style="background:' + (CC[node.category] || DC) + '30;color:' + (CC[node.category] || DC) + '">' + (node.category || '') + '</span>'
+        + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
+    }
+    tipEl.innerHTML = html;
+    tipEl.style.display = 'block';
+    tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+    tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+  }
 
-        const focusName = data.focusName || focusEntryId;
-        document.getElementById('page-title').innerHTML = '<span class="focus-name">' + focusName + '</span> Network';
-        document.getElementById('page-subtitle').textContent = data.nodes.length + ' nodes \u00b7 ' + data.links.length + ' connections \u00b7 Depth ' + data.depth;
-        document.title = focusName + ' Network - The Juice Box';
+  function showLinkTooltip(link) {
+    tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
+      + (link.description ? '<br/>' + link.description : '')
+      + '<br/><span style="color:#888;font-size:0.85em">Click to explore</span>';
+    tipEl.style.display = 'block';
+    tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
+    tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+  }
 
-        const pInfo = document.getElementById('people-info');
-        if (data.totalPeople > 0) {
-          const shownPeople = data.nodes.filter(n => n.nodeType === 'person').length;
-          if (ppl && shownPeople > 0) {
-            pInfo.innerHTML = 'Showing <b>' + shownPeople + '</b> of <b>' + data.totalPeople + '</b> associated individuals';
-          } else {
-            pInfo.innerHTML = '<b>' + data.totalPeople + '</b> associated individuals (toggle People in controls to show)';
-          }
+  // ─── Click handlers ──────────────────────────────────
+  function handleNodeClick(node) {
+    if (!node) return;
+    if (node.nodeType === 'person') {
+      window.location.href = 'person.html?id=' + encodeURIComponent(node.personId || node.id);
+    } else if (node.isFocus) {
+      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(node.id);
+    } else {
+      window.location.href = 'network.html?id=' + encodeURIComponent(node.id);
+    }
+  }
+
+  function handleLinkClick(link) {
+    if (!link) return;
+    const src = nodeMap[link.source], tgt = nodeMap[link.target];
+    if (link.type === 'person-affiliation') {
+      const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
+      if (person) { window.location.href = 'person.html?id=' + encodeURIComponent(person.personId || person.id); return; }
+    }
+    const entry = (tgt && tgt.nodeType === 'entry' && !tgt.isFocus) ? tgt : (src && src.nodeType === 'entry' && !src.isFocus) ? src : null;
+    if (entry) { window.location.href = 'network.html?id=' + encodeURIComponent(entry.id); }
+  }
+
+  // ─── Fit view ────────────────────────────────────────
+  function fitView(subset) {
+    const target = subset || nodes;
+    if (target.length === 0) return;
+    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+    target.forEach(n => {
+      if (n.x < minX) minX = n.x; if (n.x > maxX) maxX = n.x;
+      if (n.y < minY) minY = n.y; if (n.y > maxY) maxY = n.y;
+    });
+    const W = canvas.clientWidth, H = canvas.clientHeight;
+    const dw = (maxX - minX) || 100, dh = (maxY - minY) || 100;
+    const pad = 80;
+    camZ = Math.min((W - pad * 2) / dw, (H - pad * 2) / dh, 4);
+    camX = (minX + maxX) / 2;
+    camY = (minY + maxY) / 2;
+    buildSpatialGrid();
+    needsRedraw = true;
+  }
+
+  // ─── Build and render graph ──────────────────────────
+  function buildGraph(data) {
+    const spacing = +document.getElementById('spacing-range').value;
+
+    // Compute degrees
+    const degreeMap = {};
+    data.nodes.forEach(n => { degreeMap[n.id] = 0; });
+    data.links.forEach(l => {
+      degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
+      degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
+    });
+
+    // Build neighbor map
+    neighborMap = {};
+    data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
+    data.links.forEach(l => {
+      if (neighborMap[l.source]) neighborMap[l.source].add(l.target);
+      if (neighborMap[l.target]) neighborMap[l.target].add(l.source);
+    });
+
+    // Assign properties
+    const ns = nodeScale;
+    data.nodes.forEach(n => {
+      n._degree = degreeMap[n.id] || 0;
+      n._color = n.isFocus ? '#c62828' : n.nodeType === 'person' ? PC : (CC[n.category] || DC);
+      n._found = false;
+      if (n.isFocus) {
+        n._size = Math.max(ns * 2, ns * 2 + Math.min(n._degree, 30) * ns * 0.02);
+      } else if (n.nodeType === 'person') {
+        n._size = Math.max(ns * 0.4, ns * 0.4 + n._degree * (ns * 0.05));
+      } else {
+        n._size = Math.max(ns * 0.6, ns * 0.6 + n._degree * (ns * 0.07));
+      }
+    });
+    data.links.forEach(l => { l._color = EC[l.type] || DEC; });
+
+    // Compute layout
+    computeLayout(data, spacing);
+
+    // Store references
+    nodes = data.nodes;
+    links = data.links;
+    nodeMap = {};
+    nodes.forEach(n => { nodeMap[n.id] = n; });
+    buildSpatialGrid();
+
+    // Stats
+    const entryCount = nodes.filter(n => n.nodeType !== 'person').length;
+    const peopleCount = nodes.filter(n => n.nodeType === 'person').length;
+    document.getElementById('stats').innerHTML =
+      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + links.length + '</b> links';
+
+    // Category legend
+    const cats = [...new Set(nodes.map(n => n.category))].filter(Boolean).sort();
+    const catB = document.getElementById('cat-b');
+    catB.innerHTML = '';
+    cats.forEach(c => {
+      const r = document.createElement('div'); r.className = 'li';
+      const d = document.createElement('div'); d.className = 'ld';
+      d.style.background = CC[c] || DC;
+      if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
+      r.appendChild(d);
+      r.appendChild(document.createTextNode(c));
+      r.onclick = function() {
+        searchMatches.clear();
+        nodes.forEach(n => { n._found = n.category === c; if (n._found) searchMatches.add(n.id); });
+        document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
+        document.getElementById('s-input').value = '';
+        fitView(nodes.filter(n => n._found));
+      };
+      catB.appendChild(r);
+    });
+
+    // Edge legend
+    const eTypes = [...new Set(links.map(l => l.type).filter(Boolean))].sort();
+    const edgeB = document.getElementById('edge-b');
+    edgeB.innerHTML = '';
+    eTypes.forEach(t => {
+      const r = document.createElement('div'); r.className = 'ei';
+      const l = document.createElement('div'); l.className = 'el';
+      l.style.background = EC[t] || DEC;
+      r.appendChild(l);
+      r.appendChild(document.createTextNode(t));
+      edgeB.appendChild(r);
+    });
+
+    searchMatches.clear();
+    hoveredNode = null; hoveredLink = null;
+    neighborSet.clear();
+
+    fitView();
+    needsRedraw = true;
+    setTimeout(() => { document.getElementById('loading').classList.add('off'); }, 100);
+  }
+
+  // ─── Load data ───────────────────────────────────────
+  function loadGraph() {
+    const depth = document.getElementById('depth-range').value;
+    const ppl = document.getElementById('show-people').checked;
+    const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId)
+      + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
+
+    const ld = document.getElementById('loading');
+    const lt = document.getElementById('ld-text');
+    ld.classList.remove('off');
+    lt.textContent = 'Fetching network data...';
+    document.getElementById('stats').innerHTML = '<b>Loading...</b>';
+
+    fetch(url).then(r => r.json()).then(data => {
+      if (data.error) { lt.textContent = 'Entry not found: ' + focusEntryId; return; }
+
+      const focusName = data.focusName || focusEntryId;
+      document.getElementById('page-title').innerHTML = '<span class="focus-name">' + focusName + '</span> Network';
+      document.getElementById('page-subtitle').textContent = data.nodes.length + ' nodes \u00b7 ' + data.links.length + ' connections \u00b7 Depth ' + data.depth;
+      document.title = focusName + ' Network - The Juice Box';
+
+      const pInfo = document.getElementById('people-info');
+      if (data.totalPeople > 0) {
+        const shownPeople = data.nodes.filter(n => n.nodeType === 'person').length;
+        if (ppl && shownPeople > 0) {
+          pInfo.innerHTML = 'Showing <b>' + shownPeople + '</b> of <b>' + data.totalPeople + '</b> associated individuals';
         } else {
-          pInfo.innerHTML = '';
+          pInfo.innerHTML = '<b>' + data.totalPeople + '</b> associated individuals (toggle People in controls to show)';
         }
+      } else { pInfo.innerHTML = ''; }
 
+      if (typeof setSEO === 'function') {
         setSEO({
           title: focusName + ' Network - The Juice Box',
           description: 'Explore the full connection network of ' + focusName + '.',
           url: window.location.origin + '/network.html?id=' + focusEntryId
         });
+      }
 
-        lt.textContent = 'Computing radial layout...';
-        setTimeout(() => buildGraph(data), 20);
-      }).catch(err => {
-        console.error('Failed to load:', err);
-        lt.textContent = 'Error loading data.';
-      });
-    }
+      lt.textContent = 'Computing layout...';
+      setTimeout(() => buildGraph(data), 10);
+    }).catch(err => {
+      console.error('Load error:', err);
+      lt.textContent = 'Error loading data.';
+    });
+  }
 
-    // ─── Controls ────────────────────────────────────────
-    document.getElementById('btn-reload').onclick = loadGraph;
+  // ─── Controls ────────────────────────────────────────
+  document.getElementById('btn-reload').onclick = loadGraph;
+  document.getElementById('btn-fit').onclick = () => fitView();
+  document.getElementById('btn-entry').onclick = () => {
+    window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
+  };
+  document.getElementById('show-people').onchange = loadGraph;
+  document.getElementById('show-labels').onchange = () => { needsRedraw = true; };
+  document.getElementById('depth-range').oninput = function() {
+    document.getElementById('depth-val').textContent = this.value;
+  };
+  document.getElementById('depth-range').onchange = loadGraph;
 
-    document.getElementById('btn-fit').onclick = () => {
-      if (graph) graph.zoomToFit(400, 40);
-    };
+  // Node size slider — live recompute
+  document.getElementById('node-scale').oninput = function() {
+    nodeScale = +this.value;
+    const ns = nodeScale;
+    nodes.forEach(n => {
+      if (n.isFocus) {
+        n._size = Math.max(ns * 2, ns * 2 + Math.min(n._degree, 30) * ns * 0.02);
+      } else if (n.nodeType === 'person') {
+        n._size = Math.max(ns * 0.4, ns * 0.4 + n._degree * (ns * 0.05));
+      } else {
+        n._size = Math.max(ns * 0.6, ns * 0.6 + n._degree * (ns * 0.07));
+      }
+    });
+    needsRedraw = true;
+  };
 
-    document.getElementById('btn-entry').onclick = () => {
-      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
-    };
+  // Spacing slider — recompute layout
+  document.getElementById('spacing-range').oninput = function() {
+    if (nodes.length === 0) return;
+    computeLayout({ nodes, links }, +this.value);
+    buildSpatialGrid();
+    needsRedraw = true;
+  };
 
-    document.getElementById('show-people').onchange = loadGraph;
-
-    document.getElementById('depth-range').oninput = function() {
-      document.getElementById('depth-val').textContent = this.value;
-    };
-    document.getElementById('depth-range').onchange = loadGraph;
-
-    // Node size slider — live update, no re-layout needed
-    document.getElementById('node-scale').oninput = function() {
-      nodeScale = +this.value;
-    };
-
-    // Spacing slider — recompute radial layout on change
-    document.getElementById('link-dist').oninput = function() {
-      spacingVal = +this.value;
-      if (!graph || !currentData) return;
-      computeRadialLayout(currentData, spacingVal / 120);
-      // Node positions updated in-place, force-graph re-renders automatically
-    };
-
-    // ─── Search ──────────────────────────────────────────
-    function doSearch() {
-      const q = document.getElementById('s-input').value.trim().toLowerCase();
-      if (!graph) return;
-
+  // ─── Search ──────────────────────────────────────────
+  function doSearch() {
+    const q = document.getElementById('s-input').value.trim().toLowerCase();
+    searchMatches.clear();
+    nodes.forEach(n => { n._found = false; });
+    if (!q) { document.getElementById('s-count').textContent = ''; needsRedraw = true; return; }
+    const matches = nodes.filter(n => (n.name || '').toLowerCase().includes(q));
+    matches.forEach(n => { n._found = true; searchMatches.add(n.id); });
+    document.getElementById('s-count').textContent = matches.length ? matches.length + ' found' : 'none';
+    if (matches.length) fitView(matches);
+    needsRedraw = true;
+  }
+  document.getElementById('s-btn').onclick = doSearch;
+  document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
+  document.getElementById('s-input').oninput = function() {
+    if (!this.value.trim()) {
       searchMatches.clear();
-      graph.graphData().nodes.forEach(n => { n._found = false; });
-
-      if (!q) {
-        document.getElementById('s-count').textContent = '';
-        return;
-      }
-
-      const matches = graph.graphData().nodes.filter(n =>
-        (n.name || '').toLowerCase().includes(q)
-      );
-      matches.forEach(n => { n._found = true; searchMatches.add(n.id); });
-
-      const count = matches.length;
-      document.getElementById('s-count').textContent = count ? count + ' found' : 'none';
-
-      if (count) graph.zoomToFit(400, 50, n => n._found);
+      nodes.forEach(n => { n._found = false; });
+      document.getElementById('s-count').textContent = '';
+      needsRedraw = true;
     }
+  };
 
-    document.getElementById('s-btn').onclick = doSearch;
-    document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
-    document.getElementById('s-input').oninput = function() {
-      if (!this.value.trim()) {
-        searchMatches.clear();
-        if (graph) graph.graphData().nodes.forEach(n => { n._found = false; });
-        document.getElementById('s-count').textContent = '';
-      }
-    };
-
-    // ─── Auto-load on page ready ─────────────────────────
-    loadGraph();
+  // ─── Init ────────────────────────────────────────────
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  requestAnimationFrame(draw);
+  loadGraph();
   </script>
 </body>
 </html>
