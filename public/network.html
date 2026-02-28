@@ -26,39 +26,20 @@
   <title>Focused Network</title>
 
   <style>
-    /* ===== BASE ===== */
     body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
     nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
     nav ul li { margin: 0; white-space: nowrap; }
     nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
-
-    /* Glassmorphism */
     .panel, .gp, .sb, .header-panel, .graph-wrap {
-      background: rgba(255, 255, 255, 0.15) !important;
-      backdrop-filter: blur(12px) !important;
-      -webkit-backdrop-filter: blur(12px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.25) !important;
-      border-radius: 12px !important;
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08) !important;
+      background: rgba(255,255,255,0.15) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important;
+      border: 1px solid rgba(255,255,255,0.25) !important; border-radius: 12px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.08) !important;
     }
-    .gp:hover, .header-panel:hover { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15) !important; border-color: rgba(255, 255, 255, 0.35) !important; }
-    nav a {
-      background: rgba(255, 255, 255, 0.2) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.3) !important;
-      border-radius: 8px !important;
-    }
-    nav select {
-      background: rgba(255, 255, 255, 0.2) !important;
-      backdrop-filter: blur(8px) !important;
-      -webkit-backdrop-filter: blur(8px) !important;
-      border: 1px solid rgba(255, 255, 255, 0.3) !important;
-    }
+    .gp:hover, .header-panel:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important; border-color: rgba(255,255,255,0.35) !important; }
+    nav a { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 8px !important; }
+    nav select { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; }
 
-    /* ===== PAGE LAYOUT ===== */
     .main { max-width: 1600px; margin: 0 auto; padding: 15px 20px; }
     .header-panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 16px 20px; margin-bottom: 15px; }
     .header-panel h1 { margin: 0 0 4px 0; color: #0056b3; }
@@ -70,20 +51,11 @@
     .people-info { font-size: 0.82em; color: #888; margin-top: 2px; }
     .people-info b { color: #0056b3; }
 
-    /* ===== GRAPH WRAPPER ===== */
-    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #fff; }
-    #graph-container { position: absolute; inset: 0; width: 100%; height: 100%; }
-    #graph-container canvas { border-radius: 12px; display: block; }
+    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #f8f9fa; }
+    #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
 
-    /* ===== SHARED PANEL ===== */
     .gp { overflow: hidden; transition: box-shadow 0.25s; }
-    .gp-h {
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 6px 10px; cursor: pointer; user-select: none;
-      background: rgba(0,86,179,0.06);
-      border-bottom: 1px solid rgba(0,0,255,0.08);
-      transition: background 0.2s;
-    }
+    .gp-h { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; cursor: pointer; user-select: none; background: rgba(0,86,179,0.06); border-bottom: 1px solid rgba(0,0,255,0.08); transition: background 0.2s; }
     .gp-h:hover { background: rgba(0,86,179,0.12); }
     .gp-h strong, .gp-h h3 { color: #0056b3; font-size: 0.78em; font-weight: 600; margin: 0; }
     .gp-h .chv { color: #0056b3; font-size: 0.6em; transition: transform 0.25s; }
@@ -91,8 +63,7 @@
     .gp.shut .gp-h { border-bottom: none; }
     .gp.shut .chv { transform: rotate(180deg); }
 
-    /* ===== CONTROLS (top-left) ===== */
-    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 210px; }
+    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 215px; }
     .cb { padding: 7px 10px 9px; }
     .cb label { font-size: 0.73em; color: #333; display: block; margin: 4px 0 1px; font-weight: 500; }
     .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(255,255,255,0.85); color: #333; font-size: 0.77em; outline: none; }
@@ -102,13 +73,12 @@
     .cb .chks label { display: flex; align-items: center; gap: 3px; font-size: 0.73em; color: #333; cursor: pointer; margin: 0; }
     .cb .chks input[type="checkbox"] { accent-color: #0056b3; }
     .cb .btns { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
-    .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(0,86,179,0.08); color: #0056b3; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; min-width: 60px; }
+    .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(0,86,179,0.08); color: #0056b3; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; min-width: 55px; }
     .cb .btns button:hover { background: rgba(0,86,179,0.18); }
     .cb .depth-row { display: flex; align-items: center; gap: 6px; }
     .cb .depth-row input { flex: 1; }
     .cb .depth-row span { font-size: 0.77em; color: #0056b3; font-weight: 700; min-width: 12px; text-align: center; }
 
-    /* ===== SEARCH (top-center) ===== */
     .hud-search { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 12; display: flex; align-items: center; }
     .hud-search input { padding: 5px 11px; border: 1px solid rgba(0,0,255,0.2); border-radius: 6px 0 0 6px; font-size: 0.77em; width: 200px; outline: none; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); color: #333; }
     .hud-search input::placeholder { color: #888; }
@@ -117,65 +87,41 @@
     .hud-search button:hover { background: rgba(0,86,179,0.2); }
     .hud-search .sc { padding: 0 7px; font-size: 0.71em; color: #0056b3; white-space: nowrap; text-shadow: 0 0 4px rgba(255,255,255,0.9); }
 
-    /* ===== STATS (top-right) ===== */
     .hud-stats { position: absolute; top: 10px; right: 10px; z-index: 12; }
     .sb { padding: 5px 11px; font-size: 0.74em; color: #333; white-space: nowrap; }
     .sb b { color: #0056b3; font-weight: 700; }
 
-    /* ===== CATEGORY LEGEND (bottom-left) ===== */
     .hud-cat { position: absolute; bottom: 10px; left: 10px; z-index: 12; width: 190px; }
     .cat-b { padding: 4px 10px 7px; max-height: 180px; overflow-y: auto; }
     .li { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1px 0; cursor: pointer; padding: 1px 2px; border-radius: 3px; transition: background 0.15s; }
     .li:hover { background: rgba(0,86,179,0.08); }
     .ld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
 
-    /* ===== EDGE LEGEND (bottom-right) ===== */
     .hud-edge { position: absolute; bottom: 10px; right: 10px; z-index: 12; width: 172px; }
     .edge-b { padding: 3px 10px 7px; max-height: 210px; overflow-y: auto; }
     .ei { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1.5px 0; }
     .el { width: 15px; height: 3px; border-radius: 2px; flex-shrink: 0; }
 
-    /* ===== SCROLLBAR ===== */
     .cat-b::-webkit-scrollbar, .edge-b::-webkit-scrollbar { width: 4px; }
     .cat-b::-webkit-scrollbar-track, .edge-b::-webkit-scrollbar-track { background: transparent; }
     .cat-b::-webkit-scrollbar-thumb, .edge-b::-webkit-scrollbar-thumb { background: rgba(0,0,255,0.15); border-radius: 2px; }
 
-    /* ===== TOOLTIP ===== */
     #tip {
-      position: fixed; background: rgba(255,255,255,0.95); backdrop-filter: blur(16px);
-      -webkit-backdrop-filter: blur(16px);
-      color: #222; padding: 10px 14px; border-radius: 9px;
-      border: 1px solid rgba(0,0,255,0.15); font-size: 0.79em;
-      pointer-events: none; z-index: 200; max-width: 340px;
-      line-height: 1.55; display: none;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      position: fixed; background: rgba(255,255,255,0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      color: #222; padding: 10px 14px; border-radius: 9px; border: 1px solid rgba(0,0,255,0.15); font-size: 0.79em;
+      pointer-events: none; z-index: 200; max-width: 340px; line-height: 1.55; display: none; box-shadow: 0 8px 28px rgba(0,0,0,0.12);
     }
     #tip strong { color: #0056b3; }
     #tip .tip-cat { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; margin-top: 3px; }
 
-    /* ===== LOADING ===== */
-    .ld-overlay {
-      position: absolute; inset: 0; display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 12px;
-      background: rgba(255,255,255,0.8); backdrop-filter: blur(4px); z-index: 25; transition: opacity 0.5s;
-    }
+    .ld-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(255,255,255,0.8); backdrop-filter: blur(4px); z-index: 25; transition: opacity 0.5s; }
     .ld-overlay.off { opacity: 0; pointer-events: none; }
     .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(0,0,255,0.1); border-top-color: #0056b3; border-radius: 50%; animation: spin 0.75s linear infinite; }
     .ld-text { color: #0056b3; font-size: 0.82em; font-weight: 600; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 900px) {
-      .hud-search input { width: 135px; }
-      .hud-ctrl { width: 180px; }
-      .hud-cat { width: 160px; }
-      .hud-edge { width: 148px; }
-    }
-    @media (max-width: 600px) {
-      .hud-search { display: none; }
-      .hud-ctrl { width: 160px; }
-      .hud-cat, .hud-edge { width: 135px; }
-    }
+    @media (max-width: 900px) { .hud-search input { width: 135px; } .hud-ctrl { width: 180px; } .hud-cat { width: 160px; } .hud-edge { width: 148px; } }
+    @media (max-width: 600px) { .hud-search { display: none; } .hud-ctrl { width: 160px; } .hud-cat, .hud-edge { width: 135px; } }
   </style>
 </head>
 <body>
@@ -194,15 +140,13 @@
   </div>
 
   <div class="graph-wrap">
-    <div id="graph-container"><canvas id="canvas"></canvas></div>
+    <div id="cy"></div>
 
-    <!-- Loading -->
     <div class="ld-overlay" id="loading">
       <div class="ld-spinner"></div>
       <div class="ld-text" id="ld-text">Loading network data...</div>
     </div>
 
-    <!-- HUD: Controls -->
     <div class="hud-ctrl">
       <div class="gp" id="ctrl-p">
         <div class="gp-h" id="ctrl-t">
@@ -215,10 +159,14 @@
             <input type="range" id="depth-range" min="1" max="3" value="1" step="1">
             <span id="depth-val">1</span>
           </div>
-          <label>Node Size</label>
-          <input type="range" id="node-scale" min="2" max="20" value="6" />
-          <label>Spacing</label>
-          <input type="range" id="spacing-range" min="30" max="300" value="120" />
+          <label>Layout</label>
+          <select id="layout-select">
+            <option value="fcose" selected>Force-Directed (fcose)</option>
+            <option value="concentric">Concentric Rings</option>
+            <option value="circle">Circle</option>
+            <option value="grid">Grid</option>
+            <option value="breadthfirst">Hierarchical</option>
+          </select>
           <div class="chks">
             <label><input type="checkbox" id="show-people" checked /> People</label>
             <label><input type="checkbox" id="show-labels" checked /> Labels</label>
@@ -234,19 +182,16 @@
       </div>
     </div>
 
-    <!-- HUD: Search -->
     <div class="hud-search">
       <input type="text" id="s-input" placeholder="Search nodes..." />
       <button id="s-btn"><i class="fa-solid fa-search"></i></button>
       <span class="sc" id="s-count"></span>
     </div>
 
-    <!-- HUD: Stats -->
     <div class="hud-stats">
       <div class="sb" id="stats"><b>Loading...</b></div>
     </div>
 
-    <!-- HUD: Category legend -->
     <div class="hud-cat">
       <div class="gp" id="cat-p">
         <div class="gp-h" id="cat-t">
@@ -257,7 +202,6 @@
       </div>
     </div>
 
-    <!-- HUD: Edge legend -->
     <div class="hud-edge">
       <div class="gp" id="edge-p">
         <div class="gp-h" id="edge-t">
@@ -270,17 +214,21 @@
   </div>
   </div>
 
-  <!-- Tooltip -->
   <div id="tip"></div>
 
   <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
   <script>
   /* =================================================================
-   *  PURE CANVAS2D NETWORK GRAPH — Zero-overlap deterministic layout
-   *  No physics engine. No d3-force. No force-graph library.
-   *  Pure math layout + raw Canvas2D rendering = instant + smooth.
+   *  CYTOSCAPE.JS NETWORK GRAPH — fcose anti-overlap layout
+   *  Labels always visible. Proper force-directed spacing.
+   *  Multiple layout options: fcose, concentric, circle, grid, tree.
    * ================================================================= */
   initPage('jewish');
+
+  // Register fcose layout
+  if (typeof cytoscapeFcose !== 'undefined') cytoscape.use(cytoscapeFcose);
 
   // ─── Collapsible panels ──────────────────────────────
   ['ctrl','cat','edge'].forEach(k => {
@@ -304,9 +252,17 @@
     'Manufacturing & Industry':'#757575','Law Firms':'#455a64',
     'Notable Individuals':'#ffc107','Transportation':'#00acc1',
     'Advertising & PR':'#d81b60','Telecommunications':'#7c4dff',
-    'Utilities & Energy':'#66bb6a','People':'#ffab40','Controversy':'#d32f2f'
+    'Utilities & Energy':'#66bb6a','People':'#ffab40','Controversy':'#d32f2f',
+    'Advocacy & Political Organizations':'#607d8b','Corporate':'#78909c',
+    'Energy':'#66bb6a','Finance':'#ff9800','Government':'#3f51b5',
+    'Intelligence':'#f44336','Legal':'#455a64','Media':'#e74c3c',
+    'Non-Profit':'#4caf50','Philanthropy':'#e91e63','Philanthropy & Foundations':'#e91e63',
+    'Political':'#f44336','Real Estate & Property':'#795548',
+    'Retail & Consumer Goods':'#009688','Fashion & Luxury':'#ff4081',
+    'Conglomerates':'#9e9e9e','Healthcare & Pharmaceuticals':'#4caf50',
+    'Community & Social Organizations':'#3498db','Defense & Security':'#f44336'
   };
-  const DC='#546e7a', PC='#ffab40';
+  const DC = '#546e7a', PC = '#ffab40';
   const EC = {
     'financial':'#ff9800','shared-person':'#9c27b0','political':'#f44336',
     'organizational':'#2196f3','ideological':'#4caf50','historical':'#795548',
@@ -336,94 +292,20 @@
     'science connection':'#2ecc71','property':'#795548',
     'investigation':'#607d8b','social':'#9c27b0'
   };
-  const DEC='#90a4ae';
+  const DEC = '#90a4ae';
 
-  // ─── State ───────────────────────────────────────────
-  const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
-  const container = document.getElementById('graph-container');
-  const tipEl = document.getElementById('tip');
-
-  let nodes = [], links = [], nodeMap = {};
-  let focusEntryId = null;
-  let hoveredNode = null, hoveredLink = null;
-  let searchMatches = new Set();
-  let neighborMap = {}, neighborSet = new Set();
-  let mouseX = 0, mouseY = 0;
-  let nodeScale = 6;
-
-  // Camera: pan/zoom state
-  let camX = 0, camY = 0, camZ = 1;
-  let isDragging = false, wasDragged = false;
-  let dragNode = null;
-  let dragStartX = 0, dragStartY = 0, dragCamX = 0, dragCamY = 0;
-  let needsRedraw = true;
-
-  // ─── Spatial index for fast O(1) hit testing ────────
-  let gridCellSize = 80;
-  let spatialGrid = {};
-
-  function buildSpatialGrid() {
-    spatialGrid = {};
-    gridCellSize = Math.max(30, 60 / Math.max(camZ, 0.05));
-    for (const n of nodes) {
-      const gx = Math.floor(n.x / gridCellSize);
-      const gy = Math.floor(n.y / gridCellSize);
-      const key = gx + ',' + gy;
-      if (!spatialGrid[key]) spatialGrid[key] = [];
-      spatialGrid[key].push(n);
-    }
-  }
-
-  function findNodeAt(wx, wy) {
-    const gx = Math.floor(wx / gridCellSize);
-    const gy = Math.floor(wy / gridCellSize);
-    let best = null, bestDist = Infinity;
-    for (let dx = -1; dx <= 1; dx++) {
-      for (let dy = -1; dy <= 1; dy++) {
-        const cell = spatialGrid[(gx+dx)+','+(gy+dy)];
-        if (!cell) continue;
-        for (const n of cell) {
-          const d = (n.x - wx) * (n.x - wx) + (n.y - wy) * (n.y - wy);
-          const r = (n._size || 6) + 5 / camZ;
-          if (d < r * r && d < bestDist) { bestDist = d; best = n; }
-        }
-      }
-    }
-    return best;
-  }
-
-  function findLinkAt(wx, wy) {
-    const threshold = 5 / camZ;
-    const th2 = threshold * threshold;
-    for (const l of links) {
-      const s = nodeMap[l.source], t = nodeMap[l.target];
-      if (!s || !t) continue;
-      const dx = t.x - s.x, dy = t.y - s.y;
-      const len2 = dx * dx + dy * dy;
-      if (len2 === 0) continue;
-      let p = ((wx - s.x) * dx + (wy - s.y) * dy) / len2;
-      p = Math.max(0, Math.min(1, p));
-      const px = s.x + p * dx, py = s.y + p * dy;
-      const dist2 = (wx - px) * (wx - px) + (wy - py) * (wy - py);
-      if (dist2 < th2) return l;
-    }
-    return null;
-  }
-
-  // ─── Screen <-> World transforms ────────────────────
-  function screenToWorld(sx, sy) {
-    const rect = canvas.getBoundingClientRect();
-    return {
-      x: (sx - rect.left - rect.width / 2) / camZ + camX,
-      y: (sy - rect.top - rect.height / 2) / camZ + camY
-    };
+  function darken(hex, amt) {
+    amt = amt || 0.3;
+    try {
+      const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+      return '#' + [r,g,b].map(c => Math.round(c*(1-amt)).toString(16).padStart(2,'0')).join('');
+    } catch(e) { return '#333'; }
   }
 
   // ─── Parse URL ───────────────────────────────────────
   const ID_ALIASES = { 'jeffrey-epstein-network': 'epstein-network' };
   const params = new URLSearchParams(window.location.search);
-  focusEntryId = params.get('id') || 'epstein-network';
+  let focusEntryId = params.get('id') || 'epstein-network';
   if (ID_ALIASES[focusEntryId]) {
     focusEntryId = ID_ALIASES[focusEntryId];
     const newUrl = new URL(window.location);
@@ -431,582 +313,426 @@
     window.history.replaceState({}, '', newUrl);
   }
   document.getElementById('btn-entry-top').href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
+  document.getElementById('btn-entry').onclick = () => {
+    window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
+  };
 
-  // ═══════════════════════════════════════════════════════
-  //  DETERMINISTIC RADIAL SECTOR LAYOUT
-  //  Focus at center. Entries in concentric ring grouped by
-  //  category. People clustered near their parent entry.
-  //  Every position computed mathematically — ZERO overlap.
-  // ═══════════════════════════════════════════════════════
-  function computeLayout(data, spacing) {
-    const sf = (spacing || 120) / 120;
-    const focus = data.nodes.find(n => n.isFocus);
-    const entries = data.nodes.filter(n => n.nodeType === 'entry' && !n.isFocus);
-    const people = data.nodes.filter(n => n.nodeType === 'person');
+  const tipEl = document.getElementById('tip');
 
-    // Group entries by category
-    const catGroups = {};
-    entries.forEach(n => {
-      const cat = n.category || 'Other';
-      if (!catGroups[cat]) catGroups[cat] = [];
-      catGroups[cat].push(n);
-    });
-    const categories = Object.keys(catGroups).sort((a, b) => catGroups[b].length - catGroups[a].length);
-
-    // Build person→entry mapping from links
-    const p2e = {};
-    data.links.forEach(l => {
-      if (l.type === 'person-affiliation') {
-        const s = (typeof l.source === 'string') ? l.source : (l.source.id || l.source);
-        const t = (typeof l.target === 'string') ? l.target : (l.target.id || l.target);
-        const pid = String(s).startsWith('person-') ? s : t;
-        const eid = String(s).startsWith('person-') ? t : s;
-        if (!p2e[pid]) p2e[pid] = [];
-        p2e[pid].push(eid);
+  // ─── Cytoscape stylesheet ───────────────────────────
+  const cyStyle = [
+    // ── Entry nodes (organizations) ──
+    {
+      selector: 'node[nodeType="entry"]',
+      style: {
+        'shape': 'round-rectangle',
+        'background-color': 'data(color)',
+        'border-width': 2,
+        'border-color': 'data(borderColor)',
+        'label': 'data(name)',
+        'width': 'data(size)',
+        'height': 'data(sizeH)',
+        'font-size': 'data(fontSize)',
+        'text-valign': 'bottom',
+        'text-halign': 'center',
+        'text-margin-y': 4,
+        'color': '#222',
+        'text-outline-width': 2.5,
+        'text-outline-color': '#ffffff',
+        'text-max-width': '120px',
+        'text-wrap': 'ellipsis',
+        'min-zoomed-font-size': 4,
+        'z-index': 10
       }
-    });
-
-    // Compute entry ring
-    const nE = Math.max(entries.length, 1);
-    const entrySpacing = 55 * sf;
-    const R_entry = Math.max(350 * sf, nE * entrySpacing / (2 * Math.PI));
-
-    // Place focus at center
-    if (focus) { focus.x = 0; focus.y = 0; }
-
-    // Place entries on ring, grouped by category sectors
-    let angleOffset = -Math.PI / 2;
-    const entryAngles = {};
-    const totalEntries = entries.length || 1;
-
-    categories.forEach(cat => {
-      const group = catGroups[cat];
-      const proportion = group.length / totalEntries;
-      const sectorSize = proportion * 2 * Math.PI;
-
-      group.sort((a, b) => (b._degree || 0) - (a._degree || 0));
-      group.forEach((n, i) => {
-        const a = angleOffset + (sectorSize * (i + 0.5)) / group.length;
-        n.x = R_entry * Math.cos(a);
-        n.y = R_entry * Math.sin(a);
-        entryAngles[n.id] = a;
-      });
-      angleOffset += sectorSize;
-    });
-
-    // Separate people into focus-connected vs entry-specific
-    const focusPeople = [];
-    const entryPeopleMap = {};
-    const placed = new Set();
-
-    people.forEach(p => {
-      const parentEntries = p2e[p.id] || [];
-      if (focus && parentEntries.includes(focus.id)) {
-        focusPeople.push(p);
-        placed.add(p.id);
+    },
+    // ── Focus node (center) ──
+    {
+      selector: 'node[?isFocus]',
+      style: {
+        'shape': 'star',
+        'background-color': '#c62828',
+        'border-width': 3,
+        'border-color': '#7f0000',
+        'width': 55,
+        'height': 55,
+        'font-size': 16,
+        'font-weight': 'bold',
+        'color': '#c62828',
+        'text-outline-width': 3,
+        'text-outline-color': '#ffffff',
+        'text-max-width': '200px',
+        'min-zoomed-font-size': 2,
+        'z-index': 999
       }
-    });
-
-    people.forEach(p => {
-      if (placed.has(p.id)) return;
-      const parentEntries = p2e[p.id] || [];
-      for (const eid of parentEntries) {
-        if (eid !== (focus ? focus.id : '')) {
-          if (!entryPeopleMap[eid]) entryPeopleMap[eid] = [];
-          entryPeopleMap[eid].push(p);
-          placed.add(p.id);
-          break;
-        }
+    },
+    // ── Person nodes ──
+    {
+      selector: 'node[nodeType="person"]',
+      style: {
+        'shape': 'ellipse',
+        'background-color': '#ffab40',
+        'border-width': 1,
+        'border-color': '#e68a00',
+        'label': 'data(name)',
+        'width': 'data(size)',
+        'height': 'data(size)',
+        'font-size': 'data(fontSize)',
+        'text-valign': 'bottom',
+        'text-halign': 'center',
+        'text-margin-y': 3,
+        'color': '#444',
+        'text-outline-width': 2,
+        'text-outline-color': '#ffffff',
+        'text-max-width': '100px',
+        'text-wrap': 'ellipsis',
+        'min-zoomed-font-size': 7,
+        'z-index': 5
       }
-    });
-
-    const unplaced = people.filter(p => !placed.has(p.id));
-    const allOuter = focusPeople.concat(unplaced);
-
-    // Focus-connected people: full outer ring
-    const nFP = Math.max(allOuter.length, 1);
-    const R_people = Math.max(R_entry * 1.6, nFP * 14 / (2 * Math.PI)) * sf;
-    allOuter.forEach((p, i) => {
-      const a = (2 * Math.PI * i) / nFP - Math.PI / 2;
-      p.x = R_people * Math.cos(a);
-      p.y = R_people * Math.sin(a);
-    });
-
-    // Entry-specific people: arc near their parent entry
-    const wedge = (2 * Math.PI) / nE;
-    Object.entries(entryPeopleMap).forEach(([eid, ppl]) => {
-      const baseAngle = entryAngles[eid] || 0;
-      const count = ppl.length;
-      const maxArc = wedge * 0.7;
-      const arc = Math.min(maxArc, count * 0.05);
-      const r = (R_entry + R_people) * 0.5 * sf;
-
-      ppl.forEach((p, i) => {
-        const offset = count > 1 ? (arc * i / (count - 1)) - arc / 2 : 0;
-        const a = baseAngle + offset;
-        p.x = r * Math.cos(a);
-        p.y = r * Math.sin(a);
-      });
-    });
-  }
-
-  // ═══════════════════════════════════════════════════════
-  //  CANVAS2D RENDERING — 60fps even with 5000+ nodes
-  // ═══════════════════════════════════════════════════════
-  function resizeCanvas() {
-    const rect = container.getBoundingClientRect();
-    const dpr = window.devicePixelRatio || 1;
-    canvas.width = rect.width * dpr;
-    canvas.height = rect.height * dpr;
-    canvas.style.width = rect.width + 'px';
-    canvas.style.height = rect.height + 'px';
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    needsRedraw = true;
-  }
-
-  function draw() {
-    if (!needsRedraw) { requestAnimationFrame(draw); return; }
-    needsRedraw = false;
-
-    const W = canvas.clientWidth, H = canvas.clientHeight;
-    ctx.clearRect(0, 0, W, H);
-    ctx.save();
-    ctx.translate(W / 2, H / 2);
-    ctx.scale(camZ, camZ);
-    ctx.translate(-camX, -camY);
-
-    const showLabels = document.getElementById('show-labels').checked;
-    const dimAlpha = 0.04;
-    const hasHover = !!hoveredNode;
-    const hasSearch = searchMatches.size > 0;
-
-    // ── Draw links ──
-    for (const l of links) {
-      const s = nodeMap[l.source], t = nodeMap[l.target];
-      if (!s || !t) continue;
-
-      let alpha = 0.25, width = 0.5;
-      if (hasHover) {
-        if (l.source === hoveredNode.id || l.target === hoveredNode.id) {
-          alpha = 0.9; width = 2 / camZ;
-        } else { alpha = dimAlpha; width = 0.3 / camZ; }
-      } else if (hasSearch) {
-        if (searchMatches.has(l.source) || searchMatches.has(l.target)) {
-          alpha = 0.7; width = 1.2 / camZ;
-        } else { alpha = dimAlpha; width = 0.3 / camZ; }
+    },
+    // ── Edges ──
+    {
+      selector: 'edge',
+      style: {
+        'line-color': 'data(color)',
+        'width': 1,
+        'opacity': 0.35,
+        'curve-style': 'bezier',
+        'target-arrow-shape': 'none'
       }
-
-      ctx.globalAlpha = alpha;
-      ctx.strokeStyle = l._color || DEC;
-      ctx.lineWidth = width;
-      ctx.beginPath();
-      ctx.moveTo(s.x, s.y);
-      ctx.lineTo(t.x, t.y);
-      if (l.type === 'person-affiliation') {
-        ctx.setLineDash([4 / camZ, 3 / camZ]);
-      } else {
-        ctx.setLineDash([]);
+    },
+    {
+      selector: 'edge[type="person-affiliation"]',
+      style: {
+        'line-style': 'dashed',
+        'line-dash-pattern': [6, 4],
+        'opacity': 0.2,
+        'width': 0.7
       }
-      ctx.stroke();
-      ctx.setLineDash([]);
-    }
-
-    // ── Draw nodes ──
-    for (const n of nodes) {
-      const isHovered = n === hoveredNode;
-      const isNeighbor = hasHover && neighborSet.has(n.id);
-      const dimByHover = hasHover && !isHovered && !isNeighbor;
-      const dimBySearch = hasSearch && !n._found;
-      const shouldDim = dimByHover || dimBySearch;
-
-      ctx.globalAlpha = shouldDim ? dimAlpha : 1;
-
-      const size = n._size;
-
-      // Shape: diamond for people, circle for entries
-      ctx.beginPath();
-      if (n.nodeType === 'person') {
-        ctx.moveTo(n.x, n.y - size);
-        ctx.lineTo(n.x + size * 0.75, n.y);
-        ctx.lineTo(n.x, n.y + size);
-        ctx.lineTo(n.x - size * 0.75, n.y);
-        ctx.closePath();
-      } else {
-        ctx.arc(n.x, n.y, size, 0, Math.PI * 2);
+    },
+    // ── Interaction states ──
+    {
+      selector: 'node.hover',
+      style: {
+        'border-width': 4,
+        'border-color': '#0056b3',
+        'z-index': 9999,
+        'font-weight': 'bold',
+        'text-outline-width': 3,
+        'min-zoomed-font-size': 0
       }
-      ctx.fillStyle = n._color;
-      ctx.fill();
-
-      // Border
-      if (isHovered) {
-        ctx.strokeStyle = '#0056b3';
-        ctx.lineWidth = 2.5 / camZ;
-        ctx.stroke();
-      } else if (n._found) {
-        ctx.strokeStyle = '#ffeb3b';
-        ctx.lineWidth = 2 / camZ;
-        ctx.stroke();
-      } else if (n.isFocus) {
-        ctx.strokeStyle = '#b71c1c';
-        ctx.lineWidth = 2 / camZ;
-        ctx.stroke();
-      } else if (!shouldDim) {
-        ctx.strokeStyle = 'rgba(0,0,0,0.1)';
-        ctx.lineWidth = 0.4 / camZ;
-        ctx.stroke();
+    },
+    {
+      selector: 'node.neighbor',
+      style: {
+        'border-width': 3,
+        'border-color': '#1976d2',
+        'z-index': 100,
+        'min-zoomed-font-size': 0
       }
-
-      // Labels
-      if (!shouldDim && showLabels) {
-        const shouldShowLabel = isHovered || isNeighbor || n.isFocus || n._found ||
-          ((n._degree || 0) > 12 && camZ > 0.5) ||
-          ((n._degree || 0) > 6 && camZ > 1.0) ||
-          ((n._degree || 0) > 2 && camZ > 2.0) ||
-          camZ > 3.5;
-
-        if (shouldShowLabel) {
-          const fontSize = Math.max(3, (isHovered || n.isFocus ? 12 : 10) / camZ);
-          ctx.font = (isHovered || n.isFocus ? 'bold ' : '') + fontSize + 'px Arial';
-          ctx.textAlign = 'center';
-          ctx.textBaseline = 'top';
-          const label = n.name || '';
-          const tw = ctx.measureText(label).width;
-          const ty = n.y + size + 2 / camZ;
-          const pad = 1.5 / camZ;
-
-          ctx.globalAlpha = 0.88;
-          ctx.fillStyle = '#fff';
-          ctx.fillRect(n.x - tw / 2 - pad, ty - pad, tw + pad * 2, fontSize + pad * 2);
-          ctx.globalAlpha = shouldDim ? dimAlpha : 1;
-          ctx.fillStyle = isHovered ? '#0056b3' : n.isFocus ? '#c62828' : '#333';
-          ctx.fillText(label, n.x, ty);
-        }
+    },
+    {
+      selector: 'edge.highlighted',
+      style: {
+        'opacity': 1,
+        'width': 2.5,
+        'z-index': 9998
+      }
+    },
+    {
+      selector: '.dimmed',
+      style: {
+        'opacity': 0.06
+      }
+    },
+    {
+      selector: 'node.found',
+      style: {
+        'border-width': 4,
+        'border-color': '#ffeb3b',
+        'z-index': 500,
+        'min-zoomed-font-size': 0
+      }
+    },
+    {
+      selector: 'node.nolabel',
+      style: {
+        'label': ''
       }
     }
+  ];
 
-    ctx.restore();
-    ctx.globalAlpha = 1;
-    requestAnimationFrame(draw);
-  }
-
-  // ═══════════════════════════════════════════════════════
-  //  EVENT HANDLERS — Pan, zoom, hover, click, drag nodes
-  // ═══════════════════════════════════════════════════════
-  document.addEventListener('mousemove', e => {
-    mouseX = e.clientX; mouseY = e.clientY;
-    if (tipEl.style.display === 'block') {
-      tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-      tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
-    }
-  });
-
-  canvas.addEventListener('mousemove', e => {
-    const w = screenToWorld(e.clientX, e.clientY);
-
-    // Dragging a node
-    if (isDragging && dragNode) {
-      dragNode.x = w.x; dragNode.y = w.y;
-      wasDragged = true;
-      buildSpatialGrid();
-      needsRedraw = true;
-      return;
-    }
-
-    // Panning
-    if (isDragging) {
-      const dx = e.clientX - dragStartX, dy = e.clientY - dragStartY;
-      if (Math.abs(dx) > 3 || Math.abs(dy) > 3) wasDragged = true;
-      camX = dragCamX - dx / camZ;
-      camY = dragCamY - dy / camZ;
-      needsRedraw = true;
-      return;
-    }
-
-    // Hover detection
-    const node = findNodeAt(w.x, w.y);
-    if (node !== hoveredNode) {
-      hoveredNode = node;
-      hoveredLink = null;
-      neighborSet.clear();
-      if (node) {
-        canvas.style.cursor = 'pointer';
-        neighborSet.add(node.id);
-        const nb = neighborMap[node.id];
-        if (nb) nb.forEach(id => neighborSet.add(id));
-        showNodeTooltip(node);
-      } else {
-        const link = findLinkAt(w.x, w.y);
-        if (link) {
-          hoveredLink = link;
-          canvas.style.cursor = 'pointer';
-          showLinkTooltip(link);
-        } else {
-          canvas.style.cursor = 'grab';
-          tipEl.style.display = 'none';
-        }
-      }
-      needsRedraw = true;
-    }
-  });
-
-  canvas.addEventListener('mousedown', e => {
-    if (e.button !== 0) return;
-    const w = screenToWorld(e.clientX, e.clientY);
-    const node = findNodeAt(w.x, w.y);
-    isDragging = true;
-    wasDragged = false;
-    if (node) {
-      dragNode = node;
-    } else {
-      dragNode = null;
-      dragStartX = e.clientX;
-      dragStartY = e.clientY;
-      dragCamX = camX;
-      dragCamY = camY;
-      canvas.style.cursor = 'grabbing';
-    }
-    e.preventDefault();
-  });
-
-  canvas.addEventListener('mouseup', e => {
-    if (!isDragging) return;
-    const clickedOnNode = dragNode;
-    const dragged = wasDragged;
-
-    if (dragNode) { buildSpatialGrid(); }
-    isDragging = false;
-    dragNode = null;
-    canvas.style.cursor = 'grab';
-    needsRedraw = true;
-
-    // If no drag happened, treat as click
-    if (!dragged) {
-      if (clickedOnNode) {
-        handleNodeClick(clickedOnNode);
-        return;
-      }
-      const w = screenToWorld(e.clientX, e.clientY);
-      const link = findLinkAt(w.x, w.y);
-      if (link) {
-        handleLinkClick(link);
-        return;
-      }
-      // Background click — clear search
-      searchMatches.clear();
-      nodes.forEach(n => { n._found = false; });
-      document.getElementById('s-count').textContent = '';
-      document.getElementById('s-input').value = '';
-      needsRedraw = true;
-    }
-  });
-
-  canvas.addEventListener('wheel', e => {
-    e.preventDefault();
-    const zoomFactor = e.deltaY < 0 ? 1.12 : 0.89;
-    const newZ = Math.max(0.02, Math.min(15, camZ * zoomFactor));
-    const rect = canvas.getBoundingClientRect();
-    const mx = e.clientX - rect.left - rect.width / 2;
-    const my = e.clientY - rect.top - rect.height / 2;
-    camX += mx / camZ - mx / newZ;
-    camY += my / camZ - my / newZ;
-    camZ = newZ;
-    buildSpatialGrid();
-    needsRedraw = true;
-  }, { passive: false });
-
-  // Touch support
-  let lastTouchDist = 0;
-  canvas.addEventListener('touchstart', e => {
-    if (e.touches.length === 1) {
-      const t = e.touches[0];
-      isDragging = true; wasDragged = false;
-      dragStartX = t.clientX; dragStartY = t.clientY;
-      dragCamX = camX; dragCamY = camY;
-      const w = screenToWorld(t.clientX, t.clientY);
-      const node = findNodeAt(w.x, w.y);
-      dragNode = node || null;
-    } else if (e.touches.length === 2) {
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      lastTouchDist = Math.sqrt(dx * dx + dy * dy);
-    }
-    e.preventDefault();
-  }, { passive: false });
-
-  canvas.addEventListener('touchmove', e => {
-    if (e.touches.length === 1 && isDragging) {
-      const t = e.touches[0];
-      if (dragNode) {
-        const w = screenToWorld(t.clientX, t.clientY);
-        dragNode.x = w.x; dragNode.y = w.y;
-        wasDragged = true;
-        buildSpatialGrid();
-      } else {
-        const dx = t.clientX - dragStartX, dy = t.clientY - dragStartY;
-        if (Math.abs(dx) > 3 || Math.abs(dy) > 3) wasDragged = true;
-        camX = dragCamX - dx / camZ;
-        camY = dragCamY - dy / camZ;
-      }
-      needsRedraw = true;
-    } else if (e.touches.length === 2) {
-      const dx = e.touches[0].clientX - e.touches[1].clientX;
-      const dy = e.touches[0].clientY - e.touches[1].clientY;
-      const dist = Math.sqrt(dx * dx + dy * dy);
-      if (lastTouchDist > 0) {
-        camZ = Math.max(0.02, Math.min(15, camZ * (dist / lastTouchDist)));
-        buildSpatialGrid();
-        needsRedraw = true;
-      }
-      lastTouchDist = dist;
-      wasDragged = true;
-    }
-    e.preventDefault();
-  }, { passive: false });
-
-  canvas.addEventListener('touchend', e => {
-    if (e.touches.length === 0) {
-      if (!wasDragged && dragNode) {
-        handleNodeClick(dragNode);
-      }
-      isDragging = false; dragNode = null; lastTouchDist = 0;
-      needsRedraw = true;
-    }
-  });
-
-  document.querySelector('.graph-wrap').addEventListener('mouseleave', () => {
-    tipEl.style.display = 'none';
-    hoveredNode = null; hoveredLink = null;
-    neighborSet.clear();
-    needsRedraw = true;
+  // ─── Initialize Cytoscape ────────────────────────────
+  const cy = cytoscape({
+    container: document.getElementById('cy'),
+    style: cyStyle,
+    elements: [],
+    minZoom: 0.05,
+    maxZoom: 8,
+    wheelSensitivity: 0.15,
+    boxSelectionEnabled: false,
+    selectionType: 'single',
+    layout: { name: 'preset' }
   });
 
   // ─── Tooltip helpers ─────────────────────────────────
-  function showNodeTooltip(node) {
-    let html;
-    if (node.nodeType === 'person') {
-      html = '<strong><i class="fa-solid fa-user"></i> ' + node.name + '</strong><br/>'
-        + '<i class="fa-solid fa-briefcase"></i> ' + (node.role || 'Individual') + '<br/>'
-        + '<i class="fa-solid fa-globe"></i> ' + (node.country || '')
-        + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
-    } else {
-      html = '<strong>' + node.name + '</strong>'
-        + (node.isFocus ? '<span style="display:inline-block;padding:1px 6px;background:#c62828;color:#fff;border-radius:10px;font-size:0.7em;font-weight:700;margin-left:6px;">FOCUS</span>' : '') + '<br/>'
-        + '<i class="fa-solid fa-building"></i> ' + (node.type || '') + '<br/>'
-        + '<i class="fa-solid fa-globe"></i> ' + (node.country || '') + '<br/>'
-        + '<span class="tip-cat" style="background:' + (CC[node.category] || DC) + '30;color:' + (CC[node.category] || DC) + '">' + (node.category || '') + '</span>'
-        + '<br/><span style="color:#666;font-size:0.85em">' + (node._degree || 0) + ' connections</span>';
-    }
+  let lastMouseX = 0, lastMouseY = 0;
+  document.addEventListener('mousemove', e => { lastMouseX = e.clientX; lastMouseY = e.clientY; });
+
+  function showTip(html) {
     tipEl.innerHTML = html;
     tipEl.style.display = 'block';
-    tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-    tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
+    tipEl.style.left = Math.min(lastMouseX + 15, window.innerWidth - 360) + 'px';
+    tipEl.style.top = Math.min(lastMouseY - 10, window.innerHeight - 120) + 'px';
   }
+  function hideTip() { tipEl.style.display = 'none'; }
 
-  function showLinkTooltip(link) {
-    tipEl.innerHTML = '<strong>' + (link.type || 'related') + '</strong>'
-      + (link.description ? '<br/>' + link.description : '')
-      + '<br/><span style="color:#888;font-size:0.85em">Click to explore</span>';
-    tipEl.style.display = 'block';
-    tipEl.style.left = Math.min(mouseX + 15, window.innerWidth - 360) + 'px';
-    tipEl.style.top = Math.min(mouseY - 10, window.innerHeight - 120) + 'px';
-  }
+  // ─── Cytoscape events ───────────────────────────────
+  let hoverTimeout = null;
 
-  // ─── Click handlers ──────────────────────────────────
-  function handleNodeClick(node) {
-    if (!node) return;
-    if (node.nodeType === 'person') {
-      window.location.href = 'person.html?id=' + encodeURIComponent(node.personId || node.id);
-    } else if (node.isFocus) {
-      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(node.id);
+  cy.on('mouseover', 'node', function(e) {
+    clearTimeout(hoverTimeout);
+    const node = e.target;
+    node.addClass('hover');
+
+    // Highlight neighborhood
+    const hood = node.neighborhood().add(node);
+    cy.batch(() => {
+      cy.elements().not(hood).addClass('dimmed');
+      hood.nodes().not(node).addClass('neighbor');
+      hood.edges().addClass('highlighted');
+    });
+
+    // Tooltip
+    const d = node.data();
+    let html;
+    if (d.nodeType === 'person') {
+      html = '<strong><i class="fa-solid fa-user"></i> ' + d.name + '</strong><br/>'
+        + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
+        + '<i class="fa-solid fa-globe"></i> ' + (d.country || '')
+        + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
     } else {
-      window.location.href = 'network.html?id=' + encodeURIComponent(node.id);
+      html = '<strong>' + d.name + '</strong><br/>'
+        + '<i class="fa-solid fa-building"></i> ' + (d.entryType || '') + '<br/>'
+        + '<i class="fa-solid fa-globe"></i> ' + (d.country || '') + '<br/>'
+        + '<span class="tip-cat" style="background:' + (d.color || DC) + '30;color:' + (d.color || DC) + '">' + (d.category || '') + '</span>'
+        + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
     }
-  }
+    showTip(html);
+  });
 
-  function handleLinkClick(link) {
-    if (!link) return;
-    const src = nodeMap[link.source], tgt = nodeMap[link.target];
-    if (link.type === 'person-affiliation') {
-      const person = (src && src.nodeType === 'person') ? src : (tgt && tgt.nodeType === 'person') ? tgt : null;
+  cy.on('mouseout', 'node', function() {
+    hoverTimeout = setTimeout(() => {
+      cy.batch(() => {
+        cy.elements().removeClass('dimmed neighbor hover highlighted');
+      });
+      hideTip();
+    }, 50);
+  });
+
+  cy.on('mouseover', 'edge', function(e) {
+    const edge = e.target;
+    const d = edge.data();
+    edge.addClass('highlighted');
+    showTip('<strong>' + (d.type || 'related') + '</strong>'
+      + (d.description ? '<br/>' + d.description : '')
+      + '<br/><span style="color:#888;font-size:0.85em">'
+      + edge.source().data('name') + ' &harr; ' + edge.target().data('name') + '</span>');
+  });
+
+  cy.on('mouseout', 'edge', function(e) {
+    e.target.removeClass('highlighted');
+    hideTip();
+  });
+
+  cy.on('tap', 'node', function(e) {
+    const d = e.target.data();
+    if (d.nodeType === 'person') {
+      window.location.href = 'person.html?id=' + encodeURIComponent(d.personId || d.id);
+    } else if (d.isFocus) {
+      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(d.id);
+    } else {
+      window.location.href = 'network.html?id=' + encodeURIComponent(d.id);
+    }
+  });
+
+  cy.on('tap', 'edge', function(e) {
+    const edge = e.target;
+    const src = edge.source().data(), tgt = edge.target().data();
+    if (edge.data('type') === 'person-affiliation') {
+      const person = src.nodeType === 'person' ? src : tgt.nodeType === 'person' ? tgt : null;
       if (person) { window.location.href = 'person.html?id=' + encodeURIComponent(person.personId || person.id); return; }
     }
-    const entry = (tgt && tgt.nodeType === 'entry' && !tgt.isFocus) ? tgt : (src && src.nodeType === 'entry' && !src.isFocus) ? src : null;
-    if (entry) { window.location.href = 'network.html?id=' + encodeURIComponent(entry.id); }
+    const entry = tgt.nodeType !== 'person' ? tgt : src.nodeType !== 'person' ? src : null;
+    if (entry) window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(entry.id);
+  });
+
+  // ─── Layout config builder ──────────────────────────
+  function getLayoutConfig(focusNodeId) {
+    const layoutName = document.getElementById('layout-select').value;
+    const base = { animate: true, animationDuration: 1200, fit: true, padding: 50 };
+
+    switch (layoutName) {
+      case 'fcose':
+        return Object.assign(base, {
+          name: 'fcose',
+          quality: 'default',
+          randomize: true,
+          nodeDimensionsIncludeLabels: true,
+          nodeRepulsion: function() { return 6500; },
+          idealEdgeLength: function() { return 100; },
+          edgeElasticity: function() { return 0.45; },
+          nestingFactor: 0.1,
+          gravity: 0.3,
+          gravityRange: 3.8,
+          numIter: 2500,
+          fixedNodeConstraint: focusNodeId ? [{ nodeId: focusNodeId, position: { x: 0, y: 0 } }] : undefined
+        });
+      case 'concentric':
+        return Object.assign(base, {
+          name: 'concentric',
+          concentric: function(node) {
+            if (node.data('isFocus')) return 1000;
+            if (node.data('nodeType') === 'entry') return 500 + (node.data('degree') || 0);
+            return 10 + (node.data('degree') || 0);
+          },
+          levelWidth: function() { return 2; },
+          minNodeSpacing: 25,
+          avoidOverlap: true,
+          nodeDimensionsIncludeLabels: true
+        });
+      case 'circle':
+        return Object.assign(base, { name: 'circle', avoidOverlap: true, nodeDimensionsIncludeLabels: true });
+      case 'grid':
+        return Object.assign(base, { name: 'grid', avoidOverlap: true, nodeDimensionsIncludeLabels: true, condense: true });
+      case 'breadthfirst':
+        return Object.assign(base, {
+          name: 'breadthfirst',
+          directed: false,
+          roots: focusNodeId ? '#' + CSS.escape(focusNodeId) : undefined,
+          avoidOverlap: true,
+          nodeDimensionsIncludeLabels: true,
+          spacingFactor: 1.2
+        });
+      default:
+        return Object.assign(base, { name: 'fcose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: true, nodeRepulsion: function() { return 6500; }, numIter: 2500 });
+    }
   }
 
-  // ─── Fit view ────────────────────────────────────────
-  function fitView(subset) {
-    const target = subset || nodes;
-    if (target.length === 0) return;
-    let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-    target.forEach(n => {
-      if (n.x < minX) minX = n.x; if (n.x > maxX) maxX = n.x;
-      if (n.y < minY) minY = n.y; if (n.y > maxY) maxY = n.y;
-    });
-    const W = canvas.clientWidth, H = canvas.clientHeight;
-    const dw = (maxX - minX) || 100, dh = (maxY - minY) || 100;
-    const pad = 80;
-    camZ = Math.min((W - pad * 2) / dw, (H - pad * 2) / dh, 4);
-    camX = (minX + maxX) / 2;
-    camY = (minY + maxY) / 2;
-    buildSpatialGrid();
-    needsRedraw = true;
-  }
-
-  // ─── Build and render graph ──────────────────────────
+  // ─── Build graph from API data ──────────────────────
   function buildGraph(data) {
-    const spacing = +document.getElementById('spacing-range').value;
+    const elements = [];
 
     // Compute degrees
-    const degreeMap = {};
-    data.nodes.forEach(n => { degreeMap[n.id] = 0; });
+    const degMap = {};
+    data.nodes.forEach(n => { degMap[n.id] = 0; });
     data.links.forEach(l => {
-      degreeMap[l.source] = (degreeMap[l.source] || 0) + 1;
-      degreeMap[l.target] = (degreeMap[l.target] || 0) + 1;
+      degMap[l.source] = (degMap[l.source] || 0) + 1;
+      degMap[l.target] = (degMap[l.target] || 0) + 1;
     });
 
-    // Build neighbor map
-    neighborMap = {};
-    data.nodes.forEach(n => { neighborMap[n.id] = new Set(); });
-    data.links.forEach(l => {
-      if (neighborMap[l.source]) neighborMap[l.source].add(l.target);
-      if (neighborMap[l.target]) neighborMap[l.target].add(l.source);
-    });
-
-    // Assign properties
-    const ns = nodeScale;
+    // Add nodes
     data.nodes.forEach(n => {
-      n._degree = degreeMap[n.id] || 0;
-      n._color = n.isFocus ? '#c62828' : n.nodeType === 'person' ? PC : (CC[n.category] || DC);
-      n._found = false;
-      if (n.isFocus) {
-        n._size = Math.max(ns * 2, ns * 2 + Math.min(n._degree, 30) * ns * 0.02);
-      } else if (n.nodeType === 'person') {
-        n._size = Math.max(ns * 0.4, ns * 0.4 + n._degree * (ns * 0.05));
+      const deg = degMap[n.id] || 0;
+      const isPerson = n.nodeType === 'person';
+      const isFocus = !!n.isFocus;
+      const catColor = CC[n.category] || DC;
+
+      let size, sizeH, fontSize;
+      if (isFocus) {
+        size = 55; sizeH = 55; fontSize = 16;
+      } else if (isPerson) {
+        size = Math.max(10, 8 + Math.sqrt(deg) * 2);
+        sizeH = size;
+        fontSize = Math.max(6, 5 + Math.min(deg, 10) * 0.2);
       } else {
-        n._size = Math.max(ns * 0.6, ns * 0.6 + n._degree * (ns * 0.07));
+        size = Math.max(18, 12 + Math.sqrt(deg) * 4);
+        sizeH = Math.max(14, 10 + Math.sqrt(deg) * 3);
+        fontSize = Math.max(8, 6 + Math.sqrt(deg) * 0.9);
       }
+
+      elements.push({
+        group: 'nodes',
+        data: {
+          id: n.id,
+          name: n.name,
+          nodeType: n.nodeType,
+          category: n.category || '',
+          country: n.country || '',
+          entryType: n.type || '',
+          role: n.role || '',
+          personId: n.personId || '',
+          isFocus: isFocus,
+          degree: deg,
+          color: isFocus ? '#c62828' : isPerson ? PC : catColor,
+          borderColor: isFocus ? '#7f0000' : isPerson ? '#e68a00' : darken(catColor),
+          size: size,
+          sizeH: sizeH,
+          fontSize: fontSize
+        }
+      });
     });
-    data.links.forEach(l => { l._color = EC[l.type] || DEC; });
 
-    // Compute layout
-    computeLayout(data, spacing);
+    // Add edges
+    data.links.forEach((l, i) => {
+      elements.push({
+        group: 'edges',
+        data: {
+          id: 'e' + i,
+          source: l.source,
+          target: l.target,
+          type: l.type || 'related',
+          description: l.description || '',
+          color: EC[l.type] || DEC
+        }
+      });
+    });
 
-    // Store references
-    nodes = data.nodes;
-    links = data.links;
-    nodeMap = {};
-    nodes.forEach(n => { nodeMap[n.id] = n; });
-    buildSpatialGrid();
+    // Update Cytoscape
+    cy.batch(() => {
+      cy.elements().remove();
+      cy.add(elements);
+    });
 
-    // Stats
-    const entryCount = nodes.filter(n => n.nodeType !== 'person').length;
-    const peopleCount = nodes.filter(n => n.nodeType === 'person').length;
+    // Run layout
+    const focusNode = cy.nodes('[?isFocus]');
+    const focusId = focusNode.length ? focusNode[0].id() : null;
+    const layoutConfig = getLayoutConfig(focusId);
+
+    document.getElementById('ld-text').textContent = 'Computing layout for ' + data.nodes.length + ' nodes...';
+
+    const layout = cy.layout(layoutConfig);
+    layout.on('layoutstop', () => {
+      setTimeout(() => document.getElementById('loading').classList.add('off'), 200);
+    });
+    layout.run();
+
+    // Update stats
+    const entryCount = data.nodes.filter(n => n.nodeType !== 'person').length;
+    const peopleCount = data.nodes.filter(n => n.nodeType === 'person').length;
     document.getElementById('stats').innerHTML =
-      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + links.length + '</b> links';
+      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + data.links.length + '</b> links';
 
-    // Category legend
-    const cats = [...new Set(nodes.map(n => n.category))].filter(Boolean).sort();
+    // Update header
+    if (data.focusName) {
+      setSEO({ title: data.focusName + ' Network - Juice Project', description: 'Network graph for ' + data.focusName });
+      document.getElementById('page-title').innerHTML = '<span class="focus-name">' + data.focusName + '</span> Network';
+      document.getElementById('page-subtitle').textContent =
+        entryCount + ' nodes \u00B7 ' + data.links.length + ' connections \u00B7 Depth ' + document.getElementById('depth-range').value;
+    }
+    if (data.totalPeople !== undefined) {
+      const showing = document.getElementById('show-people').checked;
+      document.getElementById('people-info').innerHTML = showing
+        ? 'Showing <b>' + peopleCount + '</b> of <b>' + data.totalPeople + '</b> associated individuals'
+        : '<b>' + data.totalPeople + '</b> people available — check "People" to show';
+    }
+
+    // Legends
+    buildCatLegend(data.nodes);
+    buildEdgeLegend(data.links);
+  }
+
+  function buildCatLegend(nodeList) {
+    const cats = [...new Set(nodeList.map(n => n.category).filter(Boolean))].sort();
     const catB = document.getElementById('cat-b');
     catB.innerHTML = '';
     cats.forEach(c => {
@@ -1016,18 +742,20 @@
       if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
       r.appendChild(d);
       r.appendChild(document.createTextNode(c));
-      r.onclick = function() {
-        searchMatches.clear();
-        nodes.forEach(n => { n._found = n.category === c; if (n._found) searchMatches.add(n.id); });
-        document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
+      r.onclick = () => {
+        cy.batch(() => { cy.nodes().removeClass('found'); });
+        const matching = cy.nodes().filter(n => n.data('category') === c);
+        cy.batch(() => { matching.addClass('found'); });
+        document.getElementById('s-count').textContent = matching.length + ' in ' + c;
         document.getElementById('s-input').value = '';
-        fitView(nodes.filter(n => n._found));
+        if (matching.length) cy.fit(matching, 60);
       };
       catB.appendChild(r);
     });
+  }
 
-    // Edge legend
-    const eTypes = [...new Set(links.map(l => l.type).filter(Boolean))].sort();
+  function buildEdgeLegend(linkList) {
+    const eTypes = [...new Set(linkList.map(l => l.type).filter(Boolean))].sort();
     const edgeB = document.getElementById('edge-b');
     edgeB.innerHTML = '';
     eTypes.forEach(t => {
@@ -1038,127 +766,95 @@
       r.appendChild(document.createTextNode(t));
       edgeB.appendChild(r);
     });
-
-    searchMatches.clear();
-    hoveredNode = null; hoveredLink = null;
-    neighborSet.clear();
-
-    fitView();
-    needsRedraw = true;
-    setTimeout(() => { document.getElementById('loading').classList.add('off'); }, 100);
   }
 
-  // ─── Load data ───────────────────────────────────────
+  // ─── Data loading ────────────────────────────────────
   function loadGraph() {
     const depth = document.getElementById('depth-range').value;
     const ppl = document.getElementById('show-people').checked;
-    const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId)
-      + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
+    const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId) + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
 
     const ld = document.getElementById('loading');
-    const lt = document.getElementById('ld-text');
     ld.classList.remove('off');
-    lt.textContent = 'Fetching network data...';
+    document.getElementById('ld-text').textContent = 'Fetching network data...';
     document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
     fetch(url).then(r => r.json()).then(data => {
-      if (data.error) { lt.textContent = 'Entry not found: ' + focusEntryId; return; }
-
-      const focusName = data.focusName || focusEntryId;
-      document.getElementById('page-title').innerHTML = '<span class="focus-name">' + focusName + '</span> Network';
-      document.getElementById('page-subtitle').textContent = data.nodes.length + ' nodes \u00b7 ' + data.links.length + ' connections \u00b7 Depth ' + data.depth;
-      document.title = focusName + ' Network - The Juice Box';
-
-      const pInfo = document.getElementById('people-info');
-      if (data.totalPeople > 0) {
-        const shownPeople = data.nodes.filter(n => n.nodeType === 'person').length;
-        if (ppl && shownPeople > 0) {
-          pInfo.innerHTML = 'Showing <b>' + shownPeople + '</b> of <b>' + data.totalPeople + '</b> associated individuals';
-        } else {
-          pInfo.innerHTML = '<b>' + data.totalPeople + '</b> associated individuals (toggle People in controls to show)';
-        }
-      } else { pInfo.innerHTML = ''; }
-
-      if (typeof setSEO === 'function') {
-        setSEO({
-          title: focusName + ' Network - The Juice Box',
-          description: 'Explore the full connection network of ' + focusName + '.',
-          url: window.location.origin + '/network.html?id=' + focusEntryId
-        });
+      if (!data.nodes || data.nodes.length === 0) {
+        document.getElementById('ld-text').textContent = 'No data found for this entry.';
+        return;
       }
-
-      lt.textContent = 'Computing layout...';
-      setTimeout(() => buildGraph(data), 10);
+      buildGraph(data);
     }).catch(err => {
       console.error('Load error:', err);
-      lt.textContent = 'Error loading data.';
+      document.getElementById('ld-text').textContent = 'Error loading data: ' + err.message;
     });
   }
 
   // ─── Controls ────────────────────────────────────────
-  document.getElementById('btn-reload').onclick = loadGraph;
-  document.getElementById('btn-fit').onclick = () => fitView();
-  document.getElementById('btn-entry').onclick = () => {
-    window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
-  };
-  document.getElementById('show-people').onchange = loadGraph;
-  document.getElementById('show-labels').onchange = () => { needsRedraw = true; };
   document.getElementById('depth-range').oninput = function() {
     document.getElementById('depth-val').textContent = this.value;
   };
   document.getElementById('depth-range').onchange = loadGraph;
-
-  // Node size slider — live recompute
-  document.getElementById('node-scale').oninput = function() {
-    nodeScale = +this.value;
-    const ns = nodeScale;
-    nodes.forEach(n => {
-      if (n.isFocus) {
-        n._size = Math.max(ns * 2, ns * 2 + Math.min(n._degree, 30) * ns * 0.02);
-      } else if (n.nodeType === 'person') {
-        n._size = Math.max(ns * 0.4, ns * 0.4 + n._degree * (ns * 0.05));
-      } else {
-        n._size = Math.max(ns * 0.6, ns * 0.6 + n._degree * (ns * 0.07));
-      }
+  document.getElementById('btn-reload').onclick = loadGraph;
+  document.getElementById('btn-fit').onclick = () => cy.animate({ fit: { padding: 50 }, duration: 500 });
+  document.getElementById('show-people').onchange = loadGraph;
+  document.getElementById('layout-select').onchange = () => {
+    if (cy.nodes().length === 0) return;
+    const focusNode = cy.nodes('[?isFocus]');
+    const focusId = focusNode.length ? focusNode[0].id() : null;
+    const layoutConfig = getLayoutConfig(focusId);
+    document.getElementById('loading').classList.remove('off');
+    document.getElementById('ld-text').textContent = 'Re-laying out ' + cy.nodes().length + ' nodes...';
+    const layout = cy.layout(layoutConfig);
+    layout.on('layoutstop', () => {
+      setTimeout(() => document.getElementById('loading').classList.add('off'), 200);
     });
-    needsRedraw = true;
+    layout.run();
   };
 
-  // Spacing slider — recompute layout
-  document.getElementById('spacing-range').oninput = function() {
-    if (nodes.length === 0) return;
-    computeLayout({ nodes, links }, +this.value);
-    buildSpatialGrid();
-    needsRedraw = true;
+  document.getElementById('show-labels').onchange = function() {
+    if (this.checked) {
+      cy.batch(() => { cy.nodes().removeClass('nolabel'); });
+    } else {
+      cy.batch(() => { cy.nodes().addClass('nolabel'); });
+    }
   };
 
   // ─── Search ──────────────────────────────────────────
   function doSearch() {
     const q = document.getElementById('s-input').value.trim().toLowerCase();
-    searchMatches.clear();
-    nodes.forEach(n => { n._found = false; });
-    if (!q) { document.getElementById('s-count').textContent = ''; needsRedraw = true; return; }
-    const matches = nodes.filter(n => (n.name || '').toLowerCase().includes(q));
-    matches.forEach(n => { n._found = true; searchMatches.add(n.id); });
-    document.getElementById('s-count').textContent = matches.length ? matches.length + ' found' : 'none';
-    if (matches.length) fitView(matches);
-    needsRedraw = true;
+    cy.batch(() => { cy.nodes().removeClass('found'); });
+    cy.batch(() => { cy.elements().removeClass('dimmed'); });
+    if (!q) { document.getElementById('s-count').textContent = ''; return; }
+    const matches = cy.nodes().filter(n => (n.data('name') || '').toLowerCase().includes(q));
+    if (matches.length) {
+      cy.batch(() => { matches.addClass('found'); });
+      document.getElementById('s-count').textContent = matches.length + ' found';
+      cy.fit(matches, 60);
+    } else {
+      document.getElementById('s-count').textContent = 'none';
+    }
   }
   document.getElementById('s-btn').onclick = doSearch;
   document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
   document.getElementById('s-input').oninput = function() {
     if (!this.value.trim()) {
-      searchMatches.clear();
-      nodes.forEach(n => { n._found = false; });
+      cy.batch(() => { cy.nodes().removeClass('found'); cy.elements().removeClass('dimmed'); });
       document.getElementById('s-count').textContent = '';
-      needsRedraw = true;
     }
   };
 
+  // Background click clears search
+  cy.on('tap', function(e) {
+    if (e.target === cy) {
+      cy.batch(() => { cy.nodes().removeClass('found'); cy.elements().removeClass('dimmed neighbor hover highlighted'); });
+      document.getElementById('s-count').textContent = '';
+      document.getElementById('s-input').value = '';
+    }
+  });
+
   // ─── Init ────────────────────────────────────────────
-  resizeCanvas();
-  window.addEventListener('resize', resizeCanvas);
-  requestAnimationFrame(draw);
   loadGraph();
   </script>
 </body>
