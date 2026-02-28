@@ -48,7 +48,7 @@
     .people-info b { color: #0056b3; }
 
     .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #f8f9fa; }
-    #cy { position: absolute; inset: 0; width: 100%; height: 100%; }
+    #sigma-container { position: absolute; inset: 0; width: 100%; height: 100%; }
 
     .gp { overflow: hidden; transition: box-shadow 0.25s; }
     .gp-h { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; cursor: pointer; user-select: none; background: rgba(0,86,179,0.06); border-bottom: 1px solid rgba(0,0,255,0.08); transition: background 0.2s; }
@@ -128,7 +128,7 @@
   </div>
 
   <div class="graph-wrap">
-    <div id="cy"></div>
+    <div id="sigma-container"></div>
 
     <div class="ld-overlay" id="loading">
       <div class="ld-spinner"></div>
@@ -148,11 +148,8 @@
           <select id="f-cat"><option value="">All Categories</option></select>
           <label>Layout</label>
           <select id="layout-select">
-            <option value="fcose" selected>Force-Directed (fcose)</option>
-            <option value="concentric">Concentric Rings</option>
-            <option value="circle">Circle</option>
-            <option value="grid">Grid</option>
-            <option value="breadthfirst">Hierarchical</option>
+            <option value="forceatlas2" selected>Force-Directed</option>
+            <option value="circular">Circular</option>
           </select>
           <div class="chks">
             <label><input type="checkbox" id="show-people" /> People</label>
@@ -201,26 +198,14 @@
   <div id="tip"></div>
 
   <script src="app.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.min.js"></script>
-  <script src="https://unpkg.com/cytoscape-fcose@2.2.0/cytoscape-fcose.js"></script>
-  <script>if(typeof cytoscapeFcose==='undefined')document.write('<scr'+'ipt src="https://cdn.jsdelivr.net/npm/cytoscape-fcose@2.2.0/cytoscape-fcose.js"><\/scr'+'ipt>')</script>
+  <script src="/lib/graph-lib.min.js"></script>
   <script>
   /* =================================================================
-   *  CYTOSCAPE.JS FULL DATABASE GRAPH — fcose anti-overlap layout
-   *  Browse all entries. Filter by country/category.
-   *  People OFF by default (1000+ entries is already dense).
+   *  SIGMA.JS v2 + GRAPHOLOGY + FORCEATLAS2 — WebGL GPU-rendered
+   *  Full database network graph. Browse all entries.
+   *  GPU-accelerated — handles 1000+ nodes + 17K edges smoothly.
    * ================================================================= */
   initPage('jewish');
-
-  // Register fcose layout
-  let hasFcose = false;
-  try {
-    if (typeof cytoscapeFcose !== 'undefined') {
-      cytoscape.use(cytoscapeFcose);
-      hasFcose = true;
-    }
-  } catch(e) { console.warn('fcose register:', e.message); }
-  if (!hasFcose) console.warn('fcose unavailable – using built-in cose fallback');
 
   // ─── Collapsible panels ──────────────────────────────
   ['ctrl','cat','edge'].forEach(k => {
@@ -286,151 +271,13 @@
   };
   const DEC = '#90a4ae';
 
-  function darken(hex, amt) {
-    amt = amt || 0.3;
-    try {
-      const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
-      return '#' + [r,g,b].map(c => Math.round(c*(1-amt)).toString(16).padStart(2,'0')).join('');
-    } catch(e) { return '#333'; }
-  }
-
   const tipEl = document.getElementById('tip');
-
-  // ─── Cytoscape stylesheet ───────────────────────────
-  const cyStyle = [
-    {
-      selector: 'node[nodeType="entry"]',
-      style: {
-        'shape': 'round-rectangle',
-        'background-color': 'data(color)',
-        'border-width': 2,
-        'border-color': 'data(borderColor)',
-        'label': 'data(name)',
-        'width': 'data(size)',
-        'height': 'data(sizeH)',
-        'font-size': 'data(fontSize)',
-        'text-valign': 'bottom',
-        'text-halign': 'center',
-        'text-margin-y': 4,
-        'color': '#222',
-        'text-outline-width': 2.5,
-        'text-outline-color': '#ffffff',
-        'text-max-width': '120px',
-        'text-wrap': 'ellipsis',
-        'min-zoomed-font-size': 8,
-        'z-index': 10
-      }
-    },
-    {
-      selector: 'node[nodeType="person"]',
-      style: {
-        'shape': 'ellipse',
-        'background-color': '#ffab40',
-        'border-width': 1,
-        'border-color': '#e68a00',
-        'label': 'data(name)',
-        'width': 'data(size)',
-        'height': 'data(size)',
-        'font-size': 'data(fontSize)',
-        'text-valign': 'bottom',
-        'text-halign': 'center',
-        'text-margin-y': 3,
-        'color': '#444',
-        'text-outline-width': 2,
-        'text-outline-color': '#ffffff',
-        'text-max-width': '100px',
-        'text-wrap': 'ellipsis',
-        'min-zoomed-font-size': 12,
-        'z-index': 5
-      }
-    },
-    {
-      selector: 'edge',
-      style: {
-        'line-color': 'data(color)',
-        'width': 1,
-        'opacity': 0.3,
-        'curve-style': 'haystack',
-        'haystack-radius': 0.5,
-        'target-arrow-shape': 'none'
-      }
-    },
-    {
-      selector: 'edge[type="person-affiliation"]',
-      style: {
-        'line-style': 'dashed',
-        'line-dash-pattern': [6, 4],
-        'opacity': 0.2,
-        'width': 0.7
-      }
-    },
-    {
-      selector: 'node.hover',
-      style: {
-        'border-width': 4,
-        'border-color': '#0056b3',
-        'z-index': 9999,
-        'font-weight': 'bold',
-        'text-outline-width': 3,
-        'min-zoomed-font-size': 0
-      }
-    },
-    {
-      selector: 'node.neighbor',
-      style: {
-        'border-width': 3,
-        'border-color': '#1976d2',
-        'z-index': 100,
-        'min-zoomed-font-size': 0
-      }
-    },
-    {
-      selector: 'edge.highlighted',
-      style: {
-        'opacity': 1,
-        'width': 2.5,
-        'z-index': 9998
-      }
-    },
-    {
-      selector: '.dimmed',
-      style: {
-        'opacity': 0.06
-      }
-    },
-    {
-      selector: 'node.found',
-      style: {
-        'border-width': 4,
-        'border-color': '#ffeb3b',
-        'z-index': 500,
-        'min-zoomed-font-size': 0
-      }
-    },
-    {
-      selector: 'node.nolabel',
-      style: {
-        'label': ''
-      }
-    }
-  ];
-
-  // ─── Initialize Cytoscape ────────────────────────────
-  const cy = cytoscape({
-    container: document.getElementById('cy'),
-    style: cyStyle,
-    elements: [],
-    minZoom: 0.03,
-    maxZoom: 8,
-    wheelSensitivity: 0.15,
-    boxSelectionEnabled: false,
-    selectionType: 'single',
-    layout: { name: 'preset' },
-    textureOnViewport: true,
-    hideEdgesOnViewport: true,
-    hideLabelsOnViewport: true,
-    pixelRatio: 1
-  });
+  const containerEl = document.getElementById('sigma-container');
+  let renderer = null;
+  let graph = null;
+  let hoveredNode = null;
+  let searchMatches = new Set();
+  let showLabels = true;
 
   // ─── Tooltip helpers ─────────────────────────────────
   let lastMouseX = 0, lastMouseY = 0;
@@ -444,216 +291,213 @@
   }
   function hideTip() { tipEl.style.display = 'none'; }
 
-  // ─── Cytoscape events ───────────────────────────────
-  let hoverTimeout = null, hoverNode = null, edgeHoverEnabled = true;
-
-  cy.on('mouseover', 'node', function(e) {
-    clearTimeout(hoverTimeout);
-    const node = e.target;
-    if (hoverNode === node) return;
-    hoverNode = node;
-    node.addClass('hover');
-    const hood = node.neighborhood().add(node);
-    cy.batch(() => {
-      cy.elements().not(hood).addClass('dimmed');
-      hood.nodes().not(node).addClass('neighbor');
-      hood.edges().addClass('highlighted');
+  // ─── Circular layout helper ──────────────────────────
+  function applyCircularLayout(g) {
+    var i = 0;
+    var N = g.order;
+    g.forEachNode(function(node) {
+      var angle = (2 * Math.PI * i) / N;
+      g.setNodeAttribute(node, 'x', 10 * Math.cos(angle));
+      g.setNodeAttribute(node, 'y', 10 * Math.sin(angle));
+      i++;
     });
-
-    const d = node.data();
-    let html;
-    if (d.nodeType === 'person') {
-      html = '<strong><i class="fa-solid fa-user"></i> ' + d.name + '</strong><br/>'
-        + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
-        + '<i class="fa-solid fa-globe"></i> ' + (d.country || '')
-        + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
-    } else {
-      html = '<strong>' + d.name + '</strong><br/>'
-        + '<i class="fa-solid fa-building"></i> ' + (d.entryType || '') + '<br/>'
-        + '<i class="fa-solid fa-globe"></i> ' + (d.country || '') + '<br/>'
-        + '<span class="tip-cat" style="background:' + (d.color || DC) + '30;color:' + (d.color || DC) + '">' + (d.category || '') + '</span>'
-        + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
-    }
-    showTip(html);
-  });
-
-  cy.on('mouseout', 'node', function() {
-    hoverNode = null;
-    hoverTimeout = setTimeout(() => {
-      cy.batch(() => {
-        cy.elements().removeClass('dimmed neighbor hover highlighted');
-      });
-      hideTip();
-    }, 80);
-  });
-
-  cy.on('mouseover', 'edge', function(e) {
-    if (!edgeHoverEnabled) return;
-    const edge = e.target;
-    const d = edge.data();
-    edge.addClass('highlighted');
-    showTip('<strong>' + (d.type || 'related') + '</strong>'
-      + (d.description ? '<br/>' + d.description : '')
-      + '<br/><span style="color:#888;font-size:0.85em">'
-      + edge.source().data('name') + ' &harr; ' + edge.target().data('name') + '</span>');
-  });
-
-  cy.on('mouseout', 'edge', function(e) {
-    e.target.removeClass('highlighted');
-    hideTip();
-  });
-
-  cy.on('tap', 'node', function(e) {
-    const d = e.target.data();
-    if (d.nodeType === 'person') {
-      window.location.href = 'person.html?id=' + encodeURIComponent(d.personId || d.id);
-    } else {
-      window.location.href = 'network.html?id=' + encodeURIComponent(d.id);
-    }
-  });
-
-  // ─── Layout config builder ──────────────────────────
-  function getLayoutConfig() {
-    const layoutName = document.getElementById('layout-select').value;
-    const n = cy.nodes().length || 100;
-    const base = { animate: false, fit: true, padding: 40 };
-
-    switch (layoutName) {
-      case 'fcose':
-        return Object.assign(base, {
-          name: hasFcose ? 'fcose' : 'cose',
-          quality: n > 300 ? 'default' : 'proof',
-          randomize: true,
-          nodeDimensionsIncludeLabels: false,
-          nodeRepulsion: function() { return n > 500 ? 4000 : 6000; },
-          idealEdgeLength: function() { return n > 500 ? 50 : 80; },
-          edgeElasticity: function() { return 0.45; },
-          nestingFactor: 0.1,
-          gravity: n > 500 ? 0.6 : 0.4,
-          gravityRange: 3.8,
-          numIter: Math.min(1200, Math.max(400, 2500 - n * 2)),
-          tile: true,
-          tilingPaddingVertical: 10,
-          tilingPaddingHorizontal: 10
-        });
-      case 'concentric':
-        return Object.assign(base, {
-          name: 'concentric',
-          concentric: function(node) {
-            return node.data('degree') || 1;
-          },
-          levelWidth: function() { return 3; },
-          minNodeSpacing: 25,
-          avoidOverlap: true,
-          nodeDimensionsIncludeLabels: true
-        });
-      case 'circle':
-        return Object.assign(base, { name: 'circle', avoidOverlap: true, nodeDimensionsIncludeLabels: true });
-      case 'grid':
-        return Object.assign(base, { name: 'grid', avoidOverlap: true, nodeDimensionsIncludeLabels: true, condense: true });
-      case 'breadthfirst':
-        return Object.assign(base, {
-          name: 'breadthfirst',
-          directed: false,
-          avoidOverlap: true,
-          nodeDimensionsIncludeLabels: true,
-          spacingFactor: 1.2
-        });
-      default:
-        return Object.assign(base, { name: hasFcose ? 'fcose' : 'cose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: false, nodeRepulsion: function() { return 4000; }, numIter: 800 });
-    }
   }
 
   // ─── Build graph from API data ──────────────────────
   function buildGraph(data) {
-    const elements = [];
+    if (renderer) { renderer.kill(); renderer = null; }
 
-    const degMap = {};
-    data.nodes.forEach(n => { degMap[n.id] = 0; });
-    data.links.forEach(l => {
+    graph = new Graph();
+
+    // Compute degrees
+    var degMap = {};
+    data.nodes.forEach(function(n) { degMap[n.id] = 0; });
+    data.links.forEach(function(l) {
       degMap[l.source] = (degMap[l.source] || 0) + 1;
       degMap[l.target] = (degMap[l.target] || 0) + 1;
     });
 
-    data.nodes.forEach(n => {
-      const deg = degMap[n.id] || 0;
-      const isPerson = n.nodeType === 'person';
-      const catColor = CC[n.category] || DC;
+    // Add nodes with circular initial positions
+    var N = data.nodes.length;
+    data.nodes.forEach(function(n, i) {
+      var deg = degMap[n.id] || 0;
+      var isPerson = n.nodeType === 'person';
+      var catColor = CC[n.category] || DC;
+      var angle = (2 * Math.PI * i) / N;
 
-      let size, sizeH, fontSize;
-      if (isPerson) {
-        size = Math.max(10, 8 + Math.sqrt(deg) * 2);
-        sizeH = size;
-        fontSize = Math.max(6, 5 + Math.min(deg, 10) * 0.2);
-      } else {
-        size = Math.max(18, 12 + Math.sqrt(deg) * 4);
-        sizeH = Math.max(14, 10 + Math.sqrt(deg) * 3);
-        fontSize = Math.max(8, 6 + Math.sqrt(deg) * 0.9);
+      graph.addNode(n.id, {
+        x: 10 * Math.cos(angle),
+        y: 10 * Math.sin(angle),
+        size: isPerson ? Math.max(3, 2 + Math.sqrt(deg) * 0.6) : Math.max(4, 3 + Math.sqrt(deg) * 1.2),
+        label: n.name,
+        color: isPerson ? PC : catColor,
+        nodeType: n.nodeType,
+        category: n.category || '',
+        country: n.country || '',
+        entryType: n.type || '',
+        role: n.role || '',
+        personId: n.personId || '',
+        degree: deg,
+        origColor: isPerson ? PC : catColor
+      });
+    });
+
+    // Add edges (skip duplicates)
+    var edgeSet = new Set();
+    data.links.forEach(function(l) {
+      if (!graph.hasNode(l.source) || !graph.hasNode(l.target)) return;
+      var key = l.source < l.target ? l.source + '|' + l.target : l.target + '|' + l.source;
+      if (edgeSet.has(key)) return;
+      edgeSet.add(key);
+      try {
+        graph.addEdge(l.source, l.target, {
+          color: EC[l.type] || DEC,
+          origColor: EC[l.type] || DEC,
+          size: l.type === 'person-affiliation' ? 0.2 : 0.4,
+          edgeType: l.type || 'related',
+          description: l.description || ''
+        });
+      } catch(e) { /* skip duplicate */ }
+    });
+
+    // Run layout
+    var layoutName = document.getElementById('layout-select').value;
+    document.getElementById('ld-text').textContent = 'Computing layout for ' + N + ' nodes...';
+
+    if (layoutName === 'forceatlas2') {
+      var iterations = N > 800 ? 50 : N > 400 ? 80 : 150;
+      forceAtlas2.assign(graph, {
+        iterations: iterations,
+        settings: {
+          gravity: 2,
+          scalingRatio: N > 500 ? 10 : 5,
+          barnesHutOptimize: true,
+          strongGravityMode: false,
+          slowDown: 5,
+          outboundAttractionDistribution: true
+        }
+      });
+    } else {
+      applyCircularLayout(graph);
+    }
+
+    // Create Sigma renderer
+    renderer = new Sigma(graph, containerEl, {
+      renderEdgeLabels: false,
+      labelSize: 13,
+      labelFont: 'Arial',
+      labelWeight: 'bold',
+      labelColor: { color: '#222' },
+      labelDensity: N > 500 ? 0.05 : 0.1,
+      labelGridCellSize: 100,
+      labelRenderedSizeThreshold: N > 500 ? 5 : 3,
+      zIndex: true,
+      minCameraRatio: 0.01,
+      maxCameraRatio: 20,
+      defaultEdgeType: 'line',
+      nodeReducer: function(node, data) {
+        var res = Object.assign({}, data);
+        if (hoveredNode) {
+          if (node === hoveredNode) {
+            res.highlighted = true;
+            res.zIndex = 2;
+          } else if (graph.areNeighbors(hoveredNode, node)) {
+            res.zIndex = 1;
+          } else {
+            res.color = '#e8e8e8';
+            res.label = '';
+            res.zIndex = 0;
+          }
+        }
+        if (searchMatches.size > 0 && !hoveredNode) {
+          if (searchMatches.has(node)) {
+            res.highlighted = true;
+            res.zIndex = 2;
+          } else {
+            res.color = '#e8e8e8';
+            res.label = '';
+          }
+        }
+        if (!showLabels && !res.highlighted) res.label = '';
+        return res;
+      },
+      edgeReducer: function(edge, data) {
+        var res = Object.assign({}, data);
+        if (hoveredNode) {
+          if (graph.hasExtremity(edge, hoveredNode)) {
+            res.size = 2;
+            res.zIndex = 1;
+          } else {
+            res.hidden = true;
+          }
+        }
+        if (searchMatches.size > 0 && !hoveredNode) {
+          var ends = graph.extremities(edge);
+          if (!searchMatches.has(ends[0]) && !searchMatches.has(ends[1])) {
+            res.hidden = true;
+          }
+        }
+        return res;
       }
-
-      elements.push({
-        group: 'nodes',
-        data: {
-          id: n.id,
-          name: n.name,
-          nodeType: n.nodeType,
-          category: n.category || '',
-          country: n.country || '',
-          entryType: n.type || '',
-          role: n.role || '',
-          personId: n.personId || '',
-          degree: deg,
-          color: isPerson ? PC : catColor,
-          borderColor: isPerson ? '#e68a00' : darken(catColor),
-          size: size,
-          sizeH: sizeH,
-          fontSize: fontSize
-        }
-      });
     });
 
-    data.links.forEach((l, i) => {
-      elements.push({
-        group: 'edges',
-        data: {
-          id: 'e' + i,
-          source: l.source,
-          target: l.target,
-          type: l.type || 'related',
-          description: l.description || '',
-          color: EC[l.type] || DEC
-        }
-      });
+    // ─── Sigma events ────────────────────────────────
+    renderer.on('enterNode', function(e) {
+      hoveredNode = e.node;
+      containerEl.style.cursor = 'pointer';
+      var d = graph.getNodeAttributes(e.node);
+      var html;
+      if (d.nodeType === 'person') {
+        html = '<strong><i class="fa-solid fa-user"></i> ' + d.label + '</strong><br/>'
+          + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
+          + '<i class="fa-solid fa-globe"></i> ' + (d.country || '')
+          + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
+      } else {
+        html = '<strong>' + d.label + '</strong><br/>'
+          + '<i class="fa-solid fa-building"></i> ' + (d.entryType || '') + '<br/>'
+          + '<i class="fa-solid fa-globe"></i> ' + (d.country || '') + '<br/>'
+          + '<span class="tip-cat" style="background:' + (d.origColor || DC) + '30;color:' + (d.origColor || DC) + '">' + (d.category || '') + '</span>'
+          + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
+      }
+      showTip(html);
+      renderer.refresh();
     });
 
-    cy.batch(() => {
-      cy.elements().remove();
-      cy.add(elements);
+    renderer.on('leaveNode', function() {
+      hoveredNode = null;
+      containerEl.style.cursor = 'default';
+      hideTip();
+      renderer.refresh();
     });
 
-    // Disable edge hover for large graphs (big perf hit)
-    edgeHoverEnabled = elements.length < 2000;
-
-    const layoutConfig = getLayoutConfig();
-    document.getElementById('ld-text').textContent = 'Computing layout for ' + data.nodes.length + ' nodes...';
-
-    const layout = cy.layout(layoutConfig);
-    layout.on('layoutstop', () => {
-      setTimeout(() => document.getElementById('loading').classList.add('off'), 200);
+    renderer.on('clickNode', function(e) {
+      var d = graph.getNodeAttributes(e.node);
+      if (d.nodeType === 'person') {
+        window.location.href = 'person.html?id=' + encodeURIComponent(d.personId || e.node);
+      } else {
+        window.location.href = 'network.html?id=' + encodeURIComponent(e.node);
+      }
     });
-    layout.run();
 
-    const entryCount = data.nodes.filter(n => n.nodeType !== 'person').length;
-    const peopleCount = data.nodes.filter(n => n.nodeType === 'person').length;
+    renderer.on('clickStage', function() {
+      searchMatches = new Set();
+      document.getElementById('s-count').textContent = '';
+      document.getElementById('s-input').value = '';
+      renderer.refresh();
+    });
+
+    // ─── Stats ──────────────────────────────────────
+    var entryCount = data.nodes.filter(function(n) { return n.nodeType !== 'person'; }).length;
+    var peopleCount = data.nodes.filter(function(n) { return n.nodeType === 'person'; }).length;
     document.getElementById('stats').innerHTML =
-      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + data.links.length + '</b> links';
+      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + graph.size + '</b> links';
 
-    setSEO({ title: 'Network Graph - Juice Project', description: 'Full database network graph with ' + entryCount + ' entries and ' + data.links.length + ' connections.' });
+    setSEO({ title: 'Network Graph - Juice Project', description: 'Full database network graph with ' + entryCount + ' entries and ' + graph.size + ' connections.' });
     document.getElementById('page-subtitle').textContent =
-      entryCount + ' entries \u00B7 ' + data.links.length + ' connections' + (peopleCount ? ' \u00B7 ' + peopleCount + ' people' : '');
+      entryCount + ' entries \u00B7 ' + graph.size + ' connections' + (peopleCount ? ' \u00B7 ' + peopleCount + ' people' : '');
 
     if (data.totalPeople !== undefined) {
-      const showing = document.getElementById('show-people').checked;
+      var showing = document.getElementById('show-people').checked;
       document.getElementById('people-info').innerHTML = showing
         ? 'Showing <b>' + peopleCount + '</b> of <b>' + data.totalPeople + '</b> associated individuals'
         : '<b>' + data.totalPeople + '</b> people available \u2014 check "People" to show';
@@ -661,38 +505,44 @@
 
     buildCatLegend(data.nodes);
     buildEdgeLegend(data.links);
+
+    setTimeout(function() { document.getElementById('loading').classList.add('off'); }, 200);
   }
 
   function buildCatLegend(nodeList) {
-    const cats = [...new Set(nodeList.map(n => n.category).filter(Boolean))].sort();
-    const catB = document.getElementById('cat-b');
+    var cats = []; var seen = {};
+    nodeList.forEach(function(n) { if (n.category && !seen[n.category]) { seen[n.category] = true; cats.push(n.category); } });
+    cats.sort();
+    var catB = document.getElementById('cat-b');
     catB.innerHTML = '';
-    cats.forEach(c => {
-      const r = document.createElement('div'); r.className = 'li';
-      const d = document.createElement('div'); d.className = 'ld';
+    cats.forEach(function(c) {
+      var r = document.createElement('div'); r.className = 'li';
+      var d = document.createElement('div'); d.className = 'ld';
       d.style.background = CC[c] || DC;
-      if (c === 'People') { d.style.borderRadius = '2px'; d.style.transform = 'rotate(45deg)'; }
       r.appendChild(d);
       r.appendChild(document.createTextNode(c));
-      r.onclick = () => {
-        cy.batch(() => { cy.nodes().removeClass('found'); });
-        const matching = cy.nodes().filter(n => n.data('category') === c);
-        cy.batch(() => { matching.addClass('found'); });
-        document.getElementById('s-count').textContent = matching.length + ' in ' + c;
+      r.onclick = function() {
+        searchMatches = new Set();
+        graph.forEachNode(function(node, attrs) {
+          if (attrs.category === c) searchMatches.add(node);
+        });
+        document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
         document.getElementById('s-input').value = '';
-        if (matching.length) cy.fit(matching, 60);
+        renderer.refresh();
       };
       catB.appendChild(r);
     });
   }
 
   function buildEdgeLegend(linkList) {
-    const eTypes = [...new Set(linkList.map(l => l.type).filter(Boolean))].sort();
-    const edgeB = document.getElementById('edge-b');
+    var eTypes = []; var seen = {};
+    linkList.forEach(function(l) { if (l.type && !seen[l.type]) { seen[l.type] = true; eTypes.push(l.type); } });
+    eTypes.sort();
+    var edgeB = document.getElementById('edge-b');
     edgeB.innerHTML = '';
-    eTypes.forEach(t => {
-      const r = document.createElement('div'); r.className = 'ei';
-      const l = document.createElement('div'); l.className = 'el';
+    eTypes.forEach(function(t) {
+      var r = document.createElement('div'); r.className = 'ei';
+      var l = document.createElement('div'); l.className = 'el';
       l.style.background = EC[t] || DEC;
       r.appendChild(l);
       r.appendChild(document.createTextNode(t));
@@ -701,43 +551,43 @@
   }
 
   // ─── Dropdown population ─────────────────────────────
-  let dropdownsReady = 0;
+  var dropdownsReady = 0;
   function tryLoad() { dropdownsReady++; if (dropdownsReady >= 2) loadGraph(); }
 
-  fetch('/api/jewish/categories').then(r => r.json()).then(cats => {
-    const sel = document.getElementById('f-cat');
-    cats.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+  fetch('/api/jewish/categories').then(function(r) { return r.json(); }).then(function(cats) {
+    var sel = document.getElementById('f-cat');
+    cats.sort().forEach(function(c) { var o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
     tryLoad();
-  }).catch(() => tryLoad());
+  }).catch(function() { tryLoad(); });
 
-  fetch('/api/countries').then(r => r.json()).then(countries => {
-    const sel = document.getElementById('f-country');
-    countries.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+  fetch('/api/countries').then(function(r) { return r.json(); }).then(function(countries) {
+    var sel = document.getElementById('f-country');
+    countries.sort().forEach(function(c) { var o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
     tryLoad();
-  }).catch(() => tryLoad());
+  }).catch(function() { tryLoad(); });
 
   // ─── Data loading ────────────────────────────────────
   function loadGraph() {
-    const ppl = document.getElementById('show-people').checked;
-    const country = document.getElementById('f-country').value;
-    const cat = document.getElementById('f-cat').value;
+    var ppl = document.getElementById('show-people').checked;
+    var country = document.getElementById('f-country').value;
+    var cat = document.getElementById('f-cat').value;
 
-    let url = '/api/graph?people=' + (ppl ? '1' : '0');
+    var url = '/api/graph?people=' + (ppl ? '1' : '0');
     if (country) url += '&country=' + encodeURIComponent(country);
     if (cat) url += '&category=' + encodeURIComponent(cat);
 
-    const ld = document.getElementById('loading');
+    var ld = document.getElementById('loading');
     ld.classList.remove('off');
     document.getElementById('ld-text').textContent = 'Fetching graph data...';
     document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
-    fetch(url).then(r => r.json()).then(data => {
+    fetch(url).then(function(r) { return r.json(); }).then(function(data) {
       if (!data.nodes || data.nodes.length === 0) {
         document.getElementById('ld-text').textContent = 'No data found for these filters.';
         return;
       }
       buildGraph(data);
-    }).catch(err => {
+    }).catch(function(err) {
       console.error('Load error:', err);
       document.getElementById('ld-text').textContent = 'Error loading data: ' + err.message;
     });
@@ -745,62 +595,38 @@
 
   // ─── Controls ────────────────────────────────────────
   document.getElementById('btn-reload').onclick = loadGraph;
-  document.getElementById('btn-fit').onclick = () => cy.animate({ fit: { padding: 50 }, duration: 500 });
+  document.getElementById('btn-fit').onclick = function() {
+    if (renderer) renderer.getCamera().animatedReset({ duration: 500 });
+  };
   document.getElementById('show-people').onchange = loadGraph;
   document.getElementById('f-country').onchange = loadGraph;
   document.getElementById('f-cat').onchange = loadGraph;
-
-  document.getElementById('layout-select').onchange = () => {
-    if (cy.nodes().length === 0) return;
-    const layoutConfig = getLayoutConfig();
-    document.getElementById('loading').classList.remove('off');
-    document.getElementById('ld-text').textContent = 'Re-laying out ' + cy.nodes().length + ' nodes...';
-    const layout = cy.layout(layoutConfig);
-    layout.on('layoutstop', () => {
-      setTimeout(() => document.getElementById('loading').classList.add('off'), 200);
-    });
-    layout.run();
-  };
-
+  document.getElementById('layout-select').onchange = loadGraph;
   document.getElementById('show-labels').onchange = function() {
-    if (this.checked) {
-      cy.batch(() => { cy.nodes().removeClass('nolabel'); });
-    } else {
-      cy.batch(() => { cy.nodes().addClass('nolabel'); });
-    }
+    showLabels = this.checked;
+    if (renderer) renderer.refresh();
   };
 
   // ─── Search ──────────────────────────────────────────
   function doSearch() {
-    const q = document.getElementById('s-input').value.trim().toLowerCase();
-    cy.batch(() => { cy.nodes().removeClass('found'); });
-    cy.batch(() => { cy.elements().removeClass('dimmed'); });
-    if (!q) { document.getElementById('s-count').textContent = ''; return; }
-    const matches = cy.nodes().filter(n => (n.data('name') || '').toLowerCase().includes(q));
-    if (matches.length) {
-      cy.batch(() => { matches.addClass('found'); });
-      document.getElementById('s-count').textContent = matches.length + ' found';
-      cy.fit(matches, 60);
-    } else {
-      document.getElementById('s-count').textContent = 'none';
-    }
+    var q = document.getElementById('s-input').value.trim().toLowerCase();
+    searchMatches = new Set();
+    if (!q) { document.getElementById('s-count').textContent = ''; if (renderer) renderer.refresh(); return; }
+    graph.forEachNode(function(node, attrs) {
+      if ((attrs.label || '').toLowerCase().indexOf(q) !== -1) searchMatches.add(node);
+    });
+    document.getElementById('s-count').textContent = searchMatches.size ? searchMatches.size + ' found' : 'none';
+    if (renderer) renderer.refresh();
   }
   document.getElementById('s-btn').onclick = doSearch;
   document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
   document.getElementById('s-input').oninput = function() {
     if (!this.value.trim()) {
-      cy.batch(() => { cy.nodes().removeClass('found'); cy.elements().removeClass('dimmed'); });
+      searchMatches = new Set();
       document.getElementById('s-count').textContent = '';
+      if (renderer) renderer.refresh();
     }
   };
-
-  cy.on('tap', function(e) {
-    if (e.target === cy) {
-      cy.batch(() => { cy.nodes().removeClass('found'); cy.elements().removeClass('dimmed neighbor hover highlighted'); });
-      document.getElementById('s-count').textContent = '';
-      document.getElementById('s-input').value = '';
-    }
-  });
   </script>
 </body>
 </html>
