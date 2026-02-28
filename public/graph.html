@@ -317,7 +317,7 @@
         'text-outline-color': '#ffffff',
         'text-max-width': '120px',
         'text-wrap': 'ellipsis',
-        'min-zoomed-font-size': 4,
+        'min-zoomed-font-size': 8,
         'z-index': 10
       }
     },
@@ -340,7 +340,7 @@
         'text-outline-color': '#ffffff',
         'text-max-width': '100px',
         'text-wrap': 'ellipsis',
-        'min-zoomed-font-size': 7,
+        'min-zoomed-font-size': 12,
         'z-index': 5
       }
     },
@@ -350,7 +350,8 @@
         'line-color': 'data(color)',
         'width': 1,
         'opacity': 0.3,
-        'curve-style': 'bezier',
+        'curve-style': 'haystack',
+        'haystack-radius': 0.5,
         'target-arrow-shape': 'none'
       }
     },
@@ -424,7 +425,11 @@
     wheelSensitivity: 0.15,
     boxSelectionEnabled: false,
     selectionType: 'single',
-    layout: { name: 'preset' }
+    layout: { name: 'preset' },
+    textureOnViewport: true,
+    hideEdgesOnViewport: true,
+    hideLabelsOnViewport: true,
+    pixelRatio: 1
   });
 
   // ─── Tooltip helpers ─────────────────────────────────
@@ -440,11 +445,13 @@
   function hideTip() { tipEl.style.display = 'none'; }
 
   // ─── Cytoscape events ───────────────────────────────
-  let hoverTimeout = null;
+  let hoverTimeout = null, hoverNode = null, edgeHoverEnabled = true;
 
   cy.on('mouseover', 'node', function(e) {
     clearTimeout(hoverTimeout);
     const node = e.target;
+    if (hoverNode === node) return;
+    hoverNode = node;
     node.addClass('hover');
     const hood = node.neighborhood().add(node);
     cy.batch(() => {
@@ -471,15 +478,17 @@
   });
 
   cy.on('mouseout', 'node', function() {
+    hoverNode = null;
     hoverTimeout = setTimeout(() => {
       cy.batch(() => {
         cy.elements().removeClass('dimmed neighbor hover highlighted');
       });
       hideTip();
-    }, 50);
+    }, 80);
   });
 
   cy.on('mouseover', 'edge', function(e) {
+    if (!edgeHoverEnabled) return;
     const edge = e.target;
     const d = edge.data();
     edge.addClass('highlighted');
@@ -506,22 +515,26 @@
   // ─── Layout config builder ──────────────────────────
   function getLayoutConfig() {
     const layoutName = document.getElementById('layout-select').value;
-    const base = { animate: true, animationDuration: 1500, fit: true, padding: 50 };
+    const n = cy.nodes().length || 100;
+    const base = { animate: false, fit: true, padding: 40 };
 
     switch (layoutName) {
       case 'fcose':
         return Object.assign(base, {
           name: hasFcose ? 'fcose' : 'cose',
-          quality: 'default',
+          quality: n > 300 ? 'default' : 'proof',
           randomize: true,
-          nodeDimensionsIncludeLabels: true,
-          nodeRepulsion: function() { return 6500; },
-          idealEdgeLength: function() { return 100; },
+          nodeDimensionsIncludeLabels: false,
+          nodeRepulsion: function() { return n > 500 ? 4000 : 6000; },
+          idealEdgeLength: function() { return n > 500 ? 50 : 80; },
           edgeElasticity: function() { return 0.45; },
           nestingFactor: 0.1,
-          gravity: 0.3,
+          gravity: n > 500 ? 0.6 : 0.4,
           gravityRange: 3.8,
-          numIter: 2500
+          numIter: Math.min(1200, Math.max(400, 2500 - n * 2)),
+          tile: true,
+          tilingPaddingVertical: 10,
+          tilingPaddingHorizontal: 10
         });
       case 'concentric':
         return Object.assign(base, {
@@ -547,7 +560,7 @@
           spacingFactor: 1.2
         });
       default:
-        return Object.assign(base, { name: hasFcose ? 'fcose' : 'cose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: true, nodeRepulsion: function() { return 6500; }, numIter: 2500 });
+        return Object.assign(base, { name: hasFcose ? 'fcose' : 'cose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: false, nodeRepulsion: function() { return 4000; }, numIter: 800 });
     }
   }
 
@@ -617,6 +630,9 @@
       cy.elements().remove();
       cy.add(elements);
     });
+
+    // Disable edge hover for large graphs (big perf hit)
+    edgeHoverEnabled = elements.length < 2000;
 
     const layoutConfig = getLayoutConfig();
     document.getElementById('ld-text').textContent = 'Computing layout for ' + data.nodes.length + ' nodes...';

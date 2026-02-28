@@ -404,7 +404,8 @@
         'line-color': 'data(color)',
         'width': 1,
         'opacity': 0.35,
-        'curve-style': 'bezier',
+        'curve-style': 'haystack',
+        'haystack-radius': 0.5,
         'target-arrow-shape': 'none'
       }
     },
@@ -479,7 +480,11 @@
     wheelSensitivity: 0.15,
     boxSelectionEnabled: false,
     selectionType: 'single',
-    layout: { name: 'preset' }
+    layout: { name: 'preset' },
+    textureOnViewport: true,
+    hideEdgesOnViewport: true,
+    hideLabelsOnViewport: true,
+    pixelRatio: 1
   });
 
   // ─── Tooltip helpers ─────────────────────────────────
@@ -497,9 +502,12 @@
   // ─── Cytoscape events ───────────────────────────────
   let hoverTimeout = null;
 
+  let hoverNode = null;
   cy.on('mouseover', 'node', function(e) {
     clearTimeout(hoverTimeout);
     const node = e.target;
+    if (hoverNode === node) return;
+    hoverNode = node;
     node.addClass('hover');
 
     // Highlight neighborhood
@@ -529,12 +537,13 @@
   });
 
   cy.on('mouseout', 'node', function() {
+    hoverNode = null;
     hoverTimeout = setTimeout(() => {
       cy.batch(() => {
         cy.elements().removeClass('dimmed neighbor hover highlighted');
       });
       hideTip();
-    }, 50);
+    }, 80);
   });
 
   cy.on('mouseover', 'edge', function(e) {
@@ -577,22 +586,23 @@
   // ─── Layout config builder ──────────────────────────
   function getLayoutConfig(focusNodeId) {
     const layoutName = document.getElementById('layout-select').value;
-    const base = { animate: true, animationDuration: 1200, fit: true, padding: 50 };
+    const n = cy.nodes().length || 100;
+    const base = { animate: false, fit: true, padding: 50 };
 
     switch (layoutName) {
       case 'fcose':
         return Object.assign(base, {
           name: hasFcose ? 'fcose' : 'cose',
-          quality: 'default',
+          quality: n > 400 ? 'default' : 'proof',
           randomize: true,
-          nodeDimensionsIncludeLabels: true,
-          nodeRepulsion: function() { return 6500; },
-          idealEdgeLength: function() { return 100; },
+          nodeDimensionsIncludeLabels: false,
+          nodeRepulsion: function() { return n > 400 ? 5000 : 6500; },
+          idealEdgeLength: function() { return n > 400 ? 70 : 100; },
           edgeElasticity: function() { return 0.45; },
           nestingFactor: 0.1,
-          gravity: 0.3,
+          gravity: 0.4,
           gravityRange: 3.8,
-          numIter: 2500,
+          numIter: Math.min(1500, Math.max(500, 3000 - n * 3)),
           fixedNodeConstraint: focusNodeId ? [{ nodeId: focusNodeId, position: { x: 0, y: 0 } }] : undefined
         });
       case 'concentric':
@@ -622,7 +632,7 @@
           spacingFactor: 1.2
         });
       default:
-        return Object.assign(base, { name: hasFcose ? 'fcose' : 'cose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: true, nodeRepulsion: function() { return 6500; }, numIter: 2500 });
+        return Object.assign(base, { name: hasFcose ? 'fcose' : 'cose', quality: 'default', randomize: true, nodeDimensionsIncludeLabels: false, nodeRepulsion: function() { return 5000; }, numIter: 1000 });
     }
   }
 
