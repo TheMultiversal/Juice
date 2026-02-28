@@ -18,201 +18,142 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://thejuicebox.live/og-image.png">
-  <meta property="og:title" content="Network Graph">
-  <meta property="og:description" content="Full database network graph - explore all connections across the entire Juice Box database.">
+  <meta property="og:title" content="Database Explorer">
+  <meta property="og:description" content="Browse and explore all entries in The Juice Box database — organized by category, searchable, filterable.">
   <meta property="og:url" content="https://thejuicebox.live/graph.html">
-  <meta name="twitter:title" content="Network Graph">
-  <meta name="twitter:description" content="Full database network graph - explore all connections across the entire Juice Box database.">
-  <title>Network Graph</title>
+  <meta name="twitter:title" content="Database Explorer">
+  <meta name="twitter:description" content="Browse and explore all entries in The Juice Box database — organized by category, searchable, filterable.">
+  <title>Database Explorer</title>
 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #f5f6fa; }
     nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
     nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
     nav ul li { margin: 0; white-space: nowrap; }
     nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
     nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
-    .panel, .gp, .sb, .header-panel, .graph-wrap {
-      background: rgba(255,255,255,0.15) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important;
-      border: 1px solid rgba(255,255,255,0.25) !important; border-radius: 12px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.08) !important;
-    }
-    .gp:hover, .header-panel:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important; border-color: rgba(255,255,255,0.35) !important; }
     nav a { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 8px !important; }
     nav select { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; }
 
-    .main { max-width: 1600px; margin: 0 auto; padding: 15px 20px; }
-    .header-panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 16px 20px; margin-bottom: 15px; }
-    .header-panel h1 { margin: 0 0 4px 0; color: #0056b3; }
-    .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
-    .people-info { font-size: 0.82em; color: #888; margin-top: 2px; }
-    .people-info b { color: #0056b3; }
+    .main { max-width: 1400px; margin: 0 auto; padding: 15px 20px; }
 
-    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #f8f9fa; }
-    #sigma-container { position: absolute; inset: 0; width: 100%; height: 100%; }
-
-    .gp { overflow: hidden; transition: box-shadow 0.25s; }
-    .gp-h { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; cursor: pointer; user-select: none; background: rgba(0,86,179,0.06); border-bottom: 1px solid rgba(0,0,255,0.08); transition: background 0.2s; }
-    .gp-h:hover { background: rgba(0,86,179,0.12); }
-    .gp-h strong, .gp-h h3 { color: #0056b3; font-size: 0.78em; font-weight: 600; margin: 0; }
-    .gp-h .chv { color: #0056b3; font-size: 0.6em; transition: transform 0.25s; }
-    .gp.shut .gp-b { display: none; }
-    .gp.shut .gp-h { border-bottom: none; }
-    .gp.shut .chv { transform: rotate(180deg); }
-
-    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 215px; }
-    .cb { padding: 7px 10px 9px; }
-    .cb label { font-size: 0.73em; color: #333; display: block; margin: 4px 0 1px; font-weight: 500; }
-    .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(255,255,255,0.85); color: #333; font-size: 0.77em; outline: none; }
-    .cb select:focus { border-color: #0056b3; }
-    .cb input[type="range"] { width: 100%; margin: 2px 0; accent-color: #0056b3; }
-    .cb .chks { display: flex; gap: 10px; margin: 5px 0 2px; }
-    .cb .chks label { display: flex; align-items: center; gap: 3px; font-size: 0.73em; color: #333; cursor: pointer; margin: 0; }
-    .cb .chks input[type="checkbox"] { accent-color: #0056b3; }
-    .cb .btns { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
-    .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(0,86,179,0.08); color: #0056b3; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; min-width: 55px; }
-    .cb .btns button:hover { background: rgba(0,86,179,0.18); }
-
-    .hud-search { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 12; display: flex; align-items: center; }
-    .hud-search input { padding: 5px 11px; border: 1px solid rgba(0,0,255,0.2); border-radius: 6px 0 0 6px; font-size: 0.77em; width: 200px; outline: none; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); color: #333; }
-    .hud-search input::placeholder { color: #888; }
-    .hud-search input:focus { border-color: #0056b3; }
-    .hud-search button { padding: 5px 9px; border: 1px solid rgba(0,0,255,0.2); border-left: none; border-radius: 0 6px 6px 0; background: rgba(0,86,179,0.1); color: #0056b3; cursor: pointer; font-size: 0.77em; transition: background 0.2s; }
-    .hud-search button:hover { background: rgba(0,86,179,0.2); }
-    .hud-search .sc { padding: 0 7px; font-size: 0.71em; color: #0056b3; white-space: nowrap; text-shadow: 0 0 4px rgba(255,255,255,0.9); }
-
-    .hud-stats { position: absolute; top: 10px; right: 10px; z-index: 12; }
-    .sb { padding: 5px 11px; font-size: 0.74em; color: #333; white-space: nowrap; }
-    .sb b { color: #0056b3; font-weight: 700; }
-
-    .hud-cat { position: absolute; bottom: 10px; left: 10px; z-index: 12; width: 190px; }
-    .cat-b { padding: 4px 10px 7px; max-height: 180px; overflow-y: auto; }
-    .li { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1px 0; cursor: pointer; padding: 1px 2px; border-radius: 3px; transition: background 0.15s; }
-    .li:hover { background: rgba(0,86,179,0.08); }
-    .ld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-
-    .hud-edge { position: absolute; bottom: 10px; right: 10px; z-index: 12; width: 172px; }
-    .edge-b { padding: 3px 10px 7px; max-height: 210px; overflow-y: auto; }
-    .ei { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1.5px 0; }
-    .el { width: 15px; height: 3px; border-radius: 2px; flex-shrink: 0; }
-
-    .cat-b::-webkit-scrollbar, .edge-b::-webkit-scrollbar { width: 4px; }
-    .cat-b::-webkit-scrollbar-track, .edge-b::-webkit-scrollbar-track { background: transparent; }
-    .cat-b::-webkit-scrollbar-thumb, .edge-b::-webkit-scrollbar-thumb { background: rgba(0,0,255,0.15); border-radius: 2px; }
-
-    #tip {
-      position: fixed; background: rgba(255,255,255,0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      color: #222; padding: 10px 14px; border-radius: 9px; border: 1px solid rgba(0,0,255,0.15); font-size: 0.79em;
-      pointer-events: none; z-index: 200; max-width: 340px; line-height: 1.55; display: none; box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+    .header-panel {
+      background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.15); border-radius: 12px;
+      padding: 20px 24px; margin-bottom: 18px;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
-    #tip strong { color: #0056b3; }
-    #tip .tip-cat { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; margin-top: 3px; }
+    .header-panel h1 { margin: 0 0 6px 0; color: #0056b3; font-size: 1.6em; }
+    .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
 
-    .ld-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(255,255,255,0.8); backdrop-filter: blur(4px); z-index: 25; transition: opacity 0.5s; }
+    /* Filter bar */
+    .filter-bar {
+      display: flex; gap: 12px; flex-wrap: wrap; align-items: center;
+      background: rgba(255,255,255,0.9); border: 1px solid rgba(0,0,255,0.12); border-radius: 10px;
+      padding: 12px 16px; margin-bottom: 16px;
+      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    }
+    .filter-bar label { font-size: 0.78em; font-weight: 600; color: #0056b3; white-space: nowrap; }
+    .filter-bar input[type="text"] {
+      flex: 1; min-width: 200px; padding: 7px 12px; border: 1px solid rgba(0,0,255,0.18);
+      border-radius: 7px; font-size: 0.85em; outline: none; background: #fff;
+    }
+    .filter-bar input[type="text"]:focus { border-color: #0056b3; box-shadow: 0 0 0 2px rgba(0,86,179,0.1); }
+    .filter-bar select {
+      padding: 7px 10px; border: 1px solid rgba(0,0,255,0.18);
+      border-radius: 7px; font-size: 0.82em; background: #fff; outline: none; min-width: 140px;
+    }
+    .filter-bar select:focus { border-color: #0056b3; }
+    .filter-bar .stats-text { font-size: 0.78em; color: #888; white-space: nowrap; margin-left: auto; }
+    .filter-bar .stats-text b { color: #0056b3; }
+
+    /* Category group */
+    .cat-group { margin-bottom: 14px; }
+    .cat-group-header {
+      display: flex; align-items: center; gap: 10px; padding: 10px 14px;
+      background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.1); border-radius: 10px;
+      cursor: pointer; user-select: none; transition: all 0.2s;
+      backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+    }
+    .cat-group-header:hover { background: rgba(255,255,255,0.95); border-color: rgba(0,0,255,0.2); box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+    .cat-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+    .cat-group-header .cat-title { font-size: 0.9em; font-weight: 700; color: #333; }
+    .cat-group-header .cat-count { font-size: 0.75em; color: #888; margin-left: auto; }
+    .cat-group-header .cat-chv { color: #0056b3; font-size: 0.65em; transition: transform 0.25s; margin-left: 6px; }
+    .cat-group.collapsed .cat-chv { transform: rotate(180deg); }
+    .cat-group.collapsed .cat-cards { display: none; }
+
+    /* Entry cards grid */
+    .cat-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; padding: 10px 0 0 0; }
+
+    .entry-card {
+      display: flex; align-items: stretch; background: #fff; border: 1px solid rgba(0,0,255,0.1);
+      border-radius: 10px; overflow: hidden; cursor: pointer; transition: all 0.2s;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .entry-card:hover { border-color: rgba(0,86,179,0.3); box-shadow: 0 4px 16px rgba(0,0,0,0.08); transform: translateY(-1px); }
+    .entry-card .card-bar { width: 5px; flex-shrink: 0; }
+    .entry-card .card-body { padding: 10px 14px; flex: 1; min-width: 0; }
+    .entry-card .card-name { font-size: 0.88em; font-weight: 700; color: #222; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .entry-card .card-type { font-size: 0.74em; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
+    .entry-card .card-meta { display: flex; gap: 10px; margin-top: 4px; font-size: 0.72em; color: #aaa; }
+    .entry-card .card-meta i { color: #0056b3; }
+    .entry-card .card-meta .conns { color: #0056b3; font-weight: 600; }
+
+    /* Loading overlay */
+    .ld-overlay { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(255,255,255,0.85); backdrop-filter: blur(4px); z-index: 100; transition: opacity 0.5s; }
     .ld-overlay.off { opacity: 0; pointer-events: none; }
     .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(0,0,255,0.1); border-top-color: #0056b3; border-radius: 50%; animation: spin 0.75s linear infinite; }
     .ld-text { color: #0056b3; font-size: 0.82em; font-weight: 600; }
     @keyframes spin { to { transform: rotate(360deg); } }
 
-    @media (max-width: 900px) { .hud-search input { width: 135px; } .hud-ctrl { width: 180px; } .hud-cat { width: 160px; } .hud-edge { width: 148px; } }
-    @media (max-width: 600px) { .hud-search { display: none; } .hud-ctrl { width: 160px; } .hud-cat, .hud-edge { width: 135px; } }
+    /* No results */
+    .no-results { text-align: center; padding: 40px 20px; color: #888; font-size: 0.95em; }
+    .no-results i { font-size: 2em; color: #ccc; display: block; margin-bottom: 10px; }
+
+    @media (max-width: 600px) {
+      .filter-bar { flex-direction: column; gap: 8px; }
+      .filter-bar input[type="text"] { min-width: unset; }
+      .cat-cards { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
 
+  <div class="ld-overlay" id="loading">
+    <div class="ld-spinner"></div>
+    <div class="ld-text" id="ld-text">Loading database...</div>
+  </div>
+
   <div class="main">
-  <div class="header-panel">
-    <h1><i class="fa-solid fa-diagram-project"></i> <span id="page-title">Full Network Graph</span></h1>
-    <p class="subtitle" id="page-subtitle">Loading full database graph...</p>
-    <p class="people-info" id="people-info"></p>
+    <div class="header-panel">
+      <h1><i class="fa-solid fa-database"></i> Database Explorer</h1>
+      <p class="subtitle" id="page-subtitle">Browse all entries — click any to explore its network tree</p>
+    </div>
+
+    <div class="filter-bar">
+      <label><i class="fa-solid fa-search"></i></label>
+      <input type="text" id="f-search" placeholder="Search entries..." />
+      <select id="f-country"><option value="">All Countries</option></select>
+      <select id="f-cat"><option value="">All Categories</option></select>
+      <span class="stats-text" id="stats"><b>0</b> entries</span>
+    </div>
+
+    <div id="results"></div>
   </div>
-
-  <div class="graph-wrap">
-    <div id="sigma-container"></div>
-
-    <div class="ld-overlay" id="loading">
-      <div class="ld-spinner"></div>
-      <div class="ld-text" id="ld-text">Loading graph data...</div>
-    </div>
-
-    <div class="hud-ctrl">
-      <div class="gp" id="ctrl-p">
-        <div class="gp-h" id="ctrl-t">
-          <h3><i class="fa-solid fa-sliders"></i> Controls</h3>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
-        </div>
-        <div class="gp-b cb">
-          <label>Country</label>
-          <select id="f-country"><option value="">All Countries</option></select>
-          <label>Category</label>
-          <select id="f-cat"><option value="">All Categories</option></select>
-          <label>Layout</label>
-          <select id="layout-select">
-            <option value="forceatlas2" selected>Force-Directed</option>
-            <option value="circular">Circular</option>
-          </select>
-          <div class="chks">
-            <label><input type="checkbox" id="show-people" /> People</label>
-            <label><input type="checkbox" id="show-labels" checked /> Labels</label>
-          </div>
-          <div class="btns">
-            <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
-            <button id="btn-fit"><i class="fa-solid fa-compress"></i> Fit</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hud-search">
-      <input type="text" id="s-input" placeholder="Search nodes..." />
-      <button id="s-btn"><i class="fa-solid fa-search"></i></button>
-      <span class="sc" id="s-count"></span>
-    </div>
-
-    <div class="hud-stats">
-      <div class="sb" id="stats"><b>Loading...</b></div>
-    </div>
-
-    <div class="hud-cat">
-      <div class="gp" id="cat-p">
-        <div class="gp-h" id="cat-t">
-          <strong><i class="fa-solid fa-palette"></i> Categories</strong>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
-        </div>
-        <div class="gp-b cat-b" id="cat-b"></div>
-      </div>
-    </div>
-
-    <div class="hud-edge">
-      <div class="gp" id="edge-p">
-        <div class="gp-h" id="edge-t">
-          <strong><i class="fa-solid fa-link"></i> Connections</strong>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
-        </div>
-        <div class="gp-b edge-b" id="edge-b"></div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div id="tip"></div>
 
   <script src="app.js"></script>
-  <script src="/lib/graph-lib.min.js"></script>
   <script>
   /* =================================================================
-   *  SIGMA.JS v2 + GRAPHOLOGY + FORCEATLAS2 — WebGL GPU-rendered
-   *  Full database network graph. Browse all entries.
-   *  GPU-accelerated — handles 1000+ nodes + 17K edges smoothly.
+   *  Database Explorer — Card-based directory of all entries
+   *  Grouped by category, filterable, searchable
+   *  Click any entry → opens interactive tree explorer
    * ================================================================= */
   initPage('jewish');
 
-  // ─── Collapsible panels ──────────────────────────────
-  ['ctrl','cat','edge'].forEach(k => {
-    document.getElementById(k+'-t').onclick = () => document.getElementById(k+'-p').classList.toggle('shut');
-  });
-
-  // ─── Color maps ──────────────────────────────────────
+  // ─── Color map ───────────────────────────────────────
   const CC = {
     'Entertainment & Media':'#e74c3c','Religion & Synagogues':'#9b59b6',
     'Culture & Arts':'#e67e22','Technology':'#2ecc71',
@@ -234,399 +175,154 @@
     'Energy':'#66bb6a','Finance':'#ff9800','Government':'#3f51b5',
     'Intelligence':'#f44336','Legal':'#455a64','Media':'#e74c3c',
     'Non-Profit':'#4caf50','Philanthropy':'#e91e63','Philanthropy & Foundations':'#e91e63',
-    'Political':'#f44336','Real Estate & Property':'#795548',
-    'Retail & Consumer Goods':'#009688','Fashion & Luxury':'#ff4081',
-    'Conglomerates':'#9e9e9e','Healthcare & Pharmaceuticals':'#4caf50',
-    'Community & Social Organizations':'#3498db','Defense & Security':'#f44336'
+    'Political':'#f44336','Retail & Consumer Goods':'#009688','Fashion & Luxury':'#ff4081',
+    'Conglomerates':'#9e9e9e'
   };
-  const DC = '#546e7a', PC = '#ffab40';
-  const EC = {
-    'financial':'#ff9800','shared-person':'#9c27b0','political':'#f44336',
-    'organizational':'#2196f3','ideological':'#4caf50','historical':'#795548',
-    'legal':'#607d8b','related':'#78909c','partnership':'#00bcd4',
-    'subsidiary':'#ff5722','funding':'#ffc107','membership':'#3f51b5',
-    'affiliation':'#e91e63','leadership':'#8e44ad','collaboration':'#1abc9c',
-    'person-affiliation':'#ffab40','industry peer':'#78909c',
-    'affiliate':'#42a5f5','communal partner':'#4db6ac',
-    'heritage partner':'#ab47bc','funder':'#ffa726',
-    'community institution':'#66bb6a','religious partner':'#ce93d8',
-    'umbrella body':'#5c6bc0','member':'#26a69a',
-    'museum peer':'#7e57c2','cultural partner':'#ec407a',
-    'regional connection':'#8d6e63','educational partner':'#29b6f6',
-    'government partner':'#ef5350','sports affiliate':'#ff7043',
-    'operating body':'#26c6da','governing body':'#d4e157',
-    'preservation partner':'#9ccc65','support':'#7986cb',
-    'diplomatic partner':'#f06292','historical support':'#a1887f',
-    'parent organization':'#4fc3f7','research partner':'#ba68c8',
-    'educational':'#1abc9c','lobbying':'#607d8b',
-    'advocacy peer':'#607d8b','pro-Israel peer':'#5c6bc0',
-    'super PAC':'#f44336','affiliated charity':'#e91e63',
-    'lobbying target':'#3f51b5','congressional ally':'#3f51b5',
-    'major donor':'#ff9800','diplomatic bridge':'#f06292',
-    'pro-Israel ecosystem':'#4caf50','think tank engagement':'#673ab7',
-    'social connection':'#9c27b0','academic donation':'#1abc9c',
-    'alleged intelligence connection':'#f44336',
-    'science connection':'#2ecc71','property':'#795548',
-    'investigation':'#607d8b','social':'#9c27b0'
-  };
-  const DEC = '#90a4ae';
+  const DC = '#546e7a';
 
-  const tipEl = document.getElementById('tip');
-  const containerEl = document.getElementById('sigma-container');
-  let renderer = null;
-  let graph = null;
-  let hoveredNode = null;
-  let searchMatches = new Set();
-  let showLabels = true;
+  let allEntries = [];  // cached entry list
+  let connCounts = {};  // entry id → connection count
 
-  // ─── Tooltip helpers ─────────────────────────────────
-  let lastMouseX = 0, lastMouseY = 0;
-  document.addEventListener('mousemove', e => { lastMouseX = e.clientX; lastMouseY = e.clientY; });
+  // ─── Load data ───────────────────────────────────────
+  let dropdownsReady = 0;
+  function tryLoad() { dropdownsReady++; if (dropdownsReady >= 2) loadData(); }
 
-  function showTip(html) {
-    tipEl.innerHTML = html;
-    tipEl.style.display = 'block';
-    tipEl.style.left = Math.min(lastMouseX + 15, window.innerWidth - 360) + 'px';
-    tipEl.style.top = Math.min(lastMouseY - 10, window.innerHeight - 120) + 'px';
-  }
-  function hideTip() { tipEl.style.display = 'none'; }
+  fetch('/api/jewish/categories').then(r => r.json()).then(cats => {
+    const sel = document.getElementById('f-cat');
+    cats.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+    tryLoad();
+  }).catch(() => tryLoad());
 
-  // ─── Circular layout helper ──────────────────────────
-  function applyCircularLayout(g) {
-    var i = 0;
-    var N = g.order;
-    g.forEachNode(function(node) {
-      var angle = (2 * Math.PI * i) / N;
-      g.setNodeAttribute(node, 'x', 10 * Math.cos(angle));
-      g.setNodeAttribute(node, 'y', 10 * Math.sin(angle));
-      i++;
-    });
-  }
+  fetch('/api/countries').then(r => r.json()).then(countries => {
+    const sel = document.getElementById('f-country');
+    countries.sort().forEach(c => { const o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
+    tryLoad();
+  }).catch(() => tryLoad());
 
-  // ─── Build graph from API data ──────────────────────
-  function buildGraph(data) {
-    if (renderer) { renderer.kill(); renderer = null; }
+  async function loadData() {
+    document.getElementById('loading').classList.remove('off');
+    document.getElementById('ld-text').textContent = 'Loading all entries...';
 
-    graph = new Graph();
+    try {
+      const res = await fetch('/api/graph?people=0');
+      const data = await res.json();
 
-    // Compute degrees
-    var degMap = {};
-    data.nodes.forEach(function(n) { degMap[n.id] = 0; });
-    data.links.forEach(function(l) {
-      degMap[l.source] = (degMap[l.source] || 0) + 1;
-      degMap[l.target] = (degMap[l.target] || 0) + 1;
-    });
+      // Count connections per entry
+      connCounts = {};
+      data.links.forEach(l => {
+        connCounts[l.source] = (connCounts[l.source] || 0) + 1;
+        connCounts[l.target] = (connCounts[l.target] || 0) + 1;
+      });
 
-    // Add nodes with circular initial positions
-    var N = data.nodes.length;
-    data.nodes.forEach(function(n, i) {
-      var deg = degMap[n.id] || 0;
-      var isPerson = n.nodeType === 'person';
-      var catColor = CC[n.category] || DC;
-      var angle = (2 * Math.PI * i) / N;
-
-      graph.addNode(n.id, {
-        x: 10 * Math.cos(angle),
-        y: 10 * Math.sin(angle),
-        size: isPerson ? Math.max(3, 2 + Math.sqrt(deg) * 0.6) : Math.max(4, 3 + Math.sqrt(deg) * 1.2),
-        label: n.name,
-        color: isPerson ? PC : catColor,
-        nodeType: n.nodeType,
-        category: n.category || '',
+      // Store entries
+      allEntries = data.nodes.filter(n => n.nodeType !== 'person').map(n => ({
+        id: n.id,
+        name: n.name,
         country: n.country || '',
-        entryType: n.type || '',
-        role: n.role || '',
-        personId: n.personId || '',
-        degree: deg,
-        origColor: isPerson ? PC : catColor
-      });
-    });
+        category: n.category || 'Other',
+        type: n.type || '',
+        conns: connCounts[n.id] || 0
+      }));
 
-    // Add edges (skip duplicates)
-    var edgeSet = new Set();
-    data.links.forEach(function(l) {
-      if (!graph.hasNode(l.source) || !graph.hasNode(l.target)) return;
-      var key = l.source < l.target ? l.source + '|' + l.target : l.target + '|' + l.source;
-      if (edgeSet.has(key)) return;
-      edgeSet.add(key);
-      try {
-        graph.addEdge(l.source, l.target, {
-          color: EC[l.type] || DEC,
-          origColor: EC[l.type] || DEC,
-          size: l.type === 'person-affiliation' ? 0.2 : 0.4,
-          edgeType: l.type || 'related',
-          description: l.description || ''
-        });
-      } catch(e) { /* skip duplicate */ }
-    });
+      allEntries.sort((a, b) => a.name.localeCompare(b.name));
 
-    // Run layout
-    var layoutName = document.getElementById('layout-select').value;
-    document.getElementById('ld-text').textContent = 'Computing layout for ' + N + ' nodes...';
+      setSEO({ title: 'Database Explorer - Juice Project', description: allEntries.length + ' entries in the database.' });
+      renderResults();
+      document.getElementById('loading').classList.add('off');
 
-    if (layoutName === 'forceatlas2') {
-      var iterations = N > 800 ? 50 : N > 400 ? 80 : 150;
-      forceAtlas2.assign(graph, {
-        iterations: iterations,
-        settings: {
-          gravity: 2,
-          scalingRatio: N > 500 ? 10 : 5,
-          barnesHutOptimize: true,
-          strongGravityMode: false,
-          slowDown: 5,
-          outboundAttractionDistribution: true
-        }
-      });
-    } else {
-      applyCircularLayout(graph);
-    }
-
-    // Create Sigma renderer
-    renderer = new Sigma(graph, containerEl, {
-      renderEdgeLabels: false,
-      labelSize: 13,
-      labelFont: 'Arial',
-      labelWeight: 'bold',
-      labelColor: { color: '#222' },
-      labelDensity: N > 500 ? 0.05 : 0.1,
-      labelGridCellSize: 100,
-      labelRenderedSizeThreshold: N > 500 ? 5 : 3,
-      zIndex: true,
-      minCameraRatio: 0.01,
-      maxCameraRatio: 20,
-      defaultEdgeType: 'line',
-      nodeReducer: function(node, data) {
-        var res = Object.assign({}, data);
-        if (hoveredNode) {
-          if (node === hoveredNode) {
-            res.highlighted = true;
-            res.zIndex = 2;
-          } else if (graph.areNeighbors(hoveredNode, node)) {
-            res.zIndex = 1;
-          } else {
-            res.color = '#e8e8e8';
-            res.label = '';
-            res.zIndex = 0;
-          }
-        }
-        if (searchMatches.size > 0 && !hoveredNode) {
-          if (searchMatches.has(node)) {
-            res.highlighted = true;
-            res.zIndex = 2;
-          } else {
-            res.color = '#e8e8e8';
-            res.label = '';
-          }
-        }
-        if (!showLabels && !res.highlighted) res.label = '';
-        return res;
-      },
-      edgeReducer: function(edge, data) {
-        var res = Object.assign({}, data);
-        if (hoveredNode) {
-          if (graph.hasExtremity(edge, hoveredNode)) {
-            res.size = 2;
-            res.zIndex = 1;
-          } else {
-            res.hidden = true;
-          }
-        }
-        if (searchMatches.size > 0 && !hoveredNode) {
-          var ends = graph.extremities(edge);
-          if (!searchMatches.has(ends[0]) && !searchMatches.has(ends[1])) {
-            res.hidden = true;
-          }
-        }
-        return res;
-      }
-    });
-
-    // ─── Sigma events ────────────────────────────────
-    renderer.on('enterNode', function(e) {
-      hoveredNode = e.node;
-      containerEl.style.cursor = 'pointer';
-      var d = graph.getNodeAttributes(e.node);
-      var html;
-      if (d.nodeType === 'person') {
-        html = '<strong><i class="fa-solid fa-user"></i> ' + d.label + '</strong><br/>'
-          + '<i class="fa-solid fa-briefcase"></i> ' + (d.role || 'Individual') + '<br/>'
-          + '<i class="fa-solid fa-globe"></i> ' + (d.country || '')
-          + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
-      } else {
-        html = '<strong>' + d.label + '</strong><br/>'
-          + '<i class="fa-solid fa-building"></i> ' + (d.entryType || '') + '<br/>'
-          + '<i class="fa-solid fa-globe"></i> ' + (d.country || '') + '<br/>'
-          + '<span class="tip-cat" style="background:' + (d.origColor || DC) + '30;color:' + (d.origColor || DC) + '">' + (d.category || '') + '</span>'
-          + '<br/><span style="color:#666;font-size:0.85em">' + (d.degree || 0) + ' connections</span>';
-      }
-      showTip(html);
-      renderer.refresh();
-    });
-
-    renderer.on('leaveNode', function() {
-      hoveredNode = null;
-      containerEl.style.cursor = 'default';
-      hideTip();
-      renderer.refresh();
-    });
-
-    renderer.on('clickNode', function(e) {
-      var d = graph.getNodeAttributes(e.node);
-      if (d.nodeType === 'person') {
-        window.location.href = 'person.html?id=' + encodeURIComponent(d.personId || e.node);
-      } else {
-        window.location.href = 'network.html?id=' + encodeURIComponent(e.node);
-      }
-    });
-
-    renderer.on('clickStage', function() {
-      searchMatches = new Set();
-      document.getElementById('s-count').textContent = '';
-      document.getElementById('s-input').value = '';
-      renderer.refresh();
-    });
-
-    // ─── Stats ──────────────────────────────────────
-    var entryCount = data.nodes.filter(function(n) { return n.nodeType !== 'person'; }).length;
-    var peopleCount = data.nodes.filter(function(n) { return n.nodeType === 'person'; }).length;
-    document.getElementById('stats').innerHTML =
-      '<b>' + entryCount + '</b> entries &middot; <b>' + peopleCount + '</b> people &middot; <b>' + graph.size + '</b> links';
-
-    setSEO({ title: 'Network Graph - Juice Project', description: 'Full database network graph with ' + entryCount + ' entries and ' + graph.size + ' connections.' });
-    document.getElementById('page-subtitle').textContent =
-      entryCount + ' entries \u00B7 ' + graph.size + ' connections' + (peopleCount ? ' \u00B7 ' + peopleCount + ' people' : '');
-
-    if (data.totalPeople !== undefined) {
-      var showing = document.getElementById('show-people').checked;
-      document.getElementById('people-info').innerHTML = showing
-        ? 'Showing <b>' + peopleCount + '</b> of <b>' + data.totalPeople + '</b> associated individuals'
-        : '<b>' + data.totalPeople + '</b> people available \u2014 check "People" to show';
-    }
-
-    buildCatLegend(data.nodes);
-    buildEdgeLegend(data.links);
-
-    setTimeout(function() { document.getElementById('loading').classList.add('off'); }, 200);
-  }
-
-  function buildCatLegend(nodeList) {
-    var cats = []; var seen = {};
-    nodeList.forEach(function(n) { if (n.category && !seen[n.category]) { seen[n.category] = true; cats.push(n.category); } });
-    cats.sort();
-    var catB = document.getElementById('cat-b');
-    catB.innerHTML = '';
-    cats.forEach(function(c) {
-      var r = document.createElement('div'); r.className = 'li';
-      var d = document.createElement('div'); d.className = 'ld';
-      d.style.background = CC[c] || DC;
-      r.appendChild(d);
-      r.appendChild(document.createTextNode(c));
-      r.onclick = function() {
-        searchMatches = new Set();
-        graph.forEachNode(function(node, attrs) {
-          if (attrs.category === c) searchMatches.add(node);
-        });
-        document.getElementById('s-count').textContent = searchMatches.size + ' in ' + c;
-        document.getElementById('s-input').value = '';
-        renderer.refresh();
-      };
-      catB.appendChild(r);
-    });
-  }
-
-  function buildEdgeLegend(linkList) {
-    var eTypes = []; var seen = {};
-    linkList.forEach(function(l) { if (l.type && !seen[l.type]) { seen[l.type] = true; eTypes.push(l.type); } });
-    eTypes.sort();
-    var edgeB = document.getElementById('edge-b');
-    edgeB.innerHTML = '';
-    eTypes.forEach(function(t) {
-      var r = document.createElement('div'); r.className = 'ei';
-      var l = document.createElement('div'); l.className = 'el';
-      l.style.background = EC[t] || DEC;
-      r.appendChild(l);
-      r.appendChild(document.createTextNode(t));
-      edgeB.appendChild(r);
-    });
-  }
-
-  // ─── Dropdown population ─────────────────────────────
-  var dropdownsReady = 0;
-  function tryLoad() { dropdownsReady++; if (dropdownsReady >= 2) loadGraph(); }
-
-  fetch('/api/jewish/categories').then(function(r) { return r.json(); }).then(function(cats) {
-    var sel = document.getElementById('f-cat');
-    cats.sort().forEach(function(c) { var o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
-    tryLoad();
-  }).catch(function() { tryLoad(); });
-
-  fetch('/api/countries').then(function(r) { return r.json(); }).then(function(countries) {
-    var sel = document.getElementById('f-country');
-    countries.sort().forEach(function(c) { var o = document.createElement('option'); o.value = c; o.textContent = c; sel.appendChild(o); });
-    tryLoad();
-  }).catch(function() { tryLoad(); });
-
-  // ─── Data loading ────────────────────────────────────
-  function loadGraph() {
-    var ppl = document.getElementById('show-people').checked;
-    var country = document.getElementById('f-country').value;
-    var cat = document.getElementById('f-cat').value;
-
-    var url = '/api/graph?people=' + (ppl ? '1' : '0');
-    if (country) url += '&country=' + encodeURIComponent(country);
-    if (cat) url += '&category=' + encodeURIComponent(cat);
-
-    var ld = document.getElementById('loading');
-    ld.classList.remove('off');
-    document.getElementById('ld-text').textContent = 'Fetching graph data...';
-    document.getElementById('stats').innerHTML = '<b>Loading...</b>';
-
-    fetch(url).then(function(r) { return r.json(); }).then(function(data) {
-      if (!data.nodes || data.nodes.length === 0) {
-        document.getElementById('ld-text').textContent = 'No data found for these filters.';
-        return;
-      }
-      buildGraph(data);
-    }).catch(function(err) {
+    } catch (err) {
       console.error('Load error:', err);
       document.getElementById('ld-text').textContent = 'Error loading data: ' + err.message;
-    });
-  }
-
-  // ─── Controls ────────────────────────────────────────
-  document.getElementById('btn-reload').onclick = loadGraph;
-  document.getElementById('btn-fit').onclick = function() {
-    if (renderer) renderer.getCamera().animatedReset({ duration: 500 });
-  };
-  document.getElementById('show-people').onchange = loadGraph;
-  document.getElementById('f-country').onchange = loadGraph;
-  document.getElementById('f-cat').onchange = loadGraph;
-  document.getElementById('layout-select').onchange = loadGraph;
-  document.getElementById('show-labels').onchange = function() {
-    showLabels = this.checked;
-    if (renderer) renderer.refresh();
-  };
-
-  // ─── Search ──────────────────────────────────────────
-  function doSearch() {
-    var q = document.getElementById('s-input').value.trim().toLowerCase();
-    searchMatches = new Set();
-    if (!q) { document.getElementById('s-count').textContent = ''; if (renderer) renderer.refresh(); return; }
-    graph.forEachNode(function(node, attrs) {
-      if ((attrs.label || '').toLowerCase().indexOf(q) !== -1) searchMatches.add(node);
-    });
-    document.getElementById('s-count').textContent = searchMatches.size ? searchMatches.size + ' found' : 'none';
-    if (renderer) renderer.refresh();
-  }
-  document.getElementById('s-btn').onclick = doSearch;
-  document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
-  document.getElementById('s-input').oninput = function() {
-    if (!this.value.trim()) {
-      searchMatches = new Set();
-      document.getElementById('s-count').textContent = '';
-      if (renderer) renderer.refresh();
     }
+  }
+
+  // ─── Render results ──────────────────────────────────
+  function renderResults() {
+    const q = document.getElementById('f-search').value.trim().toLowerCase();
+    const fc = document.getElementById('f-country').value;
+    const fcat = document.getElementById('f-cat').value;
+
+    // Filter
+    let filtered = allEntries;
+    if (q) filtered = filtered.filter(e => e.name.toLowerCase().indexOf(q) !== -1 || e.type.toLowerCase().indexOf(q) !== -1);
+    if (fc) filtered = filtered.filter(e => e.country === fc);
+    if (fcat) filtered = filtered.filter(e => e.category === fcat);
+
+    // Stats
+    document.getElementById('stats').innerHTML = '<b>' + filtered.length + '</b> of <b>' + allEntries.length + '</b> entries';
+    document.getElementById('page-subtitle').textContent = filtered.length + ' entries shown — click any to explore its network tree';
+
+    const container = document.getElementById('results');
+    container.innerHTML = '';
+
+    if (filtered.length === 0) {
+      container.innerHTML = '<div class="no-results"><i class="fa-solid fa-search"></i>No entries match your filters</div>';
+      return;
+    }
+
+    // Group by category
+    const groups = {};
+    filtered.forEach(e => {
+      if (!groups[e.category]) groups[e.category] = [];
+      groups[e.category].push(e);
+    });
+
+    const sortedCats = Object.keys(groups).sort();
+
+    sortedCats.forEach(cat => {
+      const entries = groups[cat];
+      const group = document.createElement('div');
+      group.className = 'cat-group';
+
+      // Header
+      const header = document.createElement('div');
+      header.className = 'cat-group-header';
+      header.innerHTML =
+        '<div class="cat-dot" style="background:' + (CC[cat] || DC) + '"></div>'
+        + '<span class="cat-title">' + cat + '</span>'
+        + '<span class="cat-count">' + entries.length + ' entries</span>'
+        + '<span class="cat-chv"><i class="fa-solid fa-chevron-up"></i></span>';
+
+      header.onclick = () => group.classList.toggle('collapsed');
+      group.appendChild(header);
+
+      // Cards grid
+      const grid = document.createElement('div');
+      grid.className = 'cat-cards';
+
+      entries.forEach(entry => {
+        const card = document.createElement('div');
+        card.className = 'entry-card';
+        card.onclick = () => {
+          window.location.href = 'network.html?id=' + encodeURIComponent(entry.id);
+        };
+
+        card.innerHTML =
+          '<div class="card-bar" style="background:' + (CC[cat] || DC) + '"></div>'
+          + '<div class="card-body">'
+          + '<div class="card-name" title="' + entry.name.replace(/"/g, '&quot;') + '">' + entry.name + '</div>'
+          + '<div class="card-type">' + (entry.type || cat) + '</div>'
+          + '<div class="card-meta">'
+          + '<span><i class="fa-solid fa-globe"></i> ' + (entry.country || 'N/A') + '</span>'
+          + '<span class="conns"><i class="fa-solid fa-link"></i> ' + entry.conns + ' connections</span>'
+          + '</div></div>';
+
+        grid.appendChild(card);
+      });
+
+      group.appendChild(grid);
+      container.appendChild(group);
+    });
+  }
+
+  // ─── Filter bindings ─────────────────────────────────
+  let searchTimeout;
+  document.getElementById('f-search').oninput = function() {
+    clearTimeout(searchTimeout);
+    searchTimeout = setTimeout(renderResults, 200);
   };
+  document.getElementById('f-country').onchange = renderResults;
+  document.getElementById('f-cat').onchange = renderResults;
   </script>
 </body>
 </html>
