@@ -204,7 +204,7 @@
           {
             "name": "AIPAC",
             "type": "member organization",
-            "description": "AIPAC is one of the 50+ member organizations.",
+            "description": "AIPAC is one of the 51 member organizations of the Conference.",
             "entryId": "aipac"
           },
           {
@@ -216,7 +216,7 @@
           {
             "name": "AJC",
             "type": "member organization",
-            "description": "AJC is a member of the Conference.",
+            "description": "AJC is a member of the Conference of Presidents.",
             "entryId": "american-jewish-committee-ajc"
           },
           {
@@ -237,24 +237,6 @@
             "entryId": "jewish-federations-of-north-america-jfna"
           },
           {
-            "name": "AIPAC (American Israel Public Affairs Committee)",
-            "type": "member organization",
-            "description": "AIPAC is one of the 51 member organizations of the Conference.",
-            "entryId": "aipac"
-          },
-          {
-            "name": "Anti-Defamation League",
-            "type": "member organization",
-            "description": "ADL is a member of the Conference.",
-            "entryId": "anti-defamation-league-adl"
-          },
-          {
-            "name": "American Jewish Committee",
-            "type": "member organization",
-            "description": "AJC is a founding member of the Conference.",
-            "entryId": "american-jewish-committee-ajc"
-          },
-          {
             "name": "The Jewish Federations of North America",
             "type": "communal partner",
             "description": "JFNA works closely with the Conference on policy matters.",
@@ -265,12 +247,6 @@
             "type": "co-founder",
             "description": "The Conference co-founded SCN for Jewish community security.",
             "entryId": "secure-community-network"
-          },
-          {
-            "name": "American Jewish Committee (AJC)",
-            "type": "member organization",
-            "description": "AJC is a member of the Conference of Presidents.",
-            "entryId": "american-jewish-committee-ajc"
           }
         ],
         "category": "Representative & Umbrella Bodies",
@@ -651,7 +627,7 @@
           },
           {
             "name": "Washington Institute for Near East Policy (WINEP)",
-            "type": "offspring",
+            "type": "policy ally",
             "description": "WINEP was founded from AIPAC's research department in 1985.",
             "entryId": "washington-institute-for-near-east-policy-winep"
           },
@@ -1078,11 +1054,6 @@
             "name": "AIPAC Espionage Case (2005)"
           },
           {
-            "type": "policy ally",
-            "name": "WINEP (Washington Institute)",
-            "entryId": "washington-institute-for-near-east-policy-winep"
-          },
-          {
             "type": "legislative achievement",
             "name": "Anti-BDS Legislation (state level)"
           },
@@ -1262,7 +1233,7 @@
           {
             "name": "Brookings Institution",
             "type": "think tank peer",
-            "description": "Both are preeminent US policy think tanks.",
+            "description": "Both are leading US foreign policy think tanks.",
             "entryId": "brookings-institution"
           },
           {
@@ -1285,12 +1256,6 @@
             "name": "Foreign Affairs journal",
             "type": "publication",
             "description": "CFR publishes Foreign Affairs, one of the most influential foreign policy journals."
-          },
-          {
-            "name": "Brookings Institution",
-            "type": "peer think tank",
-            "description": "Both are leading US foreign policy think tanks.",
-            "entryId": "brookings-institution"
           },
           {
             "name": "US-Israel policy",
@@ -1539,12 +1504,6 @@
             "type": "critic",
             "description": "ADL has criticized Elon Musk for amplifying antisemitic content on X/Twitter.",
             "entryId": "anti-defamation-league-adl"
-          },
-          {
-            "name": "SpaceX",
-            "type": "CEO overlap",
-            "description": "Both led by Elon Musk.",
-            "entryId": "spacex"
           }
         ],
         "id": "tesla"
@@ -1630,8 +1589,8 @@
           },
           {
             "name": "Hadassah",
-            "type": "founding supporter",
-            "description": "Hadassah was instrumental in founding Brandeis University."
+            "type": "founding connection",
+            "description": "Hadassah was involved in early fundraising for Brandeis University."
           },
           {
             "name": "Jewish community",
@@ -1655,11 +1614,6 @@
             "type": "campus partner",
             "description": "Brandeis hosts an active Hillel chapter and has deep ties to Jewish student life.",
             "entryId": "hillel-international"
-          },
-          {
-            "name": "Hadassah",
-            "type": "founding connection",
-            "description": "Hadassah was involved in early fundraising for Brandeis University."
           }
         ],
         "category": "Education & Academia",
@@ -1823,10 +1777,6 @@
             "name": "Jeff Shell",
             "type": "former CEO",
             "description": "Jeff Shell (Jewish) served as CEO of NBCUniversal."
-          },
-          {
-            "target": "dreamworks-animation",
-            "relationship": "Acquired DreamWorks Animation in 2016"
           }
         ],
         "id": "nbcuniversal",
@@ -1910,7 +1860,7 @@
           {
             "name": "Goldman Sachs",
             "type": "industry peer",
-            "description": "Both are major financial institutions",
+            "description": "Morgan Stanley and Goldman Sachs are the world's two leading investment banks.",
             "entryId": "goldman-sachs-historic"
           },
           {
@@ -1923,12 +1873,6 @@
             "name": "US Securities and Exchange Commission",
             "type": "regulatory",
             "description": "Regulated by the SEC as a major financial institution."
-          },
-          {
-            "name": "Goldman Sachs",
-            "type": "primary rival",
-            "description": "Morgan Stanley and Goldman Sachs are the world's two leading investment banks.",
-            "entryId": "goldman-sachs-historic"
           },
           {
             "name": "Israeli government bonds",
@@ -2119,7 +2063,7 @@
           },
           {
             "name": "Reform Judaism",
-            "type": "movement",
+            "type": "denominational center",
             "description": "HUC is the seminary of the Reform movement in Judaism."
           },
           {
@@ -2131,11 +2075,6 @@
             "name": "Central Conference of American Rabbis",
             "type": "alumni",
             "description": "CCAR members are primarily HUC graduates."
-          },
-          {
-            "name": "Reform Judaism",
-            "type": "denominational center",
-            "description": "HUC is the academic heart of Reform Judaism."
           },
           {
             "name": "Sally Priesand ordination",
@@ -2240,11 +2179,6 @@
             "name": "Pentagon Papers",
             "type": "historical event",
             "description": "RAND analyst Daniel Ellsberg leaked the Pentagon Papers from RAND in 1971."
-          },
-          {
-            "name": "US Department of Defense",
-            "type": "primary client",
-            "description": "RAND was created to advise the US military."
           },
           {
             "name": "Nuclear deterrence policy",
@@ -2819,20 +2753,14 @@
         "connections": [
           {
             "name": "Goldman Sachs",
-            "type": "industry peer",
-            "description": "Both are major financial institutions",
+            "type": "founder origin",
+            "description": "Co-founder Fred Ehrsam came from Goldman Sachs.",
             "entryId": "goldman-sachs-historic"
           },
           {
             "name": "Israeli blockchain companies",
             "type": "acquisitions",
             "description": "Coinbase has acquired Israeli security and blockchain analytics companies."
-          },
-          {
-            "name": "Goldman Sachs",
-            "type": "founder origin",
-            "description": "Co-founder Fred Ehrsam came from Goldman Sachs.",
-            "entryId": "goldman-sachs-historic"
           },
           {
             "name": "SEC",
@@ -2860,8 +2788,8 @@
         "connections": [
           {
             "name": "Goldman Sachs",
-            "type": "industry peer",
-            "description": "Both are major financial institutions",
+            "type": "industry rival",
+            "description": "Both are the most powerful banks on Wall Street.",
             "entryId": "goldman-sachs-historic"
           },
           {
@@ -2878,12 +2806,6 @@
             "name": "Jeffrey Epstein",
             "type": "controversy",
             "description": "JPMorgan maintained banking relationships with Jeffrey Epstein, settling for $290 million."
-          },
-          {
-            "name": "Goldman Sachs",
-            "type": "industry rival",
-            "description": "Both are the most powerful banks on Wall Street.",
-            "entryId": "goldman-sachs-historic"
           },
           {
             "name": "Jes Staley",
@@ -3499,14 +3421,6 @@
           },
           {
             "type": "conglomerate",
-            "name": "The Walt Disney Company"
-          },
-          {
-            "type": "conglomerate",
-            "name": "Warner Bros. Discovery"
-          },
-          {
-            "type": "conglomerate",
             "name": "Comcast / NBCUniversal"
           },
           {
@@ -3872,12 +3786,6 @@
           {
             "name": "Brandeis University",
             "type": "Jewish educational institution",
-            "description": "Both are notable Jewish-affiliated educational institutions",
-            "entryId": "brandeis-university"
-          },
-          {
-            "name": "Brandeis University",
-            "type": "academic peer",
             "description": "Both are Jewish-affiliated universities in the United States.",
             "entryId": "brandeis-university"
           },
@@ -5402,7 +5310,7 @@
           },
           {
             "name": "US Department of Justice",
-            "type": "executive branch",
+            "type": "legal institution",
             "description": "Multiple Jewish AGs have served, including Merrick Garland, Edward Levi, and others."
           },
           {
@@ -5422,13 +5330,13 @@
           },
           {
             "name": "Jewish state governors",
-            "type": "state politics",
+            "type": "state-level politics",
             "description": "Multiple Jewish Americans serve or have served as state governors, including Josh Shapiro, Jared Polis, and J.B. Pritzker.",
             "entryId": "jewish-state-governors-us"
           },
           {
             "name": "Goldman Sachs",
-            "type": "finance connection",
+            "type": "financial institution",
             "description": "Several Jewish political figures transitioned between Goldman Sachs and government, including Gary Gensler and Robert Rubin."
           },
           {
@@ -5475,11 +5383,6 @@
             "name": "Haim Saban"
           },
           {
-            "type": "campaign finance",
-            "name": "AIPAC PAC Donations",
-            "entryId": "aipac"
-          },
-          {
             "type": "executive branch",
             "name": "US Department of Homeland Security"
           },
@@ -5504,16 +5407,8 @@
             "name": "Fox News"
           },
           {
-            "type": "legal institution",
-            "name": "US Department of Justice"
-          },
-          {
             "type": "financial sector",
             "name": "Wall Street / Banking"
-          },
-          {
-            "type": "financial institution",
-            "name": "Goldman Sachs"
           },
           {
             "type": "financial institution",
@@ -5526,11 +5421,6 @@
           {
             "type": "political scandal",
             "name": "FTX / Sam Bankman-Fried Collapse"
-          },
-          {
-            "type": "state-level politics",
-            "name": "Illinois (Pritzker)",
-            "entryId": "jewish-state-governors-us"
           },
           {
             "type": "civil liberties",
@@ -7002,10 +6892,6 @@
           },
           {
             "type": "research",
-            "name": "Manhattan Project"
-          },
-          {
-            "type": "research",
             "name": "Los Alamos National Laboratory"
           },
           {
@@ -7067,10 +6953,6 @@
           {
             "type": "medical",
             "name": "Polio Vaccine Development"
-          },
-          {
-            "type": "medical",
-            "name": "National Institutes of Health (NIH)"
           },
           {
             "type": "legal",
@@ -8375,12 +8257,6 @@
             "type": "partner think tank",
             "description": "Indyk later led the Middle East department at Brookings.",
             "entryId": "brookings-institution"
-          },
-          {
-            "name": "AIPAC (American Israel Public Affairs Committee)",
-            "type": "origin",
-            "description": "WINEP was originally created from AIPAC's research department.",
-            "entryId": "aipac"
           },
           {
             "name": "Israeli government",
@@ -9985,12 +9861,6 @@
             "entryId": "hillel-international"
           },
           {
-            "name": "Hillel International",
-            "type": "grantee",
-            "description": "JFNA federations collectively fund Hillel campus programming.",
-            "entryId": "hillel-international"
-          },
-          {
             "name": "Jewish Community Centers Association",
             "type": "communal partner",
             "description": "JCCs are closely aligned with the federation system.",
@@ -10166,12 +10036,6 @@
             "name": "Israeli Government Bonds",
             "type": "investment",
             "description": "BlackRock is a significant holder of Israeli government bonds."
-          },
-          {
-            "name": "Goldman Sachs",
-            "type": "alumni connection",
-            "description": "Many BlackRock executives have Goldman Sachs backgrounds.",
-            "entryId": "goldman-sachs-historic"
           },
           {
             "name": "Blackstone Inc.",
@@ -10760,7 +10624,7 @@
           },
           {
             "name": "Anti-Defamation League",
-            "type": "spinoff",
+            "type": "founding connection",
             "description": "B'nai B'rith created the ADL in 1913, which later became independent.",
             "entryId": "anti-defamation-league-adl"
           },
@@ -10779,12 +10643,6 @@
             "name": "International diplomacy",
             "type": "advocacy",
             "description": "Engages with governments worldwide on antisemitism and human rights."
-          },
-          {
-            "name": "Anti-Defamation League (ADL)",
-            "type": "founding connection",
-            "description": "The ADL was originally founded as an arm of B'nai B'rith in 1913.",
-            "entryId": "anti-defamation-league-adl"
           },
           {
             "name": "Jewish Federations of North America",
@@ -13984,12 +13842,6 @@
             "name": "US FDA",
             "type": "regulatory relationship",
             "description": "Teva is one of the largest filers of abbreviated new drug applications with the FDA."
-          },
-          {
-            "name": "Teva Pharmaceutical Industries",
-            "type": "parent company",
-            "description": "Israeli-headquartered global pharmaceutical company.",
-            "entryId": "teva-pharmaceutical-industries"
           }
         ],
         "category": "Healthcare & Pharmaceuticals",
@@ -15754,12 +15606,6 @@
             "type": "member",
             "description": "ZOA is a member of the Conference of Presidents.",
             "entryId": "conference-of-presidents-of-major-american-jewish-organizations"
-          },
-          {
-            "name": "AIPAC",
-            "type": "partnership",
-            "description": "Works alongside AIPAC on pro-Israel advocacy in Washington.",
-            "entryId": "aipac"
           }
         ],
         "category": "Advocacy & Public Affairs",
@@ -20095,10 +19941,6 @@
             "entryId": "world-jewish-congress"
           },
           {
-            "target": "world-jewish-congress",
-            "relationship": "Ronald Lauder serves as President of WJC"
-          },
-          {
             "target": "museum-of-modern-art-moma",
             "relationship": "Leonard Lauder major donor to MoMA"
           },
@@ -20520,10 +20362,6 @@
             "entryId": "d-e-shaw"
           },
           {
-            "target": "d-e-shaw",
-            "relationship": "Co-founder David Siegel previously worked at D.E. Shaw"
-          },
-          {
             "target": "renaissance-technologies",
             "relationship": "Quant hedge fund peers competing for mathematical talent"
           }
@@ -20729,10 +20567,6 @@
           {
             "target": "goldman-sachs",
             "relationship": "Competes in M&A advisory; founder Roger Altman previously at Lehman Brothers"
-          },
-          {
-            "target": "lazard",
-            "relationship": "Primary independent investment banking competitor"
           }
         ]
       },
@@ -21030,10 +20864,6 @@
             "entryId": "hasbro"
           },
           {
-            "target": "hasbro",
-            "relationship": "Primary toy industry competitor"
-          },
-          {
             "target": "dreamworks-animation",
             "relationship": "Licensing and entertainment partnerships"
           }
@@ -21191,10 +21021,6 @@
             "entryId": "hillel-international"
           },
           {
-            "target": "hillel-international",
-            "relationship": "Campus chapter of Hillel International"
-          },
-          {
             "target": "harvard-university",
             "relationship": "Located at Harvard University"
           }
@@ -21225,10 +21051,6 @@
           {
             "target": "paramount-pictures",
             "relationship": "Major film distributor competing for franchises"
-          },
-          {
-            "target": "starz",
-            "relationship": "Acquired Starz premium cable network"
           }
         ]
       },
@@ -22633,13 +22455,7 @@
           {
             "name": "Clinton Foundation",
             "type": "related",
-            "description": "Received $25K Epstein donation"
-          },
-          {
-            "name": "Clinton Foundation",
-            "type": "founder",
-            "description": "Founded in 1997. Epstein donated $25,000. Maxwell attended CGI events.",
-            "entryId": "clinton-foundation"
+            "description": "Founded in 1997. Epstein donated $25,000. Maxwell attended CGI events."
           },
           {
             "name": "Kevin Spacey",
@@ -22725,19 +22541,13 @@
           {
             "name": "Alexander Acosta",
             "type": "political",
-            "description": "Appointed Acosta (who gave Epstein plea deal) as Labor Secretary"
+            "description": "Appointed Acosta (who gave Epstein the lenient 2008 plea deal) as Labor Secretary in 2017. Acosta resigned in 2019."
           },
           {
             "name": "Ghislaine Maxwell",
             "type": "social",
             "description": "Attended same NYC social events. \"I wish her well\" comment in 2020 about Maxwell's arrest.",
             "entryId": "ghislaine-maxwell-connections"
-          },
-          {
-            "name": "Alexander Acosta",
-            "type": "political",
-            "description": "Appointed Acosta (who gave Epstein the lenient 2008 plea deal) as Labor Secretary in 2017. Acosta resigned in 2019.",
-            "entryId": "alexander-acosta-connections"
           },
           {
             "name": "Epstein Virgin Islands Properties",
@@ -25526,14 +25336,6 @@
             "entryId": "nadia-marcinkova-connections"
           },
           {
-            "type": "academic donation",
-            "name": "Massachusetts Institute of Technology (MIT)"
-          },
-          {
-            "type": "academic donation",
-            "name": "Harvard University"
-          },
-          {
             "type": "academic connection",
             "name": "Stanford University"
           },
@@ -25560,15 +25362,6 @@
           {
             "type": "financial connection",
             "name": "Morgan Stanley"
-          },
-          {
-            "type": "financial connection",
-            "name": "Apollo Global Management"
-          },
-          {
-            "type": "financial - Leon Black",
-            "name": "Leon Black / Apollo",
-            "description": "Leon Black paid $158M in advisory fees (2012-2017)"
           },
           {
             "type": "alleged intelligence connection",
@@ -25649,10 +25442,6 @@
           },
           {
             "type": "social",
-            "name": "Eva & Glenn Dubin"
-          },
-          {
-            "type": "social",
             "name": "Wendi Deng Murdoch"
           },
           {
@@ -25676,46 +25465,8 @@
             "name": "Paris Apartment"
           },
           {
-            "type": "property",
-            "name": "Little St. James Island",
-            "entryId": "epstein-vi-properties"
-          },
-          {
-            "type": "property",
-            "name": "Great St. James Island",
-            "entryId": "epstein-vi-properties"
-          },
-          {
             "type": "foundation",
             "name": "Jeffrey Epstein VI Foundation"
-          },
-          {
-            "type": "think tank",
-            "name": "Edge Foundation / John Brockman"
-          },
-          {
-            "type": "modeling agency",
-            "name": "MC2 Model Management (Jean-Luc Brunel)"
-          },
-          {
-            "type": "philanthropy",
-            "name": "Gratitude America (Ghislaine Maxwell)"
-          },
-          {
-            "type": "investigation",
-            "name": "Palm Beach Police Investigation (2005)"
-          },
-          {
-            "type": "investigation",
-            "name": "FBI Investigation"
-          },
-          {
-            "type": "investigation",
-            "name": "SDNY Indictment (July 2019)"
-          },
-          {
-            "type": "death",
-            "name": "Metropolitan Correctional Center Death (August 10, 2019)"
           },
           {
             "type": "controversy",
@@ -29526,7 +29277,7 @@
         "connections": [
           {
             "name": "Notable Jewish Political Figures (US)",
-            "type": "parent category",
+            "type": "notable political figures",
             "description": "Jewish governors are a subset of the broader landscape of Jewish American political leadership.",
             "entryId": "notable-jewish-political-figures-us"
           },
@@ -29663,31 +29414,13 @@
             "name": "Presidential Campaigns"
           },
           {
-            "type": "political body",
-            "name": "National Governors Association"
-          },
-          {
             "type": "community org",
             "name": "Jewish Federations of North America",
             "entryId": "jewish-federations-of-north-america-jfna"
           },
           {
-            "type": "lobbying relationship",
-            "name": "AIPAC",
-            "entryId": "aipac"
-          },
-          {
             "type": "education",
             "name": "State University Systems"
-          },
-          {
-            "type": "family dynasty",
-            "name": "Pritzker Family"
-          },
-          {
-            "type": "notable political figures",
-            "name": "Notable Jewish Political Figures (US)",
-            "entryId": "notable-jewish-political-figures-us"
           },
           {
             "type": "diplomatic engagement",
@@ -29753,7 +29486,7 @@
           {
             "name": "Sheldon Adelson / Adelson Foundation",
             "type": "major donor",
-            "description": "Sheldon Adelson donated over $400 million to Birthright Israel.",
+            "description": "Sheldon Adelson donated $410M to Birthright - the largest single philanthropic gift.",
             "entryId": "sheldon-adelson-empire"
           },
           {
@@ -29775,12 +29508,6 @@
             "name": "State of Israel",
             "type": "national",
             "description": "Part of Israel's institutional, business, or cultural landscape."
-          },
-          {
-            "name": "Sheldon Adelson",
-            "type": "mega-donor",
-            "description": "Sheldon Adelson donated $410M to Birthright - the largest single philanthropic gift.",
-            "entryId": "sheldon-adelson-empire"
           },
           {
             "name": "Charles Bronfman",
@@ -29853,7 +29580,7 @@
           {
             "name": "Hebrew University of Jerusalem",
             "type": "academic origin",
-            "description": "Mobileye was founded at Hebrew University.",
+            "description": "Mobileye was born from Shashua's research at Hebrew University.",
             "entryId": "hebrew-university-of-jerusalem"
           },
           {
@@ -29877,12 +29604,6 @@
             "name": "Autonomous driving",
             "type": "technology",
             "description": "Mobileye is a world leader in autonomous driving and ADAS technology."
-          },
-          {
-            "name": "Hebrew University",
-            "type": "origin",
-            "description": "Mobileye was born from Shashua's research at Hebrew University.",
-            "entryId": "hebrew-university-of-jerusalem"
           },
           {
             "name": "80% market share ADAS",
@@ -30151,19 +29872,13 @@
           {
             "name": "Elbit Systems",
             "type": "industry peer",
-            "description": "Fellow Israeli defense company.",
+            "description": "Israel's major defense companies competing and collaborating on defense systems.",
             "entryId": "elbit-systems"
           },
           {
             "name": "IDF",
             "type": "primary customer",
             "description": "Rafael is a primary supplier to the Israel Defense Forces."
-          },
-          {
-            "name": "Elbit Systems",
-            "type": "defense peer",
-            "description": "Israel's major defense companies competing and collaborating on defense systems.",
-            "entryId": "elbit-systems"
           }
         ],
         "category": "Defense & Security",
@@ -34182,7 +33897,7 @@
           {
             "name": "Mobileye (Intel)",
             "type": "shared individual",
-            "description": "Amnon Shashua is also associated with Mobileye (Intel) (Israel).",
+            "description": "OrCam uses computer vision technology related to Mobileye's automotive AI.",
             "entryId": "mobileye"
           },
           {
@@ -34194,12 +33909,6 @@
             "name": "Assistive AI device",
             "type": "product",
             "description": "OrCam MyEye is a wearable AI device that reads text aloud for visually impaired users."
-          },
-          {
-            "name": "Mobileye connection",
-            "type": "technology link",
-            "description": "OrCam uses computer vision technology related to Mobileye's automotive AI.",
-            "entryId": "mobileye"
           },
           {
             "name": "Social impact",
@@ -35329,7 +35038,7 @@
           {
             "name": "Sheldon Adelson Foundation",
             "type": "major donor",
-            "description": "The Adelson family has been the largest private donor to Birthright Israel.",
+            "description": "Sheldon Adelson donated $410 million to Birthright, the single largest philanthropic gift.",
             "entryId": "sheldon-adelson-empire"
           },
           {
@@ -35341,12 +35050,6 @@
             "name": "Gidi Mark",
             "type": "key individual",
             "description": "Gidi Mark is a key figure associated with Birthright Israel Foundation."
-          },
-          {
-            "name": "Sheldon Adelson",
-            "type": "mega-donor",
-            "description": "Sheldon Adelson donated $410 million to Birthright, the single largest philanthropic gift.",
-            "entryId": "sheldon-adelson-empire"
           },
           {
             "name": "Charles Bronfman",
@@ -36115,10 +35818,6 @@
             "entryId": "knesset"
           },
           {
-            "target": "knesset",
-            "relationship": "Judicial review of Knesset legislation"
-          },
-          {
             "target": "hebrew-university-of-jerusalem",
             "relationship": "Many justices are Hebrew University law alumni"
           }
@@ -36209,10 +35908,6 @@
             "type": "funding partner",
             "description": "Keren Hayesod funds many Jewish Agency programs.",
             "entryId": "jewish-agency-for-israel"
-          },
-          {
-            "target": "jewish-agency-for-israel",
-            "relationship": "Official fundraising arm of the Jewish Agency"
           },
           {
             "target": "world-zionist-organization-wzo",
@@ -36761,12 +36456,6 @@
         "connections": [
           {
             "name": "Google",
-            "type": "industry peer",
-            "description": "Both are major technology companies",
-            "entryId": "google-alphabet-inc"
-          },
-          {
-            "name": "Google",
             "type": "parent company",
             "description": "Google acquired DeepMind in 2014 for approximately $500 million.",
             "entryId": "google-alphabet-inc"
@@ -37126,7 +36815,7 @@
           {
             "name": "Yad Vashem",
             "type": "heritage institution",
-            "description": "Both preserve Jewish history and memory",
+            "description": "Collaborates on exhibition content and research materials.",
             "entryId": "yad-vashem"
           },
           {
@@ -37140,12 +36829,6 @@
             "type": "archival partner",
             "description": "Both hold significant Holocaust documentation in London.",
             "entryId": "wiener-holocaust-library"
-          },
-          {
-            "name": "Yad Vashem",
-            "type": "research partner",
-            "description": "Collaborates on exhibition content and research materials.",
-            "entryId": "yad-vashem"
           }
         ],
         "id": "imperial-war-museum-holocaust-exhibition"
@@ -38839,10 +38522,6 @@
             "entryId": "yad-vashem"
           },
           {
-            "target": "yad-vashem",
-            "relationship": "Partner in Holocaust education programs"
-          },
-          {
             "target": "auschwitz-birkenau-state-museum",
             "relationship": "Sends annual educational delegations to Auschwitz"
           }
@@ -38986,10 +38665,6 @@
             "type": "partner",
             "description": "UJIA funds Jewish Agency programs in Israel.",
             "entryId": "jewish-agency-for-israel"
-          },
-          {
-            "target": "jewish-agency-for-israel",
-            "relationship": "UK fundraising partner of the Jewish Agency"
           },
           {
             "target": "board-of-deputies-of-british-jews",
@@ -40968,10 +40643,6 @@
           {
             "target": "consistoire-central",
             "relationship": "Both historic French Jewish institutions"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "International Jewish organizational partnership"
           }
         ]
       },
@@ -41029,10 +40700,6 @@
             "type": "communal partner",
             "description": "FSJU and CRIF are both central institutions of French Jewish communal life.",
             "entryId": "crif"
-          },
-          {
-            "target": "crif",
-            "relationship": "Fellow major French Jewish organization"
           },
           {
             "target": "consistoire-central",
@@ -42332,10 +41999,6 @@
             "type": "beneficiary",
             "description": "CFHU raises Canadian support for the Hebrew University.",
             "entryId": "hebrew-university-of-jerusalem"
-          },
-          {
-            "target": "hebrew-university-of-jerusalem",
-            "relationship": "Canadian fundraising arm of Hebrew University"
           }
         ]
       },
@@ -43480,10 +43143,6 @@
             "entryId": "pfizer"
           },
           {
-            "target": "pfizer",
-            "relationship": "COVID-19 vaccine partnership with Pfizer"
-          },
-          {
             "target": "weizmann-institute",
             "relationship": "Scientific collaboration with Israeli research institutions"
           }
@@ -43588,10 +43247,6 @@
             "type": "heritage institution",
             "description": "Both preserve Jewish history and memory",
             "entryId": "yad-vashem"
-          },
-          {
-            "target": "yad-vashem",
-            "relationship": "Holocaust education partnership"
           },
           {
             "target": "moriah-college",
@@ -44481,10 +44136,6 @@
             "entryId": "yad-vashem"
           },
           {
-            "target": "yad-vashem",
-            "relationship": "Partner in Holocaust education"
-          },
-          {
             "target": "south-african-jewish-board-of-deputies",
             "relationship": "Supported by SA Jewish communal organizations"
           }
@@ -44710,19 +44361,13 @@
           {
             "name": "Yad Vashem",
             "type": "heritage institution",
-            "description": "Both preserve Jewish history and memory",
+            "description": "Collaborates on content and educational materials.",
             "entryId": "yad-vashem"
           },
           {
             "name": "South African Jewish Board of Deputies",
             "type": "communal partner",
             "description": "Works with the SAJBD on Holocaust education."
-          },
-          {
-            "name": "Yad Vashem",
-            "type": "partner",
-            "description": "Collaborates on content and educational materials.",
-            "entryId": "yad-vashem"
           },
           {
             "name": "Sydney Jewish Museum",
@@ -46419,7 +46064,7 @@
           {
             "name": "Chabad-Lubavitch",
             "type": "organizational affiliation",
-            "description": "Closely associated with the Chabad-Lubavitch movement.",
+            "description": "FJCR is closely associated with the Chabad-Lubavitch movement.",
             "entryId": "chabad-lubavitch"
           },
           {
@@ -46436,12 +46081,6 @@
             "name": "Russian Jewish revival",
             "type": "mission",
             "description": "Led the revival of Jewish religious life across Russia after the Soviet era."
-          },
-          {
-            "name": "Chabad",
-            "type": "affiliated movement",
-            "description": "FJCR is closely associated with the Chabad-Lubavitch movement.",
-            "entryId": "chabad-lubavitch"
           }
         ],
         "category": "Representative & Umbrella Bodies",
@@ -46983,10 +46622,6 @@
           {
             "target": "hebraica-sao-paulo",
             "relationship": "Umbrella organization including Hebraica"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Brazilian affiliate of the World Jewish Congress"
           }
         ],
         "id": "federation-of-jewish-communities-of-brazil-conib"
@@ -49990,10 +49625,6 @@
           {
             "target": "keren-hayesod",
             "relationship": "WZO established Keren Hayesod"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Major international Jewish organizational partnership"
           }
         ],
         "id": "world-zionist-organization-wzo"
@@ -54511,12 +54142,6 @@
             "name": "American Jewish Joint Distribution Committee",
             "type": "humanitarian partner",
             "description": "JDC provides extensive humanitarian assistance to Ukrainian Jews."
-          },
-          {
-            "name": "World Jewish Congress",
-            "type": "affiliate",
-            "description": "Represents Ukrainian Jewry internationally.",
-            "entryId": "world-jewish-congress"
           }
         ],
         "id": "vaad-of-ukraine"
@@ -54912,12 +54537,6 @@
             "type": "affiliate",
             "description": "Czech member of the European Jewish Congress.",
             "entryId": "european-jewish-congress"
-          },
-          {
-            "name": "World Jewish Congress",
-            "type": "affiliate",
-            "description": "Represents Czech Jewry internationally.",
-            "entryId": "world-jewish-congress"
           },
           {
             "name": "Jewish Museum in Prague",
@@ -55789,12 +55408,6 @@
             "entryId": "world-jewish-congress"
           },
           {
-            "name": "World Jewish Congress",
-            "type": "affiliate",
-            "description": "KIS represents Greek Jewry in the WJC.",
-            "entryId": "world-jewish-congress"
-          },
-          {
             "name": "European Jewish Congress",
             "type": "affiliate",
             "description": "Member of the European Jewish Congress.",
@@ -56394,10 +56007,6 @@
           {
             "target": "det-mosaiske-trossamfund-i-oslo",
             "relationship": "Connected to Oslo Jewish community"
-          },
-          {
-            "target": "yad-vashem",
-            "relationship": "Holocaust education partnership"
           }
         ],
         "id": "jewish-museum-of-oslo"
@@ -56424,10 +56033,6 @@
             "type": "affiliated",
             "description": "Romanian federated member of the World Jewish Congress.",
             "entryId": "world-jewish-congress"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Romanian affiliate of the World Jewish Congress"
           },
           {
             "target": "yad-vashem",
@@ -56874,12 +56479,6 @@
             "name": "Korean-Israeli tech ties",
             "type": "modern",
             "description": "Growing Korean-Israeli business and tech relationships have expanded the community."
-          },
-          {
-            "name": "Chabad-Lubavitch",
-            "type": "affiliated",
-            "description": "Supported through Chabad's global network.",
-            "entryId": "chabad-lubavitch"
           }
         ],
         "category": "Community & Social Organizations",
@@ -56905,10 +56504,6 @@
             "type": "affiliated movement",
             "description": "Part of the worldwide Chabad-Lubavitch network.",
             "entryId": "chabad-lubavitch"
-          },
-          {
-            "target": "chabad-lubavitch",
-            "relationship": "South Korean branch of Chabad-Lubavitch"
           }
         ]
       },
@@ -57097,10 +56692,6 @@
             "type": "affiliated",
             "description": "Affiliated member representing Southeast Asian Jewry.",
             "entryId": "world-jewish-congress"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Affiliate member of WJC"
           }
         ],
         "website": "https://www.singaporejews.com"
@@ -58312,10 +57903,6 @@
             "type": "affiliated",
             "description": "Primary Jewish infrastructure provided through Chabad network.",
             "entryId": "chabad-lubavitch"
-          },
-          {
-            "target": "chabad-lubavitch",
-            "relationship": "Chabad operates major Jewish centers in Bangkok and tourist areas"
           }
         ],
         "id": "jewish-community-of-thailand"
@@ -58348,19 +57935,13 @@
           {
             "name": "Chabad Thailand",
             "type": "religious services",
-            "description": "Chabad operates 11 centers across Thailand, among its largest networks in Southeast Asia.",
+            "description": "Chabad operates multiple outreach centers across Thailand serving Jewish visitors and residents.",
             "entryId": "chabad-lubavitch"
           },
           {
             "name": "Israeli backpacker culture",
             "type": "demographic",
             "description": "Thailand is a top post-military service destination for Israeli travelers."
-          },
-          {
-            "name": "Chabad",
-            "type": "religious services",
-            "description": "Chabad operates multiple outreach centers across Thailand serving Jewish visitors and residents.",
-            "entryId": "chabad-lubavitch"
           }
         ],
         "category": "Community & Social Organizations",
@@ -58724,10 +58305,6 @@
             "type": "affiliated",
             "description": "Serbian federated member of the World Jewish Congress.",
             "entryId": "world-jewish-congress"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Serbian affiliate of the World Jewish Congress"
           }
         ]
       }
@@ -58828,10 +58405,6 @@
           {
             "target": "jewish-community-of-bulgaria",
             "relationship": "Parallel Jewish community organization in Bulgaria"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Bulgarian member of WJC"
           }
         ],
         "website": "https://www.shalom.bg"
@@ -59018,10 +58591,6 @@
             "type": "heritage institution",
             "description": "Both preserve Jewish history and memory",
             "entryId": "yad-vashem"
-          },
-          {
-            "target": "yad-vashem",
-            "relationship": "Documentation and preservation partnership"
           }
         ],
         "id": "iraqi-jewish-heritage"
@@ -60042,10 +59611,6 @@
             "type": "affiliated",
             "description": "Part of Chabad's Southeast Asian network.",
             "entryId": "chabad-lubavitch"
-          },
-          {
-            "target": "chabad-lubavitch",
-            "relationship": "Chabad operates Jewish center in Ho Chi Minh City"
           }
         ]
       }
@@ -60834,12 +60399,6 @@
           {
             "name": "Yad Vashem",
             "type": "heritage institution",
-            "description": "Both preserve Jewish history and memory",
-            "entryId": "yad-vashem"
-          },
-          {
-            "name": "Yad Vashem",
-            "type": "research partner",
             "description": "Collaborates on Holocaust documentation and Lithuanian Jewish history.",
             "entryId": "yad-vashem"
           },
@@ -60896,12 +60455,6 @@
           {
             "name": "Yad Vashem",
             "type": "heritage institution",
-            "description": "Both preserve Jewish history and memory",
-            "entryId": "yad-vashem"
-          },
-          {
-            "name": "Yad Vashem",
-            "type": "research partner",
             "description": "Collaborates on documenting the Holocaust in Latvia.",
             "entryId": "yad-vashem"
           },
@@ -61270,10 +60823,6 @@
             "type": "affiliated",
             "description": "Listed as an affiliate community under the WJC framework.",
             "entryId": "world-jewish-congress"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Connected to international Jewish networks"
           }
         ]
       }
@@ -61303,12 +60852,6 @@
             "type": "member",
             "description": "One of the historic congregations in the Caribbean network.",
             "entryId": "hebrew-congregation-of-st-thomas"
-          },
-          {
-            "name": "World Jewish Congress",
-            "type": "affiliate",
-            "description": "Represents Caribbean Jewry internationally.",
-            "entryId": "world-jewish-congress"
           }
         ],
         "id": "caribbean-jewish-congress"
@@ -61366,10 +60909,6 @@
             "type": "umbrella organization",
             "description": "Both are Jewish representative organizations",
             "entryId": "world-jewish-congress"
-          },
-          {
-            "target": "world-jewish-congress",
-            "relationship": "Belarusian member of WJC"
           }
         ],
         "id": "union-of-belarusian-jewish-public-associations-and-communities"

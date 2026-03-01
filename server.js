@@ -523,15 +523,40 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
             if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
           }
         }
-        // Connections between visited entries
+        // Connections between visited entries + info-only nodes for unresolved connections
         if (entry.connections) {
           for (const conn of entry.connections) {
             let tid = conn.entryId || conn.target;
             if (!tid && conn.name) tid = nameToId[conn.name.toLowerCase()];
             if (tid === eid && conn.source) tid = conn.source;
-            if (!tid || tid === eid || !visited.has(tid)) continue;
-            const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
-            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
+
+            if (tid && tid !== eid && visited.has(tid)) {
+              // Normal resolved connection
+              const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
+              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
+            } else if (!tid && conn.name && eid === focusId) {
+              // Unresolved connection with name/description — create info-only node
+              const infoId = 'info-' + conn.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
+              if (!nodeSet.has(infoId)) {
+                nodeSet.add(infoId);
+                // Categorize info nodes
+                let infoCat = 'Other';
+                const nameLow = conn.name.toLowerCase();
+                const typeLow = (conn.type || '').toLowerCase();
+                if (/university|institute|college|school|academic/i.test(conn.name)) infoCat = 'Academic';
+                else if (/bank|citi|credit|morgan|financial/i.test(conn.name)) infoCat = 'Finance';
+                else if (/cia|mi6|mossad|intelligence|fbi|police/i.test(conn.name)) infoCat = 'Intelligence';
+                else if (/royal|government|saudi|british/i.test(conn.name)) infoCat = 'Government';
+                else if (/law |legal|attorney|kirkland|dershowitz/i.test(conn.name)) infoCat = 'Legal';
+                else if (/mansion|townhouse|ranch|apartment|island|property/i.test(conn.name)) infoCat = 'Property';
+                else if (/trial|indictment|investigation|settlement|agreement|fund|suicide|death|examiner|inspector/i.test(conn.name)) infoCat = 'Legal';
+                else if (/herald|netflix|hulu|documentary|logs|book|tape/i.test(conn.name)) infoCat = 'Media';
+                else if (/foundation|program/i.test(conn.name)) infoCat = 'Non-Profit';
+                nodes.push({ id: infoId, name: conn.name, country: '', category: infoCat, type: conn.type || 'Connection', group: infoCat, nodeType: 'info', isFocus: false, description: conn.description || '' });
+              }
+              const lk = eid + '|' + infoId;
+              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: infoId, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
+            }
           }
         }
         // Shared person links within visited set (skip for big entries since BFS already skipped)
