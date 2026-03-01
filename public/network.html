@@ -19,210 +19,200 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://thejuicebox.live/og-image.png">
   <meta property="og:title" content="Focused Network">
-  <meta property="og:description" content="Interactive tree explorer - explore connections for any entity in The Juice Box database.">
+  <meta property="og:description" content="Interactive network explorer for The Juice Box database.">
   <meta property="og:url" content="https://thejuicebox.live/network.html">
   <meta name="twitter:title" content="Focused Network">
-  <meta name="twitter:description" content="Interactive tree explorer - explore connections for any entity in The Juice Box database.">
+  <meta name="twitter:description" content="Interactive network explorer for The Juice Box database.">
   <title>Focused Network</title>
 
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #000; background: #fff; }
-    nav { padding: 10px 20px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    nav ul { list-style: none; margin: 0; padding: 10px 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
-    nav ul li { margin: 0; white-space: nowrap; }
-    nav a { color: #0000EE !important; text-decoration: none; background: rgba(255,255,255,0.85); padding: 5px 12px; white-space: nowrap; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); box-shadow: 1px 1px 2px rgba(0,0,0,0.2); font-size: 0.82em; display: inline-block; line-height: 1.4; }
-    nav select { padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(0,0,255,0.3); font-size: 0.85em; background: rgba(255,255,255,0.85); }
-    .panel, .gp, .sb, .header-panel, .graph-wrap {
-      background: rgba(255,255,255,0.15) !important; backdrop-filter: blur(12px) !important; -webkit-backdrop-filter: blur(12px) !important;
-      border: 1px solid rgba(255,255,255,0.25) !important; border-radius: 12px !important; box-shadow: 0 8px 32px rgba(0,0,0,0.08) !important;
-    }
-    .gp:hover, .header-panel:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.15) !important; border-color: rgba(255,255,255,0.35) !important; }
-    nav a { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; border-radius: 8px !important; }
-    nav select { background: rgba(255,255,255,0.2) !important; backdrop-filter: blur(8px) !important; -webkit-backdrop-filter: blur(8px) !important; border: 1px solid rgba(255,255,255,0.3) !important; }
+    *,*::before,*::after{box-sizing:border-box}
+    body{font-family:Arial,sans-serif;margin:0;padding:0;color:#000;background:#fff}
+    nav{padding:10px 20px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+    nav ul{list-style:none;margin:0;padding:10px 15px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}
+    nav ul li{margin:0;white-space:nowrap}
+    nav a{color:#0000EE!important;text-decoration:none;background:rgba(255,255,255,.85);padding:5px 12px;white-space:nowrap;border-radius:6px;border:1px solid rgba(0,0,255,.3);box-shadow:1px 1px 2px rgba(0,0,0,.2);font-size:.82em;display:inline-block;line-height:1.4}
+    nav select{padding:6px 10px;border-radius:6px;border:1px solid rgba(0,0,255,.3);font-size:.85em;background:rgba(255,255,255,.85)}
+    nav a{background:rgba(255,255,255,.2)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;border:1px solid rgba(255,255,255,.3)!important;border-radius:8px!important}
+    nav select{background:rgba(255,255,255,.2)!important;backdrop-filter:blur(8px)!important;-webkit-backdrop-filter:blur(8px)!important;border:1px solid rgba(255,255,255,.3)!important}
 
-    .main { max-width: 1600px; margin: 0 auto; padding: 15px 20px; }
-    .header-panel { background: rgba(255,255,255,0.85); border: 1px solid rgba(0,0,255,0.2); border-radius: 8px; padding: 16px 20px; margin-bottom: 15px; }
-    .header-panel h1 { margin: 0 0 4px 0; color: #0056b3; }
-    .header-panel .focus-name { color: #c62828; font-weight: 800; }
-    .header-panel .subtitle { color: #555; margin: 0; font-size: 0.95em; }
-    .header-panel .back-links { margin-bottom: 6px; }
-    .header-panel .back-links a { color: #0056b3; text-decoration: none; font-size: 0.85em; margin-right: 12px; }
-    .header-panel .back-links a:hover { text-decoration: underline; }
-    .people-info { font-size: 0.82em; color: #888; margin-top: 2px; }
-    .people-info b { color: #0056b3; }
+    .main{max-width:1600px;margin:0 auto;padding:15px 20px}
+    .header-panel{background:rgba(255,255,255,.85);border:1px solid rgba(0,0,255,.2);border-radius:8px;padding:16px 20px;margin-bottom:15px;backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,.06)}
+    .header-panel h1{margin:0 0 4px;color:#0056b3}
+    .header-panel .focus-name{color:#c62828;font-weight:800}
+    .header-panel .subtitle{color:#555;margin:0;font-size:.95em}
+    .header-panel .back-links{margin-bottom:6px}
+    .header-panel .back-links a{color:#0056b3;text-decoration:none;font-size:.85em;margin-right:12px}
+    .header-panel .back-links a:hover{text-decoration:underline}
+    .people-info{font-size:.82em;color:#888;margin-top:2px}
+    .people-info b{color:#0056b3}
 
-    .graph-wrap { position: relative; width: 100%; height: 85vh; min-height: 500px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(0,0,255,0.15); background: #f8f9fa; }
-    #tree-svg { width: 100%; height: 100%; }
+    .graph-wrap{position:relative;width:100%;height:85vh;min-height:500px;border-radius:12px;overflow:hidden;border:1px solid rgba(0,0,255,.15);background:#fafbfc}
+    #tree-svg{width:100%;height:100%;display:block}
 
-    .gp { overflow: hidden; transition: box-shadow 0.25s; }
-    .gp-h { display: flex; align-items: center; justify-content: space-between; padding: 6px 10px; cursor: pointer; user-select: none; background: rgba(0,86,179,0.06); border-bottom: 1px solid rgba(0,0,255,0.08); transition: background 0.2s; }
-    .gp-h:hover { background: rgba(0,86,179,0.12); }
-    .gp-h strong, .gp-h h3 { color: #0056b3; font-size: 0.78em; font-weight: 600; margin: 0; }
-    .gp-h .chv { color: #0056b3; font-size: 0.6em; transition: transform 0.25s; }
-    .gp.shut .gp-b { display: none; }
-    .gp.shut .gp-h { border-bottom: none; }
-    .gp.shut .chv { transform: rotate(180deg); }
+    .gp{overflow:hidden;transition:box-shadow .25s;background:rgba(255,255,255,.88)!important;backdrop-filter:blur(12px)!important;border:1px solid rgba(255,255,255,.25)!important;border-radius:12px!important;box-shadow:0 8px 32px rgba(0,0,0,.08)!important}
+    .gp:hover{box-shadow:0 8px 32px rgba(0,0,0,.15)!important}
+    .gp-h{display:flex;align-items:center;justify-content:space-between;padding:6px 10px;cursor:pointer;user-select:none;background:rgba(0,86,179,.06);border-bottom:1px solid rgba(0,0,255,.08);transition:background .2s}
+    .gp-h:hover{background:rgba(0,86,179,.12)}
+    .gp-h strong,.gp-h h3{color:#0056b3;font-size:.78em;font-weight:600;margin:0}
+    .gp-h .chv{color:#0056b3;font-size:.6em;transition:transform .25s}
+    .gp.shut .gp-b{display:none}
+    .gp.shut .gp-h{border-bottom:none}
+    .gp.shut .chv{transform:rotate(180deg)}
 
-    .hud-ctrl { position: absolute; top: 10px; left: 10px; z-index: 12; width: 215px; }
-    .cb { padding: 7px 10px 9px; }
-    .cb label { font-size: 0.73em; color: #333; display: block; margin: 4px 0 1px; font-weight: 500; }
-    .cb select { width: 100%; padding: 4px 6px; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(255,255,255,0.85); color: #333; font-size: 0.77em; outline: none; }
-    .cb select:focus { border-color: #0056b3; }
-    .cb input[type="range"] { width: 100%; margin: 2px 0; accent-color: #0056b3; }
-    .cb .chks { display: flex; gap: 10px; margin: 5px 0 2px; }
-    .cb .chks label { display: flex; align-items: center; gap: 3px; font-size: 0.73em; color: #333; cursor: pointer; margin: 0; }
-    .cb .chks input[type="checkbox"] { accent-color: #0056b3; }
-    .cb .btns { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
-    .cb .btns button { flex: 1; padding: 4px 0; border-radius: 5px; border: 1px solid rgba(0,0,255,0.16); background: rgba(0,86,179,0.08); color: #0056b3; font-size: 0.73em; font-weight: 600; cursor: pointer; transition: all 0.2s; min-width: 55px; }
-    .cb .btns button:hover { background: rgba(0,86,179,0.18); }
-    .cb .depth-row { display: flex; align-items: center; gap: 6px; }
-    .cb .depth-row input { flex: 1; }
-    .cb .depth-row span { font-size: 0.77em; color: #0056b3; font-weight: 700; min-width: 12px; text-align: center; }
+    .hud-ctrl{position:absolute;top:10px;left:10px;z-index:12;width:215px}
+    .cb{padding:7px 10px 9px}
+    .cb label{font-size:.73em;color:#333;display:block;margin:4px 0 1px;font-weight:500}
+    .cb .chks{display:flex;gap:10px;margin:5px 0 2px}
+    .cb .chks label{display:flex;align-items:center;gap:3px;font-size:.73em;color:#333;cursor:pointer;margin:0}
+    .cb .chks input[type=checkbox]{accent-color:#0056b3}
+    .cb .btns{display:flex;gap:5px;margin-top:5px;flex-wrap:wrap}
+    .cb .btns button{flex:1;padding:4px 0;border-radius:5px;border:1px solid rgba(0,0,255,.16);background:rgba(0,86,179,.08);color:#0056b3;font-size:.73em;font-weight:600;cursor:pointer;transition:all .2s;min-width:55px}
+    .cb .btns button:hover{background:rgba(0,86,179,.18)}
+    .cb .depth-row{display:flex;align-items:center;gap:6px}
+    .cb .depth-row input{flex:1;accent-color:#0056b3}
+    .cb .depth-row span{font-size:.77em;color:#0056b3;font-weight:700;min-width:12px;text-align:center}
 
-    .hud-search { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); z-index: 12; display: flex; align-items: center; }
-    .hud-search input { padding: 5px 11px; border: 1px solid rgba(0,0,255,0.2); border-radius: 6px 0 0 6px; font-size: 0.77em; width: 200px; outline: none; background: rgba(255,255,255,0.85); backdrop-filter: blur(12px); color: #333; }
-    .hud-search input::placeholder { color: #888; }
-    .hud-search input:focus { border-color: #0056b3; }
-    .hud-search button { padding: 5px 9px; border: 1px solid rgba(0,0,255,0.2); border-left: none; border-radius: 0 6px 6px 0; background: rgba(0,86,179,0.1); color: #0056b3; cursor: pointer; font-size: 0.77em; transition: background 0.2s; }
-    .hud-search button:hover { background: rgba(0,86,179,0.2); }
-    .hud-search .sc { padding: 0 7px; font-size: 0.71em; color: #0056b3; white-space: nowrap; text-shadow: 0 0 4px rgba(255,255,255,0.9); }
+    .hud-search{position:absolute;top:10px;left:50%;transform:translateX(-50%);z-index:12;display:flex;align-items:center}
+    .hud-search input{padding:5px 11px;border:1px solid rgba(0,0,255,.2);border-radius:6px 0 0 6px;font-size:.77em;width:200px;outline:0;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);color:#333}
+    .hud-search input::placeholder{color:#888}
+    .hud-search input:focus{border-color:#0056b3}
+    .hud-search button{padding:5px 9px;border:1px solid rgba(0,0,255,.2);border-left:none;border-radius:0 6px 6px 0;background:rgba(0,86,179,.1);color:#0056b3;cursor:pointer;font-size:.77em;transition:background .2s}
+    .hud-search button:hover{background:rgba(0,86,179,.2)}
+    .hud-search .sc{padding:0 7px;font-size:.71em;color:#0056b3;white-space:nowrap;text-shadow:0 0 4px rgba(255,255,255,.9)}
 
-    .hud-stats { position: absolute; top: 10px; right: 10px; z-index: 12; }
-    .sb { padding: 5px 11px; font-size: 0.74em; color: #333; white-space: nowrap; }
-    .sb b { color: #0056b3; font-weight: 700; }
+    .hud-stats{position:absolute;top:10px;right:10px;z-index:12}
+    .sb{padding:5px 11px;font-size:.74em;color:#333;white-space:nowrap;background:rgba(255,255,255,.88)!important;backdrop-filter:blur(12px)!important;border:1px solid rgba(255,255,255,.25)!important;border-radius:12px!important;box-shadow:0 4px 16px rgba(0,0,0,.06)!important}
+    .sb b{color:#0056b3;font-weight:700}
 
-    .hud-legend { position: absolute; bottom: 10px; left: 10px; z-index: 12; width: 190px; }
-    .cat-b { padding: 4px 10px 7px; max-height: 180px; overflow-y: auto; }
-    .li { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1px 0; cursor: pointer; padding: 1px 2px; border-radius: 3px; transition: background 0.15s; }
-    .li:hover { background: rgba(0,86,179,0.08); }
-    .ld { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .hud-legend{position:absolute;bottom:10px;right:10px;z-index:12;width:200px}
+    .leg-b{padding:4px 10px 7px;max-height:250px;overflow-y:auto}
+    .li{display:flex;align-items:center;gap:5px;font-size:.69em;color:#333;margin:1px 0;padding:1px 2px;border-radius:3px}
+    .ld{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+    .leg-b::-webkit-scrollbar{width:4px}
+    .leg-b::-webkit-scrollbar-track{background:0 0}
+    .leg-b::-webkit-scrollbar-thumb{background:rgba(0,0,255,.15);border-radius:2px}
 
-    .hud-edge { position: absolute; bottom: 10px; right: 10px; z-index: 12; width: 172px; }
-    .edge-b { padding: 3px 10px 7px; max-height: 210px; overflow-y: auto; }
-    .ei { display: flex; align-items: center; gap: 5px; font-size: 0.69em; color: #333; margin: 1.5px 0; }
-    .el { width: 15px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+    #tip{position:fixed;background:rgba(255,255,255,.95);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);color:#222;padding:10px 14px;border-radius:9px;border:1px solid rgba(0,0,255,.15);font-size:.79em;pointer-events:none;z-index:200;max-width:340px;line-height:1.55;display:none;box-shadow:0 8px 28px rgba(0,0,0,.12)}
+    #tip strong{color:#0056b3}
+    #tip .tip-cat{display:inline-block;padding:1px 6px;border-radius:3px;font-size:.85em;margin-top:3px}
 
-    .cat-b::-webkit-scrollbar, .edge-b::-webkit-scrollbar { width: 4px; }
-    .cat-b::-webkit-scrollbar-track, .edge-b::-webkit-scrollbar-track { background: transparent; }
-    .cat-b::-webkit-scrollbar-thumb, .edge-b::-webkit-scrollbar-thumb { background: rgba(0,0,255,0.15); border-radius: 2px; }
+    .ld-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(255,255,255,.8);backdrop-filter:blur(4px);z-index:25;transition:opacity .5s}
+    .ld-overlay.off{opacity:0;pointer-events:none}
+    .ld-spinner{width:38px;height:38px;border:3px solid rgba(0,0,255,.1);border-top-color:#0056b3;border-radius:50%;animation:spin .75s linear infinite}
+    .ld-text{color:#0056b3;font-size:.82em;font-weight:600}
+    @keyframes spin{to{transform:rotate(360deg)}}
 
-    #tip {
-      position: fixed; background: rgba(255,255,255,0.95); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
-      color: #222; padding: 10px 14px; border-radius: 9px; border: 1px solid rgba(0,0,255,0.15); font-size: 0.79em;
-      pointer-events: none; z-index: 200; max-width: 340px; line-height: 1.55; display: none; box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-    }
-    #tip strong { color: #0056b3; }
-    #tip .tip-cat { display: inline-block; padding: 1px 6px; border-radius: 3px; font-size: 0.85em; margin-top: 3px; }
+    /* ─── Tree node styles ───────────────────────────── */
+    .tree-link{fill:none;stroke-width:1.6;opacity:.45;transition:opacity .2s}
+    .tree-node{cursor:pointer}
+    .tree-node:hover .node-bg{filter:brightness(.97);stroke-width:2.2!important}
+    .node-bg{transition:filter .15s,stroke-width .15s}
+    .node-name{font-size:11.5px;fill:#222;pointer-events:none}
+    .node-info{font-size:9.5px;fill:#888;pointer-events:none}
+    .node-toggle{font-size:13px;font-weight:700;fill:#0056b3;pointer-events:none}
+    .node-icon{pointer-events:none}
+    .node-conns{font-size:8.5px;fill:#aaa;pointer-events:none}
+    .tree-node.search-hit .node-bg{stroke:#ff6f00!important;stroke-width:2.5!important;filter:drop-shadow(0 0 4px rgba(255,111,0,.4))}
+    .tree-node.search-hit .node-name{fill:#e65100!important;font-weight:700}
 
-    .ld-overlay { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; background: rgba(255,255,255,0.8); backdrop-filter: blur(4px); z-index: 25; transition: opacity 0.5s; }
-    .ld-overlay.off { opacity: 0; pointer-events: none; }
-    .ld-spinner { width: 38px; height: 38px; border: 3px solid rgba(0,0,255,0.1); border-top-color: #0056b3; border-radius: 50%; animation: spin 0.75s linear infinite; }
-    .ld-text { color: #0056b3; font-size: 0.82em; font-weight: 600; }
-    @keyframes spin { to { transform: rotate(360deg); } }
+    /* ─── Tier group (people side) colors ────────────── */
+    .tier-inner-circle .node-bg{fill:#fff0f0;stroke:#c62828}
+    .tier-inner-circle .node-cat-bar{fill:#c62828}
+    .tier-victims .node-bg{fill:#fff3e0;stroke:#e65100}
+    .tier-victims .node-cat-bar{fill:#e65100}
+    .tier-close-assoc .node-bg{fill:#fce4ec;stroke:#ad1457}
+    .tier-close-assoc .node-cat-bar{fill:#ad1457}
+    .tier-political .node-bg{fill:#e8eaf6;stroke:#283593}
+    .tier-political .node-cat-bar{fill:#283593}
+    .tier-legal .node-bg{fill:#efebe9;stroke:#4e342e}
+    .tier-legal .node-cat-bar{fill:#4e342e}
+    .tier-science .node-bg{fill:#e0f7fa;stroke:#00695c}
+    .tier-science .node-cat-bar{fill:#00695c}
+    .tier-media .node-bg{fill:#fce4ec;stroke:#c2185b}
+    .tier-media .node-cat-bar{fill:#c2185b}
+    .tier-social .node-bg{fill:#f3e5f5;stroke:#6a1b9a}
+    .tier-social .node-cat-bar{fill:#6a1b9a}
+    .tier-business .node-bg{fill:#e3f2fd;stroke:#1565c0}
+    .tier-business .node-cat-bar{fill:#1565c0}
+    .tier-other .node-bg{fill:#f5f5f5;stroke:#616161}
+    .tier-other .node-cat-bar{fill:#616161}
 
-    /* ─── Tree-specific styles ───────────────────────── */
-    .tree-link { fill: none; stroke-width: 1.8; opacity: 0.5; transition: opacity 0.2s, stroke-width 0.2s; }
-    .tree-link:hover { opacity: 0.9; stroke-width: 2.5; }
-    .tree-link-label { font-size: 9px; fill: #999; pointer-events: none; }
-    .tree-node { cursor: pointer; }
-    .tree-node:hover .node-bg { filter: brightness(0.97); stroke-width: 2.2 !important; }
-    .node-bg { transition: filter 0.15s, stroke-width 0.15s; }
-    .node-cat-bar { pointer-events: none; }
-    .node-name { font-size: 12px; fill: #222; pointer-events: none; }
-    .node-info { font-size: 10px; fill: #888; pointer-events: none; }
-    .node-toggle { font-size: 14px; font-weight: bold; fill: #0056b3; pointer-events: none; }
-    .node-conns { font-size: 9px; fill: #aaa; pointer-events: none; }
-
-    .tree-node.search-hit .node-bg { stroke: #ff6f00 !important; stroke-width: 2.5 !important; filter: drop-shadow(0 0 4px rgba(255,111,0,0.4)); }
-    .tree-node.search-hit .node-name { fill: #e65100 !important; font-weight: bold; }
-
-    @media (max-width: 900px) { .hud-search input { width: 135px; } .hud-ctrl { width: 180px; } .hud-legend { width: 160px; } .hud-edge { width: 148px; } }
-    @media (max-width: 600px) { .hud-search { display: none; } .hud-ctrl { width: 160px; } .hud-legend, .hud-edge { width: 135px; } }
+    @media (max-width:900px){.hud-search input{width:135px}.hud-ctrl{width:180px}.hud-legend{width:160px}}
+    @media (max-width:600px){.hud-search{display:none}.hud-ctrl{width:160px}.hud-legend{width:135px}}
   </style>
 </head>
 <body>
   <nav id="navbar"></nav>
-
   <div class="main">
-  <div class="header-panel">
-    <div class="back-links">
-      <a href="graph.html"><i class="fa-solid fa-diagram-project"></i> Full Graph</a>
-      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-      <a href="#" id="btn-entry-top"><i class="fa-solid fa-building"></i> View Entry</a>
-    </div>
-    <h1><i class="fa-solid fa-spider-web"></i> <span id="page-title">Focused Network</span></h1>
-    <p class="subtitle" id="page-subtitle">Loading network data...</p>
-    <p class="people-info" id="people-info"></p>
-  </div>
-
-  <div class="graph-wrap">
-    <svg id="tree-svg"></svg>
-
-    <div class="ld-overlay" id="loading">
-      <div class="ld-spinner"></div>
-      <div class="ld-text" id="ld-text">Loading network data...</div>
+    <div class="header-panel">
+      <div class="back-links">
+        <a href="graph.html"><i class="fa-solid fa-database"></i> All Entries</a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="#" id="btn-entry-top"><i class="fa-solid fa-building"></i> View Entry</a>
+      </div>
+      <h1><i class="fa-solid fa-spider-web"></i> <span id="page-title">Focused Network</span></h1>
+      <p class="subtitle" id="page-subtitle">Loading network data...</p>
+      <p class="people-info" id="people-info"></p>
     </div>
 
-    <div class="hud-ctrl">
-      <div class="gp" id="ctrl-p">
-        <div class="gp-h" id="ctrl-t">
-          <h3><i class="fa-solid fa-sliders"></i> Controls</h3>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
-        </div>
-        <div class="gp-b cb">
-          <label>Depth</label>
-          <div class="depth-row">
-            <input type="range" id="depth-range" min="1" max="3" value="1" step="1">
-            <span id="depth-val">1</span>
+    <div class="graph-wrap">
+      <svg id="tree-svg"></svg>
+      <div class="ld-overlay" id="loading">
+        <div class="ld-spinner"></div>
+        <div class="ld-text" id="ld-text">Loading network data...</div>
+      </div>
+
+      <div class="hud-ctrl">
+        <div class="gp" id="ctrl-p">
+          <div class="gp-h" id="ctrl-t">
+            <h3><i class="fa-solid fa-sliders"></i> Controls</h3>
+            <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
           </div>
-          <div class="chks">
-            <label><input type="checkbox" id="show-people" checked /> People</label>
-          </div>
-          <div class="btns">
-            <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
-            <button id="btn-fit"><i class="fa-solid fa-compress"></i> Fit</button>
-          </div>
-          <div class="btns">
-            <button id="btn-expand-all"><i class="fa-solid fa-expand"></i> Expand All</button>
-            <button id="btn-collapse"><i class="fa-solid fa-compress-alt"></i> Collapse</button>
-          </div>
-          <div class="btns">
-            <button id="btn-entry"><i class="fa-solid fa-building"></i> View Entry</button>
+          <div class="gp-b cb">
+            <label>Depth</label>
+            <div class="depth-row">
+              <input type="range" id="depth-range" min="1" max="3" value="1" step="1">
+              <span id="depth-val">1</span>
+            </div>
+            <div class="chks">
+              <label><input type="checkbox" id="show-people" checked> People</label>
+            </div>
+            <div class="btns">
+              <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
+              <button id="btn-fit"><i class="fa-solid fa-compress"></i> Fit</button>
+            </div>
+            <div class="btns">
+              <button id="btn-expand-all"><i class="fa-solid fa-expand"></i> Open All</button>
+              <button id="btn-collapse"><i class="fa-solid fa-minimize"></i> Collapse</button>
+            </div>
+            <div class="btns">
+              <button id="btn-entry"><i class="fa-solid fa-building"></i> View Entry</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="hud-search">
-      <input type="text" id="s-input" placeholder="Search nodes..." />
-      <button id="s-btn"><i class="fa-solid fa-search"></i></button>
-      <span class="sc" id="s-count"></span>
-    </div>
+      <div class="hud-search">
+        <input type="text" id="s-input" placeholder="Search nodes...">
+        <button id="s-btn"><i class="fa-solid fa-search"></i></button>
+        <span class="sc" id="s-count"></span>
+      </div>
 
-    <div class="hud-stats">
-      <div class="sb" id="stats"><b>Loading...</b></div>
-    </div>
+      <div class="hud-stats">
+        <div class="sb" id="stats"><b>Loading...</b></div>
+      </div>
 
-    <div class="hud-legend">
-      <div class="gp" id="cat-p">
-        <div class="gp-h" id="cat-t">
-          <strong><i class="fa-solid fa-palette"></i> Categories</strong>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
+      <div class="hud-legend">
+        <div class="gp" id="leg-p">
+          <div class="gp-h" id="leg-t">
+            <strong><i class="fa-solid fa-palette"></i> People Tiers</strong>
+            <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
+          </div>
+          <div class="gp-b leg-b" id="leg-b"></div>
         </div>
-        <div class="gp-b cat-b" id="cat-b"></div>
       </div>
     </div>
-
-    <div class="hud-edge">
-      <div class="gp" id="edge-p">
-        <div class="gp-h" id="edge-t">
-          <strong><i class="fa-solid fa-link"></i> Connections</strong>
-          <span class="chv"><i class="fa-solid fa-chevron-up"></i></span>
-        </div>
-        <div class="gp-b edge-b" id="edge-b"></div>
-      </div>
-    </div>
-  </div>
   </div>
 
   <div id="tip"></div>
@@ -231,14 +221,15 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script>
   /* =================================================================
-   *  D3.js Interactive Collapsible Tree Explorer
-   *  Horizontal tree layout — zero overlap, lazy-loaded from API
-   *  Click nodes to expand/collapse connections
+   *  D3.js DUAL-SIDED COLLAPSIBLE TREE
+   *  LEFT  = People (grouped by severity / proximity tiers)
+   *  RIGHT = Organizations / connected entries
+   *  Root (focus entry) sits at CENTER
    * ================================================================= */
   initPage('jewish');
 
-  // ─── Collapsible panels ──────────────────────────────
-  ['ctrl','cat','edge'].forEach(k => {
+  // ─── Collapsible HUD panels ──────────────────────────
+  ['ctrl','leg'].forEach(k => {
     document.getElementById(k+'-t').onclick = () => document.getElementById(k+'-p').classList.toggle('shut');
   });
 
@@ -247,17 +238,16 @@
     'Entertainment & Media':'#e74c3c','Religion & Synagogues':'#9b59b6',
     'Culture & Arts':'#e67e22','Technology':'#2ecc71',
     'Community & Social Organizations':'#3498db','Education & Academia':'#1abc9c',
-    'Education':'#1abc9c',
-    'Representative & Umbrella Bodies':'#f39c12','Heritage & Memorials':'#8e44ad',
-    'Charity & Philanthropy':'#e91e63','Investment & Private Equity':'#00bcd4',
-    'Real Estate & Property':'#795548','Sports':'#ff5722',
-    'Advocacy & Public Affairs':'#607d8b','Healthcare & Pharmaceuticals':'#4caf50',
-    'Banking & Financial Services':'#ff9800','Research & Think Tanks':'#673ab7',
-    'Retail & E-Commerce':'#009688','Defense & Security':'#f44336',
-    'Food & Beverage':'#8bc34a','Conglomerates & Holding Companies':'#9e9e9e',
-    'Government & Diplomacy':'#3f51b5','Fashion & Consumer Goods':'#ff4081',
-    'Manufacturing & Industry':'#757575','Law Firms':'#455a64',
-    'Notable Individuals':'#ffc107','Transportation':'#00acc1',
+    'Education':'#1abc9c','Representative & Umbrella Bodies':'#f39c12',
+    'Heritage & Memorials':'#8e44ad','Charity & Philanthropy':'#e91e63',
+    'Investment & Private Equity':'#00bcd4','Real Estate & Property':'#795548',
+    'Sports':'#ff5722','Advocacy & Public Affairs':'#607d8b',
+    'Healthcare & Pharmaceuticals':'#4caf50','Banking & Financial Services':'#ff9800',
+    'Research & Think Tanks':'#673ab7','Retail & E-Commerce':'#009688',
+    'Defense & Security':'#f44336','Food & Beverage':'#8bc34a',
+    'Conglomerates & Holding Companies':'#9e9e9e','Government & Diplomacy':'#3f51b5',
+    'Fashion & Consumer Goods':'#ff4081','Manufacturing & Industry':'#757575',
+    'Law Firms':'#455a64','Notable Individuals':'#ffc107','Transportation':'#00acc1',
     'Advertising & PR':'#d81b60','Telecommunications':'#7c4dff',
     'Utilities & Energy':'#66bb6a','People':'#ffab40','Controversy':'#d32f2f',
     'Advocacy & Political Organizations':'#607d8b','Corporate':'#78909c',
@@ -274,30 +264,61 @@
     'legal':'#607d8b','related':'#78909c','partnership':'#00bcd4',
     'subsidiary':'#ff5722','funding':'#ffc107','membership':'#3f51b5',
     'affiliation':'#e91e63','leadership':'#8e44ad','collaboration':'#1abc9c',
-    'person-affiliation':'#ffab40','industry peer':'#78909c',
-    'affiliate':'#42a5f5','communal partner':'#4db6ac',
-    'heritage partner':'#ab47bc','funder':'#ffa726',
-    'community institution':'#66bb6a','religious partner':'#ce93d8',
-    'umbrella body':'#5c6bc0','member':'#26a69a',
-    'museum peer':'#7e57c2','cultural partner':'#ec407a',
-    'regional connection':'#8d6e63','educational partner':'#29b6f6',
-    'government partner':'#ef5350','sports affiliate':'#ff7043',
-    'operating body':'#26c6da','governing body':'#d4e157',
-    'preservation partner':'#9ccc65','support':'#7986cb',
-    'diplomatic partner':'#f06292','historical support':'#a1887f',
-    'parent organization':'#4fc3f7','research partner':'#ba68c8',
-    'educational':'#1abc9c','lobbying':'#607d8b',
-    'advocacy peer':'#607d8b','pro-Israel peer':'#5c6bc0',
-    'super PAC':'#f44336','affiliated charity':'#e91e63',
-    'lobbying target':'#3f51b5','congressional ally':'#3f51b5',
-    'major donor':'#ff9800','diplomatic bridge':'#f06292',
-    'pro-Israel ecosystem':'#4caf50','think tank engagement':'#673ab7',
-    'social connection':'#9c27b0','academic donation':'#1abc9c',
-    'alleged intelligence connection':'#f44336',
-    'science connection':'#2ecc71','property':'#795548',
-    'investigation':'#607d8b','social':'#9c27b0'
+    'person-affiliation':'#ffab40'
   };
   const DEC = '#90a4ae';
+
+  /* ═══════════════════════════════════════════════════════
+   *  SEVERITY / PROXIMITY TIER CLASSIFICATION
+   *  Each person is classified into ONE tier based on role
+   * ═══════════════════════════════════════════════════════ */
+  const TIERS = [
+    { id:'inner-circle', name:'Inner Circle', icon:'\uf06d', color:'#c62828', cls:'tier-inner-circle',
+      desc:'Co-conspirators, recruiters, staff, pilots, handlers',
+      keywords:['procurer','recruiter','scheduler','assistant','handler','pilot','butler','housekeeper','property manager','mc2','modeling agent','inner circle','npa','estate co-executor','financial manager','estate','longtime lawyer','executor','staff','bodyguard','chauffeur','secretary','valet','chef','maid'] },
+    { id:'victims', name:'Victims & Accusers', icon:'\uf4be', color:'#e65100', cls:'tier-victims',
+      desc:'Survivors, accusers, Jane Does',
+      keywords:['victim','accuser','survivor','jane doe','abuse','trafficking','minor','molest','assault'] },
+    { id:'close-assoc', name:'Close Associates', icon:'\uf500', color:'#ad1457', cls:'tier-close-assoc',
+      desc:'Close friends, girlfriends, financial backers, frequent visitors',
+      keywords:['business partner','girlfriend','client','close friend','frequent','financier','patron','primary','co-founder','funder','major donor','foundation','duke','prince','princess','royal','backup executor','biotech investor','apollo','barclays','jpmorgan','jp morgan','highbridge','deutsche bank','bear stearns','goldman'] },
+    { id:'political', name:'Politicians & Government', icon:'\uf19c', color:'#283593', cls:'tier-political',
+      desc:'Presidents, governors, diplomats, officials',
+      keywords:['president','governor','senator','secretary','ag ','attorney general','pm','prime minister','politician','congressional','vice president','vp','mayor','ambassador','diplomat','cabinet','minister','aide','advisor','usvi','white house'] },
+    { id:'legal', name:'Legal & Law Enforcement', icon:'\uf0e3', color:'#4e342e', cls:'tier-legal',
+      desc:'Lawyers, prosecutors, judges, police, investigators',
+      keywords:['attorney','lawyer','judge','detective','police','ausa','us attorney','state attorney','prosecutor','federal','guard','mcc','corrections','fbi','doj','sdny','palm beach','investigat','law enforce','legal'] },
+    { id:'science', name:'Scientists & Academics', icon:'\uf19d', color:'#00695c', cls:'tier-science',
+      desc:'Professors, researchers, university affiliates',
+      keywords:['professor','harvard','mit','physicist','geneticist','scientist','computer scientist','biologist','neurologist','ai pioneer','mathematician','astronomer','virologist','evolutionary','chemist','university','academic','researcher','edge foundation','college','scholar'] },
+    { id:'media', name:'Media & Journalism', icon:'\uf1ea', color:'#c2185b', cls:'tier-media',
+      desc:'Journalists, TV anchors, news executives',
+      keywords:['journalist','anchor','tv ','cbs','nbc','abc','reporter','herald','editor','news','media','columnist','correspondent','publisher','writer','author'] },
+    { id:'entertainment', name:'Entertainment & Celebrity', icon:'\uf008', color:'#6a1b9a', cls:'tier-social',
+      desc:'Actors, musicians, models, socialites, sports figures',
+      keywords:['actor','actress','director','producer','filmmaker','singer','comedian','musician','supermodel','model','fashion','socialite','celebrity','tennis','magician','artist','entertainer','designer','photographer','chef'] },
+    { id:'business', name:'Business & Finance', icon:'\uf201', color:'#1565c0', cls:'tier-business',
+      desc:'CEOs, hedge fund managers, billionaires, bankers',
+      keywords:['ceo','hedge fund','billionaire','real estate','investor','banker','managing director','co-founder','founder','chairman','executive','vp ','svp','cfo','coo','cto','venture','private equity','wall street','trader','analyst','wealth','consul'] },
+    { id:'other', name:'Other Connections', icon:'\uf0c0', color:'#616161', cls:'tier-other',
+      desc:'Other associated individuals',
+      keywords:[] }
+  ];
+
+  const TIER_COLORS = {};
+  TIERS.forEach(t => { TIER_COLORS[t.id] = t.color; });
+
+  function classifyPerson(role) {
+    if (!role) return 'other';
+    const r = role.toLowerCase();
+    for (const tier of TIERS) {
+      if (tier.id === 'other') continue;
+      for (const kw of tier.keywords) {
+        if (r.indexOf(kw) !== -1) return tier.id;
+      }
+    }
+    return 'other';
+  }
 
   // ─── Parse URL ───────────────────────────────────────
   const ID_ALIASES = { 'jeffrey-epstein-network': 'epstein-network' };
@@ -305,9 +326,9 @@
   let focusEntryId = params.get('id') || 'epstein-network';
   if (ID_ALIASES[focusEntryId]) {
     focusEntryId = ID_ALIASES[focusEntryId];
-    const newUrl = new URL(window.location);
-    newUrl.searchParams.set('id', focusEntryId);
-    window.history.replaceState({}, '', newUrl);
+    const nu = new URL(window.location);
+    nu.searchParams.set('id', focusEntryId);
+    window.history.replaceState({}, '', nu);
   }
   document.getElementById('btn-entry-top').href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId);
   document.getElementById('btn-entry').onclick = () => {
@@ -315,19 +336,18 @@
   };
 
   // ─── Tree state ──────────────────────────────────────
-  const NW = 230, NH = 44, LEVEL_GAP = 310, SIB_GAP = 54;
-  let treeRoot = null;
-  let allVisibleIds = new Set();
+  const NW = 220, NH = 40, RIGHT_GAP = 290, LEFT_GAP = 290, SIB_GAP = 48;
+  let rightRoot = null, leftRoot = null;
   let rawApiData = null;
   let searchHits = new Set();
+  let allVisibleIds = new Set();
 
-  // ─── Tooltip helpers ─────────────────────────────────
+  // ─── Tooltip ─────────────────────────────────────────
   const tipEl = document.getElementById('tip');
   let lastMX = 0, lastMY = 0;
   document.addEventListener('mousemove', e => { lastMX = e.clientX; lastMY = e.clientY; });
-  function showTip(html) {
-    tipEl.innerHTML = html;
-    tipEl.style.display = 'block';
+  function showTip(h) {
+    tipEl.innerHTML = h; tipEl.style.display = 'block';
     tipEl.style.left = Math.min(lastMX + 15, window.innerWidth - 360) + 'px';
     tipEl.style.top = Math.min(lastMY - 10, window.innerHeight - 120) + 'px';
   }
@@ -335,30 +355,32 @@
 
   // ─── SVG setup ───────────────────────────────────────
   const svgEl = d3.select('#tree-svg');
-  const gLinks = svgEl.append('g').attr('class', 'links-group');
-  const gNodes = svgEl.append('g').attr('class', 'nodes-group');
-  const gLabels = svgEl.append('g').attr('class', 'labels-group');
+  const gMain = svgEl.append('g').attr('class', 'main-group');
+  const gLinks = gMain.append('g').attr('class', 'links-group');
+  const gNodes = gMain.append('g').attr('class', 'nodes-group');
+  // Root node drawn separately on top
+  const gRoot = gMain.append('g').attr('class', 'root-group');
 
   const zoomBehavior = d3.zoom()
     .scaleExtent([0.05, 4])
-    .on('zoom', (event) => {
-      gLinks.attr('transform', event.transform);
-      gNodes.attr('transform', event.transform);
-      gLabels.attr('transform', event.transform);
-    });
+    .on('zoom', event => { gMain.attr('transform', event.transform); });
   svgEl.call(zoomBehavior);
 
-  // ─── Convert API data → tree hierarchy ───────────────
-  function buildTreeData(apiData, rootId) {
+  /* ═══════════════════════════════════════════════════════
+   *  BUILD DUAL TREE from API data
+   *  Left tree: people (d.y is negated → grows leftward)
+   *  Right tree: organizations (grows rightward)
+   * ═══════════════════════════════════════════════════════ */
+  function buildTrees(apiData, rootId) {
     const nodeMap = {};
     apiData.nodes.forEach(n => { nodeMap[n.id] = n; });
-
     const rootNode = nodeMap[rootId];
-    if (!rootNode) return null;
+    if (!rootNode) return;
 
-    // Gather connections grouped: entries vs people
-    const entryKids = [], personKids = [];
+    // Separate people vs entries
+    const entryKids = [], personsByTier = {};
     const seenChild = new Set();
+    TIERS.forEach(t => { personsByTier[t.id] = []; });
 
     apiData.links.forEach(link => {
       let cid = link.source === rootId ? link.target : (link.target === rootId ? link.source : null);
@@ -367,603 +389,478 @@
       const cn = nodeMap[cid];
       if (!cn) return;
 
-      const child = {
+      const childBase = {
         id: cn.id, name: cn.name, category: cn.category || '',
         country: cn.country || '', nodeType: cn.nodeType,
         type: cn.type || '', role: cn.role || '', personId: cn.personId || '',
-        isFocus: false,
-        _edgeType: link.type || 'related', _edgeDesc: link.description || '',
-        children: [], _loaded: false, _collapsed: true,
-        _connCount: 0
+        isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '',
+        children: [], _loaded: false, _collapsed: true, _connCount: 0
       };
 
-      if (cn.nodeType === 'person') personKids.push(child);
-      else entryKids.push(child);
-    });
-
-    // Count connections for each entry child (from apiData.links)
-    entryKids.forEach(ek => {
-      ek._connCount = apiData.links.filter(l => l.source === ek.id || l.target === ek.id).length;
+      if (cn.nodeType === 'person') {
+        const tier = classifyPerson(cn.role || cn.roleTag || '');
+        childBase._tier = tier;
+        personsByTier[tier].push(childBase);
+      } else {
+        childBase._connCount = apiData.links.filter(l => l.source === cn.id || l.target === cn.id).length;
+        entryKids.push(childBase);
+      }
     });
 
     entryKids.sort((a, b) => a.name.localeCompare(b.name));
-    personKids.sort((a, b) => a.name.localeCompare(b.name));
 
-    const children = [...entryKids];
-    if (personKids.length > 0) {
-      children.push({
-        id: '_people_' + rootId, name: 'People (' + personKids.length + ')',
-        category: 'People', nodeType: 'people-group',
-        country: '', type: '', role: '', personId: '', isFocus: false,
-        _edgeType: 'person-affiliation', _edgeDesc: '',
-        children: personKids, _loaded: true, _collapsed: true, _connCount: personKids.length
-      });
-    }
-
-    return {
+    // Build RIGHT tree (organizations)
+    rightRoot = {
       id: rootId, name: rootNode.name, category: rootNode.category || '',
       country: rootNode.country || '', nodeType: 'entry',
       type: rootNode.type || '', role: '', personId: '', isFocus: true,
       _edgeType: 'root', _edgeDesc: '',
-      children: children, _loaded: true, _collapsed: false,
-      _connCount: apiData.links.filter(l => l.source === rootId || l.target === rootId).length
+      children: entryKids, _loaded: true, _collapsed: false,
+      _connCount: apiData.links.filter(l => l.source === rootId || l.target === rootId).length,
+      _side: 'right'
+    };
+
+    // Build LEFT tree (people by tier)
+    const tierGroups = [];
+    TIERS.forEach(t => {
+      const ppl = personsByTier[t.id];
+      if (ppl.length === 0) return;
+      ppl.sort((a, b) => a.name.localeCompare(b.name));
+      tierGroups.push({
+        id: '_tier_' + t.id, name: t.name + ' (' + ppl.length + ')',
+        category: 'People', nodeType: 'tier-group', _tierDef: t,
+        country: '', type: '', role: '', personId: '', isFocus: false,
+        _edgeType: 'person-affiliation', _edgeDesc: t.desc,
+        children: ppl, _loaded: true, _collapsed: true,
+        _connCount: ppl.length, _side: 'left'
+      });
+    });
+
+    leftRoot = {
+      id: rootId + '_left', name: rootNode.name, category: rootNode.category || '',
+      country: rootNode.country || '', nodeType: 'mirror',
+      type: '', role: '', personId: '', isFocus: true,
+      _edgeType: 'root', _edgeDesc: '',
+      children: tierGroups, _loaded: true, _collapsed: false,
+      _connCount: 0, _side: 'left'
     };
   }
 
-  // ─── Collect all visible IDs ─────────────────────────
-  function collectIds(node, set) {
-    if (!node) return;
-    set.add(node.id);
-    if (!node._collapsed && node.children) {
-      node.children.forEach(c => collectIds(c, set));
-    }
-  }
-
-  // ─── Render the tree ─────────────────────────────────
+  /* ═══════════════════════════════════════════════════════
+   *  RENDER BOTH TREES
+   * ═══════════════════════════════════════════════════════ */
   function renderTree() {
-    if (!treeRoot) return;
+    if (!rightRoot || !leftRoot) return;
 
     allVisibleIds = new Set();
-    collectIds(treeRoot, allVisibleIds);
+    collectIds(rightRoot, allVisibleIds);
+    collectIds(leftRoot, allVisibleIds);
 
-    // Build d3 hierarchy — only include expanded children
-    const root = d3.hierarchy(treeRoot, d => d._collapsed ? null : d.children);
+    // ─── Right tree (organizations → right) ─────────
+    const rHier = d3.hierarchy(rightRoot, d => d._collapsed ? null : d.children);
+    d3.tree().nodeSize([SIB_GAP, RIGHT_GAP])(rHier);
+    const rNodes = rHier.descendants().slice(1); // skip root
+    const rLinks = rHier.links().filter(l => l.source.data.id !== rightRoot.id || l.target.data.id !== rightRoot.id + '_left');
 
-    // Compute layout
-    const treeLayout = d3.tree().nodeSize([SIB_GAP, LEVEL_GAP]);
-    treeLayout(root);
+    // ─── Left tree (people → left) ──────────────────
+    const lHier = d3.hierarchy(leftRoot, d => d._collapsed ? null : d.children);
+    d3.tree().nodeSize([SIB_GAP, LEFT_GAP])(lHier);
+    const lNodes = lHier.descendants().slice(1); // skip mirror root
+    const lLinks = lHier.links().filter(l => l.source.data.id !== leftRoot.id || l.target.data.id !== leftRoot.id);
+    // Mirror: negate y for left side
+    lNodes.forEach(d => { d.y = -d.y; });
 
-    const nodes = root.descendants();
-    const links = root.links();
+    const allNodes = [...rNodes, ...lNodes];
+    const allLinks = [...rLinks.filter(l => l.source !== rHier), ...lLinks.filter(l => l.source !== lHier)];
 
-    // ─── Links ──────────────────────────────────────
-    const linkSel = gLinks.selectAll('.tree-link')
-      .data(links, d => d.source.data.id + '→' + d.target.data.id);
+    // Links from root to first-level children
+    const rootLinks = [];
+    rHier.children && rHier.children.forEach(c => { rootLinks.push({ sx: 0, sy: 0, tx: c.y, ty: c.x, data: c.data }); });
+    lHier.children && lHier.children.forEach(c => { rootLinks.push({ sx: 0, sy: 0, tx: -c.y, ty: c.x, data: c.data }); });
 
+    // ─── Draw links ─────────────────────────────────
+    const linkData = [];
+    allLinks.forEach(l => {
+      const isLeft = l.source.y < 0 || l.target.y < 0;
+      linkData.push({
+        key: l.source.data.id + '→' + l.target.data.id,
+        sx: l.source.y + (isLeft ? -NW/2 : NW/2), sy: l.source.x,
+        tx: l.target.y + (isLeft ? NW/2 : -NW/2), ty: l.target.x,
+        color: getEdgeColor(l.target.data)
+      });
+    });
+    rootLinks.forEach(rl => {
+      const isLeft = rl.tx < 0;
+      linkData.push({
+        key: 'root→' + rl.data.id,
+        sx: isLeft ? -NW/2 - 10 : NW/2 + 10, sy: 0,
+        tx: rl.tx + (isLeft ? NW/2 : -NW/2), ty: rl.ty,
+        color: getEdgeColor(rl.data)
+      });
+    });
+
+    const linkSel = gLinks.selectAll('.tree-link').data(linkData, d => d.key);
     linkSel.exit().transition().duration(300).attr('opacity', 0).remove();
-
-    const linkEnter = linkSel.enter()
-      .append('path')
-      .attr('class', 'tree-link')
-      .attr('opacity', 0);
-
-    linkSel.merge(linkEnter)
-      .transition().duration(500)
-      .attr('opacity', 0.5)
-      .attr('stroke', d => EC[d.target.data._edgeType] || DEC)
+    const linkEnter = linkSel.enter().append('path').attr('class', 'tree-link').attr('opacity', 0);
+    linkSel.merge(linkEnter).transition().duration(500)
+      .attr('opacity', 0.45)
+      .attr('stroke', d => d.color)
       .attr('d', d => {
-        const sx = d.source.y + NW / 2;
-        const sy = d.source.x;
-        const tx = d.target.y - NW / 2;
-        const ty = d.target.x;
-        const mx = (sx + tx) / 2;
-        return 'M' + sx + ',' + sy + ' C' + mx + ',' + sy + ' ' + mx + ',' + ty + ' ' + tx + ',' + ty;
+        const mx = (d.sx + d.tx) / 2;
+        return 'M' + d.sx + ',' + d.sy + ' C' + mx + ',' + d.sy + ' ' + mx + ',' + d.ty + ' ' + d.tx + ',' + d.ty;
       });
 
-    // ─── Link edge-type labels ──────────────────────
-    const lblSel = gLabels.selectAll('.tree-link-label')
-      .data(links, d => d.source.data.id + '→lbl→' + d.target.data.id);
-
-    lblSel.exit().remove();
-    const lblEnter = lblSel.enter()
-      .append('text')
-      .attr('class', 'tree-link-label')
-      .attr('text-anchor', 'middle')
-      .attr('dy', -4);
-
-    lblSel.merge(lblEnter)
-      .transition().duration(500)
-      .attr('x', d => {
-        const sx = d.source.y + NW / 2;
-        const tx = d.target.y - NW / 2;
-        return (sx + tx) / 2;
-      })
-      .attr('y', d => (d.source.x + d.target.x) / 2)
-      .text(d => d.target.data._edgeType || '');
-
-    // ─── Nodes ──────────────────────────────────────
-    const nodeSel = gNodes.selectAll('.tree-node')
-      .data(nodes, d => d.data.id);
-
+    // ─── Draw nodes ─────────────────────────────────
+    const nodeSel = gNodes.selectAll('.tree-node').data(allNodes, d => d.data.id);
     nodeSel.exit().transition().duration(300).attr('opacity', 0).remove();
 
-    const nodeEnter = nodeSel.enter()
-      .append('g')
-      .attr('class', 'tree-node')
-      .attr('opacity', 0)
-      .attr('transform', d => 'translate(' + d.y + ',' + d.x + ')');
+    const nodeEnter = nodeSel.enter().append('g').attr('class', d => {
+      let cls = 'tree-node';
+      if (d.data._tierDef) cls += ' ' + d.data._tierDef.cls;
+      else if (d.data._tier) {
+        const t = TIERS.find(tt => tt.id === d.data._tier);
+        if (t) cls += ' ' + t.cls;
+      }
+      return cls;
+    }).attr('opacity', 0).attr('transform', d => 'translate(' + d.y + ',' + d.x + ')');
 
-    // Background rect
-    nodeEnter.append('rect')
-      .attr('class', 'node-bg')
-      .attr('width', NW).attr('height', NH)
-      .attr('x', -NW / 2).attr('y', -NH / 2)
-      .attr('rx', 9).attr('ry', 9);
-
-    // Category color bar
-    nodeEnter.append('rect')
-      .attr('class', 'node-cat-bar')
-      .attr('width', 4).attr('height', NH - 6)
-      .attr('x', -NW / 2 + 3).attr('y', -NH / 2 + 3)
-      .attr('rx', 2);
-
+    // Background
+    nodeEnter.append('rect').attr('class', 'node-bg')
+      .attr('width', NW).attr('height', NH).attr('x', -NW/2).attr('y', -NH/2)
+      .attr('rx', 8).attr('ry', 8);
+    // Category bar
+    nodeEnter.append('rect').attr('class', 'node-cat-bar')
+      .attr('width', 4).attr('height', NH - 6).attr('x', -NW/2 + 3).attr('y', -NH/2 + 3).attr('rx', 2);
     // Icon
-    nodeEnter.append('text')
-      .attr('class', 'node-icon')
-      .attr('x', -NW / 2 + 16).attr('y', 1)
-      .attr('text-anchor', 'middle')
-      .attr('font-family', '"Font Awesome 6 Free"')
-      .attr('font-weight', 900)
-      .attr('font-size', '11px');
-
+    nodeEnter.append('text').attr('class', 'node-icon')
+      .attr('x', -NW/2 + 16).attr('y', 1).attr('text-anchor', 'middle')
+      .attr('font-family', '"Font Awesome 6 Free"').attr('font-weight', 900).attr('font-size', '10px');
     // Name
-    nodeEnter.append('text')
-      .attr('class', 'node-name')
-      .attr('x', -NW / 2 + 26).attr('y', -5);
+    nodeEnter.append('text').attr('class', 'node-name').attr('x', -NW/2 + 26).attr('y', -4);
+    // Info
+    nodeEnter.append('text').attr('class', 'node-info').attr('x', -NW/2 + 26).attr('y', 10);
+    // Toggle
+    nodeEnter.append('text').attr('class', 'node-toggle').attr('x', NW/2 - 14).attr('y', 5).attr('text-anchor', 'middle');
+    // Count badge
+    nodeEnter.append('text').attr('class', 'node-conns').attr('x', NW/2 - 30).attr('y', 5).attr('text-anchor', 'end');
 
-    // Info line
-    nodeEnter.append('text')
-      .attr('class', 'node-info')
-      .attr('x', -NW / 2 + 26).attr('y', 10);
-
-    // Toggle indicator
-    nodeEnter.append('text')
-      .attr('class', 'node-toggle')
-      .attr('x', NW / 2 - 16).attr('y', 5)
-      .attr('text-anchor', 'middle');
-
-    // Connection count badge
-    nodeEnter.append('text')
-      .attr('class', 'node-conns')
-      .attr('x', NW / 2 - 34).attr('y', 5)
-      .attr('text-anchor', 'end');
-
-    // ─── Event handlers (enter only) ────────────────
+    // Events
     nodeEnter
-      .on('click', (event, d) => {
-        event.stopPropagation();
-        handleNodeClick(d);
-      })
-      .on('contextmenu', (event, d) => {
-        event.preventDefault();
-        navigateToEntry(d.data);
-      })
-      .on('mouseenter', (event, d) => {
-        const nd = d.data;
-        let html;
-        if (nd.nodeType === 'person') {
-          html = '<strong><i class="fa-solid fa-user"></i> ' + nd.name + '</strong><br/>'
-            + '<i class="fa-solid fa-briefcase"></i> ' + (nd.role || 'Individual') + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + (nd.country || '')
-            + '<br/><span style="color:#0056b3;font-size:0.85em">Click to expand &middot; Right-click → profile</span>';
-        } else if (nd.nodeType === 'people-group') {
-          html = '<strong><i class="fa-solid fa-users"></i> ' + nd.name + '</strong><br/>'
-            + '<span style="color:#666">Click to expand/collapse</span>';
-        } else {
-          html = '<strong>' + nd.name + '</strong><br/>'
-            + '<i class="fa-solid fa-building"></i> ' + (nd.type || '') + '<br/>'
-            + '<i class="fa-solid fa-globe"></i> ' + (nd.country || '') + '<br/>'
-            + '<span class="tip-cat" style="background:' + (CC[nd.category] || DC) + '30;color:' + (CC[nd.category] || DC) + '">' + (nd.category || '') + '</span>'
-            + '<br/><span style="color:#0056b3;font-size:0.85em">Click to expand &middot; Right-click → details</span>';
-        }
-        showTip(html);
-      })
+      .on('click', (ev, d) => { ev.stopPropagation(); handleNodeClick(d); })
+      .on('contextmenu', (ev, d) => { ev.preventDefault(); navigateTo(d.data); })
+      .on('mouseenter', (ev, d) => showNodeTip(d.data))
       .on('mouseleave', () => hideTip());
 
-    // ─── Update all nodes ───────────────────────────
+    // Update all
     const nodeAll = nodeSel.merge(nodeEnter);
-
-    nodeAll.transition().duration(500)
-      .attr('opacity', 1)
+    nodeAll.transition().duration(500).attr('opacity', 1)
       .attr('transform', d => 'translate(' + d.y + ',' + d.x + ')');
 
-    // Update background
-    nodeAll.select('.node-bg')
-      .attr('fill', d => {
-        if (d.data.isFocus) return '#fff3f3';
-        if (d.data.nodeType === 'person') return '#fffcf0';
-        if (d.data.nodeType === 'people-group') return '#fff8e1';
-        return '#ffffff';
-      })
-      .attr('stroke', d => {
-        if (d.data.isFocus) return '#c62828';
-        return CC[d.data.category] || DC;
-      })
-      .attr('stroke-width', d => d.data.isFocus ? 2.5 : 1.5);
+    // Update class for tiers on merge
+    nodeAll.attr('class', d => {
+      let cls = 'tree-node';
+      if (d.data._tierDef) cls += ' ' + d.data._tierDef.cls;
+      else if (d.data._tier) { const t = TIERS.find(tt => tt.id === d.data._tier); if (t) cls += ' ' + t.cls; }
+      if (searchHits.has(d.data.id)) cls += ' search-hit';
+      return cls;
+    });
 
-    // Update cat bar
-    nodeAll.select('.node-cat-bar')
-      .attr('fill', d => {
-        if (d.data.isFocus) return '#c62828';
-        return CC[d.data.category] || DC;
-      });
-
-    // Update icon
+    // BG color for non-tier nodes
+    nodeAll.select('.node-bg').each(function(d) {
+      const el = d3.select(this);
+      if (!d.data._tierDef && !d.data._tier) {
+        el.attr('fill', d.data.isFocus ? '#fff3f3' : '#ffffff')
+          .attr('stroke', d.data.isFocus ? '#c62828' : CC[d.data.category] || DC)
+          .attr('stroke-width', d.data.isFocus ? 2.5 : 1.5);
+      } else {
+        el.attr('stroke-width', 1.5);
+      }
+    });
+    // Cat bar for non-tier
+    nodeAll.select('.node-cat-bar').each(function(d) {
+      const el = d3.select(this);
+      if (!d.data._tierDef && !d.data._tier) {
+        el.attr('fill', d.data.isFocus ? '#c62828' : CC[d.data.category] || DC);
+      }
+    });
+    // Icon
     nodeAll.select('.node-icon')
       .text(d => {
+        if (d.data.nodeType === 'tier-group') return d.data._tierDef.icon;
         if (d.data.nodeType === 'person') return '\uf007';
-        if (d.data.nodeType === 'people-group') return '\uf0c0';
         if (d.data.isFocus) return '\uf005';
         return '\uf1ad';
       })
       .attr('fill', d => {
+        if (d.data._tierDef) return d.data._tierDef.color;
+        if (d.data._tier) return TIER_COLORS[d.data._tier] || DC;
         if (d.data.isFocus) return '#c62828';
         return CC[d.data.category] || DC;
       });
-
-    // Update name
+    // Name
     nodeAll.select('.node-name')
-      .text(d => {
-        const n = d.data.name || d.data.id;
-        return n.length > 24 ? n.substring(0, 22) + '\u2026' : n;
-      })
-      .attr('font-weight', d => d.data.isFocus ? 'bold' : 'normal');
+      .text(d => { const n = d.data.name || d.data.id; return n.length > 22 ? n.substring(0, 20) + '\u2026' : n; })
+      .attr('font-weight', d => (d.data.isFocus || d.data.nodeType === 'tier-group') ? 'bold' : 'normal');
+    // Info
+    nodeAll.select('.node-info').text(d => {
+      if (d.data.nodeType === 'tier-group') return d.data._tierDef.desc.substring(0, 34);
+      if (d.data.nodeType === 'person') return (d.data.role || 'Individual').substring(0, 30);
+      const p = []; if (d.data.category) p.push(d.data.category); if (d.data.country) p.push(d.data.country);
+      const txt = p.join(' \xB7 '); return txt.length > 30 ? txt.substring(0, 28) + '\u2026' : txt;
+    });
+    // Toggle
+    nodeAll.select('.node-toggle').text(d => {
+      if (d.data.nodeType === 'person' && (!d.data.children || d.data.children.length === 0)) return '';
+      if (!d.data._loaded && d.data.nodeType !== 'tier-group') return '\u22EF';
+      if (d.data._collapsed) return '+';
+      if (d.data.children && d.data.children.length > 0) return '\u2212';
+      return '';
+    });
+    // Count badge
+    nodeAll.select('.node-conns').text(d => {
+      if (d.data._connCount > 0) return d.data._connCount;
+      return '';
+    });
 
-    // Update info
-    nodeAll.select('.node-info')
-      .text(d => {
-        if (d.data.nodeType === 'person') return (d.data.role || 'Individual').substring(0, 30);
-        if (d.data.nodeType === 'people-group') return 'Click to expand';
-        const parts = [];
-        if (d.data.category) parts.push(d.data.category);
-        if (d.data.country) parts.push(d.data.country);
-        const txt = parts.join(' \xB7 ');
-        return txt.length > 32 ? txt.substring(0, 30) + '\u2026' : txt;
-      });
-
-    // Update toggle
-    nodeAll.select('.node-toggle')
-      .text(d => {
-        if (d.data.nodeType === 'person' && (!d.data.children || d.data.children.length === 0)) return '';
-        if (!d.data._loaded && d.data.nodeType !== 'people-group') return '\u22EF';
-        if (d.data._collapsed) return '+';
-        if (d.data.children && d.data.children.length > 0) return '\u2212';
-        return '';
-      });
-
-    // Update connection count
-    nodeAll.select('.node-conns')
-      .text(d => {
-        if (d.data._connCount > 0 && d.data.nodeType !== 'people-group') return d.data._connCount;
-        return '';
-      });
-
-    // Search highlighting
-    nodeAll.classed('search-hit', d => searchHits.has(d.data.id));
-
-    // ─── Stats ──────────────────────────────────────
+    // ─── Root node (center) ─────────────────────────
+    drawRootNode();
     updateStats();
   }
 
-  // ─── Handle node click ───────────────────────────────
+  function drawRootNode() {
+    gRoot.selectAll('*').remove();
+    if (!rightRoot) return;
+    const g = gRoot.append('g').attr('class', 'tree-node root-node');
+    const rw = NW + 20, rh = NH + 14;
+    g.append('rect').attr('class', 'node-bg')
+      .attr('width', rw).attr('height', rh).attr('x', -rw/2).attr('y', -rh/2)
+      .attr('rx', 10).attr('ry', 10)
+      .attr('fill', '#fff3f3').attr('stroke', '#c62828').attr('stroke-width', 2.5);
+    g.append('rect').attr('width', 5).attr('height', rh - 8).attr('x', -rw/2 + 4).attr('y', -rh/2 + 4)
+      .attr('rx', 2).attr('fill', '#c62828');
+    g.append('text').attr('x', -rw/2 + 20).attr('y', -5)
+      .attr('font-family', '"Font Awesome 6 Free"').attr('font-weight', 900).attr('font-size', '13px')
+      .attr('fill', '#c62828').text('\uf005');
+    g.append('text').attr('x', -rw/2 + 36).attr('y', -4)
+      .attr('font-size', '13px').attr('font-weight', 'bold').attr('fill', '#c62828')
+      .text(rightRoot.name.length > 22 ? rightRoot.name.substring(0, 20) + '\u2026' : rightRoot.name);
+    g.append('text').attr('x', -rw/2 + 36).attr('y', 13)
+      .attr('font-size', '10px').attr('fill', '#888')
+      .text((rightRoot.category || '') + (rightRoot.country ? ' \xB7 ' + rightRoot.country : ''));
+
+    // Root labels
+    g.append('text').attr('x', rw/2 + 16).attr('y', 4)
+      .attr('font-size', '10px').attr('fill', '#0056b3').attr('font-weight', 600)
+      .text('Organizations \u2192');
+    g.append('text').attr('x', -rw/2 - 16).attr('y', 4).attr('text-anchor', 'end')
+      .attr('font-size', '10px').attr('fill', '#ad1457').attr('font-weight', 600)
+      .text('\u2190 People');
+
+    g.on('click', () => { window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(focusEntryId); })
+      .on('mouseenter', () => showTip('<strong><i class="fa-solid fa-star"></i> ' + rightRoot.name + '</strong><br/><i class="fa-solid fa-building"></i> ' + (rightRoot.type || '') + '<br/><i class="fa-solid fa-globe"></i> ' + (rightRoot.country || '') + '<br/><span style="color:#0056b3;font-size:0.85em">Click to view entry details</span>'))
+      .on('mouseleave', () => hideTip())
+      .style('cursor', 'pointer');
+  }
+
+  function getEdgeColor(d) {
+    if (d._tierDef) return d._tierDef.color;
+    if (d._tier) return TIER_COLORS[d._tier] || DEC;
+    return EC[d._edgeType] || CC[d.category] || DEC;
+  }
+
+  function collectIds(node, set) {
+    if (!node) return; set.add(node.id);
+    if (!node._collapsed && node.children) node.children.forEach(c => collectIds(c, set));
+  }
+
+  /* ═══════════════════════════════════════════════════════
+   *  NODE CLICK — expand/collapse or lazy-load
+   * ═══════════════════════════════════════════════════════ */
   async function handleNodeClick(d) {
     const nd = d.data;
 
-    // Person leaf → toggle expand (fetch that person's connections) or navigate
+    // Person leaf → navigate to profile
     if (nd.nodeType === 'person') {
-      if (!nd._loaded) {
-        // Fetch person's connections
-        nd._loaded = true;
-        nd._collapsed = false;
-        nd.children = []; // persons are leaves for now
-        // Navigate to their profile
-        window.location.href = 'person.html?id=' + encodeURIComponent(nd.personId || nd.id);
-        return;
-      }
       window.location.href = 'person.html?id=' + encodeURIComponent(nd.personId || nd.id);
       return;
     }
 
-    // Toggle expand/collapse
-    if (!nd._collapsed) {
-      // Collapse
-      nd._collapsed = true;
-      renderTree();
-      return;
-    }
+    // Toggle
+    if (!nd._collapsed) { nd._collapsed = true; renderTree(); return; }
 
-    // Expand
-    if (!nd._loaded) {
-      // Fetch from API
-      document.getElementById('ld-text').textContent = 'Loading connections for ' + nd.name + '...';
+    // If not loaded yet, fetch from API
+    if (!nd._loaded && nd.nodeType !== 'tier-group') {
+      document.getElementById('ld-text').textContent = 'Loading ' + nd.name + '...';
       document.getElementById('loading').classList.remove('off');
-
       try {
         const showPeople = document.getElementById('show-people').checked;
         const res = await fetch('/api/graph/focus/' + encodeURIComponent(nd.id) + '?depth=1&people=' + (showPeople ? '1' : '0'));
         const data = await res.json();
-
-        if (!data.nodes || data.nodes.length === 0) {
-          nd._loaded = true;
-          nd.children = [];
-          nd._collapsed = false;
-          renderTree();
-          document.getElementById('loading').classList.add('off');
-          return;
-        }
-
-        const nodeMap = {};
-        data.nodes.forEach(n => { nodeMap[n.id] = n; });
-
-        const entryKids = [], personKids = [];
-        const seenChild = new Set();
-
+        if (!data.nodes || data.nodes.length === 0) { nd._loaded = true; nd.children = []; nd._collapsed = false; renderTree(); document.getElementById('loading').classList.add('off'); return; }
+        const nm = {}; data.nodes.forEach(n => { nm[n.id] = n; });
+        const eKids = [], pKids = [];
+        const seen = new Set();
         data.links.forEach(link => {
           let cid = link.source === nd.id ? link.target : (link.target === nd.id ? link.source : null);
-          if (!cid || cid === nd.id || seenChild.has(cid)) return;
-          if (allVisibleIds.has(cid)) return; // skip already-visible nodes
-          seenChild.add(cid);
-          const cn = nodeMap[cid];
-          if (!cn) return;
-
-          const child = {
-            id: cn.id, name: cn.name, category: cn.category || '',
-            country: cn.country || '', nodeType: cn.nodeType,
-            type: cn.type || '', role: cn.role || '', personId: cn.personId || '',
-            isFocus: false,
-            _edgeType: link.type || 'related', _edgeDesc: link.description || '',
-            children: [], _loaded: false, _collapsed: true,
-            _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length
-          };
-
-          if (cn.nodeType === 'person') personKids.push(child);
-          else entryKids.push(child);
+          if (!cid || cid === nd.id || seen.has(cid)) return;
+          if (allVisibleIds.has(cid)) return;
+          seen.add(cid);
+          const cn = nm[cid]; if (!cn) return;
+          const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length };
+          if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
+          else eKids.push(child);
         });
-
-        entryKids.sort((a, b) => a.name.localeCompare(b.name));
-        personKids.sort((a, b) => a.name.localeCompare(b.name));
-
-        const newChildren = [...entryKids];
-        if (personKids.length > 0) {
-          newChildren.push({
-            id: nd.id + '_people', name: 'People (' + personKids.length + ')',
-            category: 'People', nodeType: 'people-group',
-            country: '', type: '', role: '', personId: '', isFocus: false,
-            _edgeType: 'person-affiliation', _edgeDesc: '',
-            children: personKids, _loaded: true, _collapsed: true, _connCount: personKids.length
+        eKids.sort((a, b) => a.name.localeCompare(b.name));
+        // For sub-entries, group people same as before
+        const newChildren = [...eKids];
+        if (pKids.length > 0) {
+          const byTier = {};
+          pKids.forEach(p => { const t = p._tier || 'other'; if (!byTier[t]) byTier[t] = []; byTier[t].push(p); });
+          TIERS.forEach(t => {
+            if (!byTier[t.id] || byTier[t.id].length === 0) return;
+            byTier[t.id].sort((a, b) => a.name.localeCompare(b.name));
+            newChildren.push({ id: nd.id + '_tier_' + t.id, name: t.name + ' (' + byTier[t.id].length + ')', category: 'People', nodeType: 'tier-group', _tierDef: t, country: '', type: '', role: '', personId: '', isFocus: false, _edgeType: 'person-affiliation', _edgeDesc: t.desc, children: byTier[t.id], _loaded: true, _collapsed: true, _connCount: byTier[t.id].length });
           });
         }
-
         nd.children = newChildren;
         nd._loaded = true;
-      } catch (err) {
-        console.error('Fetch error:', err);
-        nd._loaded = true;
-        nd.children = [];
-      }
-
+      } catch (err) { console.error(err); nd._loaded = true; nd.children = []; }
       document.getElementById('loading').classList.add('off');
     }
-
     nd._collapsed = false;
     renderTree();
+    setTimeout(fitTree, 550);
   }
 
-  // ─── Navigate to entry page ──────────────────────────
-  function navigateToEntry(nd) {
-    if (nd.nodeType === 'person') {
-      window.location.href = 'person.html?id=' + encodeURIComponent(nd.personId || nd.id);
-    } else if (nd.nodeType !== 'people-group') {
-      window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(nd.id);
+  function navigateTo(nd) {
+    if (nd.nodeType === 'person') window.location.href = 'person.html?id=' + encodeURIComponent(nd.personId || nd.id);
+    else if (nd.nodeType === 'tier-group' || nd.nodeType === 'mirror') return;
+    else window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(nd.id);
+  }
+
+  function showNodeTip(nd) {
+    let h;
+    if (nd.nodeType === 'tier-group') {
+      h = '<strong><i class="fa-solid fa-layer-group"></i> ' + nd.name + '</strong><br/>' + nd._tierDef.desc + '<br/><span style="color:#0056b3;font-size:0.85em">Click to expand</span>';
+    } else if (nd.nodeType === 'person') {
+      h = '<strong><i class="fa-solid fa-user"></i> ' + nd.name + '</strong><br/><i class="fa-solid fa-briefcase"></i> ' + (nd.role || 'Individual') + '<br/><i class="fa-solid fa-globe"></i> ' + (nd.country || '') + '<br/><span style="color:#0056b3;font-size:0.85em">Click → profile &middot; Right-click → details</span>';
+    } else {
+      h = '<strong>' + nd.name + '</strong><br/><i class="fa-solid fa-building"></i> ' + (nd.type || '') + '<br/><i class="fa-solid fa-globe"></i> ' + (nd.country || '') + '<br/><span class="tip-cat" style="background:' + (CC[nd.category] || DC) + '30;color:' + (CC[nd.category] || DC) + '">' + (nd.category || '') + '</span><br/><span style="color:#0056b3;font-size:0.85em">Click to expand &middot; Right-click → details</span>';
     }
+    showTip(h);
   }
 
-  // ─── Update stats ────────────────────────────────────
+  // ─── Stats ───────────────────────────────────────────
   function updateStats() {
-    let entries = 0, people = 0;
+    let entries = 0, people = 0, tiers = 0;
     allVisibleIds.forEach(id => {
-      if (id.startsWith('person-')) people++;
-      else if (!id.startsWith('_people_')) entries++;
+      if (id.startsWith('person-') || id.startsWith('_tier_')) return;
+      if (id.includes('_tier_')) { tiers++; return; }
+      if (id.includes('_left')) return;
+      entries++;
     });
-    document.getElementById('stats').innerHTML =
-      '<b>' + entries + '</b> entries &middot; <b>' + people + '</b> people visible';
+    allVisibleIds.forEach(id => { if (id.startsWith('person-')) people++; });
+    document.getElementById('stats').innerHTML = '<b>' + entries + '</b> entries &middot; <b>' + people + '</b> people visible';
   }
 
-  // ─── Fit tree to viewport ────────────────────────────
+  // ─── Fit ─────────────────────────────────────────────
   function fitTree() {
-    const svgNode = svgEl.node();
-    const bounds = gNodes.node().getBBox();
+    const bounds = gMain.node().getBBox();
     if (!bounds.width || !bounds.height) return;
-
-    const svgW = svgNode.clientWidth;
-    const svgH = svgNode.clientHeight;
-    const padding = 60;
-
-    const scaleX = (svgW - padding * 2) / bounds.width;
-    const scaleY = (svgH - padding * 2) / bounds.height;
-    const scale = Math.min(scaleX, scaleY, 1.5);
-
-    const tx = svgW / 2 - (bounds.x + bounds.width / 2) * scale;
-    const ty = svgH / 2 - (bounds.y + bounds.height / 2) * scale;
-
-    svgEl.transition().duration(600)
-      .call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+    const svg = svgEl.node();
+    const w = svg.clientWidth, h = svg.clientHeight, pad = 60;
+    const sx = (w - pad * 2) / bounds.width;
+    const sy = (h - pad * 2) / bounds.height;
+    const s = Math.min(sx, sy, 1.5);
+    const tx = w / 2 - (bounds.x + bounds.width / 2) * s;
+    const ty = h / 2 - (bounds.y + bounds.height / 2) * s;
+    svgEl.transition().duration(600).call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(s));
   }
 
-  // ─── Category + Edge legends ─────────────────────────
-  function buildCatLegend(data) {
-    const cats = {};
-    data.nodes.forEach(n => { if (n.category) cats[n.category] = true; });
-    const sorted = Object.keys(cats).sort();
-    const catB = document.getElementById('cat-b');
-    catB.innerHTML = '';
-    sorted.forEach(c => {
+  // ─── Legend ──────────────────────────────────────────
+  function buildLegend() {
+    const legB = document.getElementById('leg-b');
+    legB.innerHTML = '';
+    TIERS.forEach(t => {
       const r = document.createElement('div'); r.className = 'li';
-      const d = document.createElement('div'); d.className = 'ld';
-      d.style.background = CC[c] || DC;
-      r.appendChild(d); r.appendChild(document.createTextNode(c));
-      catB.appendChild(r);
+      const d = document.createElement('div'); d.className = 'ld'; d.style.background = t.color;
+      r.appendChild(d);
+      r.appendChild(document.createTextNode(t.name));
+      legB.appendChild(r);
     });
   }
 
-  function buildEdgeLegend(data) {
-    const types = {};
-    data.links.forEach(l => { if (l.type) types[l.type] = true; });
-    const sorted = Object.keys(types).sort();
-    const edgeB = document.getElementById('edge-b');
-    edgeB.innerHTML = '';
-    sorted.forEach(t => {
-      const r = document.createElement('div'); r.className = 'ei';
-      const l = document.createElement('div'); l.className = 'el';
-      l.style.background = EC[t] || DEC;
-      r.appendChild(l); r.appendChild(document.createTextNode(t));
-      edgeB.appendChild(r);
-    });
+  // ─── Expand / Collapse all ───────────────────────────
+  function expandAll() {
+    function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
+    ex(rightRoot); ex(leftRoot);
+    renderTree(); setTimeout(fitTree, 600);
   }
-
-  // ─── Expand all visible nodes one level ──────────────
-  async function expandAll() {
-    if (!treeRoot) return;
-    // Expand all collapsed nodes that are already loaded
-    function expandLoaded(node) {
-      if (!node) return;
-      if (node._loaded && node._collapsed && node.children && node.children.length > 0) {
-        node._collapsed = false;
-      }
-      if (!node._collapsed && node.children) {
-        node.children.forEach(expandLoaded);
-      }
-    }
-    expandLoaded(treeRoot);
-    renderTree();
-    setTimeout(fitTree, 600);
-  }
-
   function collapseAll() {
-    if (!treeRoot) return;
-    function collapseKids(node) {
-      if (!node || !node.children) return;
-      node.children.forEach(c => {
-        c._collapsed = true;
-        collapseKids(c);
-      });
-    }
-    collapseKids(treeRoot);
-    renderTree();
-    setTimeout(fitTree, 600);
+    function cl(n) { if (!n || !n.children) return; n.children.forEach(c => { c._collapsed = true; cl(c); }); }
+    cl(rightRoot); cl(leftRoot);
+    renderTree(); setTimeout(fitTree, 600);
   }
 
   // ─── Search ──────────────────────────────────────────
   function doSearch() {
     const q = document.getElementById('s-input').value.trim().toLowerCase();
     searchHits = new Set();
-    if (!q) {
-      document.getElementById('s-count').textContent = '';
-      renderTree();
-      return;
-    }
-    // Search all nodes in the tree recursively
-    function searchNode(node) {
-      if (!node) return;
-      if ((node.name || '').toLowerCase().indexOf(q) !== -1) {
-        searchHits.add(node.id);
-      }
-      if (node.children) node.children.forEach(searchNode);
-    }
-    searchNode(treeRoot);
+    if (!q) { document.getElementById('s-count').textContent = ''; renderTree(); return; }
+    function srch(n) { if (!n) return; if ((n.name || '').toLowerCase().indexOf(q) !== -1) searchHits.add(n.id); if (n.children) n.children.forEach(srch); }
+    srch(rightRoot); srch(leftRoot);
     document.getElementById('s-count').textContent = searchHits.size ? searchHits.size + ' found' : 'none';
     renderTree();
   }
 
-  // ─── Load tree from API ──────────────────────────────
+  // ─── Load from API ──────────────────────────────────
   async function loadTree() {
     const depth = document.getElementById('depth-range').value;
     const ppl = document.getElementById('show-people').checked;
-    const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId)
-      + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
-
+    const url = '/api/graph/focus/' + encodeURIComponent(focusEntryId) + '?depth=' + depth + '&people=' + (ppl ? '1' : '0');
     document.getElementById('loading').classList.remove('off');
     document.getElementById('ld-text').textContent = 'Fetching network data...';
     document.getElementById('stats').innerHTML = '<b>Loading...</b>';
 
     try {
-      const res = await fetch(url);
-      rawApiData = await res.json();
+      const res = await fetch(url); rawApiData = await res.json();
+      if (!rawApiData.nodes || rawApiData.nodes.length === 0) { document.getElementById('ld-text').textContent = 'No data found.'; return; }
 
-      if (!rawApiData.nodes || rawApiData.nodes.length === 0) {
-        document.getElementById('ld-text').textContent = 'No data found for this entry.';
-        return;
-      }
+      buildTrees(rawApiData, focusEntryId);
+      if (!rightRoot) { document.getElementById('ld-text').textContent = 'Entry not found.'; return; }
 
-      treeRoot = buildTreeData(rawApiData, focusEntryId);
-      if (!treeRoot) {
-        document.getElementById('ld-text').textContent = 'Entry not found in data.';
-        return;
-      }
-
-      // Update page info
       if (rawApiData.focusName) {
         setSEO({ title: rawApiData.focusName + ' Network - Juice Project', description: 'Network tree for ' + rawApiData.focusName });
         document.getElementById('page-title').innerHTML = '<span class="focus-name">' + rawApiData.focusName + '</span> Network';
       }
-
-      const entryCount = rawApiData.nodes.filter(n => n.nodeType !== 'person').length;
-      const peopleCount = rawApiData.nodes.filter(n => n.nodeType === 'person').length;
-      document.getElementById('page-subtitle').textContent =
-        entryCount + ' entries \xB7 ' + rawApiData.links.length + ' connections \xB7 Depth ' + depth;
-
+      const eC = rawApiData.nodes.filter(n => n.nodeType !== 'person').length;
+      const pC = rawApiData.nodes.filter(n => n.nodeType === 'person').length;
+      document.getElementById('page-subtitle').textContent = eC + ' entries \xB7 ' + pC + ' people \xB7 Depth ' + depth;
       if (rawApiData.totalPeople !== undefined) {
         document.getElementById('people-info').innerHTML = ppl
-          ? 'Showing <b>' + peopleCount + '</b> of <b>' + rawApiData.totalPeople + '</b> associated individuals'
+          ? 'Showing <b>' + pC + '</b> of <b>' + rawApiData.totalPeople + '</b> individuals (grouped by severity/proximity)'
           : '<b>' + rawApiData.totalPeople + '</b> people available \u2014 check "People" to show';
       }
-
-      buildCatLegend(rawApiData);
-      buildEdgeLegend(rawApiData);
-
-      // Render tree
+      buildLegend();
       renderTree();
-      setTimeout(() => {
-        fitTree();
-        document.getElementById('loading').classList.add('off');
-      }, 300);
-
+      setTimeout(() => { fitTree(); document.getElementById('loading').classList.add('off'); }, 300);
     } catch (err) {
-      console.error('Load error:', err);
+      console.error(err);
       document.getElementById('ld-text').textContent = 'Error: ' + err.message;
     }
   }
 
-  // ─── Control bindings ────────────────────────────────
-  document.getElementById('depth-range').oninput = function() {
-    document.getElementById('depth-val').textContent = this.value;
-  };
+  // ─── Controls ────────────────────────────────────────
+  document.getElementById('depth-range').oninput = function() { document.getElementById('depth-val').textContent = this.value; };
   document.getElementById('depth-range').onchange = loadTree;
   document.getElementById('btn-reload').onclick = loadTree;
   document.getElementById('btn-fit').onclick = fitTree;
   document.getElementById('show-people').onchange = loadTree;
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
-
   document.getElementById('s-btn').onclick = doSearch;
   document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
-  document.getElementById('s-input').oninput = function() {
-    if (!this.value.trim()) {
-      searchHits = new Set();
-      document.getElementById('s-count').textContent = '';
-      renderTree();
-    }
-  };
+  document.getElementById('s-input').oninput = function() { if (!this.value.trim()) { searchHits = new Set(); document.getElementById('s-count').textContent = ''; renderTree(); } };
 
   // ─── Init ────────────────────────────────────────────
   loadTree();
