@@ -535,7 +535,7 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
               const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
               if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
             } else if (!tid && conn.name && eid === focusId) {
-              // Unresolved connection with name/description — create info-only node
+              // Unresolved connection with name/description  -  create info-only node
               const infoId = 'info-' + conn.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
               if (!nodeSet.has(infoId)) {
                 nodeSet.add(infoId);
@@ -834,9 +834,9 @@ app.get('/api/:religion/entry/:id', (req, res) => {
         // Normalize connections: convert source/target format to name/entryId/type/description
         if (result.connections) {
           result.connections = result.connections.map(conn => {
-            // Already in name format — pass through
+            // Already in name format  -  pass through
             if (conn.name) return conn;
-            // source/target format — normalize
+            // source/target format  -  normalize
             if (conn.source || conn.target) {
               const targetId = conn.target || conn.source;
               const targetName = idToName[targetId] || targetId;

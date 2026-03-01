@@ -177,6 +177,21 @@
             </div>
             <div class="chks">
               <label><input type="checkbox" id="show-people" checked> People</label>
+              <label><input type="checkbox" id="show-info" checked> Info Nodes</label>
+            </div>
+            <label>Filter by Tier</label>
+            <select id="tier-filter" style="width:100%;padding:3px 6px;border-radius:5px;border:1px solid rgba(0,0,255,.16);font-size:.73em;margin:3px 0">
+              <option value="all">All Tiers</option>
+            </select>
+            <label>Node Size</label>
+            <div class="depth-row">
+              <input type="range" id="node-size-range" min="60" max="100" value="100" step="10">
+              <span id="node-size-val">100%</span>
+            </div>
+            <label>Link Opacity</label>
+            <div class="depth-row">
+              <input type="range" id="link-opacity-range" min="10" max="100" value="45" step="5">
+              <span id="link-opacity-val">45%</span>
             </div>
             <div class="btns">
               <button id="btn-reload"><i class="fa-solid fa-rotate"></i> Reload</button>
@@ -187,7 +202,12 @@
               <button id="btn-collapse"><i class="fa-solid fa-minimize"></i> Collapse</button>
             </div>
             <div class="btns">
-              <button id="btn-entry"><i class="fa-solid fa-building"></i> View Entry</button>
+              <button id="btn-expand-right"><i class="fa-solid fa-sitemap"></i> Orgs</button>
+              <button id="btn-expand-left"><i class="fa-solid fa-users"></i> People</button>
+            </div>
+            <div class="btns">
+              <button id="btn-entry"><i class="fa-solid fa-building"></i> Entry Page</button>
+              <button id="btn-screenshot"><i class="fa-solid fa-camera"></i> Export</button>
             </div>
           </div>
         </div>
@@ -458,18 +478,31 @@
   function renderTree() {
     if (!rightRoot || !leftRoot) return;
 
+    const showInfoNodes = document.getElementById('show-info').checked;
+
     allVisibleIds = new Set();
     collectIds(rightRoot, allVisibleIds);
     collectIds(leftRoot, allVisibleIds);
 
-    // ─── Right tree (organizations → right) ─────────
-    const rHier = d3.hierarchy(rightRoot, d => d._collapsed ? null : d.children);
+    // Filter function for children - respects _hidden and info node toggle
+    function getVisibleChildren(d) {
+      if (d._collapsed) return null;
+      if (!d.children) return null;
+      return d.children.filter(c => {
+        if (c._hidden) return false;
+        if (!showInfoNodes && c.nodeType === 'info') return false;
+        return true;
+      });
+    }
+
+    // --- Right tree (organizations -> right) ---------
+    const rHier = d3.hierarchy(rightRoot, getVisibleChildren);
     d3.tree().nodeSize([SIB_GAP, RIGHT_GAP])(rHier);
     const rNodes = rHier.descendants().slice(1); // skip root
     const rLinks = rHier.links().filter(l => l.source.data.id !== rightRoot.id || l.target.data.id !== rightRoot.id + '_left');
 
     // ─── Left tree (people → left) ──────────────────
-    const lHier = d3.hierarchy(leftRoot, d => d._collapsed ? null : d.children);
+    const lHier = d3.hierarchy(leftRoot, getVisibleChildren);
     d3.tree().nodeSize([SIB_GAP, LEFT_GAP])(lHier);
     const lNodes = lHier.descendants().slice(1); // skip mirror root
     const lLinks = lHier.links().filter(l => l.source.data.id !== leftRoot.id || l.target.data.id !== leftRoot.id);
@@ -691,7 +724,7 @@
   }
 
   /* ═══════════════════════════════════════════════════════
-   *  NODE CLICK — expand/collapse or lazy-load
+   *  NODE CLICK  -  expand/collapse or lazy-load
    * ═══════════════════════════════════════════════════════ */
   async function handleNodeClick(d) {
     const nd = d.data;
@@ -702,7 +735,7 @@
       return;
     }
 
-    // Info node — non-expandable leaf, just show tooltip
+    // Info node  -  non-expandable leaf, just show tooltip
     if (nd.nodeType === 'info') {
       return;
     }
@@ -728,8 +761,9 @@
           if (allVisibleIds.has(cid)) return;
           seen.add(cid);
           const cn = nm[cid]; if (!cn) return;
-          const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length };
+          const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
           if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
+          else if (cn.nodeType === 'info') { child._loaded = true; child._collapsed = false; child.children = []; eKids.push(child); }
           else eKids.push(child);
         });
         eKids.sort((a, b) => a.name.localeCompare(b.name));
@@ -776,15 +810,26 @@
 
   // ─── Stats ───────────────────────────────────────────
   function updateStats() {
-    let entries = 0, people = 0, tiers = 0;
+    let entries = 0, infoNodes = 0, people = 0;
     allVisibleIds.forEach(id => {
-      if (id.startsWith('person-') || id.startsWith('_tier_')) return;
-      if (id.includes('_tier_')) { tiers++; return; }
-      if (id.includes('_left')) return;
+      if (id.startsWith('person-')) { people++; return; }
+      if (id.startsWith('_tier_') || id.includes('_tier_') || id.includes('_left')) return;
+      if (id.startsWith('info-')) { infoNodes++; return; }
       entries++;
     });
-    allVisibleIds.forEach(id => { if (id.startsWith('person-')) people++; });
-    document.getElementById('stats').innerHTML = '<b>' + entries + '</b> entries &middot; <b>' + people + '</b> people visible';
+    // Also count people in collapsed tiers
+    function countPeople(n) {
+      if (!n) return 0;
+      let c = 0;
+      if (n.nodeType === 'person') c++;
+      if (n.children) n.children.forEach(ch => { c += countPeople(ch); });
+      return c;
+    }
+    const totalPeopleInTree = countPeople(leftRoot);
+    const parts = ['<b>' + entries + '</b> entries'];
+    if (infoNodes > 0) parts.push('<b>' + infoNodes + '</b> info');
+    parts.push('<b>' + people + '</b> of <b>' + totalPeopleInTree + '</b> people visible');
+    document.getElementById('stats').innerHTML = parts.join(' &middot; ');
   }
 
   // ─── Fit ─────────────────────────────────────────────
@@ -805,12 +850,17 @@
   function buildLegend() {
     const legB = document.getElementById('leg-b');
     legB.innerHTML = '';
+    const tierSel = document.getElementById('tier-filter');
+    tierSel.innerHTML = '<option value="all">All Tiers</option>';
     TIERS.forEach(t => {
       const r = document.createElement('div'); r.className = 'li';
       const d = document.createElement('div'); d.className = 'ld'; d.style.background = t.color;
       r.appendChild(d);
       r.appendChild(document.createTextNode(t.name));
       legB.appendChild(r);
+      const opt = document.createElement('option');
+      opt.value = t.id; opt.textContent = t.name;
+      tierSel.appendChild(opt);
     });
   }
 
@@ -857,13 +907,18 @@
         setSEO({ title: rawApiData.focusName + ' Network - Juice Project', description: 'Network tree for ' + rawApiData.focusName });
         document.getElementById('page-title').innerHTML = '<span class="focus-name">' + rawApiData.focusName + '</span> Network';
       }
-      const eC = rawApiData.nodes.filter(n => n.nodeType !== 'person').length;
+      const entryC = rawApiData.nodes.filter(n => n.nodeType === 'entry').length;
+      const infoC = rawApiData.nodes.filter(n => n.nodeType === 'info').length;
       const pC = rawApiData.nodes.filter(n => n.nodeType === 'person').length;
-      document.getElementById('page-subtitle').textContent = eC + ' entries \xB7 ' + pC + ' people \xB7 Depth ' + depth;
+      const subParts = [entryC + ' entries'];
+      if (infoC > 0) subParts.push(infoC + ' info nodes');
+      subParts.push(pC + ' people');
+      subParts.push('Depth ' + depth);
+      document.getElementById('page-subtitle').textContent = subParts.join(' \xB7 ');
       if (rawApiData.totalPeople !== undefined) {
         document.getElementById('people-info').innerHTML = ppl
           ? 'Showing <b>' + pC + '</b> of <b>' + rawApiData.totalPeople + '</b> individuals (grouped by severity/proximity)'
-          : '<b>' + rawApiData.totalPeople + '</b> people available \u2014 check "People" to show';
+          : '<b>' + rawApiData.totalPeople + '</b> people available - check "People" to show';
       }
       buildLegend();
       renderTree();
@@ -880,8 +935,51 @@
   document.getElementById('btn-reload').onclick = loadTree;
   document.getElementById('btn-fit').onclick = fitTree;
   document.getElementById('show-people').onchange = loadTree;
+  document.getElementById('show-info').onchange = function() { renderTree(); };
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
+  document.getElementById('btn-expand-right').onclick = function() {
+    function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
+    ex(rightRoot); renderTree(); setTimeout(fitTree, 600);
+  };
+  document.getElementById('btn-expand-left').onclick = function() {
+    function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
+    ex(leftRoot); renderTree(); setTimeout(fitTree, 600);
+  };
+  document.getElementById('tier-filter').onchange = function() {
+    const val = this.value;
+    if (val === 'all') {
+      if (leftRoot && leftRoot.children) leftRoot.children.forEach(tg => { tg._hidden = false; });
+    } else {
+      if (leftRoot && leftRoot.children) leftRoot.children.forEach(tg => {
+        tg._hidden = tg._tierDef && tg._tierDef.id !== val ? true : false;
+      });
+    }
+    renderTree(); setTimeout(fitTree, 400);
+  };
+  document.getElementById('node-size-range').oninput = function() {
+    const pct = parseInt(this.value);
+    document.getElementById('node-size-val').textContent = pct + '%';
+    const scale = pct / 100;
+    gNodes.selectAll('.tree-node').attr('transform', function(d) {
+      return 'translate(' + d.y + ',' + d.x + ') scale(' + scale + ')';
+    });
+  };
+  document.getElementById('link-opacity-range').oninput = function() {
+    const val = parseInt(this.value);
+    document.getElementById('link-opacity-val').textContent = val + '%';
+    gLinks.selectAll('.tree-link').attr('opacity', val / 100);
+  };
+  document.getElementById('btn-screenshot').onclick = function() {
+    const svgNode = document.getElementById('tree-svg');
+    const serializer = new XMLSerializer();
+    const svgStr = serializer.serializeToString(svgNode);
+    const blob = new Blob([svgStr], { type: 'image/svg+xml' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url; a.download = (focusEntryId || 'network') + '-graph.svg'; a.click();
+    URL.revokeObjectURL(url);
+  };
   document.getElementById('s-btn').onclick = doSearch;
   document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
   document.getElementById('s-input').oninput = function() { if (!this.value.trim()) { searchHits = new Set(); document.getElementById('s-count').textContent = ''; renderTree(); } };

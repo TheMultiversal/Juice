@@ -39,7 +39,7 @@ let newPeople = 0;
 const entries = [
 
   // ================================================================
-  // BLACK BOOK — REMAINING MAJOR NAMES (Sports, Real Estate, Society)
+  // BLACK BOOK  -  REMAINING MAJOR NAMES (Sports, Real Estate, Society)
   // ================================================================
   ['rupert-murdoch-ep', 'Rupert Murdoch', 'Australian-born American media mogul. Founder of News Corp, Fox News, and 21st Century Fox. Named in Epstein\'s black book with multiple contact numbers including homes in New York, London, Los Angeles, and his ranch. One of the most powerful media figures in the world. His ex-wife Wendi Deng and son James Murdoch were also listed.'],
   ['donald-newhouse', 'Donald Newhouse', 'American billionaire. Co-owner of Advance Publications (Conde Nast, Reddit, Discovery). Named in Epstein\'s black book. One of the wealthiest and most reclusive media owners in America.'],
@@ -48,7 +48,7 @@ const entries = [
   ['rupert-loewenstein', 'Prince Rupert Loewenstein', 'German-British financier (1933-2014). Financial manager for the Rolling Stones for decades. Named in Epstein\'s black book. Part of the European aristocratic circle.'],
   ['ghislaine-friend-carol', 'Carol Mack', 'Socialite and friend of Ghislaine Maxwell. Named in multiple Epstein-related testimonies as someone who socialized with Maxwell and attended her events.'],
 
-  // BLACK BOOK — SPORTS
+  // BLACK BOOK  -  SPORTS
   ['ehud-laniado-sport', 'Sport Section', 'SKIP'],
   ['mark-messier', 'Mark Messier', 'Canadian former professional ice hockey player. Named in Epstein\'s black book. One of the greatest hockey players in history.'],
   ['andre-agassi', 'Andre Agassi', 'American former professional tennis player. Named in Epstein\'s black book. One of the greatest tennis players of all time.'],
@@ -56,7 +56,7 @@ const entries = [
   ['jean-claude-killy', 'Jean-Claude Killy', 'French former alpine ski racer. Triple Olympic gold medalist. Named in Epstein\'s black book as part of European sports connections.'],
   ['pat-riley', 'Pat Riley', 'American professional basketball coach and president of the Miami Heat. Named in Epstein\'s black book through the Palm Beach/Miami social scene.'],
 
-  // BLACK BOOK — MORE BILLIONAIRES & BUSINESS
+  // BLACK BOOK  -  MORE BILLIONAIRES & BUSINESS
   ['david-martinez', 'David Martinez', 'Mexican billionaire and hedge fund manager. Founder of Fintech Advisory. Named in Epstein\'s black book.'],
   ['peter-morton', 'Peter Morton', 'American entrepreneur. Co-founder of Hard Rock Cafe. Named in Epstein\'s black book.'],
   ['steve-wynn', 'Steve Wynn', 'American billionaire casino developer. Former CEO of Wynn Resorts. Named in Epstein\'s black book. Later faced his own sexual misconduct allegations and resigned from Wynn Resorts in 2018.'],
@@ -74,7 +74,7 @@ const entries = [
   ['charles-kushner', 'Charles Kushner', 'American real estate developer. Father of Jared Kushner. Convicted of tax evasion and witness tampering. Named in Epstein\'s contacts through New York real estate circles. Pardoned by Trump in 2020.'],
   ['howard-lutnick-ep', 'Howard Lutnick', 'American businessman. Chairman and CEO of Cantor Fitzgerald. Named in Epstein\'s black book.'],
 
-  // BLACK BOOK — MORE SOCIALITIES / NY SCENE
+  // BLACK BOOK  -  MORE SOCIALITIES / NY SCENE
   ['denise-rich', 'Denise Rich', 'American songwriter and socialite. Ex-wife of Marc Rich (whose Clinton pardon was controversial). Named in Epstein\'s black book. Major Democratic Party fundraiser.'],
   ['blaine-trump', 'Blaine Trump', 'American socialite. Former wife of Robert Trump (Donald\'s brother). Named in Epstein\'s black book. Part of the New York social elite.'],
   ['marla-maples', 'Marla Maples', 'American actress and television personality. Second wife of Donald Trump. Named in Epstein\'s contacts.'],
@@ -96,7 +96,7 @@ const entries = [
   ['teala-davies', 'Teala Davies', 'Epstein victim who was recruited as a teenager. Filed civil claims against the Epstein estate. Founded a non-profit to help trafficking survivors. Has spoken publicly about systemic failures that enabled Epstein.'],
 
   // ================================================================
-  // 2024 DOCUMENT UNSEALING — Identified Does
+  // 2024 DOCUMENT UNSEALING  -  Identified Does
   // ================================================================
   ['doe-36', 'Bill Cosby', 'American comedian and actor. Identified as Doe 36 in 2024 Epstein document unsealing. Named by Virginia Giuffre in a list of people Epstein associated with. Cosby denied any connection. Already convicted separately of sexual assault (conviction later overturned on procedural grounds).'],
   ['doe-73', 'Michael Jackson (Doe 73)', 'SKIP'],
@@ -338,7 +338,7 @@ const entries = [
   // ================================================================
   // ADDITIONAL FAMOUS AUTHORS / INTELLECTUALS
   // ================================================================
-  ['elie-wiesel', 'Elie Wiesel', 'Romanian-born American writer, Holocaust survivor, and Nobel laureate (1928-2016). The Elie Wiesel Foundation for Humanity lost $15.2 million invested with Epstein\'s money management — the same amount as almost the entire foundation endowment. The loss devastated the foundation.'],
+  ['elie-wiesel', 'Elie Wiesel', 'Romanian-born American writer, Holocaust survivor, and Nobel laureate (1928-2016). The Elie Wiesel Foundation for Humanity lost $15.2 million invested with Epstein\'s money management  -  the same amount as almost the entire foundation endowment. The loss devastated the foundation.'],
   ['alan-dershowitz-books', 'Dershowitz Books', 'SKIP'],
   ['salman-rushdie-ep', 'Salman Rushdie', 'British-American novelist. Author of "The Satanic Verses." Named in Epstein\'s contacts.'],
   ['tom-wolfe-ep', 'Tom Wolfe', 'American author and journalist (1930-2018). Named in Epstein\'s contacts.'],

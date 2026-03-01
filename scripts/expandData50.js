@@ -418,7 +418,7 @@ const additionalIndividuals = [
   { name: 'Christopher Tarbell', id: 'christopher-tarbell', role: 'Former FBI Agent - Investigated Epstein, Frustrated by Plea Deal' },
 ];
 
-// Merge — deduplicate
+// Merge  -  deduplicate
 const existingIds = new Set(epEntry.individuals.map(i => i.id));
 let added = 0;
 additionalIndividuals.forEach(ind => {
