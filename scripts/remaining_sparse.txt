@@ -1,0 +1,179 @@
+China|kaifeng-jewish-community|Kaifeng Jewish Community
+China|shanghai-jewish-refugees-museum|Shanghai Jewish Refugees Museum
+China|sassoon-house-shanghai|Sassoon House (Shanghai)
+China|sassoon-group-legacy|Sassoon Group Historical Legacy
+China|tencent|Tencent
+Denmark|novo-nordisk|Novo Nordisk
+Denmark|danish-jewish-museum|Danish Jewish Museum (Copenhagen)
+Denmark|rescue-of-danish-jews-1943|Rescue of Danish Jews (1943)
+Denmark|jewish-community-of-denmark|Jewish Community of Denmark
+Denmark|great-synagogue-of-copenhagen|Great Synagogue of Copenhagen
+Denmark|det-mosaiske-troessamfund|Det Mosaiske Troessamfund
+Greece|central-board-of-jewish-communities-in-greece-kis|Central Board of Jewish Communities in Greece (KIS)
+Greece|romaniote-jewish-community|Romaniote Jewish Community
+Greece|jewish-museum-of-thessaloniki|Jewish Museum of Thessaloniki
+Greece|jewish-museum-of-greece|Jewish Museum of Greece
+Greece|holocaust-memorial-of-thessaloniki|Holocaust Memorial of Thessaloniki
+Ethiopia|beta-israel-community-organizations|Beta Israel Community Organizations
+Ethiopia|operation-solomon-memorial|Operation Solomon Memorial
+Ethiopia|north-shewa-synagogue|North Shewa Synagogue
+Ethiopia|north-american-conference-on-ethiopian-jewry|North American Conference on Ethiopian Jewry
+Ethiopia|ethiopian-jewish-community-beta-israel|Ethiopian Jewish Community (Beta Israel)
+Ethiopia|north-shewa-zone-heritage-center|North Shewa Zone Heritage Center
+Norway|jewish-museum-oslo|Jewish Museum Oslo
+Norway|jewish-community-of-oslo|Jewish Community of Oslo
+Norway|det-mosaiske-trossamfund-i-oslo|Det Mosaiske Trossamfund i Oslo
+Norway|center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret|Center for Studies of the Holocaust and Religious Minorities (HL-senteret)
+Norway|jewish-museum-trondheim|Jewish Museum Trondheim
+Norway|jewish-museum-of-oslo|Jewish Museum of Oslo
+Romania|federa-ia-comunit-ilor-evreie-ti-din-rom-nia-fcer|Federația Comunităților Evreiești din România (FCER)
+Romania|coral-temple|Coral Temple
+Romania|federation-of-jewish-communities-in-romania|Federation of Jewish Communities in Romania
+United Arab Emirates|abrahamic-family-house|Abrahamic Family House (Abu Dhabi)
+United Arab Emirates|jewish-community-of-the-uae|Jewish Community of the UAE
+United Arab Emirates|association-of-gulf-jewish-communities-agjc|Association of Gulf Jewish Communities (AGJC)
+United Arab Emirates|kosher-restaurants-and-community-in-dubai|Kosher restaurants and community in Dubai
+United Arab Emirates|jewish-council-of-the-emirates|Jewish Council of the Emirates
+South Korea|seoul-jewish-community|Seoul Jewish Community
+South Korea|chabad-of-south-korea|Chabad of South Korea
+South Korea|samsung-group|Samsung Group
+Singapore|jewish-welfare-board-singapore|Jewish Welfare Board Singapore
+Singapore|maghain-aboth-synagogue|Maghain Aboth Synagogue
+Singapore|united-hebrew-congregation-of-singapore|United Hebrew Congregation of Singapore
+Singapore|singapore-jewish-community|Singapore Jewish Community
+Singapore|singapore-jewish-welfare-board|Singapore Jewish Welfare Board
+Portugal|sinagoga-de-tomar|Sinagoga de Tomar
+Portugal|museu-judaico-de-belmonte|Museu Judaico de Belmonte
+Portugal|jewish-community-of-lisbon|Jewish Community of Lisbon
+Portugal|sinagoga-kadoorie-mekor-haim-porto|Sinagoga Kadoorie Mekor Haim (Porto)
+Portugal|comunidade-israelita-de-lisboa|Comunidade Israelita de Lisboa
+Bahrain|the-synagogue-of-bahrain|The Synagogue of Bahrain
+Bahrain|ambassador-houda-nonoo-legacy|Ambassador Houda Nonoo legacy
+Bahrain|jewish-community-of-bahrain|Jewish Community of Bahrain
+Bahrain|house-of-ten-commandments|House of Ten Commandments
+Chile|instituto-hebreo-dr-chaim-weizmann|Instituto Hebreo Dr. Chaim Weizmann
+Chile|comunidad-jud-a-de-chile|Comunidad Judía de Chile
+Chile|comunidad-judia-de-chile|Comunidad Judia de Chile
+Colombia|colegio-colombo-hebreo|Colegio Colombo Hebreo
+Colombia|confederacion-comunidades-judias-colombia|Confederacion de Comunidades Judias de Colombia
+Finland|central-council-of-jewish-communities-in-finland|Central Council of Jewish Communities in Finland
+Finland|jewish-community-helsinki|Jewish Community of Helsinki
+Finland|helsingin-juutalainen-seurakunta|Helsingin Juutalainen Seurakunta
+Finland|helsinki-synagogue|Helsinki Synagogue
+Hong Kong|jewish-community-centre-hong-kong|Jewish Community Centre Hong Kong
+Hong Kong|jewish-historical-society-of-hong-kong|Jewish Historical Society of Hong Kong
+Hong Kong|kadoorie-family-enterprises|Kadoorie Family Enterprises
+Ireland|jewish-representative-council-of-ireland|Jewish Representative Council of Ireland
+Ireland|irish-jewish-museum-dublin|Irish Jewish Museum (Dublin)
+Peru|colegio-le-n-pinelo|Colegio León Pinelo
+Peru|asociacion-judia-del-peru|Asociacion Judia del Peru
+Egypt|eliyahu-hanavi-synagogue|Eliyahu Hanavi Synagogue
+Egypt|egyptian-jewish-community-historic|Egyptian Jewish Community (historic)
+Egypt|ben-ezra-synagogue-cairo|Ben Ezra Synagogue (Cairo)
+Egypt|sha-ar-hashamayim-synagogue|Sha'ar Hashamayim Synagogue
+Thailand|jewish-community-of-thailand|Jewish Community of Thailand
+Thailand|jewish-association-of-thailand|Jewish Association of Thailand
+Philippines|temple-emil-manila|Temple Emil, Manila
+Uruguay|comunidad-israelita-del-uruguay|Comunidad Israelita del Uruguay
+Uruguay|comit-central-israelita-del-uruguay|Comité Central Israelita del Uruguay
+Uruguay|comite-central-israelita-del-uruguay|Comite Central Israelita del Uruguay
+New Zealand|auckland-hebrew-congregation|Auckland Hebrew Congregation
+New Zealand|wellington-hebrew-congregation|Wellington Hebrew Congregation
+New Zealand|new-zealand-jewish-council|New Zealand Jewish Council
+Serbia|jewish-community-of-belgrade|Jewish Community of Belgrade
+Serbia|federation-of-jewish-communities-in-serbia|Federation of Jewish Communities in Serbia
+Serbia|jewish-community-belgrade|Federation of Jewish Communities of Serbia
+Bulgaria|jewish-community-of-bulgaria|Jewish Community of Bulgaria
+Bulgaria|organization-of-the-jews-in-bulgaria|Organization of the Jews in Bulgaria
+Bulgaria|shalom-organization-jews-bulgaria|Shalom Organization of Jews in Bulgaria
+Ecuador|asociaci-n-de-beneficencia-israelita-de-quito|Asociación de Beneficencia Israelita de Quito
+Iraq|iraqi-jewish-community-historic|Iraqi Jewish Community (historic)
+Iraq|babylonian-jewry-heritage-center-israel|Babylonian Jewry Heritage Center (Israel)
+Iraq|iraqi-jewish-heritage|Iraqi Jewish Heritage
+Myanmar|musmeah-yeshua-synagogue|Musmeah Yeshua Synagogue (Yangon)
+Taiwan|taiwan-jewish-community|Taiwan Jewish Community
+Taiwan|jewish-community-of-taiwan|Jewish Community of Taiwan
+Taiwan|tsmc-taiwan-semiconductor-manufacturing-company|TSMC (Taiwan Semiconductor Manufacturing Company)
+Madagascar|jewish-community-of-madagascar|Jewish Community of Madagascar
+Madagascar|community-of-jewish-descent-in-madagascar|Community of Jewish Descent in Madagascar
+Madagascar|jewish-community-madagascar|Communauté Juive de Madagascar
+Panama|colegio-instituto-alberto-einstein|Colegio Instituto Alberto Einstein
+Panama|kol-shearith-israel|Kol Shearith Israel
+Cuba|patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba|Patronato de la Casa de la Comunidad Hebrea de Cuba
+Cuba|jewish-community-cuba|Comunidad Hebrea de Cuba
+Venezuela|confederaci-n-de-asociaciones-israelitas-de-venezuela-caiv|Confederación de Asociaciones Israelitas de Venezuela (CAIV)
+Venezuela|confederacion-asociaciones-israelitas-venezuela|CAIV - Confederación de Asociaciones Israelitas de Venezuela
+Venezuela|caiv-venezuela|Confederacion de Asociaciones Israelitas de Venezuela
+Jamaica|united-congregation-of-israelites|United Congregation of Israelites
+Jamaica|shaare-shalom-synagogue|Shaare Shalom Synagogue
+Azerbaijan|mountain-jewish-community-of-azerbaijan|Mountain Jewish Community of Azerbaijan
+Azerbaijan|mountain-jews-azerbaijan|Mountain Jews of Azerbaijan
+Kenya|nairobi-hebrew-congregation|Nairobi Hebrew Congregation
+Kenya|abayudaya-jewish-community|Abayudaya Jewish Community of Uganda (East Africa Office)
+Croatia|jewish-community-of-zagreb|Jewish Community of Zagreb
+Tunisia|el-ghriba-synagogue-djerba|El Ghriba Synagogue (Djerba)
+Dominican Republic|jewish-community-of-sos-a|Jewish Community of Sosúa
+Dominican Republic|museo-jud-o-de-sos-a|Museo Judío de Sosúa
+Vietnam|chabad-vietnam|Chabad Vietnam
+Vietnam|jewish-community-vietnam|Jewish Community of Ho Chi Minh City
+Nigeria|igbo-jewish-community|Igbo Jewish Community
+Nigeria|jewish-community-of-nigeria|Jewish Community of Nigeria (Igbo Jews)
+Zimbabwe|sephardi-hebrew-congregation-of-harare|Sephardi Hebrew Congregation of Harare
+Zimbabwe|zimbabwe-jewish-community|Zimbabwe Jewish Community
+Democratic Republic of Congo|communaut-juive-de-lubumbashi|Communauté Juive de Lubumbashi
+Democratic Republic of Congo|lubumbashi-jewish-community|Lubumbashi Jewish Community
+Namibia|windhoek-hebrew-congregation|Windhoek Hebrew Congregation
+Namibia|windhoek-jewish-community|Windhoek Jewish Community
+Ghana|house-of-israel-community|House of Israel Community
+Ghana|house-of-israel-ghana|House of Israel Ghana
+Yemen|yemeni-jewish-community-historic|Yemeni Jewish Community (historic)
+Yemen|yemenite-jewish-heritage|Yemenite Jewish Heritage
+Libya|libyan-jewish-community-historic|Libyan Jewish Community (historic)
+Libya|libyan-jewish-heritage|Libyan Jewish Heritage
+Lebanon|lebanese-jewish-community-historic|Lebanese Jewish Community (historic)
+Lebanon|maghen-abraham-synagogue|Maghen Abraham Synagogue
+Suriname|jodensavanne-archaeological-site|Jodensavanne Archaeological Site
+Suriname|neve-shalom-synagogue-paramaribo|Neve Shalom Synagogue (Paramaribo)
+Gibraltar|gibraltar-hebrew-community|Gibraltar Hebrew Community
+Gibraltar|jewish-community-of-gibraltar|Jewish Community of Gibraltar
+Zambia|lusaka-hebrew-congregation|Lusaka Hebrew Congregation
+Zambia|council-for-zambian-jewry|Council for Zambian Jewry
+Lithuania|vilna-gaon-jewish-state-museum|Vilna Gaon Jewish State Museum
+Lithuania|lithuanian-jewish-community-ljc|Lithuanian Jewish Community (LJC)
+Latvia|jews-in-latvia-museum|Jews in Latvia Museum
+Latvia|riga-ghetto-holocaust-museum|Riga Ghetto and Latvian Holocaust Museum
+Estonia|jewish-community-of-estonia|Jewish Community of Estonia
+Iran|tehran-jewish-committee|Tehran Jewish Committee
+Georgia|georgian-jewish-community|Georgian Jewish Community
+Uzbekistan|bukharan-jewish-community|Bukharan Jewish Community
+Bolivia|comunidad-israelita-de-bolivia-circulo-israelita|Comunidad Israelita de Bolivia (Circulo Israelita)
+Syria|syrian-jewish-heritage-aleppo-damascus|Syrian Jewish Heritage (Aleppo/Damascus)
+Curaçao|mikv-israel-emanuel-synagogue|Mikvé Israel-Emanuel Synagogue
+Tanzania|jewish-community-tanzania|Jewish Community of Dar es Salaam
+Trinidad and Tobago|caribbean-jewish-congress|Caribbean Jewish Congress
+Botswana|jewish-community-of-botswana|Jewish Community of Botswana
+Belarus|union-of-belarusian-jewish-public-associations-and-communities|Union of Belarusian Jewish Public Associations and Communities
+Kazakhstan|jewish-community-of-kazakhstan|Jewish Community of Kazakhstan
+Indonesia|surabaya-jewish-community|Surabaya Jewish Community
+Iceland|icelandic-jewish-community|Icelandic Jewish Community
+Democratic Republic of the Congo|jewish-community-of-lubumbashi|Jewish Community of Lubumbashi
+Barbados|nidhe-israel-synagogue|Nidhe Israel Synagogue
+U.S. Virgin Islands|hebrew-congregation-of-st-thomas|Hebrew Congregation of St. Thomas
+Tajikistan|jewish-community-of-dushanbe|Jewish Community of Dushanbe
+Nepal|chabad-of-kathmandu|Chabad of Kathmandu
+Cambodia|chabad-of-phnom-penh|Chabad of Phnom Penh
+Laos|chabad-of-vientiane|Chabad of Vientiane
+Sri Lanka|jewish-community-of-sri-lanka|Jewish Community of Sri Lanka
+Papua New Guinea|jewish-community-of-port-moresby|Jewish Community of Port Moresby
+Fiji|jewish-community-of-suva|Jewish Community of Suva
+Malta|jewish-heritage-of-malta|Jewish Heritage of Malta
+Luxembourg|jewish-community-of-luxembourg|Jewish Community of Luxembourg
+Monaco|association-culturelle-isra-lite-de-monaco|Association Culturelle Israélite de Monaco
+Andorra|jewish-community-of-andorra|Jewish Community of Andorra
+Cyprus|jewish-community-of-cyprus|Jewish Community of Cyprus
+Bosnia and Herzegovina|jewish-community-of-sarajevo|Jewish Community of Sarajevo
+North Macedonia|jewish-community-of-skopje|Jewish Community of Skopje
+Albania|jewish-community-of-albania|Jewish Community of Albania
+Slovenia|jewish-community-of-ljubljana|Jewish Community of Ljubljana
+Slovakia|jewish-community-of-bratislava|Jewish Community of Bratislava
+Montenegro|jewish-community-of-montenegro|Jewish Community of Montenegro

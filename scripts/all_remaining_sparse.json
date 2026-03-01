@@ -1,0 +1,2148 @@
+{
+  "Canada": [
+    {
+      "id": "toronto-international-film-festival-tiff",
+      "name": "Toronto International Film Festival (TIFF)"
+    },
+    {
+      "id": "onex-corporation",
+      "name": "Onex Corporation"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify"
+    },
+    {
+      "id": "bombardier-inc",
+      "name": "Bombardier Inc."
+    },
+    {
+      "id": "reichmann-family-olympia-york",
+      "name": "Reichmann Family / Olympia & York"
+    },
+    {
+      "id": "b-nai-brith-canada",
+      "name": "B'nai Brith Canada"
+    },
+    {
+      "id": "barrick-gold-peter-munk",
+      "name": "Barrick Gold (Peter Munk)"
+    },
+    {
+      "id": "jewish-federations-of-canada-uia",
+      "name": "Jewish Federations of Canada - UIA"
+    },
+    {
+      "id": "mount-sinai-hospital-toronto",
+      "name": "Mount Sinai Hospital Toronto"
+    },
+    {
+      "id": "federation-cja-montreal",
+      "name": "Federation CJA (Montreal)"
+    },
+    {
+      "id": "centre-for-israel-and-jewish-affairs-cija",
+      "name": "Centre for Israel and Jewish Affairs (CIJA)"
+    },
+    {
+      "id": "canadian-museum-for-human-rights",
+      "name": "Canadian Museum for Human Rights"
+    },
+    {
+      "id": "friends-of-simon-wiesenthal-center-canada",
+      "name": "Friends of Simon Wiesenthal Center (Canada)"
+    },
+    {
+      "id": "munk-school-of-global-affairs-u-of-toronto",
+      "name": "Munk School of Global Affairs (U of Toronto)"
+    },
+    {
+      "id": "canadian-jewish-congress-historical",
+      "name": "Canadian Jewish Congress (historical)"
+    },
+    {
+      "id": "canaccord-genuity",
+      "name": "Canaccord Genuity"
+    },
+    {
+      "id": "uja-federation-of-greater-toronto",
+      "name": "UJA Federation of Greater Toronto"
+    },
+    {
+      "id": "montreal-holocaust-museum",
+      "name": "Montreal Holocaust Museum"
+    },
+    {
+      "id": "canadian-jewish-news",
+      "name": "Canadian Jewish News"
+    },
+    {
+      "id": "vancouver-holocaust-education-centre",
+      "name": "Vancouver Holocaust Education Centre"
+    },
+    {
+      "id": "toronto-hebrew-memorial-park",
+      "name": "Toronto Hebrew Memorial Park"
+    },
+    {
+      "id": "brookfield-asset-management",
+      "name": "Brookfield Asset Management"
+    },
+    {
+      "id": "cirque-du-soleil",
+      "name": "Cirque du Soleil"
+    },
+    {
+      "id": "saputo-inc",
+      "name": "Saputo Inc."
+    },
+    {
+      "id": "canadian-friends-of-hebrew-university",
+      "name": "Canadian Friends of Hebrew University"
+    }
+  ],
+  "Germany": [
+    {
+      "id": "central-council-of-jews-in-germany",
+      "name": "Central Council of Jews in Germany"
+    },
+    {
+      "id": "delivery-hero",
+      "name": "Delivery Hero"
+    },
+    {
+      "id": "leo-baeck-institute",
+      "name": "Leo Baeck Institute"
+    },
+    {
+      "id": "ronald-s-lauder-foundation-germany",
+      "name": "Ronald S. Lauder Foundation Germany"
+    },
+    {
+      "id": "jewish-museum-frankfurt",
+      "name": "Jewish Museum Frankfurt"
+    },
+    {
+      "id": "j-disches-museum-m-nchen",
+      "name": "Jüdisches Museum München"
+    },
+    {
+      "id": "maccabi-germany",
+      "name": "Maccabi Germany"
+    },
+    {
+      "id": "wizo-germany",
+      "name": "WIZO Germany"
+    },
+    {
+      "id": "zentralrat-der-juden-in-deutschland-central-council-of-jews-in-germany",
+      "name": "Zentralrat der Juden in Deutschland (Central Council of Jews in Germany)"
+    },
+    {
+      "id": "axel-springer-se",
+      "name": "Axel Springer SE"
+    },
+    {
+      "id": "stolpersteine-stumbling-stones",
+      "name": "Stolpersteine (Stumbling Stones)"
+    },
+    {
+      "id": "j-dische-gemeinde-zu-berlin-jewish-community-of-berlin",
+      "name": "Jüdische Gemeinde zu Berlin (Jewish Community of Berlin)"
+    },
+    {
+      "id": "memorial-to-the-murdered-jews-of-europe",
+      "name": "Memorial to the Murdered Jews of Europe"
+    },
+    {
+      "id": "neue-synagoge-berlin",
+      "name": "Neue Synagoge Berlin"
+    },
+    {
+      "id": "jewish-museum-berlin",
+      "name": "Jewish Museum Berlin"
+    },
+    {
+      "id": "sachsenhausen-memorial",
+      "name": "Sachsenhausen Memorial"
+    },
+    {
+      "id": "abraham-geiger-college",
+      "name": "Abraham Geiger College"
+    },
+    {
+      "id": "zalando",
+      "name": "Zalando"
+    },
+    {
+      "id": "leo-baeck-institute-germany",
+      "name": "Leo Baeck Institute - Germany"
+    },
+    {
+      "id": "moses-mendelssohn-center-for-european-jewish-studies",
+      "name": "Moses Mendelssohn Center for European-Jewish Studies"
+    },
+    {
+      "id": "zentralwohlfahrtsstelle-der-juden-in-deutschland",
+      "name": "Zentralwohlfahrtsstelle der Juden in Deutschland"
+    },
+    {
+      "id": "allgemeine-rabbinerkonferenz-general-rabbinical-conference",
+      "name": "Allgemeine Rabbinerkonferenz (General Rabbinical Conference)"
+    },
+    {
+      "id": "european-maccabi-games",
+      "name": "European Maccabi Games"
+    },
+    {
+      "id": "j-dische-allgemeine",
+      "name": "Jüdische Allgemeine"
+    }
+  ],
+  "Australia": [
+    {
+      "id": "atlassian",
+      "name": "Atlassian"
+    },
+    {
+      "id": "jewish-holocaust-centre-melbourne",
+      "name": "Jewish Holocaust Centre Melbourne"
+    },
+    {
+      "id": "csl-limited",
+      "name": "CSL Limited"
+    },
+    {
+      "id": "visy-industries-anthony-pratt",
+      "name": "Visy Industries (Anthony Pratt)"
+    },
+    {
+      "id": "lowy-institute",
+      "name": "Lowy Institute"
+    },
+    {
+      "id": "pratt-foundation",
+      "name": "Pratt Foundation"
+    },
+    {
+      "id": "meriton-harry-triguboff",
+      "name": "Meriton (Harry Triguboff)"
+    },
+    {
+      "id": "jewish-museum-of-australia",
+      "name": "Jewish Museum of Australia"
+    },
+    {
+      "id": "sydney-jewish-museum",
+      "name": "Sydney Jewish Museum"
+    },
+    {
+      "id": "zionist-federation-of-australia",
+      "name": "Zionist Federation of Australia"
+    },
+    {
+      "id": "nsw-jewish-board-of-deputies",
+      "name": "NSW Jewish Board of Deputies"
+    },
+    {
+      "id": "mount-scopus-memorial-college",
+      "name": "Mount Scopus Memorial College"
+    },
+    {
+      "id": "moriah-college-sydney",
+      "name": "Moriah College Sydney"
+    },
+    {
+      "id": "the-australian-jewish-news",
+      "name": "The Australian Jewish News"
+    },
+    {
+      "id": "jewish-community-council-of-victoria-jccv",
+      "name": "Jewish Community Council of Victoria (JCCV)"
+    },
+    {
+      "id": "lendlease-group",
+      "name": "Lendlease Group"
+    },
+    {
+      "id": "monash-university-jewish-studies",
+      "name": "Monash University Jewish Studies"
+    }
+  ],
+  "South Africa": [
+    {
+      "id": "sa-jewish-report",
+      "name": "SA Jewish Report"
+    },
+    {
+      "id": "south-african-holocaust-and-genocide-foundation",
+      "name": "South African Holocaust and Genocide Foundation"
+    },
+    {
+      "id": "naspers",
+      "name": "Naspers"
+    },
+    {
+      "id": "south-african-jewish-board-of-deputies",
+      "name": "South African Jewish Board of Deputies (SAJBD)"
+    },
+    {
+      "id": "cape-town-holocaust-and-genocide-centre",
+      "name": "Cape Town Holocaust and Genocide Centre"
+    },
+    {
+      "id": "chief-rabbi-of-south-africa",
+      "name": "Chief Rabbi of South Africa"
+    },
+    {
+      "id": "liberty-group-donald-gordon",
+      "name": "Liberty Group (Donald Gordon)"
+    },
+    {
+      "id": "discovery-limited",
+      "name": "Discovery Limited"
+    },
+    {
+      "id": "king-david-schools",
+      "name": "King David Schools"
+    },
+    {
+      "id": "investec",
+      "name": "Investec"
+    },
+    {
+      "id": "cape-town-holocaust-genocide-centre",
+      "name": "Cape Town Holocaust & Genocide Centre"
+    },
+    {
+      "id": "south-african-friends-of-israel",
+      "name": "South African Friends of Israel"
+    },
+    {
+      "id": "ort-south-africa",
+      "name": "ORT South Africa"
+    },
+    {
+      "id": "south-african-jewish-report",
+      "name": "South African Jewish Report"
+    },
+    {
+      "id": "herzlia-school-cape-town",
+      "name": "Herzlia School (Cape Town)"
+    },
+    {
+      "id": "johannesburg-holocaust-genocide-centre",
+      "name": "Johannesburg Holocaust & Genocide Centre"
+    },
+    {
+      "id": "pick-n-pay",
+      "name": "Pick n Pay"
+    },
+    {
+      "id": "nandos",
+      "name": "Nandos"
+    }
+  ],
+  "Argentina": [
+    {
+      "id": "grupo-clar-n",
+      "name": "Grupo Clarín"
+    },
+    {
+      "id": "mercado-libre",
+      "name": "Mercado Libre"
+    },
+    {
+      "id": "delegaci-n-de-asociaciones-israelitas-argentinas-daia",
+      "name": "Delegación de Asociaciones Israelitas Argentinas (DAIA)"
+    },
+    {
+      "id": "arsa-asociaci-n-de-recaudaci-n-sionista-argentina",
+      "name": "ARSA (Asociación de Recaudación Sionista Argentina)"
+    },
+    {
+      "id": "amia-asociaci-n-mutual-israelita-argentina",
+      "name": "AMIA (Asociación Mutual Israelita Argentina)"
+    },
+    {
+      "id": "daia-delegaci-n-de-asociaciones-israelitas-argentinas",
+      "name": "DAIA (Delegación de Asociaciones Israelitas Argentinas)"
+    },
+    {
+      "id": "buenos-aires-jewish-museum",
+      "name": "Buenos Aires Jewish Museum"
+    },
+    {
+      "id": "templo-libertad-buenos-aires",
+      "name": "Templo Libertad (Buenos Aires)"
+    },
+    {
+      "id": "beit-el-congregation-buenos-aires",
+      "name": "Beit El Congregation (Buenos Aires)"
+    },
+    {
+      "id": "seminario-rab-nico-latinoamericano",
+      "name": "Seminario Rabínico Latinoamericano"
+    },
+    {
+      "id": "museo-del-holocausto-buenos-aires",
+      "name": "Museo del Holocausto (Buenos Aires)"
+    },
+    {
+      "id": "ort-argentina",
+      "name": "ORT Argentina"
+    },
+    {
+      "id": "fundacion-memoria-del-holocausto",
+      "name": "Fundacion Memoria del Holocausto"
+    },
+    {
+      "id": "sociedad-hebraica-argentina",
+      "name": "Sociedad Hebraica Argentina"
+    },
+    {
+      "id": "buenos-aires-herald-jewish-community-media",
+      "name": "Buenos Aires Herald / Jewish community media"
+    },
+    {
+      "id": "grupo-werthein",
+      "name": "Grupo Werthein"
+    },
+    {
+      "id": "mercadolibre",
+      "name": "MercadoLibre"
+    },
+    {
+      "id": "grupo-clarin",
+      "name": "Grupo Clarin"
+    },
+    {
+      "id": "asociaci-n-mutual-israelita-argentina-amia",
+      "name": "Asociación Mutual Israelita Argentina (AMIA)"
+    }
+  ],
+  "Russia": [
+    {
+      "id": "yandex",
+      "name": "Yandex (Israeli R&D)"
+    },
+    {
+      "id": "letterone-mikhail-fridman",
+      "name": "LetterOne (Mikhail Fridman)"
+    },
+    {
+      "id": "jewish-museum-and-tolerance-center",
+      "name": "Jewish Museum and Tolerance Center (Moscow)"
+    },
+    {
+      "id": "russian-jewish-congress-rjc",
+      "name": "Russian Jewish Congress (RJC)"
+    },
+    {
+      "id": "chief-rabbinate-of-russia",
+      "name": "Chief Rabbinate of Russia"
+    },
+    {
+      "id": "russian-aluminum-rusal",
+      "name": "Russian Aluminum (RUSAL)"
+    },
+    {
+      "id": "renova-group-viktor-vekselberg",
+      "name": "Renova Group (Viktor Vekselberg)"
+    },
+    {
+      "id": "alfa-bank-alfa-group",
+      "name": "Alfa-Bank / Alfa Group"
+    },
+    {
+      "id": "gorbi-jewish-heritage-research-group",
+      "name": "GORBI Jewish Heritage Research Group"
+    },
+    {
+      "id": "moscow-choral-synagogue",
+      "name": "Moscow Choral Synagogue"
+    },
+    {
+      "id": "grand-choral-synagogue-st-petersburg",
+      "name": "Grand Choral Synagogue (St. Petersburg)"
+    },
+    {
+      "id": "synagogue-on-bolshaya-bronnaya-moscow",
+      "name": "Synagogue on Bolshaya Bronnaya (Moscow)"
+    },
+    {
+      "id": "nornickel-vladimir-potanin",
+      "name": "NORNICKEL (Vladimir Potanin)"
+    },
+    {
+      "id": "rusal-oleg-deripaska",
+      "name": "Rusal (Oleg Deripaska)"
+    }
+  ],
+  "Brazil": [
+    {
+      "id": "albert-einstein-hospital",
+      "name": "Albert Einstein Hospital (Hospital Israelita Albert Einstein)"
+    },
+    {
+      "id": "federation-of-jewish-communities-of-brazil-conib",
+      "name": "Federation of Jewish Communities of Brazil (CONIB)"
+    },
+    {
+      "id": "instituto-brasil-israel-ibi",
+      "name": "Instituto Brasil-Israel (IBI)"
+    },
+    {
+      "id": "hebraica-s-o-paulo",
+      "name": "Hebraica São Paulo"
+    },
+    {
+      "id": "safra-group",
+      "name": "Safra Group"
+    },
+    {
+      "id": "confedera-o-israelita-do-brasil-conib",
+      "name": "Confederação Israelita do Brasil (CONIB)"
+    },
+    {
+      "id": "museu-judaico-do-rio-de-janeiro",
+      "name": "Museu Judaico do Rio de Janeiro"
+    },
+    {
+      "id": "museu-judaico-de-s-o-paulo",
+      "name": "Museu Judaico de São Paulo"
+    },
+    {
+      "id": "congrega-o-israelita-paulista",
+      "name": "Congregação Israelita Paulista (CIP)"
+    },
+    {
+      "id": "club-hebraica-s-o-paulo",
+      "name": "Club Hebraica São Paulo"
+    },
+    {
+      "id": "federa-o-israelita-do-estado-de-s-o-paulo-fisesp",
+      "name": "Federação Israelita do Estado de São Paulo (FISESP)"
+    },
+    {
+      "id": "albert-einstein-israelite-hospital",
+      "name": "Albert Einstein Israelite Hospital"
+    },
+    {
+      "id": "congregacao-israelita-paulista",
+      "name": "Congregacao Israelita Paulista"
+    },
+    {
+      "id": "3g-capital",
+      "name": "3G Capital"
+    },
+    {
+      "id": "safra-national-bank-of-new-york",
+      "name": "Safra National Bank of New York"
+    },
+    {
+      "id": "confederacao-israelita-do-brasil",
+      "name": "Confederacao Israelita do Brasil (CONIB)"
+    },
+    {
+      "id": "rede-globo",
+      "name": "Rede Globo"
+    }
+  ],
+  "India": [
+    {
+      "id": "magen-david-synagogue-mumbai",
+      "name": "Magen David Synagogue, Mumbai"
+    },
+    {
+      "id": "bene-israel-community",
+      "name": "Bene Israel Community"
+    },
+    {
+      "id": "sassoon-family-legacy",
+      "name": "Sassoon family legacy"
+    },
+    {
+      "id": "chabad-house-mumbai",
+      "name": "Chabad House Mumbai"
+    },
+    {
+      "id": "paradesi-synagogue-kochi",
+      "name": "Paradesi Synagogue (Kochi)"
+    },
+    {
+      "id": "bene-israel-heritage-museum-mumbai",
+      "name": "Bene Israel Heritage Museum (Mumbai)"
+    },
+    {
+      "id": "knesset-eliyahoo-synagogue-mumbai",
+      "name": "Knesset Eliyahoo Synagogue (Mumbai)"
+    },
+    {
+      "id": "central-jewish-board-of-india",
+      "name": "Central Jewish Board of India"
+    },
+    {
+      "id": "the-jewish-club-mumbai",
+      "name": "The Jewish Club (Mumbai)"
+    },
+    {
+      "id": "federation-of-jewish-communities-of-india",
+      "name": "Federation of Jewish Communities of India"
+    },
+    {
+      "id": "sassoon-docks",
+      "name": "Sassoon Docks"
+    },
+    {
+      "id": "chabad-mumbai-nariman-house",
+      "name": "Chabad Mumbai (Nariman House)"
+    },
+    {
+      "id": "reliance-industries",
+      "name": "Reliance Industries"
+    },
+    {
+      "id": "cochin-jewish-heritage-centre",
+      "name": "Cochin Jewish Heritage Centre"
+    }
+  ],
+  "Italy": [
+    {
+      "id": "benetton-group",
+      "name": "Benetton Group"
+    },
+    {
+      "id": "unione-delle-comunit-ebraiche-italiane-ucei",
+      "name": "Unione delle Comunità Ebraiche Italiane (UCEI)"
+    },
+    {
+      "id": "museo-ebraico-di-venezia",
+      "name": "Museo Ebraico di Venezia"
+    },
+    {
+      "id": "comunit-ebraica-di-milano",
+      "name": "Comunità Ebraica di Milano"
+    },
+    {
+      "id": "cdec-centro-di-documentazione-ebraica-contemporanea",
+      "name": "CDEC (Centro di Documentazione Ebraica Contemporanea)"
+    },
+    {
+      "id": "venice-ghetto",
+      "name": "Venice Ghetto"
+    },
+    {
+      "id": "great-synagogue-of-rome",
+      "name": "Great Synagogue of Rome"
+    },
+    {
+      "id": "union-of-italian-jewish-communities-ucei",
+      "name": "Union of Italian Jewish Communities (UCEI)"
+    },
+    {
+      "id": "community-of-sant-egidio-jewish-dialogue",
+      "name": "Community of Sant'Egidio - Jewish dialogue"
+    },
+    {
+      "id": "synagogue-of-florence-tempio-maggiore",
+      "name": "Synagogue of Florence (Tempio Maggiore)"
+    },
+    {
+      "id": "jewish-museum-of-bologna",
+      "name": "Jewish Museum of Bologna"
+    },
+    {
+      "id": "jewish-museum-of-rome",
+      "name": "Jewish Museum of Rome"
+    },
+    {
+      "id": "jewish-community-of-rome",
+      "name": "Jewish Community of Rome"
+    },
+    {
+      "id": "jewish-ghetto-of-venice",
+      "name": "Jewish Ghetto of Venice"
+    }
+  ],
+  "Poland": [
+    {
+      "id": "galicia-jewish-museum",
+      "name": "Galicia Jewish Museum (Krakow)"
+    },
+    {
+      "id": "jewish-community-centre-of-krak-w-jcc-krak-w",
+      "name": "Jewish Community Centre of Kraków (JCC Kraków)"
+    },
+    {
+      "id": "auschwitz-birkenau-memorial-and-museum",
+      "name": "Auschwitz-Birkenau Memorial and Museum"
+    },
+    {
+      "id": "warsaw-ghetto-memorial",
+      "name": "Warsaw Ghetto Memorial"
+    },
+    {
+      "id": "polin-museum-of-the-history-of-polish-jews",
+      "name": "POLIN Museum of the History of Polish Jews"
+    },
+    {
+      "id": "treblinka-memorial",
+      "name": "Treblinka Memorial"
+    },
+    {
+      "id": "majdanek-state-museum",
+      "name": "Majdanek State Museum"
+    },
+    {
+      "id": "jewish-community-centre-of-krakow-jcc-krak-w",
+      "name": "Jewish Community Centre of Krakow (JCC Kraków)"
+    },
+    {
+      "id": "tykocin-synagogue",
+      "name": "Tykocin Synagogue"
+    },
+    {
+      "id": "museum-of-the-history-of-polish-jews-polin-additional-programs",
+      "name": "Museum of the History of Polish Jews (POLIN) - additional programs"
+    },
+    {
+      "id": "foundation-preservation-jewish-heritage-poland",
+      "name": "Foundation for the Preservation of Jewish Heritage in Poland"
+    },
+    {
+      "id": "jewish-historical-institute-warsaw",
+      "name": "Jewish Historical Institute Warsaw"
+    }
+  ],
+  "Switzerland": [
+    {
+      "id": "credit-suisse-now-ubs",
+      "name": "Credit Suisse (now UBS)"
+    },
+    {
+      "id": "nestl",
+      "name": "Nestlé"
+    },
+    {
+      "id": "world-health-organization-israeli-connections",
+      "name": "World Health Organization - Israeli connections"
+    },
+    {
+      "id": "schweizerischer-israelitischer-gemeindebund-sig",
+      "name": "Schweizerischer Israelitischer Gemeindebund (SIG)"
+    },
+    {
+      "id": "world-jewish-congress-headquarters",
+      "name": "World Jewish Congress (headquarters)"
+    },
+    {
+      "id": "swiss-federation-of-jewish-communities-sig-fsci",
+      "name": "Swiss Federation of Jewish Communities (SIG/FSCI)"
+    },
+    {
+      "id": "bergier-commission-legacy",
+      "name": "Bergier Commission legacy"
+    },
+    {
+      "id": "international-committee-of-the-red-cross-jewish-relationship",
+      "name": "International Committee of the Red Cross (Jewish relationship)"
+    },
+    {
+      "id": "b-nai-b-rith-international-geneva-office",
+      "name": "B'nai B'rith International (Geneva office)"
+    },
+    {
+      "id": "world-economic-forum",
+      "name": "World Economic Forum"
+    },
+    {
+      "id": "world-zionist-organization-wzo",
+      "name": "World Zionist Organization (WZO)"
+    }
+  ],
+  "Spain": [
+    {
+      "id": "federaci-n-de-comunidades-jud-as-de-espa-a-fcje",
+      "name": "Federación de Comunidades Judías de España (FCJE)"
+    },
+    {
+      "id": "red-de-juder-as-de-espa-a",
+      "name": "Red de Juderías de España"
+    },
+    {
+      "id": "sephardic-house-of-barcelona",
+      "name": "Sephardic House of Barcelona"
+    },
+    {
+      "id": "centro-sefarad-israel",
+      "name": "Centro Sefarad-Israel"
+    },
+    {
+      "id": "casa-sefarad",
+      "name": "Casa Sefarad"
+    },
+    {
+      "id": "museo-sefard-de-toledo",
+      "name": "Museo Sefardí de Toledo"
+    },
+    {
+      "id": "federation-of-jewish-communities-of-spain-additional",
+      "name": "Federation of Jewish Communities of Spain (additional)"
+    },
+    {
+      "id": "museum-of-sephardic-heritage-toledo",
+      "name": "Museum of Sephardic Heritage (Toledo)"
+    },
+    {
+      "id": "c-rdoba-synagogue",
+      "name": "Córdoba Synagogue"
+    },
+    {
+      "id": "casa-sefarad-israel-madrid",
+      "name": "Casa Sefarad-Israel (Madrid)"
+    },
+    {
+      "id": "museo-sefardi",
+      "name": "Museo Sefardi"
+    }
+  ],
+  "International": [
+    {
+      "id": "jdc-american-jewish-joint-distribution-committee-global",
+      "name": "JDC (American Jewish Joint Distribution Committee) - Global"
+    },
+    {
+      "id": "shalom-hartman-institute",
+      "name": "Shalom Hartman Institute"
+    },
+    {
+      "id": "world-mizrachi",
+      "name": "World Mizrachi"
+    },
+    {
+      "id": "march-of-the-living",
+      "name": "March of the Living"
+    },
+    {
+      "id": "ohr-somayach",
+      "name": "Ohr Somayach"
+    },
+    {
+      "id": "claims-conference-conference-on-jewish-material-claims-against-germany",
+      "name": "Claims Conference (Conference on Jewish Material Claims Against Germany)"
+    },
+    {
+      "id": "keren-hayesod-united-israel-appeal",
+      "name": "Keren Hayesod - United Israel Appeal"
+    },
+    {
+      "id": "aleph-institute",
+      "name": "Aleph Institute"
+    },
+    {
+      "id": "maccabi-world-union",
+      "name": "Maccabi World Union"
+    },
+    {
+      "id": "limmud-international",
+      "name": "Limmud International"
+    },
+    {
+      "id": "international-holocaust-remembrance-alliance-ihra",
+      "name": "International Holocaust Remembrance Alliance (IHRA)"
+    },
+    {
+      "id": "aish-hatorah",
+      "name": "Aish HaTorah"
+    },
+    {
+      "id": "international-march-of-the-living",
+      "name": "International March of the Living"
+    }
+  ],
+  "Netherlands": [
+    {
+      "id": "booking-com",
+      "name": "Booking.com"
+    },
+    {
+      "id": "niw-nieuw-isra-lietisch-weekblad",
+      "name": "NIW (Nieuw Israëlietisch Weekblad)"
+    },
+    {
+      "id": "joods-historisch-museum",
+      "name": "Joods Historisch Museum"
+    },
+    {
+      "id": "centraal-joods-overleg-cjo",
+      "name": "Centraal Joods Overleg (CJO)"
+    },
+    {
+      "id": "nederlands-isra-litisch-kerkgenootschap-nik",
+      "name": "Nederlands-Israëlitisch Kerkgenootschap (NIK)"
+    },
+    {
+      "id": "portuguese-synagogue-of-amsterdam",
+      "name": "Portuguese Synagogue of Amsterdam"
+    },
+    {
+      "id": "anne-frank-house",
+      "name": "Anne Frank House"
+    },
+    {
+      "id": "jewish-historical-museum-amsterdam",
+      "name": "Jewish Historical Museum (Amsterdam)"
+    },
+    {
+      "id": "westerbork-transit-camp-memorial",
+      "name": "Westerbork Transit Camp Memorial"
+    },
+    {
+      "id": "nik-nederlands-isra-litisch-kerkgenootschap",
+      "name": "NIK (Nederlands-Israëlitisch Kerkgenootschap)"
+    },
+    {
+      "id": "national-holocaust-museum-amsterdam",
+      "name": "National Holocaust Museum (Amsterdam)"
+    }
+  ],
+  "Mexico": [
+    {
+      "id": "grupo-televisa",
+      "name": "Grupo Televisa (Jewish connections)"
+    },
+    {
+      "id": "grupo-carso",
+      "name": "Grupo Carso"
+    },
+    {
+      "id": "tribunal-tarbut",
+      "name": "Tribunal Tarbut"
+    },
+    {
+      "id": "centro-deportivo-israelita",
+      "name": "Centro Deportivo Israelita"
+    },
+    {
+      "id": "kadima-community",
+      "name": "Kadima Community"
+    },
+    {
+      "id": "museo-memoria-y-tolerancia",
+      "name": "Museo Memoria y Tolerancia"
+    },
+    {
+      "id": "comit-central-de-la-comunidad-jud-a-de-m-xico",
+      "name": "Comité Central de la Comunidad Judía de México"
+    },
+    {
+      "id": "colegio-hebreo-maguen-david",
+      "name": "Colegio Hebreo Maguen David"
+    },
+    {
+      "id": "tribuna-israelita",
+      "name": "Tribuna Israelita"
+    },
+    {
+      "id": "kidzania",
+      "name": "KidZania"
+    },
+    {
+      "id": "comite-central-comunidad-judia-mexico",
+      "name": "Comite Central de la Comunidad Judia de Mexico"
+    }
+  ],
+  "Austria": [
+    {
+      "id": "sigmund-freud-museum",
+      "name": "Sigmund Freud Museum (Vienna)"
+    },
+    {
+      "id": "j-disches-museum-wien",
+      "name": "Jüdisches Museum Wien"
+    },
+    {
+      "id": "lauder-chabad-campus-wien",
+      "name": "Lauder Chabad Campus Wien"
+    },
+    {
+      "id": "israelitische-kultusgemeinde-wien-jewish-community-of-vienna",
+      "name": "Israelitische Kultusgemeinde Wien (Jewish Community of Vienna)"
+    },
+    {
+      "id": "mauthausen-memorial",
+      "name": "Mauthausen Memorial"
+    },
+    {
+      "id": "jewish-museum-vienna",
+      "name": "Jewish Museum Vienna"
+    },
+    {
+      "id": "stadttempel-vienna-city-temple",
+      "name": "Stadttempel (Vienna City Temple)"
+    },
+    {
+      "id": "vienna-wiesenthal-institute",
+      "name": "Vienna Wiesenthal Institute"
+    },
+    {
+      "id": "jewish-community-of-vienna",
+      "name": "Jewish Community of Vienna"
+    }
+  ],
+  "Belgium": [
+    {
+      "id": "mus-e-juif-de-belgique",
+      "name": "Musée Juif de Belgique"
+    },
+    {
+      "id": "comit-de-coordination-des-organisations-juives-de-belgique-ccojb",
+      "name": "Comité de Coordination des Organisations Juives de Belgique (CCOJB)"
+    },
+    {
+      "id": "kazerne-dossin-memorial",
+      "name": "Kazerne Dossin Memorial (Mechelen)"
+    },
+    {
+      "id": "antwerp-diamond-district",
+      "name": "Antwerp Diamond District"
+    },
+    {
+      "id": "antwerp-jewish-community",
+      "name": "Antwerp Jewish Community"
+    },
+    {
+      "id": "jewish-museum-of-belgium-brussels",
+      "name": "Jewish Museum of Belgium (Brussels)"
+    },
+    {
+      "id": "coordinating-committee-of-jewish-organisations-in-belgium-ccojb",
+      "name": "Coordinating Committee of Jewish Organisations in Belgium (CCOJB)"
+    },
+    {
+      "id": "antwerp-diamond-centre",
+      "name": "Antwerp Diamond Centre"
+    }
+  ],
+  "Sweden": [
+    {
+      "id": "paideia-the-european-institute-for-jewish-studies",
+      "name": "Paideia - The European Institute for Jewish Studies"
+    },
+    {
+      "id": "judiska-f-rsamlingen-i-stockholm",
+      "name": "Judiska Församlingen i Stockholm"
+    },
+    {
+      "id": "judiska-museet-i-stockholm",
+      "name": "Judiska Museet i Stockholm"
+    },
+    {
+      "id": "official-council-of-swedish-jewish-communities",
+      "name": "Official Council of Swedish Jewish Communities"
+    },
+    {
+      "id": "raoul-wallenberg-institute",
+      "name": "Raoul Wallenberg Institute"
+    },
+    {
+      "id": "great-synagogue-of-stockholm",
+      "name": "Great Synagogue of Stockholm"
+    },
+    {
+      "id": "jewish-museum-stockholm",
+      "name": "Jewish Museum Stockholm"
+    },
+    {
+      "id": "jewish-community-stockholm",
+      "name": "Jewish Community of Stockholm"
+    },
+    {
+      "id": "bonnier-group",
+      "name": "Bonnier Group"
+    }
+  ],
+  "Hungary": [
+    {
+      "id": "doh-ny-street-synagogue-budapest",
+      "name": "Dohány Street Synagogue (Budapest)"
+    },
+    {
+      "id": "raoul-wallenberg-memorial",
+      "name": "Raoul Wallenberg Memorial"
+    },
+    {
+      "id": "federation-of-hungarian-jewish-communities-mazsihisz",
+      "name": "Federation of Hungarian Jewish Communities (Mazsihisz)"
+    },
+    {
+      "id": "hungarian-jewish-museum",
+      "name": "Hungarian Jewish Museum"
+    },
+    {
+      "id": "shoes-on-the-danube-bank",
+      "name": "Shoes on the Danube Bank"
+    },
+    {
+      "id": "hungarian-jewish-heritage-foundation",
+      "name": "Hungarian Jewish Heritage Foundation"
+    },
+    {
+      "id": "ort-hungary",
+      "name": "ORT Hungary"
+    },
+    {
+      "id": "dohany-street-synagogue",
+      "name": "Dohany Street Synagogue"
+    }
+  ],
+  "Turkey": [
+    {
+      "id": "turkish-jewish-community",
+      "name": "Turkish Jewish Community"
+    },
+    {
+      "id": "t-rkiye-musevi-cemaati",
+      "name": "Türkiye Musevi Cemaati"
+    },
+    {
+      "id": "museum-of-turkish-jews",
+      "name": "Museum of Turkish Jews"
+    },
+    {
+      "id": "neve-shalom-synagogue",
+      "name": "Neve Shalom Synagogue (Istanbul)"
+    },
+    {
+      "id": "ahrida-synagogue-istanbul",
+      "name": "Ahrida Synagogue (Istanbul)"
+    },
+    {
+      "id": "quincentennial-foundation-museum-istanbul",
+      "name": "Quincentennial Foundation Museum (Istanbul)"
+    },
+    {
+      "id": "chief-rabbinate-of-turkey",
+      "name": "Chief Rabbinate of Turkey"
+    },
+    {
+      "id": "quincentennial-foundation-turkey",
+      "name": "Quincentennial Foundation"
+    }
+  ],
+  "Morocco": [
+    {
+      "id": "conseil-des-communaut-s-isra-lites-du-maroc",
+      "name": "Conseil des Communautés Israélites du Maroc"
+    },
+    {
+      "id": "museum-of-moroccan-judaism",
+      "name": "Museum of Moroccan Judaism (Casablanca)"
+    },
+    {
+      "id": "bayt-dakira-house-of-memory",
+      "name": "Bayt Dakira (House of Memory, Essaouira)"
+    },
+    {
+      "id": "council-of-jewish-communities-of-morocco",
+      "name": "Council of Jewish Communities of Morocco"
+    },
+    {
+      "id": "rabbi-haim-pinto-synagogue-essaouira",
+      "name": "Rabbi Haim Pinto Synagogue (Essaouira)"
+    },
+    {
+      "id": "casablanca-jewish-heritage-trail",
+      "name": "Casablanca Jewish Heritage Trail"
+    },
+    {
+      "id": "conseil-des-communautes-israelites-du-maroc",
+      "name": "Conseil des Communautes Israelites du Maroc"
+    }
+  ],
+  "China": [
+    {
+      "id": "kaifeng-jewish-community",
+      "name": "Kaifeng Jewish Community"
+    },
+    {
+      "id": "shanghai-jewish-refugees-museum",
+      "name": "Shanghai Jewish Refugees Museum"
+    },
+    {
+      "id": "sassoon-house-shanghai",
+      "name": "Sassoon House (Shanghai)"
+    },
+    {
+      "id": "sassoon-group-legacy",
+      "name": "Sassoon Group Historical Legacy"
+    },
+    {
+      "id": "tencent",
+      "name": "Tencent"
+    }
+  ],
+  "Ukraine": [
+    {
+      "id": "babyn-yar-holocaust-memorial-center",
+      "name": "Babyn Yar Holocaust Memorial Center"
+    },
+    {
+      "id": "golden-rose-synagogue-lviv-ruins",
+      "name": "Golden Rose Synagogue (Lviv, ruins)"
+    },
+    {
+      "id": "menorah-center-dnipro",
+      "name": "Menorah Center (Dnipro)"
+    },
+    {
+      "id": "uman-breslov-pilgrimage",
+      "name": "Uman (Breslov pilgrimage)"
+    },
+    {
+      "id": "jewish-confederation-of-ukraine",
+      "name": "Jewish Confederation of Ukraine"
+    },
+    {
+      "id": "united-jewish-community-of-ukraine",
+      "name": "United Jewish Community of Ukraine"
+    },
+    {
+      "id": "ukrainian-jewish-confederation",
+      "name": "Ukrainian Jewish Confederation"
+    }
+  ],
+  "Czech Republic": [
+    {
+      "id": "jewish-quarter-of-prague-josefov",
+      "name": "Jewish Quarter of Prague (Josefov)"
+    },
+    {
+      "id": "old-new-synagogue-altneuschul",
+      "name": "Old-New Synagogue (Altneuschul)"
+    },
+    {
+      "id": "federace-idovsk-ch-obc-v-esk-republice",
+      "name": "Federace židovských obcí v České republice"
+    },
+    {
+      "id": "terez-n-memorial",
+      "name": "Terezín Memorial"
+    },
+    {
+      "id": "jewish-museum-in-prague",
+      "name": "Jewish Museum in Prague"
+    },
+    {
+      "id": "old-jewish-cemetery-prague",
+      "name": "Old Jewish Cemetery (Prague)"
+    },
+    {
+      "id": "federation-of-jewish-communities-in-the-czech-republic",
+      "name": "Federation of Jewish Communities in the Czech Republic"
+    },
+    {
+      "id": "pinkas-synagogue-prague-holocaust-memorial",
+      "name": "Pinkas Synagogue (Prague Holocaust Memorial)"
+    }
+  ],
+  "Japan": [
+    {
+      "id": "toyota-motor-corporation",
+      "name": "Toyota Motor Corporation"
+    },
+    {
+      "id": "jewish-community-of-kobe",
+      "name": "Jewish Community of Kobe"
+    },
+    {
+      "id": "makuya",
+      "name": "Makuya"
+    },
+    {
+      "id": "sugihara-museum-yaotsu",
+      "name": "Sugihara Museum (Yaotsu)"
+    },
+    {
+      "id": "jewish-community-of-japan",
+      "name": "Jewish Community of Japan"
+    },
+    {
+      "id": "kobe-jewish-community",
+      "name": "Kobe Jewish Community"
+    },
+    {
+      "id": "softbank-group",
+      "name": "SoftBank Group"
+    }
+  ],
+  "Denmark": [
+    {
+      "id": "novo-nordisk",
+      "name": "Novo Nordisk"
+    },
+    {
+      "id": "danish-jewish-museum",
+      "name": "Danish Jewish Museum (Copenhagen)"
+    },
+    {
+      "id": "rescue-of-danish-jews-1943",
+      "name": "Rescue of Danish Jews (1943)"
+    },
+    {
+      "id": "jewish-community-of-denmark",
+      "name": "Jewish Community of Denmark"
+    },
+    {
+      "id": "great-synagogue-of-copenhagen",
+      "name": "Great Synagogue of Copenhagen"
+    },
+    {
+      "id": "det-mosaiske-troessamfund",
+      "name": "Det Mosaiske Troessamfund"
+    }
+  ],
+  "Greece": [
+    {
+      "id": "central-board-of-jewish-communities-in-greece-kis",
+      "name": "Central Board of Jewish Communities in Greece (KIS)"
+    },
+    {
+      "id": "romaniote-jewish-community",
+      "name": "Romaniote Jewish Community"
+    },
+    {
+      "id": "jewish-museum-of-thessaloniki",
+      "name": "Jewish Museum of Thessaloniki"
+    },
+    {
+      "id": "jewish-museum-of-greece",
+      "name": "Jewish Museum of Greece"
+    },
+    {
+      "id": "holocaust-memorial-of-thessaloniki",
+      "name": "Holocaust Memorial of Thessaloniki"
+    }
+  ],
+  "Ethiopia": [
+    {
+      "id": "beta-israel-community-organizations",
+      "name": "Beta Israel Community Organizations"
+    },
+    {
+      "id": "operation-solomon-memorial",
+      "name": "Operation Solomon Memorial"
+    },
+    {
+      "id": "north-shewa-synagogue",
+      "name": "North Shewa Synagogue"
+    },
+    {
+      "id": "north-american-conference-on-ethiopian-jewry",
+      "name": "North American Conference on Ethiopian Jewry"
+    },
+    {
+      "id": "ethiopian-jewish-community-beta-israel",
+      "name": "Ethiopian Jewish Community (Beta Israel)"
+    },
+    {
+      "id": "north-shewa-zone-heritage-center",
+      "name": "North Shewa Zone Heritage Center"
+    }
+  ],
+  "Norway": [
+    {
+      "id": "jewish-museum-oslo",
+      "name": "Jewish Museum Oslo"
+    },
+    {
+      "id": "jewish-community-of-oslo",
+      "name": "Jewish Community of Oslo"
+    },
+    {
+      "id": "det-mosaiske-trossamfund-i-oslo",
+      "name": "Det Mosaiske Trossamfund i Oslo"
+    },
+    {
+      "id": "center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret",
+      "name": "Center for Studies of the Holocaust and Religious Minorities (HL-senteret)"
+    },
+    {
+      "id": "jewish-museum-trondheim",
+      "name": "Jewish Museum Trondheim"
+    },
+    {
+      "id": "jewish-museum-of-oslo",
+      "name": "Jewish Museum of Oslo"
+    }
+  ],
+  "Romania": [
+    {
+      "id": "federa-ia-comunit-ilor-evreie-ti-din-rom-nia-fcer",
+      "name": "Federația Comunităților Evreiești din România (FCER)"
+    },
+    {
+      "id": "coral-temple",
+      "name": "Coral Temple"
+    },
+    {
+      "id": "federation-of-jewish-communities-in-romania",
+      "name": "Federation of Jewish Communities in Romania"
+    }
+  ],
+  "United Arab Emirates": [
+    {
+      "id": "abrahamic-family-house",
+      "name": "Abrahamic Family House (Abu Dhabi)"
+    },
+    {
+      "id": "jewish-community-of-the-uae",
+      "name": "Jewish Community of the UAE"
+    },
+    {
+      "id": "association-of-gulf-jewish-communities-agjc",
+      "name": "Association of Gulf Jewish Communities (AGJC)"
+    },
+    {
+      "id": "kosher-restaurants-and-community-in-dubai",
+      "name": "Kosher restaurants and community in Dubai"
+    },
+    {
+      "id": "jewish-council-of-the-emirates",
+      "name": "Jewish Council of the Emirates"
+    }
+  ],
+  "South Korea": [
+    {
+      "id": "seoul-jewish-community",
+      "name": "Seoul Jewish Community"
+    },
+    {
+      "id": "chabad-of-south-korea",
+      "name": "Chabad of South Korea"
+    },
+    {
+      "id": "samsung-group",
+      "name": "Samsung Group"
+    }
+  ],
+  "Singapore": [
+    {
+      "id": "jewish-welfare-board-singapore",
+      "name": "Jewish Welfare Board Singapore"
+    },
+    {
+      "id": "maghain-aboth-synagogue",
+      "name": "Maghain Aboth Synagogue"
+    },
+    {
+      "id": "united-hebrew-congregation-of-singapore",
+      "name": "United Hebrew Congregation of Singapore"
+    },
+    {
+      "id": "singapore-jewish-community",
+      "name": "Singapore Jewish Community"
+    },
+    {
+      "id": "singapore-jewish-welfare-board",
+      "name": "Singapore Jewish Welfare Board"
+    }
+  ],
+  "Portugal": [
+    {
+      "id": "sinagoga-de-tomar",
+      "name": "Sinagoga de Tomar"
+    },
+    {
+      "id": "museu-judaico-de-belmonte",
+      "name": "Museu Judaico de Belmonte"
+    },
+    {
+      "id": "jewish-community-of-lisbon",
+      "name": "Jewish Community of Lisbon"
+    },
+    {
+      "id": "sinagoga-kadoorie-mekor-haim-porto",
+      "name": "Sinagoga Kadoorie Mekor Haim (Porto)"
+    },
+    {
+      "id": "comunidade-israelita-de-lisboa",
+      "name": "Comunidade Israelita de Lisboa"
+    }
+  ],
+  "Bahrain": [
+    {
+      "id": "the-synagogue-of-bahrain",
+      "name": "The Synagogue of Bahrain"
+    },
+    {
+      "id": "ambassador-houda-nonoo-legacy",
+      "name": "Ambassador Houda Nonoo legacy"
+    },
+    {
+      "id": "jewish-community-of-bahrain",
+      "name": "Jewish Community of Bahrain"
+    },
+    {
+      "id": "house-of-ten-commandments",
+      "name": "House of Ten Commandments"
+    }
+  ],
+  "Chile": [
+    {
+      "id": "instituto-hebreo-dr-chaim-weizmann",
+      "name": "Instituto Hebreo Dr. Chaim Weizmann"
+    },
+    {
+      "id": "comunidad-jud-a-de-chile",
+      "name": "Comunidad Judía de Chile"
+    },
+    {
+      "id": "comunidad-judia-de-chile",
+      "name": "Comunidad Judia de Chile"
+    }
+  ],
+  "Colombia": [
+    {
+      "id": "colegio-colombo-hebreo",
+      "name": "Colegio Colombo Hebreo"
+    },
+    {
+      "id": "confederacion-comunidades-judias-colombia",
+      "name": "Confederacion de Comunidades Judias de Colombia"
+    }
+  ],
+  "Finland": [
+    {
+      "id": "central-council-of-jewish-communities-in-finland",
+      "name": "Central Council of Jewish Communities in Finland"
+    },
+    {
+      "id": "jewish-community-helsinki",
+      "name": "Jewish Community of Helsinki"
+    },
+    {
+      "id": "helsingin-juutalainen-seurakunta",
+      "name": "Helsingin Juutalainen Seurakunta"
+    },
+    {
+      "id": "helsinki-synagogue",
+      "name": "Helsinki Synagogue"
+    }
+  ],
+  "Hong Kong": [
+    {
+      "id": "jewish-community-centre-hong-kong",
+      "name": "Jewish Community Centre Hong Kong"
+    },
+    {
+      "id": "jewish-historical-society-of-hong-kong",
+      "name": "Jewish Historical Society of Hong Kong"
+    },
+    {
+      "id": "kadoorie-family-enterprises",
+      "name": "Kadoorie Family Enterprises"
+    }
+  ],
+  "Ireland": [
+    {
+      "id": "jewish-representative-council-of-ireland",
+      "name": "Jewish Representative Council of Ireland"
+    },
+    {
+      "id": "irish-jewish-museum-dublin",
+      "name": "Irish Jewish Museum (Dublin)"
+    }
+  ],
+  "Peru": [
+    {
+      "id": "colegio-le-n-pinelo",
+      "name": "Colegio León Pinelo"
+    },
+    {
+      "id": "asociacion-judia-del-peru",
+      "name": "Asociacion Judia del Peru"
+    }
+  ],
+  "Egypt": [
+    {
+      "id": "eliyahu-hanavi-synagogue",
+      "name": "Eliyahu Hanavi Synagogue"
+    },
+    {
+      "id": "egyptian-jewish-community-historic",
+      "name": "Egyptian Jewish Community (historic)"
+    },
+    {
+      "id": "ben-ezra-synagogue-cairo",
+      "name": "Ben Ezra Synagogue (Cairo)"
+    },
+    {
+      "id": "sha-ar-hashamayim-synagogue",
+      "name": "Sha'ar Hashamayim Synagogue"
+    }
+  ],
+  "Thailand": [
+    {
+      "id": "jewish-community-of-thailand",
+      "name": "Jewish Community of Thailand"
+    },
+    {
+      "id": "jewish-association-of-thailand",
+      "name": "Jewish Association of Thailand"
+    }
+  ],
+  "Philippines": [
+    {
+      "id": "temple-emil-manila",
+      "name": "Temple Emil, Manila"
+    }
+  ],
+  "Uruguay": [
+    {
+      "id": "comunidad-israelita-del-uruguay",
+      "name": "Comunidad Israelita del Uruguay"
+    },
+    {
+      "id": "comit-central-israelita-del-uruguay",
+      "name": "Comité Central Israelita del Uruguay"
+    },
+    {
+      "id": "comite-central-israelita-del-uruguay",
+      "name": "Comite Central Israelita del Uruguay"
+    }
+  ],
+  "New Zealand": [
+    {
+      "id": "auckland-hebrew-congregation",
+      "name": "Auckland Hebrew Congregation"
+    },
+    {
+      "id": "wellington-hebrew-congregation",
+      "name": "Wellington Hebrew Congregation"
+    },
+    {
+      "id": "new-zealand-jewish-council",
+      "name": "New Zealand Jewish Council"
+    }
+  ],
+  "Serbia": [
+    {
+      "id": "jewish-community-of-belgrade",
+      "name": "Jewish Community of Belgrade"
+    },
+    {
+      "id": "federation-of-jewish-communities-in-serbia",
+      "name": "Federation of Jewish Communities in Serbia"
+    },
+    {
+      "id": "jewish-community-belgrade",
+      "name": "Federation of Jewish Communities of Serbia"
+    }
+  ],
+  "Bulgaria": [
+    {
+      "id": "jewish-community-of-bulgaria",
+      "name": "Jewish Community of Bulgaria"
+    },
+    {
+      "id": "organization-of-the-jews-in-bulgaria",
+      "name": "Organization of the Jews in Bulgaria"
+    },
+    {
+      "id": "shalom-organization-jews-bulgaria",
+      "name": "Shalom Organization of Jews in Bulgaria"
+    }
+  ],
+  "Ecuador": [
+    {
+      "id": "asociaci-n-de-beneficencia-israelita-de-quito",
+      "name": "Asociación de Beneficencia Israelita de Quito"
+    }
+  ],
+  "Iraq": [
+    {
+      "id": "iraqi-jewish-community-historic",
+      "name": "Iraqi Jewish Community (historic)"
+    },
+    {
+      "id": "babylonian-jewry-heritage-center-israel",
+      "name": "Babylonian Jewry Heritage Center (Israel)"
+    },
+    {
+      "id": "iraqi-jewish-heritage",
+      "name": "Iraqi Jewish Heritage"
+    }
+  ],
+  "Myanmar": [
+    {
+      "id": "musmeah-yeshua-synagogue",
+      "name": "Musmeah Yeshua Synagogue (Yangon)"
+    }
+  ],
+  "Taiwan": [
+    {
+      "id": "taiwan-jewish-community",
+      "name": "Taiwan Jewish Community"
+    },
+    {
+      "id": "jewish-community-of-taiwan",
+      "name": "Jewish Community of Taiwan"
+    },
+    {
+      "id": "tsmc-taiwan-semiconductor-manufacturing-company",
+      "name": "TSMC (Taiwan Semiconductor Manufacturing Company)"
+    }
+  ],
+  "Madagascar": [
+    {
+      "id": "jewish-community-of-madagascar",
+      "name": "Jewish Community of Madagascar"
+    },
+    {
+      "id": "community-of-jewish-descent-in-madagascar",
+      "name": "Community of Jewish Descent in Madagascar"
+    },
+    {
+      "id": "jewish-community-madagascar",
+      "name": "Communauté Juive de Madagascar"
+    }
+  ],
+  "Panama": [
+    {
+      "id": "colegio-instituto-alberto-einstein",
+      "name": "Colegio Instituto Alberto Einstein"
+    },
+    {
+      "id": "kol-shearith-israel",
+      "name": "Kol Shearith Israel"
+    }
+  ],
+  "Cuba": [
+    {
+      "id": "patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba",
+      "name": "Patronato de la Casa de la Comunidad Hebrea de Cuba"
+    },
+    {
+      "id": "jewish-community-cuba",
+      "name": "Comunidad Hebrea de Cuba"
+    }
+  ],
+  "Venezuela": [
+    {
+      "id": "confederaci-n-de-asociaciones-israelitas-de-venezuela-caiv",
+      "name": "Confederación de Asociaciones Israelitas de Venezuela (CAIV)"
+    },
+    {
+      "id": "confederacion-asociaciones-israelitas-venezuela",
+      "name": "CAIV - Confederación de Asociaciones Israelitas de Venezuela"
+    },
+    {
+      "id": "caiv-venezuela",
+      "name": "Confederacion de Asociaciones Israelitas de Venezuela"
+    }
+  ],
+  "Jamaica": [
+    {
+      "id": "united-congregation-of-israelites",
+      "name": "United Congregation of Israelites"
+    },
+    {
+      "id": "shaare-shalom-synagogue",
+      "name": "Shaare Shalom Synagogue"
+    }
+  ],
+  "Azerbaijan": [
+    {
+      "id": "mountain-jewish-community-of-azerbaijan",
+      "name": "Mountain Jewish Community of Azerbaijan"
+    },
+    {
+      "id": "mountain-jews-azerbaijan",
+      "name": "Mountain Jews of Azerbaijan"
+    }
+  ],
+  "Kenya": [
+    {
+      "id": "nairobi-hebrew-congregation",
+      "name": "Nairobi Hebrew Congregation"
+    },
+    {
+      "id": "abayudaya-jewish-community",
+      "name": "Abayudaya Jewish Community of Uganda (East Africa Office)"
+    }
+  ],
+  "Croatia": [
+    {
+      "id": "jewish-community-of-zagreb",
+      "name": "Jewish Community of Zagreb"
+    }
+  ],
+  "Tunisia": [
+    {
+      "id": "el-ghriba-synagogue-djerba",
+      "name": "El Ghriba Synagogue (Djerba)"
+    }
+  ],
+  "Dominican Republic": [
+    {
+      "id": "jewish-community-of-sos-a",
+      "name": "Jewish Community of Sosúa"
+    },
+    {
+      "id": "museo-jud-o-de-sos-a",
+      "name": "Museo Judío de Sosúa"
+    }
+  ],
+  "Vietnam": [
+    {
+      "id": "chabad-vietnam",
+      "name": "Chabad Vietnam"
+    },
+    {
+      "id": "jewish-community-vietnam",
+      "name": "Jewish Community of Ho Chi Minh City"
+    }
+  ],
+  "Nigeria": [
+    {
+      "id": "igbo-jewish-community",
+      "name": "Igbo Jewish Community"
+    },
+    {
+      "id": "jewish-community-of-nigeria",
+      "name": "Jewish Community of Nigeria (Igbo Jews)"
+    }
+  ],
+  "Zimbabwe": [
+    {
+      "id": "sephardi-hebrew-congregation-of-harare",
+      "name": "Sephardi Hebrew Congregation of Harare"
+    },
+    {
+      "id": "zimbabwe-jewish-community",
+      "name": "Zimbabwe Jewish Community"
+    }
+  ],
+  "Democratic Republic of Congo": [
+    {
+      "id": "communaut-juive-de-lubumbashi",
+      "name": "Communauté Juive de Lubumbashi"
+    },
+    {
+      "id": "lubumbashi-jewish-community",
+      "name": "Lubumbashi Jewish Community"
+    }
+  ],
+  "Namibia": [
+    {
+      "id": "windhoek-hebrew-congregation",
+      "name": "Windhoek Hebrew Congregation"
+    },
+    {
+      "id": "windhoek-jewish-community",
+      "name": "Windhoek Jewish Community"
+    }
+  ],
+  "Ghana": [
+    {
+      "id": "house-of-israel-community",
+      "name": "House of Israel Community"
+    },
+    {
+      "id": "house-of-israel-ghana",
+      "name": "House of Israel Ghana"
+    }
+  ],
+  "Yemen": [
+    {
+      "id": "yemeni-jewish-community-historic",
+      "name": "Yemeni Jewish Community (historic)"
+    },
+    {
+      "id": "yemenite-jewish-heritage",
+      "name": "Yemenite Jewish Heritage"
+    }
+  ],
+  "Libya": [
+    {
+      "id": "libyan-jewish-community-historic",
+      "name": "Libyan Jewish Community (historic)"
+    },
+    {
+      "id": "libyan-jewish-heritage",
+      "name": "Libyan Jewish Heritage"
+    }
+  ],
+  "Lebanon": [
+    {
+      "id": "lebanese-jewish-community-historic",
+      "name": "Lebanese Jewish Community (historic)"
+    },
+    {
+      "id": "maghen-abraham-synagogue",
+      "name": "Maghen Abraham Synagogue"
+    }
+  ],
+  "Suriname": [
+    {
+      "id": "jodensavanne-archaeological-site",
+      "name": "Jodensavanne Archaeological Site"
+    },
+    {
+      "id": "neve-shalom-synagogue-paramaribo",
+      "name": "Neve Shalom Synagogue (Paramaribo)"
+    }
+  ],
+  "Gibraltar": [
+    {
+      "id": "gibraltar-hebrew-community",
+      "name": "Gibraltar Hebrew Community"
+    },
+    {
+      "id": "jewish-community-of-gibraltar",
+      "name": "Jewish Community of Gibraltar"
+    }
+  ],
+  "Zambia": [
+    {
+      "id": "lusaka-hebrew-congregation",
+      "name": "Lusaka Hebrew Congregation"
+    },
+    {
+      "id": "council-for-zambian-jewry",
+      "name": "Council for Zambian Jewry"
+    }
+  ],
+  "Lithuania": [
+    {
+      "id": "vilna-gaon-jewish-state-museum",
+      "name": "Vilna Gaon Jewish State Museum"
+    },
+    {
+      "id": "lithuanian-jewish-community-ljc",
+      "name": "Lithuanian Jewish Community (LJC)"
+    }
+  ],
+  "Latvia": [
+    {
+      "id": "jews-in-latvia-museum",
+      "name": "Jews in Latvia Museum"
+    },
+    {
+      "id": "riga-ghetto-holocaust-museum",
+      "name": "Riga Ghetto and Latvian Holocaust Museum"
+    }
+  ],
+  "Estonia": [
+    {
+      "id": "jewish-community-of-estonia",
+      "name": "Jewish Community of Estonia"
+    }
+  ],
+  "Iran": [
+    {
+      "id": "tehran-jewish-committee",
+      "name": "Tehran Jewish Committee"
+    }
+  ],
+  "Georgia": [
+    {
+      "id": "georgian-jewish-community",
+      "name": "Georgian Jewish Community"
+    }
+  ],
+  "Uzbekistan": [
+    {
+      "id": "bukharan-jewish-community",
+      "name": "Bukharan Jewish Community"
+    }
+  ],
+  "Bolivia": [
+    {
+      "id": "comunidad-israelita-de-bolivia-circulo-israelita",
+      "name": "Comunidad Israelita de Bolivia (Circulo Israelita)"
+    }
+  ],
+  "Syria": [
+    {
+      "id": "syrian-jewish-heritage-aleppo-damascus",
+      "name": "Syrian Jewish Heritage (Aleppo/Damascus)"
+    }
+  ],
+  "Curaçao": [
+    {
+      "id": "mikv-israel-emanuel-synagogue",
+      "name": "Mikvé Israel-Emanuel Synagogue"
+    }
+  ],
+  "Tanzania": [
+    {
+      "id": "jewish-community-tanzania",
+      "name": "Jewish Community of Dar es Salaam"
+    }
+  ],
+  "Trinidad and Tobago": [
+    {
+      "id": "caribbean-jewish-congress",
+      "name": "Caribbean Jewish Congress"
+    }
+  ],
+  "Botswana": [
+    {
+      "id": "jewish-community-of-botswana",
+      "name": "Jewish Community of Botswana"
+    }
+  ],
+  "Belarus": [
+    {
+      "id": "union-of-belarusian-jewish-public-associations-and-communities",
+      "name": "Union of Belarusian Jewish Public Associations and Communities"
+    }
+  ],
+  "Kazakhstan": [
+    {
+      "id": "jewish-community-of-kazakhstan",
+      "name": "Jewish Community of Kazakhstan"
+    }
+  ],
+  "Indonesia": [
+    {
+      "id": "surabaya-jewish-community",
+      "name": "Surabaya Jewish Community"
+    }
+  ],
+  "Iceland": [
+    {
+      "id": "icelandic-jewish-community",
+      "name": "Icelandic Jewish Community"
+    }
+  ],
+  "Democratic Republic of the Congo": [
+    {
+      "id": "jewish-community-of-lubumbashi",
+      "name": "Jewish Community of Lubumbashi"
+    }
+  ],
+  "Barbados": [
+    {
+      "id": "nidhe-israel-synagogue",
+      "name": "Nidhe Israel Synagogue"
+    }
+  ],
+  "U.S. Virgin Islands": [
+    {
+      "id": "hebrew-congregation-of-st-thomas",
+      "name": "Hebrew Congregation of St. Thomas"
+    }
+  ],
+  "Tajikistan": [
+    {
+      "id": "jewish-community-of-dushanbe",
+      "name": "Jewish Community of Dushanbe"
+    }
+  ],
+  "Nepal": [
+    {
+      "id": "chabad-of-kathmandu",
+      "name": "Chabad of Kathmandu"
+    }
+  ],
+  "Cambodia": [
+    {
+      "id": "chabad-of-phnom-penh",
+      "name": "Chabad of Phnom Penh"
+    }
+  ],
+  "Laos": [
+    {
+      "id": "chabad-of-vientiane",
+      "name": "Chabad of Vientiane"
+    }
+  ],
+  "Sri Lanka": [
+    {
+      "id": "jewish-community-of-sri-lanka",
+      "name": "Jewish Community of Sri Lanka"
+    }
+  ],
+  "Papua New Guinea": [
+    {
+      "id": "jewish-community-of-port-moresby",
+      "name": "Jewish Community of Port Moresby"
+    }
+  ],
+  "Fiji": [
+    {
+      "id": "jewish-community-of-suva",
+      "name": "Jewish Community of Suva"
+    }
+  ],
+  "Malta": [
+    {
+      "id": "jewish-heritage-of-malta",
+      "name": "Jewish Heritage of Malta"
+    }
+  ],
+  "Luxembourg": [
+    {
+      "id": "jewish-community-of-luxembourg",
+      "name": "Jewish Community of Luxembourg"
+    }
+  ],
+  "Monaco": [
+    {
+      "id": "association-culturelle-isra-lite-de-monaco",
+      "name": "Association Culturelle Israélite de Monaco"
+    }
+  ],
+  "Andorra": [
+    {
+      "id": "jewish-community-of-andorra",
+      "name": "Jewish Community of Andorra"
+    }
+  ],
+  "Cyprus": [
+    {
+      "id": "jewish-community-of-cyprus",
+      "name": "Jewish Community of Cyprus"
+    }
+  ],
+  "Bosnia and Herzegovina": [
+    {
+      "id": "jewish-community-of-sarajevo",
+      "name": "Jewish Community of Sarajevo"
+    }
+  ],
+  "North Macedonia": [
+    {
+      "id": "jewish-community-of-skopje",
+      "name": "Jewish Community of Skopje"
+    }
+  ],
+  "Albania": [
+    {
+      "id": "jewish-community-of-albania",
+      "name": "Jewish Community of Albania"
+    }
+  ],
+  "Slovenia": [
+    {
+      "id": "jewish-community-of-ljubljana",
+      "name": "Jewish Community of Ljubljana"
+    }
+  ],
+  "Slovakia": [
+    {
+      "id": "jewish-community-of-bratislava",
+      "name": "Jewish Community of Bratislava"
+    }
+  ],
+  "Montenegro": [
+    {
+      "id": "jewish-community-of-montenegro",
+      "name": "Jewish Community of Montenegro"
+    }
+  ]
+}

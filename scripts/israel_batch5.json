@@ -1,0 +1,686 @@
+{
+  "world-zionist-organization": [
+    {
+      "id": "person-theodor-herzl",
+      "name": "Theodor Herzl",
+      "role": "Founder",
+      "bio": "Austro-Hungarian journalist and political activist who founded the World Zionist Organization at the First Zionist Congress in Basel, Switzerland in 1897. He is widely regarded as the father of modern political Zionism."
+    },
+    {
+      "id": "person-nahum-goldmann",
+      "name": "Nahum Goldmann",
+      "role": "Former President",
+      "bio": "Served as president of the World Zionist Organization from 1956 to 1968. He also co-founded the World Jewish Congress and was instrumental in negotiating reparations agreements with Germany."
+    },
+    {
+      "id": "person-yaakov-hagoel",
+      "name": "Yaakov Hagoel",
+      "role": "Chairman",
+      "bio": "Appointed chairman of the World Zionist Organization in 2020. He has been active in combating antisemitism and promoting Zionist education worldwide."
+    },
+    {
+      "id": "person-avraham-duvdevani",
+      "name": "Avraham Duvdevani",
+      "role": "Former Chairman",
+      "bio": "Israeli leader who served as chairman of the World Zionist Organization. He worked to strengthen ties between Israel and the Jewish diaspora."
+    }
+  ],
+  "netafim": [
+    {
+      "id": "person-simcha-blass",
+      "name": "Simcha Blass",
+      "role": "Inventor and Co-Founder",
+      "bio": "Israeli engineer who invented modern drip irrigation technology and co-founded Netafim in 1965 at Kibbutz Hatzerim. His invention transformed agriculture in arid regions across more than 110 countries."
+    },
+    {
+      "id": "person-ran-maidan",
+      "name": "Ran Maidan",
+      "role": "CEO",
+      "bio": "Business executive who served as CEO of Netafim, leading the company's global expansion as a world leader in precision irrigation solutions. He oversaw the company through its acquisition by Orbia (formerly Mexichem)."
+    },
+    {
+      "id": "person-gaby-miodownik",
+      "name": "Gaby Miodownik",
+      "role": "Former CEO",
+      "bio": "Executive who led Netafim through significant growth phases and helped establish the company as a pioneer in smart drip and micro-irrigation systems. Under his leadership, the company expanded operations across multiple continents."
+    },
+    {
+      "id": "person-naty-barak",
+      "name": "Naty Barak",
+      "role": "Chief Sustainability Officer",
+      "bio": "Long-serving Netafim executive and sustainability advocate who championed the company's mission to help the world grow more with less. He represented the company in global forums on food security and climate change."
+    }
+  ],
+  "israel-hayom": [
+    {
+      "id": "person-sheldon-adelson",
+      "name": "Sheldon Adelson",
+      "role": "Founder",
+      "bio": "American billionaire casino magnate who founded Israel Hayom in 2007 as a free daily newspaper. He funded the paper until his death in 2021, making it Israel's most-read daily publication."
+    },
+    {
+      "id": "person-miriam-adelson",
+      "name": "Miriam Adelson",
+      "role": "Owner",
+      "bio": "Israeli-American physician and philanthropist who assumed ownership of Israel Hayom following her husband Sheldon Adelson's passing. She is one of the wealthiest women in the world."
+    },
+    {
+      "id": "person-amos-regev",
+      "name": "Amos Regev",
+      "role": "Editor-in-Chief",
+      "bio": "Israeli journalist who served as editor-in-chief of Israel Hayom, overseeing the newspaper's editorial direction and growth. He shaped the paper into Israel's highest-circulation daily."
+    },
+    {
+      "id": "person-eli-azur",
+      "name": "Eli Azur",
+      "role": "CEO",
+      "bio": "Media executive who served as CEO of Israel Hayom, managing the newspaper's business operations and nationwide distribution. He played a central role in establishing the paper's dominant market position."
+    }
+  ],
+  "nefesh-b-nefesh-israel": [
+    {
+      "id": "person-yehoshua-fass",
+      "name": "Rabbi Yehoshua Fass",
+      "role": "Co-Founder and Executive Director",
+      "bio": "Co-founded Nefesh B'Nefesh in 2002 to facilitate and encourage aliyah from North America and the United Kingdom. He continues to serve as the organization's executive director."
+    },
+    {
+      "id": "person-tony-gelbart",
+      "name": "Tony Gelbart",
+      "role": "Co-Founder",
+      "bio": "Florida-based businessman and philanthropist who co-founded Nefesh B'Nefesh to simplify the aliyah process. He envisioned removing bureaucratic obstacles for new immigrants to Israel."
+    },
+    {
+      "id": "person-zev-gershinsky",
+      "name": "Zev Gershinsky",
+      "role": "COO",
+      "bio": "Organizational leader who has served as COO of Nefesh B'Nefesh, overseeing aliyah operations and immigrant integration programs. He manages the day-to-day logistics of immigration assistance."
+    },
+    {
+      "id": "person-marc-rosenberg",
+      "name": "Marc Rosenberg",
+      "role": "Vice President of Diaspora Partnerships",
+      "bio": "Senior executive at Nefesh B'Nefesh responsible for community outreach and partnerships in support of aliyah from English-speaking countries. He has helped thousands of families navigate the immigration process."
+    }
+  ],
+  "tel-aviv-museum-of-art": [
+    {
+      "id": "person-meir-dizengoff",
+      "name": "Meir Dizengoff",
+      "role": "Founder",
+      "bio": "First mayor of Tel Aviv who founded the Tel Aviv Museum of Art in 1932, initially housed in his own home on Rothschild Boulevard. Israel's Declaration of Independence was signed in the museum's original building in 1948."
+    },
+    {
+      "id": "person-suzanne-landau",
+      "name": "Suzanne Landau",
+      "role": "Chief Curator and Director",
+      "bio": "Israeli curator and museum director who led the Tel Aviv Museum of Art and expanded its international contemporary art programming. She previously directed the Israeli Center for Digital Art."
+    },
+    {
+      "id": "person-marc-scheps",
+      "name": "Marc Scheps",
+      "role": "Former Director",
+      "bio": "Art historian who served as director of the Tel Aviv Museum of Art and later the Museum Ludwig in Cologne. He was known for championing Israeli art on the global stage."
+    },
+    {
+      "id": "person-tania-coen-uzzielli",
+      "name": "Tania Coen-Uzzielli",
+      "role": "Director",
+      "bio": "Served as director of the Tel Aviv Museum of Art, overseeing its operations and curatorial vision. She has been instrumental in promoting Israeli and international contemporary art."
+    }
+  ],
+  "gazit-globe": [
+    {
+      "id": "person-chaim-katzman",
+      "name": "Chaim Katzman",
+      "role": "Founder and Chairman",
+      "bio": "Israeli billionaire real estate mogul who founded Gazit-Globe in the 1990s. He pioneered Israeli investment in international commercial real estate markets across Europe, Brazil, and North America."
+    },
+    {
+      "id": "person-roni-soffer",
+      "name": "Roni Soffer",
+      "role": "CEO",
+      "bio": "Real estate executive who served as CEO of Gazit-Globe, managing the company's global portfolio of commercial properties. He oversaw operations spanning North America, Europe, and Israel."
+    },
+    {
+      "id": "person-arie-mientkavich",
+      "name": "Arie Mientkavich",
+      "role": "Board Member",
+      "bio": "Veteran Israeli banker and business leader who served on the board of Gazit-Globe. He brought extensive financial expertise from his career in Israeli banking."
+    },
+    {
+      "id": "person-ehud-arnon",
+      "name": "Ehud Arnon",
+      "role": "CFO",
+      "bio": "Financial executive who served as CFO of Gazit-Globe, overseeing the company's financial strategy across its multinational real estate operations. He managed capital allocation and investor relations."
+    }
+  ],
+  "israel-tax-authority": [
+    {
+      "id": "person-eran-yaakov",
+      "name": "Eran Yaakov",
+      "role": "Commissioner",
+      "bio": "Commissioner of the Israel Tax Authority, overseeing tax collection for the State of Israel. He has worked to advance digital reporting systems and increase tax revenue."
+    },
+    {
+      "id": "person-moshe-asher",
+      "name": "Moshe Asher",
+      "role": "Former Director",
+      "bio": "Public servant who served as head of the Israel Tax Authority, overseeing efforts to combat tax evasion and increase revenue efficiency. He implemented significant reforms to modernize tax collection."
+    },
+    {
+      "id": "person-shay-aharonovich",
+      "name": "Shay Aharonovich",
+      "role": "Director",
+      "bio": "Senior civil servant who served as director of the Israel Tax Authority. He oversaw tax collection and enforcement operations nationwide."
+    }
+  ],
+  "sapiens-international": [
+    {
+      "id": "person-roni-al-dor",
+      "name": "Roni Al-Dor",
+      "role": "President and CEO",
+      "bio": "President and CEO of Sapiens International Corporation, leading the company's growth as a global provider of insurance technology solutions. Under his leadership, Sapiens expanded to serve over 600 insurance companies in more than 30 countries."
+    },
+    {
+      "id": "person-nili-goldschmidt",
+      "name": "Nili Goldschmidt",
+      "role": "CFO",
+      "bio": "Financial executive who served as CFO of Sapiens International, overseeing the company's financial operations and investor relations. She managed the company's financial strategy during a period of significant growth."
+    },
+    {
+      "id": "person-roni-carmeli",
+      "name": "Roni Carmeli",
+      "role": "COO",
+      "bio": "Operations executive who served as COO of Sapiens International, managing the delivery of insurance technology solutions to global clients. He oversaw the company's product development and implementation."
+    },
+    {
+      "id": "person-uzi-zucker",
+      "name": "Uzi Zucker",
+      "role": "Co-Chairman of the Board",
+      "bio": "Israeli-American businessman and philanthropist who served as co-chairman of Sapiens International's board of directors. He provided strategic guidance during the company's expansion."
+    }
+  ],
+  "haaretz": [
+    {
+      "id": "person-amos-schocken",
+      "name": "Amos Schocken",
+      "role": "Publisher",
+      "bio": "Publisher and owner of Haaretz, representing the third generation of the Schocken family to lead the newspaper. He has been a vocal advocate for press freedom and liberal causes in Israel."
+    },
+    {
+      "id": "person-aluf-benn",
+      "name": "Aluf Benn",
+      "role": "Editor-in-Chief",
+      "bio": "Israeli journalist who has served as editor-in-chief of Haaretz since 2011. He previously covered diplomatic and security affairs as the newspaper's senior analyst."
+    },
+    {
+      "id": "person-gershom-schocken",
+      "name": "Gershom Schocken",
+      "role": "Former Editor and Owner",
+      "bio": "Long-time editor and owner of Haaretz who shaped the newspaper into Israel's leading liberal voice from the 1930s to 1990. He continued his father Salman Schocken's legacy of independent journalism."
+    },
+    {
+      "id": "person-salman-schocken",
+      "name": "Salman Schocken",
+      "role": "Former Owner",
+      "bio": "German-Jewish businessman and publisher who acquired Haaretz in 1935, establishing the Schocken family's enduring ownership of the newspaper. He was also a noted literary patron and book publisher."
+    }
+  ],
+  "israel-airports-authority": [
+    {
+      "id": "person-hagai-topolansky",
+      "name": "Hagai Topolansky",
+      "role": "Director General",
+      "bio": "Director General of the Israel Airports Authority, overseeing Ben Gurion International Airport and other Israeli airports. He managed critical aviation infrastructure and security upgrades."
+    },
+    {
+      "id": "person-yaakov-ganot",
+      "name": "Yaakov Ganot",
+      "role": "Former Director General",
+      "bio": "Government official who led the Israel Airports Authority and managed critical infrastructure development projects at Israel's airports. He oversaw major expansions to accommodate growing passenger traffic."
+    },
+    {
+      "id": "person-shmuel-zakay",
+      "name": "Shmuel Zakay",
+      "role": "Former CEO",
+      "bio": "Executive who served as CEO of the Israel Airports Authority, leading airport security and operational excellence initiatives. He was involved in modernization projects at Ben Gurion Airport."
+    }
+  ],
+  "magen-david-adom": [
+    {
+      "id": "person-eli-bin",
+      "name": "Eli Bin",
+      "role": "Director General",
+      "bio": "Director General of Magen David Adom, Israel's national emergency medical service. He oversaw the organization's response to numerous emergencies and its coordination with international aid agencies."
+    },
+    {
+      "id": "person-noam-yifrach",
+      "name": "Noam Yifrach",
+      "role": "Chairman",
+      "bio": "Israeli physician and medical leader who served as chairman of Magen David Adom. He oversaw the organization's medical and emergency response operations nationwide."
+    },
+    {
+      "id": "person-avi-balashnikov",
+      "name": "Avi Balashnikov",
+      "role": "Deputy Director General",
+      "bio": "Emergency services professional who served as deputy director general of Magen David Adom. He helped manage Israel's nationwide ambulance and rescue network."
+    },
+    {
+      "id": "person-susan-corcoran-packer",
+      "name": "Susan Corcoran Packer",
+      "role": "National Chair, American Friends of MDA",
+      "bio": "Philanthropic leader who served as national chair of American Friends of Magen David Adom. She supported Israel's emergency medical services through fundraising and advocacy."
+    }
+  ],
+  "bank-leumi": [
+    {
+      "id": "person-hanan-friedman",
+      "name": "Hanan Friedman",
+      "role": "President and CEO",
+      "bio": "President and CEO of Bank Leumi, Israel's oldest bank founded in 1902 as the Anglo-Palestine Company. He leads one of the country's largest financial institutions."
+    },
+    {
+      "id": "person-samer-haj-yehia",
+      "name": "Samer Haj-Yehia",
+      "role": "Chairman of the Board",
+      "bio": "Israeli-Arab business leader and academic who serves as chairman of Bank Leumi. He is the first Arab citizen to chair a major Israeli bank."
+    },
+    {
+      "id": "person-rakefet-russak-aminoach",
+      "name": "Rakefet Russak-Aminoach",
+      "role": "Former President and CEO",
+      "bio": "Pioneering banking executive who served as the first female CEO of a major Israeli bank when she led Bank Leumi from 2012 to 2019. She oversaw significant digital transformation at the bank."
+    },
+    {
+      "id": "person-gill-karklinsky",
+      "name": "Gill Karklinsky",
+      "role": "CFO",
+      "bio": "Financial executive who served as CFO of Bank Leumi, overseeing the bank's financial planning and capital management strategy. He managed the bank's financial operations and regulatory reporting."
+    }
+  ],
+  "israel-lands-authority": [
+    {
+      "id": "person-yaakov-kvint",
+      "name": "Yaakov Kvint",
+      "role": "Director General",
+      "bio": "Director General of the Israel Lands Authority, managing approximately 93% of land in Israel. He oversees land allocation, leasing, and urban development planning."
+    },
+    {
+      "id": "person-adiel-shamron",
+      "name": "Adiel Shamron",
+      "role": "Former Director",
+      "bio": "Senior civil servant who led the Israel Lands Authority, overseeing the administration and allocation of Israel's publicly owned land resources. He managed major land reform initiatives."
+    },
+    {
+      "id": "person-bentzi-lieberman",
+      "name": "Bentzi Lieberman",
+      "role": "Former Chairman",
+      "bio": "Public official who served as chairman of the Israel Lands Authority before its reform. He managed land allocation and urban development projects across the country."
+    }
+  ],
+  "walla-news": [
+    {
+      "id": "person-ilan-yeshua",
+      "name": "Ilan Yeshua",
+      "role": "Former CEO",
+      "bio": "Former CEO of Walla! News, one of Israel's most popular news and content websites. He became a key witness in Prime Minister Netanyahu's Case 4000 corruption trial."
+    },
+    {
+      "id": "person-shaul-elovitch",
+      "name": "Shaul Elovitch",
+      "role": "Former Owner (via Bezeq)",
+      "bio": "Israeli businessman and former controlling shareholder of Bezeq, the parent company of Walla! News. He became embroiled in a high-profile corruption case involving alleged media interference."
+    },
+    {
+      "id": "person-avi-alkalay",
+      "name": "Avi Alkalay",
+      "role": "Editor-in-Chief",
+      "bio": "Israeli journalist who served as editor-in-chief of Walla! News. He oversaw the portal's digital news coverage and editorial direction."
+    },
+    {
+      "id": "person-michal-cohen",
+      "name": "Michal Cohen",
+      "role": "News Editor",
+      "bio": "Israeli journalist who served as a senior news editor at Walla! News. She contributed to the growth of one of Israel's most visited news websites."
+    }
+  ],
+  "israel-philharmonic-orchestra": [
+    {
+      "id": "person-bronislaw-huberman",
+      "name": "Bronislaw Huberman",
+      "role": "Founder",
+      "bio": "Polish-Jewish violinist who founded the Palestine Orchestra (later Israel Philharmonic) in 1936. He rescued dozens of Jewish musicians from Nazi Europe by bringing them to Palestine."
+    },
+    {
+      "id": "person-zubin-mehta",
+      "name": "Zubin Mehta",
+      "role": "Former Music Director",
+      "bio": "Indian-born conductor who served as music director of the Israel Philharmonic Orchestra for nearly 50 years from 1969 to 2019. He is one of the most beloved cultural figures in Israel."
+    },
+    {
+      "id": "person-lahav-shani",
+      "name": "Lahav Shani",
+      "role": "Music Director",
+      "bio": "Israeli conductor and pianist who was appointed music director of the Israel Philharmonic Orchestra in 2020. He also serves as chief conductor of the Berlin Philharmonic."
+    },
+    {
+      "id": "person-avi-shoshani",
+      "name": "Avi Shoshani",
+      "role": "General Manager",
+      "bio": "Arts administrator who served as general manager of the Israel Philharmonic Orchestra. He oversaw the ensemble's operations and international touring schedule."
+    }
+  ],
+  "cellcom-israel": [
+    {
+      "id": "person-nir-sztern",
+      "name": "Nir Sztern",
+      "role": "CEO",
+      "bio": "Telecommunications executive who served as CEO of Cellcom Israel, leading the company's strategy in the Israeli mobile and fixed-line markets. He oversaw the company's expansion into broadband and television services."
+    },
+    {
+      "id": "person-nochi-dankner",
+      "name": "Nochi Dankner",
+      "role": "Former Owner",
+      "bio": "Israeli businessman who controlled Cellcom through IDB Holdings. He was one of Israel's most prominent tycoons before his business empire collapsed."
+    },
+    {
+      "id": "person-avi-gabbay",
+      "name": "Avi Gabbay",
+      "role": "Former CEO",
+      "bio": "Business executive and politician who served as CEO of Cellcom Israel before entering politics. He later led the Israeli Labor Party."
+    },
+    {
+      "id": "person-ami-erel",
+      "name": "Ami Erel",
+      "role": "Former CEO",
+      "bio": "Technology and telecom executive who led Cellcom Israel during a period of rapid growth in the Israeli cellular market. He helped establish Cellcom as one of the country's top mobile operators."
+    },
+    {
+      "id": "person-liat-meir",
+      "name": "Liat Meir",
+      "role": "CFO",
+      "bio": "Financial executive who served as CFO of Cellcom Israel. She managed the company's financial operations and regulatory compliance."
+    }
+  ],
+  "bank-of-israel": [
+    {
+      "id": "person-amir-yaron",
+      "name": "Amir Yaron",
+      "role": "Governor",
+      "bio": "Served as Governor of the Bank of Israel, overseeing monetary policy and banking regulation. He is a former finance professor at the Wharton School."
+    },
+    {
+      "id": "person-stanley-fischer",
+      "name": "Stanley Fischer",
+      "role": "Former Governor",
+      "bio": "Renowned Israeli-American economist who served as Governor of the Bank of Israel from 2005 to 2013. He later served as Vice Chairman of the U.S. Federal Reserve."
+    },
+    {
+      "id": "person-karnit-flug",
+      "name": "Karnit Flug",
+      "role": "Former Governor",
+      "bio": "Israeli economist who served as the first female Governor of the Bank of Israel from 2013 to 2018. She previously served as deputy governor under Stanley Fischer."
+    },
+    {
+      "id": "person-david-klein",
+      "name": "David Klein",
+      "role": "Former Governor",
+      "bio": "Israeli economist who served as Governor of the Bank of Israel from 2000 to 2005. He navigated the country through the economic challenges of the Second Intifada period."
+    }
+  ],
+  "yesh-din": [
+    {
+      "id": "person-michael-sfard",
+      "name": "Michael Sfard",
+      "role": "Legal Adviser",
+      "bio": "Leading Israeli human rights attorney and legal adviser to Yesh Din. He is also an author and legal scholar specializing in international humanitarian law."
+    },
+    {
+      "id": "person-lior-amihai",
+      "name": "Lior Amihai",
+      "role": "Executive Director",
+      "bio": "Human rights advocate who served as executive director of Yesh Din. He led the organization's work monitoring human rights violations in the West Bank."
+    },
+    {
+      "id": "person-neta-patrick",
+      "name": "Neta Patrick",
+      "role": "Former Executive Director",
+      "bio": "Human rights activist who served as executive director of Yesh Din. She oversaw field research and legal interventions for Palestinian rights in the occupied territories."
+    }
+  ],
+  "israel-national-cyber-directorate": [
+    {
+      "id": "person-gaby-portnoy",
+      "name": "Gaby Portnoy",
+      "role": "Director General",
+      "bio": "Director General of the Israel National Cyber Directorate, responsible for defending Israel's civilian cyberspace. He oversees national cyber defense policy and international cyber cooperation."
+    },
+    {
+      "id": "person-yigal-unna",
+      "name": "Yigal Unna",
+      "role": "Former Director General",
+      "bio": "Cybersecurity expert who led the Israel National Cyber Directorate, strengthening Israel's national cyber defenses. He expanded international cyber cooperation with allied nations."
+    },
+    {
+      "id": "person-eviatar-matania",
+      "name": "Eviatar Matania",
+      "role": "Founding Head",
+      "bio": "Academic and policy expert who founded and led the Israel National Cyber Bureau, the predecessor to the INCD. He established Israel's national cybersecurity framework."
+    },
+    {
+      "id": "person-buky-carmeli",
+      "name": "Buky Carmeli",
+      "role": "Former Head",
+      "bio": "Cybersecurity official who served as head of the Israel National Cyber Directorate. He coordinated civilian cyber protection across government agencies."
+    }
+  ],
+  "israel-supreme-court": [
+    {
+      "id": "person-aharon-barak",
+      "name": "Aharon Barak",
+      "role": "Former Chief Justice",
+      "bio": "Highly influential Israeli jurist who served as Chief Justice of the Supreme Court of Israel. He championed judicial activism and led a constitutional revolution in Israeli law."
+    },
+    {
+      "id": "person-esther-hayut",
+      "name": "Esther Hayut",
+      "role": "Former Chief Justice",
+      "bio": "Served as Chief Justice of the Supreme Court of Israel until 2023. She notably led the court through the divisive 2023 judicial reform crisis."
+    },
+    {
+      "id": "person-uzi-fogelman",
+      "name": "Uzi Fogelman",
+      "role": "Chief Justice",
+      "bio": "Israeli jurist who serves as Chief Justice of the Supreme Court of Israel. He was appointed after a distinguished judicial career on the bench."
+    },
+    {
+      "id": "person-miriam-naor",
+      "name": "Miriam Naor",
+      "role": "Former Chief Justice",
+      "bio": "Israeli judge who served as Chief Justice of the Supreme Court from 2015 to 2017. She was the second woman to hold the position."
+    }
+  ],
+  "fiverr": [
+    {
+      "id": "person-micha-kaufman",
+      "name": "Micha Kaufman",
+      "role": "Co-Founder and CEO",
+      "bio": "Co-founded Fiverr in Tel Aviv in 2010 and has served as its CEO since inception. He led the company through its successful IPO on the New York Stock Exchange in 2019."
+    },
+    {
+      "id": "person-shai-wininger",
+      "name": "Shai Wininger",
+      "role": "Co-Founder",
+      "bio": "Israeli tech entrepreneur who co-founded Fiverr in 2010. He later co-founded Lemonade, an insurtech company, bringing innovation to multiple industries."
+    },
+    {
+      "id": "person-ofer-katz",
+      "name": "Ofer Katz",
+      "role": "President and CFO",
+      "bio": "Financial executive who served as president and CFO of Fiverr. He oversaw the company's financial strategy and its successful Nasdaq listing."
+    },
+    {
+      "id": "person-hila-klein",
+      "name": "Hila Klein",
+      "role": "VP of Marketing",
+      "bio": "Marketing executive who contributed to Fiverr's global brand growth and user acquisition strategy. She helped drive awareness in the competitive freelance marketplace."
+    }
+  ],
+  "hadassah-medical-organization": [
+    {
+      "id": "person-henrietta-szold",
+      "name": "Henrietta Szold",
+      "role": "Founder (Hadassah)",
+      "bio": "American Jewish activist who founded Hadassah, the Women's Zionist Organization of America, in 1912. The organization established the Hadassah Medical Organization in Jerusalem."
+    },
+    {
+      "id": "person-yoram-weiss",
+      "name": "Yoram Weiss",
+      "role": "Director General",
+      "bio": "Leads the Hadassah Medical Organization, one of Israel's most important medical centers. He oversees two hospital campuses in Jerusalem that treat over one million patients annually."
+    },
+    {
+      "id": "person-zeev-rotstein",
+      "name": "Zeev Rotstein",
+      "role": "Former Director General",
+      "bio": "Hospital administrator and physician who served as director general of Hadassah Medical Center. He oversaw one of Israel's largest and most prestigious hospitals."
+    },
+    {
+      "id": "person-tamar-peretz",
+      "name": "Tamar Peretz",
+      "role": "Deputy Director General",
+      "bio": "Healthcare administrator who served in senior management at Hadassah Medical Organization. She supported hospital operations and strategic development initiatives."
+    }
+  ],
+  "keren-hayesod": [
+    {
+      "id": "person-chaim-weizmann",
+      "name": "Chaim Weizmann",
+      "role": "Founding Leader",
+      "bio": "First President of Israel and Zionist leader who played a key role in establishing Keren Hayesod in 1920. He championed the organization as the central fundraising body for the Jewish homeland."
+    },
+    {
+      "id": "person-sam-grundwerg",
+      "name": "Sam Grundwerg",
+      "role": "World Chairman",
+      "bio": "Israeli-American community leader who served as world chairman of Keren Hayesod. He led fundraising campaigns supporting Israel's national priorities across 45 countries."
+    },
+    {
+      "id": "person-greg-masel",
+      "name": "Greg Masel",
+      "role": "Director General",
+      "bio": "Executive who served as director general of Keren Hayesod, overseeing global fundraising operations in over 45 countries. He managed campaigns supporting immigration absorption and social welfare in Israel."
+    },
+    {
+      "id": "person-george-haber",
+      "name": "George Haber",
+      "role": "Former World Chairman",
+      "bio": "Philanthropic leader who served as world chairman of Keren Hayesod. He advanced the organization's mission to support immigration and development in Israel."
+    }
+  ],
+  "teva-naot": [
+    {
+      "id": "person-amos-goldstein",
+      "name": "Amos Goldstein",
+      "role": "Founder",
+      "bio": "Israeli entrepreneur who founded Teva Naot in 1942 at Kibbutz Naot Mordechai in the Galilee region. He created an iconic Israeli footwear brand known for comfort and craftsmanship."
+    },
+    {
+      "id": "person-ilana-tagar",
+      "name": "Ilana Tagar",
+      "role": "CEO",
+      "bio": "Business executive who led Teva Naot as CEO, expanding the brand internationally to over 40 countries. She maintained the company's artisan shoemaking heritage while growing the business."
+    },
+    {
+      "id": "person-ygal-berman",
+      "name": "Ygal Berman",
+      "role": "Managing Director",
+      "bio": "Executive who served in senior management at Teva Naot, overseeing production and distribution. He helped manage the kibbutz-founded footwear company's growth."
+    },
+    {
+      "id": "person-gil-neumann",
+      "name": "Gil Neumann",
+      "role": "Owner",
+      "bio": "Israeli businessman who became owner of Teva Naot. He oversaw the company's operations and brand development in the global comfort footwear market."
+    }
+  ],
+  "beersheba-theater": [
+    {
+      "id": "person-david-tichon",
+      "name": "David Tichon",
+      "role": "Founding Artistic Director",
+      "bio": "Israeli theater director who helped establish the Beersheba Theater in 1973. He brought professional repertory theater to the Negev region of Israel."
+    },
+    {
+      "id": "person-smadar-yaaron",
+      "name": "Smadar Yaaron",
+      "role": "Artistic Director",
+      "bio": "Israeli theater artist who served as artistic director of the Beersheba Theater. She led the company's creative programming and community engagement efforts."
+    },
+    {
+      "id": "person-shay-pitovski",
+      "name": "Shay Pitovski",
+      "role": "Artistic Director",
+      "bio": "Israeli theater director who served as artistic director of the Beersheba Theater. He led its creative programming and expanded audience reach throughout southern Israel."
+    },
+    {
+      "id": "person-miki-gurevitch",
+      "name": "Miki Gurevitch",
+      "role": "Former Artistic Director",
+      "bio": "Theater artist and director who led the Beersheba Theater, expanding its repertoire. He helped grow the theater's reputation as one of Israel's leading regional companies."
+    }
+  ],
+  "israel-aerospace-industries": [
+    {
+      "id": "person-al-schwimmer",
+      "name": "Al Schwimmer",
+      "role": "Founder",
+      "bio": "American-Israeli aviation pioneer who founded Israel Aerospace Industries in 1953. He previously helped supply aircraft to Israel during the 1948 War of Independence."
+    },
+    {
+      "id": "person-boaz-levy",
+      "name": "Boaz Levy",
+      "role": "President and CEO",
+      "bio": "President and CEO of Israel Aerospace Industries since 2021. He previously served as EVP and GM of IAI's Systems, Missiles, and Space Group."
+    },
+    {
+      "id": "person-joseph-weiss",
+      "name": "Joseph Weiss",
+      "role": "Former President and CEO",
+      "bio": "Defense industry leader who served as president and CEO of Israel Aerospace Industries. He oversaw major defense and commercial aviation projects during his tenure."
+    },
+    {
+      "id": "person-amir-peretz",
+      "name": "Amir Peretz",
+      "role": "Chairman of the Board",
+      "bio": "Israeli politician and former defense minister who served as chairman of Israel Aerospace Industries' board of directors. He previously led the Israeli Labor Party."
+    }
+  ],
+  "sodastream": [
+    {
+      "id": "person-daniel-birnbaum",
+      "name": "Daniel Birnbaum",
+      "role": "Former CEO",
+      "bio": "Led SodaStream as CEO from 2007 to 2019, overseeing its transformation into a global brand. He navigated the company through BDS controversy and its $3.2 billion acquisition by PepsiCo in 2018."
+    },
+    {
+      "id": "person-eyal-shohat",
+      "name": "Eyal Shohat",
+      "role": "CEO",
+      "bio": "Business executive who served as CEO of SodaStream, leading the company's operations under PepsiCo ownership. He focused on the brand's sustainability mission and global expansion."
+    },
+    {
+      "id": "person-guy-gilboa",
+      "name": "Guy Gilboa",
+      "role": "Co-CEO",
+      "bio": "Executive who served in senior leadership at SodaStream, managing its consumer business and product innovation strategy. He helped drive the company's product development efforts."
+    },
+    {
+      "id": "person-gilad-gans",
+      "name": "Gilad Gans",
+      "role": "VP of Global Marketing",
+      "bio": "Marketing executive at SodaStream who helped drive the brand's global campaigns. He promoted home carbonation as an eco-friendly alternative to single-use plastic bottles."
+    }
+  ]
+}

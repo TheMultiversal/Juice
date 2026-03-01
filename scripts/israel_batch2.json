@@ -1,0 +1,159 @@
+{
+  "yedioth-ahronoth": [
+    {"id": "noni-mozes", "name": "Noni Mozes", "role": "Publisher & Owner", "bio": "Longtime publisher of Yedioth Ahronoth who inherited control of the newspaper from his father Noah Mozes."},
+    {"id": "ron-yaron", "name": "Ron Yaron", "role": "CEO, Yedioth Ahronoth Group", "bio": "Chief executive overseeing the operations of the Yedioth Ahronoth media group including its digital properties."},
+    {"id": "nahum-barnea", "name": "Nahum Barnea", "role": "Senior Columnist", "bio": "Award-winning journalist and Israel Prize laureate known as one of Israel's most influential political commentators."},
+    {"id": "yoel-esteron", "name": "Yoel Esteron", "role": "Former Editor-in-Chief", "bio": "Veteran Israeli journalist who served as editor-in-chief and later founded The Marker financial newspaper."}
+  ],
+  "delek-group": [
+    {"id": "yitzhak-tshuva", "name": "Yitzhak Tshuva", "role": "Controlling Shareholder & Chairman", "bio": "Israeli billionaire businessman who built Delek Group into a major energy and infrastructure conglomerate."},
+    {"id": "idan-wallace", "name": "Idan Wallace", "role": "CEO", "bio": "Chief executive officer leading Delek Group's strategic operations across energy, infrastructure, and financial services."},
+    {"id": "barak-mashraki", "name": "Barak Mashraki", "role": "CFO", "bio": "Chief financial officer responsible for the financial management and reporting of Delek Group's diversified portfolio."},
+    {"id": "asi-bartfeld", "name": "Asi Bartfeld", "role": "Former CEO", "bio": "Former chief executive who helped guide Delek Group through significant expansion in the natural gas sector."}
+  ],
+  "tnuva": [
+    {"id": "eyal-malis", "name": "Eyal Malis", "role": "CEO", "bio": "Chief executive officer of Tnuva, Israel's largest food manufacturer and distributor."},
+    {"id": "arik-reichman", "name": "Arik Reichman", "role": "Former CEO", "bio": "Former chief executive who led Tnuva during a period of significant corporate transformation and international ownership changes."},
+    {"id": "haim-gavrieli", "name": "Haim Gavrieli", "role": "Chairman", "bio": "Chairman of Tnuva's board of directors overseeing corporate governance of the dairy and food giant."},
+    {"id": "pini-weinstein", "name": "Pini Weinstein", "role": "VP Marketing", "bio": "Senior marketing executive responsible for Tnuva's iconic brand positioning in the Israeli food market."}
+  ],
+  "strauss-group": [
+    {"id": "ofra-strauss", "name": "Ofra Strauss", "role": "Chairperson", "bio": "Third-generation leader of the Strauss family who chairs Strauss Group, one of Israel's largest food and beverage companies."},
+    {"id": "giora-bardea", "name": "Giora Bardea", "role": "CEO", "bio": "Chief executive officer managing Strauss Group's international food and coffee operations across multiple markets."},
+    {"id": "michael-strauss", "name": "Michael Strauss", "role": "Honorary Chairman", "bio": "Second-generation patriarch who expanded Strauss from a small dairy into a global food and beverage conglomerate."},
+    {"id": "zion-balas", "name": "Zion Balas", "role": "CFO", "bio": "Chief financial officer overseeing Strauss Group's financial strategy and reporting for its global operations."}
+  ],
+  "bank-hapoalim": [
+    {"id": "dov-kotler", "name": "Dov Kotler", "role": "CEO", "bio": "Chief executive of Bank Hapoalim, Israel's largest bank by assets, leading its digital transformation and growth strategy."},
+    {"id": "ruben-krupik", "name": "Ruben Krupik", "role": "Chairman", "bio": "Chairman of the board of Bank Hapoalim overseeing governance of Israel's largest financial institution."},
+    {"id": "amir-tirosh", "name": "Amir Tirosh", "role": "Deputy CEO, Head of Corporate Division", "bio": "Senior executive heading the corporate banking division at Bank Hapoalim."},
+    {"id": "uri-levin", "name": "Uri Levin", "role": "CFO", "bio": "Chief financial officer responsible for financial strategy and regulatory reporting at Israel's biggest bank."}
+  ],
+  "snyk": [
+    {"id": "guy-podjarny", "name": "Guy Podjarny", "role": "Co-Founder & President", "bio": "Israeli-British entrepreneur who co-founded Snyk to help developers find and fix vulnerabilities in open-source code."},
+    {"id": "peter-mckay", "name": "Peter McKay", "role": "CEO", "bio": "Experienced technology executive who joined Snyk as CEO to scale the developer security platform globally."},
+    {"id": "assaf-hefetz", "name": "Assaf Hefetz", "role": "Co-Founder & CTO", "bio": "Co-founder serving as chief technology officer driving Snyk's core developer security technology platform."},
+    {"id": "danny-grander", "name": "Danny Grander", "role": "Co-Founder & VP of Security", "bio": "Co-founder who leads Snyk's security research team identifying vulnerabilities in open-source ecosystems."}
+  ],
+  "monday-com": [
+    {"id": "roy-mann", "name": "Roy Mann", "role": "Co-Founder & CEO", "bio": "Israeli entrepreneur who co-founded Monday.com and led it from a startup to a publicly traded work management platform."},
+    {"id": "eran-zinman", "name": "Eran Zinman", "role": "Co-Founder & CTO", "bio": "Co-founder and chief technology officer who built Monday.com's core technical architecture and engineering culture."},
+    {"id": "eliran-glazer", "name": "Eliran Glazer", "role": "CFO", "bio": "Chief financial officer who guided Monday.com through its successful IPO on NASDAQ in 2021."},
+    {"id": "vered-raviv-schwarz", "name": "Vered Raviv Schwarz", "role": "COO", "bio": "Chief operating officer managing Monday.com's business operations and corporate strategy."}
+  ],
+  "taboola": [
+    {"id": "adam-singolda", "name": "Adam Singolda", "role": "Founder & CEO", "bio": "Israeli entrepreneur who founded Taboola in 2007 and built it into one of the world's largest content discovery platforms."},
+    {"id": "stephen-walker", "name": "Stephen Walker", "role": "CFO", "bio": "Chief financial officer overseeing Taboola's financial strategy following its public listing via SPAC."},
+    {"id": "eldad-maniv", "name": "Eldad Maniv", "role": "President & COO", "bio": "President and chief operating officer managing day-to-day operations of Taboola's global ad-tech business."},
+    {"id": "lior-golan", "name": "Lior Golan", "role": "CTO", "bio": "Chief technology officer leading Taboola's engineering and AI-driven content recommendation algorithms."}
+  ],
+  "jfrog": [
+    {"id": "shlomi-ben-haim", "name": "Shlomi Ben Haim", "role": "Co-Founder & CEO", "bio": "Israeli entrepreneur who co-founded JFrog and led it to a successful NASDAQ IPO as a leading DevOps platform."},
+    {"id": "yoav-landman", "name": "Yoav Landman", "role": "Co-Founder & CTO", "bio": "Co-founder and chief technology officer who created JFrog Artifactory, the company's flagship binary repository manager."},
+    {"id": "fred-simon", "name": "Fred Simon", "role": "Co-Founder & Chief Architect", "bio": "Co-founder serving as chief architect responsible for the technical vision of JFrog's DevOps platform."},
+    {"id": "jacob-shulman", "name": "Jacob Shulman", "role": "CFO", "bio": "Chief financial officer who managed JFrog's financial operations during its rapid growth and public offering."}
+  ],
+  "israel-defense-forces-idf": [
+    {"id": "herzi-halevi", "name": "Herzi Halevi", "role": "Chief of the General Staff", "bio": "Lieutenant General serving as the 23rd Chief of the General Staff of the Israel Defense Forces since January 2023."},
+    {"id": "yair-golan", "name": "Yair Golan", "role": "Former Deputy Chief of Staff", "bio": "Major General who served as Deputy Chief of the IDF General Staff and later entered Israeli politics."},
+    {"id": "aviv-kohavi", "name": "Aviv Kohavi", "role": "Former Chief of the General Staff", "bio": "Lieutenant General who served as the 22nd Chief of the General Staff of the IDF from 2019 to 2023."},
+    {"id": "gadi-eisenkot", "name": "Gadi Eisenkot", "role": "Former Chief of the General Staff", "bio": "Lieutenant General who served as the 21st Chief of the General Staff and later became an Israeli government minister."},
+    {"id": "yehuda-fox", "name": "Yehuda Fox", "role": "Deputy Chief of Staff", "bio": "Major General serving as Deputy Chief of the IDF General Staff responsible for operational coordination."}
+  ],
+  "playtika": [
+    {"id": "robert-antokol", "name": "Robert Antokol", "role": "Co-Founder & CEO", "bio": "Israeli entrepreneur who co-founded Playtika and grew it into one of the world's largest mobile gaming companies."},
+    {"id": "uri-shahak", "name": "Uri Shahak", "role": "Co-Founder & COO", "bio": "Co-founder and chief operating officer who helped build Playtika from a startup into a gaming industry giant."},
+    {"id": "craig-abrahams", "name": "Craig Abrahams", "role": "President & CFO", "bio": "President and chief financial officer who led Playtika through its IPO on the NASDAQ exchange in 2021."},
+    {"id": "nir-korczak", "name": "Nir Korczak", "role": "CMO", "bio": "Chief marketing officer responsible for Playtika's user acquisition and brand strategy across its mobile gaming portfolio."}
+  ],
+  "israel-discount-bank": [
+    {"id": "uri-levin", "name": "Uri Levin", "role": "CEO", "bio": "Chief executive officer leading Israel Discount Bank, one of the country's three largest commercial banks."},
+    {"id": "david-levi", "name": "David Levi", "role": "Chairman", "bio": "Chairman of the board of directors at Israel Discount Bank overseeing corporate governance and strategy."},
+    {"id": "ruth-farkash", "name": "Ruth Farkash", "role": "Deputy CEO", "bio": "Deputy chief executive officer responsible for retail banking operations at Israel Discount Bank."},
+    {"id": "mordechai-teri", "name": "Mordechai Teri", "role": "CFO", "bio": "Chief financial officer managing financial reporting and regulatory compliance at Israel Discount Bank."}
+  ],
+  "payoneer": [
+    {"id": "john-caplan", "name": "John Caplan", "role": "CEO", "bio": "Chief executive officer of Payoneer who joined to scale the global payments and commerce platform for cross-border businesses."},
+    {"id": "yuval-tal", "name": "Yuval Tal", "role": "Founder", "bio": "Israeli fintech entrepreneur who founded Payoneer in 2005 to simplify cross-border payments for businesses worldwide."},
+    {"id": "scott-galit", "name": "Scott Galit", "role": "Former CEO", "bio": "Former chief executive who led Payoneer through a decade of growth and its public listing via SPAC merger."},
+    {"id": "bea-ordonez", "name": "Bea Ordonez", "role": "CFO", "bio": "Chief financial officer overseeing Payoneer's financial and treasury operations as a publicly traded fintech company."}
+  ],
+  "shin-bet-israel-security-agency": [
+    {"id": "ronen-bar", "name": "Ronen Bar", "role": "Director of Shin Bet", "bio": "Head of the Israel Security Agency (Shin Bet) appointed in 2021 to lead Israel's domestic intelligence service."},
+    {"id": "nadav-argaman", "name": "Nadav Argaman", "role": "Former Director of Shin Bet", "bio": "Former head of Shin Bet who led the agency from 2016 to 2021 during a period of evolving security threats."},
+    {"id": "yoram-cohen", "name": "Yoram Cohen", "role": "Former Director of Shin Bet", "bio": "Former director of the Israel Security Agency who served from 2011 to 2016."},
+    {"id": "yuval-diskin", "name": "Yuval Diskin", "role": "Former Director of Shin Bet", "bio": "Former head of Shin Bet from 2005 to 2011 who became a prominent critic of Israeli government policy after retirement."}
+  ],
+  "cave-of-the-patriarchs-hebron": [
+    {"id": "abraham", "name": "Abraham", "role": "Patriarch", "bio": "Biblical patriarch believed to be buried at the site, revered as the father of monotheism in Judaism, Christianity, and Islam."},
+    {"id": "sarah", "name": "Sarah", "role": "Matriarch", "bio": "Biblical matriarch and wife of Abraham, traditionally believed to be interred at the Cave of Machpelah in Hebron."},
+    {"id": "herod-the-great", "name": "Herod the Great", "role": "Builder of the Enclosure", "bio": "King of Judea who constructed the monumental stone enclosure over the Cave of the Patriarchs around 31 BCE."},
+    {"id": "saladin", "name": "Saladin", "role": "Conqueror & Patron", "bio": "Muslim sultan who recaptured Hebron in 1187 and converted part of the Herodian structure into a mosque."}
+  ],
+  "temple-mount-haram-al-sharif": [
+    {"id": "solomon", "name": "Solomon", "role": "Builder of the First Temple", "bio": "Biblical king of Israel credited with constructing the First Temple on the Temple Mount in Jerusalem around 957 BCE."},
+    {"id": "abd-al-malik-ibn-marwan", "name": "Abd al-Malik ibn Marwan", "role": "Builder of the Dome of the Rock", "bio": "Umayyad caliph who commissioned the Dome of the Rock on the Temple Mount, completed around 691 CE."},
+    {"id": "herod-the-great", "name": "Herod the Great", "role": "Builder of the Second Temple Platform", "bio": "King of Judea who massively expanded the Second Temple and its platform creating the Temple Mount as it exists today."},
+    {"id": "muhammad-ahmad-hussein", "name": "Muhammad Ahmad Hussein", "role": "Grand Mufti of Jerusalem", "bio": "Grand Mufti of Jerusalem and senior Islamic authority overseeing religious affairs at the Haram al-Sharif compound."}
+  ],
+  "israel-chemicals-ltd-icl": [
+    {"id": "raviv-zoller", "name": "Raviv Zoller", "role": "President & CEO", "bio": "Chief executive officer leading ICL Group's global specialty minerals and chemicals operations."},
+    {"id": "aviram-lahav", "name": "Aviram Lahav", "role": "CFO", "bio": "Chief financial officer responsible for ICL's financial management and investor relations."},
+    {"id": "johanan-locker", "name": "Johanan Locker", "role": "Chairman", "bio": "Chairman of the board of ICL Group overseeing corporate governance of the global specialty minerals company."},
+    {"id": "elampara-raja", "name": "Elampara Raja", "role": "President, Industrial Products", "bio": "Division president overseeing ICL's industrial products business segment and global operations."}
+  ],
+  "nso-group": [
+    {"id": "shalev-hulio", "name": "Shalev Hulio", "role": "Co-Founder & Former CEO", "bio": "Israeli entrepreneur who co-founded NSO Group and developed the Pegasus spyware used by governments worldwide."},
+    {"id": "omri-lavie", "name": "Omri Lavie", "role": "Co-Founder", "bio": "Co-founder of NSO Group who helped create the company's controversial cyber intelligence technology."},
+    {"id": "yaron-shohat", "name": "Yaron Shohat", "role": "CEO", "bio": "Chief executive officer who took over leadership of NSO Group amid international scrutiny over the Pegasus spyware."},
+    {"id": "niv-carmi", "name": "Niv Carmi", "role": "Co-Founder", "bio": "Third co-founder of NSO Group whose initials along with those of his co-founders form the company's name."}
+  ],
+  "masada-national-park": [
+    {"id": "herod-the-great", "name": "Herod the Great", "role": "Builder of the Fortress", "bio": "King of Judea who built the lavish palace-fortress complex atop Masada between 37 and 31 BCE."},
+    {"id": "elazar-ben-yair", "name": "Elazar Ben Yair", "role": "Leader of the Jewish Revolt at Masada", "bio": "Jewish Sicarii leader who commanded the final stand of 960 Jewish rebels against Rome at Masada in 73 CE."},
+    {"id": "yigael-yadin", "name": "Yigael Yadin", "role": "Lead Archaeologist", "bio": "Renowned Israeli archaeologist who led the landmark excavation of Masada from 1963 to 1965, uncovering its ancient remains."},
+    {"id": "flavius-josephus", "name": "Flavius Josephus", "role": "Historian", "bio": "Romano-Jewish historian whose writings in 'The Jewish War' provide the primary account of the siege and fall of Masada."}
+  ],
+  "ahava-dead-sea-laboratories": [
+    {"id": "eliezer-kostiner", "name": "Eliezer Kostiner", "role": "Former CEO", "bio": "Former chief executive who led Ahava's growth as a premium Dead Sea mineral cosmetics brand in global markets."},
+    {"id": "yaacov-kirshenbaum", "name": "Yaacov Kirshenbaum", "role": "Co-Founder", "bio": "Co-founder of Ahava who helped establish the company to commercialize Dead Sea minerals for skincare products."},
+    {"id": "zvi-jonish", "name": "Zvi Jonish", "role": "CEO", "bio": "Chief executive officer leading Ahava Dead Sea Laboratories' international beauty and skincare operations."},
+    {"id": "tova-levin", "name": "Tova Levin", "role": "VP of R&D", "bio": "Head of research and development directing Ahava's innovation in Dead Sea mineral-based cosmetic formulations."}
+  ],
+  "check-point-software-technologies": [
+    {"id": "gil-shwed", "name": "Gil Shwed", "role": "Founder & Executive Chairman", "bio": "Israeli billionaire technologist who co-founded Check Point in 1993 and invented the first commercial firewall."},
+    {"id": "nadav-zafrir", "name": "Nadav Zafrir", "role": "CEO", "bio": "Former commander of IDF Unit 8200 who became CEO of Check Point Software Technologies."},
+    {"id": "shlomo-kramer", "name": "Shlomo Kramer", "role": "Co-Founder", "bio": "Serial cybersecurity entrepreneur who co-founded Check Point and later founded Imperva and Cato Networks."},
+    {"id": "marius-nacht", "name": "Marius Nacht", "role": "Co-Founder & Vice Chairman", "bio": "Co-founder and vice chairman of Check Point who helped build it into the world's leading network security company."}
+  ],
+  "bezalel-academy-of-arts-and-design": [
+    {"id": "boris-schatz", "name": "Boris Schatz", "role": "Founder", "bio": "Bulgarian-born sculptor who founded the Bezalel School of Arts and Crafts in Jerusalem in 1906."},
+    {"id": "adi-stern", "name": "Adi Stern", "role": "President", "bio": "President of Bezalel Academy leading the institution as one of the most prestigious art and design schools in the Middle East."},
+    {"id": "ran-morin", "name": "Ran Morin", "role": "Former Dean of Fine Arts", "bio": "Prominent Israeli sculptor and educator who served as dean of the Fine Arts department at Bezalel Academy."},
+    {"id": "mike-turner", "name": "Mike Turner", "role": "Former Dean of Architecture", "bio": "Renowned Israeli architect and UNESCO advisor who served as dean of architecture at Bezalel Academy."}
+  ],
+  "israeli-wine-industry": [
+    {"id": "baron-edmond-de-rothschild", "name": "Baron Edmond de Rothschild", "role": "Pioneer & Patron", "bio": "French-Jewish philanthropist who founded Carmel Winery in 1882, launching the modern Israeli wine industry."},
+    {"id": "eli-ben-zaken", "name": "Eli Ben Zaken", "role": "Founder, Domaine du Castel", "bio": "Pioneer vintner who founded Domaine du Castel and helped spark the Israeli boutique wine revolution in the 1990s."},
+    {"id": "david-ziv", "name": "David Ziv", "role": "CEO, Carmel Winery", "bio": "Chief executive of Carmel Winery, Israel's oldest and largest wine producer."},
+    {"id": "yair-margalit", "name": "Yair Margalit", "role": "Winemaker & Author", "bio": "Physicist-turned-winemaker and author of key books on Israeli winemaking who helped professionalize the industry."}
+  ],
+  "world-jewish-congress-israel-office": [
+    {"id": "ronald-lauder", "name": "Ronald Lauder", "role": "President, World Jewish Congress", "bio": "American billionaire businessman and philanthropist serving as president of the World Jewish Congress since 2007."},
+    {"id": "robert-singer", "name": "Robert Singer", "role": "Former CEO & Executive Vice President", "bio": "Former chief executive of the World Jewish Congress who managed the organization's global operations."},
+    {"id": "maram-stern", "name": "Maram Stern", "role": "Acting CEO", "bio": "Senior diplomat serving as acting CEO of the World Jewish Congress coordinating global Jewish community advocacy."},
+    {"id": "evelyn-sommer", "name": "Evelyn Sommer", "role": "Chair, North American Section", "bio": "Longtime leader and chair of the World Jewish Congress North American section championing Jewish advocacy worldwide."}
+  ],
+  "iec-israel-electric-corporation": [
+    {"id": "meir-spiegler", "name": "Meir Spiegler", "role": "CEO", "bio": "Chief executive officer of the Israel Electric Corporation, the country's primary electricity generation and distribution utility."},
+    {"id": "yiftah-ron-tal", "name": "Yiftah Ron-Tal", "role": "Former Chairman", "bio": "Former chairman of the board of the Israel Electric Corporation who led corporate restructuring efforts."},
+    {"id": "ofer-bloch", "name": "Ofer Bloch", "role": "Former CEO", "bio": "Former chief executive who oversaw major infrastructure modernization projects at Israel Electric Corporation."},
+    {"id": "pinhas-rutenberg", "name": "Pinhas Rutenberg", "role": "Founder", "bio": "Russian-born Zionist engineer who founded the Palestine Electric Company in 1923, the precursor to IEC."}
+  ],
+  "jewish-national-fund-keren-kayemeth-leisrael-kkl-jnf": [
+    {"id": "theodor-herzl", "name": "Theodor Herzl", "role": "Visionary Founder", "bio": "Father of modern political Zionism who proposed the establishment of a national fund at the Fifth Zionist Congress in 1901."},
+    {"id": "johann-kremenezky", "name": "Johann Kremenezky", "role": "First President of KKL", "bio": "Austrian industrialist who served as the first president of the Jewish National Fund from its founding in 1901."},
+    {"id": "avraham-duvdevani", "name": "Avraham Duvdevani", "role": "Chairman", "bio": "Chairman of KKL-JNF overseeing Israel's largest land development and environmental organization."},
+    {"id": "yehiel-leket", "name": "Yehiel Leket", "role": "Director General", "bio": "Director general managing KKL-JNF's operations including afforestation, water management, and land development across Israel."}
+  ]
+}

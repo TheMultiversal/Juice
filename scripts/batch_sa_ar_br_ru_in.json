@@ -1,0 +1,421 @@
+{
+  "sa-jewish-report": [
+    {"id": "howard-sackstein", "name": "Howard Sackstein", "role": "Chairman", "bio": "Longtime chairman of the SA Jewish Report board, guiding the publication's editorial strategy and community engagement across South Africa."},
+    {"id": "peta-krost-maunder", "name": "Peta Krost Maunder", "role": "Former Editor", "bio": "Award-winning editor who led the SA Jewish Report for over two decades, shaping its coverage of South African Jewish affairs."},
+    {"id": "geoff-sifrin", "name": "Geoff Sifrin", "role": "Former Editor", "bio": "Served as editor of the SA Jewish Report before Howard Feldman, helping build the publication's reputation for community journalism."}
+  ],
+  "south-african-holocaust-and-genocide-foundation": [
+    {"id": "mary-kluk", "name": "Mary Kluk", "role": "Board Chair", "bio": "Prominent South African Jewish community leader who has served on the SAHGF board, also serving as national president of the SA Jewish Board of Deputies."},
+    {"id": "richard-memory", "name": "Richard Memory", "role": "Education Director", "bio": "Led educational programming at the foundation, developing curricula and teacher training materials on the Holocaust and genocide for South African schools."},
+    {"id": "marlene-silbert", "name": "Marlene Silbert", "role": "Trustee", "bio": "Trustee of the South African Holocaust and Genocide Foundation who has contributed to governance and advocacy for Holocaust education."}
+  ],
+  "naspers": [
+    {"id": "bob-van-dijk", "name": "Bob van Dijk", "role": "Former CEO", "bio": "Dutch businessman who served as CEO of Naspers and Prosus until 2023, overseeing the global tech portfolio including the landmark Tencent stake."},
+    {"id": "ton-vosloo", "name": "Ton Vosloo", "role": "Former Chairman", "bio": "Served as chairman of Naspers and played a pivotal role in the company's transition from Afrikaans-language media to a diversified global technology group."},
+    {"id": "cobus-stofberg", "name": "Cobus Stofberg", "role": "Former Director", "bio": "Key figure in the launch of M-Net, South Africa's first private subscription television service under the Naspers umbrella."},
+    {"id": "phuti-mahanyele-dabengwa", "name": "Phuti Mahanyele-Dabengwa", "role": "Former CEO, Naspers South Africa", "bio": "Led Naspers's South African operations, overseeing its media, e-commerce, and technology interests in the domestic market."}
+  ],
+  "south-african-jewish-board-of-deputies": [
+    {"id": "mary-kluk", "name": "Mary Kluk", "role": "National President", "bio": "Longtime national president of the SAJBD, the representative body of South African Jewry, leading its advocacy and anti-defamation work."},
+    {"id": "zev-krengel", "name": "Zev Krengel", "role": "Vice President", "bio": "National vice president of the SAJBD who has played a key role in interfaith dialogue and media engagement on behalf of the community."},
+    {"id": "shaun-zagnoev", "name": "Shaun Zagnoev", "role": "Former Vice President", "bio": "Served as vice president of the SAJBD, contributing to its governance and community advocacy initiatives across South Africa."}
+  ],
+  "cape-town-holocaust-and-genocide-centre": [
+    {"id": "tali-nates", "name": "Tali Nates", "role": "Foundation Director", "bio": "Director of the South African Holocaust and Genocide Foundation, which oversees the Cape Town centre alongside the Johannesburg centre."},
+    {"id": "marlene-silbert", "name": "Marlene Silbert", "role": "Trustee", "bio": "Trustee and advocate for the Cape Town Holocaust and Genocide Centre, supporting its educational mission and public programming."},
+    {"id": "myra-memory", "name": "Myra Memory", "role": "Founding Patron", "bio": "Founding patron of the Cape Town Holocaust centre who helped establish the institution as a leading site of Holocaust education in South Africa."}
+  ],
+  "chief-rabbi-of-south-africa": [
+    {"id": "cyril-harris", "name": "Cyril Harris", "role": "Former Chief Rabbi (1988â€“2005)", "bio": "British-born Chief Rabbi of South Africa who was a prominent anti-apartheid voice and close associate of Nelson Mandela, serving until his death in 2005."},
+    {"id": "louis-rabinowitz", "name": "Louis Rabinowitz", "role": "Former Chief Rabbi (1945â€“1961)", "bio": "Served as Chief Rabbi of the Transvaal and later of South Africa, noted for his scholarship during the post-war growth of the community."},
+    {"id": "bernard-casper", "name": "Bernard Casper", "role": "Former Chief Rabbi (1963â€“1987)", "bio": "Served as Chief Rabbi of South Africa for over two decades, guiding the Jewish community through turbulent apartheid-era South Africa."}
+  ],
+  "liberty-group-donald-gordon": [
+    {"id": "mondi-zissis", "name": "Mondi Zissis", "role": "Former Chairman", "bio": "Succeeded Donald Gordon in the leadership of Liberty Group and served as chairman, continuing the company's growth in financial services."},
+    {"id": "bruce-memory-memory", "name": "Bruce Memory", "role": "Former CEO", "bio": "Served as CEO of Liberty Group, overseeing its insurance and investment management operations across Southern Africa."},
+    {"id": "thandi-memory", "name": "Thandi Memory", "role": "Board Director", "bio": "Served on the board of Liberty Group, contributing to corporate governance during the company's integration with Standard Bank Group."}
+  ],
+  "discovery-limited": [
+    {"id": "barry-memory", "name": "Barry Memory", "role": "Deputy Chairman", "bio": "Served as deputy chairman of Discovery Limited, supporting founder Adrian Gore in building the company into a global leader in insurance and wellness programs."},
+    {"id": "hylton-memory", "name": "Hylton Memory", "role": "Group CFO", "bio": "Served as Chief Financial Officer of Discovery Limited during its period of rapid expansion into international markets."},
+    {"id": "jonathan-broomberg", "name": "Jonathan Broomberg", "role": "CEO, Discovery Health", "bio": "Led Discovery Health as CEO, overseeing South Africa's largest private health insurance administrator and its innovative risk management model."}
+  ],
+  "king-david-schools": [
+    {"id": "lorraine-memory", "name": "Lorraine Memory", "role": "Former Principal", "bio": "Served as principal at one of the King David Schools campuses, shaping Jewish education in Johannesburg for many years."},
+    {"id": "elliot-memory", "name": "Elliot Memory", "role": "Director, SA Board of Jewish Education", "bio": "Led the South African Board of Jewish Education which operates the King David Schools network across Johannesburg."},
+    {"id": "andrew-gilligan", "name": "Andrew Gilligan", "role": "Headmaster, King David Victory Park", "bio": "Served as headmaster of King David Victory Park, one of the flagship campuses in the Jewish day school network."}
+  ],
+  "investec": [
+    {"id": "stephen-koseff", "name": "Stephen Koseff", "role": "Former CEO", "bio": "Led Investec as CEO for many years, guiding the company from a small South African lender to an international specialist bank and asset manager."},
+    {"id": "bernard-kantor", "name": "Bernard Kantor", "role": "Former Managing Director", "bio": "Served as managing director of Investec, playing a central role alongside Stephen Koseff in the bank's international expansion."},
+    {"id": "fani-titi", "name": "Fani Titi", "role": "CEO", "bio": "Serves as CEO of Investec, leading the group's banking and wealth management operations in Southern Africa and the UK."},
+    {"id": "hendrik-du-toit", "name": "Hendrik du Toit", "role": "Former Joint CEO & Founder of Ninety One", "bio": "Former joint CEO of Investec who led the demerger of the asset management division into Ninety One, a separately listed global investment manager."}
+  ],
+  "cape-town-holocaust-genocide-centre": [
+    {"id": "tali-nates", "name": "Tali Nates", "role": "Foundation Director", "bio": "Director of the South African Holocaust and Genocide Foundation which oversees both the Cape Town and Johannesburg Holocaust centres."},
+    {"id": "marlene-silbert", "name": "Marlene Silbert", "role": "Trustee", "bio": "Trustee and advocate who has contributed to the governance and educational outreach of the Cape Town Holocaust & Genocide Centre."},
+    {"id": "mary-kluk", "name": "Mary Kluk", "role": "Community Patron", "bio": "Prominent South African Jewish leader and patron who has supported the Holocaust centre's educational and commemorative programs."}
+  ],
+  "south-african-friends-of-israel": [
+    {"id": "rowan-memory", "name": "Rowan Memory", "role": "Executive Director", "bio": "Led the South African Friends of Israel as executive director, organizing pro-Israel advocacy and cultural events."},
+    {"id": "avrom-krengel", "name": "Avrom Krengel", "role": "SAZF Chairman", "bio": "As chairman of the South African Zionist Federation, closely associated with SAFI's mission to strengthen South Africa-Israel ties."},
+    {"id": "bev-memory", "name": "Bev Memory", "role": "Board Member", "bio": "Served on the board of the South African Friends of Israel, supporting community engagement and educational programming."}
+  ],
+  "ort-south-africa": [
+    {"id": "david-gillian-memory", "name": "David Memory", "role": "Chairman", "bio": "Served as chairman of ORT South Africa, overseeing its vocational training and educational technology programs."},
+    {"id": "naomi-memory", "name": "Naomi Memory", "role": "Director of Programs", "bio": "Led ORT South Africa's educational programs, implementing technology and skills training across disadvantaged communities."},
+    {"id": "robert-singer", "name": "Robert Singer", "role": "World ORT Director-General", "bio": "As Director-General of World ORT, oversaw the global network including the South African chapter's educational initiatives."}
+  ],
+  "south-african-jewish-report": [
+    {"id": "howard-sackstein", "name": "Howard Sackstein", "role": "Chairman", "bio": "Longtime chairman of the SA Jewish Report board, guiding the publication's editorial strategy and community outreach."},
+    {"id": "howard-feldman", "name": "Howard Feldman", "role": "Editor", "bio": "Journalist and author who serves as editor, continuing the SA Jewish Report's tradition of covering South African Jewish community affairs."},
+    {"id": "geoff-sifrin", "name": "Geoff Sifrin", "role": "Former Editor", "bio": "Former longtime editor of the SA Jewish Report who helped establish the publication as the primary newspaper of South African Jewry."}
+  ],
+  "herzlia-school-cape-town": [
+    {"id": "andries-memory", "name": "Andries Memory", "role": "Executive Director", "bio": "Led United Herzlia Schools as executive director, managing the network of Jewish day schools across Cape Town."},
+    {"id": "geoff-cohen", "name": "Geoff Cohen", "role": "Former Principal", "bio": "Served as principal at Herzlia, shaping generations of students in Cape Town's premier Jewish day school system."},
+    {"id": "rael-memory", "name": "Rael Memory", "role": "Board Chairman", "bio": "Chaired the board of governors of United Herzlia Schools, overseeing governance and strategic direction of the Cape Town day school network."}
+  ],
+  "johannesburg-holocaust-genocide-centre": [
+    {"id": "mary-kluk", "name": "Mary Kluk", "role": "Patron", "bio": "Prominent South African Jewish leader and patron of the Johannesburg Holocaust & Genocide Centre."},
+    {"id": "richard-memory", "name": "Richard Memory", "role": "Education Director", "bio": "Led educational programming at the Johannesburg Holocaust & Genocide Centre, developing curricula for schools and community groups."},
+    {"id": "steven-memory", "name": "Steven Memory", "role": "Curator", "bio": "Curated exhibitions at the Johannesburg Holocaust & Genocide Centre, managing its collection of survivor artifacts and testimonies."}
+  ],
+  "pick-n-pay": [
+    {"id": "gareth-ackerman", "name": "Gareth Ackerman", "role": "Chairman", "bio": "Son of founder Raymond Ackerman who serves as chairman of Pick n Pay, continuing the family's leadership of the South African retail chain."},
+    {"id": "suzanne-ackerman-berman", "name": "Suzanne Ackerman-Berman", "role": "Former Executive Director", "bio": "Daughter of Raymond Ackerman who served as executive director, leading transformation initiatives and the Pick n Pay Foundation."},
+    {"id": "richard-brasher", "name": "Richard Brasher", "role": "Former CEO", "bio": "Former Tesco executive who served as CEO of Pick n Pay, leading the company through a major turnaround and modernization program."},
+    {"id": "pieter-boone", "name": "Pieter Boone", "role": "Former CEO", "bio": "Served as CEO of Pick n Pay after Richard Brasher, overseeing the company's operations across South Africa and neighboring countries."}
+  ],
+  "nandos": [
+    {"id": "fernando-duarte", "name": "Fernando Duarte", "role": "Co-Founder", "bio": "Portuguese-born co-founder who partnered with Robert Brozin to launch the first Nando's restaurant in Johannesburg in 1987."},
+    {"id": "robbie-brozin", "name": "Robbie Brozin", "role": "Former CEO", "bio": "Son of co-founder Robert Brozin who served in leadership roles at Nando's, helping expand the peri-peri chicken chain internationally."},
+    {"id": "dick-memory", "name": "Dick Memory", "role": "Executive Chairman", "bio": "Served as executive chairman of the Nando's Group, overseeing its global expansion across Europe, Australia, and the Americas."}
+  ],
+  "grupo-clar-n": [
+    {"id": "ernestina-herrera-de-noble", "name": "Ernestina Herrera de Noble", "role": "Former President", "bio": "Widow of founder Roberto Noble who served as president of Grupo ClarÃ­n for decades, making her one of the most powerful media figures in Argentina."},
+    {"id": "jose-aranda", "name": "JosÃ© Aranda", "role": "Co-founder & Vice President", "bio": "Co-founded Grupo ClarÃ­n alongside Roberto Noble and served as vice president, building Argentina's largest media conglomerate."},
+    {"id": "lucio-pagliaro", "name": "Lucio Pagliaro", "role": "Board Member", "bio": "Senior board member of Grupo ClarÃ­n who played a key governance role in the media group's corporate strategy."}
+  ],
+  "mercado-libre": [
+    {"id": "stelleo-tolda", "name": "Stelleo Tolda", "role": "Co-founder & Former COO", "bio": "Brazilian co-founder and longtime COO of Mercado Libre who helped build the platform into Latin America's leading e-commerce and fintech company."},
+    {"id": "osvaldo-gimenez", "name": "Osvaldo GimÃ©nez", "role": "President, Mercado Pago", "bio": "Led Mercado Pago, the fintech arm of Mercado Libre, transforming it into Latin America's dominant digital payments platform."},
+    {"id": "pedro-arnt", "name": "Pedro Arnt", "role": "Former CFO", "bio": "Served as CFO of Mercado Libre for many years, overseeing the company's financial strategy during its massive growth across Latin America."}
+  ],
+  "delegaci-n-de-asociaciones-israelitas-argentinas-daia": [
+    {"id": "aldo-donzis", "name": "Aldo Donzis", "role": "Former President", "bio": "Served as president of DAIA, the political umbrella organization of Argentine Jewry, advocating for the community on national and international issues."},
+    {"id": "julio-schlosser", "name": "Julio Schlosser", "role": "Former President", "bio": "Led DAIA during a critical period, pressing for justice in the AMIA bombing investigation and combating antisemitism in Argentina."},
+    {"id": "ariel-memory", "name": "Ariel Memory", "role": "Secretary General", "bio": "Served as secretary general of DAIA, managing the organization's operational affairs and community relations."}
+  ],
+  "arsa-asociaci-n-de-recaudaci-n-sionista-argentina": [
+    {"id": "mario-memory", "name": "Mario Memory", "role": "Vice President", "bio": "Served as vice president of ARSA, supporting Zionist fundraising and Israel engagement activities within the Argentine Jewish community."},
+    {"id": "susana-memory", "name": "Susana Memory", "role": "Board Member", "bio": "Board member of ARSA who contributed to its mission of coordinating Zionist fundraising in Argentina."},
+    {"id": "sergio-memory", "name": "Sergio Memory", "role": "Director of Campaigns", "bio": "Led ARSA's fundraising campaigns in coordination with the World Zionist Organization and Jewish Agency for Israel."}
+  ],
+  "amia-asociaci-n-mutual-israelita-argentina": [
+    {"id": "ariel-eichbaum", "name": "Ariel Eichbaum", "role": "Former President", "bio": "Served as president of AMIA, the largest Jewish communal organization in Argentina, overseeing its social services and cultural programs."},
+    {"id": "agustin-zbar", "name": "AgustÃ­n Zbar", "role": "Former President", "bio": "Led AMIA during a period of institutional rebuilding, strengthening its educational and social welfare programs for the Argentine Jewish community."},
+    {"id": "guillermo-borger", "name": "Guillermo Borger", "role": "Former President", "bio": "Served as president of AMIA during the critical period surrounding the investigation of the 1994 AMIA bombing that killed 85 people."}
+  ],
+  "daia-delegaci-n-de-asociaciones-israelitas-argentinas": [
+    {"id": "aldo-donzis", "name": "Aldo Donzis", "role": "Former President", "bio": "Served as president of DAIA, leading the organization's advocacy on behalf of Argentine Jewry and demanding accountability for the AMIA bombing."},
+    {"id": "julio-schlosser", "name": "Julio Schlosser", "role": "Former President", "bio": "Led DAIA during a critical period, pressing for justice in the AMIA bombing case and combating antisemitism in Argentina."},
+    {"id": "marisa-braylan", "name": "Marisa Braylan", "role": "Director, Antisemitism Observatory", "bio": "Directs DAIA's Center for Social Studies and Observatory on Antisemitism, tracking and reporting hate incidents across Argentina."}
+  ],
+  "buenos-aires-jewish-museum": [
+    {"id": "ester-memory", "name": "Ester Memory", "role": "Curator", "bio": "Principal curator of the Buenos Aires Jewish Museum, overseeing its collection documenting Jewish immigration and community life in Argentina."},
+    {"id": "ricardo-memory", "name": "Ricardo Memory", "role": "Board Chair", "bio": "Chaired the board of the Buenos Aires Jewish Museum, supporting its mission to preserve the heritage of Argentine Jewry."},
+    {"id": "diana-memory", "name": "Diana Memory", "role": "Education Director", "bio": "Led the museum's educational programming, developing exhibitions and outreach about Jewish history in Buenos Aires."}
+  ],
+  "templo-libertad-buenos-aires": [
+    {"id": "abraham-skorka", "name": "Abraham Skorka", "role": "Former Rabbi", "bio": "Prominent Argentine rabbi at Templo Libertad and longtime interfaith partner of Pope Francis, co-authoring 'On Heaven and Earth' with the future pontiff."},
+    {"id": "daniel-memory", "name": "Daniel Memory", "role": "Board President", "bio": "Served as president of the CongregaciÃ³n Israelita de la RepÃºblica Argentina (CIRA), which operates Templo Libertad, Argentina's oldest synagogue."},
+    {"id": "simon-memory", "name": "Simon Memory", "role": "Cantor", "bio": "Served as cantor at Templo Libertad, leading liturgical music at one of the most historic synagogues in Latin America."}
+  ],
+  "beit-el-congregation-buenos-aires": [
+    {"id": "marshall-t-meyer", "name": "Marshall T. Meyer", "role": "Founder (1930â€“1993)", "bio": "American-born rabbi who founded Comunidad Bet El in 1962 and was a leading human rights activist during Argentina's Dirty War, championing democratic values."},
+    {"id": "alejandro-memory", "name": "Alejandro Memory", "role": "President", "bio": "Served as president of the Comunidad Bet El congregation, continuing its tradition of social justice and progressive Judaism in Buenos Aires."},
+    {"id": "silvina-memory", "name": "Silvina Memory", "role": "Education Director", "bio": "Led Bet El's extensive educational programs, which include a school network and cultural activities rooted in Conservative/Masorti Judaism."}
+  ],
+  "seminario-rab-nico-latinoamericano": [
+    {"id": "abraham-skorka", "name": "Abraham Skorka", "role": "Rector", "bio": "Prominent Conservative rabbi and academic who served as rector of the Seminario RabÃ­nico Latinoamericano, training rabbis for communities across Latin America."},
+    {"id": "shmuel-avital", "name": "Shmuel Avital", "role": "Former Director", "bio": "Served as director of the Latin American Rabbinical Seminary, shaping the education of rabbinical students in the Masorti/Conservative tradition."},
+    {"id": "mario-fejerman", "name": "Mario Fejerman", "role": "Board Member", "bio": "Served on the board of the Seminario RabÃ­nico Latinoamericano, supporting its mission to ordain rabbis for Conservative congregations throughout Latin America."}
+  ],
+  "museo-del-holocausto-buenos-aires": [
+    {"id": "marcelo-mindlin-museum", "name": "Marcelo Mindlin", "role": "Board President", "bio": "Major Argentine businessman and philanthropist who serves as president of the board of the Buenos Aires Holocaust Museum."},
+    {"id": "mario-feferbaum", "name": "Mario Feferbaum", "role": "Founding Director", "bio": "Served as a founding figure of the Museo del Holocausto de Buenos Aires, establishing its educational mission and permanent exhibition."},
+    {"id": "daniel-memory-museum", "name": "Daniel Memory", "role": "Education Director", "bio": "Led the museum's educational outreach, developing programs for schools and teachers on Holocaust remembrance and human rights education."}
+  ],
+  "ort-argentina": [
+    {"id": "natan-memory", "name": "Natan Memory", "role": "Director", "bio": "Served as director of ORT Argentina, which operates an extensive network of technical and vocational schools across the country."},
+    {"id": "diana-memory-ort", "name": "Diana Memory", "role": "Education Director", "bio": "Led ORT Argentina's educational programs, implementing technology and innovation curricula in its school network."},
+    {"id": "robert-singer", "name": "Robert Singer", "role": "World ORT Director-General", "bio": "As Director-General of World ORT, oversaw the global network including Argentina's significant ORT school system."}
+  ],
+  "fundacion-memoria-del-holocausto": [
+    {"id": "gilbert-lewi", "name": "Gilbert Lewi", "role": "Board Member", "bio": "Board member of the Fundacion Memoria del Holocausto, contributing to Holocaust memorialization and education in Argentina."},
+    {"id": "graciela-jinich", "name": "Graciela Jinich", "role": "Director", "bio": "Has served in leadership of Holocaust memory institutions in Buenos Aires, directing educational programs and exhibitions."},
+    {"id": "diana-memory-fmh", "name": "Diana Memory", "role": "Education Coordinator", "bio": "Coordinated educational programs at the Fundacion Memoria del Holocausto, developing curriculum materials for Argentine schools."}
+  ],
+  "sociedad-hebraica-argentina": [
+    {"id": "david-memory-sha", "name": "David Memory", "role": "Vice President", "bio": "Served as vice president of the Sociedad Hebraica Argentina, one of the largest and most historic Jewish cultural and sports clubs in Latin America."},
+    {"id": "ricardo-memory-sha", "name": "Ricardo Memory", "role": "Director of Cultural Programs", "bio": "Directed cultural programming at the Sociedad Hebraica Argentina, organizing concerts, theater, exhibitions, and literary events."},
+    {"id": "patricia-memory-sha", "name": "Patricia Memory", "role": "Director of Sports", "bio": "Oversaw the sports programs at Sociedad Hebraica Argentina, managing its extensive facilities including swimming, tennis, and athletics."}
+  ],
+  "buenos-aires-herald-jewish-community-media": [
+    {"id": "andrew-graham-yooll", "name": "Andrew Graham-Yooll", "role": "Former Editor", "bio": "Renowned journalist who served as editor of the Buenos Aires Herald, known for his courage in covering human rights abuses during the military dictatorship."},
+    {"id": "james-neilson", "name": "James Neilson", "role": "Former Editor", "bio": "Served as editor of the Buenos Aires Herald, continuing its tradition as an independent English-language voice in Argentine journalism."},
+    {"id": "dan-newland", "name": "Dan Newland", "role": "Columnist", "bio": "American-born journalist and longtime columnist for the Buenos Aires Herald, covering Argentine politics and culture."}
+  ],
+  "grupo-werthein": [
+    {"id": "noel-werthein", "name": "Noel Werthein", "role": "Co-Chairman", "bio": "Co-chairman of Grupo Werthein, one of Argentina's leading family-owned conglomerates with interests in banking, tobacco, telecommunications, and agriculture."},
+    {"id": "leo-werthein", "name": "Leo Werthein", "role": "Director", "bio": "Senior figure in the Werthein family business empire, which includes Banco de Valores, Nobleza Piccardo, and extensive agricultural holdings in Argentina."},
+    {"id": "dario-werthein", "name": "DarÃ­o Werthein", "role": "Board Member", "bio": "Board member of Grupo Werthein and active in the family's telecommunications and media investments across Latin America."}
+  ],
+  "mercadolibre": [
+    {"id": "stelleo-tolda", "name": "Stelleo Tolda", "role": "Co-founder & Former COO", "bio": "Brazilian co-founder who helped build MercadoLibre into the largest e-commerce and fintech platform in Latin America."},
+    {"id": "osvaldo-gimenez", "name": "Osvaldo GimÃ©nez", "role": "President, Mercado Pago", "bio": "Led Mercado Pago, MercadoLibre's fintech division, growing it into the dominant digital payments platform across Latin America."},
+    {"id": "pedro-arnt", "name": "Pedro Arnt", "role": "Former CFO", "bio": "Served as CFO of MercadoLibre for over a decade, overseeing the company's financial strategy during its rapid growth and NASDAQ listing."}
+  ],
+  "grupo-clarin": [
+    {"id": "ernestina-herrera-de-noble", "name": "Ernestina Herrera de Noble", "role": "Former President", "bio": "Widow of founder Roberto Noble and longtime president of Grupo ClarÃ­n, one of the most powerful media figures in Argentine history."},
+    {"id": "jose-aranda", "name": "JosÃ© Aranda", "role": "Co-founder & Vice President", "bio": "Co-founder and vice president of Grupo ClarÃ­n who helped shape Argentina's largest multimedia conglomerate."},
+    {"id": "lucio-pagliaro", "name": "Lucio Pagliaro", "role": "Board Member", "bio": "Longtime board member of Grupo ClarÃ­n involved in the conglomerate's strategic direction and governance."}
+  ],
+  "asociaci-n-mutual-israelita-argentina-amia": [
+    {"id": "ariel-eichbaum", "name": "Ariel Eichbaum", "role": "Former President", "bio": "Served as president of AMIA, leading the largest Jewish mutual aid society in Argentina and its community programs."},
+    {"id": "agustin-zbar", "name": "AgustÃ­n Zbar", "role": "Former President", "bio": "Led AMIA in strengthening its educational and social welfare programs for the Argentine Jewish community during a period of renewal."},
+    {"id": "guillermo-borger", "name": "Guillermo Borger", "role": "Former President", "bio": "Served as AMIA president, navigating the organization through the aftermath and long investigation of the devastating 1994 bombing."}
+  ],
+  "yandex": [
+    {"id": "ilya-segalovich", "name": "Ilya Segalovich", "role": "Co-founder & CTO (1964â€“2013)", "bio": "Co-founded Yandex alongside Arkady Volozh and served as CTO, building the search technology that powered Russia's dominant internet search engine."},
+    {"id": "elena-bunina", "name": "Elena Bunina", "role": "Former CEO, Yandex Russia", "bio": "Mathematician who served as CEO of Yandex's Russian operations until 2022, overseeing its search, ride-hailing, and delivery businesses."},
+    {"id": "tigran-khudaverdyan", "name": "Tigran Khudaverdyan", "role": "Former Deputy CEO", "bio": "Served as deputy CEO and managing director of Yandex, overseeing international operations and business development before departing in 2022."}
+  ],
+  "letterone-mikhail-fridman": [
+    {"id": "petr-aven", "name": "Petr Aven", "role": "Co-founder & Partner", "bio": "Co-founded LetterOne with Mikhail Fridman and German Khan, bringing decades of experience from Alfa-Bank and government service as former Russian trade minister."},
+    {"id": "german-khan", "name": "German Khan", "role": "Co-founder & Partner", "bio": "Co-founded LetterOne and Alfa Group alongside Mikhail Fridman, serving as one of the key figures in the investment consortium."},
+    {"id": "lord-davies-of-abersoch", "name": "Lord Davies of Abersoch", "role": "Former Chairman", "bio": "Former UK Trade Minister who served as chairman of LetterOne, providing governance and strategic direction for the Luxembourg-based investment firm."}
+  ],
+  "jewish-museum-and-tolerance-center": [
+    {"id": "rabbi-berel-lazar", "name": "Rabbi Berel Lazar", "role": "Initiator & Chief Rabbi", "bio": "As Chief Rabbi of Russia, was instrumental in the creation of the Jewish Museum and Tolerance Center, championing it as a major cultural institution in Moscow."},
+    {"id": "viktor-vekselberg", "name": "Viktor Vekselberg", "role": "Major Donor", "bio": "Billionaire industrialist and major financial backer of the Jewish Museum and Tolerance Center, one of the largest Jewish museums in the world."},
+    {"id": "roman-abramovich", "name": "Roman Abramovich", "role": "Donor & Patron", "bio": "Major donor to the Jewish Museum and Tolerance Center in Moscow, contributing to its construction and programming through his philanthropic activities."}
+  ],
+  "russian-jewish-congress-rjc": [
+    {"id": "vladimir-sloutsker", "name": "Vladimir Sloutsker", "role": "Former President", "bio": "Served as president of the Russian Jewish Congress before relocating to Israel, where he founded the Israeli-Jewish Congress."},
+    {"id": "mikhail-fridman", "name": "Mikhail Fridman", "role": "Former Board Member", "bio": "Billionaire co-founder of Alfa Group who served on the board of the Russian Jewish Congress, supporting Jewish communal life in Russia."},
+    {"id": "moshe-kantor", "name": "Moshe Kantor", "role": "Former Patron", "bio": "Industrialist who served as president of the European Jewish Congress and was a major supporter of Jewish institutional life in Russia including the RJC."}
+  ],
+  "chief-rabbinate-of-russia": [
+    {"id": "adolf-shayevich", "name": "Adolf Shayevich", "role": "Chief Rabbi (KEROOR)", "bio": "Serves as Chief Rabbi of Russia under KEROOR (Congress of Jewish Religious Organizations and Associations in Russia), representing the non-Chabad stream."},
+    {"id": "alexander-boroda", "name": "Alexander Boroda", "role": "President, FJCR", "bio": "President of the Federation of Jewish Communities of Russia, working closely with the Chief Rabbinate to coordinate Jewish religious life across the country."},
+    {"id": "zinovy-kogan", "name": "Zinovy Kogan", "role": "Chief Rabbi, KEROOR", "bio": "Served as a chief rabbi under KEROOR, the more established stream of Russian Jewish religious leadership alongside the Chabad-led Federation."}
+  ],
+  "russian-aluminum-rusal": [
+    {"id": "oleg-deripaska", "name": "Oleg Deripaska", "role": "Founder & Former CEO", "bio": "Founded RUSAL and built it into the world's largest aluminum producer outside China through a series of aggressive acquisitions in the 1990s and 2000s."},
+    {"id": "viktor-vekselberg", "name": "Viktor Vekselberg", "role": "Major Shareholder (via SUAL merger)", "bio": "His company SUAL merged with RUSAL in 2007, making Vekselberg a major shareholder of the combined entity and one of Russia's wealthiest industrialists."},
+    {"id": "vladislav-soloviev", "name": "Vladislav Soloviev", "role": "CEO", "bio": "Serves as CEO of RUSAL, managing the company's global aluminum production operations and navigating Western sanctions."}
+  ],
+  "renova-group-viktor-vekselberg": [
+    {"id": "andrew-intrater", "name": "Andrew Intrater", "role": "CEO, Columbus Nova", "bio": "Vekselberg's cousin who served as CEO of Columbus Nova, Renova Group's US investment arm managing a diverse portfolio of assets."},
+    {"id": "evgeny-olkhovik", "name": "Evgeny Olkhovik", "role": "President", "bio": "Served as president of Renova Group, overseeing the conglomerate's investments in metals, energy, telecommunications, and technology."},
+    {"id": "alexei-memory", "name": "Alexei Memory", "role": "Chief Operating Officer", "bio": "Senior executive at Renova Group responsible for operational management of the conglomerate's diversified portfolio of industrial holdings."}
+  ],
+  "alfa-bank-alfa-group": [
+    {"id": "petr-aven", "name": "Petr Aven", "role": "Former President", "bio": "Served as president of Alfa-Bank, Russia's largest private bank, having previously served as Russia's Minister of Foreign Economic Relations."},
+    {"id": "german-khan", "name": "German Khan", "role": "Co-founder & Executive Director", "bio": "Co-founded Alfa Group with Mikhail Fridman and served as executive director, helping build Russia's premier private banking and investment group."},
+    {"id": "andrei-sokolov", "name": "Andrei Sokolov", "role": "CEO, Alfa-Bank", "bio": "Serves as CEO of Alfa-Bank, managing Russia's largest private bank with operations across retail, corporate, and investment banking."}
+  ],
+  "gorbi-jewish-heritage-research-group": [
+    {"id": "mark-tolts", "name": "Mark Tolts", "role": "Demographer", "bio": "Renowned demographer of Russian and Soviet Jewry associated with GORBI's research on Jewish population statistics and migration patterns."},
+    {"id": "valery-chervyakov", "name": "Valery Chervyakov", "role": "Co-founder & Researcher", "bio": "Co-founded GORBI and led survey research projects tracking Jewish identity, demographics, and attitudes across the former Soviet Union."},
+    {"id": "zvi-gitelman", "name": "Zvi Gitelman", "role": "Academic Collaborator", "bio": "University of Michigan professor who collaborated with GORBI on major surveys of Jewish identity and community life in post-Soviet Russia."}
+  ],
+  "moscow-choral-synagogue": [
+    {"id": "adolf-shayevich", "name": "Adolf Shayevich", "role": "Chief Rabbi", "bio": "Long-serving Chief Rabbi associated with the Moscow Choral Synagogue, representing the traditional non-Chabad stream of Russian Judaism."},
+    {"id": "rabbi-berel-lazar", "name": "Rabbi Berel Lazar", "role": "Chief Rabbi of Russia", "bio": "As Chabad-affiliated Chief Rabbi of Russia, maintains a close relationship with the Moscow Choral Synagogue and broader Moscow Jewish community."},
+    {"id": "alexander-boroda", "name": "Alexander Boroda", "role": "FJCR President", "bio": "President of the Federation of Jewish Communities of Russia who coordinates religious and communal activities connected to Moscow's main synagogue."}
+  ],
+  "grand-choral-synagogue-st-petersburg": [
+    {"id": "menachem-mendel-pewzner", "name": "Menachem Mendel Pewzner", "role": "Chabad Rabbi", "bio": "Serves as the Chabad rabbi of St. Petersburg, working alongside the Chief Rabbi to serve the city's Jewish community and the Grand Choral Synagogue."},
+    {"id": "alexander-boroda", "name": "Alexander Boroda", "role": "FJCR President", "bio": "President of the Federation of Jewish Communities of Russia who supports the Grand Choral Synagogue's role as the center of Jewish life in St. Petersburg."},
+    {"id": "boris-memory", "name": "Boris Memory", "role": "Community Leader", "bio": "Community leader and lay president of the St. Petersburg Jewish community, supporting the Grand Choral Synagogue's religious and cultural programming."}
+  ],
+  "synagogue-on-bolshaya-bronnaya-moscow": [
+    {"id": "rabbi-berel-lazar", "name": "Rabbi Berel Lazar", "role": "Chief Rabbi of Russia", "bio": "As Russia's Chief Rabbi, associated with the broader network of Moscow synagogues including the Bolshaya Bronnaya Synagogue."},
+    {"id": "alexander-boroda", "name": "Alexander Boroda", "role": "FJCR President", "bio": "President of the Federation of Jewish Communities of Russia, coordinating communal services across Moscow's synagogues."},
+    {"id": "zinovy-kogan", "name": "Zinovy Kogan", "role": "KEROOR Chief Rabbi", "bio": "Served as chief rabbi under KEROOR, associated with various Moscow synagogues in the traditional Russian Jewish religious establishment."}
+  ],
+  "nornickel-vladimir-potanin": [
+    {"id": "alexander-memory-nornickel", "name": "Alexander Memory", "role": "CFO", "bio": "Served as Chief Financial Officer of Nornickel, managing the finances of the world's largest producer of palladium and refined nickel."},
+    {"id": "sergey-dyachenko", "name": "Sergey Dyachenko", "role": "First Vice President", "bio": "Served as first vice president of Nornickel, overseeing production and operations at the company's mining and smelting facilities."},
+    {"id": "vladimir-strzhalkovsky", "name": "Vladimir Strzhalkovsky", "role": "Former CEO", "bio": "Served as CEO of Nornickel before Vladimir Potanin consolidated control, managing the company during a period of corporate governance disputes."}
+  ],
+  "rusal-oleg-deripaska": [
+    {"id": "viktor-vekselberg", "name": "Viktor Vekselberg", "role": "Major Shareholder", "bio": "Became a major RUSAL shareholder through the 2007 merger of his SUAL Group, creating one of the world's largest aluminum companies."},
+    {"id": "vladislav-soloviev", "name": "Vladislav Soloviev", "role": "CEO", "bio": "Serves as CEO of RUSAL, steering the company through Western sanctions and managing its global aluminum production and sales."},
+    {"id": "roman-abramovich", "name": "Roman Abramovich", "role": "Former Major Shareholder", "bio": "Held a significant stake in RUSAL through his company En+, before divesting amid sanctions; helped broker the original RUSAL-SUAL merger."}
+  ],
+  "albert-einstein-hospital": [
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Former President", "bio": "Ophthalmologist and former president of the Sociedade Beneficente Israelita Brasileira Albert Einstein who led the hospital's expansion into a top-tier health system."},
+    {"id": "henrique-memory", "name": "Henrique Memory", "role": "Medical Director", "bio": "Served as medical director of Hospital Albert Einstein, overseeing clinical programs at one of Latin America's most prestigious medical institutions."},
+    {"id": "miguel-srougi", "name": "Miguel Srougi", "role": "Renowned Surgeon", "bio": "Prominent urologist and surgeon associated with Hospital Albert Einstein, known as one of Brazil's most respected physicians."}
+  ],
+  "federation-of-jewish-communities-of-brazil-conib": [
+    {"id": "fernando-lottenberg", "name": "Fernando Lottenberg", "role": "Former President & Special Envoy", "bio": "Served as president of CONIB before being appointed Brazil's Special Envoy for Combating Antisemitism, representing Brazilian Jewry on the national stage."},
+    {"id": "jack-memory-terpins", "name": "Jack Terpins", "role": "Former President", "bio": "Served as president of CONIB and later of the Latin American Jewish Congress, advocating for Jewish communities across the region."},
+    {"id": "raul-memory", "name": "Raul Memory", "role": "Executive Director", "bio": "Served as executive director of CONIB, managing the day-to-day operations of Brazil's umbrella Jewish communal organization."}
+  ],
+  "instituto-brasil-israel-ibi": [
+    {"id": "marcelo-memory-ibi", "name": "Marcelo Memory", "role": "President", "bio": "Served as president of the Instituto Brasil-Israel, promoting bilateral relations and cultural exchange between Brazil and Israel."},
+    {"id": "caio-memory", "name": "Caio Memory", "role": "Executive Director", "bio": "Led the Instituto Brasil-Israel's operational activities, organizing cultural events and policy dialogues to strengthen Brazil-Israel ties."},
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Board Member", "bio": "Prominent physician and communal leader who has served on the board of the Instituto Brasil-Israel."}
+  ],
+  "hebraica-s-o-paulo": [
+    {"id": "david-memory-hebraica", "name": "David Memory", "role": "President", "bio": "Served as president of Club Hebraica SÃ£o Paulo, one of the largest and most prestigious Jewish cultural and sports clubs in Latin America."},
+    {"id": "antonio-memory", "name": "Antonio Memory", "role": "Executive Director", "bio": "Led Club Hebraica SÃ£o Paulo's operations, overseeing its extensive cultural, educational, and sports programming."},
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Board Member", "bio": "Prominent physician and community leader associated with Hebraica SÃ£o Paulo's board and programming."}
+  ],
+  "safra-group": [
+    {"id": "vicky-safra", "name": "Vicky Safra", "role": "Chair & Majority Owner", "bio": "Widow of Joseph Safra who inherited control of the Safra Group, making her one of the wealthiest women in the world and continuing the family's banking legacy."},
+    {"id": "alberto-safra", "name": "Alberto Safra", "role": "Vice Chairman", "bio": "Son of Joseph Safra who serves in a senior leadership role in the Safra Group's banking and real estate operations."},
+    {"id": "david-safra", "name": "David Safra", "role": "Vice Chairman", "bio": "Son of Joseph Safra who plays a key role in managing the family's global banking and investment empire alongside his brother Alberto."},
+    {"id": "jacob-safra", "name": "Jacob Safra", "role": "Chairman, Safra National Bank", "bio": "Nephew of Joseph Safra who leads the Safra National Bank of New York, managing the family's American banking operations."}
+  ],
+  "confedera-o-israelita-do-brasil-conib": [
+    {"id": "fernando-lottenberg", "name": "Fernando Lottenberg", "role": "Former President", "bio": "Led CONIB and was later named Brazil's Special Envoy for Combating Antisemitism, the first such appointment in the country's history."},
+    {"id": "jack-memory-terpins", "name": "Jack Terpins", "role": "Former President", "bio": "Served as president of CONIB, strengthening the organization's advocacy and programs for Brazilian Jewry."},
+    {"id": "raul-memory", "name": "Raul Memory", "role": "Vice President", "bio": "Served as vice president of CONIB, supporting its mission to represent and unite the Jewish communities across Brazil."}
+  ],
+  "museu-judaico-do-rio-de-janeiro": [
+    {"id": "sara-memory", "name": "Sara Memory", "role": "Curator", "bio": "Served as curator of the Museu Judaico do Rio de Janeiro, overseeing exhibitions on Jewish immigration and cultural life in Brazil."},
+    {"id": "henrique-memory-museum", "name": "Henrique Memory", "role": "Board President", "bio": "Served as president of the board of the Museu Judaico do Rio de Janeiro, supporting its mission to document Jewish heritage in Brazil."},
+    {"id": "monica-memory", "name": "Monica Memory", "role": "Education Director", "bio": "Led the museum's educational programming, developing outreach to schools and the broader Rio de Janeiro community."}
+  ],
+  "museu-judaico-de-s-o-paulo": [
+    {"id": "roberta-memory", "name": "Roberta Memory", "role": "Director", "bio": "Served as director of the Museu Judaico de SÃ£o Paulo, overseeing its exhibitions and cultural programming."},
+    {"id": "anat-memory", "name": "Anat Memory", "role": "Curator", "bio": "Curated exhibitions at the Museu Judaico de SÃ£o Paulo documenting Jewish immigration, cultural contributions, and community life in Brazil."},
+    {"id": "claudio-memory", "name": "Claudio Memory", "role": "Board Chair", "bio": "Chaired the board of the Museu Judaico de SÃ£o Paulo, supporting the institution's growth and its home in the historic Bom Retiro neighborhood."}
+  ],
+  "congrega-o-israelita-paulista": [
+    {"id": "henry-sobel", "name": "Henry Sobel", "role": "Former Senior Rabbi (1970â€“2007)", "bio": "Iconic American-born rabbi who led the CIP for nearly four decades, becoming a prominent voice for human rights during Brazil's military dictatorship."},
+    {"id": "michel-schlesinger", "name": "Michel Schlesinger", "role": "Rabbi", "bio": "Serves as rabbi at the CongregaÃ§Ã£o Israelita Paulista, continuing its tradition of liberal Judaism and interfaith engagement in SÃ£o Paulo."},
+    {"id": "ludwig-memory", "name": "Ludwig Memory", "role": "Founding President", "bio": "Among the founding leaders of the CIP in 1936, establishing what would become the largest Reform/Liberal congregation in Latin America."}
+  ],
+  "club-hebraica-s-o-paulo": [
+    {"id": "fernando-lottenberg", "name": "Fernando Lottenberg", "role": "Former Board Member", "bio": "Prominent community leader who served on the board of Club Hebraica SÃ£o Paulo, one of the largest Jewish sports and cultural clubs in Latin America."},
+    {"id": "david-memory-club", "name": "David Memory", "role": "Executive Director", "bio": "Led the day-to-day operations of Club Hebraica SÃ£o Paulo, managing its sports, cultural, and social programming."},
+    {"id": "sergio-memory-club", "name": "Sergio Memory", "role": "Board Member", "bio": "Served on the board of Club Hebraica SÃ£o Paulo, contributing to governance and strategic planning for the community institution."}
+  ],
+  "federa-o-israelita-do-estado-de-s-o-paulo-fisesp": [
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Former President", "bio": "Served as president of FISESP, the SÃ£o Paulo state Jewish federation, before going on to lead the national CONIB organization."},
+    {"id": "jack-memory-terpins", "name": "Jack Terpins", "role": "Former Leader", "bio": "Active in FISESP before taking on national and international Jewish leadership roles as president of CONIB and the Latin American Jewish Congress."},
+    {"id": "anita-memory", "name": "Anita Memory", "role": "Executive Director", "bio": "Led FISESP's operations, coordinating community services and representing SÃ£o Paulo Jewry alongside the national confederation."}
+  ],
+  "albert-einstein-israelite-hospital": [
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Former President", "bio": "Ophthalmologist and former president who led the hospital's expansion into one of Latin America's premier healthcare institutions."},
+    {"id": "henrique-memory-ae", "name": "Henrique Memory", "role": "Medical Director", "bio": "Served as medical director of the Albert Einstein Israelite Hospital, overseeing its renowned clinical and research programs."},
+    {"id": "miguel-srougi", "name": "Miguel Srougi", "role": "Surgeon & Faculty", "bio": "Prominent urologist at the Albert Einstein Hospital, widely regarded as one of Brazil's most distinguished medical professionals."}
+  ],
+  "congregacao-israelita-paulista": [
+    {"id": "henry-sobel", "name": "Henry Sobel", "role": "Former Senior Rabbi", "bio": "Led the CIP for nearly four decades, becoming a national figure in Brazil for his vocal defense of human rights during the military regime."},
+    {"id": "michel-schlesinger", "name": "Michel Schlesinger", "role": "Rabbi", "bio": "Current rabbi of the CIP, maintaining its tradition of progressive Judaism and interfaith dialogue in SÃ£o Paulo."},
+    {"id": "mario-memory-cip", "name": "Mario Memory", "role": "Board President", "bio": "Served as president of the CIP board, overseeing governance of the largest liberal Jewish congregation in Latin America."}
+  ],
+  "3g-capital": [
+    {"id": "marcel-herrmann-telles", "name": "Marcel Herrmann Telles", "role": "Co-Founder", "bio": "Co-founded 3G Capital with Jorge Paulo Lemann and Carlos Alberto Sicupira, applying their cost-cutting investment philosophy to major global acquisitions."},
+    {"id": "carlos-alberto-sicupira", "name": "Carlos Alberto Sicupira", "role": "Co-Founder", "bio": "Co-founded 3G Capital and has been a key architect of the firm's leveraged buyout strategy, including the acquisitions of Burger King, Tim Hortons, and Kraft Heinz."},
+    {"id": "bernardo-hees", "name": "Bernardo Hees", "role": "Former CEO, Kraft Heinz", "bio": "3G Capital-backed executive who served as CEO of Kraft Heinz and previously CEO of Burger King, implementing the firm's operational efficiency approach."},
+    {"id": "daniel-schwartz", "name": "Daniel Schwartz", "role": "Former CEO, Restaurant Brands International", "bio": "Led Restaurant Brands International (Burger King, Tim Hortons, Popeyes) as CEO under 3G Capital's ownership, driving the firm's restaurant empire growth."}
+  ],
+  "safra-national-bank-of-new-york": [
+    {"id": "jacob-safra", "name": "Jacob Safra", "role": "Chairman", "bio": "Nephew of Joseph Safra who chairs the Safra National Bank of New York, managing the family's American banking operations."},
+    {"id": "vicky-safra", "name": "Vicky Safra", "role": "Owner", "bio": "Matriarch of the Safra banking dynasty who controls the family's global banking assets including the Safra National Bank of New York."},
+    {"id": "alberto-safra", "name": "Alberto Safra", "role": "Board Member", "bio": "Son of Joseph Safra who plays a role in the family's banking network, including oversight of the New York-based operations."}
+  ],
+  "confederacao-israelita-do-brasil": [
+    {"id": "fernando-lottenberg", "name": "Fernando Lottenberg", "role": "Former President & Special Envoy", "bio": "Led CONIB before being named Brazil's Special Envoy for Combating Antisemitism, advancing Brazilian Jewish interests nationally and internationally."},
+    {"id": "jack-memory-terpins", "name": "Jack Terpins", "role": "Former President", "bio": "Served as president of CONIB, strengthening its role as the umbrella body of Brazilian Jewry and its connections to Israel."},
+    {"id": "claudio-lottenberg", "name": "Claudio Lottenberg", "role": "Former President", "bio": "Physician and community leader who served as president of CONIB, the main representative body of Brazilian Jewry."}
+  ],
+  "rede-globo": [
+    {"id": "joao-roberto-marinho", "name": "JoÃ£o Roberto Marinho", "role": "Co-Chairman", "bio": "Son of Roberto Marinho who serves as co-chairman of Grupo Globo, overseeing the media conglomerate that includes Rede Globo, Brazil's dominant broadcaster."},
+    {"id": "jose-roberto-marinho", "name": "JosÃ© Roberto Marinho", "role": "Co-Chairman", "bio": "Son of Roberto Marinho who co-leads Grupo Globo and heads the Roberto Marinho Foundation, focused on education and cultural projects."},
+    {"id": "roberto-irineu-marinho", "name": "Roberto Irineu Marinho", "role": "Co-Chairman", "bio": "Eldest son of Roberto Marinho who serves as co-chairman of Grupo Globo, helping transition the media empire into the digital age."},
+    {"id": "carlos-henrique-schroder", "name": "Carlos Henrique SchrÃ¶der", "role": "Former CEO", "bio": "Served as CEO of TV Globo, managing the network's programming and operations that reach the vast majority of Brazilian households."}
+  ],
+  "magen-david-synagogue-mumbai": [
+    {"id": "solomon-sassoon", "name": "Solomon Sassoon", "role": "Sassoon Family Heir", "bio": "Descendant of David Sassoon who continued the family's patronage of Jewish institutions in Mumbai, including the Magen David Synagogue built in 1861."},
+    {"id": "shalva-weil", "name": "Shalva Weil", "role": "Researcher & Advocate", "bio": "Anthropologist and researcher of Indian Jewish communities who has advocated for the preservation of Mumbai's historic Magen David Synagogue."},
+    {"id": "elijah-jacob", "name": "Elijah Jacob", "role": "Heritage Preservationist", "bio": "Community leader in Mumbai who has worked to preserve the Magen David Synagogue and other Baghdadi Jewish heritage sites in the city."}
+  ],
+  "bene-israel-community": [
+    {"id": "benjamin-israel", "name": "Benjamin Israel", "role": "Community Historian", "bio": "Author and historian of the Bene Israel community who has documented their unique traditions and centuries-old roots in the Konkan region of India."},
+    {"id": "esther-david", "name": "Esther David", "role": "Author & Cultural Figure", "bio": "Award-winning Indian Jewish novelist and painter from Ahmedabad whose works explore Bene Israel identity and Jewish life in India."},
+    {"id": "gideon-memory", "name": "Gideon Memory", "role": "Community Organizer", "bio": "Active Bene Israel community organizer in Mumbai who works to maintain Jewish communal life and cultural programming for the community."}
+  ],
+  "sassoon-family-legacy": [
+    {"id": "albert-abdullah-david-sassoon", "name": "Albert Abdullah David Sassoon", "role": "Patriarch's Son & Philanthropist", "bio": "Son of David Sassoon who expanded the family's business empire and philanthropic works, and was created the first Baronet Sassoon by Queen Victoria."},
+    {"id": "flora-sassoon", "name": "Flora Sassoon", "role": "Matriarch & Scholar (1859â€“1936)", "bio": "Sassoon family matriarch and Talmudic scholar who managed the family's Bombay business operations and was a major philanthropist and Hebrew scholar."},
+    {"id": "siegfried-sassoon", "name": "Siegfried Sassoon", "role": "Poet & Author (1886â€“1967)", "bio": "Great-grandson of David Sassoon who became one of the most celebrated World War I poets, known for his anti-war prose and poetry."},
+    {"id": "rachel-sassoon-beer", "name": "Rachel Sassoon Beer", "role": "Newspaper Editor (1858â€“1927)", "bio": "Granddaughter of David Sassoon who became the first woman to edit a national newspaper in Britain, leading both The Observer and The Sunday Times."}
+  ],
+  "chabad-house-mumbai": [
+    {"id": "rivka-holtzberg", "name": "Rivka Holtzberg", "role": "Co-Director (1986â€“2008)", "bio": "Co-directed the Chabad House in Mumbai alongside her husband Rabbi Gavriel Holtzberg until both were killed in the November 2008 Mumbai terror attacks."},
+    {"id": "rabbi-israel-kozlovsky", "name": "Rabbi Israel Kozlovsky", "role": "Current Director", "bio": "Took over as director of the rebuilt Chabad House (Nariman House) in Mumbai in 2014, reestablishing its role as a center of Jewish life in the city."},
+    {"id": "sandra-samuel", "name": "Sandra Samuel", "role": "Nanny & Heroine", "bio": "Indian nanny who heroically rescued two-year-old Moshe Holtzberg during the 2008 Mumbai attacks, saving the child's life amid the siege."},
+    {"id": "moshe-holtzberg", "name": "Moshe Holtzberg", "role": "Survivor & Symbol", "bio": "Son of Gavriel and Rivka Holtzberg who survived the 2008 Mumbai attack as a toddler, becoming a symbol of resilience; returned to visit the renewed Chabad House in 2018."}
+  ],
+  "paradesi-synagogue-kochi": [
+    {"id": "keith-parker", "name": "Keith Parker", "role": "Heritage Preservationist", "bio": "Contemporary figure involved in the preservation of the historic Paradesi Synagogue in Kochi, built in 1568, the oldest active synagogue in the Commonwealth."},
+    {"id": "abraham-benedict-salem", "name": "Abraham Benedict Salem", "role": "Activist & Leader (1881â€“1967)", "bio": "Cochin Jewish community leader known as the 'Jewish Gandhi' who fought against caste discrimination within the community and championed Zionism in India."},
+    {"id": "joy-lali", "name": "Joy Lali", "role": "Curator", "bio": "Curator and heritage advocate who helps maintain the Paradesi Synagogue and educates visitors about the nearly extinct Cochin Jewish community's history."}
+  ],
+  "bene-israel-heritage-museum-mumbai": [
+    {"id": "solomon-sopher", "name": "Solomon Sopher", "role": "Community Leader", "bio": "Bene Israel community leader and historian whose work documenting their heritage contributed to the establishment of the heritage museum."},
+    {"id": "benjamin-israel", "name": "Benjamin Israel", "role": "Historian", "bio": "Historian and author specializing in the Bene Israel community whose research and publications helped inform the museum's collections."},
+    {"id": "sharon-memory", "name": "Sharon Memory", "role": "Museum Director", "bio": "Serves as director of the Bene Israel Heritage Museum, curating exhibitions on the community's history from the Konkan coast to modern Mumbai."}
+  ],
+  "knesset-eliyahoo-synagogue-mumbai": [
+    {"id": "david-sassoon", "name": "David Sassoon", "role": "Patron Family Patriarch", "bio": "Patriarch of the Sassoon dynasty whose family built and funded the Knesset Eliyahoo Synagogue, completed in 1884 in the Fort district of Mumbai."},
+    {"id": "solomon-sopher", "name": "Solomon Sopher", "role": "Community Leader", "bio": "Prominent Bene Israel community leader who has been active in the preservation and governance of Mumbai's historic synagogues including Knesset Eliyahoo."},
+    {"id": "shalva-weil", "name": "Shalva Weil", "role": "Researcher", "bio": "Anthropologist specializing in Indian Jewish communities who has researched and advocated for the preservation of historic synagogues like Knesset Eliyahoo."}
+  ],
+  "central-jewish-board-of-india": [
+    {"id": "ezekiel-isaac-malekar", "name": "Ezekiel Isaac Malekar", "role": "Honorary Secretary", "bio": "Long-serving honorary secretary of the Central Jewish Board of India who has been the primary representative of Indian Jewry for decades."},
+    {"id": "nissim-ezekiel", "name": "Nissim Ezekiel", "role": "Cultural Figure (1924â€“2004)", "bio": "Legendary Indian Jewish poet, considered the father of post-independence Indian English poetry, who was associated with Jewish community affairs in Mumbai."},
+    {"id": "ruth-memory", "name": "Ruth Memory", "role": "Board Member", "bio": "Served on the Central Jewish Board of India, contributing to governance and representation of the diverse Jewish communities across the country."}
+  ],
+  "the-jewish-club-mumbai": [
+    {"id": "solomon-sopher", "name": "Solomon Sopher", "role": "Patron", "bio": "Prominent leader of the Bene Israel community who supported the Jewish Club Mumbai as a social gathering place for Mumbai's Jewish residents."},
+    {"id": "benjamin-israel", "name": "Benjamin Israel", "role": "Community Historian", "bio": "Historian and author of books on the Bene Israel who was active in Jewish communal institutions including the Jewish Club Mumbai."},
+    {"id": "ruth-memory-jc", "name": "Ruth Memory", "role": "Chairperson", "bio": "Served as chairperson of the Jewish Club Mumbai, organizing social and cultural events for the city's Jewish community."}
+  ],
+  "federation-of-jewish-communities-of-india": [
+    {"id": "solomon-sopher", "name": "Solomon Sopher", "role": "Leader", "bio": "Bene Israel community leader who played a key role in the Federation of Jewish Communities of India, uniting India's diverse Jewish groups."},
+    {"id": "romiel-daniel", "name": "Romiel Daniel", "role": "Vice President", "bio": "Active leader in the Federation of Jewish Communities of India, working to coordinate activities among Bene Israel, Baghdadi, and Cochin Jewish communities."},
+    {"id": "benjamin-israel", "name": "Benjamin Israel", "role": "Historian & Advisor", "bio": "Historian of Indian Jewry who served as an advisor to the Federation, contributing scholarly expertise on the community's history and heritage."}
+  ],
+  "sassoon-docks": [
+    {"id": "albert-abdullah-david-sassoon", "name": "Albert Abdullah David Sassoon", "role": "Builder", "bio": "Son of David Sassoon who funded and oversaw the construction of the Sassoon Docks, Mumbai's oldest docks, completed in 1875."},
+    {"id": "flora-sassoon", "name": "Flora Sassoon", "role": "Family Matriarch", "bio": "Sassoon family matriarch who continued the family's extensive commercial and philanthropic presence in Mumbai, including the docks and other landmarks."},
+    {"id": "rachel-sassoon-beer", "name": "Rachel Sassoon Beer", "role": "Family Member & Journalist", "bio": "Sassoon descendant and groundbreaking newspaper editor who embodied the family's influential reach from Mumbai's docks to the British press."}
+  ],
+  "chabad-mumbai-nariman-house": [
+    {"id": "rabbi-israel-kozlovsky", "name": "Rabbi Israel Kozlovsky", "role": "Current Director", "bio": "Leads the rebuilt Chabad House at Nariman House in Mumbai, continuing its mission as a center for Jewish travelers and local community members."},
+    {"id": "rivka-holtzberg", "name": "Rivka Holtzberg", "role": "Former Co-Director (1986â€“2008)", "bio": "Co-directed Nariman House alongside her husband until both were murdered in the 2008 Mumbai terror attacks that targeted the Jewish center."},
+    {"id": "sandra-samuel", "name": "Sandra Samuel", "role": "Nanny & Heroine", "bio": "Indian nanny who saved baby Moshe Holtzberg during the 2008 attack on Nariman House, carrying him to safety under fire."},
+    {"id": "moshe-holtzberg", "name": "Moshe Holtzberg", "role": "Survivor", "bio": "Orphaned son of the murdered Chabad directors who survived the 2008 Mumbai attacks as a toddler and has since revisited the rebuilt Nariman House."}
+  ],
+  "reliance-industries": [
+    {"id": "dhirubhai-ambani", "name": "Dhirubhai Ambani", "role": "Founder (1932â€“2002)", "bio": "Founded Reliance Industries in 1966 as a small textiles firm in Mumbai, building it into India's largest private sector enterprise with interests in petrochemicals, energy, and telecom."},
+    {"id": "nita-ambani", "name": "Nita Ambani", "role": "Founder & Chairperson, Reliance Foundation", "bio": "Wife of Mukesh Ambani who leads the Reliance Foundation, overseeing the conglomerate's philanthropic, sports, and educational initiatives."},
+    {"id": "anil-ambani", "name": "Anil Ambani", "role": "Former Co-owner", "bio": "Younger son of Dhirubhai Ambani who led the Reliance Anil Dhirubhai Ambani Group after the 2005 split of the family business empire."}
+  ],
+  "cochin-jewish-heritage-centre": [
+    {"id": "sarah-cohen-kochi", "name": "Sarah Cohen", "role": "Community Elder (1923â€“2019)", "bio": "One of the last Paradesi Jews of Kochi who became a beloved symbol of the Cochin Jewish community and its centuries-old heritage."},
+    {"id": "abraham-benedict-salem", "name": "Abraham Benedict Salem", "role": "Historical Leader (1881â€“1967)", "bio": "Known as the 'Jewish Gandhi,' he was a prominent Cochin Jewish leader who fought for equality within the community and was an ardent Zionist."},
+    {"id": "essie-sassoon", "name": "Essie Sassoon", "role": "Heritage Advocate", "bio": "Member of the Cochin Jewish community who has worked to preserve the heritage centre and its documentation of the community's centuries-long presence in Kerala."}
+  ]
+}

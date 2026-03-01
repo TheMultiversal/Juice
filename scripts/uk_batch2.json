@@ -1,0 +1,131 @@
+{
+  "freuds-communications": [
+    {"id": "matthew-freud", "name": "Matthew Freud", "role": "Founder & Chairman", "bio": "Great-grandson of Sigmund Freud who founded Freuds in 1986, building it into one of the UK's most prominent PR and communications firms."},
+    {"id": "arlo-brady", "name": "Arlo Brady", "role": "Chief Executive", "bio": "CEO of Freuds who has overseen the agency's expansion into purpose-driven communications and brand strategy."},
+    {"id": "jo-casey", "name": "Jo Casey", "role": "Managing Director", "bio": "Senior leader at Freuds with extensive experience in consumer and corporate communications campaigns."}
+  ],
+  "leo-baeck-college": [
+    {"id": "werner-van-der-zyl", "name": "Werner van der Zyl", "role": "Co-Founder", "bio": "Rabbi who co-founded Leo Baeck College in 1956 to train rabbis for Progressive Judaism in Europe."},
+    {"id": "deborah-kahn-harris", "name": "Deborah Kahn-Harris", "role": "Principal", "bio": "Served as Principal of Leo Baeck College, leading the institution's rabbinical and educational programs."},
+    {"id": "jonathan-magonet", "name": "Jonathan Magonet", "role": "Former Principal", "bio": "Bible scholar who served as Principal of Leo Baeck College for many years, shaping Progressive rabbinical training in Britain."},
+    {"id": "marc-sheridan", "name": "Marc Sheridan", "role": "Chair of Governors", "bio": "Community leader who chaired the governing body overseeing Leo Baeck College's academic and strategic direction."}
+  ],
+  "jewish-chronicle": [
+    {"id": "jake-wallis-simons", "name": "Jake Wallis Simons", "role": "Editor", "bio": "Journalist and author who became editor of the Jewish Chronicle, the world's oldest continuously published Jewish newspaper."},
+    {"id": "stephen-pollard", "name": "Stephen Pollard", "role": "Former Editor", "bio": "Prominent journalist who edited the Jewish Chronicle from 2008 to 2023, significantly expanding its digital presence and political influence."},
+    {"id": "leopold-greenberg", "name": "Leopold Greenberg", "role": "Historic Editor & Owner", "bio": "Zionist activist who owned and edited the Jewish Chronicle in the early 20th century, aligning it closely with the Zionist movement."},
+    {"id": "robbie-gibb", "name": "Robbie Gibb", "role": "Board Member", "bio": "Former BBC and Downing Street communications director who joined the Jewish Chronicle's board."}
+  ],
+  "institute-for-jewish-policy-research-jpr": [
+    {"id": "jonathan-boyd", "name": "Jonathan Boyd", "role": "Executive Director", "bio": "Leading scholar of European Jewish demography who has directed JPR's research agenda on Jewish community life since 2010."},
+    {"id": "daniel-staetsky", "name": "Daniel Staetsky", "role": "Senior Research Fellow", "bio": "Demographer and statistician who leads JPR's quantitative research on Jewish populations across Europe."},
+    {"id": "stanley-kalms", "name": "Stanley Kalms", "role": "Former Chairman", "bio": "Businessman and life peer who chaired JPR, supporting its mission to inform Jewish communal policy through research."},
+    {"id": "antony-lerman", "name": "Antony Lerman", "role": "Former Director", "bio": "Writer and policy specialist who directed the Institute for Jewish Policy Research and shaped its early research programs."}
+  ],
+  "jewish-museum-london": [
+    {"id": "abigail-morris", "name": "Abigail Morris", "role": "Director", "bio": "Museum professional who served as director of the Jewish Museum London, overseeing its exhibitions and community engagement programs."},
+    {"id": "alfred-rubens", "name": "Alfred Rubens", "role": "Founding Contributor", "bio": "Historian and collector whose donations of Jewish art and artifacts helped establish the Jewish Museum London in 1932."},
+    {"id": "rachel-kolsky", "name": "Rachel Kolsky", "role": "Education & Programming Lead", "bio": "Historian and educator who developed the museum's public programs exploring British Jewish heritage."}
+  ],
+  "entain-formerly-gvc-holdings": [
+    {"id": "jette-nygaard-andersen", "name": "Jette Nygaard-Andersen", "role": "Former CEO", "bio": "Danish businesswoman who served as CEO of Entain, overseeing its portfolio of major gambling brands including Ladbrokes and Coral."},
+    {"id": "gavin-isaacs", "name": "Gavin Isaacs", "role": "Former CEO (GVC Holdings)", "bio": "South African executive who led the transformation of GVC Holdings into a major global sports betting and gaming company."},
+    {"id": "barry-gibson", "name": "Barry Gibson", "role": "Chairman", "bio": "Experienced chairman who led Entain's board through its rebranding from GVC Holdings and major strategic acquisitions."},
+    {"id": "shay-segev", "name": "Shay Segev", "role": "Former CEO", "bio": "Israeli-born technology executive who served as Entain CEO before departing to lead DAZN Group."}
+  ],
+  "limmud": [
+    {"id": "clive-lawton", "name": "Clive Lawton", "role": "Co-Founder", "bio": "Educator and communal leader who co-founded Limmud in 1980, creating a model of cross-communal Jewish learning that spread worldwide."},
+    {"id": "michael-wegier", "name": "Michael Wegier", "role": "Former Chair", "bio": "Community organizer who chaired Limmud and helped expand its volunteer-driven educational conferences across multiple countries."},
+    {"id": "raymond-simonson", "name": "Raymond Simonson", "role": "CEO of JW3 / Limmud Leader", "bio": "Communal professional and longtime Limmud volunteer who helped shape its ethos of participatory Jewish education."}
+  ],
+  "union-of-jewish-students-ujs": [
+    {"id": "edward-isaacs", "name": "Edward Isaacs", "role": "President", "bio": "Student leader who served as president of UJS, representing Jewish students across UK and Irish university campuses."},
+    {"id": "joel-sheridan", "name": "Joel Sheridan", "role": "Campaigns Director", "bio": "Student activist who led UJS campaigns on antisemitism and welfare issues facing Jewish students on campus."},
+    {"id": "hannah-rose", "name": "Hannah Rose", "role": "Former President", "bio": "Former UJS president who advocated for Jewish student welfare and combated antisemitism in higher education."}
+  ],
+  "jews-college-heythrop-association": [
+    {"id": "michael-friedlander", "name": "Michael Friedlander", "role": "Historic Principal", "bio": "German-born scholar who served as principal of Jews' College for over 40 years from 1865, shaping Orthodox rabbinical training in Britain."},
+    {"id": "isidore-epstein", "name": "Isidore Epstein", "role": "Former Principal", "bio": "Talmudic scholar and principal of Jews' College best known for editing the Soncino English translation of the Babylonian Talmud."},
+    {"id": "adolph-buechler", "name": "Adolph Büchler", "role": "Former Principal", "bio": "Hungarian-born historian who served as principal of Jews' College from 1906 and was a noted scholar of Second Temple Judaism."},
+    {"id": "abraham-levy", "name": "Abraham Levy", "role": "Notable Alumnus & Rabbi", "bio": "Rabbi of the Spanish and Portuguese Jews' Congregation and Jews' College alumnus known for his broadcasting and communal leadership."}
+  ],
+  "jews-free-school-jfs": [
+    {"id": "rachel-fink", "name": "Rachel Fink", "role": "Headteacher", "bio": "Educator who served as headteacher of JFS, one of the largest Jewish secondary schools in Europe, based in Harrow."},
+    {"id": "moses-angel", "name": "Moses Angel", "role": "Historic Headmaster", "bio": "Pioneering Victorian educator who served as headmaster of the Jews' Free School for over 50 years in the 19th century."},
+    {"id": "ruth-robins", "name": "Ruth Robins", "role": "Chair of Governors", "bio": "Community leader who chaired the governing body of JFS, guiding the school through its relocation from Camden to Kenton."}
+  ],
+  "london-school-of-jewish-studies-lsjs": [
+    {"id": "raphael-zarum", "name": "Raphael Zarum", "role": "Dean", "bio": "Physicist-turned-rabbi who serves as Dean of LSJS, modernizing Jewish adult education and teacher training in the UK."},
+    {"id": "naftali-brawer", "name": "Naftali Brawer", "role": "Former CEO", "bio": "Rabbi and social entrepreneur who served as CEO of LSJS, expanding its community education programs."},
+    {"id": "isidore-epstein-lsjs", "name": "Isidore Epstein", "role": "Historic Principal", "bio": "Renowned Talmudist who led the institution in its earlier incarnation as Jews' College, overseeing decades of Orthodox scholarship."}
+  ],
+  "wpp-plc": [
+    {"id": "martin-sorrell", "name": "Martin Sorrell", "role": "Founder & Former CEO", "bio": "British businessman who built WPP from a shell company into the world's largest advertising and communications group over three decades."},
+    {"id": "mark-read", "name": "Mark Read", "role": "CEO", "bio": "Technology-focused executive who succeeded Martin Sorrell as CEO of WPP, leading its transformation toward digital marketing services."},
+    {"id": "roberto-quarta", "name": "Roberto Quarta", "role": "Chairman", "bio": "Italian-American businessman who chairs WPP's board, previously serving as chairman of Smith & Nephew and BBA Aviation."},
+    {"id": "john-rogers-wpp", "name": "John Rogers", "role": "Chief Operating Officer", "bio": "Former CFO of J Sainsbury who joined WPP as COO oversee finance, IT, procurement and property operations."}
+  ],
+  "uk-jewish-film-festival": [
+    {"id": "judy-ironside", "name": "Judy Ironside", "role": "Founder & Director", "bio": "Film professional who founded the UK Jewish Film Festival to showcase Jewish-themed cinema from around the world."},
+    {"id": "michael-etherton", "name": "Michael Etherton", "role": "Festival Director", "bio": "Arts administrator who directed programming and operations for the UK Jewish Film Festival's annual London screenings."},
+    {"id": "lisa-sheridan", "name": "Lisa Sheridan", "role": "Chair", "bio": "Community leader and film enthusiast who chaired the festival's board, supporting its mission of cultural engagement through cinema."}
+  ],
+  "jewish-news": [
+    {"id": "richard-ferrer", "name": "Richard Ferrer", "role": "Editor", "bio": "Journalist who serves as editor of the Jewish News, one of the UK's leading Jewish community newspapers."},
+    {"id": "justin-cohen", "name": "Justin Cohen", "role": "Senior Reporter", "bio": "Veteran journalist and senior reporter at the Jewish News known for in-depth coverage of British Jewish communal affairs."},
+    {"id": "simon-rothstein", "name": "Simon Rothstein", "role": "Former Editor", "bio": "Media professional who contributed to shaping the Jewish News as a key voice in British Jewish journalism."}
+  ],
+  "reuters-thompson-reuters": [
+    {"id": "paul-reuter", "name": "Paul Reuter", "role": "Founder", "bio": "German-born entrepreneur who founded Reuters news agency in 1851, pioneering the use of telegraph technology for international news transmission."},
+    {"id": "david-thomson", "name": "David Thomson", "role": "Chairman of Thomson Reuters", "bio": "Canadian billionaire and chairman of Thomson Reuters whose family trust controls the majority of the company's shares."},
+    {"id": "steve-hasker", "name": "Steve Hasker", "role": "President & CEO", "bio": "Australian executive serving as CEO of Thomson Reuters, leading its transformation into a global information services and data analytics company."},
+    {"id": "jim-smith-reuters", "name": "Jim Smith", "role": "Former CEO", "bio": "American executive who served as CEO of Thomson Reuters and oversaw key divestitures and strategic pivots toward financial data services."}
+  ],
+  "shell-royal-dutch-shell": [
+    {"id": "marcus-samuel", "name": "Marcus Samuel", "role": "Founder (Shell Transport & Trading)", "bio": "Jewish entrepreneur and Lord Mayor of London who founded Shell Transport and Trading Company in 1897, building a global oil empire."},
+    {"id": "wael-sawan", "name": "Wael Sawan", "role": "CEO", "bio": "Lebanese-born British engineer who became CEO of Shell in 2023, steering the energy giant's transition strategy."},
+    {"id": "ben-van-beurden", "name": "Ben van Beurden", "role": "Former CEO", "bio": "Dutch executive who led Shell through its unification of dual-listed structure and oversaw major energy transition commitments."},
+    {"id": "andrew-mackenzie-shell", "name": "Andrew Mackenzie", "role": "Chairman", "bio": "Former BHP CEO who became chairman of Shell, guiding the company's board through the energy transition era."}
+  ],
+  "holocaust-educational-trust": [
+    {"id": "karen-pollock", "name": "Karen Pollock", "role": "Chief Executive", "bio": "Longtime chief executive of the Holocaust Educational Trust who has led its mission to educate young people about the Holocaust across the UK."},
+    {"id": "greville-janner", "name": "Greville Janner", "role": "Founder", "bio": "Labour politician and barrister who founded the Holocaust Educational Trust in 1988 to promote Holocaust education in British schools."},
+    {"id": "ruth-mandel", "name": "Ruth Mandel", "role": "Trustee", "bio": "Community leader and trustee who supported the Holocaust Educational Trust's outreach and fundraising efforts."},
+    {"id": "alex-sheridan", "name": "Alex Sheridan", "role": "Director of Education", "bio": "Educator who leads the Trust's flagship Lessons from Auschwitz programme, taking thousands of students to visit the former concentration camp each year."}
+  ],
+  "glaxosmithkline-gsk": [
+    {"id": "emma-walmsley", "name": "Emma Walmsley", "role": "CEO", "bio": "First woman to lead a major pharmaceutical company, serving as CEO of GSK and overseeing its demerger of the consumer health division."},
+    {"id": "jonathan-symonds", "name": "Jonathan Symonds", "role": "Chairman", "bio": "Chartered accountant who chairs GSK's board, bringing extensive experience in pharmaceutical and financial leadership."},
+    {"id": "hal-barron", "name": "Hal Barron", "role": "Former Chief Scientific Officer", "bio": "American physician-scientist who served as GSK's Chief Scientific Officer, reshaping the company's R&D pipeline with a focus on genetics."},
+    {"id": "andrew-witty-gsk", "name": "Andrew Witty", "role": "Former CEO", "bio": "British executive who led GSK for nearly a decade before becoming CEO of UnitedHealth Group, expanding access to medicines in developing nations."}
+  ],
+  "man-group": [
+    {"id": "robyn-grew", "name": "Robyn Grew", "role": "CEO", "bio": "First woman to lead Man Group, taking over as CEO of the world's largest publicly listed hedge fund manager."},
+    {"id": "luke-ellis", "name": "Luke Ellis", "role": "Former CEO", "bio": "Seasoned investment professional who led Man Group as CEO, expanding its quantitative and systematic investment strategies."},
+    {"id": "john-cryan-man", "name": "John Cryan", "role": "Chairman", "bio": "Former Deutsche Bank CEO who chairs Man Group's board, bringing deep financial services governance experience."},
+    {"id": "sandy-rattray", "name": "Sandy Rattray", "role": "Former CIO", "bio": "Investment strategist who served as Man Group's CIO, known for his work on trend-following and systematic trading strategies."}
+  ],
+  "liberal-judaism": [
+    {"id": "lily-montagu", "name": "Lily Montagu", "role": "Co-Founder", "bio": "Pioneer of Liberal Judaism in the UK who co-founded the Jewish Religious Union in 1902 and championed women's spiritual leadership."},
+    {"id": "claude-montefiore", "name": "Claude Montefiore", "role": "Co-Founder", "bio": "Biblical scholar and philanthropist who co-founded Liberal Judaism in Britain, advocating for a modernized approach to Jewish theology."},
+    {"id": "charley-baginsky", "name": "Charley Baginsky", "role": "CEO", "bio": "Communal professional serving as CEO of Liberal Judaism, overseeing its network of synagogues and community programs across the UK."},
+    {"id": "alexandra-wright", "name": "Alexandra Wright", "role": "Senior Rabbi, LJS", "bio": "First woman to serve as senior rabbi of the Liberal Jewish Synagogue in London, a leading figure in British Liberal Judaism."}
+  ],
+  "united-jewish-israel-appeal": [
+    {"id": "mandy-tisch", "name": "Mandy Tisch", "role": "Chair", "bio": "Communal leader who chairs UJIA, overseeing its mission to strengthen connections between British Jews and Israel."},
+    {"id": "david-cohen-ujia", "name": "David Cohen", "role": "CEO", "bio": "Executive who leads UJIA's programs supporting young people's engagement with Israel and Jewish identity in the UK."},
+    {"id": "michael-goldstein-ujia", "name": "Michael Goldstein", "role": "Former Chair", "bio": "Prominent community figure who chaired UJIA, guiding fundraising and programmatic efforts for UK-Israel engagement."}
+  ],
+  "arm-holdings": [
+    {"id": "rene-haas", "name": "Rene Haas", "role": "CEO", "bio": "American semiconductor executive serving as CEO of ARM Holdings, leading the company through its return to public markets."},
+    {"id": "simon-segars", "name": "Simon Segars", "role": "Former CEO", "bio": "British engineer who served as CEO of ARM Holdings, overseeing its acquisition by SoftBank and continued expansion in mobile and IoT chip design."},
+    {"id": "hermann-hauser", "name": "Hermann Hauser", "role": "Co-Founder (Acorn Computers)", "bio": "Austrian-born entrepreneur who co-founded Acorn Computers, from which ARM was spun out as a joint venture in 1990."},
+    {"id": "masayoshi-son", "name": "Masayoshi Son", "role": "Key Investor (SoftBank)", "bio": "Japanese billionaire founder of SoftBank who acquired ARM Holdings in 2016 for $32 billion, calling it his most important investment ever."}
+  ],
+  "marks-spencer-m-s": [
+    {"id": "michael-marks", "name": "Michael Marks", "role": "Co-Founder", "bio": "Belarusian-born Jewish immigrant who co-founded Marks & Spencer in 1884 with his Penny Bazaar market stall in Leeds."},
+    {"id": "simon-marks", "name": "Simon Marks", "role": "Historic Chairman", "bio": "Son of founder Michael Marks who transformed M&S into Britain's leading retailer as chairman, pioneering quality and branding standards."},
+    {"id": "stuart-machin", "name": "Stuart Machin", "role": "CEO", "bio": "Retail executive serving as CEO of Marks & Spencer, leading the company's turnaround strategy focused on food and clothing."},
+    {"id": "archie-norman", "name": "Archie Norman", "role": "Chairman", "bio": "Former Conservative MP and business turnaround specialist who chairs M&S, driving its modernization and digital transformation."}
+  ]
+}

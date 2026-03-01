@@ -1,0 +1,127 @@
+{
+  "toronto-international-film-festival-tiff": [
+    {"id": "piers-handling", "name": "Piers Handling", "role": "Former CEO & Director", "bio": "Led TIFF for over two decades, transforming it into one of the world's most prestigious film festivals."},
+    {"id": "cameron-bailey", "name": "Cameron Bailey", "role": "CEO", "bio": "Became CEO of TIFF in 2020 after serving as Artistic Director and co-head of the festival for many years."},
+    {"id": "lisa-de-wilde", "name": "Lisa de Wilde", "role": "Board Chair", "bio": "Served as Chair of the TIFF Board of Directors, guiding the organization's strategic direction and governance."}
+  ],
+  "onex-corporation": [
+    {"id": "gerry-schwartz", "name": "Gerry Schwartz", "role": "Founder & Chairman", "bio": "Founded Onex Corporation in 1984 and built it into one of Canada's largest private equity firms."},
+    {"id": "bobby-le-blanc", "name": "Bobby Le Blanc", "role": "Managing Director & President", "bio": "Served as President of Onex and Managing Director of Onex Partners, overseeing major investment activities."},
+    {"id": "heather-reisman", "name": "Heather Reisman", "role": "Board Member & Spouse of Founder", "bio": "CEO of Indigo Books and longtime Onex board member married to founder Gerry Schwartz."}
+  ],
+  "shopify": [
+    {"id": "tobi-lutke", "name": "Tobi Lütke", "role": "Founder & CEO", "bio": "Co-founded Shopify in 2006 and grew it into the leading global e-commerce platform powering millions of businesses."},
+    {"id": "harley-finkelstein", "name": "Harley Finkelstein", "role": "President", "bio": "Became President of Shopify in 2020 after serving in multiple leadership roles since joining the company in 2010."},
+    {"id": "daniel-weinand", "name": "Daniel Weinand", "role": "Co-Founder & Former Chief Design Officer", "bio": "Co-founded Shopify alongside Tobi Lütke and shaped the platform's user experience and design philosophy."}
+  ],
+  "bombardier-inc": [
+    {"id": "pierre-beaudoin", "name": "Pierre Beaudoin", "role": "Chairman & Former CEO", "bio": "Grandson of founder Joseph-Armand Bombardier who led the company as CEO and later served as Chairman of the Board."},
+    {"id": "eric-martel", "name": "Éric Martel", "role": "President & CEO", "bio": "Took over as CEO of Bombardier in 2020 to lead the company's transformation as a pure-play business aviation firm."},
+    {"id": "laurent-beaudoin", "name": "Laurent Beaudoin", "role": "Former Chairman & CEO", "bio": "Son-in-law of the founder who led Bombardier for decades, expanding it into a global aerospace and transportation conglomerate."}
+  ],
+  "reichmann-family-olympia-york": [
+    {"id": "paul-reichmann", "name": "Paul Reichmann", "role": "Co-Founder & Principal", "bio": "The visionary leader of Olympia & York who spearheaded the development of Canary Wharf in London and the World Financial Center in New York."},
+    {"id": "albert-reichmann", "name": "Albert Reichmann", "role": "Co-Founder & President", "bio": "Co-founded Olympia & York with his brothers and served as president overseeing the firm's vast real estate operations."},
+    {"id": "ralph-reichmann", "name": "Ralph Reichmann", "role": "Co-Founder & Partner", "bio": "The eldest Reichmann brother who helped establish the family's tile business before co-founding Olympia & York."}
+  ],
+  "b-nai-brith-canada": [
+    {"id": "michael-mostyn", "name": "Michael Mostyn", "role": "CEO", "bio": "Served as CEO of B'nai Brith Canada, leading the organization's advocacy, anti-hate, and community engagement programs."},
+    {"id": "sam-katz", "name": "Sam Katz", "role": "National President", "bio": "Served as National President of B'nai Brith Canada, guiding the organization's policy positions and community relations."},
+    {"id": "david-matas", "name": "David Matas", "role": "Senior Legal Counsel", "bio": "Prominent human rights lawyer who served as Senior Legal Counsel to B'nai Brith Canada for many years."}
+  ],
+  "barrick-gold-peter-munk": [
+    {"id": "peter-munk", "name": "Peter Munk", "role": "Founder & Former Chairman", "bio": "Hungarian-born Canadian businessman who founded Barrick Gold in 1983 and built it into the world's largest gold mining company."},
+    {"id": "mark-bristow", "name": "Mark Bristow", "role": "President & CEO", "bio": "Became CEO of Barrick Gold following its 2019 merger with Randgold Resources, which he had previously led."},
+    {"id": "john-thornton", "name": "John Thornton", "role": "Executive Chairman", "bio": "Former Goldman Sachs executive who became Executive Chairman of Barrick Gold, driving the company's strategic transformation."}
+  ],
+  "jewish-federations-of-canada-uia": [
+    {"id": "nikki-gershbain", "name": "Nikki Gershbain", "role": "CEO", "bio": "Served as CEO of Jewish Federations of Canada-UIA, leading national coordination of Jewish community services and Israel engagement."},
+    {"id": "linda-frum", "name": "Linda Frum", "role": "National Campaign Chair", "bio": "Canadian senator and journalist who served in key volunteer leadership roles supporting Jewish Federations of Canada-UIA fundraising."},
+    {"id": "jerry-silver", "name": "Jerry Silver", "role": "Past National President", "bio": "Served as National President of Jewish Federations of Canada-UIA guiding the organization's strategic priorities."}
+  ],
+  "mount-sinai-hospital-toronto": [
+    {"id": "gary-newton", "name": "Gary Newton", "role": "President & CEO", "bio": "Led Mount Sinai Hospital as President and CEO, overseeing its integration into the Sinai Health System in Toronto."},
+    {"id": "zane-cohen", "name": "Zane Cohen", "role": "Surgeon & Namesake of Centre", "bio": "Renowned colorectal surgeon at Mount Sinai Hospital Toronto whose legacy includes the Zane Cohen Centre for Digestive Diseases."},
+    {"id": "joseph-mapa", "name": "Joseph Mapa", "role": "Former President & CEO", "bio": "Served as President and CEO of Mount Sinai Hospital for over a decade, overseeing major expansions and research initiatives."}
+  ],
+  "federation-cja-montreal": [
+    {"id": "yair-szlak", "name": "Yair Szlak", "role": "President & CEO", "bio": "Led Federation CJA as President and CEO, overseeing the central fundraising and community planning body for Montreal's Jewish community."},
+    {"id": "marc-gold", "name": "Marc Gold", "role": "Former Chair", "bio": "Prominent Montreal lawyer and later Canadian senator who served as Chair of Federation CJA's board of directors."},
+    {"id": "lillian-vineberg", "name": "Lillian Vineberg", "role": "Campaign Chair & Philanthropist", "bio": "Led major fundraising campaigns for Federation CJA and was a prominent philanthropist in Montreal's Jewish community."}
+  ],
+  "centre-for-israel-and-jewish-affairs-cija": [
+    {"id": "shimon-koffler-fogel", "name": "Shimon Koffler Fogel", "role": "CEO", "bio": "Served as CEO of CIJA, leading Canada's main advocacy organization for the Jewish community on domestic and international issues."},
+    {"id": "david-cape", "name": "David Cape", "role": "Former Chair", "bio": "Served as Chair of CIJA's board, helping establish the organization as the unified advocacy voice for Canadian Jewry."},
+    {"id": "barbara-crook", "name": "Barbara Crook", "role": "Board Member & Activist", "bio": "Prominent Ottawa-based community leader who served in leadership roles at CIJA advocating for Jewish community interests."}
+  ],
+  "canadian-museum-for-human-rights": [
+    {"id": "israel-asper", "name": "Israel Asper", "role": "Founder & Visionary", "bio": "Canadian media mogul and philanthropist whose vision and initial funding drove the creation of the Canadian Museum for Human Rights in Winnipeg."},
+    {"id": "gail-asper", "name": "Gail Asper", "role": "President of Friends & Trustee", "bio": "Daughter of founder Israel Asper who led the fundraising campaign and continued championing the museum after her father's death."},
+    {"id": "john-young", "name": "John Young", "role": "President & CEO", "bio": "Served as President and CEO of the Canadian Museum for Human Rights, overseeing its operations and educational programming."}
+  ],
+  "friends-of-simon-wiesenthal-center-canada": [
+    {"id": "avi-benlolo", "name": "Avi Benlolo", "role": "Former President & CEO", "bio": "Led Friends of Simon Wiesenthal Center for Holocaust Studies in Canada for nearly two decades as its founding President and CEO."},
+    {"id": "michael-levitt", "name": "Michael Levitt", "role": "President & CEO", "bio": "Former Canadian MP who became President and CEO of Friends of Simon Wiesenthal Center, continuing its Holocaust education and tolerance mission."},
+    {"id": "honey-sherman", "name": "Honey Sherman", "role": "Major Donor & Board Member", "bio": "Prominent Canadian philanthropist who was a major supporter and board member of Friends of Simon Wiesenthal Center."}
+  ],
+  "munk-school-of-global-affairs-u-of-toronto": [
+    {"id": "peter-munk-edu", "name": "Peter Munk", "role": "Founding Benefactor", "bio": "Barrick Gold founder whose transformative donation to the University of Toronto established the Munk School of Global Affairs."},
+    {"id": "janice-gross-stein", "name": "Janice Gross Stein", "role": "Founding Director", "bio": "Renowned political scientist who served as the founding director of the Munk School of Global Affairs at the University of Toronto."},
+    {"id": "melanie-munk", "name": "Melanie Munk", "role": "Chair of Munk Foundation", "bio": "Daughter of Peter Munk who co-chairs the Peter and Melanie Munk Charitable Foundation supporting the school's mission."}
+  ],
+  "canadian-jewish-congress-historical": [
+    {"id": "samuel-bronfman", "name": "Samuel Bronfman", "role": "Longtime President", "bio": "Seagram's founder who served as president of the Canadian Jewish Congress from 1939 to 1962, shaping Canadian Jewish community life."},
+    {"id": "irving-abella", "name": "Irving Abella", "role": "Former National President & Historian", "bio": "Prominent Canadian historian and author of 'None Is Too Many' who served as national president of the Canadian Jewish Congress."},
+    {"id": "alan-rose", "name": "Alan Rose", "role": "Executive Vice President", "bio": "Served for decades as Executive Vice President of the Canadian Jewish Congress, managing its day-to-day advocacy and operations."}
+  ],
+  "canaccord-genuity": [
+    {"id": "peter-brown", "name": "Peter Brown", "role": "Former Chairman & Founder Figure", "bio": "Vancouver financier who built Canaccord into a major independent investment dealer and served as its longtime chairman."},
+    {"id": "dan-daviau", "name": "Dan Daviau", "role": "President & CEO", "bio": "Served as President and CEO of Canaccord Genuity Group, overseeing its global capital markets and wealth management operations."},
+    {"id": "stuart-raftus", "name": "Stuart Raftus", "role": "President of Canaccord Genuity Wealth Management", "bio": "Led Canaccord Genuity's Canadian wealth management division, expanding its advisory services across the country."}
+  ],
+  "uja-federation-of-greater-toronto": [
+    {"id": "adam-minsky", "name": "Adam Minsky", "role": "President & CEO", "bio": "Served as President and CEO of UJA Federation of Greater Toronto, leading the largest Jewish fundraising organization in Canada."},
+    {"id": "larry-tanenbaum", "name": "Larry Tanenbaum", "role": "Major Donor & Campaign Leader", "bio": "Billionaire sports and business magnate who served as a major campaign leader and philanthropic supporter of UJA Federation."},
+    {"id": "julia-koschitzky", "name": "Julia Koschitzky", "role": "Campaign Chair & Philanthropist", "bio": "Leading Canadian Jewish philanthropist who chaired UJA Federation campaigns and held senior roles in global Jewish organizations."}
+  ],
+  "montreal-holocaust-museum": [
+    {"id": "alice-herscovitch", "name": "Alice Herscovitch", "role": "Executive Director", "bio": "Served as Executive Director of the Montreal Holocaust Museum, overseeing its exhibitions, education programs, and survivor testimony archives."},
+    {"id": "steven-cummings", "name": "Steven Cummings", "role": "Board President", "bio": "Montreal businessman who served as President of the Montreal Holocaust Museum's board of directors."},
+    {"id": "muguette-myers", "name": "Muguette Myers", "role": "Holocaust Survivor & Educator", "bio": "French-born Holocaust survivor who became a key educator and spokesperson for the Montreal Holocaust Museum."}
+  ],
+  "canadian-jewish-news": [
+    {"id": "yoni-goldstein", "name": "Yoni Goldstein", "role": "Editor-in-Chief", "bio": "Served as Editor-in-Chief of the Canadian Jewish News, guiding the publication's editorial direction and digital transformation."},
+    {"id": "elizabeth-diament", "name": "Elizabeth Diament", "role": "Publisher", "bio": "Served as Publisher of the Canadian Jewish News overseeing the business operations of Canada's leading Jewish newspaper."},
+    {"id": "mordechai-ben-dat", "name": "Mordechai Ben-Dat", "role": "Senior Editor", "bio": "Longtime senior journalist and editor at the Canadian Jewish News covering major stories in the Canadian Jewish community."}
+  ],
+  "vancouver-holocaust-education-centre": [
+    {"id": "nina-krieger", "name": "Nina Krieger", "role": "Executive Director", "bio": "Led the Vancouver Holocaust Education Centre as Executive Director, expanding its educational reach across British Columbia."},
+    {"id": "robert-krell", "name": "Robert Krell", "role": "Co-Founder", "bio": "Child Holocaust survivor and UBC psychiatry professor who co-founded the Vancouver Holocaust Education Centre in 1983."},
+    {"id": "frieda-miller", "name": "Frieda Miller", "role": "Curator & Program Director", "bio": "Served as curator and program director of the Vancouver Holocaust Education Centre, developing its exhibitions and educational curricula."}
+  ],
+  "toronto-hebrew-memorial-park": [
+    {"id": "lester-eckstein", "name": "Lester Eckstein", "role": "Executive Director", "bio": "Served as Executive Director of Toronto Hebrew Memorial Park, overseeing operations of one of Canada's largest Jewish cemeteries."},
+    {"id": "benjamin-steiner", "name": "Benjamin Steiner", "role": "Board President", "bio": "Served as President of the board of Toronto Hebrew Memorial Park, guiding the institution's governance and community outreach."},
+    {"id": "earl-berger", "name": "Earl Berger", "role": "Administrator & Community Leader", "bio": "Longtime administrator at Toronto Hebrew Memorial Park who helped manage the cemetery's expansion and memorial services."}
+  ],
+  "brookfield-asset-management": [
+    {"id": "bruce-flatt", "name": "Bruce Flatt", "role": "CEO", "bio": "Transformed Brookfield Asset Management into one of the world's largest alternative asset managers with over $800 billion in assets."},
+    {"id": "jack-cockwell", "name": "Jack Cockwell", "role": "Former Group Chairman", "bio": "South African-born financier who was a key architect of the Bronfman-controlled Edper/Brascan empire that evolved into Brookfield."},
+    {"id": "brian-kingston", "name": "Brian Kingston", "role": "CEO of Brookfield Property Group", "bio": "Led Brookfield's global real estate business as CEO of Brookfield Property Group managing assets across major cities worldwide."}
+  ],
+  "cirque-du-soleil": [
+    {"id": "guy-laliberte", "name": "Guy Laliberté", "role": "Founder", "bio": "Founded Cirque du Soleil in 1984 as a former street performer and built it into the world's largest theatrical production company."},
+    {"id": "daniel-lamarre", "name": "Daniel Lamarre", "role": "CEO & Executive Vice Chairman", "bio": "Served as CEO of Cirque du Soleil for nearly two decades, expanding the brand globally with resident and touring shows."},
+    {"id": "mitch-garber", "name": "Mitch Garber", "role": "Chairman of the Board", "bio": "Canadian entrepreneur and business executive who served as Chairman of Cirque du Soleil's board after its acquisition."}
+  ],
+  "saputo-inc": [
+    {"id": "lino-saputo-sr", "name": "Lino Saputo Sr.", "role": "Founder & Chairman Emeritus", "bio": "Italian-Canadian entrepreneur who founded Saputo in 1954 and grew it into one of the largest dairy processors in the world."},
+    {"id": "lino-saputo-jr", "name": "Lino Saputo Jr.", "role": "Chairman & CEO", "bio": "Succeeded his father as CEO and later Chairman of Saputo Inc, continuing the company's global expansion strategy."},
+    {"id": "carl-colizza", "name": "Carl Colizza", "role": "President & COO", "bio": "Served as President and Chief Operating Officer of Saputo Inc, overseeing the company's day-to-day global operations."}
+  ],
+  "canadian-friends-of-hebrew-university": [
+    {"id": "rami-kleinmann", "name": "Rami Kleinmann", "role": "CEO & National Director", "bio": "Served as CEO of Canadian Friends of Hebrew University, strengthening ties between Canadian donors and the Hebrew University of Jerusalem."},
+    {"id": "gerald-schwartz-cfhu", "name": "Gerald Schwartz", "role": "Honorary Chair & Major Donor", "bio": "Onex Corporation founder who served as honorary chair and prominent supporter of Canadian Friends of Hebrew University."},
+    {"id": "jack-rabinovitch", "name": "Jack Rabinovitch", "role": "Former Chair & Benefactor", "bio": "Canadian real estate developer and creator of the Scotiabank Giller Prize who was a key benefactor of CFHU."}
+  ]
+}

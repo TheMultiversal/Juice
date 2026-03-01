@@ -1,0 +1,314 @@
+{
+  "benetton-group": [
+    {"id": "luciano-benetton", "name": "Luciano Benetton", "role": "Co-Founder & Former Chairman", "bio": "Italian entrepreneur who co-founded Benetton Group in 1965 with his siblings, building it into one of the world's largest fashion companies."},
+    {"id": "giuliana-benetton", "name": "Giuliana Benetton", "role": "Co-Founder", "bio": "Co-founded Benetton Group alongside her brothers, originally designing the colorful knitwear that became the brand's signature."},
+    {"id": "alessandro-benetton", "name": "Alessandro Benetton", "role": "Chairman", "bio": "Son of Luciano Benetton who became chairman of the Benetton Group, leading the company's strategic restructuring in the 2020s."},
+    {"id": "oliviero-toscani", "name": "Oliviero Toscani", "role": "Creative Director & Photographer", "bio": "Iconic Italian photographer who served as Benetton's creative director for decades, creating the brand's provocative 'United Colors of Benetton' advertising campaigns."}
+  ],
+  "unione-delle-comunit-ebraiche-italiane-ucei": [
+    {"id": "noemi-di-segni", "name": "Noemi Di Segni", "role": "President", "bio": "Lawyer and communal leader who has served as president of the Union of Italian Jewish Communities (UCEI), representing Italian Jewry in national affairs."},
+    {"id": "renzo-gattegna", "name": "Renzo Gattegna", "role": "Former President", "bio": "Served as president of UCEI for multiple terms, leading Italian Jewish advocacy on issues including Holocaust remembrance and interfaith dialogue."},
+    {"id": "amos-luzzatto", "name": "Amos Luzzatto", "role": "Former President", "bio": "Physician and intellectual who served as president of UCEI from 1998 to 2006, also known for his scholarship on Italian Jewish history."}
+  ],
+  "museo-ebraico-di-venezia": [
+    {"id": "riccardo-calimani", "name": "Riccardo Calimani", "role": "Historian & Community Leader", "bio": "Italian writer and historian of Venetian Jewry, author of 'The Ghetto of Venice,' and former president of the Jewish Community of Venice."},
+    {"id": "umberto-fortis", "name": "Umberto Fortis", "role": "Scholar & Former Museum Curator", "bio": "Scholar of Venetian Jewish culture who curated exhibitions and contributed to the scholarship behind the Jewish Museum of Venice's collections."},
+    {"id": "paolo-gnignati", "name": "Paolo Gnignati", "role": "Rabbi of Venice", "bio": "Served as rabbi of the Jewish Community of Venice, playing a key role in religious and cultural life connected to the museum and the historic ghetto."}
+  ],
+  "comunit-ebraica-di-milano": [
+    {"id": "milo-hasbani", "name": "Milo Hasbani", "role": "Co-President", "bio": "Businessman who served as co-president of the Jewish Community of Milan, one of Italy's largest and most active Jewish communities."},
+    {"id": "walker-meghnagi", "name": "Walker Meghnagi", "role": "Co-President", "bio": "Served as co-president of the Jewish Community of Milan, working alongside Milo Hasbani to lead communal affairs and institutional governance."},
+    {"id": "alfonso-arbib", "name": "Alfonso Arbib", "role": "Chief Rabbi of Milan", "bio": "Serves as chief rabbi of Milan, leading the religious life of the Milanese Jewish community and representing it in interfaith initiatives."}
+  ],
+  "cdec-centro-di-documentazione-ebraica-contemporanea": [
+    {"id": "michele-sarfatti", "name": "Michele Sarfatti", "role": "Former Director", "bio": "Italian historian who directed CDEC for many years, specializing in the study of Italian Fascist racial laws and the persecution of Jews in Italy."},
+    {"id": "liliana-picciotto", "name": "Liliana Picciotto", "role": "Historian & Researcher", "bio": "Leading Holocaust researcher at CDEC who compiled the authoritative database of Italian Jews deported during the Holocaust, author of 'Il Libro della Memoria.'"},
+    {"id": "gadi-luzzatto-voghera", "name": "Gadi Luzzatto Voghera", "role": "Director", "bio": "Historian who serves as director of CDEC, overseeing its research, archive, and library on contemporary Italian Jewish history and antisemitism."}
+  ],
+  "venice-ghetto": [
+    {"id": "riccardo-calimani-vg", "name": "Riccardo Calimani", "role": "Historian", "bio": "Italian historian and former president of the Jewish Community of Venice, author of 'The Ghetto of Venice' documenting the history of the world's first Jewish ghetto."},
+    {"id": "cecil-roth", "name": "Cecil Roth", "role": "Historian (1899–1970)", "bio": "British-Jewish historian who wrote extensively on the Venice Ghetto and Italian Jewish history, including the classic 'History of the Jews of Italy.'"},
+    {"id": "shaul-bassi", "name": "Shaul Bassi", "role": "Scholar & Cultural Organizer", "bio": "Professor at Ca' Foscari University of Venice who organized the 500th anniversary commemoration of the Venice Ghetto in 2016 and directs related cultural programs."}
+  ],
+  "great-synagogue-of-rome": [
+    {"id": "elio-toaff", "name": "Elio Toaff", "role": "Former Chief Rabbi of Rome (1951–2002)", "bio": "Longtime chief rabbi of Rome who famously hosted Pope John Paul II at the Great Synagogue in 1986, the first papal visit to a synagogue in history."},
+    {"id": "riccardo-di-segni", "name": "Riccardo Di Segni", "role": "Chief Rabbi of Rome", "bio": "Succeeded Elio Toaff as chief rabbi of Rome in 2002, serving the historic Roman Jewish community and continuing interfaith dialogue with the Vatican."},
+    {"id": "osvaldo-armanni", "name": "Osvaldo Armanni", "role": "Architect", "bio": "Italian architect who designed the Great Synagogue of Rome (Tempio Maggiore), completed in 1904 in an eclectic style combining Art Nouveau and Assyrian-Babylonian motifs."}
+  ],
+  "union-of-italian-jewish-communities-ucei": [
+    {"id": "tullia-zevi", "name": "Tullia Zevi", "role": "Former President (1983–1998)", "bio": "Pioneering Italian Jewish journalist and leader who served as the first female president of the Union of Italian Jewish Communities for fifteen years."},
+    {"id": "noemi-di-segni-ucei", "name": "Noemi Di Segni", "role": "President", "bio": "Lawyer serving as president of UCEI, representing the interests of Italy's Jewish communities in dealings with the Italian government and international bodies."},
+    {"id": "renzo-gattegna-ucei", "name": "Renzo Gattegna", "role": "Former President", "bio": "Led UCEI as president for multiple terms between 2006 and 2016, advocating on issues of antisemitism, interfaith relations, and Jewish heritage preservation."}
+  ],
+  "community-of-sant-egidio-jewish-dialogue": [
+    {"id": "andrea-riccardi", "name": "Andrea Riccardi", "role": "Founder of Sant'Egidio", "bio": "Italian historian and lay Catholic leader who founded the Community of Sant'Egidio in 1968, initiating its landmark interfaith dialogue programs including engagement with Jewish communities."},
+    {"id": "marco-impagliazzo", "name": "Marco Impagliazzo", "role": "President of Sant'Egidio", "bio": "Historian and current president of the Community of Sant'Egidio, overseeing its international interfaith dialogue initiatives and peacemaking efforts."},
+    {"id": "riccardo-di-segni-se", "name": "Riccardo Di Segni", "role": "Dialogue Partner (Chief Rabbi of Rome)", "bio": "Chief Rabbi of Rome who has been a key Jewish partner in Sant'Egidio's interfaith dialogues, continuing the tradition of Catholic-Jewish engagement in Italy."}
+  ],
+  "synagogue-of-florence-tempio-maggiore": [
+    {"id": "mariano-falcini", "name": "Mariano Falcini", "role": "Architect", "bio": "One of the principal architects who designed the Great Synagogue of Florence, completed in 1882 in a Moorish Revival style inspired by the Hagia Sophia."},
+    {"id": "joseph-levi", "name": "Joseph Levi", "role": "Chief Rabbi of Florence", "bio": "Served as chief rabbi of Florence, leading the congregation at the Tempio Maggiore and representing Florentine Jewry in communal and interfaith affairs."},
+    {"id": "david-levi-fl", "name": "David Levi", "role": "Community Benefactor", "bio": "Prominent Florentine Jewish leader and philanthropist David Levi bequeathed funds that made possible the construction of the monumental synagogue in the 1870s-1880s."}
+  ],
+  "jewish-museum-of-bologna": [
+    {"id": "franco-bonilauri", "name": "Franco Bonilauri", "role": "Co-Founder & Director", "bio": "Co-founded and directed the Jewish Museum of Bologna (Museo Ebraico di Bologna), established in 1999 to document the Jewish heritage of the Emilia-Romagna region."},
+    {"id": "vincenza-maugeri", "name": "Vincenza Maugeri", "role": "Co-Founder & Director", "bio": "Co-founded the Jewish Museum of Bologna alongside Franco Bonilauri and served as co-director, developing its exhibitions and educational programs."},
+    {"id": "annie-sacerdoti", "name": "Annie Sacerdoti", "role": "Advisor & Scholar", "bio": "Italian Jewish heritage scholar and author of the 'Guide to Jewish Italy' who has collaborated with the museum on documenting Jewish history in Emilia-Romagna."}
+  ],
+  "jewish-museum-of-rome": [
+    {"id": "olga-melasecchi", "name": "Olga Melasecchi", "role": "Director & Curator", "bio": "Directed the Jewish Museum of Rome, overseeing its collections of ceremonial art, textiles, and historical artifacts from Rome's ancient Jewish community."},
+    {"id": "ruth-dureghello-mr", "name": "Ruth Dureghello", "role": "President, Jewish Community of Rome", "bio": "As president of the Jewish Community of Rome, oversaw governance of the Jewish Museum and other communal institutions in the Roman ghetto."},
+    {"id": "gianni-ascarelli", "name": "Gianni Ascarelli", "role": "Community Leader", "bio": "Prominent Roman Jewish community leader who has supported the museum's mission to preserve and present the 2,000-year history of Jews in Rome."}
+  ],
+  "jewish-community-of-rome": [
+    {"id": "ruth-dureghello", "name": "Ruth Dureghello", "role": "Former President", "bio": "Served as president of the Jewish Community of Rome, the oldest Jewish community in Europe, leading advocacy and communal governance."},
+    {"id": "victor-fadlun", "name": "Victor Fadlun", "role": "President", "bio": "Current president of the Jewish Community of Rome, managing one of the largest and most historically significant Jewish communities in Western Europe."},
+    {"id": "riccardo-di-segni-jcr", "name": "Riccardo Di Segni", "role": "Chief Rabbi of Rome", "bio": "Serves as chief rabbi of Rome, spiritual leader of the Roman Jewish community whose roots date back over two thousand years."}
+  ],
+  "jewish-ghetto-of-venice": [
+    {"id": "shaul-bassi-jgv", "name": "Shaul Bassi", "role": "Scholar & Commemorative Organizer", "bio": "Professor at Ca' Foscari University who directed the Venice Ghetto 500th anniversary project in 2016, bringing international attention to the world's first ghetto."},
+    {"id": "donatella-calabi", "name": "Donatella Calabi", "role": "Architectural Historian", "bio": "Italian architectural historian at IUAV University of Venice whose research on the urban history of the Venice Ghetto has been widely influential."},
+    {"id": "paolo-gnignati-jgv", "name": "Paolo Gnignati", "role": "Rabbi of Venice", "bio": "Rabbi of the Jewish Community of Venice who leads religious life in the historic ghetto, home to five centuries-old synagogues still in use."}
+  ],
+  "galicia-jewish-museum": [
+    {"id": "chris-schwarz", "name": "Chris Schwarz", "role": "Founder (1948–2007)", "bio": "British photographer who founded the Galicia Jewish Museum in Kraków in 2004, basing its core exhibition on his photographic project 'Traces of Memory.'"},
+    {"id": "jakub-nowakowski", "name": "Jakub Nowakowski", "role": "Former Director", "bio": "Served as director of the Galicia Jewish Museum, expanding its programming and establishing it as a major cultural venue in Kraków's Kazimierz district."},
+    {"id": "jonathan-webber", "name": "Jonathan Webber", "role": "Co-Creator & Academic Advisor", "bio": "British-Polish social anthropologist and professor who co-created the museum's core exhibition with Chris Schwarz, contributing scholarly framework to the photographic collection."}
+  ],
+  "jewish-community-centre-of-krak-w-jcc-krak-w": [
+    {"id": "jonathan-ornstein", "name": "Jonathan Ornstein", "role": "Executive Director", "bio": "American-born executive director of JCC Kraków since its founding in 2008, building it into a vibrant hub for the revival of Jewish life in Poland."},
+    {"id": "kasia-leonardi", "name": "Kasia Leonardi", "role": "Deputy Director", "bio": "Serves as deputy director of JCC Kraków, helping develop its extensive cultural, educational, and community programs serving Jews in southern Poland."},
+    {"id": "prince-charles", "name": "Prince Charles (King Charles III)", "role": "Patron", "bio": "As Prince of Wales, became a patron of the JCC Kraków, lending royal support to the revival of Jewish communal life in Poland."}
+  ],
+  "auschwitz-birkenau-memorial-and-museum": [
+    {"id": "piotr-cywinski", "name": "Piotr Cywiński", "role": "Director", "bio": "Polish historian serving as director of the Auschwitz-Birkenau State Museum since 2006, overseeing the preservation and educational mission of the former Nazi concentration camp."},
+    {"id": "kazimierz-smolen", "name": "Kazimierz Smoleń", "role": "Former Director (1955–1990)", "bio": "Auschwitz survivor (prisoner #1327) who served as director of the Auschwitz-Birkenau Museum for 35 years, dedicating his life to preserving the memory of the camp."},
+    {"id": "teresa-swiebocka", "name": "Teresa Świebocka", "role": "Former Deputy Director", "bio": "Historian and former deputy director of the Auschwitz-Birkenau Museum who authored and edited key publications on the history of the camp."},
+    {"id": "waclaw-dlugoborski", "name": "Wacław Długoborski", "role": "Historian", "bio": "Polish historian who co-edited the comprehensive multi-volume history 'Auschwitz 1940–1945,' a foundational scholarly work on the camp's history."}
+  ],
+  "warsaw-ghetto-memorial": [
+    {"id": "nathan-rapoport", "name": "Nathan Rapoport", "role": "Sculptor", "bio": "Polish-Jewish sculptor who designed the iconic Warsaw Ghetto Heroes Monument, unveiled in 1948 on the fifth anniversary of the Warsaw Ghetto Uprising."},
+    {"id": "marek-edelman", "name": "Marek Edelman", "role": "Warsaw Ghetto Uprising Commander (1919–2009)", "bio": "Last surviving commander of the Warsaw Ghetto Uprising of 1943, later a prominent cardiologist and political activist in Poland."},
+    {"id": "leon-suzin", "name": "Leon Suzin", "role": "Architect", "bio": "Polish architect who collaborated with Nathan Rapoport on the design and placement of the Warsaw Ghetto Monument, integrating it into the destroyed ghetto landscape."}
+  ],
+  "polin-museum-of-the-history-of-polish-jews": [
+    {"id": "dariusz-stola", "name": "Dariusz Stola", "role": "Former Director", "bio": "Polish historian who directed POLIN Museum from 2014 to 2019, winning the European Museum of the Year Award in 2016 during his tenure."},
+    {"id": "barbara-kirshenblatt-gimblett", "name": "Barbara Kirshenblatt-Gimblett", "role": "Core Exhibition Curator", "bio": "American scholar and professor at NYU who served as program director of the museum's acclaimed core exhibition on 1,000 years of Polish Jewish history."},
+    {"id": "zygmunt-stepinski", "name": "Zygmunt Stępiński", "role": "Director", "bio": "Serves as director of POLIN Museum, overseeing its exhibitions, research programs, and educational activities on the history of Polish Jews."},
+    {"id": "marian-turski", "name": "Marian Turski", "role": "Chairman, Museum Council", "bio": "Auschwitz survivor, journalist, and historian who chairs the POLIN Museum Council and is a leading voice in Holocaust remembrance and civic education."}
+  ],
+  "treblinka-memorial": [
+    {"id": "franciszek-duszenko", "name": "Franciszek Duszenko", "role": "Sculptor", "bio": "Polish sculptor who created the monumental stone memorial at the Treblinka extermination camp site, unveiled in 1964, featuring 17,000 stones symbolizing destroyed communities."},
+    {"id": "adam-haupt", "name": "Adam Haupt", "role": "Architect", "bio": "Polish architect who designed the Treblinka memorial complex layout alongside sculptor Franciszek Duszenko, creating the symbolic cemetery of stones."},
+    {"id": "edward-kopowka", "name": "Edward Kopówka", "role": "Historian & Museum Curator", "bio": "Historian who has served as curator of the Treblinka Museum, researching and documenting the history of the extermination and labor camps at Treblinka."},
+    {"id": "vasily-grossman", "name": "Vasily Grossman", "role": "Journalist & Documentarian", "bio": "Soviet journalist and author who wrote 'The Hell of Treblinka' (1944), one of the first accounts of the extermination camp, based on survivor testimonies."}
+  ],
+  "majdanek-state-museum": [
+    {"id": "tomasz-kranz", "name": "Tomasz Kranz", "role": "Director", "bio": "Polish historian serving as director of the Majdanek State Museum, overseeing the preservation of the former Nazi concentration camp and its educational programs."},
+    {"id": "wiktor-tolkin", "name": "Wiktor Tołkin", "role": "Memorial Architect", "bio": "Polish architect who designed the monumental Mausoleum and memorial at Majdanek in 1969, creating one of Poland's most striking Holocaust memorials."},
+    {"id": "edward-balawejder", "name": "Edward Balawejder", "role": "Former Director", "bio": "Served as director of the Majdanek State Museum, contributing to the documentation and preservation of the camp's history and physical remains."}
+  ],
+  "jewish-community-centre-of-krakow-jcc-krak-w": [
+    {"id": "jonathan-ornstein-jcc2", "name": "Jonathan Ornstein", "role": "Executive Director", "bio": "American-born leader who founded and directs JCC Kraków, a flagship institution in the post-Holocaust revival of Jewish communal life in Poland."},
+    {"id": "henryk-halkowski", "name": "Henryk Halkowski", "role": "Community Advisor (1951–2012)", "bio": "Polish Jewish intellectual and translator who was a key figure in the revival of Jewish cultural life in Kraków and an early advisor to Jewish community institutions."},
+    {"id": "tadeusz-jakubowicz", "name": "Tadeusz Jakubowicz", "role": "Chairman, Jewish Community of Kraków", "bio": "Longtime chairman of the Jewish Community of Kraków (Gmina), working closely with JCC Kraków to support the revitalization of Jewish life in the city."}
+  ],
+  "tykocin-synagogue": [
+    {"id": "szymon-zajczyk", "name": "Szymon Zajczyk", "role": "Pre-War Historian", "bio": "Polish Jewish art historian who documented and studied the Tykocin Synagogue before World War II, contributing to the record of its 17th-century baroque architecture."},
+    {"id": "tomasz-wisniewski", "name": "Tomasz Wiśniewski", "role": "Local Historian & Preservationist", "bio": "Polish historian and filmmaker from Białystok who has extensively documented the Jewish heritage of Tykocin and the surrounding Podlasie region."},
+    {"id": "izaak-rabinowicz", "name": "Izaak Rabinowicz", "role": "Historic Rabbi", "bio": "Served as one of the notable rabbis of Tykocin's Jewish community, which flourished from the 16th century until its destruction in the Holocaust."}
+  ],
+  "museum-of-the-history-of-polish-jews-polin-additional-programs": [
+    {"id": "barbara-kirshenblatt-gimblett-ap", "name": "Barbara Kirshenblatt-Gimblett", "role": "Chief Curator", "bio": "NYU professor emerita who shaped POLIN's core exhibition and continues to advise on its additional programs exploring the full scope of Polish Jewish civilization."},
+    {"id": "marian-turski-ap", "name": "Marian Turski", "role": "Chairman, Museum Council", "bio": "Holocaust survivor and honorary chairman of the POLIN Museum Association who actively supports the museum's expanding educational and cultural programs."},
+    {"id": "kamil-kijek", "name": "Kamil Kijek", "role": "Academic Program Director", "bio": "Polish historian at the University of Wrocław who has contributed to POLIN's research and academic programs on the history of Jews in Poland."}
+  ],
+  "foundation-preservation-jewish-heritage-poland": [
+    {"id": "monika-krawczyk", "name": "Monika Krawczyk", "role": "Chief Executive", "bio": "Lawyer serving as CEO of the Foundation for the Preservation of Jewish Heritage in Poland (FODZ), overseeing the restoration of synagogues, cemeteries, and other Jewish sites."},
+    {"id": "piotr-wislicki", "name": "Piotr Wiślicki", "role": "Chairman", "bio": "Chairman of the Foundation for the Preservation of Jewish Heritage in Poland and chairman of the Association of the Jewish Historical Institute, a leading advocate for Polish Jewish heritage."},
+    {"id": "anna-kubiak", "name": "Anna Kubiak", "role": "Heritage Program Manager", "bio": "Manages heritage preservation programs at FODZ, coordinating the restoration and documentation of hundreds of Jewish heritage sites across Poland."}
+  ],
+  "jewish-historical-institute-warsaw": [
+    {"id": "pawel-spiewak", "name": "Paweł Śpiewak", "role": "Former Director", "bio": "Polish sociologist and political philosopher who served as director of the Jewish Historical Institute in Warsaw, overseeing its renowned Ringelblum Archive and research programs."},
+    {"id": "emanuel-ringelblum", "name": "Emanuel Ringelblum", "role": "Founder of the Archive (1900–1944)", "bio": "Polish-Jewish historian who created the Oyneg Shabes underground archive in the Warsaw Ghetto, which forms the core of the Jewish Historical Institute's collection and is a UNESCO Memory of the World document."},
+    {"id": "eleonora-bergman", "name": "Eleonora Bergman", "role": "Former Deputy Director", "bio": "Architectural historian who served as deputy director of the Jewish Historical Institute, specializing in the history of synagogue architecture in Poland."}
+  ],
+  "credit-suisse-now-ubs": [
+    {"id": "tidjane-thiam", "name": "Tidjane Thiam", "role": "Former CEO (2015–2020)", "bio": "Franco-Ivorian businessman who served as CEO of Credit Suisse, leading a major restructuring before his departure amid a corporate espionage scandal."},
+    {"id": "thomas-gottstein", "name": "Thomas Gottstein", "role": "Former CEO (2020–2022)", "bio": "Swiss banker who served as the last standalone CEO of Credit Suisse before its emergency acquisition by UBS in 2023."},
+    {"id": "axel-lehmann", "name": "Axel Lehmann", "role": "Last Chairman", "bio": "Swiss executive who served as chairman of Credit Suisse during its final crisis, overseeing the bank's emergency merger with UBS in March 2023."},
+    {"id": "colm-kelleher", "name": "Colm Kelleher", "role": "Chairman of UBS", "bio": "Irish-American banker serving as chairman of UBS, guiding the integration of Credit Suisse into UBS following the historic 2023 acquisition."}
+  ],
+  "nestl": [
+    {"id": "mark-schneider", "name": "Mark Schneider", "role": "CEO", "bio": "German businessman serving as CEO of Nestlé since 2017, refocusing the world's largest food company on health, nutrition, and sustainability."},
+    {"id": "paul-bulcke", "name": "Paul Bulcke", "role": "Chairman & Former CEO", "bio": "Belgian businessman who served as Nestlé CEO from 2008 to 2017 and subsequently as chairman of the board."},
+    {"id": "peter-brabeck-letmathe", "name": "Peter Brabeck-Letmathe", "role": "Former Chairman & CEO", "bio": "Austrian executive who led Nestlé as CEO from 1997 to 2008 and chairman from 2005 to 2017, overseeing its transformation into a nutrition and wellness company."},
+    {"id": "henri-nestle", "name": "Henri Nestlé", "role": "Founder (1814–1890)", "bio": "German-born Swiss confectioner and pharmacist who founded Nestlé in 1866, originally developing an infant cereal food that launched the global food company."}
+  ],
+  "world-health-organization-israeli-connections": [
+    {"id": "tedros-adhanom-ghebreyesus", "name": "Tedros Adhanom Ghebreyesus", "role": "Director-General", "bio": "Ethiopian public health researcher serving as WHO Director-General since 2017, navigating the organization's complex relationships with member states including Israel."},
+    {"id": "flavia-bustreo", "name": "Flavia Bustreo", "role": "Former Assistant Director-General", "bio": "Italian physician who served as WHO Assistant Director-General for Family, Women's and Children's Health, engaging with Israeli medical innovations and partnerships."},
+    {"id": "ruth-arnon", "name": "Ruth Arnon", "role": "Israeli Scientific Advisor", "bio": "Renowned Israeli immunologist and former president of the Israel Academy of Sciences who has served on WHO advisory committees, linking Israeli research to global health policy."}
+  ],
+  "schweizerischer-israelitischer-gemeindebund-sig": [
+    {"id": "ralph-lewin", "name": "Ralph Lewin", "role": "President", "bio": "Serves as president of the Swiss Federation of Jewish Communities (SIG/FSCI), representing the interests of Swiss Jewry in national and international affairs."},
+    {"id": "herbert-winter", "name": "Herbert Winter", "role": "Former President", "bio": "Led SIG as president, advocating for the Swiss Jewish community on issues including Holocaust-era assets, antisemitism, and communal welfare."},
+    {"id": "sigi-feigel", "name": "Sigi Feigel", "role": "Former President (1924–2004)", "bio": "Prominent Swiss Jewish leader who served as honorary president of the Israelite Community of Zurich and was a key figure in Swiss Jewish advocacy for decades."}
+  ],
+  "world-jewish-congress-headquarters": [
+    {"id": "ronald-lauder", "name": "Ronald Lauder", "role": "President", "bio": "American businessman and philanthropist serving as president of the World Jewish Congress since 2007, leading global Jewish advocacy and diplomacy from its Geneva and New York offices."},
+    {"id": "nahum-goldmann", "name": "Nahum Goldmann", "role": "Co-Founder (1895–1982)", "bio": "German-born Jewish leader who co-founded the World Jewish Congress in 1936 in Geneva, building it into the leading international organization representing Jewish communities worldwide."},
+    {"id": "edgar-bronfman-sr", "name": "Edgar Bronfman Sr.", "role": "Former President (1981–2007)", "bio": "Canadian-American businessman and Seagram heir who served as WJC president for 26 years, leading campaigns for Soviet Jewry and Swiss bank Holocaust restitution."}
+  ],
+  "swiss-federation-of-jewish-communities-sig-fsci": [
+    {"id": "ralph-lewin-sf", "name": "Ralph Lewin", "role": "President", "bio": "Current president of the Swiss Federation of Jewish Communities (SIG/FSCI), the umbrella organization representing Jewish communities across Switzerland."},
+    {"id": "herbert-winter-sf", "name": "Herbert Winter", "role": "Former President", "bio": "Served as president of SIG/FSCI, leading Swiss Jewish communal advocacy on issues including security, interfaith relations, and Holocaust remembrance."},
+    {"id": "jonathan-kreutner", "name": "Jonathan Kreutner", "role": "Secretary General", "bio": "Serves as secretary general of SIG/FSCI, managing the federation's day-to-day operations and public communications on behalf of Swiss Jewry."}
+  ],
+  "bergier-commission-legacy": [
+    {"id": "jean-francois-bergier", "name": "Jean-François Bergier", "role": "Chairman (1937–2009)", "bio": "Swiss economic historian who chaired the Independent Commission of Experts Switzerland–Second World War (1996–2002), producing the landmark report on Swiss dealings with Nazi Germany."},
+    {"id": "georg-kreis", "name": "Georg Kreis", "role": "Member", "bio": "Swiss historian and professor at the University of Basel who served on the Bergier Commission, contributing research on Swiss refugee policy during World War II."},
+    {"id": "jacques-picard", "name": "Jacques Picard", "role": "Member & Historian", "bio": "Swiss historian who served on the Bergier Commission and authored key studies on the fate of Jewish assets in Swiss banks during and after the Holocaust."}
+  ],
+  "international-committee-of-the-red-cross-jewish-relationship": [
+    {"id": "cornelio-sommaruga", "name": "Cornelio Sommaruga", "role": "Former ICRC President (1987–1999)", "bio": "Swiss diplomat who served as ICRC president and later acknowledged the ICRC's failures during the Holocaust, engaging in dialogue with Jewish organizations about institutional responsibility."},
+    {"id": "peter-maurer", "name": "Peter Maurer", "role": "Former President (2012–2022)", "bio": "Swiss diplomat who served as ICRC president, continuing efforts to address the organization's wartime record and maintain engagement with Jewish communal leaders."},
+    {"id": "mirjana-spoljaric", "name": "Mirjana Spoljaric Egger", "role": "President", "bio": "Current ICRC president, the first woman to hold the role, continuing institutional engagement with Jewish communities on humanitarian and historical reconciliation issues."}
+  ],
+  "b-nai-b-rith-international-geneva-office": [
+    {"id": "daniel-mariaschin", "name": "Daniel Mariaschin", "role": "CEO", "bio": "Serves as CEO of B'nai B'rith International, overseeing its global advocacy including the Geneva office's engagement with UN agencies and international organizations."},
+    {"id": "seth-riklin", "name": "Seth Riklin", "role": "International Vice President", "bio": "Serves in senior leadership at B'nai B'rith International, supporting its diplomatic advocacy at the United Nations and other international bodies in Geneva."},
+    {"id": "charles-kaufman", "name": "Charles O. Kaufman", "role": "Former President", "bio": "Served as international president of B'nai B'rith, the world's oldest Jewish service organization, guiding its global programs and UN-level advocacy."}
+  ],
+  "world-economic-forum": [
+    {"id": "klaus-schwab", "name": "Klaus Schwab", "role": "Founder & Executive Chairman", "bio": "German-born engineer and economist who founded the World Economic Forum in 1971, building it into the premier global platform for public-private cooperation in Davos, Switzerland."},
+    {"id": "borge-brende", "name": "Børge Brende", "role": "President", "bio": "Former Norwegian foreign minister serving as president of the World Economic Forum, managing its daily operations and annual meetings."},
+    {"id": "hilde-schwab", "name": "Hilde Schwab", "role": "Co-Founder & Chair of SCHWAB Foundation", "bio": "Co-founder of the World Economic Forum alongside her husband Klaus Schwab, and founder of the Schwab Foundation for Social Entrepreneurship."}
+  ],
+  "world-zionist-organization-wzo": [
+    {"id": "theodor-herzl", "name": "Theodor Herzl", "role": "Founder (1860–1904)", "bio": "Austro-Hungarian journalist and political activist who founded the World Zionist Organization at the First Zionist Congress in Basel, Switzerland in 1897, becoming the father of modern political Zionism."},
+    {"id": "yaakov-hagoel", "name": "Yaakov Hagoel", "role": "Chairman", "bio": "Serves as chairman of the World Zionist Organization and acting chairman of the Jewish Agency for Israel, leading global Zionist movement governance."},
+    {"id": "avraham-duvdevani", "name": "Avraham Duvdevani", "role": "Former Chairman", "bio": "Served as chairman of the World Zionist Organization, representing the movement's diverse political streams and overseeing its educational and settlement activities."}
+  ],
+  "federaci-n-de-comunidades-jud-as-de-espa-a-fcje": [
+    {"id": "isaac-querub", "name": "Isaac Querub", "role": "President", "bio": "Serves as president of the Federation of Jewish Communities of Spain (FCJE), representing Spanish Jewry and advocating for communal interests and Sephardic heritage."},
+    {"id": "david-hatchwell", "name": "David Hatchwell", "role": "Vice President & Community Leader", "bio": "Prominent Spanish Jewish businessman and communal leader who serves in the leadership of FCJE and is active in promoting Jewish life and culture in Spain."},
+    {"id": "esther-bendahan", "name": "Esther Bendahán", "role": "Cultural Director", "bio": "Spanish Jewish writer and cultural director at the FCJE who leads programming on Sephardic heritage, literature, and cultural dialogue in Spain."}
+  ],
+  "red-de-juder-as-de-espa-a": [
+    {"id": "miguel-angel-garcia-alcala", "name": "Miguel Ángel García", "role": "Network Coordinator", "bio": "Coordinates the Network of Jewish Quarters of Spain (Red de Juderías), an association of cities preserving and promoting their historic Jewish heritage districts."},
+    {"id": "antonio-lopez-de-toledo", "name": "Antonio López", "role": "Tourism & Heritage Director", "bio": "Has directed heritage tourism initiatives within the Red de Juderías, developing the 'Caminos de Sefarad' routes connecting historic Jewish quarters across Spain."},
+    {"id": "isaac-querub-rj", "name": "Isaac Querub", "role": "Communal Advisor", "bio": "As president of the FCJE, advises the Red de Juderías on Jewish cultural authenticity and historical accuracy in its heritage preservation projects."}
+  ],
+  "sephardic-house-of-barcelona": [
+    {"id": "victor-sorenssen", "name": "Victor Sorenssen", "role": "Community Leader", "bio": "Prominent figure in Barcelona's Jewish community who has been active in promoting Sephardic heritage and cultural activities in Catalonia."},
+    {"id": "isaac-querub-shb", "name": "Isaac Querub", "role": "FCJE President", "bio": "As president of Spain's Jewish federation, supports the work of Sephardic cultural institutions including the Sephardic House of Barcelona."},
+    {"id": "dominique-tomasov-blinder", "name": "Dominique Tomasov Blinder", "role": "Cultural Organizer", "bio": "Active in Barcelona's Jewish cultural scene, organizing events and programs related to Sephardic heritage and Jewish life in Catalonia."}
+  ],
+  "centro-sefarad-israel": [
+    {"id": "miguel-de-lucas", "name": "Miguel de Lucas", "role": "Director", "bio": "Serves as director of Centro Sefarad-Israel in Madrid, overseeing its cultural programming, exhibitions, and diplomatic activities promoting Spanish-Israeli relations."},
+    {"id": "diego-de-ojeda", "name": "Diego de Ojeda", "role": "Former Director", "bio": "Spanish diplomat who served as the first director of Casa Sefarad-Israel (now Centro Sefarad-Israel), establishing its role as a cultural bridge between Spain and the Jewish world."},
+    {"id": "esther-bendahan-csi", "name": "Esther Bendahán", "role": "Cultural Programming Director", "bio": "Spanish Jewish writer who directs cultural and literary programming at Centro Sefarad-Israel, promoting Sephardic heritage and Spanish-Jewish cultural exchange."}
+  ],
+  "casa-sefarad": [
+    {"id": "diego-de-ojeda-cs", "name": "Diego de Ojeda", "role": "Founding Director", "bio": "Spanish diplomat who served as founding director of Casa Sefarad, establishing it as a diplomatic and cultural center for Spanish-Jewish and Spanish-Israeli relations."},
+    {"id": "miguel-de-lucas-cs", "name": "Miguel de Lucas", "role": "Director", "bio": "Current director overseeing Casa Sefarad's programs on Sephardic heritage, Spanish-Israeli cultural exchange, and interfaith dialogue."},
+    {"id": "isaac-querub-cs", "name": "Isaac Querub", "role": "Jewish Community Liaison", "bio": "As head of Spain's Jewish federation, serves as a key communal partner for Casa Sefarad's events and programs on Jewish life in Spain."}
+  ],
+  "museo-sefard-de-toledo": [
+    {"id": "santiago-palomero", "name": "Santiago Palomero Plaza", "role": "Director", "bio": "Spanish archaeologist and museum professional who has directed the Museo Sefardí de Toledo, housed in the 14th-century El Tránsito Synagogue."},
+    {"id": "ana-maria-lopez-alvarez", "name": "Ana María López Álvarez", "role": "Former Director", "bio": "Served as director of the Museo Sefardí and authored key publications on the Sephardic heritage collections and the history of the El Tránsito Synagogue."},
+    {"id": "samuel-ha-levi-abulafia", "name": "Samuel ha-Levi Abulafia", "role": "Historic Patron (14th century)", "bio": "Treasurer to King Pedro I of Castile who commissioned the construction of the El Tránsito Synagogue in 1357, which today houses the Museo Sefardí."}
+  ],
+  "federation-of-jewish-communities-of-spain-additional": [
+    {"id": "isaac-querub-ad", "name": "Isaac Querub", "role": "President", "bio": "Longtime president of the FCJE who has led efforts to strengthen Jewish communal infrastructure in Spain and promote the 2015 Sephardic citizenship law."},
+    {"id": "david-hatchwell-ad", "name": "David Hatchwell", "role": "Community Leader", "bio": "Spanish Jewish businessman and philanthropist active in FCJE leadership, supporting Jewish cultural and educational initiatives across Spain."},
+    {"id": "albert-cohen-ad", "name": "Albert Cohen", "role": "Community Representative", "bio": "Active leader in Spain's Jewish communal life who has served in FCJE governance, representing Jewish communities in national affairs and Sephardic heritage promotion."}
+  ],
+  "museum-of-sephardic-heritage-toledo": [
+    {"id": "santiago-palomero-msh", "name": "Santiago Palomero Plaza", "role": "Director", "bio": "Archaeologist directing the Museum of Sephardic Heritage in Toledo's historic El Tránsito Synagogue, overseeing its collections on medieval Spanish Jewish life."},
+    {"id": "ana-maria-lopez-alvarez-msh", "name": "Ana María López Álvarez", "role": "Former Director & Researcher", "bio": "Former museum director who contributed extensively to research and publication on Sephardic material culture and the history of the Toledo Jewish community."},
+    {"id": "uriel-macias-kapon", "name": "Uriel Macías Kapón", "role": "Sephardic Heritage Scholar", "bio": "Spanish scholar and publisher specializing in Sephardic studies who has collaborated with the museum on publications and exhibitions about Sephardic heritage."}
+  ],
+  "c-rdoba-synagogue": [
+    {"id": "yitzhak-bar-sheshet", "name": "Isaac bar Sheshet Perfet", "role": "Historic Rabbi (1326–1408)", "bio": "Renowned medieval rabbi who served the Córdoba Jewish community, one of the great Talmudic authorities of 14th-century Spain."},
+    {"id": "maimonides", "name": "Moses Maimonides", "role": "Historic Figure (1138–1204)", "bio": "Born in Córdoba, Maimonides was the preeminent medieval Jewish philosopher, physician, and Torah scholar whose legacy is deeply intertwined with the city's Jewish heritage."},
+    {"id": "jesus-pelaez-del-rosal", "name": "Jesús Peláez del Rosal", "role": "Heritage Scholar", "bio": "Spanish professor and president of the Asociación de Amigos de Sefarad who has contributed to the study and preservation of Córdoba's Jewish heritage sites."}
+  ],
+  "casa-sefarad-israel-madrid": [
+    {"id": "miguel-de-lucas-csim", "name": "Miguel de Lucas", "role": "Director", "bio": "Director of Casa Sefarad-Israel in Madrid, leading its mission as a diplomatic and cultural center promoting Sephardic heritage and Spanish-Israeli relations."},
+    {"id": "diego-de-ojeda-csim", "name": "Diego de Ojeda", "role": "Founding Director", "bio": "Diplomat who established Casa Sefarad-Israel in Madrid under Spain's Ministry of Foreign Affairs, creating a unique institution bridging Spanish and Jewish worlds."},
+    {"id": "esther-bendahan-csim", "name": "Esther Bendahán", "role": "Cultural Director", "bio": "Writer and cultural director at Casa Sefarad-Israel Madrid who curates programs on Sephardic literature, culture, and the ongoing relationship between Spain and its Jewish heritage."}
+  ],
+  "museo-sefardi": [
+    {"id": "santiago-palomero-ms", "name": "Santiago Palomero Plaza", "role": "Director", "bio": "Archaeologist and museum professional serving as director of the Museo Sefardí in Toledo, managing Spain's national museum of Sephardic culture and history."},
+    {"id": "ana-maria-lopez-alvarez-ms", "name": "Ana María López Álvarez", "role": "Former Director", "bio": "Led the Museo Sefardí and contributed important scholarship on the museum's collection of Sephardic ceremonial objects and medieval Hebrew inscriptions."},
+    {"id": "amparo-alvarez", "name": "Amparo Álvarez", "role": "Curator", "bio": "Curator at the Museo Sefardí who has overseen exhibitions and conservation of the museum's collection within the historic El Tránsito Synagogue."}
+  ],
+  "jdc-american-jewish-joint-distribution-committee-global": [
+    {"id": "david-schizer", "name": "David Schizer", "role": "CEO", "bio": "Former Columbia Law School dean serving as CEO of JDC, overseeing its humanitarian and community development programs in over 70 countries."},
+    {"id": "alan-gill", "name": "Alan Gill", "role": "Former CEO", "bio": "Served as CEO of the American Jewish Joint Distribution Committee, leading its global operations in Jewish community support and disaster relief."},
+    {"id": "penny-blumenstein", "name": "Penny Blumenstein", "role": "Board Chair", "bio": "Philanthropist and communal leader serving as chair of JDC's board, guiding the organization's strategic direction in global Jewish humanitarian work."},
+    {"id": "joseph-hyman", "name": "Joseph C. Hyman", "role": "Historic Executive (1889–1949)", "bio": "Served as executive vice chairman of JDC during World War II and its aftermath, managing massive rescue and relief operations for European Jewry."}
+  ],
+  "shalom-hartman-institute": [
+    {"id": "donniel-hartman", "name": "Donniel Hartman", "role": "President", "bio": "Israeli-American rabbi and philosopher who serves as president of the Shalom Hartman Institute, succeeding his father and expanding its programs in Jewish thought and education."},
+    {"id": "david-hartman", "name": "David Hartman", "role": "Founder (1931–2013)", "bio": "Canadian-born Israeli rabbi and philosopher who founded the Shalom Hartman Institute in Jerusalem in 1976, becoming one of the most influential Jewish thinkers of his generation."},
+    {"id": "yossi-klein-halevi", "name": "Yossi Klein Halevi", "role": "Senior Fellow", "bio": "American-Israeli journalist and author of 'Letters to My Palestinian Neighbor' who serves as a senior fellow at the Hartman Institute, focusing on Muslim-Jewish relations."}
+  ],
+  "world-mizrachi": [
+    {"id": "doron-perez", "name": "Rabbi Doron Perez", "role": "Executive Chairman", "bio": "South African-born Israeli rabbi serving as executive chairman of World Mizrachi, the global Religious Zionist movement, revitalizing its programs and public presence."},
+    {"id": "yitzhak-yaakov-reines", "name": "Rabbi Yitzhak Yaakov Reines", "role": "Founder (1839–1915)", "bio": "Lithuanian rabbi who founded the Mizrachi movement in 1902 in Vilna, establishing Religious Zionism as a major stream within the World Zionist Organization."},
+    {"id": "rabbanit-shani-taragin", "name": "Rabbanit Shani Taragin", "role": "Educational Director", "bio": "Serves as educational director at World Mizrachi, leading its Torah education programs and scholar-in-residence initiatives in communities worldwide."}
+  ],
+  "march-of-the-living": [
+    {"id": "shmuel-rosenman", "name": "Shmuel Rosenman", "role": "Founder & Chairman", "bio": "Israeli educator who founded the March of the Living in 1988, creating the annual educational program that brings youth from around the world to Holocaust sites in Poland and then to Israel."},
+    {"id": "phyllis-greenberg-heideman", "name": "Phyllis Greenberg Heideman", "role": "President", "bio": "Serves as president of the International March of the Living, overseeing the annual program that has brought hundreds of thousands of participants to Auschwitz on Yom HaShoah."},
+    {"id": "aharon-tamir", "name": "Aharon Tamir", "role": "Co-Founder", "bio": "Israeli co-founder who helped establish the March of the Living, developing its educational framework linking Holocaust remembrance to the vitality of the State of Israel."}
+  ],
+  "ohr-somayach": [
+    {"id": "nota-schiller", "name": "Rabbi Nota Schiller", "role": "Co-Founder & Dean", "bio": "American-born rabbi who co-founded Ohr Somayach in Jerusalem in 1970, building it into one of the world's leading outreach yeshivas for Jews exploring their heritage."},
+    {"id": "mendel-weinbach", "name": "Rabbi Mendel Weinbach", "role": "Co-Founder & Dean (1933–2014)", "bio": "Co-founded Ohr Somayach alongside Rabbi Nota Schiller and served as co-dean for over four decades, authoring numerous works on Talmud and Jewish thought."},
+    {"id": "yaakov-asher-sinclair", "name": "Rabbi Yaakov Asher Sinclair", "role": "Senior Lecturer", "bio": "British-born rabbi and author who serves as a senior lecturer at Ohr Somayach and is known for his weekly Torah publication and educational outreach."}
+  ],
+  "claims-conference-conference-on-jewish-material-claims-against-germany": [
+    {"id": "gideon-taylor", "name": "Gideon Taylor", "role": "President", "bio": "Serves as president of the Claims Conference, leading negotiations with the German government for compensation and restitution for Holocaust survivors worldwide."},
+    {"id": "julius-berman", "name": "Julius Berman", "role": "Chairman", "bio": "American attorney and Jewish communal leader serving as chairman of the Claims Conference, overseeing its governance and policy on Holocaust-era property restitution."},
+    {"id": "greg-schneider", "name": "Greg Schneider", "role": "Executive Vice President", "bio": "Serves as executive vice president of the Claims Conference, managing its operations including the distribution of billions of dollars in compensation to Holocaust survivors."}
+  ],
+  "keren-hayesod-united-israel-appeal": [
+    {"id": "sam-grundwerg", "name": "Sam Grundwerg", "role": "World Chairman", "bio": "Serves as world chairman of Keren Hayesod – United Israel Appeal, leading the global fundraising organization that has supported Israel's development since 1920."},
+    {"id": "greg-kay", "name": "Greg Kay", "role": "Director General", "bio": "Australian-born executive serving as director general of Keren Hayesod, managing its fundraising campaigns across over 45 countries to support immigration and social programs in Israel."},
+    {"id": "abraham-menachem-ussishkin", "name": "Abraham Menachem Ussishkin", "role": "Founding Chairman (1863–1941)", "bio": "Russian-born Zionist leader who served as the first chairman of Keren Hayesod when it was established at the London Zionist Conference in 1920 to fund the Jewish national home."}
+  ],
+  "aleph-institute": [
+    {"id": "sholom-lipskar", "name": "Rabbi Sholom Lipskar", "role": "Founder & President", "bio": "Chabad rabbi who founded the Aleph Institute in 1981 to provide religious and humanitarian support to Jewish military personnel and prisoners in the United States."},
+    {"id": "gary-apfel", "name": "Gary Apfel", "role": "General Counsel & Vice President", "bio": "Attorney and former Aleph Institute vice president who has advocated for criminal justice reform and compassionate sentencing through the organization's legal programs."},
+    {"id": "menachem-mendel-schneerson", "name": "Rabbi Menachem Mendel Schneerson", "role": "Spiritual Inspiration (1902–1994)", "bio": "The Lubavitcher Rebbe who inspired the founding of the Aleph Institute, directing Rabbi Lipskar to create an organization serving Jews in the military and in prison."}
+  ],
+  "maccabi-world-union": [
+    {"id": "arik-zeevi", "name": "Arik Ze'evi", "role": "President", "bio": "Israeli Olympic judoka and bronze medalist who serves as president of Maccabi World Union, the global umbrella organization of the Maccabi sports movement."},
+    {"id": "pierre-gildesgame", "name": "Pierre Gildesgame", "role": "Historic Leader (1901–1985)", "bio": "British-Jewish sports administrator who served as longtime president of Maccabi World Union and was instrumental in establishing the Maccabiah Games as a major international sporting event."},
+    {"id": "yosef-yekutieli", "name": "Yosef Yekutieli", "role": "Maccabiah Games Founder (1897–1982)", "bio": "Russian-born Israeli athlete and visionary who proposed and organized the first Maccabiah Games in 1932, establishing the 'Jewish Olympics' in British Mandate Palestine."}
+  ],
+  "limmud-international": [
+    {"id": "clive-lawton", "name": "Clive Lawton", "role": "Co-Founder", "bio": "British Jewish educator and communal leader who co-founded Limmud in 1980, the grassroots Jewish learning festival that has expanded to over 40 countries worldwide."},
+    {"id": "michael-papo", "name": "Michael Papo", "role": "International Director", "bio": "Served as executive director of Limmud International, coordinating the global network of volunteer-led Jewish learning communities."},
+    {"id": "raymond-simonson", "name": "Raymond Simonson", "role": "CEO, JW3/Limmud Leader", "bio": "British Jewish communal leader and former Limmud chair who was instrumental in growing the movement from a UK conference into a global Jewish educational phenomenon."}
+  ],
+  "international-holocaust-remembrance-alliance-ihra": [
+    {"id": "yehuda-bauer", "name": "Yehuda Bauer", "role": "Honorary Chairman & Academic Advisor", "bio": "Israeli Holocaust historian and professor emeritus at Hebrew University who served as founding academic advisor to the IHRA (formerly ITF), shaping its educational mission."},
+    {"id": "mark-weitzman", "name": "Mark Weitzman", "role": "Committee Chair", "bio": "Serves as chair of IHRA's Committee on Antisemitism and Holocaust Denial, playing a key role in developing the IHRA working definition of antisemitism."},
+    {"id": "kathrin-meyer", "name": "Kathrin Meyer", "role": "Secretary General", "bio": "German diplomat and historian serving as secretary general of IHRA, coordinating the intergovernmental body's work on Holocaust education, remembrance, and research across its member states."}
+  ],
+  "aish-hatorah": [
+    {"id": "noah-weinberg", "name": "Rabbi Noah Weinberg", "role": "Founder (1930–2009)", "bio": "American-born Israeli rabbi who founded Aish HaTorah in 1974 in Jerusalem's Old City, building it into one of the largest Jewish outreach organizations in the world."},
+    {"id": "steven-burg", "name": "Rabbi Steven Burg", "role": "CEO", "bio": "Serves as CEO of Aish HaTorah, leading the global Jewish educational and outreach organization with centers in dozens of countries."},
+    {"id": "ephraim-shore", "name": "Ephraim Shore", "role": "Director, Aish.com", "bio": "Led the development of Aish.com, one of the largest Jewish content websites, expanding Aish HaTorah's educational mission into the digital space."}
+  ],
+  "international-march-of-the-living": [
+    {"id": "shmuel-rosenman-iml", "name": "Shmuel Rosenman", "role": "Founder & Chairman", "bio": "Israeli educator who created the International March of the Living in 1988, establishing the annual Holocaust remembrance march from Auschwitz to Birkenau on Yom HaShoah."},
+    {"id": "phyllis-greenberg-heideman-iml", "name": "Phyllis Greenberg Heideman", "role": "President", "bio": "American communal leader serving as president of the International March of the Living, overseeing participation from over 40 countries in the annual program."},
+    {"id": "eli-rubenstein", "name": "Eli Rubenstein", "role": "National Director, Canada", "bio": "Longtime national director of March of the Living Canada and co-author of 'Witness: Passing the Torch of Holocaust Memory,' a leading educator in the program's global network."}
+  ]
+}

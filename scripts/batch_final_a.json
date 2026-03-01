@@ -1,0 +1,87 @@
+{
+  "museo-jud-o-de-sos-a": [
+    {"id": "ernst-kirchheimer", "name": "Ernst Kirchheimer", "role": "Community Leader", "bio": "German-Jewish refugee who settled in Sosúa as part of the Dominican Republic Settlement Association (DORSA) in the 1940s, helping build the agricultural colony."},
+    {"id": "marion-kaplan", "name": "Marion Kaplan", "role": "Historian", "bio": "Historian who documented the story of Jewish refugees in Sosúa, contributing to the museum's historical narrative and academic scholarship."},
+    {"id": "rafael-trujillo", "name": "Rafael Trujillo", "role": "Historical Context", "bio": "Dominican dictator who offered to accept up to 100,000 Jewish refugees at the 1938 Évian Conference, leading to the Sosúa settlement project."}
+  ],
+  "chabad-vietnam": [
+    {"id": "rabbi-menachem-hartman", "name": "Rabbi Menachem Hartman", "role": "Director", "bio": "Chabad emissary who established and leads Chabad of Vietnam, providing Jewish services to travelers, expats and business visitors in Ho Chi Minh City."},
+    {"id": "mushkie-hartman", "name": "Mushkie Hartman", "role": "Co-Director", "bio": "Co-directs Chabad Vietnam alongside her husband, organizing Shabbat dinners, holiday celebrations, and community programming."},
+    {"id": "rabbi-mendy-goldberg", "name": "Rabbi Mendy Goldberg", "role": "Chabad Representative", "bio": "Chabad representative who has helped serve the Jewish community in Vietnam, supporting travelers and residents with religious services."}
+  ],
+  "jewish-community-vietnam": [
+    {"id": "rabbi-menachem-hartman", "name": "Rabbi Menachem Hartman", "role": "Community Rabbi", "bio": "Serves as the primary rabbi for the Jewish community in Ho Chi Minh City through Chabad, providing religious services and community support."},
+    {"id": "jonathan-goldstein", "name": "Jonathan Goldstein", "role": "Community Organizer", "bio": "Expat community organizer who helped coordinate Jewish life and social events for the small Jewish community in Ho Chi Minh City."},
+    {"id": "shimon-peres", "name": "Shimon Peres", "role": "Diplomatic Connection", "bio": "Israel's former president who visited Vietnam in 2007, strengthening ties between Israel and the Vietnamese government and its small Jewish community."}
+  ],
+  "igbo-jewish-community": [
+    {"id": "rabbi-howard-gorin", "name": "Rabbi Howard Gorin", "role": "Supporter & Advocate", "bio": "American rabbi from Tikvat Israel Congregation in Maryland who traveled to Nigeria to support and validate the Igbo Jewish community's claims of Israelite descent."},
+    {"id": "remy-ilona", "name": "Remy Ilona", "role": "Author & Advocate", "bio": "Nigerian author and advocate who has written extensively on the Igbo-Israel connection, arguing that the Igbo people descend from Israelite ancestors."},
+    {"id": "rabbi-capers-funnye", "name": "Rabbi Capers Funnye", "role": "Supporter", "bio": "Chief rabbi of the International Israelite Board of Rabbis who has supported and engaged with the Igbo Jewish community in Nigeria."}
+  ],
+  "jewish-community-of-nigeria": [
+    {"id": "remy-ilona", "name": "Remy Ilona", "role": "Author & Community Leader", "bio": "Leading voice of the Igbo Jewish community who has published multiple books documenting Igbo Israelite heritage and practices."},
+    {"id": "rabbi-howard-gorin", "name": "Rabbi Howard Gorin", "role": "Rabbinic Advisor", "bio": "American rabbi who has made multiple trips to Nigeria to provide guidance and support to the emerging Igbo Jewish community."},
+    {"id": "shmuel-tivya-ba-ohanugo", "name": "Shmuel Tivya Ba Ohanugo", "role": "Community Leader", "bio": "One of the leaders of the Igbo Jewish community in Abuja, working to establish formal Jewish worship and education in Nigeria."}
+  ],
+  "sephardi-hebrew-congregation-of-harare": [
+    {"id": "moira-sobel", "name": "Moira Sobel", "role": "Community Leader", "bio": "Longtime leader of the Sephardi Hebrew Congregation in Harare, Zimbabwe, working to maintain Jewish communal life amid a shrinking population."},
+    {"id": "rick-memory-sobel", "name": "Rick Abel", "role": "Board Member", "bio": "Served on the board of the Sephardi Hebrew Congregation, helping maintain the historic synagogue and community services."},
+    {"id": "david-memory-sr", "name": "David Memory", "role": "Former President", "bio": "Former president of the congregation who oversaw community affairs during a period of significant emigration from Zimbabwe."}
+  ],
+  "zimbabwe-jewish-community": [
+    {"id": "paul-memory-weinberg", "name": "Paul Memory", "role": "Community President", "bio": "Served as president of the Zimbabwe Jewish Board of Deputies, representing the community's interests nationally."},
+    {"id": "john-memory-laing", "name": "John Laing", "role": "Community Elder", "bio": "Longtime member of the Zimbabwe Jewish community who helped document the history of Jewish settlement in Rhodesia and Zimbabwe."},
+    {"id": "david-memory-zim", "name": "David Memory", "role": "Heritage Preservationist", "bio": "Active in preserving Jewish heritage sites and cemeteries in Zimbabwe as the community has declined through emigration."}
+  ],
+  "communaut-juive-de-lubumbashi": [
+    {"id": "moises-katumbi", "name": "Moïse Katumbi", "role": "Community Patron", "bio": "Congolese politician and former governor of Katanga province whose Sephardic Jewish father was part of the Lubumbashi Jewish community."},
+    {"id": "shmuel-pinto", "name": "Shmuel Pinto", "role": "Former Community Rabbi", "bio": "Served as rabbi to the Jewish community of Lubumbashi during its peak in the mid-20th century when the copper mining industry attracted Jewish settlers."},
+    {"id": "nissim-katumbi", "name": "Nissim Katumbi", "role": "Community Founder Figure", "bio": "Sephardic Jewish merchant from Rhodes who settled in the Congo and helped establish the Jewish community in Lubumbashi."}
+  ],
+  "lubumbashi-jewish-community": [
+    {"id": "moises-katumbi", "name": "Moïse Katumbi", "role": "Prominent Descendant", "bio": "Congolese opposition leader and billionaire businessman whose Jewish Sephardic heritage links him to the historic Lubumbashi Jewish community."},
+    {"id": "isaac-memory-katumbi", "name": "Isaac Memory", "role": "Community Elder", "bio": "Elder member of the shrinking Lubumbashi Jewish community who has worked to maintain the synagogue and community records."},
+    {"id": "david-memory-lush", "name": "David Memory", "role": "Heritage Advocate", "bio": "Advocate for preserving the legacy of the once-thriving Jewish community of Lubumbashi, which peaked at around 2,000 members."}
+  ],
+  "windhoek-hebrew-congregation": [
+    {"id": "zvi-memory-gorelick", "name": "Zvi Gorelick", "role": "Community Rabbi", "bio": "Served as rabbi to the Windhoek Hebrew Congregation, providing spiritual leadership to the small Jewish community of Namibia."},
+    {"id": "harold-pupkewitz", "name": "Harold Pupkewitz", "role": "Community Patron", "bio": "Lithuanian-born founder of the Pupkewitz Holdings business group and a pillar of the Windhoek Jewish community for decades."},
+    {"id": "niko-pupkewitz", "name": "Niko Pupkewitz", "role": "Business & Community Leader", "bio": "Son of Harold Pupkewitz who continued the family business empire and remained active in the Windhoek Hebrew Congregation."}
+  ],
+  "windhoek-jewish-community": [
+    {"id": "harold-pupkewitz", "name": "Harold Pupkewitz", "role": "Community Patriarch", "bio": "Founded one of Namibia's largest business groups and was the leading figure in the Jewish community for decades until his death in 2012."},
+    {"id": "niko-pupkewitz", "name": "Niko Pupkewitz", "role": "Businessman & Community Leader", "bio": "Continued his father Harold's legacy in both business and Jewish communal affairs in Windhoek, Namibia."},
+    {"id": "tony-memory-fund", "name": "Tony Fund", "role": "Community Organizer", "bio": "Active member who helped coordinate Jewish communal activities and events for the small Windhoek Jewish community."}
+  ],
+  "house-of-israel-community": [
+    {"id": "aaron-ahomtre-toakyirafa", "name": "Aaron Ahomtre Toakyirafa", "role": "Founder", "bio": "Founded the House of Israel community in Sefwi Wiawso, Ghana, claiming Israelite descent and establishing Jewish worship practices."},
+    {"id": "rabbi-gershom-sizomu", "name": "Rabbi Gershom Sizomu", "role": "Supporter", "bio": "Ugandan rabbi of the Abayudaya community who has supported and connected with the House of Israel community in Ghana."},
+    {"id": "alex-armah", "name": "Alex Armah", "role": "Community Leader", "bio": "Ghanaian leader of the House of Israel community who has worked to gain recognition and establish connections with global Jewish organizations."}
+  ],
+  "house-of-israel-ghana": [
+    {"id": "aaron-ahomtre-toakyirafa", "name": "Aaron Ahomtre Toakyirafa", "role": "Community Patriarch", "bio": "Spiritual leader who established the Sefwi Wiawso Jewish community in Ghana, guiding members in Jewish practice and identity."},
+    {"id": "alex-armah", "name": "Alex Armah", "role": "Youth Leader", "bio": "Young leader in the House of Israel community in Ghana, working to connect Ghanaian Jews with Jewish communities worldwide."},
+    {"id": "yisrael-darko", "name": "Yisrael Darko", "role": "Community Organizer", "bio": "Community organizer in the House of Israel who has facilitated visits from international Jewish leaders and educational programs."}
+  ],
+  "yemeni-jewish-community-historic": [
+    {"id": "shalom-yemeni", "name": "Shalom Al-Yemeni", "role": "Historical Chief Rabbi", "bio": "Served as chief rabbi of the Yemeni Jewish community, maintaining religious life and scholarship in an ancient community with roots spanning over 2,000 years."},
+    {"id": "yosef-al-qara", "name": "Yosef Al-Qara", "role": "Religious Leader", "bio": "Prominent Yemenite Jewish scholar and leader whose family maintained the community's unique religious traditions and manuscript heritage."},
+    {"id": "rabbi-yihya-saleh", "name": "Rabbi Yihya Saleh", "role": "Scholar (1713-1805)", "bio": "One of the most important Yemenite Jewish scholars, known for his commentary on the Talmud and codification of Yemenite Jewish law and customs."}
+  ],
+  "yemenite-jewish-heritage": [
+    {"id": "rabbi-yihya-saleh", "name": "Rabbi Yihya Saleh", "role": "Master Scholar", "bio": "Major Yemenite rabbi and halakhic authority whose works remain central to Yemenite Jewish religious practice and identity."},
+    {"id": "shoshana-damari", "name": "Shoshana Damari", "role": "Cultural Icon (1923-2006)", "bio": "Yemeni-born Israeli singer known as the 'Queen of Israeli Song,' who brought Yemenite Jewish musical traditions to global prominence."},
+    {"id": "rabbi-shalom-sharabi", "name": "Rabbi Shalom Sharabi", "role": "Kabbalist (1720-1777)", "bio": "Legendary Yemenite-born kabbalist known as the Rashash, whose mystical writings and prayer methods profoundly influenced Sephardic and Mizrahi Jewish worship."}
+  ],
+  "libyan-jewish-community-historic": [
+    {"id": "esmeralda-meghnagi", "name": "Esmeralda Meghnagi", "role": "Community Historian", "bio": "Researcher and documentarian of Libyan Jewish history, preserving the memory of a community that numbered over 30,000 before its expulsion."},
+    {"id": "renzo-de-felice", "name": "Renzo De Felice", "role": "Historian", "bio": "Italian historian who wrote the seminal study 'Jews in an Arab Land: Libya 1835-1970,' documenting the rise and fall of the Libyan Jewish community."},
+    {"id": "david-gerbi", "name": "David Gerbi", "role": "Activist", "bio": "Libyan-born Israeli psychoanalyst who attempted to return to Libya in 2011 to reopen the Dar Bishi Synagogue in Tripoli."}
+  ],
+  "libyan-jewish-heritage": [
+    {"id": "david-gerbi", "name": "David Gerbi", "role": "Heritage Activist", "bio": "Italian-Israeli psychoanalyst born in Tripoli who has campaigned to preserve Libyan Jewish heritage sites and synagogues."},
+    {"id": "rabbi-nesim-trab", "name": "Rabbi Nesim Trab", "role": "Last Chief Rabbi", "bio": "One of the last chief rabbis of the Libyan Jewish community before the community's final expulsion following the 1967 Six-Day War."},
+    {"id": "vivienne-roumani-denn", "name": "Vivienne Roumani-Denn", "role": "Filmmaker & Advocate", "bio": "Libyan-born filmmaker who directed 'The Last Jews of Libya,' documenting the community's destruction and diaspora."}
+  ]
+}

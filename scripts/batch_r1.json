@@ -1,0 +1,252 @@
+{
+  "kaifeng-jewish-community": [
+    {"id": "matteo-ricci", "name": "Matteo Ricci", "role": "Jesuit Missionary & Documentarian", "bio": "Italian Jesuit priest who in 1605 became the first Westerner to document the Kaifeng Jewish community, providing invaluable historical records of their practices and traditions."},
+    {"id": "ai-tian", "name": "Ai Tian", "role": "Community Scholar", "bio": "Kaifeng Jewish scholar who traveled to Beijing in 1605 and met Matteo Ricci, becoming the first known contact between the Kaifeng Jews and the Western world."},
+    {"id": "timothy-richard", "name": "Timothy Richard", "role": "Historical Researcher", "bio": "Welsh Baptist missionary in China who documented the Kaifeng Jewish community in the late 19th century, helping bring international scholarly attention to their heritage."}
+  ],
+  "shanghai-jewish-refugees-museum": [
+    {"id": "ho-feng-shan", "name": "Ho Feng-Shan", "role": "Chinese Diplomat & Righteous Among the Nations", "bio": "Chinese consul-general in Vienna who issued thousands of visas to Jewish refugees fleeing the Holocaust, enabling them to escape to Shanghai. Recognized as Righteous Among the Nations by Yad Vashem."},
+    {"id": "david-kranzler", "name": "David Kranzler", "role": "Historian", "bio": "American historian and author of 'Japanese, Nazis & Jews: The Jewish Refugee Community of Shanghai 1938-1945,' a foundational work on the Shanghai Jewish refugee experience."},
+    {"id": "chen-jian", "name": "Chen Jian", "role": "Museum Curator", "bio": "Curator and director of the Shanghai Jewish Refugees Museum who led major efforts to preserve Holocaust refugee memory in China and expanded the museum's collections."}
+  ],
+  "sassoon-house-shanghai": [
+    {"id": "victor-sassoon", "name": "Victor Sassoon", "role": "Developer & Owner", "bio": "Sir Victor Sassoon, 3rd Baronet, built the iconic Cathay Hotel (Sassoon House) on the Bund in Shanghai in 1929, making it the city's most prestigious hotel and a symbol of cosmopolitan Shanghai."},
+    {"id": "david-sassoon-founder", "name": "David Sassoon", "role": "Dynasty Founder", "bio": "Founder of the Sassoon trading dynasty who established the family's vast commercial empire across Asia. His descendants, including Victor Sassoon, shaped Shanghai's architectural landscape."},
+    {"id": "george-leopold-wilson", "name": "George Leopold Wilson", "role": "Architect", "bio": "British architect with Palmer & Turner who designed Sassoon House (Cathay Hotel) on the Shanghai Bund, creating one of the most iconic Art Deco buildings in Asia."}
+  ],
+  "sassoon-group-legacy": [
+    {"id": "david-sassoon-patriarch", "name": "David Sassoon", "role": "Founder", "bio": "Born in Baghdad in 1792, David Sassoon fled to Bombay and built a vast trading empire spanning India, China, and the Far East, earning the family the title 'Rothschilds of the East.'"},
+    {"id": "albert-abdallah-sassoon", "name": "Albert Abdullah David Sassoon", "role": "Business Leader & Philanthropist", "bio": "Son of David Sassoon who expanded the family's enterprises, built synagogues and schools in Bombay, and became the first Indian-born person to be made an English baronet."},
+    {"id": "flora-sassoon", "name": "Flora Sassoon", "role": "Business Leader", "bio": "Businesswoman who took over management of the Sassoon family's global trading operations, becoming one of the most powerful women in the British Empire's commercial network in Asia."}
+  ],
+  "tencent": [
+    {"id": "ma-huateng", "name": "Ma Huateng", "role": "Co-founder & CEO", "bio": "Known as Pony Ma, he co-founded Tencent in 1998 and built it into one of the world's largest technology conglomerates, overseeing WeChat, QQ, and a massive gaming portfolio."},
+    {"id": "zhang-zhidong", "name": "Zhang Zhidong", "role": "Co-founder & CTO", "bio": "One of the five co-founders of Tencent who served as Chief Technology Officer, playing a key role in building the company's core technology infrastructure and early product development."},
+    {"id": "martin-lau", "name": "Martin Lau", "role": "President", "bio": "Joined Tencent in 2005 and became President, driving the company's investment strategy including stakes in Epic Games, Spotify, and many other global firms."}
+  ],
+  "novo-nordisk": [
+    {"id": "august-krogh", "name": "August Krogh", "role": "Co-founder", "bio": "Nobel Prize-winning Danish physiologist who co-founded Nordisk Insulinlaboratorium in 1923 after securing the license to produce insulin in Scandinavia."},
+    {"id": "lars-rebien-sorensen", "name": "Lars Rebien Sørensen", "role": "Former CEO", "bio": "CEO of Novo Nordisk from 2000 to 2016, transforming it into the world's leading diabetes care company. Named 'Best-Performing CEO in the World' by Harvard Business Review in 2015."},
+    {"id": "lars-fruergaard-jorgensen", "name": "Lars Fruergaard Jørgensen", "role": "CEO", "bio": "Became CEO of Novo Nordisk in 2017 and led the company through explosive growth driven by Ozempic and Wegovy, making it Europe's most valuable company."}
+  ],
+  "danish-jewish-museum": [
+    {"id": "daniel-libeskind", "name": "Daniel Libeskind", "role": "Architect", "bio": "Polish-American architect who designed the Danish Jewish Museum in Copenhagen, creating an evocative interior within the 17th-century Royal Boathouse that tells the story of Danish Jewish life."},
+    {"id": "bent-melchior-djm", "name": "Bent Melchior", "role": "Chief Rabbi of Denmark", "bio": "Chief Rabbi of Denmark from 1969 to 1996 who was instrumental in promoting Danish Jewish heritage and supporting the museum's mission to preserve community history."},
+    {"id": "martin-schwarz-lausten", "name": "Martin Schwarz Lausten", "role": "Historian", "bio": "Danish church historian and author of seminal works on the history of Jews in Denmark, whose research provided foundational scholarship for the museum's exhibitions."}
+  ],
+  "rescue-of-danish-jews-1943": [
+    {"id": "georg-ferdinand-duckwitz", "name": "Georg Ferdinand Duckwitz", "role": "German Diplomat", "bio": "German attaché in Denmark who leaked the Nazi plan to deport Danish Jews in September 1943, enabling the Danish resistance to organize the rescue of over 7,000 Jews to Sweden."},
+    {"id": "marcus-melchior", "name": "Marcus Melchior", "role": "Acting Chief Rabbi", "bio": "Acting Chief Rabbi who on September 29, 1943 warned the Copenhagen synagogue congregation about the impending Nazi roundup, triggering the mass escape operation."},
+    {"id": "niels-bohr", "name": "Niels Bohr", "role": "Physicist & Advocate", "bio": "Danish Nobel Prize-winning physicist who escaped to Sweden in 1943 and personally lobbied King Gustaf V to accept Jewish refugees, helping secure Swedish asylum for the evacuees."}
+  ],
+  "jewish-community-of-denmark": [
+    {"id": "marcus-melchior-dk", "name": "Marcus Melchior", "role": "Chief Rabbi", "bio": "Acting Chief Rabbi during WWII who played a decisive role in warning the Danish Jewish community of the imminent Nazi deportation in 1943, enabling the mass rescue to Sweden."},
+    {"id": "bent-melchior-dk", "name": "Bent Melchior", "role": "Chief Rabbi", "bio": "Son of Marcus Melchior who served as Chief Rabbi of Denmark from 1969 to 1996, becoming a leading voice for interfaith dialogue and Holocaust education in Scandinavia."},
+    {"id": "herbert-pundik", "name": "Herbert Pundik", "role": "Journalist & Community Leader", "bio": "Danish Jewish journalist who served as editor-in-chief of Politiken newspaper for over two decades and authored works about the rescue of Danish Jews and the community's history."}
+  ],
+  "great-synagogue-of-copenhagen": [
+    {"id": "gustav-friedrich-hetsch", "name": "Gustav Friedrich Hetsch", "role": "Architect", "bio": "Danish-German architect who designed the Great Synagogue of Copenhagen, completed in 1833 in the Neoclassical style, making it the main synagogue of Denmark."},
+    {"id": "abraham-alexander-wolff", "name": "Abraham Alexander Wolff", "role": "Chief Rabbi", "bio": "Chief Rabbi of Denmark during the mid-19th century who presided over the synagogue during a period of Jewish emancipation and cultural flourishing in Danish Jewish life."},
+    {"id": "bent-melchior-gsc", "name": "Bent Melchior", "role": "Chief Rabbi", "bio": "Chief Rabbi who served at the Great Synagogue from 1969 to 1996, presiding over the congregation and becoming a major figure in European Jewish communal life."}
+  ],
+  "det-mosaiske-troessamfund": [
+    {"id": "finn-schwarz", "name": "Finn Schwarz", "role": "President", "bio": "Longtime president of Det Mosaiske Troessamfund, the official Jewish congregation of Denmark, who led the community through key periods of growth and interfaith engagement."},
+    {"id": "bent-melchior-dmt", "name": "Bent Melchior", "role": "Chief Rabbi", "bio": "Chief Rabbi of Det Mosaiske Troessamfund from 1969 to 1996, providing spiritual leadership and serving as a prominent voice for the Danish Jewish community internationally."},
+    {"id": "jair-melchior", "name": "Jair Melchior", "role": "Chief Rabbi", "bio": "Current Chief Rabbi of Denmark and third generation of the Melchior rabbinical dynasty within Det Mosaiske Troessamfund, continuing his family's distinguished legacy of communal leadership."}
+  ],
+  "central-board-of-jewish-communities-in-greece-kis": [
+    {"id": "david-saltiel", "name": "David Saltiel", "role": "President", "bio": "Longtime president of the Central Board of Jewish Communities in Greece (KIS) who led efforts to preserve Jewish heritage sites and secure restitution for Holocaust survivors in Greece."},
+    {"id": "moisis-elisaf", "name": "Moisis Elisaf", "role": "Mayor & Community Leader", "bio": "In 2019 became the first Jewish mayor elected in Greece (Ioannina), demonstrating the integration and respect of the Jewish community within modern Greek society."},
+    {"id": "moses-constantinis", "name": "Moses Constantinis", "role": "Community Historian", "bio": "Historian and community leader who documented the long history of Jewish presence in Greece, particularly the ancient Romaniote communities, preserving vital records for future generations."}
+  ],
+  "romaniote-jewish-community": [
+    {"id": "nicholas-stavroulakis", "name": "Nicholas Stavroulakis", "role": "Historian & Museum Founder", "bio": "Greek-American historian and artist who founded the Jewish Museum of Greece in Athens, dedicating his life to preserving Romaniote Jewish culture, traditions, and history."},
+    {"id": "moses-kapsali", "name": "Moses Kapsali", "role": "Chief Rabbi of Ottoman Empire", "bio": "A Romaniote Jew who served as the first Chief Rabbi of the Ottoman Empire after the fall of Constantinople in 1453, welcoming thousands of Sephardi refugees into the empire."},
+    {"id": "shabbethai-donnolo", "name": "Shabbethai Donnolo", "role": "Physician & Scholar", "bio": "10th-century Jewish physician and pharmacologist from the Greek-speaking Jewish community of southern Italy, one of the earliest known European medical writers and a notable Romaniote figure."}
+  ],
+  "jewish-museum-of-thessaloniki": [
+    {"id": "albertos-nar", "name": "Albertos Nar", "role": "Historian & Founding Member", "bio": "Thessaloniki-born historian and founding member of the Jewish Museum of Thessaloniki who dedicated decades to documenting the Sephardi community nearly annihilated in the Holocaust."},
+    {"id": "erika-perahia-zemour", "name": "Erika Perahia Zemour", "role": "Museum Director", "bio": "Director of the Jewish Museum of Thessaloniki who led efforts to preserve and exhibit the rich heritage of the Sephardi community that once made the city the 'Jerusalem of the Balkans.'"},
+    {"id": "david-saltiel-thess", "name": "David Saltiel", "role": "Community Leader", "bio": "President of the Jewish Community of Thessaloniki who helped establish and support the museum as a memorial to the 50,000 Jews of Thessaloniki deported during the Holocaust."}
+  ],
+  "jewish-museum-of-greece": [
+    {"id": "nicholas-stavroulakis-jmg", "name": "Nicholas Stavroulakis", "role": "Founder", "bio": "Greek-American scholar and artist who founded the Jewish Museum of Greece in Athens in 1977, creating an institution dedicated to preserving the heritage of Greek Jewry, especially the Romaniote tradition."},
+    {"id": "zanet-battinou", "name": "Zanet Battinou", "role": "Museum Director", "bio": "Director of the Jewish Museum of Greece who expanded the museum's collections and exhibitions, making it a leading institution for the study of Greek Jewish heritage and history."},
+    {"id": "moisis-elisaf-jmg", "name": "Moisis Elisaf", "role": "Community Leader & Supporter", "bio": "Mayor of Ioannina and prominent figure in Greek Jewish communal life who supported the museum's mission and the preservation of Romaniote Jewish heritage in Greece."}
+  ],
+  "holocaust-memorial-of-thessaloniki": [
+    {"id": "david-saltiel-mem", "name": "David Saltiel", "role": "Community Leader", "bio": "As president of the Jewish Community of Thessaloniki, led decades-long efforts to establish the Holocaust memorial honoring the 50,000 Jews deported from the city to Auschwitz-Birkenau."},
+    {"id": "yiannis-boutaris", "name": "Yiannis Boutaris", "role": "Mayor of Thessaloniki", "bio": "Mayor of Thessaloniki (2011–2019) who championed Holocaust remembrance, officially apologized for the city's role in the deportations, and supported the creation of a major Holocaust museum."},
+    {"id": "heinz-kounio", "name": "Heinz Kounio", "role": "Holocaust Survivor & Witness", "bio": "Thessaloniki-born Holocaust survivor deported to Auschwitz who became one of the most prominent witnesses to the destruction of the Jewish community of Thessaloniki."}
+  ],
+  "beta-israel-community-organizations": [
+    {"id": "avraham-neguise", "name": "Avraham Neguise", "role": "Politician & Activist", "bio": "Ethiopian-born Israeli politician and former Knesset member who was a leading advocate for Ethiopian Jewish rights and the immigration of remaining Beta Israel community members to Israel."},
+    {"id": "pnina-tamano-shata", "name": "Pnina Tamano-Shata", "role": "Politician", "bio": "Ethiopian-Israeli politician who became the first Ethiopian-born woman to serve as a minister in the Israeli government, championing the integration and rights of the Beta Israel community."},
+    {"id": "ferede-aklum", "name": "Ferede Aklum", "role": "Community Activist", "bio": "Ethiopian Jewish community leader who played a critical role in organizing the clandestine journey of thousands of Ethiopian Jews through Sudan in the early 1980s, leading to Operation Moses."}
+  ],
+  "operation-solomon-memorial": [
+    {"id": "uri-lubrani", "name": "Uri Lubrani", "role": "Israeli Government Coordinator", "bio": "Senior Israeli diplomat who coordinated the planning of Operation Solomon in 1991, the airlift that brought over 14,000 Ethiopian Jews to Israel in approximately 36 hours."},
+    {"id": "addisu-messele", "name": "Addisu Messele", "role": "Ethiopian Jewish Leader", "bio": "Ethiopian-Israeli activist and community leader who advocated for the airlift of Ethiopian Jews and worked to support their integration into Israeli society after Operation Solomon."},
+    {"id": "kassa-kebede", "name": "Kassa Kebede", "role": "Community Organizer", "bio": "Ethiopian Jewish community organizer who helped coordinate the gathering of Beta Israel members in Addis Ababa in preparation for the historic Operation Solomon airlift."}
+  ],
+  "north-shewa-synagogue": [
+    {"id": "yona-bogale", "name": "Yona Bogale", "role": "Educator & Communal Leader", "bio": "Ethiopian Jewish educator who maintained Jewish education and identity among Beta Israel communities, establishing schools in the North Shewa and Gondar regions of Ethiopia."},
+    {"id": "avraham-neguise-ns", "name": "Avraham Neguise", "role": "Advocate", "bio": "Born in the North Shewa region, became a leading activist for the immigration of Ethiopian Jews to Israel, later serving as a member of the Israeli Knesset."},
+    {"id": "shlomo-molla", "name": "Shlomo Molla", "role": "Community Leader & Politician", "bio": "Ethiopian-Israeli politician and Knesset member from the North Shewa area who advocated for preserving Beta Israel heritage and supporting the remaining Ethiopian Jewish communities."}
+  ],
+  "north-american-conference-on-ethiopian-jewry": [
+    {"id": "barbara-ribakove-gordon", "name": "Barbara Ribakove Gordon", "role": "Founder & Executive Director", "bio": "Founded the North American Conference on Ethiopian Jewry (NACOEJ) in 1982 and served as its longtime executive director, leading advocacy and humanitarian efforts for Ethiopian Jews."},
+    {"id": "graenum-berger", "name": "Graenum Berger", "role": "Co-founder", "bio": "Social worker and activist who co-founded NACOEJ and became one of the earliest American advocates for the recognition and immigration rights of Ethiopian Jews."},
+    {"id": "howard-lenhoff", "name": "Howard Lenhoff", "role": "Board Chair & Advocate", "bio": "Professor and longtime board member of NACOEJ who championed educational programs for Ethiopian Jews, including sponsoring students in Israel through the organization's scholarship fund."}
+  ],
+  "ethiopian-jewish-community-beta-israel": [
+    {"id": "yityish-aynaw", "name": "Yityish Aynaw", "role": "Cultural Figure", "bio": "Ethiopian-Israeli model crowned Miss Israel in 2013, the first woman of Ethiopian descent to win the title, becoming a prominent symbol of Beta Israel identity in Israel."},
+    {"id": "pnina-tamano-shata-ej", "name": "Pnina Tamano-Shata", "role": "Politician", "bio": "First Ethiopian-born woman to serve as a cabinet minister in Israel, serving as Minister of Immigration and Absorption and advocating for Ethiopian Jewish community rights and integration."},
+    {"id": "avraham-neguise-ej", "name": "Avraham Neguise", "role": "Knesset Member", "bio": "Ethiopian-Israeli politician who chaired the Knesset's Immigration, Absorption, and Diaspora Committee, dedicating his career to Ethiopian Jewish immigration and community welfare."}
+  ],
+  "north-shewa-zone-heritage-center": [
+    {"id": "yona-bogale-nshz", "name": "Yona Bogale", "role": "Educator & Heritage Advocate", "bio": "Ethiopian Jewish educator who championed cultural preservation and Jewish education in the North Shewa region, helping document and protect the community's distinctive heritage."},
+    {"id": "shlomo-molla-nshz", "name": "Shlomo Molla", "role": "Community Leader & Politician", "bio": "Ethiopian-Israeli Knesset member active in preserving the heritage and memory of the Ethiopian Jewish communities from which Operation Solomon evacuated thousands."},
+    {"id": "avraham-neguise-nshz", "name": "Avraham Neguise", "role": "Heritage Advocate", "bio": "Israeli Knesset member of Ethiopian origin and vocal proponent of preserving Ethiopian Jewish historical sites and heritage in regions including North Shewa."}
+  ],
+  "jewish-museum-oslo": [
+    {"id": "sidsel-levin", "name": "Sidsel Levin", "role": "Museum Founder & Director", "bio": "Norwegian Jewish community leader who founded the Jewish Museum in Oslo, creating a vital institution for preserving and exhibiting the history of Jews in Norway."},
+    {"id": "oskar-mendelsohn", "name": "Oskar Mendelsohn", "role": "Historian", "bio": "Norwegian historian and author of the definitive history of Jews in Norway, whose research provided the scholarly foundation for the Jewish Museum Oslo's collections and exhibitions."},
+    {"id": "julius-paltiel-oslo", "name": "Julius Paltiel", "role": "Holocaust Survivor & Advocate", "bio": "Norwegian Jewish Holocaust survivor deported to Auschwitz who became one of Norway's most prominent witnesses, closely associated with Holocaust education programs at the museum."}
+  ],
+  "jewish-community-of-oslo": [
+    {"id": "jo-benkow", "name": "Jo Benkow", "role": "Politician", "bio": "Norwegian Conservative politician of Jewish descent who served as President of the Storting (parliament) from 1985 to 1993, the first Jewish person to hold the position in Norway."},
+    {"id": "ervin-kohn", "name": "Ervin Kohn", "role": "Community President", "bio": "President of Det Mosaiske Trossamfund (the Jewish Community of Oslo) and the Norwegian Center Against Racism, a leading voice in combating antisemitism in Scandinavia."},
+    {"id": "michael-melchior-oslo", "name": "Michael Melchior", "role": "Rabbi & Politician", "bio": "Served as rabbi of the Oslo Jewish community before making aliyah to Israel, where he became a Knesset member and Deputy Foreign Minister while maintaining ties to Norwegian Jewry."}
+  ],
+  "det-mosaiske-trossamfund-i-oslo": [
+    {"id": "ervin-kohn-dmt", "name": "Ervin Kohn", "role": "President", "bio": "President of Det Mosaiske Trossamfund i Oslo who led efforts to strengthen Jewish communal life in Norway and has been a vocal advocate against antisemitism."},
+    {"id": "jo-benkow-dmt", "name": "Jo Benkow", "role": "Prominent Member & Politician", "bio": "Norwegian politician and former President of the Storting who was a prominent member of the Oslo Jewish community; his memoir about growing up Jewish in Norway became a national bestseller."},
+    {"id": "michael-melchior-dmt", "name": "Michael Melchior", "role": "Former Chief Rabbi", "bio": "Served as Chief Rabbi of Norway and spiritual leader of Det Mosaiske Trossamfund i Oslo before moving to Israel, where he continued his career as a rabbi and politician."}
+  ],
+  "center-for-studies-of-the-holocaust-and-religious-minorities-hl-senteret": [
+    {"id": "guri-hjeltnes", "name": "Guri Hjeltnes", "role": "Director", "bio": "Norwegian historian who served as director of HL-senteret, leading the center's research on the Holocaust in Norway and its educational mission to promote tolerance and minority rights."},
+    {"id": "odd-nansen", "name": "Odd Nansen", "role": "Inspirational Figure", "bio": "Norwegian architect and humanitarian, son of Fridtjof Nansen, imprisoned during WWII. His wartime diary inspired the establishment of the center in the historic Villa Grande."},
+    {"id": "bjarte-bruland", "name": "Bjarte Bruland", "role": "Researcher", "bio": "Norwegian historian at HL-senteret who conducted groundbreaking research on the confiscation of Jewish property during the Nazi occupation of Norway, contributing to restitution efforts."}
+  ],
+  "jewish-museum-trondheim": [
+    {"id": "julius-paltiel-trond", "name": "Julius Paltiel", "role": "Survivor & Community Pillar", "bio": "Trondheim-born Holocaust survivor deported to Auschwitz who returned to rebuild Jewish life in Trondheim, becoming the community's most honored figure and the museum's spiritual heart."},
+    {"id": "ellen-elster", "name": "Ellen Elster", "role": "Museum Developer", "bio": "Community leader in Trondheim who worked to establish and develop the Jewish Museum Trondheim as a site of memory and education within the restored Trondheim synagogue building."},
+    {"id": "per-halvorsen", "name": "Per Halvorsen", "role": "Author & Journalist", "bio": "Norwegian journalist who authored the biography of Julius Paltiel, bringing the story of Trondheim's Jewish community and the Holocaust in Norway to a wider audience."}
+  ],
+  "jewish-museum-of-oslo": [
+    {"id": "sidsel-levin-jmo", "name": "Sidsel Levin", "role": "Founder & Director", "bio": "Established the Jewish Museum of Oslo in 2005, housed in a former synagogue, to document the history of the Norwegian Jewish community and their experience during the Holocaust."},
+    {"id": "oskar-mendelsohn-jmo", "name": "Oskar Mendelsohn", "role": "Historian", "bio": "Author of the two-volume 'Jødenes historie i Norge,' whose comprehensive research underpins the museum's exhibitions and educational offerings on Norwegian Jewish history."},
+    {"id": "ervin-kohn-jmo", "name": "Ervin Kohn", "role": "Community President", "bio": "As president of the Oslo Jewish community, actively supported the museum's development and its role in preserving Norwegian Jewish heritage and promoting Holocaust remembrance."}
+  ],
+  "federa-ia-comunit-ilor-evreie-ti-din-rom-nia-fcer": [
+    {"id": "moses-rosen", "name": "Moses Rosen", "role": "Chief Rabbi", "bio": "Chief Rabbi of Romania from 1948 to 1994 who navigated the communist era to preserve Jewish life, negotiated the emigration of hundreds of thousands of Romanian Jews, and led FCER for decades."},
+    {"id": "alexandru-safran", "name": "Alexandru Șafran", "role": "Former Chief Rabbi", "bio": "Chief Rabbi of Romania during WWII who worked to save Romanian Jews from deportation, later forced into exile by the communist regime, and continued as Chief Rabbi of Geneva."},
+    {"id": "aurel-vainer", "name": "Aurel Vainer", "role": "President & Parliamentarian", "bio": "Community leader who served as president of FCER and as the representative of the Jewish minority in the Romanian Parliament, advocating for community rights and heritage preservation."}
+  ],
+  "coral-temple": [
+    {"id": "moses-rosen-coral", "name": "Moses Rosen", "role": "Chief Rabbi", "bio": "Chief Rabbi of Romania who used the Coral Temple (Templul Coral) in Bucharest as the center of Jewish communal life during the communist era, holding services there for decades."},
+    {"id": "iuliu-barasch", "name": "Iuliu Barasch", "role": "Community Leader & Physician", "bio": "19th-century Romanian Jewish physician and community leader who was a prominent figure in the Bucharest Jewish community during the era surrounding the Coral Temple's construction in 1857."},
+    {"id": "rafael-shaffer", "name": "Rafael Shaffer", "role": "Chief Rabbi", "bio": "Served as Chief Rabbi of Romania, presiding over services at the Coral Temple and working to maintain Jewish communal life and heritage in post-communist Romania."}
+  ],
+  "federation-of-jewish-communities-in-romania": [
+    {"id": "moses-rosen-fed", "name": "Moses Rosen", "role": "Chief Rabbi & Federation Leader", "bio": "Towering figure of Romanian Jewry who led the Federation for over four decades, negotiating with the Ceaușescu regime to permit Jewish emigration while maintaining communal institutions."},
+    {"id": "alexandru-safran-fed", "name": "Alexandru Șafran", "role": "Former Chief Rabbi", "bio": "Served as Chief Rabbi during WWII and worked heroically to prevent the deportation of Romanian Jews from Wallachia and Moldova, saving tens of thousands of lives."},
+    {"id": "aurel-vainer-fed", "name": "Aurel Vainer", "role": "President", "bio": "Longtime president of the Federation of Jewish Communities in Romania and parliamentary representative of the Jewish minority, overseeing heritage preservation and community welfare programs."}
+  ],
+  "abrahamic-family-house": [
+    {"id": "pope-francis", "name": "Pope Francis", "role": "Spiritual Inspiration", "bio": "The Document on Human Fraternity signed by Pope Francis and Grand Imam Ahmed el-Tayeb in Abu Dhabi in 2019 directly inspired the creation of the Abrahamic Family House as a center of interfaith dialogue."},
+    {"id": "ahmed-el-tayeb", "name": "Ahmed el-Tayeb", "role": "Grand Imam of Al-Azhar", "bio": "Grand Imam of Al-Azhar who co-signed the Document on Human Fraternity with Pope Francis in Abu Dhabi, providing the foundational vision for the Abrahamic Family House complex."},
+    {"id": "david-adjaye", "name": "David Adjaye", "role": "Architect", "bio": "Ghanaian-British architect Sir David Adjaye designed the Abrahamic Family House in Abu Dhabi, creating three distinct structures — a mosque, church, and synagogue — unified on a single platform."}
+  ],
+  "jewish-community-of-the-uae": [
+    {"id": "ross-kriel-uae", "name": "Ross Kriel", "role": "Community Leader", "bio": "South African-born businessman who co-founded and leads the Jewish community in the UAE, serving as president of the Jewish Council of the Emirates and a key figure in the Abraham Accords era."},
+    {"id": "solly-wolf", "name": "Solly Wolf", "role": "Vice President", "bio": "Prominent member and vice president of the Jewish Council of the Emirates who helped build communal infrastructure for the growing Jewish community in Dubai and across the UAE."},
+    {"id": "elie-abadie", "name": "Elie Abadie", "role": "Senior Rabbi", "bio": "Senior Rabbi of the Jewish Council of the Emirates, appointed to serve the community after the Abraham Accords, bringing decades of rabbinical experience to the Jewish community in the UAE."}
+  ],
+  "association-of-gulf-jewish-communities-agjc": [
+    {"id": "ross-kriel-agjc", "name": "Ross Kriel", "role": "Co-founder & President", "bio": "Co-founded the Association of Gulf Jewish Communities to connect and support Jewish communities across the Gulf region following the normalization agreements between Israel and Gulf states."},
+    {"id": "ebrahim-nonoo", "name": "Ebrahim Nonoo", "role": "Board Member", "bio": "Bahraini Jewish businessman and former head of the Bahrain Jewish community who has been instrumental in promoting Jewish communal life across the Gulf states through the AGJC."},
+    {"id": "elie-abadie-agjc", "name": "Elie Abadie", "role": "Senior Rabbi", "bio": "Rabbi serving the Gulf Jewish communities who provides religious leadership to the growing Jewish populations in the UAE, Bahrain, and the wider Gulf region through the AGJC."}
+  ],
+  "kosher-restaurants-and-community-in-dubai": [
+    {"id": "elli-kriel", "name": "Elli Kriel", "role": "Kosher Restaurateur", "bio": "South African-born entrepreneur who opened the first kosher restaurant in Dubai, becoming a pioneer in establishing kosher dining and Jewish culinary culture in the Arabian Gulf."},
+    {"id": "ross-kriel-dubai", "name": "Ross Kriel", "role": "Community Leader", "bio": "President of the Jewish Council of the Emirates who helped create the conditions for kosher food services and Jewish communal life to flourish openly in Dubai."},
+    {"id": "elie-abadie-dubai", "name": "Elie Abadie", "role": "Rabbinical Authority", "bio": "Senior Rabbi of the Jewish Council of the Emirates who provides kosher certification and rabbinical oversight for kosher food establishments in Dubai."}
+  ],
+  "jewish-council-of-the-emirates": [
+    {"id": "ross-kriel-jce", "name": "Ross Kriel", "role": "President & Co-founder", "bio": "South African-born businessman who co-founded and serves as president of the Jewish Council of the Emirates, building Jewish communal institutions in the UAE from the ground up."},
+    {"id": "solly-wolf-jce", "name": "Solly Wolf", "role": "Vice President", "bio": "Vice president of the Jewish Council of the Emirates and a key figure in developing community infrastructure, including prayer services and cultural events."},
+    {"id": "elie-abadie-jce", "name": "Elie Abadie", "role": "Senior Rabbi", "bio": "Appointed as Senior Rabbi of the Jewish Council of the Emirates, providing spiritual leadership and establishing religious services for the Jewish community across the UAE."}
+  ],
+  "seoul-jewish-community": [
+    {"id": "osher-litzman", "name": "Osher Litzman", "role": "Chabad Rabbi in Seoul", "bio": "Has served as the Chabad emissary in Seoul since 2008, providing religious services, kosher food, and community programming for the Jewish population in South Korea."},
+    {"id": "chaim-potok", "name": "Chaim Potok", "role": "Chaplain & Author", "bio": "Renowned American Jewish author who served as a U.S. Army chaplain in South Korea in the 1950s, an experience that profoundly influenced his literary work and brought early Jewish presence to Seoul."},
+    {"id": "david-gantt", "name": "David Gantt", "role": "Military Chaplain", "bio": "One of the U.S. military Jewish chaplains who helped establish Jewish religious services in Seoul during and after the Korean War, laying foundations for the organized Jewish community."}
+  ],
+  "chabad-of-south-korea": [
+    {"id": "osher-litzman-chabad", "name": "Osher Litzman", "role": "Director & Rabbi", "bio": "Founded and directs Chabad of South Korea in Seoul, serving as the primary Jewish religious leader in the country since 2008 for residents, tourists, and businesspeople."},
+    {"id": "mussy-litzman", "name": "Mussy Litzman", "role": "Co-director", "bio": "Co-directs Chabad of South Korea alongside her husband Rabbi Osher Litzman, managing community programs, holiday events, and educational activities for the Jewish community in Seoul."},
+    {"id": "menachem-mendel-schneerson", "name": "Menachem Mendel Schneerson", "role": "Lubavitcher Rebbe", "bio": "The seventh Lubavitcher Rebbe whose global vision of sending emissaries to every corner of the world led to the establishment of Chabad houses worldwide, including in South Korea."}
+  ],
+  "samsung-group": [
+    {"id": "lee-byung-chul", "name": "Lee Byung-chul", "role": "Founder", "bio": "Founded Samsung as a small trading company in 1938, building it into South Korea's largest chaebol encompassing electronics, construction, shipbuilding, and financial services."},
+    {"id": "lee-kun-hee", "name": "Lee Kun-hee", "role": "Chairman", "bio": "Son of the founder who transformed Samsung Electronics into the world's largest manufacturer of smartphones, memory chips, and displays with his 'New Management' initiative in 1993."},
+    {"id": "lee-jae-yong", "name": "Lee Jae-yong", "role": "Executive Chairman", "bio": "Third-generation leader of Samsung Group who became Executive Chairman of Samsung Electronics, guiding the company's continued dominance in semiconductors, displays, and mobile technology."}
+  ],
+  "jewish-welfare-board-singapore": [
+    {"id": "david-marshall-jwb", "name": "David Marshall", "role": "Community Leader & Politician", "bio": "Singapore's first Chief Minister (1955-1956) and a prominent Sephardi Jewish community member who supported Jewish communal institutions, including welfare organizations."},
+    {"id": "manasseh-meyer-jwb", "name": "Manasseh Meyer", "role": "Philanthropist", "bio": "Baghdadi Jewish businessman and philanthropist who was one of the wealthiest men in colonial Singapore and a major benefactor of Jewish communal institutions and welfare activities."},
+    {"id": "solomon-aaron", "name": "Solomon Aaron", "role": "Community President", "bio": "A leader of the Jewish Welfare Board of Singapore who helped manage communal welfare, supporting the small but vibrant Jewish community in its social and charitable activities."}
+  ],
+  "maghain-aboth-synagogue": [
+    {"id": "manasseh-meyer-ma", "name": "Manasseh Meyer", "role": "Benefactor", "bio": "Prominent Baghdadi Jewish philanthropist in colonial Singapore who was a major benefactor of Maghain Aboth Synagogue and funded its expansion and maintenance throughout the early 20th century."},
+    {"id": "david-marshall-ma", "name": "David Marshall", "role": "Congregant & Statesman", "bio": "Singapore's first Chief Minister and a member of the Maghain Aboth congregation, he exemplified the integration of the Jewish community into Singapore's multiethnic society."},
+    {"id": "abdullah-moses-silas", "name": "Abdullah Moses Silas", "role": "Early Community Leader", "bio": "Early leader of the Baghdadi Jewish community in Singapore who helped establish Maghain Aboth in 1878, the oldest synagogue in Southeast Asia, serving Jewish merchants in the region."}
+  ],
+  "united-hebrew-congregation-of-singapore": [
+    {"id": "david-marshall-uhc", "name": "David Marshall", "role": "Community Member & Statesman", "bio": "Singapore's first Chief Minister and prominent Jewish communal figure associated with the United Hebrew Congregation, representing Jewish life within Singapore's diverse society."},
+    {"id": "manasseh-meyer-uhc", "name": "Manasseh Meyer", "role": "Philanthropist", "bio": "Meyer's philanthropy extended to supporting Jewish communal unity in Singapore, benefiting all congregations including the United Hebrew Congregation."},
+    {"id": "jack-jakobi", "name": "Jack Jakobi", "role": "Community Leader", "bio": "Leader of the United Hebrew Congregation of Singapore who helped maintain Ashkenazi Jewish religious services and traditions for the European Jewish community in Singapore."}
+  ],
+  "singapore-jewish-community": [
+    {"id": "david-marshall-sjc", "name": "David Marshall", "role": "First Chief Minister", "bio": "Singapore's first Chief Minister (1955-1956) and a Baghdadi Jew who later served as ambassador to multiple countries, the most prominent member of Singapore's Jewish community."},
+    {"id": "manasseh-meyer-sjc", "name": "Manasseh Meyer", "role": "Philanthropist & Community Pillar", "bio": "Baghdadi Jewish magnate who became one of Singapore's wealthiest residents, building synagogues, schools, and charitable institutions that formed the backbone of Jewish communal life."},
+    {"id": "flora-sassoon-sjc", "name": "Flora Sassoon", "role": "Businesswoman", "bio": "Member of the prominent Sassoon family who had significant business interests in Singapore, contributing to the Jewish commercial and communal network across the Straits Settlements."}
+  ],
+  "singapore-jewish-welfare-board": [
+    {"id": "david-marshall-sjwb", "name": "David Marshall", "role": "Community Figure", "bio": "Singapore's first Chief Minister whose prominent role in Jewish communal affairs supported institutions like the Jewish Welfare Board in maintaining community cohesion and social services."},
+    {"id": "manasseh-meyer-sjwb", "name": "Manasseh Meyer", "role": "Philanthropist", "bio": "Singapore's most prominent Jewish philanthropist whose charitable endowments supported the Jewish Welfare Board's mission of providing social services to the local Jewish community."},
+    {"id": "simon-nathan", "name": "Simon Nathan", "role": "Community Administrator", "bio": "Board member of the Singapore Jewish Welfare Board who coordinated welfare activities and community support services for the small but active Jewish community in Singapore."}
+  ],
+  "sinagoga-de-tomar": [
+    {"id": "samuel-schwarz", "name": "Samuel Schwarz", "role": "Rediscoverer & Restorer", "bio": "Polish-born mining engineer who in 1917 discovered the crypto-Jewish community of Belmonte and later purchased and restored the medieval Synagogue of Tomar, preserving one of Portugal's most important Jewish sites."},
+    {"id": "barros-basto", "name": "Arturo Carlos de Barros Basto", "role": "Revivalist of Portuguese Jewry", "bio": "Known as the 'Portuguese Dreyfus,' Captain Barros Basto led the revival of open Jewish practice in 1920s-1930s Portugal, working closely with the preservation of the Tomar synagogue."},
+    {"id": "abraao-zacuto", "name": "Abraão Zacuto", "role": "Namesake of Museum", "bio": "15th-century Portuguese Jewish astronomer and mathematician whose navigational tables aided Vasco da Gama's voyages. The synagogue now houses the Museu Luso-Hebraico Abraão Zacuto in his honor."}
+  ],
+  "museu-judaico-de-belmonte": [
+    {"id": "samuel-schwarz-mjb", "name": "Samuel Schwarz", "role": "Discoverer of Crypto-Jews", "bio": "Polish-born engineer who in 1917 discovered the crypto-Jewish community of Belmonte, descendants of Jews forced to convert in 1497, whose findings inspired the creation of the Jewish Museum."},
+    {"id": "elvira-azevedo-mea", "name": "Elvira Azevedo Mea", "role": "Historian", "bio": "Portuguese historian specializing in the Inquisition and crypto-Judaism whose research on the Belmonte crypto-Jewish community provided essential scholarly context for the museum's exhibits."},
+    {"id": "elisha-salas", "name": "Elisha Salas", "role": "Community Rabbi", "bio": "Rabbi who helped the crypto-Jewish community of Belmonte formally return to Judaism in the 1990s, guiding community members through conversion processes and re-establishing open Jewish practice."}
+  ],
+  "jewish-community-of-lisbon": [
+    {"id": "esther-mucznik", "name": "Esther Mucznik", "role": "Community Leader & Author", "bio": "French-born Portuguese Jewish historian and former vice president of the Lisbon Jewish community who authored works on the Portuguese Jewish experience and advocated for heritage preservation."},
+    {"id": "barros-basto-lisbon", "name": "Arturo Carlos de Barros Basto", "role": "Revivalist", "bio": "Portuguese army officer who led the revival of organized Jewish life in early 20th-century Portugal, working to unite crypto-Jewish descendants with the established Jewish community of Lisbon."},
+    {"id": "abraham-levy", "name": "Abraham Levy", "role": "Community President", "bio": "President of the Comunidade Israelita de Lisboa who led the community during a period of growth and renewal, overseeing religious services and cultural programming for Lisbon's Jewish population."}
+  ],
+  "sinagoga-kadoorie-mekor-haim-porto": [
+    {"id": "barros-basto-porto", "name": "Arturo Carlos de Barros Basto", "role": "Founder", "bio": "Portuguese army captain who spearheaded the construction of the Kadoorie Mekor Haim synagogue in Porto, completed in 1938, the largest synagogue on the Iberian Peninsula."},
+    {"id": "laura-kadoorie", "name": "Laura Kadoorie", "role": "Benefactress", "bio": "Member of the Kadoorie family whose generous financial contributions funded the construction of the Porto synagogue, which bears the family name in recognition of their pivotal support."},
+    {"id": "hugo-lip", "name": "Hugo Lip", "role": "Community Leader", "bio": "Leader of the Jewish Community of Porto who worked alongside Barros Basto to establish the synagogue and build organized Jewish communal life in northern Portugal."}
+  ],
+  "comunidade-israelita-de-lisboa": [
+    {"id": "esther-mucznik-cil", "name": "Esther Mucznik", "role": "Vice President & Historian", "bio": "Prominent Portuguese Jewish historian who served as vice president of the Comunidade Israelita de Lisboa, writing extensively about Sephardi heritage and the Portuguese Inquisition."},
+    {"id": "jose-oulman-carvalhao-neto", "name": "José Oulman Carvalhão Neto", "role": "Community Leader", "bio": "Leader of the Lisbon Jewish community who strengthened cultural and religious institutions and built connections with the growing community of descendants of Portuguese Jews worldwide."},
+    {"id": "barros-basto-cil", "name": "Arturo Carlos de Barros Basto", "role": "Revivalist", "bio": "The 'Portuguese Dreyfus' who championed the return to open Judaism in Portugal, establishing connections between crypto-Jewish descendants and the Lisbon community."}
+  ],
+  "the-synagogue-of-bahrain": [
+    {"id": "houda-nonoo", "name": "Houda Nonoo", "role": "Ambassador", "bio": "Bahraini Jewish politician who served as Bahrain's ambassador to the United States from 2008 to 2013, the first Jewish ambassador from any Arab country, from one of Bahrain's oldest Jewish families."},
+    {"id": "nancy-khedouri", "name": "Nancy Khedouri", "role": "Politician", "bio": "Bahraini Jewish politician who served in the Bahraini Shura Council, one of the few Jewish parliamentarians in the Arab world, deeply connected to the Bahrain synagogue community."},
+    {"id": "ebrahim-nonoo-bah", "name": "Ebrahim Nonoo", "role": "Community Leader", "bio": "Head of the Jewish community of Bahrain who has maintained the synagogue and championed Jewish-Muslim coexistence in the kingdom, representing one of the oldest Jewish communities in the Gulf."}
+  ]
+}

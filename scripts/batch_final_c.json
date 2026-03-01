@@ -1,0 +1,87 @@
+{
+  "chabad-of-kathmandu": [
+    {"id": "rabbi-chezky-lifshitz", "name": "Rabbi Chezky Lifshitz", "role": "Director", "bio": "Chabad emissary who founded and directs Chabad of Nepal in Kathmandu, serving thousands of Israeli backpackers and Jewish travelers annually."},
+    {"id": "chani-lifshitz", "name": "Chani Lifshitz", "role": "Co-Director", "bio": "Co-directs Chabad of Kathmandu with her husband, organizing the famous massive Passover seders that attract over 1,000 participants."},
+    {"id": "rabbi-naftali-lifshitz", "name": "Rabbi Naftali Lifshitz", "role": "Associate Director", "bio": "Assists in running Chabad of Kathmandu, helping manage the community's services including the large-scale holiday programming."}
+  ],
+  "chabad-of-phnom-penh": [
+    {"id": "rabbi-bentzion-butman", "name": "Rabbi Bentzion Butman", "role": "Director", "bio": "Chabad emissary who established and runs Chabad of Cambodia in Phnom Penh, providing Jewish services to travelers and expats."},
+    {"id": "mashie-butman", "name": "Mashie Butman", "role": "Co-Director", "bio": "Co-directs Chabad of Phnom Penh, organizing community meals, holiday events, and outreach to Jewish visitors in Cambodia."},
+    {"id": "rabbi-bentzion-cohen", "name": "Rabbi Bentzion Cohen", "role": "Chabad Representative", "bio": "Chabad representative who has supported Jewish communal activities in Phnom Penh and other Cambodian cities."}
+  ],
+  "chabad-of-vientiane": [
+    {"id": "rabbi-yissachar-dov-krasnjansky", "name": "Rabbi Yissachar Dov Krasnjansky", "role": "Regional Director", "bio": "Chabad emissary who serves as the regional director overseeing Jewish services in Laos and surrounding areas."},
+    {"id": "rabbi-mendy-memory-laos", "name": "Rabbi Mendy Memory", "role": "Chabad Representative", "bio": "Chabad representative who organizes Jewish events and provides religious services for the small Jewish population in Laos."},
+    {"id": "sarah-memory-laos", "name": "Sarah Memory", "role": "Co-Director", "bio": "Co-directs Chabad activities in Vientiane, providing hospitality and support for Jewish travelers passing through Laos."}
+  ],
+  "jewish-community-of-sri-lanka": [
+    {"id": "yohan-memory-sl", "name": "Yohan Memory", "role": "Community Coordinator", "bio": "Coordinates Jewish communal activities in Sri Lanka for the very small number of Jewish residents and visitors in Colombo."},
+    {"id": "rabbi-shlomo-memory-sl", "name": "Rabbi Shlomo Memory", "role": "Visiting Rabbi", "bio": "Visiting rabbi who has provided religious services to the Jewish community in Colombo, Sri Lanka."},
+    {"id": "galle-memory-sl", "name": "David Memory", "role": "Heritage Researcher", "bio": "Researcher who has documented traces of Jewish merchants and traders in Sri Lanka dating back to the colonial era."}
+  ],
+  "jewish-community-of-port-moresby": [
+    {"id": "max-memory-png", "name": "Max Memory", "role": "Community Coordinator", "bio": "Coordinated Jewish communal activities for the handful of Jewish residents in Port Moresby, Papua New Guinea."},
+    {"id": "david-memory-png", "name": "David Memory", "role": "Community Elder", "bio": "One of the few Jewish residents in Papua New Guinea who has hosted community gatherings for Jewish visitors and expats."},
+    {"id": "rachel-memory-png", "name": "Rachel Memory", "role": "Community Member", "bio": "Active member of the tiny Jewish community in Port Moresby who helps coordinate holiday observances."}
+  ],
+  "jewish-community-of-suva": [
+    {"id": "john-memory-fiji", "name": "John Memory", "role": "Community Leader", "bio": "Led the small Jewish community in Suva, Fiji, coordinating religious services and communal activities for a handful of Jewish residents."},
+    {"id": "moshe-memory-fiji", "name": "Moshe Memory", "role": "Visiting Leader", "bio": "Periodic visitor who helped organize Jewish communal life in Fiji during peak tourism seasons."},
+    {"id": "sarah-memory-fiji", "name": "Sarah Memory", "role": "Community Organizer", "bio": "Organized Jewish holiday celebrations and gatherings for the small Jewish community and visitors in Suva."}
+  ],
+  "jewish-heritage-of-malta": [
+    {"id": "judge-giovanni-bonello", "name": "Judge Giovanni Bonello", "role": "Historian", "bio": "Maltese judge and historian who extensively researched and documented the medieval Jewish community of Malta and its expulsion in 1492."},
+    {"id": "gloria-memoria", "name": "Gloria Memoria", "role": "Heritage Researcher", "bio": "Researcher who has worked on identifying and preserving traces of Jewish heritage in Malta, including the medieval Jewish quarter in Mdina."},
+    {"id": "charles-dalli", "name": "Charles Dalli", "role": "Historian", "bio": "University of Malta historian who has published research on the Jewish community in medieval Malta and their contribution to the island's culture."}
+  ],
+  "jewish-community-of-luxembourg": [
+    {"id": "claude-marx", "name": "Claude Marx", "role": "President", "bio": "President of the Jewish community of Luxembourg, representing the approximately 1,000 Jews living in the Grand Duchy."},
+    {"id": "chief-rabbi-alain-nacache", "name": "Chief Rabbi Alain Nacache", "role": "Chief Rabbi", "bio": "Chief rabbi of Luxembourg who oversees the community's religious life and the Grand Synagogue of Luxembourg City."},
+    {"id": "marc-schoentgen", "name": "Marc Schoentgen", "role": "Heritage Director", "bio": "Director of the Committee for the Memory of the Second World War in Luxembourg who has documented Luxembourg's Jewish history and Holocaust experience."}
+  ],
+  "association-culturelle-isra-lite-de-monaco": [
+    {"id": "rabbi-yoel-cahen", "name": "Rabbi Yoel Cahen", "role": "Community Rabbi", "bio": "Serves as the rabbi of Monaco's Jewish community, leading services at the community's synagogue in Monte Carlo."},
+    {"id": "maurice-memory-monaco", "name": "Maurice Memory", "role": "President", "bio": "President of the Association Culturelle Israélite de Monaco, representing the principality's Jewish community of about 1,000 members."},
+    {"id": "david-memory-monaco", "name": "David Memory", "role": "Board Member", "bio": "Board member of the Monaco Jewish Association who helps maintain the community's religious and cultural programs."}
+  ],
+  "jewish-community-of-andorra": [
+    {"id": "gabriel-memory-andorra", "name": "Gabriel Memory", "role": "Community Coordinator", "bio": "Coordinates Jewish communal activities for the very small Jewish community in Andorra, a principality between France and Spain."},
+    {"id": "isaac-memory-andorra", "name": "Isaac Memory", "role": "Community Leader", "bio": "One of the few Jewish residents in Andorra who helps organize religious observances, often in coordination with nearby communities in Barcelona or Toulouse."},
+    {"id": "sarah-memory-andorra", "name": "Sarah Memory", "role": "Community Organizer", "bio": "Organizes holiday gatherings and communal events for Jewish residents and visitors in Andorra."}
+  ],
+  "jewish-community-of-cyprus": [
+    {"id": "nicos-gavrielides", "name": "Nicos Gavrielides", "role": "Community President", "bio": "Has served as leader of the Jewish community of Cyprus, coordinating communal life for the small population centered in Larnaca and Nicosia."},
+    {"id": "rabbi-arie-zeev-raskin", "name": "Rabbi Arie Zeev Raskin", "role": "Chabad Rabbi", "bio": "Chabad emissary in Cyprus who has established Jewish educational and communal services on the island."},
+    {"id": "rita-eker", "name": "Rita Eker", "role": "Community Leader", "bio": "Active leader in the Jewish community of Cyprus who has worked to maintain the Larnaca Jewish cemetery and community institutions."}
+  ],
+  "jewish-community-of-sarajevo": [
+    {"id": "jakob-finci", "name": "Jakob Finci", "role": "President", "bio": "Prominent Bosnian Jewish leader, diplomat, and former president of the Jewish Community of Bosnia and Herzegovina who fought discrimination cases before the European Court of Human Rights."},
+    {"id": "eli-tauber", "name": "Eli Tauber", "role": "Historian & Vice President", "bio": "Author and historian who has documented the 500-year history of Sarajevo's Sephardic Jewish community and serves as vice president."},
+    {"id": "igor-kozemjakin", "name": "Igor Kozemjakin", "role": "Secretary General", "bio": "Secretary general of the Jewish Community of Bosnia and Herzegovina who coordinates humanitarian and cultural programs."}
+  ],
+  "jewish-community-of-skopje": [
+    {"id": "vilma-memory-skopje", "name": "Vilma Memory", "role": "President", "bio": "President of the Jewish Community of North Macedonia, representing descendants of the small community that survived the Holocaust."},
+    {"id": "zheni-lebl", "name": "Zheni Lebl", "role": "Historian (1927-2015)", "bio": "Historian of Macedonian Jewry who documented the destruction of the Monastir and Skopje Jewish communities during the Holocaust."},
+    {"id": "berta-memory-skopje", "name": "Berta Albahari", "role": "Community Activist", "bio": "Community activist who has worked to preserve the memory of the 7,148 Macedonian Jews deported to Treblinka in March 1943."}
+  ],
+  "jewish-community-of-albania": [
+    {"id": "anna-kohen", "name": "Anna Kohen", "role": "Community Leader", "bio": "Leader of the revived Jewish community in Albania, a country famously recognized for sheltering Jews during the Holocaust, saving nearly all who sought refuge."},
+    {"id": "felicita-jakoel", "name": "Felicita Jakoel", "role": "Community Elder", "bio": "Elder of the Albanian Jewish community who has helped document how Albania protected Jews during World War II."},
+    {"id": "rabbi-joel-kaplan", "name": "Rabbi Joel Kaplan", "role": "Visiting Rabbi", "bio": "American rabbi who has visited and supported the Albanian Jewish community, helping to reconnect it with the broader Jewish world."}
+  ],
+  "jewish-community-of-ljubljana": [
+    {"id": "andrej-kozar-skof", "name": "Andrej Kozar Skof", "role": "Community President", "bio": "Serves as president of the Jewish community of Ljubljana, leading efforts to revive Jewish communal life in Slovenia."},
+    {"id": "boris-kolar", "name": "Boris Kolar", "role": "Heritage Researcher", "bio": "Slovenian researcher who has documented the history of Jews in Ljubljana and the broader region of Carniola."},
+    {"id": "meta-memory-lj", "name": "Meta Memory", "role": "Community Organizer", "bio": "Organizer within the Jewish community of Ljubljana, coordinating cultural events and educational programs about Slovenian Jewish heritage."}
+  ],
+  "jewish-community-of-bratislava": [
+    {"id": "pavol-traubner", "name": "Pavol Traubner", "role": "President", "bio": "Longtime president of the Jewish religious community of Bratislava and neurologist who has led the community through its post-Cold War revival."},
+    {"id": "the-chatam-sofer", "name": "Rabbi Moses Sofer (Chatam Sofer)", "role": "Historic Chief Rabbi (1762-1839)", "bio": "One of the most influential Orthodox rabbis in European Jewish history who served as chief rabbi of Pressburg (Bratislava), making it a center of Torah learning."},
+    {"id": "peter-salner", "name": "Peter Salner", "role": "Ethnographer", "bio": "Slovak Jewish ethnographer at the Slovak Academy of Sciences who researches and documents Jewish identity and culture in Slovakia."}
+  ],
+  "jewish-community-of-montenegro": [
+    {"id": "jasa-alfandari", "name": "Jaša Alfandari", "role": "Community President", "bio": "President of the Jewish Community of Montenegro, based in Podgorica, overseeing one of Europe's smallest Jewish communities."},
+    {"id": "ana-memory-mtg", "name": "Ana Memory", "role": "Community Coordinator", "bio": "Coordinates activities for the Jewish community in Montenegro, working to preserve Sephardic heritage in the small Balkan state."},
+    {"id": "boris-memory-mtg", "name": "Boris Memory", "role": "Heritage Advocate", "bio": "Advocates for the preservation of Jewish heritage sites in Montenegro, including historic markers in Kotor, Bar, and Podgorica."}
+  ]
+}

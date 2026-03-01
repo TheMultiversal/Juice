@@ -1,0 +1,556 @@
+{
+  "skirball-cultural-center": [
+    {
+      "id": "person-jack-skirball",
+      "name": "Jack H. Skirball",
+      "role": "Namesake & Benefactor",
+      "bio": "Jack H. Skirball was a rabbi, film producer, and philanthropist whose foundation funded the creation of the Skirball Cultural Center. He envisioned an institution dedicated to exploring the connections between Jewish heritage and American democratic ideals."
+    },
+    {
+      "id": "person-uri-herscher",
+      "name": "Uri D. Herscher",
+      "role": "Founding President & CEO",
+      "bio": "Uri D. Herscher served as the founding president and CEO of the Skirball Cultural Center, overseeing its development and opening in 1996. A scholar and cultural leader, he shaped the center into a major Los Angeles cultural institution."
+    },
+    {
+      "id": "person-jessie-kornberg",
+      "name": "Jessie Kornberg",
+      "role": "President & CEO",
+      "bio": "Jessie Kornberg succeeded Uri Herscher as president and CEO of the Skirball Cultural Center. She has led the center's expansion of programming and community engagement initiatives."
+    },
+    {
+      "id": "person-audrey-skirball-kenis",
+      "name": "Audrey Skirball-Kenis",
+      "role": "Co-founder & Philanthropist",
+      "bio": "Audrey Skirball-Kenis was a philanthropist and the wife of Jack H. Skirball who helped establish the Skirball Cultural Center. She continued supporting the center through the Skirball Foundation after her husband's passing."
+    }
+  ],
+  "touro-university": [
+    {
+      "id": "person-bernard-lander",
+      "name": "Bernard Lander",
+      "role": "Founder & First President",
+      "bio": "Rabbi Dr. Bernard Lander founded Touro College in 1970 with a mission to serve the Jewish and wider community through higher education. He served as president until his death in 2010, building it into a major institution with multiple campuses."
+    },
+    {
+      "id": "person-alan-kadish",
+      "name": "Alan Kadish",
+      "role": "President & CEO",
+      "bio": "Dr. Alan Kadish has served as president and CEO of Touro University since 2010, succeeding founder Bernard Lander. A cardiologist and researcher, he has overseen the university's continued expansion and academic development."
+    },
+    {
+      "id": "person-doniel-lander",
+      "name": "Doniel Lander",
+      "role": "Former Chancellor",
+      "bio": "Rabbi Doniel Lander served as chancellor of Touro College and was the son of founder Bernard Lander. He continued his father's vision of integrating Jewish values with professional education until his passing in 2022."
+    }
+  ],
+  "americans-for-peace-now": [
+    {
+      "id": "person-hadar-susskind",
+      "name": "Hadar Susskind",
+      "role": "President & CEO",
+      "bio": "Hadar Susskind has served as president and CEO of Americans for Peace Now, the U.S. sister organization of Israel's Shalom Achshav movement. He previously held leadership roles at the Jewish Federations of North America and Bend the Arc."
+    },
+    {
+      "id": "person-debra-delee",
+      "name": "Debra DeLee",
+      "role": "Former President & CEO",
+      "bio": "Debra DeLee served as president and CEO of Americans for Peace Now for over a decade. She previously served as executive director of the Democratic National Committee."
+    },
+    {
+      "id": "person-ori-nir",
+      "name": "Ori Nir",
+      "role": "Communications & Government Relations Director",
+      "bio": "Ori Nir serves as spokesperson and communications director for Americans for Peace Now. He previously worked as a Washington correspondent for the Israeli newspaper Haaretz and the Forward."
+    }
+  ],
+  "new-england-patriots": [
+    {
+      "id": "person-robert-kraft",
+      "name": "Robert Kraft",
+      "role": "Owner, Chairman & CEO",
+      "bio": "Robert Kraft purchased the New England Patriots in 1994 and built the franchise into one of the NFL's most successful teams, winning six Super Bowl championships. He is chairman and CEO of the Kraft Group, a diversified business conglomerate."
+    },
+    {
+      "id": "person-jonathan-kraft",
+      "name": "Jonathan Kraft",
+      "role": "President of the Kraft Group",
+      "bio": "Jonathan Kraft is president of the Kraft Group and serves in a senior leadership role with the New England Patriots organization. He is the son of owner Robert Kraft and oversees the family's business operations."
+    },
+    {
+      "id": "person-daniel-kraft-nep",
+      "name": "Daniel Kraft",
+      "role": "President of International",
+      "bio": "Daniel Kraft serves as president of international for the Kraft Group operating companies. He is a son of Robert Kraft and plays a key role in the family's global business expansion efforts."
+    }
+  ],
+  "museum-of-jewish-heritage": [
+    {
+      "id": "person-robert-morgenthau",
+      "name": "Robert M. Morgenthau",
+      "role": "Founding Chairman",
+      "bio": "Robert M. Morgenthau served as founding chairman of the Museum of Jewish Heritage in New York City's Battery Park. He was also the legendary District Attorney of Manhattan, serving from 1975 to 2009."
+    },
+    {
+      "id": "person-bruce-ratner",
+      "name": "Bruce C. Ratner",
+      "role": "Chairman of the Board",
+      "bio": "Bruce C. Ratner served as chairman of the board of the Museum of Jewish Heritage. He was also a prominent New York real estate developer known for the Barclays Center and Atlantic Yards projects."
+    },
+    {
+      "id": "person-jack-kliger",
+      "name": "Jack Kliger",
+      "role": "President & CEO",
+      "bio": "Jack Kliger has served as president and CEO of the Museum of Jewish Heritage – A Living Memorial to the Holocaust. He previously served as CEO of Hachette Filipacchi Media U.S."
+    },
+    {
+      "id": "person-david-marwell",
+      "name": "David G. Marwell",
+      "role": "Former Director",
+      "bio": "David G. Marwell served as director of the Museum of Jewish Heritage from 2000 to 2019. He previously worked at the U.S. Department of Justice's Office of Special Investigations pursuing Nazi war criminals."
+    }
+  ],
+  "kirkland-ellis": [
+    {
+      "id": "person-jon-ballis",
+      "name": "Jon A. Ballis",
+      "role": "Chairman",
+      "bio": "Jon A. Ballis has served as chairman of Kirkland & Ellis, one of the world's largest and most profitable law firms. Under his leadership, the firm reached the top of global law firm revenue rankings."
+    },
+    {
+      "id": "person-jeffrey-hammes",
+      "name": "Jeffrey C. Hammes",
+      "role": "Former Chairman",
+      "bio": "Jeffrey C. Hammes served as chairman of Kirkland & Ellis from 2010 to 2020, presiding over a period of dramatic growth. He transformed the firm into the highest-revenue law firm globally through its dominance in private equity work."
+    },
+    {
+      "id": "person-jack-levin",
+      "name": "Jack S. Levin",
+      "role": "Senior Partner (Emeritus)",
+      "bio": "Jack S. Levin was a legendary Kirkland & Ellis partner widely regarded as a pioneer of modern private equity law. He authored the seminal treatise on structuring venture capital and private equity transactions used across the industry."
+    }
+  ],
+  "hadassah-magazine": [
+    {
+      "id": "person-henrietta-szold",
+      "name": "Henrietta Szold",
+      "role": "Founder of Hadassah",
+      "bio": "Henrietta Szold founded Hadassah, the Women's Zionist Organization of America, in 1912, which publishes Hadassah Magazine. She was a pioneering Jewish American leader who established major health and social services in pre-state Israel."
+    },
+    {
+      "id": "person-alan-tigay",
+      "name": "Alan M. Tigay",
+      "role": "Former Executive Editor",
+      "bio": "Alan M. Tigay served as executive editor of Hadassah Magazine for over two decades, shaping it into one of the largest-circulation Jewish publications in America. Under his leadership the magazine won numerous journalism awards."
+    },
+    {
+      "id": "person-lisa-hostein",
+      "name": "Lisa Hostein",
+      "role": "Executive Editor",
+      "bio": "Lisa Hostein served as executive editor of Hadassah Magazine, overseeing the publication's editorial content and digital expansion. She guided the magazine's coverage of Jewish life, Israel, health, and culture."
+    }
+  ],
+  "national-jewish-democratic-council": [
+    {
+      "id": "person-ira-forman",
+      "name": "Ira N. Forman",
+      "role": "Former Executive Director",
+      "bio": "Ira N. Forman served as executive director of the National Jewish Democratic Council from 1996 to 2013. He later served as the U.S. State Department's Special Envoy to Monitor and Combat Anti-Semitism under President Obama."
+    },
+    {
+      "id": "person-marc-stanley",
+      "name": "Marc Stanley",
+      "role": "Former Chairman",
+      "bio": "Marc Stanley served as national chairman of the National Jewish Democratic Council. A Dallas-based attorney, he later served as U.S. Ambassador to Argentina under President Biden."
+    },
+    {
+      "id": "person-greg-rosenbaum",
+      "name": "Greg Rosenbaum",
+      "role": "Former Chairman",
+      "bio": "Greg Rosenbaum served as chairman of the National Jewish Democratic Council. He is a business executive and Democratic Party activist involved in Jewish political advocacy for decades."
+    }
+  ],
+  "sullivan-cromwell": [
+    {
+      "id": "person-h-rodgin-cohen",
+      "name": "H. Rodgin Cohen",
+      "role": "Senior Chairman",
+      "bio": "H. Rodgin Cohen is senior chairman of Sullivan & Cromwell and is widely considered the leading banking lawyer in the United States. He has advised on virtually every major U.S. bank merger and financial crisis intervention for over four decades."
+    },
+    {
+      "id": "person-joseph-shenker",
+      "name": "Joseph C. Shenker",
+      "role": "Chairman",
+      "bio": "Joseph C. Shenker has served as chairman of Sullivan & Cromwell. He is a leading corporate lawyer specializing in major mergers, acquisitions, and capital markets transactions."
+    },
+    {
+      "id": "person-robert-giuffra",
+      "name": "Robert J. Giuffra Jr.",
+      "role": "Senior Litigation Partner",
+      "bio": "Robert J. Giuffra Jr. is a senior partner at Sullivan & Cromwell and co-head of the firm's litigation group. He is one of the most prominent corporate trial lawyers in the United States."
+    }
+  ],
+  "maccabi-usa": [
+    {
+      "id": "person-jed-margolis",
+      "name": "Jed Margolis",
+      "role": "Executive Director",
+      "bio": "Jed Margolis served as executive director of Maccabi USA, the organization that selects and sends American athletes to the Maccabiah Games in Israel. He oversaw delegation operations and athlete development programs."
+    },
+    {
+      "id": "person-ron-carner",
+      "name": "Ron Carner",
+      "role": "Former President",
+      "bio": "Ron Carner served as president of Maccabi USA and was instrumental in growing American participation in the Maccabiah Games. He helped develop junior programs to nurture young Jewish athletes."
+    },
+    {
+      "id": "person-marshall-einhorn",
+      "name": "Marshall Einhorn",
+      "role": "Former Chairman",
+      "bio": "Marshall Einhorn served as chairman of Maccabi USA, helping lead the organization that represents Jewish American athletes internationally. He was active in building partnerships to support U.S. delegations to the Maccabiah Games."
+    }
+  ],
+  "soros-fund-management": [
+    {
+      "id": "person-george-soros",
+      "name": "George Soros",
+      "role": "Founder & Chairman",
+      "bio": "George Soros founded Soros Fund Management in 1969, which became one of the most successful hedge funds in history. A Hungarian-born investor and philanthropist, he is known for his currency trades and his Open Society Foundations."
+    },
+    {
+      "id": "person-dawn-fitzpatrick",
+      "name": "Dawn Fitzpatrick",
+      "role": "Chief Investment Officer & CEO",
+      "bio": "Dawn Fitzpatrick has served as chief investment officer of Soros Fund Management since 2017. She previously spent over 25 years at UBS, where she was head of the O'Connor division."
+    },
+    {
+      "id": "person-robert-soros",
+      "name": "Robert Soros",
+      "role": "Former Deputy Chairman",
+      "bio": "Robert Soros served as deputy chairman and president of Soros Fund Management. The eldest son of George Soros, he played a key role in the firm's investment strategy before pursuing independent ventures."
+    },
+    {
+      "id": "person-jonathan-soros-sfm",
+      "name": "Jonathan Soros",
+      "role": "Former Senior Executive",
+      "bio": "Jonathan Soros is a son of George Soros who held senior roles at Soros Fund Management. He later became an advocate for campaign finance reform and co-founded Friends of Democracy."
+    }
+  ],
+  "warner-bros-discovery": [
+    {
+      "id": "person-david-zaslav",
+      "name": "David Zaslav",
+      "role": "President & CEO",
+      "bio": "David Zaslav is president and CEO of Warner Bros. Discovery, formed through the 2022 merger of WarnerMedia and Discovery, Inc. He previously led Discovery Communications for over a decade, growing it into a global media company."
+    },
+    {
+      "id": "person-jeff-zucker",
+      "name": "Jeff Zucker",
+      "role": "Former Chairman of WarnerMedia News & Sports",
+      "bio": "Jeff Zucker served as chairman of WarnerMedia News and Sports and president of CNN Worldwide until 2022. He previously served as president and CEO of NBCUniversal."
+    },
+    {
+      "id": "person-gunnar-wiedenfels",
+      "name": "Gunnar Wiedenfels",
+      "role": "Chief Financial Officer",
+      "bio": "Gunnar Wiedenfels serves as chief financial officer of Warner Bros. Discovery. He previously served as CFO of Discovery Communications and ProSiebenSat.1 Media in Germany."
+    }
+  ],
+  "yeshiva-university": [
+    {
+      "id": "person-bernard-revel",
+      "name": "Bernard Revel",
+      "role": "Founding President",
+      "bio": "Rabbi Dr. Bernard Revel was the founding president of Yeshiva University, transforming the Rabbi Isaac Elchanan Theological Seminary into a modern university. He pioneered the synthesis of Torah study and secular academic education."
+    },
+    {
+      "id": "person-norman-lamm",
+      "name": "Norman Lamm",
+      "role": "Former President & Chancellor",
+      "bio": "Rabbi Dr. Norman Lamm served as president of Yeshiva University from 1976 to 2003 and then as chancellor. A renowned Jewish philosopher, he championed Torah Umadda and authored numerous works on Jewish law and thought."
+    },
+    {
+      "id": "person-richard-joel",
+      "name": "Richard Joel",
+      "role": "Former President",
+      "bio": "Richard Joel served as president of Yeshiva University from 2003 to 2017. He previously served as international director of Hillel, where he transformed the organization into a major force on college campuses."
+    },
+    {
+      "id": "person-ari-berman",
+      "name": "Ari Berman",
+      "role": "President",
+      "bio": "Rabbi Dr. Ari Berman became the fifth president of Yeshiva University in 2017. He has focused on positioning YU as a leading values-based research university with global reach."
+    }
+  ],
+  "hillel-international": [
+    {
+      "id": "person-benjamin-frankel",
+      "name": "Benjamin Frankel",
+      "role": "Founder",
+      "bio": "Rabbi Benjamin Frankel founded the first Hillel chapter at the University of Illinois in 1923 to serve Jewish students on campus. His vision grew into the largest Jewish campus organization in the world."
+    },
+    {
+      "id": "person-eric-fingerhut",
+      "name": "Eric Fingerhut",
+      "role": "Former President & CEO",
+      "bio": "Eric Fingerhut served as president and CEO of Hillel International from 2013 to 2019. He previously served as a U.S. Congressman from Ohio and later became president of the Jewish Federations of North America."
+    },
+    {
+      "id": "person-adam-lehman",
+      "name": "Adam Lehman",
+      "role": "President & CEO",
+      "bio": "Adam Lehman became president and CEO of Hillel International in 2019. He has focused on expanding Jewish student engagement and strengthening Hillel's presence on campuses worldwide."
+    },
+    {
+      "id": "person-richard-joel-hillel",
+      "name": "Richard Joel",
+      "role": "Former International Director",
+      "bio": "Richard Joel served as international director of Hillel from 1989 to 2003, transforming it from a sleepy campus organization into a dynamic presence at over 500 colleges. He later became president of Yeshiva University."
+    }
+  ],
+  "mckinsey-company": [
+    {
+      "id": "person-james-mckinsey",
+      "name": "James O. McKinsey",
+      "role": "Founder",
+      "bio": "James O. McKinsey founded the consulting firm bearing his name in 1926 in Chicago. A University of Chicago professor, he pioneered the concept of management consulting as a professional discipline."
+    },
+    {
+      "id": "person-marvin-bower",
+      "name": "Marvin Bower",
+      "role": "Former Managing Director",
+      "bio": "Marvin Bower served as managing director of McKinsey & Company from 1950 to 1967 and is considered the firm's most influential leader. He established McKinsey's professional standards and values-based culture that defined modern management consulting."
+    },
+    {
+      "id": "person-bob-sternfels",
+      "name": "Bob Sternfels",
+      "role": "Global Managing Partner",
+      "bio": "Bob Sternfels became global managing partner of McKinsey & Company in 2021. He previously led the firm's operations in the western United States and its work in petroleum and other industries."
+    },
+    {
+      "id": "person-dominic-barton",
+      "name": "Dominic Barton",
+      "role": "Former Global Managing Partner",
+      "bio": "Dominic Barton served as global managing partner of McKinsey & Company from 2009 to 2018, leading the firm through significant growth. He later served as Canada's Ambassador to China from 2019 to 2021."
+    }
+  ],
+  "iheart-media": [
+    {
+      "id": "person-bob-pittman",
+      "name": "Bob Pittman",
+      "role": "Chairman & CEO",
+      "bio": "Bob Pittman serves as chairman and CEO of iHeartMedia, the largest radio broadcaster in the United States. He is also known as co-founder of MTV and has held senior leadership roles at AOL and other major media companies."
+    },
+    {
+      "id": "person-rich-bressler",
+      "name": "Rich Bressler",
+      "role": "President, COO & CFO",
+      "bio": "Rich Bressler serves as president, chief operating officer, and chief financial officer of iHeartMedia. He previously held senior executive positions at Time Warner and other media companies."
+    },
+    {
+      "id": "person-lowry-mays",
+      "name": "Lowry Mays",
+      "role": "Founder (Clear Channel Communications)",
+      "bio": "Lowry Mays co-founded Clear Channel Communications in 1972, which eventually became iHeartMedia after a series of mergers and rebrandings. He built it from a single San Antonio radio station into the largest radio company in America."
+    }
+  ],
+  "american-jewish-historical-society": [
+    {
+      "id": "person-cyrus-adler",
+      "name": "Cyrus Adler",
+      "role": "Founding Member & President",
+      "bio": "Cyrus Adler was a founding member and later president of the American Jewish Historical Society, established in 1892. He was also president of the Jewish Theological Seminary and a towering figure in American Jewish institutional life."
+    },
+    {
+      "id": "person-jonathan-sarna",
+      "name": "Jonathan D. Sarna",
+      "role": "Chief Historian & Academic Advisor",
+      "bio": "Jonathan D. Sarna is a preeminent American Jewish historian who has served as chief historian and academic advisor to the American Jewish Historical Society. He is the Joseph H. and Belle R. Braun Professor of American Jewish History at Brandeis University."
+    },
+    {
+      "id": "person-oscar-straus",
+      "name": "Oscar S. Straus",
+      "role": "Early Leader & Supporter",
+      "bio": "Oscar S. Straus was an early leader and supporter of the American Jewish Historical Society. He served as the first Jewish U.S. Cabinet member as Secretary of Commerce and Labor under President Theodore Roosevelt."
+    }
+  ],
+  "foundation-for-defense-of-democracies-fdd": [
+    {
+      "id": "person-clifford-may",
+      "name": "Clifford D. May",
+      "role": "Founder & President",
+      "bio": "Clifford D. May is the founder and president of the Foundation for Defense of Democracies, established shortly after the September 11 attacks in 2001. He is a former journalist and communications director for the Republican National Committee."
+    },
+    {
+      "id": "person-mark-dubowitz",
+      "name": "Mark Dubowitz",
+      "role": "Chief Executive",
+      "bio": "Mark Dubowitz serves as chief executive of the Foundation for Defense of Democracies and is considered an architect of U.S. sanctions policy against Iran. He has advised multiple administrations on economic pressure campaigns."
+    },
+    {
+      "id": "person-jonathan-schanzer",
+      "name": "Jonathan Schanzer",
+      "role": "Senior Vice President for Research",
+      "bio": "Jonathan Schanzer serves as senior vice president for research at the Foundation for Defense of Democracies. He is a former terrorism finance analyst at the U.S. Department of the Treasury."
+    },
+    {
+      "id": "person-reuel-marc-gerecht",
+      "name": "Reuel Marc Gerecht",
+      "role": "Senior Fellow",
+      "bio": "Reuel Marc Gerecht is a senior fellow at the Foundation for Defense of Democracies specializing in the Middle East and intelligence. He is a former CIA case officer in the Directorate of Operations."
+    }
+  ],
+  "bain-capital": [
+    {
+      "id": "person-mitt-romney",
+      "name": "Mitt Romney",
+      "role": "Co-founder",
+      "bio": "Mitt Romney co-founded Bain Capital in 1984, building it into one of the world's leading private investment firms. He later served as Governor of Massachusetts and as a U.S. Senator from Utah."
+    },
+    {
+      "id": "person-joshua-bekenstein",
+      "name": "Joshua Bekenstein",
+      "role": "Co-Chairman",
+      "bio": "Joshua Bekenstein is co-chairman of Bain Capital and one of its earliest employees, joining in 1984. He has been instrumental in building the firm's private equity business into a global powerhouse."
+    },
+    {
+      "id": "person-jonathan-lavine",
+      "name": "Jonathan Lavine",
+      "role": "Co-Managing Partner",
+      "bio": "Jonathan Lavine serves as co-managing partner of Bain Capital. He also serves as chairman of the board of trustees of Columbia University and is a major philanthropist."
+    },
+    {
+      "id": "person-stephen-pagliuca",
+      "name": "Stephen Pagliuca",
+      "role": "Co-Chairman",
+      "bio": "Stephen Pagliuca serves as co-chairman of Bain Capital and is a co-owner of the Boston Celtics NBA franchise. He has been with Bain Capital since 1989 and helped build its global investment platform."
+    }
+  ],
+  "databricks": [
+    {
+      "id": "person-ali-ghodsi",
+      "name": "Ali Ghodsi",
+      "role": "Co-founder & CEO",
+      "bio": "Ali Ghodsi is co-founder and CEO of Databricks, which he helped create out of the AMPLab at UC Berkeley in 2013. He has led the company's growth into one of the most valuable private technology companies in the world."
+    },
+    {
+      "id": "person-ion-stoica",
+      "name": "Ion Stoica",
+      "role": "Co-founder & Executive Chairman",
+      "bio": "Ion Stoica is co-founder and executive chairman of Databricks and a professor of computer science at UC Berkeley. He is also co-founder of Anyscale and has made foundational contributions to distributed systems research."
+    },
+    {
+      "id": "person-matei-zaharia",
+      "name": "Matei Zaharia",
+      "role": "Co-founder & Chief Technologist",
+      "bio": "Matei Zaharia is the original creator of Apache Spark and co-founder and chief technologist of Databricks. He is a professor of computer science at UC Berkeley and has received numerous awards for his contributions to big data."
+    },
+    {
+      "id": "person-reynold-xin",
+      "name": "Reynold Xin",
+      "role": "Co-founder",
+      "bio": "Reynold Xin is a co-founder of Databricks who helped develop the company from UC Berkeley's AMPLab research. He played a key role in the development of Apache Spark and Databricks' lakehouse platform architecture."
+    }
+  ],
+  "the-jewish-museum-new-york": [
+    {
+      "id": "person-claudia-gould",
+      "name": "Claudia Gould",
+      "role": "Former Director",
+      "bio": "Claudia Gould served as the Helen Goldsmith Menschel Director of The Jewish Museum from 2010 to 2023. She previously served as director of the Institute of Contemporary Art in Philadelphia."
+    },
+    {
+      "id": "person-joan-rosenbaum",
+      "name": "Joan Rosenbaum",
+      "role": "Former Director",
+      "bio": "Joan Rosenbaum served as director of The Jewish Museum in New York from 1981 to 2010, one of the longest tenures in the museum's history. She transformed it into an internationally recognized institution for art and Jewish culture."
+    },
+    {
+      "id": "person-karl-katz",
+      "name": "Karl Katz",
+      "role": "Former Director",
+      "bio": "Karl Katz served as director of The Jewish Museum during a formative period of the institution's development. He later joined the Metropolitan Museum of Art as a special projects director."
+    }
+  ],
+  "j-street": [
+    {
+      "id": "person-jeremy-ben-ami",
+      "name": "Jeremy Ben-Ami",
+      "role": "Founder & President",
+      "bio": "Jeremy Ben-Ami founded J Street in 2007 as a pro-Israel, pro-peace lobbying organization and political action committee. He previously served as a policy advisor in the Clinton White House and in various political campaigns."
+    },
+    {
+      "id": "person-daniel-levy-jstreet",
+      "name": "Daniel Levy",
+      "role": "Co-founder",
+      "bio": "Daniel Levy was involved in the founding of J Street and is president of the U.S./Middle East Project. He previously served as an advisor in the Israeli Prime Minister's Office and participated in Israeli-Palestinian peace negotiations."
+    },
+    {
+      "id": "person-alan-elsner",
+      "name": "Alan Elsner",
+      "role": "Former Vice President of Communications",
+      "bio": "Alan Elsner served as vice president of communications at J Street. He is a former Reuters journalist and author who helped shape J Street's public messaging and media strategy."
+    }
+  ],
+  "the-israel-project": [
+    {
+      "id": "person-jennifer-laszlo-mizrahi",
+      "name": "Jennifer Laszlo Mizrahi",
+      "role": "Founder & President",
+      "bio": "Jennifer Laszlo Mizrahi founded The Israel Project in 2003 to provide factual information about Israel to the media and public. She is a communications strategist and disability rights advocate who also founded RespectAbility."
+    },
+    {
+      "id": "person-josh-block",
+      "name": "Josh Block",
+      "role": "Former President & CEO",
+      "bio": "Josh Block served as president and CEO of The Israel Project from 2012 until its closure in 2019. He previously served as a spokesman for the American Israel Public Affairs Committee (AIPAC)."
+    },
+    {
+      "id": "person-marcus-sheff-tip",
+      "name": "Marcus Sheff",
+      "role": "Former Senior Executive",
+      "bio": "Marcus Sheff served in a senior role at The Israel Project before becoming CEO of IMPACT-se, which monitors education standards worldwide. He is a former journalist who has worked across Israeli media and advocacy organizations."
+    }
+  ],
+  "pritzker-foundation": [
+    {
+      "id": "person-penny-pritzker",
+      "name": "Penny Pritzker",
+      "role": "Chair",
+      "bio": "Penny Pritzker chairs the Pritzker Foundation and is a billionaire businesswoman and civic leader. She served as U.S. Secretary of Commerce under President Obama from 2013 to 2017."
+    },
+    {
+      "id": "person-thomas-pritzker",
+      "name": "Thomas J. Pritzker",
+      "role": "Family Principal & Philanthropist",
+      "bio": "Thomas J. Pritzker is executive chairman of Hyatt Hotels Corporation and a leader of the Pritzker family's philanthropic efforts. He oversees the family's wide-ranging charitable activities in education, medicine, and the arts."
+    },
+    {
+      "id": "person-jb-pritzker",
+      "name": "J.B. Pritzker",
+      "role": "Family Member & Governor of Illinois",
+      "bio": "J.B. Pritzker is a member of the Pritzker family philanthropic dynasty and has served as Governor of Illinois since 2019. He is a businessman and venture capitalist who co-founded the Pritzker Group."
+    }
+  ],
+  "tishman-speyer": [
+    {
+      "id": "person-jerry-speyer",
+      "name": "Jerry Speyer",
+      "role": "Co-founder & Chairman",
+      "bio": "Jerry Speyer co-founded Tishman Speyer and served as chairman and CEO, building it into one of the world's premier real estate firms. The firm owns and operates landmark properties including Rockefeller Center and the Chrysler Building."
+    },
+    {
+      "id": "person-rob-speyer",
+      "name": "Rob Speyer",
+      "role": "President & CEO",
+      "bio": "Rob Speyer serves as president and CEO of Tishman Speyer, succeeding his father Jerry Speyer. He has led the firm's global expansion and major development projects around the world."
+    },
+    {
+      "id": "person-robert-tishman",
+      "name": "Robert V. Tishman",
+      "role": "Co-founder",
+      "bio": "Robert V. Tishman co-founded Tishman Speyer with Jerry Speyer, merging the Tishman family's historic real estate legacy with a new global platform. The Tishman family had been prominent in New York real estate since the early 20th century."
+    }
+  ]
+}

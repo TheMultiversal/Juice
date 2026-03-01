@@ -1,0 +1,135 @@
+{
+  "bbc-british-broadcasting-corporation": [
+    {"id": "tim-davie", "name": "Tim Davie", "role": "Director-General", "bio": "Appointed BBC Director-General in 2020, previously led BBC Studios and served as CEO of BBC Worldwide."},
+    {"id": "david-attenborough", "name": "David Attenborough", "role": "Broadcaster and Natural Historian", "bio": "Legendary BBC broadcaster and natural historian whose career with the corporation spans over seven decades."},
+    {"id": "john-reith", "name": "John Reith", "role": "Founding Director-General", "bio": "First Director-General of the BBC who established the corporation's public service ethos and editorial independence."},
+    {"id": "samir-shah", "name": "Samir Shah", "role": "Chairman", "bio": "Media executive appointed BBC Chairman in 2024, with decades of experience in British broadcasting."}
+  ],
+  "deepmind": [
+    {"id": "demis-hassabis", "name": "Demis Hassabis", "role": "Co-Founder and CEO", "bio": "Nobel Prize-winning AI researcher who co-founded DeepMind in 2010 and led the development of AlphaFold and AlphaGo."},
+    {"id": "shane-legg", "name": "Shane Legg", "role": "Co-Founder and Chief AGI Scientist", "bio": "New Zealand-born AI researcher who co-founded DeepMind and serves as its Chief AGI Scientist at Google DeepMind."},
+    {"id": "mustafa-suleyman", "name": "Mustafa Suleyman", "role": "Co-Founder", "bio": "British AI entrepreneur who co-founded DeepMind before leaving to found Inflection AI and later joining Microsoft as CEO of AI."},
+    {"id": "koray-kavukcuoglu", "name": "Koray Kavukcuoglu", "role": "VP of Research", "bio": "Deep learning researcher who joined DeepMind early and rose to lead its core research efforts as Vice President of Research."}
+  ],
+  "revolut": [
+    {"id": "nikolay-storonsky", "name": "Nikolay Storonsky", "role": "Co-Founder and CEO", "bio": "Russian-born British entrepreneur who co-founded Revolut in 2015, growing it into one of Europe's most valuable fintech companies."},
+    {"id": "vlad-yatsenko", "name": "Vlad Yatsenko", "role": "Co-Founder and CTO", "bio": "Ukrainian-born technologist who co-founded Revolut and built its core banking technology platform as Chief Technology Officer."},
+    {"id": "francesca-carlesi", "name": "Francesca Carlesi", "role": "CEO of Revolut UK", "bio": "Former investment banker appointed CEO of Revolut's UK operations, overseeing its push to secure a full UK banking licence."},
+    {"id": "martin-gilbert", "name": "Martin Gilbert", "role": "Chairman", "bio": "Veteran asset management executive and co-founder of Aberdeen Asset Management who became chairman of Revolut."}
+  ],
+  "unilever": [
+    {"id": "hein-schumacher", "name": "Hein Schumacher", "role": "CEO", "bio": "Dutch businessman who became Unilever CEO in 2023, previously serving as CEO of Royal FrieslandCampina."},
+    {"id": "william-lever", "name": "William Lever", "role": "Co-Founder", "bio": "British industrialist who founded Lever Brothers in 1885, which later merged with Margarine Unie to form Unilever in 1929."},
+    {"id": "paul-polman", "name": "Paul Polman", "role": "Former CEO", "bio": "Dutch businessman who led Unilever as CEO from 2009 to 2019, championing sustainable business practices globally."},
+    {"id": "nils-andersen", "name": "Nils Andersen", "role": "Chairman", "bio": "Danish business executive who has served as Chairman of Unilever, previously heading A.P. Moller-Maersk."}
+  ],
+  "board-of-deputies-of-british-jews": [
+    {"id": "phil-rosenberg", "name": "Phil Rosenberg", "role": "President", "bio": "Elected President of the Board of Deputies of British Jews in 2024, the oldest Jewish communal organisation in the UK."},
+    {"id": "marie-van-der-zyl", "name": "Marie van der Zyl", "role": "Former President", "bio": "Barrister who served as President of the Board of Deputies from 2018 to 2024, advocating against antisemitism."},
+    {"id": "michael-wegier", "name": "Michael Wegier", "role": "Chief Executive", "bio": "Served as Chief Executive of the Board of Deputies, managing the organisation's day-to-day operations and communal advocacy."},
+    {"id": "moses-montefiore", "name": "Moses Montefiore", "role": "Historic President", "bio": "Renowned Victorian-era Jewish philanthropist and leader who served as President of the Board of Deputies in the 19th century."}
+  ],
+  "jw3": [
+    {"id": "raymond-simonson", "name": "Raymond Simonson", "role": "CEO", "bio": "Founding CEO of JW3 who led the creation and development of London's flagship Jewish community centre in Finchley Road."},
+    {"id": "dame-vivien-duffield", "name": "Dame Vivien Duffield", "role": "Founding Patron and Major Donor", "bio": "British philanthropist whose generous support through the Clore Duffield Foundation was instrumental in establishing JW3."},
+    {"id": "michael-goldstein", "name": "Michael Goldstein", "role": "Chairman", "bio": "Community leader who served as chairman of JW3, guiding the centre's strategic development and community programming."}
+  ],
+  "imperial-war-museum-holocaust-exhibition": [
+    {"id": "suzanne-bardgett", "name": "Suzanne Bardgett", "role": "Head of Holocaust and WWII Exhibitions", "bio": "Led the creation of the Imperial War Museum's permanent Holocaust Exhibition, which opened in 2000 and was redesigned in 2024."},
+    {"id": "diane-lees", "name": "Diane Lees", "role": "Director-General of IWM", "bio": "Served as Director-General of Imperial War Museums, overseeing the institution including its landmark Holocaust galleries."},
+    {"id": "james-smith", "name": "James Smith", "role": "Holocaust Exhibition Project Leader", "bio": "Educator and organiser involved in developing the museum's Holocaust education programmes and exhibition content."}
+  ],
+  "wiener-holocaust-library": [
+    {"id": "alfred-wiener", "name": "Alfred Wiener", "role": "Founder", "bio": "German-Jewish scholar and activist who founded the Wiener Library in 1933, making it the world's oldest Holocaust memorial institution."},
+    {"id": "toby-simpson", "name": "Toby Simpson", "role": "Director", "bio": "Served as Director of the Wiener Holocaust Library, overseeing its collections and public engagement programmes in London."},
+    {"id": "ben-barkow", "name": "Ben Barkow", "role": "Former Director", "bio": "Led the Wiener Holocaust Library for many years, expanding its archives and establishing it as a key research institution."},
+    {"id": "barbara-sheridan", "name": "Barbara Sheridan", "role": "Chair of Trustees", "bio": "Community leader who served as Chair of Trustees of the Wiener Holocaust Library, supporting its educational mission."}
+  ],
+  "n-m-rothschild-sons": [
+    {"id": "nathan-mayer-rothschild", "name": "Nathan Mayer Rothschild", "role": "Founder", "bio": "German-born British banker who founded N M Rothschild & Sons in London in 1811, building it into a leading merchant bank."},
+    {"id": "alexandre-de-rothschild", "name": "Alexandre de Rothschild", "role": "Executive Chairman of Rothschild & Co", "bio": "French member of the Rothschild family who leads the wider Rothschild & Co group which encompasses the London bank."},
+    {"id": "robert-leitao", "name": "Robert Leitão", "role": "Managing Partner", "bio": "Senior banker who served as Managing Partner of Rothschild & Co's Global Advisory division in London."},
+    {"id": "jacob-rothschild", "name": "Jacob Rothschild", "role": "Former Chairman", "bio": "4th Baron Rothschild who served as chairman of the bank before founding J. Rothschild Assurance Group and leading philanthropic endeavours."}
+  ],
+  "the-rothschild-foundation": [
+    {"id": "jacob-rothschild", "name": "Jacob Rothschild", "role": "Founder and Chairman", "bio": "4th Baron Rothschild who established The Rothschild Foundation to support arts, heritage, education and the environment."},
+    {"id": "hannah-rothschild", "name": "Hannah Rothschild", "role": "Chair", "bio": "British filmmaker and author who succeeded her father as Chair of The Rothschild Foundation, also chairing the National Gallery."},
+    {"id": "fabia-bromovsky", "name": "Fabia Bromovsky", "role": "Executive Director", "bio": "Served as Executive Director of The Rothschild Foundation, managing its grantmaking and cultural heritage programmes."}
+  ],
+  "campaign-against-antisemitism": [
+    {"id": "gideon-falter", "name": "Gideon Falter", "role": "Founder and Chief Executive", "bio": "British activist who founded the Campaign Against Antisemitism in 2014 to combat rising antisemitism in the UK through legal and educational means."},
+    {"id": "stephen-silverman", "name": "Stephen Silverman", "role": "Director of Investigations and Enforcement", "bio": "Leads investigative and enforcement efforts at CAA, pursuing legal cases against antisemitic hate crime and discrimination."},
+    {"id": "joe-glasman", "name": "Joe Glasman", "role": "Head of Political and Government Investigations", "bio": "Oversees political monitoring and research at the Campaign Against Antisemitism, analysing antisemitism across political spheres."}
+  ],
+  "manchester-jewish-museum": [
+    {"id": "max-dunbar", "name": "Max Dunbar", "role": "CEO", "bio": "Led Manchester Jewish Museum through its major redevelopment and reopening in 2021, expanding its galleries and community spaces."},
+    {"id": "alyson-moses", "name": "Alyson Moses", "role": "Chair of Trustees", "bio": "Community leader who served as Chair of Trustees overseeing the museum's governance and heritage preservation mission."},
+    {"id": "edward-misrahi", "name": "Edward Misrahi", "role": "Former Chair", "bio": "Longtime supporter and former Chair of Manchester Jewish Museum who helped guide the institution during its transformation."}
+  ],
+  "pears-foundation": [
+    {"id": "trevor-pears", "name": "Trevor Pears", "role": "Executive Chair", "bio": "British philanthropist who leads the Pears Foundation, supporting social and community initiatives across the UK and internationally."},
+    {"id": "mark-pears", "name": "Mark Pears", "role": "Trustee", "bio": "Member of the Pears family and trustee of the foundation, part of the property dynasty behind the William Pears Group."},
+    {"id": "david-pears-sr", "name": "David Pears", "role": "Co-Founder", "bio": "Patriarch of the Pears family who co-founded the Pears Foundation to channel the family's charitable giving."},
+    {"id": "charles-keidan", "name": "Charles Keidan", "role": "Director", "bio": "Served as Director of the Pears Foundation, guiding its strategy in education, identity and social enterprise."}
+  ],
+  "arcadia-group-topshop-philip-green": [
+    {"id": "philip-green", "name": "Philip Green", "role": "Owner and Chairman", "bio": "British billionaire who built the Arcadia retail empire including Topshop, BHS and other high street brands before its collapse in 2020."},
+    {"id": "tina-green", "name": "Tina Green", "role": "Beneficial Owner", "bio": "Wife of Philip Green and Monaco-based beneficial owner of Arcadia Group's parent company, Taveta Investments."},
+    {"id": "ian-grabiner", "name": "Ian Grabiner", "role": "CEO of Arcadia Group", "bio": "Longtime executive who served as CEO of Arcadia Group, managing its portfolio of fashion retail brands."},
+    {"id": "kate-moss", "name": "Kate Moss", "role": "Brand Collaborator", "bio": "Supermodel who had a high-profile design collaboration with Topshop, becoming closely associated with the brand's cultural influence."}
+  ],
+  "jewish-leadership-council": [
+    {"id": "jonathan-goldstein", "name": "Jonathan Goldstein", "role": "Chairman", "bio": "Property executive and communal leader who has served as Chairman of the Jewish Leadership Council, the UK's senior Jewish communal body."},
+    {"id": "claudia-mendoza", "name": "Claudia Mendoza", "role": "Chief Executive", "bio": "Journalist and communal professional who served as Chief Executive of the Jewish Leadership Council."},
+    {"id": "mick-davis", "name": "Mick Davis", "role": "Former Chairman", "bio": "South African-born mining executive who chaired the Jewish Leadership Council and served as CEO of the Conservative Party."}
+  ],
+  "kindertransport-association-uk": [
+    {"id": "ruth-barnett", "name": "Ruth Barnett", "role": "Prominent Member and Educator", "bio": "Kindertransport survivor and author who became a leading educator about the Kindertransport experience and refugee issues."},
+    {"id": "nicholas-winton", "name": "Nicholas Winton", "role": "Organiser of Czech Kindertransport", "bio": "British humanitarian who organised the rescue of 669 mostly Jewish children from Czechoslovakia on the Kindertransport in 1939."},
+    {"id": "bertha-leverton", "name": "Bertha Leverton", "role": "Founder of Reunion of Kindertransport", "bio": "Kindertransport survivor who organised the landmark 1989 reunion of Kinder and founded the Reunion of Kindertransport organisation."},
+    {"id": "alf-dubs", "name": "Alf Dubs", "role": "Advocate and Kindertransport Survivor", "bio": "Czech-born British politician and Labour peer who arrived on the Kindertransport and later championed refugee children's rights in Parliament."}
+  ],
+  "office-of-the-chief-rabbi": [
+    {"id": "ephraim-mirvis", "name": "Ephraim Mirvis", "role": "Chief Rabbi", "bio": "South African-born rabbi serving as the Chief Rabbi of the United Hebrew Congregations of the Commonwealth since 2013."},
+    {"id": "jonathan-sacks", "name": "Jonathan Sacks", "role": "Former Chief Rabbi", "bio": "Renowned philosopher and theologian who served as Chief Rabbi from 1991 to 2013, authoring numerous influential books on faith and morality."},
+    {"id": "immanuel-jakobovits", "name": "Immanuel Jakobovits", "role": "Former Chief Rabbi", "bio": "Pioneering Chief Rabbi from 1967 to 1991 who founded the field of Jewish medical ethics and was elevated to the House of Lords."}
+  ],
+  "bevis-marks-synagogue": [
+    {"id": "shalom-morris", "name": "Shalom Morris", "role": "Rabbi", "bio": "Served as rabbi of Bevis Marks Synagogue, the oldest synagogue in Britain, built in 1701 by the Spanish and Portuguese Jewish community."},
+    {"id": "moses-gaster", "name": "Moses Gaster", "role": "Historic Haham", "bio": "Romanian-born scholar who served as Haham (chief rabbi) of the Sephardi community in England from 1887 to 1918."},
+    {"id": "joseph-dweck", "name": "Joseph Dweck", "role": "Senior Rabbi of S&P Sephardi Community", "bio": "American-born rabbi who serves as Senior Rabbi of the S&P Sephardi Community of the UK, which includes Bevis Marks Synagogue."}
+  ],
+  "plus500": [
+    {"id": "david-zruia", "name": "David Zruia", "role": "CEO", "bio": "Israeli businessman who has served as CEO of Plus500, the London-listed online trading platform founded in Israel."},
+    {"id": "alon-gonen", "name": "Alon Gonen", "role": "Co-Founder", "bio": "Israeli entrepreneur who co-founded Plus500 in 2008, helping develop its contracts-for-difference trading technology."},
+    {"id": "gal-haber", "name": "Gal Haber", "role": "Former CEO", "bio": "Co-founder who served as CEO of Plus500 during its growth phase and London Stock Exchange listing."},
+    {"id": "penelope-mayfield", "name": "Penelope Mayfield", "role": "Chair", "bio": "Experienced financial services professional serving as Non-Executive Chair of Plus500's board of directors."}
+  ],
+  "tottenham-hotspur-f-c": [
+    {"id": "daniel-levy", "name": "Daniel Levy", "role": "Chairman", "bio": "British businessman who has served as Chairman of Tottenham Hotspur since 2001, overseeing the construction of the club's new stadium."},
+    {"id": "joe-lewis", "name": "Joe Lewis", "role": "Owner (ENIC Group)", "bio": "British billionaire and majority owner of Tottenham Hotspur through his ENIC International investment company."},
+    {"id": "ange-postecoglou", "name": "Ange Postecoglou", "role": "Manager", "bio": "Australian football manager who was appointed head coach of Tottenham Hotspur in 2023 after success at Celtic."},
+    {"id": "bill-nicholson", "name": "Bill Nicholson", "role": "Legendary Former Manager", "bio": "Tottenham's most iconic manager who led the club to the first league and cup double of the 20th century in 1961."}
+  ],
+  "world-jewish-relief": [
+    {"id": "paul-anticoni", "name": "Paul Anticoni", "role": "CEO", "bio": "Leads World Jewish Relief as CEO, overseeing its humanitarian and development programmes in Eastern Europe and globally."},
+    {"id": "maurice-helfgott", "name": "Maurice Helfgott", "role": "Chairman", "bio": "British communal leader serving as Chairman of World Jewish Relief, the UK Jewish community's humanitarian agency founded in 1933."},
+    {"id": "otto-schiff", "name": "Otto Schiff", "role": "Historic Founder", "bio": "German-born British financier who founded the organisation in 1933 to aid Jewish refugees fleeing Nazi persecution."}
+  ],
+  "the-rothschild-archive": [
+    {"id": "melanie-aspey", "name": "Melanie Aspey", "role": "Director", "bio": "Archivist who served as Director of The Rothschild Archive, managing the family's vast collection of historical business and personal records."},
+    {"id": "victor-gray", "name": "Victor Gray", "role": "Former Director", "bio": "Archivist and historian who previously directed The Rothschild Archive, establishing its scholarly research programmes."},
+    {"id": "emma-rothschild", "name": "Emma Rothschild", "role": "Trustee and Historian", "bio": "Harvard economic historian and member of the Rothschild family who has supported the archive's academic and research mission."}
+  ],
+  "chelsea-football-club-abramovich-era": [
+    {"id": "roman-abramovich", "name": "Roman Abramovich", "role": "Former Owner", "bio": "Russian-Israeli billionaire who owned Chelsea FC from 2003 to 2022, investing heavily and winning five Premier League titles and two Champions League trophies."},
+    {"id": "jose-mourinho", "name": "José Mourinho", "role": "Former Manager", "bio": "Portuguese manager who led Chelsea to back-to-back Premier League titles in 2005 and 2006 during Abramovich's transformative ownership."},
+    {"id": "bruce-buck", "name": "Bruce Buck", "role": "Former Chairman", "bio": "American lawyer who served as Chelsea's chairman throughout most of the Abramovich era from 2003 to 2022."},
+    {"id": "marina-granovskaia", "name": "Marina Granovskaia", "role": "Former Director", "bio": "Russian-Canadian executive who served as Chelsea's powerful transfer negotiator and director under Abramovich's ownership."}
+  ],
+  "dangoor-family-exilarch-s-foundation": [
+    {"id": "naim-dangoor", "name": "Naim Dangoor", "role": "Founder", "bio": "Iraqi-born British businessman and philanthropist who founded the Exilarch's Foundation, claiming descent from the ancient Jewish Exilarchs of Babylon."},
+    {"id": "david-dangoor", "name": "David Dangoor", "role": "Chairman", "bio": "British property developer and communal leader who chairs the Exilarch's Foundation, continuing his father Naim's philanthropic legacy."},
+    {"id": "richard-dangoor", "name": "Richard Dangoor", "role": "Trustee", "bio": "Member of the Dangoor family who serves as trustee of the Exilarch's Foundation, supporting education and cultural heritage programmes."}
+  ]
+}

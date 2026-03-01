@@ -1,0 +1,327 @@
+{
+  "ambassador-houda-nonoo-legacy": [
+    {"id": "houda-nonoo", "name": "Houda Nonoo", "role": "Ambassador to the United States", "bio": "Served as Bahrain's Ambassador to the United States from 2008 to 2013, the first Jewish ambassador appointed by any Arab country."},
+    {"id": "nancy-khedouri", "name": "Nancy Khedouri", "role": "Shura Council Member", "bio": "Bahraini Jewish politician who served on the Shura Council, Bahrain's appointed upper house of parliament, advocating for interfaith dialogue."},
+    {"id": "ebrahim-nonoo", "name": "Ebrahim Nonoo", "role": "Community Leader", "bio": "Bahraini Jewish businessman and head of the Jewish community of Bahrain, working to preserve Jewish heritage in the Gulf."}
+  ],
+  "jewish-community-of-bahrain": [
+    {"id": "ebrahim-nonoo", "name": "Ebrahim Nonoo", "role": "Community President", "bio": "President of the Jewish Community of Bahrain who maintains Jewish communal life and promotes interfaith relations in the kingdom."},
+    {"id": "houda-nonoo", "name": "Houda Nonoo", "role": "Ambassador and Community Figure", "bio": "Bahrain's Ambassador to the United States (2008–2013) and the most internationally prominent member of the Bahraini Jewish community."},
+    {"id": "nancy-khedouri", "name": "Nancy Khedouri", "role": "Politician", "bio": "Member of Bahrain's Shura Council and one of the few Jewish parliamentarians in the Arab world."}
+  ],
+  "house-of-ten-commandments": [
+    {"id": "houda-nonoo", "name": "Houda Nonoo", "role": "Heritage Advocate", "bio": "Bahrain's first Jewish ambassador whose international profile brought attention to Jewish heritage sites in the kingdom."},
+    {"id": "nancy-khedouri", "name": "Nancy Khedouri", "role": "Public Servant", "bio": "Bahraini Jewish politician who supported the preservation and recognition of Bahrain's Jewish heritage landmarks."},
+    {"id": "ebrahim-nonoo", "name": "Ebrahim Nonoo", "role": "Community Custodian", "bio": "Leader of the Bahraini Jewish community who oversees the preservation of Jewish heritage sites in Bahrain."}
+  ],
+  "instituto-hebreo-dr-chaim-weizmann": [
+    {"id": "gabriel-zaliasnik", "name": "Gabriel Zaliasnik", "role": "Community President", "bio": "Prominent Chilean Jewish lawyer who served as president of the Comunidad Judía de Chile and is active in Jewish education initiatives."},
+    {"id": "claudio-grossman", "name": "Claudio Grossman", "role": "Academic and Community Figure", "bio": "Chilean-Jewish legal scholar who served as dean of American University Washington College of Law, a prominent figure in Chile's Jewish intellectual community."},
+    {"id": "angel-faivovich", "name": "Ángel Faivovich", "role": "Senator", "bio": "Chilean senator of Jewish descent (1900–1992) who was a major political figure and supporter of Jewish communal institutions in Chile."}
+  ],
+  "comunidad-jud-a-de-chile": [
+    {"id": "gerardo-gorodischer", "name": "Gerardo Gorodischer", "role": "Community Leader", "bio": "Chilean Jewish communal leader active in the organizational life of the Comunidad Judía de Chile."},
+    {"id": "gabriel-zaliasnik", "name": "Gabriel Zaliasnik", "role": "Community President", "bio": "Lawyer and former president of the Comunidad Judía de Chile who has represented Chilean Jewish interests nationally and internationally."},
+    {"id": "claudio-grossman", "name": "Claudio Grossman", "role": "Academic", "bio": "Chilean-Jewish international law expert and former dean of American University Washington College of Law, a leading figure in Chile's Jewish community."}
+  ],
+  "comunidad-judia-de-chile": [
+    {"id": "gabriel-zaliasnik", "name": "Gabriel Zaliasnik", "role": "Community President", "bio": "Attorney and former president of the Comunidad Judía de Chile who has been a leading voice on Jewish affairs in Latin America."},
+    {"id": "gerardo-gorodischer", "name": "Gerardo Gorodischer", "role": "Community Leader", "bio": "Active member of the Chilean Jewish community leadership contributing to organizational and cultural life."},
+    {"id": "angel-faivovich", "name": "Ángel Faivovich", "role": "Senator", "bio": "Chilean politician of Jewish descent who served in the Senate and was a prominent supporter of the Chilean Jewish community."}
+  ],
+  "colegio-colombo-hebreo": [
+    {"id": "salomon-hakim", "name": "Salomón Hakim", "role": "Notable Community Member", "bio": "Colombian neurosurgeon of Jewish descent (1922–2011) who invented the Hakim valve for treating hydrocephalus, one of Colombia's most celebrated scientists."},
+    {"id": "jaime-gilinski", "name": "Jaime Gilinski", "role": "Philanthropist and Businessman", "bio": "Colombian Jewish billionaire banker and one of Latin America's wealthiest business leaders, a major supporter of Jewish communal institutions in Colombia."},
+    {"id": "isaac-lee", "name": "Isaac Lee", "role": "Media Executive and Alumnus", "bio": "Colombian Jewish media executive who served as chief content officer at Univision and head of Fusion, a prominent figure in Colombian Jewish life."}
+  ],
+  "confederacion-comunidades-judias-colombia": [
+    {"id": "jaime-gilinski", "name": "Jaime Gilinski", "role": "Community Supporter", "bio": "Colombian Jewish billionaire banker whose family has been deeply involved in supporting Colombia's Jewish communal organizations and institutions."},
+    {"id": "salomon-hakim", "name": "Salomón Hakim", "role": "Distinguished Community Member", "bio": "World-renowned Colombian Jewish neurosurgeon (1922–2011) whose innovation of the Hakim valve saved countless lives."},
+    {"id": "isaac-lee", "name": "Isaac Lee", "role": "Media Leader", "bio": "Colombian Jewish media executive and former head of news at Univision, prominent in Colombia's Jewish community."}
+  ],
+  "central-council-of-jewish-communities-in-finland": [
+    {"id": "yaron-nadbornik", "name": "Yaron Nadbornik", "role": "Chairman", "bio": "Chairman of the Central Council of Jewish Communities in Finland, leading the organizational framework for Finnish Jewry."},
+    {"id": "ben-zyskowicz", "name": "Ben Zyskowicz", "role": "Parliamentarian", "bio": "Longest-serving member of the Finnish Parliament (National Coalition Party) and Finland's most prominent Jewish public figure."},
+    {"id": "max-jakobson", "name": "Max Jakobson", "role": "Diplomat and Journalist", "bio": "Finnish Jewish diplomat and journalist (1923–2013) who was a candidate for UN Secretary-General in 1971, the most internationally renowned Finnish Jew."}
+  ],
+  "jewish-community-helsinki": [
+    {"id": "yaron-nadbornik", "name": "Yaron Nadbornik", "role": "Community Chairman", "bio": "Chairman of the Central Council of Jewish Communities in Finland and leader of Helsinki's Jewish communal life."},
+    {"id": "ben-zyskowicz", "name": "Ben Zyskowicz", "role": "Politician", "bio": "Finnish Jewish politician and the longest-serving member of Finland's parliament, a prominent voice for the Helsinki Jewish community."},
+    {"id": "max-jakobson", "name": "Max Jakobson", "role": "Diplomat", "bio": "Prominent Finnish Jewish diplomat (1923–2013) who nearly became UN Secretary-General and was a distinguished member of the Helsinki Jewish community."}
+  ],
+  "helsingin-juutalainen-seurakunta": [
+    {"id": "yaron-nadbornik", "name": "Yaron Nadbornik", "role": "Community Leader", "bio": "Leading figure of the Helsinki Jewish congregation who chairs the Central Council of Jewish Communities in Finland."},
+    {"id": "ben-zyskowicz", "name": "Ben Zyskowicz", "role": "Notable Congregant", "bio": "Longest-serving Finnish parliamentarian of Jewish descent, a visible representative of Helsinki's Jewish congregation in public life."},
+    {"id": "max-jakobson", "name": "Max Jakobson", "role": "Distinguished Member", "bio": "Finnish Jewish diplomat and author (1923–2013) who was a member of the Helsinki Jewish community and candidate for UN Secretary-General."}
+  ],
+  "helsinki-synagogue": [
+    {"id": "yaron-nadbornik", "name": "Yaron Nadbornik", "role": "Community Chairman", "bio": "Head of the Finnish Jewish community who oversees the historic Helsinki Synagogue, built in 1906 and Finland's main Jewish house of worship."},
+    {"id": "ben-zyskowicz", "name": "Ben Zyskowicz", "role": "Prominent Congregant", "bio": "Finland's most recognized Jewish public figure and longtime member of parliament, associated with the Helsinki Synagogue."},
+    {"id": "max-jakobson", "name": "Max Jakobson", "role": "Notable Member", "bio": "Renowned Finnish Jewish diplomat (1923–2013) and congregant of the Helsinki Synagogue community."}
+  ],
+  "jewish-community-centre-hong-kong": [
+    {"id": "michael-kadoorie", "name": "Michael Kadoorie", "role": "Patron and Philanthropist", "bio": "Chairman of CLP Holdings and The Hongkong and Shanghai Hotels, leading figure of Hong Kong's Jewish community and major philanthropist."},
+    {"id": "solomon-bard", "name": "Solomon Bard", "role": "Community Historian", "bio": "Hong Kong Jewish physician and historian (1916–2016) who authored works on the history of Hong Kong's Jewish community and served it for decades."},
+    {"id": "lawrence-kadoorie", "name": "Lawrence Kadoorie", "role": "Community Benefactor", "bio": "Lord Kadoorie (1899–1993), major Hong Kong industrialist and philanthropist who was central to the Jewish community and supported numerous charitable causes."}
+  ],
+  "jewish-historical-society-of-hong-kong": [
+    {"id": "dennis-leventhal", "name": "Dennis Leventhal", "role": "Society Leader", "bio": "Leader of the Jewish Historical Society of Hong Kong who has documented and preserved the history of Jews in Hong Kong and the Far East."},
+    {"id": "solomon-bard", "name": "Solomon Bard", "role": "Historian and Author", "bio": "Physician and historian (1916–2016) who authored seminal works on Hong Kong's Jewish merchants and served the community for over seven decades."},
+    {"id": "michael-kadoorie", "name": "Michael Kadoorie", "role": "Honorary Patron", "bio": "Billionaire chairman of CLP Holdings whose Kadoorie family is among the most historically significant Jewish families in Hong Kong."}
+  ],
+  "kadoorie-family-enterprises": [
+    {"id": "michael-kadoorie", "name": "Michael Kadoorie", "role": "Chairman", "bio": "Chairman of CLP Holdings and The Hongkong and Shanghai Hotels, continuing the Kadoorie dynasty as one of Asia's most prominent business leaders."},
+    {"id": "lawrence-kadoorie", "name": "Lawrence Kadoorie", "role": "Industrialist and Philanthropist", "bio": "Lord Kadoorie (1899–1993), transformed CLP into a major utility and was instrumental in developing Hong Kong's power infrastructure."},
+    {"id": "elly-kadoorie", "name": "Elly Kadoorie", "role": "Founder", "bio": "Sir Elly Kadoorie (1867–1944), Baghdadi Jewish patriarch who founded the Kadoorie business empire in Hong Kong and Shanghai."}
+  ],
+  "jewish-representative-council-of-ireland": [
+    {"id": "maurice-cohen", "name": "Maurice Cohen", "role": "Council Chairman", "bio": "Chairman of the Jewish Representative Council of Ireland, serving as the principal representative body for Irish Jewry."},
+    {"id": "alan-shatter", "name": "Alan Shatter", "role": "Politician", "bio": "Irish Jewish politician who served as Minister for Justice and Equality (2011–2014), the most prominent Jewish political figure in modern Ireland."},
+    {"id": "gerald-goldberg", "name": "Gerald Goldberg", "role": "Lord Mayor of Cork", "bio": "First Jewish Lord Mayor of Cork (1977) and a distinguished lawyer who championed civil liberties and interfaith relations in Ireland."}
+  ],
+  "irish-jewish-museum-dublin": [
+    {"id": "chaim-herzog", "name": "Chaim Herzog", "role": "Historical Connection", "bio": "President of Israel (1983–1993) who grew up in the Dublin building that later became the Irish Jewish Museum; his father Isaac Herzog served as Chief Rabbi of Ireland."},
+    {"id": "raphael-siev", "name": "Raphael Siev", "role": "Museum Curator", "bio": "Longtime curator of the Irish Jewish Museum in Dublin who preserved and interpreted the history of Ireland's Jewish community for decades."},
+    {"id": "robert-briscoe", "name": "Robert Briscoe", "role": "Historical Figure", "bio": "First Jewish Lord Mayor of Dublin (1956–1957, 1961–1962) and a veteran of the Irish War of Independence, a central figure in Irish Jewish history."}
+  ],
+  "colegio-le-n-pinelo": [
+    {"id": "leon-trahtemberg", "name": "León Trahtemberg", "role": "Educator and Intellectual", "bio": "Prominent Peruvian Jewish educator, columnist, and educational consultant closely associated with Jewish schooling in Lima."},
+    {"id": "efrain-goldenberg", "name": "Efraín Goldenberg", "role": "Notable Alumnus", "bio": "Peruvian statesman of Jewish descent who served as Prime Minister of Peru in 2002, a distinguished figure in Peru's Jewish community."},
+    {"id": "baruch-ivcher", "name": "Baruch Ivcher", "role": "Community Benefactor", "bio": "Israeli-Peruvian media mogul and owner of Frecuencia Latina who is a major supporter of Jewish institutions in Peru."}
+  ],
+  "asociacion-judia-del-peru": [
+    {"id": "efrain-goldenberg", "name": "Efraín Goldenberg", "role": "Distinguished Member", "bio": "Former Prime Minister of Peru (2002) of Jewish descent, the highest-ranking Peruvian Jewish official in the country's history."},
+    {"id": "baruch-ivcher", "name": "Baruch Ivcher", "role": "Community Leader", "bio": "Israeli-born Peruvian media magnate who is a leading figure in Peru's Jewish community and a champion of press freedom."},
+    {"id": "leon-trahtemberg", "name": "León Trahtemberg", "role": "Educator", "bio": "Peruvian Jewish educator and public intellectual of Romanian-Jewish descent who is one of Peru's most respected voices on education."}
+  ],
+  "eliyahu-hanavi-synagogue": [
+    {"id": "andre-aciman", "name": "André Aciman", "role": "Author and Cultural Figure", "bio": "Egyptian-Jewish writer born in Alexandria who authored 'Out of Egypt,' a memoir of his Sephardic Jewish family's life in the city."},
+    {"id": "carmen-weinstein", "name": "Carmen Weinstein", "role": "Community President", "bio": "President of the Jewish Community of Cairo (1940s–2013) who tirelessly maintained Jewish heritage sites in Egypt including historic synagogues."},
+    {"id": "magda-haroun", "name": "Magda Haroun", "role": "Community Leader", "bio": "Current president of the Jewish Community of Egypt who has worked to preserve Egyptian Jewish heritage and synagogues, succeeding Carmen Weinstein."}
+  ],
+  "egyptian-jewish-community-historic": [
+    {"id": "magda-haroun", "name": "Magda Haroun", "role": "Community President", "bio": "President of the Jewish Community of Egypt, one of the last custodians of a once-thriving community that numbered over 80,000."},
+    {"id": "carmen-weinstein", "name": "Carmen Weinstein", "role": "Community President", "bio": "Long-serving president of the Jewish Community of Cairo (d. 2013) who devoted her life to maintaining Egypt's Jewish heritage and cemeteries."},
+    {"id": "haim-nahum", "name": "Haim Nahum", "role": "Chief Rabbi of Egypt", "bio": "Chief Rabbi of Egypt (1925–1960) who led the Jewish community through a turbulent era and represented Egyptian Jewry internationally."}
+  ],
+  "ben-ezra-synagogue-cairo": [
+    {"id": "solomon-schechter", "name": "Solomon Schechter", "role": "Scholar and Discoverer of the Geniza", "bio": "Romanian-British Jewish scholar (1847–1915) who discovered and recovered the Cairo Geniza from the Ben Ezra Synagogue, one of the greatest manuscript finds in history."},
+    {"id": "maimonides", "name": "Maimonides", "role": "Historical Figure", "bio": "Moses ben Maimon (1138–1204), the preeminent medieval Jewish philosopher and physician who lived in Fustat near the Ben Ezra Synagogue, where his documents were preserved in the Geniza."},
+    {"id": "haim-nahum", "name": "Haim Nahum", "role": "Chief Rabbi of Egypt", "bio": "Chief Rabbi of Egypt (1925–1960) who oversaw the care of Cairo's historic synagogues including the Ben Ezra during the 20th century."}
+  ],
+  "sha-ar-hashamayim-synagogue": [
+    {"id": "haim-nahum", "name": "Haim Nahum", "role": "Chief Rabbi", "bio": "Chief Rabbi of Egypt (1925–1960) who served at Sha'ar Hashamayim and was a learned Sephardic scholar and community leader."},
+    {"id": "yusuf-cattaui", "name": "Yusuf Aslan Cattaui", "role": "Community Patron", "bio": "Yusuf Aslan Cattaui Pasha (1861–1942), Egyptian Jewish politician and community leader who served in the Egyptian Senate and supported Jewish institutions in Cairo."},
+    {"id": "carmen-weinstein", "name": "Carmen Weinstein", "role": "Community President", "bio": "President of the Jewish Community of Cairo who worked to preserve Sha'ar Hashamayim and other historic synagogues in Egypt."}
+  ],
+  "jewish-community-of-thailand": [
+    {"id": "rabbi-yosef-kantor", "name": "Rabbi Yosef Kantor", "role": "Chief Rabbi of Thailand", "bio": "Chabad emissary who has served as Chief Rabbi of Thailand since the 1990s, establishing Jewish communal infrastructure for residents and travelers."},
+    {"id": "nehemia-wilhelm", "name": "Rabbi Nehemia Wilhelm", "role": "Chabad Rabbi in Bangkok", "bio": "Chabad-Lubavitch emissary co-directing Jewish communal activities in Bangkok, supporting the Jewish community and Israeli travelers in Thailand."},
+    {"id": "dani-efrati", "name": "Rabbi Dani Efrati", "role": "Chabad Emissary in Phuket", "bio": "Chabad rabbi in Phuket who became widely known for supporting Israeli and Jewish tourists during the 2004 tsunami relief efforts."}
+  ],
+  "jewish-association-of-thailand": [
+    {"id": "yosef-kantor", "name": "Rabbi Yosef Kantor", "role": "Chief Rabbi", "bio": "Chief Rabbi of Thailand and head of Chabad-Lubavitch in the country, serving as spiritual leader for the Jewish Association's community."},
+    {"id": "nehemia-wilhelm", "name": "Rabbi Nehemia Wilhelm", "role": "Community Rabbi", "bio": "Chabad emissary in Bangkok who works with the Jewish Association of Thailand to serve the expatriate and traveler community."},
+    {"id": "dani-efrati", "name": "Rabbi Dani Efrati", "role": "Community Leader in Phuket", "bio": "Chabad emissary in Phuket serving Thailand's southern Jewish community, recognized for his role in the 2004 tsunami response."}
+  ],
+  "temple-emil-manila": [
+    {"id": "frank-ephraim", "name": "Frank Ephraim", "role": "Community Historian", "bio": "Jewish refugee who escaped to Manila during the Holocaust and later wrote 'Escape to Manila,' documenting the rescue of over 1,200 Jews by the Philippines."},
+    {"id": "philip-frieder", "name": "Philip Frieder", "role": "Community President", "bio": "American Jewish businessman and president of the Manila Jewish community who, along with his brothers, helped organize the rescue of Jewish refugees to the Philippines during WWII."},
+    {"id": "alex-frieder", "name": "Alex Frieder", "role": "Rescue Organizer", "bio": "One of the Frieder brothers from Cincinnati who used their cigar business connections in Manila to help rescue Jewish refugees fleeing Nazi Europe."}
+  ],
+  "comunidad-israelita-del-uruguay": [
+    {"id": "mauricio-rosencof", "name": "Mauricio Rosencof", "role": "Writer and Cultural Figure", "bio": "Uruguayan Jewish playwright and author (born 1933) of Polish-Jewish descent, one of Uruguay's most important literary figures and a former political prisoner."},
+    {"id": "jacobo-langsner", "name": "Jacobo Langsner", "role": "Playwright", "bio": "Romanian-born Uruguayan Jewish playwright (1927–2014) who became one of the most acclaimed dramatists in Uruguayan theater."},
+    {"id": "ricardo-lackner", "name": "Ricardo Lackner", "role": "Community Leader", "bio": "Leader of the organized Jewish community in Uruguay, active in coordinating communal affairs and representing Uruguayan Jewry."}
+  ],
+  "comit-central-israelita-del-uruguay": [
+    {"id": "ricardo-lackner", "name": "Ricardo Lackner", "role": "Community President", "bio": "President of the Comité Central Israelita del Uruguay, the umbrella organization representing Uruguay's Jewish community."},
+    {"id": "mauricio-rosencof", "name": "Mauricio Rosencof", "role": "Cultural Icon", "bio": "Acclaimed Uruguayan Jewish writer and playwright whose works explore themes of identity, imprisonment, and resilience."},
+    {"id": "jacobo-langsner", "name": "Jacobo Langsner", "role": "Playwright", "bio": "Celebrated Uruguayan Jewish dramatist (1927–2014) whose plays were staged throughout Latin America."}
+  ],
+  "comite-central-israelita-del-uruguay": [
+    {"id": "mauricio-rosencof", "name": "Mauricio Rosencof", "role": "Distinguished Community Member", "bio": "Uruguayan Jewish author and playwright of Polish-Jewish descent, best known for his memoir 'The Letters That Never Came' about his family's Holocaust experience."},
+    {"id": "jacobo-langsner", "name": "Jacobo Langsner", "role": "Cultural Figure", "bio": "Major Uruguayan Jewish playwright (1927–2014) who contributed significantly to Latin American theater."},
+    {"id": "ricardo-lackner", "name": "Ricardo Lackner", "role": "Community President", "bio": "Head of the Comité Central Israelita, Uruguay's central Jewish representative organization."}
+  ],
+  "auckland-hebrew-congregation": [
+    {"id": "joel-goldberg", "name": "Joel Goldberg", "role": "Congregation President", "bio": "President of the Auckland Hebrew Congregation, the largest Jewish community in New Zealand dating back to the 1840s."},
+    {"id": "julius-vogel", "name": "Julius Vogel", "role": "Historical Figure", "bio": "Sir Julius Vogel (1835–1899), Jewish Prime Minister of New Zealand (1873–1876) who was instrumental in the colony's development and economic policy."},
+    {"id": "david-zwartz", "name": "David Zwartz", "role": "Community Elder", "bio": "Distinguished New Zealand Jewish community leader who served for decades as a respected voice on interfaith relations and Jewish affairs."}
+  ],
+  "wellington-hebrew-congregation": [
+    {"id": "david-zwartz", "name": "David Zwartz", "role": "Longtime Community Leader", "bio": "Prominent member of the Wellington Hebrew Congregation and a respected commentator on Jewish affairs and interfaith relations in New Zealand."},
+    {"id": "julius-vogel", "name": "Julius Vogel", "role": "Historical Figure", "bio": "New Zealand's only Jewish Prime Minister (1835–1899) who lived in Wellington and shaped the country's infrastructure and immigration policies."},
+    {"id": "juliet-moses", "name": "Juliet Moses", "role": "Community Advocate", "bio": "Prominent New Zealand Jewish advocate and spokesperson who has represented New Zealand Jewry on national and international platforms."}
+  ],
+  "new-zealand-jewish-council": [
+    {"id": "juliet-moses", "name": "Juliet Moses", "role": "Spokesperson", "bio": "Leading spokesperson of the New Zealand Jewish Council who advocates for the community on issues of antisemitism, Israel, and interfaith dialogue."},
+    {"id": "julius-vogel", "name": "Julius Vogel", "role": "Historical Figure", "bio": "New Zealand's Jewish Prime Minister (1835–1899), a foundational figure in the country's Jewish heritage."},
+    {"id": "david-zwartz", "name": "David Zwartz", "role": "Community Leader", "bio": "Senior New Zealand Jewish community leader who contributed to national Jewish advocacy and interfaith relations for decades."}
+  ],
+  "jewish-community-of-belgrade": [
+    {"id": "ruben-fuks", "name": "Ruben Fuks", "role": "Community President", "bio": "Longtime president of the Federation of Jewish Communities in Serbia who led the post-Yugoslav Jewish communal revival until his death in 2015."},
+    {"id": "david-albahari", "name": "David Albahari", "role": "Writer", "bio": "Serbian Jewish novelist (born 1948) known for works exploring Jewish identity and the Holocaust in the Balkans, one of Serbia's most translated authors."},
+    {"id": "aca-singer", "name": "Aca Singer", "role": "Community Leader and Holocaust Survivor", "bio": "Serbian Jewish Holocaust survivor who served as president of the Federation of Jewish Communities and worked to preserve Holocaust memory in Serbia."}
+  ],
+  "federation-of-jewish-communities-in-serbia": [
+    {"id": "robert-sabado", "name": "Robert Sabadoš", "role": "Federation Leader", "bio": "Leader of the Federation of Jewish Communities in Serbia who oversees Jewish communal life across the country."},
+    {"id": "ruben-fuks", "name": "Ruben Fuks", "role": "Former President", "bio": "Long-serving president of the Federation (d. 2015) who revitalized Serbian Jewish community life after the dissolution of Yugoslavia."},
+    {"id": "david-albahari", "name": "David Albahari", "role": "Cultural Figure", "bio": "Acclaimed Serbian Jewish writer whose novels and stories explore themes of Jewish life, displacement, and identity in the Balkans."}
+  ],
+  "jewish-community-belgrade": [
+    {"id": "robert-singer", "name": "Robert Singer", "role": "Community Figure", "bio": "Serbian-born Jewish leader associated with the Federation of Jewish Communities of Serbia and international Jewish organizations."},
+    {"id": "ruben-fuks", "name": "Ruben Fuks", "role": "Federation President", "bio": "President of the Federation of Jewish Communities in Serbia who was central to reviving Jewish communal institutions after the 1990s conflicts."},
+    {"id": "david-albahari", "name": "David Albahari", "role": "Writer", "bio": "Serbian Jewish author whose literary works have brought international attention to the Jewish experience in the former Yugoslavia."}
+  ],
+  "jewish-community-of-bulgaria": [
+    {"id": "elias-canetti", "name": "Elias Canetti", "role": "Nobel Laureate", "bio": "Sephardic Jewish writer (1905–1994) born in Ruse, Bulgaria, awarded the Nobel Prize in Literature in 1981 for his works of lasting significance."},
+    {"id": "solomon-passy", "name": "Solomon Passy", "role": "Politician and Diplomat", "bio": "Bulgarian politician of Jewish descent who served as Foreign Minister (2001–2005) and founded the Atlantic Club of Bulgaria."},
+    {"id": "jules-pascin", "name": "Jules Pascin", "role": "Artist", "bio": "Bulgarian-Jewish artist (1885–1930), born Julius Mordecai Pincas in Vidin, who became a leading figure of the École de Paris art movement."}
+  ],
+  "organization-of-the-jews-in-bulgaria": [
+    {"id": "oscar-asenov", "name": "Oscar Asenov", "role": "Organization Leader", "bio": "Leader of the Organization of the Jews in Bulgaria who represents Bulgarian Jewish communal interests."},
+    {"id": "elias-canetti", "name": "Elias Canetti", "role": "Distinguished Bulgarian Jew", "bio": "Nobel Prize-winning author (1905–1994) from a Sephardic Jewish family in Ruse, Bulgaria's most famous Jewish literary figure."},
+    {"id": "solomon-passy", "name": "Solomon Passy", "role": "Politician", "bio": "Former Bulgarian Foreign Minister of Jewish descent who has been a vocal advocate for minority rights and Euro-Atlantic integration."}
+  ],
+  "shalom-organization-jews-bulgaria": [
+    {"id": "maxim-behar", "name": "Maxim Behar", "role": "Organization President", "bio": "Bulgarian PR executive and president of the Shalom Organization of Jews in Bulgaria, representing the community in public affairs."},
+    {"id": "elias-canetti", "name": "Elias Canetti", "role": "Cultural Icon", "bio": "Bulgaria's Nobel Prize-winning Jewish author (1905–1994) whose Sephardic heritage in Ruse formed the foundation of his literary legacy."},
+    {"id": "solomon-passy", "name": "Solomon Passy", "role": "Notable Bulgarian Jew", "bio": "Bulgarian diplomat and politician of Jewish descent, former Foreign Minister and founder of the Atlantic Club of Bulgaria."}
+  ],
+  "asociaci-n-de-beneficencia-israelita-de-quito": [
+    {"id": "benno-weiser-varon", "name": "Benno Weiser Varon", "role": "Diplomat and Author", "bio": "Ecuadorian Jewish diplomat and author (1913–2014) who fled Nazi Europe to Ecuador and later served as a diplomat, writing memoirs of Jewish refugee life in South America."},
+    {"id": "olga-fisch", "name": "Olga Fisch", "role": "Artist and Cultural Figure", "bio": "Hungarian-born Jewish artist (1901–1990) who fled to Ecuador during WWII and became celebrated for her work preserving and promoting indigenous Ecuadorian art and textiles."},
+    {"id": "karl-kohn", "name": "Karl Kohn", "role": "Architect", "bio": "Czech-born Jewish architect (1894–1979) who escaped to Ecuador and designed modernist buildings in Quito, significantly shaping the city's architecture."}
+  ],
+  "iraqi-jewish-community-historic": [
+    {"id": "naim-dangoor", "name": "Naim Dangoor", "role": "Community Patriarch", "bio": "Sir Naim Dangoor (1914–2015), Iraqi-British Jewish businessman and philanthropist who published 'The Scribe' magazine documenting the heritage of Babylonian Jewry."},
+    {"id": "sassoon-eskell", "name": "Sassoon Eskell", "role": "Finance Minister", "bio": "Sir Sassoon Eskell (1860–1932), Iraqi Jewish statesman who served as the first Finance Minister of Iraq and was a member of the constituent assembly."},
+    {"id": "meer-basri", "name": "Meer Basri", "role": "Author and Community Leader", "bio": "Iraqi Jewish author, poet, and community leader (1914–2006) who was one of the last prominent Jewish intellectuals to remain in Baghdad."}
+  ],
+  "babylonian-jewry-heritage-center-israel": [
+    {"id": "mordechai-ben-porat", "name": "Mordechai Ben-Porat", "role": "Founder", "bio": "Iraqi-born Israeli politician (1923–2016) who founded the Babylonian Jewry Heritage Center in Or Yehuda to preserve the history and culture of Iraqi Jews."},
+    {"id": "shlomo-hillel", "name": "Shlomo Hillel", "role": "Supporter and Statesman", "bio": "Iraqi-born Israeli politician (1923–2021) who served as Speaker of the Knesset and helped organize the mass immigration of Iraqi Jews to Israel."},
+    {"id": "naim-dangoor", "name": "Naim Dangoor", "role": "Benefactor", "bio": "Philanthropist Sir Naim Dangoor (1914–2015) who supported the Heritage Center and funded projects preserving Babylonian Jewish culture."}
+  ],
+  "iraqi-jewish-heritage": [
+    {"id": "naim-dangoor", "name": "Naim Dangoor", "role": "Heritage Advocate", "bio": "Sir Naim Dangoor (1914–2015), Iraqi-British philanthropist who dedicated his life to documenting and preserving the 2,600-year heritage of Babylonian Jewry."},
+    {"id": "sassoon-eskell", "name": "Sassoon Eskell", "role": "Historical Figure", "bio": "First Finance Minister of Iraq (1860–1932), a Jewish statesman who helped shape the modern Iraqi state."},
+    {"id": "shlomo-hillel", "name": "Shlomo Hillel", "role": "Statesman and Activist", "bio": "Iraqi-born Israeli politician (1923–2021) who organized underground emigration of Iraqi Jews and later served as Speaker of the Knesset."}
+  ],
+  "musmeah-yeshua-synagogue": [
+    {"id": "moses-samuels", "name": "Moses Samuels", "role": "Synagogue Trustee", "bio": "Trustee of Musmeah Yeshua Synagogue in Yangon who served as custodian of Myanmar's Jewish heritage for decades."},
+    {"id": "sammy-samuels", "name": "Sammy Samuels", "role": "Caretaker and Community Leader", "bio": "Son of Moses Samuels and current caretaker of the Musmeah Yeshua Synagogue, one of the last Jews remaining in Myanmar and a guardian of its Jewish heritage."},
+    {"id": "isaac-sofaer", "name": "Isaac Sofaer", "role": "Historical Patron", "bio": "Baghdadi Jewish merchant in colonial Rangoon whose family built the iconic Sofaer's Building and were prominent benefactors of Myanmar's Jewish community."}
+  ],
+  "taiwan-jewish-community": [
+    {"id": "ephraim-einhorn", "name": "Rabbi Ephraim Einhorn", "role": "Community Rabbi", "bio": "American-Israeli rabbi who served the Taipei Jewish Community Center, leading religious and communal life for Jewish expatriates in Taiwan."},
+    {"id": "shlomi-tabib", "name": "Shlomi Tabib", "role": "Community Leader", "bio": "Active leader in the Taiwan Jewish Community who helps coordinate Jewish communal activities and cultural events in Taipei."},
+    {"id": "les-glassman", "name": "Les Glassman", "role": "Community President", "bio": "Longtime president of the Taiwan Jewish Community who helped build communal infrastructure for Jewish expatriates in Taipei."}
+  ],
+  "jewish-community-of-taiwan": [
+    {"id": "shlomi-tabib", "name": "Shlomi Tabib", "role": "Community Leader", "bio": "Key figure in the Jewish Community of Taiwan who coordinates Jewish life and events for residents and visitors in Taipei."},
+    {"id": "ephraim-einhorn", "name": "Rabbi Ephraim Einhorn", "role": "Community Rabbi", "bio": "Rabbi who served the Taiwan Jewish community, providing spiritual leadership at the Taipei Jewish Community Center."},
+    {"id": "les-glassman", "name": "Les Glassman", "role": "Community President", "bio": "Leader of the Jewish community in Taiwan who worked to maintain a vibrant communal life for expatriates and visitors."}
+  ],
+  "tsmc-taiwan-semiconductor-manufacturing-company": [
+    {"id": "morris-chang", "name": "Morris Chang", "role": "Founder and Former Chairman", "bio": "Founder of TSMC (born 1931) who created the dedicated semiconductor foundry model, making TSMC the world's most valuable chipmaker."},
+    {"id": "cc-wei", "name": "C.C. Wei", "role": "Chief Executive Officer", "bio": "CEO of TSMC who has led the company's continued dominance in advanced semiconductor manufacturing and global chip production."},
+    {"id": "mark-liu", "name": "Mark Liu", "role": "Chairman", "bio": "Chairman of TSMC who oversees the company's strategic direction, including its expansion of advanced fabs and pivotal role in global technology supply chains."}
+  ],
+  "jewish-community-of-madagascar": [
+    {"id": "aaron-amoyal", "name": "Aaron Amoyal", "role": "Community Leader", "bio": "Leader of the Jewish Community of Madagascar who works to maintain Jewish religious life and communal organization on the island."},
+    {"id": "toviana-tolotra", "name": "Toviana Tolotra", "role": "Community Organizer", "bio": "Malagasy community leader who organizes the community of Jewish descent in Madagascar, seeking formal recognition and connection to global Jewry."},
+    {"id": "ashrel-madagascar", "name": "Ashrel", "role": "Spiritual Leader", "bio": "Spiritual leader of the Malagasy Jewish community working to establish formal Jewish institutions on the island of Madagascar."}
+  ],
+  "community-of-jewish-descent-in-madagascar": [
+    {"id": "toviana-tolotra", "name": "Toviana Tolotra", "role": "Community Leader", "bio": "Malagasy leader of the Community of Jewish Descent in Madagascar, one of Africa's most unique Jewish communities seeking formal recognition."},
+    {"id": "aaron-amoyal", "name": "Aaron Amoyal", "role": "Community Organizer", "bio": "Active organizer in Madagascar's Jewish community who assists with communal life and connections to international Jewish organizations."},
+    {"id": "ashrel-madagascar", "name": "Ashrel", "role": "Spiritual Leader", "bio": "Spiritual leader of Madagascar's Jewish community working to build Jewish institutions and formal communal structures."}
+  ],
+  "jewish-community-madagascar": [
+    {"id": "ashrel-madagascar", "name": "Ashrel", "role": "Community Leader", "bio": "Spiritual leader of the Communauté Juive de Madagascar who works to establish formal Jewish institutions on the island."},
+    {"id": "toviana-tolotra", "name": "Toviana Tolotra", "role": "Community Organizer", "bio": "Key organizer of the Malagasy Jewish community who advocates for recognition and supports Jewish communal development in Madagascar."},
+    {"id": "aaron-amoyal", "name": "Aaron Amoyal", "role": "Community Figure", "bio": "Leader in the Jewish community of Madagascar who maintains religious life and communal organization for Jewish residents."}
+  ],
+  "colegio-instituto-alberto-einstein": [
+    {"id": "aaron-btesh", "name": "Aaron Btesh", "role": "School Board President", "bio": "Panamanian Jewish community leader and president of the board of Colegio Instituto Alberto Einstein, the Jewish day school serving Panama City's community."},
+    {"id": "eric-arturo-delvalle", "name": "Eric Arturo Delvalle", "role": "President of Panama", "bio": "President of Panama (1985–1988) of Jewish descent, the most prominent Jewish political figure in Panamanian history and supporter of Jewish institutions."},
+    {"id": "max-delvalle", "name": "Max Shalom Delvalle", "role": "Vice President of Panama", "bio": "First Vice President of Panama (1964–1968) of Jewish descent, uncle of President Eric Delvalle and a pillar of Panama's Jewish community."}
+  ],
+  "kol-shearith-israel": [
+    {"id": "gustavo-kraselnik", "name": "Gustavo Kraselnik", "role": "Community Writer", "bio": "Panamanian Jewish writer and community figure associated with Kol Shearith Israel, contributing to the cultural life of Panama's Jewish community."},
+    {"id": "eric-arturo-delvalle", "name": "Eric Arturo Delvalle", "role": "Notable Congregant", "bio": "President of Panama (1985–1988) and member of the Jewish community served by Kol Shearith Israel."},
+    {"id": "max-delvalle", "name": "Max Shalom Delvalle", "role": "Historical Congregant", "bio": "First Vice President of Panama (1964–1968) from one of the founding Jewish families in Panama, connected to the Kol Shearith Israel community."}
+  ],
+  "patronato-de-la-casa-de-la-comunidad-hebrea-de-cuba": [
+    {"id": "adela-dworin", "name": "Adela Dworin", "role": "Community President", "bio": "Longtime president of the Patronato and the Jewish Community of Cuba who kept Jewish life alive on the island through decades of political isolation."},
+    {"id": "david-prinstein", "name": "David Prinstein", "role": "Vice President", "bio": "Vice president of the Cuban Jewish community who has worked alongside Adela Dworin to maintain Jewish communal life and the Patronato synagogue in Havana."},
+    {"id": "ruth-behar", "name": "Ruth Behar", "role": "Author and Anthropologist", "bio": "Cuban-born Jewish-American anthropologist and author who has written extensively about Cuban Jewish identity and the community's history."}
+  ],
+  "jewish-community-cuba": [
+    {"id": "adela-dworin", "name": "Adela Dworin", "role": "Community Leader", "bio": "President of the Comunidad Hebrea de Cuba for decades, the most prominent figure in maintaining Jewish life in revolutionary Cuba."},
+    {"id": "david-prinstein", "name": "David Prinstein", "role": "Community Vice President", "bio": "Vice president of Cuba's Jewish community who has helped sustain synagogue services, Jewish education, and community events in Havana."},
+    {"id": "ruth-behar", "name": "Ruth Behar", "role": "Cultural Ambassador", "bio": "Cuban-American Jewish writer and anthropologist whose works document the experience of Jews in Cuba and the diaspora."}
+  ],
+  "confederaci-n-de-asociaciones-israelitas-de-venezuela-caiv": [
+    {"id": "david-bittan", "name": "David Bittan", "role": "CAIV President", "bio": "President of CAIV, the umbrella organization representing Venezuela's Jewish communities and coordinating communal affairs."},
+    {"id": "elias-farache", "name": "Elías Farache", "role": "Community Leader", "bio": "Venezuelan Jewish community leader who has served in CAIV's leadership, representing Venezuelan Jewry during a period of significant emigration and political upheaval."},
+    {"id": "abraham-levy-benshimol", "name": "Abraham Levy Benshimol", "role": "Architect", "bio": "Venezuelan Jewish architect (1933–2017) who designed significant Sephardic synagogues in Caracas, blending modern architecture with Jewish tradition."}
+  ],
+  "confederacion-asociaciones-israelitas-venezuela": [
+    {"id": "david-bittan", "name": "David Bittan", "role": "Federation President", "bio": "President of CAIV who leads the federation of Jewish organizations representing Venezuela's once-thriving Jewish community."},
+    {"id": "elias-farache", "name": "Elías Farache", "role": "CAIV Leader", "bio": "Senior CAIV leader who has advocated for the Venezuelan Jewish community during years of political crisis and mass emigration."},
+    {"id": "abraham-levy-benshimol", "name": "Abraham Levy Benshimol", "role": "Architect and Cultural Figure", "bio": "Celebrated Venezuelan Jewish architect (1933–2017) known for designing the Tiferet Israel and Heichal Sephardi synagogues in Caracas."}
+  ],
+  "caiv-venezuela": [
+    {"id": "david-bittan", "name": "David Bittan", "role": "President", "bio": "President of CAIV, the central body of Venezuelan Jewish organizations that coordinates communal, educational and religious affairs."},
+    {"id": "elias-farache", "name": "Elías Farache", "role": "Community Leader", "bio": "Prominent Venezuelan Jewish leader active in CAIV who works to support the community through political and economic challenges."},
+    {"id": "abraham-levy-benshimol", "name": "Abraham Levy Benshimol", "role": "Notable Community Member", "bio": "Acclaimed Venezuelan Jewish architect (1933–2017) whose synagogue designs are landmarks of Jewish culture in Caracas."}
+  ],
+  "united-congregation-of-israelites": [
+    {"id": "ainsley-henriques", "name": "Ainsley Henriques", "role": "Historian and Community Leader", "bio": "Jamaican Jewish historian and community leader who has documented the 350-year history of Jews in Jamaica and preserves the island's Jewish heritage."},
+    {"id": "mayer-matalon", "name": "Mayer Matalon", "role": "Businessman and Community Pillar", "bio": "Prominent Jamaican Jewish businessman (1931–2016) who led major institutions and was a pillar of Kingston's Jewish community."},
+    {"id": "marilyn-delevante", "name": "Marilyn Delevante", "role": "Author and Community Figure", "bio": "Co-author of 'The Island of One People,' a history of the Jews of Jamaica, and an active member of the United Congregation of Israelites."}
+  ],
+  "shaare-shalom-synagogue": [
+    {"id": "ainsley-henriques", "name": "Ainsley Henriques", "role": "Community Leader", "bio": "Leading member of the Shaare Shalom Synagogue congregation who has worked to preserve Jamaica's unique Jewish heritage and the historic synagogue."},
+    {"id": "mayer-matalon", "name": "Mayer Matalon", "role": "Community Benefactor", "bio": "Jamaican Jewish civic leader and businessman (1931–2016) who supported Shaare Shalom and the broader Jewish community in Kingston."},
+    {"id": "marilyn-delevante", "name": "Marilyn Delevante", "role": "Historian", "bio": "Jamaican Jewish historian and co-author of the definitive history of Jews in Jamaica, long associated with the Shaare Shalom Synagogue."}
+  ],
+  "mountain-jewish-community-of-azerbaijan": [
+    {"id": "milikh-yevdayev", "name": "Milikh Yevdayev", "role": "Community Leader", "bio": "Leader of the Mountain Jewish community in Azerbaijan who preserves the cultural heritage and traditions of the Caucasus Mountain Jews."},
+    {"id": "god-nisanov", "name": "God Nisanov", "role": "Businessman and Philanthropist", "bio": "Azerbaijani-Russian billionaire of Mountain Jewish descent (born 1972) who is a major real estate developer and philanthropist supporting Jewish causes."},
+    {"id": "zarakh-iliev", "name": "Zarakh Iliev", "role": "Businessman and Community Supporter", "bio": "Azerbaijani-Russian billionaire of Mountain Jewish origin (born 1966) who partners with God Nisanov in real estate and supports Mountain Jewish communal life."}
+  ],
+  "mountain-jews-azerbaijan": [
+    {"id": "god-nisanov", "name": "God Nisanov", "role": "Billionaire Philanthropist", "bio": "One of the wealthiest Mountain Jews globally (born 1972), Azerbaijani-Russian real estate mogul who funds Jewish communal and cultural projects."},
+    {"id": "zarakh-iliev", "name": "Zarakh Iliev", "role": "Businessman", "bio": "Azerbaijani-Russian billionaire of Mountain Jewish descent (born 1966), major developer and benefactor of Mountain Jewish heritage preservation."},
+    {"id": "milikh-yevdayev", "name": "Milikh Yevdayev", "role": "Community Leader", "bio": "Head of the Mountain Jewish community of Azerbaijan who advocates for the preservation of Juhuri language and Mountain Jewish culture."}
+  ],
+  "nairobi-hebrew-congregation": [
+    {"id": "alexander-wandersman", "name": "Alexander Wandersman", "role": "Community Leader", "bio": "Leader of the Nairobi Hebrew Congregation serving East Africa's small Jewish community."},
+    {"id": "jack-block", "name": "Jack Block", "role": "Businessman and Community Supporter", "bio": "Kenyan Jewish hotelier (1929–2014) who built the Block Hotels chain (including Serena Hotels) and was a major figure in Kenya's Jewish community."},
+    {"id": "abraham-block", "name": "Abraham Block", "role": "Community Founder", "bio": "Lithuanian Jewish immigrant (1880–1939) who settled in Kenya in 1904, establishing a trading business and helping found the Jewish community in Nairobi."}
+  ],
+  "abayudaya-jewish-community": [
+    {"id": "gershom-sizomu", "name": "Gershom Sizomu", "role": "Rabbi and Member of Parliament", "bio": "First Black African rabbi ordained by the Conservative movement and elected member of Uganda's parliament, the spiritual leader of the Abayudaya."},
+    {"id": "semei-kakungulu", "name": "Semei Kakungulu", "role": "Community Founder", "bio": "Ugandan military leader and statesman (1869–1928) who adopted Judaism and founded the Abayudaya Jewish community in eastern Uganda around 1919."},
+    {"id": "jj-keki", "name": "J.J. Keki", "role": "Musician and Community Leader", "bio": "Abayudaya musician and community leader whose Grammy-nominated album 'Abayudaya: Music from the Jewish People of Uganda' brought international attention to the community."}
+  ],
+  "jewish-community-of-zagreb": [
+    {"id": "ognjen-kraus", "name": "Ognjen Kraus", "role": "Community President", "bio": "President of the Jewish Community of Zagreb and Coordinator of Jewish Communities in Croatia, leading Croatian Jewry's communal and memorial activities."},
+    {"id": "slavko-goldstein", "name": "Slavko Goldstein", "role": "Writer and Publisher", "bio": "Croatian Jewish writer and publisher (1928–2017) who was a prominent anti-fascist voice and author of works examining Croatia's WWII history."},
+    {"id": "ivo-goldstein", "name": "Ivo Goldstein", "role": "Historian", "bio": "Croatian Jewish historian (born 1958), son of Slavko Goldstein, and professor at the University of Zagreb specializing in Croatian and Jewish history."}
+  ],
+  "el-ghriba-synagogue-djerba": [
+    {"id": "perez-trabelsi", "name": "Perez Trabelsi", "role": "Synagogue Custodian", "bio": "Head of the Jewish community in Djerba and custodian of the El Ghriba Synagogue, one of the oldest synagogues in the world and a major pilgrimage site."},
+    {"id": "rene-trabelsi", "name": "René Trabelsi", "role": "Politician and Businessman", "bio": "Tunisian Jewish businessman and son of Perez Trabelsi who served as Tunisia's Minister of Tourism (2018–2020), promoting the El Ghriba pilgrimage internationally."},
+    {"id": "roger-bismuth", "name": "Roger Bismuth", "role": "President of Tunisian Jewish Community", "bio": "President of the Jewish Community of Tunisia who represents Tunisian Jewry and works to preserve North Africa's Jewish heritage."}
+  ],
+  "jewish-community-of-sos-a": [
+    {"id": "luis-hess", "name": "Luis Hess", "role": "Community Pioneer", "bio": "One of the original Jewish refugee settlers in Sosúa who helped build the community and develop its dairy and agricultural industries."},
+    {"id": "james-n-rosenberg", "name": "James N. Rosenberg", "role": "DORSA Chairman", "bio": "American Jewish lawyer and philanthropist (1874–1970) who chaired the Dominican Republic Settlement Association (DORSA), organizing the Jewish refugee colony in Sosúa."},
+    {"id": "joseph-c-hyman", "name": "Joseph C. Hyman", "role": "JDC Executive", "bio": "Executive vice-chairman of the American Jewish Joint Distribution Committee who helped coordinate the Sosúa settlement project as a JDC-funded initiative to rescue European Jews."}
+  ]
+}

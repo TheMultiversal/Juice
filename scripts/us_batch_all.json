@@ -1,0 +1,4804 @@
+{
+  "paramount-pictures-historic-founding": [
+    {
+      "id": "person-adolph-zukor",
+      "name": "Adolph Zukor",
+      "role": "Founder and President",
+      "bio": "Hungarian-Jewish immigrant who founded Paramount Pictures in 1912 and led the studio for decades."
+    },
+    {
+      "id": "person-jesse-lasky",
+      "name": "Jesse L. Lasky",
+      "role": "Co-Founder",
+      "bio": "Co-founded the Jesse L. Lasky Feature Play Company which merged to form Paramount Pictures."
+    },
+    {
+      "id": "person-barney-balaban",
+      "name": "Barney Balaban",
+      "role": "President",
+      "bio": "Served as president of Paramount Pictures from 1936 to 1964, overseeing the studio during its golden era."
+    },
+    {
+      "id": "person-bp-schulberg",
+      "name": "B.P. Schulberg",
+      "role": "Head of Production",
+      "bio": "Led Paramount's West Coast production operations during the late 1920s and early 1930s."
+    },
+    {
+      "id": "person-emanuel-cohen",
+      "name": "Emanuel Cohen",
+      "role": "Head of Production",
+      "bio": "Served as head of production at Paramount in the 1930s, overseeing numerous classic films."
+    }
+  ],
+  "loews-corporation": [
+    {
+      "id": "person-laurence-tisch",
+      "name": "Laurence Tisch",
+      "role": "Co-Chairman and CEO",
+      "bio": "Co-built the Loews Corporation conglomerate with his brother and later served as CEO of CBS."
+    },
+    {
+      "id": "person-preston-robert-tisch",
+      "name": "Preston Robert Tisch",
+      "role": "Co-Chairman and Co-CEO",
+      "bio": "Co-built Loews Corporation with his brother Laurence and served as U.S. Postmaster General."
+    },
+    {
+      "id": "person-james-tisch",
+      "name": "James S. Tisch",
+      "role": "CEO",
+      "bio": "Son of Laurence Tisch who has led Loews Corporation as president and CEO."
+    },
+    {
+      "id": "person-andrew-tisch",
+      "name": "Andrew H. Tisch",
+      "role": "Chairman of the Executive Committee",
+      "bio": "Son of Preston Robert Tisch who serves in senior leadership at Loews Corporation."
+    },
+    {
+      "id": "person-jonathan-tisch",
+      "name": "Jonathan M. Tisch",
+      "role": "Co-Chairman of the Board",
+      "bio": "Son of Preston Robert Tisch who also serves as chairman of Loews Hotels and Resorts."
+    }
+  ],
+  "american-enterprise-institute-aei": [
+    {
+      "id": "person-irving-kristol",
+      "name": "Irving Kristol",
+      "role": "Senior Fellow",
+      "bio": "Influential neoconservative intellectual known as the godfather of neoconservatism and a longtime AEI senior fellow."
+    },
+    {
+      "id": "person-norman-ornstein",
+      "name": "Norman Ornstein",
+      "role": "Emeritus Scholar",
+      "bio": "Political scientist and longtime AEI resident scholar known for his work on Congress and American governance."
+    },
+    {
+      "id": "person-paul-wolfowitz",
+      "name": "Paul Wolfowitz",
+      "role": "Visiting Scholar",
+      "bio": "Former Deputy Secretary of Defense and World Bank president who served as a visiting scholar at AEI."
+    },
+    {
+      "id": "person-michael-rubin",
+      "name": "Michael Rubin",
+      "role": "Resident Scholar",
+      "bio": "Middle East policy expert and resident scholar at AEI specializing in Iran, Turkey, and Kurdish issues."
+    },
+    {
+      "id": "person-leon-kass",
+      "name": "Leon Kass",
+      "role": "Hertog Fellow",
+      "bio": "Physician and bioethicist who served as chairman of the President's Council on Bioethics and as a fellow at AEI."
+    }
+  ],
+  "universal-pictures-historic-founding": [
+    {
+      "id": "person-carl-laemmle",
+      "name": "Carl Laemmle",
+      "role": "Founder",
+      "bio": "German-Jewish immigrant who founded Universal Pictures in 1912, one of Hollywood's oldest major studios."
+    },
+    {
+      "id": "person-carl-laemmle-jr",
+      "name": "Carl Laemmle Jr.",
+      "role": "Head of Production",
+      "bio": "Son of the founder who ran Universal's production operations and greenlit iconic horror films of the 1930s."
+    },
+    {
+      "id": "person-irving-thalberg",
+      "name": "Irving Thalberg",
+      "role": "Studio Manager",
+      "bio": "Legendary Hollywood producer who began his career as studio manager at Universal before moving to MGM."
+    },
+    {
+      "id": "person-lew-wasserman",
+      "name": "Lew Wasserman",
+      "role": "Chairman and CEO of MCA/Universal",
+      "bio": "Transformative entertainment mogul who led MCA-Universal for decades and shaped the modern entertainment industry."
+    },
+    {
+      "id": "person-sidney-sheinberg",
+      "name": "Sidney Sheinberg",
+      "role": "President of MCA",
+      "bio": "Longtime president of MCA Inc. who discovered Steven Spielberg and oversaw Universal's operations for years."
+    }
+  ],
+  "wexner-foundation": [
+    {
+      "id": "person-leslie-wexner",
+      "name": "Leslie Wexner",
+      "role": "Founder",
+      "bio": "Billionaire founder of L Brands who established the Wexner Foundation to develop Jewish professional and volunteer leaders."
+    },
+    {
+      "id": "person-abigail-wexner",
+      "name": "Abigail Wexner",
+      "role": "Co-Founder and Board Chair",
+      "bio": "Attorney and philanthropist who co-leads the Wexner Foundation with her husband Leslie."
+    },
+    {
+      "id": "person-herbert-friedman",
+      "name": "Rabbi Herbert A. Friedman",
+      "role": "Founding President",
+      "bio": "Rabbi and former leader of the UJA who served as the founding president of the Wexner Heritage Foundation."
+    },
+    {
+      "id": "person-jay-kaiman",
+      "name": "Jay Kaiman",
+      "role": "President",
+      "bio": "Longtime president of the Wexner Foundation overseeing its leadership development programs for the Jewish community."
+    }
+  ],
+  "cerberus-capital-management": [
+    {
+      "id": "person-stephen-feinberg",
+      "name": "Stephen Feinberg",
+      "role": "Co-Founder and CEO",
+      "bio": "Billionaire investor who co-founded Cerberus Capital Management and built it into a leading private equity firm."
+    },
+    {
+      "id": "person-mark-neporent",
+      "name": "Mark Neporent",
+      "role": "Co-Founder and COO",
+      "bio": "Co-founder and chief operating officer of Cerberus Capital Management since its inception in 1992."
+    },
+    {
+      "id": "person-lenard-tessler",
+      "name": "Lenard Tessler",
+      "role": "Vice Chairman",
+      "bio": "Senior executive at Cerberus Capital Management who oversees portfolio company operations as vice chairman."
+    },
+    {
+      "id": "person-lee-millstein",
+      "name": "Lee Millstein",
+      "role": "Senior Managing Director",
+      "bio": "Senior managing director at Cerberus responsible for key investment strategy and portfolio decisions."
+    }
+  ],
+  "interpublic-group-ipg": [
+    {
+      "id": "person-philippe-krakowsky",
+      "name": "Philippe Krakowsky",
+      "role": "CEO",
+      "bio": "Chief executive officer of Interpublic Group who previously led the company's digital and strategy operations."
+    },
+    {
+      "id": "person-michael-roth",
+      "name": "Michael Roth",
+      "role": "Former Chairman and CEO",
+      "bio": "Led Interpublic Group as chairman and CEO from 2005 to 2021, revitalizing the advertising conglomerate."
+    },
+    {
+      "id": "person-donny-deutsch",
+      "name": "Donny Deutsch",
+      "role": "Chairman of Deutsch Inc (IPG subsidiary)",
+      "bio": "Advertising executive and television personality who led Deutsch Inc, a major IPG-owned agency."
+    },
+    {
+      "id": "person-david-deutsch",
+      "name": "David Deutsch",
+      "role": "Founder of Deutsch Inc",
+      "bio": "Founded Deutsch Inc in 1969, which grew into one of the largest U.S. advertising agencies and joined IPG."
+    }
+  ],
+  "lionsgate-entertainment": [
+    {
+      "id": "person-jon-feltheimer",
+      "name": "Jon Feltheimer",
+      "role": "CEO",
+      "bio": "Chief executive officer who has led Lionsgate Entertainment since 2000 and built it into a major film and TV studio."
+    },
+    {
+      "id": "person-michael-burns",
+      "name": "Michael Burns",
+      "role": "Vice Chairman",
+      "bio": "Longtime vice chairman of Lionsgate Entertainment who helped shape the company's strategic growth."
+    },
+    {
+      "id": "person-rob-friedman",
+      "name": "Rob Friedman",
+      "role": "Former Co-Chairman, Lionsgate Motion Picture Group",
+      "bio": "Veteran film executive who co-led Lionsgate's motion picture division and oversaw major franchise releases."
+    },
+    {
+      "id": "person-avi-arad",
+      "name": "Avi Arad",
+      "role": "Producer",
+      "bio": "Israeli-American producer known for launching Marvel's film franchise who has produced films distributed by Lionsgate."
+    },
+    {
+      "id": "person-patrick-wachsberger",
+      "name": "Patrick Wachsberger",
+      "role": "Former Co-Chairman, Lionsgate Motion Picture Group",
+      "bio": "Film executive who co-led Lionsgate's motion picture group and oversaw the Hunger Games and Twilight franchises."
+    }
+  ],
+  "the-walt-disney-company": [
+    {
+      "id": "person-bob-iger",
+      "name": "Bob Iger",
+      "role": "CEO",
+      "bio": "Longtime Disney CEO who oversaw the acquisitions of Pixar, Marvel, Lucasfilm, and 21st Century Fox."
+    },
+    {
+      "id": "person-michael-eisner",
+      "name": "Michael Eisner",
+      "role": "Former Chairman and CEO",
+      "bio": "Led The Walt Disney Company from 1984 to 2005, revitalizing the studio and expanding its theme park empire."
+    },
+    {
+      "id": "person-jeffrey-katzenberg",
+      "name": "Jeffrey Katzenberg",
+      "role": "Former Chairman of Walt Disney Studios",
+      "bio": "Led Disney's film division during its animation renaissance of the late 1980s and early 1990s."
+    },
+    {
+      "id": "person-alan-horn",
+      "name": "Alan Horn",
+      "role": "Former Chairman of Walt Disney Studios",
+      "bio": "Veteran film executive who served as chairman of Walt Disney Studios Content, overseeing record-breaking releases."
+    },
+    {
+      "id": "person-alan-braverman",
+      "name": "Alan Braverman",
+      "role": "Former General Counsel",
+      "bio": "Served as senior executive vice president and general counsel of The Walt Disney Company for over a decade."
+    }
+  ],
+  "hias-hebrew-immigrant-aid-society": [
+    {
+      "id": "person-mark-hetfield",
+      "name": "Mark Hetfield",
+      "role": "President and CEO",
+      "bio": "Leads HIAS as president and CEO, guiding its mission to protect and assist refugees and displaced persons worldwide."
+    },
+    {
+      "id": "person-dianne-lob",
+      "name": "Dianne Lob",
+      "role": "Board Chair",
+      "bio": "Chair of the HIAS board of directors overseeing the organization's global refugee assistance programs."
+    },
+    {
+      "id": "person-leonard-glickman",
+      "name": "Leonard Glickman",
+      "role": "Former President and CEO",
+      "bio": "Led HIAS through a period of transformation as the agency expanded its mission to refugees of all backgrounds."
+    },
+    {
+      "id": "person-gideon-aronoff",
+      "name": "Gideon Aronoff",
+      "role": "Former President and CEO",
+      "bio": "Served as HIAS president and CEO, advocating for refugee protection and comprehensive immigration reform."
+    }
+  ],
+  "milwaukee-bucks-wes-edens-marc-lasry": [
+    {
+      "id": "person-marc-lasry",
+      "name": "Marc Lasry",
+      "role": "Former Co-Owner",
+      "bio": "Moroccan-born Jewish-American billionaire and Avenue Capital founder who co-owned the Milwaukee Bucks."
+    },
+    {
+      "id": "person-wes-edens",
+      "name": "Wes Edens",
+      "role": "Co-Owner",
+      "bio": "Co-founder of Fortress Investment Group who co-purchased the Milwaukee Bucks in 2014."
+    },
+    {
+      "id": "person-jamie-dinan",
+      "name": "Jamie Dinan",
+      "role": "Co-Owner",
+      "bio": "Hedge fund manager and founder of York Capital Management who is a co-owner of the Milwaukee Bucks."
+    },
+    {
+      "id": "person-mike-fascitelli",
+      "name": "Mike Fascitelli",
+      "role": "Co-Owner",
+      "bio": "Real estate executive and former Vornado Realty Trust CEO who joined the Milwaukee Bucks ownership group."
+    }
+  ],
+  "durst-organization": [
+    {
+      "id": "person-joseph-durst",
+      "name": "Joseph Durst",
+      "role": "Founder",
+      "bio": "Jewish immigrant from Austria-Hungary who founded the Durst Organization in New York City in 1915."
+    },
+    {
+      "id": "person-seymour-durst",
+      "name": "Seymour Durst",
+      "role": "Former Chairman",
+      "bio": "Second-generation leader of the Durst Organization who expanded its Manhattan real estate holdings."
+    },
+    {
+      "id": "person-douglas-durst",
+      "name": "Douglas Durst",
+      "role": "Chairman",
+      "bio": "Third-generation leader who chairs the Durst Organization and is a pioneer of green building development in New York."
+    },
+    {
+      "id": "person-jody-durst",
+      "name": "Jody Durst",
+      "role": "President",
+      "bio": "Serves as president of the Durst Organization overseeing its portfolio of New York City commercial properties."
+    },
+    {
+      "id": "person-jonathan-durst",
+      "name": "Jonathan Durst",
+      "role": "Executive",
+      "bio": "Third-generation family member active in the leadership and operations of the Durst Organization."
+    }
+  ],
+  "alfred-a-knopf": [
+    {
+      "id": "person-alfred-knopf-sr",
+      "name": "Alfred A. Knopf Sr.",
+      "role": "Founder",
+      "bio": "Founded the Alfred A. Knopf publishing house in 1915, renowned for literary excellence and the Borzoi imprint."
+    },
+    {
+      "id": "person-blanche-knopf",
+      "name": "Blanche Knopf",
+      "role": "Co-Founder and President",
+      "bio": "Co-founded Alfred A. Knopf with her husband and served as president, championing major European and American authors."
+    },
+    {
+      "id": "person-robert-gottlieb",
+      "name": "Robert Gottlieb",
+      "role": "Former Editor-in-Chief",
+      "bio": "Acclaimed literary editor who led Alfred A. Knopf before becoming editor of The New Yorker."
+    },
+    {
+      "id": "person-alfred-knopf-jr",
+      "name": "Alfred A. Knopf Jr.",
+      "role": "Publisher",
+      "bio": "Son of the founders who worked in the family publishing business and later co-founded Atheneum Publishers."
+    }
+  ],
+  "davis-polk-wardwell": [
+    {
+      "id": "person-robert-kindler",
+      "name": "Robert Kindler",
+      "role": "Former Partner",
+      "bio": "Prominent mergers and acquisitions lawyer who was a leading partner at Davis Polk before joining Morgan Stanley as vice chairman."
+    },
+    {
+      "id": "person-carey-dunne",
+      "name": "Carey R. Dunne",
+      "role": "Partner",
+      "bio": "Senior partner at Davis Polk and Wardwell who also served as general counsel to the Manhattan District Attorney."
+    },
+    {
+      "id": "person-karen-seymour",
+      "name": "Karen Seymour",
+      "role": "Former Partner",
+      "bio": "Former federal prosecutor who became a senior partner at Davis Polk and later served as general counsel of Goldman Sachs."
+    }
+  ],
+  "20th-century-fox-historic-founding": [
+    {
+      "id": "person-william-fox",
+      "name": "William Fox",
+      "role": "Founder",
+      "bio": "Hungarian-Jewish immigrant who founded the Fox Film Corporation in 1915, which became 20th Century Fox."
+    },
+    {
+      "id": "person-joseph-schenck",
+      "name": "Joseph Schenck",
+      "role": "Co-Founder of 20th Century Pictures",
+      "bio": "Russian-Jewish film executive who co-founded 20th Century Pictures, which merged with Fox Film in 1935."
+    },
+    {
+      "id": "person-marvin-davis",
+      "name": "Marvin Davis",
+      "role": "Former Owner",
+      "bio": "Jewish-American billionaire oil magnate who purchased 20th Century Fox in 1981 and owned the studio until 1985."
+    },
+    {
+      "id": "person-peter-chernin",
+      "name": "Peter Chernin",
+      "role": "Former Chairman and CEO",
+      "bio": "Media executive who served as chairman and CEO of the Fox Group, overseeing 20th Century Fox's operations."
+    },
+    {
+      "id": "person-sol-wurtzel",
+      "name": "Sol Wurtzel",
+      "role": "Production Manager",
+      "bio": "Longtime Fox studio production executive who oversaw the B-film production unit for decades."
+    }
+  ],
+  "atlanta-hawks-tony-ressler": [
+    {
+      "id": "person-tony-ressler",
+      "name": "Tony Ressler",
+      "role": "Principal Owner and Chairman",
+      "bio": "Billionaire co-founder of Ares Management who purchased the Atlanta Hawks in 2015."
+    },
+    {
+      "id": "person-jami-gertz",
+      "name": "Jami Gertz",
+      "role": "Co-Owner",
+      "bio": "Actress and philanthropist who co-owns the Atlanta Hawks with her husband Tony Ressler."
+    },
+    {
+      "id": "person-michael-gearon-jr",
+      "name": "Michael Gearon Jr.",
+      "role": "Co-Owner",
+      "bio": "Longtime Atlanta Hawks co-owner and member of the ownership group who helped facilitate the Ressler acquisition."
+    },
+    {
+      "id": "person-grant-hill",
+      "name": "Grant Hill",
+      "role": "Co-Owner",
+      "bio": "NBA Hall of Famer and television analyst who is a co-owner of the Atlanta Hawks."
+    }
+  ],
+  "boston-consulting-group-bcg": [
+    {
+      "id": "person-rich-lesser",
+      "name": "Rich Lesser",
+      "role": "Global Chair",
+      "bio": "Served as CEO and then global chair of Boston Consulting Group, leading the firm's strategic direction."
+    },
+    {
+      "id": "person-bruce-henderson",
+      "name": "Bruce Henderson",
+      "role": "Founder",
+      "bio": "Founded the Boston Consulting Group in 1963 and pioneered the growth-share matrix as a strategy tool."
+    },
+    {
+      "id": "person-christoph-schweizer",
+      "name": "Christoph Schweizer",
+      "role": "CEO",
+      "bio": "Serves as chief executive officer of BCG, succeeding Rich Lesser in leading the global consulting firm."
+    }
+  ],
+  "a24-films": [
+    {
+      "id": "person-daniel-katz",
+      "name": "Daniel Katz",
+      "role": "Co-Founder",
+      "bio": "Co-founded A24 in 2012, building it into one of the most critically acclaimed independent film studios."
+    },
+    {
+      "id": "person-david-fenkel",
+      "name": "David Fenkel",
+      "role": "Co-Founder",
+      "bio": "Co-founded A24 and oversees the studio's development and production of award-winning independent films."
+    },
+    {
+      "id": "person-john-hodges",
+      "name": "John Hodges",
+      "role": "Co-Founder",
+      "bio": "Co-founded A24 and helped establish the company's distinctive brand identity in independent cinema."
+    }
+  ],
+  "third-point-llc": [
+    {
+      "id": "person-daniel-loeb",
+      "name": "Daniel Loeb",
+      "role": "Founder and CEO",
+      "bio": "Billionaire activist investor who founded Third Point LLC and is known for his shareholder campaigns at major corporations."
+    },
+    {
+      "id": "person-josh-targoff",
+      "name": "Josh Targoff",
+      "role": "COO and General Counsel",
+      "bio": "Serves as chief operating officer and general counsel of Third Point LLC, overseeing the firm's legal and operational functions."
+    },
+    {
+      "id": "person-munib-islam",
+      "name": "Munib Islam",
+      "role": "Partner and CIO",
+      "bio": "Partner and chief investment officer at Third Point LLC who helps oversee the firm's investment strategy."
+    }
+  ],
+  "middle-east-forum": [
+    {
+      "id": "person-daniel-pipes",
+      "name": "Daniel Pipes",
+      "role": "Founder and President",
+      "bio": "Historian and commentator who founded the Middle East Forum in 1994 to promote American interests in the region."
+    },
+    {
+      "id": "person-gregg-roman",
+      "name": "Gregg Roman",
+      "role": "Director",
+      "bio": "Serves as director of the Middle East Forum, overseeing its research, advocacy, and media operations."
+    },
+    {
+      "id": "person-steven-rosen",
+      "name": "Steven J. Rosen",
+      "role": "Fellow",
+      "bio": "Middle East policy analyst and former AIPAC director of foreign policy issues who joined the Middle East Forum as a fellow."
+    },
+    {
+      "id": "person-efraim-karsh",
+      "name": "Efraim Karsh",
+      "role": "Senior Fellow",
+      "bio": "Israeli-British historian and professor specializing in Middle Eastern history who serves as an MEF senior fellow."
+    }
+  ],
+  "citadel-llc": [
+    {
+      "id": "person-ken-griffin",
+      "name": "Ken Griffin",
+      "role": "Founder and CEO",
+      "bio": "Billionaire investor who founded Citadel LLC in 1990 and built it into one of the world's largest hedge funds."
+    },
+    {
+      "id": "person-gerald-beeson",
+      "name": "Gerald Beeson",
+      "role": "COO and CFO",
+      "bio": "Longtime chief operating officer and chief financial officer of Citadel LLC overseeing firm operations."
+    },
+    {
+      "id": "person-peng-zhao",
+      "name": "Peng Zhao",
+      "role": "CEO of Citadel Securities",
+      "bio": "Leads Citadel Securities as CEO, one of the largest market-making firms in the world."
+    }
+  ],
+  "atlantic-records": [
+    {
+      "id": "person-herb-abramson",
+      "name": "Herb Abramson",
+      "role": "Co-Founder",
+      "bio": "Jewish-American music executive who co-founded Atlantic Records in 1947 and helped pioneer rhythm and blues recording."
+    },
+    {
+      "id": "person-jerry-wexler",
+      "name": "Jerry Wexler",
+      "role": "Partner and Producer",
+      "bio": "Legendary Jewish-American record producer who joined Atlantic Records and coined the term rhythm and blues."
+    },
+    {
+      "id": "person-craig-kallman",
+      "name": "Craig Kallman",
+      "role": "Chairman and CEO",
+      "bio": "Serves as chairman and CEO of Atlantic Records, overseeing the label's roster of contemporary artists."
+    },
+    {
+      "id": "person-jason-flom",
+      "name": "Jason Flom",
+      "role": "Former CEO",
+      "bio": "Music industry executive who served as CEO of Atlantic Records and is known for signing numerous multiplatinum artists."
+    }
+  ],
+  "cleveland-cavaliers-dan-gilbert": [
+    {
+      "id": "person-dan-gilbert",
+      "name": "Dan Gilbert",
+      "role": "Owner and Chairman",
+      "bio": "Jewish-American billionaire founder of Quicken Loans who purchased the Cleveland Cavaliers in 2005."
+    },
+    {
+      "id": "person-koby-altman",
+      "name": "Koby Altman",
+      "role": "President of Basketball Operations",
+      "bio": "Serves as president of basketball operations for the Cleveland Cavaliers, overseeing roster and personnel decisions."
+    },
+    {
+      "id": "person-len-komoroski",
+      "name": "Len Komoroski",
+      "role": "Former CEO",
+      "bio": "Served as CEO of the Cleveland Cavaliers and Quicken Loans Arena, overseeing the team's business operations."
+    }
+  ],
+  "sac-capital-advisors-point72": [
+    {
+      "id": "person-steven-a-cohen",
+      "name": "Steven A. Cohen",
+      "role": "Founder and CEO",
+      "bio": "Billionaire investor who founded SAC Capital Advisors in 1992 and later relaunched it as Point72 Asset Management."
+    },
+    {
+      "id": "person-matthew-grossman",
+      "name": "Matthew Grossman",
+      "role": "Chief Operating Officer",
+      "bio": "Chief operating officer at Point72 Asset Management overseeing firm operations and business strategy."
+    },
+    {
+      "id": "person-harry-schwefel",
+      "name": "Harry Schwefel",
+      "role": "Co-CIO of Point72",
+      "bio": "Serves as co-chief investment officer at Point72 Asset Management helping manage the firm's investment portfolio."
+    },
+    {
+      "id": "person-doug-haynes",
+      "name": "Doug Haynes",
+      "role": "President",
+      "bio": "Former president of Point72 Asset Management who helped restructure the firm's operations and compliance."
+    }
+  ],
+  "jewish-institute-for-national-security-of-america-jinsa": [
+    {
+      "id": "person-michael-makovsky",
+      "name": "Michael Makovsky",
+      "role": "President and CEO",
+      "bio": "Leads JINSA as president and CEO, overseeing its mission to strengthen U.S.-Israel security cooperation."
+    },
+    {
+      "id": "person-shoshana-bryen",
+      "name": "Shoshana Bryen",
+      "role": "Former Senior Director",
+      "bio": "Longtime senior director of JINSA who shaped the organization's policy programs and public outreach for decades."
+    },
+    {
+      "id": "person-david-ivry",
+      "name": "David Ivry",
+      "role": "Advisory Board Member",
+      "bio": "Former commander of the Israeli Air Force and Israeli Ambassador to the U.S. who serves on JINSA's advisory board."
+    },
+    {
+      "id": "person-robert-immerman",
+      "name": "Robert Immerman",
+      "role": "Director of Foreign Policy",
+      "bio": "Oversees JINSA's foreign policy programs focused on U.S. national security and allied defense cooperation."
+    }
+  ],
+  "standwithus": [
+    {
+      "id": "person-roz-rothstein",
+      "name": "Roz Rothstein",
+      "role": "Co-Founder and CEO",
+      "bio": "Co-founded StandWithUs in 2001 and leads the organization's international Israel education and advocacy efforts."
+    },
+    {
+      "id": "person-jerry-rothstein",
+      "name": "Jerry Rothstein",
+      "role": "Co-Founder",
+      "bio": "Co-founded StandWithUs with his wife Roz to combat anti-Israel bias and support pro-Israel advocacy on campuses."
+    },
+    {
+      "id": "person-michael-dickson",
+      "name": "Michael Dickson",
+      "role": "Executive Director, StandWithUs Israel",
+      "bio": "Leads StandWithUs operations in Israel and coordinates international advocacy campaigns for the organization."
+    }
+  ],
+  "proskauer-rose": [
+    {
+      "id": "person-joseph-proskauer",
+      "name": "Joseph M. Proskauer",
+      "role": "Name Partner and Senior Partner",
+      "bio": "Prominent Jewish-American attorney and New York Supreme Court Justice who was the firm's most distinguished partner."
+    },
+    {
+      "id": "person-allen-fagin",
+      "name": "Allen Fagin",
+      "role": "Former Partner",
+      "bio": "Longtime Proskauer partner who later became executive vice president of the Orthodox Union."
+    },
+    {
+      "id": "person-steven-sandler",
+      "name": "Steven Sandler",
+      "role": "Former Co-Chair",
+      "bio": "Served in senior leadership at Proskauer Rose and helped grow the firm's corporate practice."
+    },
+    {
+      "id": "person-bettina-plevan",
+      "name": "Bettina Plevan",
+      "role": "Former Chair",
+      "bio": "Served as the first female chair of Proskauer Rose and led the firm's labor and employment practice."
+    }
+  ],
+  "greenberg-traurig": [
+    {
+      "id": "person-mel-greenberg",
+      "name": "Mel Greenberg",
+      "role": "Co-Founder",
+      "bio": "Co-founded Greenberg Traurig in Miami in 1967, helping build it into one of the largest U.S. law firms."
+    },
+    {
+      "id": "person-larry-hoffman",
+      "name": "Larry J. Hoffman",
+      "role": "Co-Founder",
+      "bio": "Co-founded Greenberg Traurig and helped develop the firm's national and international reputation."
+    },
+    {
+      "id": "person-robert-traurig",
+      "name": "Robert Traurig",
+      "role": "Co-Founder",
+      "bio": "Co-founded Greenberg Traurig and helped establish the firm's presence in South Florida's legal community."
+    },
+    {
+      "id": "person-richard-rosenbaum",
+      "name": "Richard Rosenbaum",
+      "role": "Executive Chairman",
+      "bio": "Serves as executive chairman of Greenberg Traurig overseeing the firm's global operations and strategic direction."
+    },
+    {
+      "id": "person-hilarie-bass",
+      "name": "Hilarie Bass",
+      "role": "Former Co-President",
+      "bio": "Former co-president of Greenberg Traurig who also served as president of the American Bar Association."
+    }
+  ],
+  "tiger-global-management": [
+    {
+      "id": "person-chase-coleman",
+      "name": "Chase Coleman III",
+      "role": "Founder and Managing Partner",
+      "bio": "Founded Tiger Global Management in 2001, building it into one of the most successful technology-focused investment firms."
+    },
+    {
+      "id": "person-scott-shleifer",
+      "name": "Scott Shleifer",
+      "role": "Partner, Head of Private Equity",
+      "bio": "Leads Tiger Global's private equity business and has directed early investments in major technology companies worldwide."
+    },
+    {
+      "id": "person-lee-fixel",
+      "name": "Lee Fixel",
+      "role": "Former Partner",
+      "bio": "Former Tiger Global partner who led the firm's private equity investments in companies like Flipkart and Spotify."
+    },
+    {
+      "id": "person-john-curtius",
+      "name": "John Curtius",
+      "role": "Former Partner",
+      "bio": "Former Tiger Global partner focused on late-stage technology investments before founding his own firm."
+    }
+  ],
+  "vornado-realty-trust": [
+    {
+      "id": "person-steven-roth",
+      "name": "Steven Roth",
+      "role": "Founder, Chairman, and CEO",
+      "bio": "Jewish-American billionaire who founded Vornado Realty Trust and built it into a major real estate investment trust."
+    },
+    {
+      "id": "person-michael-fascitelli",
+      "name": "Michael Fascitelli",
+      "role": "Former President and CEO",
+      "bio": "Former president and CEO of Vornado Realty Trust who oversaw major development projects in New York City."
+    },
+    {
+      "id": "person-david-greenbaum",
+      "name": "David Greenbaum",
+      "role": "President of the New York Division",
+      "bio": "Leads Vornado's New York division overseeing the company's extensive Manhattan office and retail portfolio."
+    },
+    {
+      "id": "person-haim-chera",
+      "name": "Haim Chera",
+      "role": "Executive Vice President and Head of Retail",
+      "bio": "Oversees Vornado's retail real estate operations with deep expertise in New York City commercial properties."
+    }
+  ],
+  "iheartmedia": [
+    {
+      "id": "person-rich-bressler",
+      "name": "Rich Bressler",
+      "role": "President, COO, and CFO",
+      "bio": "Senior executive at iHeartMedia overseeing the company's operations and financial strategy as president and COO."
+    },
+    {
+      "id": "person-bob-pittman",
+      "name": "Bob Pittman",
+      "role": "Chairman and CEO",
+      "bio": "Media executive and MTV co-creator who leads iHeartMedia as chairman and CEO of the largest U.S. radio company."
+    },
+    {
+      "id": "person-thomas-h-lee",
+      "name": "Thomas H. Lee",
+      "role": "Former Investor (Thomas H. Lee Partners)",
+      "bio": "Jewish-American financier whose private equity firm was a lead investor in the leveraged buyout of Clear Channel, now iHeartMedia."
+    }
+  ],
+  "interscope-records": [
+    {
+      "id": "person-jimmy-iovine",
+      "name": "Jimmy Iovine",
+      "role": "Co-Founder",
+      "bio": "Legendary music producer and executive who co-founded Interscope Records and built it into a dominant label."
+    },
+    {
+      "id": "person-david-geffen",
+      "name": "David Geffen",
+      "role": "Founder of Geffen Records (part of IGA)",
+      "bio": "Jewish-American entertainment mogul whose Geffen Records merged with Interscope to form Interscope Geffen A&M."
+    },
+    {
+      "id": "person-doug-morris",
+      "name": "Doug Morris",
+      "role": "Former Chairman and CEO of Universal Music Group",
+      "bio": "Jewish-American music executive who oversaw Interscope as head of UMG and helped build its hip-hop dominance."
+    },
+    {
+      "id": "person-lucian-grainge",
+      "name": "Lucian Grainge",
+      "role": "Chairman and CEO of Universal Music Group",
+      "bio": "British-Jewish music executive who leads UMG, the parent company of Interscope Geffen A&M Records."
+    }
+  ],
+  "new-york-giants-tisch-mara": [
+    {
+      "id": "person-steve-tisch",
+      "name": "Steve Tisch",
+      "role": "Co-Owner and Chairman",
+      "bio": "Jewish-American film producer and businessman who co-owns the New York Giants, inherited from his father Bob Tisch."
+    },
+    {
+      "id": "person-bob-tisch",
+      "name": "Bob Tisch",
+      "role": "Former Co-Owner",
+      "bio": "Jewish-American businessman and former U.S. Postmaster General who purchased 50% of the New York Giants in 1991."
+    },
+    {
+      "id": "person-jonathan-tisch",
+      "name": "Jonathan Tisch",
+      "role": "Ownership Family Member",
+      "bio": "Jewish-American businessman and Loews Hotels chairman whose family holds co-ownership of the New York Giants."
+    }
+  ],
+  "union-for-reform-judaism-urj": [
+    {
+      "id": "person-rick-jacobs",
+      "name": "Rabbi Rick Jacobs",
+      "role": "President",
+      "bio": "Serves as president of the Union for Reform Judaism, leading the largest Jewish denominational movement in North America."
+    },
+    {
+      "id": "person-eric-yoffie",
+      "name": "Rabbi Eric Yoffie",
+      "role": "Former President",
+      "bio": "Led the Union for Reform Judaism from 1996 to 2012 and is a prominent voice in American Jewish communal life."
+    },
+    {
+      "id": "person-alexander-schindler",
+      "name": "Rabbi Alexander Schindler",
+      "role": "Former President",
+      "bio": "Led the URJ from 1973 to 1996 and championed interfaith outreach, patrilineal descent, and social justice."
+    },
+    {
+      "id": "person-daryl-messinger",
+      "name": "Daryl Messinger",
+      "role": "Former Chair of the Board",
+      "bio": "Served as chair of the URJ board of trustees and has been a leader in Reform Jewish communal governance."
+    }
+  ],
+  "fried-frank-harris-shriver-jacobson": [
+    {
+      "id": "person-walter-fried",
+      "name": "Walter Fried",
+      "role": "Name Partner and Co-Founder",
+      "bio": "Jewish-American attorney and name partner who helped establish Fried Frank as a leading New York law firm."
+    },
+    {
+      "id": "person-valerie-ford-jacob",
+      "name": "Valerie Ford Jacob",
+      "role": "Former Chairman",
+      "bio": "Served as chairman of Fried Frank, one of the few women to lead a major New York law firm."
+    },
+    {
+      "id": "person-david-greenwald",
+      "name": "David Greenwald",
+      "role": "Chairman",
+      "bio": "Serves as chairman of Fried Frank Harris Shriver and Jacobson, overseeing the firm's strategic direction."
+    },
+    {
+      "id": "person-aviva-diamant",
+      "name": "Aviva Diamant",
+      "role": "Partner",
+      "bio": "Senior partner at Fried Frank specializing in corporate transactions and mergers and acquisitions."
+    }
+  ],
+  "columbia-pictures-historic-founding": [
+    {
+      "id": "person-harry-cohn",
+      "name": "Harry Cohn",
+      "role": "Co-Founder and President",
+      "bio": "Jewish-American film mogul who co-founded Columbia Pictures and ran the studio as president until his death in 1958."
+    },
+    {
+      "id": "person-jack-cohn",
+      "name": "Jack Cohn",
+      "role": "Co-Founder and Executive",
+      "bio": "Co-founded Columbia Pictures with his brother Harry and managed the studio's New York business operations."
+    },
+    {
+      "id": "person-joe-brandt",
+      "name": "Joe Brandt",
+      "role": "Co-Founder and First President",
+      "bio": "Co-founded CBC Film Sales Corporation, the predecessor of Columbia Pictures, alongside the Cohn brothers."
+    },
+    {
+      "id": "person-abe-schneider",
+      "name": "Abe Schneider",
+      "role": "President and Chairman",
+      "bio": "Served as president and chairman of Columbia Pictures Industries, leading the studio through the 1960s and 1970s."
+    },
+    {
+      "id": "person-leo-jaffe",
+      "name": "Leo Jaffe",
+      "role": "President and Chairman",
+      "bio": "Longtime Columbia Pictures executive who rose from the accounting department to serve as president and chairman."
+    }
+  ],
+  "och-ziff-capital-management-sculptor-capital": [
+    {
+      "id": "person-daniel-och",
+      "name": "Daniel Och",
+      "role": "Founder and Former CEO",
+      "bio": "Jewish-American billionaire who founded Och-Ziff Capital Management in 1994 and built it into a major hedge fund."
+    },
+    {
+      "id": "person-dirk-ziff",
+      "name": "Dirk Ziff",
+      "role": "Founding Investor",
+      "bio": "Scion of the Ziff publishing family who provided founding capital for Och-Ziff Capital Management."
+    },
+    {
+      "id": "person-robert-ziff",
+      "name": "Robert Ziff",
+      "role": "Founding Investor",
+      "bio": "Member of the Ziff family who co-invested founding capital in Och-Ziff Capital Management alongside his brothers."
+    },
+    {
+      "id": "person-daniel-ziff",
+      "name": "Daniel Ziff",
+      "role": "Founding Investor",
+      "bio": "Member of the Ziff publishing family who provided founding capital for Och-Ziff Capital Management."
+    }
+  ],
+  "american-jewish-joint-distribution-committee-jdc": [
+    {
+      "id": "person-felix-warburg",
+      "name": "Felix Warburg",
+      "role": "Founding Leader and Chairman",
+      "bio": "Prominent Jewish banker and philanthropist of the Warburg family who was instrumental in founding and leading the JDC."
+    },
+    {
+      "id": "person-herbert-lehman",
+      "name": "Herbert Lehman",
+      "role": "Early Leader",
+      "bio": "Jewish-American banker, New York Governor, and U.S. Senator who provided key leadership to the JDC in its early years."
+    },
+    {
+      "id": "person-joseph-schwartz",
+      "name": "Joseph Schwartz",
+      "role": "Executive Director (WWII Era)",
+      "bio": "Led JDC rescue and relief operations in Europe during World War II, saving tens of thousands of Jewish lives."
+    },
+    {
+      "id": "person-ralph-goldman",
+      "name": "Ralph Goldman",
+      "role": "Honorary Executive Vice President",
+      "bio": "Served JDC for decades as executive vice president and was a key architect of its global humanitarian programs."
+    },
+    {
+      "id": "person-david-schizer",
+      "name": "David Schizer",
+      "role": "CEO",
+      "bio": "Former Columbia Law School dean who served as CEO of the JDC, overseeing its worldwide Jewish community programs."
+    }
+  ],
+  "boston-celtics-wyc-grousbeck": [
+    {
+      "id": "person-wyc-grousbeck",
+      "name": "Wyc Grousbeck",
+      "role": "Governor and Co-Owner",
+      "bio": "Jewish-American businessman who leads the Boston Celtics ownership group and serves as the team's governor."
+    },
+    {
+      "id": "person-irving-grousbeck",
+      "name": "Irving Grousbeck",
+      "role": "Co-Owner",
+      "bio": "Stanford Business School professor and co-owner of the Boston Celtics alongside his son Wyc."
+    },
+    {
+      "id": "person-steve-pagliuca",
+      "name": "Steve Pagliuca",
+      "role": "Co-Owner",
+      "bio": "Bain Capital managing director and co-owner of the Boston Celtics who has been part of the ownership group since 2002."
+    }
+  ],
+  "jewish-national-fund-usa-jnf-usa": [
+    {
+      "id": "person-russell-robinson",
+      "name": "Russell Robinson",
+      "role": "Former CEO",
+      "bio": "Led JNF-USA as CEO for over 15 years, overseeing major fundraising and land development projects in Israel."
+    },
+    {
+      "id": "person-sol-lizerbram",
+      "name": "Sol Lizerbram",
+      "role": "Former National Board President",
+      "bio": "Served as president of the JNF-USA national board, providing governance and strategic direction for the organization."
+    },
+    {
+      "id": "person-jeffrey-levine",
+      "name": "Jeffrey E. Levine",
+      "role": "Former Chairman of the Board",
+      "bio": "Served as chairman of the JNF-USA board of directors, supporting the organization's mission of developing land in Israel."
+    }
+  ],
+  "tampa-bay-lightning-jeff-vinik": [
+    {
+      "id": "person-jeff-vinik",
+      "name": "Jeff Vinik",
+      "role": "Owner",
+      "bio": "Jewish-American billionaire and former Fidelity Magellan Fund manager who purchased the Tampa Bay Lightning in 2010."
+    },
+    {
+      "id": "person-tod-leiweke",
+      "name": "Tod Leiweke",
+      "role": "Former CEO",
+      "bio": "Served as CEO of Vinik Sports Group and the Tampa Bay Lightning, overseeing the team's business operations."
+    },
+    {
+      "id": "person-steve-griggs",
+      "name": "Steve Griggs",
+      "role": "CEO",
+      "bio": "Serves as CEO of the Tampa Bay Lightning, managing the team's business operations and community engagement."
+    }
+  ],
+  "cantor-fitzgerald": [
+    {
+      "id": "person-bernie-cantor",
+      "name": "B. Gerald Cantor",
+      "role": "Founder",
+      "bio": "Jewish-American financier who founded Cantor Fitzgerald in 1945 and was a noted collector and donor of Rodin sculptures."
+    },
+    {
+      "id": "person-iris-cantor",
+      "name": "Iris Cantor",
+      "role": "Former Vice Chairman",
+      "bio": "Wife of founder Bernie Cantor who served as vice chairman and became a major philanthropist after his death."
+    },
+    {
+      "id": "person-howard-lutnick",
+      "name": "Howard Lutnick",
+      "role": "Chairman and CEO",
+      "bio": "Jewish-American executive who rebuilt Cantor Fitzgerald after losing 658 employees in the September 11 attacks."
+    },
+    {
+      "id": "person-anshu-jain",
+      "name": "Anshu Jain",
+      "role": "Former President",
+      "bio": "Former Deutsche Bank co-CEO who joined Cantor Fitzgerald as president to expand its institutional business."
+    }
+  ],
+  "new-york-mets-steve-cohen": [
+    {
+      "id": "person-steve-cohen",
+      "name": "Steve Cohen",
+      "role": "Owner and Chairman",
+      "bio": "Jewish-American billionaire hedge fund manager who purchased the New York Mets in 2020 for a record $2.4 billion."
+    },
+    {
+      "id": "person-fred-wilpon",
+      "name": "Fred Wilpon",
+      "role": "Former Owner and Chairman",
+      "bio": "Jewish-American real estate developer who owned the New York Mets for over two decades before selling to Steve Cohen."
+    },
+    {
+      "id": "person-saul-katz",
+      "name": "Saul Katz",
+      "role": "Former Co-Owner and President",
+      "bio": "Jewish-American real estate executive who co-owned the New York Mets with his brother-in-law Fred Wilpon."
+    },
+    {
+      "id": "person-david-stearns",
+      "name": "David Stearns",
+      "role": "President of Baseball Operations",
+      "bio": "Serves as president of baseball operations for the New York Mets, overseeing all baseball personnel decisions."
+    }
+  ],
+  "ronald-s-lauder-foundation": [
+    {
+      "id": "person-ronald-lauder",
+      "name": "Ronald S. Lauder",
+      "role": "Founder and Chairman",
+      "bio": "Jewish-American billionaire and heir to the Estee Lauder fortune who founded the foundation to revitalize Jewish life in Europe."
+    },
+    {
+      "id": "person-jo-carole-lauder",
+      "name": "Jo Carole Lauder",
+      "role": "Board Member",
+      "bio": "Philanthropist and wife of Ronald Lauder who supports the foundation's programs for Jewish education in Central and Eastern Europe."
+    },
+    {
+      "id": "person-joshua-spinner",
+      "name": "Rabbi Joshua Spinner",
+      "role": "Executive Vice President",
+      "bio": "Served as executive vice president of the Ronald S. Lauder Foundation managing Jewish community programs across Europe."
+    }
+  ],
+  "agudath-israel-of-america": [
+    {
+      "id": "person-chaim-dovid-zwiebel",
+      "name": "Rabbi Chaim Dovid Zwiebel",
+      "role": "Executive Vice President",
+      "bio": "Longtime executive vice president and the primary public spokesperson of Agudath Israel of America."
+    },
+    {
+      "id": "person-moshe-sherer",
+      "name": "Rabbi Moshe Sherer",
+      "role": "Former President",
+      "bio": "Led Agudath Israel of America for decades as president and was a towering figure in Orthodox Jewish public affairs."
+    },
+    {
+      "id": "person-avi-shafran",
+      "name": "Rabbi Avi Shafran",
+      "role": "Director of Public Affairs",
+      "bio": "Serves as director of public affairs for Agudath Israel of America and is a prolific writer on Jewish issues."
+    },
+    {
+      "id": "person-yaakov-perlow",
+      "name": "Rabbi Yaakov Perlow",
+      "role": "Former Chairman of Moetzes Gedolei HaTorah",
+      "bio": "The Novominsker Rebbe who served as chairman of the Moetzes Gedolei HaTorah, Agudath Israel's rabbinic governing body."
+    },
+    {
+      "id": "person-shmuel-kamenetsky",
+      "name": "Rabbi Shmuel Kamenetsky",
+      "role": "Member of Moetzes Gedolei HaTorah",
+      "bio": "Rosh Yeshiva of the Talmudical Yeshiva of Philadelphia and senior member of Agudath Israel's Council of Torah Sages."
+    }
+  ],
+  "wme-william-morris-endeavor": [
+    {
+      "id": "person-ari-emanuel",
+      "name": "Ari Emanuel",
+      "role": "CEO",
+      "bio": "Israeli-American talent agent who co-founded Endeavor and led its merger with William Morris Agency to form WME."
+    },
+    {
+      "id": "person-william-morris",
+      "name": "William Morris",
+      "role": "Founder of William Morris Agency",
+      "bio": "Born Zelman Moses, a Jewish immigrant who founded the William Morris Agency in 1898, one of the first talent agencies."
+    },
+    {
+      "id": "person-abe-lastfogel",
+      "name": "Abe Lastfogel",
+      "role": "Former President of William Morris Agency",
+      "bio": "Led the William Morris Agency for decades as president, representing top entertainment talent during Hollywood's golden era."
+    },
+    {
+      "id": "person-rick-rosen",
+      "name": "Rick Rosen",
+      "role": "Co-Head of Television",
+      "bio": "Co-founded Endeavor with Ari Emanuel and serves as co-head of WME's television department."
+    }
+  ],
+  "taro-pharmaceutical-industries-us": [
+    {
+      "id": "person-aaron-levitt",
+      "name": "Aaron Levitt",
+      "role": "Founder",
+      "bio": "Israeli entrepreneur who founded Taro Pharmaceutical Industries in Haifa, Israel in 1959."
+    },
+    {
+      "id": "person-barrie-levitt",
+      "name": "Barrie Levitt",
+      "role": "Former Chairman",
+      "bio": "Son of the founder who served as chairman of Taro Pharmaceutical Industries for many years."
+    },
+    {
+      "id": "person-tal-levitt",
+      "name": "Tal Levitt",
+      "role": "Board Member",
+      "bio": "Member of the founding Levitt family who has served on the Taro Pharmaceutical Industries board of directors."
+    }
+  ],
+  "scholastic-corporation": [
+    {
+      "id": "person-richard-robinson",
+      "name": "Richard Robinson",
+      "role": "Former Chairman, President, and CEO",
+      "bio": "Led Scholastic Corporation for decades as chairman and CEO, building it into the world's largest children's book publisher."
+    },
+    {
+      "id": "person-arthur-levine",
+      "name": "Arthur A. Levine",
+      "role": "VP and Publisher, Arthur A. Levine Books",
+      "bio": "Jewish-American editor who founded the Scholastic imprint that published the U.S. edition of the Harry Potter series."
+    },
+    {
+      "id": "person-david-levithan",
+      "name": "David Levithan",
+      "role": "VP, Publisher, and Editorial Director",
+      "bio": "Jewish-American author and senior Scholastic editor who has overseen major young adult publishing initiatives."
+    },
+    {
+      "id": "person-ellie-berger",
+      "name": "Ellie Berger",
+      "role": "President of Scholastic Trade Publishing",
+      "bio": "Leads Scholastic's trade publishing division, overseeing children's book publishing and distribution."
+    }
+  ],
+  "pj-library": [
+    {
+      "id": "person-harold-grinspoon",
+      "name": "Harold Grinspoon",
+      "role": "Founder",
+      "bio": "Jewish-American philanthropist and real estate developer who founded PJ Library in 2005 to send free Jewish books to families."
+    },
+    {
+      "id": "person-winnie-sandler-grinspoon",
+      "name": "Winnie Sandler Grinspoon",
+      "role": "President, Harold Grinspoon Foundation",
+      "bio": "Leads the Harold Grinspoon Foundation which operates PJ Library and its global Jewish family engagement programs."
+    },
+    {
+      "id": "person-meredith-lewis",
+      "name": "Meredith Lewis",
+      "role": "Chief Program Officer",
+      "bio": "Oversees PJ Library's programming and content selection, managing the distribution of Jewish books to families worldwide."
+    }
+  ],
+  "washington-commanders-josh-harris": [
+    {
+      "id": "person-josh-harris",
+      "name": "Josh Harris",
+      "role": "Managing Partner and Owner",
+      "bio": "Jewish-American billionaire and co-founder of Apollo Global Management who purchased the Washington Commanders in 2023."
+    },
+    {
+      "id": "person-mitchell-rales",
+      "name": "Mitchell Rales",
+      "role": "Co-Owner",
+      "bio": "Jewish-American billionaire industrialist and co-founder of Danaher Corporation who is a co-owner of the Washington Commanders."
+    },
+    {
+      "id": "person-david-blitzer",
+      "name": "David Blitzer",
+      "role": "Co-Owner",
+      "bio": "Jewish-American investor and co-founder of Blackstone's Tactical Opportunities Fund who co-owns the Washington Commanders."
+    },
+    {
+      "id": "person-mark-ein",
+      "name": "Mark Ein",
+      "role": "Co-Owner",
+      "bio": "Jewish-American entrepreneur and investor based in Washington D.C. who is part of the Commanders ownership group."
+    }
+  ],
+  "american-friends-of-the-israel-defense-forces-fidf": [
+    {
+      "id": "person-steven-weil",
+      "name": "Steven Weil",
+      "role": "National Director and CEO",
+      "bio": "Rabbi and nonprofit executive who has led FIDF's national operations and fundraising campaigns."
+    },
+    {
+      "id": "person-meir-amit",
+      "name": "Meir Amit",
+      "role": "FIDF Co-Founder",
+      "bio": "Former head of the Mossad and IDF Military Intelligence who co-founded the American friends chapter."
+    },
+    {
+      "id": "person-barry-minkov",
+      "name": "Barry Minkov",
+      "role": "National Chairman",
+      "bio": "American Jewish philanthropist and business leader who served as FIDF National Chairman."
+    },
+    {
+      "id": "person-haim-saban",
+      "name": "Haim Saban",
+      "role": "Major Donor and Gala Honoree",
+      "bio": "Israeli-American media mogul and billionaire who has been a leading supporter and megadonor to FIDF."
+    },
+    {
+      "id": "person-sheldon-adelson",
+      "name": "Sheldon Adelson",
+      "role": "Major Donor",
+      "bio": "Casino magnate who was one of the largest individual donors to FIDF before his death in 2021."
+    }
+  ],
+  "museum-of-jewish-heritage-a-living-memorial-to-the-holocaust": [
+    {
+      "id": "person-jack-kliger",
+      "name": "Jack Kliger",
+      "role": "President and CEO",
+      "bio": "Media and nonprofit executive who has led the Museum of Jewish Heritage in Lower Manhattan."
+    },
+    {
+      "id": "person-bruce-ratner",
+      "name": "Bruce Ratner",
+      "role": "Chairman of the Board",
+      "bio": "Real estate developer who chaired the museum's board and helped guide its expansion."
+    },
+    {
+      "id": "person-robert-morgenthau",
+      "name": "Robert Morgenthau",
+      "role": "Founding Chairman",
+      "bio": "Legendary Manhattan District Attorney who served as founding chairman of the museum."
+    },
+    {
+      "id": "person-george-klein",
+      "name": "George Klein",
+      "role": "Founding Supporter",
+      "bio": "Holocaust survivor and real estate developer who was a founding supporter of the museum."
+    },
+    {
+      "id": "person-david-marwell",
+      "name": "David Marwell",
+      "role": "Director (2000-2019)",
+      "bio": "Historian and former director of the Berlin Document Center who led the museum for nearly two decades."
+    }
+  ],
+  "kuhn-loeb-co-historic": [
+    {
+      "id": "person-jacob-schiff",
+      "name": "Jacob Schiff",
+      "role": "Senior Partner (1847-1920)",
+      "bio": "German-born Jewish financier who led Kuhn Loeb to become one of the most powerful investment banks in the US."
+    },
+    {
+      "id": "person-solomon-loeb",
+      "name": "Solomon Loeb",
+      "role": "Co-Founder (1828-1903)",
+      "bio": "German-Jewish banker who co-founded the firm Kuhn, Loeb & Co. in 1867."
+    },
+    {
+      "id": "person-abraham-kuhn",
+      "name": "Abraham Kuhn",
+      "role": "Co-Founder (1819-1892)",
+      "bio": "German-Jewish immigrant who co-founded the investment bank with his brother-in-law Solomon Loeb."
+    },
+    {
+      "id": "person-otto-kahn",
+      "name": "Otto Kahn",
+      "role": "Senior Partner (1867-1934)",
+      "bio": "German-born Jewish investment banker, patron of the arts, and partner at Kuhn Loeb."
+    },
+    {
+      "id": "person-felix-warburg",
+      "name": "Felix Warburg",
+      "role": "Partner (1871-1937)",
+      "bio": "Jewish banker, philanthropist, and son-in-law of Jacob Schiff who became a partner at the firm."
+    }
+  ],
+  "tablet-magazine": [
+    {
+      "id": "person-alana-newhouse",
+      "name": "Alana Newhouse",
+      "role": "Editor-in-Chief and Founder",
+      "bio": "American Jewish journalist who founded Tablet Magazine in 2009 as a daily online magazine of Jewish news and culture."
+    },
+    {
+      "id": "person-david-samuels",
+      "name": "David Samuels",
+      "role": "Literary Editor",
+      "bio": "American writer and journalist who served as Tablet's literary editor and wrote long-form features."
+    },
+    {
+      "id": "person-liel-leibovitz",
+      "name": "Liel Leibovitz",
+      "role": "Senior Writer and Editor",
+      "bio": "Israeli-American journalist and author who is a senior writer and editor at Tablet."
+    },
+    {
+      "id": "person-yair-rosenberg",
+      "name": "Yair Rosenberg",
+      "role": "Senior Writer",
+      "bio": "American journalist and writer who gained prominence for his work at Tablet before joining The Atlantic."
+    },
+    {
+      "id": "person-stephanie-butnick",
+      "name": "Stephanie Butnick",
+      "role": "Deputy Editor",
+      "bio": "American journalist who co-hosts the Unorthodox podcast and serves as a senior editor at Tablet."
+    }
+  ],
+  "adelson-family-foundation": [
+    {
+      "id": "person-sheldon-adelson",
+      "name": "Sheldon Adelson",
+      "role": "Founder (1933-2021)",
+      "bio": "Billionaire casino magnate and chairman of Las Vegas Sands who co-founded the family foundation."
+    },
+    {
+      "id": "person-miriam-adelson",
+      "name": "Miriam Adelson",
+      "role": "Co-Founder and Chair",
+      "bio": "Israeli-American physician and philanthropist who co-founded the foundation and leads it after her husband's death."
+    },
+    {
+      "id": "person-sivan-ochshorn",
+      "name": "Sivan Ochshorn",
+      "role": "Executive Director",
+      "bio": "Executive who manages the Adelson Foundation's operations including major grants to Birthright Israel and medical research."
+    },
+    {
+      "id": "person-adam-milstein",
+      "name": "Adam Milstein",
+      "role": "Foundation Adviser",
+      "bio": "Israeli-American real estate investor and philanthropist who has collaborated with Adelson on pro-Israel philanthropy."
+    }
+  ],
+  "haim-saban-saban-capital-group": [
+    {
+      "id": "person-haim-saban",
+      "name": "Haim Saban",
+      "role": "Chairman and CEO",
+      "bio": "Egyptian-born Israeli-American media mogul who built his fortune through Saban Entertainment and Power Rangers."
+    },
+    {
+      "id": "person-cheryl-saban",
+      "name": "Cheryl Saban",
+      "role": "Philanthropist and Board Member",
+      "bio": "American author and philanthropist married to Haim Saban and active in the Saban Family Foundation."
+    },
+    {
+      "id": "person-adam-chesnoff",
+      "name": "Adam Chesnoff",
+      "role": "President and COO",
+      "bio": "Executive who serves as President and COO of Saban Capital Group overseeing its investment portfolio."
+    }
+  ],
+  "apple-israel-r-d": [
+    {
+      "id": "person-johny-srouji",
+      "name": "Johny Srouji",
+      "role": "Senior VP of Hardware Technologies",
+      "bio": "Israeli-born Druze executive who leads Apple's chip design, with major R&D operations based in Israel."
+    },
+    {
+      "id": "person-aharon-aharon",
+      "name": "Aharon Aharon",
+      "role": "Former Head of Israel Innovation Authority",
+      "bio": "Former Apple Israel executive who led R&D before heading the Israel Innovation Authority."
+    },
+    {
+      "id": "person-jeff-williams",
+      "name": "Jeff Williams",
+      "role": "Apple COO (overseeing Israel ops)",
+      "bio": "Apple's COO who oversees global operations including the significant Israeli R&D centers in Haifa and Herzliya."
+    }
+  ],
+  "viacomcbs-paramount-global": [
+    {
+      "id": "person-sumner-redstone",
+      "name": "Sumner Redstone",
+      "role": "Chairman Emeritus (1923-2020)",
+      "bio": "Jewish media mogul who built the Viacom empire through National Amusements and controlled CBS, Paramount, and MTV."
+    },
+    {
+      "id": "person-shari-redstone",
+      "name": "Shari Redstone",
+      "role": "Chair of the Board",
+      "bio": "Daughter of Sumner Redstone and president of National Amusements who became the controlling shareholder of Paramount Global."
+    },
+    {
+      "id": "person-bob-bakish",
+      "name": "Bob Bakish",
+      "role": "President and CEO (2019-2023)",
+      "bio": "American media executive who served as CEO of ViacomCBS and led its rebranding to Paramount Global."
+    },
+    {
+      "id": "person-philippe-dauman",
+      "name": "Philippe Dauman",
+      "role": "Former CEO of Viacom (2006-2016)",
+      "bio": "American businessman of Jewish heritage who served as Viacom CEO before a boardroom battle."
+    },
+    {
+      "id": "person-brad-grey",
+      "name": "Brad Grey",
+      "role": "Former Chairman of Paramount Pictures (2005-2017)",
+      "bio": "Jewish entertainment executive who led Paramount Pictures for over a decade."
+    }
+  ],
+  "cleveland-guardians-larry-dolan": [
+    {
+      "id": "person-larry-dolan",
+      "name": "Larry Dolan",
+      "role": "Owner and Chairman",
+      "bio": "Jewish American attorney and businessman who purchased the Cleveland franchise in 2000."
+    },
+    {
+      "id": "person-paul-dolan",
+      "name": "Paul Dolan",
+      "role": "President and CEO",
+      "bio": "Son of Larry Dolan who has served as the franchise president overseeing day-to-day operations."
+    },
+    {
+      "id": "person-bob-destefano",
+      "name": "Bob DeStefano",
+      "role": "Senior VP and General Counsel",
+      "bio": "Executive who has served in senior leadership of the Guardians organization."
+    }
+  ],
+  "teva-pharmaceutical-us-operations": [
+    {
+      "id": "person-eli-hurvitz",
+      "name": "Eli Hurvitz",
+      "role": "Former CEO and Chairman (1932-2011)",
+      "bio": "Israeli businessman who led Teva for decades and transformed it into the world's largest generic drug maker."
+    },
+    {
+      "id": "person-kare-schultz",
+      "name": "Kare Schultz",
+      "role": "Former CEO (2017-2023)",
+      "bio": "Danish pharmaceutical executive who led Teva through its debt restructuring and opioid settlement period."
+    },
+    {
+      "id": "person-richard-clark",
+      "name": "Richard Clark",
+      "role": "Former CEO",
+      "bio": "American executive who led Teva's US push including the major Actavis acquisition."
+    },
+    {
+      "id": "person-phillip-frost",
+      "name": "Phillip Frost",
+      "role": "Former Chairman",
+      "bio": "Jewish American billionaire physician and businessman who served as Teva's chairman."
+    }
+  ],
+  "forest-city-realty-brookfield": [
+    {
+      "id": "person-albert-ratner",
+      "name": "Albert Ratner",
+      "role": "Co-Chairman Emeritus",
+      "bio": "Jewish American real estate executive and philanthropist who co-led Forest City Enterprises for decades."
+    },
+    {
+      "id": "person-charles-ratner",
+      "name": "Charles Ratner",
+      "role": "CEO (2011-2018)",
+      "bio": "Third-generation family member who served as CEO before the Brookfield acquisition."
+    },
+    {
+      "id": "person-bruce-ratner",
+      "name": "Bruce Ratner",
+      "role": "Executive and Developer",
+      "bio": "Jewish real estate developer known for the Barclays Center and Atlantic Yards projects in Brooklyn."
+    },
+    {
+      "id": "person-james-ratner",
+      "name": "James Ratner",
+      "role": "Executive Vice President",
+      "bio": "Member of the Ratner family who served in senior leadership at Forest City Enterprises."
+    }
+  ],
+  "marcus-foundation": [
+    {
+      "id": "person-bernie-marcus",
+      "name": "Bernie Marcus",
+      "role": "Founder and Chairman",
+      "bio": "Jewish co-founder of The Home Depot who established the foundation focusing on healthcare, Jewish causes, and veterans."
+    },
+    {
+      "id": "person-billi-marcus",
+      "name": "Billi Marcus",
+      "role": "Co-Founder",
+      "bio": "Philanthropist and wife of Bernie Marcus who is active in the foundation's charitable mission."
+    },
+    {
+      "id": "person-jay-kaiman",
+      "name": "Jay Kaiman",
+      "role": "Executive Director",
+      "bio": "Longtime executive director who manages the Marcus Foundation's grant-making activities."
+    }
+  ],
+  "sequoia-capital": [
+    {
+      "id": "person-michael-moritz",
+      "name": "Michael Moritz",
+      "role": "Former Chairman and Partner",
+      "bio": "Welsh-born Jewish venture capitalist known for early investments in Google, Yahoo, and PayPal."
+    },
+    {
+      "id": "person-don-valentine",
+      "name": "Don Valentine",
+      "role": "Founder (1932-2019)",
+      "bio": "Founder of Sequoia Capital in 1972 who pioneered Silicon Valley venture capital investing."
+    },
+    {
+      "id": "person-doug-leone",
+      "name": "Doug Leone",
+      "role": "Former Global Managing Partner",
+      "bio": "Italian-born American venture capitalist who led Sequoia as managing partner for over a decade."
+    },
+    {
+      "id": "person-roelof-botha",
+      "name": "Roelof Botha",
+      "role": "Managing Partner",
+      "bio": "South African venture capitalist who became Sequoia's managing partner and led investments in YouTube and Unity."
+    }
+  ],
+  "center-for-jewish-history": [
+    {
+      "id": "person-bruce-slovin",
+      "name": "Bruce Slovin",
+      "role": "Founding Chairman",
+      "bio": "American businessman and philanthropist who was founding chairman of the Center for Jewish History."
+    },
+    {
+      "id": "person-sara-bloomfield",
+      "name": "Sara Bloomfield",
+      "role": "Advisory Board Member",
+      "bio": "Museum director and leader in Holocaust education associated with Jewish heritage institutions."
+    },
+    {
+      "id": "person-bernard-michael",
+      "name": "Bernard Michael",
+      "role": "Former CEO",
+      "bio": "Executive who led the Center for Jewish History's operations and programming."
+    },
+    {
+      "id": "person-joy-ungerleider",
+      "name": "Joy Ungerleider",
+      "role": "Founding Benefactor",
+      "bio": "American Jewish philanthropist who helped create the Center for Jewish History on West 16th Street in Manhattan."
+    }
+  ],
+  "temple-emanu-el-new-york": [
+    {
+      "id": "person-joshua-davidson",
+      "name": "Joshua Davidson",
+      "role": "Senior Rabbi",
+      "bio": "Senior Rabbi of Congregation Emanu-El of the City of New York, one of the largest Reform synagogues in the world."
+    },
+    {
+      "id": "person-amy-ehrlich",
+      "name": "Amy Ehrlich",
+      "role": "Associate Rabbi",
+      "bio": "Rabbi serving Congregation Emanu-El as part of its clergy team."
+    },
+    {
+      "id": "person-judah-touro",
+      "name": "Judah Touro",
+      "role": "Historical Benefactor",
+      "bio": "Early American Jewish philanthropist whose legacy influenced Jewish institutions including Emanu-El."
+    },
+    {
+      "id": "person-herbert-lehman",
+      "name": "Herbert Lehman",
+      "role": "Notable Congregant (1878-1963)",
+      "bio": "Jewish American banker, politician, and Governor of New York who was a prominent member of Temple Emanu-El."
+    }
+  ],
+  "secure-community-network": [
+    {
+      "id": "person-michael-masters",
+      "name": "Michael Masters",
+      "role": "National Director and CEO",
+      "bio": "Security professional who leads SCN as the official homeland security and safety initiative of the Jewish community."
+    },
+    {
+      "id": "person-brad-orsini",
+      "name": "Brad Orsini",
+      "role": "Senior National Security Adviser",
+      "bio": "Former FBI special agent who serves as SCN's senior national security adviser."
+    },
+    {
+      "id": "person-paul-goldenberg",
+      "name": "Paul Goldenberg",
+      "role": "Founding Director",
+      "bio": "Law enforcement and security expert who helped establish SCN to protect Jewish institutions across America."
+    }
+  ],
+  "nefesh-b-nefesh": [
+    {
+      "id": "person-tony-gelbart",
+      "name": "Tony Gelbart",
+      "role": "Co-Founder and Chairman",
+      "bio": "American-Israeli businessman and philanthropist who co-founded Nefesh B'Nefesh to facilitate aliyah from North America."
+    },
+    {
+      "id": "person-rabbi-yehoshua-fass",
+      "name": "Rabbi Yehoshua Fass",
+      "role": "Co-Founder and Executive Director",
+      "bio": "American-born rabbi who co-founded and leads Nefesh B'Nefesh's operations assisting new immigrants to Israel."
+    },
+    {
+      "id": "person-danny-obadia",
+      "name": "Danny Obadia",
+      "role": "Chief Operating Officer",
+      "bio": "Executive who oversees Nefesh B'Nefesh's logistics and integration programs for new immigrants."
+    }
+  ],
+  "wilshire-boulevard-temple-los-angeles": [
+    {
+      "id": "person-steve-leder",
+      "name": "Steve Leder",
+      "role": "Senior Rabbi",
+      "bio": "Author and senior rabbi of Wilshire Boulevard Temple, one of the oldest and most prominent synagogues in Los Angeles."
+    },
+    {
+      "id": "person-edgar-magnin",
+      "name": "Edgar Magnin",
+      "role": "Rabbi Emeritus (1890-1984)",
+      "bio": "Legendary rabbi who led Wilshire Boulevard Temple for over 55 years and was known as the 'Rabbi to the Stars'."
+    },
+    {
+      "id": "person-erika-nassberg",
+      "name": "Erika Nassberg",
+      "role": "Senior Associate Rabbi",
+      "bio": "Rabbi serving at Wilshire Boulevard Temple as part of the clergy leadership team."
+    }
+  ],
+  "kraft-group": [
+    {
+      "id": "person-robert-kraft",
+      "name": "Robert Kraft",
+      "role": "Chairman and CEO",
+      "bio": "Jewish American billionaire businessman and owner of the New England Patriots, known for philanthropy and Israel advocacy."
+    },
+    {
+      "id": "person-jonathan-kraft",
+      "name": "Jonathan Kraft",
+      "role": "President",
+      "bio": "Son of Robert Kraft who serves as president of the Kraft Group and is deeply involved in Patriots operations."
+    },
+    {
+      "id": "person-daniel-kraft",
+      "name": "Daniel Kraft",
+      "role": "President of International Business",
+      "bio": "Son of Robert Kraft who leads the Kraft Group's international operations and ventures."
+    },
+    {
+      "id": "person-josh-kraft",
+      "name": "Josh Kraft",
+      "role": "President of the New England Patriots Foundation",
+      "bio": "Son of Robert Kraft who leads the family's philanthropic efforts through the Patriots foundation."
+    }
+  ],
+  "albert-einstein-college-of-medicine": [
+    {
+      "id": "person-edward-burns",
+      "name": "Edward Burns",
+      "role": "Dean",
+      "bio": "Physician and academic leader serving as dean of Albert Einstein College of Medicine."
+    },
+    {
+      "id": "person-ruth-gottesman",
+      "name": "Ruth Gottesman",
+      "role": "Major Benefactor and Board Chair Emerita",
+      "bio": "Philanthropist who donated $1 billion to make Einstein tuition-free, a historic gift in medical education."
+    },
+    {
+      "id": "person-allen-spiegel",
+      "name": "Allen Spiegel",
+      "role": "Former Dean",
+      "bio": "Physician and academic who served as dean and led Einstein's research programs."
+    },
+    {
+      "id": "person-samuel-belkin",
+      "name": "Samuel Belkin",
+      "role": "Founding Leader (1911-1976)",
+      "bio": "President of Yeshiva University who helped establish Albert Einstein College of Medicine in 1955."
+    }
+  ],
+  "american-jewish-congress": [
+    {
+      "id": "person-stephen-wise",
+      "name": "Stephen Wise",
+      "role": "Founder and President (1874-1949)",
+      "bio": "Prominent Reform rabbi and Zionist leader who founded the American Jewish Congress in 1918."
+    },
+    {
+      "id": "person-jack-rosen",
+      "name": "Jack Rosen",
+      "role": "President",
+      "bio": "American businessman and Jewish community leader who has served as president of the American Jewish Congress."
+    },
+    {
+      "id": "person-naomi-levine",
+      "name": "Naomi Levine",
+      "role": "Former Executive Director",
+      "bio": "Attorney and Jewish communal leader who served as executive director of the organization."
+    },
+    {
+      "id": "person-henry-siegman",
+      "name": "Henry Siegman",
+      "role": "Former Executive Director",
+      "bio": "Rabbi and policy expert who led the American Jewish Congress for nearly two decades."
+    }
+  ],
+  "united-synagogue-of-conservative-judaism": [
+    {
+      "id": "person-solomon-schechter",
+      "name": "Solomon Schechter",
+      "role": "Founder (1847-1915)",
+      "bio": "Romanian-born rabbi and scholar who founded the United Synagogue of America in 1913."
+    },
+    {
+      "id": "person-alan-ades",
+      "name": "Alan Ades",
+      "role": "International President",
+      "bio": "American Jewish lay leader who has served as international president of the United Synagogue."
+    },
+    {
+      "id": "person-rabbi-jacob-blumenthal",
+      "name": "Rabbi Jacob Blumenthal",
+      "role": "CEO",
+      "bio": "Rabbi who serves as CEO of the United Synagogue and the Rabbinical Assembly of Conservative Judaism."
+    }
+  ],
+  "congregation-shearith-israel-nyc": [
+    {
+      "id": "person-meir-soloveichik",
+      "name": "Meir Soloveichik",
+      "role": "Senior Rabbi",
+      "bio": "Orthodox rabbi, author, and scholar who leads America's oldest Jewish congregation, founded in 1654."
+    },
+    {
+      "id": "person-gershom-mendes-seixas",
+      "name": "Gershom Mendes Seixas",
+      "role": "Historic Hazzan (1745-1816)",
+      "bio": "First native-born American Jewish clergyman who served Shearith Israel during the American Revolution."
+    },
+    {
+      "id": "person-david-de-sola-pool",
+      "name": "David de Sola Pool",
+      "role": "Historic Rabbi (1885-1970)",
+      "bio": "British-born Sephardic rabbi who led Shearith Israel for over 50 years in the 20th century."
+    },
+    {
+      "id": "person-emma-lazarus",
+      "name": "Emma Lazarus",
+      "role": "Notable Congregant (1849-1887)",
+      "bio": "Jewish American poet who wrote 'The New Colossus' on the Statue of Liberty and was a member of Shearith Israel."
+    }
+  ],
+  "christians-united-for-israel-cufi": [
+    {
+      "id": "person-john-hagee",
+      "name": "John Hagee",
+      "role": "Founder and Chairman",
+      "bio": "American pastor and televangelist who founded CUFI in 2006 as the largest pro-Israel organization in the United States."
+    },
+    {
+      "id": "person-diana-hagee",
+      "name": "Diana Hagee",
+      "role": "Co-Founder and Executive Director",
+      "bio": "Author and leader who co-founded CUFI alongside her husband John Hagee."
+    },
+    {
+      "id": "person-david-brog",
+      "name": "David Brog",
+      "role": "Former Executive Director",
+      "bio": "Jewish American attorney and author who served as CUFI's first executive director."
+    },
+    {
+      "id": "person-shari-dollinger",
+      "name": "Shari Dollinger",
+      "role": "Vice President of Government Relations",
+      "bio": "CUFI executive leading the organization's advocacy efforts on Capitol Hill."
+    }
+  ],
+  "lazard": [
+    {
+      "id": "person-alexandre-lazard",
+      "name": "Alexandre Lazard",
+      "role": "Co-Founder (1815-1871)",
+      "bio": "French-Jewish immigrant who co-founded Lazard Freres with his brothers in New Orleans."
+    },
+    {
+      "id": "person-simon-lazard",
+      "name": "Simon Lazard",
+      "role": "Co-Founder (1828-1898)",
+      "bio": "French-Jewish banker who helped establish Lazard as a transatlantic financial institution."
+    },
+    {
+      "id": "person-elie-lazard",
+      "name": "Elie Lazard",
+      "role": "Co-Founder (1824-1897)",
+      "bio": "One of three Lazard brothers who founded the bank originally as a dry goods business during the Gold Rush."
+    },
+    {
+      "id": "person-ken-jacobs",
+      "name": "Ken Jacobs",
+      "role": "Chairman and CEO",
+      "bio": "American investment banker who has served as chairman and CEO of Lazard."
+    },
+    {
+      "id": "person-bruce-wasserstein",
+      "name": "Bruce Wasserstein",
+      "role": "Former CEO (1947-2009)",
+      "bio": "Jewish American investment banker known as 'Bid-em-up Bruce' who led Lazard until his death."
+    }
+  ],
+  "icahn-enterprises": [
+    {
+      "id": "person-carl-icahn",
+      "name": "Carl Icahn",
+      "role": "Founder and Controlling Shareholder",
+      "bio": "Jewish American billionaire activist investor known as a corporate raider who built Icahn Enterprises."
+    },
+    {
+      "id": "person-gail-golden-icahn",
+      "name": "Gail Golden Icahn",
+      "role": "Vice Chair and Portfolio Manager",
+      "bio": "Wife of Carl Icahn who serves as a portfolio manager and board member of Icahn Enterprises."
+    },
+    {
+      "id": "person-brett-icahn",
+      "name": "Brett Icahn",
+      "role": "Portfolio Manager",
+      "bio": "Son of Carl Icahn who manages a significant portfolio within Icahn Enterprises."
+    },
+    {
+      "id": "person-david-willetts",
+      "name": "David Willetts",
+      "role": "President and CEO",
+      "bio": "Executive who serves in senior leadership at Icahn Enterprises."
+    }
+  ],
+  "lehman-brothers-historic": [
+    {
+      "id": "person-henry-lehman",
+      "name": "Henry Lehman",
+      "role": "Founder (1822-1855)",
+      "bio": "Bavarian-Jewish immigrant who founded the company as a dry goods store in Montgomery, Alabama in 1850."
+    },
+    {
+      "id": "person-emanuel-lehman",
+      "name": "Emanuel Lehman",
+      "role": "Co-Founder (1827-1907)",
+      "bio": "Brother of Henry who helped transform the business from cotton trading into a major financial firm."
+    },
+    {
+      "id": "person-mayer-lehman",
+      "name": "Mayer Lehman",
+      "role": "Co-Founder (1830-1897)",
+      "bio": "Youngest of the Lehman brothers who expanded the firm's commodity trading operations."
+    },
+    {
+      "id": "person-robert-lehman",
+      "name": "Robert Lehman",
+      "role": "Senior Partner (1891-1969)",
+      "bio": "Grandson of Emanuel who led the firm for decades and amassed a renowned art collection."
+    },
+    {
+      "id": "person-herbert-lehman",
+      "name": "Herbert Lehman",
+      "role": "Partner and NY Governor (1878-1963)",
+      "bio": "Lehman family member who entered politics, serving as Governor of New York and US Senator."
+    }
+  ],
+  "solomon-schechter-day-schools": [
+    {
+      "id": "person-solomon-schechter",
+      "name": "Solomon Schechter",
+      "role": "Namesake (1847-1915)",
+      "bio": "Romanian-born rabbi and scholar whose vision of Conservative Judaism inspired the day school network."
+    },
+    {
+      "id": "person-daniel-libenson",
+      "name": "Daniel Libenson",
+      "role": "Former Schechter Head of School",
+      "bio": "Jewish educator who led one of the prominent Schechter day school campuses."
+    },
+    {
+      "id": "person-elaine-cohen",
+      "name": "Elaine Cohen",
+      "role": "National Director, Schechter Network",
+      "bio": "Jewish education leader involved in coordinating the national Solomon Schechter day school network."
+    }
+  ],
+  "a-m-records-historic": [
+    {
+      "id": "person-jerry-moss",
+      "name": "Jerry Moss",
+      "role": "Co-Founder (1935-2023)",
+      "bio": "Jewish American music executive who co-founded A&M Records in 1962 with Herb Alpert."
+    },
+    {
+      "id": "person-herb-alpert",
+      "name": "Herb Alpert",
+      "role": "Co-Founder",
+      "bio": "Jewish American musician and businessman who co-founded A&M Records and led the Tijuana Brass."
+    },
+    {
+      "id": "person-gil-friesen",
+      "name": "Gil Friesen",
+      "role": "President (1977-1990)",
+      "bio": "Jewish American music executive who served as president of A&M Records during its most successful era."
+    }
+  ],
+  "wix-com-us-operations": [
+    {
+      "id": "person-avishai-abrahami",
+      "name": "Avishai Abrahami",
+      "role": "Co-Founder and CEO",
+      "bio": "Israeli tech entrepreneur who co-founded Wix.com in 2006 as a cloud-based web development platform."
+    },
+    {
+      "id": "person-nadav-abrahami",
+      "name": "Nadav Abrahami",
+      "role": "Co-Founder and President",
+      "bio": "Israeli tech entrepreneur who co-founded Wix and serves as the company's president."
+    },
+    {
+      "id": "person-giora-kaplan",
+      "name": "Giora Kaplan",
+      "role": "Co-Founder and CTO",
+      "bio": "Israeli software engineer who co-founded Wix.com and has served as its chief technology officer."
+    },
+    {
+      "id": "person-nir-zohar",
+      "name": "Nir Zohar",
+      "role": "Former President and COO",
+      "bio": "Israeli executive who served as Wix's president and COO overseeing global business operations."
+    }
+  ],
+  "uja-federation-of-new-york": [
+    {
+      "id": "person-eric-goldstein",
+      "name": "Eric Goldstein",
+      "role": "CEO",
+      "bio": "Executive who leads UJA-Federation of New York, one of the largest local philanthropic organizations in the world."
+    },
+    {
+      "id": "person-mark-wilf",
+      "name": "Mark Wilf",
+      "role": "Chair of the Board",
+      "bio": "Jewish American real estate developer and co-owner of the Minnesota Vikings who has chaired UJA-Federation."
+    },
+    {
+      "id": "person-john-ruskay",
+      "name": "John Ruskay",
+      "role": "Former Executive VP and CEO",
+      "bio": "Jewish communal leader who led UJA-Federation for nearly two decades, overseeing billions in charitable distributions."
+    },
+    {
+      "id": "person-alisa-robbins-doctoroff",
+      "name": "Alisa Robbins Doctoroff",
+      "role": "Former President",
+      "bio": "Philanthropist and communal leader who served as president of UJA-Federation of New York."
+    }
+  ],
+  "pershing-square-capital-management": [
+    {
+      "id": "person-bill-ackman",
+      "name": "Bill Ackman",
+      "role": "Founder and CEO",
+      "bio": "Jewish American billionaire hedge fund manager who founded Pershing Square and is known for activist investing."
+    },
+    {
+      "id": "person-ryan-israel",
+      "name": "Ryan Israel",
+      "role": "Chief Investment Officer",
+      "bio": "Investor who serves as CIO at Pershing Square Capital Management."
+    },
+    {
+      "id": "person-neri-oxman",
+      "name": "Neri Oxman",
+      "role": "Spouse and Collaborator",
+      "bio": "Israeli-American scientist, designer, and former MIT professor married to Bill Ackman."
+    }
+  ],
+  "maimonides-medical-center": [
+    {
+      "id": "person-kenneth-gibbs",
+      "name": "Kenneth Gibbs",
+      "role": "President and CEO",
+      "bio": "Healthcare executive who leads Maimonides Medical Center, Brooklyn's largest hospital."
+    },
+    {
+      "id": "person-pinchas-mandel",
+      "name": "Pinchas Mandel",
+      "role": "Former Board Chairman",
+      "bio": "Orthodox Jewish community leader who served on the board of Maimonides, deeply rooted in Borough Park's Jewish community."
+    },
+    {
+      "id": "person-moses-maimonides",
+      "name": "Moses Maimonides",
+      "role": "Namesake (1138-1204)",
+      "bio": "Preeminent medieval Sephardic Jewish philosopher and physician for whom the medical center is named."
+    }
+  ],
+  "elliott-management-corporation": [
+    {
+      "id": "person-paul-singer",
+      "name": "Paul Singer",
+      "role": "Founder and Co-CEO",
+      "bio": "Jewish American billionaire hedge fund manager who founded Elliott Management in 1977, known as an activist investor."
+    },
+    {
+      "id": "person-jesse-cohn",
+      "name": "Jesse Cohn",
+      "role": "Managing Partner",
+      "bio": "Senior executive at Elliott Management who leads many of the firm's activist campaigns."
+    },
+    {
+      "id": "person-jonathan-pollock",
+      "name": "Jonathan Pollock",
+      "role": "Co-CEO",
+      "bio": "Senior portfolio manager who serves as co-CEO of Elliott Management alongside Paul Singer."
+    }
+  ],
+  "geffen-records": [
+    {
+      "id": "person-david-geffen",
+      "name": "David Geffen",
+      "role": "Founder",
+      "bio": "Jewish American entertainment mogul who founded Geffen Records in 1980 after previously founding Asylum Records."
+    },
+    {
+      "id": "person-john-kalodner",
+      "name": "John Kalodner",
+      "role": "A&R Executive",
+      "bio": "Legendary A&R man who signed major rock acts to Geffen Records during the 1980s and 1990s."
+    },
+    {
+      "id": "person-tom-zutaut",
+      "name": "Tom Zutaut",
+      "role": "A&R Executive",
+      "bio": "Music executive who signed Guns N' Roses and other major acts to Geffen Records."
+    },
+    {
+      "id": "person-eddie-rosenblatt",
+      "name": "Eddie Rosenblatt",
+      "role": "President",
+      "bio": "Record industry executive who served as president of Geffen Records during its commercial peak."
+    }
+  ],
+  "montefiore-medical-center": [
+    {
+      "id": "person-philip-ozuah",
+      "name": "Philip Ozuah",
+      "role": "President and CEO",
+      "bio": "Physician who leads Montefiore Health System, one of the largest healthcare systems in New York."
+    },
+    {
+      "id": "person-moses-montefiore",
+      "name": "Moses Montefiore",
+      "role": "Namesake (1784-1885)",
+      "bio": "British-Jewish philanthropist and sheriff of London for whom the medical center is named."
+    },
+    {
+      "id": "person-steven-safyer",
+      "name": "Steven Safyer",
+      "role": "Former President and CEO",
+      "bio": "Physician and infectious disease specialist who led Montefiore for over a decade."
+    },
+    {
+      "id": "person-judy-aschner",
+      "name": "Judy Aschner",
+      "role": "Senior VP and Chief Quality Officer",
+      "bio": "Healthcare executive involved in Montefiore's quality and patient safety programs."
+    }
+  ],
+  "saban-capital-group": [
+    {
+      "id": "person-haim-saban",
+      "name": "Haim Saban",
+      "role": "Chairman and CEO",
+      "bio": "Egyptian-born Israeli-American billionaire media mogul and prolific Democratic Party donor."
+    },
+    {
+      "id": "person-adam-chesnoff",
+      "name": "Adam Chesnoff",
+      "role": "President and COO",
+      "bio": "Executive overseeing Saban Capital Group's diversified investments in media, entertainment, and real estate."
+    },
+    {
+      "id": "person-cheryl-saban",
+      "name": "Cheryl Saban",
+      "role": "Philanthropist and Family Foundation Leader",
+      "bio": "Author and philanthropist who co-leads the Saban Family Foundation alongside Haim Saban."
+    }
+  ],
+  "central-conference-of-american-rabbis-ccar": [
+    {
+      "id": "person-rick-jacobs",
+      "name": "Rick Jacobs",
+      "role": "Associated Reform Leader",
+      "bio": "Rabbi who led the Union for Reform Judaism and works closely with CCAR on Reform movement initiatives."
+    },
+    {
+      "id": "person-hara-person",
+      "name": "Hara Person",
+      "role": "Chief Executive",
+      "bio": "Rabbi who serves as chief executive of the Central Conference of American Rabbis."
+    },
+    {
+      "id": "person-isaac-mayer-wise",
+      "name": "Isaac Mayer Wise",
+      "role": "Founder (1819-1900)",
+      "bio": "German-born rabbi who founded the CCAR in 1889 as the rabbinical arm of American Reform Judaism."
+    },
+    {
+      "id": "person-dana-evan-kaplan",
+      "name": "Dana Evan Kaplan",
+      "role": "Scholar and Member",
+      "bio": "South African-born Reform rabbi and scholar of contemporary Reform Judaism active in CCAR."
+    }
+  ],
+  "ort-america": [
+    {
+      "id": "person-zvi-peleg",
+      "name": "Zvi Peleg",
+      "role": "Director General of World ORT",
+      "bio": "Israeli executive who has led the global ORT network's vocational education and technology training programs."
+    },
+    {
+      "id": "person-conrad-giles",
+      "name": "Conrad Giles",
+      "role": "ORT America President",
+      "bio": "Jewish communal leader who has served as president of ORT America."
+    },
+    {
+      "id": "person-paul-bernick",
+      "name": "Paul Bernick",
+      "role": "Board Chair",
+      "bio": "American Jewish philanthropist involved in ORT America's fundraising and educational mission."
+    }
+  ],
+  "yivo-institute-for-jewish-research": [
+    {
+      "id": "person-jonathan-brent",
+      "name": "Jonathan Brent",
+      "role": "Executive Director",
+      "bio": "American scholar and publisher who has led YIVO's mission to preserve and study Eastern European Jewish civilization."
+    },
+    {
+      "id": "person-max-weinreich",
+      "name": "Max Weinreich",
+      "role": "Co-Founder (1894-1969)",
+      "bio": "Lithuanian-born Jewish linguist who co-founded YIVO in 1925 and pioneered the academic study of Yiddish."
+    },
+    {
+      "id": "person-ruth-wisse",
+      "name": "Ruth Wisse",
+      "role": "Board Member and Scholar",
+      "bio": "Canadian-American professor of Yiddish literature at Harvard who has been associated with YIVO."
+    },
+    {
+      "id": "person-deborah-lipstadt",
+      "name": "Deborah Lipstadt",
+      "role": "Academic Adviser",
+      "bio": "American historian and Holocaust scholar who has been involved with YIVO's research mission."
+    }
+  ],
+  "tikva-fund": [
+    {
+      "id": "person-roger-hertog",
+      "name": "Roger Hertog",
+      "role": "Chairman",
+      "bio": "Jewish American financier and philanthropist who chairs the Tikvah Fund promoting Jewish intellectual life."
+    },
+    {
+      "id": "person-eric-cohen",
+      "name": "Eric Cohen",
+      "role": "Executive Director",
+      "bio": "Author and Jewish thought leader who has served as executive director of the Tikvah Fund."
+    },
+    {
+      "id": "person-neal-kozodoy",
+      "name": "Neal Kozodoy",
+      "role": "Senior Fellow",
+      "bio": "Former longtime editor of Commentary magazine who serves as a senior fellow at Tikvah."
+    }
+  ],
+  "heschel-school-nyc": [
+    {
+      "id": "person-abraham-joshua-heschel",
+      "name": "Abraham Joshua Heschel",
+      "role": "Namesake (1907-1972)",
+      "bio": "Polish-born Jewish theologian and civil rights activist for whom the school is named."
+    },
+    {
+      "id": "person-ariela-dubler",
+      "name": "Ariela Dubler",
+      "role": "Head of School",
+      "bio": "Educator and leader who heads The Abraham Joshua Heschel School in Manhattan."
+    },
+    {
+      "id": "person-ronn-torossian",
+      "name": "Ronn Torossian",
+      "role": "Notable Parent and Supporter",
+      "bio": "Public relations executive and supporter of the Heschel School community."
+    }
+  ],
+  "related-companies": [
+    {
+      "id": "person-stephen-ross",
+      "name": "Stephen Ross",
+      "role": "Founder and Chairman",
+      "bio": "Jewish American billionaire real estate developer who founded Related Companies and developed Hudson Yards."
+    },
+    {
+      "id": "person-jeff-blau",
+      "name": "Jeff Blau",
+      "role": "CEO",
+      "bio": "Real estate executive who serves as CEO of Related Companies overseeing major development projects."
+    },
+    {
+      "id": "person-bruce-beal-jr",
+      "name": "Bruce Beal Jr.",
+      "role": "President",
+      "bio": "Executive who serves as president of Related Companies and leads key partnerships and developments."
+    }
+  ],
+  "touro-synagogue-newport-ri": [
+    {
+      "id": "person-isaac-touro",
+      "name": "Isaac Touro",
+      "role": "First Hazzan (1738-1783)",
+      "bio": "Dutch-born Sephardic Jewish leader who served as the first hazzan of Touro Synagogue when it was dedicated in 1763."
+    },
+    {
+      "id": "person-judah-touro",
+      "name": "Judah Touro",
+      "role": "Benefactor (1775-1854)",
+      "bio": "Son of Isaac Touro and pioneering Jewish-American philanthropist who funded the synagogue's preservation."
+    },
+    {
+      "id": "person-george-washington",
+      "name": "George Washington",
+      "role": "Historical Figure (Letter to Congregation)",
+      "bio": "First US President who wrote the famous 1790 letter to the Hebrew Congregation promising religious liberty."
+    },
+    {
+      "id": "person-peter-harrison",
+      "name": "Peter Harrison",
+      "role": "Architect (1716-1775)",
+      "bio": "British-American architect who designed Touro Synagogue, now a National Historic Site."
+    }
+  ],
+  "charles-e-smith-jewish-day-school-dc": [
+    {
+      "id": "person-charles-e-smith",
+      "name": "Charles E. Smith",
+      "role": "Namesake (1901-1992)",
+      "bio": "Jewish American real estate developer and philanthropist for whom the school in Rockville, Maryland is named."
+    },
+    {
+      "id": "person-rabbi-jonathan-slater",
+      "name": "Rabbi Jonathan Slater",
+      "role": "Head of School",
+      "bio": "Rabbi and educator who has led Charles E. Smith Jewish Day School."
+    },
+    {
+      "id": "person-robert-h-smith",
+      "name": "Robert H. Smith",
+      "role": "Benefactor (1928-2009)",
+      "bio": "Son of Charles E. Smith and prominent real estate developer who continued the family's philanthropic legacy."
+    }
+  ],
+  "cedars-sinai-medical-center": [
+    {
+      "id": "person-thomas-priselac",
+      "name": "Thomas Priselac",
+      "role": "President and CEO",
+      "bio": "Healthcare executive who has led Cedars-Sinai Medical Center, making it one of the top hospitals in the US."
+    },
+    {
+      "id": "person-marc-rapaport",
+      "name": "Marc Rapaport",
+      "role": "Vice Chair of the Board",
+      "bio": "Philanthropist and board member at Cedars-Sinai Medical Center."
+    },
+    {
+      "id": "person-shlomo-melmed",
+      "name": "Shlomo Melmed",
+      "role": "Executive VP of Academic Affairs and Dean",
+      "bio": "South African-born Israeli-American endocrinologist who leads Cedars-Sinai's academic and research programs."
+    },
+    {
+      "id": "person-barbra-streisand",
+      "name": "Barbra Streisand",
+      "role": "Major Benefactor",
+      "bio": "Jewish American singer and actress whose donation established the Barbra Streisand Women's Heart Center at Cedars-Sinai."
+    }
+  ],
+  "boston-properties": [
+    {
+      "id": "person-mort-zuckerman",
+      "name": "Mort Zuckerman",
+      "role": "Co-Founder and Former Chairman",
+      "bio": "Canadian-born Jewish American media mogul and real estate investor who co-founded Boston Properties."
+    },
+    {
+      "id": "person-owen-thomas",
+      "name": "Owen Thomas",
+      "role": "CEO",
+      "bio": "Real estate executive who serves as CEO of Boston Properties, one of the largest publicly traded office REITs."
+    },
+    {
+      "id": "person-ray-ritchey",
+      "name": "Ray Ritchey",
+      "role": "Senior Executive VP",
+      "bio": "Longtime Boston Properties executive overseeing leasing and development across its portfolio."
+    },
+    {
+      "id": "person-edward-linde",
+      "name": "Edward Linde",
+      "role": "Co-Founder and Former CEO (1941-2010)",
+      "bio": "Jewish American real estate executive who co-founded Boston Properties with Mort Zuckerman."
+    }
+  ],
+  "young-israel-movement": [
+    {
+      "id": "person-israel-friedman",
+      "name": "Israel Friedman",
+      "role": "Founding Member (1918)",
+      "bio": "One of the founding members of the Young Israel movement established on the Lower East Side of Manhattan."
+    },
+    {
+      "id": "person-mordecai-tendler",
+      "name": "Mordecai Tendler",
+      "role": "Former Presidium Member",
+      "bio": "Orthodox rabbi who served in the leadership council of the National Council of Young Israel."
+    },
+    {
+      "id": "person-david-warshaw",
+      "name": "David Warshaw",
+      "role": "President",
+      "bio": "Communal leader who has served as president of the National Council of Young Israel."
+    }
+  ],
+  "bridgewater-associates": [
+    {
+      "id": "person-ray-dalio",
+      "name": "Ray Dalio",
+      "role": "Founder and Former Co-Chairman",
+      "bio": "American billionaire investor who founded Bridgewater Associates in 1975, now the world's largest hedge fund."
+    },
+    {
+      "id": "person-david-mccormick",
+      "name": "David McCormick",
+      "role": "Former CEO (2020-2022)",
+      "bio": "American executive and politician who served as CEO of Bridgewater before running for US Senate."
+    },
+    {
+      "id": "person-nir-bar-dea",
+      "name": "Nir Bar Dea",
+      "role": "CEO",
+      "bio": "Israeli-American executive who became CEO of Bridgewater Associates."
+    },
+    {
+      "id": "person-bob-prince",
+      "name": "Bob Prince",
+      "role": "Co-CIO",
+      "bio": "Senior investment executive who serves as co-chief investment officer at Bridgewater Associates."
+    }
+  ],
+  "milken-community-school-la": [
+    {
+      "id": "person-michael-milken",
+      "name": "Michael Milken",
+      "role": "Namesake and Benefactor",
+      "bio": "Jewish American financier and philanthropist whose family's foundation established the Milken Community School in Los Angeles."
+    },
+    {
+      "id": "person-lowell-milken",
+      "name": "Lowell Milken",
+      "role": "Co-Founder and Benefactor",
+      "bio": "Jewish American businessman and education philanthropist who co-founded the Milken Family Foundation and the school."
+    },
+    {
+      "id": "person-sarah-shulkind",
+      "name": "Sarah Shulkind",
+      "role": "Head of School",
+      "bio": "Educator who leads Milken Community School as its head of school overseeing K-12 programs."
+    }
+  ],
+  "renaissance-technologies": [
+    {
+      "id": "person-jim-simons",
+      "name": "Jim Simons",
+      "role": "Founder and Former Chairman",
+      "bio": "Mathematician and billionaire investor who founded Renaissance Technologies in 1982, creating one of the most successful hedge funds in history."
+    },
+    {
+      "id": "person-henry-laufer",
+      "name": "Henry Laufer",
+      "role": "Chief Scientist (retired)",
+      "bio": "Mathematician who served as chief scientist at Renaissance Technologies and was instrumental in developing its quantitative trading models."
+    },
+    {
+      "id": "person-david-magerman",
+      "name": "David Magerman",
+      "role": "Former Senior Executive",
+      "bio": "Computer scientist and philanthropist who was a key developer of Renaissance Technologies' trading systems for over two decades."
+    },
+    {
+      "id": "person-peter-brown",
+      "name": "Peter Brown",
+      "role": "Co-CEO",
+      "bio": "Computer scientist who has served as co-CEO of Renaissance Technologies since 2010, overseeing the firm's Medallion Fund and other strategies."
+    },
+    {
+      "id": "person-robert-mercer",
+      "name": "Robert Mercer",
+      "role": "Former Co-CEO",
+      "bio": "Computer scientist and investor who served as co-CEO of Renaissance Technologies from 2010 to 2017."
+    }
+  ],
+  "lionsgate-films": [
+    {
+      "id": "person-jon-feltheimer",
+      "name": "Jon Feltheimer",
+      "role": "CEO",
+      "bio": "Entertainment executive who has led Lionsgate as CEO since 2000, overseeing franchises including The Hunger Games and John Wick."
+    },
+    {
+      "id": "person-michael-burns",
+      "name": "Michael Burns",
+      "role": "Vice Chairman",
+      "bio": "Entertainment executive who has served as Lionsgate's vice chairman since 2000, playing a key role in the company's growth and acquisitions."
+    },
+    {
+      "id": "person-avi-arad",
+      "name": "Avi Arad",
+      "role": "Producer and Board Advisor",
+      "bio": "Israeli-American film producer and former Marvel Entertainment CEO who has been involved in Lionsgate productions."
+    },
+    {
+      "id": "person-mark-rachesky",
+      "name": "Mark Rachesky",
+      "role": "Board Member and Major Investor",
+      "bio": "Physician-turned-investor who is a major Lionsgate shareholder and board member through his firm MHR Fund Management."
+    }
+  ],
+  "jewish-council-for-public-affairs-jcpa": [
+    {
+      "id": "person-david-bernstein",
+      "name": "David Bernstein",
+      "role": "Former President and CEO",
+      "bio": "Jewish communal leader who served as president and CEO of JCPA, advocating for Jewish public policy interests."
+    },
+    {
+      "id": "person-cheryl-fishbein",
+      "name": "Cheryl Fishbein",
+      "role": "Former Board Chair",
+      "bio": "Community leader who served as chair of JCPA's board, guiding the organization's advocacy agenda."
+    },
+    {
+      "id": "person-albert-vorspan",
+      "name": "Albert Vorspan",
+      "role": "Historic Leader",
+      "bio": "Longtime Jewish social justice advocate who helped shape JCPA's civil rights and social action agenda over several decades."
+    }
+  ],
+  "baupost-group": [
+    {
+      "id": "person-seth-klarman",
+      "name": "Seth Klarman",
+      "role": "Founder and CEO",
+      "bio": "Billionaire value investor who founded the Baupost Group in 1982 and is one of the most respected hedge fund managers in the world."
+    },
+    {
+      "id": "person-josh-bilenker",
+      "name": "Josh Bilenker",
+      "role": "Former Managing Director",
+      "bio": "Investment professional who served as a managing director at Baupost Group before becoming CEO of biotech firm Loxo Oncology."
+    },
+    {
+      "id": "person-jordan-baruch",
+      "name": "Jordan Baruch",
+      "role": "Managing Director",
+      "bio": "Investment professional who has served as a managing director at Baupost Group, contributing to the firm's value-oriented investment strategy."
+    }
+  ],
+  "ramaz-school-nyc": [
+    {
+      "id": "person-haskel-lookstein",
+      "name": "Haskel Lookstein",
+      "role": "Principal Emeritus and Longtime Head",
+      "bio": "Prominent Modern Orthodox rabbi who led Ramaz School for decades, shaping generations of Jewish students in New York City."
+    },
+    {
+      "id": "person-paul-shaviv",
+      "name": "Paul Shaviv",
+      "role": "Former Head of School",
+      "bio": "Jewish educator who served as head of Ramaz School, bringing extensive experience in Jewish day school administration."
+    },
+    {
+      "id": "person-jonathan-cannon",
+      "name": "Jonathan Cannon",
+      "role": "Head of School",
+      "bio": "Educator who serves as head of school at Ramaz, overseeing its K-12 Modern Orthodox Jewish educational program."
+    }
+  ],
+  "hudson-institute": [
+    {
+      "id": "person-herman-kahn",
+      "name": "Herman Kahn",
+      "role": "Founder",
+      "bio": "Futurist and military strategist who founded the Hudson Institute in 1961, pioneering scenario planning and strategic policy analysis."
+    },
+    {
+      "id": "person-max-singer",
+      "name": "Max Singer",
+      "role": "Co-Founder",
+      "bio": "Policy researcher who co-founded the Hudson Institute with Herman Kahn and contributed to its early strategic studies."
+    },
+    {
+      "id": "person-kenneth-weinstein",
+      "name": "Kenneth Weinstein",
+      "role": "Former President and CEO",
+      "bio": "Policy scholar who led the Hudson Institute as president and CEO, later serving as U.S. Ambassador to Japan."
+    },
+    {
+      "id": "person-walter-russell-mead",
+      "name": "Walter Russell Mead",
+      "role": "Distinguished Fellow",
+      "bio": "Historian and foreign affairs scholar who serves as a distinguished fellow at Hudson Institute, writing extensively on American foreign policy."
+    }
+  ],
+  "camp-ramah": [
+    {
+      "id": "person-sylvia-ettenberg",
+      "name": "Sylvia Ettenberg",
+      "role": "Co-Founder",
+      "bio": "Educator who co-founded Camp Ramah in 1947 as part of the Conservative movement's effort to immerse youth in Jewish living."
+    },
+    {
+      "id": "person-moshe-davis",
+      "name": "Moshe Davis",
+      "role": "Co-Founder",
+      "bio": "Scholar and Jewish educator who helped establish Camp Ramah as an extension of the Jewish Theological Seminary's educational mission."
+    },
+    {
+      "id": "person-mitchell-cohen",
+      "name": "Mitchell Cohen",
+      "role": "National Director",
+      "bio": "Rabbi who served as national director of the National Ramah Commission, overseeing the network of Ramah camps across North America."
+    },
+    {
+      "id": "person-sheldon-dorph",
+      "name": "Sheldon Dorph",
+      "role": "Former National Director",
+      "bio": "Rabbi and educator who served as national Ramah director, guiding the camping movement's growth and educational philosophy."
+    }
+  ],
+  "simon-property-group": [
+    {
+      "id": "person-david-simon",
+      "name": "David Simon",
+      "role": "Chairman and CEO",
+      "bio": "Real estate executive who leads Simon Property Group as chairman and CEO, making it the largest real estate investment trust in the United States."
+    },
+    {
+      "id": "person-melvin-simon",
+      "name": "Melvin Simon",
+      "role": "Co-Founder (deceased)",
+      "bio": "Real estate developer who co-founded Simon Property Group, building it into the largest shopping mall operator in the country before his death in 2009."
+    },
+    {
+      "id": "person-herbert-simon",
+      "name": "Herbert Simon",
+      "role": "Co-Founder and Co-Chairman Emeritus",
+      "bio": "Billionaire real estate developer who co-founded Simon Property Group alongside his brother Melvin and also owned the Indiana Pacers."
+    },
+    {
+      "id": "person-richard-sokolov",
+      "name": "Richard Sokolov",
+      "role": "Former President and COO",
+      "bio": "Real estate executive who served as president and chief operating officer of Simon Property Group for many years."
+    }
+  ],
+  "sony-music-legacy": [
+    {
+      "id": "person-clive-davis",
+      "name": "Clive Davis",
+      "role": "Former President and Chief Creative Officer",
+      "bio": "Legendary music executive who led Columbia Records and later Arista Records, discovering artists like Whitney Houston and Bruce Springsteen."
+    },
+    {
+      "id": "person-walter-yetnikoff",
+      "name": "Walter Yetnikoff",
+      "role": "Former President of CBS Records",
+      "bio": "Music executive who led CBS Records during the Michael Jackson Thriller era and oversaw its sale to Sony in 1988."
+    },
+    {
+      "id": "person-goddard-lieberson",
+      "name": "Goddard Lieberson",
+      "role": "Former President of Columbia Records",
+      "bio": "Music executive who served as president of Columbia Records, championing original Broadway cast recordings and classical music."
+    },
+    {
+      "id": "person-doug-morris",
+      "name": "Doug Morris",
+      "role": "Former Chairman of Sony Music",
+      "bio": "Longtime music industry executive who served as chairman of Sony Music Entertainment after previously leading Universal Music Group."
+    }
+  ],
+  "universal-music-group-us-operations": [
+    {
+      "id": "person-lucian-grainge",
+      "name": "Lucian Grainge",
+      "role": "Chairman and CEO",
+      "bio": "British-born music executive who leads Universal Music Group as chairman and CEO, overseeing the world's largest music company."
+    },
+    {
+      "id": "person-doug-morris-umg",
+      "name": "Doug Morris",
+      "role": "Former Chairman and CEO",
+      "bio": "Veteran music executive who served as chairman and CEO of Universal Music Group, building its position as the top global music company."
+    },
+    {
+      "id": "person-monte-lipman",
+      "name": "Monte Lipman",
+      "role": "Founder and Chairman of Republic Records",
+      "bio": "Music executive who co-founded Republic Records, a flagship UMG label home to artists like Taylor Swift and Drake."
+    },
+    {
+      "id": "person-avery-lipman",
+      "name": "Avery Lipman",
+      "role": "Co-Founder and Vice Chairman of Republic Records",
+      "bio": "Music executive who co-founded Republic Records with his brother Monte, helping develop it into one of UMG's most successful labels."
+    },
+    {
+      "id": "person-david-geffen",
+      "name": "David Geffen",
+      "role": "Founder of Geffen Records",
+      "bio": "Billionaire entertainment mogul who founded Geffen Records, which became a key part of Universal Music Group's label portfolio."
+    }
+  ],
+  "northwell-health-formerly-north-shore-lij": [
+    {
+      "id": "person-michael-dowling",
+      "name": "Michael Dowling",
+      "role": "President and CEO",
+      "bio": "Healthcare executive who has led Northwell Health as president and CEO, growing it into New York State's largest healthcare provider."
+    },
+    {
+      "id": "person-saul-katz",
+      "name": "Saul Katz",
+      "role": "Board of Trustees Member",
+      "bio": "Real estate executive and New York Mets co-owner who served as a key trustee of the Northwell Health system."
+    },
+    {
+      "id": "person-lawrence-smith",
+      "name": "Lawrence Smith",
+      "role": "Former Physician-in-Chief",
+      "bio": "Physician and medical educator who served as physician-in-chief and founding dean of the Zucker School of Medicine at Northwell Health."
+    }
+  ],
+  "urj-camp-newman-camp-george": [
+    {
+      "id": "person-rick-jacobs",
+      "name": "Rick Jacobs",
+      "role": "President of the Union for Reform Judaism",
+      "bio": "Rabbi who leads the Union for Reform Judaism, the movement that operates Camp Newman and other Reform Jewish summer camps."
+    },
+    {
+      "id": "person-daryl-messinger",
+      "name": "Daryl Messinger",
+      "role": "Former URJ Board Chair",
+      "bio": "Communal leader who served as chair of the Union for Reform Judaism board, supporting its network of camps and programs."
+    },
+    {
+      "id": "person-paul-kipnes",
+      "name": "Paul Kipnes",
+      "role": "Camp Rabbi and URJ Leader",
+      "bio": "Reform rabbi and educator who has been closely associated with URJ camping programs including Camp Newman in California."
+    }
+  ],
+  "charles-bronfman-foundation": [
+    {
+      "id": "person-charles-bronfman",
+      "name": "Charles Bronfman",
+      "role": "Founder",
+      "bio": "Canadian billionaire and Seagram heir who established the Andrea and Charles Bronfman Philanthropies to advance Jewish identity and heritage."
+    },
+    {
+      "id": "person-jeffrey-solomon",
+      "name": "Jeffrey Solomon",
+      "role": "President",
+      "bio": "Nonprofit executive who served as president of the Andrea and Charles Bronfman Philanthropies, directing its Jewish identity initiatives."
+    },
+    {
+      "id": "person-john-ruskay",
+      "name": "John Ruskay",
+      "role": "Senior Advisor",
+      "bio": "Jewish communal leader who joined the Bronfman Philanthropies as a senior advisor after leading UJA-Federation of New York."
+    }
+  ],
+  "kehilath-jeshurun-nyc": [
+    {
+      "id": "person-haskel-lookstein-kj",
+      "name": "Haskel Lookstein",
+      "role": "Rabbi Emeritus",
+      "bio": "Prominent Modern Orthodox rabbi who led Congregation Kehilath Jeshurun for over five decades, becoming one of the most influential rabbis in America."
+    },
+    {
+      "id": "person-chaim-steinmetz",
+      "name": "Chaim Steinmetz",
+      "role": "Senior Rabbi",
+      "bio": "Rabbi who serves as the senior rabbi of Kehilath Jeshurun, succeeding Rabbi Lookstein at the historic Upper East Side synagogue."
+    },
+    {
+      "id": "person-joseph-lookstein",
+      "name": "Joseph Lookstein",
+      "role": "Former Senior Rabbi (deceased)",
+      "bio": "Influential Modern Orthodox rabbi who led Kehilath Jeshurun prior to his son Haskel, building the congregation into a major Jewish institution."
+    }
+  ],
+  "jim-joseph-foundation": [
+    {
+      "id": "person-jim-joseph",
+      "name": "Jim Joseph",
+      "role": "Founder (deceased)",
+      "bio": "Businessman and philanthropist who established the Jim Joseph Foundation to support Jewish education before his death in 2002."
+    },
+    {
+      "id": "person-chip-edelsberg",
+      "name": "Chip Edelsberg",
+      "role": "Executive Director",
+      "bio": "Jewish education advocate who served as executive director of the Jim Joseph Foundation, directing grants to Jewish educational initiatives."
+    },
+    {
+      "id": "person-al-levitt",
+      "name": "Al Levitt",
+      "role": "Former President",
+      "bio": "Foundation executive who helped establish and lead the Jim Joseph Foundation's grantmaking in Jewish education and engagement."
+    }
+  ],
+  "sar-academy-high-school": [
+    {
+      "id": "person-tully-harcsztark",
+      "name": "Tully Harcsztark",
+      "role": "Founding Principal of SAR High School",
+      "bio": "Innovative Jewish educator who founded SAR High School in the Bronx, creating a model for open Modern Orthodox secondary education."
+    },
+    {
+      "id": "person-binyamin-krauss",
+      "name": "Binyamin Krauss",
+      "role": "Head of SAR Academy",
+      "bio": "Rabbi and educator who leads SAR Academy, the Modern Orthodox elementary school in Riverdale, New York."
+    },
+    {
+      "id": "person-rivka-kahan",
+      "name": "Rivka Kahan",
+      "role": "Head of School",
+      "bio": "Educator who has served in school leadership at SAR Academy, contributing to its mission of rigorous Jewish and secular education."
+    }
+  ],
+  "paul-weiss-rifkind-wharton-garrison": [
+    {
+      "id": "person-brad-karp",
+      "name": "Brad Karp",
+      "role": "Chairman",
+      "bio": "Corporate attorney who serves as chairman of Paul Weiss, leading one of the most prominent law firms in the United States."
+    },
+    {
+      "id": "person-simon-rifkind",
+      "name": "Simon Rifkind",
+      "role": "Name Partner and Former Federal Judge (deceased)",
+      "bio": "Distinguished jurist and attorney who served as a federal judge before becoming a name partner at Paul Weiss, advising major corporations and governments."
+    },
+    {
+      "id": "person-martin-flumenbaum",
+      "name": "Martin Flumenbaum",
+      "role": "Partner",
+      "bio": "Litigation partner at Paul Weiss known for handling high-profile white-collar defense and securities cases."
+    },
+    {
+      "id": "person-alan-kornberg",
+      "name": "Alan Kornberg",
+      "role": "Partner and Bankruptcy Practice Chair",
+      "bio": "Attorney who chairs Paul Weiss's bankruptcy and corporate reorganization practice, one of the leading restructuring groups in the country."
+    }
+  ],
+  "middle-east-media-research-institute-memri": [
+    {
+      "id": "person-yigal-carmon",
+      "name": "Yigal Carmon",
+      "role": "Founder and President",
+      "bio": "Israeli-born former military intelligence officer who founded MEMRI in 1998 to monitor and translate Middle Eastern media."
+    },
+    {
+      "id": "person-meyrav-wurmser",
+      "name": "Meyrav Wurmser",
+      "role": "Co-Founder",
+      "bio": "Israeli-American political scientist who co-founded MEMRI and later directed the Center for Middle East Policy at the Hudson Institute."
+    },
+    {
+      "id": "person-steven-stalinsky",
+      "name": "Steven Stalinsky",
+      "role": "Executive Director",
+      "bio": "Researcher and media analyst who serves as executive director of MEMRI, overseeing its monitoring and translation operations."
+    }
+  ],
+  "microsoft-israel-r-d": [
+    {
+      "id": "person-michal-braverman-blumenstyk",
+      "name": "Michal Braverman-Blumenstyk",
+      "role": "Former General Manager",
+      "bio": "Israeli technology executive who led Microsoft's Israel R&D Center, overseeing cybersecurity and cloud computing initiatives."
+    },
+    {
+      "id": "person-yoram-yaacovi",
+      "name": "Yoram Yaacovi",
+      "role": "Former General Manager",
+      "bio": "Technology executive who led Microsoft Israel's R&D Center for many years, growing it into one of Microsoft's largest development hubs outside the U.S."
+    },
+    {
+      "id": "person-ronit-atad",
+      "name": "Ronit Atad",
+      "role": "Managing Director",
+      "bio": "Technology executive who has served in senior leadership at Microsoft Israel, managing its R&D operations and strategic partnerships."
+    }
+  ],
+  "klarman-family-foundation": [
+    {
+      "id": "person-seth-klarman-kff",
+      "name": "Seth Klarman",
+      "role": "Co-Founder and Trustee",
+      "bio": "Billionaire hedge fund manager and Baupost Group CEO who co-founded the Klarman Family Foundation with his wife Beth."
+    },
+    {
+      "id": "person-beth-klarman",
+      "name": "Beth Klarman",
+      "role": "Co-Founder and President",
+      "bio": "Philanthropist who co-founded and leads the Klarman Family Foundation, focusing on health, education, and Jewish community causes."
+    },
+    {
+      "id": "person-jonathan-jacobson",
+      "name": "Jonathan Jacobson",
+      "role": "Board Member",
+      "bio": "Investment professional and civic leader who serves on the board of the Klarman Family Foundation."
+    }
+  ],
+  "breitbart-news": [
+    {
+      "id": "person-andrew-breitbart",
+      "name": "Andrew Breitbart",
+      "role": "Founder (deceased)",
+      "bio": "Conservative media entrepreneur who founded Breitbart News in 2007, having been raised in a Jewish household in Los Angeles."
+    },
+    {
+      "id": "person-larry-solov",
+      "name": "Larry Solov",
+      "role": "CEO",
+      "bio": "Attorney and media executive who serves as CEO of Breitbart News, having co-founded the site with his childhood friend Andrew Breitbart."
+    },
+    {
+      "id": "person-joel-pollak",
+      "name": "Joel Pollak",
+      "role": "Senior Editor-at-Large",
+      "bio": "South African-born journalist and attorney who serves as senior editor-at-large at Breitbart News, covering politics and policy."
+    },
+    {
+      "id": "person-alex-marlow",
+      "name": "Alex Marlow",
+      "role": "Editor-in-Chief",
+      "bio": "Journalist and author who serves as editor-in-chief of Breitbart News, leading its editorial direction and daily operations."
+    }
+  ],
+  "las-vegas-raiders-mark-davis": [
+    {
+      "id": "person-mark-davis",
+      "name": "Mark Davis",
+      "role": "Owner and Managing General Partner",
+      "bio": "Son of legendary owner Al Davis who inherited the Las Vegas Raiders, overseeing the team's relocation from Oakland to Las Vegas."
+    },
+    {
+      "id": "person-al-davis",
+      "name": "Al Davis",
+      "role": "Former Owner and General Partner (deceased)",
+      "bio": "Pioneering football executive who owned the Raiders for over four decades and was inducted into the Pro Football Hall of Fame."
+    },
+    {
+      "id": "person-amy-trask",
+      "name": "Amy Trask",
+      "role": "Former CEO",
+      "bio": "Sports executive who served as CEO of the Oakland Raiders, becoming one of the highest-ranking women in professional sports."
+    }
+  ],
+  "mack-cali-realty-veris-residential": [
+    {
+      "id": "person-william-mack-mcr",
+      "name": "William Mack",
+      "role": "Co-Founder and Former Chairman",
+      "bio": "Real estate investor who co-founded Mack-Cali Realty and built a major portfolio of office and residential properties in the New York metro area."
+    },
+    {
+      "id": "person-mitchell-hersh",
+      "name": "Mitchell Hersh",
+      "role": "Former President and CEO",
+      "bio": "Real estate executive who led Mack-Cali Realty as president and CEO, overseeing its commercial real estate portfolio in the northeastern United States."
+    },
+    {
+      "id": "person-mahbod-nia",
+      "name": "Mahbod Nia",
+      "role": "CEO of Veris Residential",
+      "bio": "Real estate executive who leads Veris Residential, the company that evolved from Mack-Cali Realty's transformation into a multifamily-focused REIT."
+    }
+  ],
+  "oracle-israel-operations": [
+    {
+      "id": "person-larry-ellison",
+      "name": "Larry Ellison",
+      "role": "Founder and Chairman of Oracle",
+      "bio": "Billionaire technology executive who founded Oracle Corporation, born to a Jewish mother and raised in Chicago."
+    },
+    {
+      "id": "person-safra-catz",
+      "name": "Safra Catz",
+      "role": "CEO of Oracle",
+      "bio": "Israeli-born business executive who serves as CEO of Oracle Corporation, having been with the company since 1999."
+    },
+    {
+      "id": "person-barak-regev",
+      "name": "Barak Regev",
+      "role": "Former VP and General Manager of Oracle Israel",
+      "bio": "Technology executive who led Oracle's Israel development center, managing cloud infrastructure and enterprise software projects."
+    }
+  ],
+  "camp-young-judaea": [
+    {
+      "id": "person-henrietta-szold",
+      "name": "Henrietta Szold",
+      "role": "Founder of Hadassah (deceased)",
+      "bio": "Pioneer of American Zionism who founded Hadassah in 1912, the organization that later established the Young Judaea movement and camps."
+    },
+    {
+      "id": "person-marcie-natan",
+      "name": "Marcie Natan",
+      "role": "Former Hadassah National President",
+      "bio": "Communal leader who served as Hadassah national president, the organization that sponsors and oversees Camp Young Judaea."
+    },
+    {
+      "id": "person-david-eden",
+      "name": "David Eden",
+      "role": "Former Camp Director",
+      "bio": "Educator who served as longtime director of Camp Young Judaea Texas, leading one of the movement's flagship summer programs."
+    }
+  ],
+  "extell-development-company": [
+    {
+      "id": "person-gary-barnett",
+      "name": "Gary Barnett",
+      "role": "Founder and President",
+      "bio": "Israeli-born real estate developer who founded Extell Development Company, building luxury skyscrapers including One57 and Central Park Tower in Manhattan."
+    },
+    {
+      "id": "person-dina-lewis",
+      "name": "Dina Lewis",
+      "role": "Senior Vice President of Sales",
+      "bio": "Real estate executive who oversees luxury residential sales at Extell Development's major Manhattan projects."
+    },
+    {
+      "id": "person-yael-barnett",
+      "name": "Yael Barnett",
+      "role": "Senior Vice President",
+      "bio": "Real estate executive and family member serving in senior leadership at Extell Development Company."
+    }
+  ],
+  "elektra-records": [
+    {
+      "id": "person-jac-holzman",
+      "name": "Jac Holzman",
+      "role": "Founder",
+      "bio": "Music industry pioneer who founded Elektra Records in 1950, signing acts like The Doors, Love, and The Stooges."
+    },
+    {
+      "id": "person-david-geffen-elektra",
+      "name": "David Geffen",
+      "role": "Former Chairman",
+      "bio": "Entertainment mogul who merged his Asylum Records with Elektra, serving as chairman of Elektra/Asylum Records in the 1970s."
+    },
+    {
+      "id": "person-bob-krasnow",
+      "name": "Bob Krasnow",
+      "role": "Former Chairman",
+      "bio": "Music executive who served as chairman of Elektra Records in the 1980s, signing artists like Tracy Chapman and Metallica."
+    }
+  ],
+  "jewish-funders-network": [
+    {
+      "id": "person-andres-spokoiny",
+      "name": "Andres Spokoiny",
+      "role": "President and CEO",
+      "bio": "Argentine-born Jewish communal leader who serves as president and CEO of the Jewish Funders Network, connecting philanthropists worldwide."
+    },
+    {
+      "id": "person-mark-charendoff",
+      "name": "Mark Charendoff",
+      "role": "Former President",
+      "bio": "Jewish philanthropic leader who served as president of the Jewish Funders Network before leading the Maimonides Fund."
+    },
+    {
+      "id": "person-eric-goldstein",
+      "name": "Eric Goldstein",
+      "role": "Board Member",
+      "bio": "Jewish communal leader and UJA-Federation executive who has served on the Jewish Funders Network board."
+    }
+  ],
+  "anaheim-ducks-henry-samueli": [
+    {
+      "id": "person-henry-samueli",
+      "name": "Henry Samueli",
+      "role": "Owner and Chairman",
+      "bio": "Billionaire engineer and Broadcom co-founder who purchased the Anaheim Ducks in 2005 with his wife Susan."
+    },
+    {
+      "id": "person-susan-samueli",
+      "name": "Susan Samueli",
+      "role": "Co-Owner",
+      "bio": "Philanthropist who co-owns the Anaheim Ducks with her husband Henry and is active in health and education initiatives in Orange County."
+    },
+    {
+      "id": "person-tim-ryan",
+      "name": "Tim Ryan",
+      "role": "President of Business Operations",
+      "bio": "Sports executive who oversees the business operations of the Anaheim Ducks and Honda Center."
+    }
+  ],
+  "minnesota-timberwolves-glen-taylor-marc-lore-alex-rodriguez": [
+    {
+      "id": "person-marc-lore",
+      "name": "Marc Lore",
+      "role": "Co-Owner",
+      "bio": "Entrepreneur and former Walmart eCommerce CEO who became co-owner of the Minnesota Timberwolves, bringing innovation to sports ownership."
+    },
+    {
+      "id": "person-alex-rodriguez",
+      "name": "Alex Rodriguez",
+      "role": "Co-Owner",
+      "bio": "Former MLB star who partnered with Marc Lore to purchase a majority stake in the Minnesota Timberwolves and Lynx."
+    },
+    {
+      "id": "person-glen-taylor",
+      "name": "Glen Taylor",
+      "role": "Former Owner",
+      "bio": "Billionaire businessman who owned the Minnesota Timberwolves for nearly three decades before selling to Lore and Rodriguez."
+    }
+  ],
+  "jewish-united-fund-of-metropolitan-chicago": [
+    {
+      "id": "person-steven-nasatir",
+      "name": "Steven Nasatir",
+      "role": "Former President",
+      "bio": "Jewish communal leader who served as longtime president of the Jewish United Fund of Metropolitan Chicago, growing it into a major federation."
+    },
+    {
+      "id": "person-michael-glasser",
+      "name": "Michael Glasser",
+      "role": "Former Board Chair",
+      "bio": "Business leader who served as chair of the JUF board, guiding the organization's philanthropic and community-building efforts in Chicago."
+    },
+    {
+      "id": "person-lonnie-nasatir",
+      "name": "Lonnie Nasatir",
+      "role": "Regional Director",
+      "bio": "Communal professional who has served in senior leadership of the Jewish United Fund and Jewish Federation of Metropolitan Chicago."
+    }
+  ],
+  "jewish-democratic-council-of-america": [
+    {
+      "id": "person-halie-soifer",
+      "name": "Halie Soifer",
+      "role": "CEO",
+      "bio": "Former national security advisor who serves as CEO of the Jewish Democratic Council of America, advocating for Jewish engagement with the Democratic Party."
+    },
+    {
+      "id": "person-ron-klein",
+      "name": "Ron Klein",
+      "role": "Board Chair",
+      "bio": "Former U.S. congressman from Florida who chairs the JDCA board, working to strengthen Jewish support for Democratic candidates."
+    },
+    {
+      "id": "person-alan-solow",
+      "name": "Alan Solow",
+      "role": "Advisory Council Member",
+      "bio": "Attorney and former chairman of the Conference of Presidents of Major American Jewish Organizations who advises the JDCA."
+    }
+  ],
+  "mack-real-estate-group": [
+    {
+      "id": "person-william-mack",
+      "name": "William Mack",
+      "role": "Founder and Chairman",
+      "bio": "Prominent real estate developer who founded Mack Real Estate Group and previously built the Mack-Cali Realty enterprise."
+    },
+    {
+      "id": "person-richard-mack",
+      "name": "Richard Mack",
+      "role": "CEO",
+      "bio": "Real estate executive who serves as CEO of Mack Real Estate Group, managing global credit and equity investments in real estate."
+    },
+    {
+      "id": "person-peter-sotoloff",
+      "name": "Peter Sotoloff",
+      "role": "Senior Partner",
+      "bio": "Real estate investment professional who serves as a senior partner at Mack Real Estate Group, overseeing credit strategies."
+    }
+  ],
+  "the-times-of-israel-us-bureau": [
+    {
+      "id": "person-david-horovitz",
+      "name": "David Horovitz",
+      "role": "Founding Editor",
+      "bio": "Veteran journalist who founded The Times of Israel in 2012, previously serving as editor of The Jerusalem Post."
+    },
+    {
+      "id": "person-seth-klarman-toi",
+      "name": "Seth Klarman",
+      "role": "Founding Investor",
+      "bio": "Hedge fund manager and philanthropist who provided founding investment capital for The Times of Israel's launch."
+    },
+    {
+      "id": "person-eric-cortellessa",
+      "name": "Eric Cortellessa",
+      "role": "Washington Bureau Chief",
+      "bio": "Journalist who serves as Washington bureau chief for The Times of Israel, covering American politics and U.S.-Israel relations."
+    }
+  ],
+  "combined-jewish-philanthropies-boston": [
+    {
+      "id": "person-barry-shrage",
+      "name": "Barry Shrage",
+      "role": "Former President",
+      "bio": "Jewish communal leader who served as president of CJP Boston for over two decades, transforming it into a model federation."
+    },
+    {
+      "id": "person-marc-baker",
+      "name": "Marc Baker",
+      "role": "President and CEO",
+      "bio": "Nonprofit executive who leads CJP Boston as president and CEO, overseeing philanthropic programs for Greater Boston's Jewish community."
+    },
+    {
+      "id": "person-cynthia-shulman",
+      "name": "Cynthia Shulman",
+      "role": "Board Chair",
+      "bio": "Communal leader who has served on the CJP board, guiding philanthropic strategy for Boston's Jewish community."
+    }
+  ],
+  "caa-creative-artists-agency": [
+    {
+      "id": "person-michael-ovitz",
+      "name": "Michael Ovitz",
+      "role": "Co-Founder",
+      "bio": "Legendary talent agent who co-founded Creative Artists Agency in 1975, transforming the entertainment industry's talent representation model."
+    },
+    {
+      "id": "person-ron-meyer",
+      "name": "Ron Meyer",
+      "role": "Co-Founder",
+      "bio": "Entertainment executive who co-founded CAA before becoming president and vice chairman of Universal Studios."
+    },
+    {
+      "id": "person-richard-lovett",
+      "name": "Richard Lovett",
+      "role": "President",
+      "bio": "Talent agent who has served as president of CAA, representing some of the biggest names in entertainment."
+    },
+    {
+      "id": "person-lee-gabler",
+      "name": "Lee Gabler",
+      "role": "Managing Partner Emeritus",
+      "bio": "Veteran talent agent who built CAA's television department and served as managing partner for decades."
+    }
+  ],
+  "lefrak-organization": [
+    {
+      "id": "person-richard-lefrak",
+      "name": "Richard LeFrak",
+      "role": "Chairman and CEO",
+      "bio": "Billionaire real estate developer who leads the LeFrak Organization, managing a vast portfolio including LeFrak City in Queens, New York."
+    },
+    {
+      "id": "person-harrison-lefrak",
+      "name": "Harrison LeFrak",
+      "role": "President",
+      "bio": "Real estate executive and third-generation family member who serves as president of the LeFrak Organization."
+    },
+    {
+      "id": "person-samuel-lefrak",
+      "name": "Samuel LeFrak",
+      "role": "Former Chairman (deceased)",
+      "bio": "Legendary real estate developer who built the LeFrak Organization into one of America's largest privately held real estate empires."
+    }
+  ],
+  "carolina-hurricanes-tom-dundon": [
+    {
+      "id": "person-tom-dundon",
+      "name": "Tom Dundon",
+      "role": "Majority Owner and Governor",
+      "bio": "Billionaire businessman and founder of Adara Enterprises who acquired a majority stake in the Carolina Hurricanes in 2018."
+    },
+    {
+      "id": "person-don-waddell",
+      "name": "Don Waddell",
+      "role": "President and General Manager",
+      "bio": "Hockey executive who has served as president and general manager of the Carolina Hurricanes, overseeing the team's operations."
+    },
+    {
+      "id": "person-peter-karmanos-jr",
+      "name": "Peter Karmanos Jr.",
+      "role": "Former Owner",
+      "bio": "Technology entrepreneur who owned the Carolina Hurricanes from their relocation from Hartford through their 2006 Stanley Cup championship."
+    }
+  ],
+  "moment-magazine": [
+    {
+      "id": "person-elie-wiesel",
+      "name": "Elie Wiesel",
+      "role": "Co-Founder (deceased)",
+      "bio": "Nobel laureate, Holocaust survivor, and author who co-founded Moment Magazine in 1975 as an independent voice for Jewish thought."
+    },
+    {
+      "id": "person-leonard-fein",
+      "name": "Leonard Fein",
+      "role": "Co-Founder (deceased)",
+      "bio": "Writer and social activist who co-founded Moment Magazine with Elie Wiesel to foster independent Jewish journalism."
+    },
+    {
+      "id": "person-nadine-epstein",
+      "name": "Nadine Epstein",
+      "role": "Editor-in-Chief and Publisher",
+      "bio": "Journalist and author who serves as editor-in-chief of Moment Magazine, leading its coverage of Jewish politics, culture, and ideas."
+    }
+  ],
+  "congregation-beth-elohim-brooklyn": [
+    {
+      "id": "person-rachel-timoner",
+      "name": "Rachel Timoner",
+      "role": "Senior Rabbi",
+      "bio": "Reform rabbi who serves as senior rabbi of Congregation Beth Elohim in Park Slope, Brooklyn, one of the most prominent Reform synagogues in New York."
+    },
+    {
+      "id": "person-andy-bachman",
+      "name": "Andy Bachman",
+      "role": "Former Senior Rabbi",
+      "bio": "Rabbi and writer who led Congregation Beth Elohim in Brooklyn, revitalizing the historic synagogue's community programming."
+    },
+    {
+      "id": "person-marc-katz",
+      "name": "Marc Katz",
+      "role": "Associate Rabbi",
+      "bio": "Reform rabbi and author who has served as associate rabbi at Congregation Beth Elohim in Brooklyn."
+    }
+  ],
+  "skadden-arps-slate-meagher-flom": [
+    {
+      "id": "person-joseph-flom",
+      "name": "Joseph Flom",
+      "role": "Name Partner (deceased)",
+      "bio": "Pioneering corporate lawyer who built Skadden Arps into a global legal powerhouse and defined modern mergers and acquisitions practice."
+    },
+    {
+      "id": "person-kenneth-bialkin",
+      "name": "Kenneth Bialkin",
+      "role": "Former Senior Partner",
+      "bio": "Attorney and Jewish communal leader who served as a senior partner at Skadden while also chairing the ADL and Conference of Presidents."
+    },
+    {
+      "id": "person-eric-friedman",
+      "name": "Eric Friedman",
+      "role": "Executive Partner",
+      "bio": "Attorney who has served as executive partner of Skadden Arps, helping manage the firm's operations across its global offices."
+    },
+    {
+      "id": "person-barry-garfinkel",
+      "name": "Barry Garfinkel",
+      "role": "Former Partner",
+      "bio": "International arbitration attorney who served as a partner at Skadden Arps and was a leader in international dispute resolution."
+    }
+  ],
+  "rabbinical-council-of-america-rca": [
+    {
+      "id": "person-mark-dratch",
+      "name": "Mark Dratch",
+      "role": "Executive Vice President",
+      "bio": "Rabbi who serves as executive vice president of the Rabbinical Council of America, the leading Modern Orthodox rabbinical organization."
+    },
+    {
+      "id": "person-hershel-schachter",
+      "name": "Hershel Schachter",
+      "role": "Senior Posek",
+      "bio": "Prominent Orthodox rabbi and Talmudic scholar at Yeshiva University who serves as a leading halachic authority for the RCA."
+    },
+    {
+      "id": "person-mordechai-willig",
+      "name": "Mordechai Willig",
+      "role": "Posek and Halachic Authority",
+      "bio": "Senior rabbinical authority and Yeshiva University rosh yeshiva who serves on the RCA's halachic advisory panels."
+    }
+  ],
+  "friends-of-the-idf-fidf-additional-chapters": [
+    {
+      "id": "person-steven-weil",
+      "name": "Steven Weil",
+      "role": "National Director and CEO",
+      "bio": "Former Orthodox Union executive who serves as national director and CEO of Friends of the Israel Defense Forces."
+    },
+    {
+      "id": "person-haim-saban",
+      "name": "Haim Saban",
+      "role": "Major Donor and Supporter",
+      "bio": "Israeli-American media mogul and billionaire philanthropist who is one of FIDF's most prominent supporters and fundraisers."
+    },
+    {
+      "id": "person-arthur-stark",
+      "name": "Arthur Stark",
+      "role": "National Board Member",
+      "bio": "Business leader and philanthropist who serves on the FIDF national board, supporting programs for Israeli soldiers and veterans."
+    }
+  ],
+  "salomon-brothers-historic": [
+    {
+      "id": "person-william-r-salomon",
+      "name": "William R. Salomon",
+      "role": "Former Managing Partner",
+      "bio": "Financier known as Billy Salomon who led the firm as managing partner, growing Salomon Brothers into a Wall Street powerhouse."
+    },
+    {
+      "id": "person-john-gutfreund",
+      "name": "John Gutfreund",
+      "role": "Former Chairman and CEO",
+      "bio": "Investment banker known as the King of Wall Street who led Salomon Brothers during the 1980s bond trading boom."
+    },
+    {
+      "id": "person-michael-bloomberg",
+      "name": "Michael Bloomberg",
+      "role": "Former General Partner",
+      "bio": "Billionaire businessman and former New York City mayor who started his career at Salomon Brothers before founding Bloomberg LP."
+    },
+    {
+      "id": "person-lewis-ranieri",
+      "name": "Lewis Ranieri",
+      "role": "Former Vice Chairman",
+      "bio": "Bond trader who pioneered mortgage-backed securities at Salomon Brothers, transforming the modern finance industry."
+    }
+  ],
+  "jewish-agency-for-israel-us-office": [
+    {
+      "id": "person-natan-sharansky",
+      "name": "Natan Sharansky",
+      "role": "Former Chairman",
+      "bio": "Soviet-era dissident and Israeli politician who served as chairman of the Jewish Agency for Israel, championing Jewish immigration."
+    },
+    {
+      "id": "person-isaac-herzog",
+      "name": "Isaac Herzog",
+      "role": "Former Chairman",
+      "bio": "Israeli politician who served as chairman of the Jewish Agency before becoming President of the State of Israel."
+    },
+    {
+      "id": "person-mark-wilf",
+      "name": "Mark Wilf",
+      "role": "Chair of the Board of Governors",
+      "bio": "Real estate developer and Minnesota Vikings co-owner who chairs the Jewish Agency's Board of Governors."
+    },
+    {
+      "id": "person-amira-ahronoviz",
+      "name": "Amira Ahronoviz",
+      "role": "Director General",
+      "bio": "Israeli civil servant who has served as director general of the Jewish Agency, managing its worldwide operations."
+    }
+  ],
+  "magen-david-adom-usa": [
+    {
+      "id": "person-mark-lebow",
+      "name": "Mark Lebow",
+      "role": "Former National Chair",
+      "bio": "Business leader and philanthropist who served as national chair of American Friends of Magen David Adom."
+    },
+    {
+      "id": "person-alan-gill",
+      "name": "Alan Gill",
+      "role": "CEO",
+      "bio": "Nonprofit executive who has led American Friends of Magen David Adom, coordinating U.S. fundraising for Israel's emergency medical services."
+    },
+    {
+      "id": "person-catherine-reed",
+      "name": "Catherine Reed",
+      "role": "National Executive Director",
+      "bio": "Nonprofit executive who has served as national executive director of American Friends of Magen David Adom, coordinating U.S. support."
+    }
+  ],
+  "marc-jacobs-international": [
+    {
+      "id": "person-marc-jacobs",
+      "name": "Marc Jacobs",
+      "role": "Founder and Chief Creative Officer",
+      "bio": "Acclaimed fashion designer who founded Marc Jacobs International and previously served as creative director of Louis Vuitton."
+    },
+    {
+      "id": "person-robert-duffy",
+      "name": "Robert Duffy",
+      "role": "Co-Founder and Former CEO",
+      "bio": "Fashion executive who co-founded Marc Jacobs International and served as the brand's longtime business partner and CEO."
+    },
+    {
+      "id": "person-sebastian-suhl",
+      "name": "Sebastian Suhl",
+      "role": "Former CEO",
+      "bio": "Fashion industry executive who served as CEO of Marc Jacobs International, managing the brand's global operations."
+    }
+  ],
+  "sl-green-realty-corp": [
+    {
+      "id": "person-marc-holliday",
+      "name": "Marc Holliday",
+      "role": "Chairman and CEO",
+      "bio": "Real estate executive who leads SL Green Realty Corp as chairman and CEO, making it the largest office landlord in Manhattan."
+    },
+    {
+      "id": "person-stephen-l-green",
+      "name": "Stephen L. Green",
+      "role": "Founder and Chairman Emeritus",
+      "bio": "Real estate investor who founded SL Green Realty Corp and built it into Manhattan's dominant commercial real estate investment trust."
+    },
+    {
+      "id": "person-andrew-mathias",
+      "name": "Andrew Mathias",
+      "role": "President",
+      "bio": "Real estate executive who serves as president of SL Green Realty, overseeing the firm's portfolio and new developments in New York City."
+    }
+  ],
+  "cond-nast": [
+    {
+      "id": "person-si-newhouse-jr",
+      "name": "Si Newhouse Jr.",
+      "role": "Former Chairman (deceased)",
+      "bio": "Media mogul who led Conde Nast as chairman for decades, overseeing iconic magazines including Vogue, Vanity Fair, and The New Yorker."
+    },
+    {
+      "id": "person-donald-newhouse",
+      "name": "Donald Newhouse",
+      "role": "Co-Owner of Advance Publications",
+      "bio": "Billionaire media executive who co-owns Advance Publications, the parent company of Conde Nast, alongside the Newhouse family."
+    },
+    {
+      "id": "person-jonathan-newhouse",
+      "name": "Jonathan Newhouse",
+      "role": "Chairman of Conde Nast International",
+      "bio": "Media executive who serves as chairman of Conde Nast's international operations, overseeing global editions of its magazine brands."
+    },
+    {
+      "id": "person-roger-lynch",
+      "name": "Roger Lynch",
+      "role": "Former CEO",
+      "bio": "Media executive who served as CEO of Conde Nast, leading the company's digital transformation and global consolidation of operations."
+    }
+  ],
+  "jewish-federation-of-greater-los-angeles": [
+    {
+      "id": "person-jay-sanderson",
+      "name": "Jay Sanderson",
+      "role": "President and CEO",
+      "bio": "Jewish communal leader who has led The Jewish Federation of Greater Los Angeles, overseeing its wide-ranging philanthropic and social programs."
+    },
+    {
+      "id": "person-stanley-gold",
+      "name": "Stanley Gold",
+      "role": "Former Board Leader (deceased)",
+      "bio": "Attorney, investor, and Disney board member who was a prominent leader in the Jewish Federation of Greater Los Angeles."
+    },
+    {
+      "id": "person-john-fishel",
+      "name": "John Fishel",
+      "role": "Former President",
+      "bio": "Jewish communal executive who served as president of the Jewish Federation of Greater Los Angeles, guiding its philanthropic mission."
+    }
+  ],
+  "rxr-realty": [
+    {
+      "id": "person-scott-rechler",
+      "name": "Scott Rechler",
+      "role": "Chairman and CEO",
+      "bio": "Real estate executive who leads RXR Realty as chairman and CEO, managing a major portfolio across the New York metropolitan area."
+    },
+    {
+      "id": "person-seth-pinsky",
+      "name": "Seth Pinsky",
+      "role": "Executive Vice President",
+      "bio": "Real estate executive and former president of the NYC Economic Development Corporation who serves in senior leadership at RXR Realty."
+    },
+    {
+      "id": "person-michael-maturo",
+      "name": "Michael Maturo",
+      "role": "President and CFO",
+      "bio": "Real estate and finance executive who serves as president and chief financial officer of RXR Realty."
+    }
+  ],
+  "schulte-roth-zabel": [
+    {
+      "id": "person-william-zabel",
+      "name": "William Zabel",
+      "role": "Founding Partner",
+      "bio": "Attorney and founding partner of Schulte Roth and Zabel, renowned for his expertise in trusts, estates, and art law."
+    },
+    {
+      "id": "person-robert-roth",
+      "name": "Robert Roth",
+      "role": "Founding Partner",
+      "bio": "Attorney who co-founded Schulte Roth and Zabel, helping establish the firm's reputation in investment management and corporate law."
+    },
+    {
+      "id": "person-marc-weingarten",
+      "name": "Marc Weingarten",
+      "role": "Senior Partner",
+      "bio": "Attorney who has served as a senior partner at Schulte Roth and Zabel, specializing in litigation and regulatory matters."
+    }
+  ],
+  "silverstein-properties": [
+    {
+      "id": "person-larry-silverstein",
+      "name": "Larry Silverstein",
+      "role": "Chairman",
+      "bio": "Real estate developer who acquired the World Trade Center lease in 2001 and led its rebuilding."
+    },
+    {
+      "id": "person-roger-silverstein",
+      "name": "Roger Silverstein",
+      "role": "Vice Chairman",
+      "bio": "Son of Larry Silverstein and longtime executive at Silverstein Properties."
+    },
+    {
+      "id": "person-lisa-silverstein",
+      "name": "Lisa Silverstein",
+      "role": "Vice Chairman",
+      "bio": "Daughter of Larry Silverstein serving in senior leadership at the firm."
+    },
+    {
+      "id": "person-marty-burger",
+      "name": "Marty Burger",
+      "role": "CEO",
+      "bio": "Chief Executive Officer of Silverstein Properties overseeing the company's development portfolio."
+    },
+    {
+      "id": "person-tal-kerret",
+      "name": "Tal Kerret",
+      "role": "Former President",
+      "bio": "Israeli-born executive who served as president of Silverstein Properties."
+    }
+  ],
+  "foundation-for-jewish-camp": [
+    {
+      "id": "person-jeremy-fingerman",
+      "name": "Jeremy Fingerman",
+      "role": "CEO",
+      "bio": "Led the Foundation for Jewish Camp in expanding access to Jewish summer camp experiences."
+    },
+    {
+      "id": "person-robert-bildner",
+      "name": "Robert Bildner",
+      "role": "Co-Founder",
+      "bio": "Philanthropist who co-founded the Foundation for Jewish Camp to strengthen Jewish identity."
+    },
+    {
+      "id": "person-elisa-spungen-bildner",
+      "name": "Elisa Spungen Bildner",
+      "role": "Co-Founder",
+      "bio": "Co-founded the Foundation for Jewish Camp alongside her husband Robert Bildner."
+    },
+    {
+      "id": "person-mark-charendoff",
+      "name": "Mark Charendoff",
+      "role": "Board Member",
+      "bio": "Jewish communal leader and philanthropic executive involved in Jewish camping initiatives."
+    }
+  ],
+  "one-israel-fund": [
+    {
+      "id": "person-scott-feltman",
+      "name": "Scott Feltman",
+      "role": "Executive Director",
+      "bio": "Longtime executive director of One Israel Fund supporting communities in Judea and Samaria."
+    },
+    {
+      "id": "person-marc-provisor",
+      "name": "Marc Provisor",
+      "role": "Director of Security Projects",
+      "bio": "Oversees security infrastructure projects for Israeli communities through One Israel Fund."
+    },
+    {
+      "id": "person-alan-schneider",
+      "name": "Alan Schneider",
+      "role": "Board Member",
+      "bio": "Supporter and board member of One Israel Fund focused on Israel advocacy."
+    }
+  ],
+  "kasowitz-benson-torres": [
+    {
+      "id": "person-marc-kasowitz",
+      "name": "Marc Kasowitz",
+      "role": "Founding Partner",
+      "bio": "Prominent litigator who founded the firm and served as personal attorney to Donald Trump."
+    },
+    {
+      "id": "person-michael-bowe",
+      "name": "Michael Bowe",
+      "role": "Partner",
+      "bio": "Senior litigation partner at Kasowitz Benson Torres handling high-profile cases."
+    },
+    {
+      "id": "person-daniel-benson",
+      "name": "Daniel Benson",
+      "role": "Founding Partner",
+      "bio": "Co-founding partner of Kasowitz Benson Torres contributing to the firm's litigation practice."
+    },
+    {
+      "id": "person-hector-torres",
+      "name": "Hector Torres",
+      "role": "Founding Partner",
+      "bio": "Co-founding partner of Kasowitz Benson Torres who helped build the firm's national reputation."
+    }
+  ],
+  "two-sigma-investments": [
+    {
+      "id": "person-david-siegel",
+      "name": "David Siegel",
+      "role": "Co-Founder and Co-Chairman",
+      "bio": "Co-founded Two Sigma and built it into one of the largest quantitative hedge funds globally."
+    },
+    {
+      "id": "person-john-overdeck",
+      "name": "John Overdeck",
+      "role": "Co-Founder and Co-Chairman",
+      "bio": "Co-founded Two Sigma and is a major philanthropist supporting math education."
+    },
+    {
+      "id": "person-carter-lyons",
+      "name": "Carter Lyons",
+      "role": "Chief Business Officer",
+      "bio": "Senior executive overseeing business development and client relations at Two Sigma."
+    }
+  ],
+  "hadassah-womens-zionist-organization": [
+    {
+      "id": "person-henrietta-szold",
+      "name": "Henrietta Szold",
+      "role": "Founder",
+      "bio": "Founded Hadassah in 1912, making it the largest Jewish women's organization in the United States."
+    },
+    {
+      "id": "person-rhoda-smolow",
+      "name": "Rhoda Smolow",
+      "role": "National President",
+      "bio": "Served as national president of Hadassah leading the organization's advocacy and health initiatives."
+    },
+    {
+      "id": "person-nancy-falchuk",
+      "name": "Nancy Falchuk",
+      "role": "Former National President",
+      "bio": "Led Hadassah as national president advancing its mission in health, education, and Israel advocacy."
+    },
+    {
+      "id": "person-marcie-natan",
+      "name": "Marcie Natan",
+      "role": "Former National President",
+      "bio": "Served as Hadassah national president overseeing the organization's programs and medical center support."
+    }
+  ],
+  "phoenix-suns-mat-ishbia": [
+    {
+      "id": "person-mat-ishbia",
+      "name": "Mat Ishbia",
+      "role": "Owner and Governor",
+      "bio": "Mortgage industry billionaire who purchased the Phoenix Suns in 2023."
+    },
+    {
+      "id": "person-robert-sarver",
+      "name": "Robert Sarver",
+      "role": "Former Owner",
+      "bio": "Jewish businessman who owned the Phoenix Suns from 2004 until selling in 2023."
+    },
+    {
+      "id": "person-sam-garvin",
+      "name": "Sam Garvin",
+      "role": "Former General Manager",
+      "bio": "Longtime NBA executive who served in management roles with the Phoenix Suns."
+    }
+  ],
+  "maimonides-fund": [
+    {
+      "id": "person-meir-soloveichik",
+      "name": "Meir Soloveichik",
+      "role": "Advisor",
+      "bio": "Prominent Orthodox rabbi and intellectual associated with Maimonides Fund initiatives."
+    },
+    {
+      "id": "person-mark-charendoff",
+      "name": "Mark Charendoff",
+      "role": "President",
+      "bio": "Leads the Maimonides Fund focusing on Jewish education, Israel, and community development."
+    },
+    {
+      "id": "person-tikvah-wiener",
+      "name": "Tikvah Wiener",
+      "role": "Grantee Leader",
+      "bio": "Educator connected to Maimonides Fund-supported Jewish educational programs."
+    }
+  ],
+  "democratic-majority-for-israel": [
+    {
+      "id": "person-mark-mellman",
+      "name": "Mark Mellman",
+      "role": "President and CEO",
+      "bio": "Veteran Democratic pollster who founded DMFI to support pro-Israel Democrats."
+    },
+    {
+      "id": "person-ann-lewis",
+      "name": "Ann Lewis",
+      "role": "Board Member",
+      "bio": "Former White House communications director and longtime Democratic strategist supporting DMFI."
+    },
+    {
+      "id": "person-todd-richman",
+      "name": "Todd Richman",
+      "role": "Senior Director",
+      "bio": "Political strategist serving in senior leadership at Democratic Majority for Israel."
+    },
+    {
+      "id": "person-shelly-greenspan",
+      "name": "Shelly Greenspan",
+      "role": "Board Member",
+      "bio": "Democratic political operative and advocate involved with DMFI's pro-Israel mission."
+    }
+  ],
+  "metro-goldwyn-mayer-mgm": [
+    {
+      "id": "person-louis-b-mayer",
+      "name": "Louis B. Mayer",
+      "role": "Co-Founder",
+      "bio": "Jewish immigrant from Belarus who co-founded MGM and shaped Hollywood's Golden Age."
+    },
+    {
+      "id": "person-samuel-goldwyn",
+      "name": "Samuel Goldwyn",
+      "role": "Co-Founder",
+      "bio": "Polish-Jewish immigrant who co-founded MGM and became one of Hollywood's most influential producers."
+    },
+    {
+      "id": "person-irving-thalberg",
+      "name": "Irving Thalberg",
+      "role": "Head of Production",
+      "bio": "Legendary Jewish film producer known as the 'Boy Wonder' who ran MGM's production in the 1920s-30s."
+    },
+    {
+      "id": "person-marcus-loew",
+      "name": "Marcus Loew",
+      "role": "Founder of Parent Company",
+      "bio": "Jewish theater magnate whose Loew's Inc. created MGM through studio mergers."
+    },
+    {
+      "id": "person-gary-barber",
+      "name": "Gary Barber",
+      "role": "Former Chairman and CEO",
+      "bio": "South African-born Jewish executive who led MGM as chairman and CEO from 2010 to 2018."
+    }
+  ],
+  "american-israel-education-foundation": [
+    {
+      "id": "person-howard-kohr",
+      "name": "Howard Kohr",
+      "role": "Executive Director (AIPAC)",
+      "bio": "Led AIPAC which oversees AIEF's educational mission trips to Israel for lawmakers."
+    },
+    {
+      "id": "person-richard-fishman",
+      "name": "Richard Fishman",
+      "role": "Managing Director",
+      "bio": "Senior executive at AIEF coordinating educational programs and congressional delegations to Israel."
+    },
+    {
+      "id": "person-brad-gordon",
+      "name": "Brad Gordon",
+      "role": "Policy Director",
+      "bio": "Policy expert at AIEF helping facilitate understanding of U.S.-Israel relations among legislators."
+    }
+  ],
+  "jewish-national-fund-usa": [
+    {
+      "id": "person-russell-robinson",
+      "name": "Russell Robinson",
+      "role": "CEO",
+      "bio": "Led JNF-USA for over two decades expanding its land development and community building work in Israel."
+    },
+    {
+      "id": "person-sol-lizerbram",
+      "name": "Sol Lizerbram",
+      "role": "President",
+      "bio": "Served as president of JNF-USA guiding the organization's philanthropic mission."
+    },
+    {
+      "id": "person-jeffrey-levine",
+      "name": "Jeffrey Levine",
+      "role": "Board Chair",
+      "bio": "Chairman of JNF-USA supporting environmental and community development projects in Israel."
+    },
+    {
+      "id": "person-mitchell-rosenwasser",
+      "name": "Mitchell Rosenwasser",
+      "role": "Chief Operating Officer",
+      "bio": "Senior executive overseeing operations at JNF-USA."
+    }
+  ],
+  "keshet": [
+    {
+      "id": "person-idit-klein",
+      "name": "Idit Klein",
+      "role": "Executive Director and CEO",
+      "bio": "Led Keshet for two decades advancing LGBTQ equality in Jewish life."
+    },
+    {
+      "id": "person-dani-jacobson",
+      "name": "Dani Jacobson",
+      "role": "Board Member",
+      "bio": "Community activist and board member supporting Keshet's mission of LGBTQ inclusion."
+    },
+    {
+      "id": "person-abby-stein",
+      "name": "Abby Stein",
+      "role": "Speaker and Advocate",
+      "bio": "Transgender activist and author from a Hasidic background who has collaborated with Keshet."
+    }
+  ],
+  "repair-the-world": [
+    {
+      "id": "person-cindy-greenberg",
+      "name": "Cindy Greenberg",
+      "role": "CEO",
+      "bio": "Leads Repair the World's mission of engaging young Jews in meaningful service."
+    },
+    {
+      "id": "person-david-eisner",
+      "name": "David Eisner",
+      "role": "Former CEO",
+      "bio": "Former Corporation for National and Community Service CEO who helped lead Repair the World."
+    },
+    {
+      "id": "person-joshua-foer",
+      "name": "Joshua Foer",
+      "role": "Board Member",
+      "bio": "Author and journalist who has supported Repair the World's community service initiatives."
+    }
+  ],
+  "viacomcbs-foundation": [
+    {
+      "id": "person-sumner-redstone",
+      "name": "Sumner Redstone",
+      "role": "Founder (Viacom/CBS)",
+      "bio": "Jewish media mogul who built the Viacom and CBS empire over several decades."
+    },
+    {
+      "id": "person-shari-redstone",
+      "name": "Shari Redstone",
+      "role": "Chair of Paramount Global",
+      "bio": "Daughter of Sumner Redstone who became chair of the combined media company."
+    },
+    {
+      "id": "person-bob-bakish",
+      "name": "Bob Bakish",
+      "role": "Former CEO of Paramount Global",
+      "bio": "Led ViacomCBS (later Paramount Global) through its merger and streaming expansion."
+    },
+    {
+      "id": "person-philippe-dauman",
+      "name": "Philippe Dauman",
+      "role": "Former CEO of Viacom",
+      "bio": "Jewish media executive who served as Viacom CEO and was a longtime Sumner Redstone confidant."
+    }
+  ],
+  "canary-mission": [
+    {
+      "id": "person-adam-milstein",
+      "name": "Adam Milstein",
+      "role": "Funder",
+      "bio": "Israeli-American real estate investor and philanthropist who has supported Canary Mission."
+    },
+    {
+      "id": "person-shillman-robert",
+      "name": "Robert Shillman",
+      "role": "Donor",
+      "bio": "Tech entrepreneur and philanthropist known for funding pro-Israel advocacy organizations."
+    }
+  ],
+  "charles-and-lynn-schusterman-family-foundation": [
+    {
+      "id": "person-charles-schusterman",
+      "name": "Charles Schusterman",
+      "role": "Co-Founder",
+      "bio": "Tulsa-based oil businessman who co-founded the Schusterman Foundation before his death in 2000."
+    },
+    {
+      "id": "person-lynn-schusterman",
+      "name": "Lynn Schusterman",
+      "role": "Co-Founder and Chair",
+      "bio": "Philanthropist who co-founded the Schusterman Foundation focusing on Jewish life and social justice."
+    },
+    {
+      "id": "person-stacy-schusterman",
+      "name": "Stacy Schusterman",
+      "role": "Chair of the Board",
+      "bio": "Daughter of Charles and Lynn Schusterman who leads the foundation and the family's energy business."
+    },
+    {
+      "id": "person-lisa-eisen",
+      "name": "Lisa Eisen",
+      "role": "Vice President",
+      "bio": "Senior executive at the Schusterman Foundation overseeing Jewish community investments."
+    }
+  ],
+  "sl-green-realty": [
+    {
+      "id": "person-marc-holliday",
+      "name": "Marc Holliday",
+      "role": "CEO",
+      "bio": "Leads SL Green Realty, Manhattan's largest office landlord, overseeing major developments."
+    },
+    {
+      "id": "person-stephen-l-green",
+      "name": "Stephen L. Green",
+      "role": "Founder and Chairman Emeritus",
+      "bio": "Founded SL Green Realty and built it into New York City's preeminent office REIT."
+    },
+    {
+      "id": "person-andrew-mathias",
+      "name": "Andrew Mathias",
+      "role": "President",
+      "bio": "President of SL Green Realty managing the company's portfolio and investment strategy."
+    },
+    {
+      "id": "person-brett-herschenfeld",
+      "name": "Brett Herschenfeld",
+      "role": "Managing Director",
+      "bio": "Senior executive at SL Green Realty involved in acquisitions and asset management."
+    }
+  ],
+  "william-morris-endeavor-wme": [
+    {
+      "id": "person-ari-emanuel",
+      "name": "Ari Emanuel",
+      "role": "CEO",
+      "bio": "Israeli-American talent agent who built WME into the world's largest talent agency."
+    },
+    {
+      "id": "person-mark-shapiro",
+      "name": "Mark Shapiro",
+      "role": "President of TKO Group",
+      "bio": "Executive working closely with WME parent Endeavor overseeing sports and entertainment properties."
+    },
+    {
+      "id": "person-richard-weitz",
+      "name": "Richard Weitz",
+      "role": "Co-Chairman of WME",
+      "bio": "Longtime talent agent and co-chairman at William Morris Endeavor."
+    },
+    {
+      "id": "person-william-morris",
+      "name": "William Morris",
+      "role": "Founder (Historical)",
+      "bio": "Jewish immigrant who founded the William Morris Agency in 1898, pioneering talent representation."
+    }
+  ],
+  "live-nation-entertainment": [
+    {
+      "id": "person-michael-rapino",
+      "name": "Michael Rapino",
+      "role": "President and CEO",
+      "bio": "Leads Live Nation Entertainment, the world's largest live entertainment company."
+    },
+    {
+      "id": "person-irving-azoff",
+      "name": "Irving Azoff",
+      "role": "Former Chairman of Live Nation Entertainment",
+      "bio": "Jewish music industry mogul who served as chairman of Live Nation Entertainment."
+    },
+    {
+      "id": "person-arthur-fogel",
+      "name": "Arthur Fogel",
+      "role": "President of Global Touring",
+      "bio": "Senior executive at Live Nation overseeing global touring operations for top artists."
+    },
+    {
+      "id": "person-joe-berchtold",
+      "name": "Joe Berchtold",
+      "role": "President",
+      "bio": "Longtime executive at Live Nation Entertainment and former CFO of the company."
+    }
+  ],
+  "the-marcus-foundation": [
+    {
+      "id": "person-bernie-marcus",
+      "name": "Bernie Marcus",
+      "role": "Founder",
+      "bio": "Co-founder of Home Depot who established The Marcus Foundation for philanthropy."
+    },
+    {
+      "id": "person-billi-marcus",
+      "name": "Billi Marcus",
+      "role": "Co-Founder",
+      "bio": "Wife of Bernie Marcus and co-founder of The Marcus Foundation."
+    },
+    {
+      "id": "person-jay-kaiman",
+      "name": "Jay Kaiman",
+      "role": "Director",
+      "bio": "Executive involved in directing The Marcus Foundation's philanthropic programs."
+    },
+    {
+      "id": "person-john-fish",
+      "name": "John Fish",
+      "role": "Board Associate",
+      "bio": "Business leader connected to Marcus Foundation initiatives in community development."
+    }
+  ],
+  "creative-artists-agency": [
+    {
+      "id": "person-michael-ovitz",
+      "name": "Michael Ovitz",
+      "role": "Co-Founder",
+      "bio": "Jewish talent agent who co-founded CAA and became the most powerful figure in Hollywood."
+    },
+    {
+      "id": "person-ron-meyer",
+      "name": "Ron Meyer",
+      "role": "Co-Founder",
+      "bio": "Co-founded CAA and later served as vice chairman of NBCUniversal."
+    },
+    {
+      "id": "person-richard-lovett",
+      "name": "Richard Lovett",
+      "role": "President",
+      "bio": "Longtime president of CAA managing the agency's talent representation business."
+    },
+    {
+      "id": "person-bryan-lourd",
+      "name": "Bryan Lourd",
+      "role": "Co-Chairman",
+      "bio": "One of CAA's top agents and co-chairman representing Hollywood's biggest stars."
+    },
+    {
+      "id": "person-kevin-huvane",
+      "name": "Kevin Huvane",
+      "role": "Co-Chairman",
+      "bio": "Senior talent agent and co-chairman at CAA representing major film and television actors."
+    }
+  ],
+  "oppenheimer-holdings": [
+    {
+      "id": "person-albert-lowenthal",
+      "name": "Albert Lowenthal",
+      "role": "Chairman and CEO",
+      "bio": "Leads Oppenheimer Holdings overseeing the firm's investment banking and brokerage operations."
+    },
+    {
+      "id": "person-robert-lowenthal",
+      "name": "Robert Lowenthal",
+      "role": "Executive Vice President",
+      "bio": "Senior executive at Oppenheimer Holdings involved in equity capital markets."
+    },
+    {
+      "id": "person-leon-oppenheimer",
+      "name": "Leon Oppenheimer",
+      "role": "Historical Founder",
+      "bio": "Founded the Oppenheimer brokerage business that grew into today's Oppenheimer Holdings."
+    }
+  ],
+  "elliott-management": [
+    {
+      "id": "person-paul-singer",
+      "name": "Paul Singer",
+      "role": "Founder and Co-CEO",
+      "bio": "Jewish billionaire activist investor who founded Elliott Management, one of the world's largest hedge funds."
+    },
+    {
+      "id": "person-jonathan-pollock",
+      "name": "Jonathan Pollock",
+      "role": "Co-CEO",
+      "bio": "Co-CEO of Elliott Management helping lead the firm's global investment strategies."
+    },
+    {
+      "id": "person-jesse-cohn",
+      "name": "Jesse Cohn",
+      "role": "Managing Partner",
+      "bio": "Key Elliott Management partner known for leading activist campaigns against major corporations."
+    },
+    {
+      "id": "person-gordon-singer",
+      "name": "Gordon Singer",
+      "role": "Managing Director (London)",
+      "bio": "Son of Paul Singer who heads Elliott Management's London office."
+    }
+  ],
+  "d-e-shaw": [
+    {
+      "id": "person-david-e-shaw",
+      "name": "David E. Shaw",
+      "role": "Founder",
+      "bio": "Computational scientist and billionaire who founded D.E. Shaw, a pioneering quantitative hedge fund."
+    },
+    {
+      "id": "person-max-stone",
+      "name": "Max Stone",
+      "role": "Executive Committee Member",
+      "bio": "Senior executive on the executive committee at D.E. Shaw."
+    },
+    {
+      "id": "person-anne-dinning",
+      "name": "Anne Dinning",
+      "role": "Managing Director",
+      "bio": "Senior managing director at D.E. Shaw involved in portfolio management and investment strategy."
+    }
+  ],
+  "harvard-hillel": [
+    {
+      "id": "person-jonah-steinberg",
+      "name": "Jonah Steinberg",
+      "role": "Executive Director",
+      "bio": "Leads Harvard Hillel providing Jewish life programming for students at Harvard University."
+    },
+    {
+      "id": "person-bernie-steinberg",
+      "name": "Bernie Steinberg",
+      "role": "Former Executive Director",
+      "bio": "Longtime director of Harvard Hillel who shaped Jewish campus life at the university for decades."
+    },
+    {
+      "id": "person-eric-fingerhut",
+      "name": "Eric Fingerhut",
+      "role": "President of Hillel International",
+      "bio": "Leads Hillel International which oversees campus Hillels including Harvard Hillel."
+    }
+  ],
+  "lionsgate": [
+    {
+      "id": "person-jon-feltheimer",
+      "name": "Jon Feltheimer",
+      "role": "CEO",
+      "bio": "Leads Lionsgate as CEO overseeing franchises like The Hunger Games and John Wick."
+    },
+    {
+      "id": "person-michael-burns",
+      "name": "Michael Burns",
+      "role": "Vice Chair",
+      "bio": "Longtime Lionsgate vice chairman involved in the studio's strategic growth and acquisitions."
+    },
+    {
+      "id": "person-frank-giustra",
+      "name": "Frank Giustra",
+      "role": "Co-Founder",
+      "bio": "Canadian businessman who co-founded Lions Gate Entertainment."
+    },
+    {
+      "id": "person-avi-lerner",
+      "name": "Avi Lerner",
+      "role": "Affiliated Producer",
+      "bio": "Israeli-born film producer whose Millennium Films has collaborated extensively with Lionsgate."
+    }
+  ],
+  "citadel": [
+    {
+      "id": "person-kenneth-griffin",
+      "name": "Kenneth Griffin",
+      "role": "Founder and CEO",
+      "bio": "Billionaire investor who founded Citadel, one of the world's most successful hedge funds."
+    },
+    {
+      "id": "person-peng-zhao",
+      "name": "Peng Zhao",
+      "role": "CEO of Citadel Securities",
+      "bio": "Leads Citadel Securities, the market-making arm processing a significant share of U.S. equity trades."
+    },
+    {
+      "id": "person-pablo-salame",
+      "name": "Pablo Salame",
+      "role": "Global Head of Fixed Income",
+      "bio": "Senior executive at Citadel overseeing fixed income trading strategies."
+    }
+  ],
+  "endeavor-group-holdings": [
+    {
+      "id": "person-ari-emanuel",
+      "name": "Ari Emanuel",
+      "role": "CEO",
+      "bio": "Israeli-American executive who built Endeavor into a global entertainment and sports conglomerate."
+    },
+    {
+      "id": "person-patrick-whitesell",
+      "name": "Patrick Whitesell",
+      "role": "Executive Chairman",
+      "bio": "Co-led Endeavor alongside Ari Emanuel and serves as executive chairman."
+    },
+    {
+      "id": "person-mark-shapiro",
+      "name": "Mark Shapiro",
+      "role": "President of TKO Group Holdings",
+      "bio": "President of TKO Group, Endeavor's combat sports division including UFC and WWE."
+    },
+    {
+      "id": "person-adam-aron",
+      "name": "Adam Aron",
+      "role": "Former Board Observer",
+      "bio": "Entertainment executive with connections to Endeavor's portfolio of sports properties."
+    }
+  ],
+  "jefferies-financial-group": [
+    {
+      "id": "person-richard-handler",
+      "name": "Richard Handler",
+      "role": "CEO",
+      "bio": "Jewish executive who leads Jefferies Financial Group overseeing its investment banking operations."
+    },
+    {
+      "id": "person-brian-friedman",
+      "name": "Brian Friedman",
+      "role": "President",
+      "bio": "President of Jefferies Financial Group and partner to Richard Handler in running the firm."
+    },
+    {
+      "id": "person-joseph-steinberg",
+      "name": "Joseph Steinberg",
+      "role": "Chairman",
+      "bio": "Longtime chairman of Leucadia National which merged with Jefferies to form the financial group."
+    }
+  ],
+  "moelis-company": [
+    {
+      "id": "person-ken-moelis",
+      "name": "Ken Moelis",
+      "role": "Founder, Chairman, and CEO",
+      "bio": "Jewish investment banker who founded Moelis and Company, a leading independent advisory firm."
+    },
+    {
+      "id": "person-navid-mahmoodzadegan",
+      "name": "Navid Mahmoodzadegan",
+      "role": "Co-President",
+      "bio": "Senior executive and co-president at Moelis and Company overseeing advisory services."
+    },
+    {
+      "id": "person-eric-cantor",
+      "name": "Eric Cantor",
+      "role": "Vice Chairman and Managing Director",
+      "bio": "Former U.S. House Majority Leader who joined Moelis as vice chairman after leaving Congress."
+    }
+  ],
+  "ares-management": [
+    {
+      "id": "person-antony-ressler",
+      "name": "Antony Ressler",
+      "role": "Co-Founder, Chairman, and CEO",
+      "bio": "Jewish billionaire who co-founded Ares Management and also owns the Atlanta Hawks NBA team."
+    },
+    {
+      "id": "person-michael-arougheti",
+      "name": "Michael Arougheti",
+      "role": "Co-Founder and President",
+      "bio": "Co-founded Ares Management and serves as president overseeing the firm's investment operations."
+    },
+    {
+      "id": "person-david-kaplan",
+      "name": "David Kaplan",
+      "role": "Co-Founder",
+      "bio": "Co-founded Ares Management contributing to its growth into a major alternative asset manager."
+    },
+    {
+      "id": "person-bennett-rosenthal",
+      "name": "Bennett Rosenthal",
+      "role": "Co-Founder and Co-Chair of Private Equity",
+      "bio": "Co-founded Ares Management and co-leads its private equity business."
+    }
+  ],
+  "activision-blizzard": [
+    {
+      "id": "person-bobby-kotick",
+      "name": "Bobby Kotick",
+      "role": "Former CEO",
+      "bio": "Jewish executive who led Activision Blizzard for three decades until Microsoft's acquisition in 2023."
+    },
+    {
+      "id": "person-barry-diller",
+      "name": "Barry Diller",
+      "role": "Early Investor and Board Member",
+      "bio": "Jewish media mogul who backed Bobby Kotick's original investment in Activision."
+    },
+    {
+      "id": "person-brian-kelly",
+      "name": "Brian Kelly",
+      "role": "Co-Chairman",
+      "bio": "Served alongside Bobby Kotick as co-chairman of Activision in its early growth phase."
+    },
+    {
+      "id": "person-spencer-neumann",
+      "name": "Spencer Neumann",
+      "role": "Former CFO",
+      "bio": "Served as CFO of Activision Blizzard before departing to become CFO of Netflix."
+    }
+  ],
+  "guggenheim-partners": [
+    {
+      "id": "person-mark-walter",
+      "name": "Mark Walter",
+      "role": "CEO",
+      "bio": "Leads Guggenheim Partners and is co-owner of the Los Angeles Dodgers."
+    },
+    {
+      "id": "person-alan-schwartz",
+      "name": "Alan Schwartz",
+      "role": "Executive Chairman",
+      "bio": "Former Bear Stearns CEO who became executive chairman of Guggenheim Partners."
+    },
+    {
+      "id": "person-todd-boehly",
+      "name": "Todd Boehly",
+      "role": "Former President",
+      "bio": "Former Guggenheim Partners president who later led the consortium purchasing Chelsea FC."
+    }
+  ],
+  "miami-heat": [
+    {
+      "id": "person-micky-arison",
+      "name": "Micky Arison",
+      "role": "Owner and Managing General Partner",
+      "bio": "Israeli-American billionaire and Carnival Corporation chairman who owns the Miami Heat."
+    },
+    {
+      "id": "person-nick-arison",
+      "name": "Nick Arison",
+      "role": "CEO of the Miami Heat",
+      "bio": "Son of Micky Arison who serves as CEO of the Miami Heat and its business operations."
+    },
+    {
+      "id": "person-raanan-katz",
+      "name": "Raanan Katz",
+      "role": "Limited Partner",
+      "bio": "Israeli-American real estate investor and limited partner of the Miami Heat."
+    },
+    {
+      "id": "person-pat-riley",
+      "name": "Pat Riley",
+      "role": "President",
+      "bio": "Legendary basketball executive and President of the Miami Heat."
+    }
+  ],
+  "point72-asset-management": [
+    {
+      "id": "person-steve-cohen",
+      "name": "Steve Cohen",
+      "role": "Founder, Chairman, and CEO",
+      "bio": "Jewish billionaire investor who founded Point72 and owns the New York Mets."
+    },
+    {
+      "id": "person-harry-schwefel",
+      "name": "Harry Schwefel",
+      "role": "President",
+      "bio": "President of Point72 Asset Management overseeing company operations and business strategy."
+    },
+    {
+      "id": "person-doug-haynes",
+      "name": "Doug Haynes",
+      "role": "Former President",
+      "bio": "Former McKinsey director who served as president of Point72 Asset Management."
+    }
+  ],
+  "starbucks-corporation": [
+    {
+      "id": "person-howard-schultz",
+      "name": "Howard Schultz",
+      "role": "Former Chairman and CEO",
+      "bio": "Jewish businessman who grew Starbucks from a small chain into the world's largest coffeehouse company."
+    },
+    {
+      "id": "person-orin-smith",
+      "name": "Orin Smith",
+      "role": "Former CEO",
+      "bio": "Served as Starbucks CEO from 2000 to 2005, succeeding Howard Schultz."
+    },
+    {
+      "id": "person-myron-ullman",
+      "name": "Myron Ullman",
+      "role": "Board Member",
+      "bio": "Jewish business executive who served on the Starbucks board of directors."
+    }
+  ],
+  "jewish-community-centers-association": [
+    {
+      "id": "person-doron-krakow",
+      "name": "Doron Krakow",
+      "role": "President and CEO",
+      "bio": "Leads the JCC Association of North America overseeing a network of Jewish community centers."
+    },
+    {
+      "id": "person-alan-jaffe",
+      "name": "Alan Jaffe",
+      "role": "Board Chair",
+      "bio": "Community leader serving as board chair of the JCC Association of North America."
+    },
+    {
+      "id": "person-sol-greenfield",
+      "name": "Sol Greenfield",
+      "role": "VP of JCC Operations",
+      "bio": "Senior executive at JCC Association supporting community center operations nationwide."
+    }
+  ],
+  "george-soros-open-society-foundations": [
+    {
+      "id": "person-george-soros",
+      "name": "George Soros",
+      "role": "Founder and Chair",
+      "bio": "Hungarian-born Jewish billionaire investor who founded Open Society Foundations to promote democracy globally."
+    },
+    {
+      "id": "person-alexander-soros",
+      "name": "Alexander Soros",
+      "role": "Chair",
+      "bio": "Son of George Soros who took over as chair of Open Society Foundations."
+    },
+    {
+      "id": "person-mark-malloch-brown",
+      "name": "Mark Malloch-Brown",
+      "role": "President",
+      "bio": "Former UN Deputy Secretary-General who served as president of Open Society Foundations."
+    },
+    {
+      "id": "person-jonathan-soros",
+      "name": "Jonathan Soros",
+      "role": "Board Member and Donor",
+      "bio": "Son of George Soros involved in the family's philanthropic and investment activities."
+    }
+  ],
+  "sculptor-capital-management": [
+    {
+      "id": "person-daniel-och",
+      "name": "Daniel Och",
+      "role": "Founder",
+      "bio": "Jewish financier who founded Och-Ziff Capital Management, later renamed Sculptor Capital."
+    },
+    {
+      "id": "person-jimmy-levin",
+      "name": "Jimmy Levin",
+      "role": "Former CEO",
+      "bio": "Served as CEO of Sculptor Capital Management after Daniel Och stepped down."
+    },
+    {
+      "id": "person-robert-shafir",
+      "name": "Robert Shafir",
+      "role": "Former CEO",
+      "bio": "Served as CEO of Sculptor Capital Management during a transitional period for the firm."
+    }
+  ],
+  "chabad-lubavitch-world-headquarters": [
+    {
+      "id": "person-menachem-mendel-schneerson",
+      "name": "Menachem Mendel Schneerson",
+      "role": "The Rebbe (Seventh Leader)",
+      "bio": "The seventh Lubavitcher Rebbe who transformed Chabad into a worldwide Jewish outreach movement."
+    },
+    {
+      "id": "person-yehuda-krinsky",
+      "name": "Yehuda Krinsky",
+      "role": "Chairman of Educational and Social Services Arms",
+      "bio": "Senior Chabad rabbi who leads the movement's publishing and social service organizations."
+    },
+    {
+      "id": "person-avraham-shemtov",
+      "name": "Avraham Shemtov",
+      "role": "Chairman of Agudas Chassidei Chabad",
+      "bio": "Senior Chabad emissary who serves as chairman of the umbrella Chabad-Lubavitch organization."
+    },
+    {
+      "id": "person-moshe-kotlarsky",
+      "name": "Moshe Kotlarsky",
+      "role": "Vice Chairman of Merkos L'Inyonei Chinuch",
+      "bio": "Senior Chabad leader who oversaw the expansion of Chabad centers worldwide until his passing in 2024."
+    }
+  ],
+  "steinhardt-foundation-for-jewish-life": [
+    {
+      "id": "person-michael-steinhardt",
+      "name": "Michael Steinhardt",
+      "role": "Founder and Chairman",
+      "bio": "Jewish hedge fund pioneer who co-founded Birthright Israel and established this foundation."
+    },
+    {
+      "id": "person-judy-steinhardt",
+      "name": "Judy Steinhardt",
+      "role": "Co-Founder and Trustee",
+      "bio": "Wife of Michael Steinhardt and fellow trustee of the Steinhardt Foundation."
+    },
+    {
+      "id": "person-rabbi-irving-greenberg",
+      "name": "Irving Greenberg",
+      "role": "Advisor",
+      "bio": "Prominent Modern Orthodox rabbi and scholar who advised on Jewish continuity initiatives."
+    }
+  ],
+  "gratz-college": [
+    {
+      "id": "person-joy-goldstein",
+      "name": "Joy Goldstein",
+      "role": "President",
+      "bio": "Served as president of Gratz College guiding the Jewish educational institution."
+    },
+    {
+      "id": "person-hyman-gratz",
+      "name": "Hyman Gratz",
+      "role": "Historical Namesake",
+      "bio": "19th-century Jewish communal leader whose bequest led to the founding of Gratz College in 1895."
+    },
+    {
+      "id": "person-paul-finkelman",
+      "name": "Paul Finkelman",
+      "role": "Former President",
+      "bio": "Legal historian and scholar who served as president of Gratz College."
+    }
+  ],
+  "hadassah-womens-zionist-org": [
+    {
+      "id": "person-henrietta-szold",
+      "name": "Henrietta Szold",
+      "role": "Founder",
+      "bio": "Founded Hadassah in 1912 creating the largest Jewish women's organization in the United States."
+    },
+    {
+      "id": "person-rhoda-smolow",
+      "name": "Rhoda Smolow",
+      "role": "National President",
+      "bio": "Led Hadassah as national president supporting its healthcare and advocacy programs."
+    },
+    {
+      "id": "person-janice-weinman",
+      "name": "Janice Weinman",
+      "role": "Former Executive Director",
+      "bio": "Served as executive director and CEO of Hadassah overseeing organizational operations."
+    },
+    {
+      "id": "person-ellen-hershkin",
+      "name": "Ellen Hershkin",
+      "role": "Former National President",
+      "bio": "Led Hadassah as national president strengthening its programs in Israel and the United States."
+    }
+  ],
+  "jewish-national-fund-jnf": [
+    {
+      "id": "person-theodor-herzl",
+      "name": "Theodor Herzl",
+      "role": "Visionary (Historical)",
+      "bio": "Father of modern Zionism whose vision led to the establishment of JNF at the Fifth Zionist Congress in 1901."
+    },
+    {
+      "id": "person-russell-robinson",
+      "name": "Russell Robinson",
+      "role": "CEO of JNF-USA",
+      "bio": "Led JNF-USA for over two decades as its chief executive."
+    },
+    {
+      "id": "person-daniel-atar",
+      "name": "Daniel Atar",
+      "role": "Former World Chairman",
+      "bio": "Served as world chairman of Keren Kayemet LeIsrael-JNF overseeing global operations."
+    },
+    {
+      "id": "person-drorit-eleani",
+      "name": "Drorit Eleani",
+      "role": "Director of KKL-JNF",
+      "bio": "Senior executive at KKL-JNF in Israel managing land and forestry operations."
+    }
+  ],
+  "breakthrough-energy": [
+    {
+      "id": "person-bill-gates",
+      "name": "Bill Gates",
+      "role": "Founder",
+      "bio": "Billionaire Microsoft co-founder who launched Breakthrough Energy to combat climate change."
+    },
+    {
+      "id": "person-eric-toone",
+      "name": "Eric Toone",
+      "role": "Executive Managing Director",
+      "bio": "Leads Breakthrough Energy Ventures identifying and funding innovative clean energy technologies."
+    },
+    {
+      "id": "person-carmichael-roberts",
+      "name": "Carmichael Roberts",
+      "role": "Managing Director of BEV",
+      "bio": "Co-leads Breakthrough Energy Ventures investment decisions in clean energy startups."
+    }
+  ],
+  "starbucks-howard-schultz-era": [
+    {
+      "id": "person-howard-schultz",
+      "name": "Howard Schultz",
+      "role": "CEO and Chairman",
+      "bio": "Jewish businessman who built Starbucks into a global brand during his multiple tenures as CEO."
+    },
+    {
+      "id": "person-howard-behar",
+      "name": "Howard Behar",
+      "role": "Former President",
+      "bio": "Jewish executive who served as president of Starbucks and helped define its people-first culture."
+    },
+    {
+      "id": "person-orin-smith",
+      "name": "Orin Smith",
+      "role": "Former CEO",
+      "bio": "Succeeded Howard Schultz as CEO of Starbucks from 2000 to 2005."
+    },
+    {
+      "id": "person-geraldine-laybourne",
+      "name": "Geraldine Laybourne",
+      "role": "Board Member",
+      "bio": "Media executive who served on the Starbucks board during the Schultz era."
+    }
+  ],
+  "dell-technologies-israel-operations": [
+    {
+      "id": "person-michael-dell",
+      "name": "Michael Dell",
+      "role": "Founder, Chairman, and CEO",
+      "bio": "Jewish billionaire who founded Dell Technologies, which has major R&D operations in Israel."
+    },
+    {
+      "id": "person-guy-mordoch",
+      "name": "Guy Mordoch",
+      "role": "VP and General Manager, Dell Israel",
+      "bio": "Led Dell Technologies' Israel operations overseeing research and development centers."
+    },
+    {
+      "id": "person-marius-haas",
+      "name": "Marius Haas",
+      "role": "Former President of Dell Infrastructure",
+      "bio": "Senior Dell executive involved in global operations including Israeli technology development."
+    }
+  ],
+  "starz": [
+    {
+      "id": "person-chris-albrecht",
+      "name": "Chris Albrecht",
+      "role": "Former CEO",
+      "bio": "Jewish media executive who served as CEO of Starz after leading HBO."
+    },
+    {
+      "id": "person-jon-feltheimer",
+      "name": "Jon Feltheimer",
+      "role": "CEO of Lionsgate (Parent)",
+      "bio": "CEO of Lionsgate which acquired Starz and later split the studio and network businesses."
+    },
+    {
+      "id": "person-jeffrey-hirsch",
+      "name": "Jeffrey Hirsch",
+      "role": "Former President and CEO",
+      "bio": "Led Starz as president and CEO overseeing its streaming and content strategy."
+    }
+  ],
+  "paul-singer": [
+    {
+      "id": "person-paul-singer",
+      "name": "Paul Singer",
+      "role": "Founder and Co-CEO of Elliott Management",
+      "bio": "Jewish billionaire activist investor and major Republican donor who founded Elliott Management."
+    },
+    {
+      "id": "person-gordon-singer",
+      "name": "Gordon Singer",
+      "role": "Managing Director of Elliott Advisors (London)",
+      "bio": "Son of Paul Singer who runs Elliott Management's London-based operations."
+    },
+    {
+      "id": "person-jesse-cohn",
+      "name": "Jesse Cohn",
+      "role": "Managing Partner at Elliott",
+      "bio": "Key partner at Elliott Management leading activist campaigns at Paul Singer's direction."
+    },
+    {
+      "id": "person-jonathan-pollock",
+      "name": "Jonathan Pollock",
+      "role": "Co-CEO of Elliott Management",
+      "bio": "Co-CEO alongside Paul Singer overseeing Elliott Management's investment portfolio."
+    }
+  ]
+}

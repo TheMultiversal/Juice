@@ -1,0 +1,131 @@
+{
+  "innoviz-technologies": [
+    {"id": "omer-keilaf", "name": "Omer Keilaf", "role": "Co-Founder & CEO", "bio": "Co-founded Innoviz Technologies in 2016 and leads the company's development of high-performance LiDAR sensors for autonomous vehicles."},
+    {"id": "oren-rosenzweig", "name": "Oren Rosenzweig", "role": "Co-Founder & CTO", "bio": "Co-founded Innoviz and oversees the technical development of the company's solid-state LiDAR technology."},
+    {"id": "oren-buskila", "name": "Oren Buskila", "role": "Co-Founder & VP R&D", "bio": "Co-founded Innoviz Technologies and leads research and development efforts for the company's sensing solutions."}
+  ],
+  "keren-kayemeth-leisrael-jewish-national-fund": [
+    {"id": "avraham-duvdevani", "name": "Avraham Duvdevani", "role": "Chairman", "bio": "Served as chairman of Keren Kayemeth LeIsrael–Jewish National Fund, overseeing Israel's largest green organization focused on land development and afforestation."},
+    {"id": "ronald-lauder", "name": "Ronald Lauder", "role": "Former World Chairman", "bio": "Businessman and philanthropist who served as World Chairman of JNF and is known for his extensive involvement in Jewish and Zionist causes."},
+    {"id": "daniel-atar", "name": "Daniel Atar", "role": "Former Chairman", "bio": "Israeli politician and former chairman of KKL-JNF who led major land development and environmental projects across Israel."},
+    {"id": "ifat-ovadia-luski", "name": "Ifat Ovadia-Luski", "role": "Director General", "bio": "Served as Director General of KKL-JNF managing the organization's nationwide forestation, water, and community development programs."}
+  ],
+  "ree-automotive": [
+    {"id": "daniel-barel", "name": "Daniel Barel", "role": "Co-Founder & CEO", "bio": "Co-founded REE Automotive and leads the company's mission to reinvent electric vehicle platforms with its REEcorner technology."},
+    {"id": "ahishay-sardes", "name": "Ahishay Sardes", "role": "Co-Founder & CTO", "bio": "Co-founded REE Automotive and drives the technical vision behind the company's modular EV platform architecture."},
+    {"id": "josh-tech", "name": "Josh Tech", "role": "CFO", "bio": "Serves as Chief Financial Officer of REE Automotive overseeing financial strategy through the company's public listing and growth phase."}
+  ],
+  "israel-innovation-authority": [
+    {"id": "dror-bin", "name": "Dror Bin", "role": "CEO", "bio": "Leads the Israel Innovation Authority as CEO, directing Israel's national policy on technological innovation and R&D funding."},
+    {"id": "ami-appelbaum", "name": "Ami Appelbaum", "role": "Chairman", "bio": "Serves as Chairman of the Israel Innovation Authority's board and is a veteran of the Israeli high-tech industry."},
+    {"id": "anya-eldan", "name": "Anya Eldan", "role": "VP of Startup Division", "bio": "Heads the Startup Division of the Israel Innovation Authority, supporting early-stage technology companies with funding and mentorship."}
+  ],
+  "channel-12-keshet": [
+    {"id": "avi-nir", "name": "Avi Nir", "role": "CEO of Keshet Media Group", "bio": "Longtime CEO of Keshet Media Group, the company behind Channel 12, leading it to become Israel's most-watched commercial television network."},
+    {"id": "alon-shtruzman", "name": "Alon Shtruzman", "role": "CEO of Keshet International", "bio": "Heads Keshet International, the global distribution and production arm responsible for exporting Israeli TV formats worldwide."},
+    {"id": "yonatan-stern", "name": "Yonatan Stern", "role": "Head of News Division", "bio": "Leads Channel 12's news division, overseeing one of Israel's flagship nightly news broadcasts and current affairs programming."}
+  ],
+  "orcam-technologies": [
+    {"id": "amnon-shashua", "name": "Amnon Shashua", "role": "Co-Founder & Co-Chairman", "bio": "World-renowned computer vision expert who co-founded OrCam Technologies and also co-founded Mobileye, revolutionizing AI-powered assistive devices."},
+    {"id": "ziv-aviram", "name": "Ziv Aviram", "role": "Co-Founder & CEO", "bio": "Co-founded OrCam Technologies alongside Amnon Shashua and leads the company's development of wearable AI devices for the visually impaired."},
+    {"id": "nachum-sharvit", "name": "Nachum Sharvit", "role": "VP of R&D", "bio": "Oversees research and development at OrCam, driving the AI and computer vision algorithms behind the OrCam MyEye product line."}
+  ],
+  "walkme": [
+    {"id": "dan-adika", "name": "Dan Adika", "role": "Co-Founder & CEO", "bio": "Co-founded WalkMe in 2011 and led the digital adoption platform to a successful IPO on the Nasdaq in 2021."},
+    {"id": "rafael-sweary", "name": "Rafael Sweary", "role": "Co-Founder & President", "bio": "Co-founded WalkMe and serves as President, guiding the company's go-to-market strategy and global business development."},
+    {"id": "eyal-cohen", "name": "Eyal Cohen", "role": "Co-Founder & CTO", "bio": "Co-founded WalkMe and leads the technology organization building the platform's digital adoption solutions."}
+  ],
+  "taro-pharmaceutical-israel": [
+    {"id": "uday-baldota", "name": "Uday Baldota", "role": "CEO", "bio": "Serves as CEO of Taro Pharmaceutical Industries, a subsidiary of Sun Pharmaceutical Industries, overseeing global pharmaceutical operations."},
+    {"id": "barrie-levitt", "name": "Barrie Levitt", "role": "Former Chairman & CEO", "bio": "Founded and led Taro Pharmaceutical Industries for decades, building it into a leading specialty pharmaceutical company."},
+    {"id": "dilip-shanghvi", "name": "Dilip Shanghvi", "role": "Chairman (via Sun Pharma)", "bio": "Founder and chairman of Sun Pharmaceutical Industries, which acquired majority ownership of Taro Pharmaceutical in 2010."}
+  ],
+  "candiru-saito-tech": [
+    {"id": "eitan-achlow", "name": "Eitan Achlow", "role": "Co-Founder & CEO", "bio": "Co-founded Candiru (Saito Tech) and leads the secretive Israeli cybersecurity firm specializing in offensive cyber tools and spyware."},
+    {"id": "yaakov-weizman", "name": "Yaakov Weizman", "role": "Co-Founder", "bio": "Co-founded Candiru, bringing expertise from Israeli intelligence to develop advanced cyber exploitation capabilities."},
+    {"id": "isaac-zack", "name": "Isaac Zack", "role": "Investor & Board Member", "bio": "Prominent Israeli venture capitalist and early backer of Candiru, also known for his investments in NSO Group and other cyber firms."}
+  ],
+  "ide-technologies": [
+    {"id": "avraham-tenne", "name": "Avraham Tenne", "role": "Former CEO", "bio": "Led IDE Technologies as CEO, overseeing the development of some of the world's largest and most advanced seawater desalination plants."},
+    {"id": "miriam-faigon", "name": "Miriam Faigon", "role": "CEO", "bio": "Serves as CEO of IDE Technologies, leading the global water treatment company in delivering desalination and water purification solutions."},
+    {"id": "barak-hertz", "name": "Barak Hertz", "role": "CTO", "bio": "Chief Technology Officer at IDE Technologies responsible for advancing the company's proprietary desalination and water treatment technologies."}
+  ],
+  "university-of-haifa": [
+    {"id": "ron-robin", "name": "Ron Robin", "role": "President & Rector", "bio": "Serves as President of the University of Haifa, a historian who leads Israel's most diverse and pluralistic research university."},
+    {"id": "gustavo-mesch", "name": "Gustavo Mesch", "role": "Former Rector", "bio": "Sociologist and former Rector of the University of Haifa known for his research on internet and society."},
+    {"id": "david-faraggi", "name": "David Faraggi", "role": "Former Rector", "bio": "Biostatistician who served as Rector of the University of Haifa, advancing the university's academic and research programs."}
+  ],
+  "weizmann-institute-of-science": [
+    {"id": "alon-chen", "name": "Alon Chen", "role": "President", "bio": "Neuroscientist serving as President of the Weizmann Institute of Science, one of the world's leading multidisciplinary research institutions."},
+    {"id": "chaim-weizmann", "name": "Chaim Weizmann", "role": "Founder", "bio": "Renowned chemist and first President of Israel who founded the Weizmann Institute (originally the Sieff Institute) in 1934 in Rehovot."},
+    {"id": "daniel-zajfman", "name": "Daniel Zajfman", "role": "Former President", "bio": "Physicist who served as President of the Weizmann Institute from 2006 to 2019, expanding its global research collaborations."},
+    {"id": "michal-neeman", "name": "Michal Neeman", "role": "Vice President", "bio": "Distinguished biologist serving as Vice President of the Weizmann Institute, known for pioneering MRI-based research in cancer biology."}
+  ],
+  "israel-military-industries-imi-systems": [
+    {"id": "avi-felder", "name": "Avi Felder", "role": "Former CEO", "bio": "Led IMI Systems as CEO during its transition period before its acquisition by Elbit Systems in 2018."},
+    {"id": "bezhalel-machlis", "name": "Bezhalel Machlis", "role": "CEO of Elbit Systems (parent)", "bio": "CEO of Elbit Systems which acquired IMI Systems, integrating its munitions and defense capabilities into the larger defense conglomerate."},
+    {"id": "oded-danziger", "name": "Oded Danziger", "role": "Former CEO", "bio": "Former CEO of IMI who guided the state-owned defense manufacturer through modernization of its weapons and ammunition production lines."}
+  ],
+  "nice-ltd": [
+    {"id": "barak-eilam", "name": "Barak Eilam", "role": "CEO", "bio": "Leads NICE Ltd as CEO, transforming the company into a global leader in cloud and AI-powered enterprise software solutions."},
+    {"id": "haim-shani", "name": "Haim Shani", "role": "Chairman of the Board", "bio": "Veteran Israeli technology executive serving as Chairman of NICE Ltd's board of directors."},
+    {"id": "barry-cooper", "name": "Barry Cooper", "role": "President of CX Division", "bio": "Heads NICE's Customer Experience division, overseeing the CXone cloud contact center platform serving enterprises worldwide."}
+  ],
+  "orbotech-kla": [
+    {"id": "rick-wallace", "name": "Rick Wallace", "role": "CEO of KLA Corporation", "bio": "CEO of KLA Corporation which acquired Orbotech in 2019, integrating its electronics inspection technology into KLA's semiconductor portfolio."},
+    {"id": "asher-levy", "name": "Asher Levy", "role": "Former CEO of Orbotech", "bio": "Led Orbotech as CEO before its acquisition by KLA, growing the company into a leader in PCB and display inspection technology."},
+    {"id": "amichai-steimberg", "name": "Amichai Steimberg", "role": "Former COO of Orbotech", "bio": "Served as COO of Orbotech overseeing operations and playing a key role in the company's technology and business development."}
+  ],
+  "ministry-of-foreign-affairs": [
+    {"id": "gideon-saar", "name": "Gideon Saar", "role": "Minister of Foreign Affairs", "bio": "Israeli politician serving as Minister of Foreign Affairs, previously held multiple senior government positions including Minister of Justice."},
+    {"id": "alon-ushpiz", "name": "Alon Ushpiz", "role": "Director-General", "bio": "Career diplomat serving as Director-General of Israel's Ministry of Foreign Affairs, overseeing the country's diplomatic missions worldwide."},
+    {"id": "yair-lapid", "name": "Yair Lapid", "role": "Former Minister of Foreign Affairs", "bio": "Israeli politician and journalist who served as Foreign Minister and Prime Minister, founding the Yesh Atid party."}
+  ],
+  "habana-labs-intel": [
+    {"id": "david-dahan", "name": "David Dahan", "role": "Co-Founder & CEO", "bio": "Co-founded Habana Labs and served as CEO, leading the AI chip startup to its $2 billion acquisition by Intel in 2019."},
+    {"id": "ran-halutz", "name": "Ran Halutz", "role": "Co-Founder & CTO", "bio": "Co-founded Habana Labs and served as CTO, architecting the Gaudi and Goya AI training and inference processors."},
+    {"id": "avigdor-willenz", "name": "Avigdor Willenz", "role": "Founder & Chairman", "bio": "Serial entrepreneur who founded Habana Labs, previously founded Galileo Technology and Annapurna Labs, both acquired for billions."}
+  ],
+  "via-transportation": [
+    {"id": "daniel-ramot", "name": "Daniel Ramot", "role": "Co-Founder & CEO", "bio": "Co-founded Via Transportation and leads the company's mission to build technology that transforms public transportation systems worldwide."},
+    {"id": "oren-shoval", "name": "Oren Shoval", "role": "Co-Founder & CTO", "bio": "Co-founded Via Transportation and oversees the development of the company's real-time transit optimization algorithms."},
+    {"id": "david-rosenblatt", "name": "David Rosenblatt", "role": "Board Member", "bio": "Technology executive and investor who serves on Via's board, bringing experience from leadership roles at Google and other tech companies."}
+  ],
+  "the-times-of-israel": [
+    {"id": "david-horovitz", "name": "David Horovitz", "role": "Founding Editor", "bio": "Founded The Times of Israel in 2012 and serves as its editor, previously serving as editor-in-chief of The Jerusalem Post."},
+    {"id": "seth-klarman", "name": "Seth Klarman", "role": "Key Investor", "bio": "American billionaire hedge fund manager and philanthropist who provided major funding for the launch of The Times of Israel."},
+    {"id": "eric-cortellessa", "name": "Eric Cortellessa", "role": "Senior Correspondent", "bio": "Journalist and senior correspondent at The Times of Israel covering U.S. politics and its intersection with Israeli affairs."}
+  ],
+  "appsflyer": [
+    {"id": "oren-kaniel", "name": "Oren Kaniel", "role": "Co-Founder & CEO", "bio": "Co-founded AppsFlyer in 2011 and leads the company as a global leader in mobile attribution and marketing analytics."},
+    {"id": "reshef-mann", "name": "Reshef Mann", "role": "Co-Founder & CTO", "bio": "Co-founded AppsFlyer and serves as CTO, building the technology platform that measures mobile advertising campaigns worldwide."},
+    {"id": "brian-quinn", "name": "Brian Quinn", "role": "President & Managing Director", "bio": "Serves as President of AppsFlyer, driving the company's global growth strategy and enterprise partnerships."}
+  ],
+  "fiverr-international": [
+    {"id": "micha-kaufman", "name": "Micha Kaufman", "role": "Co-Founder & CEO", "bio": "Co-founded Fiverr in 2010 and leads the global online marketplace connecting freelancers with businesses, taking it public on NYSE in 2019."},
+    {"id": "shai-wininger", "name": "Shai Wininger", "role": "Co-Founder", "bio": "Co-founded Fiverr International and later went on to co-found Lemonade, an AI-driven insurance technology company."},
+    {"id": "ofer-katz", "name": "Ofer Katz", "role": "CFO", "bio": "Serves as Chief Financial Officer of Fiverr International, managing the company's financial operations through its IPO and growth period."}
+  ],
+  "tower-semiconductor": [
+    {"id": "russell-ellwanger", "name": "Russell Ellwanger", "role": "CEO", "bio": "Leads Tower Semiconductor as CEO, growing the specialty foundry into a major global analog semiconductor manufacturer."},
+    {"id": "oren-shirazi", "name": "Oren Shirazi", "role": "CFO & SVP", "bio": "Serves as CFO and Senior Vice President of Tower Semiconductor overseeing financial strategy and investor relations."},
+    {"id": "noel-hurley", "name": "Noel Hurley", "role": "COO", "bio": "Chief Operating Officer of Tower Semiconductor managing the company's global fabrication operations across multiple countries."}
+  ],
+  "gett": [
+    {"id": "dave-waiser", "name": "Dave Waiser", "role": "Co-Founder & CEO", "bio": "Co-founded Gett (originally GetTaxi) and leads the ride-hailing and corporate ground transportation technology company."},
+    {"id": "roi-more", "name": "Roi More", "role": "Co-Founder & CTO", "bio": "Co-founded Gett and oversees the technology platform powering ride-hailing services across multiple markets."},
+    {"id": "matt-weinberg", "name": "Matt Weinberg", "role": "GM of North America", "bio": "Led Gett's North American operations, focusing on the corporate ground transportation market in major U.S. cities."}
+  ],
+  "teva-pharmaceutical-industries": [
+    {"id": "richard-francis", "name": "Richard Francis", "role": "CEO", "bio": "Leads Teva Pharmaceutical Industries as CEO, guiding the world's largest generic drug manufacturer through its strategic turnaround."},
+    {"id": "eli-hurvitz", "name": "Eli Hurvitz", "role": "Former Chairman & CEO", "bio": "Legendary Israeli industrialist who led Teva for decades, transforming it from a small local company into a global pharmaceutical giant."},
+    {"id": "kare-schultz", "name": "Kåre Schultz", "role": "Former CEO", "bio": "Danish pharmaceutical executive who served as Teva's CEO from 2017 to 2023, leading the company's debt restructuring and turnaround efforts."},
+    {"id": "sol-barer", "name": "Sol Barer", "role": "Former Chairman", "bio": "Pharmaceutical industry veteran who served as Chairman of Teva's board of directors, previously CEO of Celgene Corporation."}
+  ],
+  "yad-vashem": [
+    {"id": "dani-dayan", "name": "Dani Dayan", "role": "Chairman", "bio": "Serves as Chairman of Yad Vashem, Israel's official memorial to victims of the Holocaust, previously served as Consul General in New York."},
+    {"id": "avner-shalev", "name": "Avner Shalev", "role": "Former Chairman", "bio": "Led Yad Vashem as Chairman for over two decades, overseeing the creation of the new Holocaust History Museum and major expansion of its archives."},
+    {"id": "irina-bokova", "name": "Irina Bokova", "role": "International Advisory Board", "bio": "Former UNESCO Director-General who supports Yad Vashem's global education mission on Holocaust remembrance and education."},
+    {"id": "benjamin-netanyahu", "name": "Benjamin Netanyahu", "role": "Head of Honorary Council", "bio": "As Prime Minister of Israel serves a ceremonial role in Yad Vashem's Honorary Council, frequently participating in Holocaust remembrance ceremonies."}
+  ]
+}

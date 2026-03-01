@@ -1,0 +1,546 @@
+{
+  "elbit-systems": [
+    {
+      "id": "bezhalel-machlis",
+      "name": "Bezhalel Machlis",
+      "role": "President & CEO",
+      "bio": "Has served as President and CEO of Elbit Systems since 2013, overseeing the company's growth into Israel's largest publicly traded defense firm."
+    },
+    {
+      "id": "michael-federmann",
+      "name": "Michael Federmann",
+      "role": "Former Chairman",
+      "bio": "Long-serving Chairman of Elbit Systems and patriarch of the Federmann family, which has been the company's controlling shareholder for decades."
+    },
+    {
+      "id": "ran-porat",
+      "name": "Ran Porat",
+      "role": "Executive Vice President",
+      "bio": "Senior executive at Elbit Systems who has led multiple business divisions including the company's C4I and cyber operations."
+    },
+    {
+      "id": "dalia-rabin",
+      "name": "Dalia Rabin",
+      "role": "Board Member",
+      "bio": "Daughter of Prime Minister Yitzhak Rabin who has served on Elbit Systems' board of directors and held various public service roles."
+    }
+  ],
+  "israel-electric-corporation": [
+    {
+      "id": "meir-spiegler",
+      "name": "Meir Spiegler",
+      "role": "CEO",
+      "bio": "Appointed CEO of the Israel Electric Corporation, leading the state-owned utility through major reform and infrastructure modernization."
+    },
+    {
+      "id": "yiftah-ron-tal",
+      "name": "Yiftah Ron-Tal",
+      "role": "Chairman of the Board",
+      "bio": "Former IDF general who served as Chairman of the Israel Electric Corporation, guiding the company's transition toward renewable energy."
+    },
+    {
+      "id": "ofer-bloch",
+      "name": "Ofer Bloch",
+      "role": "Former CEO",
+      "bio": "Served as CEO of the Israel Electric Corporation during a period of significant restructuring and regulatory changes in the Israeli energy market."
+    }
+  ],
+  "technion-israel-institute-of-technology": [
+    {
+      "id": "uri-sivan",
+      "name": "Uri Sivan",
+      "role": "President",
+      "bio": "Distinguished physicist who became President of the Technion in 2019, previously serving as founding director of the Russell Berrie Nanotechnology Institute."
+    },
+    {
+      "id": "boaz-golany",
+      "name": "Boaz Golany",
+      "role": "Executive Vice President for Research",
+      "bio": "Industrial engineering professor serving as Executive VP for Research at the Technion, overseeing the university's extensive research enterprise."
+    },
+    {
+      "id": "dan-shechtman",
+      "name": "Dan Shechtman",
+      "role": "Distinguished Professor",
+      "bio": "Nobel Prize in Chemistry laureate (2011) for the discovery of quasicrystals, and longtime Technion faculty member in materials science and engineering."
+    },
+    {
+      "id": "peretz-lavie",
+      "name": "Peretz Lavie",
+      "role": "Former President",
+      "bio": "Renowned sleep researcher who served as President of the Technion from 2009 to 2019, expanding the university's global partnerships and research output."
+    }
+  ],
+  "rafael-advanced-defense-systems": [
+    {
+      "id": "yoav-har-even",
+      "name": "Yoav Har-Even",
+      "role": "President & CEO",
+      "bio": "Retired Major General who has led Rafael Advanced Defense Systems, overseeing development of the Iron Dome and other advanced weapons systems."
+    },
+    {
+      "id": "uzi-rubin",
+      "name": "Uzi Rubin",
+      "role": "Former Director of Israel Missile Defense Organization",
+      "bio": "Pioneer of Israeli missile defense who directed the Arrow program and played a key role in shaping Rafael's strategic defense capabilities."
+    },
+    {
+      "id": "moshe-patel",
+      "name": "Moshe Patel",
+      "role": "Head of Israel Missile Defense Organization",
+      "bio": "Led the Israel Missile Defense Organization which partnered closely with Rafael on development of the Iron Dome and David's Sling systems."
+    },
+    {
+      "id": "giora-katz",
+      "name": "Giora Katz",
+      "role": "Former Executive Vice President",
+      "bio": "Former EVP at Rafael who led the company's land and naval division, overseeing the development of major defense platforms."
+    }
+  ],
+  "sheba-medical-center": [
+    {
+      "id": "yitshak-kreiss",
+      "name": "Yitshak Kreiss",
+      "role": "Director General",
+      "bio": "Brigadier General (res.) and physician who has served as Director General of Sheba Medical Center, leading it to global recognition in medical innovation."
+    },
+    {
+      "id": "arnon-afek",
+      "name": "Arnon Afek",
+      "role": "Deputy Director General",
+      "bio": "Physician and health policy expert who has served in senior leadership at Sheba Medical Center and played a significant national role during COVID-19."
+    },
+    {
+      "id": "eyal-zimlichman",
+      "name": "Eyal Zimlichman",
+      "role": "Chief Medical Officer & Chief Innovation Officer",
+      "bio": "Drives Sheba's ARC innovation center and digital health transformation, positioning the hospital as a leading global health-tech hub."
+    }
+  ],
+  "jewish-agency-for-israel": [
+    {
+      "id": "doron-almog",
+      "name": "Doron Almog",
+      "role": "Chairman",
+      "bio": "Retired IDF Major General and founder of ADI Negev rehabilitation village who was elected Chairman of the Jewish Agency in 2022."
+    },
+    {
+      "id": "amira-ahronoviz",
+      "name": "Amira Ahronoviz",
+      "role": "CEO & Director General",
+      "bio": "Long-serving executive who became CEO and Director General of the Jewish Agency, managing its worldwide operations for aliyah and Jewish engagement."
+    },
+    {
+      "id": "natan-sharansky",
+      "name": "Natan Sharansky",
+      "role": "Former Chairman",
+      "bio": "Soviet dissident and human rights icon who served as Chairman of the Jewish Agency from 2009 to 2018 after a career in Israeli politics."
+    },
+    {
+      "id": "isaac-herzog",
+      "name": "Isaac Herzog",
+      "role": "Former Chairman",
+      "bio": "Served as Chairman of the Jewish Agency from 2018 to 2021 before being elected the 11th President of the State of Israel."
+    }
+  ],
+  "israel-chemicals-icl": [
+    {
+      "id": "raviv-zoller",
+      "name": "Raviv Zoller",
+      "role": "President & CEO",
+      "bio": "Appointed President and CEO of ICL Group, leading the specialty minerals company's transformation and global expansion in agriculture and industrial solutions."
+    },
+    {
+      "id": "johanna-soderstrom",
+      "name": "Johanna Soderstrom",
+      "role": "Chairperson of the Board",
+      "bio": "International business executive who serves as Chairperson of ICL's board, bringing extensive experience in global industrial operations."
+    },
+    {
+      "id": "aviram-lahav",
+      "name": "Aviram Lahav",
+      "role": "CFO",
+      "bio": "Chief Financial Officer of ICL Group, responsible for the company's financial strategy and capital allocation across its global operations."
+    }
+  ],
+  "habima-theatre": [
+    {
+      "id": "odelia-friedman",
+      "name": "Odelia Friedman",
+      "role": "General Director",
+      "bio": "Serves as General Director of Habima, Israel's national theater, overseeing its programming and operations in Tel Aviv's cultural center."
+    },
+    {
+      "id": "ilan-ronen",
+      "name": "Ilan Ronen",
+      "role": "Former Artistic Director",
+      "bio": "Leading Israeli theater director who served as Artistic Director of Habima Theatre for many years, shaping its modern repertoire."
+    },
+    {
+      "id": "nahum-zemach",
+      "name": "Nahum Zemach",
+      "role": "Founder",
+      "bio": "Founded Habima Theatre in Moscow in 1918 as the first professional Hebrew-language theater company, later relocating it to British Mandatory Palestine."
+    }
+  ],
+  "zim-integrated-shipping-services": [
+    {
+      "id": "eli-glickman",
+      "name": "Eli Glickman",
+      "role": "Former President & CEO",
+      "bio": "Led ZIM Integrated Shipping Services through its successful IPO on the New York Stock Exchange in 2021 and a period of record profitability."
+    },
+    {
+      "id": "yair-seroussi",
+      "name": "Yair Seroussi",
+      "role": "Chairman of the Board",
+      "bio": "Former chairman of Bank Hapoalim who serves as Chairman of ZIM's board, overseeing the company's strategic direction as a global container shipping leader."
+    },
+    {
+      "id": "xavier-destriau",
+      "name": "Xavier Destriau",
+      "role": "CFO",
+      "bio": "Chief Financial Officer of ZIM Integrated Shipping Services, managing the company's financial operations during its transition to a publicly traded company."
+    }
+  ],
+  "bezeq": [
+    {
+      "id": "ran-guron",
+      "name": "Ran Guron",
+      "role": "CEO",
+      "bio": "Appointed CEO of Bezeq, leading Israel's largest telecommunications provider through network modernization and fiber-optic expansion."
+    },
+    {
+      "id": "gil-sharon",
+      "name": "Gil Sharon",
+      "role": "Chairman of the Board",
+      "bio": "Chairman of the board of Bezeq Israel Telecom, overseeing the company's governance during a period of major industry transformation."
+    },
+    {
+      "id": "shaul-elovitch",
+      "name": "Shaul Elovitch",
+      "role": "Former Controlling Shareholder",
+      "bio": "Businessman who was the controlling shareholder of Bezeq through Eurocom Group, later becoming a central figure in Israeli telecommunications regulatory controversies."
+    }
+  ],
+  "tel-aviv-university": [
+    {
+      "id": "ariel-porat",
+      "name": "Ariel Porat",
+      "role": "President",
+      "bio": "Distinguished law professor who became President of Tel Aviv University in 2021, previously serving as dean of the Buchmann Faculty of Law."
+    },
+    {
+      "id": "milette-shamir",
+      "name": "Milette Shamir",
+      "role": "Rector",
+      "bio": "Professor of American literature serving as Rector of Tel Aviv University, overseeing the academic affairs of Israel's largest university."
+    },
+    {
+      "id": "joseph-klafter",
+      "name": "Joseph Klafter",
+      "role": "Former President",
+      "bio": "Renowned physicist who served as President of Tel Aviv University from 2009 to 2019, expanding the university's international standing and research programs."
+    }
+  ],
+  "africa-israel-investments": [
+    {
+      "id": "lev-leviev",
+      "name": "Lev Leviev",
+      "role": "Founder & Former Chairman",
+      "bio": "Uzbek-born Israeli diamond magnate who founded Africa Israel Investments and built it into a major international conglomerate spanning real estate, construction, and diamonds."
+    },
+    {
+      "id": "avraham-novogrocki",
+      "name": "Avraham Novogrocki",
+      "role": "CEO",
+      "bio": "Chief Executive Officer of Africa Israel Investments, managing the conglomerate's diverse portfolio of real estate, infrastructure, and investment operations."
+    }
+  ],
+  "ben-gurion-university-of-the-negev": [
+    {
+      "id": "daniel-chamovitz",
+      "name": "Daniel Chamovitz",
+      "role": "President",
+      "bio": "Plant biologist and author who became President of Ben-Gurion University of the Negev in 2018."
+    },
+    {
+      "id": "chaim-hames",
+      "name": "Chaim Hames",
+      "role": "Rector",
+      "bio": "Professor of medieval history serving as Rector of Ben-Gurion University, overseeing academic programs across the university's campuses."
+    },
+    {
+      "id": "rivka-carmi",
+      "name": "Rivka Carmi",
+      "role": "Former President",
+      "bio": "Pediatric geneticist who served as President of Ben-Gurion University from 2006 to 2018, the first woman to lead an Israeli research university."
+    }
+  ],
+  "azrieli-group": [
+    {
+      "id": "danna-azrieli",
+      "name": "Danna Azrieli",
+      "role": "Chairperson",
+      "bio": "Daughter of founder David Azrieli who serves as Chairperson of the Azrieli Group, one of Israel's largest real estate and shopping center companies."
+    },
+    {
+      "id": "eyal-henkin",
+      "name": "Eyal Henkin",
+      "role": "CEO",
+      "bio": "Chief Executive Officer of the Azrieli Group, managing the company's extensive portfolio of shopping malls, office towers, and senior housing across Israel."
+    },
+    {
+      "id": "david-azrieli",
+      "name": "David Azrieli",
+      "role": "Founder",
+      "bio": "Canadian-Israeli architect and businessman who founded the Azrieli Group and built the iconic Azrieli Center towers in Tel Aviv before his death in 2014."
+    }
+  ],
+  "cellebrite": [
+    {
+      "id": "yossi-carmil",
+      "name": "Yossi Carmil",
+      "role": "CEO",
+      "bio": "Leads Cellebrite as CEO, guiding the digital intelligence company through its public listing and expansion of its digital forensics platform."
+    },
+    {
+      "id": "ron-serber",
+      "name": "Ron Serber",
+      "role": "Co-Founder & Former Co-CEO",
+      "bio": "Co-founded Cellebrite and served as Co-CEO, helping build the company into a global leader in mobile data extraction."
+    },
+    {
+      "id": "avi-yablonka",
+      "name": "Avi Yablonka",
+      "role": "Co-Founder",
+      "bio": "Co-founded Cellebrite in 1999, playing a key role in the company's early development of mobile communication and data transfer technologies."
+    }
+  ],
+  "cyberark": [
+    {
+      "id": "udi-mokady",
+      "name": "Udi Mokady",
+      "role": "Founder & Executive Chairman",
+      "bio": "Co-founded CyberArk in 1999 and served as CEO for over two decades before transitioning to Executive Chairman."
+    },
+    {
+      "id": "matt-cohen",
+      "name": "Matt Cohen",
+      "role": "CEO",
+      "bio": "Appointed CEO of CyberArk in 2023, previously serving as COO and leading the company's go-to-market transformation and cloud security strategy."
+    },
+    {
+      "id": "alon-cohen",
+      "name": "Alon Cohen",
+      "role": "Co-Founder & Former CTO",
+      "bio": "Co-founded CyberArk alongside Udi Mokady and served as CTO, developing the foundational privileged access management technology."
+    }
+  ],
+  "solaredge-technologies": [
+    {
+      "id": "zvi-lando",
+      "name": "Zvi Lando",
+      "role": "CEO",
+      "bio": "Became CEO of SolarEdge Technologies in 2019 following the passing of founder Guy Sella, leading the company's expansion in smart energy solutions."
+    },
+    {
+      "id": "guy-sella",
+      "name": "Guy Sella",
+      "role": "Co-Founder & Former CEO",
+      "bio": "Founded SolarEdge Technologies and served as Chairman and CEO, pioneering DC-optimized inverter systems for solar energy before his passing in 2019."
+    },
+    {
+      "id": "lior-handelsman",
+      "name": "Lior Handelsman",
+      "role": "Co-Founder & VP of Marketing",
+      "bio": "Co-founded SolarEdge Technologies and has guided the company's product strategy and marketing efforts since its inception."
+    },
+    {
+      "id": "ronen-faier",
+      "name": "Ronen Faier",
+      "role": "CFO",
+      "bio": "Long-serving Chief Financial Officer of SolarEdge Technologies, managing the company's finances through its IPO and periods of rapid growth."
+    }
+  ],
+  "outbrain": [
+    {
+      "id": "yaron-galai",
+      "name": "Yaron Galai",
+      "role": "Co-Founder & Co-CEO",
+      "bio": "Co-founded Outbrain in 2006 and has served as Co-CEO, building it into one of the world's leading content discovery and native advertising platforms."
+    },
+    {
+      "id": "david-kostman",
+      "name": "David Kostman",
+      "role": "Co-CEO",
+      "bio": "Joined Outbrain as Co-CEO, bringing extensive global media and technology leadership experience to guide the company's growth."
+    },
+    {
+      "id": "ori-lahav",
+      "name": "Ori Lahav",
+      "role": "Co-Founder & CTO",
+      "bio": "Co-founded Outbrain and has served as CTO, architecting the recommendation engine technology that powers content discovery."
+    }
+  ],
+  "amdocs": [
+    {
+      "id": "shuky-sheffer",
+      "name": "Shuky Sheffer",
+      "role": "President & CEO",
+      "bio": "Leads Amdocs as President and CEO, overseeing the company's role as a leading provider of software and services to communications companies worldwide."
+    },
+    {
+      "id": "morris-kahn",
+      "name": "Morris Kahn",
+      "role": "Former Chairman & Key Investor",
+      "bio": "South African-born Israeli billionaire and philanthropist who played a pivotal role in the founding and growth of Amdocs."
+    },
+    {
+      "id": "tamar-rapaport-dagim",
+      "name": "Tamar Rapaport-Dagim",
+      "role": "CFO",
+      "bio": "Chief Financial Officer of Amdocs, managing the financial strategy and operations of the multibillion-dollar technology services company."
+    }
+  ],
+  "israel-museum": [
+    {
+      "id": "ido-bruno",
+      "name": "Ido Bruno",
+      "role": "Director",
+      "bio": "Industrial designer and curator who serves as Director of the Israel Museum in Jerusalem, overseeing one of the world's leading art and archaeology institutions."
+    },
+    {
+      "id": "james-snyder",
+      "name": "James Snyder",
+      "role": "Former Director",
+      "bio": "American museum professional who served as Director of the Israel Museum for over 18 years, leading a major campus renewal completed in 2010."
+    },
+    {
+      "id": "teddy-kollek",
+      "name": "Teddy Kollek",
+      "role": "Founder",
+      "bio": "Legendary mayor of Jerusalem who founded the Israel Museum in 1965, establishing it as a world-class cultural institution housing the Dead Sea Scrolls."
+    }
+  ],
+  "wix-com": [
+    {
+      "id": "avishai-abrahami",
+      "name": "Avishai Abrahami",
+      "role": "Co-Founder & CEO",
+      "bio": "Co-founded Wix.com in 2006 and has led the company as CEO, growing it into a leading global platform for website creation."
+    },
+    {
+      "id": "nir-zohar",
+      "name": "Nir Zohar",
+      "role": "President & COO",
+      "bio": "Serves as President and COO of Wix.com, overseeing the company's business operations, strategy, and user growth initiatives."
+    },
+    {
+      "id": "giora-kaplan",
+      "name": "Giora Kaplan",
+      "role": "Co-Founder & CTO",
+      "bio": "Co-founded Wix.com and serves as CTO, leading the development of the company's website building and cloud-based platform technology."
+    }
+  ],
+  "nice-systems": [
+    {
+      "id": "barak-eilam",
+      "name": "Barak Eilam",
+      "role": "CEO",
+      "bio": "Leads NICE Systems as CEO, transforming the company into a major cloud platform provider for customer engagement and financial crime prevention."
+    },
+    {
+      "id": "steve-fredrick",
+      "name": "Steve Fredrick",
+      "role": "CFO",
+      "bio": "Chief Financial Officer of NICE Systems, overseeing the financial operations during its transition to cloud-based solutions."
+    },
+    {
+      "id": "barry-cooper",
+      "name": "Barry Cooper",
+      "role": "President of CX Division",
+      "bio": "President of NICE's Customer Experience division, leading the company's flagship CXone cloud platform."
+    }
+  ],
+  "the-jerusalem-post": [
+    {
+      "id": "yaakov-katz",
+      "name": "Yaakov Katz",
+      "role": "Editor-in-Chief",
+      "bio": "Journalist and author who serves as Editor-in-Chief of The Jerusalem Post, previously covering military and defense affairs."
+    },
+    {
+      "id": "eli-azur",
+      "name": "Eli Azur",
+      "role": "Owner & Publisher",
+      "bio": "Israeli businessman who acquired The Jerusalem Post and serves as its publisher."
+    },
+    {
+      "id": "gershon-agron",
+      "name": "Gershon Agron",
+      "role": "Founder",
+      "bio": "Founded The Palestine Post in 1932, which was renamed The Jerusalem Post in 1950."
+    }
+  ],
+  "i24news": [
+    {
+      "id": "frank-melloul",
+      "name": "Frank Melloul",
+      "role": "CEO",
+      "bio": "French-Israeli media executive who founded and leads i24NEWS as CEO, building it into an international 24-hour news channel."
+    },
+    {
+      "id": "patrick-drahi",
+      "name": "Patrick Drahi",
+      "role": "Founder & Owner",
+      "bio": "French-Israeli billionaire telecom magnate who founded i24NEWS in 2013 through his Altice media group."
+    },
+    {
+      "id": "lucy-aharish",
+      "name": "Lucy Aharish",
+      "role": "News Anchor",
+      "bio": "Prominent Arab-Israeli journalist and news presenter at i24NEWS known for her English and Hebrew broadcasting."
+    }
+  ],
+  "bar-ilan-university": [
+    {
+      "id": "arie-zaban",
+      "name": "Arie Zaban",
+      "role": "President",
+      "bio": "Chemistry professor who has served as President of Bar-Ilan University since 2013, expanding the institution's research capabilities."
+    },
+    {
+      "id": "moshe-kaveh",
+      "name": "Moshe Kaveh",
+      "role": "Former President",
+      "bio": "Physicist who served as President of Bar-Ilan University from 1996 to 2013, significantly growing the university's academic programs."
+    },
+    {
+      "id": "pinchas-churgin",
+      "name": "Pinchas Churgin",
+      "role": "Founder",
+      "bio": "American rabbi and scholar who founded Bar-Ilan University in 1955 in Ramat Gan."
+    }
+  ],
+  "sentinelone": [
+    {
+      "id": "tomer-weingarten",
+      "name": "Tomer Weingarten",
+      "role": "Co-Founder & CEO",
+      "bio": "Co-founded SentinelOne in 2013 and leads it as CEO, building the company into a leading AI-powered autonomous cybersecurity platform."
+    },
+    {
+      "id": "almog-cohen",
+      "name": "Almog Cohen",
+      "role": "Co-Founder & Former CTO",
+      "bio": "Co-founded SentinelOne and served as CTO, developing the company's core autonomous endpoint protection technology."
+    },
+    {
+      "id": "vats-srivatsan",
+      "name": "Vats Srivatsan",
+      "role": "President & COO",
+      "bio": "Serves as President and COO of SentinelOne, managing the company's business operations and global go-to-market strategy."
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "jpmorgan-chase": [
+    {"id": "person-jamie-dimon-jpm", "name": "Jamie Dimon", "role": "Chairman & CEO", "bio": "Has served as Chairman and CEO of JPMorgan Chase since 2005. One of the most prominent figures in global banking, he led the firm through the 2008 financial crisis."},
+    {"id": "person-daniel-pinto-jpm", "name": "Daniel Pinto", "role": "President & COO", "bio": "President and Chief Operating Officer of JPMorgan Chase. Previously led the Corporate & Investment Bank division."},
+    {"id": "person-mary-erdoes-jpm", "name": "Mary Callahan Erdoes", "role": "CEO of Asset & Wealth Management", "bio": "Head of JPMorgan's Asset & Wealth Management division overseeing trillions in client assets. Consistently ranked among the most powerful women in finance."},
+    {"id": "person-marianne-lake-jpm", "name": "Marianne Lake", "role": "CEO of Consumer & Community Banking", "bio": "Co-CEO of Consumer & Community Banking at JPMorgan Chase. Previously served as the firm's Chief Financial Officer."}
+  ],
+  "blackrock": [
+    {"id": "person-larry-fink-blk", "name": "Larry Fink", "role": "Co-founder, Chairman & CEO", "bio": "Co-founded BlackRock in 1988 and built it into the world's largest asset manager with over $10 trillion in assets under management."},
+    {"id": "person-robert-kapito-blk", "name": "Robert Kapito", "role": "Co-founder & President", "bio": "Co-founded BlackRock alongside Larry Fink and has served as President since the firm's inception."},
+    {"id": "person-barbara-novick-blk", "name": "Barbara Novick", "role": "Co-founder & Former Vice Chairman", "bio": "One of the eight co-founders of BlackRock and served as Vice Chairman overseeing government relations and public policy."},
+    {"id": "person-rob-goldstein-blk", "name": "Rob Goldstein", "role": "COO & Head of BlackRock Solutions", "bio": "Serves as Chief Operating Officer and oversees BlackRock Solutions, the firm's technology and risk analytics platform."}
+  ],
+  "pfizer": [
+    {"id": "person-albert-bourla-pfz", "name": "Albert Bourla", "role": "Chairman & CEO", "bio": "Chairman and CEO of Pfizer who led the company's rapid development and global rollout of the COVID-19 vaccine in partnership with BioNTech."},
+    {"id": "person-ian-read-pfz", "name": "Ian Read", "role": "Former Chairman & CEO", "bio": "Served as Pfizer's CEO from 2010 to 2018 and as Chairman until 2019, overseeing major acquisitions and restructuring."},
+    {"id": "person-sally-susman-pfz", "name": "Sally Susman", "role": "EVP & Chief Corporate Affairs Officer", "bio": "Executive Vice President and Chief Corporate Affairs Officer at Pfizer, responsible for global communications and government relations."},
+    {"id": "person-mikael-dolsten-pfz", "name": "Mikael Dolsten", "role": "Former Chief Scientific Officer", "bio": "Served as President of Worldwide Research, Development and Medical at Pfizer, leading the company's R&D pipeline for over a decade."}
+  ],
+  "johnson-johnson": [
+    {"id": "person-joaquin-duato-jnj", "name": "Joaquin Duato", "role": "Chairman & CEO", "bio": "Became CEO of Johnson & Johnson in 2022 after over 30 years with the company. Oversaw the split of the consumer health division."},
+    {"id": "person-alex-gorsky-jnj", "name": "Alex Gorsky", "role": "Former Chairman & CEO", "bio": "Led Johnson & Johnson as CEO from 2012 to 2022, guiding the company through significant growth and the development of its COVID-19 vaccine."},
+    {"id": "person-paul-stoffels-jnj", "name": "Paul Stoffels", "role": "Former Vice Chairman & Chief Scientific Officer", "bio": "Served as J&J's Chief Scientific Officer and Vice Chairman of the Executive Committee, driving pharmaceutical innovation including the Janssen COVID vaccine."},
+    {"id": "person-jennifer-taubert-jnj", "name": "Jennifer Taubert", "role": "EVP, Worldwide Chairman of Pharmaceuticals", "bio": "Executive Vice President and Worldwide Chairman of Johnson & Johnson's pharmaceutical business, one of the largest pharma divisions globally."}
+  ],
+  "bloomberg-philanthropies": [
+    {"id": "person-michael-bloomberg-bp", "name": "Michael Bloomberg", "role": "Founder", "bio": "Billionaire businessman and former Mayor of New York City who has donated over $17 billion to philanthropic causes through Bloomberg Philanthropies."},
+    {"id": "person-patricia-harris-bp", "name": "Patricia Harris", "role": "CEO", "bio": "CEO of Bloomberg Philanthropies, overseeing all of the organization's charitable initiatives spanning public health, environment, education, and the arts."},
+    {"id": "person-james-anderson-bp", "name": "James Anderson", "role": "Head of Government Innovation Programs", "bio": "Leads Bloomberg Philanthropies' Government Innovation programs including What Works Cities and the American Cities Climate Challenge."}
+  ],
+  "bloomberg-l-p": [
+    {"id": "person-michael-bloomberg-blp", "name": "Michael Bloomberg", "role": "Founder & Majority Owner", "bio": "Founded Bloomberg L.P. in 1981, creating the Bloomberg Terminal which revolutionized financial data services. Former three-term Mayor of New York City."},
+    {"id": "person-peter-grauer-blp", "name": "Peter Grauer", "role": "Chairman", "bio": "Chairman of Bloomberg L.P., overseeing corporate governance of the global financial data and media company."},
+    {"id": "person-tom-secunda-blp", "name": "Tom Secunda", "role": "Co-founder & Former Vice Chairman", "bio": "Co-founded Bloomberg L.P. and served as Vice Chairman. Helped design and build the original Bloomberg Terminal system."},
+    {"id": "person-matthew-winkler-blp", "name": "Matthew Winkler", "role": "Co-founder of Bloomberg News & Editor-in-Chief Emeritus", "bio": "Founded Bloomberg News in 1990 and served as Editor-in-Chief for 25 years, building it into one of the world's largest news organizations."}
+  ],
+  "oracle-corporation": [
+    {"id": "person-larry-ellison-orcl", "name": "Larry Ellison", "role": "Co-founder, Chairman & CTO", "bio": "Co-founded Oracle in 1977 and built it into one of the world's largest software companies. One of the wealthiest people in the world."},
+    {"id": "person-safra-catz-orcl", "name": "Safra Catz", "role": "CEO", "bio": "CEO of Oracle Corporation, previously serving as co-CEO and CFO. One of the highest-paid female executives in the technology industry."},
+    {"id": "person-bob-miner-orcl", "name": "Bob Miner", "role": "Co-founder", "bio": "Co-founded Oracle Corporation (originally Software Development Laboratories) in 1977 and led its early database development efforts until his death in 1994."},
+    {"id": "person-ed-oates-orcl", "name": "Ed Oates", "role": "Co-founder", "bio": "Co-founded Oracle alongside Larry Ellison and Bob Miner in 1977. Contributed to the early development of Oracle's relational database technology."}
+  ],
+  "intel-corporation": [
+    {"id": "person-gordon-moore-intc", "name": "Gordon Moore", "role": "Co-founder", "bio": "Co-founded Intel in 1968 and formulated Moore's Law, predicting the doubling of transistors on integrated circuits approximately every two years."},
+    {"id": "person-robert-noyce-intc", "name": "Robert Noyce", "role": "Co-founder", "bio": "Co-founded Intel and co-invented the integrated circuit. Known as the 'Mayor of Silicon Valley' for his foundational contributions to the tech industry."},
+    {"id": "person-andy-grove-intc", "name": "Andy Grove", "role": "Former CEO & Chairman", "bio": "Third employee and later CEO of Intel who transformed it into the world's dominant semiconductor company. Time Magazine's Man of the Year in 1997."},
+    {"id": "person-pat-gelsinger-intc", "name": "Pat Gelsinger", "role": "Former CEO", "bio": "Served as Intel's CEO from 2021 to 2024, leading the company's IDM 2.0 strategy and major investments in semiconductor manufacturing."}
+  ],
+  "nvidia-corporation": [
+    {"id": "person-jensen-huang-nvda", "name": "Jensen Huang", "role": "Co-founder, President & CEO", "bio": "Co-founded Nvidia in 1993 and led its transformation from a graphics chip company into the dominant force in AI computing and data center GPUs."},
+    {"id": "person-chris-malachowsky-nvda", "name": "Chris Malachowsky", "role": "Co-founder", "bio": "Co-founded Nvidia in 1993 alongside Jensen Huang and Curtis Priem. Instrumental in the development of the company's early GPU technology."},
+    {"id": "person-curtis-priem-nvda", "name": "Curtis Priem", "role": "Co-founder", "bio": "Co-founded Nvidia and served as its first Chief Technical Officer. Designed Nvidia's first graphics chip before retiring in 2003."},
+    {"id": "person-colette-kress-nvda", "name": "Colette Kress", "role": "EVP & CFO", "bio": "Executive Vice President and Chief Financial Officer of Nvidia, overseeing the company's finances during its meteoric rise in the AI era."}
+  ],
+  "dell-technologies": [
+    {"id": "person-michael-dell-dell", "name": "Michael Dell", "role": "Founder, Chairman & CEO", "bio": "Founded Dell Technologies in his University of Texas dorm room in 1984. Took the company private in 2013 and returned it to public markets in 2018."},
+    {"id": "person-jeff-clarke-dell", "name": "Jeff Clarke", "role": "Vice Chairman & COO", "bio": "Serves as Vice Chairman and Chief Operating Officer of Dell Technologies, overseeing product development and supply chain operations."},
+    {"id": "person-tom-sweet-dell", "name": "Tom Sweet", "role": "CFO", "bio": "Chief Financial Officer of Dell Technologies, managing the company's financial strategy and investor relations."}
+  ],
+  "salesforce": [
+    {"id": "person-marc-benioff-crm", "name": "Marc Benioff", "role": "Co-founder, Chairman & CEO", "bio": "Co-founded Salesforce in 1999 and pioneered the software-as-a-service business model. Known for stakeholder capitalism and philanthropic commitments."},
+    {"id": "person-parker-harris-crm", "name": "Parker Harris", "role": "Co-founder & CTO", "bio": "Co-founded Salesforce and served as its Chief Technology Officer, building the cloud computing platform that defined enterprise SaaS."},
+    {"id": "person-bret-taylor-crm", "name": "Bret Taylor", "role": "Former Co-CEO & Vice Chairman", "bio": "Served as Salesforce co-CEO alongside Marc Benioff. Previously co-created Google Maps and served as CTO of Facebook."},
+    {"id": "person-keith-block-crm", "name": "Keith Block", "role": "Former Co-CEO", "bio": "Served as Salesforce co-CEO in 2018-2020 and previously as Vice Chairman and President, driving enterprise sales growth."}
+  ],
+  "zoom-video-communications": [
+    {"id": "person-eric-yuan-zm", "name": "Eric Yuan", "role": "Founder & CEO", "bio": "Founded Zoom Video Communications in 2011 after leaving Cisco. Led the platform's explosive growth during the COVID-19 pandemic."},
+    {"id": "person-aparna-bawa-zm", "name": "Aparna Bawa", "role": "Former COO", "bio": "Served as Chief Operating Officer of Zoom, responsible for legal, compliance, security, and business operations."},
+    {"id": "person-kelly-steckelberg-zm", "name": "Kelly Steckelberg", "role": "Former CFO", "bio": "Served as Chief Financial Officer of Zoom Video Communications, guiding the company's financial strategy through its IPO and rapid growth period."}
+  ],
+  "crowdstrike": [
+    {"id": "person-george-kurtz-crwd", "name": "George Kurtz", "role": "Co-founder, President & CEO", "bio": "Co-founded CrowdStrike in 2011 and built it into a leading cybersecurity company. Previously served as CTO of McAfee."},
+    {"id": "person-dmitri-alperovitch-crwd", "name": "Dmitri Alperovitch", "role": "Co-founder & Former CTO", "bio": "Co-founded CrowdStrike and served as CTO. A renowned cybersecurity expert who led the investigation of the 2016 DNC breach."},
+    {"id": "person-shawn-henry-crwd", "name": "Shawn Henry", "role": "Chief Security Officer & President of CrowdStrike Services", "bio": "Leads CrowdStrike's services division. Former Executive Assistant Director of the FBI overseeing criminal and cyber investigations."}
+  ],
+  "palo-alto-networks": [
+    {"id": "person-nikesh-arora-panw", "name": "Nikesh Arora", "role": "Chairman & CEO", "bio": "Chairman and CEO of Palo Alto Networks since 2018. Previously served as President of SoftBank and Chief Business Officer of Google."},
+    {"id": "person-nir-zuk-panw", "name": "Nir Zuk", "role": "Founder & CTO", "bio": "Founded Palo Alto Networks in 2005 and created the next-generation firewall concept. Previously a principal engineer at Check Point and founder of OneSecure."},
+    {"id": "person-mark-mclaughlin-panw", "name": "Mark McLaughlin", "role": "Former Chairman & CEO", "bio": "Served as Palo Alto Networks CEO from 2011 to 2018, growing the company into a cybersecurity industry leader before becoming Vice Chairman."}
+  ],
+  "broadcom-inc": [
+    {"id": "person-hock-tan-avgo", "name": "Hock Tan", "role": "President & CEO", "bio": "President and CEO of Broadcom who orchestrated the company's aggressive acquisition strategy including the $61 billion purchase of VMware."},
+    {"id": "person-henry-samueli-avgo", "name": "Henry Samueli", "role": "Co-founder & Chairman/CTO", "bio": "Co-founded Broadcom Corporation in 1991 with Henry Nicholas. A distinguished professor of electrical engineering at UCLA and owner of the Anaheim Ducks."},
+    {"id": "person-henry-nicholas-avgo", "name": "Henry Nicholas III", "role": "Co-founder", "bio": "Co-founded Broadcom Corporation in 1991 alongside Henry Samueli, serving as President and CEO through the company's formative years."},
+    {"id": "person-charlie-kawwas-avgo", "name": "Charlie Kawwas", "role": "President, Semiconductor Solutions Group", "bio": "President of Broadcom's Semiconductor Solutions Group, overseeing the company's core chip business across networking, storage, and wireless markets."}
+  ],
+  "akamai-technologies": [
+    {"id": "person-tom-leighton-akam", "name": "Tom Leighton", "role": "Co-founder & CEO", "bio": "Co-founded Akamai Technologies in 1998 and has served as CEO since 2013. An MIT professor of applied mathematics who helped invent content delivery network technology."},
+    {"id": "person-danny-lewin-akam", "name": "Danny Lewin", "role": "Co-founder", "bio": "Co-founded Akamai Technologies while a graduate student at MIT. Tragically killed aboard American Airlines Flight 11 on September 11, 2001."},
+    {"id": "person-robert-blumofe-akam", "name": "Robert Blumofe", "role": "EVP & CTO", "bio": "Executive Vice President and Chief Technology Officer of Akamai, leading the company's technology strategy and platform development."}
+  ],
+  "slack-technologies": [
+    {"id": "person-stewart-butterfield-slack", "name": "Stewart Butterfield", "role": "Co-founder & Former CEO", "bio": "Co-founded Slack Technologies and served as CEO until its $27.7 billion acquisition by Salesforce in 2021. Previously co-founded Flickr."},
+    {"id": "person-cal-henderson-slack", "name": "Cal Henderson", "role": "Co-founder & CTO", "bio": "Co-founded Slack and served as Chief Technology Officer, designing and building the messaging platform's core architecture."},
+    {"id": "person-eric-costello-slack", "name": "Eric Costello", "role": "Co-founder", "bio": "Co-founded Slack Technologies and contributed to the platform's development. Previously worked with Stewart Butterfield at Flickr."},
+    {"id": "person-serguei-mourachov-slack", "name": "Serguei Mourachov", "role": "Co-founder", "bio": "Co-founded Slack Technologies alongside Stewart Butterfield, Cal Henderson, and Eric Costello. Part of the original team at Tiny Speck."}
+  ],
+  "uber-technologies": [
+    {"id": "person-travis-kalanick-uber", "name": "Travis Kalanick", "role": "Co-founder & Former CEO", "bio": "Co-founded Uber in 2009 and served as CEO until 2017, growing it into one of the most valuable startups in history before a series of controversies led to his departure."},
+    {"id": "person-garrett-camp-uber", "name": "Garrett Camp", "role": "Co-founder", "bio": "Co-founded Uber alongside Travis Kalanick. A Canadian entrepreneur who previously co-founded StumbleUpon."},
+    {"id": "person-dara-khosrowshahi-uber", "name": "Dara Khosrowshahi", "role": "CEO", "bio": "Became CEO of Uber in 2017, leading the company through its IPO and shift toward profitability. Previously CEO of Expedia Group."}
+  ],
+  "airbnb": [
+    {"id": "person-brian-chesky-abnb", "name": "Brian Chesky", "role": "Co-founder & CEO", "bio": "Co-founded Airbnb in 2008 and serves as CEO. A former industrial designer who transformed the hospitality industry through the home-sharing platform."},
+    {"id": "person-joe-gebbia-abnb", "name": "Joe Gebbia", "role": "Co-founder", "bio": "Co-founded Airbnb alongside Brian Chesky and Nathan Blecharczyk. Led the company's design and product innovation as CPO before stepping back."},
+    {"id": "person-nathan-blecharczyk-abnb", "name": "Nathan Blecharczyk", "role": "Co-founder & Chief Strategy Officer", "bio": "Co-founded Airbnb and built the original platform. Serves as Chief Strategy Officer and Chairman of Airbnb China."}
+  ],
+  "wework": [
+    {"id": "person-adam-neumann-wework", "name": "Adam Neumann", "role": "Co-founder & Former CEO", "bio": "Israeli-born entrepreneur who co-founded WeWork in 2010 and grew it into a $47 billion valued company before a spectacular fall from grace during its failed 2019 IPO."},
+    {"id": "person-miguel-mckelvey-wework", "name": "Miguel McKelvey", "role": "Co-founder & Former Chief Creative Officer", "bio": "Co-founded WeWork with Adam Neumann and served as Chief Creative Officer, shaping the company's distinctive workspace design philosophy."},
+    {"id": "person-sandeep-mathrani-wework", "name": "Sandeep Mathrani", "role": "Former CEO", "bio": "Served as WeWork CEO from 2020 to 2023, brought in to stabilize the company after Adam Neumann's departure. A veteran real estate executive."}
+  ],
+  "netflix": [
+    {"id": "person-reed-hastings-nflx", "name": "Reed Hastings", "role": "Co-founder & Former Co-CEO", "bio": "Co-founded Netflix in 1997 and led its transformation from a DVD-by-mail service to the world's leading streaming entertainment platform."},
+    {"id": "person-marc-randolph-nflx", "name": "Marc Randolph", "role": "Co-founder & Former CEO", "bio": "Co-founded Netflix with Reed Hastings and served as its first CEO. Conceived the original DVD-by-mail business model."},
+    {"id": "person-ted-sarandos-nflx", "name": "Ted Sarandos", "role": "Co-CEO & Chief Content Officer", "bio": "Co-CEO of Netflix who oversees the company's global content strategy. Pioneered Netflix's move into original programming with shows like House of Cards."},
+    {"id": "person-greg-peters-nflx", "name": "Greg Peters", "role": "Co-CEO", "bio": "Serves as Co-CEO of Netflix alongside Ted Sarandos. Previously served as COO and led the company's product and technology divisions."}
+  ],
+  "starbucks": [
+    {"id": "person-howard-schultz-sbux", "name": "Howard Schultz", "role": "Former Chairman & CEO", "bio": "Joined Starbucks in 1982 and served as CEO across three stints, transforming a small Seattle coffee chain into a global brand with over 35,000 stores worldwide."},
+    {"id": "person-jerry-baldwin-sbux", "name": "Jerry Baldwin", "role": "Co-founder", "bio": "Co-founded Starbucks in 1971 in Seattle's Pike Place Market alongside Zev Siegl and Gordon Bowker, originally as a roasted coffee bean retailer."},
+    {"id": "person-zev-siegl-sbux", "name": "Zev Siegl", "role": "Co-founder", "bio": "Co-founded Starbucks in 1971 and served as the first manager of the original Pike Place store before departing in 1980."},
+    {"id": "person-kevin-johnson-sbux", "name": "Kevin Johnson", "role": "Former CEO", "bio": "Served as Starbucks CEO from 2017 to 2022, leading the company through the COVID-19 pandemic and expansion of its digital ordering capabilities."}
+  ],
+  "costco-wholesale": [
+    {"id": "person-jim-sinegal-cost", "name": "Jim Sinegal", "role": "Co-founder & Former CEO", "bio": "Co-founded Costco in 1983 and served as CEO until 2012, building the membership warehouse model known for high employee wages and low markups."},
+    {"id": "person-jeffrey-brotman-cost", "name": "Jeffrey Brotman", "role": "Co-founder & Former Chairman", "bio": "Co-founded Costco Wholesale with Jim Sinegal in 1983 and served as Chairman of the Board until his death in 2017."},
+    {"id": "person-craig-jelinek-cost", "name": "W. Craig Jelinek", "role": "Former CEO", "bio": "Succeeded Jim Sinegal as Costco's CEO in 2012, continuing the company's growth to become the third-largest retailer in the world."},
+    {"id": "person-sol-price-cost", "name": "Sol Price", "role": "Pioneer of Warehouse Club Model", "bio": "Founded Price Club in 1976, which later merged with Costco. Mentored Jim Sinegal and created the warehouse club retail concept that Costco perfected."}
+  ],
+  "home-depot": [
+    {"id": "person-bernie-marcus-hd", "name": "Bernie Marcus", "role": "Co-founder", "bio": "Co-founded The Home Depot in 1978 and served as its first CEO and Chairman. A major philanthropist who donated over $2 billion to various causes."},
+    {"id": "person-arthur-blank-hd", "name": "Arthur Blank", "role": "Co-founder", "bio": "Co-founded The Home Depot with Bernie Marcus and Ken Langone. Later purchased the Atlanta Falcons NFL team and co-founded the PGA Tour Superstore."},
+    {"id": "person-ken-langone-hd", "name": "Ken Langone", "role": "Co-founder", "bio": "Provided early financing for The Home Depot and served on its board. An investment banker and major benefactor of NYU Langone Health."},
+    {"id": "person-frank-blake-hd", "name": "Frank Blake", "role": "Former Chairman & CEO", "bio": "Served as Chairman and CEO of The Home Depot from 2007 to 2014, guiding the company's recovery after the 2008 financial crisis."}
+  ],
+  "nordstrom": [
+    {"id": "person-bruce-nordstrom-jwn", "name": "Bruce Nordstrom", "role": "Former Chairman", "bio": "Third-generation member of the Nordstrom family who served as Chairman and helped expand the department store chain nationally."},
+    {"id": "person-erik-nordstrom-jwn", "name": "Erik Nordstrom", "role": "CEO", "bio": "Fourth-generation family member serving as CEO of Nordstrom. Has led the company's digital transformation and omnichannel retail strategy."},
+    {"id": "person-pete-nordstrom-jwn", "name": "Pete Nordstrom", "role": "President & Chief Brand Officer", "bio": "Fourth-generation family member serving as President and Chief Brand Officer, overseeing Nordstrom's merchandising and brand strategy."},
+    {"id": "person-john-nordstrom-jwn", "name": "John W. Nordstrom", "role": "Founder", "bio": "Swedish immigrant who founded the original Nordstrom shoe store in Seattle in 1901 using gold rush earnings, building the foundation for the retail empire."}
+  ],
+  "ralph-lauren-corporation": [
+    {"id": "person-ralph-lauren-rl", "name": "Ralph Lauren", "role": "Founder & Executive Chairman", "bio": "Founded Ralph Lauren Corporation in 1967, building a global fashion empire synonymous with American style. Born Ralph Lifshitz in the Bronx, New York."},
+    {"id": "person-patrice-louvet-rl", "name": "Patrice Louvet", "role": "President & CEO", "bio": "President and CEO of Ralph Lauren Corporation since 2017, previously a senior executive at Procter & Gamble for over 25 years."},
+    {"id": "person-david-lauren-rl", "name": "David Lauren", "role": "Vice Chairman & Chief Branding and Innovation Officer", "bio": "Vice Chairman of Ralph Lauren Corporation and son of founder Ralph Lauren. Oversees the company's branding, marketing, and digital innovation strategy."}
+  ],
+  "calvin-klein": [
+    {"id": "person-calvin-klein-ck", "name": "Calvin Klein", "role": "Founder", "bio": "Founded his eponymous fashion house in 1968, becoming renowned for minimalist design and provocative advertising. Sold the brand to PVH Corp in 2003."},
+    {"id": "person-barry-schwartz-ck", "name": "Barry Schwartz", "role": "Co-founder & Former Chairman", "bio": "Childhood friend of Calvin Klein who co-founded the company and served as Chairman and CEO, managing the business side of the brand for decades."},
+    {"id": "person-manny-chirico-ck", "name": "Emanuel 'Manny' Chirico", "role": "Former CEO of PVH Corp", "bio": "Served as CEO of PVH Corp (parent company of Calvin Klein) from 2006 to 2021, overseeing the acquisition and global expansion of the Calvin Klein brand."}
+  ],
+  "donna-karan-dkny": [
+    {"id": "person-donna-karan-dk", "name": "Donna Karan", "role": "Founder & Former Chief Designer", "bio": "Founded Donna Karan International in 1984 and launched the DKNY line in 1989. Known for creating the 'Seven Easy Pieces' wardrobe concept for modern women."},
+    {"id": "person-stephan-weiss-dk", "name": "Stephan Weiss", "role": "Co-founder & Former CEO", "bio": "Co-founded Donna Karan International with his wife Donna Karan and served as CEO and sculptor. Passed away in 2001."},
+    {"id": "person-caroline-brown-dk", "name": "Caroline Brown", "role": "Former CEO of Donna Karan International", "bio": "Served as CEO of Donna Karan International under LVMH ownership, managing the brand's global operations and retail strategy."}
+  ],
+  "marc-jacobs": [
+    {"id": "person-marc-jacobs-mj", "name": "Marc Jacobs", "role": "Founder & Chief Creative Officer", "bio": "Founded his namesake label and served as creative director of Louis Vuitton from 1997 to 2014. One of the most influential American fashion designers of his generation."},
+    {"id": "person-robert-duffy-mj", "name": "Robert Duffy", "role": "Co-founder & Former CEO", "bio": "Business partner and co-founder of Marc Jacobs International who managed the business operations of the brand for over two decades."},
+    {"id": "person-sebastian-suhl-mj", "name": "Sebastian Suhl", "role": "Former CEO", "bio": "Served as CEO of Marc Jacobs International, overseeing the brand's commercial operations and global expansion under LVMH ownership."}
+  ],
+  "levi-strauss-co": [
+    {"id": "person-levi-strauss-levi", "name": "Levi Strauss", "role": "Founder", "bio": "German-Jewish immigrant who founded Levi Strauss & Co. in 1853 in San Francisco. Patented riveted denim jeans with Jacob Davis, creating an American icon."},
+    {"id": "person-chip-bergh-levi", "name": "Chip Bergh", "role": "Former President & CEO", "bio": "Served as President and CEO of Levi Strauss from 2011 to 2024, leading the company through its successful return to the public markets in 2019."},
+    {"id": "person-robert-haas-levi", "name": "Robert D. Haas", "role": "Former Chairman & CEO", "bio": "Great-great-grandnephew of founder Levi Strauss, served as CEO from 1984 to 1999 and Chairman until 2008. Championed progressive labor policies."},
+    {"id": "person-peter-haas-sr-levi", "name": "Peter Haas Sr.", "role": "Former Chairman", "bio": "Served as Chairman of Levi Strauss & Co. and was a prominent San Francisco philanthropist. A descendant of the Strauss and Stern families."}
+  ],
+  "michael-kors-capri-holdings": [
+    {"id": "person-michael-kors-mk", "name": "Michael Kors", "role": "Founder & Chief Creative Officer", "bio": "Founded his namesake fashion line in 1981, building it into a global luxury lifestyle brand. Born Karl Anderson Jr. and raised by his mother and stepfather."},
+    {"id": "person-john-idol-mk", "name": "John Idol", "role": "Chairman & CEO of Capri Holdings", "bio": "Served as Chairman and CEO of Capri Holdings (formerly Michael Kors Holdings), overseeing the acquisitions of Versace and Jimmy Choo."},
+    {"id": "person-joshua-schulman-mk", "name": "Joshua Schulman", "role": "CEO of Michael Kors", "bio": "Served as CEO of the Michael Kors brand, responsible for the brand's global strategy, merchandising, and retail operations."}
+  ],
+  "revlon": [
+    {"id": "person-charles-revson-rev", "name": "Charles Revson", "role": "Co-founder", "bio": "Co-founded Revlon in 1932 and built it into one of the world's leading cosmetics companies. A pioneering figure in beauty marketing and brand building."},
+    {"id": "person-joseph-revson-rev", "name": "Joseph Revson", "role": "Co-founder", "bio": "Co-founded Revlon alongside his brother Charles Revson and chemist Charles Lachman in 1932, contributing to the early growth of the cosmetics brand."},
+    {"id": "person-ronald-perelman-rev", "name": "Ronald Perelman", "role": "Former Chairman & Controlling Shareholder", "bio": "Acquired Revlon through a hostile takeover in 1985 via MacAndrews & Forbes and controlled the company for decades through its eventual bankruptcy in 2022."},
+    {"id": "person-debra-perelman-rev", "name": "Debra Perelman", "role": "Former CEO", "bio": "Daughter of Ronald Perelman who served as CEO of Revlon, leading the company through its Chapter 11 bankruptcy filing in 2022."}
+  ],
+  "hasbro": [
+    {"id": "person-henry-hassenfeld-has", "name": "Henry Hassenfeld", "role": "Founder", "bio": "Founded Hassenfeld Brothers (later Hasbro) in 1923 in Providence, Rhode Island, originally selling textile remnants before pivoting to toys."},
+    {"id": "person-alan-hassenfeld-has", "name": "Alan Hassenfeld", "role": "Former Chairman & CEO", "bio": "Third-generation family leader who served as CEO of Hasbro from 1989 to 2003, overseeing major acquisitions including Milton Bradley and Parker Brothers."},
+    {"id": "person-brian-goldner-has", "name": "Brian Goldner", "role": "Former Chairman & CEO", "bio": "Led Hasbro as CEO from 2008 until his passing in 2021, transforming the company into a global play and entertainment leader through franchise-driven storytelling."},
+    {"id": "person-chris-cocks-has", "name": "Chris Cocks", "role": "CEO", "bio": "Became CEO of Hasbro in 2022 after leading Wizards of the Coast (Dungeons & Dragons, Magic: The Gathering). Focused on digital gaming and entertainment."}
+  ],
+  "mattel": [
+    {"id": "person-ruth-handler-mat", "name": "Ruth Handler", "role": "Co-founder", "bio": "Co-founded Mattel in 1945 and created the Barbie doll in 1959, revolutionizing the toy industry. Named Barbie after her daughter Barbara."},
+    {"id": "person-elliot-handler-mat", "name": "Elliot Handler", "role": "Co-founder", "bio": "Co-founded Mattel with his wife Ruth Handler and Harold Matson. An inventor and craftsman who created many of Mattel's early toy designs."},
+    {"id": "person-harold-matson-mat", "name": "Harold 'Matt' Matson", "role": "Co-founder", "bio": "Co-founded Mattel in 1945 with Ruth and Elliot Handler. The company name is a combination of 'Matt' (Matson) and 'El' (Elliot)."},
+    {"id": "person-ynon-kreiz-mat", "name": "Ynon Kreiz", "role": "Chairman & CEO", "bio": "Israeli-born media executive who became CEO of Mattel in 2018, leading the company's turnaround and the blockbuster Barbie film franchise."}
+  ],
+  "sears-roebuck-historic": [
+    {"id": "person-richard-sears-sears", "name": "Richard Warren Sears", "role": "Co-founder", "bio": "Co-founded Sears, Roebuck and Company in 1893 after starting a watch sales business. Pioneered the mail-order catalog that transformed American retail."},
+    {"id": "person-alvah-roebuck-sears", "name": "Alvah Curtis Roebuck", "role": "Co-founder", "bio": "Co-founded Sears, Roebuck and Company with Richard Sears. A watchmaker who helped establish the company's early reputation for quality merchandise."},
+    {"id": "person-julius-rosenwald-sears", "name": "Julius Rosenwald", "role": "Former President & Chairman", "bio": "Joined Sears in 1895 and became President in 1908, transforming it into America's largest retailer. A renowned philanthropist who built over 5,000 schools for African Americans."},
+    {"id": "person-eddie-lampert-sears", "name": "Edward Lampert", "role": "Former Chairman & CEO", "bio": "Hedge fund manager who merged Kmart and Sears in 2005 and served as CEO. His tenure was marked by declining sales, store closures, and Sears' eventual bankruptcy in 2018."}
+  ],
+  "toys-r-us-historic": [
+    {"id": "person-charles-lazarus-tru", "name": "Charles Lazarus", "role": "Founder", "bio": "Founded Toys 'R' Us in 1948 as a baby furniture store in Washington, D.C., eventually building it into the world's largest toy retailer before its 2017 bankruptcy."},
+    {"id": "person-gerald-storch-tru", "name": "Gerald Storch", "role": "Former CEO", "bio": "Served as CEO of Toys 'R' Us from 2006 to 2013, working to revitalize the retailer during a period of intense competition from online sellers."},
+    {"id": "person-dave-brandon-tru", "name": "Dave Brandon", "role": "Former CEO", "bio": "Served as CEO of Toys 'R' Us from 2015 through its bankruptcy filing in 2017. Previously served as CEO of Domino's Pizza and University of Michigan Athletic Director."}
+  ],
+  "bloomingdale-s": [
+    {"id": "person-joseph-bloomingdale-bloom", "name": "Joseph Bloomingdale", "role": "Co-founder", "bio": "Co-founded Bloomingdale's in 1861 on the Lower East Side of Manhattan with his brother Lyman, originally as a small dry goods store."},
+    {"id": "person-lyman-bloomingdale-bloom", "name": "Lyman Bloomingdale", "role": "Co-founder", "bio": "Co-founded Bloomingdale's with his brother Joseph in 1861 and helped grow it into one of New York's premier department stores."},
+    {"id": "person-marvin-traub-bloom", "name": "Marvin Traub", "role": "Former CEO & Chairman", "bio": "Legendary CEO of Bloomingdale's from 1978 to 1991 who transformed it into a cultural institution known for theatrical retail experiences and international designer partnerships."},
+    {"id": "person-tony-spring-bloom", "name": "Tony Spring", "role": "Former CEO of Bloomingdale's", "bio": "Served as CEO of Bloomingdale's before becoming CEO of Macy's Inc. Led the department store's modernization and e-commerce expansion."}
+  ],
+  "staples": [
+    {"id": "person-tom-stemberg-staples", "name": "Thomas Stemberg", "role": "Co-founder & Former CEO", "bio": "Co-founded Staples in 1986, pioneering the office supply superstore concept. Bain Capital's investment in Staples was one of Mitt Romney's notable success stories."},
+    {"id": "person-leo-kahn-staples", "name": "Leo Kahn", "role": "Co-founder", "bio": "Co-founded Staples alongside Tom Stemberg in 1986. A serial entrepreneur who previously founded Purity Supreme supermarkets."},
+    {"id": "person-shira-goodman-staples", "name": "Shira Goodman", "role": "Former CEO", "bio": "Served as CEO of Staples from 2016 to 2018, the first woman to lead the company. Previously held senior roles in marketing and strategy at the retailer."}
+  ],
+  "kind-snacks": [
+    {"id": "person-daniel-lubetzky-kind", "name": "Daniel Lubetzky", "role": "Founder & Former CEO", "bio": "Mexican-born son of a Holocaust survivor who founded KIND Snacks in 2004. Also founded the OneVoice Movement promoting Israeli-Palestinian cooperation."},
+    {"id": "person-john-leahy-kind", "name": "John Leahy", "role": "Former President & CFO", "bio": "Served as President and CFO of KIND Snacks, helping scale the company from a small startup to a major snack brand before its acquisition by Mars."},
+    {"id": "person-russell-stokes-kind", "name": "Russell Stokes", "role": "CEO", "bio": "Became CEO of KIND Snacks after Mars Inc. acquired the company, overseeing its continued growth and product expansion."}
+  ],
+  "sabra-hummus": [
+    {"id": "person-ofra-strauss-sabra", "name": "Ofra Strauss", "role": "Chairwoman of Strauss Group", "bio": "Chairwoman of Strauss Group, which co-owns Sabra Dipping Company. A prominent Israeli businesswoman leading one of Israel's largest food companies."},
+    {"id": "person-ronen-zohar-sabra", "name": "Ronen Zohar", "role": "Former CEO of Strauss Group", "bio": "Former CEO of Strauss Group, the Israeli food conglomerate that partnered with PepsiCo's Frito-Lay to create the Sabra Dipping joint venture."},
+    {"id": "person-shali-shalit-shelach-sabra", "name": "Shali Shalit Shelach", "role": "CEO of Sabra Dipping Company", "bio": "Served as CEO of Sabra Dipping Company, the joint venture between Strauss Group and PepsiCo that dominates the U.S. hummus market."}
+  ],
+  "nathan-s-famous": [
+    {"id": "person-nathan-handwerker-nathans", "name": "Nathan Handwerker", "role": "Founder", "bio": "Polish-Jewish immigrant who founded Nathan's Famous hot dog stand on Coney Island in 1916, starting with a nickel hot dog recipe from his former employer, Feltman's."},
+    {"id": "person-wayne-norbitz-nathans", "name": "Wayne Norbitz", "role": "Former President & COO", "bio": "Served as President and COO of Nathan's Famous for many years, managing the company's expansion from a Coney Island institution to a national franchise brand."},
+    {"id": "person-eric-gatoff-nathans", "name": "Eric Gatoff", "role": "Former CEO", "bio": "Served as CEO of Nathan's Famous Inc., overseeing the company's restaurant operations, branded products, and the iconic Nathan's Hot Dog Eating Contest."}
+  ],
+  "h-agen-dazs": [
+    {"id": "person-reuben-mattus-hd", "name": "Reuben Mattus", "role": "Co-founder", "bio": "Polish-Jewish immigrant who co-founded Häagen-Dazs in 1961 in the Bronx, New York. Invented the faux-Scandinavian name to convey an image of old-world craftsmanship."},
+    {"id": "person-rose-mattus-hd", "name": "Rose Mattus", "role": "Co-founder", "bio": "Co-founded Häagen-Dazs alongside her husband Reuben Mattus and was instrumental in building the premium ice cream brand before it was sold to Pillsbury in 1983."},
+    {"id": "person-doris-mattus-hd", "name": "Doris Mattus Hurley", "role": "Daughter of Founders & Former Executive", "bio": "Daughter of founders Reuben and Rose Mattus who was involved in the family business during Häagen-Dazs's formative years."}
+  ],
+  "manischewitz": [
+    {"id": "person-dov-behr-manischewitz-man", "name": "Dov Behr Manischewitz", "role": "Founder", "bio": "Rabbi who founded the Manischewitz company in 1888 in Cincinnati, Ohio, mechanizing the production of matzo to make it widely accessible to Jewish communities."},
+    {"id": "person-alain-bankier-man", "name": "Alain Bankier", "role": "Former CEO", "bio": "Served as CEO of the Manischewitz Company during a period of modernization and brand expansion beyond traditional Passover products."},
+    {"id": "person-david-sugarman-man", "name": "David Sugarman", "role": "Former President & CEO", "bio": "Served as President and CEO of R.A.B. Food Group/Manischewitz, overseeing the kosher food company's product line and market positioning."}
+  ],
+  "stonyfield-farm": [
+    {"id": "person-gary-hirshberg-stony", "name": "Gary Hirshberg", "role": "Co-founder & Former CEO", "bio": "Co-founded Stonyfield Farm in 1983 and served as CEO for nearly three decades, building it into the world's leading organic yogurt brand and a pioneer in sustainable business."},
+    {"id": "person-samuel-kaymen-stony", "name": "Samuel Kaymen", "role": "Co-founder", "bio": "Co-founded Stonyfield Farm with Gary Hirshberg at the Rural Education Center in Wilton, New Hampshire. An organic farming pioneer and educator."},
+    {"id": "person-esteve-torrens-stony", "name": "Esteve Torrens", "role": "Former CEO", "bio": "Served as CEO of Stonyfield Farm after Gary Hirshberg, overseeing the brand under Lactalis ownership while maintaining its organic and mission-driven identity."}
+  ],
+  "spacex": [
+    {"id": "person-elon-musk-spacex", "name": "Elon Musk", "role": "Founder & CEO", "bio": "Founded SpaceX in 2002 with the goal of reducing space transportation costs and enabling Mars colonization. Also leads Tesla, and owns X (formerly Twitter)."},
+    {"id": "person-gwynne-shotwell-spacex", "name": "Gwynne Shotwell", "role": "President & COO", "bio": "President and Chief Operating Officer of SpaceX since 2008, managing the company's day-to-day operations, customer relationships, and launch manifest."},
+    {"id": "person-tom-mueller-spacex", "name": "Tom Mueller", "role": "Co-founder & Former VP of Propulsion", "bio": "Founding employee and former Vice President of Propulsion at SpaceX. Designed the Merlin and Raptor rocket engines that power the Falcon and Starship vehicles."}
+  ],
+  "nextera-energy": [
+    {"id": "person-jim-robo-nee", "name": "James Robo", "role": "Former Chairman & CEO", "bio": "Served as Chairman, President and CEO of NextEra Energy from 2012 to 2022, growing it into the world's largest generator of renewable energy from wind and sun."},
+    {"id": "person-john-ketchum-nee", "name": "John Ketchum", "role": "Chairman, President & CEO", "bio": "Became CEO of NextEra Energy in 2022, continuing the company's leadership in renewable energy development and clean energy infrastructure."},
+    {"id": "person-rebecca-kujawa-nee", "name": "Rebecca Kujawa", "role": "President & CEO of NextEra Energy Resources", "bio": "President and CEO of NextEra Energy Resources, the world's largest generator of renewable energy from wind and solar, and a leader in battery storage."}
+  ],
+  "cheniere-energy": [
+    {"id": "person-charif-souki-che", "name": "Charif Souki", "role": "Co-founder & Former Chairman", "bio": "Lebanese-born co-founder of Cheniere Energy who led the development of the first large-scale LNG export facility in the contiguous United States at Sabine Pass."},
+    {"id": "person-jack-fusco-che", "name": "Jack Fusco", "role": "President & CEO", "bio": "Serves as President and CEO of Cheniere Energy, overseeing operations of the largest natural gas liquefaction and LNG export company in the United States."},
+    {"id": "person-anatol-feygin-che", "name": "Anatol Feygin", "role": "EVP & Chief Commercial Officer", "bio": "Executive Vice President and Chief Commercial Officer of Cheniere Energy, managing the company's global LNG marketing and commercial strategy."}
+  ],
+  "abbvie": [
+    {"id": "person-richard-gonzalez-abbv", "name": "Richard Gonzalez", "role": "Former Chairman & CEO", "bio": "Served as founding Chairman and CEO of AbbVie when it was spun off from Abbott Laboratories in 2013. Led the company's growth driven by blockbuster drug Humira."},
+    {"id": "person-robert-michael-abbv", "name": "Robert Michael", "role": "CEO", "bio": "Became CEO of AbbVie in 2024, overseeing the company's transition beyond Humira and growth of its immunology, oncology, and neuroscience pipeline."},
+    {"id": "person-laura-schumacher-abbv", "name": "Laura Schumacher", "role": "Former Vice Chairman", "bio": "Served as Vice Chairman, External Affairs and Chief Legal Officer at AbbVie, one of the highest-ranking women in the pharmaceutical industry."}
+  ],
+  "regeneron-pharmaceuticals": [
+    {"id": "person-leonard-schleifer-regn", "name": "Leonard Schleifer", "role": "Co-founder, President & CEO", "bio": "Co-founded Regeneron Pharmaceuticals in 1988 and has led the company as CEO ever since, overseeing development of blockbuster drugs including Eylea and Dupixent."},
+    {"id": "person-george-yancopoulos-regn", "name": "George Yancopoulos", "role": "Co-founder, President & Chief Scientific Officer", "bio": "Co-founded Regeneron and serves as President and Chief Scientific Officer. A physician-scientist who has driven the company's innovative drug discovery platform."},
+    {"id": "person-roy-vagelos-regn", "name": "P. Roy Vagelos", "role": "Former Chairman", "bio": "Served as Chairman of Regeneron's board and was an early supporter of the company. Previously led Merck as CEO, where he oversaw development of breakthrough drugs including lovastatin."}
+  ],
+  "valeant-bausch-health": [
+    {"id": "person-michael-pearson-bhc", "name": "J. Michael Pearson", "role": "Former Chairman & CEO", "bio": "Led Valeant Pharmaceuticals as CEO from 2008 to 2016, pursuing an aggressive acquisition and price-hiking strategy that ultimately led to the company's dramatic downfall."},
+    {"id": "person-joseph-papa-bhc", "name": "Joseph Papa", "role": "Former Chairman & CEO", "bio": "Succeeded Michael Pearson as CEO in 2016 and oversaw the rebranding from Valeant to Bausch Health Companies, working to stabilize the troubled pharmaceutical firm."},
+    {"id": "person-bill-ackman-bhc", "name": "Bill Ackman", "role": "Former Major Investor", "bio": "Billionaire hedge fund manager (Pershing Square Capital) who made a massive investment in Valeant that became one of the most high-profile losses in hedge fund history."},
+    {"id": "person-howard-schiller-bhc", "name": "Howard Schiller", "role": "Former CFO & Interim CEO", "bio": "Served as CFO of Valeant Pharmaceuticals and briefly as interim CEO during the company's accounting scandal and leadership crisis in 2015-2016."}
+  ]
+}

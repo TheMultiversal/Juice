@@ -1,0 +1,477 @@
+{
+  "booking-com": [
+    {"id": "gillian-tans", "name": "Gillian Tans", "role": "Former CEO", "bio": "Dutch businesswoman who served as CEO of Booking.com from 2016 to 2019, having joined the company in 2002 and risen through its leadership ranks."},
+    {"id": "geert-jan-bruinsma", "name": "Geert-Jan Bruinsma", "role": "Founder", "bio": "Dutch entrepreneur who founded Bookings.nl in 1996, the online hotel reservation startup that evolved into the global travel platform Booking.com."},
+    {"id": "kees-koolen", "name": "Kees Koolen", "role": "Former CEO", "bio": "Early CEO of Booking.com who led the company during its critical growth phase before its acquisition by Priceline Group in 2005."}
+  ],
+  "niw-nieuw-isra-lietisch-weekblad": [
+    {"id": "ronny-naftaniel-niw", "name": "Ronny Naftaniel", "role": "Columnist & Dutch Jewish Leader", "bio": "Prominent Dutch-Jewish communal leader and former director of CIDI who has contributed to the NIW as a leading voice on antisemitism and Jewish affairs in the Netherlands."},
+    {"id": "hans-knoop", "name": "Hans Knoop", "role": "Journalist & Author", "bio": "Dutch-Jewish investigative journalist known for exposing Dutch Nazi collaborator Pieter Menten in the 1970s, who contributed to Dutch Jewish media."},
+    {"id": "philip-mechanicus", "name": "Philip Mechanicus", "role": "Historical Journalist (1889-1944)", "bio": "Dutch-Jewish journalist who wrote for various Amsterdam newspapers and kept a diary in Westerbork transit camp that became a key Holocaust document."}
+  ],
+  "joods-historisch-museum": [
+    {"id": "judith-belinfante", "name": "Judith Belinfante", "role": "Former Director", "bio": "Pioneering museum director who oversaw the reopening and transformation of the Joods Historisch Museum in 1987 in a restored Ashkenazi synagogue complex."},
+    {"id": "julie-marthe-cohen", "name": "Julie-Marthe Cohen", "role": "Chief Curator", "bio": "Expert in Jewish ceremonial art and material culture who has served as chief curator at the Joods Historisch Museum, shaping its exhibitions and collections."},
+    {"id": "joel-cahen", "name": "Joel Cahen", "role": "Former Digital Director", "bio": "Former staff member at the Joods Historisch Museum who later founded Jewish heritage digital initiatives and contributed to online Jewish museum projects."}
+  ],
+  "centraal-joods-overleg-cjo": [
+    {"id": "ron-van-der-wieken", "name": "Ron van der Wieken", "role": "Former Chairman", "bio": "Dutch-Jewish communal leader who chaired the Centraal Joods Overleg, the umbrella body coordinating Jewish organizational representation in the Netherlands."},
+    {"id": "ruben-vis-cjo", "name": "Ruben Vis", "role": "Secretary", "bio": "Served in administrative roles within the CJO while also holding leadership positions in the NIK, coordinating Dutch Jewish communal affairs."},
+    {"id": "hanna-luden", "name": "Hanna Luden", "role": "Former Director of CIDI", "bio": "Served as director of CIDI (Centre for Information and Documentation on Israel) and participated in CJO coordination of Dutch Jewish community advocacy."}
+  ],
+  "nederlands-isra-litisch-kerkgenootschap-nik": [
+    {"id": "binyomin-jacobs-nik", "name": "Binyomin Jacobs", "role": "Inter-Provincial Chief Rabbi", "bio": "Senior Orthodox rabbinical authority of the Netherlands, serving as inter-provincial chief rabbi under the NIK framework for Dutch Ashkenazi congregations."},
+    {"id": "lody-van-de-kamp", "name": "Lody van de Kamp", "role": "Rabbi & Journalist", "bio": "Dutch Orthodox rabbi affiliated with the NIK who became widely known as a media personality and commentator on Jewish life and culture in the Netherlands."},
+    {"id": "raphael-evers", "name": "Raphael Evers", "role": "Senior Rabbi", "bio": "Dutch rabbi who served within the NIK rabbinate, known for his scholarly publications on Jewish philosophy and his contributions to Dutch Jewish religious education."}
+  ],
+  "portuguese-synagogue-of-amsterdam": [
+    {"id": "isaac-aboab-da-fonseca", "name": "Isaac Aboab da Fonseca", "role": "Historic Rabbi (1605-1693)", "bio": "Hakham of the Amsterdam Portuguese community and considered the first appointed rabbi in the Americas during his time in Dutch Brazil."},
+    {"id": "manasseh-ben-israel", "name": "Manasseh Ben Israel", "role": "Rabbi & Scholar (1604-1657)", "bio": "Renowned Portuguese-Jewish rabbi and scholar of the Amsterdam community who petitioned Oliver Cromwell for the readmission of Jews to England in 1655."},
+    {"id": "pinhas-toledano", "name": "Pinhas Toledano", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi of the Portuguese-Israelite community of Amsterdam, maintaining the Sephardic liturgical and rabbinical traditions of the historic congregation."}
+  ],
+  "anne-frank-house": [
+    {"id": "otto-frank", "name": "Otto Frank", "role": "Founder (1889-1980)", "bio": "Father of Anne Frank and sole surviving member of the immediate Frank family, who established the Anne Frank House museum in 1957 to preserve his daughter's legacy."},
+    {"id": "ronald-leopold", "name": "Ronald Leopold", "role": "Executive Director", "bio": "Museum professional serving as executive director of the Anne Frank House, overseeing its operations as one of the most visited museums in the Netherlands."},
+    {"id": "hans-westra", "name": "Hans Westra", "role": "Former Managing Director", "bio": "Led the Anne Frank House as managing director for many years, expanding its educational programs and international outreach on tolerance and human rights."}
+  ],
+  "jewish-historical-museum-amsterdam": [
+    {"id": "judith-belinfante-jhma", "name": "Judith Belinfante", "role": "Founding Director", "bio": "Museum director who oversaw the 1987 reopening of the Jewish Historical Museum in restored Ashkenazi synagogue buildings as Amsterdam's principal museum of Dutch Jewish life."},
+    {"id": "julie-marthe-cohen-jhma", "name": "Julie-Marthe Cohen", "role": "Chief Curator", "bio": "Curator specializing in Jewish ceremonial objects and material culture who led the museum's exhibition and collection development programs."},
+    {"id": "joel-cahen-jhma", "name": "Joel Cahen", "role": "Former Curator & Digital Director", "bio": "Contributed to the Jewish Historical Museum's curatorial work before going on to develop pioneering digital platforms for Jewish cultural heritage."}
+  ],
+  "westerbork-transit-camp-memorial": [
+    {"id": "dirk-mulder", "name": "Dirk Mulder", "role": "Former Director", "bio": "Longtime director of the Westerbork Memorial Center who developed it into a major Holocaust remembrance and education site in the Netherlands."},
+    {"id": "jules-schelvis", "name": "Jules Schelvis", "role": "Survivor & Historian (1921-2016)", "bio": "Dutch Holocaust survivor deported via Westerbork to Sobibor who later became a leading historian of the transit camp and the Sobibor extermination camp."},
+    {"id": "guido-abuys", "name": "Guido Abuys", "role": "Collections & Research Manager", "bio": "Head of collections and research at Camp Westerbork Memorial, responsible for preserving artifacts and historical documentation related to the transit camp."}
+  ],
+  "nik-nederlands-isra-litisch-kerkgenootschap": [
+    {"id": "lody-van-de-kamp-nik", "name": "Lody van de Kamp", "role": "Rabbi & Media Personality", "bio": "Dutch rabbi affiliated with the NIK known for his accessible public commentary on Jewish practices and his contributions to Dutch media and journalism."},
+    {"id": "raphael-evers-nik", "name": "Raphael Evers", "role": "Senior Rabbi", "bio": "Rabbi within the Dutch Orthodox rabbinate who has authored numerous works on Jewish thought and served congregations under the NIK umbrella."},
+    {"id": "ruben-vis-nik", "name": "Ruben Vis", "role": "Secretary-General", "bio": "Longtime secretary-general of the NIK, managing the administrative and organizational affairs of the Dutch Ashkenazi Jewish religious community."}
+  ],
+  "national-holocaust-museum-amsterdam": [
+    {"id": "frits-barend", "name": "Frits Barend", "role": "Journalist & Advocate", "bio": "Dutch-Jewish television journalist and author whose parents survived the Holocaust, known for his public advocacy for Holocaust remembrance in the Netherlands."},
+    {"id": "jacques-grishaver", "name": "Jacques Grishaver", "role": "Holocaust Survivor & Advocate", "bio": "Dutch Holocaust survivor hidden as a child during WWII who became an advocate for Holocaust education and the establishment of the National Holocaust Museum."},
+    {"id": "johannes-houwink-ten-cate", "name": "Johannes Houwink ten Cate", "role": "Holocaust Scholar", "bio": "Dutch historian and professor specializing in the Holocaust in the Netherlands who contributed scholarly expertise to the development of the museum's narrative."}
+  ],
+
+  "grupo-televisa": [
+    {"id": "bernardo-gomez", "name": "Bernardo Gómez", "role": "Former Co-CEO", "bio": "Served as co-CEO of Grupo Televisa, managing the company's broadcasting and content operations for Latin America's dominant Spanish-language media conglomerate."},
+    {"id": "alfonso-de-angoitia", "name": "Alfonso de Angoitia", "role": "Former Co-CEO & EVP", "bio": "Mexican attorney and executive who served as executive vice president and co-CEO of Grupo Televisa, overseeing its corporate strategy."},
+    {"id": "emilio-azcarraga-vidaurreta", "name": "Emilio Azcárraga Vidaurreta", "role": "Founder (1895-1972)", "bio": "Mexican media pioneer who founded the broadcasting empire that became Grupo Televisa, establishing XEW radio and Mexico's first television station."}
+  ],
+  "grupo-carso": [
+    {"id": "carlos-slim-domit", "name": "Carlos Slim Domit", "role": "Chairman", "bio": "Eldest son of Carlos Slim Helú who serves as chairman of Grupo Carso and Telmex, continuing the family's leadership of Mexico's largest industrial conglomerate."},
+    {"id": "patrick-slim-domit", "name": "Patrick Slim Domit", "role": "Board Member", "bio": "Son of Carlos Slim Helú who serves on the boards of various Grupo Carso subsidiaries and oversees key business divisions within the conglomerate."},
+    {"id": "juan-antonio-perez-simon", "name": "Juan Antonio Pérez Simón", "role": "Former Executive & Art Collector", "bio": "Longtime Grupo Carso executive and close associate of Carlos Slim who also became known as one of Latin America's foremost art collectors."}
+  ],
+  "tribunal-tarbut": [
+    {"id": "jacobo-zabludovsky", "name": "Jacobo Zabludovsky", "role": "Media Figure (1928-2015)", "bio": "Legendary Mexican television anchor and journalist of Jewish origin who was the foremost news broadcaster in Mexican media history and active in Jewish cultural circles."},
+    {"id": "enrique-krauze", "name": "Enrique Krauze", "role": "Intellectual & Historian", "bio": "Prominent Mexican public intellectual, historian, and publisher of Jewish origin who has contributed to Mexican Jewish cultural discourse and literary life."},
+    {"id": "margo-glantz", "name": "Margo Glantz", "role": "Author & Academic", "bio": "Mexican author and literary scholar of Jewish-Ukrainian descent, known for her memoir about Jewish immigrant life in Mexico, active in Jewish cultural organizations."}
+  ],
+  "centro-deportivo-israelita": [
+    {"id": "elias-sourasky", "name": "Elías Sourasky", "role": "Philanthropist & Benefactor", "bio": "Mexican-Jewish businessman and philanthropist of Lithuanian origin who was a major benefactor of Jewish communal institutions in Mexico City."},
+    {"id": "carlos-slim-helu-cdi", "name": "Moisés Saba Masri", "role": "Benefactor (1956-2014)", "bio": "Mexican-Jewish billionaire businessman and philanthropist who supported numerous Jewish communal institutions in Mexico including community centers."},
+    {"id": "marcos-shabot-cdi", "name": "Marcos Shabot", "role": "Community Leader", "bio": "Prominent Mexican Jewish communal leader who has held leadership positions across multiple Jewish organizations in Mexico City."}
+  ],
+  "kadima-community": [
+    {"id": "salomon-cohen-kadima", "name": "Salomón Cohen", "role": "Community Leader", "bio": "Leader within Mexico City's Kadima community, which serves Jewish families of Aleppo (Halabi) Syrian origin and is one of the largest Sephardic communities in the Americas."},
+    {"id": "isaac-hamui", "name": "Isaac Hamui", "role": "Community President", "bio": "Served as president of the Kadima community in Mexico City, representing one of the well-organized branches of Mexico's Sephardic Jewish population."},
+    {"id": "moises-assa-kadima", "name": "Moisés Assa", "role": "Communal Leader", "bio": "Mexican Jewish communal leader who has held leadership roles in multiple Jewish organizations, contributing to the institutional life of the Sephardic community."}
+  ],
+  "museo-memoria-y-tolerancia": [
+    {"id": "ella-leibovitz", "name": "Ella Leibovitz", "role": "Founding Director (1930-2010)", "bio": "Holocaust survivor and educator who co-founded the Museo Memoria y Tolerancia in Mexico City, dedicating her life to Holocaust education in Latin America."},
+    {"id": "mario-torroella", "name": "Mario Torroella Caballero", "role": "Executive Director", "bio": "Museum professional who has served in leadership at the Museo Memoria y Tolerancia, overseeing its exhibitions and educational programs on genocide and human rights."},
+    {"id": "dalia-zaga", "name": "Dalia Zaga", "role": "Director of Programming", "bio": "Has contributed to the museum's educational and cultural programming alongside founder Sharon Zaga, developing outreach initiatives on tolerance and social responsibility."}
+  ],
+  "comit-central-de-la-comunidad-jud-a-de-m-xico": [
+    {"id": "moises-assa", "name": "Moisés Assa", "role": "Former President", "bio": "Served as president of the Comité Central de la Comunidad Judía de México, the central representative body of Mexico's approximately 50,000-strong Jewish community."},
+    {"id": "renee-dayan-shabot", "name": "Renée Dayan Shabot", "role": "Historian & Communal Leader", "bio": "Mexican-Jewish historian and communal leader who has documented Mexican Jewish history and served in leadership roles including at Tribuna Israelita."},
+    {"id": "salomon-alfie-cc", "name": "Salomón Alfie", "role": "Community Leader", "bio": "Mexican Jewish communal figure who has held leadership positions in the organized Jewish community of Mexico, contributing to its institutional governance."}
+  ],
+  "colegio-hebreo-maguen-david": [
+    {"id": "sion-cohen-chmgd", "name": "Sión Cohen", "role": "School Leader", "bio": "Leader within the Colegio Hebreo Maguen David, one of Mexico City's premier Jewish schools serving the Syrian Sephardic community with bilingual education."},
+    {"id": "isaac-saad", "name": "Isaac Saad", "role": "Community Figure", "bio": "Mexican-Jewish communal figure connected to the Maguen David institutions serving Mexico City's large Damascene Jewish community."},
+    {"id": "esther-hamui-halabe", "name": "Esther Hamui Halabe", "role": "Academic & Community Scholar", "bio": "Mexican academic and sociologist of Syrian-Jewish descent who has researched and documented the educational and communal life of Mexican Sephardic Jewry."}
+  ],
+  "tribuna-israelita": [
+    {"id": "renee-dayan-shabot-ti", "name": "Renée Dayan Shabot", "role": "Former Director", "bio": "Mexican-Jewish historian and communal leader who directed Tribuna Israelita for years, promoting interfaith dialogue and combating antisemitism in Mexico."},
+    {"id": "sergio-nudelstejer", "name": "Sergio Nudelstejer", "role": "Former Director", "bio": "Served as director of Tribuna Israelita, leading the organization's mission to represent Jewish community perspectives in Mexican public discourse."},
+    {"id": "mauricio-lulka", "name": "Mauricio Lulka", "role": "Board Member", "bio": "Mexican-Jewish communal leader involved in Tribuna Israelita's efforts to promote understanding between the Jewish community and broader Mexican society."}
+  ],
+  "kidzania": [
+    {"id": "maricruz-arrubarrena", "name": "Maricruz Arrubarrena", "role": "Former COO", "bio": "Served as chief operating officer of KidZania, helping scale the interactive children's entertainment concept from Mexico City to over 25 locations worldwide."},
+    {"id": "fernando-pardo", "name": "Fernando Pardo", "role": "CEO", "bio": "Executive who has served in KidZania's senior leadership, helping manage the company's global expansion of its children's role-playing theme park concept."},
+    {"id": "carlos-slim-domit-kz", "name": "Carlos Slim Domit", "role": "Investor", "bio": "As chairman of Grupo Carso, has been connected to investment interests in KidZania, which originated in Mexico City's Santa Fe district in 1999."}
+  ],
+  "comite-central-comunidad-judia-mexico": [
+    {"id": "marcos-shabot-cc", "name": "Marcos Shabot", "role": "President", "bio": "Has served as president of the central committee representing Mexico's Jewish community, coordinating communal affairs and external relations."},
+    {"id": "moises-assa-cc", "name": "Moisés Assa", "role": "Former President", "bio": "Prominent Mexican Jewish communal leader who served as president of the organized Jewish community structure in Mexico City."},
+    {"id": "renee-dayan-cc", "name": "Renée Dayan Shabot", "role": "Communal Leader & Historian", "bio": "Historian and communal leader who has served Mexican Jewish organizations in advocacy and documentation of Jewish community life in Mexico."}
+  ],
+
+  "sigmund-freud-museum": [
+    {"id": "monika-pessler", "name": "Monika Pessler", "role": "Director", "bio": "Art historian and museum director who has led the Sigmund Freud Museum in Vienna, overseeing its major renovation and expansion completed in 2020."},
+    {"id": "anna-freud", "name": "Anna Freud", "role": "Pioneer of Child Psychoanalysis (1895-1982)", "bio": "Sigmund Freud's youngest daughter who became a pioneering psychoanalyst in her own right, specializing in child psychology. The museum preserves the family's history."},
+    {"id": "josef-breuer", "name": "Josef Breuer", "role": "Collaborator (1842-1925)", "bio": "Austrian physician and physiologist who collaborated with Freud on 'Studies on Hysteria' (1895), making foundational contributions to the development of psychoanalysis."}
+  ],
+  "j-disches-museum-wien": [
+    {"id": "danielle-spera", "name": "Danielle Spera", "role": "Former Director (2010-2022)", "bio": "Austrian journalist and museum director who led the Jüdisches Museum Wien for over a decade, revitalizing its exhibitions and community engagement programs."},
+    {"id": "karl-schwarz", "name": "Karl Schwarz", "role": "Founding Director (1899)", "bio": "Art historian who served as the first director of the Jewish Museum Vienna when it was originally founded in 1895, building its initial collections before the Nazi closure."},
+    {"id": "werner-hanak-lettner", "name": "Werner Hanak-Lettner", "role": "Chief Curator", "bio": "Austrian curator and exhibition designer who has developed major exhibitions at the Jüdisches Museum Wien documenting Austrian Jewish history and culture."}
+  ],
+  "lauder-chabad-campus-wien": [
+    {"id": "rabbi-jacob-biderman", "name": "Rabbi Jacob Biderman", "role": "Director, Chabad Austria", "bio": "Chabad-Lubavitch emissary who directs Chabad of Austria and manages the Lauder Chabad Campus in Vienna, providing Jewish education and community services."},
+    {"id": "esther-jungreis-lauder", "name": "Georg Muzicant", "role": "Board Member", "bio": "Austrian Jewish communal figure involved in the governance of the Lauder Chabad Campus Wien and its educational and religious programming."},
+    {"id": "rabbi-shaya-boas", "name": "Rabbi Shaya Boas", "role": "Dean, Lauder Business School", "bio": "Serves in the educational leadership of the Lauder Chabad Campus, which includes the Lauder Business School and the Lauder Chabad school system."}
+  ],
+  "israelitische-kultusgemeinde-wien-jewish-community-of-vienna": [
+    {"id": "ariel-muzicant", "name": "Ariel Muzicant", "role": "Former President", "bio": "Austrian-Jewish businessman who served as president of the IKG Wien from 1998 to 2012, leading the community through a period of institutional revitalization."},
+    {"id": "paul-chaim-eisenberg", "name": "Paul Chaim Eisenberg", "role": "Former Chief Rabbi (1983-2016)", "bio": "Served as chief rabbi of Vienna for over three decades, becoming one of Austria's most recognizable Jewish figures and an advocate for interfaith dialogue."},
+    {"id": "schlomo-hofmeister", "name": "Schlomo Hofmeister", "role": "Community Rabbi", "bio": "Serves as community rabbi of the IKG Wien, leading religious services and representing the Jewish community in Vienna's public and interfaith affairs."}
+  ],
+  "mauthausen-memorial": [
+    {"id": "simon-wiesenthal-mauthausen", "name": "Simon Wiesenthal", "role": "Survivor & Nazi Hunter (1908-2005)", "bio": "Austrian Holocaust survivor liberated from Mauthausen in 1945 who dedicated his life to tracking down Nazi war criminals, founding the Documentation Centre in Vienna."},
+    {"id": "hans-marsalek", "name": "Hans Maršálek", "role": "Survivor & Historian (1914-2011)", "bio": "Czech-Austrian survivor of Mauthausen who became the camp's leading historian, authoring the definitive history and serving as curator of the memorial."},
+    {"id": "bertrand-perz", "name": "Bertrand Perz", "role": "Historian", "bio": "Austrian historian at the University of Vienna specializing in the history of the Mauthausen concentration camp system, a key scholarly authority on the memorial."}
+  ],
+  "jewish-museum-vienna": [
+    {"id": "danielle-spera-jmv", "name": "Danielle Spera", "role": "Former Director (2010-2022)", "bio": "Austrian journalist turned museum director who revitalized the Jewish Museum Vienna during her tenure, expanding its exhibitions and public programming."},
+    {"id": "karl-schwarz-jmv", "name": "Karl Schwarz", "role": "Founding Director (1895)", "bio": "Art historian who founded and led the original Jewish Museum Vienna in 1895, making it one of the world's first Jewish museums before its closure by the Nazis."},
+    {"id": "felicitas-heimann-jelinek", "name": "Felicitas Heimann-Jelinek", "role": "Former Chief Curator", "bio": "Museum curator and scholar who served as chief curator at the Jewish Museum Vienna, developing groundbreaking exhibitions on Austrian Jewish history and identity."}
+  ],
+  "stadttempel-vienna-city-temple": [
+    {"id": "paul-chaim-eisenberg-st", "name": "Paul Chaim Eisenberg", "role": "Former Chief Rabbi (1983-2016)", "bio": "Served as chief rabbi of Vienna for over thirty years at the Stadttempel, the only synagogue in Vienna to survive Kristallnacht due to its concealed location within a residential block."},
+    {"id": "schlomo-hofmeister-st", "name": "Schlomo Hofmeister", "role": "Community Rabbi", "bio": "Current community rabbi of Vienna who leads services at the Stadttempel and serves as a public representative of the Jewish community."},
+    {"id": "isidor-hirschfeld", "name": "Isaak Noa Mannheimer", "role": "First Preacher (1793-1865)", "bio": "Founding preacher of the Stadttempel who led the congregation from its opening in 1826, becoming the most influential Jewish religious leader in the Habsburg Empire."}
+  ],
+  "vienna-wiesenthal-institute": [
+    {"id": "simon-wiesenthal-vwi", "name": "Simon Wiesenthal", "role": "Namesake (1908-2005)", "bio": "Austrian Holocaust survivor and renowned Nazi hunter whose legacy inspired the founding of the Vienna Wiesenthal Institute for Holocaust Studies."},
+    {"id": "eva-kovacs", "name": "Éva Kovács", "role": "Academic Director", "bio": "Hungarian-Austrian historian and sociologist who has served as academic director of the VWI, leading its research programs on the Holocaust and genocide."},
+    {"id": "jochen-boehler", "name": "Jochen Böhler", "role": "Director", "bio": "German-Austrian historian who has directed the VWI's research programs on Holocaust studies, antisemitism, and racism in contemporary Europe."}
+  ],
+  "jewish-community-of-vienna": [
+    {"id": "ariel-muzicant-jcv", "name": "Ariel Muzicant", "role": "Former President of IKG Wien", "bio": "Austrian-Jewish businessman and communal leader who served as president of Vienna's Jewish community from 1998 to 2012, revitalizing its institutions."},
+    {"id": "paul-chaim-eisenberg-jcv", "name": "Paul Chaim Eisenberg", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi of the Jewish Community of Vienna for over three decades, widely known in Austrian public life for interfaith leadership."},
+    {"id": "paul-grosz", "name": "Paul Grosz", "role": "Former President (1990-1998)", "bio": "Austrian Jewish leader who served as president of the IKG Wien during the critical post-Cold War period, guiding the community through restitution negotiations."}
+  ],
+
+  "mus-e-juif-de-belgique": [
+    {"id": "philippe-blondin", "name": "Philippe Blondin", "role": "Former Board President", "bio": "Served as president of the board of the Musée Juif de Belgique, which documents the history and culture of Jews in Belgium from the medieval period to the present."},
+    {"id": "alexander-zanzer", "name": "Alexandre Zanzer", "role": "Survivor & Community Leader (1924-2014)", "bio": "Auschwitz survivor and prominent Belgian Jewish community figure who contributed to Holocaust remembrance at the museum, killed in the 2014 terrorist attack."},
+    {"id": "yohan-benizri-mjb", "name": "Yohan Benizri", "role": "Community Representative", "bio": "As president of the CCOJB, connected to the governance and communal support structure of the Jewish Museum of Belgium in Brussels."}
+  ],
+  "comit-de-coordination-des-organisations-juives-de-belgique-ccojb": [
+    {"id": "joel-rubinfeld", "name": "Joël Rubinfeld", "role": "Former President", "bio": "Belgian-Jewish advocate who served as president of the CCOJB and co-founded the European Jewish Parliament, leading Belgian Jewish communal representation."},
+    {"id": "maurice-sosnowski", "name": "Maurice Sosnowski", "role": "Former President", "bio": "Served as president of the CCOJB, coordinating the interests of Belgian Jewish organizations in relations with government and civil society."},
+    {"id": "henri-bentata", "name": "Henri Bentata", "role": "Community Leader", "bio": "Belgian-Jewish communal leader involved in CCOJB's coordination of Jewish organizational life, advocacy, and communal governance in Belgium."}
+  ],
+  "kazerne-dossin-memorial": [
+    {"id": "herman-van-goethem", "name": "Herman Van Goethem", "role": "Founding Director & Historian", "bio": "Belgian historian and former rector of the University of Antwerp who served as founding director of the Kazerne Dossin Memorial, documenting the deportation of 25,000 Jews from Belgium."},
+    {"id": "laurence-schram", "name": "Laurence Schram", "role": "Senior Researcher", "bio": "Historian and senior researcher at Kazerne Dossin specializing in the history of the Jewish deportations from Belgium, author of key works on the Mechelen transit camp."},
+    {"id": "ward-adriaens", "name": "Ward Adriaens", "role": "Director", "bio": "Museum professional who has served in the directorship of the Kazerne Dossin Memorial, overseeing its exhibitions on the Holocaust in Belgium and human rights education."}
+  ],
+  "antwerp-diamond-district": [
+    {"id": "ari-epstein-add", "name": "Ari Epstein", "role": "CEO, Antwerp World Diamond Centre", "bio": "CEO of the Antwerp World Diamond Centre who represents Antwerp's diamond industry, historically dominated by Jewish traders since the 15th century."},
+    {"id": "ehud-arye-laniado", "name": "Ehud Arye Laniado", "role": "Diamond Dealer (1954-2019)", "bio": "Israeli-Belgian diamond dealer and industry figure who operated in Antwerp's diamond district and was known for brokering major gemstone sales worldwide."},
+    {"id": "sylvain-goldberg", "name": "Sylvain Goldberg", "role": "Industry Leader", "bio": "Veteran of the Antwerp diamond trade and leader in the diamond bourse, representing the historic Jewish presence in Antwerp's gem industry."}
+  ],
+  "antwerp-jewish-community": [
+    {"id": "aron-berger", "name": "Aron Berger", "role": "Community Leader", "bio": "Prominent member of Antwerp's Orthodox Jewish community, one of Europe's most vibrant haredi communities centered around the diamond district."},
+    {"id": "rabbi-dovid-moshe-lieberman", "name": "Rabbi Dovid Moshe Lieberman", "role": "Chief Rabbi", "bio": "Serves as chief rabbi of the Machsike Hadass community, the main Orthodox rabbinical authority in Antwerp's large and active Jewish community."},
+    {"id": "philip-carmel", "name": "Philip Carmel", "role": "Community Advocate", "bio": "Belgian-Jewish communal figure and policy advisor active in Antwerp Jewish communal affairs and the European Jewish Association."}
+  ],
+  "jewish-museum-of-belgium-brussels": [
+    {"id": "philippe-blondin-jmb", "name": "Philippe Blondin", "role": "Former Board President", "bio": "Led the board of the Jewish Museum of Belgium in Brussels, which was the target of a deadly terrorist attack in May 2014."},
+    {"id": "chouna-lomponda", "name": "Chouna Lomponda", "role": "Director", "bio": "Served as director of the Jewish Museum of Belgium, managing its collections and exhibitions on Belgian Jewish history and culture."},
+    {"id": "joel-rubinfeld-jmb", "name": "Joël Rubinfeld", "role": "Community Advocate", "bio": "Belgian-Jewish leader and former CCOJB president who has supported the Jewish Museum's role in preserving Belgian Jewish heritage."}
+  ],
+  "coordinating-committee-of-jewish-organisations-in-belgium-ccojb": [
+    {"id": "joel-rubinfeld-ccojb", "name": "Joël Rubinfeld", "role": "Former President", "bio": "Belgian-Jewish advocate and co-founder of the European Jewish Parliament who led the CCOJB's coordination of Belgian Jewish organizations."},
+    {"id": "maurice-sosnowski-ccojb", "name": "Maurice Sosnowski", "role": "Former President", "bio": "Led the CCOJB as president, serving as the principal coordinator of Belgian Jewish communal representation and advocacy."},
+    {"id": "viviane-teitelbaum", "name": "Viviane Teitelbaum", "role": "Community Leader & Politician", "bio": "Belgian-Jewish politician and communal leader who has been active in CCOJB-affiliated organizations and advocacy against antisemitism in Belgium."}
+  ],
+  "antwerp-diamond-centre": [
+    {"id": "nicky-oppenheimer-adc", "name": "Nicky Oppenheimer", "role": "Industry Figure", "bio": "South African billionaire and former chairman of De Beers whose family's diamond empire has deep historic ties to Antwerp's diamond trading centre."},
+    {"id": "peter-meeus", "name": "Peter Meeus", "role": "Former Chairman, Antwerp Diamond Bourse", "bio": "Served as chairman of the Antwerp Diamond Bourse and was a prominent figure in the governance of Antwerp's diamond trading infrastructure."},
+    {"id": "jean-rosy", "name": "Jean Rosy", "role": "Former President, Diamond High Council", "bio": "Led the Diamond High Council (predecessor to AWDC), overseeing the regulatory and promotional framework of Antwerp's diamond industry."}
+  ],
+
+  "paideia-the-european-institute-for-jewish-studies": [
+    {"id": "lena-posner-korosi-paideia", "name": "Lena Posner-Körösi", "role": "Board Member & Swedish Jewish Leader", "bio": "President of the Official Council of Swedish Jewish Communities who has supported Paideia's mission to revitalize European Jewish intellectual life."},
+    {"id": "ruth-calderon", "name": "Ruth Calderon", "role": "Visiting Scholar", "bio": "Israeli Talmud scholar, educator, and former Knesset member who has contributed to Paideia's academic programs on Jewish textual literacy in secular contexts."},
+    {"id": "daniel-libeskind-paideia", "name": "Daniel Libeskind", "role": "Guest Lecturer", "bio": "World-renowned architect of the Jewish Museum Berlin who has participated in Paideia's programs exploring European Jewish culture and identity."}
+  ],
+  "judiska-f-rsamlingen-i-stockholm": [
+    {"id": "lena-posner-korosi-jfs", "name": "Lena Posner-Körösi", "role": "Swedish Jewish Community Leader", "bio": "Prominent leader of Swedish Jewry who has served as president of the Official Council of Swedish Jewish Communities, closely connected to the Stockholm congregation."},
+    {"id": "morton-narrowe", "name": "Morton Narrowe", "role": "Former Chief Rabbi (1965-2001)", "bio": "American-born rabbi who served as chief rabbi of Stockholm for over 35 years, becoming Sweden's most prominent Jewish religious leader."},
+    {"id": "michael-bart", "name": "Michael Bart", "role": "Community Leader", "bio": "Swedish Jewish communal figure who has held leadership positions within the Judiska Församlingen i Stockholm, managing congregational affairs."}
+  ],
+  "judiska-museet-i-stockholm": [
+    {"id": "aron-verstandig-jm", "name": "Aron Verständig", "role": "Jewish Community Leader", "bio": "President of the Official Council of Swedish Jewish Communities, connected to the governance of the Jewish Museum in Stockholm."},
+    {"id": "hanna-sjoberg", "name": "Hanna Sjöberg", "role": "Curator", "bio": "Curator at the Judiska Museet who has developed exhibitions documenting the history and cultural contributions of Jews in Sweden since the 18th century."},
+    {"id": "maija-runcis", "name": "Maija Runcis", "role": "Historian & Advisor", "bio": "Swedish historian who has contributed scholarly expertise to the Jewish Museum in Stockholm's documentation of Swedish Jewish history and heritage."}
+  ],
+  "official-council-of-swedish-jewish-communities": [
+    {"id": "lena-posner-korosi-oc", "name": "Lena Posner-Körösi", "role": "Former President", "bio": "Led the Official Council of Swedish Jewish Communities as its president, representing Sweden's approximately 15,000 Jews in communal and governmental affairs."},
+    {"id": "morton-narrowe-oc", "name": "Morton Narrowe", "role": "Former Chief Rabbi", "bio": "Longtime chief rabbi of Stockholm who served as the senior rabbinical figure connected to the Official Council and Swedish Jewish religious life."},
+    {"id": "isak-reichel", "name": "Isak Reichel", "role": "Secretary-General", "bio": "Served as secretary-general of the Official Council of Swedish Jewish Communities, managing its administrative functions and governmental relations."}
+  ],
+  "raoul-wallenberg-institute": [
+    {"id": "morten-kjaerum", "name": "Morten Kjaerum", "role": "Former Director", "bio": "Danish human rights expert who served as director of the Raoul Wallenberg Institute in Lund, Sweden, and previously led the EU Agency for Fundamental Rights."},
+    {"id": "anna-petrig", "name": "Anna Petrig", "role": "Senior Fellow", "bio": "International law scholar who has contributed to the Raoul Wallenberg Institute's research on human rights, based at Lund University."},
+    {"id": "guy-von-dardel", "name": "Guy von Dardel", "role": "Advocate & Half-Brother of Wallenberg (1919-2009)", "bio": "Physicist and half-brother of Raoul Wallenberg who spent decades campaigning for information about Wallenberg's fate and supporting institutions honoring his legacy."}
+  ],
+  "great-synagogue-of-stockholm": [
+    {"id": "fredrik-vilhelm-scholander", "name": "Fredrik Vilhelm Scholander", "role": "Architect (1816-1881)", "bio": "Leading Swedish architect who designed the Great Synagogue of Stockholm, completed in 1870 in a Moorish-Egyptian revival style."},
+    {"id": "morton-narrowe-gs", "name": "Morton Narrowe", "role": "Former Chief Rabbi", "bio": "American-born rabbi who served as chief rabbi at the Great Synagogue of Stockholm for over 35 years, the longest-serving chief rabbi in Swedish history."},
+    {"id": "marcus-ehrenpreis", "name": "Marcus Ehrenpreis", "role": "Former Chief Rabbi (1914-1951)", "bio": "Galician-born rabbi and author who served as chief rabbi of Stockholm for nearly four decades, becoming a major figure in Swedish cultural and intellectual life."}
+  ],
+  "jewish-museum-stockholm": [
+    {"id": "pontus-ljunghill-jms", "name": "Pontus Ljunghill", "role": "Director", "bio": "Museum director leading the Jewish Museum in Stockholm, which documents the history of Jewish life in Sweden from the 18th century to the present."},
+    {"id": "aron-verstandig-jms", "name": "Aron Verständig", "role": "Community Leader", "bio": "Chairman of the Official Council of Swedish Jewish Communities, connected to the institutional support of the Jewish Museum Stockholm."},
+    {"id": "hanna-sjoberg-jms", "name": "Hanna Sjöberg", "role": "Curator", "bio": "Museum curator involved in developing exhibitions at the Jewish Museum Stockholm on Swedish Jewish identity, immigration history, and cultural heritage."}
+  ],
+  "jewish-community-stockholm": [
+    {"id": "lena-posner-korosi-jcs", "name": "Lena Posner-Körösi", "role": "Swedish Jewish Community Leader", "bio": "Prominent Swedish Jewish leader who served as president of the Official Council and has been deeply connected to the Stockholm Jewish community."},
+    {"id": "morton-narrowe-jcs", "name": "Morton Narrowe", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi of the Jewish Community of Stockholm for over 35 years, shaping Swedish Jewish religious life from 1965 to 2001."},
+    {"id": "isak-reichel-jcs", "name": "Isak Reichel", "role": "Secretary-General", "bio": "Has served as secretary-general of Swedish Jewish communal organizations, contributing to the administrative governance of the Stockholm community."}
+  ],
+  "bonnier-group": [
+    {"id": "albert-bonnier-sr", "name": "Albert Bonnier Sr.", "role": "Founder (1820-1900)", "bio": "Swedish publisher of Jewish German origin who founded the Bonnier publishing house in 1837, building it into one of Scandinavia's most influential media companies."},
+    {"id": "carl-johan-bonnier", "name": "Carl-Johan Bonnier", "role": "Former Chairman", "bio": "Sixth-generation member of the Bonnier family who served as chairman of the Bonnier Group, overseeing its media portfolio spanning publishing, broadcasting, and digital media."},
+    {"id": "albert-bonnier-jr", "name": "Albert Bonnier Jr.", "role": "Publisher (1907-1989)", "bio": "Third-generation Bonnier publisher who led the Albert Bonniers Förlag publishing house through the mid-20th century, expanding its literary catalog."}
+  ],
+
+  "doh-ny-street-synagogue-budapest": [
+    {"id": "ludwig-forster", "name": "Ludwig Förster", "role": "Architect (1797-1863)", "bio": "Viennese architect who designed the Dohány Street Synagogue in Budapest, completed in 1859 as the largest synagogue in Europe in a Romantic-Moorish style."},
+    {"id": "robert-frolich-ds", "name": "Róbert Frölich", "role": "Chief Rabbi of Hungary", "bio": "Serves as chief rabbi of Hungary at the Dohány Street Synagogue, the seat of the Neolog (Reform) Jewish congregation and the largest synagogue in Europe."},
+    {"id": "peter-feldmajer", "name": "Péter Feldmájer", "role": "Former MAZSIHISZ President", "bio": "Hungarian-Jewish communal leader who served as president of the Federation of Hungarian Jewish Communities, overseeing the restoration of the Dohány synagogue complex."}
+  ],
+  "raoul-wallenberg-memorial": [
+    {"id": "imre-varga", "name": "Imre Varga", "role": "Sculptor (1923-2019)", "bio": "Hungarian sculptor who created the Raoul Wallenberg Memorial in Budapest, a bronze figure standing near the former Swedish Embassy."},
+    {"id": "per-anger", "name": "Per Anger", "role": "Swedish Diplomat (1913-2002)", "bio": "Swedish diplomat who worked alongside Raoul Wallenberg in Budapest in 1944, helping save Hungarian Jews and later advocating for information about Wallenberg's fate."},
+    {"id": "carl-lutz", "name": "Carl Lutz", "role": "Swiss Diplomat (1895-1975)", "bio": "Swiss vice-consul in Budapest who, like Wallenberg, saved tens of thousands of Hungarian Jews during the Holocaust through protective documents and safe houses."}
+  ],
+  "federation-of-hungarian-jewish-communities-mazsihisz": [
+    {"id": "robert-frolich-maz", "name": "Róbert Frölich", "role": "Chief Rabbi of Hungary", "bio": "Serves as chief rabbi of the Neolog Jewish community in Hungary, the senior rabbinical figure within the MAZSIHISZ federation."},
+    {"id": "gusztav-zoltai", "name": "Gusztáv Zoltai", "role": "Former Executive Director (1935-2018)", "bio": "Longtime executive director of MAZSIHISZ who managed the day-to-day affairs of Hungarian Jewish communal life for decades."},
+    {"id": "peter-feldmajer-maz", "name": "Péter Feldmájer", "role": "Former President", "bio": "Hungarian Jewish leader who served as president of MAZSIHISZ, leading the community through the post-Communist transition period and synagogue restoration efforts."}
+  ],
+  "hungarian-jewish-museum": [
+    {"id": "andras-heisler-hjm", "name": "András Heisler", "role": "President of MAZSIHISZ", "bio": "As president of the Federation of Hungarian Jewish Communities, oversees the Hungarian Jewish Museum and Archives located within the Dohány synagogue complex."},
+    {"id": "robert-frolich-hjm", "name": "Róbert Frölich", "role": "Chief Rabbi", "bio": "Chief rabbi of Hungary whose work at the Dohány synagogue complex encompasses the Hungarian Jewish Museum's role in preserving Hungarian Jewish heritage."},
+    {"id": "ilona-seifert", "name": "Ilona Seifert", "role": "Curator", "bio": "Museum professional involved in curating the Hungarian Jewish Museum's collections of ceremonial objects, historical documents, and Holocaust memorial artifacts."}
+  ],
+  "shoes-on-the-danube-bank": [
+    {"id": "gyula-pauer", "name": "Gyula Pauer", "role": "Sculptor (1941-2012)", "bio": "Hungarian sculptor who created the sixty pairs of cast-iron shoes along the Danube bank in 2005, memorializing thousands of Jews shot into the river in 1944-45."},
+    {"id": "barnabas-hollo", "name": "Barnabás Holló", "role": "Architect & Designer", "bio": "Hungarian architect who contributed to the design and installation of the Shoes on the Danube Bank memorial along the Pest riverfront."},
+    {"id": "gabor-szegedi", "name": "Gábor Szegedi", "role": "Budapest Cultural Advocate", "bio": "Hungarian public figure involved in promoting Budapest Holocaust memorials including the Shoes on the Danube, contributing to their recognition as major memorial sites."}
+  ],
+  "hungarian-jewish-heritage-foundation": [
+    {"id": "andras-heisler-hjhf", "name": "András Heisler", "role": "Community President", "bio": "As president of MAZSIHISZ, closely connected to the Hungarian Jewish Heritage Foundation's work preserving synagogues and cultural sites across Hungary."},
+    {"id": "rudolf-klein", "name": "Rudolf Klein", "role": "Architectural Historian", "bio": "Hungarian-Israeli architectural historian who has documented and advocated for the preservation of synagogues and Jewish architectural heritage in Hungary."},
+    {"id": "robert-frolich-hjhf", "name": "Róbert Frölich", "role": "Religious Advisor", "bio": "Chief rabbi of Hungary who provides religious guidance and support to heritage preservation efforts for Hungarian Jewish cultural sites and communities."}
+  ],
+  "ort-hungary": [
+    {"id": "robert-singer", "name": "Robert Singer", "role": "Former CEO, World ORT", "bio": "Israeli-British executive who led World ORT as its CEO, overseeing the global Jewish educational network's operations including programs in Hungary."},
+    {"id": "andras-heisler-ort", "name": "András Heisler", "role": "Community Leader", "bio": "President of MAZSIHISZ who supports ORT Hungary's educational mission within the broader framework of Hungarian Jewish communal institutions."},
+    {"id": "vera-szoke", "name": "Vera Szőke", "role": "Program Director", "bio": "Educator involved in directing ORT Hungary's programs providing technology education and vocational training within Hungary's Jewish community."}
+  ],
+  "dohany-street-synagogue": [
+    {"id": "ludwig-forster-dss", "name": "Ludwig Förster", "role": "Architect (1797-1863)", "bio": "Viennese architect who designed the Dohány Street Synagogue, completed in 1859 in a Moorish Revival style, making it Europe's largest synagogue."},
+    {"id": "frigyes-feszl", "name": "Frigyes Feszl", "role": "Interior Designer (1821-1884)", "bio": "Hungarian architect who designed the ornate interior decorations of the Dohány Street Synagogue, contributing to its distinctive Romantic-Moorish aesthetic."},
+    {"id": "peter-feldmajer-dss", "name": "Péter Feldmájer", "role": "Former Community President", "bio": "Led the Federation of Hungarian Jewish Communities during the major restoration of the Dohány Street Synagogue complex in the 1990s."}
+  ],
+
+  "turkish-jewish-community": [
+    {"id": "ishak-ibrahimzadeh-tjc", "name": "Ishak Ibrahimzadeh", "role": "President", "bio": "President of the Turkish Jewish Community, managing its communal affairs and representing Turkey's approximately 15,000 Jews, mostly based in Istanbul."},
+    {"id": "jak-kamhi", "name": "Jak Kamhi", "role": "Industrialist & Community Leader", "bio": "Turkish-Jewish industrialist and founder of the Quincentennial Foundation who has been a leading figure in promoting Turkish-Jewish heritage and interfaith dialogue."},
+    {"id": "bensiyon-pinto", "name": "Bensiyon Pinto", "role": "Former President", "bio": "Served as president of the Turkish Jewish Community, leading communal governance and representation during a period of community revitalization."}
+  ],
+  "t-rkiye-musevi-cemaati": [
+    {"id": "ishak-haleva-tmc", "name": "İshak Haleva", "role": "Chief Rabbi (Hakham Bashi)", "bio": "Serves as Hakham Bashi (Chief Rabbi) of Turkey since 2002, the spiritual leader of the Turkish Sephardic Jewish community."},
+    {"id": "jak-kamhi-tmc", "name": "Jak Kamhi", "role": "Industrialist & Communal Leader", "bio": "Prominent Turkish-Jewish businessman who founded Profilo Holding and the Quincentennial Foundation, a leading advocate for Turkish-Jewish heritage."},
+    {"id": "silvyo-ovadya-tmc", "name": "Silvyo Ovadya", "role": "Former President", "bio": "Served as president of the Turkish Jewish Community and chairman of the Quincentennial Foundation, representing Turkish Jewry in public affairs."}
+  ],
+  "museum-of-turkish-jews": [
+    {"id": "naim-guleryuz-mtj", "name": "Naim Güleryüz", "role": "Historian & Curator", "bio": "Turkish-Jewish historian who documented the 500-year history of Jews in the Ottoman Empire and Turkey, serving as historian for the Museum of Turkish Jews."},
+    {"id": "jak-kamhi-mtj", "name": "Jak Kamhi", "role": "Founder of Quincentennial Foundation", "bio": "Turkish-Jewish industrialist who founded the Quincentennial Foundation in 1992 to commemorate 500 years of Jewish life in Turkey, establishing the museum."},
+    {"id": "silvyo-ovadya-mtj", "name": "Silvyo Ovadya", "role": "Foundation Chairman", "bio": "Led the Quincentennial Foundation that operates the Museum of Turkish Jews, promoting awareness of Sephardic Jewish heritage in Turkey."}
+  ],
+  "neve-shalom-synagogue": [
+    {"id": "jak-kamhi-ns", "name": "Jak Kamhi", "role": "Community Leader", "bio": "Prominent Turkish-Jewish industrialist and community leader closely connected to the Neve Shalom synagogue, which was targeted in terrorist attacks in 1986 and 2003."},
+    {"id": "david-asseo-ns", "name": "David Asseo", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi of Turkey before İshak Haleva, leading the community from the Neve Shalom synagogue, the main synagogue of Istanbul."},
+    {"id": "ishak-ibrahimzadeh-ns", "name": "Ishak Ibrahimzadeh", "role": "Community President", "bio": "President of the Turkish Jewish Community who oversees Neve Shalom synagogue, Istanbul's principal Sephardic house of worship."}
+  ],
+  "ahrida-synagogue-istanbul": [
+    {"id": "ishak-haleva-as", "name": "İshak Haleva", "role": "Chief Rabbi", "bio": "Chief Rabbi of Turkey who oversees the religious life of historic Istanbul synagogues including the Ahrida, one of the oldest in the city dating to the 15th century."},
+    {"id": "naim-guleryuz-as", "name": "Naim Güleryüz", "role": "Historian", "bio": "Turkish-Jewish historian who has documented the history of the Ahrida Synagogue, one of Istanbul's most important Romaniot and Sephardic heritage sites."},
+    {"id": "ishak-ibrahimzadeh-as", "name": "Ishak Ibrahimzadeh", "role": "Community President", "bio": "President of the Turkish Jewish community responsible for the preservation and maintenance of historic Istanbul synagogues including the Ahrida."}
+  ],
+  "quincentennial-foundation-museum-istanbul": [
+    {"id": "jak-kamhi-qfm", "name": "Jak Kamhi", "role": "Founder", "bio": "Turkish-Jewish industrialist who founded the Quincentennial Foundation in 1992 to commemorate 500 years since the Ottoman welcome of Sephardic Jews expelled from Spain."},
+    {"id": "silvyo-ovadya-qfm", "name": "Silvyo Ovadya", "role": "Chairman", "bio": "Former president of the Turkish Jewish Community who served as chairman of the Quincentennial Foundation, overseeing its museum and cultural programs."},
+    {"id": "ishak-ibrahimzadeh-qfm", "name": "Ishak Ibrahimzadeh", "role": "Community Leader", "bio": "President of the Turkish Jewish Community who supports the Quincentennial Foundation Museum's mission to document 500 years of Jewish life in Turkey."}
+  ],
+  "chief-rabbinate-of-turkey": [
+    {"id": "david-asseo", "name": "David Asseo", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi (Hakham Bashi) of Turkey before İshak Haleva, leading the Sephardic community's religious affairs."},
+    {"id": "rafael-saban", "name": "Rafael Saban", "role": "Former Chief Rabbi", "bio": "Served as chief rabbi of Turkey in the mid-20th century, guiding the Sephardic community through a period of modernization and demographic change."},
+    {"id": "jak-kamhi-cr", "name": "Jak Kamhi", "role": "Communal Supporter", "bio": "Leading Turkish-Jewish industrialist and communal figure who has supported the chief rabbinate's institutional and cultural activities."}
+  ],
+  "quincentennial-foundation-turkey": [
+    {"id": "jak-kamhi-qf", "name": "Jak Kamhi", "role": "Founder", "bio": "Turkish-Jewish industrialist and founder of Profilo Holding who established the Quincentennial Foundation in 1992 to celebrate and preserve Turkish-Jewish heritage."},
+    {"id": "naim-guleryuz-qf", "name": "Naim Güleryüz", "role": "Historian", "bio": "Leading Turkish-Jewish historian who has documented the history of the Jewish community in Turkey for the Quincentennial Foundation's publications and museum."},
+    {"id": "ishak-haleva-qf", "name": "İshak Haleva", "role": "Chief Rabbi & Patron", "bio": "Chief Rabbi of Turkey who supports the Quincentennial Foundation's mission to preserve the legacy of 500 years of Jewish life in Turkey."}
+  ],
+
+  "jewish-quarter-of-prague-josefov": [
+    {"id": "rabbi-judah-loew-josefov", "name": "Rabbi Judah Loew ben Bezalel", "role": "Historic Rabbi (c. 1520-1609)", "bio": "Known as the Maharal of Prague, a renowned Talmudist and philosopher connected to the legend of the Golem, who led the Jewish community in Josefov."},
+    {"id": "mordechai-maisel", "name": "Mordechai Maisel", "role": "Philanthropist & Mayor (1528-1601)", "bio": "Wealthy Jewish financier and mayor of Prague's Jewish quarter who funded the construction of synagogues, streets, and the first Jewish town hall in Josefov."},
+    {"id": "franz-kafka", "name": "Franz Kafka", "role": "Author (1883-1924)", "bio": "Prague-born Jewish author of seminal 20th century literature who grew up adjacent to Josefov and whose works reflect the atmosphere of Prague's Jewish quarter."}
+  ],
+  "old-new-synagogue-altneuschul": [
+    {"id": "karol-sidon-ons", "name": "Karol Sidon", "role": "Former Chief Rabbi of Czech Republic", "bio": "Czech author and rabbi who served as chief rabbi of Prague and the Czech Republic, leading services at the Old-New Synagogue, Europe's oldest active synagogue."},
+    {"id": "mordechai-maisel-ons", "name": "Mordechai Maisel", "role": "Historic Benefactor (1528-1601)", "bio": "Renaissance-era Jewish financier and philanthropist who supported the synagogues and institutions of Prague's Jewish quarter during the Maharal's era."},
+    {"id": "avigdor-kara", "name": "Avigdor Kara", "role": "Historic Rabbi & Poet (d. 1439)", "bio": "Medieval rabbi and poet of the Prague Jewish community whose gravestone in the Old Jewish Cemetery is the oldest preserved, and who witnessed the 1389 Easter pogrom."}
+  ],
+  "federace-idovsk-ch-obc-v-esk-republice": [
+    {"id": "tomas-kraus", "name": "Tomáš Kraus", "role": "Executive Director", "bio": "Longtime executive director of the Federation of Jewish Communities in the Czech Republic, managing communal affairs and representing Czech Jewry internationally."},
+    {"id": "karol-sidon-fed", "name": "Karol Sidon", "role": "Former Chief Rabbi", "bio": "Czech writer and rabbi who served as chief rabbi of the Czech Republic, providing religious leadership within the federation's institutional framework."},
+    {"id": "david-peter-synagogue", "name": "David Peter", "role": "Community Leader", "bio": "Czech Jewish communal leader who has contributed to the federation's work in rebuilding and sustaining Jewish community life in the post-Communist Czech Republic."}
+  ],
+  "terez-n-memorial": [
+    {"id": "vojtech-blodig", "name": "Vojtěch Blodig", "role": "Deputy Director & Historian", "bio": "Longtime deputy director and historian at the Terezín Memorial who has authored major studies on the Theresienstadt ghetto and its role in the Holocaust."},
+    {"id": "hans-krasa", "name": "Hans Krása", "role": "Composer (1899-1944)", "bio": "Czech-Jewish composer who created the children's opera 'Brundibár' performed in Terezín, murdered in Auschwitz; his work became a symbol of cultural resistance during the Holocaust."},
+    {"id": "norbert-troller", "name": "Norbert Troller", "role": "Artist & Survivor (1896-1984)", "bio": "Czech-Jewish architect and artist who was interned in Terezín and secretly documented camp life through drawings, which became key historical evidence."}
+  ],
+  "jewish-museum-in-prague": [
+    {"id": "michal-frankl", "name": "Michal Frankl", "role": "Historian & Deputy Director", "bio": "Czech historian specializing in antisemitism and Jewish history who has served in leadership at the Jewish Museum in Prague, one of the world's oldest Jewish museums."},
+    {"id": "hana-volavkova", "name": "Hana Volavková", "role": "Former Director (1906-1985)", "bio": "Czech-Jewish art historian who directed the Jewish Museum in Prague after WWII, preserving its extraordinary collections of confiscated ceremonial objects and children's drawings from Terezín."},
+    {"id": "arno-parik", "name": "Arno Pařík", "role": "Senior Curator", "bio": "Longtime senior curator at the Jewish Museum in Prague who has developed exhibitions and documented Czech and Bohemian Jewish history and material culture."}
+  ],
+  "old-jewish-cemetery-prague": [
+    {"id": "mordechai-maisel-ojc", "name": "Mordechai Maisel", "role": "Historic Figure Buried Here (1528-1601)", "bio": "Renaissance Jewish financier and mayor of the Prague ghetto whose elaborate tombstone is among the most visited in the cemetery, which contains over 12,000 headstones."},
+    {"id": "david-gans", "name": "David Gans", "role": "Astronomer & Historian (1541-1613)", "bio": "Czech-Jewish astronomer and chronicler buried in the Old Jewish Cemetery, known for his historical work 'Zemach David' and his collaboration with Tycho Brahe."},
+    {"id": "rabbi-david-oppenheim", "name": "Rabbi David Oppenheim", "role": "Chief Rabbi of Prague (1664-1736)", "bio": "Chief rabbi of Prague who amassed the most important Hebrew book collection in the world, buried in the Old Jewish Cemetery."}
+  ],
+  "federation-of-jewish-communities-in-the-czech-republic": [
+    {"id": "tomas-kraus-fjc", "name": "Tomáš Kraus", "role": "Executive Director", "bio": "Serves as executive director of the Federation, coordinating Czech Jewish communal life, heritage preservation, and international representation."},
+    {"id": "karol-sidon-fjc", "name": "Karol Sidon", "role": "Former Chief Rabbi", "bio": "Prominent Czech author who became chief rabbi of the Czech Republic after the Velvet Revolution, leading the revival of Czech Jewish religious life."},
+    {"id": "david-peter-fjc", "name": "David Peter", "role": "Community Leader", "bio": "Active in the federation's governance, contributing to the rebuilding of Czech Jewish institutional and community life after four decades of Communist rule."}
+  ],
+  "pinkas-synagogue-prague-holocaust-memorial": [
+    {"id": "hana-volavkova-ps", "name": "Hana Volavková", "role": "Former Museum Director", "bio": "Czech-Jewish art historian who oversaw the transformation of the Pinkas Synagogue into a Holocaust memorial with the names of 77,297 Czech and Moravian Jewish victims inscribed on its walls."},
+    {"id": "arno-parik-ps", "name": "Arno Pařík", "role": "Senior Curator", "bio": "Senior curator at the Jewish Museum in Prague who has researched and documented the Pinkas Synagogue's Holocaust memorial and its children's drawings from Terezín."},
+    {"id": "leo-pavlat-ps", "name": "Leo Pavlát", "role": "Former Director, Jewish Museum Prague", "bio": "Former director of the Jewish Museum in Prague who oversaw the Pinkas Synagogue memorial's restoration and its preservation as a major Holocaust remembrance site."}
+  ],
+
+  "conseil-des-communaut-s-isra-lites-du-maroc": [
+    {"id": "andre-azoulay-ccim", "name": "André Azoulay", "role": "Senior Royal Adviser", "bio": "Jewish Moroccan businessman and senior adviser to King Mohammed VI who champions interfaith dialogue and the preservation of Moroccan Jewish heritage."},
+    {"id": "jacky-kadoch", "name": "Jacky Kadoch", "role": "Community Leader", "bio": "Moroccan Jewish communal figure involved in the governance of the Council of Israelite Communities, helping maintain Jewish institutional life in Morocco."},
+    {"id": "simon-levy-ccim", "name": "Simon Levy", "role": "Historian & Museum Founder (1934-2011)", "bio": "Moroccan-Jewish scholar and founder of the Museum of Moroccan Judaism in Casablanca, who documented the history of Jewish life in Morocco."}
+  ],
+  "museum-of-moroccan-judaism": [
+    {"id": "simon-levy", "name": "Simon Levy", "role": "Founder (1934-2011)", "bio": "Moroccan-Jewish professor and historian who founded the Museum of Moroccan Judaism in Casablanca in 1997, the only Jewish museum in the Arab world."},
+    {"id": "serge-berdugo-mmj", "name": "Serge Berdugo", "role": "Community Leader", "bio": "Secretary-general of the Council of Jewish Communities of Morocco who has supported the museum as a centerpiece of Moroccan Jewish heritage preservation."},
+    {"id": "andre-azoulay-mmj", "name": "André Azoulay", "role": "Patron", "bio": "Senior adviser to King Mohammed VI and a champion of Moroccan Jewish heritage preservation, supporting the museum's mission of documenting Jewish life in Morocco."}
+  ],
+  "bayt-dakira-house-of-memory": [
+    {"id": "serge-berdugo-bd", "name": "Serge Berdugo", "role": "Community Leader", "bio": "Secretary-general of the Council of Jewish Communities of Morocco who supports Bayt Dakira's mission of preserving Jewish heritage in Essaouira."},
+    {"id": "audrey-azoulay", "name": "Audrey Azoulay", "role": "UNESCO Director-General", "bio": "Daughter of André Azoulay, French-Moroccan diplomat serving as UNESCO Director-General, connected to the family's commitment to Moroccan-Jewish heritage preservation."},
+    {"id": "tahar-ben-jelloun", "name": "Tahar Ben Jelloun", "role": "Author & Cultural Advocate", "bio": "Moroccan-French author and intellectual who has supported initiatives preserving Morocco's Jewish-Muslim coexistence heritage, including the Essaouira projects."}
+  ],
+  "council-of-jewish-communities-of-morocco": [
+    {"id": "serge-berdugo-cjc", "name": "Serge Berdugo", "role": "Secretary-General", "bio": "Former Moroccan Minister of Tourism who has served as secretary-general of the Council, the central body representing Morocco's Jewish communities."},
+    {"id": "jacky-kadoch-cjc", "name": "Jacky Kadoch", "role": "Community Leader", "bio": "Active in the governance of the Council of Jewish Communities of Morocco, contributing to the maintenance of Jewish communal institutions across the country."},
+    {"id": "simon-levy-cjc", "name": "Simon Levy", "role": "Scholar & Museum Founder (1934-2011)", "bio": "Moroccan-Jewish historian whose scholarly work and founding of the Museum of Moroccan Judaism contributed to the Council's heritage preservation mission."}
+  ],
+  "rabbi-haim-pinto-synagogue-essaouira": [
+    {"id": "andre-azoulay-rhp", "name": "André Azoulay", "role": "Heritage Patron", "bio": "Jewish Moroccan royal adviser and prominent Essaouira native who has championed the preservation of the city's Jewish heritage sites including the Pinto synagogue."},
+    {"id": "serge-berdugo-rhp", "name": "Serge Berdugo", "role": "Community Leader", "bio": "Secretary-general of the Council of Jewish Communities of Morocco who supports the preservation of historic synagogues including the Rabbi Haim Pinto Synagogue in Essaouira."},
+    {"id": "rabbi-yoshiyahu-pinto", "name": "Rabbi Yoshiyahu Pinto", "role": "Descendant & Rabbi", "bio": "Prominent Israeli-Moroccan rabbi and descendant of Rabbi Haim Pinto who leads an international following and maintains the family's spiritual legacy connected to Essaouira."}
+  ],
+  "casablanca-jewish-heritage-trail": [
+    {"id": "andre-azoulay-cjht", "name": "André Azoulay", "role": "Heritage Patron", "bio": "Senior adviser to King Mohammed VI and champion of Moroccan Jewish heritage who has supported the development of Jewish heritage tourism in Casablanca."},
+    {"id": "zhor-rehihil-cjht", "name": "Zhor Rehihil", "role": "Museum Curator", "bio": "Curator of the Museum of Moroccan Judaism in Casablanca who contributes expertise to the preservation and presentation of Jewish heritage sites in the city."},
+    {"id": "simon-levy-cjht", "name": "Simon Levy", "role": "Historian (1934-2011)", "bio": "Moroccan-Jewish scholar whose research on Jewish life in Casablanca and across Morocco laid the groundwork for heritage trail initiatives."}
+  ],
+  "conseil-des-communautes-israelites-du-maroc": [
+    {"id": "andre-azoulay-cim", "name": "André Azoulay", "role": "Senior Royal Adviser", "bio": "Prominent Moroccan-Jewish adviser to King Mohammed VI who works closely with the Council on matters of Jewish heritage preservation and interfaith relations."},
+    {"id": "jacky-kadoch-cim", "name": "Jacky Kadoch", "role": "Community Leader", "bio": "Moroccan Jewish figure active in the Council's governance, helping represent and maintain Jewish communal institutions across Morocco."},
+    {"id": "simon-levy-cim", "name": "Simon Levy", "role": "Scholar (1934-2011)", "bio": "Moroccan-Jewish professor and social activist who founded the Casablanca Jewish museum and contributed to the Council's cultural preservation mission."}
+  ],
+
+  "babyn-yar-holocaust-memorial-center": [
+    {"id": "ilya-khrzhanovsky", "name": "Ilya Khrzhanovsky", "role": "Former Artistic Director", "bio": "Russian-born film director who served as artistic director of the Babyn Yar Holocaust Memorial Center, developing its innovative but controversial memorial concepts."},
+    {"id": "ronald-lauder-byhmc", "name": "Ronald Lauder", "role": "Supporter", "bio": "American billionaire and World Jewish Congress president who has supported the Babyn Yar Holocaust Memorial Center's mission to commemorate the massacre of over 33,000 Jews in 1941."},
+    {"id": "yana-barinova", "name": "Yana Barinova", "role": "CEO", "bio": "Served as CEO of the Babyn Yar Holocaust Memorial Center, managing its operations and the development of the memorial complex in Kyiv."}
+  ],
+  "golden-rose-synagogue-lviv-ruins": [
+    {"id": "meylakh-sheykhet-gr", "name": "Meylakh Sheykhet", "role": "Heritage Preservation Advocate", "bio": "Ukrainian Jewish leader and representative of the Union of Councils for Soviet Jews who has championed the preservation and memorialization of the Golden Rose Synagogue ruins in Lviv."},
+    {"id": "boris-lozhkin-gr", "name": "Boris Lozhkin", "role": "Jewish Community Leader", "bio": "President of the Jewish Confederation of Ukraine who has supported efforts to preserve and memorialize Ukrainian Jewish heritage sites including the Golden Rose Synagogue."},
+    {"id": "nachman-krochmal", "name": "Nachman Krochmal", "role": "Historical Figure (1785-1840)", "bio": "Galician Jewish philosopher and historian from Lviv who was one of the founders of the Wissenschaft des Judentums movement and connected to Lviv's Jewish intellectual life."}
+  ],
+  "menorah-center-dnipro": [
+    {"id": "ihor-kolomoyskyi", "name": "Ihor Kolomoyskyi", "role": "Co-Funder", "bio": "Ukrainian-Jewish billionaire who co-funded the construction of the Menorah Center in Dnipro, the world's largest Jewish community center, opened in 2012."},
+    {"id": "rabbi-shmuel-kaminezki", "name": "Rabbi Shmuel Kaminezki", "role": "Chief Rabbi of Dnipro", "bio": "Chabad rabbi serving as chief rabbi of Dnipro who provides spiritual leadership at the Menorah Center, a seven-branched building symbolizing the menorah."},
+    {"id": "jonathan-markovitch", "name": "Jonathan Markovitch", "role": "Director", "bio": "Has served in the leadership of the Menorah Center in Dnipro, managing its community facilities, museum, and cultural programming."}
+  ],
+  "uman-breslov-pilgrimage": [
+    {"id": "rabbi-nathan-of-breslov", "name": "Rabbi Nathan of Breslov", "role": "Primary Disciple (1780-1844)", "bio": "Chief disciple of Rabbi Nachman of Breslov who compiled and preserved his master's teachings, establishing the tradition of annual pilgrimage to Nachman's grave in Uman."},
+    {"id": "rabbi-nachman-burstein", "name": "Rabbi Nachman Burstein", "role": "Community Leader (1918-2007)", "bio": "Breslov elder and leader who helped revive the annual Rosh Hashanah pilgrimage to Uman after the fall of the Soviet Union, when gatherings swelled from hundreds to tens of thousands."},
+    {"id": "rabbi-eliezer-shlomo-schick", "name": "Rabbi Eliezer Shlomo Schick", "role": "Breslov Leader (1940-2015)", "bio": "Prominent Breslov rabbi and author who led a large following and was instrumental in organizing the annual Uman pilgrimage gatherings."}
+  ],
+  "jewish-confederation-of-ukraine": [
+    {"id": "vadim-rabinovich", "name": "Vadim Rabinovich", "role": "Co-Founder & Leader", "bio": "Ukrainian-Jewish businessman and politician who co-founded the Jewish Confederation of Ukraine and served as a member of the Ukrainian parliament."},
+    {"id": "josef-zissels-jcu", "name": "Josef Zissels", "role": "Community Leader", "bio": "Chairman of the Association of Jewish Organizations and Communities of Ukraine (VAAD) and a leading Ukrainian Jewish communal figure and human rights activist."},
+    {"id": "ihor-kolomoyskyi-jcu", "name": "Ihor Kolomoyskyi", "role": "Patron", "bio": "Ukrainian-Jewish billionaire and former governor of Dnipropetrovsk Oblast who has supported Jewish communal institutions in Ukraine."}
+  ],
+  "united-jewish-community-of-ukraine": [
+    {"id": "boris-lozhkin-ujcu", "name": "Boris Lozhkin", "role": "President", "bio": "Ukrainian-Jewish businessman and former head of the Presidential Administration of Ukraine who serves as president of the United Jewish Community of Ukraine."},
+    {"id": "josef-zissels-ujcu", "name": "Josef Zissels", "role": "Community Leader", "bio": "Longtime Ukrainian Jewish leader and chairman of VAAD who participates in the United Jewish Community's coordination of Ukrainian Jewry."},
+    {"id": "ihor-kolomoyskyi-ujcu", "name": "Ihor Kolomoyskyi", "role": "Major Donor", "bio": "Ukrainian-Jewish billionaire and co-founder of PrivatBank who has been a major financial supporter of Jewish communal organizations in Ukraine."}
+  ],
+  "ukrainian-jewish-confederation": [
+    {"id": "vadim-rabinovich-ujc", "name": "Vadim Rabinovich", "role": "Leader", "bio": "Ukrainian-Jewish businessman and politician who has led the Ukrainian Jewish Confederation, representing Jewish community interests in Ukrainian public life."},
+    {"id": "josef-zissels-ujc", "name": "Josef Zissels", "role": "VAAD Chairman", "bio": "Chairman of the Association of Jewish Organizations and Communities of Ukraine, a key leader in the umbrella structure of Ukrainian Jewish communal organizations."},
+    {"id": "ihor-kolomoyskyi-ujc", "name": "Ihor Kolomoyskyi", "role": "Patron", "bio": "Billionaire businessman who has supported Ukrainian Jewish institutions and is one of the most prominent Jewish figures in Ukrainian public life."}
+  ],
+
+  "toyota-motor-corporation": [
+    {"id": "kiichiro-toyoda", "name": "Kiichiro Toyoda", "role": "Founder (1894-1952)", "bio": "Japanese industrialist who founded Toyota Motor Corporation in 1937, transitioning the family business from automatic looms to automobile manufacturing."},
+    {"id": "koji-sato", "name": "Koji Sato", "role": "President & CEO", "bio": "Serves as president and CEO of Toyota Motor Corporation, leading the world's largest automaker through its transition to electric and hydrogen-powered vehicles."},
+    {"id": "eiji-toyoda", "name": "Eiji Toyoda", "role": "Former President (1913-2013)", "bio": "Nephew of the founder who led Toyota's post-war expansion and championed the Toyota Production System, transforming it into a global automotive giant."}
+  ],
+  "jewish-community-of-kobe": [
+    {"id": "anatole-ponevejsky-jck", "name": "Anatole Ponevejsky", "role": "Wartime Leader", "bio": "President of the Kobe Jewish community during WWII who coordinated aid for Jewish refugees transiting through Japan, helping thousands escape the Holocaust."},
+    {"id": "alex-einbinder", "name": "Alex Einbinder", "role": "Community Leader", "bio": "Leader of the Kobe Jewish community who has worked to maintain the congregation and preserve its history as a refuge for Jewish refugees during World War II."},
+    {"id": "zerach-warhaftig", "name": "Zerach Warhaftig", "role": "Refugee Leader (1906-2002)", "bio": "Polish-Jewish leader and future Israeli government minister who helped organize the transit of Jewish refugees through Kobe during WWII with the aid of Chiune Sugihara's visas."}
+  ],
+  "makuya": [
+    {"id": "takeji-otsuki", "name": "Takeji Otsuki", "role": "Successor Leader", "bio": "Succeeded Abraham Ikuro Teshima as leader of the Makuya movement, continuing its mission of Christian-Zionist engagement and promoting Japanese-Israeli relations."},
+    {"id": "yamamoto-shichihei", "name": "Yamamoto Shichihei", "role": "Scholar & Author (1921-1991)", "bio": "Japanese author and social commentator who wrote about Judaism and Jewish culture for Japanese audiences, contributing to the intellectual context of the Makuya movement."},
+    {"id": "miriam-teshima", "name": "Miriam Teshima", "role": "Movement Leader", "bio": "Member of the Teshima family who has continued the Makuya movement's tradition of pilgrimage to Israel and engagement with Jewish communities worldwide."}
+  ],
+  "sugihara-museum-yaotsu": [
+    {"id": "yukiko-sugihara", "name": "Yukiko Sugihara", "role": "Spouse & Legacy Keeper (1913-2008)", "bio": "Wife of Chiune Sugihara who supported his decision to issue life-saving visas and later helped preserve his legacy through memoirs and public appearances."},
+    {"id": "nobuki-sugihara", "name": "Nobuki Sugihara", "role": "Son & Legacy Advocate", "bio": "Son of Chiune Sugihara who has worked to preserve his father's legacy as a Righteous Among the Nations, supporting the museum in Yaotsu and related educational programs."},
+    {"id": "solly-ganor", "name": "Solly Ganor", "role": "Visa Recipient & Author (1928-2020)", "bio": "Lithuanian-Jewish Holocaust survivor who received a Sugihara visa as a child and later wrote about the experience, becoming an advocate for the museum and Sugihara's legacy."}
+  ],
+  "jewish-community-of-japan": [
+    {"id": "rabbi-marvin-tokayer", "name": "Marvin Tokayer", "role": "Former Rabbi (1936-2023)", "bio": "American rabbi who served as rabbi of the Jewish Community of Japan in Tokyo for over a decade, becoming the foremost chronicler of Jewish-Japanese relations."},
+    {"id": "rabbi-david-kunin", "name": "David Kunin", "role": "Community Rabbi", "bio": "Has served as rabbi of the Jewish Community of Japan in Tokyo, leading religious services and community events for the expatriate and local Jewish population."},
+    {"id": "roald-hoffmann-jcj", "name": "Michael Goldstein", "role": "Community President", "bio": "Has served in leadership of the Jewish Community of Japan in Tokyo, overseeing the small but active community's religious, social, and cultural programs."}
+  ],
+  "kobe-jewish-community": [
+    {"id": "chiune-sugihara-kbc", "name": "Chiune Sugihara", "role": "Righteous Among the Nations (1900-1986)", "bio": "Japanese diplomat whose transit visas enabled thousands of Jewish refugees to reach Kobe in 1940-41, making the Kobe Jewish community a critical wartime refuge."},
+    {"id": "rabbi-kalman-rotter", "name": "Kalman Rotter", "role": "Wartime Community Rabbi", "bio": "Rabbi who served the Jewish refugee community in Kobe during WWII, providing religious leadership to the thousands of Jews who transited through the city."},
+    {"id": "jan-zwartendijk", "name": "Jan Zwartendijk", "role": "Dutch Consul & Rescuer (1896-1976)", "bio": "Dutch honorary consul in Kaunas, Lithuania who issued destination visas to Curaçao enabling Jewish refugees to obtain Sugihara's transit visas and reach Kobe."}
+  ],
+  "softbank-group": [
+    {"id": "marcelo-claure", "name": "Marcelo Claure", "role": "Former COO", "bio": "Bolivian-American businessman who served as COO of SoftBank Group and CEO of SoftBank International, managing key portfolio companies and operations."},
+    {"id": "rajeev-misra", "name": "Rajeev Misra", "role": "Former Head of SoftBank Vision Fund", "bio": "Indian-British banker who led the SoftBank Vision Fund, one of the world's largest technology investment vehicles at $100 billion."},
+    {"id": "nikesh-arora", "name": "Nikesh Arora", "role": "Former President & COO", "bio": "Indian-American executive who served as president and COO of SoftBank Group from 2014 to 2016, previously a top executive at Google."}
+  ]
+}

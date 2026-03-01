@@ -1,0 +1,158 @@
+{
+  "talpiot-program": [
+    {"id": "felix-dothan", "name": "Felix Dothan", "role": "Co-founder", "bio": "Physicist and IDF officer who co-founded the Talpiot program in 1979 to cultivate elite military technology talent."},
+    {"id": "shaul-yatziv", "name": "Shaul Yatziv", "role": "Co-founder", "bio": "Hebrew University professor who helped design the Talpiot curriculum combining academic excellence with military service."},
+    {"id": "edward-fredkin", "name": "Edward Fredkin", "role": "Early Advisor", "bio": "Computer scientist who advised early Talpiot cohorts on computing and artificial intelligence methodologies."},
+    {"id": "nahman-ash", "name": "Nahman Ash", "role": "Notable Graduate", "bio": "Talpiot graduate who rose to prominence in Israel's defense establishment and public health leadership."}
+  ],
+  "idb-holdings": [
+    {"id": "nochi-dankner", "name": "Nochi Dankner", "role": "Former Chairman", "bio": "Controlled IDB Holdings through Ganden Holdings before losing the company amid financial difficulties and a market manipulation conviction."},
+    {"id": "eduardo-elsztain", "name": "Eduardo Elsztain", "role": "Controlling Shareholder", "bio": "Argentine businessman who acquired control of IDB Holdings' parent company Discount Investment Corporation."},
+    {"id": "shlomo-nehama", "name": "Shlomo Nehama", "role": "Former Chairman of Azorim", "bio": "Longtime business executive involved in IDB Holdings' real estate subsidiary operations."},
+    {"id": "avraham-livnat", "name": "Avraham Livnat", "role": "Former CEO", "bio": "Served as CEO of IDB Holdings managing its diversified portfolio of companies across multiple sectors."}
+  ],
+  "church-of-the-holy-sepulchre-jerusalem": [
+    {"id": "theophilos-iii", "name": "Theophilos III", "role": "Greek Orthodox Patriarch of Jerusalem", "bio": "Patriarch of the Greek Orthodox Church of Jerusalem, one of the principal custodians of the Church of the Holy Sepulchre."},
+    {"id": "pierbattista-pizzaballa", "name": "Pierbattista Pizzaballa", "role": "Latin Patriarch of Jerusalem", "bio": "Italian-born Latin Patriarch of Jerusalem overseeing Catholic interests in the Church of the Holy Sepulchre."},
+    {"id": "nourhan-manougian", "name": "Nourhan Manougian", "role": "Armenian Patriarch of Jerusalem", "bio": "Armenian Patriarch of Jerusalem representing the Armenian Apostolic Church's custodial rights at the holy site."},
+    {"id": "adeeb-joudeh", "name": "Adeeb Joudeh", "role": "Custodian of the Key", "bio": "Member of the Muslim Joudeh family that has held the key to the Church of the Holy Sepulchre for centuries by tradition."}
+  ],
+  "prime-minister-s-office": [
+    {"id": "benjamin-netanyahu", "name": "Benjamin Netanyahu", "role": "Prime Minister", "bio": "Israel's longest-serving prime minister, leading the government through multiple terms since first taking office in 1996."},
+    {"id": "yossi-shelley", "name": "Yossi Shelley", "role": "Director General", "bio": "Senior civil servant who served as Director General of the Prime Minister's Office overseeing government operations."},
+    {"id": "tzachi-braverman", "name": "Tzachi Braverman", "role": "Chief of Staff to the PM", "bio": "Long-serving chief of staff and close adviser to Prime Minister Netanyahu managing day-to-day office operations."},
+    {"id": "eli-groner", "name": "Eli Groner", "role": "Former Director General", "bio": "Former Director General of the Prime Minister's Office who later moved into senior roles in the private sector."}
+  ],
+  "start-up-nation-ecosystem": [
+    {"id": "saul-singer", "name": "Saul Singer", "role": "Co-author of Start-Up Nation", "bio": "Journalist and author who co-wrote 'Start-Up Nation' popularizing Israel's innovation ecosystem globally."},
+    {"id": "dan-senor", "name": "Dan Senor", "role": "Co-author of Start-Up Nation", "bio": "Foreign policy adviser and author who co-wrote the influential book chronicling Israel's technology sector rise."},
+    {"id": "yossi-vardi", "name": "Yossi Vardi", "role": "Ecosystem Pioneer / Investor", "bio": "Veteran Israeli tech investor who backed ICQ and dozens of startups, considered a godfather of Israel's tech industry."},
+    {"id": "jon-medved", "name": "Jon Medved", "role": "Ecosystem Leader / OurCrowd CEO", "bio": "Founder and CEO of OurCrowd, a leading equity crowdfunding platform that channels global investment into Israeli startups."}
+  ],
+  "reichman-university-idc-herzliya": [
+    {"id": "uriel-reichman", "name": "Uriel Reichman", "role": "Founder and President Emeritus", "bio": "Legal scholar who founded the Interdisciplinary Center Herzliya in 1994, later renamed Reichman University in his honor."},
+    {"id": "rafi-melnick", "name": "Rafi Melnick", "role": "President", "bio": "Economist and academic who served as president of Reichman University overseeing its growth into a major Israeli institution."},
+    {"id": "alex-mintz", "name": "Alex Mintz", "role": "Provost", "bio": "Political scientist who served as provost and headed the Lauder School of Government, Diplomacy and Strategy at the university."},
+    {"id": "boaz-ganor", "name": "Boaz Ganor", "role": "Founder of ICT", "bio": "Counter-terrorism scholar who founded the International Institute for Counter-Terrorism at IDC Herzliya."}
+  ],
+  "el-al-israel-airlines": [
+    {"id": "dina-ben-tal-ganancia", "name": "Dina Ben Tal Ganancia", "role": "CEO", "bio": "Appointed CEO of El Al in 2022, the first woman to lead Israel's national airline."},
+    {"id": "eli-defes", "name": "Eli Defes", "role": "Former CEO", "bio": "Served as CEO of El Al managing the airline through financial restructuring and fleet modernization efforts."},
+    {"id": "kenny-rozenberg", "name": "Kenny Rozenberg", "role": "Controlling Shareholder", "bio": "New York-based businessman who acquired a controlling stake in El Al Israel Airlines."},
+    {"id": "david-maimon", "name": "David Maimon", "role": "Former Chairman", "bio": "Served as chairman of El Al's board of directors overseeing strategic decisions for Israel's flag carrier."}
+  ],
+  "channel-13-reshet": [
+    {"id": "amos-regev", "name": "Amos Regev", "role": "CEO of Reshet Media", "bio": "Media executive who led Reshet's operations including the Channel 13 news and entertainment broadcasts."},
+    {"id": "meshulam-riklis", "name": "Meshulam Riklis", "role": "Historical Backer", "bio": "Israeli-American businessman who was an early investor in Reshet broadcasting operations."},
+    {"id": "len-blavatnik", "name": "Len Blavatnik", "role": "Owner", "bio": "Ukrainian-born billionaire whose media holdings included ownership of Reshet, the operator of Channel 13 in Israel."},
+    {"id": "raviv-drucker", "name": "Raviv Drucker", "role": "Senior Journalist", "bio": "Award-winning investigative journalist and political commentator who became one of Channel 13's most prominent on-air figures."}
+  ],
+  "ministry-of-defense": [
+    {"id": "yoav-gallant", "name": "Yoav Gallant", "role": "Minister of Defense", "bio": "Former IDF general who served as Israel's Minister of Defense overseeing military operations and defense policy."},
+    {"id": "eyal-zamir", "name": "Eyal Zamir", "role": "Director General", "bio": "Senior defense official who served as Director General of the Ministry of Defense managing its administrative functions."},
+    {"id": "amir-eshel", "name": "Amir Eshel", "role": "Former Director General", "bio": "Former IAF commander who transitioned to serve as Director General of the Ministry of Defense."},
+    {"id": "moshe-dayan", "name": "Moshe Dayan", "role": "Iconic Former Minister", "bio": "Legendary IDF chief of staff and defense minister whose leadership during the Six-Day War made him an enduring symbol of Israeli defense."}
+  ],
+  "mobileye-global": [
+    {"id": "amnon-shashua", "name": "Amnon Shashua", "role": "Co-founder and CEO", "bio": "Computer scientist and Hebrew University professor who co-founded Mobileye and leads its autonomous driving technology development."},
+    {"id": "ziv-aviram", "name": "Ziv Aviram", "role": "Co-founder and Former President", "bio": "Entrepreneur who co-founded Mobileye with Amnon Shashua and served as president until Intel's acquisition."},
+    {"id": "pat-gelsinger", "name": "Pat Gelsinger", "role": "Former Intel CEO (Parent Company)", "bio": "Former Intel CEO who oversaw the $15.3 billion acquisition of Mobileye and its 2022 IPO as a publicly traded subsidiary."},
+    {"id": "nimrod-nehushtan", "name": "Nimrod Nehushtan", "role": "VP of Business Development", "bio": "Senior executive at Mobileye responsible for global business development and strategic partnerships with automakers."}
+  ],
+  "sodastream-israel": [
+    {"id": "daniel-birnbaum", "name": "Daniel Birnbaum", "role": "Former CEO", "bio": "Led SodaStream's global transformation from a niche product to a mainstream brand before its acquisition by PepsiCo."},
+    {"id": "eyal-shohat", "name": "Eyal Shohat", "role": "CEO", "bio": "Took over leadership of SodaStream following its acquisition by PepsiCo to integrate and expand operations."},
+    {"id": "ramon-laguarta", "name": "Ramon Laguarta", "role": "PepsiCo CEO (Parent Company)", "bio": "CEO of PepsiCo which acquired SodaStream in 2018 for $3.2 billion to expand its at-home beverage platform."},
+    {"id": "yonah-lloyd", "name": "Yonah Lloyd", "role": "Chief Communications Officer", "bio": "Long-serving executive at SodaStream who shaped the company's global branding and marketing strategy."}
+  ],
+  "watergen": [
+    {"id": "michael-mirilashvili", "name": "Michael Mirilashvili", "role": "President and Chairman", "bio": "Israeli-Georgian billionaire who acquired Watergen and invested heavily in scaling its atmospheric water generation technology worldwide."},
+    {"id": "maxim-pasik", "name": "Maxim Pasik", "role": "CEO", "bio": "Led Watergen's executive operations driving the commercialization of atmospheric water generators for civilian and military use."},
+    {"id": "arye-kohavi", "name": "Arye Kohavi", "role": "Founder and Former CEO", "bio": "Israeli engineer and entrepreneur who founded Watergen developing technology to extract drinking water from air."},
+    {"id": "nois-mirilashvili", "name": "Nois Mirilashvili", "role": "VP of Strategy", "bio": "Senior executive at Watergen involved in strategic planning and international expansion of the company's water solutions."}
+  ],
+  "biontech-pfizer-israel-partnership": [
+    {"id": "ugur-sahin", "name": "Ugur Sahin", "role": "BioNTech CEO and Co-founder", "bio": "Turkish-German physician and scientist who co-founded BioNTech and led the development of the COVID-19 mRNA vaccine."},
+    {"id": "albert-bourla", "name": "Albert Bourla", "role": "Pfizer CEO", "bio": "Greek-born veterinarian and CEO of Pfizer who oversaw the partnership with BioNTech and Israel's early mass vaccination campaign."},
+    {"id": "nachman-ash", "name": "Nachman Ash", "role": "Israel COVID-19 Czar", "bio": "Israeli brigadier general who coordinated the national vaccination rollout that made Israel a global case study in rapid immunization."},
+    {"id": "sharon-alroy-preis", "name": "Sharon Alroy-Preis", "role": "Head of Public Health Services", "bio": "Led Israel's public health response and served as key liaison with Pfizer for vaccine data sharing and distribution planning."}
+  ],
+  "mekorot": [
+    {"id": "eli-cohen-mekorot", "name": "Eli Cohen", "role": "CEO", "bio": "Led Mekorot as CEO managing Israel's national water company and its critical water supply infrastructure."},
+    {"id": "alexander-kushnir", "name": "Alexander Kushnir", "role": "Chairman of the Board", "bio": "Served as chairman of Mekorot's board providing oversight of Israel's largest water utility operations."},
+    {"id": "yitzhak-aharonovitch", "name": "Yitzhak Aharonovitch", "role": "Former Chairman", "bio": "Former Israeli politician and police commissioner who served as chairman of Mekorot's board."},
+    {"id": "abraham-tene", "name": "Abraham Tene", "role": "Former CEO", "bio": "Former CEO who expanded Mekorot's desalination and water recycling capabilities to strengthen Israel's water security."}
+  ],
+  "western-wall-heritage-foundation": [
+    {"id": "shmuel-rabinovitch", "name": "Shmuel Rabinovitch", "role": "Rabbi of the Western Wall", "bio": "Serves as the rabbi of the Western Wall and Holy Sites, overseeing religious activities at Judaism's holiest accessible site."},
+    {"id": "mordechai-eliav", "name": "Mordechai Eliav", "role": "Director General", "bio": "Leads the Western Wall Heritage Foundation managing the site's preservation, tourism operations, and religious services."},
+    {"id": "natan-sharansky", "name": "Natan Sharansky", "role": "Former Chairman of Jewish Agency (Kotel Negotiations)", "bio": "Former Soviet dissident who led negotiations over the egalitarian prayer section at the Western Wall as Jewish Agency chairman."},
+    {"id": "meir-lau", "name": "Meir Lau", "role": "Former Chief Rabbi of Israel", "bio": "Holocaust survivor and former Ashkenazi Chief Rabbi who has been a prominent spiritual voice regarding the Western Wall's sanctity."}
+  ],
+  "given-imaging-medtronic": [
+    {"id": "gavriel-iddan", "name": "Gavriel Iddan", "role": "Inventor of PillCam", "bio": "Israeli electro-optical engineer who invented the PillCam capsule endoscopy technology at Given Imaging."},
+    {"id": "homi-shamir", "name": "Homi Shamir", "role": "Former CEO of Given Imaging", "bio": "Led Given Imaging as CEO through its growth phase and preparation for acquisition by Covidien/Medtronic."},
+    {"id": "geoffrey-martha", "name": "Geoffrey Martha", "role": "Medtronic CEO", "bio": "Chairman and CEO of Medtronic, the parent company that acquired Given Imaging through its Covidien merger."},
+    {"id": "glenda-dorchak", "name": "Glenda Dorchak", "role": "Former Given Imaging Board Chair", "bio": "Technology executive who served as chairwoman of Given Imaging's board during its critical growth period."}
+  ],
+  "israel-aerospace-industries-iai": [
+    {"id": "boaz-levy", "name": "Boaz Levy", "role": "President and CEO", "bio": "Longtime IAI executive who became president and CEO leading Israel's largest defense and aerospace manufacturer."},
+    {"id": "amir-peretz", "name": "Amir Peretz", "role": "Chairman of the Board", "bio": "Former defense minister and Labor party leader who served as chairman of IAI's board of directors."},
+    {"id": "joseph-weiss", "name": "Joseph Weiss", "role": "Former President and CEO", "bio": "Led IAI for over a decade expanding its satellite, UAV, and missile defense programs into global markets."},
+    {"id": "al-bedein", "name": "Al Bedein", "role": "Former Chairman", "bio": "Defense industry veteran who served as chairman of IAI's board overseeing its strategic direction and government contracts."}
+  ],
+  "hadassah-medical-center": [
+    {"id": "zeev-rotstein", "name": "Zeev Rotstein", "role": "Former Director General", "bio": "Led Hadassah Medical Center through financial recovery and expansion of its two hospital campuses in Jerusalem."},
+    {"id": "yoram-weiss", "name": "Yoram Weiss", "role": "Director General", "bio": "Senior physician and hospital administrator who serves as director general of Hadassah Medical Center."},
+    {"id": "tamar-peretz", "name": "Tamar Peretz", "role": "Head of Oncology", "bio": "Leading oncologist and researcher at Hadassah Medical Center heading its Sharett Institute of Oncology."},
+    {"id": "rhoda-smolow", "name": "Rhoda Smolow", "role": "National President of Hadassah", "bio": "President of Hadassah, the Women's Zionist Organization of America, the primary supporter of Hadassah Medical Center."}
+  ],
+  "icl-group": [
+    {"id": "raviv-zoller", "name": "Raviv Zoller", "role": "President and CEO", "bio": "Leads ICL Group overseeing its specialty minerals and chemicals business based on Dead Sea mineral extraction."},
+    {"id": "aviram-lahav", "name": "Aviram Lahav", "role": "CFO", "bio": "Serves as chief financial officer of ICL Group managing the company's global financial operations and reporting."},
+    {"id": "johanna-henrica-lampe-onnerud", "name": "Johanna Lampe-Onnerud", "role": "Board Member", "bio": "Entrepreneur and board member of ICL Group bringing expertise in energy technology and sustainable innovation."},
+    {"id": "stefan-borgas", "name": "Stefan Borgas", "role": "Former CEO", "bio": "German-born executive who served as CEO of ICL Group driving its transformation into a global specialty minerals company."}
+  ],
+  "verint-systems": [
+    {"id": "dan-bodner", "name": "Dan Bodner", "role": "CEO and Chairman", "bio": "Longtime leader of Verint Systems who transformed the company from an intelligence-focused firm to a customer engagement platform."},
+    {"id": "elan-moriah", "name": "Elan Moriah", "role": "Former President of Video and Cyber Intelligence", "bio": "Senior executive who led Verint's security intelligence division before its spin-off as Cognyte."},
+    {"id": "grant-highlander", "name": "Grant Highlander", "role": "CFO", "bio": "Chief financial officer of Verint Systems managing the company's financial strategy and investor relations."},
+    {"id": "elad-sharon", "name": "Elad Sharon", "role": "CEO of Cognyte (Former Verint Division)", "bio": "Leads Cognyte Software, the security analytics company spun off from Verint Systems in 2021."}
+  ],
+  "discount-investment-corporation": [
+    {"id": "eduardo-elsztain-dic", "name": "Eduardo Elsztain", "role": "Controlling Shareholder", "bio": "Argentine real estate mogul who gained control of Discount Investment Corporation through IDB Holdings."},
+    {"id": "giora-oron", "name": "Giora Oron", "role": "Former CEO", "bio": "Served as CEO of Discount Investment Corporation managing its diverse portfolio of Israeli industrial and technology companies."},
+    {"id": "haim-gueron", "name": "Haim Gueron", "role": "Former Chairman", "bio": "Longtime chairman who oversaw Discount Investment Corporation's portfolio spanning telecom, real estate, and industry."},
+    {"id": "zvi-sheleg", "name": "Zvi Sheleg", "role": "Board Member", "bio": "Senior board member of Discount Investment Corporation involved in strategic investment decisions."}
+  ],
+  "mellanox-technologies-nvidia": [
+    {"id": "eyal-waldman", "name": "Eyal Waldman", "role": "Founder and Former CEO", "bio": "Co-founded Mellanox Technologies and led it for two decades until its $6.9 billion acquisition by Nvidia in 2020."},
+    {"id": "jensen-huang", "name": "Jensen Huang", "role": "Nvidia CEO", "bio": "Co-founder and CEO of Nvidia who acquired Mellanox to integrate high-speed networking into Nvidia's data center ecosystem."},
+    {"id": "michael-kagan", "name": "Michael Kagan", "role": "CTO of Networking at Nvidia", "bio": "Co-founder of Mellanox who became Nvidia's chief technology officer for networking after the acquisition."},
+    {"id": "amit-katz", "name": "Amit Katz", "role": "VP of Israel Operations at Nvidia", "bio": "Senior executive managing Nvidia's expanding Israel operations built on the foundation of the Mellanox acquisition."}
+  ],
+  "galei-zahal-idf-radio": [
+    {"id": "ilana-dayan", "name": "Ilana Dayan", "role": "Notable Alumna / Journalist", "bio": "One of Israel's foremost investigative journalists who began her career at Galei Zahal before leading flagship TV programs."},
+    {"id": "roni-daniel", "name": "Roni Daniel", "role": "Former Military Correspondent", "bio": "Legendary Israeli military correspondent who served at Galei Zahal and became the voice of defense reporting in Israel."},
+    {"id": "keren-neubach", "name": "Keren Neubach", "role": "Former Host", "bio": "Popular radio presenter who hosted morning shows on Galei Zahal becoming one of Israeli media's most recognized voices."},
+    {"id": "efi-triger", "name": "Efi Triger", "role": "Commander / Editor", "bio": "Served as commander of the IDF radio station overseeing its editorial direction and broadcast operations."}
+  ],
+  "osem-nestl": [
+    {"id": "avi-ben-assayag", "name": "Avi Ben Assayag", "role": "CEO", "bio": "Led Osem-Nestle as CEO managing Israel's largest food manufacturer and its extensive product portfolio."},
+    {"id": "dan-propper", "name": "Dan Propper", "role": "Former Chairman", "bio": "Longtime chairman of Osem who oversaw its growth and the strategic partnership with Nestle leading to full acquisition."},
+    {"id": "mark-schneider", "name": "Mark Schneider", "role": "Nestle CEO (Parent Company)", "bio": "CEO of Nestle which fully acquired Osem making it a wholly-owned subsidiary of the Swiss food giant."},
+    {"id": "osem-guy-laurence", "name": "Guy Laurence", "role": "Nestle Zone Director", "bio": "Senior Nestle executive overseeing the zone that includes Osem's operations in Israel and regional markets."}
+  ],
+  "storedot": [
+    {"id": "doron-myersdorf", "name": "Doron Myersdorf", "role": "Co-founder and CEO", "bio": "Co-founded StoreDot and leads its mission to develop extreme fast-charging battery technology for electric vehicles."},
+    {"id": "simon-litsyn", "name": "Simon Litsyn", "role": "Co-founder and CTO", "bio": "Tel Aviv University professor who co-founded StoreDot bringing deep expertise in signal processing and nanotechnology."},
+    {"id": "gil-arditi", "name": "Gil Arditi", "role": "Co-founder", "bio": "Co-founded StoreDot contributing to the early research and development of its rapid-charging battery materials."},
+    {"id": "hernan-kazah", "name": "Hernan Kazah", "role": "Board Member / Investor", "bio": "Co-founder of MercadoLibre and Kaszek Ventures who serves on StoreDot's board as a strategic investor."}
+  ],
+  "varonis-systems": [
+    {"id": "yaki-faitelson", "name": "Yaki Faitelson", "role": "Co-founder, CEO and President", "bio": "Co-founded Varonis Systems and leads the company as CEO building it into a major data security and analytics platform."},
+    {"id": "ohad-korkus", "name": "Ohad Korkus", "role": "Co-founder and CTO", "bio": "Co-founded Varonis and serves as chief technology officer driving the company's data protection technology development."},
+    {"id": "guy-melamed", "name": "Guy Melamed", "role": "CFO and COO", "bio": "Serves as chief financial officer and chief operating officer of Varonis managing its financial and operational strategy."},
+    {"id": "david-bass", "name": "David Bass", "role": "EVP of Engineering", "bio": "Executive vice president of engineering at Varonis overseeing product development and technical architecture."}
+  ]
+}

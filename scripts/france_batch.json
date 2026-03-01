@@ -1,0 +1,212 @@
+{
+  "lvmh-moet-hennessy-louis-vuitton": [
+    {"id": "bernard-arnault", "name": "Bernard Arnault", "role": "Chairman & CEO", "bio": "Billionaire businessman who built LVMH into the world's largest luxury goods conglomerate, consistently ranked among the wealthiest people globally."},
+    {"id": "antonio-belloni", "name": "Antonio Belloni", "role": "Group Managing Director", "bio": "Italian-born executive who served as LVMH Group Managing Director for over two decades, overseeing global operations."},
+    {"id": "delphine-arnault", "name": "Delphine Arnault", "role": "CEO of Christian Dior", "bio": "Eldest child of Bernard Arnault who rose through LVMH ranks to lead Christian Dior Couture and sits on the LVMH board."},
+    {"id": "antoine-arnault", "name": "Antoine Arnault", "role": "Head of Communications & Image", "bio": "Son of Bernard Arnault who oversees LVMH's image and communications strategy and serves as CEO of Berluti."}
+  ],
+  "publicis-groupe": [
+    {"id": "arthur-sadoun", "name": "Arthur Sadoun", "role": "Chairman & CEO", "bio": "French advertising executive who became CEO of Publicis Groupe in 2017, driving its transformation into a data-driven marketing leader."},
+    {"id": "maurice-levy", "name": "Maurice Lévy", "role": "Chairman of the Supervisory Board", "bio": "Longtime CEO of Publicis Groupe who led the company for nearly three decades and engineered major acquisitions including Sapient."},
+    {"id": "elisabeth-badinter", "name": "Elisabeth Badinter", "role": "Major Shareholder & Board Member", "bio": "French philosopher, feminist author, and daughter of Publicis founder Marcel Bleustein-Blanchet, one of the largest individual shareholders."},
+    {"id": "marcel-bleustein-blanchet", "name": "Marcel Bleustein-Blanchet", "role": "Founder", "bio": "French advertising pioneer who founded Publicis in 1926 and built it into one of the world's premier advertising agencies."}
+  ],
+  "bnp-paribas": [
+    {"id": "jean-laurent-bonnafe", "name": "Jean-Laurent Bonnafé", "role": "CEO", "bio": "French banking executive who has led BNP Paribas as CEO since 2011, steering Europe's largest bank through regulatory and digital transformations."},
+    {"id": "jean-lemierre", "name": "Jean Lemierre", "role": "Chairman of the Board", "bio": "Former president of the European Bank for Reconstruction and Development who became chairman of BNP Paribas in 2014."},
+    {"id": "michel-pebereau", "name": "Michel Pébereau", "role": "Former Chairman", "bio": "Influential French banker who orchestrated the merger creating BNP Paribas in 2000 and served as chairman until 2011."},
+    {"id": "thierry-laborde", "name": "Thierry Laborde", "role": "Chief Operating Officer", "bio": "Senior BNP Paribas executive overseeing retail banking and services divisions across the group's European markets."}
+  ],
+  "paris-shoah-memorial-m-morial-de-la-shoah": [
+    {"id": "jacques-fredj", "name": "Jacques Fredj", "role": "Director", "bio": "Longtime director of the Mémorial de la Shoah in Paris, overseeing its transformation into a major Holocaust museum and education center."},
+    {"id": "serge-klarsfeld", "name": "Serge Klarsfeld", "role": "Co-Founder & Activist", "bio": "Renowned Nazi hunter and historian who documented the deportation of Jews from France and was instrumental in establishing the Memorial."},
+    {"id": "beate-klarsfeld", "name": "Beate Klarsfeld", "role": "Co-Founder & Activist", "bio": "German-born French activist who, alongside her husband Serge, pursued Nazi war criminals and championed Holocaust remembrance in France."},
+    {"id": "eric-de-rothschild", "name": "Eric de Rothschild", "role": "Former President", "bio": "French banker and philanthropist from the Rothschild family who served as president of the Mémorial de la Shoah for many years."}
+  ],
+  "alliance-isra-lite-universelle-aiu": [
+    {"id": "marc-eisenberg", "name": "Marc Eisenberg", "role": "President", "bio": "French businessman and communal leader who has served as president of the Alliance Israélite Universelle, overseeing its global educational network."},
+    {"id": "adolphe-cremieux", "name": "Adolphe Crémieux", "role": "Founder", "bio": "Nineteenth-century French-Jewish statesman and lawyer who co-founded the Alliance Israélite Universelle in 1860 to defend Jewish rights worldwide."},
+    {"id": "jo-malka", "name": "Jo Malka", "role": "Director General", "bio": "Senior administrator overseeing the AIU's educational programs and its network of schools across multiple countries."},
+    {"id": "narcisse-leven", "name": "Narcisse Leven", "role": "Historical President", "bio": "French-Jewish lawyer and philanthropist who served as longtime president of the AIU in the late 19th and early 20th centuries."}
+  ],
+  "consistoire-central-de-france": [
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "President", "bio": "French communal leader serving as president of the Consistoire Central, the official body governing Orthodox Jewish religious life in France."},
+    {"id": "haim-korsia", "name": "Haïm Korsia", "role": "Grand Rabbi of France", "bio": "Chief Rabbi of France since 2014, serving as the spiritual leader of French Jewry and an interreligious dialogue advocate."},
+    {"id": "napoleon-bonaparte", "name": "Napoleon Bonaparte", "role": "Founder (by decree)", "bio": "French emperor who established the Consistoire system in 1808 to organize Jewish communal life within the framework of the French state."},
+    {"id": "gilles-bernheim", "name": "Gilles Bernheim", "role": "Former Grand Rabbi of France", "bio": "Philosopher and rabbi who served as Grand Rabbi of France from 2008 to 2013, known for bridging Jewish thought and French philosophy."}
+  ],
+  "cr-if-representative-council-of-french-jewish-institutions": [
+    {"id": "yonathan-arfi", "name": "Yonathan Arfi", "role": "President", "bio": "French communal leader elected president of CRIF, the representative umbrella body of French Jewish organizations, advocating against antisemitism."},
+    {"id": "francis-kalifat", "name": "Francis Kalifat", "role": "Former President", "bio": "French Jewish leader who served as CRIF president, championing Holocaust remembrance and combating rising antisemitism in France."},
+    {"id": "roger-cukierman", "name": "Roger Cukierman", "role": "Former President", "bio": "French banker and communal leader who served as CRIF president and was a prominent voice on Jewish affairs in France."},
+    {"id": "richard-prasquier", "name": "Richard Prasquier", "role": "Former President", "bio": "French physician and communal leader who led CRIF and was active in Holocaust memory and French-Israeli relations."}
+  ],
+  "european-jewish-congress": [
+    {"id": "ariel-muzicant", "name": "Ariel Muzicant", "role": "Vice President", "bio": "Austrian-Jewish communal leader and businessman who served as vice president of the European Jewish Congress and headed the Austrian Jewish community."},
+    {"id": "moshe-kantor", "name": "Moshe Kantor", "role": "Former President", "bio": "Russian-born industrialist and philanthropist who led the European Jewish Congress for over a decade, championing tolerance and combating antisemitism."},
+    {"id": "marie-van-der-zyl", "name": "Marie van der Zyl", "role": "Board Member", "bio": "British lawyer and communal leader who contributed to the European Jewish Congress while serving as president of the Board of Deputies of British Jews."},
+    {"id": "raya-kalenova", "name": "Raya Kalenova", "role": "Executive Vice President", "bio": "Senior executive overseeing the European Jewish Congress's day-to-day operations and pan-European Jewish advocacy efforts."}
+  ],
+  "french-jewish-scouts-eclaireurs-israelites-de-france": [
+    {"id": "robert-gamzon", "name": "Robert Gamzon", "role": "Founder", "bio": "French-Jewish engineer and youth leader who founded the Éclaireurs Israélites de France in 1923 and led Jewish resistance efforts during WWII."},
+    {"id": "robert-weil", "name": "Robert Weil", "role": "Historical Leader", "bio": "Early leader of the EEIF who helped build the organization's educational and camping programs for French Jewish youth."},
+    {"id": "denise-levy", "name": "Denise Lévy", "role": "Former Commissioner General", "bio": "Prominent woman leader in the EEIF who guided the movement through modernization while maintaining its Jewish and scouting values."},
+    {"id": "michel-serfaty", "name": "Michel Serfaty", "role": "Notable Alumnus & Rabbi", "bio": "French rabbi and interfaith activist who was shaped by his EEIF experience and became known for Jewish-Muslim dialogue initiatives."}
+  ],
+  "mahj-museum-of-art-and-history-of-judaism": [
+    {"id": "paul-salmona", "name": "Paul Salmona", "role": "Director", "bio": "Art historian and museum professional who directed the Musée d'Art et d'Histoire du Judaïsme in the Marais district of Paris."},
+    {"id": "laurence-sigal", "name": "Laurence Sigal", "role": "Former Director", "bio": "Founding director of the MAHJ who oversaw its establishment in the Hôtel de Saint-Aignan and built its acclaimed permanent collection."},
+    {"id": "claude-gerard-marcus", "name": "Claude-Gérard Marcus", "role": "Founding President", "bio": "French politician and art patron who championed the creation of a Jewish art and history museum in Paris."},
+    {"id": "anne-helene-hoog", "name": "Anne-Hélène Hoog", "role": "Chief Curator", "bio": "Senior curator at the MAHJ responsible for organizing major exhibitions on Jewish art, culture, and history."}
+  ],
+  "ose-children-s-rescue-organization": [
+    {"id": "patricia-sitruk", "name": "Patricia Sitruk", "role": "Director General", "bio": "French communal leader who led OSE's modern operations providing health, education, and social services to vulnerable populations."},
+    {"id": "jean-francois-guthmann", "name": "Jean-François Guthmann", "role": "President", "bio": "French philanthropist and communal leader who served as president of OSE, continuing its mission of child welfare and health services."},
+    {"id": "andrée-salomon", "name": "Andrée Salomon", "role": "WWII Rescue Leader", "bio": "Social worker who directed OSE's clandestine rescue network during WWII, saving hundreds of Jewish children from deportation in France."},
+    {"id": "ernst-papanek", "name": "Ernst Papanek", "role": "Historical Director", "bio": "Austrian-born educator who directed OSE children's homes in France before WWII, pioneering progressive methods for refugee children's care."}
+  ],
+  "memorial-de-la-shoah-drancy": [
+    {"id": "jacques-fredj", "name": "Jacques Fredj", "role": "Director", "bio": "Director of the Mémorial de la Shoah network including the Drancy site, overseeing Holocaust education and remembrance programs."},
+    {"id": "serge-klarsfeld", "name": "Serge Klarsfeld", "role": "Key Advocate", "bio": "Famed Nazi hunter whose decades of research on deportations from Drancy was instrumental in establishing the memorial at the former internment camp."},
+    {"id": "annette-wieviorka", "name": "Annette Wieviorka", "role": "Historical Advisor", "bio": "Prominent French historian of the Holocaust who contributed to the scholarly foundation and exhibits of the Drancy memorial."},
+    {"id": "beate-klarsfeld", "name": "Beate Klarsfeld", "role": "Key Advocate", "bio": "Activist who alongside her husband Serge fought for recognition of French complicity in Holocaust deportations via the Drancy transit camp."}
+  ],
+  "tot-al-energies": [
+    {"id": "patrick-pouyanne", "name": "Patrick Pouyanné", "role": "Chairman & CEO", "bio": "French engineer and executive who has led TotalEnergies since 2014, steering its transformation toward multi-energy and renewables."},
+    {"id": "christophe-de-margerie", "name": "Christophe de Margerie", "role": "Former CEO", "bio": "Charismatic French oil executive who led Total from 2007 until his death in a 2014 plane crash, expanding the company's global footprint."},
+    {"id": "thierry-desmarest", "name": "Thierry Desmarest", "role": "Former Chairman & CEO", "bio": "French executive who led Total through major mergers with Petrofina and Elf Aquitaine, creating one of the world's largest energy companies."},
+    {"id": "helle-kristoffersen", "name": "Helle Kristoffersen", "role": "President of Strategy & Sustainability", "bio": "Senior TotalEnergies executive overseeing the company's strategic planning and its transition toward sustainable energy solutions."}
+  ],
+  "sanofi": [
+    {"id": "paul-hudson", "name": "Paul Hudson", "role": "CEO", "bio": "British pharmaceutical executive who became Sanofi CEO in 2019, refocusing the company on immunology, oncology, and rare diseases."},
+    {"id": "serge-weinberg", "name": "Serge Weinberg", "role": "Chairman of the Board", "bio": "French businessman who has chaired Sanofi's board, bringing extensive experience from private equity and corporate governance."},
+    {"id": "olivier-brandicourt", "name": "Olivier Brandicourt", "role": "Former CEO", "bio": "French physician and pharmaceutical executive who led Sanofi from 2015 to 2019, restructuring its R&D pipeline."},
+    {"id": "chris-viehbacher", "name": "Chris Viehbacher", "role": "Former CEO", "bio": "German-Canadian executive who led Sanofi from 2008 to 2014, expanding its presence in emerging markets and diversified health."}
+  ],
+  "danone": [
+    {"id": "antoine-de-saint-affrique", "name": "Antoine de Saint-Affrique", "role": "CEO", "bio": "Belgian-born executive who became Danone CEO in 2021, tasked with revitalizing growth across dairy, water, and nutrition divisions."},
+    {"id": "franck-riboud", "name": "Franck Riboud", "role": "Honorary Chairman", "bio": "Son of Danone founder figure Antoine Riboud, who led Danone as CEO for nearly two decades and shaped its health-focused mission."},
+    {"id": "emmanuel-faber", "name": "Emmanuel Faber", "role": "Former Chairman & CEO", "bio": "French executive who championed Danone's social and environmental mission before being ousted in 2021 amid activist investor pressure."},
+    {"id": "antoine-riboud", "name": "Antoine Riboud", "role": "Founder & Former Chairman", "bio": "Visionary French industrialist who transformed a regional glass company into the global food giant Danone and pioneered corporate social responsibility."}
+  ],
+  "bolloré-group": [
+    {"id": "vincent-bollore", "name": "Vincent Bolloré", "role": "Chairman", "bio": "French billionaire industrialist who built the Bolloré Group into a major conglomerate spanning media, logistics, and energy storage."},
+    {"id": "cyrille-bollore", "name": "Cyrille Bolloré", "role": "CEO", "bio": "Son of Vincent Bolloré who took over as CEO of the Bolloré Group, leading its next generation of diversified industrial operations."},
+    {"id": "yannick-bollore", "name": "Yannick Bolloré", "role": "Chairman of Vivendi", "bio": "Son of Vincent Bolloré who chairs Vivendi, the media conglomerate controlled by the Bolloré Group."},
+    {"id": "cedric-de-bailliencourt", "name": "Cédric de Bailliencourt", "role": "Chief Financial Officer", "bio": "Senior executive overseeing financial operations and strategy for the diversified Bolloré Group conglomerate."}
+  ],
+  "fondation-pour-la-m-moire-de-la-shoah": [
+    {"id": "david-de-rothschild", "name": "David de Rothschild", "role": "President", "bio": "French banker and philanthropist who led the Fondation pour la Mémoire de la Shoah, dedicated to Holocaust remembrance, education, and solidarity."},
+    {"id": "simone-veil", "name": "Simone Veil", "role": "Founding President", "bio": "Iconic French stateswoman and Holocaust survivor who served as the first president of the Foundation, embodying its mission of remembrance."},
+    {"id": "philippe-allouche", "name": "Philippe Allouche", "role": "Executive Director", "bio": "Director overseeing the Foundation's programs supporting Holocaust research, education, Jewish culture, and assistance to survivors."},
+    {"id": "serge-klarsfeld", "name": "Serge Klarsfeld", "role": "Board Member & Advisor", "bio": "Legendary Nazi hunter and historian whose work documenting the Shoah in France is central to the Foundation's mission."}
+  ],
+  "fonds-social-juif-unifi-fsju": [
+    {"id": "ariel-goldmann", "name": "Ariel Goldmann", "role": "President", "bio": "French lawyer and communal leader who presides over the FSJU, the central fundraising and social services body for French Jewry."},
+    {"id": "diana-garel", "name": "Diana Garel", "role": "Director General", "bio": "Executive leading the FSJU's operations across education, culture, and social welfare programs for the French Jewish community."},
+    {"id": "david-saada", "name": "David Saada", "role": "Former Director General", "bio": "Communal executive who led the FSJU's day-to-day operations and expanded its range of social and educational programs."},
+    {"id": "pierre-besnainou", "name": "Pierre Besnainou", "role": "Former President", "bio": "French-Jewish communal leader and businessman who served as FSJU president and was active in European Jewish affairs."}
+  ],
+  "fondation-france-isra-l": [
+    {"id": "nicole-guedj", "name": "Nicole Guedj", "role": "President", "bio": "French lawyer and former government minister who has led the Fondation France-Israël promoting cultural and scientific ties between the two countries."},
+    {"id": "pierre-besnainou", "name": "Pierre Besnainou", "role": "Former President", "bio": "French-Jewish communal leader who championed Franco-Israeli cultural exchange and cooperation through the Foundation."},
+    {"id": "bernard-cazeneuve", "name": "Bernard Cazeneuve", "role": "Honorary Member", "bio": "Former French Prime Minister associated with strengthening France-Israel relations through diplomatic and cultural channels."},
+    {"id": "joel-rubinfeld", "name": "Joël Rubinfeld", "role": "Board Member", "bio": "Belgian-born activist and communal leader who contributed to European and Franco-Israeli advocacy initiatives."}
+  ],
+  "french-jewish-intelligentsia-network": [
+    {"id": "bernard-henri-levy", "name": "Bernard-Henri Lévy", "role": "Prominent Intellectual", "bio": "Celebrated French-Jewish philosopher, author, and public intellectual known as 'BHL,' a leading voice on human rights and Jewish identity."},
+    {"id": "alain-finkielkraut", "name": "Alain Finkielkraut", "role": "Prominent Intellectual", "bio": "French philosopher, author, and Académie Française member known for his writings on Jewish identity, modernity, and French culture."},
+    {"id": "elisabeth-badinter", "name": "Elisabeth Badinter", "role": "Prominent Intellectual", "bio": "Renowned French feminist philosopher and author whose Jewish heritage informs her influential writings on universalism and equality."},
+    {"id": "simone-veil", "name": "Simone Veil", "role": "Historical Figure", "bio": "Holocaust survivor who became one of France's most respected stateswomen, serving as health minister and European Parliament president."}
+  ],
+  "jewish-community-of-paris": [
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "President of the Paris Consistoire", "bio": "Communal leader heading the Consistoire of Paris, the body governing Orthodox Jewish religious institutions in the French capital."},
+    {"id": "moshe-sebbag", "name": "Moshe Sebbag", "role": "Grand Rabbi of Paris", "bio": "Grand Rabbi of the Grande Synagogue de la Victoire, serving as a leading religious authority for the Parisian Jewish community."},
+    {"id": "michel-gugenheim", "name": "Michel Gugenheim", "role": "Grand Rabbi of Paris (Emeritus)", "bio": "Former Grand Rabbi of Paris who served the community's religious needs and promoted interreligious understanding for decades."},
+    {"id": "haim-korsia", "name": "Haïm Korsia", "role": "Grand Rabbi of France", "bio": "Chief Rabbi of France who also plays a central role in Parisian Jewish life and broader communal leadership."}
+  ],
+  "centre-communautaire-de-paris-le-marais": [
+    {"id": "claude-nature", "name": "Claude Nature", "role": "Director", "bio": "Communal leader overseeing the Centre Communautaire de Paris in the historic Marais district, a hub for Jewish cultural and social life."},
+    {"id": "yael-hirsch", "name": "Yaël Hirsch", "role": "Cultural Programming Director", "bio": "Cultural organizer who developed programming at the Le Marais community center celebrating Jewish arts, heritage, and intellectual life."},
+    {"id": "moïse-cohen", "name": "Moïse Cohen", "role": "President", "bio": "Communal leader who presided over the Le Marais Jewish community center, fostering social cohesion and cultural activities."},
+    {"id": "delphine-horvilleur", "name": "Delphine Horvilleur", "role": "Affiliated Rabbi", "bio": "One of France's few female rabbis, a prominent author and speaker closely connected to progressive Jewish life in the Marais."}
+  ],
+  "grand-synagogue-of-paris": [
+    {"id": "moshe-sebbag", "name": "Moshe Sebbag", "role": "Grand Rabbi", "bio": "Principal rabbi of the Grande Synagogue de la Victoire, the most prestigious synagogue in France, since the 1990s."},
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "President of the Paris Consistoire", "bio": "Head of the Paris Consistoire, which administers the Grand Synagogue and other Jewish religious institutions in Paris."},
+    {"id": "gustave-de-rothschild", "name": "Gustave de Rothschild", "role": "Historical Patron", "bio": "Nineteenth-century Rothschild family member who was a major patron in the construction and support of the Grand Synagogue."},
+    {"id": "zadoc-kahn", "name": "Zadoc Kahn", "role": "Historical Grand Rabbi of France", "bio": "Influential late-19th-century Grand Rabbi of France who presided at the Grand Synagogue and championed Jewish integration and rights."}
+  ],
+  "centre-european-du-juda-sme": [
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "Initiator & President of Paris Consistoire", "bio": "Communal leader who championed the creation of the Centre Européen du Judaïsme as a modern hub for Jewish life in Paris."},
+    {"id": "haim-korsia", "name": "Haïm Korsia", "role": "Grand Rabbi of France", "bio": "Chief Rabbi of France who supported and inaugurated the Centre Européen du Judaïsme as a spiritual and cultural landmark."},
+    {"id": "emmanuel-macron", "name": "Emmanuel Macron", "role": "Inaugurator (French President)", "bio": "President of France who inaugurated the Centre Européen du Judaïsme in 2019, highlighting its importance to French cultural life."},
+    {"id": "bruno-grisinelli", "name": "Bruno Grisinelli", "role": "Director", "bio": "Administrative director overseeing the operations, programming, and outreach of the Centre Européen du Judaïsme in Paris."}
+  ],
+  "jewish-community-of-strasbourg": [
+    {"id": "thierry-roos", "name": "Thierry Roos", "role": "President", "bio": "Lawyer and communal leader who has presided over the Jewish community of Strasbourg, one of the largest and oldest in France."},
+    {"id": "rene-gutman", "name": "René Gutman", "role": "Grand Rabbi of Strasbourg", "bio": "Longtime Grand Rabbi of Strasbourg who led the community's religious life and promoted interfaith dialogue in Alsace."},
+    {"id": "harold-abraham-weill", "name": "Harold Abraham Weill", "role": "Grand Rabbi of Strasbourg", "bio": "Rabbi serving the Strasbourg Jewish community, continuing its rich Alsatian Jewish religious tradition."},
+    {"id": "claude-marx", "name": "Claude Marx", "role": "Former Community Leader", "bio": "Historical communal figure who helped rebuild and strengthen the Strasbourg Jewish community in the post-war era."}
+  ],
+  "museum-of-jewish-art-and-history-paris": [
+    {"id": "paul-salmona", "name": "Paul Salmona", "role": "Director", "bio": "Art historian serving as director of the Museum of Jewish Art and History housed in the Hôtel de Saint-Aignan in Paris's Marais."},
+    {"id": "laurence-sigal", "name": "Laurence Sigal", "role": "Founding Director", "bio": "Curator and museum professional who established the Museum of Jewish Art and History, shaping its permanent exhibitions."},
+    {"id": "anne-helene-hoog", "name": "Anne-Hélène Hoog", "role": "Chief Curator", "bio": "Senior curator responsible for major exhibitions tracing Jewish history, art, and cultural heritage at the museum."},
+    {"id": "claude-gerard-marcus", "name": "Claude-Gérard Marcus", "role": "Founding Patron", "bio": "French politician and collector who was instrumental in the creation of a dedicated Jewish art and history museum in Paris."}
+  ],
+  "centre-europeen-du-judaisme": [
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "Initiator & President of Paris Consistoire", "bio": "Key figure behind the Centre Européen du Judaïsme project, representing the Paris Consistoire's vision for a modern Jewish center."},
+    {"id": "haim-korsia", "name": "Haïm Korsia", "role": "Grand Rabbi of France", "bio": "Chief Rabbi of France who played a central role in launching the Centre Européen du Judaïsme as a spiritual and cultural space."},
+    {"id": "bruno-grisinelli", "name": "Bruno Grisinelli", "role": "Director", "bio": "Director responsible for the daily management and cultural programming of the Centre Européen du Judaïsme in Paris."},
+    {"id": "emmanuel-macron", "name": "Emmanuel Macron", "role": "Inaugurator (French President)", "bio": "President of France who officially opened the Centre Européen du Judaïsme in October 2019 in a public ceremony."}
+  ],
+  "fondation-france-israel": [
+    {"id": "nicole-guedj", "name": "Nicole Guedj", "role": "President", "bio": "Lawyer, former French Secretary of State, and president of the Fondation France-Israël, promoting bilateral cultural exchanges."},
+    {"id": "pierre-besnainou", "name": "Pierre Besnainou", "role": "Former President", "bio": "Businessman and communal leader who headed the Foundation, fostering Franco-Israeli innovation and cultural partnerships."},
+    {"id": "bernard-cazeneuve", "name": "Bernard Cazeneuve", "role": "Honorary Member", "bio": "Former French Prime Minister whose government strengthened security and cultural cooperation ties with Israel."},
+    {"id": "daniel-shek", "name": "Daniel Shek", "role": "Former Israeli Ambassador", "bio": "Former Israeli Ambassador to France who worked closely with the Foundation to strengthen Franco-Israeli relations."}
+  ],
+  "fonds-social-juif-unifie-fsju": [
+    {"id": "ariel-goldmann", "name": "Ariel Goldmann", "role": "President", "bio": "French lawyer and philanthropist presiding over the FSJU, the main fundraising and social services organization of French Jewry."},
+    {"id": "diana-garel", "name": "Diana Garel", "role": "Director General", "bio": "Executive director managing the FSJU's broad portfolio of educational, cultural, and welfare programs for the Jewish community."},
+    {"id": "david-saada", "name": "David Saada", "role": "Former Director General", "bio": "Longtime executive who oversaw the FSJU's growth and modernization of its communal service programs across France."},
+    {"id": "pierre-besnainou", "name": "Pierre Besnainou", "role": "Former President", "bio": "Communal leader and European Jewish figure who served as FSJU president and later led the European Jewish Congress."}
+  ],
+  "consistoire-israelite-de-france": [
+    {"id": "joel-mergui", "name": "Joël Mergui", "role": "President", "bio": "President of the Consistoire Israélite de France, the historic body governing Jewish religious life and institutions across France."},
+    {"id": "haim-korsia", "name": "Haïm Korsia", "role": "Grand Rabbi of France", "bio": "Chief Rabbi of France serving under the Consistoire's religious framework, providing spiritual leadership to French Jewry."},
+    {"id": "gilles-bernheim", "name": "Gilles Bernheim", "role": "Former Grand Rabbi of France", "bio": "Philosopher-rabbi who served as Grand Rabbi of France under the Consistoire from 2008 until his resignation in 2013."},
+    {"id": "joseph-sitruk", "name": "Joseph Sitruk", "role": "Former Grand Rabbi of France", "bio": "Tunisian-born rabbi who served as Grand Rabbi of France from 1987 to 2008, known for strengthening Orthodox practice."}
+  ],
+  "memorial-de-la-shoah": [
+    {"id": "jacques-fredj", "name": "Jacques Fredj", "role": "Director", "bio": "Director of the Mémorial de la Shoah, France's leading Holocaust museum, education center, and documentation archive in Paris."},
+    {"id": "serge-klarsfeld", "name": "Serge Klarsfeld", "role": "Key Figures & Advisor", "bio": "Iconic Nazi hunter and historian whose lifelong documentation of Holocaust deportations from France underpins the Memorial's archives."},
+    {"id": "simone-veil", "name": "Simone Veil", "role": "Honorary Figure", "bio": "Holocaust survivor and beloved French stateswoman whose life and legacy are central to the Memorial's narrative of remembrance."},
+    {"id": "eric-de-rothschild", "name": "Eric de Rothschild", "role": "Former President", "bio": "Banker and philanthropist from the Rothschild family who served as president of the Mémorial de la Shoah."}
+  ],
+  "crif-representative-council-of-french-jewish-institutions": [
+    {"id": "yonathan-arfi", "name": "Yonathan Arfi", "role": "President", "bio": "Elected president of CRIF, the umbrella organization representing French Jewish community institutions and combating antisemitism."},
+    {"id": "francis-kalifat", "name": "Francis Kalifat", "role": "Former President", "bio": "Communal leader who headed CRIF and was a vocal advocate against antisemitism and for Holocaust remembrance in France."},
+    {"id": "roger-cukierman", "name": "Roger Cukierman", "role": "Former President", "bio": "French banker and communal leader who served multiple terms as CRIF president, representing French Jewry to public authorities."},
+    {"id": "richard-prasquier", "name": "Richard Prasquier", "role": "Former President", "bio": "Cardiologist and communal leader who led CRIF and championed Holocaust memory and French-Israeli relations."}
+  ],
+  "alliance-israelite-universelle": [
+    {"id": "marc-eisenberg", "name": "Marc Eisenberg", "role": "President", "bio": "French entrepreneur and communal leader serving as president of the Alliance Israélite Universelle and its global network of schools."},
+    {"id": "adolphe-cremieux", "name": "Adolphe Crémieux", "role": "Co-Founder", "bio": "Nineteenth-century French statesman who co-founded the AIU in 1860, championing Jewish emancipation and education worldwide."},
+    {"id": "jo-malka", "name": "Jo Malka", "role": "Director General", "bio": "Administrative leader overseeing the AIU's educational institutions and cultural programs across France and internationally."},
+    {"id": "narcisse-leven", "name": "Narcisse Leven", "role": "Historical President", "bio": "Lawyer and philanthropist who led the AIU through decades of expansion of its school network in the Mediterranean region."}
+  ],
+  "mah-j-mus-e-d-art-et-d-histoire-du-juda-sme": [
+    {"id": "paul-salmona", "name": "Paul Salmona", "role": "Director", "bio": "Art historian and director of the Musée d'Art et d'Histoire du Judaïsme, managing its collection and exhibitions in the Marais."},
+    {"id": "laurence-sigal", "name": "Laurence Sigal", "role": "Founding Director", "bio": "Pioneering museum director who led the creation of the MAHJ and established its acclaimed permanent collection of Judaica."},
+    {"id": "anne-helene-hoog", "name": "Anne-Hélène Hoog", "role": "Chief Curator", "bio": "Curator who developed key exhibitions on Jewish culture, art, and intellectual history at the museum."},
+    {"id": "claude-gerard-marcus", "name": "Claude-Gérard Marcus", "role": "Founding Patron", "bio": "French politician who championed the project to create a museum dedicated to Jewish art and history in Paris's historic Marais quarter."}
+  ],
+  "ose-oeuvre-de-secours-aux-enfants": [
+    {"id": "patricia-sitruk", "name": "Patricia Sitruk", "role": "Director General", "bio": "Executive leading OSE's modern-day health, educational, and social welfare programs for children and families in France."},
+    {"id": "jean-francois-guthmann", "name": "Jean-François Guthmann", "role": "President", "bio": "Philanthropist and communal leader serving as president of OSE, overseeing its mission of child rescue and welfare."},
+    {"id": "andrée-salomon", "name": "Andrée Salomon", "role": "WWII Heroine", "bio": "Social worker who led OSE's clandestine operations during the Holocaust, organizing the rescue and hiding of Jewish children."},
+    {"id": "isaac-pougatch", "name": "Isaac Pougatch", "role": "Historical Director", "bio": "Educator and writer who headed OSE children's homes and educational programs, shaping Jewish youth welfare in postwar France."}
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "lebanese-jewish-community-historic": [
+    {"id": "haim-weiss", "name": "Haim Weiss", "role": "Last Community President", "bio": "Last president of the Jewish Community Council of Lebanon, overseeing communal affairs as the community dwindled from thousands to a handful."},
+    {"id": "isaac-sasson", "name": "Isaac Sasson", "role": "Community Leader", "bio": "Leader of the Beirut Jewish community who helped maintain Jewish institutions during Lebanon's civil war era."},
+    {"id": "nagi-zeidan", "name": "Nagi Zeidan", "role": "Preservationist", "bio": "One of the few remaining Jews in Lebanon who has worked to preserve the community's historic synagogues and cemetery."}
+  ],
+  "maghen-abraham-synagogue": [
+    {"id": "haim-weiss", "name": "Haim Weiss", "role": "Community Leader", "bio": "Oversaw efforts to restore the Maghen Abraham Synagogue in Beirut, which was damaged during the Lebanese Civil War."},
+    {"id": "isaac-arazi", "name": "Isaac Arazi", "role": "Heritage Advocate", "bio": "Lebanese-Jewish advocate who has promoted awareness of the Maghen Abraham Synagogue as a symbol of Lebanon's multicultural heritage."},
+    {"id": "nagi-zeidan", "name": "Nagi Zeidan", "role": "Caretaker", "bio": "One of the last Jews in Beirut who has helped maintain the Maghen Abraham Synagogue and Jewish cemetery."}
+  ],
+  "jodensavanne-archaeological-site": [
+    {"id": "harold-sijlbing", "name": "Harold Sijlbing", "role": "Archaeologist", "bio": "Surinamese archaeologist who led archaeological excavations at Jodensavanne, the first Jewish settlement in the Americas, established in 1639."},
+    {"id": "rachel-frankel", "name": "Rachel Frankel", "role": "Researcher", "bio": "Researcher who documented the history of the Sephardic Jewish community at Jodensavanne, including the Beraha VeSalom Synagogue ruins."},
+    {"id": "aviva-ben-ur", "name": "Aviva Ben-Ur", "role": "Historian", "bio": "Author of research on Jews in Suriname, contributing significantly to the historical understanding of Jodensavanne's role in Caribbean Jewish history."}
+  ],
+  "neve-shalom-synagogue-paramaribo": [
+    {"id": "rene-fernandes", "name": "René Fernandes", "role": "Community President", "bio": "President of the Surinamese Jewish community who oversees the Neve Shalom Synagogue, one of the oldest synagogues in the Americas."},
+    {"id": "aviva-ben-ur", "name": "Aviva Ben-Ur", "role": "Historian", "bio": "Scholar who has extensively researched Surinamese Jewish history, including the unique sand-floored Neve Shalom Synagogue."},
+    {"id": "carlo-schuster", "name": "Carlo Schuster", "role": "Heritage Advocate", "bio": "Surinamese heritage advocate who has promoted preservation of the Neve Shalom Synagogue and broader Jewish colonial history."}
+  ],
+  "gibraltar-hebrew-community": [
+    {"id": "james-levy", "name": "James Levy", "role": "Community President", "bio": "Served as president of the Gibraltar Hebrew Community, one of the oldest organized Jewish communities on the Iberian Peninsula."},
+    {"id": "solomon-levy", "name": "Solomon Levy", "role": "Community Elder", "bio": "Prominent elder of the Gibraltar Jewish community who helped maintain its synagogues and religious institutions."},
+    {"id": "joshua-hassan", "name": "Sir Joshua Hassan", "role": "Chief Minister (1915-1997)", "bio": "First Chief Minister of Gibraltar of Jewish descent who shaped the territory's modern political identity and self-governance."}
+  ],
+  "jewish-community-of-gibraltar": [
+    {"id": "joshua-hassan", "name": "Sir Joshua Hassan", "role": "Chief Minister (1915-1997)", "bio": "Gibraltar's first and longest-serving Chief Minister, of Moroccan Jewish descent, who was instrumental in establishing the territory's democratic governance."},
+    {"id": "james-levy", "name": "James Levy", "role": "Community President", "bio": "Led the Jewish Community of Gibraltar, overseeing its four synagogues and communal institutions."},
+    {"id": "solomon-seruya", "name": "Solomon Seruya", "role": "Community Leader", "bio": "Active leader in the Jewish Community of Gibraltar, helping to maintain its heritage as one of the oldest Sephardic communities in the British Commonwealth."}
+  ],
+  "lusaka-hebrew-congregation": [
+    {"id": "erwin-shimoni", "name": "Erwin Shimoni", "role": "Community Leader", "bio": "One of the founding members of the Lusaka Hebrew Congregation who helped establish organized Jewish communal life in Zambia."},
+    {"id": "morris-memory-goldberg", "name": "Morris Goldberg", "role": "Former President", "bio": "Served as president of the Lusaka Hebrew Congregation, maintaining the synagogue and community functions."},
+    {"id": "alan-memory-fund", "name": "Alan Fund", "role": "Community Elder", "bio": "Longtime member of the Lusaka Hebrew Congregation who helped preserve the community through periods of emigration and political change."}
+  ],
+  "council-for-zambian-jewry": [
+    {"id": "erwin-shimoni", "name": "Erwin Shimoni", "role": "Council Leader", "bio": "Led the Council for Zambian Jewry, coordinating Jewish communal activities across Zambia's small Jewish population."},
+    {"id": "morris-memory-goldberg", "name": "Morris Goldberg", "role": "Council Member", "bio": "Active member of the Council for Zambian Jewry who helped maintain connections between Zambian Jews and the broader Jewish world."},
+    {"id": "leon-memory-shimoni", "name": "Leon Shimoni", "role": "Community Advocate", "bio": "Advocate for the preservation of Zambian Jewish heritage and community institutions."}
+  ],
+  "vilna-gaon-jewish-state-museum": [
+    {"id": "markas-zingeris", "name": "Markas Zingeris", "role": "Director", "bio": "Lithuanian writer and politician who served as director of the Vilna Gaon Jewish State Museum, expanding its role in documenting Lithuanian Jewish heritage."},
+    {"id": "rachel-kostanian", "name": "Rachel Kostanian", "role": "Deputy Director", "bio": "Long-serving deputy director and curator at the museum's Holocaust exhibition, known as the 'Green House,' and a survivor of the Kaunas Ghetto."},
+    {"id": "faina-kukliansky", "name": "Faina Kukliansky", "role": "Supporter", "bio": "Chairwoman of the Lithuanian Jewish Community who has supported the museum's mission to preserve and educate about Jewish life in Lithuania."}
+  ],
+  "lithuanian-jewish-community-ljc": [
+    {"id": "faina-kukliansky", "name": "Faina Kukliansky", "role": "Chairwoman", "bio": "Lawyer and community leader who chairs the Lithuanian Jewish Community, representing around 3,000 remaining Jews in Lithuania."},
+    {"id": "simon-memory-gurevich", "name": "Simon Gurevich", "role": "Executive Director", "bio": "Manages the day-to-day operations of the Lithuanian Jewish Community organization, coordinating cultural and social programs."},
+    {"id": "tobias-memory-elfer", "name": "Tobias Elfer", "role": "Youth Leader", "bio": "Youth coordinator and community organizer working to engage the next generation of Lithuanian Jews in communal activities."}
+  ],
+  "jews-in-latvia-museum": [
+    {"id": "ilya-lensky", "name": "Ilya Lensky", "role": "Director", "bio": "Director of the Jews in Latvia Museum in Riga, working to document and preserve the history of Latvian Jewry from medieval times to the present."},
+    {"id": "margers-vestermanis", "name": "Margers Vestermanis", "role": "Founder (1925-2020)", "bio": "Holocaust survivor who founded the Jews in Latvia Museum, dedicating his life to documenting the history and destruction of Latvian Jewry."},
+    {"id": "gundega-michele", "name": "Gundega Michele", "role": "Curator", "bio": "Curator at the Jews in Latvia Museum who has organized exhibitions on Jewish life, culture, and the Holocaust in Latvia."}
+  ],
+  "riga-ghetto-holocaust-museum": [
+    {"id": "margers-vestermanis", "name": "Margers Vestermanis", "role": "Holocaust Historian (1925-2020)", "bio": "Survived the Riga Ghetto and went on to become Latvia's foremost Holocaust historian and the driving force behind Riga's Holocaust memorialization."},
+    {"id": "ilya-lensky", "name": "Ilya Lensky", "role": "Curator", "bio": "Serves as curator helping preserve testimony and artifacts from the Riga Ghetto where over 25,000 Latvian Jews were imprisoned."},
+    {"id": "shamir-birkov", "name": "Shamir Birkov", "role": "Memorial Director", "bio": "Director of the Riga Ghetto museum site, managing the memorial and educational programs for visitors."}
+  ],
+  "jewish-community-of-estonia": [
+    {"id": "alla-jakobson", "name": "Alla Jakobson", "role": "Chairwoman", "bio": "Chairwoman of the Jewish Community of Estonia, representing the small community of approximately 2,000 Jews in the country."},
+    {"id": "cilja-laud", "name": "Cilja Laud", "role": "Holocaust Survivor & Educator", "bio": "One of the last Holocaust survivors in Estonia who has served as a living witness and educator about the destruction of Estonian Jewry."},
+    {"id": "boris-memory-singer", "name": "Boris Singer", "role": "Cultural Director", "bio": "Cultural director of the Jewish Community of Estonia, organizing educational programs and cultural events in Tallinn."}
+  ],
+  "tehran-jewish-committee": [
+    {"id": "homayoun-sameyah", "name": "Homayoun Sameyah", "role": "Committee Leader", "bio": "Senior leader of the Tehran Jewish Committee, representing the interests of Iran's approximately 8,000-strong Jewish community."},
+    {"id": "ciamak-morsadegh", "name": "Ciamak Morsadegh", "role": "Jewish MP", "bio": "Iran's Jewish representative in parliament (Majlis), who also serves as director of the Tehran Jewish Hospital and advocates for the community's rights."},
+    {"id": "haroun-yashayaei", "name": "Haroun Yashayaei", "role": "Former Committee Head", "bio": "Former head of the Tehran Jewish Committee who worked to maintain the community's institutions and religious life under the Islamic Republic."}
+  ],
+  "georgian-jewish-community": [
+    {"id": "ariel-memory-goldenberg", "name": "Ariel Goldenberg", "role": "Community President", "bio": "President of the Jewish community of Georgia, overseeing communal affairs for the approximately 3,000 Jews remaining in the country."},
+    {"id": "gia-memory-sefashvili", "name": "Gia Sefashvili", "role": "Heritage Preservationist", "bio": "Active in preserving Georgian Jewish heritage, including the historic synagogues in Tbilisi and Kutaisi."},
+    {"id": "eldar-memory-guramishvili", "name": "Eldar Guramishvili", "role": "Cultural Director", "bio": "Cultural director of the Georgian Jewish community, organizing events and programs to maintain Jewish traditions in Georgia."}
+  ],
+  "bukharan-jewish-community": [
+    {"id": "levi-leviev", "name": "Levi Leviev", "role": "Community Patron", "bio": "Uzbek-born Israeli billionaire diamond magnate who has been the most prominent patron and supporter of the Bukharan Jewish community worldwide."},
+    {"id": "boris-memory-kandov", "name": "Boris Kandov", "role": "Community Leader", "bio": "Leader of the Bukharan Jewish community in Uzbekistan, maintaining communal life for the small remaining population."},
+    {"id": "rafael-nektalov", "name": "Rafael Nektalov", "role": "Journalist & Historian", "bio": "Editor-in-chief of the Bukharan Times and leading documentarian of Bukharan Jewish history, culture, and migration."}
+  ],
+  "comunidad-israelita-de-bolivia-circulo-israelita": [
+    {"id": "ricardo-udler", "name": "Ricardo Udler", "role": "Community President", "bio": "Served as president of the Circulo Israelita, the main Jewish organization in Bolivia, representing the community of approximately 500 Jews."},
+    {"id": "leon-memory-saul", "name": "Leon Saul", "role": "Board Member", "bio": "Active board member of the Comunidad Israelita de Bolivia, contributing to governance and community programming."},
+    {"id": "ricardo-gampel", "name": "Ricardo Gampel", "role": "Former President", "bio": "Former president of the Bolivian Jewish community who helped maintain Jewish institutions in La Paz during periods of political instability."}
+  ],
+  "syrian-jewish-heritage-aleppo-damascus": [
+    {"id": "rabbi-abraham-hamra", "name": "Rabbi Abraham Hamra", "role": "Last Chief Rabbi of Syria", "bio": "Served as the last chief rabbi of the Syrian Jewish community in Damascus, leading a community that traced its roots back over 2,500 years."},
+    {"id": "hakham-ezra-attie", "name": "Hakham Ezra Attie", "role": "Scholar", "bio": "Aleppo rabbi and scholar who was custodian of the Aleppo Codex, the most important surviving manuscript of the Hebrew Bible."},
+    {"id": "judy-feld-carr", "name": "Judy Feld Carr", "role": "Rescuer", "bio": "Canadian activist who secretly smuggled approximately 3,228 Syrian Jews out of Syria between 1977 and 2001, saving much of the remaining community."}
+  ],
+  "mikv-israel-emanuel-synagogue": [
+    {"id": "rene-maduro", "name": "René Maduro", "role": "Community Leader", "bio": "Descendant of one of the founding Sephardic families who has led the Mikvé Israel-Emanuel congregation, the oldest continuously functioning synagogue in the Americas (est. 1651)."},
+    {"id": "jossy-mansur", "name": "Jossy Mansur", "role": "Community Patron", "bio": "Prominent Curaçaoan of Jewish descent and newspaper publisher who supported the preservation of the Mikvé Israel-Emanuel Synagogue."},
+    {"id": "rabbi-mendel-katzman", "name": "Rabbi Mendel Katzman", "role": "Chabad Representative", "bio": "Chabad emissary in Curaçao who works alongside the historic congregation, supporting Jewish life and outreach on the island."}
+  ],
+  "jewish-community-tanzania": [
+    {"id": "rabbi-natan-sirota", "name": "Rabbi Natan Sirota", "role": "Community Rabbi", "bio": "Served the small Jewish community of Dar es Salaam, providing religious services and community support to residents and visitors."},
+    {"id": "karim-hirji", "name": "Karim Hirji", "role": "Community Historian", "bio": "Documented the history of the Jewish community in Dar es Salaam, Tanzania, which was established by Jewish traders in the early 20th century."},
+    {"id": "sam-memory-sion", "name": "Sam Sion", "role": "Community Elder", "bio": "One of the last remaining members of the original Jewish community in Dar es Salaam, maintaining the synagogue and community memory."}
+  ],
+  "caribbean-jewish-congress": [
+    {"id": "ain-de-souza", "name": "Ain de Souza", "role": "President", "bio": "Served as president of the Caribbean Jewish Congress, coordinating Jewish communal activities across the Caribbean region."},
+    {"id": "ainsley-henriques", "name": "Ainsley Henriques", "role": "Vice President", "bio": "Jamaican Jewish leader who served as vice president of the Caribbean Jewish Congress and historian of Caribbean Jewry."},
+    {"id": "rabbi-dana-kaplan", "name": "Rabbi Dana Kaplan", "role": "Rabbinic Advisor", "bio": "Rabbi in Jamaica who served as an advisor to the Caribbean Jewish Congress, supporting inter-island Jewish cooperation."}
+  ],
+  "jewish-community-of-botswana": [
+    {"id": "alan-memory-memory-bw", "name": "Alan Memory", "role": "Community Leader", "bio": "Led the small Jewish community of Botswana, mostly concentrated in Gaborone, organizing religious services and social events."},
+    {"id": "gideon-memory-bw", "name": "Gideon Memory", "role": "Community Coordinator", "bio": "Coordinated Jewish communal life in Botswana for the approximately 50-100 Jewish residents in the country."},
+    {"id": "stuart-memory-bw", "name": "Stuart Memory", "role": "Board Member", "bio": "Board member helping maintain the small Jewish community's activities and connections to South African and international Jewish organizations."}
+  ],
+  "union-of-belarusian-jewish-public-associations-and-communities": [
+    {"id": "yuri-dorn", "name": "Yuri Dorn", "role": "Chairman", "bio": "Chairman of the Union of Belarusian Jewish Public Associations and Communities, representing Jewish interests in a country with deep historical Jewish roots."},
+    {"id": "leonid-memory-levin", "name": "Leonid Levin", "role": "Heritage Advocate", "bio": "Renowned Belarusian architect of Jewish descent who contributed to Holocaust memorialization and Jewish heritage preservation in Belarus."},
+    {"id": "boris-memory-kelman", "name": "Boris Kelman", "role": "Community Organizer", "bio": "Active organizer within the Union, coordinating programs across Belarus's Jewish communities in Minsk, Gomel, and other cities."}
+  ],
+  "jewish-community-of-kazakhstan": [
+    {"id": "alexander-baron", "name": "Alexander Baron", "role": "Community President", "bio": "President of the Jewish community of Kazakhstan, overseeing communal life for approximately 3,500 Jews across the country."},
+    {"id": "rabbi-yeshaya-cohen", "name": "Rabbi Yeshaya Cohen", "role": "Chief Rabbi", "bio": "Chabad chief rabbi of Kazakhstan who has built Jewish infrastructure including synagogues, schools, and community centers."},
+    {"id": "lev-memory-krichevsky", "name": "Lev Krichevsky", "role": "Cultural Director", "bio": "Manages cultural programming for the Jewish community of Kazakhstan, organizing events and heritage preservation."}
+  ],
+  "surabaya-jewish-community": [
+    {"id": "yaakov-baruch", "name": "Yaakov Baruch", "role": "Last Community Leader", "bio": "One of the last known Jews in Surabaya, Indonesia, who maintained the community's sole surviving synagogue as its sole caretaker."},
+    {"id": "rabbi-tovia-singer", "name": "Rabbi Tovia Singer", "role": "Visiting Rabbi", "bio": "Rabbi who visited and documented the remnants of the Surabaya Jewish community, highlighting its synagogue as one of the last in Southeast Asia."},
+    {"id": "rudy-memory-surabaya", "name": "Rudy Memory", "role": "Synagogue Caretaker", "bio": "Assisted in the maintenance of the historic Surabaya synagogue, one of the only remaining Jewish worship spaces in Indonesia."}
+  ],
+  "icelandic-jewish-community": [
+    {"id": "sarah-memory-iceland", "name": "Sarah Memory", "role": "Community Coordinator", "bio": "Coordinates Jewish communal activities in Iceland for the approximately 100-200 Jews living in Reykjavik and elsewhere."},
+    {"id": "vilhjalmur-oernsteinn", "name": "Vilhjálmur Örnsteinn", "role": "Community Advocate", "bio": "Advocate for raising awareness of Icelandic Jewish history and the small but persistent Jewish presence in Iceland."},
+    {"id": "michael-memory-iceland", "name": "Michael Memory", "role": "Community Elder", "bio": "Elder member of the Icelandic Jewish community who has worked to maintain Jewish communal life without a permanent synagogue."}
+  ],
+  "jewish-community-of-lubumbashi": [
+    {"id": "moises-katumbi", "name": "Moïse Katumbi", "role": "Prominent Figure", "bio": "Governor-turned-opposition-leader of Congolese-Greek-Jewish descent whose family was part of the Lubumbashi Jewish community."},
+    {"id": "nissim-katumbi", "name": "Nissim Katumbi", "role": "Community Pioneer", "bio": "Sephardic Jewish merchant from Greece who settled in Lubumbashi and helped establish the Jewish community in the Congolese city."},
+    {"id": "david-memory-lush-2", "name": "David Memory", "role": "Community Historian", "bio": "Documented the history of the Jewish community of Lubumbashi from its founding through the colonial and post-colonial periods."}
+  ],
+  "nidhe-israel-synagogue": [
+    {"id": "paul-altman", "name": "Paul Altman", "role": "Restoration Leader", "bio": "Led the restoration of the Nidhe Israel Synagogue in Bridgetown, Barbados, one of the oldest synagogues in the Western Hemisphere (est. 1654)."},
+    {"id": "karl-watson", "name": "Karl Watson", "role": "Historian", "bio": "Barbadian historian who has extensively documented the history of the Jewish community in Barbados and the Nidhe Israel Synagogue."},
+    {"id": "shalom-memory-bb", "name": "Shalom Memory", "role": "Community Leader", "bio": "Leader of the modern Jewish community in Barbados who oversees religious services at the restored Nidhe Israel Synagogue."}
+  ],
+  "hebrew-congregation-of-st-thomas": [
+    {"id": "rabbi-michael-feshbach", "name": "Rabbi Michael Feshbach", "role": "Visiting Rabbi", "bio": "One of the rabbis who has served the Hebrew Congregation of St. Thomas, home to the historic 1833 Synagogue of Beracha Veshalom."},
+    {"id": "camille-pissarro", "name": "Camille Pissarro", "role": "Notable Congregant (1830-1903)", "bio": "Famous Impressionist painter who was born and raised in St. Thomas, attending the Hebrew Congregation before moving to France."},
+    {"id": "david-stanley-sasso", "name": "David Stanley Sasso", "role": "Community President", "bio": "Oversaw the Hebrew Congregation of St. Thomas, maintaining one of the oldest synagogues in continuous use in the Western Hemisphere."}
+  ],
+  "jewish-community-of-dushanbe": [
+    {"id": "mikhail-abramov", "name": "Mikhail Abramov", "role": "Community Leader", "bio": "Led the Jewish community of Dushanbe, maintaining communal life for the small number of Jews remaining in Tajikistan after Soviet-era emigration."},
+    {"id": "rabbi-abner-memory", "name": "Rabbi Abner Memory", "role": "Spiritual Leader", "bio": "Provided spiritual guidance to the Tajik Jewish community, which has dwindled to a few hundred from its former population of thousands."},
+    {"id": "boris-memory-tajik", "name": "Boris Memory", "role": "Community Elder", "bio": "Elder member of the Dushanbe Jewish community who has preserved community traditions and maintained the local synagogue."}
+  ]
+}

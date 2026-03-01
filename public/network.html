@@ -104,7 +104,7 @@
     @keyframes spin{to{transform:rotate(360deg)}}
 
     /* ─── Tree node styles ───────────────────────────── */
-    .tree-link{fill:none;stroke-width:1.6;opacity:.45;transition:opacity .2s}
+    .tree-link{fill:none;stroke-width:1.6;opacity:.45}
     .tree-node{cursor:pointer}
     .tree-node:hover .node-bg{filter:brightness(.97);stroke-width:2.2!important}
     .node-bg{transition:filter .15s,stroke-width .15s}
@@ -207,7 +207,6 @@
             </div>
             <div class="btns">
               <button id="btn-entry"><i class="fa-solid fa-building"></i> Entry Page</button>
-              <button id="btn-screenshot"><i class="fa-solid fa-camera"></i> Export</button>
             </div>
           </div>
         </div>
@@ -475,6 +474,9 @@
   /* ═══════════════════════════════════════════════════════
    *  RENDER BOTH TREES
    * ═══════════════════════════════════════════════════════ */
+  // Store previous node positions for smooth animation
+  let _prevPositions = {};
+
   function renderTree() {
     if (!rightRoot || !leftRoot) return;
 
@@ -501,7 +503,7 @@
     const rNodes = rHier.descendants().slice(1); // skip root
     const rLinks = rHier.links().filter(l => l.source.data.id !== rightRoot.id || l.target.data.id !== rightRoot.id + '_left');
 
-    // ─── Left tree (people → left) ──────────────────
+    // ─── Left tree (people -> left) ──────────────────
     const lHier = d3.hierarchy(leftRoot, getVisibleChildren);
     d3.tree().nodeSize([SIB_GAP, LEFT_GAP])(lHier);
     const lNodes = lHier.descendants().slice(1); // skip mirror root
@@ -511,6 +513,18 @@
 
     const allNodes = [...rNodes, ...lNodes];
     const allLinks = [...rLinks.filter(l => l.source !== rHier), ...lLinks.filter(l => l.source !== lHier)];
+
+    // Build a map of parent positions for entering nodes
+    const parentPos = {};
+    function mapParent(hier) {
+      if (!hier.children) return;
+      hier.children.forEach(c => {
+        parentPos[c.data.id] = { y: hier === rHier || hier === lHier ? 0 : (hier.data.id === leftRoot.id ? 0 : hier.y), x: hier === rHier || hier === lHier ? 0 : hier.x };
+        mapParent(c);
+      });
+    }
+    mapParent(rHier);
+    lHier.descendants().forEach(d => { if (d.parent) parentPos[d.data.id] = { y: d.parent === lHier ? 0 : -d.parent.y, x: d.parent === lHier ? 0 : d.parent.x }; });
 
     // Links from root to first-level children
     const rootLinks = [];
@@ -522,7 +536,7 @@
     allLinks.forEach(l => {
       const isLeft = l.source.y < 0 || l.target.y < 0;
       linkData.push({
-        key: l.source.data.id + '→' + l.target.data.id,
+        key: l.source.data.id + '|' + l.target.data.id,
         sx: l.source.y + (isLeft ? -NW/2 : NW/2), sy: l.source.x,
         tx: l.target.y + (isLeft ? NW/2 : -NW/2), ty: l.target.x,
         color: getEdgeColor(l.target.data)
@@ -531,17 +545,19 @@
     rootLinks.forEach(rl => {
       const isLeft = rl.tx < 0;
       linkData.push({
-        key: 'root→' + rl.data.id,
+        key: 'root|' + rl.data.id,
         sx: isLeft ? -NW/2 - 10 : NW/2 + 10, sy: 0,
         tx: rl.tx + (isLeft ? NW/2 : -NW/2), ty: rl.ty,
         color: getEdgeColor(rl.data)
       });
     });
 
+    const TD = 250; // transition duration - fast for seamless feel
+
     const linkSel = gLinks.selectAll('.tree-link').data(linkData, d => d.key);
-    linkSel.exit().transition().duration(300).attr('opacity', 0).remove();
+    linkSel.exit().transition().duration(200).attr('opacity', 0).remove();
     const linkEnter = linkSel.enter().append('path').attr('class', 'tree-link').attr('opacity', 0);
-    linkSel.merge(linkEnter).transition().duration(500)
+    linkSel.merge(linkEnter).transition().duration(TD)
       .attr('opacity', 0.45)
       .attr('stroke', d => d.color)
       .attr('d', d => {
@@ -551,7 +567,7 @@
 
     // ─── Draw nodes ─────────────────────────────────
     const nodeSel = gNodes.selectAll('.tree-node').data(allNodes, d => d.data.id);
-    nodeSel.exit().transition().duration(300).attr('opacity', 0).remove();
+    nodeSel.exit().transition().duration(200).attr('opacity', 0).remove();
 
     const nodeEnter = nodeSel.enter().append('g').attr('class', d => {
       let cls = 'tree-node';
@@ -561,7 +577,11 @@
         if (t) cls += ' ' + t.cls;
       }
       return cls;
-    }).attr('opacity', 0).attr('transform', d => 'translate(' + d.y + ',' + d.x + ')');
+    }).attr('opacity', 0).attr('transform', d => {
+      // New nodes start at their parent's position for smooth animation
+      const pp = parentPos[d.data.id] || _prevPositions[d.data.id] || { y: d.y, x: d.x };
+      return 'translate(' + pp.y + ',' + pp.x + ')';
+    });
 
     // Background
     nodeEnter.append('rect').attr('class', 'node-bg')
@@ -592,8 +612,12 @@
 
     // Update all
     const nodeAll = nodeSel.merge(nodeEnter);
-    nodeAll.transition().duration(500).attr('opacity', 1)
+    nodeAll.transition().duration(TD).attr('opacity', 1)
       .attr('transform', d => 'translate(' + d.y + ',' + d.x + ')');
+
+    // Save positions for next render
+    _prevPositions = {};
+    allNodes.forEach(d => { _prevPositions[d.data.id] = { y: d.y, x: d.x }; });
 
     // Update class for tiers on merge
     nodeAll.attr('class', d => {
@@ -755,10 +779,14 @@
         const nm = {}; data.nodes.forEach(n => { nm[n.id] = n; });
         const eKids = [], pKids = [];
         const seen = new Set();
+        // Refresh visible IDs at click time
+        const visIds = new Set();
+        collectIds(rightRoot, visIds);
+        collectIds(leftRoot, visIds);
         data.links.forEach(link => {
           let cid = link.source === nd.id ? link.target : (link.target === nd.id ? link.source : null);
           if (!cid || cid === nd.id || seen.has(cid)) return;
-          if (allVisibleIds.has(cid)) return;
+          if (visIds.has(cid)) return;
           seen.add(cid);
           const cn = nm[cid]; if (!cn) return;
           const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
@@ -767,7 +795,6 @@
           else eKids.push(child);
         });
         eKids.sort((a, b) => a.name.localeCompare(b.name));
-        // For sub-entries, group people same as before
         const newChildren = [...eKids];
         if (pKids.length > 0) {
           const byTier = {};
@@ -784,8 +811,7 @@
       document.getElementById('loading').classList.add('off');
     }
     nd._collapsed = false;
-    renderTree();
-    setTimeout(fitTree, 550);
+    renderTree(); // no fitTree - keep zoom stable
   }
 
   function navigateTo(nd) {
@@ -864,10 +890,83 @@
     });
   }
 
+  // ─── Shared batch-load helper ────────────────────────
+  async function batchLoadNodes(nodesToLoad, showPeople) {
+    for (let i = 0; i < nodesToLoad.length; i += 10) {
+      const batch = nodesToLoad.slice(i, i + 10);
+      document.getElementById('ld-text').textContent = 'Loading ' + Math.min(i + 10, nodesToLoad.length) + ' of ' + nodesToLoad.length + ' nodes...';
+      await Promise.all(batch.map(async nd => {
+        try {
+          const res = await fetch('/api/graph/focus/' + encodeURIComponent(nd.id) + '?depth=1&people=' + (showPeople ? '1' : '0'));
+          const data = await res.json();
+          if (!data.nodes || data.nodes.length === 0) { nd._loaded = true; nd.children = []; return; }
+          const nm = {}; data.nodes.forEach(n => { nm[n.id] = n; });
+          const eKids = [], pKids = [];
+          const seen = new Set();
+          const visIds = new Set();
+          collectIds(rightRoot, visIds);
+          collectIds(leftRoot, visIds);
+          data.links.forEach(link => {
+            let cid = link.source === nd.id ? link.target : (link.target === nd.id ? link.source : null);
+            if (!cid || cid === nd.id || seen.has(cid)) return;
+            if (visIds.has(cid)) return;
+            seen.add(cid);
+            const cn = nm[cid]; if (!cn) return;
+            const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
+            if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
+            else if (cn.nodeType === 'info') { child._loaded = true; child._collapsed = false; child.children = []; eKids.push(child); }
+            else eKids.push(child);
+          });
+          eKids.sort((a, b) => a.name.localeCompare(b.name));
+          const newChildren = [...eKids];
+          if (pKids.length > 0) {
+            const byTier = {};
+            pKids.forEach(p => { const t = p._tier || 'other'; if (!byTier[t]) byTier[t] = []; byTier[t].push(p); });
+            TIERS.forEach(t => {
+              if (!byTier[t.id] || byTier[t.id].length === 0) return;
+              byTier[t.id].sort((a, b) => a.name.localeCompare(b.name));
+              newChildren.push({ id: nd.id + '_tier_' + t.id, name: t.name + ' (' + byTier[t.id].length + ')', category: 'People', nodeType: 'tier-group', _tierDef: t, country: '', type: '', role: '', personId: '', isFocus: false, _edgeType: 'person-affiliation', _edgeDesc: t.desc, children: byTier[t.id], _loaded: true, _collapsed: true, _connCount: byTier[t.id].length });
+            });
+          }
+          nd.children = newChildren;
+          nd._loaded = true;
+        } catch (err) { console.error('Failed loading', nd.id, err); nd._loaded = true; nd.children = []; }
+      }));
+    }
+  }
+
+  // Collect unloaded entry nodes from a tree
+  function collectUnloaded(n, list) {
+    if (!n) return;
+    if (!n._loaded && n.nodeType !== 'tier-group' && n.nodeType !== 'person' && n.nodeType !== 'info' && n.nodeType !== 'mirror') list.push(n);
+    if (n.children) n.children.forEach(c => collectUnloaded(c, list));
+  }
+
   // ─── Expand / Collapse all ───────────────────────────
-  function expandAll() {
+  async function expandAll() {
+    document.getElementById('ld-text').textContent = 'Expanding all nodes...';
+    document.getElementById('loading').classList.remove('off');
+    const showPeople = document.getElementById('show-people').checked;
+
+    // Iteratively load until no more unloaded nodes found (handles multi-level)
+    let totalLoaded = 0;
+    for (let pass = 0; pass < 5; pass++) {
+      const toLoad = [];
+      collectUnloaded(rightRoot, toLoad);
+      collectUnloaded(leftRoot, toLoad);
+      if (toLoad.length === 0) break;
+      document.getElementById('ld-text').textContent = 'Pass ' + (pass + 1) + ': loading ' + toLoad.length + ' nodes...';
+      await batchLoadNodes(toLoad, showPeople);
+      totalLoaded += toLoad.length;
+      // Expand everything loaded so far so next pass can find deeper children
+      function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
+      ex(rightRoot); ex(leftRoot);
+    }
+
+    // Final expand
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
     ex(rightRoot); ex(leftRoot);
+    document.getElementById('loading').classList.add('off');
     renderTree(); setTimeout(fitTree, 600);
   }
   function collapseAll() {
@@ -938,9 +1037,24 @@
   document.getElementById('show-info').onchange = function() { renderTree(); };
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
-  document.getElementById('btn-expand-right').onclick = function() {
+  document.getElementById('btn-expand-right').onclick = async function() {
+    document.getElementById('ld-text').textContent = 'Expanding organizations...';
+    document.getElementById('loading').classList.remove('off');
+    const showPeople = document.getElementById('show-people').checked;
+    // Iteratively load right-side nodes at all depths
+    for (let pass = 0; pass < 5; pass++) {
+      const toLoad = [];
+      collectUnloaded(rightRoot, toLoad);
+      if (toLoad.length === 0) break;
+      document.getElementById('ld-text').textContent = 'Pass ' + (pass + 1) + ': loading ' + toLoad.length + ' orgs...';
+      await batchLoadNodes(toLoad, showPeople);
+      function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
+      ex(rightRoot);
+    }
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
-    ex(rightRoot); renderTree(); setTimeout(fitTree, 600);
+    ex(rightRoot);
+    document.getElementById('loading').classList.add('off');
+    renderTree(); setTimeout(fitTree, 600);
   };
   document.getElementById('btn-expand-left').onclick = function() {
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
@@ -970,16 +1084,7 @@
     document.getElementById('link-opacity-val').textContent = val + '%';
     gLinks.selectAll('.tree-link').attr('opacity', val / 100);
   };
-  document.getElementById('btn-screenshot').onclick = function() {
-    const svgNode = document.getElementById('tree-svg');
-    const serializer = new XMLSerializer();
-    const svgStr = serializer.serializeToString(svgNode);
-    const blob = new Blob([svgStr], { type: 'image/svg+xml' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url; a.download = (focusEntryId || 'network') + '-graph.svg'; a.click();
-    URL.revokeObjectURL(url);
-  };
+
   document.getElementById('s-btn').onclick = doSearch;
   document.getElementById('s-input').onkeydown = function(e) { if (e.key === 'Enter') doSearch(); };
   document.getElementById('s-input').oninput = function() { if (!this.value.trim()) { searchHits = new Set(); document.getElementById('s-count').textContent = ''; renderTree(); } };
