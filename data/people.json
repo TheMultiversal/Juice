@@ -28,7 +28,7 @@
     },
     "jonathan-greenblatt": {
       "name": "Jonathan Greenblatt",
-      "bio": "American nonprofit executive and CEO of the Anti-Defamation League since 2015. Former Obama White House advisor on social enterprise. Has expanded ADL's mission to include combating online extremism and hate speech across social media platforms.",
+      "bio": "Greenblatt has led ADL since 2015, transforming it into a more politically active organization. Under his leadership, ADL has expanded its focus on online antisemitism, campus extremism, and the intersection of antisemitism with anti-Israel activism. He previously served in the Obama White House.",
       "notes": "",
       "affiliations": [
         {
@@ -105,7 +105,7 @@
     },
     "jeremy-ben-ami": {
       "name": "Jeremy Ben-Ami",
-      "bio": "American political activist and founder of J Street, a liberal Jewish advocacy group that describes itself as \"pro-Israel and pro-peace.\" Born to a Jewish family. Son of a member of the Irgun. Founded J Street in 2007 as a counterweight to AIPAC.",
+      "bio": "Founded J Street in 2007 as a \"pro-Israel, pro-peace\" alternative to AIPAC. Son of an Irgun fighter. J Street has grown to a $10M+ annual budget and has endorsed hundreds of Democratic candidates.",
       "notes": "",
       "affiliations": [
         {
@@ -118,7 +118,7 @@
     },
     "john-hagee": {
       "name": "John Hagee",
-      "bio": "American pastor and televangelist. Born 1940 in Goose Creek, Texas. Founder and National Chairman of Christians United for Israel (CUFI), the largest pro-Israel organization in the United States with over 10 million members. Senior pastor of Cornerstone Church in San Antonio.",
+      "bio": "John Charles Hagee (born April 12, 1940) is an American pastor and founder/chairman of Christians United for Israel (CUFI), the largest pro-Israel organization in the United States with over 10 million members. Hagee is the senior pastor of Cornerstone Church in San Antonio, Texas, a megachurch with over 22,000 active members. He founded CUFI in 2006 to mobilize Christian Zionist support for Israel. Under Hagee's leadership, CUFI has become one of the most powerful pro-Israel lobbying forces in Washington, hosting annual summits that bring thousands of Christian activists to Capitol Hill. Hagee has been controversial for his theological views, including past statements about the Holocaust being part of God's plan for Israel, which he later retracted. He has received multiple awards from Israeli organizations and met with every Israeli PM since Menachem Begin. Net worth estimated at $5 million.",
       "notes": "",
       "affiliations": [
         {
@@ -132,12 +132,24 @@
           "role": "Christian Zionist Ally (CUFI Founder)",
           "entryId": "aipac",
           "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Honored Ally",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Guest Speaker",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
         }
       ]
     },
     "william-daroff": {
       "name": "William Daroff",
-      "bio": "American Jewish communal leader. CEO of the Conference of Presidents of Major American Jewish Organizations, the main coordinating body for 50+ national Jewish organizations in the United States. Previously served as Senior Vice President for Public Policy at the Jewish Federations of North America.",
+      "bio": "Serves as CEO of the Conference of Presidents, coordinating advocacy among 50+ member organizations on Israel policy and Jewish community issues.",
       "notes": "",
       "affiliations": [
         {
@@ -189,7 +201,7 @@
     },
     "roz-rothstein": {
       "name": "Roz Rothstein",
-      "bio": "American pro-Israel activist. Co-founder and CEO of StandWithUs, a prominent international Israel advocacy organization founded in 2001. Built StandWithUs into one of the largest pro-Israel education and advocacy groups with chapters on over 100 college campuses.",
+      "bio": "Co-founded StandWithUs in 2001 in response to the Second Intifada to combat anti-Israel bias on college campuses. Built the organization into one of the leading pro-Israel campus advocacy groups with chapters at over 100 universities.",
       "notes": "",
       "affiliations": [
         {
@@ -747,6 +759,12 @@
           "role": "Co-Founder",
           "entryId": "chan-zuckerberg-initiative",
           "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Corporate Partner (Contentious)",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
         }
       ]
     },
@@ -866,7 +884,7 @@
     },
     "haim-saban": {
       "name": "Haim Saban",
-      "bio": "Haim Saban (born 1944) is an Egyptian-born Israeli-American media mogul, investor, and political donor. Net worth over $3 billion. Best known for bringing Mighty Morphin Power Rangers to American television in 1993, creating a multi-billion-dollar franchise. Born to a Jewish family in Alexandria, Egypt; moved to Israel as a child, then to France and the US. Founded Saban Entertainment, later sold to Disney for $5.2 billion. Acquired and sold Univision. Saban is the largest individual donor to the Democratic Party, having given over $100 million to Democratic candidates and causes. He has said his three priorities are \"Israel, Israel, and Israel.\" Founded the Saban Center for Middle East Policy at the Brookings Institution. Major supporter of Hillary Clinton's presidential campaigns.",
+      "bio": "Haim Saban (born October 15, 1944) is an Israeli-American media mogul, investor, and political donor with an estimated net worth of $3.1 billion. Born in Alexandria, Egypt to a Jewish family, raised in Israel, Saban made his fortune through Saban Entertainment (creator of Power Rangers). He is one of the largest individual donors to the Democratic Party and pro-Israel causes. Saban has donated over $13 million to the Brookings Institution, funding the Saban Center for Middle East Policy. He was the single largest donor to Hillary Clinton's 2016 campaign. Saban has said his three priorities are \"Israel, Israel, and Israel.\" He owns Univision and has extensive business interests in media and entertainment. Saban hosted private meetings between Israeli PMs and US political leaders at his home.",
       "notes": "",
       "affiliations": [
         {
@@ -891,6 +909,24 @@
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Major Donor",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Major Donor",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "Conference of Presidents of Major American Jewish Organizations",
+          "role": "Major Donor & Ally",
+          "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Major Donor",
+          "entryId": "anti-defamation-league-adl",
           "country": "United States"
         }
       ]
@@ -1130,6 +1166,18 @@
           "role": "Major Donor (deceased)",
           "entryId": "aipac",
           "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Major Donor (Deceased)",
+          "entryId": "norpac",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Major Donor",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
         }
       ]
     },
@@ -1185,6 +1233,12 @@
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Major Donor",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Major Donor Network",
+          "entryId": "norpac",
           "country": "United States"
         }
       ]
@@ -1281,6 +1335,30 @@
           "role": "Prime Minister",
           "entryId": "prime-minister-s-office",
           "country": "Israel"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Israeli PM & Keynote Speaker",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Featured Guest",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Conference of Presidents of Major American Jewish Organizations",
+          "role": "Keynote Speaker",
+          "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Honored by CUFI",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
         }
       ]
     },
@@ -3790,6 +3868,18 @@
           "role": "Major Political Donor / Financier",
           "entryId": "notable-jewish-political-figures-us",
           "country": "United States"
+        },
+        {
+          "organization": "J Street",
+          "role": "Major Funder",
+          "entryId": "j-street",
+          "country": "United States"
+        },
+        {
+          "organization": "Americans for Peace Now",
+          "role": "Donor",
+          "entryId": "americans-for-peace-now",
+          "country": "United States"
         }
       ]
     },
@@ -3814,7 +3904,7 @@
     },
     "bernie-sanders": {
       "name": "Bernie Sanders",
-      "bio": "Bernard \"Bernie\" Sanders (born 1941) is an American politician who has served as the junior US Senator from Vermont since 2007. Born to a Jewish family in Brooklyn - his father was a Polish-Jewish immigrant whose family was largely wiped out in the Holocaust. The most prominent Jewish presidential candidate in US history, running for the Democratic nomination in 2016 and 2020. Describes himself as a democratic socialist. While strongly identifying as Jewish, he has been the most prominent elected critic of Israeli government policy in the Senate, calling for conditions on US aid and recognition of Palestinian rights. Spent time on an Israeli kibbutz in the 1960s.",
+      "bio": "Bernard \"Bernie\" Sanders (born September 8, 1941) is an American politician serving as the senior US Senator from Vermont since 2007, previously serving as a US Representative (1991-2007). Sanders is the longest-serving independent in US congressional history and ran for president in 2016 and 2020. Born to a Jewish family in Brooklyn (his father was a Polish-Jewish immigrant whose family was killed in the Holocaust), Sanders has a complex relationship with Israel. He spent time on a kibbutz in Israel in the 1960s but has become increasingly critical of Israeli government policies. Sanders opposed the 2023-2024 Israel-Gaza military operation, introduced resolutions to block arms sales to Israel, and called the war a \"genocide.\" He has been the most prominent Jewish-American critic of Israeli policy in Congress. AIPAC has opposed Sanders and he has refused AIPAC contributions. He is one of the few senators to support conditioning US military aid to Israel.",
       "notes": "",
       "affiliations": [
         {
@@ -3822,12 +3912,36 @@
           "role": "US Senator (Vermont)",
           "entryId": "notable-jewish-political-figures-us",
           "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Critic & Opponent",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "J Street",
+          "role": "Political Ally & Endorsed Candidate",
+          "entryId": "j-street",
+          "country": "United States"
+        },
+        {
+          "organization": "Americans for Peace Now",
+          "role": "Political Ally",
+          "entryId": "americans-for-peace-now",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Committee Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
         }
       ]
     },
     "chuck-schumer": {
       "name": "Chuck Schumer",
-      "bio": "Charles Ellis \"Chuck\" Schumer (born 1950) is an American politician serving as the Senate Majority Leader and senior US Senator from New York since 1999. The highest-ranking Jewish elected official in American history. Born in Brooklyn to a Jewish family, his surname derives from the Hebrew \"shomer\" (guardian). He has described himself as \"the guardian of Israel in the Senate.\" Graduated from Harvard College and Harvard Law School. First elected to the New York State Assembly at age 23. Served in the US House 1981-1999 before winning his Senate seat. As Majority Leader since 2021, he has steered billions in aid to Israel. In March 2024, he made a landmark Senate floor speech criticizing Netanyahu while reaffirming support for Israel.",
+      "bio": "Charles Ellis \"Chuck\" Schumer (born November 23, 1950) is an American politician serving as the Senate Majority Leader and senior US Senator from New York since 1999. He is the highest-ranking Jewish elected official in US history and has called himself the \"shomer\" (guardian) of Israel in the Senate. Schumer has been one of AIPAC's most reliable allies for over 40 years, dating back to his time in the House (1981-1999). He has received millions in campaign contributions from pro-Israel PACs throughout his career - estimated at over $3.5 million from AIPAC-affiliated donors alone. Schumer voted against the 2015 Iran Nuclear Deal (JCPOA), breaking with President Obama. In March 2024, he gave a historic Senate floor speech calling for new elections in Israel and criticizing PM Netanyahu, causing a major rift with parts of the pro-Israel community. Despite this, AIPAC and most Jewish organizations continue to view him as a strong Israel supporter. Schumer sits on the Finance Committee and chairs the full Senate. He has attended virtually every AIPAC Policy Conference for decades and regularly speaks at major Jewish organizational events.",
       "notes": "",
       "affiliations": [
         {
@@ -3835,6 +3949,66 @@
           "role": "US Senate Majority Leader",
           "entryId": "notable-jewish-political-figures-us",
           "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Senate Majority Leader & Top Congressional Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Ally & Keynote Speaker",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "American Jewish Committee (AJC)",
+          "role": "Keynote Speaker & Ally",
+          "entryId": "american-jewish-committee-ajc",
+          "country": "United States"
+        },
+        {
+          "organization": "Conference of Presidents of Major American Jewish Organizations",
+          "role": "Keynote Speaker",
+          "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Political Ally",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Influential Non-Member (Senate Leader)",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Council for Public Affairs (JCPA)",
+          "role": "Political Partner",
+          "entryId": "jewish-council-for-public-affairs-jcpa",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Democratic Council of America",
+          "role": "Top Political Ally",
+          "entryId": "jewish-democratic-council-of-america",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Top Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        },
+        {
+          "organization": "World Jewish Congress (WJC)",
+          "role": "Political Partner",
+          "entryId": "world-jewish-congress",
+          "country": "International"
         }
       ]
     },
@@ -20476,9 +20650,16 @@
     },
     "bob-menendez": {
       "name": "Bob Menendez",
-      "bio": "American politician. U.S. Senator from New Jersey. Named in Epstein's contacts. Later convicted of corruption charges in 2024 in an unrelated case.",
+      "bio": "Former NJ senator and Foreign Relations Committee chair. Received major pro-Israel PAC support but was convicted in 2024 of corruption charges including accepting gold bars and payments from Qatari and Egyptian governments. His corruption case involved allegations of acting as a foreign agent.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "NORPAC",
+          "role": "Supported Senator (Convicted)",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
     },
     "barney-frank": {
       "name": "Barney Frank",
@@ -21579,13 +21760,19 @@
     },
     "debbie-wasserman-schultz": {
       "name": "Debbie Wasserman Schultz",
-      "bio": "US Representative from Florida since 2005. Former chair of the Democratic National Committee (2011-2016).",
+      "bio": "Jewish congresswoman from Florida and former DNC chair. Long-time pro-Israel advocate and DMFI ally.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Notable Jewish Political Figures (US)",
           "role": "US Representative (Florida)",
           "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Endorsed Representative & Ally",
+          "entryId": "democratic-majority-for-israel",
           "country": "United States"
         }
       ]
@@ -21605,7 +21792,7 @@
     },
     "josh-shapiro": {
       "name": "Josh Shapiro",
-      "bio": "Governor of Pennsylvania since January 2023. Previously served as Pennsylvania Attorney General (2017-2023). Won the 2022 gubernatorial race by 15 points. Considered a rising star in the Democratic Party.",
+      "bio": "Joshua David Shapiro (born June 20, 1973) is an American politician serving as the 48th Governor of Pennsylvania since January 2023. Shapiro is Jewish and has been open about his faith throughout his political career. He attended the Akiba Hebrew Academy (now Barrack Hebrew Academy), spent a gap year in Israel, and has spoken frequently about his Jewish identity. As Governor, Shapiro signed an executive order combating antisemitism based on the IHRA definition and established a state commission against antisemitism. He was considered a top contender for Kamala Harris' VP pick in 2024, but concerns about backlash over his pro-Israel stance reportedly factored into the decision. Shapiro received over $1 million from pro-Israel donors during his gubernatorial campaign. He has been praised by AIPAC and ADL for his antisemitism initiatives.",
       "notes": "",
       "affiliations": [
         {
@@ -21618,6 +21805,30 @@
           "organization": "Notable Jewish Political Figures (US)",
           "role": "State Governor",
           "entryId": "notable-jewish-political-figures-us",
+          "country": "United States"
+        },
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Political Ally (Governor)",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Ally & Partner",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Federations of North America (JFNA)",
+          "role": "Community Partner",
+          "entryId": "jewish-federations-of-north-america-jfna",
+          "country": "United States"
+        },
+        {
+          "organization": "American Jewish Committee (AJC)",
+          "role": "Political Partner",
+          "entryId": "american-jewish-committee-ajc",
           "country": "United States"
         }
       ]
@@ -21922,13 +22133,19 @@
     },
     "brad-schneider": {
       "name": "Brad Schneider",
-      "bio": "American politician. US Representative from Illinois since 2017. Jewish. Co-chair of the House Bipartisan Task Force for Combating Antisemitism. Strong AIPAC ally.",
+      "bio": "Jewish congressman from Illinois who co-chairs the House Bipartisan Task Force for Combating Antisemitism. A key DMFI-backed representative.",
       "notes": "",
       "affiliations": [
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Congressional Ally",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Endorsed Representative",
+          "entryId": "democratic-majority-for-israel",
           "country": "United States"
         }
       ]
@@ -21948,33 +22165,135 @@
     },
     "hakeem-jeffries": {
       "name": "Hakeem Jeffries",
-      "bio": "American politician. House Minority Leader (2023-present). US Representative from New York. Has spoken at AIPAC Policy Conference.",
+      "bio": "Hakeem Sekou Jeffries (born August 4, 1970) is an American politician serving as House Minority Leader since 2023, the first African American to lead a major party in Congress. He represents New York's 8th congressional district (Brooklyn/Queens) since 2013. Jeffries has been a strong supporter of Israel, co-sponsoring the Israel Anti-Boycott Act and supporting Iron Dome funding. His Brooklyn district has one of the largest Jewish populations in the country. Jeffries received over $1.5 million from pro-Israel PACs and AIPAC-affiliated donors in his career. He visited Israel on an AIEF-funded congressional trip and has spoken at numerous Jewish organizational events. DMFI identifies him as a key pro-Israel leader in the House Democratic caucus.",
       "notes": "",
       "affiliations": [
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Congressional Ally",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Ally",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Key Political Ally",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "American Israel Education Foundation",
+          "role": "Congressional Delegation Participant",
+          "entryId": "american-israel-education-foundation",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
           "country": "United States"
         }
       ]
     },
     "john-fetterman": {
       "name": "John Fetterman",
-      "bio": "John Karl Fetterman (born 1969) is an American politician serving as the junior US Senator from Pennsylvania since 2023. Standing 6'8\", he is the tallest US Senator in history. Previously served as Lieutenant Governor of Pennsylvania (2019-2023) and Mayor of Braddock (2005-2019). After suffering a stroke during his 2022 Senate campaign, he won against Mehmet Oz. Since taking office, Fetterman has become one of the most vocal pro-Israel Democrats - hanging Israeli flags outside his Senate office, visiting Israel after the Oct 7 attacks, and publicly breaking with progressive Democrats on Middle East policy. He has called for the elimination of Hamas and criticized campus antisemitism. A frequent AIPAC Policy Conference attendee and one of few Democrats to receive strong AIPAC support.",
+      "bio": "John Karl Fetterman (born August 15, 1969) is an American politician serving as the junior US Senator from Pennsylvania since January 2023. Standing 6'8\", he is the tallest US Senator in history. He previously served as Lieutenant Governor of Pennsylvania (2019-2023) and Mayor of Braddock, PA (2005-2019), a struggling steel town near Pittsburgh where he sought to revitalize the community.\n\nFetterman won his 2022 Senate seat against Republican Dr. Mehmet Oz despite suffering a near-fatal stroke during the campaign that required a pacemaker/defibrillator implant. He was briefly hospitalized for clinical depression in early 2023. His campaign received massive outside support from pro-Israel PACs: AIPAC-affiliated United Democracy Project spent approximately $4.2 million supporting him, Democratic Majority for Israel (DMFI) PAC spent $3.7 million, and NORPAC and other pro-Israel PACs contributed additional hundreds of thousands.\n\nSince taking office, Fetterman has become one of the most vocal pro-Israel Democrats in Congress. After the October 7, 2023 Hamas attack, he hung Israeli flags outside his Senate office (the only senator to do so), visited Israel to meet with hostage families and officials, and publicly broke with progressive Democrats on Middle East policy. He has called for the \"total elimination of Hamas,\" criticized college campus antisemitism as a \"cancer,\" and opposed ceasefire resolutions. He spoke at the Republican Jewish Coalition's 2023 conference - the first sitting Democratic senator to do so - and has received praise from AIPAC, ADL, ZOA, and other Jewish organizations.\n\nFinancial connections: Pro-Israel organizations collectively spent over $8 million supporting Fetterman's 2022 campaign, making pro-Israel funding one of the largest sources of outside spending in his race. He serves on the Senate Banking Committee (sanctions oversight) and the Senate Agriculture Committee.\n\nFetterman's political transformation from progressive populist to centrist pro-Israel Democrat has made him one of the most discussed figures in American Jewish political circles.",
       "notes": "",
       "affiliations": [
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Congressional Ally",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Invited Speaker (Democrat)",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Ally & Speaker",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Endorsed Candidate & Ally",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "American Israel Education Foundation",
+          "role": "Congressional Delegation Participant",
+          "entryId": "american-israel-education-foundation",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Democratic Council of America",
+          "role": "Political Ally",
+          "entryId": "jewish-democratic-council-of-america",
+          "country": "United States"
+        },
+        {
+          "organization": "Conference of Presidents of Major American Jewish Organizations",
+          "role": "Congressional Guest Speaker",
+          "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Political Supporter",
+          "entryId": "standwithus",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Political Ally (Democrat)",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Banking Committee",
+          "role": "Committee Member",
+          "entryId": "us-senate-banking-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "American Jewish Committee (AJC)",
+          "role": "Political Ally",
+          "entryId": "american-jewish-committee-ajc",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Praised Political Figure",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Council for Public Affairs (JCPA)",
+          "role": "Congressional Ally",
+          "entryId": "jewish-council-for-public-affairs-jcpa",
           "country": "United States"
         }
       ]
     },
     "mike-johnson": {
       "name": "Mike Johnson",
-      "bio": "American politician. Speaker of the House (2023-present). Strong supporter of Israel. Has worked closely with AIPAC on Israel-related legislation.",
+      "bio": "Michael Dean Johnson (born January 30, 1972) is an American politician serving as the 56th Speaker of the US House of Representatives since October 2023. He represents Louisiana's 4th congressional district. Johnson is an evangelical Christian who has described his support for Israel as rooted in his faith. As Speaker, he passed a $26.4 billion Israel/Ukraine aid package, led a bipartisan congressional delegation to Israel after October 7, and pushed through the Antisemitism Awareness Act. Johnson received over $800,000 from pro-Israel PACs since becoming Speaker. He has spoken at CUFI events and AIPAC Policy Conference. Johnson invited Israeli PM Netanyahu to address a joint session of Congress in July 2024.",
       "notes": "",
       "affiliations": [
         {
@@ -21982,18 +22301,54 @@
           "role": "Congressional Ally",
           "entryId": "aipac",
           "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Christian Zionist Ally & Speaker",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Featured Speaker",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Legislative Partner",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "US House Committee on Foreign Affairs",
+          "role": "Oversight (House Speaker)",
+          "entryId": "us-house-foreign-affairs-committee",
+          "country": "United States"
         }
       ]
     },
     "ben-cardin": {
       "name": "Ben Cardin",
-      "bio": "American politician. Former US Senator from Maryland (2007-2025). Jewish. Former Chairman of Senate Foreign Relations Committee. One of AIPAC's closest Senate allies.",
+      "bio": "Chaired the Foreign Relations Committee before his retirement. One of the Senate's strongest Israel advocates who pushed Iran sanctions and Israel aid legislation.",
       "notes": "",
       "affiliations": [
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Congressional Ally",
           "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Senator",
+          "entryId": "norpac",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Former Chairman",
+          "entryId": "us-senate-foreign-relations-committee",
           "country": "United States"
         }
       ]
@@ -61689,9 +62044,46 @@
     },
     "nancy-pelosi": {
       "name": "Nancy Pelosi",
-      "bio": "Former Speaker of the House (2007-2011, 2019-2023). One of AIPAC's most important allies on Capitol Hill for decades.",
+      "bio": "Nancy Patricia Pelosi (born March 26, 1940) is an American politician who served as Speaker of the US House of Representatives (2007-2011, 2019-2023) and Minority Leader, representing California's 11th/12th congressional district since 1987. As Speaker, Pelosi was the most powerful woman in US political history. She has been a consistent supporter of Israel, frequently stating that even if the US Capitol \"crumbled to the ground, the one thing that would remain is our commitment to our aid to Israel.\" Pelosi has received over $2 million from pro-Israel PACs during her career. She supported $1 billion in emergency funding for Israel's Iron Dome in 2021, led multiple Congressional delegations to Israel, and opposed BDS. However, she occasionally clashed with Netanyahu's government and supported the Iran Nuclear Deal (JCPOA), creating tension with some pro-Israel groups. Pelosi visited Israel after October 7, 2023.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Leader & Speaker",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Partner",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "American Israel Education Foundation",
+          "role": "Congressional Delegation Leader",
+          "entryId": "american-israel-education-foundation",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Political Ally",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "American Jewish Committee (AJC)",
+          "role": "Speaker & Political Partner",
+          "entryId": "american-jewish-committee-ajc",
+          "country": "United States"
+        },
+        {
+          "organization": "US House Committee on Foreign Affairs",
+          "role": "Oversight (House Speaker)",
+          "entryId": "us-house-foreign-affairs-committee",
+          "country": "United States"
+        }
+      ]
     },
     "kevin-mccarthy": {
       "name": "Kevin McCarthy",
@@ -61701,27 +62093,169 @@
     },
     "ted-cruz": {
       "name": "Ted Cruz",
-      "bio": "US Senator from Texas. One of the most vocal pro-Israel voices in the Senate.",
+      "bio": "Rafael Edward \"Ted\" Cruz (born December 22, 1970) is an American politician serving as the senior US Senator from Texas since 2013. He ran for president in 2016 and is known as one of the most vocal pro-Israel senators in Congress. Cruz has received over $2.5 million in career campaign contributions from pro-Israel sources. He introduced the Israel Anti-Boycott Act and has led efforts to sanction Iran, Hezbollah, and entities that fund Palestinian terrorism. Cruz blocked diplomatic nominees over the Biden administration's Israel policies and threatened to hold up State Department confirmations. He has spoken at AIPAC Policy Conference, CUFI Summit, ZOA galas, and numerous other pro-Israel events. Cruz serves on the Senate Foreign Relations Committee and the Commerce Committee.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Ally & Speaker",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Keynote Speaker & Champion",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Honoree & Political Ally",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Committee Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Political Supporter",
+          "entryId": "standwithus",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
     },
     "marco-rubio": {
       "name": "Marco Rubio",
-      "bio": "US Senator from Florida turned Secretary of State. Co-authored major pro-Israel legislation.",
+      "bio": "Marco Antonio Rubio (born May 28, 1971) is an American politician serving as the 72nd US Secretary of State (since January 2025), previously serving as a US Senator from Florida (2011-2025). Rubio was a consistent pro-Israel voice in the Senate, serving on the Foreign Relations Committee and Intelligence Committee. He introduced the Combating BDS Act and the Strengthening America's Security in the Middle East Act. Rubio received over $1.5 million from pro-Israel PACs during his Senate career. He ran for president in 2016, receiving backing from pro-Israel megadonor Sheldon Adelson's associates. As Secretary of State, Rubio is now the top US diplomat handling Middle East policy, Israel relations, and Iran negotiations.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Champion & Secretary of State",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Featured Speaker & Ally",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Former Senior Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Political Ally",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Political Ally",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
     },
     "lindsey-graham": {
       "name": "Lindsey Graham",
-      "bio": "US Senator from South Carolina. One of the strongest pro-Israel voices in Congress.",
+      "bio": "Lindsey Olin Graham (born July 9, 1955) is an American politician serving as the senior US Senator from South Carolina since 2003. A former Air Force JAG officer, Graham has been one of the most hawkish pro-Israel voices in the Senate. He has repeatedly advocated for military action against Iran if it pursues nuclear weapons, co-authored the US-Israel Strategic Partnership Act, and pushed for annual US military aid of $5 billion to Israel (above the current $3.8B). Graham serves on the Senate Appropriations Committee's defense subcommittee and the Senate Judiciary Committee. He received over $1 million from pro-Israel PACs during his career. After October 7, Graham called for \"leveling\" Gaza City and has compared the Israel-Hamas conflict to the US nuclear bombing of Japan. He has been an outspoken opponent of conditions on US aid to Israel.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Champion",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Keynote Speaker",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Speaker & Ally",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Political Ally",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Senior Committee Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
     },
     "ritchie-torres": {
       "name": "Ritchie Torres",
-      "bio": "US Representative from New York. Progressive Democrat who is one of the most vocal pro-Israel members of the House.",
+      "bio": "Ritchie John Torres (born March 12, 1988) is an American politician serving as the US Representative for New York's 15th congressional district (South Bronx) since 2021. Torres is the first openly gay Afro-Latino member of Congress. He has become one of the most outspoken pro-Israel Democrats in the House, frequently clashing with the progressive \"Squad.\" Torres visited Israel after October 7, co-authored the Antisemitism Awareness Act, and has introduced legislation to combat BDS in public pensions. He has called himself a \"pro-Israel progressive\" and received over $1 million from AIPAC-affiliated PACs for his campaigns. The United Democracy Project (AIPAC's super PAC) spent heavily to support Torres. He is widely considered AIPAC's top Democratic ally in the House.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Top House Democratic Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Champion",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Champion Ally",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Political Ally",
+          "entryId": "standwithus",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
     },
     "elizabeth-warren": {
       "name": "Elizabeth Warren",
@@ -61746,6 +62280,365 @@
       "bio": "One of the most successful investors in history. Working with Soros, he led the 1992 trade that \"broke the Bank of England,\" netting $1 billion.",
       "notes": "",
       "affiliations": []
+    },
+    "mitch-mcconnell": {
+      "name": "Mitch McConnell",
+      "bio": "Addison Mitchell McConnell III (born February 20, 1942) is an American politician serving as the senior US Senator from Kentucky since 1985. He served as Senate Majority Leader (2015-2021) and Minority Leader, becoming the longest-serving Senate party leader in history. McConnell has been a stalwart Israel supporter, leading Senate floor action on Israel-related legislation including the Strengthening America's Security in the Middle East Act and opposing the Iran Nuclear Deal. He has received over $2 million from pro-Israel PACs during his career. McConnell pushed through the confirmation of David Friedman as US Ambassador to Israel and supported the Trump administration's recognition of Jerusalem and the Golan Heights. He has attended AIPAC Policy Conference regularly and been honored by multiple Jewish organizations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Senate Republican Leader & Ally",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Keynote Speaker",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Political Ally",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "American Jewish Committee (AJC)",
+          "role": "Political Partner",
+          "entryId": "american-jewish-committee-ajc",
+          "country": "United States"
+        },
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Influential Non-Member (Senate Leader)",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
+    },
+    "elise-stefanik": {
+      "name": "Elise Stefanik",
+      "bio": "Elise Marie Stefanik (born July 2, 1984) is an American politician who served as the US Representative for New York's 21st congressional district (2015-2025) and House Republican Conference Chair before being nominated as US Ambassador to the United Nations. Stefanik became a major figure in pro-Israel politics after her aggressive December 2023 congressional hearing on campus antisemitism, where she questioned university presidents from Harvard, Penn, and MIT, leading to the resignations of two presidents. That hearing made her a hero to pro-Israel organizations. She received over $1 million from pro-Israel PACs. Stefanik introduced the Antisemitism Awareness Act and has been one of the most vocal Republican critics of campus antisemitism and pro-Palestinian protests.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Congressional Champion & AIPAC Supporter",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Ally",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Featured Speaker",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Honored Ally",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Political Champion",
+          "entryId": "standwithus",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Candidate",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
+    },
+    "ron-desantis": {
+      "name": "Ron DeSantis",
+      "bio": "Ronald Dion DeSantis (born September 14, 1978) is an American politician serving as the 46th Governor of Florida since 2019. He previously served in the US House (2013-2018). DeSantis has been one of America's most aggressively pro-Israel governors. He held a Florida cabinet meeting in Israel in 2019 - the first time a US state held a cabinet meeting on foreign soil. He signed the strongest anti-BDS legislation in the US, signed a bill requiring Florida schools to teach about antisemitism, and personally led trade missions to Israel. DeSantis received over $2 million from pro-Israel donors, including significant backing from Miriam Adelson. He ran for president in 2024 on a strongly pro-Israel platform. After October 7, DeSantis sent a Florida emergency plane to evacuate Floridians from Israel and sent $2 million in state emergency aid.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Political Ally (Governor)",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Presidential Candidate & Speaker",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Political Ally",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Political Partner",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Honored Political Figure",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        }
+      ]
+    },
+    "nikki-haley": {
+      "name": "Nikki Haley",
+      "bio": "Nimrata Nikki Haley (born January 20, 1972) is an American politician who served as US Ambassador to the United Nations (2017-2018) and Governor of South Carolina (2011-2017). She ran for president in 2024. At the UN, Haley became a hero to pro-Israel organizations for her aggressive defense of Israel, vetoing multiple anti-Israel resolutions, withdrawal from the UN Human Rights Council (which she called \"a cesspool of political bias\"), and walking out during Palestinian Authority speeches. She received millions from pro-Israel donors for her presidential campaign, including significant backing from Miriam Adelson and other major Jewish Republican donors. Her UN tenure made her one of the most popular figures in the pro-Israel community. Haley signed the first state-level anti-BDS executive order as South Carolina governor.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Former UN Ambassador & Political Hero",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Presidential Candidate & Hero",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        },
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Guest Speaker & Champion",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Honoree",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Championed Ally",
+          "entryId": "standwithus",
+          "country": "United States"
+        },
+        {
+          "organization": "NORPAC",
+          "role": "Supported Political Figure",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
+    },
+    "alan-dershowitz": {
+      "name": "Alan Dershowitz",
+      "bio": "",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "AIPAC (American Israel Public Affairs Committee)",
+          "role": "Prominent Defender & Speaker",
+          "entryId": "aipac",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Ally & Speaker",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        },
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Speaker & Defender",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        },
+        {
+          "organization": "StandWithUs",
+          "role": "Campus Defense Ally",
+          "entryId": "standwithus",
+          "country": "United States"
+        }
+      ]
+    },
+    "kirsten-gillibrand": {
+      "name": "Kirsten Gillibrand",
+      "bio": "New York senator who has received significant pro-Israel PAC support including from NORPAC.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "NORPAC",
+          "role": "Supported Senator",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
+    },
+    "cory-booker": {
+      "name": "Cory Booker",
+      "bio": "New Jersey senator who has spoken at NORPAC events. Received significant pro-Israel PAC contributions. Initially supported the Iran Deal but later moved toward stronger pro-Israel positions.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "NORPAC",
+          "role": "Supported Senator & Speaker",
+          "entryId": "norpac",
+          "country": "United States"
+        }
+      ]
+    },
+    "josh-gottheimer": {
+      "name": "Josh Gottheimer",
+      "bio": "NJ congressman who has worked closely with ADL on antisemitism legislation and hate crimes prevention.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Democratic Majority for Israel (DMFI)",
+          "role": "Endorsed Representative & Champion",
+          "entryId": "democratic-majority-for-israel",
+          "country": "United States"
+        },
+        {
+          "organization": "Anti-Defamation League (ADL)",
+          "role": "Congressional Ally",
+          "entryId": "anti-defamation-league-adl",
+          "country": "United States"
+        }
+      ]
+    },
+    "sherrod-brown": {
+      "name": "Sherrod Brown",
+      "bio": "Former Ohio senator who chaired the Banking Committee. Oversaw Iran sanctions policy and banking regulations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US Senate Committee on Banking, Housing, and Urban Affairs",
+          "role": "Former Committee Chair",
+          "entryId": "us-senate-banking-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "tim-scott": {
+      "name": "Tim Scott",
+      "bio": "South Carolina senator and ranking member who has been a strong pro-Israel voice on the committee, particularly on Iran sanctions.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US Senate Committee on Banking, Housing, and Urban Affairs",
+          "role": "Ranking Member",
+          "entryId": "us-senate-banking-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "jim-risch": {
+      "name": "Jim Risch",
+      "bio": "Idaho senator serving as ranking Republican member. Has supported pro-Israel legislation and Iran sanctions.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Ranking Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "chris-murphy": {
+      "name": "Chris Murphy",
+      "bio": "Connecticut senator on the Foreign Relations Committee who has pushed for diplomacy in the Middle East while maintaining support for Israel's qualitative military edge.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US Senate Committee on Foreign Relations",
+          "role": "Committee Member",
+          "entryId": "us-senate-foreign-relations-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-mccaul": {
+      "name": "Michael McCaul",
+      "bio": "Texas congressman who chaired the House Foreign Affairs Committee. Advanced Israel Security Supplemental Appropriations Act and other pro-Israel legislation.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US House Committee on Foreign Affairs",
+          "role": "Former Chairman",
+          "entryId": "us-house-foreign-affairs-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "gregory-meeks": {
+      "name": "Gregory Meeks",
+      "bio": "New York congressman and ranking Democrat on the committee. Has supported Israel aid while advocating for Palestinian civilian protections.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US House Committee on Foreign Affairs",
+          "role": "Ranking Democratic Member",
+          "entryId": "us-house-foreign-affairs-committee",
+          "country": "United States"
+        }
+      ]
+    },
+    "chris-van-hollen": {
+      "name": "Chris Van Hollen",
+      "bio": "Maryland senator endorsed by J Street who has pushed for conditions on US military aid to Israel and protections for Palestinian civilians in Gaza.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "J Street",
+          "role": "Endorsed Senator",
+          "entryId": "j-street",
+          "country": "United States"
+        }
+      ]
+    },
+    "gary-bauer": {
+      "name": "Gary Bauer",
+      "bio": "Conservative activist and former presidential candidate who served on CUFI's board, helping to bridge Christian Zionist and Jewish pro-Israel communities.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "CUFI Board Member",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-brog": {
+      "name": "David Brog",
+      "bio": "Served as CUFI's first executive director (2006-2016), building the organization from startup to millions of members. A Jewish lawyer who became a key figure in Christian Zionism advocacy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Christians United for Israel (CUFI)",
+          "role": "Former Executive Director",
+          "entryId": "christians-united-for-israel-cufi",
+          "country": "United States"
+        }
+      ]
     }
   }
 }

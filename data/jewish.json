@@ -222,6 +222,30 @@
             "name": "Harriet Schleifer",
             "role": "Chair",
             "bio": "Chair of the Conference of Presidents. First woman to hold the position."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Congressional Guest Speaker",
+            "bio": "Fetterman addressed the Conference of Presidents as part of their congressional outreach program, reaffirming his support for Israel and opposition to BDS. The Conference specifically highlighted Fetterman as a model of bipartisan pro-Israel leadership in the Senate."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Keynote Speaker",
+            "bio": "As the highest-ranking Jewish official in US government, Schumer regularly addresses the Conference of Presidents on Israel policy and Jewish community concerns."
+          },
+          {
+            "id": "haim-saban",
+            "name": "Haim Saban",
+            "role": "Major Donor & Ally",
+            "bio": "Saban has engaged with the Conference of Presidents as one of the most influential pro-Israel donors in Democratic politics."
+          },
+          {
+            "id": "benjamin-netanyahu",
+            "name": "Benjamin Netanyahu",
+            "role": "Keynote Speaker",
+            "bio": "Netanyahu has addressed the Conference of Presidents multiple times, using the platform to communicate directly with American Jewish leadership."
           }
         ],
         "id": "conference-of-presidents-of-major-american-jewish-organizations",
@@ -622,6 +646,54 @@
             "name": "Ritchie Torres",
             "role": "Congressional Ally",
             "bio": "US Representative from New York. Progressive Democrat who is one of the most vocal pro-Israel members of the House."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Senate Republican Leader & Ally",
+            "bio": "As longest-serving Senate leader in history, McConnell advanced pro-Israel legislation and opposed the Iran Deal. Received $2M+ from pro-Israel PACs. Key ally on Israel aid and sanctions."
+          },
+          {
+            "id": "bernie-sanders",
+            "name": "Bernie Sanders",
+            "role": "Congressional Critic & Opponent",
+            "bio": "Sanders is AIPAC's most prominent Jewish critic. He has refused AIPAC campaign contributions, opposed AIPAC-backed legislation, and introduced resolutions to block arms sales to Israel. AIPAC has actively worked against Sanders-backed candidates."
+          },
+          {
+            "id": "josh-shapiro",
+            "name": "Josh Shapiro",
+            "role": "Political Ally (Governor)",
+            "bio": "Jewish governor who received $1M+ from pro-Israel donors. Signed executive order combating antisemitism using IHRA definition. Was top VP contender in 2024."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Congressional Champion & AIPAC Supporter",
+            "bio": "Rose to national prominence through antisemitism hearings. Received $1M+ from pro-Israel PACs. Introduced Antisemitism Awareness Act. Nominated as UN Ambassador."
+          },
+          {
+            "id": "ron-desantis",
+            "name": "Ron DeSantis",
+            "role": "Political Ally (Governor)",
+            "bio": "Held Florida cabinet meeting in Israel (historic first). Signed strongest anti-BDS legislation in US. Received $2M+ from pro-Israel donors including Miriam Adelson."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Former UN Ambassador & Political Hero",
+            "bio": "Became a pro-Israel icon at the UN - vetoed anti-Israel resolutions, withdrew from UNHRC. Received millions from pro-Israel donors for 2024 presidential campaign."
+          },
+          {
+            "id": "benjamin-netanyahu",
+            "name": "Benjamin Netanyahu",
+            "role": "Israeli PM & Keynote Speaker",
+            "bio": "Netanyahu has addressed AIPAC Policy Conference as PM more than any other Israeli leader. His 2015 speech to Congress (arranged by AIPAC allies) opposing the Iran Deal was one of the most consequential moments in AIPAC history."
+          },
+          {
+            "id": "alan-dershowitz",
+            "name": "Alan Dershowitz",
+            "role": "Prominent Defender & Speaker",
+            "bio": "Dershowitz has been one of AIPAC's most prominent public defenders and intellectual advocates for the pro-Israel cause, speaking at Policy Conferences and writing books defending Israel."
           }
         ],
         "connections": [
@@ -4253,6 +4325,18 @@
             "name": "Ori Nir",
             "role": "Communications & Government Relations Director",
             "bio": "Ori Nir serves as spokesperson and communications director for Americans for Peace Now. He previously worked as a Washington correspondent for the Israeli newspaper Haaretz and the Forward."
+          },
+          {
+            "id": "bernie-sanders",
+            "name": "Bernie Sanders",
+            "role": "Political Ally",
+            "bio": "Sanders' positions on Israeli settlements, Palestinian rights, and conditioning military aid closely align with Americans for Peace Now's advocacy platform."
+          },
+          {
+            "id": "george-soros",
+            "name": "George Soros",
+            "role": "Donor",
+            "bio": "Soros has supported peace-oriented Israel organizations through his Open Society Foundations."
           }
         ],
         "connections": [
@@ -8383,6 +8467,72 @@
             "name": "Michael Bloomberg",
             "role": "Major Donor",
             "bio": "Michael Rubens Bloomberg (born 1942) is an American billionaire businessman, politician, and philanthropist. Founded Bloomberg L.P. in 1981, building it into the dominant financial data and media empire. Served as Mayor of New York City for three terms (2002-2013). Born to a Jewish family in Boston. Net worth exceeds $95 billion, making him one of the richest people in the world. Through Bloomberg Philanthropies, he has donated over $17 billion to causes including gun control, climate change, education, and public health. Ran for the Democratic presidential nomination in 2020. A major supporter of Israel and Jewish causes."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Political Ally & Speaker",
+            "bio": "Fetterman has been a vocal ally of the ADL, speaking out against antisemitism on college campuses and receiving ADL recognition for his stance. He called campus antisemitism a \"cancer\" and pushed for federal action. The ADL praised Fetterman as \"one of the strongest voices in the Senate\" against Jew hatred."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Political Ally & Keynote Speaker",
+            "bio": "Regular speaker at ADL events who has pushed antisemitism legislation including the Antisemitism Awareness Act. Worked with ADL on hate crimes prevention."
+          },
+          {
+            "id": "nancy-pelosi",
+            "name": "Nancy Pelosi",
+            "role": "Political Partner",
+            "bio": "Pelosi worked with ADL on antisemitism and hate crimes legislation, including the Domestic Terrorism Prevention Act."
+          },
+          {
+            "id": "hakeem-jeffries",
+            "name": "Hakeem Jeffries",
+            "role": "Political Ally",
+            "bio": "Jeffries has worked with ADL on antisemitism and hate crimes legislation, particularly relevant given his large Jewish constituency in Brooklyn."
+          },
+          {
+            "id": "ritchie-torres",
+            "name": "Ritchie Torres",
+            "role": "Political Champion",
+            "bio": "Torres has been one of the most vocal House members against antisemitism, working closely with ADL on the Antisemitism Awareness Act and campus antisemitism issues."
+          },
+          {
+            "id": "josh-shapiro",
+            "name": "Josh Shapiro",
+            "role": "Political Ally & Partner",
+            "bio": "Shapiro worked with ADL to develop Pennsylvania's antisemitism executive order and state commission. ADL praised him as a model for other governors."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Political Ally",
+            "bio": "Stefanik's campus antisemitism hearings aligned with ADL priorities. She worked with ADL on antisemitism awareness legislation."
+          },
+          {
+            "id": "ron-desantis",
+            "name": "Ron DeSantis",
+            "role": "Political Partner",
+            "bio": "DeSantis signed antisemitism education legislation and worked with ADL on Florida antisemitism awareness programs."
+          },
+          {
+            "id": "mike-johnson",
+            "name": "Mike Johnson",
+            "role": "Legislative Partner",
+            "bio": "Johnson pushed the Antisemitism Awareness Act through the House, working with ADL on the legislation's framework."
+          },
+          {
+            "id": "alan-dershowitz",
+            "name": "Alan Dershowitz",
+            "role": "Ally & Speaker",
+            "bio": "Dershowitz has spoken at ADL events and supported ADL's antisemitism monitoring work."
+          },
+          {
+            "id": "josh-gottheimer",
+            "name": "Josh Gottheimer",
+            "role": "Congressional Ally",
+            "bio": "NJ congressman who has worked closely with ADL on antisemitism legislation and hate crimes prevention."
           }
         ],
         "id": "anti-defamation-league-adl",
@@ -8630,6 +8780,36 @@
             "name": "Jacob Blaustein",
             "bio": "Industrialist and philanthropist who served as AJC president (1949-1954). Negotiated the historic Blaustein-Ben-Gurion Agreement defining US Jewish-Israel relations.",
             "id": "jacob-blaustein"
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Political Ally",
+            "bio": "AJC has engaged with Fetterman through its Congressional outreach programs. Fetterman has participated in AJC briefings on antisemitism, Israel's security challenges, and the Abraham Accords expansion. AJC commended his bipartisan approach to Israel advocacy."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Keynote Speaker & Ally",
+            "bio": "Frequent speaker at AJC Global Forum. Schumer has worked with AJC on Iran sanctions, antisemitism policy, and Israel-related legislation for decades."
+          },
+          {
+            "id": "nancy-pelosi",
+            "name": "Nancy Pelosi",
+            "role": "Speaker & Political Partner",
+            "bio": "Pelosi spoke at AJC Global Forum events and worked with AJC on bipartisan Israel legislation."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Political Partner",
+            "bio": "Engaged with AJC on bipartisan Israel advocacy and antisemitism issues."
+          },
+          {
+            "id": "josh-shapiro",
+            "name": "Josh Shapiro",
+            "role": "Political Partner",
+            "bio": "AJC has worked with Governor Shapiro on implementing antisemitism policies in Pennsylvania."
           }
         ],
         "id": "american-jewish-committee-ajc",
@@ -8764,6 +8944,18 @@
             "name": "Elizabeth Warren",
             "role": "Endorsed Candidate",
             "bio": "Senator from Massachusetts. Endorsed by J Street for her positions on Israel-Palestine policy."
+          },
+          {
+            "id": "george-soros",
+            "name": "George Soros",
+            "role": "Major Funder",
+            "bio": "Soros was revealed to be one of J Street's earliest and largest funders, though J Street initially denied his financial involvement. He contributed at least $750,000 to J Street. His funding of J Street has been controversial in the pro-Israel community."
+          },
+          {
+            "id": "chris-van-hollen",
+            "name": "Chris Van Hollen",
+            "role": "Endorsed Senator",
+            "bio": "Maryland senator endorsed by J Street who has pushed for conditions on US military aid to Israel and protections for Palestinian civilians in Gaza."
           }
         ],
         "id": "j-street",
@@ -11603,6 +11795,42 @@
             "name": "Michael Dickson",
             "role": "Executive Director, StandWithUs Israel",
             "bio": "Leads StandWithUs operations in Israel and coordinates international advocacy campaigns for the organization."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Political Supporter",
+            "bio": "StandWithUs praised Fetterman for his vocal opposition to campus antisemitism and BDS. He has spoken at events organized by pro-Israel campus advocacy groups and called for universities to take stronger action against anti-Jewish harassment."
+          },
+          {
+            "id": "ted-cruz",
+            "name": "Ted Cruz",
+            "role": "Political Supporter",
+            "bio": "Cruz has supported StandWithUs advocacy efforts and spoken against campus BDS movements."
+          },
+          {
+            "id": "ritchie-torres",
+            "name": "Ritchie Torres",
+            "role": "Political Ally",
+            "bio": "Torres has championed StandWithUs' mission of combating BDS and antisemitism on campuses through legislative action."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Political Champion",
+            "bio": "StandWithUs praised Stefanik's campus antisemitism work, which directly supported their mission of combating anti-Israel bias in education."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Championed Ally",
+            "bio": "StandWithUs praised Haley's confrontation of anti-Israel bias at the UN and her signing of South Carolina's anti-BDS executive order."
+          },
+          {
+            "id": "alan-dershowitz",
+            "name": "Alan Dershowitz",
+            "role": "Campus Defense Ally",
+            "bio": "Dershowitz has worked with StandWithUs on campus advocacy, lecturing at universities and defending pro-Israel students' rights."
           }
         ],
         "id": "standwithus",
@@ -12088,6 +12316,60 @@
             "name": "Jared Kushner",
             "role": "Key Figure",
             "bio": "White House Senior Advisor who led the Abraham Accords negotiations. Major figure in Republican Jewish politics."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Keynote Speaker",
+            "bio": "Regular speaker at RJC events who has championed pro-Israel causes within the Republican Party for decades."
+          },
+          {
+            "id": "lindsey-graham",
+            "name": "Lindsey Graham",
+            "role": "Speaker & Ally",
+            "bio": "Regular RJC event speaker who has championed Israel within the Republican Senate caucus."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Featured Speaker",
+            "bio": "Stefanik spoke at RJC events, particularly after her prominent role in the campus antisemitism hearings made her a hero to Jewish organizations."
+          },
+          {
+            "id": "john-hagee",
+            "name": "John Hagee",
+            "role": "Guest Speaker",
+            "bio": "Hagee has addressed RJC events as the face of the Christian Zionist movement in the United States."
+          },
+          {
+            "id": "marco-rubio",
+            "name": "Marco Rubio",
+            "role": "Featured Speaker & Ally",
+            "bio": "Rubio spoke at RJC events during his presidential campaign and Senate career. RJC praised his pro-Israel record."
+          },
+          {
+            "id": "ron-desantis",
+            "name": "Ron DeSantis",
+            "role": "Presidential Candidate & Speaker",
+            "bio": "DeSantis spoke at RJC events during his 2024 presidential campaign, touting his pro-Israel Florida record as a model for national policy."
+          },
+          {
+            "id": "mike-johnson",
+            "name": "Mike Johnson",
+            "role": "Featured Speaker",
+            "bio": "As House Speaker, Johnson addressed RJC events and championed pro-Israel priorities in the Republican House majority."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Presidential Candidate & Hero",
+            "bio": "Haley spoke at RJC events as a presidential candidate, touting her UN record. Received strong support from Jewish Republican donors."
+          },
+          {
+            "id": "benjamin-netanyahu",
+            "name": "Benjamin Netanyahu",
+            "role": "Featured Guest",
+            "bio": "Netanyahu's policies have strongly aligned with RJC positions. RJC members have been among his strongest American supporters."
           }
         ],
         "id": "republican-jewish-coalition",
@@ -14808,6 +15090,12 @@
             "name": "Julie Platt",
             "role": "Board Chair",
             "bio": "Board Chair of JFNA. Los Angeles civic leader and major Jewish philanthropist."
+          },
+          {
+            "id": "josh-shapiro",
+            "name": "Josh Shapiro",
+            "role": "Community Partner",
+            "bio": "As a proudly Jewish governor, Shapiro has engaged extensively with Jewish Federations on community security, antisemitism, and Israel advocacy."
           }
         ],
         "id": "jewish-federations-of-north-america-jfna",
@@ -18187,6 +18475,78 @@
             "name": "Shari Dollinger",
             "role": "Vice President of Government Relations",
             "bio": "CUFI executive leading the organization's advocacy efforts on Capitol Hill."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Political Ally (Democrat)",
+            "bio": "Despite being a Democrat, Fetterman received praise from CUFI - the largest pro-Israel organization in the United States with over 10 million members - for his unwavering support of Israel. CUFI Action Fund highlighted Fetterman as a rare example of bipartisan pro-Israel leadership."
+          },
+          {
+            "id": "ted-cruz",
+            "name": "Ted Cruz",
+            "role": "Keynote Speaker & Champion",
+            "bio": "One of CUFI's closest political allies. Cruz has spoken at CUFI's annual Washington Summit multiple times and introduced legislation supported by CUFI on Iran sanctions and Israel."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Political Ally",
+            "bio": "McConnell has aligned with CUFI on Israel-related legislation and Iran sanctions."
+          },
+          {
+            "id": "lindsey-graham",
+            "name": "Lindsey Graham",
+            "role": "Keynote Speaker",
+            "bio": "Graham has been a featured speaker at CUFI summits, advocating for unconditional US support of Israel and military action against Iran."
+          },
+          {
+            "id": "marco-rubio",
+            "name": "Marco Rubio",
+            "role": "Political Ally",
+            "bio": "CUFI supported Rubio's pro-Israel legislative agenda in the Senate."
+          },
+          {
+            "id": "ron-desantis",
+            "name": "Ron DeSantis",
+            "role": "Political Ally",
+            "bio": "DeSantis' strong pro-Israel stance aligns with CUFI's Christian Zionist base in Florida, one of the largest Christian Zionist states."
+          },
+          {
+            "id": "mike-johnson",
+            "name": "Mike Johnson",
+            "role": "Christian Zionist Ally & Speaker",
+            "bio": "Johnson's evangelical faith drives his Israel support. He has spoken at CUFI events and describes Israel as \"our closest ally\" rooted in biblical covenant."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Guest Speaker & Champion",
+            "bio": "CUFI praised Haley's UN tenure as historic for pro-Israel advocacy. She spoke at CUFI summits about standing firm for Israel on the world stage."
+          },
+          {
+            "id": "sheldon-adelson",
+            "name": "Sheldon Adelson",
+            "role": "Major Donor",
+            "bio": "Adelson financially supported CUFI events and the broader pro-Israel Christian Zionist movement as part of his strategy to build the widest possible pro-Israel coalition."
+          },
+          {
+            "id": "benjamin-netanyahu",
+            "name": "Benjamin Netanyahu",
+            "role": "Honored by CUFI",
+            "bio": "CUFI and its millions of members have been among Netanyahu's strongest American supporters, with Hagee meeting Netanyahu at the PM's office in Jerusalem."
+          },
+          {
+            "id": "gary-bauer",
+            "name": "Gary Bauer",
+            "role": "CUFI Board Member",
+            "bio": "Conservative activist and former presidential candidate who served on CUFI's board, helping to bridge Christian Zionist and Jewish pro-Israel communities."
+          },
+          {
+            "id": "david-brog",
+            "name": "David Brog",
+            "role": "Former Executive Director",
+            "bio": "Served as CUFI's first executive director (2006-2016), building the organization from startup to millions of members. A Jewish lawyer who became a key figure in Christian Zionism advocacy."
           }
         ],
         "id": "christians-united-for-israel-cufi",
@@ -19013,6 +19373,60 @@
             "name": "Louis Brandeis",
             "role": "Historic Leader (deceased)",
             "bio": "First Jewish Supreme Court Justice who led the ZOA (then FAZ) during WWI. The ZOA grew from 12,000 to 176,000 members under his leadership."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Praised Political Figure",
+            "bio": "The Zionist Organization of America praised Fetterman for his outspoken support of Israel, noting he was \"a breath of fresh air\" among Senate Democrats. ZOA President Morton Klein specifically commended Fetterman for displaying the Israeli flag outside his Senate office and for his post-October 7 Israel visit."
+          },
+          {
+            "id": "ted-cruz",
+            "name": "Ted Cruz",
+            "role": "Honoree & Political Ally",
+            "bio": "Cruz received the ZOA's Theodor Herzl Gold Medal Award. He has been praised by ZOA President Morton Klein as \"one of Israel's greatest friends in the Senate.\""
+          },
+          {
+            "id": "lindsey-graham",
+            "name": "Lindsey Graham",
+            "role": "Political Ally",
+            "bio": "ZOA has praised Graham's hawkish stance on Iran and unconditional support for Israel."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Honored Ally",
+            "bio": "ZOA praised Stefanik's confrontation of university presidents and her legislation targeting campus antisemitism."
+          },
+          {
+            "id": "john-hagee",
+            "name": "John Hagee",
+            "role": "Honored Ally",
+            "bio": "ZOA has honored Hagee for his decades of Christian Zionist activism and his role in building the largest pro-Israel organization by membership."
+          },
+          {
+            "id": "marco-rubio",
+            "name": "Marco Rubio",
+            "role": "Political Ally",
+            "bio": "ZOA praised Rubio's anti-BDS legislation and strong stance on Iran sanctions."
+          },
+          {
+            "id": "ron-desantis",
+            "name": "Ron DeSantis",
+            "role": "Honored Political Figure",
+            "bio": "ZOA praised DeSantis as \"the most pro-Israel governor in America\" for his Israel cabinet meeting, anti-BDS laws, and October 7 response."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Honoree",
+            "bio": "ZOA honored Haley with awards for her UN record defending Israel against international bias."
+          },
+          {
+            "id": "alan-dershowitz",
+            "name": "Alan Dershowitz",
+            "role": "Speaker & Defender",
+            "bio": "ZOA has hosted Dershowitz at events where he has made the legal and moral case for Israel."
           }
         ],
         "id": "zionist-organization-of-america-zoa",
@@ -20837,6 +21251,18 @@
             "name": "Albert Vorspan",
             "role": "Historic Leader",
             "bio": "Longtime Jewish social justice advocate who helped shape JCPA's civil rights and social action agenda over several decades."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Congressional Ally",
+            "bio": "Fetterman has engaged with JCPA on issues intersecting Jewish community concerns and public policy, including antisemitism legislation, Israel policy, and hate crimes prevention."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Political Partner",
+            "bio": "Schumer has worked with JCPA on domestic and Israel-related policy issues throughout his Senate career."
           }
         ],
         "id": "jewish-council-for-public-affairs-jcpa",
@@ -23087,6 +23513,18 @@
             "name": "Alan Solow",
             "role": "Advisory Council Member",
             "bio": "Attorney and former chairman of the Conference of Presidents of Major American Jewish Organizations who advises the JDCA."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Political Ally",
+            "bio": "The Jewish Democratic Council of America endorsed Fetterman's Senate candidacy, praising his \"unequivocal support for the US-Israel relationship\" and his willingness to break with progressive Democrats on Israel policy."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Top Political Ally",
+            "bio": "As the most senior Jewish Democrat in office, Schumer is JDCA's most important political ally in advancing Jewish community legislative priorities."
           }
         ],
         "id": "jewish-democratic-council-of-america",
@@ -25278,6 +25716,60 @@
             "name": "Shelly Greenspan",
             "role": "Board Member",
             "bio": "Democratic political operative and advocate involved with DMFI's pro-Israel mission."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Endorsed Candidate & Ally",
+            "bio": "Democratic Majority for Israel (DMFI) PAC spent over $3.7 million supporting Fetterman in his 2022 Pennsylvania Senate race, making it one of his largest outside spending groups. DMFI identified Fetterman as a key pro-Israel Democrat. After taking office, Fetterman became one of the strongest pro-Israel voices in the Democratic caucus, validating DMFI's investment."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Political Ally",
+            "bio": "DMFI has consistently supported Schumer and his pro-Israel legislative agenda. As Senate leader, Schumer has advanced DMFI-backed policy priorities."
+          },
+          {
+            "id": "nancy-pelosi",
+            "name": "Nancy Pelosi",
+            "role": "Political Ally",
+            "bio": "DMFI supported Pelosi's pro-Israel legislative agenda and her efforts to counter anti-Israel voices within the Democratic caucus."
+          },
+          {
+            "id": "hakeem-jeffries",
+            "name": "Hakeem Jeffries",
+            "role": "Key Political Ally",
+            "bio": "DMFI considers Jeffries essential to maintaining pro-Israel leadership in the House Democratic caucus. DMFI PAC supported his leadership bid."
+          },
+          {
+            "id": "ritchie-torres",
+            "name": "Ritchie Torres",
+            "role": "Champion Ally",
+            "bio": "DMFI has strongly supported Torres as a model of pro-Israel progressive politics. He is their top example that supporting Israel is compatible with progressive values."
+          },
+          {
+            "id": "haim-saban",
+            "name": "Haim Saban",
+            "role": "Major Donor",
+            "bio": "Saban has supported DMFI and its mission to counter anti-Israel voices in the Democratic Party."
+          },
+          {
+            "id": "josh-gottheimer",
+            "name": "Josh Gottheimer",
+            "role": "Endorsed Representative & Champion",
+            "bio": "NJ congressman who co-chairs the bipartisan Problem Solvers Caucus. One of DMFI's top House allies and a vocal defender of Israel in the Democratic caucus. Received $1.5M+ from pro-Israel PACs."
+          },
+          {
+            "id": "brad-schneider",
+            "name": "Brad Schneider",
+            "role": "Endorsed Representative",
+            "bio": "Jewish congressman from Illinois who co-chairs the House Bipartisan Task Force for Combating Antisemitism. A key DMFI-backed representative."
+          },
+          {
+            "id": "debbie-wasserman-schultz",
+            "name": "Debbie Wasserman Schultz",
+            "role": "Endorsed Representative & Ally",
+            "bio": "Jewish congresswoman from Florida and former DNC chair. Long-time pro-Israel advocate and DMFI ally."
           }
         ],
         "connections": [
@@ -25453,6 +25945,24 @@
             "name": "Brad Gordon",
             "role": "Policy Director",
             "bio": "Policy expert at AIEF helping facilitate understanding of U.S.-Israel relations among legislators."
+          },
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Congressional Delegation Participant",
+            "bio": "Fetterman participated in an AIEF-sponsored congressional delegation to Israel, visiting the Israel-Gaza border, Jerusalem, and meeting with Israeli officials. These trips are funded by AIEF (AIPAC's charitable affiliate) and designed to strengthen Congressional support for Israel. Fetterman visited Israel again after the October 7, 2023 Hamas attack."
+          },
+          {
+            "id": "nancy-pelosi",
+            "name": "Nancy Pelosi",
+            "role": "Congressional Delegation Leader",
+            "bio": "Led multiple AIEF-funded congressional delegations to Israel as both Minority Leader and Speaker."
+          },
+          {
+            "id": "hakeem-jeffries",
+            "name": "Hakeem Jeffries",
+            "role": "Congressional Delegation Participant",
+            "bio": "Participated in AIEF-funded congressional trip to Israel."
           }
         ],
         "connections": [
@@ -36500,6 +37010,273 @@
           }
         ],
         "_country": "United States"
+      },
+      {
+        "id": "norpac",
+        "name": "NORPAC",
+        "type": "political action committee",
+        "category": "Advocacy & Political Organizations",
+        "founded": "1992",
+        "website": "https://www.norpac.net",
+        "summary": "One of the largest pro-Israel political action committees in the United States, organizing annual lobbying missions to Capitol Hill.",
+        "description": "NORPAC is one of the largest pro-Israel political action committees (PACs) in the United States, based in New Jersey. Founded in 1992, it has become a major force in pro-Israel political advocacy, organizing annual lobbying missions where hundreds of pro-Israel activists visit Capitol Hill to meet with members of Congress. NORPAC has donated millions of dollars to political candidates from both parties who support the US-Israel relationship. The organization is known for its bipartisan approach, supporting both Democrats and Republicans based on their Israel positions. Its annual lobby day typically draws 800+ participants who hold over 300 meetings with senators and representatives in a single day. NORPAC has contributed over $24 million to federal candidates since its founding.",
+        "individuals": [
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Supported Candidate",
+            "bio": "NORPAC, one of the largest pro-Israel PACs, provided financial support to Fetterman's 2022 Senate campaign. Pro-Israel PACs collectively spent more than $4.5 million backing Fetterman in the Pennsylvania Senate race, recognizing him as a crucial pickup for pro-Israel forces in the Senate."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Top Supported Candidate",
+            "bio": "NORPAC has been one of Schumer's consistent supporters, backing him in every Senate race. Schumer has spoken at NORPAC events multiple times."
+          },
+          {
+            "id": "ted-cruz",
+            "name": "Ted Cruz",
+            "role": "Supported Candidate",
+            "bio": "Received NORPAC financial support in his Senate campaigns."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Supported Candidate",
+            "bio": "NORPAC supported McConnell's campaigns, recognizing his leadership on pro-Israel legislation."
+          },
+          {
+            "id": "lindsey-graham",
+            "name": "Lindsey Graham",
+            "role": "Supported Candidate",
+            "bio": "NORPAC has financially supported Graham's Senate campaigns."
+          },
+          {
+            "id": "hakeem-jeffries",
+            "name": "Hakeem Jeffries",
+            "role": "Supported Candidate",
+            "bio": "NORPAC supported Jeffries recognizing his pro-Israel positions and leadership potential."
+          },
+          {
+            "id": "ritchie-torres",
+            "name": "Ritchie Torres",
+            "role": "Supported Candidate",
+            "bio": "Received significant financial support from NORPAC and other pro-Israel PACs."
+          },
+          {
+            "id": "elise-stefanik",
+            "name": "Elise Stefanik",
+            "role": "Supported Candidate",
+            "bio": "Received financial support from NORPAC and other pro-Israel PACs."
+          },
+          {
+            "id": "marco-rubio",
+            "name": "Marco Rubio",
+            "role": "Supported Candidate",
+            "bio": "Received financial support from NORPAC for his Senate campaigns."
+          },
+          {
+            "id": "nikki-haley",
+            "name": "Nikki Haley",
+            "role": "Supported Political Figure",
+            "bio": "Pro-Israel donors through NORPAC and affiliated networks supported Haley's political career."
+          },
+          {
+            "id": "sheldon-adelson",
+            "name": "Sheldon Adelson",
+            "role": "Major Donor (Deceased)",
+            "bio": "Adelson was the largest individual donor to pro-Israel causes in US history, contributing over $500 million to Republican and pro-Israel campaigns. He died in 2021."
+          },
+          {
+            "id": "miriam-adelson",
+            "name": "Miriam Adelson",
+            "role": "Major Donor Network",
+            "bio": "Following Sheldon Adelson's death, Miriam Adelson has continued as the largest individual pro-Israel political donor in the US, contributing over $100 million to the 2024 election cycle."
+          },
+          {
+            "id": "ben-cardin",
+            "name": "Ben Cardin",
+            "role": "Supported Senator",
+            "bio": "Senior Maryland senator who received significant NORPAC support. Chaired the Senate Foreign Relations Committee and was a key Israel ally."
+          },
+          {
+            "id": "bob-menendez",
+            "name": "Bob Menendez",
+            "role": "Supported Senator (Convicted)",
+            "bio": "Former NJ senator and Foreign Relations Committee chair. Received major pro-Israel PAC support but was convicted in 2024 of corruption charges including accepting gold bars and payments from Qatari and Egyptian governments. His corruption case involved allegations of acting as a foreign agent."
+          },
+          {
+            "id": "kirsten-gillibrand",
+            "name": "Kirsten Gillibrand",
+            "role": "Supported Senator",
+            "bio": "New York senator who has received significant pro-Israel PAC support including from NORPAC."
+          },
+          {
+            "id": "cory-booker",
+            "name": "Cory Booker",
+            "role": "Supported Senator & Speaker",
+            "bio": "New Jersey senator who has spoken at NORPAC events. Received significant pro-Israel PAC contributions. Initially supported the Iran Deal but later moved toward stronger pro-Israel positions."
+          }
+        ],
+        "connections": [
+          {
+            "name": "AIPAC",
+            "description": "Both are major pro-Israel lobbying forces in Washington, often supporting the same candidates."
+          },
+          {
+            "name": "Democratic Majority for Israel",
+            "description": "DMFI and NORPAC both support pro-Israel Democrats."
+          }
+        ]
+      },
+      {
+        "id": "us-senate-banking-committee",
+        "name": "US Senate Committee on Banking, Housing, and Urban Affairs",
+        "type": "government committee",
+        "category": "Government & Diplomacy",
+        "summary": "Key Senate committee overseeing banking regulation, sanctions policy, and financial oversight, including Iran sanctions critical to Israel policy.",
+        "description": "The US Senate Committee on Banking, Housing, and Urban Affairs is one of the most powerful committees in Congress, with jurisdiction over banking regulation, securities markets, economic policy, insurance, and critically, international sanctions. The committee plays a central role in Iran sanctions legislation, which is deeply intertwined with US-Israel policy. Committee members frequently engage with pro-Israel groups on sanctions enforcement. The committee also oversees housing policy and urban development. Several of its members have received significant campaign contributions from pro-Israel PACs including AIPAC-affiliated entities.",
+        "individuals": [
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Committee Member",
+            "bio": "Fetterman serves on the Senate Banking Committee, which oversees sanctions policy including Iran sanctions critical to Israel's security. In this role he has supported maintaining and strengthening Iran sanctions and opposed any sanctions relief to Iran."
+          },
+          {
+            "id": "sherrod-brown",
+            "name": "Sherrod Brown",
+            "role": "Former Committee Chair",
+            "bio": "Former Ohio senator who chaired the Banking Committee. Oversaw Iran sanctions policy and banking regulations."
+          },
+          {
+            "id": "tim-scott",
+            "name": "Tim Scott",
+            "role": "Ranking Member",
+            "bio": "South Carolina senator and ranking member who has been a strong pro-Israel voice on the committee, particularly on Iran sanctions."
+          }
+        ],
+        "connections": [
+          {
+            "name": "AIPAC",
+            "description": "AIPAC lobbies Banking Committee members heavily on Iran sanctions legislation."
+          },
+          {
+            "name": "US Department of Treasury",
+            "description": "Banking Committee oversees Treasury Department sanctions enforcement."
+          }
+        ]
+      },
+      {
+        "id": "us-senate-foreign-relations-committee",
+        "name": "US Senate Committee on Foreign Relations",
+        "type": "government committee",
+        "category": "Government & Diplomacy",
+        "summary": "Senate committee overseeing US foreign policy, treaties, and foreign aid including $3.8B annual aid to Israel.",
+        "description": "The US Senate Committee on Foreign Relations is the chief Senate committee responsible for overseeing US foreign policy, international treaties, and foreign aid. The committee plays a pivotal role in US-Israel relations through its oversight of the $3.8 billion annual military aid package to Israel (the largest US foreign aid commitment), confirmation of ambassadors to Israel and the Middle East, and foreign policy legislation. Pro-Israel organizations regularly testify before the committee and lobby its members. The committee has historically been a key battleground for debates over Iran nuclear deals, Palestinian statehood, and Middle East peace processes.",
+        "individuals": [
+          {
+            "id": "john-fetterman",
+            "name": "John Fetterman",
+            "role": "Non-Member Advocate",
+            "bio": "Though not a member of the Foreign Relations Committee, Fetterman has been one of the most vocal Senate advocates for maintaining robust US-Israel military aid and has pushed for stronger Iran sanctions through floor speeches and media appearances."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Influential Non-Member (Senate Leader)",
+            "bio": "As Senate Majority Leader, Schumer controls the Senate floor calendar and determines which Israel-related bills receive votes, making him more powerful than any committee member on foreign policy."
+          },
+          {
+            "id": "ted-cruz",
+            "name": "Ted Cruz",
+            "role": "Committee Member",
+            "bio": "As a senior member of the Foreign Relations Committee, Cruz has used his position to advance pro-Israel legislation, block nominees he views as insufficiently pro-Israel, and push for stronger Iran sanctions."
+          },
+          {
+            "id": "mitch-mcconnell",
+            "name": "Mitch McConnell",
+            "role": "Influential Non-Member (Senate Leader)",
+            "bio": "As Senate Leader, McConnell controlled floor votes on Israel-related treaties, nominations, and legislation."
+          },
+          {
+            "id": "lindsey-graham",
+            "name": "Lindsey Graham",
+            "role": "Senior Committee Member",
+            "bio": "Graham has used his position on Senate committees to advance pro-Israel legislation and push for stronger Iran sanctions."
+          },
+          {
+            "id": "bernie-sanders",
+            "name": "Bernie Sanders",
+            "role": "Committee Member",
+            "bio": "As a senior member of the Foreign Relations Committee, Sanders has introduced resolutions to block arms transfers to Israel and pushed for human rights conditions on US foreign aid."
+          },
+          {
+            "id": "marco-rubio",
+            "name": "Marco Rubio",
+            "role": "Former Senior Member",
+            "bio": "Rubio served on the Foreign Relations Committee, using the position to advance pro-Israel legislation and confront witnesses on Iran policy."
+          },
+          {
+            "id": "ben-cardin",
+            "name": "Ben Cardin",
+            "role": "Former Chairman",
+            "bio": "Chaired the Foreign Relations Committee before his retirement. One of the Senate's strongest Israel advocates who pushed Iran sanctions and Israel aid legislation."
+          },
+          {
+            "id": "jim-risch",
+            "name": "Jim Risch",
+            "role": "Ranking Member",
+            "bio": "Idaho senator serving as ranking Republican member. Has supported pro-Israel legislation and Iran sanctions."
+          },
+          {
+            "id": "chris-murphy",
+            "name": "Chris Murphy",
+            "role": "Committee Member",
+            "bio": "Connecticut senator on the Foreign Relations Committee who has pushed for diplomacy in the Middle East while maintaining support for Israel's qualitative military edge."
+          }
+        ],
+        "connections": [
+          {
+            "name": "AIPAC",
+            "description": "AIPAC considers the Foreign Relations Committee a top priority for Israel-related legislation."
+          }
+        ]
+      },
+      {
+        "id": "us-house-foreign-affairs-committee",
+        "name": "US House Committee on Foreign Affairs",
+        "type": "government committee",
+        "category": "Government & Diplomacy",
+        "summary": "House committee overseeing foreign policy, international aid to Israel, and Middle East diplomacy.",
+        "description": "The US House Committee on Foreign Affairs authorizes and oversees US foreign policy, foreign aid programs, and export controls. The committee has direct jurisdiction over the $3.8 billion annual US security assistance to Israel under the 2016 Memorandum of Understanding. It regularly holds hearings on Middle East policy, the Iran nuclear program, Palestinian issues, and antisemitism. Pro-Israel lobbying organizations designate this committee as a primary legislative target. The committee also oversees arms exports including sales to Israel and Abraham Accords normalization countries.",
+        "individuals": [
+          {
+            "id": "nancy-pelosi",
+            "name": "Nancy Pelosi",
+            "role": "Oversight (House Speaker)",
+            "bio": "As Speaker, Pelosi had ultimate authority over what legislation reached the House floor, including Israel aid, Iran sanctions, and Middle East policy bills."
+          },
+          {
+            "id": "mike-johnson",
+            "name": "Mike Johnson",
+            "role": "Oversight (House Speaker)",
+            "bio": "As Speaker, Johnson determines which Israel-related bills reach the House floor and controls the legislative agenda on foreign affairs."
+          },
+          {
+            "id": "michael-mccaul",
+            "name": "Michael McCaul",
+            "role": "Former Chairman",
+            "bio": "Texas congressman who chaired the House Foreign Affairs Committee. Advanced Israel Security Supplemental Appropriations Act and other pro-Israel legislation."
+          },
+          {
+            "id": "gregory-meeks",
+            "name": "Gregory Meeks",
+            "role": "Ranking Democratic Member",
+            "bio": "New York congressman and ranking Democrat on the committee. Has supported Israel aid while advocating for Palestinian civilian protections."
+          }
+        ],
+        "connections": []
       }
     ],
     "Israel": [
@@ -65781,6 +66558,12 @@
             "name": "Nahum Goldmann",
             "role": "Co-founder & President (1936-1977)",
             "bio": "Negotiated German reparations for Holocaust survivors."
+          },
+          {
+            "id": "chuck-schumer",
+            "name": "Chuck Schumer",
+            "role": "Political Partner",
+            "bio": "Schumer has addressed WJC gatherings and worked with the organization on international antisemitism and Holocaust restitution issues."
           }
         ],
         "connections": [

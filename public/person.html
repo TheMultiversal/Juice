@@ -558,8 +558,10 @@
           // === CATEGORIES TAB ===
           const catTags = document.getElementById('cat-tags');
           (person.categorySummary || []).forEach(c => {
-            const tag = document.createElement('span');
+            const tag = document.createElement('a');
             tag.className = 'tag cat-tag';
+            tag.href = 'category.html?religion=' + encodeURIComponent(religion) + '&category=' + encodeURIComponent(c.category);
+            tag.style.cssText = 'text-decoration:none;color:inherit;cursor:pointer;';
             tag.innerHTML = '<i class="fa-solid fa-tag"></i> ' + c.category + ' <strong>(' + c.count + ')</strong>';
             catTags.appendChild(tag);
           });
@@ -568,8 +570,10 @@
           // === COUNTRIES TAB ===
           const ctryTags = document.getElementById('country-tags');
           (person.countrySummary || []).forEach(c => {
-            const tag = document.createElement('span');
+            const tag = document.createElement('a');
             tag.className = 'tag country-tag';
+            tag.href = 'country.html?religion=' + encodeURIComponent(religion) + '&country=' + encodeURIComponent(c.country);
+            tag.style.cssText = 'text-decoration:none;color:inherit;cursor:pointer;';
             tag.innerHTML = '<i class="fa-solid fa-location-dot"></i> ' + c.country + ' <strong>(' + c.count + ')</strong>';
             ctryTags.appendChild(tag);
           });
