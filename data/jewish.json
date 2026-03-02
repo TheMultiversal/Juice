@@ -1477,6 +1477,12 @@
             "name": "David Denton",
             "role": "Chief Financial Officer",
             "bio": "Oversees Pfizer's global financial operations."
+          },
+          {
+            "id": "albert-bourla-pfizer",
+            "name": "Albert Bourla",
+            "role": "Chairman & CEO",
+            "bio": "Albert Bourla (born October 21, 1961) is a Greek-born Jewish-American veterinarian and Chairman/CEO of Pfizer, one of the world's largest pharmaceutical companies with annual revenue exceeding $50 billion. Born in Thessaloniki to a Sephardic Jewish family that survived the Holocaust. He led the fastest vaccine development in history, delivering the COVID-19 mRNA vaccine in under a year. His parents survived the Nazi occupation - nearly all of Thessaloniki's 50,000 Jews were deported to Auschwitz."
           }
         ],
         "connections": [
@@ -1673,6 +1679,12 @@
             "name": "JB Straubel",
             "role": "Former CTO & Co-Founder",
             "bio": "Co-founder and CTO of Tesla from 2004 to 2019. Key architect of Tesla's battery technology and Gigafactory concept. Founded Redwood Materials for battery recycling."
+          },
+          {
+            "id": "elon-musk-tesla",
+            "name": "Elon Musk",
+            "role": "CEO",
+            "bio": "Elon Reeve Musk (born June 28, 1971) is the CEO of Tesla and SpaceX and owner of X (formerly Twitter). With a net worth exceeding $250 billion, he is the richest person in the world. While not Jewish, Musk has been controversial for sharing antisemitic content on X and then visiting Israel and Auschwitz with PM Netanyahu. His purchase of Twitter led to concerns about rising hate speech on the platform."
           }
         ],
         "connections": [
@@ -1780,6 +1792,12 @@
             "name": "Jehuda Reinharz",
             "role": "Former President",
             "bio": "President of Brandeis 1994-2010. Led the university's growth and endowment expansion."
+          },
+          {
+            "id": "ron-liebowitz",
+            "name": "Ron Liebowitz",
+            "role": "Former President",
+            "bio": "Ron Liebowitz served as President of Brandeis University, the only non-sectarian Jewish-sponsored university in the US. Founded in 1948 and named after Justice Louis Brandeis, the first Jewish Supreme Court justice."
           }
         ],
         "id": "brandeis-university",
@@ -3355,6 +3373,12 @@
             "name": "Steven Newhouse",
             "role": "Co-President",
             "bio": "Co-president alongside cousin. Oversees Advance's media and technology investments."
+          },
+          {
+            "id": "si-newhouse-jr-legacy",
+            "name": "Si Newhouse Jr.",
+            "role": "Former Chairman (Deceased)",
+            "bio": "Samuel Irving \"Si\" Newhouse Jr. (1927-2017) was a Jewish-American media magnate who ran Conde Nast for decades, transforming it into the world's most prestigious magazine publisher. His father Samuel Newhouse Sr., a Jewish immigrant's son from the Lower East Side, built the original media empire."
           }
         ],
         "connections": [
@@ -3681,6 +3705,18 @@
             "name": "Sanford \"Sandy\" Bernstein",
             "role": "Founder",
             "bio": "Jewish-American investor (1926-2014) who founded Sanford C. Bernstein & Co. (now Alliance Bernstein) and the AVI CHAI Foundation. Gave away over $1 billion to Jewish education causes. A ba'al teshuva (returnee to Jewish observance) who used his wealth to strengthen Jewish identity."
+          },
+          {
+            "id": "zalman-bernstein-legacy",
+            "name": "Zalman Bernstein",
+            "role": "Founder (Deceased)",
+            "bio": "Zalman Chaim Bernstein (1926-1999) was a Jewish-American financier who founded The AVI CHAI Foundation to strengthen Jewish identity, literacy, and observance. He also founded Sanford C. Bernstein & Co. (now AllianceBernstein). The foundation disbanded in 2020 after distributing all its assets per its sunset clause, having given away $1.4 billion over its lifetime."
+          },
+          {
+            "id": "yossi-prager",
+            "name": "Yossi Prager",
+            "role": "Former Executive Director (North America)",
+            "bio": "Yossi Prager served as Executive Director of the AVI CHAI Foundation's North American operations, overseeing grantmaking to Jewish day schools and summer camps."
           }
         ],
         "connections": [
@@ -4708,6 +4744,12 @@
             "name": "Dan Tadmor",
             "role": "CEO",
             "bio": "CEO of the Museum of the Jewish People at Beit Hatfutsot."
+          },
+          {
+            "id": "leonid-nevzlin",
+            "name": "Leonid Nevzlin",
+            "role": "Major Donor",
+            "bio": "Leonid Nevzlin is a Russian-Israeli Jewish billionaire and former partner in Yukos Oil Company. After fleeing Russia following the Khodorkovsky affair, he became a major philanthropist in Israel, donating over $100 million to the Museum of the Jewish People."
           }
         ],
         "connections": [
@@ -4757,6 +4799,12 @@
             "name": "Doris Mattus Hurley",
             "role": "Daughter of Founders & Former Executive",
             "bio": "Daughter of founders Reuben and Rose Mattus who was involved in the family business during Häagen-Dazs's formative years."
+          },
+          {
+            "id": "reuben-mattus-legacy",
+            "name": "Reuben Mattus",
+            "role": "Founder (Deceased)",
+            "bio": "Reuben Mattus (1912-1994) was a Polish-born Jewish-American entrepreneur who founded Haagen-Dazs in 1961 in the Bronx, New York. He chose the Danish-sounding name to convey a European heritage. He and his wife Rose built it into one of the world's most popular premium ice cream brands. He was a strong supporter of Israel and the company originally carried a map of Israel on its packaging. General Mills now owns the brand."
           }
         ],
         "connections": [
@@ -6377,6 +6425,12 @@
             "name": "Jack S. Levin",
             "role": "Senior Partner (Emeritus)",
             "bio": "Jack S. Levin was a legendary Kirkland & Ellis partner widely regarded as a pioneer of modern private equity law. He authored the seminal treatise on structuring venture capital and private equity transactions used across the industry."
+          },
+          {
+            "id": "jeffrey-hammes",
+            "name": "Jeffrey Hammes",
+            "role": "Former Chairman",
+            "bio": "Jeffrey C. Hammes served as Global Chairman of Kirkland & Ellis, building it into the world's largest law firm by revenue."
           }
         ],
         "connections": [
@@ -6701,6 +6755,12 @@
             "name": "Mark Read",
             "role": "CEO",
             "bio": "CEO of WPP since 2018, succeeding founder Martin Sorrell."
+          },
+          {
+            "id": "mark-read",
+            "name": "Mark Read",
+            "role": "CEO",
+            "bio": "Mark Read serves as CEO of WPP plc, the world's largest advertising and communications services group, overseeing agencies including Ogilvy, GroupM, and VMLY&R."
           }
         ],
         "connections": [
@@ -6753,6 +6813,12 @@
             "name": "Michael Rubin",
             "role": "Part-owner",
             "bio": "Fanatics CEO and part-owner of the 76ers. Former owner of GSI Commerce."
+          },
+          {
+            "id": "josh-harris-76ers",
+            "name": "Josh Harris",
+            "role": "Former Managing Partner",
+            "bio": "Joshua J. Harris (born December 4, 1964) is a Jewish-American billionaire co-founder of Apollo Global Management. He owned the Philadelphia 76ers and New Jersey Devils before purchasing the Washington Commanders for $6.05 billion, the most expensive sale in US sports history. Net worth approximately $7 billion."
           }
         ],
         "connections": [
@@ -6996,6 +7062,18 @@
             "name": "Stanley Druckenmiller",
             "role": "Former Lead Portfolio Manager",
             "bio": "One of the most successful investors in history. Working with Soros, he led the 1992 trade that \"broke the Bank of England,\" netting $1 billion."
+          },
+          {
+            "id": "george-soros-fund",
+            "name": "George Soros",
+            "role": "Founder & Chairman",
+            "bio": "George Soros (born August 12, 1930) is a Hungarian-born Jewish-American billionaire investor and philanthropist who founded Soros Fund Management. Famous for \"breaking the Bank of England\" in 1992, earning $1 billion in a single day by shorting the British pound. Through the Open Society Foundations, he has distributed over $32 billion for democracy, education, and human rights. He is one of the most demonized figures in right-wing and antisemitic conspiracy theories worldwide. Net worth approximately $6.7 billion."
+          },
+          {
+            "id": "alex-soros",
+            "name": "Alex Soros",
+            "role": "Chairman of Open Society Foundations",
+            "bio": "Alexander George Soros (born 1985) succeeded his father George as chairman of the Open Society Foundations in June 2023, taking control of the $25 billion philanthropic network. He has been more overtly political than his father, spending significant time with Democratic Party leaders."
           }
         ],
         "id": "soros-fund-management",
@@ -7381,6 +7459,12 @@
             "name": "Richard Edelman",
             "role": "CEO",
             "bio": "Jewish-American PR executive and CEO of Edelman, the world's largest PR firm. Son of founder Daniel J. Edelman. Known for the annual Edelman Trust Barometer."
+          },
+          {
+            "id": "daniel-edelman-legacy",
+            "name": "Daniel Edelman",
+            "role": "Founder (Deceased)",
+            "bio": "Daniel J. Edelman (1920-2013) was a Jewish-American public relations executive who founded Edelman in Chicago in 1952, building it into the world's largest independently owned PR firm."
           }
         ],
         "connections": [
@@ -7700,6 +7784,24 @@
             "role": "Co-founder (1881-1958)",
             "bio": "Co-founder and first president of Warner Bros. Eldest of the Warner brothers, sons of Polish Jewish immigrants.",
             "id": "harry-warner"
+          },
+          {
+            "id": "harry-warner-legacy",
+            "name": "Harry Warner",
+            "role": "Co-Founder (Historic)",
+            "bio": "Harry \"Hirsch\" Warner (1881-1958) was born Hirsz Wonsal in Krasnosielc, Poland. He and his brothers founded Warner Bros. Pictures in 1923, one of the \"Big Five\" Hollywood studios. They revolutionized cinema with \"The Jazz Singer\" (1927), the first feature-length \"talkie.\" The Warner brothers were Jewish-Polish immigrants - their story epitomizes the Jewish founding of Hollywood."
+          },
+          {
+            "id": "jack-warner-legacy",
+            "name": "Jack Warner",
+            "role": "Co-Founder & Production Chief (Historic)",
+            "bio": "Jack Leonard Warner (1892-1978) was the youngest of the Warner brothers and ran the studio for decades, known as one of the most powerful moguls in Hollywood history."
+          },
+          {
+            "id": "david-zaslav",
+            "name": "David Zaslav",
+            "role": "CEO of Warner Bros. Discovery (Current)",
+            "bio": "David Zaslav (born January 15, 1960) is the Jewish-American CEO of Warner Bros. Discovery, formed from the $43 billion merger of WarnerMedia and Discovery Inc. in 2022. He earned $246 million in compensation over two years, making him one of the highest-paid executives in media history."
           }
         ],
         "id": "warner-bros-pictures-historic-founding",
@@ -8357,6 +8459,12 @@
             "name": "Reuel Marc Gerecht",
             "role": "Senior Fellow",
             "bio": "Reuel Marc Gerecht is a senior fellow at the Foundation for Defense of Democracies specializing in the Middle East and intelligence. He is a former CIA case officer in the Directorate of Operations."
+          },
+          {
+            "id": "cliff-may",
+            "name": "Clifford May",
+            "role": "Founder & President",
+            "bio": "Clifford David May is the founder and president of the Foundation for Defense of Democracies. He is a former New York Times reporter who became a leading neoconservative policy advocate."
           }
         ],
         "id": "foundation-for-defense-of-democracies-fdd",
@@ -8533,6 +8641,12 @@
             "name": "Josh Gottheimer",
             "role": "Congressional Ally",
             "bio": "NJ congressman who has worked closely with ADL on antisemitism legislation and hate crimes prevention."
+          },
+          {
+            "id": "glen-lewy",
+            "name": "Glen S. Lewy",
+            "role": "National Chair",
+            "bio": "Glen S. Lewy serves as National Chair of the Anti-Defamation League, overseeing the organization's $100+ million annual budget for combating antisemitism, hate crimes, and extremism."
           }
         ],
         "id": "anti-defamation-league-adl",
@@ -9682,6 +9796,18 @@
             "name": "Stacy Schusterman",
             "role": "Chair of Schusterman Family Philanthropies",
             "bio": "Chair of Schusterman Family Philanthropies. Also serves as Chair of Samson Energy."
+          },
+          {
+            "id": "stacy-schusterman-2",
+            "name": "Stacy Schusterman",
+            "role": "Board Chair",
+            "bio": "Stacy Schusterman chairs the Schusterman Family Philanthropies and Samson Energy Company."
+          },
+          {
+            "id": "sandy-cardin",
+            "name": "Sandy Cardin",
+            "role": "President of Foundation",
+            "bio": "Sandy Cardin serves as President of the Charles and Lynn Schusterman Family Philanthropies, overseeing annual grantmaking of over $200 million to Jewish identity, education, and community building."
           }
         ],
         "id": "charles-and-lynn-schusterman-family-philanthropies",
@@ -9875,6 +10001,12 @@
             "name": "Dennis Ross",
             "role": "Counselor & Fellow",
             "bio": "Former US Special Envoy for Middle East Peace and longtime diplomat. Counselor at the Washington Institute."
+          },
+          {
+            "id": "martin-indyk",
+            "name": "Martin Indyk",
+            "role": "Founder",
+            "bio": "Martin Indyk (born 1951) is an Australian-American diplomat and scholar who founded WINEP in 1985 while serving as AIPAC's research director. He later served as US Ambassador to Israel (twice) and Assistant Secretary of State for Near Eastern Affairs. His career path from AIPAC to WINEP to State Department epitomizes the \"revolving door\" between pro-Israel advocacy and US Middle East policymaking."
           }
         ],
         "id": "washington-institute-for-near-east-policy-winep",
@@ -10723,6 +10855,12 @@
             "name": "Dara Khosrowshahi",
             "role": "CEO",
             "bio": "Became CEO of Uber in 2017, leading the company through its IPO and shift toward profitability. Previously CEO of Expedia Group."
+          },
+          {
+            "id": "dara-khosrowshahi",
+            "name": "Dara Khosrowshahi",
+            "role": "CEO",
+            "bio": "Dara Khosrowshahi (born May 28, 1969) is an Iranian-American businessman serving as CEO of Uber Technologies. His family fled Iran during the revolution. Uber has a market cap exceeding $150 billion."
           }
         ],
         "id": "uber-technologies",
@@ -12100,6 +12238,12 @@
             "name": "Ronald Lauder",
             "role": "Supporter",
             "bio": "President of the World Jewish Congress and heir to the Estee Lauder fortune."
+          },
+          {
+            "id": "stu-eizenstat-ushmm",
+            "name": "Stuart Eizenstat",
+            "role": "Chairman",
+            "bio": "Stuart Eizenstat, the former US Ambassador and diplomat who negotiated Holocaust restitution agreements, serves as Chairman of the US Holocaust Memorial Museum in Washington, DC."
           }
         ],
         "connections": [
@@ -12224,6 +12368,12 @@
             "name": "Rob Goldstein",
             "role": "COO & Head of BlackRock Solutions",
             "bio": "Serves as Chief Operating Officer and oversees BlackRock Solutions, the firm's technology and risk analytics platform."
+          },
+          {
+            "id": "rob-kapito",
+            "name": "Rob Kapito",
+            "role": "Co-Founder & President",
+            "bio": "Robert Steven Kapito co-founded BlackRock with Larry Fink and serves as President, overseeing $10+ trillion in assets. He is a Jewish-American businessman and leading figure in global finance."
           }
         ],
         "id": "blackrock",
@@ -12537,6 +12687,12 @@
             "name": "Hilarie Bass",
             "role": "Former Co-President",
             "bio": "Former co-president of Greenberg Traurig who also served as president of the American Bar Association."
+          },
+          {
+            "id": "larry-hoffman",
+            "name": "Larry Hoffman",
+            "role": "Co-Founder",
+            "bio": "Larry J. Hoffman is a co-founder of Greenberg Traurig, a leading global law firm. The firm has been deeply connected to the Florida Jewish community and political circles."
           }
         ],
         "id": "greenberg-traurig",
@@ -13381,6 +13537,12 @@
             "name": "Chuck Schumer",
             "role": "Subject of Coverage",
             "bio": "Senate Majority Leader frequently covered by NYT. Made a landmark 2024 Senate floor speech on Israel covered extensively by the paper."
+          },
+          {
+            "id": "ag-sulzberger",
+            "name": "A.G. Sulzberger",
+            "role": "Chairman & Publisher",
+            "bio": "Arthur Gregg Sulzberger (born 1980) is the sixth member of the Sulzberger family to serve as publisher of The New York Times. The family is of Jewish descent (his great-great-grandfather Adolph Ochs purchased the Times in 1896). The Times has faced criticism from both pro-Israel and pro-Palestinian sides for its coverage of the Israeli-Palestinian conflict."
           }
         ],
         "id": "the-new-york-times-company",
@@ -13591,6 +13753,12 @@
             "name": "Peter Thiel",
             "role": "Early Investor & Board Member (former)",
             "bio": "Peter Andreas Thiel (born 1967) is a German-American billionaire entrepreneur, venture capitalist, and political activist. Co-founded PayPal with Max Levchin and Elon Musk (the \"PayPal Mafia\"). Was the first outside investor in Facebook, turning a $500K investment into over $1 billion. Co-founded Palantir Technologies with Alex Karp, which provides data analytics to the CIA, NSA, and military. Founded Founders Fund VC firm. A prominent libertarian who backed Donald Trump in 2016. Known for contrarian philosophical views and his book \"Zero to One.\""
+          },
+          {
+            "id": "mark-zuckerberg-meta",
+            "name": "Mark Zuckerberg",
+            "role": "Founder, Chairman & CEO",
+            "bio": "Mark Elliot Zuckerberg (born May 14, 1984) is a Jewish-American billionaire who founded Facebook (now Meta Platforms) in 2004. With a net worth approaching $200 billion, he is one of the richest people in history. Meta operates Facebook (3B+ users), Instagram (2B+), WhatsApp (2B+), and is investing $100B+ in AI and the metaverse. Zuckerberg had a Jewish upbringing and was bar mitzvahed. The Chan Zuckerberg Initiative has committed over $3 billion to charitable causes."
           }
         ],
         "id": "meta-platforms-facebook",
@@ -14484,6 +14652,12 @@
             "name": "Ed Oates",
             "role": "Co-founder",
             "bio": "Co-founded Oracle alongside Larry Ellison and Bob Miner in 1977. Contributed to the early development of Oracle's relational database technology."
+          },
+          {
+            "id": "safra-catz",
+            "name": "Safra Catz",
+            "role": "CEO",
+            "bio": "Safra Ada Catz (born December 1, 1961) is an Israeli-American businesswoman serving as CEO of Oracle Corporation. Born in Holon, Israel, she is one of the most powerful women in technology and was briefly considered for a cabinet position in the Trump administration. Her compensation has exceeded $100 million annually."
           }
         ],
         "id": "oracle-corporation",
@@ -15027,6 +15201,18 @@
             "role": "Co-Founder",
             "bio": "Co-founder of a16z, author of 'The Hard Thing About Hard Things.'",
             "id": "ben-horowitz"
+          },
+          {
+            "id": "chris-dixon",
+            "name": "Chris Dixon",
+            "role": "General Partner (Crypto/AI)",
+            "bio": "Chris Dixon is a General Partner at a16z leading its crypto and AI investment vertical, managing over $7 billion in crypto-focused funds. He authored \"Read Write Own\" about blockchain technology."
+          },
+          {
+            "id": "jeff-jordan",
+            "name": "Jeff Jordan",
+            "role": "General Partner",
+            "bio": "Jeff Jordan is a General Partner at a16z, overseeing investments in consumer technology companies. He previously served as CEO of OpenTable and head of eBay's North American business."
           }
         ],
         "id": "andreessen-horowitz-a16z",
@@ -15585,6 +15771,12 @@
             "name": "Timothy Geithner",
             "role": "President",
             "bio": "President of Warburg Pincus since 2014. Former US Treasury Secretary under Obama."
+          },
+          {
+            "id": "jeff-perlman",
+            "name": "Jeff Perlman",
+            "role": "Co-CEO",
+            "bio": "Jeff Perlman serves as Co-CEO of Warburg Pincus, jointly leading the firm with Charles Kaye."
           }
         ],
         "id": "warburg-pincus",
@@ -16198,6 +16390,12 @@
             "name": "Ruth Porat",
             "role": "President & CIO",
             "bio": "President and Chief Investment Officer of Alphabet. Born in the UK, raised in the US. Former CFO of Morgan Stanley."
+          },
+          {
+            "id": "sundar-pichai",
+            "name": "Sundar Pichai",
+            "role": "CEO",
+            "bio": "Sundar Pichai serves as CEO of Alphabet/Google. While not Jewish, Google was co-founded by Sergey Brin and Larry Page (Brin is Jewish). Google's AI division DeepMind and Waymo autonomous driving are among the most consequential technologies being developed."
           }
         ],
         "connections": [
@@ -17528,6 +17726,12 @@
             "bio": "CEO of Mount Sinai Health System, building it into one of America's largest academic medical systems.",
             "role": "CEO",
             "id": "kenneth-davis"
+          },
+          {
+            "id": "david-reich",
+            "name": "David Reich",
+            "role": "President",
+            "bio": "David L. Reich serves as President of the Mount Sinai Health System, one of the largest academic medical systems in the US."
           }
         ],
         "id": "mount-sinai-health-system",
@@ -18616,6 +18820,18 @@
             "name": "Greg Peters",
             "role": "Co-CEO",
             "bio": "Serves as Co-CEO of Netflix alongside Ted Sarandos. Previously served as COO and led the company's product and technology divisions."
+          },
+          {
+            "id": "reed-hastings",
+            "name": "Reed Hastings",
+            "role": "Co-Founder & Executive Chairman",
+            "bio": "Wilmot Reed Hastings Jr. (born October 8, 1960) co-founded Netflix, which has over 260 million subscribers and has transformed the entertainment industry. He stepped down as co-CEO in 2023. Netflix's market cap exceeds $250 billion."
+          },
+          {
+            "id": "ted-sarandos",
+            "name": "Ted Sarandos",
+            "role": "Co-CEO",
+            "bio": "Ted Sarandos serves as co-CEO of Netflix, overseeing the company's content strategy. He was instrumental in Netflix's pivot from DVD rentals to streaming and original content production."
           }
         ],
         "id": "netflix",
@@ -18690,6 +18906,18 @@
             "name": "Bruce Wasserstein",
             "role": "Former CEO (1947-2009)",
             "bio": "Jewish American investment banker known as 'Bid-em-up Bruce' who led Lazard until his death."
+          },
+          {
+            "id": "peter-orszag",
+            "name": "Peter Orszag",
+            "role": "CEO",
+            "bio": "Peter Richard Orszag serves as CEO of Lazard, a leading financial advisory and asset management firm. He previously served as Director of the Office of Management and Budget under President Obama."
+          },
+          {
+            "id": "ken-jacobs",
+            "name": "Ken Jacobs",
+            "role": "Executive Chairman",
+            "bio": "Kenneth Marc Jacobs serves as Executive Chairman of Lazard, continuing the firm's 175-year tradition as one of the most prestigious advisory banks on Wall Street. Lazard was founded by Alexandre Lazard, a French-Jewish immigrant."
           }
         ],
         "id": "lazard",
@@ -18748,6 +18976,12 @@
             "role": "Co-founder",
             "bio": "Israeli co-founder of Fiverr, also co-founded Lemonade Insurance.",
             "id": "shai-wininger"
+          },
+          {
+            "id": "ofer-katz",
+            "name": "Ofer Katz",
+            "role": "CFO",
+            "bio": "Ofer Katz serves as CFO of Fiverr International, overseeing the company's financial operations as it grows its global freelance marketplace."
           }
         ],
         "id": "fiverr-us-operations",
@@ -19069,6 +19303,12 @@
             "name": "Joey Levin",
             "role": "CEO",
             "bio": "CEO of IAC since 2015. Previously led IAC's search and applications business."
+          },
+          {
+            "id": "angi-homeservices",
+            "name": "Avi Steinlauf",
+            "role": "Board Advisor",
+            "bio": "Avi Steinlauf has been involved with IAC's portfolio companies, including Dotdash Meredith and other digital media brands."
           }
         ],
         "id": "iac-interactivecorp",
@@ -19316,6 +19556,18 @@
             "role": "Co-founder",
             "bio": "Co-founded Gap with her husband Donald.",
             "id": "doris-fisher"
+          },
+          {
+            "id": "donald-fisher-legacy",
+            "name": "Donald Fisher",
+            "role": "Co-Founder (Deceased)",
+            "bio": "Donald George Fisher (1928-2009) was a Jewish-American businessman who co-founded Gap Inc. with his wife Doris in 1969 in San Francisco. The company grew to include Old Navy, Banana Republic, and Athleta with annual revenue exceeding $15 billion. Fisher amassed one of the greatest private art collections in the world. Net worth at death approximately $3.4 billion."
+          },
+          {
+            "id": "bob-martin",
+            "name": "Bob Martin",
+            "role": "Executive Chairman",
+            "bio": "Bob Martin serves as Executive Chairman of Gap Inc., overseeing the retailer's portfolio including Gap, Old Navy, Banana Republic, and Athleta."
           }
         ],
         "id": "gap-inc",
@@ -19427,6 +19679,12 @@
             "name": "Alan Dershowitz",
             "role": "Speaker & Defender",
             "bio": "ZOA has hosted Dershowitz at events where he has made the legal and moral case for Israel."
+          },
+          {
+            "id": "mort-klein",
+            "name": "Morton Klein",
+            "role": "National President",
+            "bio": "Morton A. Klein has served as president of the Zionist Organization of America since 1993. He is a Holocaust survivor (born in a displaced persons camp) and one of the most vocal right-wing pro-Israel advocates in America. ZOA was founded in 1897 and is the oldest pro-Israel organization in the US."
           }
         ],
         "id": "zionist-organization-of-america-zoa",
@@ -19627,6 +19885,12 @@
             "name": "Jonathan Pollock",
             "role": "Co-CEO",
             "bio": "Senior portfolio manager who serves as co-CEO of Elliott Management alongside Paul Singer."
+          },
+          {
+            "id": "paul-singer-elliott",
+            "name": "Paul Singer",
+            "role": "Founder & Co-CEO",
+            "bio": "Paul Elliott Singer (born August 22, 1944) is a Jewish-American billionaire who founded Elliott Management Corporation, one of the world's most aggressive activist hedge funds with $65+ billion under management. Known for his pursuit of sovereign debt – he famously seized an Argentine navy ship to enforce a $2.4 billion judgment. Major Republican donor and supporter of Jewish and pro-Israel causes. Net worth approximately $6.2 billion."
           }
         ],
         "id": "elliott-management-corporation",
@@ -19837,6 +20101,12 @@
             "name": "Mark McLaughlin",
             "role": "Former Chairman & CEO",
             "bio": "Served as Palo Alto Networks CEO from 2011 to 2018, growing the company into a cybersecurity industry leader before becoming Vice Chairman."
+          },
+          {
+            "id": "nikesh-arora",
+            "name": "Nikesh Arora",
+            "role": "Chairman & CEO",
+            "bio": "Nikesh Arora serves as Chairman and CEO of Palo Alto Networks, one of the world's largest cybersecurity companies with a market cap exceeding $100 billion. The company was founded by Israeli-American Nir Zuk, a former Check Point engineer."
           }
         ],
         "id": "palo-alto-networks",
@@ -20333,6 +20603,18 @@
             "name": "Bruce Beal Jr.",
             "role": "President",
             "bio": "Executive who serves as president of Related Companies and leads key partnerships and developments."
+          },
+          {
+            "id": "stephen-ross-related",
+            "name": "Stephen Ross",
+            "role": "Founder & Chairman",
+            "bio": "Stephen M. Ross is a Jewish-American billionaire who founded the Related Companies, the most prolific private real estate company in the US. Related developed Hudson Yards on Manhattan's west side, the largest private real estate development in American history at $25 billion. He also owns the Miami Dolphins and Equinox. Net worth approximately $12.2 billion."
+          },
+          {
+            "id": "jeff-blau",
+            "name": "Jeff Blau",
+            "role": "CEO",
+            "bio": "Jeff T. Blau serves as CEO of the Related Companies, overseeing the firm's $60 billion portfolio of real estate assets including Hudson Yards, one of the most significant urban developments in history."
           }
         ],
         "id": "related-companies",
@@ -21050,6 +21332,12 @@
             "name": "Robert Mercer",
             "role": "Former Co-CEO",
             "bio": "Computer scientist and investor who served as co-CEO of Renaissance Technologies from 2010 to 2017."
+          },
+          {
+            "id": "jim-simons-legacy",
+            "name": "Jim Simons",
+            "role": "Founder (Deceased)",
+            "bio": "James Harris Simons (1938-2024) was a Jewish-American mathematician and billionaire hedge fund manager who founded Renaissance Technologies. His Medallion Fund delivered annualized returns of 66% (before fees) from 1988-2018, making it the most successful investment fund in history. Simons was a codebreaker at the NSA before his finance career. He donated $4.2 billion to education, research, and autism causes through the Simons Foundation. Net worth approximately $31.4 billion at death."
           }
         ],
         "id": "renaissance-technologies",
@@ -21118,6 +21406,12 @@
             "name": "Charlie Kawwas",
             "role": "President, Semiconductor Solutions Group",
             "bio": "President of Broadcom's Semiconductor Solutions Group, overseeing the company's core chip business across networking, storage, and wireless markets."
+          },
+          {
+            "id": "hock-tan",
+            "name": "Hock Tan",
+            "role": "CEO",
+            "bio": "Hock E. Tan (born February 2, 1953) is CEO of Broadcom Inc., which acquired VMware for $61 billion in 2023. Broadcom has a market cap exceeding $700 billion. Tan was raised in a Chinese-Jewish household in Malaysia. Under his leadership, Broadcom has become a serial acquirer of semiconductor and software companies."
           }
         ],
         "id": "broadcom-inc",
@@ -22262,6 +22556,12 @@
             "name": "Alan Kornberg",
             "role": "Partner and Bankruptcy Practice Chair",
             "bio": "Attorney who chairs Paul Weiss's bankruptcy and corporate reorganization practice, one of the leading restructuring groups in the country."
+          },
+          {
+            "id": "john-paulson",
+            "name": "John Paulson",
+            "role": "Major Client & Donor",
+            "bio": "John Paulson, the billionaire hedge fund manager who made $15 billion betting against the subprime mortgage market in 2007-2008, is a major client and associate of Paul Weiss."
           }
         ],
         "id": "paul-weiss-rifkind-wharton-garrison",
@@ -22626,6 +22926,12 @@
             "name": "P. Roy Vagelos",
             "role": "Former Chairman",
             "bio": "Served as Chairman of Regeneron's board and was an early supporter of the company. Previously led Merck as CEO, where he oversaw development of breakthrough drugs including lovastatin."
+          },
+          {
+            "id": "george-yancopoulos",
+            "name": "George Yancopoulos",
+            "role": "Co-Founder, President & Chief Scientific Officer",
+            "bio": "George D. Yancopoulos is co-founder, President, and Chief Scientific Officer of Regeneron. He is one of the most-cited scientists in the world and holds hundreds of patents. He led the development of Regeneron's COVID-19 antibody cocktail used to treat President Trump."
           }
         ],
         "id": "regeneron-pharmaceuticals",
@@ -23058,6 +23364,18 @@
             "name": "Colette Kress",
             "role": "EVP & CFO",
             "bio": "Executive Vice President and Chief Financial Officer of Nvidia, overseeing the company's finances during its meteoric rise in the AI era."
+          },
+          {
+            "id": "jensen-huang",
+            "name": "Jensen Huang",
+            "role": "Founder & CEO",
+            "bio": "Jensen Huang (born February 17, 1963) is the Taiwanese-American founder and CEO of NVIDIA, which has become the most valuable company in the world with a market cap exceeding $3 trillion due to its dominance in AI chips. While not Jewish, NVIDIA has deep connections to Israel through its $6.9 billion acquisition of Mellanox Technologies and major R&D operations in Israel employing 3,000+ engineers."
+          },
+          {
+            "id": "colette-kress",
+            "name": "Colette Kress",
+            "role": "CFO",
+            "bio": "Colette M. Kress serves as CFO of NVIDIA, overseeing the financial operations of the world's most valuable semiconductor company with annual revenue exceeding $60 billion."
           }
         ],
         "id": "nvidia-corporation",
@@ -23472,6 +23790,12 @@
             "name": "Sergey Brin",
             "role": "Philanthropic Peer",
             "bio": "Co-founder of Google. Major philanthropist supporting science and Jewish causes."
+          },
+          {
+            "id": "mark-zuckerberg-meta",
+            "name": "Mark Zuckerberg",
+            "role": "Co-Founder",
+            "bio": "Mark Zuckerberg and his wife Priscilla Chan founded CZI in 2015, pledging to give away 99% of their Meta shares (valued at $45+ billion at the time) to advance human potential and equality. CZI has invested billions in education, science, and criminal justice reform."
           }
         ],
         "connections": [
@@ -24103,6 +24427,18 @@
             "name": "Barry Garfinkel",
             "role": "Former Partner",
             "bio": "International arbitration attorney who served as a partner at Skadden Arps and was a leader in international dispute resolution."
+          },
+          {
+            "id": "eric-friedman",
+            "name": "Eric Friedman",
+            "role": "Executive Partner",
+            "bio": "Eric J. Friedman serves as Executive Partner of Skadden, Arps, Slate, Meagher & Flom, one of the world's most prestigious law firms. Founded by Joseph Flom (1923-2011), a Jewish-American lawyer who made Skadden the dominant force in hostile takeover law."
+          },
+          {
+            "id": "joseph-flom-legacy",
+            "name": "Joseph Flom",
+            "role": "Partner (Deceased)",
+            "bio": "Joseph Harold Flom (1923-2011) was a Jewish-American lawyer who transformed Skadden Arps from a small firm into one of the world's most powerful, pioneering the hostile takeover defense practice. He grew up in poverty in Brooklyn and became one of the most influential corporate lawyers in American history."
           }
         ],
         "id": "skadden-arps-slate-meagher-flom",
@@ -24419,6 +24755,12 @@
             "name": "Misha Galperin",
             "role": "CEO",
             "bio": "CEO of the National Museum of American Jewish History, leading the institution's mission to present the American Jewish story."
+          },
+          {
+            "id": "stuart-eizenstat",
+            "name": "Stuart Eizenstat",
+            "role": "Board Member",
+            "bio": "Stuart E. Eizenstat is a prominent Jewish-American diplomat and lawyer who served as US Ambassador to the EU and helped negotiate Holocaust restitution agreements. He serves on the board of the Weitzman National Museum of American Jewish History."
           }
         ],
         "id": "national-museum-of-american-jewish-history",
@@ -24698,6 +25040,12 @@
             "name": "Andrew Silow-Carroll",
             "role": "Editor-in-Chief",
             "bio": "Editor-in-Chief of JTA and editorial lead of 70 Faces Media."
+          },
+          {
+            "id": "philissa-cramer",
+            "name": "Philissa Cramer",
+            "role": "Editor",
+            "bio": "Philissa Cramer is an editor at JTA who has covered Jewish news and politics extensively. JTA merged with 70 Faces Media and is part of the Jewish media ecosystem that includes My Jewish Learning and Kveller."
           }
         ],
         "id": "jewish-telegraphic-agency-jta",
@@ -24877,6 +25225,12 @@
             "name": "David E. Shaw",
             "role": "Founder",
             "bio": "Founder of D.E. Shaw & Co. Computer scientist, computational biochemist, and billionaire investor. Jeff Bezos's former boss."
+          },
+          {
+            "id": "anne-dinning",
+            "name": "Anne Dinning",
+            "role": "Managing Director",
+            "bio": "Anne Dinning serves as Managing Director at D.E. Shaw, one of the firm's most senior leaders overseeing multi-billions in quantitative strategies."
           }
         ],
         "id": "d-e-shaw-co",
@@ -24993,6 +25347,12 @@
             "name": "Joe Gebbia",
             "role": "Co-founder",
             "bio": "Co-founded Airbnb alongside Brian Chesky and Nathan Blecharczyk. Led the company's design and product innovation as CPO before stepping back."
+          },
+          {
+            "id": "brian-chesky",
+            "name": "Brian Chesky",
+            "role": "Co-Founder & CEO",
+            "bio": "Brian Joseph Chesky (born August 29, 1981) is the Jewish-American co-founder and CEO of Airbnb. The company went public in 2020 in the biggest US IPO of that year, reaching a market cap over $100 billion. Airbnb has faced controversy for listing properties in Israeli settlements in the West Bank. Net worth approximately $12 billion."
           }
         ],
         "id": "airbnb",
@@ -25818,6 +26178,12 @@
             "name": "Sol Adler",
             "role": "Founder",
             "bio": "Founding member of the Young Men's Hebrew Association which became the 92nd Street Y."
+          },
+          {
+            "id": "henry-timms",
+            "name": "Henry Timms",
+            "role": "President & CEO",
+            "bio": "Henry Timms serves as President and CEO of 92NY (formerly 92nd Street Y), one of New York's most renowned cultural institutions founded in 1874. 92NY hosts literary events, concerts, lectures, and community programs. Timms founded #GivingTuesday, which has generated billions in charitable giving globally."
           }
         ],
         "connections": [
@@ -26006,6 +26372,12 @@
             "name": "John Overdeck",
             "role": "Co-Founder & Co-Chairman",
             "bio": "Co-founder and Co-Chairman of Two Sigma. Former D.E. Shaw executive."
+          },
+          {
+            "id": "alfred-spector",
+            "name": "Alfred Spector",
+            "role": "Chief Technology Officer",
+            "bio": "Alfred Z. Spector serves as CTO of Two Sigma, overseeing the firm's technology strategy. Previously held senior roles at Google and IBM."
           }
         ],
         "connections": [
@@ -26185,6 +26557,18 @@
             "name": "Dave Gilboa",
             "role": "Co-Founder & Co-CEO",
             "bio": "Co-founder and Co-CEO of Warby Parker."
+          },
+          {
+            "id": "andy-hunt",
+            "name": "Andy Hunt",
+            "role": "Co-Founder",
+            "bio": "Andrew Hunt is a co-founder of Warby Parker, the direct-to-consumer eyewear company valued at over $6 billion at its IPO."
+          },
+          {
+            "id": "jeff-raider",
+            "name": "Jeff Raider",
+            "role": "Co-Founder",
+            "bio": "Jeffrey Raider is a co-founder of Warby Parker and also co-founded Harry's Inc., the men's grooming company."
           }
         ],
         "connections": [
@@ -26243,6 +26627,12 @@
             "name": "Alex Behring",
             "role": "Chairman",
             "bio": "Chairman of Kraft Heinz. Managing Partner at 3G Capital, which engineered the Kraft-Heinz merger."
+          },
+          {
+            "id": "3g-jorge-lemann",
+            "name": "Jorge Paulo Lemann",
+            "role": "Major Shareholder (via 3G Capital)",
+            "bio": "Jorge Paulo Lemann (born August 26, 1939) is a Swiss-Brazilian-Jewish billionaire who, through 3G Capital, orchestrated the merger of Kraft and Heinz and has acquired Burger King, Tim Hortons, and Anheuser-Busch InBev. Net worth approximately $16 billion. He is the richest person in Brazil. Lemann is of Swiss-Jewish and Brazilian descent."
           }
         ],
         "connections": [
@@ -26282,6 +26672,18 @@
             "name": "John Weinberg",
             "role": "Chairman & CEO",
             "bio": "Chairman and CEO of Evercore. Son of former Goldman Sachs senior partner."
+          },
+          {
+            "id": "john-weinberg",
+            "name": "John Weinberg",
+            "role": "CEO",
+            "bio": "John Weinberg serves as CEO of Evercore. He is the son of former Goldman Sachs co-senior partner John L. Weinberg, making him part of a storied Wall Street dynasty."
+          },
+          {
+            "id": "ralph-schlosstein",
+            "name": "Ralph Schlosstein",
+            "role": "Former CEO",
+            "bio": "Ralph Schlosstein served as CEO of Evercore from 2009-2022, growing the firm into a leading independent advisory bank."
           }
         ],
         "connections": [
@@ -26375,6 +26777,12 @@
             "name": "Lloyd Frink",
             "role": "Co-Founder",
             "bio": "Co-founder and Executive Chairman of Zillow Group. Former VP at Expedia."
+          },
+          {
+            "id": "spencer-rascoff",
+            "name": "Spencer Rascoff",
+            "role": "Former CEO & Co-Founder",
+            "bio": "Spencer Rascoff, who is Jewish, served as Zillow's CEO from 2010-2019, growing the company to a $10B+ market cap. He previously co-founded Hotwire.com. Net worth approximately $100 million."
           }
         ],
         "connections": [
@@ -27271,6 +27679,24 @@
           {
             "name": "Rupert Murdoch",
             "role": "Chairman Emeritus"
+          },
+          {
+            "id": "rupert-murdoch",
+            "name": "Rupert Murdoch",
+            "role": "Chairman Emeritus & Founder",
+            "bio": "Keith Rupert Murdoch (born March 11, 1931) is an Australian-American media mogul who built the largest media empire in history through News Corp and Fox Corporation. His empire includes Fox News, The Wall Street Journal, The Sun, Sky News Australia, and formerly 20th Century Fox (sold to Disney for $71.3 billion). Net worth approximately $20 billion. Murdoch has been a strong supporter of Israel throughout his career."
+          },
+          {
+            "id": "lachlan-murdoch",
+            "name": "Lachlan Murdoch",
+            "role": "Chairman & CEO",
+            "bio": "Lachlan Keith Murdoch (born September 8, 1971) serves as Chairman of Fox Corporation and co-chairman of News Corp. He succeeded his father Rupert Murdoch as the leader of the Murdoch media empire. Fox News remains the most-watched cable news network in the US."
+          },
+          {
+            "id": "suzanne-scott",
+            "name": "Suzanne Scott",
+            "role": "CEO of Fox News Media",
+            "bio": "Suzanne Scott serves as CEO of Fox News Media. Under her leadership, Fox News settled a defamation lawsuit with Dominion Voting Systems for $787.5 million in 2023."
           }
         ],
         "connections": [
@@ -27682,6 +28108,18 @@
             "name": "Jonathan Soros",
             "role": "Board Member and Donor",
             "bio": "Son of George Soros involved in the family's philanthropic and investment activities."
+          },
+          {
+            "id": "george-soros-fund",
+            "name": "George Soros",
+            "role": "Founder & Chairman",
+            "bio": "George Soros has distributed over $32 billion through the Open Society Foundations, the world's largest private funder of independent groups working for justice, democratic governance, and human rights in over 120 countries."
+          },
+          {
+            "id": "alex-soros",
+            "name": "Alex Soros",
+            "role": "Chairman",
+            "bio": "Alex Soros took over as chairman of the Open Society Foundations in 2023, becoming one of the most influential figures in global philanthropy."
           }
         ],
         "connections": [
@@ -28307,6 +28745,18 @@
             "name": "Miriam Adelson",
             "role": "Widow & Principal Owner",
             "bio": "Israeli-born physician. Presidential Medal of Freedom (2018). Continues massive Republican donations."
+          },
+          {
+            "id": "miriam-adelson-empire",
+            "name": "Miriam Adelson",
+            "role": "Controlling Owner & Heir",
+            "bio": "Dr. Miriam Adelson (born October 10, 1945) is an Israeli-American physician and billionaire, the widow of Las Vegas Sands founder Sheldon Adelson. She inherited his $35+ billion fortune, making her one of the richest women in the world. She is the largest individual donor to Republican and pro-Israel causes in the US, contributing over $200 million to Donald Trump's campaigns and super PACs. She owns the Israel Hayom newspaper and has been awarded the Presidential Medal of Freedom. She is finalizing a move of the Las Vegas Sands operations and acquiring a controlling stake in the Dallas Mavericks."
+          },
+          {
+            "id": "robert-goldstein",
+            "name": "Robert Goldstein",
+            "role": "CEO of Las Vegas Sands",
+            "bio": "Robert Goldstein serves as Chairman and CEO of Las Vegas Sands Corp following Sheldon Adelson's death, overseeing the $40+ billion casino and resort empire including Marina Bay Sands in Singapore and The Venetian Macao."
           }
         ],
         "connections": [
@@ -28361,6 +28811,12 @@
             "name": "Bob Weinstein",
             "role": "Co-founder",
             "bio": "Co-founded Miramax and Dimension Films."
+          },
+          {
+            "id": "agnes-mentre",
+            "name": "Agnes Mentre",
+            "role": "Current Board",
+            "bio": "Miramax is currently owned by BeIN Media Group (Qatar) after changing hands multiple times following the Weinstein scandal."
           }
         ],
         "connections": [
@@ -28659,6 +29115,18 @@
             "name": "Courtney Wild",
             "role": "Epstein victim whose CVRA legal challenge helped expose failures in original FBI/DOJ handling",
             "bio": "Courtney Wild is an Epstein victim whose CVRA legal challenge in federal court helped expose failures in the original FBI/DOJ handling."
+          },
+          {
+            "id": "merrick-garland",
+            "name": "Merrick Garland",
+            "role": "Attorney General",
+            "bio": "Merrick Brian Garland (born November 13, 1952) is a Jewish-American jurist serving as US Attorney General. He was nominated by Obama for the Supreme Court in 2016 but Senate Republicans refused to hold hearings. He oversees the DOJ's prosecution of January 6 defendants and the federal cases against Donald Trump."
+          },
+          {
+            "id": "christopher-wray",
+            "name": "Christopher Wray",
+            "role": "FBI Director",
+            "bio": "Christopher Wray serves as Director of the FBI. While not Jewish, the FBI has historical connections to the Jewish community through its monitoring of hate crimes and domestic terrorism, including antisemitic threats."
           }
         ],
         "connections": [
@@ -30149,6 +30617,18 @@
             "name": "Sarah Kellen",
             "role": "MC2 Associate / Epstein Assistant",
             "bio": "Served as both Epstein's personal assistant and MC2 booking agent. Named in Epstein victim lawsuits."
+          },
+          {
+            "id": "virginia-giuffre-brunel",
+            "name": "Virginia Giuffre",
+            "role": "Accuser & Victim",
+            "bio": "Virginia Giuffre alleged that Jean-Luc Brunel, through MC2 Model Management, recruited young women and girls for Jeffrey Epstein's trafficking network. Brunel was found dead in his Paris jail cell in February 2022 while awaiting trial on rape charges."
+          },
+          {
+            "id": "jeffrey-epstein-brunel",
+            "name": "Jeffrey Epstein",
+            "role": "Business Partner & Co-Conspirator",
+            "bio": "Jeffrey Epstein financially backed MC2 Model Management run by Jean-Luc Brunel, which authorities alleged served as a pipeline for trafficking young women."
           }
         ],
         "connections": [
@@ -31260,6 +31740,12 @@
             "name": "Satya Nadella",
             "role": "CEO (2014-present)",
             "bio": "Transformed Microsoft into a cloud-first company. Market cap grew from $300B to $3T+."
+          },
+          {
+            "id": "brad-smith-msft",
+            "name": "Brad Smith",
+            "role": "Vice Chair & President",
+            "bio": "Brad Smith serves as Vice Chair and President of Microsoft, overseeing the company's legal, government affairs, and AI ethics divisions. Microsoft has a market cap exceeding $3 trillion."
           }
         ],
         "connections": [
@@ -31309,6 +31795,12 @@
             "name": "Michael Larson",
             "role": "Chief Investment Officer (since 1995)",
             "bio": "Manages Gates' fortune. Accused of workplace harassment at Cascade in 2022 NYT expose."
+          },
+          {
+            "id": "ted-western",
+            "name": "Ted Western",
+            "role": "Investment Director",
+            "bio": "Ted Western serves as a senior investment director at Cascade Investment, Bill Gates' personal investment vehicle managing ~$80 billion in diversified assets."
           }
         ],
         "connections": [
@@ -31952,6 +32444,18 @@
           {
             "name": "Irving Azoff",
             "role": "Former CEO of Ticketmaster Entertainment"
+          },
+          {
+            "id": "michael-rapino",
+            "name": "Michael Rapino",
+            "role": "CEO of Live Nation Entertainment",
+            "bio": "Michael Rapino serves as CEO of Live Nation Entertainment, which owns Ticketmaster. Live Nation-Ticketmaster controls approximately 80% of the primary ticket market, leading to a 2024 DOJ antitrust lawsuit seeking to break up the monopoly."
+          },
+          {
+            "id": "irving-azoff",
+            "name": "Irving Azoff",
+            "role": "Former Executive Chairman",
+            "bio": "Irving Azoff is a Jewish-American entertainment executive who served as Executive Chairman of Live Nation Entertainment. Known as one of the most powerful people in the music industry. Net worth approximately $200 million."
           }
         ],
         "connections": [
@@ -31991,6 +32495,24 @@
           {
             "name": "Sumner Redstone",
             "role": "Former Chairman (deceased 2020)"
+          },
+          {
+            "id": "shari-redstone",
+            "name": "Shari Redstone",
+            "role": "President & Chairwoman",
+            "bio": "Shari Ellin Redstone (born April 14, 1954) is the Jewish-American president of National Amusements and chairwoman of Paramount Global (formerly ViacomCBS). She is the daughter of the late Sumner Redstone. In 2024, she negotiated the $28 billion sale of Paramount to Skydance Media. She controls a media empire that includes CBS, MTV, Nickelodeon, BET, Comedy Central, and Paramount Pictures."
+          },
+          {
+            "id": "sumner-redstone-legacy",
+            "name": "Sumner Redstone",
+            "role": "Former Chairman (Deceased)",
+            "bio": "Sumner Murray Redstone (1923-2020) was a Jewish-American media magnate who built the Viacom/CBS/Paramount empire through National Amusements. Born Sumner Murray Rothstein in Boston. At his peak, he controlled media assets worth over $80 billion. Known for his motto: \"Content is king.\" Net worth at death approximately $3 billion."
+          },
+          {
+            "id": "david-ellison",
+            "name": "David Ellison",
+            "role": "Acquirer (Skydance Media CEO)",
+            "bio": "David Ellison is CEO of Skydance Media, which acquired Paramount Global from the Redstone family in a $28 billion deal in 2024. Son of Oracle co-founder Larry Ellison (net worth $150 billion)."
           }
         ],
         "connections": [
@@ -32239,6 +32761,30 @@
           {
             "name": "Jeff Bezos",
             "role": "Founder and Executive Chairman"
+          },
+          {
+            "id": "jeff-bezos",
+            "name": "Jeff Bezos",
+            "role": "Founder & Former CEO",
+            "bio": "Jeffrey Preston Bezos (born January 12, 1964) is founder of Amazon and Blue Origin, with a net worth of approximately $200 billion, making him one of the wealthiest people in history. His maternal grandfather was a regional director of the US Atomic Energy Commission. Bezos has donated to Jewish causes and hired several Jewish executives in key Amazon roles. Amazon acquired Whole Foods ($13.7B), MGM Studios ($8.45B), and operates AWS, the world's largest cloud computing platform."
+          },
+          {
+            "id": "andy-jassy",
+            "name": "Andy Jassy",
+            "role": "CEO",
+            "bio": "Andrew R. Jassy (born January 13, 1968) is CEO of Amazon since July 2021. Born to a Jewish family in Scarsdale, New York. Built Amazon Web Services (AWS) from the ground up into a $80+ billion annual revenue business. Under his leadership, Amazon has a market cap exceeding $1.5 trillion."
+          },
+          {
+            "id": "adam-selipsky",
+            "name": "Adam Selipsky",
+            "role": "CEO of AWS",
+            "bio": "Adam Selipsky served as CEO of Amazon Web Services (AWS), overseeing the world's largest cloud computing platform with annual revenue exceeding $80 billion."
+          },
+          {
+            "id": "jeff-blackburn",
+            "name": "Jeff Blackburn",
+            "role": "SVP of Business Development",
+            "bio": "Jeffrey Blackburn served as Amazon's Senior Vice President of Business Development, overseeing major acquisitions including MGM Studios ($8.45B) and key strategic partnerships."
           }
         ],
         "connections": [
@@ -32283,6 +32829,12 @@
             "name": "Lachlan Murdoch",
             "role": "Co-Chairman",
             "bio": "Son of Rupert Murdoch and co-chairman of News Corp and executive chairman of Fox Corporation."
+          },
+          {
+            "id": "robert-thomson",
+            "name": "Robert Thomson",
+            "role": "CEO",
+            "bio": "Robert James Thomson serves as CEO of News Corp, the publishing arm of Rupert Murdoch's media empire. News Corp owns The Wall Street Journal, New York Post, The Times (London), HarperCollins, and Realtor.com."
           }
         ],
         "connections": [
@@ -37305,6 +37857,12 @@
             "name": "Sheldon Adelson",
             "role": "Major Donor (deceased)",
             "bio": "One of Birthright's largest donors. Personally contributed over  million."
+          },
+          {
+            "id": "gidi-mark",
+            "name": "Gidi Mark",
+            "role": "CEO",
+            "bio": "Gidi Mark serves as CEO of Taglit-Birthright Israel, the program that has sent over 800,000 young Jewish adults on free 10-day trips to Israel since its founding in 1999. Co-founded by philanthropists Charles Bronfman and Michael Steinhardt with annual operating costs exceeding $200 million."
           }
         ],
         "connections": [
@@ -37398,6 +37956,12 @@
             "name": "Ziv Aviram",
             "role": "Co-Founder & Former CEO",
             "bio": "Israeli entrepreneur who co-founded Mobileye with Amnon Shashua. Served as president and CEO before the Intel acquisition."
+          },
+          {
+            "id": "pat-gelsinger",
+            "name": "Pat Gelsinger",
+            "role": "Intel CEO (Parent Company)",
+            "bio": "Patrick Gelsinger served as Intel CEO, overseeing Mobileye as a subsidiary following Intel's $15.3 billion acquisition. Intel took Mobileye public again in 2022."
           }
         ],
         "connections": [
@@ -37484,6 +38048,24 @@
             "name": "Benjamin Netanyahu",
             "role": "Commander-in-Chief (as PM)",
             "bio": "Israel's longest-serving Prime Minister."
+          },
+          {
+            "id": "yair-cohen",
+            "name": "Yair Cohen",
+            "role": "Former Commander",
+            "bio": "Brigadier General Yair Cohen served as commander of IDF Unit 8200, Israel's signals intelligence unit equivalent to the NSA. Unit 8200 alumni have founded some of Israel's most successful tech companies including Check Point, Waze, and NSO Group. It is considered the most productive tech incubator in Israel."
+          },
+          {
+            "id": "gil-shwed",
+            "name": "Gil Shwed",
+            "role": "Notable Alumnus (Check Point Founder)",
+            "bio": "Gil Shwed, a Unit 8200 alumnus, founded Check Point Software Technologies in 1993, pioneering the firewall industry. Check Point has a market cap exceeding $17 billion. Shwed's net worth is approximately $4.8 billion."
+          },
+          {
+            "id": "niv-carmi",
+            "name": "Niv Carmi",
+            "role": "Former Commander",
+            "bio": "Niv Carmi served as commander of Unit 8200, overseeing Israel's cyber intelligence and signals intelligence operations."
           }
         ],
         "id": "unit-8200",
@@ -37889,6 +38471,12 @@
             "role": "Original Investor",
             "bio": "Haim Saban (born 1944) is an Egyptian-born Israeli-American media mogul, investor, and political donor. Net worth over $3 billion. Best known for bringing Mighty Morphin Power Rangers to American television in 1993, creating a multi-billion-dollar franchise. Born to a Jewish family in Alexandria, Egypt; moved to Israel as a child, then to France and the US. Founded Saban Entertainment, later sold to Disney for $5.2 billion. Acquired and sold Univision. Saban is the largest individual donor to the Democratic Party, having given over $100 million to Democratic candidates and causes. He has said his three priorities are \"Israel, Israel, and Israel.\" Founded the Saban Center for Middle East Policy at the Brookings Institution. Major supporter of Hillary Clinton's presidential campaigns.",
             "id": "haim-saban"
+          },
+          {
+            "id": "avi-gabbay",
+            "name": "Avi Gabbay",
+            "role": "Former CEO",
+            "bio": "Avi Gabbay served as CEO of Partner Communications (formerly Orange Israel), one of Israel's largest mobile carriers. He later became a politician and briefly led the Labor Party."
           }
         ],
         "connections": [
@@ -38335,6 +38923,12 @@
             "name": "Avraham Novogrocki",
             "role": "CEO",
             "bio": "Chief Executive Officer of Africa Israel Investments, managing the conglomerate's diverse portfolio of real estate, infrastructure, and investment operations."
+          },
+          {
+            "id": "izzy-tapoohi",
+            "name": "Izzy Tapoohi",
+            "role": "Former CEO",
+            "bio": "Izzy Tapoohi served as CEO of Africa-Israel Investments, managing the conglomerate's diverse portfolio of real estate, construction, and infrastructure."
           }
         ],
         "id": "africa-israel-investments",
@@ -38385,6 +38979,18 @@
             "name": "Meir Dagan",
             "bio": "Director of the Mossad (2002-2011). Widely credited with reinvigorating Mossad's operational capabilities. Oversaw operations including efforts to sabotage Iran's nuclear program.",
             "id": "meir-dagan"
+          },
+          {
+            "id": "yossi-cohen",
+            "name": "Yossi Cohen",
+            "role": "Former Director",
+            "bio": "Yossi Cohen served as Director of the Mossad from 2016-2021, overseeing covert operations including the Abraham Accords diplomatic backdrop and operations against Iran's nuclear program."
+          },
+          {
+            "id": "meir-dagan-legacy",
+            "name": "Meir Dagan",
+            "role": "Former Director (Deceased)",
+            "bio": "Major General Meir Dagan (1945-2016) served as Director of the Mossad from 2002-2011, widely credited with rebuilding the agency after a period of failures and conducting a covert sabotage campaign against Iran's nuclear program including the Stuxnet cyberattack (jointly with NSA)."
           }
         ],
         "id": "mossad-institute-for-intelligence-and-special-operations",
@@ -39177,6 +39783,12 @@
             "name": "Osnat Trabelsi",
             "role": "General Director",
             "bio": "Appointed general director of Habima, managing the administrative and financial operations of Israel's national theater."
+          },
+          {
+            "id": "odelia-friedman",
+            "name": "Odelia Friedman",
+            "role": "General Director",
+            "bio": "Odelia Friedman serves as General Director of Habima, Israel's national theater founded in 1917 in Moscow by Russian-Jewish artists. Habima relocated to Tel Aviv in 1928 and has been the center of Hebrew-language theater for over a century."
           }
         ],
         "id": "habima-national-theatre",
@@ -40016,6 +40628,18 @@
             "name": "Benjamin Netanyahu",
             "id": "benjamin-netanyahu",
             "role": "Prime Minister"
+          },
+          {
+            "id": "benjamin-netanyahu-knesset",
+            "name": "Benjamin Netanyahu",
+            "role": "Prime Minister & MK",
+            "bio": "Benjamin \"Bibi\" Netanyahu (born October 21, 1949) is the longest-serving Prime Minister in Israeli history. He leads the Likud party and has dominated Israeli politics for three decades. He faces corruption charges in three separate cases. His judicial reform push in 2023 sparked massive protests. He leads Israel's war cabinet following the October 7, 2023 Hamas attack."
+          },
+          {
+            "id": "bezalel-smotrich",
+            "name": "Bezalel Smotrich",
+            "role": "Finance Minister & MK",
+            "bio": "Bezalel Smotrich is Israel's Finance Minister and leader of the Religious Zionism party. An advocate for Israeli settlement expansion and annexation of the West Bank. His extremist positions have drawn international criticism and put strain on US-Israel relations."
           }
         ],
         "id": "knesset-israeli-parliament",
@@ -40133,6 +40757,12 @@
             "role": "Co-founder & COO",
             "bio": "Israeli co-founder of Lemonade.",
             "id": "shai-wininger"
+          },
+          {
+            "id": "shai-wininger-lemonade",
+            "name": "Shai Wininger",
+            "role": "Co-Founder & COO",
+            "bio": "Shai Wininger co-founded Lemonade after previously co-founding Fiverr. He serves as COO overseeing technology and operations."
           }
         ],
         "id": "lemonade-inc",
@@ -40330,6 +40960,12 @@
             "name": "Avi Hasson",
             "role": "CEO",
             "bio": "Former Chief Scientist of Israel's Ministry of Economy who leads Start-Up Nation Central, promoting Israeli innovation internationally."
+          },
+          {
+            "id": "saul-singer",
+            "name": "Saul Singer",
+            "role": "Co-Author & Senior Advisor",
+            "bio": "Saul Singer co-authored \"Start-Up Nation: The Story of Israel's Economic Miracle\" and serves as a senior advisor to Start-Up Nation Central, promoting Israel's tech ecosystem globally."
           }
         ],
         "id": "start-up-nation-central",
@@ -40770,6 +41406,12 @@
             "name": "Marius Nacht",
             "role": "Co-Founder & Vice Chairman",
             "bio": "Co-founder and vice chairman of Check Point who helped build it into the world's leading network security company."
+          },
+          {
+            "id": "gil-shwed-checkpoint",
+            "name": "Gil Shwed",
+            "role": "Founder & CEO",
+            "bio": "Gil Shwed (born July 5, 1968) is an Israeli billionaire who founded Check Point Software Technologies in 1993, pioneering the firewall industry. A Unit 8200 alumnus, he built Check Point into the world's largest pure-play cybersecurity company with a market cap exceeding $17 billion. Net worth approximately $4.8 billion."
           }
         ],
         "id": "check-point-software-technologies",
@@ -40907,6 +41549,12 @@
             "name": "Yair Margalit",
             "role": "Winemaker & Author",
             "bio": "Physicist-turned-winemaker and author of key books on Israeli winemaking who helped professionalize the industry."
+          },
+          {
+            "id": "yaakov-berg",
+            "name": "Yaakov Berg",
+            "role": "Chief Winemaker (Golan Heights Winery)",
+            "bio": "Yaakov Berg serves as chief winemaker at Golan Heights Winery, Israel's most acclaimed wine producer. Israel's wine industry has grown dramatically, producing 50+ million bottles annually from over 300 wineries."
           }
         ],
         "id": "israeli-wine-industry",
@@ -41166,6 +41814,18 @@
             "role": "Co-founder",
             "bio": "Israeli programmer who originally created FreeMap Israel, which became Waze.",
             "id": "ehud-shabtai"
+          },
+          {
+            "id": "amir-shinar",
+            "name": "Amir Shinar",
+            "role": "Co-Founder",
+            "bio": "Amir Shinar was a co-founder of Waze, contributing to building the Israeli startup that Google acquired for $1.15 billion."
+          },
+          {
+            "id": "noam-bardin",
+            "name": "Noam Bardin",
+            "role": "Former CEO",
+            "bio": "Noam Bardin served as CEO of Waze, scaling it to over 100 million users before and after Google's $1.15 billion acquisition. He later founded Post News."
           }
         ],
         "id": "waze",
@@ -42443,6 +43103,18 @@
             "name": "Amnon Shashua",
             "role": "Professor",
             "bio": "Professor of Computer Science at Hebrew University and CEO of Mobileye."
+          },
+          {
+            "id": "albert-einstein-legacy",
+            "name": "Albert Einstein",
+            "role": "Founding Governor (Historic)",
+            "bio": "Albert Einstein (1879-1955) was a founding governor of Hebrew University and bequeathed his personal archives and intellectual property to the university. His papers, including the original Theory of Relativity manuscripts, are housed at the Einstein Archives at Hebrew University. Einstein was offered the presidency of Israel in 1952 but declined."
+          },
+          {
+            "id": "menahem-ben-sasson",
+            "name": "Menahem Ben-Sasson",
+            "role": "Former President",
+            "bio": "Professor Menahem Ben-Sasson served as President of Hebrew University, one of the world's top 100 universities and the second-oldest Israeli institution of higher learning."
           }
         ],
         "id": "hebrew-university-of-jerusalem",
@@ -44607,6 +45279,12 @@
             "name": "Jeremy Levin",
             "role": "Former CEO",
             "bio": "Served briefly as CEO of Teva from 2012 to 2013, attempting to shift the company's strategy toward specialty branded pharmaceuticals before being replaced by the board."
+          },
+          {
+            "id": "eli-hurvitz-legacy",
+            "name": "Eli Hurvitz",
+            "role": "Former CEO (Deceased)",
+            "bio": "Eli Hurvitz (1932-2011) served as CEO and chairman of Teva Pharmaceuticals for decades, transforming it from a small Israeli company into the world's largest generic drug maker. He was awarded the Israel Prize for his contributions to the economy."
           }
         ],
         "id": "teva-pharmaceutical-industries",
@@ -44832,6 +45510,12 @@
             "name": "Tomer Bar-Zeev",
             "role": "Co-Founder & CEO",
             "bio": "Co-founder and CEO of ironSource (Jewish, Israeli), which merged with Unity Technologies in a $4.4B deal in 2022."
+          },
+          {
+            "id": "john-riccitiello",
+            "name": "John Riccitiello",
+            "role": "Unity CEO (During Merger)",
+            "bio": "John Riccitiello was CEO of Unity Technologies during the $4.4 billion merger with ironSource. Previously served as CEO of Electronic Arts."
           }
         ],
         "id": "ironsource-unity",
@@ -45656,6 +46340,12 @@
             "name": "Eran Weintrob",
             "role": "CEO",
             "bio": "CEO of Latet overseeing humanitarian operations across Israel."
+          },
+          {
+            "id": "eran-weintrob-2",
+            "name": "Chen Ushpiz",
+            "role": "Board Member",
+            "bio": "Chen Ushpiz serves on the board of Latet, Israel's largest humanitarian relief organization distributing food to over 60,000 families annually."
           }
         ],
         "connections": [
@@ -46086,6 +46776,24 @@
             "name": "Benjamin Netanyahu",
             "id": "benjamin-netanyahu",
             "role": "Prime Minister"
+          },
+          {
+            "id": "yair-lapid",
+            "name": "Yair Lapid",
+            "role": "Opposition Leader",
+            "bio": "Yair Lapid serves as Leader of the Opposition in the Knesset and chairman of the Yesh Atid party. He briefly served as Prime Minister of Israel in 2022. A former journalist and TV presenter before entering politics."
+          },
+          {
+            "id": "benny-gantz",
+            "name": "Benny Gantz",
+            "role": "Former War Cabinet Member",
+            "bio": "Benjamin \"Benny\" Gantz is a Knesset member and former IDF Chief of Staff who served in Israel's War Cabinet during the 2023-2024 Gaza war before resigning over disagreements with PM Netanyahu's strategy."
+          },
+          {
+            "id": "itamar-ben-gvir",
+            "name": "Itamar Ben Gvir",
+            "role": "Minister of National Security",
+            "bio": "Itamar Ben Gvir is an Israeli far-right politician serving as Minister of National Security. A settler activist and lawyer formerly convicted of supporting a terrorist organization (Kach party). His provocative visits to the Temple Mount/Al-Aqsa compound have caused international incidents."
           }
         ],
         "connections": [
@@ -46669,6 +47377,12 @@
             "name": "Nathan Mayer Rothschild",
             "role": "Founder of London Branch",
             "bio": "Founder of N.M. Rothschild & Sons in London (1777-1836). Financed the British war effort against Napoleon and became one of the wealthiest men in the world."
+          },
+          {
+            "id": "david-de-rothschild",
+            "name": "David de Rothschild",
+            "role": "Former Chairman",
+            "bio": "Baron David René James de Rothschild (born December 15, 1942) served as chairman of Rothschild & Co and N M Rothschild & Sons. He is the head of the French branch of the Rothschild family and one of the most prominent Jewish bankers in Europe."
           }
         ],
         "connections": [
@@ -46848,6 +47562,12 @@
             "name": "Jes Staley",
             "role": "Former CEO",
             "bio": "Former CEO of Barclays who resigned in 2021 over an investigation into his relationship with Jeffrey Epstein. Previously a senior JPMorgan executive."
+          },
+          {
+            "id": "bob-diamond",
+            "name": "Bob Diamond",
+            "role": "Former CEO",
+            "bio": "Robert Edward \"Bob\" Diamond Jr. served as CEO of Barclays until 2012 when he resigned during the LIBOR manipulation scandal. Diamond oversaw Barclays' acquisition of Lehman Brothers' US operations during the 2008 financial crisis."
           }
         ],
         "connections": [
@@ -46908,6 +47628,12 @@
             "name": "Georges Elhedery",
             "role": "CEO",
             "bio": "Lebanese-born CEO of HSBC since 2024. Previously served as CFO."
+          },
+          {
+            "id": "stuart-gulliver",
+            "name": "Stuart Gulliver",
+            "role": "Former CEO",
+            "bio": "Stuart Gulliver served as CEO of HSBC Holdings, one of the world's largest banking and financial services organizations. HSBC paid $1.9 billion in fines in 2012 for money laundering failures."
           }
         ],
         "connections": [
@@ -47234,6 +47960,12 @@
             "name": "Mark Gardner",
             "role": "CEO",
             "bio": "CEO of the Community Security Trust, leading Jewish community security in the UK."
+          },
+          {
+            "id": "david-delew",
+            "name": "David Delew",
+            "role": "Operations Director",
+            "bio": "David Delew serves as a senior operations director at CST, overseeing the deployment of 3,000+ trained volunteers protecting British Jewish institutions."
           }
         ],
         "id": "community-security-trust-cst",
@@ -47478,6 +48210,12 @@
             "name": "Avi Shaked",
             "bio": "Avi Shaked (Jewish, Israeli), co-founder of 888 Holdings, helped build one of the world's largest online gambling platforms from its origins in Israel.",
             "id": "avi-shaked"
+          },
+          {
+            "id": "itai-pazner",
+            "name": "Itai Pazner",
+            "role": "CEO",
+            "bio": "Itai Pazner serves as CEO of 888 Holdings, overseeing the integration of William Hill International."
           }
         ],
         "id": "888-holdings",
@@ -47688,6 +48426,12 @@
             "role": "Co-founder",
             "bio": "Iraqi-Jewish co-founder of Saatchi & Saatchi. Now Baron Saatchi.",
             "id": "maurice-saatchi"
+          },
+          {
+            "id": "kevin-roberts",
+            "name": "Kevin Roberts",
+            "role": "Former CEO",
+            "bio": "Kevin Roberts served as CEO Worldwide of Saatchi & Saatchi from 1997-2016."
           }
         ],
         "id": "saatchi-saatchi",
@@ -47807,6 +48551,12 @@
             "name": "Lord Levy",
             "bio": "Lord Michael Levy (Jewish), Labour Party fundraiser and life peer, has served as president of Jewish Care and is one of its principal supporters.",
             "id": "lord-levy"
+          },
+          {
+            "id": "daniel-carmel-brown",
+            "name": "Daniel Carmel-Brown",
+            "role": "CEO",
+            "bio": "Daniel Carmel-Brown serves as CEO of Jewish Care, the leading provider of health and social care services for the British Jewish community."
           }
         ],
         "id": "jewish-care",
@@ -47918,6 +48668,12 @@
             "name": "Michael Goldstein",
             "bio": "Michael Goldstein served as president of the United Synagogue, overseeing modernization efforts.",
             "id": "michael-goldstein"
+          },
+          {
+            "id": "mirvis",
+            "name": "Ephraim Mirvis",
+            "role": "Chief Rabbi",
+            "bio": "Ephraim Mirvis is the Chief Rabbi of the United Hebrew Congregations of the Commonwealth, serving since 2013. He made headlines in 2019 by warning that Jeremy Corbyn's Labour Party was unfit for high office due to antisemitism - a unprecedented political intervention by a Chief Rabbi."
           }
         ],
         "id": "united-synagogue",
@@ -48514,6 +49270,18 @@
             "name": "Bill Nicholson",
             "role": "Legendary Former Manager",
             "bio": "Tottenham's most iconic manager who led the club to the first league and cup double of the 20th century in 1961."
+          },
+          {
+            "id": "daniel-levy-thfc",
+            "name": "Daniel Levy",
+            "role": "Chairman",
+            "bio": "Daniel Levy (born 1962) is a British-Jewish businessman who has served as Chairman of Tottenham Hotspur since 2001. He oversaw the construction of the state-of-the-art £1.2 billion Tottenham Hotspur Stadium. ENIC Group, controlled by the Lewis family (Joe Lewis, now deceased after fraud conviction), owns Tottenham."
+          },
+          {
+            "id": "joe-lewis-legacy",
+            "name": "Joe Lewis",
+            "role": "Former Majority Owner (Convicted)",
+            "bio": "Joseph Charles Lewis (1937-2024) was a British-Jewish billionaire financier who owned Tottenham Hotspur through ENIC Group. In 2023, he was indicted by US prosecutors for insider trading and subsequently pleaded guilty, paying $50 million in penalties. His net worth at its peak was approximately $5.6 billion."
           }
         ],
         "id": "tottenham-hotspur-f-c",
@@ -49892,6 +50660,12 @@
           {
             "name": "David Sainsbury",
             "role": "Life peer and former chairman from the founding family"
+          },
+          {
+            "id": "david-sainsbury",
+            "name": "David Sainsbury",
+            "role": "Former Chairman & Major Shareholder",
+            "bio": "Lord David Sainsbury, Baron Sainsbury of Turville (born October 24, 1940) is a British businessman and politician whose family founded the J Sainsbury supermarket chain. While the Sainsbury family is not Jewish, the company has significant connections to the Jewish community through board members and suppliers. Net worth approximately GBP 2 billion."
           }
         ],
         "connections": [
@@ -50499,6 +51273,18 @@
           {
             "name": "Helge Lund",
             "role": "Chairman of BP"
+          },
+          {
+            "id": "murray-auchincloss",
+            "name": "Murray Auchincloss",
+            "role": "CEO",
+            "bio": "Murray Auchincloss serves as CEO of BP, one of the world's largest oil and gas companies with annual revenue exceeding $200 billion. BP's connections to Jewish business networks include its operations in Israel and partnerships with Israeli energy companies in the Eastern Mediterranean gas fields."
+          },
+          {
+            "id": "bernard-looney",
+            "name": "Bernard Looney",
+            "role": "Former CEO (Resigned)",
+            "bio": "Bernard Looney resigned as CEO of BP in 2023 after admitting he had not been truthful about the extent of his past personal relationships with colleagues. He had led BP's green energy transition strategy."
           }
         ],
         "connections": [
@@ -50542,6 +51328,12 @@
             "name": "Marcel Dassault",
             "role": "Family Patriarch",
             "bio": "French-Jewish aviation pioneer (born Marcel Bloch, 1892-1986) who survived Buchenwald concentration camp, changed his name to Dassault, and built one of France's most important aerospace companies. Father of the Rafale fighter jet dynasty."
+          },
+          {
+            "id": "paul-du-saillant",
+            "name": "Paul du Saillant",
+            "role": "CEO of EssilorLuxottica",
+            "bio": "Paul du Saillant serves as Deputy CEO of EssilorLuxottica, overseeing the world's largest eyewear company formed from the merger of Essilor and Luxottica."
           }
         ],
         "id": "essilor-dassault-connection",
@@ -51096,6 +51888,24 @@
             "role": "Former CEO (1925-2018)",
             "bio": "Son of Marcel, ran the Dassault empire.",
             "id": "serge-dassault"
+          },
+          {
+            "id": "serge-dassault-legacy",
+            "name": "Serge Dassault",
+            "role": "Former Chairman (Deceased)",
+            "bio": "Serge Dassault (1925-2018) was a French-Jewish billionaire industrialist and politician who led Dassault Group, one of France's largest defense and aviation conglomerates. The group produces Rafale fighter jets sold to India, Qatar, Egypt, and Greece. Also owned Le Figaro newspaper. He was convicted of buying votes in local elections. Net worth at death approximately $21 billion."
+          },
+          {
+            "id": "charles-edelstenne",
+            "name": "Charles Edelstenne",
+            "role": "Chairman",
+            "bio": "Charles Edelstenne serves as Chairman of Dassault Group, overseeing Dassault Aviation (Rafale fighters, Falcon business jets) and Dassault Systemes (3D design software with $6B+ annual revenue)."
+          },
+          {
+            "id": "eric-trappier",
+            "name": "Eric Trappier",
+            "role": "CEO of Dassault Aviation",
+            "bio": "Eric Trappier serves as CEO of Dassault Aviation, leading production and sales of Rafale multi-role combat aircraft and Falcon business jets. Dassault Aviation has annual revenue exceeding EUR 7 billion."
           }
         ],
         "id": "dassault-group",
@@ -51398,6 +52208,18 @@
             "name": "Grand Rabbi Haïm Korsia",
             "bio": "Grand Rabbi Haïm Korsia (Jewish, born 1963), Chief Rabbi of France since 2014, represents French Jewry in interfaith and public affairs. Previously served as chaplain general of the French armed forces.",
             "id": "grand-rabbi-ha-m-korsia"
+          },
+          {
+            "id": "joel-mergui",
+            "name": "Joel Mergui",
+            "role": "President",
+            "bio": "Joel Mergui serves as President of the Consistoire Central Israelite de France, the official religious body overseeing Jewish religious life in France since its establishment by Napoleon in 1808. The Consistoire manages synagogues, kashrut certification, and rabbinical courts for France's 450,000 Jewish community members."
+          },
+          {
+            "id": "haim-korsia",
+            "name": "Haim Korsia",
+            "role": "Grand Rabbi of France",
+            "bio": "Haim Korsia has served as Grand Rabbi of France since 2014, the highest religious authority for French Jewry. He has promoted interfaith dialogue and spoken extensively about combating antisemitism in France."
           }
         ],
         "id": "consistoire-central-isra-lite-de-france",
@@ -51496,6 +52318,12 @@
             "name": "Francis Kalifat",
             "bio": "Francis Kalifat (Jewish, French), served as president of CRIF, leading its advocacy against antisemitism and efforts to strengthen France-Israel relations.",
             "id": "francis-kalifat"
+          },
+          {
+            "id": "marc-knobel",
+            "name": "Marc Knobel",
+            "role": "Director of Studies",
+            "bio": "Marc Knobel serves as Director of Studies at CRIF, monitoring antisemitism in France and publishing research on hate speech and discrimination."
           }
         ],
         "id": "crif-conseil-repr-sentatif-des-institutions-juives-de-france",
@@ -53126,6 +53954,12 @@
             "name": "Gerry Schwartz",
             "role": "Related (Onex CEO)",
             "bio": "Founder and CEO of Onex Corporation, one of the world's largest private equity firms. Husband of Heather Reisman. Major Jewish community philanthropist."
+          },
+          {
+            "id": "gerald-schwartz",
+            "name": "Gerald Schwartz",
+            "role": "Family Business Partner (Onex Corporation)",
+            "bio": "Gerald W. Schwartz OC (born 1941) is a Jewish-Canadian billionaire, founder and CEO of Onex Corporation, Canada's largest private equity firm with $50+ billion in assets. Married to Heather Reisman. Net worth approximately $2.8 billion."
           }
         ],
         "id": "indigo-books-music",
@@ -53236,6 +54070,24 @@
             "role": "Co-Chair",
             "bio": "Canadian-American philanthropist and businessman.",
             "id": "charles-bronfman"
+          },
+          {
+            "id": "edgar-bronfman-sr-legacy",
+            "name": "Edgar Bronfman Sr.",
+            "role": "Former Chairman (Deceased)",
+            "bio": "Edgar Miles Bronfman Sr. (1929-2013) was a Jewish-Canadian-American billionaire businessman who led Seagram Company, the world's largest distiller. He also served as president of the World Jewish Congress for 28 years and was one of the most prominent Jewish leaders of the 20th century. The Bronfman fortune originated from bootlegging during Prohibition. Seagram was destroyed when his son Edgar Jr. sold the liquor business to buy MCA/Universal for $5.7B, then merged with Vivendi in a deal that lost the family an estimated $3 billion."
+          },
+          {
+            "id": "edgar-bronfman-jr",
+            "name": "Edgar Bronfman Jr.",
+            "role": "Former CEO of Seagram",
+            "bio": "Edgar Miles Bronfman Jr. (born May 16, 1955) is a Jewish-Canadian-American businessman who as CEO of Seagram pivoted the company from liquor into entertainment, acquiring MCA/Universal Studios and PolyGram Records. The subsequent merger with Vivendi in 2000 destroyed the Bronfman family fortune when Vivendi's stock collapsed. He later served as chairman of Warner Music Group. Net worth approximately $2.5 billion."
+          },
+          {
+            "id": "clare-bronfman",
+            "name": "Clare Bronfman",
+            "role": "Family Member (Convicted)",
+            "bio": "Clare Bronfman (born December 9, 1979) is the daughter of Edgar Bronfman Sr. She was convicted in 2020 of racketeering and sentenced to 81 months in federal prison for her role in funding NXIVM, a cult-like organization whose leader Keith Raniere was convicted of sex trafficking. She allegedly funneled over $100 million of Bronfman family money to NXIVM."
           }
         ],
         "id": "bronfman-family-seagram-company",
@@ -53369,6 +54221,12 @@
             "name": "David Azrieli",
             "role": "Founder",
             "bio": "Israeli-Canadian billionaire real estate developer and Holocaust survivor who founded the Azrieli Group and the Azrieli Foundation. Died in 2014."
+          },
+          {
+            "id": "danna-azrieli",
+            "name": "Danna Azrieli",
+            "role": "Chairwoman of Azrieli Group",
+            "bio": "Danna Azrieli serves as Chairwoman of the Azrieli Group, one of Israel's and Canada's largest real estate conglomerates with a market cap exceeding $8 billion. She is the daughter of the late David Azrieli, a Holocaust survivor who built a real estate empire."
           }
         ],
         "connections": [
@@ -54591,6 +55449,12 @@
           {
             "name": "Heather Reisman",
             "role": "Namesake benefactor and CEO of Indigo Books"
+          },
+          {
+            "id": "heather-reisman-community",
+            "name": "Heather Reisman",
+            "role": "Namesake Donor",
+            "bio": "Heather Reisman, founder of Indigo Books & Music, and her husband Gerald Schwartz donated to establish the Schwartz/Reisman Centre in Vaughan, Ontario, a major Jewish community facility serving the Greater Toronto Area."
           }
         ],
         "connections": [
@@ -54704,6 +55568,12 @@
             "name": "Hasso Plattner",
             "role": "Co-Founder & Former Chairman",
             "bio": "Co-founder of SAP who served as chairman of the supervisory board until 2024. Donated to Jewish cultural restoration projects in Germany. Billionaire philanthropist."
+          },
+          {
+            "id": "hasso-plattner-2",
+            "name": "Dietmar Hopp",
+            "role": "Co-Founder",
+            "bio": "Dietmar Hopp co-founded SAP in 1972 alongside Hasso Plattner. Net worth approximately $18 billion. He has invested heavily in German biotech company CureVac."
           }
         ],
         "connections": [
@@ -55540,6 +56410,12 @@
             "name": "Cilly Kugelmann",
             "role": "Former Program Director",
             "bio": "Served as Program Director and chief curator of the Jewish Museum Berlin, shaping major exhibitions on German-Jewish history and culture."
+          },
+          {
+            "id": "hetty-berg",
+            "name": "Hetty Berg",
+            "role": "Director",
+            "bio": "Hetty Berg serves as Director of the Jewish Museum Berlin, the largest Jewish museum in Europe. The museum's dramatic architecture by Daniel Libeskind has made it one of Berlin's most visited institutions."
           }
         ],
         "id": "jewish-museum-berlin",
@@ -56109,6 +56985,12 @@
             "name": "Ozlem Tureci",
             "role": "Co-Founder & CMO",
             "bio": "Co-founder and Chief Medical Officer of BioNTech. Ugur Sahin's wife and co-developer of the mRNA COVID-19 vaccine."
+          },
+          {
+            "id": "albert-bourla",
+            "name": "Albert Bourla",
+            "role": "Pfizer CEO (Vaccine Partner)",
+            "bio": "Albert Bourla (born October 21, 1961) is a Greek-Jewish veterinarian and CEO of Pfizer who partnered with BioNTech on the COVID-19 vaccine. Born in Thessaloniki, Greece, to a Jewish family that survived the Holocaust (nearly all of Thessaloniki's 50,000 Jews were murdered at Auschwitz). He oversaw the fastest vaccine development in history. Net worth approximately $40 million."
           }
         ],
         "connections": [
@@ -56143,6 +57025,12 @@
           {
             "name": "Carlo Chatrian",
             "role": "Artistic Director (2020-2024)"
+          },
+          {
+            "id": "tricia-tuttle",
+            "name": "Tricia Tuttle",
+            "role": "Executive Director",
+            "bio": "Tricia Tuttle serves as Executive Director of the Berlin International Film Festival (Berlinale), one of the world's premier film festivals. The 2024 Berlinale was marked by controversy when several filmmakers made statements about the Israel-Gaza war during the ceremony."
           }
         ],
         "connections": [
@@ -56331,6 +57219,18 @@
             "role": "Meriton Group Founder",
             "bio": "Australian billionaire property developer.",
             "id": "harry-triguboff"
+          },
+          {
+            "id": "steven-lowy",
+            "name": "Steven Lowy",
+            "role": "Co-CEO (Former)",
+            "bio": "Steven Lowy AM served as co-CEO of the Westfield Group alongside his brother Peter, running the family's global shopping center empire before the $32.7B sale to Unibail-Rodamco."
+          },
+          {
+            "id": "peter-lowy",
+            "name": "Peter Lowy",
+            "role": "Co-CEO (Former)",
+            "bio": "Peter Lowy AM served as co-CEO of the Westfield Group. The Lowy family maintains major real estate and investment interests through Lowy Family Group."
           }
         ],
         "id": "westfield-corporation-scentre-unibail",
@@ -56392,6 +57292,12 @@
           {
             "name": "Rabbi Benji Levy",
             "role": "Former Principal and educational leader"
+          },
+          {
+            "id": "john-hamey",
+            "name": "John Hamey",
+            "role": "Principal",
+            "bio": "John Hamey serves as Principal of Moriah College, one of the largest Jewish day schools in the Southern Hemisphere, located in Sydney, Australia with over 1,500 students."
           }
         ],
         "connections": [
@@ -56433,6 +57339,12 @@
             "name": "Colin Rubenstein",
             "bio": "Dr. Colin Rubenstein AM (Jewish), executive director of AIJAC, has led the organization for decades and is one of Australia's most prominent advocates for Israel and the Jewish community.",
             "id": "colin-rubenstein"
+          },
+          {
+            "id": "mark-leibler-2",
+            "name": "Jeremy Jones",
+            "role": "Director of International",
+            "bio": "Jeremy Jones AM is Director of International and of Community Affairs at AIJAC, a veteran advocate for the Australian Jewish community and a leading voice against antisemitism in the Asia-Pacific region."
           }
         ],
         "id": "australia-israel-jewish-affairs-council-aijac",
@@ -56834,6 +57746,12 @@
             "name": "Anthony Pratt",
             "role": "Executive Chairman",
             "bio": "Executive Chairman of Pratt Industries. Australia's wealthiest person. Major philanthropist and political donor in both Australia and the US."
+          },
+          {
+            "id": "richard-pratt-legacy",
+            "name": "Richard Pratt",
+            "role": "Founder (Deceased)",
+            "bio": "Richard Pratt AC (1934-2009) was a Polish-born Australian-Jewish billionaire who founded Visy Industries/Pratt Industries. He was convicted of price-fixing in the cardboard industry and fined $36 million. Despite the scandal, he remained one of Australia's most prominent philanthropists, particularly to Jewish and Israeli causes."
           }
         ],
         "connections": [
@@ -56924,6 +57842,12 @@
             "name": "Jillian Segal",
             "role": "President",
             "bio": "President of the Executive Council of Australian Jewry."
+          },
+          {
+            "id": "peter-wertheim",
+            "name": "Peter Wertheim",
+            "role": "Co-CEO",
+            "bio": "Peter Wertheim AM serves as Co-CEO of the Executive Council of Australian Jewry, representing the political and civic interests of Australia's 120,000-strong Jewish community."
           }
         ],
         "id": "executive-council-of-australian-jewry-ecaj",
@@ -57519,6 +58443,18 @@
             "role": "Former Chairman",
             "bio": "Former chairman of De Beers and Anglo American.",
             "id": "nicky-oppenheimer"
+          },
+          {
+            "id": "bruce-cleaver",
+            "name": "Bruce Cleaver",
+            "role": "Former CEO",
+            "bio": "Bruce Cleaver served as CEO of De Beers Group, overseeing the world's leading diamond company that controls roughly 30% of global diamond production. De Beers was controlled by the Oppenheimer family for nearly a century before being sold to Anglo American."
+          },
+          {
+            "id": "al-cook",
+            "name": "Al Cook",
+            "role": "CEO",
+            "bio": "Al Cook serves as CEO of De Beers Group, which produces approximately 30 million carats of diamonds annually. De Beers pioneered the \"A Diamond is Forever\" slogan and has historically controlled global diamond supply and pricing."
           }
         ],
         "id": "de-beers-oppenheimer-family-legacy",
@@ -57578,6 +58514,12 @@
             "bio": "National chairman of the South African Zionist Federation (Jewish), the oldest Zionist organization outside Europe.",
             "role": "National Chairman",
             "id": "rowan-sobelvitch"
+          },
+          {
+            "id": "rowan-sobel",
+            "name": "Rowan Sobel",
+            "role": "Chairman",
+            "bio": "Rowan Sobel serves as Chairman of the South African Zionist Federation, one of the oldest and most established Zionist organizations globally, representing the pro-Israel segment of South Africa's ~50,000-strong Jewish community."
           }
         ],
         "connections": [
@@ -57758,6 +58700,18 @@
             "role": "Former Chairman (1908-2000)",
             "bio": "Jewish South African, son of Ernest, led Anglo American and De Beers.",
             "id": "harry-oppenheimer"
+          },
+          {
+            "id": "nicky-oppenheimer",
+            "name": "Nicky Oppenheimer",
+            "role": "Former Chairman",
+            "bio": "Nicholas Frank Oppenheimer (born June 8, 1945) is a South African-Jewish billionaire businessman, the heir to the Oppenheimer diamond and mining empire. He served as chairman of De Beers and sold the family's 40% stake in De Beers to Anglo American for $5.1 billion in 2012. Net worth approximately $8 billion. The Oppenheimer family controlled global diamond trade for nearly a century."
+          },
+          {
+            "id": "jonathan-oppenheimer",
+            "name": "Jonathan Oppenheimer",
+            "role": "Family Heir & Investor",
+            "bio": "Jonathan Oppenheimer is the son of Nicky Oppenheimer and involved in the family's investment activities through Oppenheimer Generations."
           }
         ],
         "id": "anglo-american-oppenheimer-legacy",
@@ -58861,6 +59815,12 @@
           {
             "name": "Graciela Jinich",
             "role": "Former Director"
+          },
+          {
+            "id": "marcelo-mindlin",
+            "name": "Marcelo Mindlin",
+            "role": "Patron & Donor",
+            "bio": "Marcelo Mindlin is an Argentine-Jewish billionaire and CEO of Pampa Energia, Argentina's largest energy company. He is a major patron of the Buenos Aires Holocaust Museum and Jewish cultural institutions in Argentina. Net worth approximately $1.9 billion."
           }
         ],
         "connections": [
@@ -58899,6 +59859,12 @@
           {
             "name": "Adrian Werthein",
             "role": "Board member and major benefactor"
+          },
+          {
+            "id": "aldo-donzis",
+            "name": "Aldo Donzis",
+            "role": "President of DAIA",
+            "bio": "Aldo Donzis is the president of DAIA (Delegation of Argentine Jewish Associations) and closely connected to Hebraica Buenos Aires, the central Jewish community and cultural center serving Argentina's 180,000-strong Jewish community, the largest in Latin America."
           }
         ],
         "connections": [
@@ -60109,6 +61075,12 @@
             "name": "Berel Lazar",
             "role": "Chief Rabbi of Russia",
             "bio": "Chief Rabbi of Russia since 2000. Italian-born Chabad-Lubavitch rabbi who has rebuilt Jewish life across Russia."
+          },
+          {
+            "id": "boruch-gorin",
+            "name": "Boruch Gorin",
+            "role": "Chairman of Public Relations",
+            "bio": "Rabbi Boruch Gorin serves as chairman of FJCR's public relations council and is a prominent Chabad rabbi in Moscow, serving as a public voice for Russian Jewry."
           }
         ],
         "id": "federation-of-jewish-communities-of-russia-fjcr",
@@ -60758,6 +61730,12 @@
             "name": "Vicky Safra",
             "role": "President",
             "bio": "Widow of Edmond Safra and president of the Edmond J. Safra Foundation. Brazilian-born philanthropist and one of the wealthiest women in the world."
+          },
+          {
+            "id": "david-safra",
+            "name": "David Safra",
+            "role": "Board Member",
+            "bio": "David Joseph Safra is a heir to the Safra banking dynasty and involved in the family's philanthropic activities through Fundacao Safra."
           }
         ],
         "connections": [
@@ -61157,6 +62135,18 @@
             "role": "Controlling Shareholder",
             "bio": "Jewish widow of Joseph Safra, one of the world's richest women.",
             "id": "vicky-safra"
+          },
+          {
+            "id": "joseph-safra-legacy",
+            "name": "Joseph Safra",
+            "role": "Former Owner (Deceased)",
+            "bio": "Joseph Safra (1938-2020) was a Brazilian-Lebanese Jewish billionaire banker who controlled Banco Safra and the J. Safra Group. At the time of his death, he was the richest banker in the world with a net worth of $23.2 billion. The Safra family descended from Syrian-Jewish bankers in Aleppo."
+          },
+          {
+            "id": "alberto-safra",
+            "name": "Alberto Safra",
+            "role": "Chairman (Heir)",
+            "bio": "Alberto Joseph Safra is one of the heirs to the Safra banking empire following his father Joseph Safra's death. The family controls Banco Safra, one of the largest private banks in Brazil, and J. Safra Sarasin in Switzerland."
           }
         ],
         "id": "banco-safra",
@@ -61811,6 +62801,12 @@
             "name": "Salil Parekh",
             "role": "CEO",
             "bio": "CEO and Managing Director of Infosys since 2018. Previously led Capgemini's operations."
+          },
+          {
+            "id": "narayana-murthy",
+            "name": "N.R. Narayana Murthy",
+            "role": "Co-Founder",
+            "bio": "N.R. Narayana Murthy co-founded Infosys in 1981, building it into one of India's largest IT services companies with annual revenue exceeding $18 billion and over 300,000 employees. Known as the \"father of the Indian IT industry.\" His daughter Akshata Murty is married to former UK PM Rishi Sunak."
           }
         ],
         "connections": [
@@ -61857,6 +62853,12 @@
             "name": "N. Chandrasekaran",
             "role": "Chairman",
             "bio": "Chairman of Tata Sons since 2017. Previously CEO of Tata Consultancy Services, where he oversaw global technology operations including Israeli partnerships."
+          },
+          {
+            "id": "ratan-tata-legacy",
+            "name": "Ratan Tata",
+            "role": "Former Chairman (Deceased)",
+            "bio": "Ratan Naval Tata (1937-2024) was the longtime chairman of Tata Group, India's largest conglomerate with revenue exceeding $150 billion. While not Jewish, the Tata family historically had connections to the Jewish communities of India, particularly the Sassoon family who were early business partners. Tata Group acquired Jaguar Land Rover, Tetley Tea, and Corus Steel. The connection in this database relates to Jewish Tata executives and Tata's Israel partnerships."
           }
         ],
         "connections": [
@@ -61897,6 +62899,12 @@
             "name": "Jacob Elias Sassoon",
             "role": "Builder/Donor",
             "bio": "Member of the Sassoon dynasty who built Keneseth Eliyahoo Synagogue in 1884. Part of the Baghdadi Jewish trading family that dominated Indian and East Asian commerce."
+          },
+          {
+            "id": "jacob-sassoon-india",
+            "name": "Jacob Sassoon",
+            "role": "Builder (Historic)",
+            "bio": "Sir Jacob Elias Sassoon also funded the construction of Keneseth Eliyahoo Synagogue in Mumbai (Bombay) in 1884, one of the most prominent synagogues in India. The Sassoon family built much of colonial Bombay's infrastructure."
           }
         ],
         "connections": [
@@ -61930,6 +62938,12 @@
           {
             "name": "Sarah Cohen",
             "role": "Legendary matriarch of the Kochi Jewish community"
+          },
+          {
+            "id": "elias-josephai",
+            "name": "Elias \"Babu\" Josephai",
+            "role": "Community Leader & Caretaker",
+            "bio": "Elias \"Babu\" Josephai is one of the last remaining members of the ancient Cochin Jewish community in Kerala, India, and serves as a caretaker of the Jewish Heritage Centre in Kochi. The Cochin Jews trace their presence in India back over 2,000 years."
           }
         ],
         "connections": [
@@ -62764,6 +63778,12 @@
             "name": "Francesco Milleri",
             "role": "CEO",
             "bio": "Italian CEO of EssilorLuxottica. Was a longtime aide to founder Leonardo Del Vecchio."
+          },
+          {
+            "id": "leonardo-del-vecchio-legacy",
+            "name": "Leonardo Del Vecchio",
+            "role": "Founder (Deceased)",
+            "bio": "Leonardo Del Vecchio (1935-2022) was an Italian billionaire who founded Luxottica, the world's largest eyewear company. While not Jewish himself, Luxottica's merger with Essilor (partly owned by the Dassault family) created EssilorLuxottica with a market cap exceeding EUR 80 billion. Del Vecchio was the richest person in Italy with a net worth of $27.3 billion at his death."
           }
         ],
         "connections": [
@@ -62910,6 +63930,12 @@
           {
             "name": "Noemi Di Segni",
             "role": "President of UCEI, overseeing body"
+          },
+          {
+            "id": "guido-vitale",
+            "name": "Guido Vitale",
+            "role": "Editor-in-Chief",
+            "bio": "Guido Vitale serves as Editor-in-Chief of Pagine Ebraiche, the primary Jewish newspaper in Italy serving the Italian Jewish community."
           }
         ],
         "connections": [
@@ -63707,6 +64733,12 @@
             "bio": "Chief Rabbi of Poland (Progressive), one of the first female rabbis in Polish history.",
             "role": "Chief Rabbi",
             "id": "klara-ko-odziejska-deg-rska"
+          },
+          {
+            "id": "klara-kolodziejska",
+            "name": "Klara Kolodziejska",
+            "role": "President",
+            "bio": "Klara Kolodziejska serves as president of the Union of Jewish Communities in Poland, representing the revived and growing Polish Jewish community that was nearly entirely destroyed in the Holocaust."
           }
         ],
         "id": "union-of-jewish-communities-in-poland",
@@ -64357,6 +65389,18 @@
           {
             "name": "Ronald Lauder",
             "role": "Chairman of the Auschwitz-Birkenau Foundation"
+          },
+          {
+            "id": "piotr-cywinski",
+            "name": "Piotr M.A. Cywinski",
+            "role": "Director",
+            "bio": "Piotr M.A. Cywinski has served as Director of the Auschwitz-Birkenau State Museum since 2006, overseeing the preservation of the largest Nazi concentration and extermination camp where 1.1 million people were murdered, including approximately 1 million Jews. The museum receives over 2 million visitors annually."
+          },
+          {
+            "id": "ronald-lauder",
+            "name": "Ronald Lauder",
+            "role": "Major Donor & Preservation Advocate",
+            "bio": "Ronald Steven Lauder, president of the World Jewish Congress and son of Estee Lauder, has been a major financial supporter of Auschwitz-Birkenau preservation efforts through the Auschwitz-Birkenau Foundation. Net worth approximately $4.4 billion."
           }
         ],
         "connections": [
@@ -64449,6 +65493,12 @@
             "name": "Christoph Meili",
             "role": "Whistleblower",
             "bio": "Former UBS security guard who discovered the bank was shredding Holocaust-era documents in 1997. Became a whistleblower, faced legal threats, and had to flee to the United States. Received American citizenship through a special act of Congress."
+          },
+          {
+            "id": "ralph-hamers",
+            "name": "Ralph Hamers",
+            "role": "Former CEO",
+            "bio": "Ralph Hamers served as CEO of UBS before the Credit Suisse merger. He previously led ING Group through digital transformation."
           }
         ],
         "connections": [
@@ -65104,6 +66154,12 @@
             "role": "Founder",
             "bio": "Spanish billionaire who founded Inditex and Zara, one of the wealthiest people in the world.",
             "id": "amancio-ortega"
+          },
+          {
+            "id": "oscar-garcia-maceiras",
+            "name": "Oscar Garcia Maceiras",
+            "role": "CEO",
+            "bio": "Oscar Garcia Maceiras serves as CEO of Inditex, the world's largest fashion retailer (Zara) with 5,600+ stores and annual revenue exceeding EUR 35 billion."
           }
         ],
         "connections": [
@@ -65718,6 +66774,12 @@
             "name": "Jonathan Davis",
             "role": "Director General",
             "bio": "Director General and CEO of World ORT, operating education programs in 35 countries."
+          },
+          {
+            "id": "conrad-meyer",
+            "name": "Conrad Meyer",
+            "role": "Director General",
+            "bio": "Conrad Meyer serves as Director General of World ORT, a global Jewish educational network operating in 35+ countries that has educated over 300,000 students annually through technology-focused vocational and academic programs."
           }
         ],
         "id": "world-ort",
@@ -66564,6 +67626,12 @@
             "name": "Chuck Schumer",
             "role": "Political Partner",
             "bio": "Schumer has addressed WJC gatherings and worked with the organization on international antisemitism and Holocaust restitution issues."
+          },
+          {
+            "id": "ronald-lauder-wjc",
+            "name": "Ronald Lauder",
+            "role": "President",
+            "bio": "Ronald S. Lauder has served as president of the World Jewish Congress since 2007, representing Jewish communities in 100+ countries. He is the son of Estee Lauder and an heir to the Estee Lauder Companies fortune. Net worth approximately $4.4 billion."
           }
         ],
         "connections": [
@@ -67274,6 +68342,18 @@
           {
             "name": "Christophe Fouquet",
             "role": "CEO of ASML (2024-present)"
+          },
+          {
+            "id": "peter-wennink",
+            "name": "Peter Wennink",
+            "role": "Former CEO",
+            "bio": "Peter Wennink served as CEO of ASML Holding, the world's sole manufacturer of extreme ultraviolet (EUV) lithography machines critical for advanced semiconductor manufacturing. ASML has a market cap exceeding $300 billion."
+          },
+          {
+            "id": "christophe-fouquet",
+            "name": "Christophe Fouquet",
+            "role": "CEO",
+            "bio": "Christophe Fouquet succeeded Peter Wennink as CEO of ASML in 2024, leading the company that holds a monopoly on EUV lithography technology."
           }
         ],
         "connections": [
@@ -68978,6 +70058,18 @@
           {
             "name": "Nishit Parikh",
             "role": "Vice President and industry leader"
+          },
+          {
+            "id": "peter-meeus",
+            "name": "Peter Meeus",
+            "role": "Former President",
+            "bio": "Peter Meeus served as president of the Antwerp Diamond Bourse, the world's largest diamond trading center. Antwerp's diamond district has been historically dominated by Jewish traders, particularly the Haredi (ultra-Orthodox) community. The district processes 84% of the world's rough diamonds."
+          },
+          {
+            "id": "nishant-kothari",
+            "name": "Nishant Kothari",
+            "role": "Board Member (Indian Diamond Trade)",
+            "bio": "Nishant Kothari represents the growing Indian diamond trading community in Antwerp. While historically Jewish-dominated, the Antwerp diamond trade has seen an increasing Indian presence since the 1970s."
           }
         ],
         "connections": [
@@ -69070,6 +70162,12 @@
             "name": "Martin Lorentzon",
             "role": "Co-Founder & Chairman",
             "bio": "Swedish internet entrepreneur who co-founded Spotify with Daniel Ek. Previously co-founded digital marketing company Tradedoubler."
+          },
+          {
+            "id": "barry-mccarthy",
+            "name": "Barry McCarthy",
+            "role": "Former CFO",
+            "bio": "Barry McCarthy served as Spotify's CFO, having previously been CFO at Netflix. He helped take Spotify public via a direct listing in 2018."
           }
         ],
         "connections": [
@@ -71077,6 +72175,12 @@
             "bio": "Jewish businessman of Baghdadi origin who built the Ohel Rachel Synagogue (1920), the largest synagogue in East Asia.",
             "role": "Builder",
             "id": "sir-jacob-elias-sassoon"
+          },
+          {
+            "id": "jacob-sassoon-shanghai",
+            "name": "Jacob Sassoon",
+            "role": "Patron (Historic)",
+            "bio": "The Sassoon family funded the construction of Ohel Rachel Synagogue in Shanghai in 1920, the largest synagogue in the Far East at the time. It served the Sephardic Jewish community of Shanghai. After the Communist revolution, the building was repurposed and today is rarely used for Jewish services."
           }
         ],
         "connections": [
@@ -71416,6 +72520,18 @@
           {
             "name": "Mikhail Fridman",
             "role": "Major donor and co-founder"
+          },
+          {
+            "id": "natan-sharansky",
+            "name": "Natan Sharansky",
+            "role": "Former Chairman of Advisory Board",
+            "bio": "Natan Sharansky (born 1948) is a former Soviet political prisoner and Israeli politician. He spent 9 years in Soviet prisons for his human rights activism before emigrating to Israel in 1986. He served as Chairman of the Jewish Agency and Israeli Minister. He was initially involved with the Babi Yar memorial before controversies over Russian donor influence led to leadership changes."
+          },
+          {
+            "id": "mikhail-fridman",
+            "name": "Mikhail Fridman",
+            "role": "Major Donor (Sanctioned)",
+            "bio": "Mikhail Maratovich Fridman is a Ukrainian-born Russian-Israeli Jewish billionaire oligarch who was a major donor to the Babi Yar Holocaust Memorial Center. Following Russia's invasion of Ukraine in 2022, Fridman was sanctioned by the EU and UK, freezing billions in assets and complicating the memorial's governance. Net worth formerly $15 billion."
           }
         ],
         "connections": [
@@ -71453,6 +72569,12 @@
           {
             "name": "Iosyp Zissels",
             "role": "Executive Vice President"
+          },
+          {
+            "id": "josef-zissels",
+            "name": "Josef Zissels",
+            "role": "Chairman",
+            "bio": "Josef Zissels serves as Chairman of the Vaad (Association of Jewish Organizations and Communities of Ukraine), representing Ukrainian Jewry. He is a former Soviet dissident who spent years in prison for his human rights activities."
           }
         ],
         "connections": [
@@ -74159,6 +75281,12 @@
             "name": "Alexandru Florian",
             "role": "Director",
             "bio": "Director of the Elie Wiesel National Institute, leading Romania's official Holocaust research and education efforts."
+          },
+          {
+            "id": "oliver-lustig-legacy",
+            "name": "Oliver Lustig",
+            "role": "Former Board Member (Deceased)",
+            "bio": "Oliver Lustig (1926-2017) was a Romanian-Jewish Holocaust survivor, journalist, and writer who served on the board of the Elie Wiesel Institute in Bucharest."
           }
         ],
         "connections": [
@@ -74601,6 +75729,12 @@
             "name": "Euisun Chung",
             "role": "Executive Chairman",
             "bio": "Executive Chairman of Hyundai Motor Group. Third-generation leader of the Chung family conglomerate. Overseeing the company's push into electric vehicles and autonomous driving with Israeli tech partnerships."
+          },
+          {
+            "id": "jose-munoz",
+            "name": "Jose Munoz",
+            "role": "President & CEO",
+            "bio": "Jose Munoz serves as President and CEO of Hyundai Motor North America. Hyundai has invested in Israeli startups through its CRADLE venture arm and partnerships with Mobileye for autonomous driving."
           }
         ],
         "connections": [
@@ -74681,6 +75815,12 @@
             "name": "Rabbi Osher Litzman",
             "role": "Chief Rabbi of South Korea",
             "bio": "Chabad rabbi serving the Jewish community in Seoul since 2008, providing kosher food, Shabbat services, and Jewish education."
+          },
+          {
+            "id": "david-noll-korea",
+            "name": "David Noll",
+            "role": "Community Organizer",
+            "bio": "David Noll has been active in organizing Jewish community events and services in Seoul, South Korea, serving the approximately 1,000 Jews living in the country."
           }
         ],
         "id": "jewish-community-of-south-korea",
@@ -75716,6 +76856,12 @@
             "name": "Isaac Lee",
             "role": "Prominent Community Member",
             "bio": "Colombian-Jewish media executive who served as chief content officer at Univision, notable member of the Colombian Jewish community."
+          },
+          {
+            "id": "david-galat",
+            "name": "David Galat",
+            "role": "President",
+            "bio": "David Galat served as president of the Confederacion de Comunidades Judias de Colombia, representing Colombia's Jewish community of approximately 5,000 people across Bogota, Barranquilla, Cali, and Medellin."
           }
         ],
         "id": "confederaci-n-de-comunidades-jud-as-de-colombia",
@@ -76039,6 +77185,12 @@
           {
             "name": "David Sassoon",
             "role": "Historic builder (Sassoon family)"
+          },
+          {
+            "id": "meyer-sassoon-legacy",
+            "name": "Jacob Sassoon",
+            "role": "Founder (Historic)",
+            "bio": "Sir Jacob Elias Sassoon (1844-1916) built Ohel Leah Synagogue in 1902 in Hong Kong, named after his mother Leah Gubbay. The Sassoon family, known as the \"Rothschilds of the East,\" were Baghdadi Jewish merchants who dominated trade in Asia. The synagogue is a declared monument in Hong Kong."
           }
         ],
         "id": "ohel-leah-synagogue",
@@ -76384,6 +77536,12 @@
             "name": "Eduardo Bigio",
             "role": "Community Leader",
             "bio": "Longstanding leader in the Peruvian Jewish community involved in education and interfaith initiatives."
+          },
+          {
+            "id": "isaac-mekler",
+            "name": "Isaac Mekler",
+            "role": "Former President",
+            "bio": "Isaac Mekler served as president of the Asociacion Judia del Peru, representing Peru's Jewish community of approximately 3,000 people, mostly concentrated in Lima."
           }
         ],
         "id": "asociaci-n-jud-a-del-per",
@@ -76815,6 +77973,12 @@
             "name": "Frank Ephraim",
             "role": "Community Historian",
             "bio": "Author and historian who documented the rescue of Jewish refugees in the Philippines during World War II."
+          },
+          {
+            "id": "gabriel-bonwitt",
+            "name": "Gabriel Bonwitt",
+            "role": "Community Leader",
+            "bio": "Gabriel Bonwitt has been a prominent figure in the Jewish Association of the Philippines, serving the approximately 200 Jews living in the Philippines, primarily in Manila."
           }
         ],
         "id": "jewish-association-of-the-philippines",
@@ -77483,6 +78647,12 @@
             "name": "Heinz Moeller",
             "role": "Historical Community Leader",
             "bio": "One of the founders of organized Jewish life in Ecuador, establishing key community institutions."
+          },
+          {
+            "id": "jean-claude-bessudo",
+            "name": "Jean Claude Bessudo",
+            "role": "Community Leader",
+            "bio": "Jean Claude Bessudo is a prominent figure in the Ecuadorian Jewish community, based primarily in Quito and Guayaquil, numbering approximately 700 people."
           }
         ],
         "id": "comunidad-jud-a-del-ecuador",
@@ -78756,6 +79926,12 @@
             "name": "Jaime Daremblum",
             "role": "Prominent Member & Diplomat",
             "bio": "Costa Rican-Jewish diplomat who served as ambassador to the United States, prominent figure in Costa Rican Jewish community."
+          },
+          {
+            "id": "isaac-aizenman",
+            "name": "Isaac Aizenman",
+            "role": "Community President",
+            "bio": "Isaac Aizenman has served as president of the Centro Israelita Sionista de Costa Rica, representing the approximately 3,000-strong Jewish community concentrated in San Jose."
           }
         ],
         "id": "centro-israelita-sionista-de-costa-rica",
@@ -78805,6 +79981,12 @@
             "name": "Jorge García Granados",
             "role": "Historical Figure",
             "bio": "Guatemalan diplomat who served as ambassador to the UN and was instrumental in the 1947 partition vote supporting Israel's creation."
+          },
+          {
+            "id": "michael-yurrita",
+            "name": "Michael Yurrita",
+            "role": "Community Leader",
+            "bio": "Michael Yurrita is connected to Guatemala's small Jewish community of approximately 1,200 people, centered in Guatemala City."
           }
         ],
         "id": "comunidad-jud-a-de-guatemala",
