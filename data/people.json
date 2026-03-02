@@ -10,12 +10,6 @@
           "role": "CEO",
           "entryId": "american-jewish-committee-ajc",
           "country": "United States"
-        },
-        {
-          "organization": "American Jewish Committee",
-          "role": "CEO",
-          "entryId": "american-jewish-committee",
-          "country": "United States"
         }
       ]
     },
@@ -48,13 +42,6 @@
           "role": "CEO & National Director",
           "entryId": "anti-defamation-league-foundation",
           "country": "United States"
-        },
-        {
-          "organization": "Anti-Defamation League",
-          "role": "CEO",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "anti-defamation-league-adl"
         }
       ]
     },
@@ -79,12 +66,6 @@
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "Executive Director",
-          "entryId": "aipac-american-israel-public-affairs-committee",
-          "country": "United States"
-        },
-        {
-          "organization": "AIPAC",
-          "role": "CEO",
           "entryId": "aipac",
           "country": "United States"
         }
@@ -98,7 +79,7 @@
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
           "role": "President",
-          "entryId": "aipac-american-israel-public-affairs-committee",
+          "entryId": "aipac",
           "country": "United States"
         }
       ]
@@ -118,18 +99,6 @@
           "organization": "Conference of Presidents of Major American Jewish Organizations",
           "role": "Member Organization Leader",
           "entryId": "conference-of-presidents-of-major-american-jewish-organizations",
-          "country": "United States"
-        },
-        {
-          "organization": "Zionist Organization of America (ZOA)",
-          "role": "National President",
-          "entryId": "zionist-organization-america",
-          "country": "United States"
-        },
-        {
-          "organization": "Zionist Organization of America (ZOA)",
-          "role": "National President",
-          "entryId": "zionist-organization-of-america",
           "country": "United States"
         }
       ]
@@ -269,12 +238,6 @@
           "country": "United States"
         },
         {
-          "organization": "Jewish Federations of North America (JFNA)",
-          "role": "President & CEO",
-          "entryId": "jewish-federations-of-north-america",
-          "country": "United States"
-        },
-        {
           "organization": "The Jewish Federations of North America",
           "role": "President & CEO",
           "entryId": "the-jewish-federations-of-north-america",
@@ -357,12 +320,6 @@
           "role": "President",
           "entryId": "union-for-reform-judaism-urj",
           "country": "United States"
-        },
-        {
-          "organization": "Union for Reform Judaism",
-          "role": "President",
-          "entryId": "union-for-reform-judaism",
-          "country": "United States"
         }
       ]
     },
@@ -426,7 +383,7 @@
         {
           "organization": "Jewish Theological Seminary (JTS)",
           "role": "Chancellor",
-          "entryId": "jewish-theological-seminary-jts",
+          "entryId": "jewish-theological-seminary",
           "country": "United States"
         }
       ]
@@ -479,12 +436,6 @@
           "organization": "Jewish National Fund - USA (JNF-USA)",
           "role": "CEO",
           "entryId": "jewish-national-fund-usa-jnf-usa",
-          "country": "United States"
-        },
-        {
-          "organization": "Jewish National Fund-USA (JNF-USA)",
-          "role": "CEO",
-          "entryId": "jewish-national-fund-usa",
           "country": "United States"
         }
       ]
@@ -567,19 +518,13 @@
         {
           "organization": "The Forward (newspaper)",
           "role": "Editor-in-Chief",
-          "entryId": "the-forward-newspaper",
+          "entryId": "the-forward",
           "country": "United States"
         },
         {
           "organization": "The Jewish Daily Forward (Yiddish: Forverts)",
           "role": "Editor-in-Chief",
           "entryId": "the-jewish-daily-forward-yiddish-forverts",
-          "country": "United States"
-        },
-        {
-          "organization": "The Forward",
-          "role": "Editor-in-Chief",
-          "entryId": "the-forward",
           "country": "United States"
         }
       ]
@@ -639,12 +584,6 @@
           "role": "President & CEO",
           "entryId": "museum-of-jewish-heritage-a-living-memorial-to-the-holocaust",
           "country": "United States"
-        },
-        {
-          "organization": "Museum of Jewish Heritage - A Living Memorial to the Holocaust",
-          "role": "CEO",
-          "entryId": "museum-jewish-heritage",
-          "country": "United States"
         }
       ]
     },
@@ -656,12 +595,6 @@
         {
           "organization": "United States Holocaust Memorial Museum",
           "role": "Chairman",
-          "entryId": "united-states-holocaust-memorial-museum",
-          "country": "United States"
-        },
-        {
-          "organization": "United States Holocaust Memorial Museum",
-          "role": "Chair",
           "entryId": "us-holocaust-memorial-museum",
           "country": "United States"
         },
@@ -700,12 +633,6 @@
         {
           "organization": "Goldman Sachs",
           "role": "CEO",
-          "entryId": "goldman-sachs",
-          "country": "United States"
-        },
-        {
-          "organization": "Goldman Sachs (historic)",
-          "role": "Chairman & CEO",
           "entryId": "goldman-sachs-historic",
           "country": "United States"
         }
@@ -718,12 +645,6 @@
       "affiliations": [
         {
           "organization": "Goldman Sachs",
-          "role": "Former CEO",
-          "entryId": "goldman-sachs",
-          "country": "United States"
-        },
-        {
-          "organization": "Goldman Sachs (historic)",
           "role": "Former CEO",
           "entryId": "goldman-sachs-historic",
           "country": "United States"
@@ -768,15 +689,8 @@
         {
           "organization": "Bloomberg LP",
           "role": "Founder & CEO",
-          "entryId": "bloomberg-lp",
+          "entryId": "bloomberg-l-p",
           "country": "United States"
-        },
-        {
-          "organization": "Bloomberg L.P.",
-          "role": "Founder & Owner",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "bloomberg-lp"
         },
         {
           "organization": "AIPAC (American Israel Public Affairs Committee)",
@@ -829,12 +743,6 @@
           "country": "United States"
         },
         {
-          "organization": "Meta Platforms (Facebook)",
-          "role": "CEO & Founder",
-          "entryId": "meta-platforms",
-          "country": "United States"
-        },
-        {
           "organization": "Chan Zuckerberg Initiative (CZI)",
           "role": "Co-Founder",
           "entryId": "chan-zuckerberg-initiative",
@@ -851,12 +759,6 @@
           "organization": "Meta Platforms (Facebook)",
           "role": "Former COO",
           "entryId": "meta-platforms-facebook",
-          "country": "United States"
-        },
-        {
-          "organization": "Meta Platforms (Facebook)",
-          "role": "Former COO",
-          "entryId": "meta-platforms",
           "country": "United States"
         },
         {
@@ -927,12 +829,6 @@
           "role": "Founder & CEO",
           "entryId": "dell-technologies",
           "country": "United States"
-        },
-        {
-          "organization": "Dell Technologies (Israel operations)",
-          "role": "Founder & CEO",
-          "entryId": "dell-technologies-israel-operations",
-          "country": "United States"
         }
       ]
     },
@@ -950,7 +846,7 @@
         {
           "organization": "Estee Lauder Companies",
           "role": "Executive Chairman",
-          "entryId": "estee-lauder-companies",
+          "entryId": "the-estee-lauder-companies",
           "country": "United States"
         }
       ]
@@ -982,7 +878,7 @@
         {
           "organization": "Partner Communications (Orange Israel)",
           "role": "Original Investor",
-          "entryId": "partner-communications-orange-israel",
+          "entryId": "partner-communications",
           "country": "Israel"
         },
         {
@@ -1011,12 +907,6 @@
           "country": "United States"
         },
         {
-          "organization": "IAC",
-          "role": "Chairman & Senior Executive",
-          "entryId": "iac",
-          "country": "United States"
-        },
-        {
           "organization": "Notable Jewish Media Executives (US)",
           "role": "Chairman of IAC / Expedia",
           "entryId": "notable-jewish-media-executives-us",
@@ -1042,9 +932,9 @@
           "country": "United States"
         },
         {
-          "organization": "Notable Jewish Entertainers (US)",
-          "role": "Director / Producer",
-          "entryId": "notable-jewish-entertainers-us",
+          "organization": "DreamWorks Animation",
+          "role": "Co-founder of DreamWorks SKG",
+          "entryId": "dreamworks-animation",
           "country": "United States"
         }
       ]
@@ -1123,9 +1013,9 @@
           "country": "United States"
         },
         {
-          "organization": "Notable Jewish Media Executives (US)",
-          "role": "CEO of Warner Bros. Discovery",
-          "entryId": "notable-jewish-media-executives-us",
+          "organization": "CNN (Cable News Network)",
+          "role": "Warner Bros. Discovery CEO",
+          "entryId": "cnn",
           "country": "United States"
         }
       ]
@@ -1177,12 +1067,6 @@
           "role": "CEO",
           "entryId": "walt-disney-company",
           "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Media Executives (US)",
-          "role": "CEO of The Walt Disney Company",
-          "entryId": "notable-jewish-media-executives-us",
-          "country": "United States"
         }
       ]
     },
@@ -1195,12 +1079,6 @@
           "organization": "Starbucks",
           "role": "Former CEO & Chairman",
           "entryId": "starbucks",
-          "country": "United States"
-        },
-        {
-          "organization": "Starbucks (Howard Schultz era)",
-          "role": "Former CEO & Chairman",
-          "entryId": "starbucks-howard-schultz-era",
           "country": "United States"
         },
         {
@@ -1287,7 +1165,7 @@
         {
           "organization": "Zionist Organization of America (ZOA)",
           "role": "Major Donor",
-          "entryId": "zionist-organization-of-america",
+          "entryId": "zionist-organization-of-america-zoa",
           "country": "United States"
         },
         {
@@ -1350,12 +1228,6 @@
         },
         {
           "organization": "New England Patriots (Kraft Group)",
-          "role": "Owner",
-          "entryId": "new-england-patriots-kraft-group",
-          "country": "United States"
-        },
-        {
-          "organization": "New England Patriots",
           "role": "Owner",
           "entryId": "new-england-patriots",
           "country": "United States"
@@ -1552,13 +1424,6 @@
           "role": "Founder & CEO",
           "entryId": "check-point-software-technologies",
           "country": "Israel"
-        },
-        {
-          "organization": "Check Point Software",
-          "role": "Founder & CEO",
-          "country": "Israel",
-          "religion": "jewish",
-          "entryId": "check-point-software"
         }
       ]
     },
@@ -1620,21 +1485,8 @@
         {
           "organization": "Mobileye (Intel)",
           "role": "Co-founder & CEO",
-          "entryId": "mobileye-intel",
-          "country": "Israel"
-        },
-        {
-          "organization": "Mobileye",
-          "role": "Co-founder & CEO",
           "entryId": "mobileye",
           "country": "Israel"
-        },
-        {
-          "organization": "Mobileye",
-          "role": "Founder & CEO",
-          "country": "Israel",
-          "religion": "jewish",
-          "entryId": "mobileye"
         }
       ]
     },
@@ -1785,18 +1637,12 @@
         {
           "organization": "World Jewish Congress (WJC)",
           "role": "President",
-          "entryId": "world-jewish-congress-wjc",
+          "entryId": "world-jewish-congress",
           "country": "Switzerland"
         },
         {
           "organization": "Estee Lauder Companies",
           "role": "Board Member & WJC President",
-          "entryId": "estee-lauder-companies",
-          "country": "United States"
-        },
-        {
-          "organization": "The Estee Lauder Companies",
-          "role": "Board Member",
           "entryId": "the-estee-lauder-companies",
           "country": "United States"
         },
@@ -1807,16 +1653,15 @@
           "country": "Austria"
         },
         {
-          "organization": "World Jewish Congress",
-          "role": "President",
-          "country": "International",
-          "religion": "jewish",
-          "entryId": "world-jewish-congress"
-        },
-        {
           "organization": "Notable Jewish Philanthropists (US)",
           "role": "WJC President / Philanthropist",
           "entryId": "notable-jewish-philanthropists-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Key Donor",
+          "entryId": "republican-jewish-coalition",
           "country": "United States"
         }
       ]
@@ -1956,12 +1801,6 @@
           "country": "Germany"
         },
         {
-          "organization": "Zentralrat der Juden in Deutschland",
-          "role": "President",
-          "entryId": "zentralrat-der-juden-in-deutschland",
-          "country": "Germany"
-        },
-        {
           "organization": "Central Council of Jews in Germany",
           "role": "President",
           "entryId": "central-council-of-jews-in-germany",
@@ -1977,7 +1816,7 @@
         {
           "organization": "Jewish Museum and Tolerance Center (Moscow)",
           "role": "FJCR President",
-          "entryId": "jewish-museum-and-tolerance-center-moscow",
+          "entryId": "jewish-museum-and-tolerance-center",
           "country": "Russia"
         },
         {
@@ -2063,18 +1902,6 @@
           "role": "Co-founder",
           "entryId": "wachtell-lipton-rosen-katz",
           "country": "United States"
-        },
-        {
-          "organization": "Wachtell, Lipton, Rosen & Katz",
-          "role": "Co-Founder",
-          "entryId": "wachtell-lipton",
-          "country": "United States"
-        },
-        {
-          "organization": "Wachtell Lipton Rosen & Katz",
-          "role": "Founding Partner",
-          "entryId": "wachtell-lipton-rosen-and-katz",
-          "country": "United States"
         }
       ]
     },
@@ -2087,12 +1914,6 @@
           "organization": "Skadden, Arps, Slate, Meagher & Flom",
           "role": "Founding Partner (1923-2011)",
           "entryId": "skadden-arps-slate-meagher-flom",
-          "country": "United States"
-        },
-        {
-          "organization": "Skadden Arps Slate Meagher & Flom",
-          "role": "Former Lead Partner",
-          "entryId": "skadden-arps-slate-meagher-and-flom",
           "country": "United States"
         }
       ]
@@ -2149,7 +1970,7 @@
         {
           "organization": "Miami Dolphins (Stephen Ross)",
           "role": "Owner",
-          "entryId": "miami-dolphins-stephen-ross",
+          "entryId": "miami-dolphins",
           "country": "United States"
         }
       ]
@@ -2356,7 +2177,7 @@
         {
           "organization": "KKR & Co.",
           "role": "Co-Founder & Co-Chairman",
-          "entryId": "kkr-co",
+          "entryId": "kkr-and-co",
           "country": "United States"
         },
         {
@@ -2364,19 +2185,6 @@
           "role": "Co-Founder & Co-Executive Chairman",
           "entryId": "kkr-kohlberg-kravis-roberts",
           "country": "United States"
-        },
-        {
-          "organization": "KKR & Co.",
-          "role": "Co-Founder & Co-Chairman",
-          "entryId": "kkr-and-co",
-          "country": "United States"
-        },
-        {
-          "organization": "KKR & Co.",
-          "role": "Co-founder",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "kkr-and-co"
         }
       ]
     },
@@ -2403,13 +2211,6 @@
           "role": "Co-Founder",
           "entryId": "apollo-global-management",
           "country": "United States"
-        },
-        {
-          "organization": "Apollo Global Management",
-          "role": "Co-founder & Former CEO",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "apollo-global-management"
         },
         {
           "organization": "Epstein Network",
@@ -2441,12 +2242,6 @@
           "organization": "Elliott Management Corporation",
           "role": "Founder & Co-CEO",
           "entryId": "elliott-management-corporation",
-          "country": "United States"
-        },
-        {
-          "organization": "Elliott Management Corporation",
-          "role": "Founder & Co-CEO",
-          "entryId": "paul-singer-elliott-management",
           "country": "United States"
         },
         {
@@ -2531,12 +2326,6 @@
           "role": "Co-owner & Chairman",
           "entryId": "new-york-giants-tisch-mara",
           "country": "United States"
-        },
-        {
-          "organization": "New York Giants",
-          "role": "Co-Owner & Chairman",
-          "entryId": "new-york-giants",
-          "country": "United States"
         }
       ]
     },
@@ -2548,7 +2337,7 @@
         {
           "organization": "Philadelphia 76ers (Harris Blitzer)",
           "role": "Co-Owner",
-          "entryId": "philadelphia-76ers-harris-blitzer",
+          "entryId": "philadelphia-76ers",
           "country": "United States"
         },
         {
@@ -2558,9 +2347,9 @@
           "country": "United States"
         },
         {
-          "organization": "Philadelphia 76ers",
-          "role": "Managing Partner",
-          "entryId": "philadelphia-76ers",
+          "organization": "Apollo Global Management",
+          "role": "Co-founder",
+          "entryId": "apollo-global-management",
           "country": "United States"
         }
       ]
@@ -2572,12 +2361,6 @@
       "affiliations": [
         {
           "organization": "Brooklyn Nets (formerly Ratner)",
-          "role": "Former Owner",
-          "entryId": "brooklyn-nets-formerly-ratner",
-          "country": "United States"
-        },
-        {
-          "organization": "Brooklyn Nets",
           "role": "Former Owner",
           "entryId": "brooklyn-nets",
           "country": "United States"
@@ -2592,12 +2375,6 @@
         {
           "organization": "Golden State Warriors (Joe Lacob)",
           "role": "Owner & Governor",
-          "entryId": "golden-state-warriors-joe-lacob",
-          "country": "United States"
-        },
-        {
-          "organization": "Golden State Warriors",
-          "role": "Co-owner & Governor",
           "entryId": "golden-state-warriors",
           "country": "United States"
         }
@@ -2611,19 +2388,13 @@
         {
           "organization": "Los Angeles Clippers (Steve Ballmer)",
           "role": "Owner",
-          "entryId": "los-angeles-clippers-steve-ballmer",
+          "entryId": "los-angeles-clippers",
           "country": "United States"
         },
         {
           "organization": "Microsoft (Israel R&D)",
           "role": "Former CEO",
           "entryId": "microsoft-israel-r-d",
-          "country": "United States"
-        },
-        {
-          "organization": "Los Angeles Clippers",
-          "role": "Owner",
-          "entryId": "los-angeles-clippers",
           "country": "United States"
         },
         {
@@ -2642,12 +2413,6 @@
         {
           "organization": "Dallas Mavericks (Mark Cuban)",
           "role": "Former Owner",
-          "entryId": "dallas-mavericks-mark-cuban",
-          "country": "United States"
-        },
-        {
-          "organization": "Dallas Mavericks",
-          "role": "Former Majority Owner",
           "entryId": "dallas-mavericks",
           "country": "United States"
         }
@@ -2707,12 +2472,6 @@
           "organization": "Washington Institute for Near East Policy (WINEP)",
           "role": "Executive Director",
           "entryId": "washington-institute-for-near-east-policy-winep",
-          "country": "United States"
-        },
-        {
-          "organization": "Washington Institute for Near East Policy (WINEP)",
-          "role": "Executive Director",
-          "entryId": "washington-institute-for-near-east-policy",
           "country": "United States"
         }
       ]
@@ -2776,12 +2535,6 @@
       "affiliations": [
         {
           "organization": "Calvin Klein (PVH Corp)",
-          "role": "Founder",
-          "entryId": "calvin-klein-pvh-corp",
-          "country": "United States"
-        },
-        {
-          "organization": "Calvin Klein",
           "role": "Founder",
           "entryId": "calvin-klein",
           "country": "United States"
@@ -3007,7 +2760,7 @@
         {
           "organization": "Meta Platforms (Facebook)",
           "role": "Early Investor & Board Member (former)",
-          "entryId": "meta-platforms",
+          "entryId": "meta-platforms-facebook",
           "country": "United States"
         }
       ]
@@ -3098,7 +2851,7 @@
         {
           "organization": "NBCUniversal (Comcast)",
           "role": "Chairman & CEO (Comcast)",
-          "entryId": "nbcuniversal-comcast",
+          "entryId": "nbcuniversal",
           "country": "United States"
         },
         {
@@ -3211,12 +2964,6 @@
         {
           "organization": "iHeartMedia",
           "role": "Chairman & CEO",
-          "entryId": "iheartmedia",
-          "country": "United States"
-        },
-        {
-          "organization": "iHeart Media",
-          "role": "Chairman & CEO",
           "entryId": "iheart-media",
           "country": "United States"
         }
@@ -3236,7 +2983,7 @@
         {
           "organization": "The New York Times Company",
           "role": "Publisher & Chairman",
-          "entryId": "new-york-times-company",
+          "entryId": "new-york-times",
           "country": "United States"
         }
       ]
@@ -3263,12 +3010,6 @@
           "organization": "Charles and Lynn Schusterman Family Philanthropies",
           "role": "Co-Founder & Chair",
           "entryId": "charles-and-lynn-schusterman-family-philanthropies",
-          "country": "United States"
-        },
-        {
-          "organization": "Charles and Lynn Schusterman Family Philanthropies",
-          "role": "Co-Founder & Chair",
-          "entryId": "schusterman-family-philanthropies",
           "country": "United States"
         },
         {
@@ -3299,12 +3040,6 @@
         {
           "organization": "Birthright Israel (Taglit)",
           "role": "Co-Founder",
-          "entryId": "birthright-israel-taglit",
-          "country": "Israel"
-        },
-        {
-          "organization": "Birthright Israel",
-          "role": "Co-founder",
           "entryId": "birthright-israel",
           "country": "Israel"
         },
@@ -3680,12 +3415,6 @@
           "role": "Co-founder (1859-1907)",
           "entryId": "marks-spencer",
           "country": "United Kingdom"
-        },
-        {
-          "organization": "Marks & Spencer (M&S)",
-          "role": "Co-founder (1859-1907)",
-          "entryId": "marks-spencer-m-s",
-          "country": "United Kingdom"
         }
       ]
     },
@@ -3698,12 +3427,6 @@
           "organization": "N M Rothschild & Sons",
           "role": "Founder (1777-1836)",
           "entryId": "n-m-rothschild-sons",
-          "country": "United Kingdom"
-        },
-        {
-          "organization": "N M Rothschild & Sons",
-          "role": "Founder",
-          "entryId": "n-m-rothschild-and-sons",
           "country": "United Kingdom"
         },
         {
@@ -3847,12 +3570,6 @@
           "role": "Founder & CEO",
           "entryId": "indigo-books-music",
           "country": "Canada"
-        },
-        {
-          "organization": "Indigo Books & Music",
-          "role": "Founder & CEO",
-          "entryId": "indigo-books-and-music",
-          "country": "Canada"
         }
       ]
     },
@@ -3870,7 +3587,7 @@
         {
           "organization": "Indigo Books & Music",
           "role": "Related (Onex CEO)",
-          "entryId": "indigo-books-and-music",
+          "entryId": "indigo-books-music",
           "country": "Canada"
         }
       ]
@@ -3890,12 +3607,6 @@
           "organization": "Lowy Institute",
           "role": "Founder",
           "entryId": "lowy-institute",
-          "country": "Australia"
-        },
-        {
-          "organization": "Westfield Corporation",
-          "role": "Founder",
-          "entryId": "westfield-corporation",
           "country": "Australia"
         }
       ]
@@ -3953,12 +3664,6 @@
           "organization": "Renova Group (Viktor Vekselberg)",
           "role": "Founder",
           "entryId": "renova-group-viktor-vekselberg",
-          "country": "Russia"
-        },
-        {
-          "organization": "Renova Group",
-          "role": "Founder",
-          "entryId": "renova-group",
           "country": "Russia"
         }
       ]
@@ -4182,12 +3887,6 @@
           "role": "Comedian/Actor",
           "entryId": "notable-jewish-entertainers-us",
           "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Entertainers (US)",
-          "role": "Comedian / Actor",
-          "entryId": "notable-jewish-entertainers-us",
-          "country": "United States"
         }
       ]
     },
@@ -4199,12 +3898,6 @@
         {
           "organization": "Notable Jewish Entertainers (US)",
           "role": "Actor/Producer",
-          "entryId": "notable-jewish-entertainers-us",
-          "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Entertainers (US)",
-          "role": "Actor / Comedian / Producer",
           "entryId": "notable-jewish-entertainers-us",
           "country": "United States"
         }
@@ -4259,12 +3952,6 @@
           "role": "Physicist (1879-1955)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Scientists & Intellectuals (US)",
-          "role": "Physicist (deceased)",
-          "entryId": "notable-jewish-scientists-intellectuals-us",
-          "country": "United States"
         }
       ]
     },
@@ -4278,12 +3965,6 @@
           "role": "Physicist (1904-1967)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Scientists & Intellectuals (US)",
-          "role": "Physicist - Father of Atomic Bomb (deceased)",
-          "entryId": "notable-jewish-scientists-intellectuals-us",
-          "country": "United States"
         }
       ]
     },
@@ -4295,12 +3976,6 @@
         {
           "organization": "Notable Jewish Scientists & Intellectuals (US)",
           "role": "Physicist (1918-1988)",
-          "entryId": "notable-jewish-scientists-intellectuals-us",
-          "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Scientists & Intellectuals (US)",
-          "role": "Physicist (deceased)",
           "entryId": "notable-jewish-scientists-intellectuals-us",
           "country": "United States"
         }
@@ -4336,12 +4011,6 @@
           "country": "United States",
           "religion": "jewish",
           "entryId": "cnn"
-        },
-        {
-          "organization": "Notable Jewish Media Executives (US)",
-          "role": "Former President of CNN",
-          "entryId": "notable-jewish-media-executives-us",
-          "country": "United States"
         }
       ]
     },
@@ -4353,12 +4022,6 @@
         {
           "organization": "Notable Jewish Media Executives (US)",
           "role": "Former CBS CEO",
-          "entryId": "notable-jewish-media-executives-us",
-          "country": "United States"
-        },
-        {
-          "organization": "Notable Jewish Media Executives (US)",
-          "role": "Former CEO of CBS (resigned)",
           "entryId": "notable-jewish-media-executives-us",
           "country": "United States"
         }
@@ -4544,12 +4207,6 @@
           "country": "United States"
         },
         {
-          "organization": "Blackstone Inc.",
-          "role": "Co-founder, Chairman & CEO",
-          "entryId": "blackstone-inc",
-          "country": "United States"
-        },
-        {
           "organization": "Council on Foreign Relations (CFR)",
           "role": "Board Member",
           "entryId": "council-on-foreign-relations-cfr",
@@ -4700,12 +4357,6 @@
         {
           "organization": "Random House (Penguin Random House)",
           "role": "Co-founder (1898-1971)",
-          "entryId": "random-house-penguin-random-house",
-          "country": "United States"
-        },
-        {
-          "organization": "Random House",
-          "role": "Co-founder (1898-1971)",
           "entryId": "random-house",
           "country": "United States"
         }
@@ -4751,12 +4402,6 @@
         {
           "organization": "Bed Bath & Beyond (historic)",
           "role": "Co-founder",
-          "entryId": "bed-bath-beyond-historic",
-          "country": "United States"
-        },
-        {
-          "organization": "Bed Bath & Beyond",
-          "role": "Co-founder",
           "entryId": "bed-bath-beyond",
           "country": "United States"
         }
@@ -4769,12 +4414,6 @@
       "affiliations": [
         {
           "organization": "Bed Bath & Beyond (historic)",
-          "role": "Co-founder",
-          "entryId": "bed-bath-beyond-historic",
-          "country": "United States"
-        },
-        {
-          "organization": "Bed Bath & Beyond",
           "role": "Co-founder",
           "entryId": "bed-bath-beyond",
           "country": "United States"
@@ -4996,7 +4635,7 @@
         {
           "organization": "Warner Bros. Pictures",
           "role": "Co-Founder",
-          "entryId": "warner-bros-pictures",
+          "entryId": "warner-bros-pictures-historic-founding",
           "country": "United States"
         }
       ]
@@ -5015,7 +4654,7 @@
         {
           "organization": "Warner Bros. Pictures",
           "role": "Co-Founder",
-          "entryId": "warner-bros-pictures",
+          "entryId": "warner-bros-pictures-historic-founding",
           "country": "United States"
         }
       ]
@@ -5029,12 +4668,6 @@
           "organization": "Paramount Pictures (historic founding)",
           "role": "Founder (1873-1976)",
           "entryId": "paramount-pictures-historic-founding",
-          "country": "United States"
-        },
-        {
-          "organization": "Paramount Pictures",
-          "role": "Founder",
-          "entryId": "paramount-pictures",
           "country": "United States"
         },
         {
@@ -5062,12 +4695,6 @@
           "role": "Co-founder (1891-1958)",
           "entryId": "columbia-pictures-historic-founding",
           "country": "United States"
-        },
-        {
-          "organization": "Columbia Pictures",
-          "role": "Co-Founder & President",
-          "entryId": "columbia-pictures",
-          "country": "United States"
         }
       ]
     },
@@ -5080,12 +4707,6 @@
           "organization": "Universal Pictures (historic founding)",
           "role": "Founder (1867-1939)",
           "entryId": "universal-pictures-historic-founding",
-          "country": "United States"
-        },
-        {
-          "organization": "Universal Pictures",
-          "role": "Founder",
-          "entryId": "universal-pictures",
           "country": "United States"
         },
         {
@@ -5234,12 +4855,6 @@
           "organization": "Moderna",
           "role": "Former CMO",
           "entryId": "moderna",
-          "country": "United States"
-        },
-        {
-          "organization": "Moderna (Israeli connections)",
-          "role": "Former CMO",
-          "entryId": "moderna-israeli-connections",
           "country": "United States"
         }
       ]
@@ -5408,7 +5023,7 @@
         {
           "organization": "Brookfield Properties (Ric Clark)",
           "role": "Former Chairman",
-          "entryId": "brookfield-properties-ric-clark",
+          "entryId": "brookfield-properties",
           "country": "United States"
         }
       ]
@@ -5525,12 +5140,6 @@
         {
           "organization": "Häagen-Dazs",
           "role": "Founder (1912-1994)",
-          "entryId": "h-agen-dazs",
-          "country": "United States"
-        },
-        {
-          "organization": "Haagen-Dazs",
-          "role": "Founder (1912-1994)",
           "entryId": "haagen-dazs",
           "country": "United States"
         }
@@ -5595,12 +5204,6 @@
       "affiliations": [
         {
           "organization": "Bezeq (Israel Telecom)",
-          "role": "Former Controlling Shareholder",
-          "entryId": "bezeq-israel-telecom",
-          "country": "Israel"
-        },
-        {
-          "organization": "Bezeq",
           "role": "Former Controlling Shareholder",
           "entryId": "bezeq",
           "country": "Israel"
@@ -5989,7 +5592,7 @@
         {
           "organization": "Marks & Spencer (M&S)",
           "role": "Former Chairman (1889-1972)",
-          "entryId": "marks-spencer-m-s",
+          "entryId": "marks-spencer",
           "country": "United Kingdom"
         }
       ]
@@ -6253,12 +5856,6 @@
         {
           "organization": "Yandex (Israeli R&D)",
           "role": "Co-founder",
-          "entryId": "yandex-israeli-r-d",
-          "country": "Russia"
-        },
-        {
-          "organization": "Yandex",
-          "role": "Co-founder",
           "entryId": "yandex",
           "country": "Russia"
         }
@@ -6349,12 +5946,6 @@
           "role": "Former Ambassador",
           "entryId": "the-synagogue-of-bahrain",
           "country": "Bahrain"
-        },
-        {
-          "organization": "Jewish Community of Bahrain",
-          "role": "Community Leader",
-          "entryId": "jewish-community-bahrain",
-          "country": "Bahrain"
         }
       ]
     },
@@ -6391,12 +5982,6 @@
         {
           "organization": "Danish Jewish Museum (Copenhagen)",
           "role": "Architect",
-          "entryId": "danish-jewish-museum-copenhagen",
-          "country": "Denmark"
-        },
-        {
-          "organization": "Danish Jewish Museum",
-          "role": "Architect",
           "entryId": "danish-jewish-museum",
           "country": "Denmark"
         }
@@ -6410,12 +5995,6 @@
         {
           "organization": "Sigmund Freud Museum (Vienna)",
           "role": "Founder of Psychoanalysis (1856-1939)",
-          "entryId": "sigmund-freud-museum-vienna",
-          "country": "Austria"
-        },
-        {
-          "organization": "Sigmund Freud Museum",
-          "role": "Subject (1856-1939)",
           "entryId": "sigmund-freud-museum",
           "country": "Austria"
         }
@@ -6461,7 +6040,7 @@
         {
           "organization": "Goldman Sachs",
           "role": "Former Goldman Partner & US Treasury Secretary",
-          "entryId": "goldman-sachs",
+          "entryId": "goldman-sachs-historic",
           "country": "United States"
         }
       ]
@@ -6534,13 +6113,6 @@
           "role": "Former National Director",
           "entryId": "anti-defamation-league-foundation",
           "country": "United States"
-        },
-        {
-          "organization": "Anti-Defamation League",
-          "role": "National Director (1987-2015)",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "anti-defamation-league-adl"
         }
       ]
     },
@@ -6553,12 +6125,6 @@
           "organization": "Jewish Council for Public Affairs (JCPA)",
           "role": "Associated",
           "entryId": "jewish-council-for-public-affairs-jcpa",
-          "country": "United States"
-        },
-        {
-          "organization": "Jewish Council for Public Affairs (JCPA)",
-          "role": "CEO",
-          "entryId": "jewish-council-for-public-affairs",
           "country": "United States"
         }
       ]
@@ -6724,7 +6290,7 @@
         {
           "organization": "Hadassah",
           "role": "Founder (1860-1945)",
-          "entryId": "hadassah",
+          "entryId": "hadassah-womens-zionist-organization",
           "country": "United States"
         },
         {
@@ -6762,19 +6328,13 @@
         {
           "organization": "The Forward (newspaper)",
           "role": "Associated",
-          "entryId": "the-forward-newspaper",
+          "entryId": "the-forward",
           "country": "United States"
         },
         {
           "organization": "The Jewish Daily Forward (Yiddish: Forverts)",
           "role": "Founder",
           "entryId": "the-jewish-daily-forward-yiddish-forverts",
-          "country": "United States"
-        },
-        {
-          "organization": "The Forward",
-          "role": "Founder",
-          "entryId": "the-forward",
           "country": "United States"
         }
       ]
@@ -7151,12 +6711,6 @@
           "role": "Associated",
           "entryId": "centre-for-israel-and-jewish-affairs-cija",
           "country": "Canada"
-        },
-        {
-          "organization": "Centre for Israel and Jewish Affairs",
-          "role": "President & CEO",
-          "entryId": "centre-for-israel-and-jewish-affairs",
-          "country": "Canada"
         }
       ]
     },
@@ -7233,12 +6787,6 @@
         {
           "organization": "Russian Jewish Congress",
           "role": "Associated",
-          "entryId": "russian-jewish-congress",
-          "country": "Russia"
-        },
-        {
-          "organization": "Russian Jewish Congress (RJC)",
-          "role": "President",
           "entryId": "russian-jewish-congress-rjc",
           "country": "Russia"
         }
@@ -7252,7 +6800,7 @@
         {
           "organization": "South African Jewish Board of Deputies (SAJBD)",
           "role": "Associated",
-          "entryId": "south-african-jewish-board-of-deputies-sajbd",
+          "entryId": "south-african-jewish-board-of-deputies",
           "country": "South Africa"
         }
       ]
@@ -7336,7 +6884,7 @@
         {
           "organization": "Israelitische Kultusgemeinde Wien (IKG)",
           "role": "President",
-          "entryId": "israelitische-kultusgemeinde-wien-ikg",
+          "entryId": "israelitische-kultusgemeinde-wien-jewish-community-of-vienna",
           "country": "Austria"
         }
       ]
@@ -7459,7 +7007,7 @@
         {
           "organization": "Bayt Dakira (House of Memory, Essaouira)",
           "role": "Royal Advisor",
-          "entryId": "bayt-dakira-house-of-memory-essaouira",
+          "entryId": "bayt-dakira-house-of-memory",
           "country": "Morocco"
         },
         {
@@ -7556,6 +7104,12 @@
           "role": "President",
           "entryId": "hebrew-union-college-huc",
           "country": "United States"
+        },
+        {
+          "organization": "Hebrew Union College - Jewish Institute of Religion (HUC-JIR)",
+          "role": "President",
+          "entryId": "hebrew-union-college-jir",
+          "country": "United States"
         }
       ]
     },
@@ -7574,12 +7128,6 @@
           "organization": "Hebrew Union College (HUC)",
           "role": "Founder",
           "entryId": "hebrew-union-college-huc",
-          "country": "United States"
-        },
-        {
-          "organization": "Hebrew Union College",
-          "role": "Founder (1819-1900)",
-          "entryId": "hebrew-union-college",
           "country": "United States"
         }
       ]
@@ -7737,12 +7285,6 @@
           "role": "Chairman",
           "entryId": "paul-weiss-rifkind-wharton-garrison",
           "country": "United States"
-        },
-        {
-          "organization": "Paul Weiss Rifkind Wharton & Garrison",
-          "role": "Chairman",
-          "entryId": "paul-weiss-rifkind-wharton-and-garrison",
-          "country": "United States"
         }
       ]
     },
@@ -7858,12 +7400,6 @@
         {
           "organization": "Philadelphia 76ers (Harris Blitzer)",
           "role": "Co-Owner",
-          "entryId": "philadelphia-76ers-harris-blitzer",
-          "country": "United States"
-        },
-        {
-          "organization": "Philadelphia 76ers",
-          "role": "Co-Owner",
           "entryId": "philadelphia-76ers",
           "country": "United States"
         }
@@ -7877,12 +7413,6 @@
         {
           "organization": "Council on Foreign Relations",
           "role": "Former President",
-          "entryId": "council-on-foreign-relations",
-          "country": "United States"
-        },
-        {
-          "organization": "Council on Foreign Relations (CFR)",
-          "role": "President Emeritus",
           "entryId": "council-on-foreign-relations-cfr",
           "country": "United States"
         }
@@ -7974,7 +7504,7 @@
         {
           "organization": "The Washington Post",
           "role": "Former Publisher",
-          "entryId": "the-washington-post",
+          "entryId": "washington-post",
           "country": "United States"
         }
       ]
@@ -8203,6 +7733,12 @@
           "role": "Co-Founder",
           "entryId": "young-israel-movement",
           "country": "United States"
+        },
+        {
+          "organization": "Reconstructing Judaism",
+          "role": "Founder (deceased)",
+          "entryId": "reconstructing-judaism",
+          "country": "United States"
         }
       ]
     },
@@ -8241,6 +7777,12 @@
           "organization": "Heschel School (NYC)",
           "role": "Namesake",
           "entryId": "heschel-school-nyc",
+          "country": "United States"
+        },
+        {
+          "organization": "Jewish Theological Seminary (JTS)",
+          "role": "Former Professor (deceased)",
+          "entryId": "jewish-theological-seminary",
           "country": "United States"
         }
       ]
@@ -8475,12 +8017,6 @@
           "role": "President & CEO",
           "entryId": "israel-aerospace-industries-iai",
           "country": "Israel"
-        },
-        {
-          "organization": "Israel Aerospace Industries",
-          "role": "President & CEO",
-          "entryId": "israel-aerospace-industries",
-          "country": "Israel"
         }
       ]
     },
@@ -8656,6 +8192,12 @@
           "role": "CEO",
           "entryId": "osem-nestl",
           "country": "Israel"
+        },
+        {
+          "organization": "Osem-Nestle",
+          "role": "CEO",
+          "entryId": "osem-nestle",
+          "country": "Israel"
         }
       ]
     },
@@ -8770,25 +8312,13 @@
         {
           "organization": "IronSource (merged with Unity)",
           "role": "Co-Founder & CEO",
-          "entryId": "ironsource-merged-with-unity",
+          "entryId": "ironsource-unity",
           "country": "Israel"
         },
         {
           "organization": "ironSource (now Unity)",
           "role": "Co-Founder & CEO",
-          "entryId": "ironsource-now-unity",
-          "country": "Israel"
-        },
-        {
-          "organization": "ironSource (now Unity)",
-          "role": "Co-Founder & CEO",
-          "entryId": "ironSource",
-          "country": "Israel"
-        },
-        {
-          "organization": "IronSource (Unity)",
-          "role": "Co-Founder & CEO",
-          "entryId": "ironsource",
+          "entryId": "ironsource-unity",
           "country": "Israel"
         }
       ]
@@ -8924,12 +8454,6 @@
         {
           "organization": "Birthright Israel (Taglit)",
           "role": "Co-Founder",
-          "entryId": "birthright-israel-taglit",
-          "country": "Israel"
-        },
-        {
-          "organization": "Birthright Israel",
-          "role": "Co-founder",
           "entryId": "birthright-israel",
           "country": "Israel"
         }
@@ -9101,12 +8625,6 @@
           "role": "Co-President",
           "entryId": "community-security-trust-cst",
           "country": "United Kingdom"
-        },
-        {
-          "organization": "Community Security Trust (CST)",
-          "role": "Chief Executive Emeritus",
-          "entryId": "community-security-trust",
-          "country": "United Kingdom"
         }
       ]
     },
@@ -9178,13 +8696,6 @@
           "role": "Dynasty Founder",
           "entryId": "rothschild-and-co",
           "country": "United Kingdom"
-        },
-        {
-          "organization": "Rothschild & Co.",
-          "role": "Dynasty Founder",
-          "country": "United Kingdom",
-          "religion": "jewish",
-          "entryId": "rothschild-and-co"
         }
       ]
     },
@@ -10015,12 +9526,6 @@
           "role": "Rabbi",
           "entryId": "congrega-o-israelita-paulista",
           "country": "Brazil"
-        },
-        {
-          "organization": "Congregação Israelita Paulista (CIP)",
-          "role": "Rabbi",
-          "entryId": "congrega-o-israelita-paulista-cip",
-          "country": "Brazil"
         }
       ]
     },
@@ -10045,7 +9550,7 @@
         {
           "organization": "South African Zionist Federation",
           "role": "National Chairman",
-          "entryId": "south-african-zionist-federation",
+          "entryId": "south-african-zionist-federation-sazf",
           "country": "South Africa"
         }
       ]
@@ -10245,12 +9750,6 @@
       "affiliations": [
         {
           "organization": "Grupo Televisa (Jewish connections)",
-          "role": "Former Chairman",
-          "entryId": "grupo-televisa-jewish-connections",
-          "country": "Mexico"
-        },
-        {
-          "organization": "Grupo Televisa",
           "role": "Former Chairman",
           "entryId": "grupo-televisa",
           "country": "Mexico"
@@ -10492,7 +9991,7 @@
         {
           "organization": "Kazerne Dossin Memorial (Mechelen)",
           "role": "Director",
-          "entryId": "kazerne-dossin-memorial-mechelen",
+          "entryId": "kazerne-dossin-memorial",
           "country": "Belgium"
         }
       ]
@@ -10552,6 +10051,12 @@
           "role": "CEO",
           "entryId": "b-nai-b-rith-international-geneva-office",
           "country": "Switzerland"
+        },
+        {
+          "organization": "B'nai B'rith International",
+          "role": "CEO",
+          "entryId": "b-nai-b-rith-international",
+          "country": "United States"
         }
       ]
     },
@@ -10688,12 +10193,6 @@
           "role": "President",
           "entryId": "federation-of-jewish-communities-of-spain-additional",
           "country": "Spain"
-        },
-        {
-          "organization": "Federation of Jewish Communities of Spain",
-          "role": "President",
-          "entryId": "federation-of-jewish-communities-of-spain",
-          "country": "Spain"
         }
       ]
     },
@@ -10744,7 +10243,7 @@
         {
           "organization": "Galicia Jewish Museum (Krakow)",
           "role": "Director",
-          "entryId": "galicia-jewish-museum-krakow",
+          "entryId": "galicia-jewish-museum",
           "country": "Poland"
         }
       ]
@@ -10951,7 +10450,7 @@
         {
           "organization": "Neve Shalom Synagogue (Istanbul)",
           "role": "Chief Rabbi",
-          "entryId": "neve-shalom-synagogue-istanbul",
+          "entryId": "neve-shalom-synagogue",
           "country": "Turkey"
         }
       ]
@@ -10977,7 +10476,7 @@
         {
           "organization": "Museum of Moroccan Judaism (Casablanca)",
           "role": "Curator",
-          "entryId": "museum-of-moroccan-judaism-casablanca",
+          "entryId": "museum-of-moroccan-judaism",
           "country": "Morocco"
         }
       ]
@@ -11156,12 +10655,6 @@
       "affiliations": [
         {
           "organization": "Central Board of Jewish Communities in Greece",
-          "role": "President",
-          "entryId": "central-board-of-jewish-communities-in-greece",
-          "country": "Greece"
-        },
-        {
-          "organization": "Central Board of Jewish Communities in Greece (KIS)",
           "role": "President",
           "entryId": "central-board-of-jewish-communities-in-greece-kis",
           "country": "Greece"
@@ -11384,7 +10877,7 @@
         {
           "organization": "Ohel Rachel Synagogue (Shanghai)",
           "role": "Builder",
-          "entryId": "ohel-rachel-synagogue-shanghai",
+          "entryId": "ohel-rachel-synagogue",
           "country": "China"
         }
       ]
@@ -11425,12 +10918,6 @@
           "role": "President",
           "entryId": "comunidad-jud-a-de-chile",
           "country": "Chile"
-        },
-        {
-          "organization": "Comunidad Judía de Chile",
-          "role": "Community President",
-          "entryId": "comunidad-judia-chile",
-          "country": "Chile"
         }
       ]
     },
@@ -11469,12 +10956,6 @@
           "organization": "Federation of Jewish Communities in Romania",
           "role": "Parliamentarian",
           "entryId": "federation-of-jewish-communities-in-romania",
-          "country": "Romania"
-        },
-        {
-          "organization": "Federation of Jewish Communities in Romania",
-          "role": "President & MP",
-          "entryId": "federation-jewish-communities-romania",
           "country": "Romania"
         }
       ]
@@ -11551,7 +11032,7 @@
         {
           "organization": "Abrahamic Family House (Abu Dhabi)",
           "role": "Co-Inspirer",
-          "entryId": "abrahamic-family-house-abu-dhabi",
+          "entryId": "abrahamic-family-house",
           "country": "United Arab Emirates"
         }
       ]
@@ -11604,12 +11085,6 @@
           "organization": "Jewish Community of Zagreb",
           "role": "President",
           "entryId": "jewish-community-of-zagreb",
-          "country": "Croatia"
-        },
-        {
-          "organization": "Jewish Community of Zagreb",
-          "role": "Community President",
-          "entryId": "jewish-community-zagreb",
           "country": "Croatia"
         }
       ]
@@ -12011,12 +11486,6 @@
         {
           "organization": "Musmeah Yeshua Synagogue (Yangon)",
           "role": "Caretaker",
-          "entryId": "musmeah-yeshua-synagogue-yangon",
-          "country": "Myanmar"
-        },
-        {
-          "organization": "Musmeah Yeshua Synagogue",
-          "role": "Trustee",
           "entryId": "musmeah-yeshua-synagogue",
           "country": "Myanmar"
         }
@@ -12284,7 +11753,7 @@
         {
           "organization": "Jewish Community of Thailand",
           "role": "Chief Rabbi of Thailand",
-          "entryId": "jewish-community-thailand",
+          "entryId": "jewish-community-of-thailand",
           "country": "Thailand"
         }
       ]
@@ -12296,7 +11765,7 @@
         {
           "organization": "Jewish Community of South Korea",
           "role": "Chief Rabbi of South Korea",
-          "entryId": "jewish-community-south-korea",
+          "entryId": "jewish-community-of-south-korea",
           "country": "South Korea"
         }
       ]
@@ -12308,7 +11777,7 @@
         {
           "organization": "Jewish Association of the Philippines",
           "role": "Community Historian",
-          "entryId": "jewish-community-philippines",
+          "entryId": "jewish-association-of-the-philippines",
           "country": "Philippines"
         }
       ]
@@ -12332,7 +11801,7 @@
         {
           "organization": "Confederación de Comunidades Judías de Colombia",
           "role": "Prominent Community Member",
-          "entryId": "jewish-community-colombia",
+          "entryId": "confederaci-n-de-comunidades-jud-as-de-colombia",
           "country": "Colombia"
         }
       ]
@@ -12344,7 +11813,7 @@
         {
           "organization": "Asociación Judía del Perú",
           "role": "Community Leader",
-          "entryId": "asociacion-judia-peru",
+          "entryId": "asociaci-n-jud-a-del-per",
           "country": "Peru"
         }
       ]
@@ -12356,7 +11825,7 @@
         {
           "organization": "Comunidad Judía del Ecuador",
           "role": "Historical Community Leader",
-          "entryId": "comunidad-judia-ecuador",
+          "entryId": "comunidad-jud-a-del-ecuador",
           "country": "Ecuador"
         }
       ]
@@ -12368,7 +11837,7 @@
         {
           "organization": "Centro Israelita Sionista de Costa Rica",
           "role": "Prominent Member & Diplomat",
-          "entryId": "centro-israelita-sionista",
+          "entryId": "centro-israelita-sionista-de-costa-rica",
           "country": "Costa Rica"
         }
       ]
@@ -12380,7 +11849,7 @@
         {
           "organization": "Comunidad Judía de Guatemala",
           "role": "Historical Figure",
-          "entryId": "comunidad-judia-guatemala",
+          "entryId": "comunidad-jud-a-de-guatemala",
           "country": "Guatemala"
         }
       ]
@@ -12392,12 +11861,6 @@
         {
           "organization": "Federația Comunităților Evreiești din România (FCER)",
           "role": "Former President & MP",
-          "entryId": "jewish-community-romania",
-          "country": "Romania"
-        },
-        {
-          "organization": "Federația Comunităților Evreiești din România (FCER)",
-          "role": "Former President",
           "entryId": "federa-ia-comunit-ilor-evreie-ti-din-rom-nia-fcer",
           "country": "Romania"
         }
@@ -12422,7 +11885,7 @@
         {
           "organization": "National Museum of American Jewish History",
           "role": "CEO",
-          "entryId": "national-museum-american-jewish-history",
+          "entryId": "national-museum-of-american-jewish-history",
           "country": "United States"
         }
       ]
@@ -12434,7 +11897,7 @@
         {
           "organization": "Orthodox Union (OU)",
           "role": "President",
-          "entryId": "orthodox-union",
+          "entryId": "orthodox-union-ou",
           "country": "United States"
         }
       ]
@@ -12446,7 +11909,7 @@
         {
           "organization": "Reconstructing Judaism",
           "role": "President",
-          "entryId": "reconstructionist-movement",
+          "entryId": "reconstructing-judaism",
           "country": "United States"
         }
       ]
@@ -12458,7 +11921,7 @@
         {
           "organization": "Start-Up Nation Central",
           "role": "CEO",
-          "entryId": "startup-nation-central",
+          "entryId": "start-up-nation-central",
           "country": "Israel"
         }
       ]
@@ -12535,12 +11998,6 @@
         {
           "organization": "Luxottica",
           "role": "Founder (1935-2022)",
-          "entryId": "luxottica",
-          "country": "Italy"
-        },
-        {
-          "organization": "Luxottica (EssilorLuxottica)",
-          "role": "Founder (1935-2022)",
           "entryId": "luxottica-essilorluxottica",
           "country": "Italy"
         }
@@ -12554,7 +12011,7 @@
         {
           "organization": "Inditex",
           "role": "Founder",
-          "entryId": "inditex",
+          "entryId": "inditex-zara",
           "country": "Spain"
         }
       ]
@@ -12620,12 +12077,6 @@
           "organization": "Mercado Libre",
           "role": "Founder & CEO",
           "entryId": "mercado-libre",
-          "country": "Argentina"
-        },
-        {
-          "organization": "MercadoLibre",
-          "role": "Founder & CEO",
-          "entryId": "mercadolibre",
           "country": "Argentina"
         }
       ]
@@ -12996,12 +12447,6 @@
           "organization": "National Council of Jewish Women (NCJW)",
           "role": "Founder (1858-1942)",
           "entryId": "national-council-of-jewish-women-ncjw",
-          "country": "United States"
-        },
-        {
-          "organization": "National Council of Jewish Women",
-          "role": "Founder",
-          "entryId": "national-council-of-jewish-women",
           "country": "United States"
         }
       ]
@@ -13660,7 +13105,7 @@
         {
           "organization": "Jewish Telegraphic Agency (JTA)",
           "role": "Editor-in-Chief",
-          "entryId": "jewish-telegraphic-agency",
+          "entryId": "jewish-telegraphic-agency-jta",
           "country": "United States"
         }
       ]
@@ -13717,7 +13162,7 @@
         {
           "organization": "Washington Institute for Near East Policy (WINEP)",
           "role": "Counselor & Fellow",
-          "entryId": "washington-institute-for-near-east-policy",
+          "entryId": "washington-institute-for-near-east-policy-winep",
           "country": "United States"
         },
         {
@@ -13751,6 +13196,12 @@
           "role": "President & CIO",
           "entryId": "alphabet-google",
           "country": "United States"
+        },
+        {
+          "organization": "Google (Alphabet Inc.)",
+          "role": "President & CIO of Alphabet",
+          "entryId": "google-alphabet-inc",
+          "country": "United States"
         }
       ]
     },
@@ -13776,13 +13227,6 @@
           "role": "Co-Founder & Co-Chairman",
           "entryId": "kkr-and-co",
           "country": "United States"
-        },
-        {
-          "organization": "KKR & Co.",
-          "role": "Co-founder",
-          "country": "United States",
-          "religion": "jewish",
-          "entryId": "kkr-and-co"
         }
       ]
     },
@@ -13790,7 +13234,14 @@
       "name": "Scott Nuttall",
       "bio": "American businessman and co-CEO of KKR (Kohlberg Kravis Roberts). Has led KKR's expansion into credit, infrastructure, and technology investments. One of the most influential figures in private equity, overseeing billions in global investments.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "KKR (Kohlberg Kravis Roberts)",
+          "role": "Co-CEO",
+          "entryId": "kkr-kohlberg-kravis-roberts",
+          "country": "United States"
+        }
+      ]
     },
     "jim-simons": {
       "name": "Jim Simons",
@@ -13862,7 +13313,7 @@
         {
           "organization": "Community Security Trust (CST)",
           "role": "CEO",
-          "entryId": "community-security-trust",
+          "entryId": "community-security-trust-cst",
           "country": "United Kingdom"
         }
       ]
@@ -13875,7 +13326,7 @@
         {
           "organization": "Executive Council of Australian Jewry (ECAJ)",
           "role": "President",
-          "entryId": "executive-council-of-australian-jewry",
+          "entryId": "executive-council-of-australian-jewry-ecaj",
           "country": "Australia"
         }
       ]
@@ -13897,7 +13348,14 @@
       "name": "Norm Coleman",
       "bio": "American Jewish politician and attorney, former US Senator from Minnesota (2003-2009) and chairman of the Republican Jewish Coalition. Previously mayor of Saint Paul, Minnesota. Lost his 2008 Senate race to Al Franken by 312 votes.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Republican Jewish Coalition",
+          "role": "Chairman",
+          "entryId": "republican-jewish-coalition",
+          "country": "United States"
+        }
+      ]
     },
     "mark-mellman": {
       "name": "Mark Mellman",
@@ -13926,7 +13384,7 @@
         {
           "organization": "The New York Times Company",
           "role": "CEO",
-          "entryId": "new-york-times-company",
+          "entryId": "new-york-times",
           "country": "United States"
         }
       ]
@@ -13964,7 +13422,13 @@
         {
           "organization": "Jewish Federations of North America (JFNA)",
           "role": "Chair of the Board",
-          "entryId": "jewish-federations-of-north-america",
+          "entryId": "jewish-federations-of-north-america-jfna",
+          "country": "United States"
+        },
+        {
+          "organization": "The Jewish Federations of North America",
+          "role": "Board Chair",
+          "entryId": "the-jewish-federations-of-north-america",
           "country": "United States"
         }
       ]
@@ -14011,6 +13475,12 @@
           "role": "Chair of the Board",
           "entryId": "the-jewish-federations-of-north-america",
           "country": "United States"
+        },
+        {
+          "organization": "Jewish Federations of North America (JFNA)",
+          "role": "Board Chair",
+          "entryId": "jewish-federations-of-north-america-jfna",
+          "country": "United States"
         }
       ]
     },
@@ -14043,7 +13513,14 @@
       "name": "Yehuda Kurtzer",
       "bio": "President of the Shalom Hartman Institute of North America. Scholar of American Jewish life.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Shalom Hartman Institute of North America",
+          "role": "President",
+          "entryId": "shalom-hartman-institute-of-north-america",
+          "country": "United States"
+        }
+      ]
     },
     "jeremy-fingerman": {
       "name": "Jeremy Fingerman",
@@ -14277,6 +13754,12 @@
           "role": "CEO",
           "entryId": "jefferies-financial-group",
           "country": "United States"
+        },
+        {
+          "organization": "Leucadia National Corporation",
+          "role": "CEO of Jefferies",
+          "entryId": "leucadia-national",
+          "country": "United States"
         }
       ]
     },
@@ -14352,7 +13835,7 @@
         {
           "organization": "D.E. Shaw & Co.",
           "role": "Founder",
-          "entryId": "d-e-shaw-and-co",
+          "entryId": "d-e-shaw-co",
           "country": "United States"
         }
       ]
@@ -14391,7 +13874,7 @@
         {
           "organization": "IAC",
           "role": "CEO",
-          "entryId": "iac",
+          "entryId": "iac-interactivecorp",
           "country": "United States"
         }
       ]
@@ -14480,7 +13963,7 @@
         {
           "organization": "Charles and Lynn Schusterman Family Philanthropies",
           "role": "Chair of Schusterman Family Philanthropies",
-          "entryId": "schusterman-family-philanthropies",
+          "entryId": "charles-and-lynn-schusterman-family-philanthropies",
           "country": "United States"
         }
       ]
@@ -14577,7 +14060,14 @@
       "name": "Nicolas Brusson",
       "bio": "French tech entrepreneur. Co-founder and CEO of BlaBlaCar, the world's leading long-distance carpooling platform. Grew BlaBlaCar from a French startup to a global company operating in 22 countries with over 100 million members.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "BlaBlaCar",
+          "role": "Co-founder & CEO",
+          "entryId": "blablacar",
+          "country": "France"
+        }
+      ]
     },
     "mathias-dopfner": {
       "name": "Mathias Dopfner",
@@ -14606,7 +14096,7 @@
         {
           "organization": "Federation of Jewish Communities of Russia",
           "role": "Chief Rabbi of Russia",
-          "entryId": "federation-of-jewish-communities-of-russia",
+          "entryId": "federation-of-jewish-communities-of-russia-fjcr",
           "country": "Russia"
         }
       ]
@@ -14658,13 +14148,27 @@
       "name": "Stephane Bancel",
       "bio": "CEO of Moderna since 2011. French businessman who led the company through the COVID-19 pandemic.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Moderna (Israeli connections)",
+          "role": "CEO",
+          "entryId": "moderna",
+          "country": "United States"
+        }
+      ]
     },
     "noubar-afeyan": {
       "name": "Noubar Afeyan",
       "bio": "Co-founder and Chairman of Moderna. Founder of Flagship Pioneering venture capital firm.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Moderna (Israeli connections)",
+          "role": "Co-founder & Chairman",
+          "entryId": "moderna",
+          "country": "United States"
+        }
+      ]
     },
     "george-yancopoulos": {
       "name": "George Yancopoulos",
@@ -14686,7 +14190,7 @@
         {
           "organization": "Marks & Spencer",
           "role": "Former Chairman",
-          "entryId": "marks-and-spencer",
+          "entryId": "marks-spencer",
           "country": "United Kingdom"
         }
       ]
@@ -15424,7 +14928,14 @@
       "name": "Greg Brockman",
       "bio": "American entrepreneur and co-founder of OpenAI. Served as president and chairman of the board. Previously CTO of Stripe. A key figure in the development of GPT models and the commercialization of artificial intelligence technology.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "OpenAI",
+          "role": "Co-founder & Former President",
+          "entryId": "openai",
+          "country": "United States"
+        }
+      ]
     },
     "joel-kaplan": {
       "name": "Joel Kaplan",
@@ -15851,12 +15362,6 @@
           "role": "CEO",
           "entryId": "luxottica-essilorluxottica",
           "country": "Italy"
-        },
-        {
-          "organization": "Luxottica",
-          "role": "CEO",
-          "entryId": "luxottica",
-          "country": "Italy"
         }
       ]
     },
@@ -15902,7 +15407,14 @@
       "name": "Fabrizio Freda",
       "bio": "Italian-American businessman and CEO of The Estée Lauder Companies since 2009. Under his leadership, the company's market cap grew from $7 billion to over $90 billion at its peak. Expanded the company's digital presence and Asian market share.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Estée Lauder Companies",
+          "role": "CEO",
+          "entryId": "est-e-lauder-companies",
+          "country": "United States"
+        }
+      ]
     },
     "jerome-kohlberg-jr": {
       "name": "Jerome Kohlberg Jr.",
@@ -16442,7 +15954,7 @@
           "role": "Financier",
           "country": "United States",
           "religion": "jewish",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16455,7 +15967,7 @@
           "role": "Associate & Convicted Sex Trafficker",
           "country": "United States",
           "religion": "jewish",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16468,7 +15980,7 @@
           "role": "Associate & Modeling Agent",
           "country": "United States",
           "religion": "jewish",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16630,7 +16142,7 @@
           "role": "Personal Assistant",
           "country": "United States",
           "religion": "jewish",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16643,7 +16155,7 @@
           "role": "Founder",
           "country": "Israel",
           "religion": "jewish",
-          "entryId": "israel-aerospace-industries"
+          "entryId": "israel-aerospace-industries-iai"
         }
       ]
     },
@@ -16655,7 +16167,7 @@
           "organization": "Jeffrey Epstein Network",
           "role": "Associate / Alleged Participant",
           "country": "United States",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16667,7 +16179,7 @@
           "organization": "Jeffrey Epstein Network",
           "role": "Executive Assistant",
           "country": "United States",
-          "entryId": "jeffrey-epstein-network"
+          "entryId": "epstein-network"
         }
       ]
     },
@@ -16909,7 +16421,7 @@
         {
           "organization": "Jeffrey Epstein Network",
           "role": "Associate",
-          "entryId": "jeffrey-epstein-network",
+          "entryId": "epstein-network",
           "country": "United States"
         }
       ]
@@ -17497,8 +17009,7 @@
       "name": "Joseph Steinberg",
       "bio": "American businessman and investor, former President of Leucadia National Corporation, current board member of Jefferies Financial Group following the 2018 merger",
       "affiliations": [
-        "leucadia-national",
-        "jefferies-financial-group"
+        "leucadia-national"
       ]
     },
     "jack-cohen-tesco": {
@@ -17519,8 +17030,7 @@
       "name": "Aryeh Neier",
       "bio": "German-born American human rights activist, co-founder of Human Rights Watch and former president of the Open Society Foundations, a Holocaust survivor who became a leading voice for civil liberties",
       "affiliations": [
-        "human-rights-watch",
-        "george-soros-open-society-foundations"
+        "human-rights-watch"
       ]
     },
     "lawrence-bacow": {
@@ -17574,6 +17084,12 @@
           "organization": "Notable Jewish Media Executives (US)",
           "role": "CEO of Fox Corporation (related)",
           "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        },
+        {
+          "organization": "News Corp",
+          "role": "Co-Chairman",
+          "entryId": "news-corp",
           "country": "United States"
         }
       ]
@@ -20444,7 +19960,14 @@
       "name": "William Burns",
       "bio": "CIA Director. Former career diplomat. While not directly connected, questions about intelligence community links to Epstein (through claims by Ari Ben-Menashe and others) have raised questions about agency knowledge.",
       "notes": "",
-      "affiliations": []
+      "affiliations": [
+        {
+          "organization": "Carnegie Endowment for International Peace",
+          "role": "Former President",
+          "entryId": "carnegie-endowment-for-international-peace",
+          "country": "United States"
+        }
+      ]
     },
     "nicholas-davies": {
       "name": "Nicholas Davies",
@@ -23277,6 +22800,12 @@
           "organization": "Notable Jewish Media Executives (US)",
           "role": "Former CEO of YouTube (deceased)",
           "entryId": "notable-jewish-media-executives-us",
+          "country": "United States"
+        },
+        {
+          "organization": "Google (Alphabet Inc.)",
+          "role": "Former CEO of YouTube (deceased)",
+          "entryId": "google-alphabet-inc",
           "country": "United States"
         }
       ]
@@ -26944,6 +26473,12 @@
           "role": "Named in Epstein Files - Referenced in documents",
           "entryId": "epstein-network",
           "country": ""
+        },
+        {
+          "organization": "Bear Stearns (historic)",
+          "role": "Former Hedge Fund Manager",
+          "entryId": "bear-stearns-historic",
+          "country": "United States"
         }
       ]
     },
@@ -28082,7 +27617,7 @@
     },
     "person-piers-handling": {
       "name": "Piers Handling",
-      "bio": "Led TIFF for over two decades (1994–2018), transforming it into one of the world's most prestigious film festivals.",
+      "bio": "Led TIFF for over two decades (1994-2018), transforming it into one of the world's most prestigious film festivals.",
       "notes": "",
       "affiliations": []
     },
@@ -28250,7 +27785,7 @@
     },
     "person-nikki-gershbain": {
       "name": "Nikki Gershbain",
-      "bio": "Served as CEO of Jewish Federations of Canada – UIA, overseeing the national umbrella for Jewish community fundraising and services.",
+      "bio": "Served as CEO of Jewish Federations of Canada - UIA, overseeing the national umbrella for Jewish community fundraising and services.",
       "notes": "",
       "affiliations": []
     },
@@ -29616,7 +29151,7 @@
     },
     "person-jack-kliger": {
       "name": "Jack Kliger",
-      "bio": "Jack Kliger has served as president and CEO of the Museum of Jewish Heritage – A Living Memorial to the Holocaust. He previously served as CEO of Hachette Filipacchi Media U.S.",
+      "bio": "Jack Kliger has served as president and CEO of the Museum of Jewish Heritage - A Living Memorial to the Holocaust. He previously served as CEO of Hachette Filipacchi Media U.S.",
       "notes": "",
       "affiliations": [
         {
@@ -32521,7 +32056,7 @@
         {
           "organization": "Häagen-Dazs",
           "role": "Co-founder",
-          "entryId": "h-agen-dazs",
+          "entryId": "haagen-dazs",
           "country": ""
         }
       ]
@@ -32534,7 +32069,7 @@
         {
           "organization": "Häagen-Dazs",
           "role": "Co-founder",
-          "entryId": "h-agen-dazs",
+          "entryId": "haagen-dazs",
           "country": ""
         }
       ]
@@ -32547,7 +32082,7 @@
         {
           "organization": "Häagen-Dazs",
           "role": "Daughter of Founders & Former Executive",
-          "entryId": "h-agen-dazs",
+          "entryId": "haagen-dazs",
           "country": ""
         }
       ]
@@ -32963,7 +32498,7 @@
         {
           "organization": "iHeartMedia",
           "role": "Former Investor (Thomas H. Lee Partners)",
-          "entryId": "iheartmedia",
+          "entryId": "iheart-media",
           "country": ""
         }
       ]
@@ -39593,7 +39128,7 @@
         {
           "organization": "Jewish National Fund-USA (JNF-USA)",
           "role": "Chief Operating Officer",
-          "entryId": "jewish-national-fund-usa",
+          "entryId": "jewish-national-fund-usa-jnf-usa",
           "country": ""
         }
       ]
@@ -40854,7 +40389,7 @@
         {
           "organization": "Starbucks (Howard Schultz Era)",
           "role": "Former President",
-          "entryId": "starbucks-howard-schultz-era",
+          "entryId": "starbucks",
           "country": ""
         }
       ]
@@ -40867,7 +40402,7 @@
         {
           "organization": "Starbucks (Howard Schultz Era)",
           "role": "Board Member",
-          "entryId": "starbucks-howard-schultz-era",
+          "entryId": "starbucks",
           "country": ""
         }
       ]
@@ -40880,7 +40415,7 @@
         {
           "organization": "Dell Technologies (Israel Operations)",
           "role": "Founder, Chairman, and CEO",
-          "entryId": "dell-technologies-israel-operations",
+          "entryId": "dell-technologies",
           "country": ""
         }
       ]
@@ -40893,7 +40428,7 @@
         {
           "organization": "Dell Technologies (Israel Operations)",
           "role": "VP and General Manager, Dell Israel",
-          "entryId": "dell-technologies-israel-operations",
+          "entryId": "dell-technologies",
           "country": ""
         }
       ]
@@ -40906,7 +40441,7 @@
         {
           "organization": "Dell Technologies (Israel Operations)",
           "role": "Former President of Dell Infrastructure",
-          "entryId": "dell-technologies-israel-operations",
+          "entryId": "dell-technologies",
           "country": ""
         }
       ]
@@ -46015,7 +45550,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "Chairman of the Board",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -46028,7 +45563,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "Former President & CEO",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -46041,7 +45576,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "Founder",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -46054,7 +45589,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "President and CEO",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -46067,7 +45602,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "Former President and CEO",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -46080,7 +45615,7 @@
         {
           "organization": "Israel Aerospace Industries (IAI)",
           "role": "Chairman of the Board",
-          "entryId": "israel-aerospace-industries",
+          "entryId": "israel-aerospace-industries-iai",
           "country": ""
         }
       ]
@@ -47718,7 +47253,7 @@
         {
           "organization": "Marks & Spencer (M&S)",
           "role": "Chairman",
-          "entryId": "marks-spencer-m-s",
+          "entryId": "marks-spencer",
           "country": ""
         }
       ]
@@ -49826,6 +49361,12 @@
           "role": "Co-founder & Partner",
           "entryId": "letterone-mikhail-fridman",
           "country": ""
+        },
+        {
+          "organization": "Alfa Group",
+          "role": "President of Alfa-Bank",
+          "entryId": "alfa-group",
+          "country": "Russia"
         }
       ]
     },
@@ -50954,7 +50495,7 @@
       "affiliations": [
         {
           "organization": "Venice Ghetto",
-          "role": "Historian (1899–1970)",
+          "role": "Historian (1899-1970)",
           "entryId": "venice-ghetto",
           "country": ""
         }
@@ -50967,7 +50508,7 @@
       "affiliations": [
         {
           "organization": "Great Synagogue of Rome",
-          "role": "Former Chief Rabbi of Rome (1951–2002)",
+          "role": "Former Chief Rabbi of Rome (1951-2002)",
           "entryId": "great-synagogue-of-rome",
           "country": ""
         }
@@ -50993,7 +50534,7 @@
       "affiliations": [
         {
           "organization": "Union of Italian Jewish Communities (UCEI)",
-          "role": "Former President (1983–1998)",
+          "role": "Former President (1983-1998)",
           "entryId": "union-of-italian-jewish-communities-ucei",
           "country": ""
         }
@@ -51214,7 +50755,7 @@
       "affiliations": [
         {
           "organization": "Galicia Jewish Museum (Krakow)",
-          "role": "Founder (1948–2007)",
+          "role": "Founder (1948-2007)",
           "entryId": "galicia-jewish-museum",
           "country": ""
         }
@@ -51266,7 +50807,7 @@
       "affiliations": [
         {
           "organization": "Auschwitz-Birkenau Memorial and Museum",
-          "role": "Former Director (1955–1990)",
+          "role": "Former Director (1955-1990)",
           "entryId": "auschwitz-birkenau-memorial-and-museum",
           "country": ""
         }
@@ -51287,7 +50828,7 @@
     },
     "waclaw-dlugoborski": {
       "name": "Wacław Długoborski",
-      "bio": "Polish historian who co-edited the comprehensive multi-volume history 'Auschwitz 1940–1945,' a foundational scholarly work on the camp's history.",
+      "bio": "Polish historian who co-edited the comprehensive multi-volume history 'Auschwitz 1940-1945,' a foundational scholarly work on the camp's history.",
       "notes": "",
       "affiliations": [
         {
@@ -51318,7 +50859,7 @@
       "affiliations": [
         {
           "organization": "Warsaw Ghetto Memorial",
-          "role": "Warsaw Ghetto Uprising Commander (1919–2009)",
+          "role": "Warsaw Ghetto Uprising Commander (1919-2009)",
           "entryId": "warsaw-ghetto-memorial",
           "country": ""
         }
@@ -51461,7 +51002,7 @@
       "affiliations": [
         {
           "organization": "Jewish Community Centre of Krakow (JCC Kraków)",
-          "role": "Community Advisor (1951–2012)",
+          "role": "Community Advisor (1951-2012)",
           "entryId": "jewish-community-centre-of-krakow-jcc-krak-w",
           "country": ""
         }
@@ -51617,7 +51158,7 @@
       "affiliations": [
         {
           "organization": "Credit Suisse (now UBS)",
-          "role": "Former CEO (2015–2020)",
+          "role": "Former CEO (2015-2020)",
           "entryId": "credit-suisse-now-ubs",
           "country": ""
         }
@@ -51630,7 +51171,7 @@
       "affiliations": [
         {
           "organization": "Credit Suisse (now UBS)",
-          "role": "Former CEO (2020–2022)",
+          "role": "Former CEO (2020-2022)",
           "entryId": "credit-suisse-now-ubs",
           "country": ""
         }
@@ -51669,7 +51210,7 @@
       "affiliations": [
         {
           "organization": "Nestlé",
-          "role": "Founder (1814–1890)",
+          "role": "Founder (1814-1890)",
           "entryId": "nestl",
           "country": ""
         }
@@ -51721,7 +51262,7 @@
       "affiliations": [
         {
           "organization": "Schweizerischer Israelitischer Gemeindebund (SIG)",
-          "role": "Former President (1924–2004)",
+          "role": "Former President (1924-2004)",
           "entryId": "schweizerischer-israelitischer-gemeindebund-sig",
           "country": ""
         }
@@ -51768,12 +51309,12 @@
     },
     "jean-francois-bergier": {
       "name": "Jean-François Bergier",
-      "bio": "Swiss economic historian who chaired the Independent Commission of Experts Switzerland–Second World War (1996–2002), producing the landmark report on Swiss dealings with Nazi Germany.",
+      "bio": "Swiss economic historian who chaired the Independent Commission of Experts Switzerland-Second World War (1996-2002), producing the landmark report on Swiss dealings with Nazi Germany.",
       "notes": "",
       "affiliations": [
         {
           "organization": "Bergier Commission legacy",
-          "role": "Chairman (1937–2009)",
+          "role": "Chairman (1937-2009)",
           "entryId": "bergier-commission-legacy",
           "country": ""
         }
@@ -51812,7 +51353,7 @@
       "affiliations": [
         {
           "organization": "International Committee of the Red Cross (Jewish relationship)",
-          "role": "Former ICRC President (1987–1999)",
+          "role": "Former ICRC President (1987-1999)",
           "entryId": "international-committee-of-the-red-cross-jewish-relationship",
           "country": ""
         }
@@ -51841,6 +51382,12 @@
           "role": "Former President",
           "entryId": "b-nai-b-rith-international-geneva-office",
           "country": ""
+        },
+        {
+          "organization": "B'nai B'rith International",
+          "role": "Past President",
+          "entryId": "b-nai-b-rith-international",
+          "country": "United States"
         }
       ]
     },
@@ -52111,7 +51658,7 @@
       "affiliations": [
         {
           "organization": "Córdoba Synagogue",
-          "role": "Historic Rabbi (1326–1408)",
+          "role": "Historic Rabbi (1326-1408)",
           "entryId": "c-rdoba-synagogue",
           "country": ""
         }
@@ -52124,7 +51671,7 @@
       "affiliations": [
         {
           "organization": "Córdoba Synagogue",
-          "role": "Historic Figure (1138–1204)",
+          "role": "Historic Figure (1138-1204)",
           "entryId": "c-rdoba-synagogue",
           "country": ""
         }
@@ -52267,7 +51814,7 @@
       "affiliations": [
         {
           "organization": "JDC (American Jewish Joint Distribution Committee) - Global",
-          "role": "Historic Executive (1889–1949)",
+          "role": "Historic Executive (1889-1949)",
           "entryId": "jdc-american-jewish-joint-distribution-committee-global",
           "country": ""
         }
@@ -52306,7 +51853,7 @@
       "affiliations": [
         {
           "organization": "World Mizrachi",
-          "role": "Founder (1839–1915)",
+          "role": "Founder (1839-1915)",
           "entryId": "world-mizrachi",
           "country": ""
         }
@@ -52371,7 +51918,7 @@
       "affiliations": [
         {
           "organization": "Ohr Somayach",
-          "role": "Co-Founder & Dean (1933–2014)",
+          "role": "Co-Founder & Dean (1933-2014)",
           "entryId": "ohr-somayach",
           "country": ""
         }
@@ -52436,7 +51983,7 @@
       "affiliations": [
         {
           "organization": "Keren Hayesod - United Israel Appeal",
-          "role": "Founding Chairman (1863–1941)",
+          "role": "Founding Chairman (1863-1941)",
           "entryId": "keren-hayesod-united-israel-appeal",
           "country": ""
         }
@@ -52488,7 +52035,7 @@
       "affiliations": [
         {
           "organization": "Maccabi World Union",
-          "role": "Historic Leader (1901–1985)",
+          "role": "Historic Leader (1901-1985)",
           "entryId": "maccabi-world-union",
           "country": ""
         }
@@ -52501,7 +52048,7 @@
       "affiliations": [
         {
           "organization": "Maccabi World Union",
-          "role": "Maccabiah Games Founder (1897–1982)",
+          "role": "Maccabiah Games Founder (1897-1982)",
           "entryId": "maccabi-world-union",
           "country": ""
         }
@@ -52566,7 +52113,7 @@
       "affiliations": [
         {
           "organization": "Aish HaTorah",
-          "role": "Founder (1930–2009)",
+          "role": "Founder (1930-2009)",
           "entryId": "aish-hatorah",
           "country": ""
         }
@@ -56721,7 +56268,7 @@
     },
     "yiannis-boutaris": {
       "name": "Yiannis Boutaris",
-      "bio": "Mayor of Thessaloniki (2011–2019) who championed Holocaust remembrance, officially apologized for the city's role in the deportations, and supported the creation of a major Holocaust museum.",
+      "bio": "Mayor of Thessaloniki (2011-2019) who championed Holocaust remembrance, officially apologized for the city's role in the deportations, and supported the creation of a major Holocaust museum.",
       "notes": "",
       "affiliations": [
         {
@@ -57254,7 +56801,7 @@
     },
     "david-adjaye": {
       "name": "David Adjaye",
-      "bio": "Ghanaian-British architect Sir David Adjaye designed the Abrahamic Family House in Abu Dhabi, creating three distinct structures — a mosque, church, and synagogue — unified on a single platform.",
+      "bio": "Ghanaian-British architect Sir David Adjaye designed the Abrahamic Family House in Abu Dhabi, creating three distinct structures  -  a mosque, church, and synagogue  -  unified on a single platform.",
       "notes": "",
       "affiliations": [
         {
@@ -57891,7 +57438,7 @@
     },
     "angel-faivovich": {
       "name": "Ángel Faivovich",
-      "bio": "Chilean senator of Jewish descent (1900–1992) who was a major political figure and supporter of Jewish communal institutions in Chile.",
+      "bio": "Chilean senator of Jewish descent (1900-1992) who was a major political figure and supporter of Jewish communal institutions in Chile.",
       "notes": "",
       "affiliations": [
         {
@@ -57904,7 +57451,7 @@
     },
     "salomon-hakim": {
       "name": "Salomón Hakim",
-      "bio": "Colombian neurosurgeon of Jewish descent (1922–2011) who invented the Hakim valve for treating hydrocephalus, one of Colombia's most celebrated scientists.",
+      "bio": "Colombian neurosurgeon of Jewish descent (1922-2011) who invented the Hakim valve for treating hydrocephalus, one of Colombia's most celebrated scientists.",
       "notes": "",
       "affiliations": [
         {
@@ -57943,7 +57490,7 @@
     },
     "max-jakobson": {
       "name": "Max Jakobson",
-      "bio": "Finnish Jewish diplomat and journalist (1923–2013) who was a candidate for UN Secretary-General in 1971, the most internationally renowned Finnish Jew.",
+      "bio": "Finnish Jewish diplomat and journalist (1923-2013) who was a candidate for UN Secretary-General in 1971, the most internationally renowned Finnish Jew.",
       "notes": "",
       "affiliations": [
         {
@@ -57956,7 +57503,7 @@
     },
     "solomon-bard": {
       "name": "Solomon Bard",
-      "bio": "Hong Kong Jewish physician and historian (1916–2016) who authored works on the history of Hong Kong's Jewish community and served it for decades.",
+      "bio": "Hong Kong Jewish physician and historian (1916-2016) who authored works on the history of Hong Kong's Jewish community and served it for decades.",
       "notes": "",
       "affiliations": [
         {
@@ -57969,7 +57516,7 @@
     },
     "lawrence-kadoorie": {
       "name": "Lawrence Kadoorie",
-      "bio": "Lord Kadoorie (1899–1993), major Hong Kong industrialist and philanthropist who was central to the Jewish community and supported numerous charitable causes.",
+      "bio": "Lord Kadoorie (1899-1993), major Hong Kong industrialist and philanthropist who was central to the Jewish community and supported numerous charitable causes.",
       "notes": "",
       "affiliations": [
         {
@@ -57982,7 +57529,7 @@
     },
     "elly-kadoorie": {
       "name": "Elly Kadoorie",
-      "bio": "Sir Elly Kadoorie (1867–1944), Baghdadi Jewish patriarch who founded the Kadoorie business empire in Hong Kong and Shanghai.",
+      "bio": "Sir Elly Kadoorie (1867-1944), Baghdadi Jewish patriarch who founded the Kadoorie business empire in Hong Kong and Shanghai.",
       "notes": "",
       "affiliations": [
         {
@@ -57995,7 +57542,7 @@
     },
     "alan-shatter": {
       "name": "Alan Shatter",
-      "bio": "Irish Jewish politician who served as Minister for Justice and Equality (2011–2014), the most prominent Jewish political figure in modern Ireland.",
+      "bio": "Irish Jewish politician who served as Minister for Justice and Equality (2011-2014), the most prominent Jewish political figure in modern Ireland.",
       "notes": "",
       "affiliations": [
         {
@@ -58034,7 +57581,7 @@
     },
     "robert-briscoe": {
       "name": "Robert Briscoe",
-      "bio": "First Jewish Lord Mayor of Dublin (1956–1957, 1961–1962) and a veteran of the Irish War of Independence, a central figure in Irish Jewish history.",
+      "bio": "First Jewish Lord Mayor of Dublin (1956-1957, 1961-1962) and a veteran of the Irish War of Independence, a central figure in Irish Jewish history.",
       "notes": "",
       "affiliations": [
         {
@@ -58099,7 +57646,7 @@
     },
     "carmen-weinstein": {
       "name": "Carmen Weinstein",
-      "bio": "President of the Jewish Community of Cairo (1940s–2013) who tirelessly maintained Jewish heritage sites in Egypt including historic synagogues.",
+      "bio": "President of the Jewish Community of Cairo (1940s-2013) who tirelessly maintained Jewish heritage sites in Egypt including historic synagogues.",
       "notes": "",
       "affiliations": [
         {
@@ -58112,7 +57659,7 @@
     },
     "haim-nahum": {
       "name": "Haim Nahum",
-      "bio": "Chief Rabbi of Egypt (1925–1960) who led the Jewish community through a turbulent era and represented Egyptian Jewry internationally.",
+      "bio": "Chief Rabbi of Egypt (1925-1960) who led the Jewish community through a turbulent era and represented Egyptian Jewry internationally.",
       "notes": "",
       "affiliations": [
         {
@@ -58125,7 +57672,7 @@
     },
     "yusuf-cattaui": {
       "name": "Yusuf Aslan Cattaui",
-      "bio": "Yusuf Aslan Cattaui Pasha (1861–1942), Egyptian Jewish politician and community leader who served in the Egyptian Senate and supported Jewish institutions in Cairo.",
+      "bio": "Yusuf Aslan Cattaui Pasha (1861-1942), Egyptian Jewish politician and community leader who served in the Egyptian Senate and supported Jewish institutions in Cairo.",
       "notes": "",
       "affiliations": [
         {
@@ -58203,7 +57750,7 @@
     },
     "jacobo-langsner": {
       "name": "Jacobo Langsner",
-      "bio": "Romanian-born Uruguayan Jewish playwright (1927–2014) who became one of the most acclaimed dramatists in Uruguayan theater.",
+      "bio": "Romanian-born Uruguayan Jewish playwright (1927-2014) who became one of the most acclaimed dramatists in Uruguayan theater.",
       "notes": "",
       "affiliations": [
         {
@@ -58229,7 +57776,7 @@
     },
     "julius-vogel": {
       "name": "Julius Vogel",
-      "bio": "Sir Julius Vogel (1835–1899), Jewish Prime Minister of New Zealand (1873–1876) who was instrumental in the colony's development and economic policy.",
+      "bio": "Sir Julius Vogel (1835-1899), Jewish Prime Minister of New Zealand (1873-1876) who was instrumental in the colony's development and economic policy.",
       "notes": "",
       "affiliations": [
         {
@@ -58281,7 +57828,7 @@
     },
     "elias-canetti": {
       "name": "Elias Canetti",
-      "bio": "Sephardic Jewish writer (1905–1994) born in Ruse, Bulgaria, awarded the Nobel Prize in Literature in 1981 for his works of lasting significance.",
+      "bio": "Sephardic Jewish writer (1905-1994) born in Ruse, Bulgaria, awarded the Nobel Prize in Literature in 1981 for his works of lasting significance.",
       "notes": "",
       "affiliations": [
         {
@@ -58294,7 +57841,7 @@
     },
     "solomon-passy": {
       "name": "Solomon Passy",
-      "bio": "Bulgarian politician of Jewish descent who served as Foreign Minister (2001–2005) and founded the Atlantic Club of Bulgaria.",
+      "bio": "Bulgarian politician of Jewish descent who served as Foreign Minister (2001-2005) and founded the Atlantic Club of Bulgaria.",
       "notes": "",
       "affiliations": [
         {
@@ -58307,7 +57854,7 @@
     },
     "jules-pascin": {
       "name": "Jules Pascin",
-      "bio": "Bulgarian-Jewish artist (1885–1930), born Julius Mordecai Pincas in Vidin, who became a leading figure of the École de Paris art movement.",
+      "bio": "Bulgarian-Jewish artist (1885-1930), born Julius Mordecai Pincas in Vidin, who became a leading figure of the École de Paris art movement.",
       "notes": "",
       "affiliations": [
         {
@@ -58320,7 +57867,7 @@
     },
     "benno-weiser-varon": {
       "name": "Benno Weiser Varon",
-      "bio": "Ecuadorian Jewish diplomat and author (1913–2014) who fled Nazi Europe to Ecuador and later served as a diplomat, writing memoirs of Jewish refugee life in South America.",
+      "bio": "Ecuadorian Jewish diplomat and author (1913-2014) who fled Nazi Europe to Ecuador and later served as a diplomat, writing memoirs of Jewish refugee life in South America.",
       "notes": "",
       "affiliations": [
         {
@@ -58333,7 +57880,7 @@
     },
     "olga-fisch": {
       "name": "Olga Fisch",
-      "bio": "Hungarian-born Jewish artist (1901–1990) who fled to Ecuador during WWII and became celebrated for her work preserving and promoting indigenous Ecuadorian art and textiles.",
+      "bio": "Hungarian-born Jewish artist (1901-1990) who fled to Ecuador during WWII and became celebrated for her work preserving and promoting indigenous Ecuadorian art and textiles.",
       "notes": "",
       "affiliations": [
         {
@@ -58346,7 +57893,7 @@
     },
     "karl-kohn": {
       "name": "Karl Kohn",
-      "bio": "Czech-born Jewish architect (1894–1979) who escaped to Ecuador and designed modernist buildings in Quito, significantly shaping the city's architecture.",
+      "bio": "Czech-born Jewish architect (1894-1979) who escaped to Ecuador and designed modernist buildings in Quito, significantly shaping the city's architecture.",
       "notes": "",
       "affiliations": [
         {
@@ -58359,7 +57906,7 @@
     },
     "sassoon-eskell": {
       "name": "Sassoon Eskell",
-      "bio": "Sir Sassoon Eskell (1860–1932), Iraqi Jewish statesman who served as the first Finance Minister of Iraq and was a member of the constituent assembly.",
+      "bio": "Sir Sassoon Eskell (1860-1932), Iraqi Jewish statesman who served as the first Finance Minister of Iraq and was a member of the constituent assembly.",
       "notes": "",
       "affiliations": [
         {
@@ -58372,7 +57919,7 @@
     },
     "meer-basri": {
       "name": "Meer Basri",
-      "bio": "Iraqi Jewish author, poet, and community leader (1914–2006) who was one of the last prominent Jewish intellectuals to remain in Baghdad.",
+      "bio": "Iraqi Jewish author, poet, and community leader (1914-2006) who was one of the last prominent Jewish intellectuals to remain in Baghdad.",
       "notes": "",
       "affiliations": [
         {
@@ -58385,7 +57932,7 @@
     },
     "shlomo-hillel": {
       "name": "Shlomo Hillel",
-      "bio": "Iraqi-born Israeli politician (1923–2021) who served as Speaker of the Knesset and helped organize the mass immigration of Iraqi Jews to Israel.",
+      "bio": "Iraqi-born Israeli politician (1923-2021) who served as Speaker of the Knesset and helped organize the mass immigration of Iraqi Jews to Israel.",
       "notes": "",
       "affiliations": [
         {
@@ -58476,7 +58023,7 @@
     },
     "eric-arturo-delvalle": {
       "name": "Eric Arturo Delvalle",
-      "bio": "President of Panama (1985–1988) of Jewish descent, the most prominent Jewish political figure in Panamanian history and supporter of Jewish institutions.",
+      "bio": "President of Panama (1985-1988) of Jewish descent, the most prominent Jewish political figure in Panamanian history and supporter of Jewish institutions.",
       "notes": "",
       "affiliations": [
         {
@@ -58489,7 +58036,7 @@
     },
     "max-delvalle": {
       "name": "Max Shalom Delvalle",
-      "bio": "First Vice President of Panama (1964–1968) of Jewish descent, uncle of President Eric Delvalle and a pillar of Panama's Jewish community.",
+      "bio": "First Vice President of Panama (1964-1968) of Jewish descent, uncle of President Eric Delvalle and a pillar of Panama's Jewish community.",
       "notes": "",
       "affiliations": [
         {
@@ -58541,7 +58088,7 @@
     },
     "abraham-levy-benshimol": {
       "name": "Abraham Levy Benshimol",
-      "bio": "Venezuelan Jewish architect (1933–2017) who designed significant Sephardic synagogues in Caracas, blending modern architecture with Jewish tradition.",
+      "bio": "Venezuelan Jewish architect (1933-2017) who designed significant Sephardic synagogues in Caracas, blending modern architecture with Jewish tradition.",
       "notes": "",
       "affiliations": [
         {
@@ -58554,7 +58101,7 @@
     },
     "mayer-matalon": {
       "name": "Mayer Matalon",
-      "bio": "Prominent Jamaican Jewish businessman (1931–2016) who led major institutions and was a pillar of Kingston's Jewish community.",
+      "bio": "Prominent Jamaican Jewish businessman (1931-2016) who led major institutions and was a pillar of Kingston's Jewish community.",
       "notes": "",
       "affiliations": [
         {
@@ -58593,7 +58140,7 @@
     },
     "jack-block": {
       "name": "Jack Block",
-      "bio": "Kenyan Jewish hotelier (1929–2014) who built the Block Hotels chain (including Serena Hotels) and was a major figure in Kenya's Jewish community.",
+      "bio": "Kenyan Jewish hotelier (1929-2014) who built the Block Hotels chain (including Serena Hotels) and was a major figure in Kenya's Jewish community.",
       "notes": "",
       "affiliations": [
         {
@@ -58606,7 +58153,7 @@
     },
     "abraham-block": {
       "name": "Abraham Block",
-      "bio": "Lithuanian Jewish immigrant (1880–1939) who settled in Kenya in 1904, establishing a trading business and helping found the Jewish community in Nairobi.",
+      "bio": "Lithuanian Jewish immigrant (1880-1939) who settled in Kenya in 1904, establishing a trading business and helping found the Jewish community in Nairobi.",
       "notes": "",
       "affiliations": [
         {
@@ -58619,7 +58166,7 @@
     },
     "semei-kakungulu": {
       "name": "Semei Kakungulu",
-      "bio": "Ugandan military leader and statesman (1869–1928) who adopted Judaism and founded the Abayudaya Jewish community in eastern Uganda around 1919.",
+      "bio": "Ugandan military leader and statesman (1869-1928) who adopted Judaism and founded the Abayudaya Jewish community in eastern Uganda around 1919.",
       "notes": "",
       "affiliations": [
         {
@@ -58645,7 +58192,7 @@
     },
     "slavko-goldstein": {
       "name": "Slavko Goldstein",
-      "bio": "Croatian Jewish writer and publisher (1928–2017) who was a prominent anti-fascist voice and author of works examining Croatia's WWII history.",
+      "bio": "Croatian Jewish writer and publisher (1928-2017) who was a prominent anti-fascist voice and author of works examining Croatia's WWII history.",
       "notes": "",
       "affiliations": [
         {
@@ -58671,7 +58218,7 @@
     },
     "rene-trabelsi": {
       "name": "René Trabelsi",
-      "bio": "Tunisian Jewish businessman and son of Perez Trabelsi who served as Tunisia's Minister of Tourism (2018–2020), promoting the El Ghriba pilgrimage internationally.",
+      "bio": "Tunisian Jewish businessman and son of Perez Trabelsi who served as Tunisia's Minister of Tourism (2018-2020), promoting the El Ghriba pilgrimage internationally.",
       "notes": "",
       "affiliations": [
         {
@@ -58697,7 +58244,7 @@
     },
     "james-n-rosenberg": {
       "name": "James N. Rosenberg",
-      "bio": "American Jewish lawyer and philanthropist (1874–1970) who chaired the Dominican Republic Settlement Association (DORSA), organizing the Jewish refugee colony in Sosúa.",
+      "bio": "American Jewish lawyer and philanthropist (1874-1970) who chaired the Dominican Republic Settlement Association (DORSA), organizing the Jewish refugee colony in Sosúa.",
       "notes": "",
       "affiliations": [
         {
@@ -60707,6 +60254,1436 @@
           "role": "Heritage Advocate",
           "entryId": "jewish-community-of-montenegro",
           "country": ""
+        }
+      ]
+    },
+    "eva-dubin": {
+      "name": "Eva Dubin",
+      "bio": "Former Miss Sweden, married Glenn Dubin after dating Epstein. Maintained close relationship with Epstein even after marriage. Virginia Giuffre alleged Eva arranged for her to be sent to Epstein.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Close Associate - Glenn Dubin's Wife, Former Epstein Girlfriend",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "elizabeth-maxwell": {
+      "name": "Elizabeth Maxwell",
+      "bio": "Wife of Robert Maxwell, mother of Ghislaine. French-born Holocaust researcher. Died in 2013.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Maxwell Family - Mother of Ghislaine",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "gerard-oxenham": {
+      "name": "Gerard Oxenham",
+      "bio": "Pilot who flew Epstein's aircraft, including the infamous Boeing 727 \"Lolita Express.\" Named in flight logs.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Inner Circle - Pilot",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "cathi-edwards": {
+      "name": "Cathi Edwards",
+      "bio": "Member of Epstein's household staff in Palm Beach. Testified in connection with Epstein investigations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Inner Circle - Household Staff",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "bruce-king": {
+      "name": "Bruce King",
+      "bio": "Former Governor of New Mexico (1979-1983, 1991-1995). Epstein had significant connections in New Mexico near his Zorro Ranch.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Political Connection - Former NM Governor",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "steve-bing": {
+      "name": "Steve Bing",
+      "bio": "Film producer and billionaire heir who died in 2020. Named in Epstein's black book and connected to similar social circles.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Film Producer & Billionaire",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "katarina-witt": {
+      "name": "Katarina Witt",
+      "bio": "Two-time Olympic gold medalist figure skater from East Germany. Named in Epstein's black book.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Olympic Figure Skater",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "fleur-perry": {
+      "name": "Fleur Perry",
+      "bio": "Model associated with Epstein's social circle in New York. Named in black book.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Model",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "bernie-ecclestone": {
+      "name": "Bernie Ecclestone",
+      "bio": "Former Formula 1 chief executive. Named in Epstein's black book contacts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Business - F1 Boss",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "mike-tyson": {
+      "name": "Mike Tyson",
+      "bio": "Former world heavyweight boxing champion. Named in Epstein's black book.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Boxing Champion",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "demi-moore": {
+      "name": "Demi Moore",
+      "bio": "Actress named in Epstein's black book of contacts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Actress",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-caine": {
+      "name": "Michael Caine",
+      "bio": "British actor. Named in Epstein's black book of contacts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Actor",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "oliver-stone": {
+      "name": "Oliver Stone",
+      "bio": "Oscar-winning film director. Named in Epstein's black book.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Director",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "spike-lee": {
+      "name": "Spike Lee",
+      "bio": "Filmmaker. Named in Epstein's black book.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Director",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "matthew-broderick": {
+      "name": "Matthew Broderick",
+      "bio": "Actor. Named in Epstein's black book along with wife Sarah Jessica Parker.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Actor",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "sarah-jessica-parker": {
+      "name": "Sarah Jessica Parker",
+      "bio": "Actress. Named in Epstein's black book along with husband Matthew Broderick.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - Actress",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "dan-schneider": {
+      "name": "Dan Schneider",
+      "bio": "Nickelodeon producer. Named in Epstein's contacts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Entertainment - TV Producer",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "edmond-safra": {
+      "name": "Edmond Safra",
+      "bio": "Lebanese-Brazilian-Jewish banker who founded Republic National Bank. His wife Lily Safra was connected to Epstein's circles.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Finance - Banker (1932-1999)",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "robert-morrow": {
+      "name": "Robert Morrow",
+      "bio": "Listed in Epstein's black book in connection with academic and fundraising circles.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Science - Academic Contact",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "victor-ostrovsky": {
+      "name": "Victor Ostrovsky",
+      "bio": "Former Mossad case officer and author of \"By Way of Deception.\" Connected to discussions about Epstein's alleged intelligence ties.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Intelligence - Ex-Mossad Officer & Author",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-lloyd-sherwood": {
+      "name": "Mark Lloyd-Sherwood",
+      "bio": "Staff member who served as driver and personal assistant to Epstein.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Inner Circle - Driver/Staff",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "darren-indyke-jr": {
+      "name": "Darren Indyke Jr.",
+      "bio": "Connected to the Epstein estate administration.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Legal/Financial - Associated with Estate",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "alex-acosta": {
+      "name": "Alex Acosta",
+      "bio": "Former US Attorney for Southern Florida who approved the controversial 2008 plea deal. Later resigned as Trump's Labor Secretary over the Epstein scandal.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Epstein Network",
+          "role": "Government - US Attorney (Plea Deal)",
+          "entryId": "epstein-network",
+          "country": "United States"
+        }
+      ]
+    },
+    "rob-kapito": {
+      "name": "Rob Kapito",
+      "bio": "Co-founded BlackRock with Larry Fink in 1988. Oversees the firm's operations and portfolio management.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Blackrock Inc.",
+          "role": "President & Co-founder",
+          "entryId": "blackrock-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "ben-golub": {
+      "name": "Ben Golub",
+      "bio": "Pioneered BlackRock's Aladdin risk management platform.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Blackrock Inc.",
+          "role": "Former Chief Risk Officer & Co-founder",
+          "entryId": "blackrock-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "barbara-novick": {
+      "name": "Barbara Novick",
+      "bio": "Co-founded BlackRock and led government relations and public policy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Blackrock Inc.",
+          "role": "Co-founder & Former Vice Chairman",
+          "entryId": "blackrock-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-wiedman": {
+      "name": "Mark Wiedman",
+      "bio": "Senior leader at BlackRock overseeing the firm's client relationships globally.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Blackrock Inc.",
+          "role": "Head of Global Client Business",
+          "entryId": "blackrock-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "sally-susman": {
+      "name": "Sally Susman",
+      "bio": "Leads Pfizer's corporate affairs, communications, and government relations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Pfizer Inc.",
+          "role": "EVP & Chief Corporate Affairs Officer",
+          "entryId": "pfizer-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "mikael-dolsten": {
+      "name": "Mikael Dolsten",
+      "bio": "Israeli-Swedish immunologist who leads Pfizer Worldwide Research, Development & Medical.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Pfizer Inc.",
+          "role": "Chief Scientific Officer",
+          "entryId": "pfizer-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-denton": {
+      "name": "David Denton",
+      "bio": "Oversees Pfizer's global financial operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Pfizer Inc.",
+          "role": "Chief Financial Officer",
+          "entryId": "pfizer-inc",
+          "country": "United States"
+        }
+      ]
+    },
+    "colette-kress": {
+      "name": "Colette Kress",
+      "bio": "Chief Financial Officer of NVIDIA. Joined from Cisco in 2013.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Nvidia",
+          "role": "CFO",
+          "entryId": "nvidia",
+          "country": "United States"
+        }
+      ]
+    },
+    "jay-puri": {
+      "name": "Jay Puri",
+      "bio": "Oversees NVIDIA's global sales and partner operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Nvidia",
+          "role": "EVP Worldwide Field Operations",
+          "entryId": "nvidia",
+          "country": "United States"
+        }
+      ]
+    },
+    "john-weinberg": {
+      "name": "John Weinberg",
+      "bio": "Son of Sidney Weinberg, served as co-chairman. Represented Goldman's founding family dynasty.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Goldman Sachs (historic)",
+          "role": "Former Senior Partner",
+          "entryId": "goldman-sachs-historic",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-l-cohen": {
+      "name": "David L. Cohen",
+      "bio": "Former EVP who oversees government and regulatory affairs. Close advisor to Brian Roberts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Comcast Corporation",
+          "role": "Senior Counselor",
+          "entryId": "comcast-corporation",
+          "country": "United States"
+        }
+      ]
+    },
+    "adam-miller": {
+      "name": "Adam Miller",
+      "bio": "Chief Financial Officer overseeing Comcast's financial strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Comcast Corporation",
+          "role": "CFO",
+          "entryId": "comcast-corporation",
+          "country": "United States"
+        }
+      ]
+    },
+    "suzanne-scott": {
+      "name": "Suzanne Scott",
+      "bio": "First female CEO of Fox News, appointed in 2018 after the Roger Ailes scandal.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Fox News Channel",
+          "role": "CEO of Fox News Media",
+          "entryId": "fox-news-channel",
+          "country": "United States"
+        }
+      ]
+    },
+    "irena-briganti": {
+      "name": "Irena Briganti",
+      "bio": "Long-serving head of Fox News communications known for aggressive media strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Fox News Channel",
+          "role": "SVP Communications",
+          "entryId": "fox-news-channel",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-thompson": {
+      "name": "Mark Thompson",
+      "bio": "Former BBC Director-General and New York Times CEO. Appointed CNN CEO in 2023.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "CNN (Cable News Network)",
+          "role": "CEO (2023-present)",
+          "entryId": "cnn",
+          "country": "United States"
+        }
+      ]
+    },
+    "emilie-choi": {
+      "name": "Emilie Choi",
+      "bio": "Oversees Coinbase's operations, business development, and ventures.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Coinbase",
+          "role": "President & COO",
+          "entryId": "coinbase",
+          "country": "United States"
+        }
+      ]
+    },
+    "alesia-haas": {
+      "name": "Alesia Haas",
+      "bio": "Chief Financial Officer. Led Coinbase through its 2021 direct listing on NASDAQ.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Coinbase",
+          "role": "CFO",
+          "entryId": "coinbase",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-singleton": {
+      "name": "David Singleton",
+      "bio": "Former Google VP who joined as Stripe's Chief Technology Officer.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Stripe",
+          "role": "CTO",
+          "entryId": "stripe",
+          "country": "United States"
+        }
+      ]
+    },
+    "will-gaybrick": {
+      "name": "Will Gaybrick",
+      "bio": "Oversees Stripe's product strategy and business operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Stripe",
+          "role": "President of Product & Business",
+          "entryId": "stripe",
+          "country": "United States"
+        }
+      ]
+    },
+    "jason-warnick": {
+      "name": "Jason Warnick",
+      "bio": "Former Amazon VP who serves as Robinhood's Chief Financial Officer.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Robinhood Markets",
+          "role": "CFO",
+          "entryId": "robinhood-markets",
+          "country": "United States"
+        }
+      ]
+    },
+    "dan-gallagher": {
+      "name": "Dan Gallagher",
+      "bio": "Former SEC Commissioner who oversees Robinhood's legal and compliance.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Robinhood Markets",
+          "role": "Chief Legal Officer",
+          "entryId": "robinhood-markets",
+          "country": "United States"
+        }
+      ]
+    },
+    "dean-baquet": {
+      "name": "Dean Baquet",
+      "bio": "Executive Editor 2014-2022. First African-American to hold the role.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "The New York Times",
+          "role": "Former Executive Editor",
+          "entryId": "new-york-times",
+          "country": "United States"
+        }
+      ]
+    },
+    "steven-newhouse": {
+      "name": "Steven Newhouse",
+      "bio": "Co-president alongside cousin. Oversees Advance's media and technology investments.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Advance Publications",
+          "role": "Co-President",
+          "entryId": "advance-publications",
+          "country": "United States"
+        }
+      ]
+    },
+    "robert-steers": {
+      "name": "Robert Steers",
+      "bio": "Co-founded Cohen & Steers in 1986. Pioneer of listed real estate securities investing.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Cohen & Steers",
+          "role": "Co-Chairman & Co-CEO",
+          "entryId": "cohen-steers",
+          "country": "United States"
+        }
+      ]
+    },
+    "sachin-shah": {
+      "name": "Sachin Shah",
+      "bio": "Leads Brookfield's insurance solutions business.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Brookfield Corporation",
+          "role": "CEO of Brookfield Reinsurance",
+          "entryId": "brookfield-corporation",
+          "country": "Canada"
+        }
+      ]
+    },
+    "carlos-abrams-rivera": {
+      "name": "Carlos Abrams-Rivera",
+      "bio": "CEO of Kraft Heinz since 2024. Former leader of the North American business.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Kraft Heinz Company",
+          "role": "CEO",
+          "entryId": "kraft-heinz-company",
+          "country": "United States"
+        }
+      ]
+    },
+    "alex-behring": {
+      "name": "Alex Behring",
+      "bio": "Chairman of Kraft Heinz. Managing Partner at 3G Capital, which engineered the Kraft-Heinz merger.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Kraft Heinz Company",
+          "role": "Chairman",
+          "entryId": "kraft-heinz-company",
+          "country": "United States"
+        }
+      ]
+    },
+    "josh-charlesworth": {
+      "name": "Josh Charlesworth",
+      "bio": "CEO of Krispy Kreme. Leads the company's global expansion strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Krispy Kreme",
+          "role": "CEO",
+          "entryId": "krispy-kreme",
+          "country": "United States"
+        }
+      ]
+    },
+    "laxman-narasimhan": {
+      "name": "Laxman Narasimhan",
+      "bio": "Former Reckitt Benckiser CEO who served as Starbucks CEO before being replaced by Brian Niccol in 2024.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Starbucks Coffee Company",
+          "role": "CEO (2023-2024)",
+          "entryId": "starbucks-coffee-company",
+          "country": "United States"
+        }
+      ]
+    },
+    "al-cook": {
+      "name": "Al Cook",
+      "bio": "CEO of De Beers since 2023. Former BP executive.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "De Beers Group",
+          "role": "CEO",
+          "entryId": "de-beers-group",
+          "country": "South Africa"
+        }
+      ]
+    },
+    "joe-lonsdale": {
+      "name": "Joe Lonsdale",
+      "bio": "Co-founded Palantir and later founded 8VC venture capital and Addepar.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Palantir Technologies",
+          "role": "Co-founder",
+          "entryId": "palantir-technologies",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-sacks": {
+      "name": "David Sacks",
+      "bio": "Early PayPal executive (\"PayPal Mafia\"). Later founded Yammer and became a prominent tech investor and political commentator.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "PayPal",
+          "role": "Former COO",
+          "entryId": "paypal",
+          "country": "United States"
+        }
+      ]
+    },
+    "jeffrey-perlman": {
+      "name": "Jeffrey Perlman",
+      "bio": "Co-CEO of Warburg Pincus. Previously led the firm's Southeast Asia operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Warburg Pincus",
+          "role": "Co-CEO",
+          "entryId": "warburg-pincus",
+          "country": "United States"
+        }
+      ]
+    },
+    "greg-abel": {
+      "name": "Greg Abel",
+      "bio": "Designated successor to Buffett as CEO. Oversees Berkshire's non-insurance businesses.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Berkshire Hathaway (via subsidiaries)",
+          "role": "Vice Chairman (Non-Insurance)",
+          "entryId": "berkshire-hathaway-via-subsidiaries",
+          "country": "United States"
+        }
+      ]
+    },
+    "alan-schwartz": {
+      "name": "Alan Schwartz",
+      "bio": "CEO of Bear Stearns during its 2008 collapse. Oversaw the forced sale to JPMorgan Chase.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bear Stearns (historic)",
+          "role": "Last CEO",
+          "entryId": "bear-stearns-historic",
+          "country": "United States"
+        }
+      ]
+    },
+    "jimmy-cayne": {
+      "name": "Jimmy Cayne",
+      "bio": "CEO 1993-2008. Controversial figure who was playing bridge when the firm collapsed. Lost ~$1 billion in Bear Stearns stock.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bear Stearns (historic)",
+          "role": "Former CEO & Chairman",
+          "entryId": "bear-stearns-historic",
+          "country": "United States"
+        }
+      ]
+    },
+    "edward-herlihy": {
+      "name": "Edward Herlihy",
+      "bio": "Advised on more M&A transactions than any other lawyer. Key advisor in the 2008 financial crisis bank mergers.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Wachtell, Lipton, Rosen & Katz",
+          "role": "Partner & Co-Chairman",
+          "entryId": "wachtell-lipton-rosen-katz",
+          "country": "United States"
+        }
+      ]
+    },
+    "bob-bakish": {
+      "name": "Bob Bakish",
+      "bio": "Former CEO of Paramount Global (2019-2024). Led the ViacomCBS rebranding to Paramount Global.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Paramount Global",
+          "role": "Former CEO",
+          "entryId": "paramount-global",
+          "country": "United States"
+        }
+      ]
+    },
+    "markus-dohle": {
+      "name": "Markus Dohle",
+      "bio": "German-born former CEO of Penguin Random House. Oversaw its growth into the world's largest book publisher.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Random House (Penguin Random House)",
+          "role": "Former CEO",
+          "entryId": "random-house",
+          "country": "United States"
+        }
+      ]
+    },
+    "peter-olson": {
+      "name": "Peter Olson",
+      "bio": "CEO of Random House 1998-2008. Oversaw the era before the Penguin merger.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Random House (Penguin Random House)",
+          "role": "Former CEO",
+          "entryId": "random-house",
+          "country": "United States"
+        }
+      ]
+    },
+    "robert-kyncl": {
+      "name": "Robert Kyncl",
+      "bio": "CEO since 2023. Former YouTube Chief Business Officer.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Warner Music Group",
+          "role": "CEO",
+          "entryId": "warner-music-group",
+          "country": "United States"
+        }
+      ]
+    },
+    "rachel-fishman-feddersen": {
+      "name": "Rachel Fishman Feddersen",
+      "bio": "CEO and publisher of the Forward. Led the paper's transition to a nonprofit model.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "The Forward (newspaper)",
+          "role": "Publisher & CEO",
+          "entryId": "the-forward",
+          "country": "United States"
+        }
+      ]
+    },
+    "ben-brown": {
+      "name": "Ben Brown",
+      "bio": "CEO of Brookfield Properties. Oversees one of the world's largest real estate portfolios.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Brookfield Properties (Ric Clark)",
+          "role": "CEO",
+          "entryId": "brookfield-properties",
+          "country": "United States"
+        }
+      ]
+    },
+    "brian-kingston": {
+      "name": "Brian Kingston",
+      "bio": "Former CEO of Brookfield Properties. Now leads Brookfield's real estate group globally.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Brookfield Properties (Ric Clark)",
+          "role": "Former CEO",
+          "entryId": "brookfield-properties",
+          "country": "United States"
+        }
+      ]
+    },
+    "bruce-beal": {
+      "name": "Bruce Beal",
+      "bio": "Vice Chairman of the Miami Dolphins. President of Related Companies.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Miami Dolphins (Stephen Ross)",
+          "role": "Vice Chairman",
+          "entryId": "miami-dolphins",
+          "country": "United States"
+        }
+      ]
+    },
+    "janice-weinman": {
+      "name": "Janice Weinman",
+      "bio": "Executive Director/CEO of Hadassah. Oversees operations of the 300,000-member organization.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Hadassah, The Women's Zionist Organization of America",
+          "role": "Executive Director",
+          "entryId": "hadassah-the-women-s-zionist-organization-of-america",
+          "country": "United States"
+        }
+      ]
+    },
+    "sheila-katz": {
+      "name": "Sheila Katz",
+      "bio": "CEO of NCJW. Leads the organization's advocacy on reproductive rights, voting rights, and social justice.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "National Council of Jewish Women (NCJW)",
+          "role": "CEO",
+          "entryId": "national-council-of-jewish-women-ncjw",
+          "country": "United States"
+        }
+      ]
+    },
+    "mitchell-aeder": {
+      "name": "Mitchell Aeder",
+      "bio": "President of the Orthodox Union. Leads the OU's board and governance.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Orthodox Union (OU)",
+          "role": "President",
+          "entryId": "orthodox-union-ou",
+          "country": "United States"
+        }
+      ]
+    },
+    "arnold-eisen": {
+      "name": "Arnold Eisen",
+      "bio": "Chancellor of JTS 2007-2020. Leading scholar of contemporary Judaism and Jewish thought.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Jewish Theological Seminary (JTS)",
+          "role": "Chancellor Emeritus",
+          "entryId": "jewish-theological-seminary",
+          "country": "United States"
+        }
+      ]
+    },
+    "robert-goldstein": {
+      "name": "Robert Goldstein",
+      "bio": "CEO of Las Vegas Sands since 2021 following Sheldon Adelson's death. Led the $6.25B sale of the Las Vegas properties.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Las Vegas Sands Corp",
+          "role": "CEO",
+          "entryId": "las-vegas-sands-corp",
+          "country": "United States"
+        }
+      ]
+    },
+    "geoffroy-van-raemdonck": {
+      "name": "Geoffroy van Raemdonck",
+      "bio": "CEO of Neiman Marcus Group since 2018. Led the company through its 2020 bankruptcy and restructuring.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Neiman Marcus",
+          "role": "CEO",
+          "entryId": "neiman-marcus",
+          "country": "United States"
+        }
+      ]
+    },
+    "tony-spring": {
+      "name": "Tony Spring",
+      "bio": "CEO of Macy's Inc. since 2024. Former chairman of Bloomingdale's.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Macy's / Federated Department Stores",
+          "role": "CEO",
+          "entryId": "macy-s-federated-department-stores",
+          "country": "United States"
+        }
+      ]
+    },
+    "jeff-gennette": {
+      "name": "Jeff Gennette",
+      "bio": "CEO of Macy's 2017-2024. Oversaw the Polaris turnaround strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Macy's / Federated Department Stores",
+          "role": "Former CEO",
+          "entryId": "macy-s-federated-department-stores",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-ellenson": {
+      "name": "David Ellenson",
+      "bio": "President of HUC-JIR 2001-2013. Leading scholar of modern Jewish thought and law.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Hebrew Union College - Jewish Institute of Religion",
+          "role": "Former President (deceased)",
+          "entryId": "hebrew-union-college-jewish-institute-of-religion",
+          "country": "United States"
+        }
+      ]
+    },
+    "tom-brown": {
+      "name": "Tom Brown",
+      "bio": "Co-author of the GPT-3 paper at OpenAI. Co-founded Anthropic focused on AI safety.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Anthropic",
+          "role": "Co-founder",
+          "entryId": "anthropic",
+          "country": "United States"
+        }
+      ]
+    },
+    "henry-nicholas": {
+      "name": "Henry Nicholas",
+      "bio": "Co-founded Broadcom with Henry Samueli in 1991. Led the company as CEO until 2003.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Broadcom",
+          "role": "Co-founder",
+          "entryId": "broadcom",
+          "country": "United States"
+        }
+      ]
+    },
+    "cristiano-amon": {
+      "name": "Cristiano Amon",
+      "bio": "CEO of Qualcomm since 2021. Brazilian engineer who led Qualcomm's 5G chip strategy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Qualcomm",
+          "role": "CEO",
+          "entryId": "qualcomm",
+          "country": "United States"
+        }
+      ]
+    },
+    "elan-dekel": {
+      "name": "Elan Dekel",
+      "bio": "Leads Amazon's Israel R&D operations which include teams from AWS, Alexa, and Ring.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Amazon (Israel R&D)",
+          "role": "VP of Amazon Israel R&D",
+          "entryId": "amazon-israel-r-d",
+          "country": "United States"
+        }
+      ]
+    },
+    "stephen-cohen": {
+      "name": "Stephen Cohen",
+      "bio": "Co-founded Palantir. Leads the company's engineering and technology efforts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Palantir Technologies",
+          "role": "Co-founder",
+          "entryId": "palantir-technologies",
+          "country": "United States"
+        }
+      ]
+    },
+    "timothy-geithner": {
+      "name": "Timothy Geithner",
+      "bio": "President of Warburg Pincus since 2014. Former US Treasury Secretary under Obama.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Warburg Pincus",
+          "role": "President",
+          "entryId": "warburg-pincus",
+          "country": "United States"
+        }
+      ]
+    },
+    "david-perpetua": {
+      "name": "David Perpetua",
+      "bio": "Oversees NYT's technology and engineering operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "The New York Times Company",
+          "role": "Head of Engineering",
+          "entryId": "the-new-york-times-company",
+          "country": "United States"
+        }
+      ]
+    },
+    "jonathan-karp": {
+      "name": "Jonathan Karp",
+      "bio": "CEO of Simon & Schuster. Led the company through its $1.62B acquisition by KKR in 2023.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Simon & Schuster",
+          "role": "CEO",
+          "entryId": "simon-schuster",
+          "country": "United States"
+        }
+      ]
+    },
+    "irving-thalberg": {
+      "name": "Irving Thalberg",
+      "bio": "The \"Boy Wonder\" of Hollywood who ran MGM's production at age 26. The Irving G. Thalberg Memorial Award is named after him.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "MGM Studios (historic)",
+          "role": "Head of Production (deceased)",
+          "entryId": "mgm-studios-historic",
+          "country": "United States"
+        }
+      ]
+    },
+    "irving-kristol": {
+      "name": "Irving Kristol",
+      "bio": "Contributing editor called \"the godfather of neoconservatism.\" Husband of Gertrude Himmelfarb.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Commentary Magazine",
+          "role": "Contributing Editor (deceased)",
+          "entryId": "commentary-magazine",
+          "country": "United States"
+        }
+      ]
+    },
+    "isaac-bashevis-singer": {
+      "name": "Isaac Bashevis Singer",
+      "bio": "Nobel Prize-winning Yiddish writer who published much of his work first in the Forverts.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "The Jewish Daily Forward (Yiddish: Forverts)",
+          "role": "Staff Writer (deceased)",
+          "entryId": "the-jewish-daily-forward-yiddish-forverts",
+          "country": "United States"
+        }
+      ]
+    },
+    "joe-simon": {
+      "name": "Joe Simon",
+      "bio": "Created Captain America with Jack Kirby in 1940. Also created Fighting American and other characters.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Marvel Entertainment (legacy)",
+          "role": "Co-creator of Captain America (deceased)",
+          "entryId": "marvel-entertainment-legacy",
+          "country": "United States"
+        }
+      ]
+    },
+    "jack-rudin": {
+      "name": "Jack Rudin",
+      "bio": "Family patriarch who led Rudin Management for decades alongside brother Lewis Rudin.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Rudin Management",
+          "role": "Former Co-Chairman (deceased)",
+          "entryId": "rudin-management",
+          "country": "United States"
+        }
+      ]
+    },
+    "laurent-morali": {
+      "name": "Laurent Morali",
+      "bio": "President of Kushner Companies. Oversees the firm's real estate development operations.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Kushner Companies",
+          "role": "President",
+          "entryId": "kushner-companies",
+          "country": "United States"
+        }
+      ]
+    },
+    "william-zeckendorf-sr": {
+      "name": "William Zeckendorf Sr.",
+      "bio": "Legendary NYC real estate developer who assembled the site for the United Nations headquarters.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Zeckendorf Development",
+          "role": "Original Founder (deceased)",
+          "entryId": "zeckendorf-development",
+          "country": "United States"
+        }
+      ]
+    },
+    "patrick-dumont": {
+      "name": "Patrick Dumont",
+      "bio": "Son-in-law of Sheldon Adelson and Governor of the Dallas Mavericks as representative of the Adelson ownership group.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Dallas Mavericks (Mark Cuban)",
+          "role": "Governor",
+          "entryId": "dallas-mavericks",
+          "country": "United States"
+        }
+      ]
+    },
+    "shelly-sterling": {
+      "name": "Shelly Sterling",
+      "bio": "Co-owned the team with husband Donald Sterling. The NBA forced the sale after Sterling's racist remarks in 2014.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Los Angeles Clippers (Steve Ballmer)",
+          "role": "Former Co-owner",
+          "entryId": "los-angeles-clippers",
+          "country": "United States"
+        }
+      ]
+    },
+    "michael-rubin": {
+      "name": "Michael Rubin",
+      "bio": "Fanatics CEO and part-owner of the 76ers. Former owner of GSI Commerce.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Philadelphia 76ers (Harris Blitzer)",
+          "role": "Part-owner",
+          "entryId": "philadelphia-76ers",
+          "country": "United States"
+        }
+      ]
+    },
+    "bob-myers": {
+      "name": "Bob Myers",
+      "bio": "Former GM who built the Warriors dynasty, drafting Steph Curry, Klay Thompson, and Draymond Green.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Golden State Warriors (Joe Lacob)",
+          "role": "Former GM",
+          "entryId": "golden-state-warriors",
+          "country": "United States"
+        }
+      ]
+    },
+    "tom-garfinkel": {
+      "name": "Tom Garfinkel",
+      "bio": "Vice Chairman, President & CEO of the Miami Dolphins and Hard Rock Stadium.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Miami Dolphins (Stephen Ross)",
+          "role": "Vice Chairman & CEO",
+          "entryId": "miami-dolphins",
+          "country": "United States"
+        }
+      ]
+    },
+    "rabbi-moshe-kotlarsky": {
+      "name": "Rabbi Moshe Kotlarsky",
+      "bio": "Vice Chairman of Merkos L'Inyonei Chinuch, Chabad's educational arm. Oversaw the global network of over 5,000 Chabad centers until his death in 2024.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Chabad-Lubavitch",
+          "role": "Vice Chairman (deceased)",
+          "entryId": "chabad-lubavitch",
+          "country": "United States"
+        }
+      ]
+    },
+    "moishe-bane": {
+      "name": "Moishe Bane",
+      "bio": "Past president of the Orthodox Union. Led the organization during a period of significant growth.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Orthodox Union (OU)",
+          "role": "Past President",
+          "entryId": "orthodox-union-ou",
+          "country": "United States"
+        }
+      ]
+    },
+    "simon-wiesenthal": {
+      "name": "Simon Wiesenthal",
+      "bio": "Holocaust survivor who spent his life tracking down Nazi war criminals. The \"conscience of the Holocaust.\" Helped bring over 1,100 Nazi war criminals to justice.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Simon Wiesenthal Center",
+          "role": "Namesake (deceased)",
+          "entryId": "simon-wiesenthal-center",
+          "country": "United States"
+        }
+      ]
+    },
+    "dana-bronfman": {
+      "name": "Dana Bronfman",
+      "bio": "Third-generation Bronfman family member involved in family philanthropy.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bronfman Philanthropies",
+          "role": "Board Member",
+          "entryId": "bronfman-philanthropies",
+          "country": "United States"
+        }
+      ]
+    },
+    "louis-brandeis": {
+      "name": "Louis Brandeis",
+      "bio": "First Jewish Supreme Court Justice who led the ZOA (then FAZ) during WWI. The ZOA grew from 12,000 to 176,000 members under his leadership.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Zionist Organization of America (ZOA)",
+          "role": "Historic Leader (deceased)",
+          "entryId": "zionist-organization-of-america-zoa",
+          "country": "United States"
+        }
+      ]
+    },
+    "rabbi-david-teutsch": {
+      "name": "Rabbi David Teutsch",
+      "bio": "Led the Reconstructionist Rabbinical College 1993-2002. Major figure in shaping Reconstructionist thought.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Reconstructing Judaism",
+          "role": "Former President",
+          "entryId": "reconstructing-judaism",
+          "country": "United States"
+        }
+      ]
+    },
+    "rabbi-amy-eilberg": {
+      "name": "Rabbi Amy Eilberg",
+      "bio": "First woman ordained as a Conservative rabbi (1985). Her ordination was a watershed moment for the movement.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Rabbinical Assembly",
+          "role": "Historic First",
+          "entryId": "rabbinical-assembly",
+          "country": "United States"
+        }
+      ]
+    },
+    "jehuda-reinharz": {
+      "name": "Jehuda Reinharz",
+      "bio": "President of Brandeis 1994-2010. Led the university's growth and endowment expansion.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Brandeis University",
+          "role": "Former President",
+          "entryId": "brandeis-university",
+          "country": "United States"
+        }
+      ]
+    },
+    "rabbi-sally-priesand": {
+      "name": "Rabbi Sally Priesand",
+      "bio": "First woman ordained as a rabbi in America (1972) at HUC-JIR. A landmark in Jewish history.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Hebrew Union College - Jewish Institute of Religion",
+          "role": "Historic First",
+          "entryId": "hebrew-union-college-jewish-institute-of-religion",
+          "country": "United States"
+        }
+      ]
+    },
+    "ira-forman": {
+      "name": "Ira Forman",
+      "bio": "Served as Special Envoy to Monitor and Combat Anti-Semitism under Obama.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "US Special Envoy to Monitor and Combat Antisemitism",
+          "role": "Former Special Envoy (Obama era)",
+          "entryId": "us-department-of-state-special-envoy-antisemitism",
+          "country": "United States"
+        }
+      ]
+    },
+    "linda-chen": {
+      "name": "Linda Chen",
+      "bio": "President and Executive Director of Wynn Macau Ltd.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Wynn Resorts",
+          "role": "President of Wynn Macau",
+          "entryId": "wynn-resorts",
+          "country": "United States"
+        }
+      ]
+    },
+    "mark-tritton": {
+      "name": "Mark Tritton",
+      "bio": "Former Target merchandising chief who became CEO of Bed Bath & Beyond in 2019. His strategy overhaul was blamed for accelerating the company's decline.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Bed Bath & Beyond (historic)",
+          "role": "Former CEO",
+          "entryId": "bed-bath-beyond",
+          "country": "United States"
+        }
+      ]
+    },
+    "patrik-frisk": {
+      "name": "Patrik Frisk",
+      "bio": "CEO of Under Armour 2020-2022. Former president of Aldo Group.",
+      "notes": "",
+      "affiliations": [
+        {
+          "organization": "Under Armour",
+          "role": "Former CEO",
+          "entryId": "under-armour",
+          "country": "United States"
         }
       ]
     }

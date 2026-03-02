@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// Gzip compression — cuts JSON payload ~70%
+// Gzip compression - cuts JSON payload ~70%
 app.use(compression());
 
 // Helper: normalize connection type (extract short type from "Type - Description" format)
@@ -411,7 +411,7 @@ function computeFocusGraph(focusId, depth, includePeople, roleFilter) {
   const focusIndCount = (focusEntry.individuals || []).length;
   const isBigEntry = focusIndCount > 80;
 
-  // BFS using pre-built indexes — O(V + E) instead of O(n³)
+  // BFS using pre-built indexes - O(V + E) instead of O(n³)
   const visited = new Set([focusId]);
   let frontier = [focusId];
   for (let d = 0; d < depth; d++) {
@@ -586,7 +586,7 @@ app.get('/api/random', (req, res) => {
 });
 
 // degrees of separation / shortest path between two entries
-// Uses pre-built adjacency list — O(V + E) BFS
+// Uses pre-built adjacency list - O(V + E) BFS
 app.get('/api/path', (req, res) => {
   const from = req.query.from;
   const to = req.query.to;

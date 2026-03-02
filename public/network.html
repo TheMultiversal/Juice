@@ -912,7 +912,7 @@
 
   // ─── Expand / Collapse all ───────────────────────────
   function expandAll() {
-    // Instantly expand all already-loaded nodes — no API calls, no overlay
+    // Instantly expand all already-loaded nodes - no API calls, no overlay
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
     ex(rightRoot); ex(leftRoot);
     renderTree(); setTimeout(fitTree, 350);
@@ -983,7 +983,7 @@
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
   document.getElementById('btn-expand-right').onclick = function() {
-    // Instantly expand all loaded org nodes — no API calls
+    // Instantly expand all loaded org nodes - no API calls
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
     ex(rightRoot);
     renderTree(); setTimeout(fitTree, 350);
