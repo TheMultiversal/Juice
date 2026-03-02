@@ -77,11 +77,28 @@
     .cat-badge { background: rgba(255,193,7,0.12); color: #856404; }
     .country-badge { background: rgba(220,53,69,0.08); color: #721c24; }
     .aff-summary { font-size: 0.85em; color: #555; margin: 6px 0; line-height: 1.4; font-style: italic; }
-    .co-section { margin-top: 8px; padding-top: 8px; border-top: 1px dashed rgba(0,0,255,0.1); }
+    .co-section { margin-top: 10px; padding-top: 10px; border-top: 1px dashed rgba(0,0,255,0.1); }
     .co-label { font-size: 0.8em; color: #777; font-weight: 600; margin-bottom: 4px; }
     .co-person { display: inline-block; margin: 2px 3px; }
     .co-person a { color: #0000EE; font-size: 0.85em; padding: 2px 9px; background: rgba(0,123,255,0.05); border-radius: 12px; text-decoration: none; border: 1px solid rgba(0,0,255,0.08); }
     .co-person a:hover { background: rgba(0,123,255,0.12); }
+
+    /* Role group sections within co-individuals */
+    .role-group { margin: 8px 0; }
+    .role-group-header { display: flex; align-items: center; gap: 6px; font-size: 0.82em; font-weight: 700; margin-bottom: 5px; padding: 4px 0; color: #444; cursor: pointer; user-select: none; }
+    .role-group-header i { font-size: 0.85em; width: 16px; text-align: center; }
+    .role-group-header .rg-count { font-weight: 400; color: #888; margin-left: 4px; }
+    .role-group-header .rg-chevron { margin-left: auto; font-size: 0.7em; color: #999; transition: transform 0.2s; }
+    .role-group-header.collapsed .rg-chevron { transform: rotate(-90deg); }
+    .role-group-body { display: flex; flex-wrap: wrap; gap: 3px; }
+    .role-group-body.collapsed { display: none; }
+    .rg-leadership i { color: #0056b3; }
+    .rg-donors i { color: #28a745; }
+    .rg-congressional i { color: #6f42c1; }
+    .rg-board i { color: #e83e8c; }
+    .rg-other i { color: #6c757d; }
+    .show-all-btn { display: inline-block; margin: 6px 0; padding: 4px 14px; border-radius: 14px; font-size: 0.78em; font-weight: 600; background: rgba(0,123,255,0.08); color: #0056b3; border: 1px solid rgba(0,123,255,0.15); cursor: pointer; transition: background 0.2s; }
+    .show-all-btn:hover { background: rgba(0,123,255,0.18); }
 
     /* Network cards */
     .net-search { width: 100%; padding: 8px 14px; border-radius: 8px; border: 1px solid rgba(0,0,255,0.2); font-size: 0.9em; margin-bottom: 10px; }
@@ -110,6 +127,10 @@
     /* Connection explanation */
     .connection-reason { background: rgba(255,248,220,0.6); border: 1px solid rgba(255,193,7,0.2); border-radius: 6px; padding: 8px 12px; margin: 4px 0; font-size: 0.85em; line-height: 1.4; }
     .connection-reason strong { color: #856404; }
+
+    /* Financial badge */
+    .financial-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 10px; border-radius: 12px; font-size: 0.78em; font-weight: 600; background: rgba(40,167,69,0.1); color: #1a7431; }
+    .financial-badge i { font-size: 0.8em; }
 
     /* Responsive */
     @media(max-width:600px) {
@@ -281,10 +302,12 @@
           });
           nameEl.appendChild(bmBtn);
 
-          // Subtitle - primary role
+          // Subtitle - show all roles (up to 3)
           if (person.affiliations && person.affiliations.length) {
-            const primary = person.affiliations[0];
-            document.getElementById('person-subtitle').textContent = (primary.role || 'Associated') + ' at ' + primary.organization + ' (' + primary.country + ')';
+            const subParts = person.affiliations.slice(0, 3).map(a => (a.role || 'Associated') + ' at ' + a.organization);
+            let sub = subParts.join(' | ');
+            if (person.affiliations.length > 3) sub += ' | +' + (person.affiliations.length - 3) + ' more';
+            document.getElementById('person-subtitle').textContent = sub;
           }
 
           // Stats bar
@@ -360,32 +383,100 @@
                 card.appendChild(summ);
               }
 
-              // Why connected
-              const reason = document.createElement('div');
-              reason.className = 'connection-reason';
-              reason.innerHTML = '<strong>Connection:</strong> ' + person.name + ' serves as <strong>' + (a.role || 'an associate') + '</strong> at ' + a.organization +
-                (a.category ? ', a <strong>' + a.category + '</strong> organization' : '') +
-                ' based in <strong>' + a.country + '</strong>.' +
-                (a.coIndividuals && a.coIndividuals.length ? ' Connected here with <strong>' + a.coIndividuals.length + ' other individual' + (a.coIndividuals.length > 1 ? 's' : '') + '</strong>.' : '');
-              card.appendChild(reason);
-
-              // Co-individuals
+              // Co-individuals - grouped by role type
               if (a.coIndividuals && a.coIndividuals.length) {
                 const coDiv = document.createElement('div');
                 coDiv.className = 'co-section';
                 const lbl = document.createElement('div');
                 lbl.className = 'co-label';
-                lbl.innerHTML = '<i class="fa-solid fa-users"></i> Also at ' + a.organization + ' (' + a.coIndividuals.length + '):';
+                lbl.innerHTML = '<i class="fa-solid fa-users"></i> Also at ' + a.organization + ' (' + a.coIndividuals.length + ' people):';
                 coDiv.appendChild(lbl);
+
+                // Categorize co-individuals by role type
+                function classifyRole(role) {
+                  if (!role) return 'other';
+                  const r = role.toLowerCase();
+                  if (r.includes('donor') || r.includes('funder') || r.includes('financ')) return 'donors';
+                  if (r.includes('congress') || r.includes('senator') || r.includes('representative') || r.includes('political') || r.includes('ally') || r.includes('speaker') || r.includes('house ') || r.includes('governor') || r.includes('mayor')) return 'congressional';
+                  if (r.includes('ceo') || r.includes('president') || r.includes('chairman') || r.includes('director') || r.includes('founder') || r.includes('executive') || r.includes('head') || r.includes('chief') || r.includes('managing') || r.includes('partner') || r.includes('dean') || r.includes('chancellor') || r.includes('rabbi') || r.includes('leader')) return 'leadership';
+                  if (r.includes('board') || r.includes('trustee') || r.includes('governor') || r.includes('advisor') || r.includes('counsel')) return 'board';
+                  return 'other';
+                }
+
+                const groups = { leadership: [], donors: [], congressional: [], board: [], other: [] };
+                const groupMeta = {
+                  leadership: { label: 'Leadership', icon: 'fa-crown', cls: 'rg-leadership' },
+                  donors: { label: 'Major Donors & Financial', icon: 'fa-hand-holding-dollar', cls: 'rg-donors' },
+                  congressional: { label: 'Congressional & Political', icon: 'fa-landmark', cls: 'rg-congressional' },
+                  board: { label: 'Board & Advisors', icon: 'fa-user-tie', cls: 'rg-board' },
+                  other: { label: 'Other Associates', icon: 'fa-users', cls: 'rg-other' }
+                };
+
                 a.coIndividuals.forEach(co => {
-                  const span = document.createElement('span');
-                  span.className = 'co-person';
-                  const coLink = document.createElement('a');
-                  coLink.href = 'person.html?id=' + encodeURIComponent(co.id);
-                  coLink.textContent = co.name + (co.role ? ' (' + co.role + ')' : '');
-                  span.appendChild(coLink);
-                  coDiv.appendChild(span);
+                  const cat = classifyRole(co.role);
+                  groups[cat].push(co);
                 });
+
+                for (const [gKey, members] of Object.entries(groups)) {
+                  if (!members.length) continue;
+                  const meta = groupMeta[gKey];
+                  const grp = document.createElement('div');
+                  grp.className = 'role-group';
+
+                  const hdr = document.createElement('div');
+                  hdr.className = 'role-group-header ' + meta.cls;
+                  hdr.innerHTML = '<i class="fa-solid ' + meta.icon + '"></i> ' + meta.label + ' <span class="rg-count">(' + members.length + ')</span><i class="fa-solid fa-chevron-down rg-chevron"></i>';
+                  grp.appendChild(hdr);
+
+                  const body = document.createElement('div');
+                  body.className = 'role-group-body';
+
+                  const INITIAL_SHOW = 8;
+                  members.forEach((co, idx) => {
+                    const span = document.createElement('span');
+                    span.className = 'co-person';
+                    if (idx >= INITIAL_SHOW) span.style.display = 'none';
+                    const coLink = document.createElement('a');
+                    coLink.href = 'person.html?id=' + encodeURIComponent(co.id);
+                    coLink.textContent = co.name;
+                    coLink.title = co.role || '';
+                    // Add financial icon for donors
+                    if (gKey === 'donors') {
+                      coLink.innerHTML = '<i class="fa-solid fa-dollar-sign" style="font-size:0.7em;margin-right:2px;color:#28a745"></i>' + co.name;
+                    }
+                    span.appendChild(coLink);
+                    body.appendChild(span);
+                  });
+
+                  grp.appendChild(body);
+
+                  // Show all / collapse toggle
+                  if (members.length > INITIAL_SHOW) {
+                    const btn = document.createElement('button');
+                    btn.className = 'show-all-btn';
+                    btn.textContent = 'Show all ' + members.length;
+                    let expanded = false;
+                    btn.addEventListener('click', () => {
+                      expanded = !expanded;
+                      body.querySelectorAll('.co-person').forEach((el, i) => {
+                        if (i >= INITIAL_SHOW) el.style.display = expanded ? '' : 'none';
+                      });
+                      btn.textContent = expanded ? 'Show less' : 'Show all ' + members.length;
+                    });
+                    grp.appendChild(btn);
+                  }
+
+                  // Click header to collapse/expand group
+                  hdr.addEventListener('click', () => {
+                    hdr.classList.toggle('collapsed');
+                    body.classList.toggle('collapsed');
+                    const showBtn = grp.querySelector('.show-all-btn');
+                    if (showBtn) showBtn.style.display = body.classList.contains('collapsed') ? 'none' : '';
+                  });
+
+                  coDiv.appendChild(grp);
+                }
+
                 card.appendChild(coDiv);
               }
 
@@ -449,24 +540,12 @@
                 item.className = 'shared-org-item';
                 item.innerHTML = '<span class="shared-org-bullet">&#8226;</span>' +
                   '<span class="shared-org-name">' + so.org + '</span>' +
-                  '<span class="shared-org-roles">&mdash; You: ' + (so.yourRole || 'N/A') + ' | They: ' + (so.theirRole || 'N/A') + '</span>';
+                  '<span class="shared-org-roles"> - ' + (so.theirRole || 'Associate') + '</span>';
                 soDiv.appendChild(item);
               });
               card.appendChild(soDiv);
 
-              // Connection explanation
-              const reason = document.createElement('div');
-              reason.className = 'connection-reason';
-              reason.style.marginTop = '8px';
-              if (n.sharedOrgs.length === 1) {
-                const so = n.sharedOrgs[0];
-                reason.innerHTML = '<strong>Why connected:</strong> Both are at <strong>' + so.org + '</strong> in ' + so.country +
-                  '. ' + person.name + ' as ' + (so.yourRole || 'associate') + ', ' + n.name + ' as ' + (so.theirRole || 'associate') + '.';
-              } else {
-                reason.innerHTML = '<strong>Why connected:</strong> Share <strong>' + n.sharedOrgs.length + ' organizations</strong> in common: ' +
-                  n.sharedOrgs.map(so => so.org).join(', ') + '.';
-              }
-              card.appendChild(reason);
+              // Remove verbose connection explanation - the shared orgs above already explain the connection
 
               netGrid.appendChild(card);
             });
