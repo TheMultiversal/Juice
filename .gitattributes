@@ -1,0 +1,3 @@
+# Large data files - skip text diff (too slow)
+data/jewish.json binary
+data/people.json binary
