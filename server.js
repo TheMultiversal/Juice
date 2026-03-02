@@ -1,7 +1,11 @@
 const express = require('express');
+const compression = require('compression');
 const path = require('path');
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Gzip compression — cuts JSON payload ~70%
+app.use(compression());
 
 // Helper: normalize connection type (extract short type from "Type - Description" format)
 function normalizeConnType(rawType) {
@@ -29,24 +33,115 @@ function invalidateCache(prefix) {
   for (const k of Object.keys(_cache)) { if (k.startsWith(prefix)) delete _cache[k]; }
 }
 
+// --- Global data & indexes (loaded once at startup) ---
+let JD = null;           // jewish.json raw data
+let PD = null;           // people.json raw data
+let ENTRY_BY_ID = {};    // entryId -> { ...entry, _country }
+let NAME_TO_ID = {};     // lowercased name -> entryId
+let SLUG_TO_ID = {};     // slug(name) -> entryId
+let IND_TO_ENTRIES = {}; // individualId -> [{ entryId, country, category }]
+let ALL_ENTRIES = [];    // flat array of all entries with _country
+let ADJ = {};            // entryId -> [{ target, type, desc, via }] for path finding
+
+function _slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
+
+function _resolve(name) {
+  if (!name) return null;
+  const id = NAME_TO_ID[name.toLowerCase()] || SLUG_TO_ID[_slug(name)];
+  if (id && ENTRY_BY_ID[id]) return id;
+  const np = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
+  if (np !== name) { const id2 = SLUG_TO_ID[_slug(np)]; if (id2 && ENTRY_BY_ID[id2]) return id2; }
+  return null;
+}
+
+function loadData() {
+  const t0 = Date.now();
+  delete require.cache[require.resolve('./data/jewish.json')];
+  delete require.cache[require.resolve('./data/people.json')];
+  JD = require('./data/jewish.json');
+  PD = require('./data/people.json');
+
+  ENTRY_BY_ID = {};
+  NAME_TO_ID = {};
+  SLUG_TO_ID = {};
+  IND_TO_ENTRIES = {};
+  ALL_ENTRIES = [];
+
+  for (const c in JD.countries) {
+    for (const entry of JD.countries[c]) {
+      const e = { ...entry, _country: c };
+      ENTRY_BY_ID[entry.id] = e;
+      NAME_TO_ID[entry.name.toLowerCase()] = entry.id;
+      SLUG_TO_ID[_slug(entry.name)] = entry.id;
+      ALL_ENTRIES.push(e);
+      const noParens = entry.name.replace(/\s*\([^)]*\)\s*/g, '').trim();
+      if (noParens !== entry.name) SLUG_TO_ID[_slug(noParens)] = entry.id;
+      if (entry.individuals) {
+        for (const ind of entry.individuals) {
+          if (!IND_TO_ENTRIES[ind.id]) IND_TO_ENTRIES[ind.id] = [];
+          IND_TO_ENTRIES[ind.id].push({ entryId: entry.id, country: c, category: entry.category || '' });
+        }
+      }
+    }
+  }
+
+  // Pre-build adjacency list for path finding
+  ADJ = {};
+  for (const entry of ALL_ENTRIES) {
+    if (!ADJ[entry.id]) ADJ[entry.id] = [];
+    if (entry.connections) {
+      for (const conn of entry.connections) {
+        let tid = conn.entryId || conn.target;
+        if (!tid && conn.name) tid = _resolve(conn.name);
+        else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
+        if (tid === entry.id && conn.source) tid = conn.source;
+        if (tid && tid !== entry.id && ENTRY_BY_ID[tid]) {
+          ADJ[entry.id].push({ target: tid, type: normalizeConnType(conn.type), desc: normalizeConnDesc(conn.type, conn.description), via: 'connection' });
+        }
+      }
+    }
+    if (entry.individuals) {
+      const addedTargets = new Set();
+      for (const ind of entry.individuals) {
+        const shared = IND_TO_ENTRIES[ind.id];
+        if (!shared) continue;
+        for (const s of shared) {
+          if (s.entryId === entry.id || addedTargets.has(s.entryId)) continue;
+          addedTargets.add(s.entryId);
+          ADJ[entry.id].push({ target: s.entryId, type: 'shared-person', desc: 'Via: ' + ind.name, via: 'person' });
+        }
+      }
+    }
+  }
+
+  // Clear all cached computed results
+  for (const k of Object.keys(_cache)) delete _cache[k];
+
+  console.log(`  Data loaded in ${Date.now() - t0}ms: ${ALL_ENTRIES.length} entries, ${Object.keys(PD.people).length} people, ${Object.keys(IND_TO_ENTRIES).length} individuals indexed`);
+}
+
+// ID aliases for merged/renamed entries
+const ID_ALIASES = {
+  'jeffrey-epstein-network': 'epstein-network',
+};
+
+const CACHE_TTL = 300000; // 5 minutes
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 // list all countries
 app.get('/api/countries', (req, res) => {
   try {
-    delete require.cache[require.resolve('./data/countries.json')];
-    const data = require('./data/countries.json');
-    res.json(data);
-  } catch (err) {
-    // fallback: extract countries from jewish.json
     try {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const jd = require('./data/jewish.json');
-      res.json({ countries: Object.keys(jd.countries).sort() });
-    } catch (e2) {
-      res.status(404).json({ error: 'Countries not found' });
-    }
+      delete require.cache[require.resolve('./data/countries.json')];
+      const data = require('./data/countries.json');
+      return res.json(data);
+    } catch (e) {}
+    // Fallback: extract from pre-loaded data
+    res.json({ countries: Object.keys(JD.countries).sort() });
+  } catch (err) {
+    res.status(404).json({ error: 'Countries not found' });
   }
 });
 
@@ -56,73 +151,50 @@ app.get('/api/countries', (req, res) => {
 app.get('/api/person/:id', (req, res) => {
   const id = req.params.id;
   try {
-    delete require.cache[require.resolve('./data/people.json')];
-    const peopleData = require('./data/people.json');
-    const person = peopleData.people[id];
+    const person = PD.people[id];
     if (!person) return res.status(404).json({ error: 'Person not found' });
+
+    // Find all affiliations using pre-built index
     const affiliations = [];
-    const fs = require('fs');
-    const files = fs.readdirSync(path.join(__dirname, 'data'));
-    // Build person-to-org map for connection analysis
-    const personOrgs = {}; // personId -> [{org, role, country, entryId}]
-    files.forEach(fn => {
-      if (fn.endsWith('.json') && fn !== 'people.json' && fn !== 'countries.json') {
-        const rel = fn.replace('.json','');
-        delete require.cache[require.resolve(`./data/${fn}`)];
-        const data = require(`./data/${fn}`);
-        for (const country in data.countries) {
-          data.countries[country].forEach(entry => {
-            if (entry.individuals) {
-              entry.individuals.forEach(ind => {
-                if (ind.id === id) {
-                  const co = entry.individuals.filter(o => o.id && o.id !== id).map(o => ({ id: o.id, name: o.name, role: o.role }));
-                  affiliations.push({
-                    religion: rel, country, organization: entry.name, entryId: entry.id,
-                    role: ind.role, category: entry.category, coIndividuals: co,
-                    summary: entry.summary || '', website: entry.website || ''
-                  });
-                }
-                // Track all people's org memberships
-                if (ind.id) {
-                  if (!personOrgs[ind.id]) personOrgs[ind.id] = [];
-                  personOrgs[ind.id].push({ org: entry.name, entryId: entry.id, role: ind.role, country, religion: rel, category: entry.category });
-                }
-              });
-            }
-          });
-        }
+    if (IND_TO_ENTRIES[id]) {
+      for (const ref of IND_TO_ENTRIES[id]) {
+        const entry = ENTRY_BY_ID[ref.entryId];
+        if (!entry) continue;
+        const ind = (entry.individuals || []).find(i => i.id === id);
+        const co = (entry.individuals || []).filter(o => o.id && o.id !== id).map(o => ({ id: o.id, name: o.name, role: o.role }));
+        affiliations.push({
+          religion: 'jewish', country: ref.country, organization: entry.name, entryId: entry.id,
+          role: ind ? ind.role : '', category: entry.category || '', coIndividuals: co,
+          summary: entry.summary || '', website: entry.website || ''
+        });
       }
-    });
+    }
 
     // Build network: all people connected through shared orgs
-    const networkMap = {}; // personId -> { name, sharedOrgs: [{org, theirRole, yourRole}] }
-    affiliations.forEach(a => {
-      (a.coIndividuals || []).forEach(co => {
+    const networkMap = {};
+    for (const aff of affiliations) {
+      for (const co of (aff.coIndividuals || [])) {
         if (!networkMap[co.id]) {
-          const pData = peopleData.people[co.id];
+          const pData = PD.people[co.id];
           networkMap[co.id] = { name: co.name, bio: (pData && pData.bio) ? pData.bio.substring(0, 200) : '', sharedOrgs: [] };
         }
         networkMap[co.id].sharedOrgs.push({
-          org: a.organization, entryId: a.entryId, theirRole: co.role, yourRole: a.role, country: a.country, category: a.category
+          org: aff.organization, entryId: aff.entryId, theirRole: co.role, yourRole: aff.role, country: aff.country, category: aff.category
         });
-      });
-    });
-    // Sort network by number of shared orgs (most connected first)
+      }
+    }
     const network = Object.entries(networkMap)
       .map(([pid, data]) => ({ id: pid, ...data }))
       .sort((a, b) => b.sharedOrgs.length - a.sharedOrgs.length);
 
-    // Category & country summary
-    const categories = {};
-    const countries = {};
+    const categories = {}, countries = {};
     affiliations.forEach(a => {
       categories[a.category] = (categories[a.category] || 0) + 1;
       countries[a.country] = (countries[a.country] || 0) + 1;
     });
 
     res.json(Object.assign({}, person, {
-      affiliations,
-      network,
+      affiliations, network,
       categorySummary: Object.entries(categories).sort((a,b) => b[1]-a[1]).map(([c,n]) => ({ category: c, count: n })),
       countrySummary: Object.entries(countries).sort((a,b) => b[1]-a[1]).map(([c,n]) => ({ country: c, count: n })),
       totalConnections: network.length,
@@ -138,23 +210,15 @@ app.get('/api/people/all', (req, res) => {
     const offset = parseInt(req.query.offset) || 0;
     const q = (req.query.q || '').toLowerCase().trim();
 
-    const allPeople = getCached('people-all', 30000, () => {
-      delete require.cache[require.resolve('./data/people.json')];
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const peopleData = require('./data/people.json');
-      const jd = require('./data/jewish.json');
+    const allPeople = getCached('people-all', CACHE_TTL, () => {
       const peopleList = [];
-      for (const [pid, person] of Object.entries(peopleData.people)) {
-        const affs = [];
-        for (const country in jd.countries) {
-          for (const entry of jd.countries[country]) {
-            if (entry.individuals) {
-              for (const ind of entry.individuals) {
-                if (ind.id === pid) affs.push({ entryId: entry.id, name: entry.name, country, role: ind.role, category: entry.category });
-              }
-            }
-          }
-        }
+      for (const [pid, person] of Object.entries(PD.people)) {
+        const affs = (IND_TO_ENTRIES[pid] || []).map(ref => {
+          const entry = ENTRY_BY_ID[ref.entryId];
+          if (!entry) return null;
+          const ind = (entry.individuals || []).find(i => i.id === pid);
+          return { entryId: entry.id, name: entry.name, country: ref.country, role: ind ? ind.role : '', category: ref.category };
+        }).filter(Boolean);
         peopleList.push({ id: pid, name: person.name, bio: person.bio, affiliations: affs });
       }
       peopleList.sort((a, b) => a.name.localeCompare(b.name));
@@ -177,35 +241,28 @@ app.get('/api/search', (req, res) => {
   const q = (req.query.q || '').toLowerCase().trim();
   if (!q) return res.json({ entries: [], people: [], connections: [] });
   try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    delete require.cache[require.resolve('./data/people.json')];
-    const jd = require('./data/jewish.json');
-    const pd = require('./data/people.json');
     const entries = [], connections = [];
-    for (const country in jd.countries) {
-      for (const entry of jd.countries[country]) {
-        if (entry.name.toLowerCase().includes(q) || (entry.description || '').toLowerCase().includes(q) || (entry.type || '').toLowerCase().includes(q) || (entry.category || '').toLowerCase().includes(q)) {
-          // Get context snippet around first match in description
-          let snippet = (entry.description || '').substring(0, 250);
-          const descLower = (entry.description || '').toLowerCase();
-          const matchIdx = descLower.indexOf(q);
-          if (matchIdx > 100) {
-            const start = Math.max(0, matchIdx - 80);
-            snippet = '...' + (entry.description || '').substring(start, start + 250);
-          }
-          entries.push({ id: entry.id, name: entry.name, type: entry.type, category: entry.category, country, description: snippet, founded: entry.founded || null, website: entry.website || '' });
+    for (const entry of ALL_ENTRIES) {
+      if (entry.name.toLowerCase().includes(q) || (entry.description || '').toLowerCase().includes(q) || (entry.type || '').toLowerCase().includes(q) || (entry.category || '').toLowerCase().includes(q)) {
+        let snippet = (entry.description || '').substring(0, 250);
+        const descLower = (entry.description || '').toLowerCase();
+        const matchIdx = descLower.indexOf(q);
+        if (matchIdx > 100) {
+          const start = Math.max(0, matchIdx - 80);
+          snippet = '...' + (entry.description || '').substring(start, start + 250);
         }
-        if (entry.connections) {
-          for (const conn of entry.connections) {
-            if (conn.name.toLowerCase().includes(q) || (conn.description || '').toLowerCase().includes(q)) {
-              connections.push({ entryId: entry.id, entryName: entry.name, country, connection: conn });
-            }
+        entries.push({ id: entry.id, name: entry.name, type: entry.type, category: entry.category || '', country: entry._country, description: snippet, founded: entry.founded || null, website: entry.website || '' });
+      }
+      if (entry.connections) {
+        for (const conn of entry.connections) {
+          if ((conn.name || '').toLowerCase().includes(q) || (conn.description || '').toLowerCase().includes(q)) {
+            connections.push({ entryId: entry.id, entryName: entry.name, country: entry._country, connection: conn });
           }
         }
       }
     }
     const people = [];
-    for (const [pid, person] of Object.entries(pd.people)) {
+    for (const [pid, person] of Object.entries(PD.people)) {
       if (person.name.toLowerCase().includes(q) || (person.bio || '').toLowerCase().includes(q)) {
         people.push({ id: pid, name: person.name, bio: (person.bio || '').substring(0, 150) });
       }
@@ -217,31 +274,25 @@ app.get('/api/search', (req, res) => {
 // stats endpoint
 app.get('/api/stats', (req, res) => {
   try {
-    const result = getCached('stats', 30000, () => {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      delete require.cache[require.resolve('./data/people.json')];
-      const jd = require('./data/jewish.json');
-      const pd = require('./data/people.json');
+    const result = getCached('stats', CACHE_TTL, () => {
       let totalEntries = 0, totalConnections = 0, totalIndividuals = 0;
       const byCountry = {}, byCategory = {}, byType = {}, connectionTypes = {};
-      for (const country in jd.countries) {
-        const entries = jd.countries[country];
-        byCountry[country] = entries.length;
-        totalEntries += entries.length;
-        for (const entry of entries) {
-          const cat = entry.category || 'Uncategorized';
-          byCategory[cat] = (byCategory[cat] || 0) + 1;
-          const t = entry.type || 'Unknown';
-          byType[t] = (byType[t] || 0) + 1;
-          if (entry.connections) { totalConnections += entry.connections.length; for (const c of entry.connections) { const ct = c.type || 'other'; connectionTypes[ct] = (connectionTypes[ct] || 0) + 1; } }
-          if (entry.individuals) totalIndividuals += entry.individuals.length;
-        }
+      for (const entry of ALL_ENTRIES) {
+        const c = entry._country;
+        byCountry[c] = (byCountry[c] || 0) + 1;
+        totalEntries++;
+        const cat = entry.category || 'Uncategorized';
+        byCategory[cat] = (byCategory[cat] || 0) + 1;
+        const t = entry.type || 'Unknown';
+        byType[t] = (byType[t] || 0) + 1;
+        if (entry.connections) { totalConnections += entry.connections.length; for (const conn of entry.connections) { const ct = conn.type || 'other'; connectionTypes[ct] = (connectionTypes[ct] || 0) + 1; } }
+        if (entry.individuals) totalIndividuals += entry.individuals.length;
       }
       const topCountries = Object.entries(byCountry).sort((a, b) => b[1] - a[1]).map(([country, count]) => ({ country, count }));
       const topCategories = Object.entries(byCategory).sort((a, b) => b[1] - a[1]).map(([category, count]) => ({ category, count }));
       const topTypes = Object.entries(byType).sort((a, b) => b[1] - a[1]).slice(0, 30).map(([type, count]) => ({ type, count }));
       const topConnectionTypes = Object.entries(connectionTypes).sort((a, b) => b[1] - a[1]).slice(0, 20).map(([type, count]) => ({ type, count }));
-      return { totalEntries, totalCountries: Object.keys(byCountry).length, totalPeople: Object.keys(pd.people).length, totalConnections, totalIndividuals, topCountries, topCategories, topTypes, topConnectionTypes };
+      return { totalEntries, totalCountries: Object.keys(byCountry).length, totalPeople: Object.keys(PD.people).length, totalConnections, totalIndividuals, topCountries, topCategories, topTypes, topConnectionTypes };
     });
     res.json(result);
   } catch (err) { res.status(500).json({ error: 'Server error' }); }
@@ -250,33 +301,26 @@ app.get('/api/stats', (req, res) => {
 // detailed stats: decade histogram, connection distribution, most connected
 app.get('/api/stats/detailed', (req, res) => {
   try {
-    const result = getCached('stats-detailed', 30000, () => {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const jd = require('./data/jewish.json');
+    const result = getCached('stats-detailed', CACHE_TTL, () => {
       const decades = {};
       const connDist = { '0': 0, '1-2': 0, '3-5': 0, '6-10': 0, '11-20': 0, '20+': 0 };
       const topConn = [];
-      for (const c in jd.countries) {
-        for (const entry of jd.countries[c]) {
-          // Decade histogram
-          if (entry.founded) {
-            const d = Math.floor(entry.founded / 10) * 10;
-            decades[d] = (decades[d] || 0) + 1;
-          }
-          // Connection distribution
-          const nc = (entry.connections || []).length;
-          if (nc === 0) connDist['0']++;
-          else if (nc <= 2) connDist['1-2']++;
-          else if (nc <= 5) connDist['3-5']++;
-          else if (nc <= 10) connDist['6-10']++;
-          else if (nc <= 20) connDist['11-20']++;
-          else connDist['20+']++;
-          topConn.push({ id: entry.id, name: entry.name, country: c, connections: nc });
+      for (const entry of ALL_ENTRIES) {
+        if (entry.founded) {
+          const d = Math.floor(entry.founded / 10) * 10;
+          decades[d] = (decades[d] || 0) + 1;
         }
+        const nc = (entry.connections || []).length;
+        if (nc === 0) connDist['0']++;
+        else if (nc <= 2) connDist['1-2']++;
+        else if (nc <= 5) connDist['3-5']++;
+        else if (nc <= 10) connDist['6-10']++;
+        else if (nc <= 20) connDist['11-20']++;
+        else connDist['20+']++;
+        topConn.push({ id: entry.id, name: entry.name, country: entry._country, connections: nc });
       }
       topConn.sort((a, b) => b.connections - a.connections);
       const decadesSorted = Object.entries(decades).sort((a, b) => a[0] - b[0]).map(([decade, count]) => ({ decade: +decade, count }));
-      // Cumulative growth
       let cum = 0;
       const growth = decadesSorted.map(d => { cum += d.count; return { decade: d.decade, cumulative: cum }; });
       return { decades: decadesSorted, connDist, topConnected: topConn.slice(0, 15), growth };
@@ -292,86 +336,60 @@ app.get('/api/graph', (req, res) => {
   const includePeople = req.query.people !== '0'; // include people by default
   try {
     const cacheKey = `graph-${country||''}-${category||''}-p${includePeople?1:0}`;
-    const result = getCached(cacheKey, 30000, () => {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const jd = require('./data/jewish.json');
-      const nodes = [], links = [], nodeSet = new Set();
-      // Build fast lookup maps: id->info and lowercased name->id
-      const entryIdMap = {}, nameToId = {};
-      for (const c in jd.countries) {
-        for (const entry of jd.countries[c]) {
-          entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type };
-          nameToId[entry.name.toLowerCase()] = entry.id;
-        }
-      }
-      // Build individual-to-entries map for shared-person links
-      const indToEntries = {};
-      for (const c in jd.countries) {
-        for (const entry of jd.countries[c]) {
-          if (entry.individuals) {
-            for (const ind of entry.individuals) {
-              if (!indToEntries[ind.id]) indToEntries[ind.id] = [];
-              indToEntries[ind.id].push({ entryId: entry.id, country: c, category: entry.category });
-            }
-          }
-        }
-      }
-      const linkSet = new Set();
-      for (const c in jd.countries) {
+    const result = getCached(cacheKey, CACHE_TTL, () => {
+      const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
+      for (const entry of ALL_ENTRIES) {
+        const c = entry._country;
         if (country && c !== country) continue;
-        for (const entry of jd.countries[c]) {
-          if (category && entry.category !== category) continue;
-          if (!nodeSet.has(entry.id)) { nodeSet.add(entry.id); nodes.push({ id: entry.id, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry' }); }
+        if (category && entry.category !== category) continue;
+        if (!nodeSet.has(entry.id)) { nodeSet.add(entry.id); nodes.push({ id: entry.id, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry' }); }
 
-          // Add people as nodes if requested
-          if (includePeople && entry.individuals) {
-            for (const ind of entry.individuals) {
-              const personNodeId = 'person-' + ind.id;
-              if (!nodeSet.has(personNodeId)) {
-                nodeSet.add(personNodeId);
-                nodes.push({ id: personNodeId, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '' });
-              }
-              // Link person to entry
-              const lk = entry.id + '|' + personNodeId;
-              if (!linkSet.has(lk)) {
-                linkSet.add(lk);
-                links.push({ source: entry.id, target: personNodeId, type: 'person-affiliation', description: ind.role || 'Affiliated' });
-              }
+        // Add people as nodes if requested
+        if (includePeople && entry.individuals) {
+          for (const ind of entry.individuals) {
+            const personNodeId = 'person-' + ind.id;
+            if (!nodeSet.has(personNodeId)) {
+              nodeSet.add(personNodeId);
+              nodes.push({ id: personNodeId, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '' });
+            }
+            const lk = entry.id + '|' + personNodeId;
+            if (!linkSet.has(lk)) {
+              linkSet.add(lk);
+              links.push({ source: entry.id, target: personNodeId, type: 'person-affiliation', description: ind.role || 'Affiliated' });
             }
           }
+        }
 
-          if (entry.connections) {
-            for (const conn of entry.connections) {
-              // Support both {entryId/name} and {source/target} connection formats
-              let targetId = conn.entryId || conn.target;
-              if (!targetId && conn.name) targetId = nameToId[conn.name.toLowerCase()];
-              if (targetId === entry.id && conn.source) targetId = conn.source;
-              if (!targetId || targetId === entry.id || !entryIdMap[targetId]) continue;
-              const eInfo = entryIdMap[targetId];
-              if (country && eInfo.country !== country && c !== country) continue;
-              if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo.country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other', nodeType: 'entry' }); }
-              const lk = entry.id < targetId ? entry.id + '|' + targetId : targetId + '|' + entry.id;
-              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
-            }
+        if (entry.connections) {
+          for (const conn of entry.connections) {
+            let targetId = conn.entryId || conn.target;
+            if (!targetId && conn.name) targetId = NAME_TO_ID[(conn.name || '').toLowerCase()];
+            if (targetId === entry.id && conn.source) targetId = conn.source;
+            if (!targetId || targetId === entry.id || !ENTRY_BY_ID[targetId]) continue;
+            const eInfo = ENTRY_BY_ID[targetId];
+            if (country && eInfo._country !== country && c !== country) continue;
+            if (!nodeSet.has(targetId)) { nodeSet.add(targetId); nodes.push({ id: targetId, name: eInfo.name, country: eInfo._country, category: eInfo.category || '', type: eInfo.type, group: eInfo.category || 'other', nodeType: 'entry' }); }
+            const lk = entry.id < targetId ? entry.id + '|' + targetId : targetId + '|' + entry.id;
+            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: entry.id, target: targetId, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
           }
-          // Shared individuals - use prebuilt map
-          if (entry.individuals) {
-            for (const ind of entry.individuals) {
-              const shared = indToEntries[ind.id];
-              if (!shared) continue;
-              for (const s of shared) {
-                if (s.entryId === entry.id) continue;
-                if (category && s.category !== category) continue;
-                const lk = entry.id < s.entryId ? entry.id + '|' + s.entryId : s.entryId + '|' + entry.id;
-                if (linkSet.has(lk)) continue;
-                linkSet.add(lk);
-                if (!nodeSet.has(s.entryId)) {
-                  const ei = entryIdMap[s.entryId];
-                  nodeSet.add(s.entryId);
-                  nodes.push({ id: s.entryId, name: ei.name, country: s.country, category: ei.category || '', type: ei.type, group: ei.category || 'other', nodeType: 'entry' });
-                }
-                links.push({ source: entry.id, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name });
+        }
+        // Shared individuals - use pre-built index
+        if (entry.individuals) {
+          for (const ind of entry.individuals) {
+            const shared = IND_TO_ENTRIES[ind.id];
+            if (!shared) continue;
+            for (const s of shared) {
+              if (s.entryId === entry.id) continue;
+              if (category && s.category !== category) continue;
+              const lk = entry.id < s.entryId ? entry.id + '|' + s.entryId : s.entryId + '|' + entry.id;
+              if (linkSet.has(lk)) continue;
+              linkSet.add(lk);
+              if (!nodeSet.has(s.entryId)) {
+                const ei = ENTRY_BY_ID[s.entryId];
+                nodeSet.add(s.entryId);
+                nodes.push({ id: s.entryId, name: ei.name, country: s.country, category: ei.category || '', type: ei.type, group: ei.category || 'other', nodeType: 'entry' });
               }
+              links.push({ source: entry.id, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name });
             }
           }
         }
@@ -385,11 +403,6 @@ app.get('/api/graph', (req, res) => {
 });
 
 // focused network graph - N-degree neighborhood around a single entry
-// ID aliases for merged/renamed entries
-const ID_ALIASES = {
-  'jeffrey-epstein-network': 'epstein-network',
-};
-
 app.get('/api/graph/focus/:entryId', (req, res) => {
   let focusId = req.params.entryId;
   if (ID_ALIASES[focusId]) focusId = ID_ALIASES[focusId];
@@ -398,74 +411,43 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
   const roleFilter = req.query.role || ''; // filter people by role keyword
   try {
     const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}-r${roleFilter}`;
-    const result = getCached(cacheKey, 30000, () => {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const jd = require('./data/jewish.json');
+    const result = getCached(cacheKey, CACHE_TTL, () => {
+      if (!ENTRY_BY_ID[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
 
-      // Build full lookup maps (exact name + slug-based fallback)
-      const entryIdMap = {}, nameToId = {}, slugToId = {}, entryById = {};
-      function _slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
-      for (const c in jd.countries) {
-        for (const entry of jd.countries[c]) {
-          entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type };
-          nameToId[entry.name.toLowerCase()] = entry.id;
-          slugToId[_slug(entry.name)] = entry.id;
-          entryById[entry.id] = { ...entry, _country: c };
-          // Also index without parenthetical suffixes
-          const noParens = entry.name.replace(/\s*\([^)]*\)\s*/g, '').trim();
-          if (noParens !== entry.name) slugToId[_slug(noParens)] = entry.id;
-        }
-      }
-      function _resolve(name) {
-        if (!name) return null;
-        const id = nameToId[name.toLowerCase()] || slugToId[_slug(name)];
-        if (id && entryById[id]) return id;
-        const np = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
-        if (np !== name) { const id2 = slugToId[_slug(np)]; if (id2 && entryById[id2]) return id2; }
-        return null;
-      }
-
-      if (!entryById[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
-
-      const focusEntry = entryById[focusId];
+      const focusEntry = ENTRY_BY_ID[focusId];
       const focusIndCount = (focusEntry.individuals || []).length;
       const isBigEntry = focusIndCount > 80;
 
-      // BFS to collect entries within N degrees
-      // For big entries (>80 people), skip shared-individual BFS to avoid explosion
+      // BFS using pre-built indexes — O(V + E) instead of O(n³)
       const visited = new Set([focusId]);
       let frontier = [focusId];
       for (let d = 0; d < depth; d++) {
         const nextFrontier = [];
         for (const eid of frontier) {
-          const entry = entryById[eid];
+          const entry = ENTRY_BY_ID[eid];
           if (!entry) continue;
           // Always follow explicit connections
           if (entry.connections) {
             for (const conn of entry.connections) {
-              // Support both {entryId/name} and {source/target} formats + slug fallback
               let tid = conn.entryId || conn.target;
               if (!tid && conn.name) tid = _resolve(conn.name);
-              else if (tid && !entryById[tid] && conn.name) tid = _resolve(conn.name);
-              // If target points to self, try source instead
+              else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
               if (tid === eid && conn.source) tid = conn.source;
-              if (tid && tid !== eid && entryById[tid] && !visited.has(tid)) {
+              if (tid && tid !== eid && ENTRY_BY_ID[tid] && !visited.has(tid)) {
                 visited.add(tid);
                 nextFrontier.push(tid);
               }
             }
           }
-          // Shared individuals BFS - skip for big entries to prevent graph explosion
+          // Shared individuals via index (was O(n³), now O(individuals × avg_shared))
           if (!isBigEntry && entry.individuals) {
             for (const ind of entry.individuals) {
-              for (const c2 in jd.countries) {
-                for (const e2 of jd.countries[c2]) {
-                  if (e2.id === eid || visited.has(e2.id)) continue;
-                  if (e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
-                    visited.add(e2.id);
-                    nextFrontier.push(e2.id);
-                  }
-                }
+              const shared = IND_TO_ENTRIES[ind.id];
+              if (!shared) continue;
+              for (const s of shared) {
+                if (s.entryId === eid || visited.has(s.entryId)) continue;
+                visited.add(s.entryId);
+                nextFrontier.push(s.entryId);
               }
             }
           }
@@ -479,7 +461,7 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
       // Pre-compute: how many entries each individual appears in (importance score)
       const indImportance = {};
       for (const eid of visited) {
-        const entry = entryById[eid];
+        const entry = ENTRY_BY_ID[eid];
         if (!entry || !entry.individuals) continue;
         for (const ind of entry.individuals) {
           indImportance[ind.id] = (indImportance[ind.id] || 0) + 1;
@@ -499,7 +481,7 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
       const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
 
       for (const eid of visited) {
-        const entry = entryById[eid];
+        const entry = ENTRY_BY_ID[eid];
         if (!entry) continue;
         const c = entry._country;
         if (!nodeSet.has(eid)) {
@@ -542,7 +524,7 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
           for (const conn of entry.connections) {
             let tid = conn.entryId || conn.target;
             if (!tid && conn.name) tid = _resolve(conn.name);
-            else if (tid && !entryById[tid] && conn.name) tid = _resolve(conn.name);
+            else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
             if (tid === eid && conn.source) tid = conn.source;
 
             if (tid && tid !== eid && visited.has(tid)) {
@@ -553,24 +535,30 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
             // Unresolved connections are silently skipped - no info-only nodes
           }
         }
-        // Shared person links within visited set (skip for big entries since BFS already skipped)
+        // Shared person links via index (was O(n³), now O(individuals × avg_shared))
         if (!isBigEntry && entry.individuals) {
           for (const ind of entry.individuals) {
-            for (const eid2 of visited) {
-              if (eid2 === eid) continue;
-              const e2 = entryById[eid2];
-              if (e2 && e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
-                const lk = eid < eid2 ? eid + '|' + eid2 : eid2 + '|' + eid;
-                if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: eid2, type: 'shared-person', description: 'Shared: ' + ind.name }); }
-              }
+            const shared = IND_TO_ENTRIES[ind.id];
+            if (!shared) continue;
+            for (const s of shared) {
+              if (s.entryId === eid || !visited.has(s.entryId)) continue;
+              const lk = eid < s.entryId ? eid + '|' + s.entryId : s.entryId + '|' + eid;
+              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name }); }
             }
           }
         }
       }
 
+      // Pre-compute link counts per node so client doesn't have to filter
+      const linkCount = {};
+      for (const l of links) {
+        linkCount[l.source] = (linkCount[l.source] || 0) + 1;
+        linkCount[l.target] = (linkCount[l.target] || 0) + 1;
+      }
+
       return {
         focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth,
-        nodes, links,
+        nodes, links, linkCount,
         totalPeople: focusIndCount,
         roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })),
         isBigEntry
@@ -583,15 +571,11 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
 // timeline data endpoint - entries with founding years
 app.get('/api/timeline', (req, res) => {
   try {
-    const result = getCached('timeline', 30000, () => {
-      delete require.cache[require.resolve('./data/jewish.json')];
-      const jd = require('./data/jewish.json');
+    const result = getCached('timeline', CACHE_TTL, () => {
       const items = [];
-      for (const country in jd.countries) {
-        for (const entry of jd.countries[country]) {
-          if (entry.founded) {
-            items.push({ id: entry.id, name: entry.name, type: entry.type, category: entry.category || '', country, founded: entry.founded, description: (entry.description || '').substring(0, 200) });
-          }
+      for (const entry of ALL_ENTRIES) {
+        if (entry.founded) {
+          items.push({ id: entry.id, name: entry.name, type: entry.type, category: entry.category || '', country: entry._country, founded: entry.founded, description: (entry.description || '').substring(0, 200) });
         }
       }
       items.sort((a, b) => a.founded - b.founded);
@@ -605,14 +589,7 @@ app.get('/api/timeline', (req, res) => {
 app.get('/api/random', (req, res) => {
   const count = Math.min(parseInt(req.query.count) || 5, 20);
   try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    const jd = require('./data/jewish.json');
-    const all = [];
-    for (const country in jd.countries) {
-      for (const entry of jd.countries[country]) {
-        all.push(Object.assign({}, entry, { country }));
-      }
-    }
+    const all = ALL_ENTRIES.slice(); // shallow copy for shuffle
     // Fisher-Yates shuffle
     for (let i = all.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -620,7 +597,7 @@ app.get('/api/random', (req, res) => {
     }
     const entries = all.slice(0, count).map(e => ({
       id: e.id, name: e.name, type: e.type, category: e.category || '',
-      country: e.country, description: (e.description || '').substring(0, 200),
+      country: e._country, description: (e.description || '').substring(0, 200),
       founded: e.founded || null, website: e.website || ''
     }));
     res.json({ entries });
@@ -628,75 +605,42 @@ app.get('/api/random', (req, res) => {
 });
 
 // degrees of separation / shortest path between two entries
+// Uses pre-built adjacency list — O(V + E) BFS
 app.get('/api/path', (req, res) => {
   const from = req.query.from;
   const to = req.query.to;
   if (!from || !to) return res.status(400).json({ error: 'Provide from and to entry IDs' });
   if (from === to) return res.json({ path: [from], distance: 0, edges: [] });
   try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    const jd = require('./data/jewish.json');
-    // Build adjacency list
-    const adj = {};
-    const entryMap = {};
-    for (const c in jd.countries) {
-      for (const entry of jd.countries[c]) {
-        entryMap[entry.id] = { name: entry.name, country: c, category: entry.category || '' };
-        if (!adj[entry.id]) adj[entry.id] = [];
-        // connections
-        if (entry.connections) {
-          for (const conn of entry.connections) {
-            // find target entry by name
-            for (const c2 in jd.countries) {
-              for (const e2 of jd.countries[c2]) {
-                if (conn.name.toLowerCase() === e2.name.toLowerCase() || conn.entryId === e2.id) {
-                  adj[entry.id].push({ target: e2.id, type: normalizeConnType(conn.type), desc: normalizeConnDesc(conn.type, conn.description), via: 'connection' });
-                }
-              }
-            }
-          }
-        }
-        // shared individuals
-        if (entry.individuals) {
-          for (const ind of entry.individuals) {
-            for (const c2 in jd.countries) {
-              for (const e2 of jd.countries[c2]) {
-                if (e2.id === entry.id) continue;
-                if (e2.individuals && e2.individuals.some(i => i.id === ind.id)) {
-                  const exists = adj[entry.id].find(a => a.target === e2.id);
-                  if (!exists) adj[entry.id].push({ target: e2.id, type: 'shared-person', desc: 'Via: ' + ind.name, via: 'person' });
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    // BFS
+    // BFS on pre-built adjacency list
     const visited = new Set([from]);
     const queue = [[from]];
-    const edgeMap = {};
     while (queue.length > 0) {
-      const path = queue.shift();
-      const current = path[path.length - 1];
+      const p = queue.shift();
+      const current = p[p.length - 1];
       if (current === to) {
         // build edge details
         const edges = [];
-        for (let i = 0; i < path.length - 1; i++) {
-          const edgeInfo = (adj[path[i]] || []).find(e => e.target === path[i + 1]);
+        for (let i = 0; i < p.length - 1; i++) {
+          const edgeInfo = (ADJ[p[i]] || []).find(e => e.target === p[i + 1]);
+          const fromEntry = ENTRY_BY_ID[p[i]];
+          const toEntry = ENTRY_BY_ID[p[i + 1]];
           edges.push({
-            from: path[i], fromName: entryMap[path[i]]?.name,
-            to: path[i + 1], toName: entryMap[path[i + 1]]?.name,
+            from: p[i], fromName: fromEntry?.name,
+            to: p[i + 1], toName: toEntry?.name,
             type: edgeInfo?.type || 'unknown', description: edgeInfo?.desc || ''
           });
         }
-        const pathDetails = path.map(id => ({ id, name: entryMap[id]?.name || id, country: entryMap[id]?.country, category: entryMap[id]?.category }));
-        return res.json({ path: pathDetails, distance: path.length - 1, edges });
+        const pathDetails = p.map(id => {
+          const e = ENTRY_BY_ID[id];
+          return { id, name: e?.name || id, country: e?._country, category: e?.category };
+        });
+        return res.json({ path: pathDetails, distance: p.length - 1, edges });
       }
-      for (const neighbor of (adj[current] || [])) {
-        if (!visited.has(neighbor.target) && entryMap[neighbor.target]) {
+      for (const neighbor of (ADJ[current] || [])) {
+        if (!visited.has(neighbor.target) && ENTRY_BY_ID[neighbor.target]) {
           visited.add(neighbor.target);
-          queue.push([...path, neighbor.target]);
+          queue.push([...p, neighbor.target]);
         }
       }
       if (visited.size > 2000) break; // safety limit
@@ -714,23 +658,17 @@ app.get('/api/compare', (req, res) => {
   const ids = (req.query.ids || '').split(',').filter(Boolean);
   if (ids.length < 2) return res.status(400).json({ error: 'Provide at least 2 entry IDs' });
   try {
-    delete require.cache[require.resolve('./data/jewish.json')];
-    const jd = require('./data/jewish.json');
-    const results = [];
-    for (const c in jd.countries) {
-      for (const entry of jd.countries[c]) {
-        if (ids.includes(entry.id)) {
-          results.push(Object.assign({}, entry, { country: c }));
-        }
-      }
-    }
+    const results = ids.map(id => ENTRY_BY_ID[id]).filter(Boolean).map(e => {
+      const { _country, ...rest } = e;
+      return { ...rest, country: _country };
+    });
     // find shared people between entries
     const sharedPeople = [];
     for (let i = 0; i < results.length; i++) {
       for (let j = i + 1; j < results.length; j++) {
         const a = (results[i].individuals || []).map(p => p.id);
-        const b = (results[j].individuals || []).map(p => p.id);
-        const shared = a.filter(id => b.includes(id));
+        const bSet = new Set((results[j].individuals || []).map(p => p.id));
+        const shared = a.filter(id => bSet.has(id));
         if (shared.length) sharedPeople.push({ entries: [results[i].id, results[j].id], people: shared });
       }
     }
@@ -744,8 +682,7 @@ app.get('/api/compare', (req, res) => {
 app.get('/api/:religion', (req, res) => {
   const religion = req.params.religion;
   try {
-    // clear cache so JSON updates are picked up without restarting
-    delete require.cache[require.resolve(`./data/${religion}.json`)];
+    if (religion === 'jewish') return res.json(JD);
     const data = require(`./data/${religion}.json`);
     res.json(data);
   } catch (err) {
@@ -757,8 +694,7 @@ app.get('/api/:religion', (req, res) => {
 app.get('/api/:religion/categories', (req, res) => {
   const religion = req.params.religion;
   try {
-    delete require.cache[require.resolve(`./data/${religion}.json`)];
-    const data = require(`./data/${religion}.json`);
+    const data = religion === 'jewish' ? JD : require(`./data/${religion}.json`);
     const cats = {};
     for (const country in data.countries) {
       for (const entry of data.countries[country]) {
@@ -781,8 +717,7 @@ app.get('/api/:religion/category/:cat', (req, res) => {
   const religion = req.params.religion;
   const cat = decodeURIComponent(req.params.cat);
   try {
-    delete require.cache[require.resolve(`./data/${religion}.json`)];
-    const data = require(`./data/${religion}.json`);
+    const data = religion === 'jewish' ? JD : require(`./data/${religion}.json`);
     const entries = [];
     for (const country in data.countries) {
       for (const entry of data.countries[country]) {
@@ -809,8 +744,31 @@ app.get('/api/:religion/entry/:id', (req, res) => {
   let id = req.params.id;
   if (ID_ALIASES[id]) id = ID_ALIASES[id];
   try {
-    delete require.cache[require.resolve(`./data/${religion}.json`)];
-    const data = require(`./data/${religion}.json`);
+    // Fast path for jewish entries using pre-built index
+    if (religion === 'jewish' && ENTRY_BY_ID[id]) {
+      const entry = ENTRY_BY_ID[id];
+      const result = { ...entry, country: entry._country };
+      delete result._country;
+      if (result.connections) {
+        result.connections = result.connections.map(conn => {
+          if (conn.name) return conn;
+          if (conn.source || conn.target) {
+            const targetId = conn.target || conn.source;
+            const targetEntry = ENTRY_BY_ID[targetId];
+            const targetName = targetEntry ? targetEntry.name : targetId;
+            const rawType = conn.type || '';
+            const dashIdx = rawType.indexOf(' - ');
+            const shortType = dashIdx > 0 ? rawType.substring(0, dashIdx) : rawType;
+            const desc = dashIdx > 0 ? rawType.substring(dashIdx + 3) : '';
+            return { name: targetName, entryId: targetId, type: shortType, description: desc || rawType };
+          }
+          return conn;
+        });
+      }
+      return res.json(result);
+    }
+
+    const data = religion === 'jewish' ? JD : require(`./data/${religion}.json`);
 
     // Build id->name lookup so we can normalize source/target connections
     const idToName = {};
@@ -858,6 +816,84 @@ app.get('/api/:religion/entry/:id', (req, res) => {
     res.status(404).json({ error: 'Religion data not found' });
   }
 });
+
+// Load data at startup, then start server
+loadData();
+
+// Pre-warm cache for the most common network views so first visitor gets instant load
+(function preWarmCache() {
+  const t0 = Date.now();
+  const commonEntries = ['epstein-network'];
+  let warmed = 0;
+  for (const entryId of commonEntries) {
+    if (!ENTRY_BY_ID[entryId]) continue;
+    for (const p of [1, 0]) {
+      for (const d of [1, 2]) {
+        const key = `focus-${entryId}-d${d}-p${p ? 1 : 0}-r`;
+        // Trigger the getCached computation by calling the same logic the endpoint uses
+        getCached(key, CACHE_TTL, () => {
+          const focusEntry = ENTRY_BY_ID[entryId];
+          const focusIndCount = (focusEntry.individuals || []).length;
+          const isBigEntry = focusIndCount > 80;
+          const visited = new Set([entryId]);
+          let frontier = [entryId];
+          for (let dd = 0; dd < d; dd++) {
+            const nextFrontier = [];
+            for (const eid of frontier) {
+              const entry = ENTRY_BY_ID[eid];
+              if (!entry) continue;
+              if (entry.connections) {
+                for (const conn of entry.connections) {
+                  let tid = conn.entryId || conn.target;
+                  if (!tid && conn.name) tid = _resolve(conn.name);
+                  else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
+                  if (tid === eid && conn.source) tid = conn.source;
+                  if (tid && tid !== eid && ENTRY_BY_ID[tid] && !visited.has(tid)) { visited.add(tid); nextFrontier.push(tid); }
+                }
+              }
+              if (!isBigEntry && entry.individuals) {
+                for (const ind of entry.individuals) {
+                  const shared = IND_TO_ENTRIES[ind.id];
+                  if (!shared) continue;
+                  for (const s of shared) {
+                    if (s.entryId === eid || visited.has(s.entryId)) continue;
+                    visited.add(s.entryId); nextFrontier.push(s.entryId);
+                  }
+                }
+              }
+            }
+            frontier = nextFrontier;
+          }
+          const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
+          const indImportance = {};
+          for (const eid of visited) { const entry = ENTRY_BY_ID[eid]; if (!entry || !entry.individuals) continue; for (const ind of entry.individuals) { indImportance[ind.id] = (indImportance[ind.id] || 0) + 1; } }
+          const roleCategories = {};
+          if (focusEntry.individuals) { for (const ind of focusEntry.individuals) { const role = (ind.role || 'Other').split(' - ')[0].trim(); roleCategories[role] = (roleCategories[role] || 0) + 1; } }
+          const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+          for (const eid of visited) {
+            const entry = ENTRY_BY_ID[eid]; if (!entry) continue;
+            const c = entry._country;
+            if (!nodeSet.has(eid)) { nodeSet.add(eid); nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === entryId }); }
+            if (p && entry.individuals) {
+              let inds = entry.individuals;
+              if (eid === entryId) { inds = inds.filter(ind => { const pWords = ind.name.toLowerCase().split(/\s+/); const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw))); return overlap.length === 0; }); }
+              for (const ind of inds) {
+                const pid = 'person-' + ind.id; if (!nodeSet.has(pid)) { nodeSet.add(pid); const roleTag = (ind.role || 'Other').split(' - ')[0].trim(); nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '', roleTag }); }
+                const lk = eid + '|' + pid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
+              }
+            }
+            if (entry.connections) { for (const conn of entry.connections) { let tid = conn.entryId || conn.target; if (!tid && conn.name) tid = _resolve(conn.name); else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name); if (tid === eid && conn.source) tid = conn.source; if (tid && tid !== eid && visited.has(tid)) { const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); } } } }
+            if (!isBigEntry && entry.individuals) { for (const ind of entry.individuals) { const shared = IND_TO_ENTRIES[ind.id]; if (!shared) continue; for (const s of shared) { if (s.entryId === eid || !visited.has(s.entryId)) continue; const lk = eid < s.entryId ? eid + '|' + s.entryId : s.entryId + '|' + eid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name }); } } } }
+          }
+          const linkCount = {}; for (const l of links) { linkCount[l.source] = (linkCount[l.source] || 0) + 1; linkCount[l.target] = (linkCount[l.target] || 0) + 1; }
+          return { focusId: entryId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth: d, nodes, links, linkCount, totalPeople: focusIndCount, roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })), isBigEntry };
+        });
+        warmed++;
+      }
+    }
+  }
+  console.log(`  Cache pre-warmed: ${warmed} views in ${Date.now() - t0}ms`);
+})();
 
 app.listen(port, () => {
   console.log(`\n  ╔══════════════════════════════════════╗`);

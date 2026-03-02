@@ -97,7 +97,7 @@
     #tip strong{color:#0056b3}
     #tip .tip-cat{display:inline-block;padding:1px 6px;border-radius:3px;font-size:.85em;margin-top:3px}
 
-    .ld-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(255,255,255,.8);backdrop-filter:blur(4px);z-index:25;transition:opacity .5s}
+    .ld-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:rgba(255,255,255,.8);backdrop-filter:blur(4px);z-index:25;transition:opacity .25s}
     .ld-overlay.off{opacity:0;pointer-events:none}
     .ld-spinner{width:38px;height:38px;border:3px solid rgba(0,0,255,.1);border-top-color:#0056b3;border-radius:50%;animation:spin .75s linear infinite}
     .ld-text{color:#0056b3;font-size:.82em;font-weight:600}
@@ -422,7 +422,7 @@
         childBase._tier = tier;
         personsByTier[tier].push(childBase);
       } else {
-        childBase._connCount = apiData.links.filter(l => l.source === cn.id || l.target === cn.id).length;
+        childBase._connCount = (apiData.linkCount && apiData.linkCount[cn.id]) || 0;
         entryKids.push(childBase);
       }
     });
@@ -436,7 +436,7 @@
       type: rootNode.type || '', role: '', personId: '', isFocus: true,
       _edgeType: 'root', _edgeDesc: '',
       children: entryKids, _loaded: true, _collapsed: false,
-      _connCount: apiData.links.filter(l => l.source === rootId || l.target === rootId).length,
+      _connCount: (apiData.linkCount && apiData.linkCount[rootId]) || 0,
       _side: 'right'
     };
 
@@ -541,7 +541,7 @@
       });
     });
 
-    const TD = 250; // transition duration - fast for seamless feel
+    const TD = 180; // transition duration - fast for seamless feel
 
     const linkSel = gLinks.selectAll('.tree-link').data(linkData, d => d.key);
     linkSel.exit().transition().duration(200).attr('opacity', 0).remove();
@@ -763,7 +763,7 @@
           if (visIds.has(cid)) return;
           seen.add(cid);
           const cn = nm[cid]; if (!cn) return;
-          const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
+          const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: (data.linkCount && data.linkCount[cn.id]) || 0, description: cn.description || '' };
           if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
           else eKids.push(child);
         });
@@ -881,7 +881,7 @@
             if (visIds.has(cid)) return;
             seen.add(cid);
             const cn = nm[cid]; if (!cn) return;
-            const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
+            const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: (data.linkCount && data.linkCount[cn.id]) || 0, description: cn.description || '' };
             if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
             else eKids.push(child);
           });
@@ -987,7 +987,7 @@
       }
       buildLegend();
       renderTree();
-      setTimeout(() => { fitTree(); document.getElementById('loading').classList.add('off'); }, 300);
+      setTimeout(() => { fitTree(); document.getElementById('loading').classList.add('off'); }, 150);
     } catch (err) {
       console.error(err);
       document.getElementById('ld-text').textContent = 'Error: ' + err.message;
