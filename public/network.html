@@ -911,31 +911,11 @@
   }
 
   // ─── Expand / Collapse all ───────────────────────────
-  async function expandAll() {
-    document.getElementById('ld-text').textContent = 'Expanding all nodes...';
-    document.getElementById('loading').classList.remove('off');
-    const showPeople = document.getElementById('show-people').checked;
-
-    // Iteratively load until no more unloaded nodes found (handles multi-level)
-    let totalLoaded = 0;
-    for (let pass = 0; pass < 5; pass++) {
-      const toLoad = [];
-      collectUnloaded(rightRoot, toLoad);
-      collectUnloaded(leftRoot, toLoad);
-      if (toLoad.length === 0) break;
-      document.getElementById('ld-text').textContent = 'Pass ' + (pass + 1) + ': loading ' + toLoad.length + ' nodes...';
-      await batchLoadNodes(toLoad, showPeople);
-      totalLoaded += toLoad.length;
-      // Expand everything loaded so far so next pass can find deeper children
-      function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
-      ex(rightRoot); ex(leftRoot);
-    }
-
-    // Final expand
+  function expandAll() {
+    // Instantly expand all already-loaded nodes — no API calls, no overlay
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
     ex(rightRoot); ex(leftRoot);
-    document.getElementById('loading').classList.add('off');
-    renderTree(); setTimeout(fitTree, 600);
+    renderTree(); setTimeout(fitTree, 350);
   }
   function collapseAll() {
     function cl(n) { if (!n || !n.children) return; n.children.forEach(c => { c._collapsed = true; cl(c); }); }
@@ -1002,24 +982,11 @@
   document.getElementById('show-people').onchange = loadTree;
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
-  document.getElementById('btn-expand-right').onclick = async function() {
-    document.getElementById('ld-text').textContent = 'Expanding organizations...';
-    document.getElementById('loading').classList.remove('off');
-    const showPeople = document.getElementById('show-people').checked;
-    // Iteratively load right-side nodes at all depths
-    for (let pass = 0; pass < 5; pass++) {
-      const toLoad = [];
-      collectUnloaded(rightRoot, toLoad);
-      if (toLoad.length === 0) break;
-      document.getElementById('ld-text').textContent = 'Pass ' + (pass + 1) + ': loading ' + toLoad.length + ' orgs...';
-      await batchLoadNodes(toLoad, showPeople);
-      function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
-      ex(rightRoot);
-    }
+  document.getElementById('btn-expand-right').onclick = function() {
+    // Instantly expand all loaded org nodes — no API calls
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
     ex(rightRoot);
-    document.getElementById('loading').classList.add('off');
-    renderTree(); setTimeout(fitTree, 600);
+    renderTree(); setTimeout(fitTree, 350);
   };
   document.getElementById('btn-expand-left').onclick = function() {
     function ex(n) { if (!n) return; if (n._loaded && n._collapsed && n.children && n.children.length > 0) n._collapsed = false; if (!n._collapsed && n.children) n.children.forEach(ex); }
