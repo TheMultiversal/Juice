@@ -403,167 +403,148 @@ app.get('/api/graph', (req, res) => {
 });
 
 // focused network graph - N-degree neighborhood around a single entry
+// Extracted as a function so it can be reused by both the endpoint and pre-warming
+function computeFocusGraph(focusId, depth, includePeople, roleFilter) {
+  if (!ENTRY_BY_ID[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
+
+  const focusEntry = ENTRY_BY_ID[focusId];
+  const focusIndCount = (focusEntry.individuals || []).length;
+  const isBigEntry = focusIndCount > 80;
+
+  // BFS using pre-built indexes — O(V + E) instead of O(n³)
+  const visited = new Set([focusId]);
+  let frontier = [focusId];
+  for (let d = 0; d < depth; d++) {
+    const nextFrontier = [];
+    for (const eid of frontier) {
+      const entry = ENTRY_BY_ID[eid];
+      if (!entry) continue;
+      if (entry.connections) {
+        for (const conn of entry.connections) {
+          let tid = conn.entryId || conn.target;
+          if (!tid && conn.name) tid = _resolve(conn.name);
+          else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
+          if (tid === eid && conn.source) tid = conn.source;
+          if (tid && tid !== eid && ENTRY_BY_ID[tid] && !visited.has(tid)) {
+            visited.add(tid);
+            nextFrontier.push(tid);
+          }
+        }
+      }
+      if (!isBigEntry && entry.individuals) {
+        for (const ind of entry.individuals) {
+          const shared = IND_TO_ENTRIES[ind.id];
+          if (!shared) continue;
+          for (const s of shared) {
+            if (s.entryId === eid || visited.has(s.entryId)) continue;
+            visited.add(s.entryId);
+            nextFrontier.push(s.entryId);
+          }
+        }
+      }
+    }
+    frontier = nextFrontier;
+  }
+
+  const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
+  const indImportance = {};
+  for (const eid of visited) {
+    const entry = ENTRY_BY_ID[eid];
+    if (!entry || !entry.individuals) continue;
+    for (const ind of entry.individuals) {
+      indImportance[ind.id] = (indImportance[ind.id] || 0) + 1;
+    }
+  }
+  const roleCategories = {};
+  if (focusEntry.individuals) {
+    for (const ind of focusEntry.individuals) {
+      const role = (ind.role || 'Other').split(' - ')[0].trim();
+      roleCategories[role] = (roleCategories[role] || 0) + 1;
+    }
+  }
+  const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
+
+  for (const eid of visited) {
+    const entry = ENTRY_BY_ID[eid];
+    if (!entry) continue;
+    const c = entry._country;
+    if (!nodeSet.has(eid)) {
+      nodeSet.add(eid);
+      nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === focusId });
+    }
+    if (includePeople && entry.individuals) {
+      let inds = entry.individuals;
+      if (roleFilter) {
+        const rf = roleFilter.toLowerCase();
+        inds = inds.filter(ind => (ind.role || '').toLowerCase().includes(rf));
+      }
+      if (eid === focusId) {
+        inds = inds.filter(ind => {
+          const pWords = ind.name.toLowerCase().split(/\s+/);
+          const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw)));
+          return overlap.length === 0;
+        });
+      }
+      for (const ind of inds) {
+        const pid = 'person-' + ind.id;
+        if (!nodeSet.has(pid)) {
+          nodeSet.add(pid);
+          const roleTag = (ind.role || 'Other').split(' - ')[0].trim();
+          nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '', roleTag });
+        }
+        const lk = eid + '|' + pid;
+        if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
+      }
+    }
+    if (entry.connections) {
+      for (const conn of entry.connections) {
+        let tid = conn.entryId || conn.target;
+        if (!tid && conn.name) tid = _resolve(conn.name);
+        else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
+        if (tid === eid && conn.source) tid = conn.source;
+        if (tid && tid !== eid && visited.has(tid)) {
+          const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
+          if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
+        }
+      }
+    }
+    if (!isBigEntry && entry.individuals) {
+      for (const ind of entry.individuals) {
+        const shared = IND_TO_ENTRIES[ind.id];
+        if (!shared) continue;
+        for (const s of shared) {
+          if (s.entryId === eid || !visited.has(s.entryId)) continue;
+          const lk = eid < s.entryId ? eid + '|' + s.entryId : s.entryId + '|' + eid;
+          if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name }); }
+        }
+      }
+    }
+  }
+
+  const linkCount = {};
+  for (const l of links) {
+    linkCount[l.source] = (linkCount[l.source] || 0) + 1;
+    linkCount[l.target] = (linkCount[l.target] || 0) + 1;
+  }
+
+  return {
+    focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth,
+    nodes, links, linkCount,
+    totalPeople: focusIndCount,
+    roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })),
+    isBigEntry
+  };
+}
+
 app.get('/api/graph/focus/:entryId', (req, res) => {
   let focusId = req.params.entryId;
   if (ID_ALIASES[focusId]) focusId = ID_ALIASES[focusId];
   const depth = Math.min(parseInt(req.query.depth) || 2, 3);
   const includePeople = req.query.people !== '0';
-  const roleFilter = req.query.role || ''; // filter people by role keyword
+  const roleFilter = req.query.role || '';
   try {
     const cacheKey = `focus-${focusId}-d${depth}-p${includePeople?1:0}-r${roleFilter}`;
-    const result = getCached(cacheKey, CACHE_TTL, () => {
-      if (!ENTRY_BY_ID[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
-
-      const focusEntry = ENTRY_BY_ID[focusId];
-      const focusIndCount = (focusEntry.individuals || []).length;
-      const isBigEntry = focusIndCount > 80;
-
-      // BFS using pre-built indexes — O(V + E) instead of O(n³)
-      const visited = new Set([focusId]);
-      let frontier = [focusId];
-      for (let d = 0; d < depth; d++) {
-        const nextFrontier = [];
-        for (const eid of frontier) {
-          const entry = ENTRY_BY_ID[eid];
-          if (!entry) continue;
-          // Always follow explicit connections
-          if (entry.connections) {
-            for (const conn of entry.connections) {
-              let tid = conn.entryId || conn.target;
-              if (!tid && conn.name) tid = _resolve(conn.name);
-              else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
-              if (tid === eid && conn.source) tid = conn.source;
-              if (tid && tid !== eid && ENTRY_BY_ID[tid] && !visited.has(tid)) {
-                visited.add(tid);
-                nextFrontier.push(tid);
-              }
-            }
-          }
-          // Shared individuals via index (was O(n³), now O(individuals × avg_shared))
-          if (!isBigEntry && entry.individuals) {
-            for (const ind of entry.individuals) {
-              const shared = IND_TO_ENTRIES[ind.id];
-              if (!shared) continue;
-              for (const s of shared) {
-                if (s.entryId === eid || visited.has(s.entryId)) continue;
-                visited.add(s.entryId);
-                nextFrontier.push(s.entryId);
-              }
-            }
-          }
-        }
-        frontier = nextFrontier;
-      }
-
-      // Build nodes and links from the visited set
-      const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
-
-      // Pre-compute: how many entries each individual appears in (importance score)
-      const indImportance = {};
-      for (const eid of visited) {
-        const entry = ENTRY_BY_ID[eid];
-        if (!entry || !entry.individuals) continue;
-        for (const ind of entry.individuals) {
-          indImportance[ind.id] = (indImportance[ind.id] || 0) + 1;
-        }
-      }
-
-      // Extract role categories from the focus entry for metadata
-      const roleCategories = {};
-      if (focusEntry.individuals) {
-        for (const ind of focusEntry.individuals) {
-          const role = (ind.role || 'Other').split(' - ')[0].trim();
-          roleCategories[role] = (roleCategories[role] || 0) + 1;
-        }
-      }
-
-      // Words from the focus entry name (to detect duplicate person nodes)
-      const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
-
-      for (const eid of visited) {
-        const entry = ENTRY_BY_ID[eid];
-        if (!entry) continue;
-        const c = entry._country;
-        if (!nodeSet.has(eid)) {
-          nodeSet.add(eid);
-          nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === focusId });
-        }
-        // People - show ALL individuals (no cap)
-        if (includePeople && entry.individuals) {
-          let inds = entry.individuals;
-
-          // Filter by role if requested
-          if (roleFilter) {
-            const rf = roleFilter.toLowerCase();
-            inds = inds.filter(ind => (ind.role || '').toLowerCase().includes(rf));
-          }
-
-          // Skip person nodes whose name closely matches the focus entry name (prevents "2 Epsteins")
-          if (eid === focusId) {
-            inds = inds.filter(ind => {
-              const pWords = ind.name.toLowerCase().split(/\s+/);
-              const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw)));
-              return overlap.length === 0; // keep only if NO significant word overlap
-            });
-          }
-
-          for (const ind of inds) {
-            const pid = 'person-' + ind.id;
-            if (!nodeSet.has(pid)) {
-              nodeSet.add(pid);
-              // Extract role category for grouping
-              const roleTag = (ind.role || 'Other').split(' - ')[0].trim();
-              nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '', roleTag });
-            }
-            const lk = eid + '|' + pid;
-            if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
-          }
-        }
-        // Connections between visited entries (only resolved connections shown)
-        if (entry.connections) {
-          for (const conn of entry.connections) {
-            let tid = conn.entryId || conn.target;
-            if (!tid && conn.name) tid = _resolve(conn.name);
-            else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
-            if (tid === eid && conn.source) tid = conn.source;
-
-            if (tid && tid !== eid && visited.has(tid)) {
-              // Resolved connection - create link
-              const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
-              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
-            }
-            // Unresolved connections are silently skipped - no info-only nodes
-          }
-        }
-        // Shared person links via index (was O(n³), now O(individuals × avg_shared))
-        if (!isBigEntry && entry.individuals) {
-          for (const ind of entry.individuals) {
-            const shared = IND_TO_ENTRIES[ind.id];
-            if (!shared) continue;
-            for (const s of shared) {
-              if (s.entryId === eid || !visited.has(s.entryId)) continue;
-              const lk = eid < s.entryId ? eid + '|' + s.entryId : s.entryId + '|' + eid;
-              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name }); }
-            }
-          }
-        }
-      }
-
-      // Pre-compute link counts per node so client doesn't have to filter
-      const linkCount = {};
-      for (const l of links) {
-        linkCount[l.source] = (linkCount[l.source] || 0) + 1;
-        linkCount[l.target] = (linkCount[l.target] || 0) + 1;
-      }
-
-      return {
-        focusId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth,
-        nodes, links, linkCount,
-        totalPeople: focusIndCount,
-        roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })),
-        isBigEntry
-      };
-    });
+    const result = getCached(cacheKey, CACHE_TTL, () => computeFocusGraph(focusId, depth, includePeople, roleFilter));
     res.json(result);
   } catch (err) { console.error(err); res.status(500).json({ error: 'Server error' }); }
 });
@@ -830,64 +811,7 @@ loadData();
     for (const p of [1, 0]) {
       for (const d of [1, 2]) {
         const key = `focus-${entryId}-d${d}-p${p ? 1 : 0}-r`;
-        // Trigger the getCached computation by calling the same logic the endpoint uses
-        getCached(key, CACHE_TTL, () => {
-          const focusEntry = ENTRY_BY_ID[entryId];
-          const focusIndCount = (focusEntry.individuals || []).length;
-          const isBigEntry = focusIndCount > 80;
-          const visited = new Set([entryId]);
-          let frontier = [entryId];
-          for (let dd = 0; dd < d; dd++) {
-            const nextFrontier = [];
-            for (const eid of frontier) {
-              const entry = ENTRY_BY_ID[eid];
-              if (!entry) continue;
-              if (entry.connections) {
-                for (const conn of entry.connections) {
-                  let tid = conn.entryId || conn.target;
-                  if (!tid && conn.name) tid = _resolve(conn.name);
-                  else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name);
-                  if (tid === eid && conn.source) tid = conn.source;
-                  if (tid && tid !== eid && ENTRY_BY_ID[tid] && !visited.has(tid)) { visited.add(tid); nextFrontier.push(tid); }
-                }
-              }
-              if (!isBigEntry && entry.individuals) {
-                for (const ind of entry.individuals) {
-                  const shared = IND_TO_ENTRIES[ind.id];
-                  if (!shared) continue;
-                  for (const s of shared) {
-                    if (s.entryId === eid || visited.has(s.entryId)) continue;
-                    visited.add(s.entryId); nextFrontier.push(s.entryId);
-                  }
-                }
-              }
-            }
-            frontier = nextFrontier;
-          }
-          const nodes = [], links = [], nodeSet = new Set(), linkSet = new Set();
-          const indImportance = {};
-          for (const eid of visited) { const entry = ENTRY_BY_ID[eid]; if (!entry || !entry.individuals) continue; for (const ind of entry.individuals) { indImportance[ind.id] = (indImportance[ind.id] || 0) + 1; } }
-          const roleCategories = {};
-          if (focusEntry.individuals) { for (const ind of focusEntry.individuals) { const role = (ind.role || 'Other').split(' - ')[0].trim(); roleCategories[role] = (roleCategories[role] || 0) + 1; } }
-          const focusNameWords = focusEntry.name.toLowerCase().split(/\s+/).filter(w => w.length > 3);
-          for (const eid of visited) {
-            const entry = ENTRY_BY_ID[eid]; if (!entry) continue;
-            const c = entry._country;
-            if (!nodeSet.has(eid)) { nodeSet.add(eid); nodes.push({ id: eid, name: entry.name, country: c, category: entry.category || '', type: entry.type, group: entry.category || 'other', nodeType: 'entry', isFocus: eid === entryId }); }
-            if (p && entry.individuals) {
-              let inds = entry.individuals;
-              if (eid === entryId) { inds = inds.filter(ind => { const pWords = ind.name.toLowerCase().split(/\s+/); const overlap = pWords.filter(pw => pw.length > 3 && focusNameWords.some(fw => fw.includes(pw) || pw.includes(fw))); return overlap.length === 0; }); }
-              for (const ind of inds) {
-                const pid = 'person-' + ind.id; if (!nodeSet.has(pid)) { nodeSet.add(pid); const roleTag = (ind.role || 'Other').split(' - ')[0].trim(); nodes.push({ id: pid, name: ind.name, country: c, category: 'People', type: 'Individual', group: 'People', nodeType: 'person', personId: ind.id, role: ind.role || '', roleTag }); }
-                const lk = eid + '|' + pid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
-              }
-            }
-            if (entry.connections) { for (const conn of entry.connections) { let tid = conn.entryId || conn.target; if (!tid && conn.name) tid = _resolve(conn.name); else if (tid && !ENTRY_BY_ID[tid] && conn.name) tid = _resolve(conn.name); if (tid === eid && conn.source) tid = conn.source; if (tid && tid !== eid && visited.has(tid)) { const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); } } } }
-            if (!isBigEntry && entry.individuals) { for (const ind of entry.individuals) { const shared = IND_TO_ENTRIES[ind.id]; if (!shared) continue; for (const s of shared) { if (s.entryId === eid || !visited.has(s.entryId)) continue; const lk = eid < s.entryId ? eid + '|' + s.entryId : s.entryId + '|' + eid; if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: s.entryId, type: 'shared-person', description: 'Shared: ' + ind.name }); } } } }
-          }
-          const linkCount = {}; for (const l of links) { linkCount[l.source] = (linkCount[l.source] || 0) + 1; linkCount[l.target] = (linkCount[l.target] || 0) + 1; }
-          return { focusId: entryId, focusName: focusEntry.name, focusCategory: focusEntry.category, depth: d, nodes, links, linkCount, totalPeople: focusIndCount, roleCategories: Object.entries(roleCategories).sort((a,b) => b[1]-a[1]).map(([role, count]) => ({ role, count })), isBigEntry };
-        });
+        getCached(key, CACHE_TTL, () => computeFocusGraph(entryId, d, !!p, ''));
         warmed++;
       }
     }
