@@ -402,14 +402,27 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
       delete require.cache[require.resolve('./data/jewish.json')];
       const jd = require('./data/jewish.json');
 
-      // Build full lookup maps
-      const entryIdMap = {}, nameToId = {}, entryById = {};
+      // Build full lookup maps (exact name + slug-based fallback)
+      const entryIdMap = {}, nameToId = {}, slugToId = {}, entryById = {};
+      function _slug(s) { return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
       for (const c in jd.countries) {
         for (const entry of jd.countries[c]) {
           entryIdMap[entry.id] = { name: entry.name, country: c, category: entry.category, type: entry.type };
           nameToId[entry.name.toLowerCase()] = entry.id;
+          slugToId[_slug(entry.name)] = entry.id;
           entryById[entry.id] = { ...entry, _country: c };
+          // Also index without parenthetical suffixes
+          const noParens = entry.name.replace(/\s*\([^)]*\)\s*/g, '').trim();
+          if (noParens !== entry.name) slugToId[_slug(noParens)] = entry.id;
         }
+      }
+      function _resolve(name) {
+        if (!name) return null;
+        const id = nameToId[name.toLowerCase()] || slugToId[_slug(name)];
+        if (id && entryById[id]) return id;
+        const np = name.replace(/\s*\([^)]*\)\s*/g, '').trim();
+        if (np !== name) { const id2 = slugToId[_slug(np)]; if (id2 && entryById[id2]) return id2; }
+        return null;
       }
 
       if (!entryById[focusId]) return { error: 'Entry not found', nodes: [], links: [] };
@@ -430,9 +443,10 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
           // Always follow explicit connections
           if (entry.connections) {
             for (const conn of entry.connections) {
-              // Support both {entryId/name} and {source/target} formats
+              // Support both {entryId/name} and {source/target} formats + slug fallback
               let tid = conn.entryId || conn.target;
-              if (!tid && conn.name) tid = nameToId[conn.name.toLowerCase()];
+              if (!tid && conn.name) tid = _resolve(conn.name);
+              else if (tid && !entryById[tid] && conn.name) tid = _resolve(conn.name);
               // If target points to self, try source instead
               if (tid === eid && conn.source) tid = conn.source;
               if (tid && tid !== eid && entryById[tid] && !visited.has(tid)) {
@@ -523,40 +537,20 @@ app.get('/api/graph/focus/:entryId', (req, res) => {
             if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: pid, type: 'person-affiliation', description: ind.role || 'Affiliated' }); }
           }
         }
-        // Connections between visited entries + info-only nodes for unresolved connections
+        // Connections between visited entries (only resolved connections shown)
         if (entry.connections) {
           for (const conn of entry.connections) {
             let tid = conn.entryId || conn.target;
-            if (!tid && conn.name) tid = nameToId[conn.name.toLowerCase()];
+            if (!tid && conn.name) tid = _resolve(conn.name);
+            else if (tid && !entryById[tid] && conn.name) tid = _resolve(conn.name);
             if (tid === eid && conn.source) tid = conn.source;
 
             if (tid && tid !== eid && visited.has(tid)) {
-              // Normal resolved connection
+              // Resolved connection - create link
               const lk = eid < tid ? eid + '|' + tid : tid + '|' + eid;
               if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: tid, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
-            } else if (!tid && conn.name && eid === focusId) {
-              // Unresolved connection with name/description  -  create info-only node
-              const infoId = 'info-' + conn.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/-+$/, '');
-              if (!nodeSet.has(infoId)) {
-                nodeSet.add(infoId);
-                // Categorize info nodes
-                let infoCat = 'Other';
-                const nameLow = conn.name.toLowerCase();
-                const typeLow = (conn.type || '').toLowerCase();
-                if (/university|institute|college|school|academic/i.test(conn.name)) infoCat = 'Academic';
-                else if (/bank|citi|credit|morgan|financial/i.test(conn.name)) infoCat = 'Finance';
-                else if (/cia|mi6|mossad|intelligence|fbi|police/i.test(conn.name)) infoCat = 'Intelligence';
-                else if (/royal|government|saudi|british/i.test(conn.name)) infoCat = 'Government';
-                else if (/law |legal|attorney|kirkland|dershowitz/i.test(conn.name)) infoCat = 'Legal';
-                else if (/mansion|townhouse|ranch|apartment|island|property/i.test(conn.name)) infoCat = 'Property';
-                else if (/trial|indictment|investigation|settlement|agreement|fund|suicide|death|examiner|inspector/i.test(conn.name)) infoCat = 'Legal';
-                else if (/herald|netflix|hulu|documentary|logs|book|tape/i.test(conn.name)) infoCat = 'Media';
-                else if (/foundation|program/i.test(conn.name)) infoCat = 'Non-Profit';
-                nodes.push({ id: infoId, name: conn.name, country: '', category: infoCat, type: conn.type || 'Connection', group: infoCat, nodeType: 'info', isFocus: false, description: conn.description || '' });
-              }
-              const lk = eid + '|' + infoId;
-              if (!linkSet.has(lk)) { linkSet.add(lk); links.push({ source: eid, target: infoId, type: normalizeConnType(conn.type), description: normalizeConnDesc(conn.type, conn.description) }); }
             }
+            // Unresolved connections are silently skipped - no info-only nodes
           }
         }
         // Shared person links within visited set (skip for big entries since BFS already skipped)

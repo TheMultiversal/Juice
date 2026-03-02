@@ -115,6 +115,8 @@
     .node-conns{font-size:8.5px;fill:#aaa;pointer-events:none}
     .tree-node.search-hit .node-bg{stroke:#ff6f00!important;stroke-width:2.5!important;filter:drop-shadow(0 0 4px rgba(255,111,0,.4))}
     .tree-node.search-hit .node-name{fill:#e65100!important;font-weight:700}
+    .tree-node.node-loading .node-bg{animation:node-pulse .7s ease-in-out infinite}
+    @keyframes node-pulse{0%,100%{stroke-opacity:1;stroke-width:1.5px}50%{stroke-opacity:.5;stroke-width:3px}}
 
     /* ─── Tier group (people side) colors ────────────── */
     .tier-inner-circle .node-bg{fill:#fff0f0;stroke:#c62828}
@@ -177,7 +179,6 @@
             </div>
             <div class="chks">
               <label><input type="checkbox" id="show-people" checked> People</label>
-              <label><input type="checkbox" id="show-info" checked> Info Nodes</label>
             </div>
             <label>Filter by Tier</label>
             <select id="tier-filter" style="width:100%;padding:3px 6px;border-radius:5px;border:1px solid rgba(0,0,255,.16);font-size:.73em;margin:3px 0">
@@ -420,12 +421,6 @@
         const tier = classifyPerson(cn.role || cn.roleTag || '');
         childBase._tier = tier;
         personsByTier[tier].push(childBase);
-      } else if (cn.nodeType === 'info') {
-        childBase._loaded = true;
-        childBase._collapsed = false;
-        childBase.children = [];
-        childBase.description = cn.description || '';
-        entryKids.push(childBase);
       } else {
         childBase._connCount = apiData.links.filter(l => l.source === cn.id || l.target === cn.id).length;
         entryKids.push(childBase);
@@ -480,21 +475,15 @@
   function renderTree() {
     if (!rightRoot || !leftRoot) return;
 
-    const showInfoNodes = document.getElementById('show-info').checked;
-
     allVisibleIds = new Set();
     collectIds(rightRoot, allVisibleIds);
     collectIds(leftRoot, allVisibleIds);
 
-    // Filter function for children - respects _hidden and info node toggle
+    // Filter function for children - respects _hidden flag
     function getVisibleChildren(d) {
       if (d._collapsed) return null;
       if (!d.children) return null;
-      return d.children.filter(c => {
-        if (c._hidden) return false;
-        if (!showInfoNodes && c.nodeType === 'info') return false;
-        return true;
-      });
+      return d.children.filter(c => !c._hidden);
     }
 
     // --- Right tree (organizations -> right) ---------
@@ -632,17 +621,10 @@
     nodeAll.select('.node-bg').each(function(d) {
       const el = d3.select(this);
       if (!d.data._tierDef && !d.data._tier) {
-        if (d.data.nodeType === 'info') {
-          el.attr('fill', '#f5f5f5')
-            .attr('stroke', '#90a4ae')
-            .attr('stroke-width', 1.5)
-            .attr('stroke-dasharray', '4,3');
-        } else {
-          el.attr('fill', d.data.isFocus ? '#fff3f3' : '#ffffff')
-            .attr('stroke', d.data.isFocus ? '#c62828' : CC[d.data.category] || DC)
-            .attr('stroke-width', d.data.isFocus ? 2.5 : 1.5)
-            .attr('stroke-dasharray', null);
-        }
+        el.attr('fill', d.data.isFocus ? '#fff3f3' : '#ffffff')
+          .attr('stroke', d.data.isFocus ? '#c62828' : CC[d.data.category] || DC)
+          .attr('stroke-width', d.data.isFocus ? 2.5 : 1.5)
+          .attr('stroke-dasharray', null);
       } else {
         el.attr('stroke-width', 1.5).attr('stroke-dasharray', null);
       }
@@ -659,7 +641,6 @@
       .text(d => {
         if (d.data.nodeType === 'tier-group') return d.data._tierDef.icon;
         if (d.data.nodeType === 'person') return '\uf007';
-        if (d.data.nodeType === 'info') return '\uf05a';
         if (d.data.isFocus) return '\uf005';
         return '\uf1ad';
       })
@@ -677,13 +658,11 @@
     nodeAll.select('.node-info').text(d => {
       if (d.data.nodeType === 'tier-group') return d.data._tierDef.desc.substring(0, 34);
       if (d.data.nodeType === 'person') return (d.data.role || 'Individual').substring(0, 30);
-      if (d.data.nodeType === 'info') return (d.data.type || d.data._edgeType || 'Connection').substring(0, 30);
       const p = []; if (d.data.category) p.push(d.data.category); if (d.data.country) p.push(d.data.country);
       const txt = p.join(' \xB7 '); return txt.length > 30 ? txt.substring(0, 28) + '\u2026' : txt;
     });
     // Toggle
     nodeAll.select('.node-toggle').text(d => {
-      if (d.data.nodeType === 'info') return '\u2139';
       if (d.data.nodeType === 'person' && (!d.data.children || d.data.children.length === 0)) return '';
       if (!d.data._loaded && d.data.nodeType !== 'tier-group') return '\u22EF';
       if (d.data._collapsed) return '+';
@@ -759,27 +738,22 @@
       return;
     }
 
-    // Info node  -  non-expandable leaf, just show tooltip
-    if (nd.nodeType === 'info') {
-      return;
-    }
-
     // Toggle
     if (!nd._collapsed) { nd._collapsed = true; renderTree(); return; }
 
-    // If not loaded yet, fetch from API
+    // If not loaded yet, fetch from API (seamless - no overlay)
     if (!nd._loaded && nd.nodeType !== 'tier-group') {
-      document.getElementById('ld-text').textContent = 'Loading ' + nd.name + '...';
-      document.getElementById('loading').classList.remove('off');
+      // Pulse the node to show it's loading
+      const nodeEl = gNodes.selectAll('.tree-node').filter(n => n.data.id === nd.id);
+      nodeEl.classed('node-loading', true);
       try {
         const showPeople = document.getElementById('show-people').checked;
         const res = await fetch('/api/graph/focus/' + encodeURIComponent(nd.id) + '?depth=1&people=' + (showPeople ? '1' : '0'));
         const data = await res.json();
-        if (!data.nodes || data.nodes.length === 0) { nd._loaded = true; nd.children = []; nd._collapsed = false; renderTree(); document.getElementById('loading').classList.add('off'); return; }
+        if (!data.nodes || data.nodes.length === 0) { nd._loaded = true; nd.children = []; nd._collapsed = false; nodeEl.classed('node-loading', false); renderTree(); return; }
         const nm = {}; data.nodes.forEach(n => { nm[n.id] = n; });
         const eKids = [], pKids = [];
         const seen = new Set();
-        // Refresh visible IDs at click time
         const visIds = new Set();
         collectIds(rightRoot, visIds);
         collectIds(leftRoot, visIds);
@@ -791,7 +765,6 @@
           const cn = nm[cid]; if (!cn) return;
           const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
           if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
-          else if (cn.nodeType === 'info') { child._loaded = true; child._collapsed = false; child.children = []; eKids.push(child); }
           else eKids.push(child);
         });
         eKids.sort((a, b) => a.name.localeCompare(b.name));
@@ -808,7 +781,7 @@
         nd.children = newChildren;
         nd._loaded = true;
       } catch (err) { console.error(err); nd._loaded = true; nd.children = []; }
-      document.getElementById('loading').classList.add('off');
+      nodeEl.classed('node-loading', false);
     }
     nd._collapsed = false;
     renderTree(); // no fitTree - keep zoom stable
@@ -816,7 +789,7 @@
 
   function navigateTo(nd) {
     if (nd.nodeType === 'person') window.location.href = 'person.html?id=' + encodeURIComponent(nd.personId || nd.id);
-    else if (nd.nodeType === 'tier-group' || nd.nodeType === 'mirror' || nd.nodeType === 'info') return;
+    else if (nd.nodeType === 'tier-group' || nd.nodeType === 'mirror') return;
     else window.location.href = 'entry.html?religion=jewish&id=' + encodeURIComponent(nd.id);
   }
 
@@ -824,8 +797,6 @@
     let h;
     if (nd.nodeType === 'tier-group') {
       h = '<strong><i class="fa-solid fa-layer-group"></i> ' + nd.name + '</strong><br/>' + nd._tierDef.desc + '<br/><span style="color:#0056b3;font-size:0.85em">Click to expand</span>';
-    } else if (nd.nodeType === 'info') {
-      h = '<strong><i class="fa-solid fa-circle-info"></i> ' + nd.name + '</strong><br/><i class="fa-solid fa-tag"></i> ' + (nd.type || 'Connection') + '<br/>' + (nd.description ? '<div style="margin-top:4px;font-size:0.9em;color:#555">' + nd.description + '</div>' : '') + '<span style="color:#78909c;font-size:0.85em">Info-only connection (no entry page)</span>';
     } else if (nd.nodeType === 'person') {
       h = '<strong><i class="fa-solid fa-user"></i> ' + nd.name + '</strong><br/><i class="fa-solid fa-briefcase"></i> ' + (nd.role || 'Individual') + '<br/><i class="fa-solid fa-globe"></i> ' + (nd.country || '') + '<br/><span style="color:#0056b3;font-size:0.85em">Click → profile &middot; Right-click → details</span>';
     } else {
@@ -836,11 +807,10 @@
 
   // ─── Stats ───────────────────────────────────────────
   function updateStats() {
-    let entries = 0, infoNodes = 0, people = 0;
+    let entries = 0, people = 0;
     allVisibleIds.forEach(id => {
       if (id.startsWith('person-')) { people++; return; }
       if (id.startsWith('_tier_') || id.includes('_tier_') || id.includes('_left')) return;
-      if (id.startsWith('info-')) { infoNodes++; return; }
       entries++;
     });
     // Also count people in collapsed tiers
@@ -853,7 +823,6 @@
     }
     const totalPeopleInTree = countPeople(leftRoot);
     const parts = ['<b>' + entries + '</b> entries'];
-    if (infoNodes > 0) parts.push('<b>' + infoNodes + '</b> info');
     parts.push('<b>' + people + '</b> of <b>' + totalPeopleInTree + '</b> people visible');
     document.getElementById('stats').innerHTML = parts.join(' &middot; ');
   }
@@ -914,7 +883,6 @@
             const cn = nm[cid]; if (!cn) return;
             const child = { id: cn.id, name: cn.name, category: cn.category || '', country: cn.country || '', nodeType: cn.nodeType, type: cn.type || '', role: cn.role || '', personId: cn.personId || '', isFocus: false, _edgeType: link.type || 'related', _edgeDesc: link.description || '', children: [], _loaded: false, _collapsed: true, _connCount: data.links.filter(l => l.source === cn.id || l.target === cn.id).length, description: cn.description || '' };
             if (cn.nodeType === 'person') { child._tier = classifyPerson(cn.role || ''); pKids.push(child); }
-            else if (cn.nodeType === 'info') { child._loaded = true; child._collapsed = false; child.children = []; eKids.push(child); }
             else eKids.push(child);
           });
           eKids.sort((a, b) => a.name.localeCompare(b.name));
@@ -938,7 +906,7 @@
   // Collect unloaded entry nodes from a tree
   function collectUnloaded(n, list) {
     if (!n) return;
-    if (!n._loaded && n.nodeType !== 'tier-group' && n.nodeType !== 'person' && n.nodeType !== 'info' && n.nodeType !== 'mirror') list.push(n);
+    if (!n._loaded && n.nodeType !== 'tier-group' && n.nodeType !== 'person' && n.nodeType !== 'mirror') list.push(n);
     if (n.children) n.children.forEach(c => collectUnloaded(c, list));
   }
 
@@ -1007,10 +975,8 @@
         document.getElementById('page-title').innerHTML = '<span class="focus-name">' + rawApiData.focusName + '</span> Network';
       }
       const entryC = rawApiData.nodes.filter(n => n.nodeType === 'entry').length;
-      const infoC = rawApiData.nodes.filter(n => n.nodeType === 'info').length;
       const pC = rawApiData.nodes.filter(n => n.nodeType === 'person').length;
       const subParts = [entryC + ' entries'];
-      if (infoC > 0) subParts.push(infoC + ' info nodes');
       subParts.push(pC + ' people');
       subParts.push('Depth ' + depth);
       document.getElementById('page-subtitle').textContent = subParts.join(' \xB7 ');
@@ -1034,7 +1000,6 @@
   document.getElementById('btn-reload').onclick = loadTree;
   document.getElementById('btn-fit').onclick = fitTree;
   document.getElementById('show-people').onchange = loadTree;
-  document.getElementById('show-info').onchange = function() { renderTree(); };
   document.getElementById('btn-expand-all').onclick = expandAll;
   document.getElementById('btn-collapse').onclick = collapseAll;
   document.getElementById('btn-expand-right').onclick = async function() {
