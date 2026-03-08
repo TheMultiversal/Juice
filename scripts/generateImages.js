@@ -1,51 +1,20 @@
 /**
- * Generate favicon (Israeli juice box) and OG image as PNG files.
+ * Generate favicon (Israeli flag) and OG image as PNG files.
  * Uses sharp with simple SVG overlays - no external fonts or complex patterns.
  */
 const sharp = require('sharp');
 const path  = require('path');
 const pub   = path.join(__dirname, '..', 'public');
 
-/* ───────── Israeli Juice Box Favicon (64×64 base) ───────── */
-const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <defs>
-    <linearGradient id="boxFace" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#e6e9f0"/>
-    </linearGradient>
-    <linearGradient id="boxTop" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#d8dce6"/>
-      <stop offset="100%" stop-color="#f0f2f8"/>
-    </linearGradient>
-    <linearGradient id="stripeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#002d8f"/>
-      <stop offset="50%" stop-color="#0044cc"/>
-      <stop offset="100%" stop-color="#002d8f"/>
-    </linearGradient>
-    <linearGradient id="strawGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e0e4ee"/>
-      <stop offset="50%" stop-color="#ffffff"/>
-      <stop offset="100%" stop-color="#c8cdd8"/>
-    </linearGradient>
-    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
-      <feDropShadow dx="1" dy="2" stdDeviation="1.5" flood-color="#001a4d" flood-opacity="0.25"/>
-    </filter>
-  </defs>
-  <rect x="12" y="18" width="40" height="38" rx="2.5" fill="url(#boxFace)" stroke="#b0b8c8" stroke-width="0.6" filter="url(#shadow)"/>
-  <path d="M12,18 L12,56 L10,54 L10,20 Z" fill="#c8cdd8" opacity="0.5"/>
-  <polygon points="12,18 20,8 44,8 52,18" fill="url(#boxTop)" stroke="#b0b8c8" stroke-width="0.5"/>
-  <line x1="32" y1="8" x2="32" y2="18" stroke="#c0c8d4" stroke-width="0.4" opacity="0.6"/>
-  <rect x="12" y="18" width="40" height="6" rx="0.5" fill="url(#stripeGrad)"/>
-  <rect x="12" y="49" width="40" height="6" rx="0.5" fill="url(#stripeGrad)"/>
-  <g transform="translate(32,37)">
+/* ───────── Israeli Flag Favicon (60×40 base) ───────── */
+const faviconSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 40">
+  <rect width="60" height="40" fill="#fff"/>
+  <rect y="4" width="60" height="7" fill="#0038b8"/>
+  <rect y="29" width="60" height="7" fill="#0038b8"/>
+  <g transform="translate(30,20)">
     <polygon points="0,-10 8.66,5 -8.66,5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
     <polygon points="0,10 8.66,-5 -8.66,-5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
   </g>
-  <rect x="39" y="2" width="3" height="20" rx="1.5" fill="url(#strawGrad)" stroke="#8090a8" stroke-width="0.5"/>
-  <path d="M42,5 L48,5 L48,2 L42,2" fill="url(#strawGrad)" stroke="#8090a8" stroke-width="0.5"/>
-  <ellipse cx="48" cy="3.5" rx="1" ry="1.5" fill="#d0d4de" stroke="#8090a8" stroke-width="0.3"/>
-  <rect x="15" y="25" width="3" height="14" rx="1.5" fill="#fff" opacity="0.35"/>
-  <rect x="20" y="27" width="1.5" height="8" rx="0.75" fill="#fff" opacity="0.2"/>
 </svg>`;
 
 /* --------- OG Image (1200x630) - built with shapes only --------- */
@@ -96,34 +65,25 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
   <line x1="1000" y1="500" x2="1080" y2="540" stroke="#0056b3" stroke-width="1" opacity="0.15"/>
   <line x1="1080" y1="540" x2="1130" y2="480" stroke="#0056b3" stroke-width="1" opacity="0.15"/>
 
-  <!-- Israeli juice box icon (left side) -->
-  <g transform="translate(80, 170) scale(3)">
-    <rect x="12" y="18" width="40" height="38" rx="2.5" fill="#fff" stroke="#b0b8c8" stroke-width="0.6"/>
-    <path d="M12,18 L12,56 L10,54 L10,20 Z" fill="#c8cdd8" opacity="0.5"/>
-    <polygon points="12,18 20,8 44,8 52,18" fill="#eef0f6" stroke="#b0b8c8" stroke-width="0.5"/>
-    <line x1="32" y1="8" x2="32" y2="18" stroke="#c0c8d4" stroke-width="0.4" opacity="0.6"/>
-    <rect x="12" y="18" width="40" height="6" rx="0.5" fill="#0038b8"/>
-    <rect x="12" y="49" width="40" height="6" rx="0.5" fill="#0038b8"/>
-    <g transform="translate(32,37)">
+  <!-- Israeli flag icon (left side) -->
+  <g transform="translate(80, 200) scale(4)">
+    <rect width="60" height="40" fill="#fff"/>
+    <rect y="4" width="60" height="7" fill="#0038b8"/>
+    <rect y="29" width="60" height="7" fill="#0038b8"/>
+    <g transform="translate(30,20)">
       <polygon points="0,-10 8.66,5 -8.66,5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
       <polygon points="0,10 8.66,-5 -8.66,-5" fill="none" stroke="#0038b8" stroke-width="1.8" stroke-linejoin="round"/>
     </g>
-    <rect x="39" y="2" width="3" height="20" rx="1.5" fill="#e8ecf4" stroke="#8090a8" stroke-width="0.5"/>
-    <path d="M42,5 L48,5 L48,2 L42,2" fill="#e8ecf4" stroke="#8090a8" stroke-width="0.5"/>
-    <ellipse cx="48" cy="3.5" rx="1" ry="1.5" fill="#d0d4de" stroke="#8090a8" stroke-width="0.3"/>
-    <rect x="15" y="25" width="3" height="14" rx="1.5" fill="#fff" opacity="0.35"/>
-    <rect x="20" y="27" width="1.5" height="8" rx="0.75" fill="#fff" opacity="0.2"/>
   </g>
 
-  <!-- Title: "THE JUICE BOX" as individual letter rectangles for guaranteed rendering -->
-  <!-- Using SVG text with embedded font-family fallbacks -->
-  <text x="370" y="250" font-size="76" font-weight="bold" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">The Juice Box</text>
+  <!-- Title -->
+  <text x="370" y="250" font-size="68" font-weight="bold" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" letter-spacing="2">Jewish Accountability</text>
 
   <!-- Gold accent line -->
   <rect x="370" y="272" width="220" height="5" rx="2" fill="url(#gold)"/>
 
   <!-- Subtitle -->
-  <text x="370" y="320" font-size="26" fill="#8ab4f8" font-family="Arial, Helvetica, sans-serif">Jewish Organizations Intelligence Database</text>
+  <text x="370" y="320" font-size="26" fill="#8ab4f8" font-family="Arial, Helvetica, sans-serif">Mapping Jewish Organizations &amp; Individuals of Influence Worldwide</text>
 
   <!-- Stats boxes -->
   <!-- Box 1 -->
@@ -142,7 +102,7 @@ const ogSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"
   <text x="835" y="415" text-anchor="middle" font-size="15" fill="#8ab4f8" font-family="Arial, Helvetica, sans-serif">People</text>
 
   <!-- Domain -->
-  <text x="370" y="490" font-size="22" fill="#607d8b" font-family="Arial, Helvetica, sans-serif">TheJuiceBox.Live</text>
+  <text x="370" y="490" font-size="22" fill="#607d8b" font-family="Arial, Helvetica, sans-serif">JewishAccountability.com</text>
 
   <!-- Est -->
   <text x="370" y="520" font-size="16" fill="#546e7a" font-family="Arial, Helvetica, sans-serif">Est. 2016</text>

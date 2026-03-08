@@ -333,7 +333,7 @@ function setSEO(opts = {}) {
   setMeta('og:description', o.description, true);
   setMeta('og:type', o.type, true);
   setMeta('og:url', o.url, true);
-  setMeta('og:site_name', 'The Juice Box', true);
+  setMeta('og:site_name', 'Jewish Accountability', true);
 
   // OG Image (must be PNG - social platforms don't support SVG)
   const origin = window.location.origin;
@@ -432,7 +432,7 @@ function addFooter() {
   footer.innerHTML = `
     <div style="max-width:1200px;margin:0 auto;padding:35px 30px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;">
       <div>
-        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1.1em;"><i class="fa-solid fa-database"></i> The Juice Box</h4>
+        <h4 style="margin:0 0 12px;color:#0038b8;font-size:1.1em;"><i class="fa-solid fa-database"></i> Jewish Accountability</h4>
         <p style="margin:0 0 8px;line-height:1.6;font-size:0.92em;">Comprehensive Jewish Organizations Intelligence Database. Tracking structure, people, and connections since 2016.</p>
         <p style="margin:0;font-size:0.85em;color:#999;">v4.3 | Est. 2016</p>
       </div>
@@ -468,7 +468,7 @@ function addFooter() {
       </div>
     </div>
     <div style="max-width:1200px;margin:0 auto;padding:15px 30px;border-top:1px solid rgba(0,56,184,0.1);display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;">
-      <span>&copy; 2016-${new Date().getFullYear()} The Juice Box Project. All rights reserved.</span>
+      <span>&copy; 2016-${new Date().getFullYear()} Jewish Accountability. All rights reserved.</span>
       <div style="display:flex;gap:15px;align-items:center;">
         <a href="about.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">About</a>
         <a href="bookmarks.html" style="color:#0056b3;text-decoration:none;font-size:0.92em;">Bookmarks</a>
